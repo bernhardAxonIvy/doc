@@ -53,8 +53,5 @@ user name to it. Axon.ivy Engine will check if a user principal is set on a
 request and automatically searches the user and authenticates it. The code of
 your valve can look like this:
 
-.. literalinclude:: includes/AuthValve.java
+.. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.webserver/src/ch/ivyteam/ivy/webserver/security/SingleSignOnValve.java
     :language: java
-
-The method :code:`getUserNameFromRequest` depends on the technology how the WAF
-sends the user identity.
