@@ -29,9 +29,10 @@ Installation
 Install |ivy-engine|
 =======================
 
-To install the |ivy-engine| extract the correct zip file for your platform to the directory where you want to install the |ivy-engine|.
-For Debian based operating systems there is a convenient installer package available.
-The following platforms are supported: 
+To install the |ivy-engine| extract the correct zip file for your platform to
+the directory where you want to install the |ivy-engine|. For Debian based
+operating systems there is a convenient installer package available. The
+following platforms are supported: 
 
 +-------+--------------+----------------------+-----------------------------------------------------------------------------------------------+
 | CPU   | Architecture | Operation System     | Installation File                                                                             |
@@ -45,14 +46,17 @@ The following platforms are supported:
 | Intel | x64          | Linux and Windows*   | :dev-url:`AxonIvyEngineX.Y.Z_Slim_All_x64.zip </permalink/latest/axonivy-engine-slim.zip>`    |
 +-------+--------------+----------------------+-----------------------------------------------------------------------------------------------+
 
-\* The *All* and *Slim_All* engines are delivered with launchers for Linux and Windows, but without a JRE. To use the slim
-engine set up the ``IVY_JAVA_HOME`` environment variable pointing to a supported x64 JRE, or the ``JAVA_HOME`` environment
-variable pointing to a supported x64 JDK. The slim engine comes without demo projects.
+\* The *All* and *Slim_All* engines are delivered with launchers for Linux and
+Windows, but without a JRE. To use the slim engine set up the ``IVY_JAVA_HOME``
+environment variable pointing to a supported x64 JRE, or the ``JAVA_HOME``
+environment variable pointing to a supported x64 JDK. The slim engine comes
+without demo projects.
 
 .. Note::
-    Note, that the installation procedure implies sufficient administration and access rights on the system.
-    For example the access to drive :file:`C:` on a Windows Server 2008 system is very restrictive that you
-    might install the programs on drive :file:`D:` instead.
+    Note, that the installation procedure implies sufficient administration and
+    access rights on the system. For example the access to drive :file:`C:` on a
+    Windows Server 2008 system is very restrictive that you might install the
+    programs on drive :file:`D:` instead.
 
 
 .. _installing-a-licence:
@@ -60,27 +64,32 @@ variable pointing to a supported x64 JDK. The slim engine comes without demo pro
 Installing a Licence
 --------------------
 
-By default a demo licence is installed that allows you to run the |ivy-engine| in demo mode.
-You have to install a licence in order to run |ivy-engine| in a production environment.
+By default a demo licence is installed that allows you to run the |ivy-engine|
+in demo mode. You have to install a licence in order to run |ivy-engine| in a
+production environment.
 
 .. Note::
-  The licence file contains the name of the host where the engine is installed on.
-  The licence will only work if the name of the machine exactly matches the name stored in the licence file.
+  The licence file contains the name of the host where the engine is installed
+  on. The licence will only work if the name of the machine exactly matches the
+  name stored in the licence file.
 
 To install a licence file follow the steps below:
 
 #. Copy the licence file :file:`\*.lic` to the directory configuration/.
-#. Change the extension of your old licence files to anything, but :file:`\*.lic`
-   (e.g. from :file:`foo_bar_another_licence.lic` to :file:`foo_bar_another_licence.lic.old`).
+#. Change the extension of your old licence files to anything, but
+   :file:`\*.lic` (e.g. from :file:`foo_bar_another_licence.lic` to
+   :file:`foo_bar_another_licence.lic.old`).
 
 .. Hint::
-  You may leave :file:`demo.lic` in the configuration folder, because this licence is taken only if no other licence files are found.
+  You may leave :file:`demo.lic` in the configuration folder, because this
+  licence is taken only if no other licence files are found.
 
 
 Installed Files and Directories
 -------------------------------
 
-After the installation the following files and folders are located in the |ivy-engine| installation folder:
+After the installation the following files and folders are located in the
+|ivy-engine| installation folder:
 
 +----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Folder / File                    | Description                                                                                                                                                                        |
@@ -155,7 +164,8 @@ After the installation the following files and folders are located in the |ivy-e
 Windows Programs
 ^^^^^^^^^^^^^^^^
 
-The :file:`bin` folder of a windows installation contains the following native dynamic link libraries and executable files:
+The :file:`bin` folder of a windows installation contains the following native
+dynamic link libraries and executable files:
 
 +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | File                          | Description                                                                                                                                                                  |
@@ -187,7 +197,8 @@ The :file:`bin` folder of a windows installation contains the following native d
 Linux Programs
 ^^^^^^^^^^^^^^
 
-The :file:`bin` folder of a Linux installation contains the following script files:
+The :file:`bin` folder of a Linux installation contains the following script
+files:
 
 +-----------------------+---------------------------------------------------------------------------------------------------------------------------+
 | File                  | Description                                                                                                               |
@@ -208,6 +219,3 @@ The :file:`bin` folder of a Linux installation contains the following script fil
 +-----------------------+---------------------------------------------------------------------------------------------------------------------------+
 | launcher.sh           | Helper script to launch a Java program.                                                                                   |
 +-----------------------+---------------------------------------------------------------------------------------------------------------------------+
-
-
-

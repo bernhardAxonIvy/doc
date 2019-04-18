@@ -131,7 +131,8 @@ Microsoft SQL Server
   :language: yaml
   :linenos:
 
-If database will be created by the |ivy-engine| the collate is set to ``Latin1_General_CI_AI``.
+If database will be created by the |ivy-engine| the collate is set to
+``Latin1_General_CI_AI``.
 
 
 .. _systemdb-postgres:
