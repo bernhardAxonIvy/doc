@@ -10,20 +10,6 @@ Installation
    systemdatabase
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .. _install_engine:
 
 Install |ivy-engine|
