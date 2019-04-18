@@ -1,0 +1,5 @@
+# app.yaml located in <application-directory>/app.yaml
+EMailNotification:  
+  DailySummaryOn: monday, tuesday, wednesday, thursday, friday
+  OnNewTasks: true
+  Language: de

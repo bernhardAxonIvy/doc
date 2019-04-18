@@ -1,0 +1,6 @@
+# ivy.yaml
+SystemDb:
+  Driver: org.postgresql.Driver
+  Url: jdbc:postgresql://localhost:5432/AxonIvySystemDatabase
+  UserName: root
+  Password: 1234

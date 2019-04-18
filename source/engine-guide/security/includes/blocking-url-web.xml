@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app>
+   ...
+    <security-constraint>
+      <display-name>Restrict access to System Processes</display-name>
+        <web-resource-collection>
+          <web-resource-name>System Processes</web-resource-name>
+          <url-pattern>/pro/System/*</url-pattern>
+        </web-resource-collection>
+      <auth-constraint />
+    </security-constraint>
+   ...
+</web-app>

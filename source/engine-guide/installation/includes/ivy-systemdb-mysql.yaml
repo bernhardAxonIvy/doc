@@ -1,0 +1,6 @@
+# ivy.yaml
+SystemDb:
+  Driver: com.mysql.jdbc.Driver
+  Url: jdbc:mysql://localhost:3306/AxonIvySystemDatabase
+  UserName: root
+  Password: 1234

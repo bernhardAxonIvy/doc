@@ -1,0 +1,12 @@
+# sample ivy.yaml that define an Active Directory as security system
+SecuritySystems:
+  # Custom definied name of your security system
+  ActiveDirectoryOfMyCompany:
+    Provider: "Microsoft Active Directory"
+    Connection:
+      Url: "ldap://activedirectory.axonivy.com:389"
+      UserName: "activedirectory_user@axonivy.com"
+      Password: "${encrypt:1234}"
+    Binding:
+      DefaultContext: "DC=axonivy,DC=com"
+      ImportUsersOfGroup: "CN=AXON Ivy IT,DC=axonivy,DC=com"

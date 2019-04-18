@@ -1,0 +1,5 @@
+<VirtualHost *:80> 
+  ...
+  #Mounts the URI /jkmanager/* to the JK Status Manager interface.
+  JkMount /jkmanager/* jkstatus
+</VirtualHost>

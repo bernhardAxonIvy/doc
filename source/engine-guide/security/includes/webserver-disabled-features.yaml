@@ -1,0 +1,13 @@
+# ivy.webserver.yaml with all optional features disabled
+REST:     
+ # If none of the deployed projects provide REST APIs it is also possible to disable the whole REST servlet 
+ Enabled: false
+     
+ # REST resources for the mobile app under '{application}/api/workflow'
+ MobileWorkflow:
+  # If the Mobile Workflow REST API is not used on your engine (e.g. by the Axon.ivy Mobile App) you can disable it
+  API: false
+
+# If the Mobile Offline Dialogs are not used on your engine (most of the time) you can disable them
+OfflineDialogs:
+  Enabled: false

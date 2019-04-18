@@ -1,0 +1,12 @@
+# sample ivy.yaml that configures an email server:
+EMail:
+  Server:
+    Host: mail.axonivy.com
+    Port: 25
+    MailAddress: noreply@axonivy.com
+    User: someuser
+    Password: somepassword
+
+  DailyTaskSummary:
+    # Time of day when the task summary mails will be sent.
+    TriggerTime: "02:00"

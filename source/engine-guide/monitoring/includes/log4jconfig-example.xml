@@ -1,0 +1,14 @@
+<!-- Defines a log file called runtimelog.app.hrm.log -->
+<appender name="RuntimeLog" class="org.apache.log4j.DailyRollingFileAppender"> 
+ 	<param name="File" value="${user.dir}/logs/runtimelog.app.hrm.log"/> 
+ 	<param name="DatePattern" value="'.'yyyy-MM-dd"/> 
+ 	<layout class="org.apache.log4j.IvyLog4jLayout"> 
+		<param name="DateFormat" value="HH:mm:ss"/>
+ 	</layout> 
+</appender>
+
+<!-- Configures that the log category runtimelog.app.hrm has priority DEBUG and is written to the RuntimeLog file -->
+<category name="runtimelog.app.hrm" class="ch.ivyteam.log.Logger">
+  <appender-ref ref="RuntimeLog"/> 
+  <priority value="DEBUG"/>
+</category>

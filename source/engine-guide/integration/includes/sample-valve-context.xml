@@ -1,0 +1,1 @@
+<Valve className="ch.ivyteam.ivy.webserver.security.SingleSignOnValve" userNameHeader="user"/>

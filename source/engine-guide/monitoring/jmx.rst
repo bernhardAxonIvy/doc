@@ -1,0 +1,212 @@
+.. _jmx:
+
+Java Management Extensions (JMX)
+================================
+
+Java Management Extensions (JMX) is a technology to read and write runtime
+information from a java processes. This allows monitoring tools to monitor the
+state the Axon.ivy Engine, e.g. with :ref:`visualvm`, Java Mission Control or
+Nagios. A monitoring tool that runs on the same machine and with the same user
+as the Axon.ivy Engine can connect to Axon.ivy Engine without any additional
+configuration.
+
+
+Activate Remote Access
+----------------------
+
+If the Axon.ivy Engine is running under another user or on a remote host than
+the monitoring tool, then JMX remote access has to be activated. Remote access
+is protected by a user name and password of an Axon.ivy Engine Administrator, so
+all Axon.ivy Engine Administrator have access.
+
+On **Windows**: activate remote access by uncommenting the following line in the
+:ref:`windows-program-launch-config`:
+
+.. code-block:: properties
+
+    ivy.management.port=9003
+
+On **Linux**: activate remote access by uncommenting the following line in the
+:ref:`linux-launcher-config`:
+
+.. code-block:: properties
+
+    #JAVA_OPTS="$JAVA_OPTS -Dcom.sun.management.jmxremote.port=9003 -Dcom.sun.management.jmxremote.login.config=jmx -Djava.security.auth.login.config=configuration/jaas.config -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.autodiscovery=true"
+
+
+Auto Discovery (JDP)
+--------------------
+
+Some monitoring tools can auto discover running JMX servers in the network. So
+that the user does not have to know the JMX ip and port.
+
+On **Windows**: Auto discovery is enabled by default if JMX is activated.
+However, you can disable this feature by uncommenting the following line in the
+:ref:`windows-program-launch-config`:
+
+.. code-block:: properties
+
+    ivy.management.autodiscovery=false
+
+On **Linux**: Auto discovery is enabled in the pre-configured (but uncommented)
+:code:`JAVA_OPT` of the :ref:`linux-launcher-config`. But you can disable it at
+any time by changing its value to :code:`false`:
+
+.. code-block:: properties
+
+    -Dcom.sun.management.jmxremote.autodiscovery=false
+
+
+Provided MBeans
+---------------
+
+The Axon.ivy Engine provides performance and management information by a set of
+MBeans. These allows to monitor internals of the Axon.ivy Engine. Most
+monitoring tools provide a user interface to browse the available MBeans. MBeans
+are mostly shown in a tree which is built with the information provided in the
+names of MBeans. 
+
+.. figure:: images/visualvm-mbeans.png
+
+The names of MBeans provided by Axon.ivy are structured so that the name
+contains the Application, Process Model, Process Model Version or Environment
+where this is reasonable. 
+
+.. note::
+    Examples of typical Axon.ivy MBean names: 
+
+    .. code-block:: properties
+
+        ivy Engine:type=External Web Service,application=MyApplication,environment=Default,name=Echo (43838347ABCD)
+        ivy Engine:type=Job Manager
+        ivy Engine:type=Process Start Event Bean,application=MyApplication,pm=MyProcessModel,pmv=1,name="MyStartEventBean (3485471349/start.ivp)"
+
+The name and description of a MBean can be found in its meta information (see
+the Metadata tab in the MBeans tab of VisualVM). MBeans provide information
+through attributes and operations. The description of the attributes and
+operations can also be found in its meta information (see too the tool tips in
+the Attributes and Operations tab of the MBeans tab of VisualVM).
+
+.. warning::
+    Manipulating attribute values or calling operations on MBeans will
+    immediately change the configuration of your system and can therefore harm
+    your running applications.
+
+    If not mentioned otherwise, a manipulation only affects the currently
+    running engine. The manipulation will not survive a engine restart.
+    
+    Manipulations that survive a engine restart contain the following text in
+    the description of the attribute or operation: (Persistent).
+
+In addition to the MBeans provided by Axon.ivy some third party libraries
+included in Axon.ivy provide their own MBeans. One of them is Apache Tomcat that
+is used as internal web server. Its MBeans provide information about the
+handling of HTTP requests like request count, errors, execution time, sessions,
+etc. Moreover, the Java virtual machine also provides some MBeans that provide
+information about the used memory (Java heap), CPU usage, uptime, etc.
+
+Below a not complete list of provided information:
+
+**External Database** (connections, transactions, errors, execution time, etc.)
+
+.. code-block:: properties
+        
+    ivy Engine:type=External Database,application=*,environment=*,name=*
+
+**Web Service** (calls, errors, execution time, etc.)
+
+.. code-block:: properties
+        
+    ivy Engine:type=External Web Service,application=*,environment=*,name=*
+
+**REST Web Service** (calls, errors, execution time, slow calls, etc.)
+
+.. code-block:: properties
+        
+    ivy Engine:type=External REST Web Service,application=*,environment=*,name=*
+
+**System Database** (connections, transactions, errors, execution time, etc.)
+
+.. code-block:: properties
+        
+    ivy Engine:type=Database Persistency Service
+
+**HTTP Requests** (count, errors, execution time, etc.)
+
+.. code-block:: properties
+
+    *:type=GlobalRequestProcessor,name=*
+
+**Number of Sessions** (HTTP sessions, Axon.ivy sessions, licence relevant sessions, etc.)
+
+.. code-block:: properties
+
+    ivy Engine:type=Security Manager
+    *:type=Manager,context=*,host=*
+
+**Background jobs** (name, next execution time, etc.)
+
+.. code-block:: properties
+   
+    ivy Engine:type=Job Manager
+    ivy Engine:type=Daily Job,name=*
+    ivy Engine:type=Periodical Job,name=*
+
+**Process Start Event Beans** (polls, executions, errors, execution time, etc.)
+
+.. code-block:: properties
+   
+    ivy Engine:type=Process Start Event Bean,,application=*,pm=*,pmv=*,name=*
+
+**Process Intermediate Event Beans** (polls, firings, errors, execution time, etc.)
+
+.. code-block:: properties
+
+    ivy Engine:type=Process Intermediate Event Bean,application=*,pm=*,pmv=*,name=*
+
+**Application, Process Model and Process Model Version, Library information** (activity state, release state, name, description, etc.)
+
+.. code-block:: properties
+
+    ivy Engine:type=Application,name=*
+    ivy Engine:type=Process Model,application=*,name=*
+    ivy Engine:type=Process Model Version,application=*,pm=*,name=*
+
+**Cluster, Cluster Nodes and Cluster Communication information** (received and sent message, errors, execution time, etc.)
+
+.. code-block:: properties
+
+    ivy Engine:type=Cluster Manager
+    ivy Engine:type=Cluster Channel
+
+**Thread Pool information** (core, maximum and current pool size, active threads, queue size)
+
+.. code-block:: properties
+
+    ivy Engine:type=Thread Pool, name=Background Operation Executor
+    ivy Engine:type=Thread Pool, name=Immediate Job Executor
+    ivy Engine:type=Thread Pool, name=Scheduled Job Executor
+
+**System Database and CMS Cache**
+
+.. code-block:: properties
+
+    ivy Engine type=CacheClassPersistencyService,name=* [clearCache()]
+    ivy Engine type=CacheClassPersistencyService,name=*,strategy=CacheAll [maxBytesToCache, maxCharactersToCache]
+    ivy Engine type=CacheClassPersistencyService,name=*,strategy=CacheAllRemoveUnused [maxBytesToCache, maxCharactersToCache, countLimit, usageLimit]
+    ivy Engine type=CacheClassPersistencyService,name=*,cache=LongBinaries [readHits, readMisses, writes, cachedLongValues, clearCache()]
+    ivy Engine type=CacheClassPersistencyService,name=*,cache=LongCharacters [readHits, readMisses, writes, cachedLongValues, clearCache()]
+    ivy Engine type=CacheClassPersistencyService,name=*,cache=ObjectsAndAssociations [objectReadHits, objectReadMisses, objectWrites, cachedObjects, associationReadHits, associationReadMisses, associationWrites, cachedAssociations, clearCache()]
+
+**Memory (Java Heap, Perm Gen)**
+
+.. code-block:: properties
+
+    java.lang:type=Memory
+
+**CPU Usage, Uptime**
+
+.. code-block:: properties
+        
+    java.lang:type=Runtime
+    java.lang.type=OperatingSystem

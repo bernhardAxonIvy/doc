@@ -1,0 +1,4 @@
+<!-- Configures that the log category ch.ivyteam.ivy.webserver.internal.PerformanceLogValve has priority DEBUG  -->
+<category name="ch.ivyteam.ivy.webserver.internal.PerformanceLogValve" class="ch.ivyteam.log.Logger">
+  <priority value="DEBUG"/>
+</category>

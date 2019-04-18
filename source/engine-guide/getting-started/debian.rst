@@ -1,0 +1,134 @@
+Debian Linux
+============
+
+In this section, you will learn how to install and configure an Axon.ivy Engine
+on a Debian based linux machine. 
+
+Install the Engine
+------------------
+
+There is a convenient DEB package available to install the Axon.ivy Engine. You
+can download and install it with the following bash script:
+
+.. code:: bash
+
+    cd /tmp
+    wget https://developer.axonivy.com/permalink/latest/axonivy-engine.deb -O axonivy-engine.deb
+    sudo dpkg -i axonivy-engine.deb
+    rm -f /tmp/axonivy-engine.deb
+
+.. Note::
+  The most important folders of the Axon.ivy Engine are:
+
+  * :file:`/usr/lib/axonivy-engine-7x/` is the root installation folder with
+    symlinks to all locations which are relevant to the engine.
+  * :file:`/etc/axonivy-engine-7x/` folder which contains the configuration
+    files.
+  * :file:`/var/lib/axonivy-engine-7x/deploy` folder which is used to deploy
+    Axon.ivy projects.
+
+
+Examine the Engine
+------------------
+
+After the installation the engine will automatically be started as systemd
+service. You can check the operative state with :code:`systemctl status
+axonivy-engine-7x`. The output of the service status will expose an URI where
+the Axon.ivy Engine page is accessible.
+
+.. figure:: images/systemctl-status-axonivy-engine.png
+
+Copy this URL. On your client machine open a web browser and navigate to that
+URL. This will display the Axon.ivy Engine main page. 
+
+
+.. include:: _use-the-engine.rst
+
+
+Configure the Engine
+--------------------
+
+Now, let's configure the Axon.ivy Engine with a license and system database.
+
+To start with that you must first request a valid Axon.ivy Engine license.
+Either you get a license for your productive system through one of our sales
+personal or contact our support for time limited tryout licenses. If you do not
+have a license you can skip this section and continue with the next section.
+
+Moreover, you need to have a supported database server up and running with a
+database user that has the rights to create new databases. The configuration and
+creation of the system database differs a little bit depending on the database
+system you use. We will use a PostgreSQL database server.
+
+Shutdown the Axon.ivy Engine first by stopping its service
+
+.. code:: bash
+
+    systemctl stop axonivy-engine-7x.service
+
+Let's install the license. You can do this by simple copy the license
+:file:`*.lic` file into the :file:`configuration` folder
+
+.. code:: bash
+
+    cp ~/license.lic /etc/axonivy-engine-7x
+
+To configure the system database, use the :code:`config-db` command of the
+**EngineConfigCli** tool. Replace **yourdatabasserver** with the name of the
+host where your PostgreSQL server is running. Replace **dbuser** and
+**password** with the credentials of a database user that has the rights to
+create a new database on the database server.
+
+.. code:: bash
+
+    cd /usr/lib/axonivy-engine-7x/bin
+    ./EngineConfigCli config-db org.postgresql.Driver \
+    jdbc:postgresql://yourdatabaseserver:5432/AxonIvySystemDatabase \
+    dbuser password
+
+Now, let's create the system database with the :code:`create-db` command
+
+.. code:: bash
+
+    ./EngineConfigCli create-db
+
+.. Note::
+  The system database is used by Axon.ivy Engine to store configurations, users,
+  roles, process instances, tasks and process data.
+
+Next, define an administrator by modifying the :ref:`ivy-yaml` file of the
+:file:`/etc/axonivy-engine-7x` directory:
+
+.. literalinclude:: includes/sample-ivy.yaml
+  :language: yaml
+  :linenos:
+
+.. Note::
+  Administrators can administrate the Axon.ivy Engine. For example, they can add
+  or remove users, assign user to roles, enable or disable applications, etc.
+  Therefore, you need at least one administrator so that you can later
+  administrate the Axon.ivy Engine. The Email address of administrators are used
+  to send mail notifications if license problems occur.
+
+Optionally, disable the AJP protocol connector of the Axon.ivy Engine internal
+web server in the :ref:`ivy-webserver-yaml` file of the
+:file:`/etc/axonivy-engine-7x` directory:
+
+.. literalinclude:: includes/sample-ivy-no-ajp.yaml
+  :language: yaml
+  :linenos:
+
+.. include:: _webserver.rst
+
+Now, start the Axon.ivy Engine again
+
+.. code:: bash
+
+    systemctl start axonivy-engine-7x.service
+
+Note, that the HTTP port of the Axon.ivy Engine may have changed. If you did
+change the http settings! So open again a web browser and navigate to
+http://yourservername:yourportnumber/ivy. Note, that the header with the demo
+mode message is gone. You now have a production ready Axon.ivy Engine.
+
+.. include:: _deploy-project.rst

@@ -1,0 +1,8 @@
+<appender name="FileLog" class="org.apache.log4j.DailyRollingFileAppender">
+  <param name="Threshold" value="DEBUG"/>
+  <param name="File" value="${user.dir}/logs/ivy.log"/>
+  <param name="DatePattern" value="'.'yyyy-MM-dd"/>
+  <layout class="org.apache.log4j.IvyLog4jLayout">
+    <param name="DateFormat" value="HH:mm:ss.SSS"/>
+  </layout>
+</appender>

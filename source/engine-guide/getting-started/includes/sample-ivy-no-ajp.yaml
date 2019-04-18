@@ -1,0 +1,4 @@
+# sample ivy.yaml which disables AJP, as no front-end webserver is in charge:
+Connector:
+  AJP:
+    Enabled: false
