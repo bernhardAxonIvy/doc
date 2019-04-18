@@ -62,7 +62,7 @@
 		               <target>
 		                  <unzip dest="source">
 		                  	<fileset dir="target">
-						        <include name="**/doc-static-images*.zip"/>
+						        <include name="**/doc-images*.zip"/>
 						    </fileset>
 		                  </unzip>
 		               </target>
