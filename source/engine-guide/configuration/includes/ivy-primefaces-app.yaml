@@ -1,3 +1,3 @@
 # app.yaml located in <application-directory>/app.yaml
-Properties:
-  jsf.primefaces.theme: modena-ivy
+Jsf:
+  primefaces.theme: modena-ivy

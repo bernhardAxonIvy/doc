@@ -68,7 +68,7 @@ system is used. There are two types of security systems:
 * **External Security System**:
   Used to synchronize users from a name and directory service such as Active
   Directory. The example below shows a simple connection to an Active Directory.
-  Have a look at the :ref:`configuration-file-reference` for all supported name
+  Have a look at the :ref:`ivy-securitysystem-yaml` for all supported name
   and directory services and further settings.
 
   .. literalinclude:: includes/ivy-securitysystem.yaml
@@ -220,6 +220,7 @@ Configuration File Reference
    files/ivy-yaml
    files/app-yaml
    files/ivy-webserver-yaml
+   files/ivy-securitysystem-yaml
    files/log4jconfig-xml
    files/ivy-cache-properties
    files/web-xml
