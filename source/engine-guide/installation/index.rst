@@ -24,7 +24,7 @@ Installation
 
 
 
-
+.. _install_engine:
 
 Install |ivy-engine|
 =======================

@@ -1,9 +1,10 @@
+.. _installation-standard-edition:
+
 Standard Edition
 ================
 
-It is recommended to read the Introduction chapter before installing an Axon.ivy
-Engine. The following list shows the necessary steps that are required to
-install and run an Axon.ivy Engine:
+The following list shows the necessary steps that are required to install and
+run an Axon.ivy Engine:
 
 #. Gather all the information you need:
    
@@ -11,8 +12,7 @@ install and run an Axon.ivy Engine:
    * The database system used to host the system database.
    * Order a licence file for your installation. You need to know the host name
      of the machine you want to install the Axon.ivy Engine on. More information
-     about the licence can be found in the section Install a Licence of the
-     Installation chapter.
+     about the licence can be found in the section :ref:`installing-a-licence`.
    * If an integration with a web server is planned, then get all the necessary
      configuration information of the web server.
    * If an integration with an external security system is planned, then get all
@@ -22,14 +22,23 @@ install and run an Axon.ivy Engine:
      the use of an external Elasticsearch server is planned, then get the
      necessary configuration information for it. When running an Axon.ivy Engine
      Enterprise Edition the use of an external Elasticsearch server is
-     mandatory. See the Elasticsearch section in the“ivy.yaml” of the
-     configuration directory.
+     mandatory. See the Elasticsearch section in the :ref:`ivy-yaml`.
 
-#. Install all required operating systems, web servers and database systems.
-#. Install the Axon.ivy Engine
-#. Install your licence file
-#. Configure the Axon.ivy Engine
-#. Start the Axon.ivy Engine and test if it is running.
+#. Install all required operating systems, web servers and :ref:`database
+   systems <systemdb>`.
+#. :ref:`install_engine`
+#. :ref:`installing-a-licence`
+#. :ref:`Configure <configuration>` the Axon.ivy Engine
+#. :ref:`Start <control-center>` the Axon.ivy Engine and test if it is running.
+
+If everything is fine so far, you can perform the following optional
+configuration steps:
+
+* Run the Axon.ivy Engine as :ref:`Service <engine-service>` which runs
+  automatically after a reboot.
+* :ref:`Integrate <integration>` Axon.ivy Engine into web servers if necessary.
+* :ref:`Deploy <deployment>` workflow applications.
+
 
 
 Demo Mode
