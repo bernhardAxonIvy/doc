@@ -42,8 +42,8 @@
 		                    <outputDirectory>target</outputDirectory>
 		                    <artifactItems>
 		                        <artifactItem>
-		                            <groupId>ch.ivyteam.ivy</groupId>
-		                            <artifactId>doc-static-images</artifactId>
+		                            <groupId>ch.ivyteam.ivy.doc</groupId>
+		                            <artifactId>doc-images</artifactId>
 		                            <version>7.3.2-SNAPSHOT</version>
 		                            <type>zip</type>
 		                        </artifactItem>
