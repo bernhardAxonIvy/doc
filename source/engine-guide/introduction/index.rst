@@ -98,7 +98,7 @@ on:
   |ivy-engine|.
 * Read the designer guide to know how to **model, simulate and implement**
   digital businss process.
-* Go trough the :ref:`migration-notes` to **upgrade** an existing |ivy-engine|.
+* Go trough the Migration Notes to **upgrade** an existing |ivy-engine|.
 
 All above mentioned documentations are brief and tend to describe only necessary
 functionality. We highly encourage reading these documentations to speed up your

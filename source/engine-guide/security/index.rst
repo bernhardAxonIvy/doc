@@ -242,7 +242,7 @@ Security issues in the Axon.ivy Engine
 --------------------------------------
 
 If a security issue was found in the Axon.ivy Engine or Designer it is visible
-in the :ref:`release-notes`, annotated with an exclamation mark (!):
+in the release notes, annotated with an exclamation mark (!):
 
 **!** Critical
     We strongly recommend to install this hotfix because it fixes a critical
