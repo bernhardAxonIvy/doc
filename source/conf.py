@@ -4,7 +4,8 @@ from datetime import datetime
 
 project = 'Axon.ivy Digital Business Platform'
 copyright = str(datetime.today().year) + ', AXON Ivy AG'
-execfile('../target/version.py')
+versionFile = '../target/version.py'
+exec(compile(open(versionFile, "rb").read(), versionFile, 'exec'))
 
 # general options
 needs_sphinx = '1.5.6'
