@@ -9,7 +9,7 @@ IIS 8 (Windows Server 2012)
 
 .. note::
     There is a batch script autoconfig.bat in the folder
-    :file:`[engine-dir]/misc/iis` of your engine installation, which installs
+    :file:`[engineDir]/misc/iis` of your engine installation, which installs
     and configures the IIS automatically on a Windows 2012 Server. If you are
     setting up a new IIS Server you can use this script instead of following the
     instructions below.
@@ -311,7 +311,7 @@ IIS 8 (Windows Server 2012)
 
 .. note::
     There is a batch script :file:`autoconfigSSO.bat` in the folder
-    :file:`[engine-dir]/misc/iis` of your engine installation. This script
+    :file:`[engineDir]/misc/iis` of your engine installation. This script
     automatically sets up SSO on a Windows 2012 Server. If you are setting up a
     new IIS Server you can use this script instead of following the instructions
     below.
@@ -384,7 +384,7 @@ IIS 8 (Windows Server 2012)
 
 .. note::
     There is a batch script :file:`autoconfigBasicAuth.bat` in the folder
-    :file:`[engine-dir]/misc/iis` of your engine installation. This script
+    :file:`[engineDir]/misc/iis` of your engine installation. This script
     automatically sets up Basic Authentication on a Windows 2012 Server. If you
     are setting up a new IIS Server you can use this script instead of following
     the instructions below.

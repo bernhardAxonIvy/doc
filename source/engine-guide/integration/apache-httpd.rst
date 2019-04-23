@@ -14,7 +14,7 @@ Windows configuration
    Engine then the integration directory content must be copied to the host
    where your Apache HTTP Server is running. Copy the mod_jk binaries and the
    sample configuration files from the directory that matches your OS in
-   :file:`[engine-dir]/misc/apache` to the Apache host under :file:`C:/Program
+   :file:`[engineDir]/misc/apache` to the Apache host under :file:`C:/Program
    Files/ivy`. All next steps have to be done on the host where the Apache HTTP
    Server is running on.
 #. Include the copied jk_module configuration in the
@@ -97,7 +97,7 @@ assume that an Ubuntu distribution is installed as Operating System.
         sudo a2enmod jk
 
 #. Update the :file:`worker.properties` file according to the examples in the
-   :file:`[engine-dir]/misc/apache/`. The following example content would
+   :file:`[engineDir]/misc/apache/`. The following example content would
    connect to an Axon.ivy Engine on the host **ivyserver** under the default AJP
    port 8009. Modify the file :file:`/etc/libapache2-mod-jk/worker.properties`
    as follows.

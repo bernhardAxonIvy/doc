@@ -3,10 +3,10 @@ Logging
 
 Axon.ivy uses a library called `log4j
 <http://logging.apache.org/log4j/1.2/index.html>`_ to log certain events. The
-logging configuration file is located in the :file:`{engine-dir}/configuration`
+logging configuration file is located in the :file:`{engineDir}/configuration`
 directory and is called :ref:`log4jconfig-xml`. By default log events are
 written to the console and to log files. The log files are written to the
-:file:`{engine-dir}/logs` directory.
+:file:`{engineDir}/logs` directory.
 
 Each log message has a log level:
 

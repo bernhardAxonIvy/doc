@@ -47,7 +47,7 @@ Linux Service
 The install service program :file:`InstallService.sh` helps to install the
 Axon.ivy Engine as a systemd Linux daemon. To install the service:
 
-#. Run following command as root: ``[engine-dir]/bin/InstallService.sh``
+#. Run following command as root: ``[engineDir]/bin/InstallService.sh``
 #. Accept the directory of your engine installation.
 #. Set the user and group under which the Engine service should run. Must not be
    root. Typically, a special user with limited access right should be used.

@@ -19,7 +19,6 @@ Check `Dockerfile` to see what is needed.
 
 ## TODO
 
-* Check engineDir
 * Check axon.ivy
 * introduce a version switcher
 * search direct on the correct section

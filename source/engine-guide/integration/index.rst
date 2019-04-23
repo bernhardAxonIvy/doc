@@ -24,8 +24,8 @@ All necessary files that you need to integrate an Axon.ivy Engine into a Web
 Server can be found in the following directories inside the Axon.ivy Engine
 installation directory:
 
-* Apache HTTP Server for Windows (x64): :file:`[engine-dir]/misc/apache/`
-* IIS for Windows (x64): :file:`[engine-dir]/misc/iis/`
+* Apache HTTP Server for Windows (x64): :file:`[engineDir]/misc/apache/`
+* IIS for Windows (x64): :file:`[engineDir]/misc/iis/`
 
 The directory that matches the platform and webserver where you plan to
 integrate the Axon.ivy Engine will be called integration directory in this

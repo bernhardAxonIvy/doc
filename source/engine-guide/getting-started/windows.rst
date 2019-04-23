@@ -163,7 +163,7 @@ Deploy a project
 --------------------------
 
 Let's deploy an Axon.ivy project to the Axon.ivy Engine. Simply download
-WorkflowDemos and drop it in :file:`[engine-dir]/deploy` folder. Refresh the
+WorkflowDemos and drop it in :file:`[engineDir]/deploy` folder. Refresh the
 main page of the Axon.ivy Engine. There is now a new section called
 WorkflowDemos available with new links to start processes.
 

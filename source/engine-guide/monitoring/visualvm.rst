@@ -52,7 +52,7 @@ Installation
 #. Go to the Tools/Plugins menu
 #. Change to Downloaded tab and click on the Add Plugins... button
 #. In the file chooser that appears, navigate to the subfolder
-   :file:`[engine-dir]/misc/visualvm` installation directory and choose the
+   :file:`[engineDir]/misc/visualvm` installation directory and choose the
    :file:`visualvm-plugin.nbm`.
 #. Follow the instructions in the installation wizard.
 #. Choose the option to restart VisualVM at the end of the installation wizard.
