@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 import sys, os
+from datetime import datetime
 
 project = 'Axon.ivy Digital Business Platform'
-copyright = '2018, AXON Ivy AG'
+copyright = str(datetime.today().year) + ', AXON Ivy AG'
 version = '7.3'
-release = '7.3.0'
-
+release = '7.3.2'
 
 # general options
 needs_sphinx = '1.5.6'
@@ -47,7 +47,7 @@ replacements = {
     '|ivy-platform|': 'Axon.ivy Digital Business Platform',
     '|ivy-engine|' : 'Axon.ivy Engine',
     '|ivy-designer|': 'Axon.ivy Designer',
-    '|axon-ivy|': 'Axon.ivy'
+    '|axon-ivy|': 'Axon.ivy',
 }
 
 def replaceToken(app, docname, source):
