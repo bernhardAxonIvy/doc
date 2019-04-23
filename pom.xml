@@ -24,8 +24,6 @@
 			<url>http://zugpronexus:8081/nexus/content/repositories/build-snapshots/</url>
 		</repository>
 	</distributionManagement>
-
-	
 	
     <build>
 		<plugins>
@@ -35,14 +33,14 @@
 		        <version>2.10</version>
 		        <executions>
 		            <execution>
-		                <id>copy.maven.dependencies</id>
-		                <goals><goal>copy</goal></goals>
+		                <id>unpack-doc-images</id>
+		                <goals><goal>unpack</goal></goals>
 		                <phase>generate-resources</phase>
 		                <configuration>
-		                    <outputDirectory>target</outputDirectory>
+		                    <outputDirectory>source</outputDirectory>
 		                    <artifactItems>
 		                        <artifactItem>
-		                            <groupId>ch.ivyteam.ivy.doc</groupId>
+		                            <groupId>ch.ivyteam.ivy</groupId>
 		                            <artifactId>doc-images</artifactId>
 		                            <version>7.3.2-SNAPSHOT</version>
 		                            <type>zip</type>
@@ -52,28 +50,6 @@
 		            </execution>
 		        </executions>
 		    </plugin>
-		    <plugin>
-		      <artifactId>maven-antrun-plugin</artifactId>
-		      <version>1.8</version>
-		      <executions>
-		         <execution>
-		            <phase>generate-resources</phase>
-		            <configuration>
-		               <target>
-		                  <unzip dest="source">
-		                  	<fileset dir="target">
-						        <include name="**/doc-images*.zip"/>
-						    </fileset>
-		                  </unzip>
-		               </target>
-		            </configuration>
-		            <goals>
-		               <goal>run</goal>
-		            </goals>
-		         </execution>
-		      </executions>
-		   </plugin>
-   
     
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
