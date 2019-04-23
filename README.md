@@ -2,6 +2,10 @@
 
 ## build
 
+    # first download static images
+    mvn clean package
+
+    # generate doc
     docker build -t doc-builder . && docker run -v $(pwd)/..:/ivy-core doc-builder make html && firefox ./build/html/index.html
 
 Alternatively you can install python, pip and pip packages directly on your system.
