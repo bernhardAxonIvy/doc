@@ -88,6 +88,22 @@
 		                    </artifactItems>
 		                </configuration>
 		            </execution>
+					<execution>
+						<id>unpack-engine-cockpit-images</id>
+						<goals><goal>unpack</goal></goals>
+						<phase>generate-resources</phase>
+						<configuration>
+							<outputDirectory>source/engine-guide/tool-reference/images</outputDirectory>
+							<artifactItems>
+		                        <artifactItem>
+		                            <groupId>ch.ivyteam.ivy</groupId>
+		                            <artifactId>engine-cockpit-selenium-test</artifactId>
+		                            <version>7.3.1-SNAPSHOT</version>
+		                            <type>zip</type>
+		                        </artifactItem>
+		                    </artifactItems>
+						</configuration>
+					</execution>
 		        </executions>
 		    </plugin>
     
