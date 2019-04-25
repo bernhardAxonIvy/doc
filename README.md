@@ -1,4 +1,4 @@
-# read-the-docs-tryout
+# doc
 
 ## build
 
