@@ -12,6 +12,9 @@
         <fileSet>
             <directory>build/html</directory>
             <outputDirectory>.</outputDirectory>
+            <excludes>
+            	<exclude>_raw_sources/**</exclude>
+            </excludes>
         </fileSet>
     </fileSets>
 </assembly>
