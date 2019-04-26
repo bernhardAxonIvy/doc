@@ -1,30 +1,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>ch.ivyteam.ivy</groupId>
 	<artifactId>doc-product</artifactId>
-	<version>7.3.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<repositories>
-		<repository>
-			<id>zugpronexus.build</id>
-			<name>Internal Build Repository</name>
-			<url>http://zugpronexus:8081/nexus/content/groups/build</url>
-			<snapshots>
-				<updatePolicy>always</updatePolicy>
-			</snapshots>
-		</repository>
-	</repositories>
+	<parent>
+		<groupId>ch.ivyteam.ivy</groupId>
+		<artifactId>ch.ivyteam.ivy.build.config</artifactId>
+		<version>7.3.2-SNAPSHOT</version>
+		<relativePath>../development/ch.ivyteam.ivy.build.maven/config</relativePath>
+	</parent>
 
-    <distributionManagement>
-		<repository>
-			<id>zugpronexus.snapshots</id>
-			<name>Internal Build Integration Repository</name>
-			<url>http://zugpronexus:8081/nexus/content/repositories/build-snapshots/</url>
-		</repository>
-	</distributionManagement>
-	
     <build>
 		<plugins>
 			<plugin>
@@ -82,7 +68,6 @@
 		                        <artifactItem>
 		                            <groupId>ch.ivyteam.ivy</groupId>
 		                            <artifactId>doc-images</artifactId>
-		                            <version>7.3.2-SNAPSHOT</version>
 		                            <type>zip</type>
 		                        </artifactItem>
 		                    </artifactItems>
@@ -98,7 +83,6 @@
 		                        <artifactItem>
 		                            <groupId>ch.ivyteam.ivy</groupId>
 		                            <artifactId>engine-cockpit-selenium-test</artifactId>
-		                            <version>7.3.1-SNAPSHOT</version>
 		                            <type>zip</type>
 		                        </artifactItem>
 		                    </artifactItems>
