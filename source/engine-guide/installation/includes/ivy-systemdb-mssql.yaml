@@ -1,9 +1,0 @@
-# ivy.yaml
-SystemDb:
-  Driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
-  Url: jdbc:sqlserver://localhost:1433;DatabaseName=AxonIvySystemDatabase
-  UserName: root
-  Password: 1234
-  DriverProperties:
-      # Instance name of the MSSQL Server
-      instanceName: SqlServer

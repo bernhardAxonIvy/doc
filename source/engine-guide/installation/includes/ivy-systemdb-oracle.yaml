@@ -1,6 +1,0 @@
-# ivy.yaml
-SystemDb:
-  Driver: oracle.jdbc.OracleDriver
-  Url: jdbc:oracle:thin:@localhost:1521:serviceid
-  UserName: root
-  Password: 1234

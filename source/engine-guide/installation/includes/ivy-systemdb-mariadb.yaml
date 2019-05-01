@@ -1,6 +1,0 @@
-# ivy.yaml
-SystemDb:
-  Driver: org.mariadb.jdbc.Driver
-  Url: jdbc:mariadb://localhost:3306/AxonIvySystemDatabase
-  UserName: root
-  Password: 1234
