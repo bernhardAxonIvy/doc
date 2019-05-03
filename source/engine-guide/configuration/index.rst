@@ -41,7 +41,7 @@ external system database must be connected, where workflow data will be stored.
 To define the database of the |ivy-engine|, the :code:`SystemDb` entries must be
 set.
 
-.. literalinclude:: includes/ivy-full.yaml
+.. literalinclude:: includes/ivy-systemdb.yaml
   :language: yaml
   :linenos:
 
