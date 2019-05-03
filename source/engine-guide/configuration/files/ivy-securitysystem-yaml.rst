@@ -5,6 +5,6 @@ ivy.securitysystem.yaml
 
 :file:`[engineDir]/configuration/defaults/ivy.securitysystem.yaml`
 
-.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/defaults/ivy.securitysystem.yaml
+.. literalinclude:: ../../../../../workspace/ch.ivyteam.base/src/ch/ivyteam/ivy/configuration/internal/defaults/ivy.securitysystem.yaml
   :language: yaml
   :linenos:
