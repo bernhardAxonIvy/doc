@@ -193,10 +193,10 @@ for each application.
 
 
 
-Advanced Configuration
+System Configuration
 ----------------------
 
-On the **advanced config** page you will have an overview about all your
+On the **system configuration** page you will have an overview about all your
 configurations defined in your running engine. Configurations which are grey,
 are default values. You can hide them if you click on the :guilabel:`Eye` button
 at the top. If you click on the :guilabel:`New` button, you can add new
@@ -205,15 +205,14 @@ configurations. If you want to edit an existing configuration, click on the
 the possebility to reset a configuration or view the configuration file.
 
 .. warning::
-    Configurations which are defined in a :ref:`app-yaml` file can not be
-    reseted. If you edit a such configuration the new value will be written to
-    the :ref:`ivy-yaml` file.
+    Application configurations are not shown on this view. You can see defined
+    application configurations on the :ref:`engine-cockpit-application-detail` view.
 
 .. note::
     For more information about the configuration, please have a look at the
     :ref:`configuration` section. 
 
-.. figure:: images/engine-cockpit-advanced-config.png
+.. figure:: images/engine-cockpit-system-config.png
 
 
 
