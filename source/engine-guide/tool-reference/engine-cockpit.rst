@@ -34,11 +34,8 @@ Dashboard
 The **dashboard** provides you a quick overview of your running engine. There
 are real time information about open sessions, user count, working tasks and
 deployed applications. In addition it will show you information about your
-system where the engine is running on.
-
-.. note::
-    There are panels with a grey background. Those are placeholders for
-    functions which are not implemented yet.
+system where the engine is running on. If you have a EMail Server configured you
+can test it by clicking on the :guilabel:`Send` button and send a test mail.
 
 .. figure:: images/engine-cockpit-dashboard.png
 
@@ -198,8 +195,7 @@ System Configuration
 
 On the **system configuration** page you will have an overview about all your
 configurations defined in your running engine. Configurations which are grey,
-are default values. You can hide them if you click on the :guilabel:`Eye` button
-at the top. If you click on the :guilabel:`New` button, you can add new
+are default values. If you click on the :guilabel:`New` button, you can add new
 configurations. If you want to edit an existing configuration, click on the
 :guilabel:`Pencil` button. If you click on the button :guilabel:`More`, you have
 the possebility to reset a configuration or view the configuration file.
@@ -225,3 +221,15 @@ about cpu load, memory load, network traffic and disk read write. The memory
 monitor shows you in addition the max and usage of the jvm.
 
 .. figure:: images/engine-cockpit-monitor.png
+
+
+
+Logs
+----
+
+The **logs** view shows you the latest entries of the `console.log`,
+`config.log` and `ivy.log`. Simply click on the :guilabel:`+` to show the log or
+the :guilabel:`-` to hide it. If you want to see the logs of an other day, you
+can change the date at the top right.
+
+.. figure:: images/engine-cockpit-logs.png
