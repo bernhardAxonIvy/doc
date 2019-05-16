@@ -180,6 +180,15 @@ same functionalities, as the one you can find in the
 
 
 
+Global Variables
+----------------
+
+//TODO
+
+.. figure:: images/engine-cockpit-configuration-variables.png
+
+
+
 Email
 -----
 
@@ -190,8 +199,84 @@ for each application.
 
 
 
+External Databases
+------------------
+
+The **external databases** view gives you an overview over your configured
+external databases inside your project. You can switch to the desired
+application over the tabs at the top. If you want to show a different
+environment, you can change it at the top right. To get more information over a
+database click on one to go to the
+:ref:`engine-cockpit-external-database-detail` view.
+
+.. note::
+    If you want to add a new external database configuration, please have a look
+    at :designer-guide:`Designer Guide </ivy.configuration.html#ivy.database>`.
+
+.. figure:: images/engine-cockpit-external-databases.png
+
+
+
+.. _engine-cockpit-external-database-detail:
+
+External Database Detail
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+In the **external database detail** view, you can see all configurations from
+the selected external database. If you click on the :guilabel:`Pencil` button you notice
+that you can't edit those configurations here. But you see a snippet from the
+:ref:`app-yaml` file, how the configuration above would look like.
+
+.. note:: 
+    It could be that the configurations here are not the same as they are configured on the
+    project. Maybe they are overwritten inside the :ref:`app-yaml` file.
+
+.. figure:: images/engine-cockpit-external-database-detail.png
+
+
+
+Web Services
+------------
+
+//TODO
+
+.. figure:: images/engine-cockpit-webservice.png
+
+
+
+.. _engine-cockpit-webservice-detail:
+
+Web Service Detail
+^^^^^^^^^^^^^^^^^^
+
+//TODO
+
+.. figure:: images/engine-cockpit-webservice-detail.png
+
+
+
+Rest Clients
+------------
+
+//TODO
+
+.. figure:: images/engine-cockpit-rest-clients.png
+
+
+
+.. _engine-cockpit-rest-client-detail:
+
+Rest Client Detail
+^^^^^^^^^^^^^^^^^^
+
+//TODO
+
+.. figure:: images/engine-cockpit-rest-client-detail.png
+
+
+
 System Configuration
-----------------------
+--------------------
 
 On the **system configuration** page you will have an overview about all your
 configurations defined in your running engine. Configurations which are grey,
@@ -227,8 +312,8 @@ monitor shows you in addition the max and usage of the jvm.
 Logs
 ----
 
-The **logs** view shows you the latest entries of the `console.log`,
-`config.log` and `ivy.log`. Simply click on the :guilabel:`+` to show the log or
+The **logs** view shows you the latest entries of the :file:`console.log`,
+:file:`config.log` and :file:`ivy.log`. Simply click on the :guilabel:`+` to show the log or
 the :guilabel:`-` to hide it. If you want to see the logs of an other day, you
 can change the date at the top right.
 

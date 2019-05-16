@@ -39,6 +39,7 @@ html_theme_options = {
 extlinks = {
     'dev-url':  ('https://developer.axonivy.com%s', None),
     'public-api':  ('https://developer.axonivy.com/doc/latest/PublicAPI%s', None),
+    'designer-guide': ('https://developer.axonivy.com/doc/latest/DesignerGuideHtml%s', None)
 }
 
 # token replacements
