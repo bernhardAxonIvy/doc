@@ -183,9 +183,22 @@ same functionalities, as the one you can find in the
 Global Variables
 ----------------
 
-//TODO
+The view **global variables** shows you all global variables which are defined
+for every application. They can be configured on the project or set in the
+:ref:`app-yaml` file. You can switch the environment at the top. To add a new
+variable click on the :guilabel:`New` button. If you want to edit a variable click on
+the :guilabel:`Pencil` button or the :guilabel:`Delete` button to delete one.
 
 .. figure:: images/engine-cockpit-configuration-variables.png
+
+
+
+Business Calendar
+-----------------
+
+//TODO
+
+.. figure:: images/engine-cockpit-configuration-business-calendar.png
 
 
 
