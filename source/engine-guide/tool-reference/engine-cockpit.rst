@@ -236,9 +236,11 @@ External Database Detail
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 In the **external database detail** view, you can see all configurations from
-the selected external database. If you click on the :guilabel:`Pencil` button you notice
-that you can't edit those configurations here. But you see a snippet from the
-:ref:`app-yaml` file, how the configuration above would look like.
+the selected external database. You can test if the configuration works and a
+connection to this database can be established, when you click on the
+:guilabel:`Arrow` button. If you click on the :guilabel:`Pencil` button you
+notice that you can't edit those configurations here. But you see a snippet from
+the :ref:`app-yaml` file, how the configuration above would look like.
 
 .. note:: 
     It could be that the configurations here are not the same as they are configured on the
