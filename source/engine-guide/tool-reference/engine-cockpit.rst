@@ -93,7 +93,7 @@ to open the :ref:`engine-cockpit-security-system-detail` view.
 Security System detail
 ^^^^^^^^^^^^^^^^^^^^^^
 
-On the security system detail view you have the possebility to change a
+On the security system detail view you have the possibility to change a
 configured security system. The settings is read directly from the
 :ref:`ivy-yaml` file. Every change you make and save will be written directly
 back to the yaml file. The placeholder in the empty fields are the default
@@ -229,7 +229,7 @@ that you can't edit those configurations here. But you see a snippet from the
 
 .. note:: 
     It could be that the configurations here are not the same as they are configured on the
-    project. Maybe they are overwritten inside the :ref:`app-yaml` file.
+    project. Maybe they were overwritten inside the :ref:`app-yaml` file.
 
 .. figure:: images/engine-cockpit-external-database-detail.png
 
@@ -238,7 +238,15 @@ that you can't edit those configurations here. But you see a snippet from the
 Web Services
 ------------
 
-//TODO
+The **web services** page lists all defined web services. Change the application
+or environment at the top to get your desired services. For a detailed view of
+the service click on one entry to switch to the
+:ref:`engine-cockpit-webservice-detail` view.
+
+.. note::
+    If you want to add a new web service, please have a look at
+    :designer-guide:`Designer Guide
+    </ivy.configuration.html#ivy-editors-webservice>`.
 
 .. figure:: images/engine-cockpit-webservice.png
 
@@ -249,7 +257,11 @@ Web Services
 Web Service Detail
 ^^^^^^^^^^^^^^^^^^
 
-//TODO
+On this view all configurations from a web service will be shown. If you wish to
+edit the service you can't do that here. But if you click on the
+:guilabel:`Pencil` button you will get a Snippet from this web service. When you
+want to change som configurations you can edit them in the :ref:`app-yaml` file
+as like you see it in the Snippet.
 
 .. figure:: images/engine-cockpit-webservice-detail.png
 
@@ -258,7 +270,14 @@ Web Service Detail
 Rest Clients
 ------------
 
-//TODO
+The **rest clients** view gives you an overview over all rest clients which are
+configured on this system. You can change the application or environment at the
+top. Click on one rest client to get all configurations on the
+:ref:`engine-cockpit-rest-client-detail` page.
+
+.. note::
+    If you want to add a new rest client, please have a look at
+    :designer-guide:`Designer Guide </ivy.configuration.html#ivy-rest-client>`.
 
 .. figure:: images/engine-cockpit-rest-clients.png
 
@@ -269,7 +288,9 @@ Rest Clients
 Rest Client Detail
 ^^^^^^^^^^^^^^^^^^
 
-//TODO
+On the **rest client detail** page all configurations for this service are
+shown. You can click on the :guilabel:`Pencil` button to get a snippet for the
+:ref:`app-yaml` file. This snippet shows you an example how you can override this rest client.
 
 .. figure:: images/engine-cockpit-rest-client-detail.png
 
@@ -283,7 +304,7 @@ configurations defined in your running engine. Configurations which are grey,
 are default values. If you click on the :guilabel:`New` button, you can add new
 configurations. If you want to edit an existing configuration, click on the
 :guilabel:`Pencil` button. If you click on the button :guilabel:`More`, you have
-the possebility to reset a configuration or view the configuration file.
+the possibility to reset a configuration or view the configuration file.
 
 .. warning::
     Application configurations are not shown on this view. You can see defined
