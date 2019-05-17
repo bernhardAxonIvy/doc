@@ -183,11 +183,13 @@ same functionalities, as the one you can find in the
 Global Variables
 ----------------
 
-The view **global variables** shows you all global variables which are defined
+The view **Global Variables** shows you all global variables which are defined
 for every application. They can be configured on the project or set in the
 :ref:`app-yaml` file. You can switch the environment at the top. To add a new
 variable click on the :guilabel:`New` button. If you want to edit a variable click on
 the :guilabel:`Pencil` button or the :guilabel:`Delete` button to delete one.
+To delete a global variable you have to remove it on the **Default** environment.
+Deleting one on a specific environment only resets it to its default value.
 
 .. figure:: images/engine-cockpit-configuration-variables.png
 
@@ -196,10 +198,16 @@ the :guilabel:`Pencil` button or the :guilabel:`Delete` button to delete one.
 Business Calendar
 -----------------
 
-//TODO
+The **Business Calendar** view allows you to see all configured business calendars.
+This overview shows you the hierarchical order of each calendar.
 
-.. figure:: images/engine-cockpit-configuration-business-calendar.png
+.. figure:: images/engine-cockpit-configuration-businesscalendar.png
 
+By clicking on one of the calendars you get redirected to its actual configurations.
+The panel **Week configuration** shows you the calendar configuration while
+the other three panels show you the registered free days.
+
+.. figure:: images/engine-cockpit-configuration-businesscalendar-detail.png
 
 
 Email
@@ -274,9 +282,9 @@ Web Service Detail
 
 On this view all configurations from a web service will be shown. If you wish to
 edit the service you can't do that here. But if you click on the
-:guilabel:`Pencil` button you will get a Snippet from this web service. When you
-want to change som configurations you can edit them in the :ref:`app-yaml` file
-as like you see it in the Snippet.
+:guilabel:`Pencil` button you will get a snippet from this web service. When you
+want to change some configurations you can edit them in the :ref:`app-yaml` file
+as like you see it in the snippet.
 
 .. figure:: images/engine-cockpit-webservice-detail.png
 
