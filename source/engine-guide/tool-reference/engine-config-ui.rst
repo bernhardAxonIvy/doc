@@ -31,18 +31,9 @@ configuration from the filesystem and database.
 Launchers
 ---------
 
-The following program launchers are available for the Axon.ivy Engine
-Configuration:
+Use the program launchers of the :ref:`axonivy-engine` to start the Axon.ivy Engine
+Configuration.
 
-+------------------------------------------+----------+-----------------+
-| Launcher                                 | Platform | Console support |
-+==========================================+==========+=================+
-| :file:`bin/AxonIvyEngineConfig.exe`      | Windows  | no              |
-+------------------------------------------+----------+-----------------+
-| :file:`bin/AxonIvyEngineConfigC.exe`     | Windows  | yes             |
-+------------------------------------------+----------+-----------------+
-| :file:`bin/AxonIvyEngineConfig`          | Linux    | yes             |
-+------------------------------------------+----------+-----------------+
 
 **Via Control Center**
 

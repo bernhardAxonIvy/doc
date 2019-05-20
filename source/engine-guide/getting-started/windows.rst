@@ -153,10 +153,6 @@ change the HTTP settings. So open again a web browser and navigate to
 http://localhost:8080/ivy. Have you seen that the header with the demo mode
 message is gone? You now have a production ready Axon.ivy Engine.
 
-.. Note::
-  The Config menu is only available in demo mode. If you want to reconfigure an
-  Axon.ivy Engine not running in demo mode use the
-  :file:`AxonIvyEngineConfig.exe` tool in the :file:`bin` folder instead.
 
 
 Deploy a project

@@ -172,10 +172,6 @@ dynamic link libraries and executable files:
 +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | AxonIvyEngineC.exe            | Same as AxonIvyEngine.exe but additionally logs any output to a console window.                                                                                              |
 +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| AxonIvyEngineConfig.exe       | Program to configure the Axon.ivy Engine. See :ref:`engine-config-ui`.                                                                                                       |
-+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| AxonIvyEngineConfigC.exe      | Same as AxonIvyEngineConfig.exe but additionally logs any output to a console window.                                                                                        |
-+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | AxonIvyEngineService.exe      | Executable of the Windows service. See :ref:`engine-service`.                                                                                                                |
 +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
@@ -193,11 +189,9 @@ files:
 +-----------------------+---------------------------------------------------------------------------------------------------------------------------+
 | AxonIvyEngine.conf    | Java virtual machine configuration (Xms, Xmx, JMX, ...) for the Engine.                                                   |
 +-----------------------+---------------------------------------------------------------------------------------------------------------------------+
-| AxonIvyEngineConfig   | Program to configure the Axon.ivy Engine. See :ref:`engine-config-ui`.                                                    |
-+-----------------------+---------------------------------------------------------------------------------------------------------------------------+
 | AxonIvyEngine.service | Template systemd script of the Linux service. It will be copied to /etc/systemd/system/ by running InstallService.sh.     |
 +-----------------------+---------------------------------------------------------------------------------------------------------------------------+
-| control.conf          | Java virtual machine configuration (Xms, Xmx, JMX, ...) for the control tools (ControlCenter & AxonIvyEngineConfig)       |
+| control.conf          | Java virtual machine configuration (Xms, Xmx, JMX, ...) for the control tools (e.g. ControlCenter)                        |
 +-----------------------+---------------------------------------------------------------------------------------------------------------------------+
 | ControlCenter         | Program that allows to configure, start and stop the Axon.ivy Engine. See :ref:`control-center`.                          |
 +-----------------------+---------------------------------------------------------------------------------------------------------------------------+
