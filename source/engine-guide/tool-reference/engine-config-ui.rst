@@ -34,29 +34,10 @@ Launchers
 Use the program launchers of the :ref:`axonivy-engine` to start the Axon.ivy Engine
 Configuration.
 
+If you are not able to start the Axon.ivy Engine anymore. Remove the installed license
+file from the `configuration` directory. Start the Axon.ivy Engine one more time. The
+Axon.ivy Engine will start in demo mode now.
 
-**Via Control Center**
-
-After starting the ControlCenter, select a server entry from the server list on
-the left side and press the :guilabel:`Server` button in the configuration area
-to start the configuration program.
-
-* **Windows**: Start the :file:`ControlCenter.exe` program in the :file:`bin`
-  directory of the Axon.ivy Engine installation directory.
-* **Linux**: Start the ControlCenter program in the :file:`bin` directory of the
-  Axon.ivy Engine installation directory to start the ControlCenter program.
-
-
-Options
--------
-
-The following options are available for the Axon.ivy Engine Configuration program:
-
-+-----------+--------------------------------------------------------------------------------------------------------+-----------+
-| Option    | Description                                                                                            | Mandatory |
-+===========+========================================================================================================+===========+
-| -headless | Activates the headless mode. Useful if no graphical user interface is installed on the server machine. | no        |
-+-----------+--------------------------------------------------------------------------------------------------------+-----------+
 
 
 Licence
