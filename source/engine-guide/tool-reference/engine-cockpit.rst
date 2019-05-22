@@ -35,11 +35,15 @@ The **dashboard** provides you a quick overview of your running engine. There
 are real time information about open sessions, user count, working tasks and
 deployed applications. In addition it will show you information about your
 system where the engine is running on. If you have a EMail Server configured you
-can test it by clicking on the :guilabel:`Send` button and send a test mail.
+can test it by clicking on the :guilabel:`Send` button and send a test mail. On
+the licence panel you have the possibility to upload a licence. To do so click
+on the :guilabel:`Upload Licence` button.
 
 .. figure:: images/engine-cockpit-dashboard.png
 
 
+
+.. _engine-cockpit-application:
 
 Applications
 ------------
@@ -47,8 +51,18 @@ Applications
 On the **applications** page you have a list with each application which is
 running on the engine. You can start, stop or lock these applications. Every
 application has its process models and process model versions. Those can be
-started and stopped too. If you click on a application, you switch to the
-:ref:`engine-cockpit-application-detail` view of this application.
+started and stopped too. You can add a new application by clicking on the
+:guilabel:`Add` button. If you want a empty application then click on
+:guilabel:`Create`. When you want to deploy an application directly, click on
+the :guilabel:`Deploy` button and select your :file:`.iar` or :file:`.zip` file.
+For the deployment you can set additional deployment options. For more
+information have a look at :ref:`deployment-options`. If you click on a
+application, you switch to the :ref:`engine-cockpit-application-detail` view of
+this application.
+
+.. note:: 
+    If you deploy an application on the **applications** view, the name of the
+    application will be evaluated from the name of the uploaded project.
 
 .. figure:: images/engine-cockpit-applications.png
 
@@ -64,6 +78,12 @@ but specific for the chosen application. In addition you can change the active
 environment, start or stop the application. On the **Security System** panel you
 have the possibility to change your security system. You can choose every system
 you have configured in your :ref:`ivy-yaml` file.
+
+.. note::
+    You can also trigger a deployment inside an application. To do so, click on
+    the :guilabel:`Deployment` button. You have the same options as described in
+    the :ref:`engine-cockpit-application` chapter, but with the difference that
+    your projects will be deployed inside this application.
 
 .. figure:: images/engine-cockpit-application-detail.png
 
