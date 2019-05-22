@@ -224,9 +224,9 @@ set in the :ref:`ivy-yaml` and :ref:`ivy-webserver-yaml`.
 
 * ``Errors.ShowDetailsToEndUsers`` should always be set to ``false``, so that no
   exception details are shown to end users.
-* ``WebServer.REST.CSRF.Protection`` should always be set to ``true``, so that
+* ``REST.Servlet.CSRF.Protection`` should always be set to ``true``, so that
   the REST APIs require a Cross-Site Request Forgery (CSRF) token by default.
-* ``WebServer.RenewSessionIdOnLogin`` should always be set to ``true``, so that
+* ``Session.RenewIdOnLogin`` should always be set to ``true``, so that
   the session id is renewed after Login.
 
 
