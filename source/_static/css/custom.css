@@ -1,6 +1,15 @@
+.wy-side-nav-search {
+    /*background-color: #a4b104;*/
+    background-color: #616161;
+}
+
+.wy-nav-content a {
+    color: #aebb0e;
+}
+
 /* fix coloring of visited links */
 .wy-nav-content a:visited  {
-    color: #2980B9;
+    color: #aebb0e;
 }
 
 /* spaces between single li elements */
