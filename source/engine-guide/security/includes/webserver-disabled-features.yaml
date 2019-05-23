@@ -7,5 +7,9 @@ REST.Servlet:
   # If the Mobile Workflow REST API is not used on your engine (e.g. by the Axon.ivy Mobile App) you can disable it
   MobileWorkflow.API: false
 
+  # REST resource for remote deployment under '/ivy/api/system/apps' and 'api/system/apps/{application}' 
+  # If remote deployment is not used on your engine you can disable it
+  Deployment: false
+
 # If the Mobile Offline Dialogs are not used on your engine (most of the time) you can disable them
 OfflineDialog.Enabled: false
