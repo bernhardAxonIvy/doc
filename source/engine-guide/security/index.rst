@@ -1,3 +1,5 @@
+.. _security:
+
 Security
 ********
 
@@ -203,6 +205,8 @@ Disable not required features
 If certain features of the Engine are not required by the deployed projects,
 those features should be disabled.
 
+
+.. _security-engine-optional-features:
 
 Optional features
 ^^^^^^^^^^^^^^^^^

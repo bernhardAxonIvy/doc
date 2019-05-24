@@ -6,9 +6,11 @@ Deployment
 Bring your processes to life by deploying them on an |ivy-engine|. Deployment
 simply means to install an Axon.ivy project on an |ivy-engine|. Our file based
 deployment mechanism makes the deployment very easy, just by dropping the file
-at the right place. This mechanism is perfectly suitable for a CI/CD pipeline
-and forms the basis for the deployment feature of our :ref:`maven plugin
-<deployment-maven-plugin>`.
+at the right place. This mechanism is perfectly suitable for a CI/CD pipeline.
+For more information about this approach have a look at the
+:ref:`deployment-automated` chapter. We provide you also a deployment way in our
+Engine Cockpit. You will find it on the :ref:`engine-cockpit-application-detail`
+view. 
 
 #. Get a :ref:`prepared <deployment-prepare>` ivy project from your developer.
 #. :ref:`Deploy <deployment-deploying>` the project by simply dropping the file
@@ -158,17 +160,89 @@ the highest location priority is considered, other options files will be
 ignored. 
 
 
+.. _deployment-automated:
+
+Automated Deployment
+--------------------
+
+If a CI/CD pipeline is in use you may consider to setup an automated deployment.
+With the :ref:`file based deployment <deployment-deploying>` we already provide
+you a simple way to do so. For example you can use a SCP command on Linux or UNC
+paths on Windows. But there are other ways too, which we don't want to hide from
+you. If your project already lives in a maven environment you can use our
+:ref:`deployment-maven-plugin` or you push you project over the
+:ref:`deployment-rest` API.
+
+
+.. _deployment-rest:
+
+REST Deployment
+^^^^^^^^^^^^^^^
+
+It can bee that there is no direct way to access the filesystem of you server.
+For this approach the server provides a REST api. This is accessible by default
+under http://localhost:8080/ivy. 
+
+.. http:post::  /api/system/apps/(applicationName)
+
+    Deploy a project .iar or multiple projects .zip under the application
+    (applicationName)
+
+    **Example request**:
+
+    .. sourcecode:: bash
+
+        curl -X POST \
+          http://localhost:8080/ivy/api/system/apps/test \
+          -u admin:admin \
+          -H 'X-Requested-By: curl' \
+          -F fileToDeploy=@/home/user/Documents/Test.iar \
+          -F 'deploymentOptions={"deployTestUsers":"FALSE","configuration":{"overwrite":false,"cleanup":"DISABLED"},"target":{"version":"AUTO","state":"ACTIVE_AND_RELEASED","fileFormat":"AUTO"}}' 
+
+        curl -X POST \
+          http://localhost:8080/ivy/api/system/apps/test \
+          -u admin:admin \
+          -H 'X-Requested-By: curl' \
+          -F fileToDeploy=@/home/user/Documents/Test.iar \
+          -F "deploymentOptions=$(cat deploy.options.yaml)"
+
+    **Example response**:
+
+    .. sourcecode:: txt
+
+        deployment log
+
+    :param applicationName: name of the target application
+    
+    :form fileToDeploy: file to deploy
+    :form deploymentOptions: deployment options as String in json or yaml format
+
+    :reqheader Authentication: a valid system user with username:password is needed
+    :reqheader X-Requested-By: CSRF protection
+
+    :statuscode 200: deployment successfully 
+    :statuscode 401: no or wrong authentication, system user is needed 
+    :statuscode 404: rest service not found, maybe disabled?
+    :statuscode 500: server error
+
+
+
+.. note::
+    If you don't use this api, you may consider to disable it by security
+    reasons (:ref:`security-engine-optional-features`).
+
+
 .. _deployment-maven-plugin:
 
 Maven Plugin
-------------
+^^^^^^^^^^^^
 
 The Maven `project-build-plugin
 <http://axonivy.github.io/project-build-plugin/>`_ makes automated continuous
-deployment to an Axon.ivy Engine possible. The Maven plugin itself uses the
-:ref:`file based deployment <deployment-deploying>` capability of the Axon.ivy
-Engine. This means that the deployment folder must be available on the same
-machine on which the build is executed. You may use Windows-Shares or
+deployment to an |ivy-engine| possible. The Maven plugin itself uses the
+:ref:`file based deployment <deployment-deploying>` capability of the
+|ivy-engine|. This means that the deployment folder must be available on the
+same machine on which the build is executed. You may use Windows-Shares or
 SMB-Configurations.
 
 An Axon.ivy project can be deployed by invoking Maven with the
@@ -177,7 +251,7 @@ deployment parameters, consult the goal documentation.
 
 
 Command line deployment
-^^^^^^^^^^^^^^^^^^^^^^^
+"""""""""""""""""""""""
 
 The :code:`deploy-to-engine` goal can be execute on the command line. The
 following example deploys the project :file:`myProject.iar` to the application
@@ -189,7 +263,7 @@ following example deploys the project :file:`myProject.iar` to the application
 
 
 Build goal execution
-^^^^^^^^^^^^^^^^^^^^
+""""""""""""""""""""
 
 To deploy an ivy-archive (IAR) during it's maven build `lifecycle
 <https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html>`_

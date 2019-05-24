@@ -15,7 +15,8 @@ add_function_parentheses = True
 
 extensions = [
     'sphinx.ext.extlinks',
-    'sphinxprettysearchresults'
+    'sphinxprettysearchresults',
+    'sphinxcontrib.httpdomain'
 ]
 
 

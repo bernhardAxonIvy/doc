@@ -52,17 +52,8 @@ On the **applications** page you have a list with each application which is
 running on the engine. You can start, stop or lock these applications. Every
 application has its process models and process model versions. Those can be
 started and stopped too. You can add a new application by clicking on the
-:guilabel:`Add` button. If you want an empty application then click on
-:guilabel:`Create`. If you want to deploy an application directly, click on
-the :guilabel:`Deploy` button and select your :file:`.iar` or :file:`.zip` file.
-For the deployment you can set additional deployment options. For more
-information have a look at :ref:`deployment-options`. If you click on a
-application, you switch to the :ref:`engine-cockpit-application-detail` view of
-this application.
-
-.. note:: 
-    If you deploy an application on the **applications** view, the name of the
-    application will be evaluated from the name of the uploaded file.
+:guilabel:`Add` button. By clicking on a application, you switch to the
+:ref:`engine-cockpit-application-detail` view.
 
 .. figure:: images/engine-cockpit-applications.png
 
@@ -79,11 +70,16 @@ environment, start or stop the application. On the **Security System** panel you
 have the possibility to change your security system. You can choose every system
 you have configured in your :ref:`ivy-yaml` file.
 
-.. note::
-    You can also trigger a deployment inside an application. To do so, click on
-    the :guilabel:`Deployment` button. You have the same options as described in
-    the :ref:`engine-cockpit-application` chapter, but with the difference that
-    your projects will be deployed into this application.
+If you want to deploy an Axon.ivy project, click on the :guilabel:`Deployment`
+button and select your :file:`.iar` or :file:`.zip` file. For the deployment you
+can set additional deployment options. For more information have a look at
+:ref:`deployment-options`. For the usage of this feature the
+:ref:`deployment-rest` feature needs to be enabled
+(:ref:`security-engine-optional-features`).
+
+.. note:: 
+    For CI/CD pipelines deployment visit the :ref:`deployment-automated`
+    chapter.
 
 .. figure:: images/engine-cockpit-application-detail.png
 
