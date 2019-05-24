@@ -3,13 +3,9 @@
     background-color: #616161;
 }
 
-.wy-nav-content a {
-    color: #aebb0e;
-}
-
 /* fix coloring of visited links */
 .wy-nav-content a:visited  {
-    color: #aebb0e;
+    color: #2980B9;
 }
 
 /* spaces between single li elements */
