@@ -5,8 +5,11 @@
     # first download static images
     mvn clean package
 
-    # generate doc
+    # generate doc (Linux)
     docker build -t doc-builder . && docker run -v $(pwd)/..:/ivy-core doc-builder make html && firefox ./build/html/index.html
+    
+    #generate doc (Windows)
+    docker build -t doc-builder . && docker run -v %cd%/..:/ivy-core doc-builder make html && firefox ./build/html/index.html
 
 Alternatively you can install python, pip and pip packages directly on your system.
 Check `Dockerfile` to see what is needed.
