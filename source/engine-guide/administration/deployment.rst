@@ -314,7 +314,7 @@ default admin credentials will be used by the maven plugin.
     mvn com.axonivy.ivy.ci:project-build-plugin:7.4.0-SNAPSHOT:deploy-to-engine \
       -Divy.deploy.file=myProject.iar \
       -Divy.deploy.method=HTTP \
-      -Divy.deploy.http.engine=http://localhost:8080/ivy \
+      -Divy.deploy.engine.url=http://localhost:8080/ivy \
       -Divy.deploy.engine.app=portal
 
 **Build goal execution**
@@ -328,7 +328,7 @@ The following POM snippet deploys the current project to the application
 **portal** of the Axon.ivy Engine under :file:`http://localhost:8080/ivy`. This
 engine has an valid licence with an administrator defined. So a server entry in
 your maven settings.xml is needed for the credentials. This entry will be mapped
-over the :code:`deployHttpId`, in this case :file:`serverId`.
+over the :code:`deployServerId`, in this case :file:`serverId`.
 
 .. literalinclude:: includes/http-deployment-maven-build.xml
   :language: xml

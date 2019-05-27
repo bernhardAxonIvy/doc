@@ -10,8 +10,8 @@
       <configuration>
         <deployToEngineApplication>portal</deployToEngineApplication>
         <deployMethod>HTTP</deployMethod>
-        <deployHttpId>serverId</deployHttpId>
-        <deployHttpEngine>http://localhost:8080/ivy</deployHttpEngine>
+        <deployServerId>serverId</deployServerId>
+        <deployEngineUrl>http://localhost:8080/ivy</deployEngineUrl>
       </configuration>
     </execution>
   </executions>
