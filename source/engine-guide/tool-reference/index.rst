@@ -11,3 +11,4 @@ Tool-Reference
    engine-config-ui
    engine-cockpit
    control-center
+   api-reference
