@@ -33,6 +33,7 @@ html_logo = '_static/images/axonivylogo.png'
 html_theme_options = {
     'logo_only': True
 }
+html_favicon = '_static/images/favicon.png'
 
 # base urls
 # https://stackoverflow.com/questions/1227037/substitutions-inside-links-in-rest-sphinx
