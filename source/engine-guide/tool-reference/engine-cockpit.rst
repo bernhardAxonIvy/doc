@@ -74,11 +74,11 @@ If you want to deploy an Axon.ivy project, click on the :guilabel:`Deployment`
 button and select your :file:`.iar` or :file:`.zip` file. For the deployment you
 can set additional deployment options. For more information have a look at
 :ref:`deployment-options`. For the usage of this feature the
-:ref:`deployment-rest` feature needs to be enabled
+:ref:`api-reference-deployment` feature needs to be enabled
 (:ref:`security-engine-optional-features`).
 
 .. note:: 
-    For CI/CD pipelines deployment visit the :ref:`deployment-automated`
+    For CI/CD pipelines deployment visit the :ref:`deployment-deploying`
     chapter.
 
 .. figure:: images/engine-cockpit-application-detail.png

@@ -4,21 +4,12 @@ Deployment
 ==========
 
 Bring your processes to life by deploying them on an |ivy-engine|. Deployment
-simply means to install an Axon.ivy project on an |ivy-engine|. We give you
-multiple ways to bring your projects on our Engine:
-
-#. **Engine Cockpit:** Do you like UIs? Checkout our 
-   :ref:`UI Deployment<engine-cockpit-application-detail>` approach. 
-#. **Directory:** Our file based deployment mechanism makes the deployment very 
-   easy, just by dropping the file at the right place. 
-#. **Automated Deployment:** If you work with automated pipelines you may 
-   want have a look about our :ref:`possibilities<deployment-automated>`.
-
-For every deployment way you have the following steps:
+simply means to install an Axon.ivy project on an |ivy-engine|. Proceed as
+follows to deploy a project.
 
 #. Get a :ref:`prepared <deployment-prepare>` ivy project from your developer.
-#. :ref:`Deploy <deployment-deploying>` the project by e.g. simply dropping the file
-   in the deployment directory.
+#. :ref:`Deploy <deployment-deploying>` the project by e.g. simply dropping the 
+   file in the deployment directory.
 #. :ref:`Check the result <deployment-check-results>` of the deployment on the
    server info page.
 
@@ -44,7 +35,7 @@ application.
 
 You are able to :ref:`configure the application <deployment-configure-app>`
 within a full application zip-archive. Also, proper :ref:`versioning
-<deployment-versioning>` is important during deployment. 
+<deployment-versioning>` is important. 
 
 
 
@@ -52,23 +43,31 @@ within a full application zip-archive. Also, proper :ref:`versioning
 
 Deploying
 ---------
-
-If you don't want use the directory way or you have no access to the filesystem
-of you |ivy-engine| you may have a look at the other :ref:`deployment ways<deployment>`
-
-Drop the file in the :ref:`deployment directory <ivy-yaml>`, the deployment will
-be started immediately if the Axon.ivy Engine is running. Otherwise, the
+ 
+Our file based deployment mechanism makes the deployment very easy, just by
+dropping the file in the :ref:`deployment directory <ivy-yaml>`, the deployment
+will be started immediately if the |ivy-engine| is running. Otherwise, the
 deployment is executed when the engine is starting. 
 
-There are subdirectories in the deployment directory for each application. The
-project can be copied to the corresponding subdirectory. It is also possible to
-create a subdirectory manually. In this case a new application will be created.
-Alternatively, the project can also be placed in the deployment directory
-itself. It is then deployed into the application with the same name as the
-filename. 
+  There are subdirectories in the deployment directory for each application. The
+  project can be copied to the corresponding subdirectory. It is also possible
+  to create a subdirectory manually. In this case a new application will be
+  created. Alternatively, the project can also be placed in the deployment
+  directory itself. It is then deployed into the application with the same name
+  as the filename.
 
-If you want to influence the deployment behavior, you can do this with
-:ref:`deployment options <deployment-options>`.
+We strongly recommend to **automate the deployment** in a CI/CD pipeline. For
+this purpose we offer a :ref:`REST API <api-reference-deployment>` which is
+accessible via HTTP/HTTPS. If you don't have the possibility to connect to the
+|ivy-engine| in this way you can use the file based deployment mechanism
+(e.g. via SSH) as described above. For both scenarios you can use well-known
+command line tools like :code:`curl` or :code:`scp` to build such an automated
+pipeline. Our :ref:`deployment-maven-plugin` support both types. If you
+are not interested in automation, you can also use the :ref:`User
+Interface<engine-cockpit-application-detail>`.
+
+Additionally, the deployment behavior can be influenced with :ref:`deployment
+options <deployment-options>`.
 
 
 
@@ -79,8 +78,11 @@ Check the results
 
 Go to the server info page, which is by default http://localhost:8080/ivy. You
 should see now your new processes available. If you think there is missing
-something you better check the deployment logs, which can be found in the same
-directory where you have dropped the deployment file. 
+something you better check the deployment logs.
+
+The engine cockpit provides direct feedback on the user interface, the REST API
+by the HTTP response and the deployment directory creates new files in the same
+directory where you have dropped the deployment file:
 
 +------------------+------------------------------------------------------------------------+
 | File suffix      | Description                                                            |
@@ -94,11 +96,6 @@ directory where you have dropped the deployment file.
 | .deploymentError | Contains the error cause and is only written when the deployment fails |
 +------------------+------------------------------------------------------------------------+
 
-.. note::
-    If you deployed your project over :ref:`the UI
-    <engine-cockpit-application-detail>` or a :ref:`deployment-automated` step,
-    you reach the :file:`deploymentLog` or the :file:`deploymentError` as
-    response of your request.
 
 
 Advanced Deployment
@@ -172,99 +169,24 @@ If there are multiple options files available, then only the options file with
 the highest location priority is considered, other options files will be
 ignored. 
 
-.. note::
-    Deployment Options can also be set on :ref:`the UI <engine-cockpit-application-detail>` or add as part of
-    your :ref:`deployment-automated` step.
-
-
-.. _deployment-automated:
-
-Automated Deployment
---------------------
-
-If a CI/CD pipeline is in use you may consider to setup an automated deployment.
-With the :ref:`file based deployment <deployment-deploying>` we already provide
-you a simple way to do so. For example you can use a SCP command on Linux or UNC
-paths on Windows. But there are other ways too, which we don't want to hide from
-you. If your project already lives in a maven environment you can use our
-:ref:`deployment-maven-plugin` or you push you project over the
-:ref:`deployment-rest` API.
-
-
-.. _deployment-rest:
-
-REST Deployment
-^^^^^^^^^^^^^^^
-
-It can bee that there is no direct way to access the filesystem of you server.
-For this approach the server provides a REST api. This is accessible by default
-under http://localhost:8080/ivy. 
-
-.. http:post::  /api/system/apps/(applicationName)
-
-    Deploy a project .iar or multiple projects .zip under the application
-    (applicationName)
-
-    **Example request**:
-
-    .. sourcecode:: bash
-
-        curl -X POST \
-          http://localhost:8080/ivy/api/system/apps/test \
-          -u admin:admin \
-          -H 'X-Requested-By: curl' \
-          -F fileToDeploy=@/home/user/Documents/Test.iar \
-          -F 'deploymentOptions={"deployTestUsers":"FALSE","configuration":{"overwrite":false,"cleanup":"DISABLED"},"target":{"version":"AUTO","state":"ACTIVE_AND_RELEASED","fileFormat":"AUTO"}}' 
-
-        curl -X POST \
-          http://localhost:8080/ivy/api/system/apps/test \
-          -u admin:admin \
-          -H 'X-Requested-By: curl' \
-          -F fileToDeploy=@/home/user/Documents/Test.iar \
-          -F "deploymentOptions=$(cat deploy.options.yaml)"
-
-    **Example response**:
-
-    .. sourcecode:: txt
-
-        deployment log
-
-    :param applicationName: name of the target application
-    
-    :form fileToDeploy: file to deploy
-    :form deploymentOptions: deployment options as String in json or yaml format
-
-    :reqheader Basic Authentication: a valid system user with username:password is needed
-    :reqheader X-Requested-By: CSRF protection
-
-    :statuscode 200: deployment successfully 
-    :statuscode 401: no or wrong authentication, system user is needed 
-    :statuscode 404: rest service not found, maybe disabled?
-    :statuscode 500: server error
-
-
-
-.. note::
-    If you don't use this api, you may consider to disable it by security
-    reasons (:ref:`security-engine-optional-features`).
 
 
 .. _deployment-maven-plugin:
 
 Maven Plugin
-^^^^^^^^^^^^
+------------
 
 The Maven `project-build-plugin
 <http://axonivy.github.io/project-build-plugin/>`_ makes automated continuous
 deployment to an |ivy-engine| possible. The Maven plugin can deploy files in two
-ways, Directory or HTTP, while the Directory mode is the default.
+ways, Deployment Directory or REST, while the Deplyoment Directory mode is the default.
 
 The Directory deployment itself uses the :ref:`file based deployment
 <deployment-deploying>` capability of the |ivy-engine|. This means that the
 deployment folder must be available on the same machine on which the build is
 executed. You may use Windows-Shares or SMB-Configurations.
 
-On the other hand the HTTP deployment is based on the :ref:`deployment-rest`
+On the other hand the HTTP deployment is based on the :ref:`api-reference-deployment`
 service of the |ivy-engine|. This means, that this service has to be enabled on
 the target engine. For the deployment you need the credentials of a
 administrator.
@@ -278,7 +200,7 @@ administrator.
 .. _deployment-maven-plugin-command-line:
 
 Command line deployment
-"""""""""""""""""""""""
+^^^^^^^^^^^^^^^^^^^^^^^
 
 The :code:`deploy-to-engine` goal can be execute on the command line. The
 following two examples deploys the project :file:`myProject.iar` to the
@@ -305,7 +227,7 @@ admin credentials will be used by the maven plugin.
 .. _deployment-maven-plugin-build:
 
 Build goal execution
-""""""""""""""""""""
+^^^^^^^^^^^^^^^^^^^^
 
 To deploy an ivy-archive (IAR) during it's maven build `lifecycle
 <https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html>`_
@@ -338,4 +260,3 @@ to the :code:`deployServerId`, in this case :file:`serverId`.
 
 Further examples are documented on GitHub in the `project-build-examples
 <https://github.com/axonivy/project-build-examples>`_ repository.
-
