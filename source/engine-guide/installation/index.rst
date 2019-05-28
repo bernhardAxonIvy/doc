@@ -162,8 +162,6 @@ dynamic link libraries and executable files:
 +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | JVMLauncher.dll               | Library containing code to launch the Java virtual machine.                                                                                                                  |
 +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| NTEventLogAppender.dll        | Library that implements native methods to log into the windows event log (32 Bit only).                                                                                      |
-+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ControlCenter.exe             | Program that allows to configure, start and stop the Axon.ivy Engine. It also permits to configure the Windows services. See :ref:`control-center`.                          |
 +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ControlCenterC.exe            | Same as ControlCenter.exe but additionally logs any output to a console window.                                                                                              |
