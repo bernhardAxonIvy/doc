@@ -172,7 +172,7 @@ If there are multiple options files available, then only the options file with
 the highest location priority is considered, other options files will be
 ignored. 
 
-.. node::
+.. note::
     Deployment Options can also be set on :ref:`the UI <engine-cockpit-application-detail>` or add as part of
     your :ref:`deployment-automated` step.
 
@@ -269,7 +269,7 @@ service of the |ivy-engine|. This means, that this service has to be enabled on
 the target engine. For the deployment you need the credentials of a
 administrator.
 
-.. node::
+.. note::
     An Axon.ivy project can be deployed by invoking Maven with the
     :code:`deploy-to-engine` goal of the project-build-plugin. To customize the
     deployment parameters, consult the goal documentation.
