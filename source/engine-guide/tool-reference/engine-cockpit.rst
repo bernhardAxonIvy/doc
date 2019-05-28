@@ -8,7 +8,6 @@ The **Engine Cockpit** is the application to administrate your engine.
     every part is fully functional and can change before its release.
 
 
-
 Opening the tool
 ----------------
 
@@ -27,7 +26,6 @@ http://ServerName:Port/ivy/faces/view/system/engine-cockpit/dashboard.xhtml
     for the login.
 
 
-
 Dashboard
 ---------
 
@@ -40,7 +38,6 @@ the licence panel you have the possibility to upload a licence. To do so click
 on the :guilabel:`Upload Licence` button.
 
 .. figure:: images/engine-cockpit-dashboard.png
-
 
 
 .. _engine-cockpit-application:
@@ -60,7 +57,6 @@ For deployment of a new version of an app, you can click on the
 the :ref:`engine-cockpit-application-detail` view for more information.
 
 .. figure:: images/engine-cockpit-applications.png
-
 
 
 .. _engine-cockpit-application-detail:
@@ -88,9 +84,12 @@ can set additional deployment options. For more information have a look at
 .. figure:: images/engine-cockpit-application-detail.png
 
 
+Security
+--------
+
 
 Security System
----------------
+^^^^^^^^^^^^^^^
 
 The security system page will give you an overview about every running
 application and the security system it is using. In addition you have the
@@ -111,7 +110,7 @@ to open the :ref:`engine-cockpit-security-system-detail` view.
 .. _engine-cockpit-security-system-detail:
 
 Security System detail
-^^^^^^^^^^^^^^^^^^^^^^
+""""""""""""""""""""""
 
 On the security system detail view you have the possibility to change a
 configured security system. The settings is read directly from the
@@ -126,9 +125,8 @@ values from the system. So you don't need to define those if they are the same.
 .. figure:: images/engine-cockpit-security-system-detail.png
 
 
-
 Users
------
+^^^^^
 
 On this page you see all users per application. You can change the application
 over the tabs on the top of the view. The table shows you basic information
@@ -146,11 +144,10 @@ one user to go to the :ref:`engine-cockpit-user-detail` view.
 .. figure:: images/engine-cockpit-users.png
 
 
-
 .. _engine-cockpit-user-detail:
 
 User detail
-^^^^^^^^^^^
+"""""""""""
 
 On the detail view of a user you can change information and settings. The
 :guilabel:`Information` panel shows you the attributes of the user. You can
@@ -168,9 +165,8 @@ user.
 .. figure:: images/engine-cockpit-user-detail.png
 
 
-
 Roles
------
+^^^^^
 
 The **Roles** page gives you a tree of all roles per application. You can change
 the selected application on the tabs at the top of the view. In addition you can
@@ -181,11 +177,10 @@ view of a role you can click on the role name. Then you switch to the
 .. figure:: images/engine-cockpit-roles.png
 
 
-
 .. _engine-cockpit-role-detail:
 
 Role detail
-^^^^^^^^^^^
+"""""""""""
 
 On the **Role Detail** view you can change Information and settings and edit
 them. The :guilabel:`Information` panel gives you the possibilities to change
@@ -199,9 +194,12 @@ same functionalities, as the one you can find in the
 .. figure:: images/engine-cockpit-role-detail.png
 
 
+Configuration
+-------------
+
 
 Global Variables
-----------------
+^^^^^^^^^^^^^^^^
 
 The view **Global Variables** shows you all global variables which are defined
 for every application. They can be configured on the project or set in the
@@ -214,9 +212,8 @@ Deleting one on a specific environment only resets it to its default value.
 .. figure:: images/engine-cockpit-configuration-variables.png
 
 
-
 Business Calendar
------------------
+^^^^^^^^^^^^^^^^^
 
 The **Business Calendar** view allows you to see all configured business calendars.
 This overview shows you the hierarchical order of each calendar.
@@ -230,8 +227,12 @@ the other three panels show you the registered free days.
 .. figure:: images/engine-cockpit-configuration-businesscalendar-detail.png
 
 
+Services
+--------
+
+
 Email
------
+^^^^^
 
 In the **email** section you can change the default email notification settings
 for each application. 
@@ -239,9 +240,8 @@ for each application.
 .. figure:: images/engine-cockpit-email.png
 
 
-
 External Databases
-------------------
+^^^^^^^^^^^^^^^^^^
 
 The **external databases** view gives you an overview over your configured
 external databases inside your project. You can switch to the desired
@@ -257,11 +257,10 @@ database click on one to go to the
 .. figure:: images/engine-cockpit-external-databases.png
 
 
-
 .. _engine-cockpit-external-database-detail:
 
 External Database Detail
-^^^^^^^^^^^^^^^^^^^^^^^^
+""""""""""""""""""""""""
 
 In the **external database detail** view, you can see all configurations from
 the selected external database. You can test if the configuration works and a
@@ -277,9 +276,8 @@ the :ref:`app-yaml` file, how the configuration above would look like.
 .. figure:: images/engine-cockpit-external-database-detail.png
 
 
-
 Web Services
-------------
+^^^^^^^^^^^^
 
 The **web services** page lists all defined web services. Change the application
 or environment at the top to get your desired services. For a detailed view of
@@ -294,11 +292,10 @@ the service click on one entry to switch to the
 .. figure:: images/engine-cockpit-webservice.png
 
 
-
 .. _engine-cockpit-webservice-detail:
 
 Web Service Detail
-^^^^^^^^^^^^^^^^^^
+""""""""""""""""""
 
 On this view all configurations from a web service will be shown. If you wish to
 edit the service you can't do that here. But if you click on the
@@ -309,9 +306,8 @@ as like you see it in the snippet.
 .. figure:: images/engine-cockpit-webservice-detail.png
 
 
-
 Rest Clients
-------------
+^^^^^^^^^^^^
 
 The **rest clients** view gives you an overview over all rest clients which are
 configured on this system. You can change the application or environment at the
@@ -325,18 +321,16 @@ top. Click on one rest client to get all configurations on the
 .. figure:: images/engine-cockpit-rest-clients.png
 
 
-
 .. _engine-cockpit-rest-client-detail:
 
 Rest Client Detail
-^^^^^^^^^^^^^^^^^^
+""""""""""""""""""
 
 On the **rest client detail** page all configurations for this service are
 shown. You can click on the :guilabel:`Pencil` button to get a snippet for the
 :ref:`app-yaml` file. This snippet shows you an example how you can override this rest client.
 
 .. figure:: images/engine-cockpit-rest-client-detail.png
-
 
 
 System Configuration
@@ -360,7 +354,6 @@ the possibility to reset a configuration or view the configuration file.
 .. figure:: images/engine-cockpit-system-config.png
 
 
-
 Monitor
 -------
 
@@ -370,7 +363,6 @@ about cpu load, memory load, network traffic and disk read write. The memory
 monitor shows you in addition the max and usage of the jvm.
 
 .. figure:: images/engine-cockpit-monitor.png
-
 
 
 Logs
