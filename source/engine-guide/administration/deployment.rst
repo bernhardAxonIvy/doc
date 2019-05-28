@@ -4,16 +4,20 @@ Deployment
 ==========
 
 Bring your processes to life by deploying them on an |ivy-engine|. Deployment
-simply means to install an Axon.ivy project on an |ivy-engine|. Our file based
-deployment mechanism makes the deployment very easy, just by dropping the file
-at the right place. This mechanism is perfectly suitable for a CI/CD pipeline.
-For more information about this approach have a look at the
-:ref:`deployment-automated` chapter. We provide you also a deployment way in our
-Engine Cockpit. You will find it on the :ref:`engine-cockpit-application-detail`
-view. 
+simply means to install an Axon.ivy project on an |ivy-engine|. We give you
+multiple ways to bring your projects on our Engine:
+
+#. **Engine Cockpit:** Do you like UIs? Checkout our 
+   :ref:`UI Deployment<engine-cockpit-application-detail>` approach. 
+#. **Directory:** Our file based deployment mechanism makes the deployment very 
+   easy, just by dropping the file at the right place. 
+#. **Automated Deployment:** If you work with automated pipelines you may 
+   want have a look about our :ref:`possibilities<deployment-automated>`.
+
+For every deployment way you have the following steps:
 
 #. Get a :ref:`prepared <deployment-prepare>` ivy project from your developer.
-#. :ref:`Deploy <deployment-deploying>` the project by simply dropping the file
+#. :ref:`Deploy <deployment-deploying>` the project by e.g. simply dropping the file
    in the deployment directory.
 #. :ref:`Check the result <deployment-check-results>` of the deployment on the
    server info page.
@@ -48,6 +52,9 @@ within a full application zip-archive. Also, proper :ref:`versioning
 
 Deploying
 ---------
+
+If you don't want use the directory way or you have no access to the filesystem
+of you |ivy-engine| you may have a look at the other :ref:`deployment ways<deployment>`
 
 Drop the file in the :ref:`deployment directory <ivy-yaml>`, the deployment will
 be started immediately if the Axon.ivy Engine is running. Otherwise, the
@@ -86,6 +93,12 @@ directory where you have dropped the deployment file.
 +------------------+------------------------------------------------------------------------+
 | .deploymentError | Contains the error cause and is only written when the deployment fails |
 +------------------+------------------------------------------------------------------------+
+
+.. note::
+    If you deployed your project over :ref:`the UI
+    <engine-cockpit-application-detail>` or a :ref:`deployment-automated` step,
+    you reach the :file:`deploymentLog` or the :file:`deploymentError` as
+    response of your request.
 
 
 Advanced Deployment
@@ -159,6 +172,10 @@ If there are multiple options files available, then only the options file with
 the highest location priority is considered, other options files will be
 ignored. 
 
+.. node::
+    Deployment Options can also be set on :ref:`the UI <engine-cockpit-application-detail>` or add as part of
+    your :ref:`deployment-automated` step.
+
 
 .. _deployment-automated:
 
@@ -217,7 +234,7 @@ under http://localhost:8080/ivy.
     :form fileToDeploy: file to deploy
     :form deploymentOptions: deployment options as String in json or yaml format
 
-    :reqheader Authentication: a valid system user with username:password is needed
+    :reqheader Basic Authentication: a valid system user with username:password is needed
     :reqheader X-Requested-By: CSRF protection
 
     :statuscode 200: deployment successfully 
@@ -240,76 +257,43 @@ Maven Plugin
 The Maven `project-build-plugin
 <http://axonivy.github.io/project-build-plugin/>`_ makes automated continuous
 deployment to an |ivy-engine| possible. The Maven plugin can deploy files in two
-ways, Directory or HTTP. The Directory mode is the default.
+ways, Directory or HTTP, while the Directory mode is the default.
+
+The Directory deployment itself uses the :ref:`file based deployment
+<deployment-deploying>` capability of the |ivy-engine|. This means that the
+deployment folder must be available on the same machine on which the build is
+executed. You may use Windows-Shares or SMB-Configurations.
+
+On the other hand the HTTP deployment is based on the :ref:`deployment-rest`
+service of the |ivy-engine|. This means, that this service has to be enabled on
+the target engine. For the deployment you need the credentials of a
+administrator.
+
+.. node::
+    An Axon.ivy project can be deployed by invoking Maven with the
+    :code:`deploy-to-engine` goal of the project-build-plugin. To customize the
+    deployment parameters, consult the goal documentation.
 
 
-.. _deployment-maven-plugin-dir:
+.. _deployment-maven-plugin-command-line:
 
-Maven Directory Deployment
-""""""""""""""""""""""""""
-
-The Directory deployment itself uses the :ref:`file based
-deployment <deployment-deploying>` capability of the |ivy-engine|. This means
-that the deployment folder must be available on the same machine on which the
-build is executed. You may use Windows-Shares or SMB-Configurations.
-
-An Axon.ivy project can be deployed by invoking Maven with the
-:code:`deploy-to-engine` goal of the project-build-plugin. To customize the
-deployment parameters, consult the goal documentation.
-
-**Command line deployment**
+Command line deployment
+"""""""""""""""""""""""
 
 The :code:`deploy-to-engine` goal can be execute on the command line. The
-following example deploys the project :file:`myProject.iar` to the application
-**portal** of the Engine location under :file:`c:/axonivy/engine`
+following two examples deploys the project :file:`myProject.iar` to the
+application **portal** of the Engine located under :file:`c:/axonivy/engine` in
+the first example. The second runs in the **HTTP** mode and deploys the project
+to the engine under :file:`http://localhost:8080/ivy`. The engine in this
+example has no licence installed and runs with the demo mode, so the default
+admin credentials will be used by the maven plugin.
 
 .. code-block:: bash
 
-    mvn com.axonivy.ivy.ci:project-build-plugin:7.1.0-SNAPSHOT:deploy-to-engine \
-    -Divy.deploy.file=myProject.iar \
-    -Divy.deploy.engine.dir=c:/axonviy/engine \
-    -Divy.deploy.engine.app=portal
-
-**Build goal execution**
-
-To deploy an ivy-archive (IAR) during it's maven build `lifecycle
-<https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html>`_
-configured an execution which binds the :code:`deploy-to-engine` goal to a phase
-in the projects :file:`pom.xml`.
-
-The following POM snippet deploys the current project to the application
-**portal** of the Axon.ivy Engine under :file:`c:/axonivy/engine`.
-
-.. literalinclude:: includes/deployment-maven-build.xml
-  :language: xml
-  :linenos:
-
-Further examples are documented on GitHub in the `project-build-examples
-<https://github.com/axonivy/project-build-examples>`_ repository.
-
-
-.. _deployment-maven-plugin-http:
-
-Maven HTTP Deployment
-"""""""""""""""""""""
-
-The HTTP deployment uses the :ref:`deployment-rest` capability of the
-|ivy-engine|. This means that this service has to be enabled on the target
-engine. For the deployment you need the credentials of a system user.
-
-An Axon.ivy project can be deployed by invoking Maven with the
-:code:`deploy-to-engine` goal of the project-build-plugin. To customize the
-deployment parameters, consult the goal documentation.
-
-**Command line deployment**
-
-The :code:`deploy-to-engine` goal with HTTP mode can be execute on the command
-line. The following example deploys the project :file:`myProject.iar` to the
-application **portal** of the Engine location under
-:file:`http://localhost:8080/ivy`. The engine runs under demo mode, so the
-default admin credentials will be used by the maven plugin.
-
-.. code-block:: bash
+    mvn com.axonivy.ivy.ci:project-build-plugin:7.4.0-SNAPSHOT:deploy-to-engine \
+      -Divy.deploy.file=myProject.iar \
+      -Divy.deploy.engine.dir=c:/axonviy/engine \
+      -Divy.deploy.engine.app=portal
 
     mvn com.axonivy.ivy.ci:project-build-plugin:7.4.0-SNAPSHOT:deploy-to-engine \
       -Divy.deploy.file=myProject.iar \
@@ -317,26 +301,41 @@ default admin credentials will be used by the maven plugin.
       -Divy.deploy.engine.url=http://localhost:8080/ivy \
       -Divy.deploy.engine.app=portal
 
-**Build goal execution**
+
+.. _deployment-maven-plugin-build:
+
+Build goal execution
+""""""""""""""""""""
 
 To deploy an ivy-archive (IAR) during it's maven build `lifecycle
 <https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html>`_
 configured an execution which binds the :code:`deploy-to-engine` goal to a phase
 in the projects :file:`pom.xml`.
 
-The following POM snippet deploys the current project to the application
-**portal** of the Axon.ivy Engine under :file:`http://localhost:8080/ivy`. This
+The first following POM snippet deploys the current project to the application
+**portal** of the |ivy-engine| under :file:`c:/axonivy/engine`.
+
+.. literalinclude:: includes/deployment-maven-build.xml
+  :language: xml
+  :linenos:
+  :name: pom
+
+The second example deploys the current project to the application **portal** to
+an |ivy-engine| which is accessible on :file:`http://localhost:8080/ivy`. This
 engine has an valid licence with an administrator defined. So a server entry in
-your maven settings.xml is needed for the credentials. This entry will be mapped
-over the :code:`deployServerId`, in this case :file:`serverId`.
+your maven :file:`settings.xml` is needed for the credentials. This entry will be mapped
+to the :code:`deployServerId`, in this case :file:`serverId`.
 
 .. literalinclude:: includes/http-deployment-maven-build.xml
   :language: xml
   :linenos:
+  :name: pom.xml
 
 .. literalinclude:: includes/http-deployment-settings.xml
   :language: xml
   :linenos:
+  :name: settings.xml
 
 Further examples are documented on GitHub in the `project-build-examples
 <https://github.com/axonivy/project-build-examples>`_ repository.
+

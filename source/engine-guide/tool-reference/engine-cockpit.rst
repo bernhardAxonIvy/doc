@@ -55,6 +55,10 @@ started and stopped too. You can add a new application by clicking on the
 :guilabel:`Add` button. By clicking on a application, you switch to the
 :ref:`engine-cockpit-application-detail` view.
 
+For deployment of a new version of an app, you can click on the
+:guilabel:`Deployment` button to open the **Deployment Dialog**. Have a look at
+the :ref:`engine-cockpit-application-detail` view for more information.
+
 .. figure:: images/engine-cockpit-applications.png
 
 
