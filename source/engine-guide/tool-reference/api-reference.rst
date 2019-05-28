@@ -37,7 +37,18 @@ Deployment
 
     .. sourcecode:: txt
 
-        deployment log
+        14:14:51.708 Info: Start deploying project(s) of file 'quick-start-tutorial-7.3.0-20190523.032440-430.iar' to application 'demo-portal'.
+
+        14:14:51.710 Info: Using DeploymentOptions[overwriteConfiguration=false,cleanupConfiguration=DISABLED,deployTestUsers=AUTO,targetVersion=AUTO,targetState=ACTIVE_AND_RELEASED,targetFileFormat=AUTO]
+		
+        14:14:51.728 Info: Skipping deployment. All projects have the same hash. Synchronize project directories only.
+        14:14:51.728 Info: Synchronize project directory ...
+        14:14:51.729 Info: - Create backup of old deployed project to 'demo-portal/QuickStartTutorial/PMV 2 Backup 2019-05-28 14-14-51.zip'...
+        14:14:51.729 Info: - Cleaning target archive ...
+        14:14:51.729 Info: - Copying new project to demo-portal/QuickStartTutorial/2.zip ...
+        14:14:51.730 Info: Successful synchronized.
+		
+        14:14:51.730 Info: Project(s) of file 'quick-start-tutorial-7.3.0-20190523.032440-430.iar' successful deployed to application 'demo-portal' in 22 ms.
 
     :param applicationName: name of the target application
     
