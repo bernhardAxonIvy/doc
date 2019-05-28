@@ -35,7 +35,7 @@ Deployment
 
     **Example response**:
 
-    .. sourcecode:: txt
+    .. sourcecode:: text
 
         14:14:51.708 Info: Start deploying project(s) of file 'quick-start-tutorial-7.3.0-20190523.032440-430.iar' to application 'demo-portal'.
 
