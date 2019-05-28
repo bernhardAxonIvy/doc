@@ -59,11 +59,12 @@ deployment is executed when the engine is starting.
 We strongly recommend to **automate the deployment** in a CI/CD pipeline. For
 this purpose we offer a :ref:`REST API <api-reference-deployment>` which is
 accessible via HTTP/HTTPS. If you don't have the possibility to connect to the
-|ivy-engine| in this way you can use the file based deployment mechanism
-(e.g. via SSH) as described above. For both scenarios you can use well-known
-command line tools like :code:`curl` or :code:`scp` to build such an automated
-pipeline. Our :ref:`deployment-maven-plugin` support both types. If you
-are not interested in automation, you can also use the :ref:`User
+|ivy-engine| in this way you can use the file based deployment mechanism (e.g.
+via SSH) as described above. For both scenarios you can use well-known command
+line tools like :code:`curl` or :code:`scp` to build such an automated pipeline.
+If you have Maven available in your environment, you can use our
+:ref:`deployment-maven-plugin`, which supports both deployment types. If you are
+not interested in automation, you can also use the :ref:`User
 Interface<engine-cockpit-application-detail>`.
 
 Additionally, the deployment behavior can be influenced with :ref:`deployment
@@ -179,7 +180,7 @@ Maven Plugin
 The Maven `project-build-plugin
 <http://axonivy.github.io/project-build-plugin/>`_ makes automated continuous
 deployment to an |ivy-engine| possible. The Maven plugin can deploy files in two
-ways, Deployment Directory or REST, while the Deplyoment Directory mode is the default.
+ways, Directory or HTTP, while the Directory mode is the default.
 
 The Directory deployment itself uses the :ref:`file based deployment
 <deployment-deploying>` capability of the |ivy-engine|. This means that the
@@ -204,19 +205,21 @@ Command line deployment
 
 The :code:`deploy-to-engine` goal can be execute on the command line. The
 following two examples deploys the project :file:`myProject.iar` to the
-application **portal** of the Engine located under :file:`c:/axonivy/engine` in
-the first example. The second runs in the **HTTP** mode and deploys the project
-to the engine under :file:`http://localhost:8080/ivy`. The engine in this
-example has no licence installed and runs with the demo mode, so the default
-admin credentials will be used by the maven plugin.
+application **portal** of the |ivy-engine|.
 
 .. code-block:: bash
 
+    #  file based deployment to c:/axonivy/engine
     mvn com.axonivy.ivy.ci:project-build-plugin:7.4.0-SNAPSHOT:deploy-to-engine \
       -Divy.deploy.file=myProject.iar \
       -Divy.deploy.engine.dir=c:/axonviy/engine \
       -Divy.deploy.engine.app=portal
 
+
+.. code-block:: bash
+
+    # http based deployment to http://localhost:8080/ivy
+    # default credentials admin/admin used for demo engine
     mvn com.axonivy.ivy.ci:project-build-plugin:7.4.0-SNAPSHOT:deploy-to-engine \
       -Divy.deploy.file=myProject.iar \
       -Divy.deploy.method=HTTP \
@@ -234,8 +237,8 @@ To deploy an ivy-archive (IAR) during it's maven build `lifecycle
 configured an execution which binds the :code:`deploy-to-engine` goal to a phase
 in the projects :file:`pom.xml`.
 
-The first following POM snippet deploys the current project to the application
-**portal** of the |ivy-engine| under :file:`c:/axonivy/engine`.
+The first following :file:`pom.xml` snippet deploys the current project to the
+application **portal** of the |ivy-engine| under :file:`c:/axonivy/engine`.
 
 .. literalinclude:: includes/deployment-maven-build.xml
   :language: xml
@@ -243,10 +246,10 @@ The first following POM snippet deploys the current project to the application
   :name: pom
 
 The second example deploys the current project to the application **portal** to
-an |ivy-engine| which is accessible on :file:`http://localhost:8080/ivy`. This
-engine has an valid licence with an administrator defined. So a server entry in
-your maven :file:`settings.xml` is needed for the credentials. This entry will be mapped
-to the :code:`deployServerId`, in this case :file:`serverId`.
+an |ivy-engine| which is accessible under :file:`http://localhost:8080/ivy`. You
+need to configure an administrator user for authentication in maven
+:file:`settings.xml`. Your custom defined :file:`serverId` must match with
+:code:`deployServerId`.
 
 .. literalinclude:: includes/http-deployment-maven-build.xml
   :language: xml
