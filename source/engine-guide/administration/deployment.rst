@@ -192,10 +192,6 @@ service of the |ivy-engine|. This means, that this service has to be enabled on
 the target engine. For the deployment you need the credentials of a
 administrator.
 
-.. note::
-    An Axon.ivy project can be deployed by invoking Maven with the
-    :code:`deploy-to-engine` goal of the project-build-plugin. To customize the
-    deployment parameters, consult the goal documentation.
 
 
 .. _deployment-maven-plugin-command-line:
