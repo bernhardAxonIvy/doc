@@ -31,15 +31,8 @@ Deployment
           http://localhost:8080/ivy/api/system/apps/test \
           -u admin:admin \
           -H 'X-Requested-By: curl' \
-          -F fileToDeploy=@/home/user/Documents/Test.iar \
-          -F "deploymentOptions=$(cat deploy.options.yaml)"
-
-        curl -X POST \
-          http://localhost:8080/ivy/api/system/apps/test \
-          -u admin:admin \
-          -H 'X-Requested-By: curl' \
-          -F fileToDeploy=@/home/user/Documents/Test.iar \
-          -F 'deploymentOptions={"deployTestUsers":"FALSE","configuration":{"overwrite":false,"cleanup":"DISABLED"},"target":{"version":"AUTO","state":"ACTIVE_AND_RELEASED","fileFormat":"AUTO"}}' 
+          -F fileToDeploy=@/home/user/Documents/Test.zip \
+          -F deploymentOptions=@deploy.options.yaml
 
     **Example response**:
 
