@@ -3,7 +3,7 @@ API Reference
 
 The REST API allows you to get information about a running Axon.ivy engine and
 to control it remotely, which is by default accessible at
-http://localhost:8080/ivy.
+http://localhost:8080/ivy/api.
 
 .. note:: 
 
@@ -18,7 +18,7 @@ http://localhost:8080/ivy.
 Deployment
 ----------
 
-.. http:post::  /api/system/apps/(applicationName)
+.. http:post:: /system/apps/(applicationName)
 
     Deploy a project :file:`.iar` or multiple projects :file:`.zip` in an
     application.
