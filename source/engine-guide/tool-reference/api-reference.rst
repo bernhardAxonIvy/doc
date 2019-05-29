@@ -1,8 +1,16 @@
 API Reference
 =============
 
-This is the API reference to get information about a running Axon.ivy engine and to control it remotely.
-This API is by default accessible under http://localhost:8080/ivy.
+The REST API allows you to get information about a running Axon.ivy engine and
+to control it remotely, which is by default accessible at
+http://localhost:8080/ivy.
+
+.. note:: 
+
+  All modifier requests such as :code:`POST`, :code:`PUT` and :code:`DELETE` are
+  `CSRF <https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)>`_
+  protected. For this reason, the HTTP header field :code:`X-Requested-By` must
+  be set with any value for each request.
 
 
 .. _api-reference-deployment:
@@ -12,8 +20,8 @@ Deployment
 
 .. http:post::  /api/system/apps/(applicationName)
 
-    Deploy a project :file:`.iar` or multiple projects :file:`.zip` in an application
-    (applicationName)
+    Deploy a project :file:`.iar` or multiple projects :file:`.zip` in an
+    application.
 
     **Example request**:
 
@@ -24,38 +32,36 @@ Deployment
           -u admin:admin \
           -H 'X-Requested-By: curl' \
           -F fileToDeploy=@/home/user/Documents/Test.iar \
-          -F 'deploymentOptions={"deployTestUsers":"FALSE","configuration":{"overwrite":false,"cleanup":"DISABLED"},"target":{"version":"AUTO","state":"ACTIVE_AND_RELEASED","fileFormat":"AUTO"}}' 
+          -F "deploymentOptions=$(cat deploy.options.yaml)"
 
         curl -X POST \
           http://localhost:8080/ivy/api/system/apps/test \
           -u admin:admin \
           -H 'X-Requested-By: curl' \
           -F fileToDeploy=@/home/user/Documents/Test.iar \
-          -F "deploymentOptions=$(cat deploy.options.yaml)"
+          -F 'deploymentOptions={"deployTestUsers":"FALSE","configuration":{"overwrite":false,"cleanup":"DISABLED"},"target":{"version":"AUTO","state":"ACTIVE_AND_RELEASED","fileFormat":"AUTO"}}' 
 
     **Example response**:
 
     .. sourcecode:: text
 
-        14:14:51.708 Info: Start deploying project(s) of file 'quick-start-tutorial-7.3.0-20190523.032440-430.iar' to application 'demo-portal'.
+        14:14:51.708 Info: Start deploying project(s) of file 'Test.iar' to application 'test'.
 
-        14:14:51.710 Info: Using DeploymentOptions[overwriteConfiguration=false,cleanupConfiguration=DISABLED,deployTestUsers=AUTO,targetVersion=AUTO,targetState=ACTIVE_AND_RELEASED,targetFileFormat=AUTO]
+        14:14:51.710 Info: Using DeploymentOptions[overwriteConfiguration=false,cleanupConfiguration=DISABLED,deployTestUsers=FALSE,targetVersion=AUTO,targetState=ACTIVE_AND_RELEASED,targetFileFormat=AUTO]
 		
-        14:14:51.728 Info: Skipping deployment. All projects have the same hash. Synchronize project directories only.
         14:14:51.728 Info: Synchronize project directory ...
-        14:14:51.729 Info: - Create backup of old deployed project to 'demo-portal/QuickStartTutorial/PMV 2 Backup 2019-05-28 14-14-51.zip'...
         14:14:51.729 Info: - Cleaning target archive ...
-        14:14:51.729 Info: - Copying new project to demo-portal/QuickStartTutorial/2.zip ...
+        14:14:51.729 Info: - Copying new project to test/Test/1.zip ...
         14:14:51.730 Info: Successful synchronized.
 		
-        14:14:51.730 Info: Project(s) of file 'quick-start-tutorial-7.3.0-20190523.032440-430.iar' successful deployed to application 'demo-portal' in 22 ms.
+        14:14:51.730 Info: Project(s) of file 'test.iar' successful deployed to application 'test' in 22 ms.
 
     :param applicationName: name of the target application
     
-    :form fileToDeploy: file to deploy
-    :form deploymentOptions: deployment options as string in json or yaml format
+    :form fileToDeploy: project :file:`.iar` or multiple projects :file:`.zip`
+    :form deploymentOptions: :ref:`deployment options <deployment-options>` as string in json or yaml format
 
-    :reqheader Basic Authentication: a valid administrator with username:password is needed
+    :reqheader Basic Authentication: administrator user
     :reqheader X-Requested-By: CSRF protection
 
     :statuscode 200: deployment successfully 
