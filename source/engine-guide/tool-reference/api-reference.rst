@@ -52,7 +52,13 @@ Deployment
     :param applicationName: name of the target application
     
     :form fileToDeploy: project :file:`.iar` or multiple projects :file:`.zip`
-    :form deploymentOptions: :ref:`deployment options <deployment-options>` as string in json or yaml format
+    :form deploymentOptions: :ref:`deployment options <deployment-options>` as yaml file
+    :form deployTestUsers: :ref:`deploy test users <deployment-options>` if no deploymentOptions
+    :form deployConfigOverwrite: :ref:`overwrite configuration <deployment-options>` if no deploymentOptions
+    :form deployConfigCleanup: :ref:`cleanup configuration <deployment-options>` if no deploymentOptions
+    :form deployTargetVersion: :ref:`target version <deployment-options>` if no deploymentOptions
+    :form deployTargetState: :ref:`target state <deployment-options>` if no deploymentOptions
+    :form deployTargetFileFormat: :ref:`target file format <deployment-options>` if no deploymentOptions
 
     :reqheader Basic Authentication: administrator user
     :reqheader X-Requested-By: CSRF protection
