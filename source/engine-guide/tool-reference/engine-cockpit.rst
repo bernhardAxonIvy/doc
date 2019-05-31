@@ -101,7 +101,7 @@ process is finished you will see the log about what has been done.
     eDirectory) can be synchronized.
 
 You can edit a configured external security system (not ivy Security System)
-directly in your :ref:`ivy-yaml` file or you can click on the name of the system
+directly in your :ref:`ivy-securitysystem-yaml` file or you can click on the name of the system
 to open the :ref:`engine-cockpit-security-system-detail` view.
 
 .. figure:: images/engine-cockpit-security-system.png
@@ -114,13 +114,13 @@ Security System detail
 
 On the security system detail view you have the possibility to change a
 configured security system. The settings is read directly from the
-:ref:`ivy-yaml` file. Every change you make and save will be written directly
+:ref:`ivy-securitysystem-yaml` file. Every change you make and save will be written directly
 back to the yaml file. The placeholder in the empty fields are the default
 values from the system. So you don't need to define those if they are the same.
 
 .. note::
     If you had something configured and you delete this entry, the entry will be
-    removed from the :ref:`ivy-yaml` file. 
+    removed from the :ref:`ivy-securitysystem-yaml` file. 
 
 .. figure:: images/engine-cockpit-security-system-detail.png
 
