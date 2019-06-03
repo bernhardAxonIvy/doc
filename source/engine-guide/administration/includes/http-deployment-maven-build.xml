@@ -2,17 +2,10 @@
   <groupId>com.axonivy.ivy.ci</groupId>
   <artifactId>project-build-plugin</artifactId>
   <extensions>true</extensions>
-  <executions>
-    <execution>
-      <id>deploy.to.engine.http</id>
-      <goals><goal>deploy-to-engine</goal></goals>
-      <phase>site-deploy</phase>
-      <configuration>
-        <deployToEngineApplication>portal</deployToEngineApplication>
-        <deployMethod>HTTP</deployMethod>
-        <deployServerId>serverId</deployServerId>
-        <deployEngineUrl>http://localhost:8080/ivy</deployEngineUrl>
-      </configuration>
-    </execution>
-  </executions>
+  <configuration>
+    <deployToEngineApplication>portal</deployToEngineApplication>
+    <deployMethod>HTTP</deployMethod>
+    <deployServerId>serverId</deployServerId>
+    <deployEngineUrl>http://localhost:8080/ivy</deployEngineUrl>
+  </configuration>
 </plugin>
