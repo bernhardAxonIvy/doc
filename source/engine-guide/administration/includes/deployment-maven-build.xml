@@ -2,15 +2,8 @@
   <groupId>com.axonivy.ivy.ci</groupId>
   <artifactId>project-build-plugin</artifactId>
   <extensions>true</extensions>
-  <executions>
-    <execution>
-      <id>deploy.to.engine</id>
-      <goals><goal>deploy-to-engine</goal></goals>
-      <phase>site-deploy</phase>
-      <configuration>
-        <deployToEngineApplication>Portal</deployToEngineApplication>
-        <deployEngineDirectory>c:/axonivy/engine</deployEngineDirectory>
-      </configuration>
-    </execution>
-  </executions>
+  <configuration>
+    <deployToEngineApplication>Portal</deployToEngineApplication>
+    <deployEngineDirectory>c:/axonivy/engine</deployEngineDirectory>
+  </configuration>
 </plugin>

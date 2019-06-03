@@ -226,10 +226,13 @@ application **portal** of the |ivy-engine|.
 Build goal execution
 ^^^^^^^^^^^^^^^^^^^^
 
-To deploy an ivy-archive (IAR) during it's maven build `lifecycle
-<https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html>`_
-configured an execution which binds the :code:`deploy-to-engine` goal to a phase
-in the projects :file:`pom.xml`.
+The paramets which are needed for the
+:ref:`deployment-maven-plugin-command-line` can also be defined inside your
+:file:`pom.xml` file. The goal can be executed on the command line:
+
+.. code-block:: bash
+
+    mvn ivy:deploy-to-engine
 
 The following :file:`pom.xml` snippet deploys the current project to the
 application **portal** of the |ivy-engine| at :file:`c:/axonivy/engine`.
@@ -240,8 +243,8 @@ application **portal** of the |ivy-engine| at :file:`c:/axonivy/engine`.
   :name: pom
 
 The next example deploys the current project to the application **portal** to an
-|ivy-engine| which is accessible at http://localhost:8080/ivy. You
-need to configure the credentials of an administrator user in the maven
+|ivy-engine| which is accessible at http://localhost:8080/ivy. You need to
+configure the credentials of an administrator user in the maven
 :file:`settings.xml` file. Your custom defined :file:`serverId` must match with
 :code:`deployServerId`.
 
