@@ -223,16 +223,11 @@ application **portal** of the |ivy-engine|.
 
 .. _deployment-maven-plugin-build:
 
-Build goal execution
-^^^^^^^^^^^^^^^^^^^^
+Goal execution with POM
+^^^^^^^^^^^^^^^^^^^^^^^
 
-The paramets which are needed for the
-:ref:`deployment-maven-plugin-command-line` can also be defined inside your
-:file:`pom.xml` file. The goal can be executed on the command line:
-
-.. code-block:: bash
-
-    mvn ivy:deploy-to-engine
+The :code:`deploy-to-engine` goal can also be executed with a given :file:`pom.xml` file. 
+The configuration where to deploy the project can then be configured in the :file:`pom.xml`.
 
 The following :file:`pom.xml` snippet deploys the current project to the
 application **portal** of the |ivy-engine| at :file:`c:/axonivy/engine`.
@@ -242,9 +237,17 @@ application **portal** of the |ivy-engine| at :file:`c:/axonivy/engine`.
   :linenos:
   :name: pom
 
+
+Execute the :code:`deploy-to-engine` goal in the directory where the :file:`pom.xml` file is located:
+
+.. code-block:: bash
+
+    mvn ivy:deploy-to-engine
+	
+	
 The next example deploys the current project to the application **portal** to an
-|ivy-engine| which is accessible at http://localhost:8080/ivy. You need to
-configure the credentials of an administrator user in the maven
+|ivy-engine| which is accessible at http://localhost:8080/ivy. You
+need to configure the credentials of an administrator user in the maven
 :file:`settings.xml` file. Your custom defined :file:`serverId` must match with
 :code:`deployServerId`.
 
@@ -257,6 +260,24 @@ configure the credentials of an administrator user in the maven
   :language: xml
   :linenos:
   :name: settings.xml
+
+Bind to Maven Lifecycle
+^^^^^^^^^^^^^^^^^^^^^^^
+
+To deploy an ivy-archive (IAR) during it's maven build `lifecycle
+<https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html>`_,
+configure an :code:`execution` which binds the :code:`deploy-to-engine` goal to a lifecycle phase.
+
+.. literalinclude:: includes/lifecylce-deployment-maven-build.xml
+  :language: xml
+  :linenos:
+  :name: pom
+  
+Execute the maven lifecycle in the directory where the :file:`pom.xml` file is located:
+
+.. code-block:: bash
+
+    mvn site-deploy 
 
 Further examples are documented on GitHub in the `project-build-examples
 <https://github.com/axonivy/project-build-examples>`_ repository.
