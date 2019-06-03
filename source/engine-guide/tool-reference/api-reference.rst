@@ -53,13 +53,13 @@ Deployment
     :param applicationName: *(required)* name of the target application
     
     :form fileToDeploy: *(required)* project :file:`.iar` file or multiple projects in a :file:`.zip` file
-    :form deploymentOptions: *(optional, if given the form parameters below are ignored)* :ref:`deployment options <deployment-options>` as yaml file
-    :form deployTestUsers: *(optional, ignored if deploymentOptions is given)* :ref:`deploy test users <deployment-options>`
-    :form overwriteConfig: *(optional, ignored if deploymentOptions is given)* :ref:`overwrite configuration <deployment-options>`
-    :form cleanupConfig: *(optional, ignored if deploymentOptions is given)* :ref:`cleanup configuration <deployment-options>`
-    :form targetVersion: *(optional, ignored if deploymentOptions is given)* :ref:`target version <deployment-options>`
-    :form targetState: *(optional, ignored if deploymentOptions is given)* :ref:`target state <deployment-options>`
-    :form targetFileFormat: *(optional, ignored if deploymentOptions is given)* :ref:`target file format <deployment-options>`
+    :form deploymentOptions: *(optional; if given the form parameters below are ignored)* :ref:`deployment options <deployment-options>` as yaml file
+    :form deployTestUsers: *(optional; ignored if deploymentOptions is given)* :ref:`deploy test users <deployment-options>`
+    :form overwriteConfig: *(optional; ignored if deploymentOptions is given)* :ref:`overwrite configuration <deployment-options>`
+    :form cleanupConfig: *(optional; ignored if deploymentOptions is given)* :ref:`cleanup configuration <deployment-options>`
+    :form targetVersion: *(optional; ignored if deploymentOptions is given)* :ref:`target version <deployment-options>`
+    :form targetState: *(optional; ignored if deploymentOptions is given)* :ref:`target state <deployment-options>`
+    :form targetFileFormat: *(optional; ignored if deploymentOptions is given)* :ref:`target file format <deployment-options>`
 
     :reqheader Basic Authentication: *(required)* administrator user and password
     :reqheader X-Requested-By: *(required)* see :ref:`note <api-reference-csrf>`
