@@ -5,6 +5,7 @@ The REST API allows you to get information about a running Axon.ivy engine and
 to control it remotely, which is by default accessible at
 http://localhost:8080/ivy/api.
 
+.. _api-reference-csrf:
 .. note:: 
 
   All modifier requests such as :code:`POST`, :code:`PUT` and :code:`DELETE` are
@@ -49,18 +50,20 @@ Deployment
 		
         14:14:51.730 Info: Project(s) of file 'test.iar' successful deployed to application 'test' in 22 ms.
 
-    :param applicationName: name of the target application
+    :param applicationName: *(required)* name of the target application
     
-    :form fileToDeploy: project :file:`.iar` or multiple projects :file:`.zip`
-    :form deploymentOptions: :ref:`deployment options <deployment-options>` as yaml file
-    :form deployTestUsers: :ref:`deploy test users <deployment-options>` if no deploymentOptions
-    :form deployConfigOverwrite: :ref:`overwrite configuration <deployment-options>` if no deploymentOptions
-    :form deployConfigCleanup: :ref:`cleanup configuration <deployment-options>` if no deploymentOptions
-    :form deployTargetVersion: :ref:`target version <deployment-options>` if no deploymentOptions
-    :form deployTargetState: :ref:`target state <deployment-options>` if no deploymentOptions
-    :form deployTargetFileFormat: :ref:`target file format <deployment-options>` if no deploymentOptions
+    :form fileToDeploy: *(required)* project :file:`.iar` or multiple projects :file:`.zip`
+    :form deploymentOptions: *(optional)* :ref:`deployment options <deployment-options>` as yaml file
+    :form deployTestUsers: *(optional, if no deploymentOptions given)* :ref:`deploy test users <deployment-options>`
+    :form overwriteConfig: *(optional, if no deploymentOptions given)* :ref:`overwrite configuration <deployment-options>`
+    :form cleanupConfig: *(optional, if no deploymentOptions given)* :ref:`cleanup configuration <deployment-options>`
+    :form targetVersion: *(optional, if no deploymentOptions given)* :ref:`target version <deployment-options>`
+    :form targetState: *(optional, if no deploymentOptions given)* :ref:`target state <deployment-options>`
+    :form targetFileFormat: *(optional, if no deploymentOptions given)* :ref:`target file format <deployment-options>`
 
-    :reqheader Basic Authentication: administrator user
-    :reqheader X-Requested-By: CSRF protection
+    :reqheader Basic Authentication: *(required)* administrator user and password
+    :reqheader X-Requested-By: *(required)* see :ref:`note <api-reference-csrf>`
 
     :statuscode 200: deployment successfully 
+    :statuscode 401: authorization error
+    
