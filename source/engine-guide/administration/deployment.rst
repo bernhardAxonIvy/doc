@@ -235,7 +235,6 @@ application **portal** of the |ivy-engine| at :file:`c:/axonivy/engine`.
 .. literalinclude:: includes/deployment-maven-build.xml
   :language: xml
   :linenos:
-  :name: pom
 
 
 Execute the :code:`deploy-to-engine` goal in the directory where the :file:`pom.xml` file is located:
@@ -254,12 +253,10 @@ need to configure the credentials of an administrator user in the maven
 .. literalinclude:: includes/http-deployment-maven-build.xml
   :language: xml
   :linenos:
-  :name: pom.xml
 
 .. literalinclude:: includes/http-deployment-settings.xml
   :language: xml
   :linenos:
-  :name: settings.xml
 
 Bind to Maven Lifecycle
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -271,7 +268,6 @@ configure an :code:`execution` which binds the :code:`deploy-to-engine` goal to 
 .. literalinclude:: includes/lifecylce-deployment-maven-build.xml
   :language: xml
   :linenos:
-  :name: pom
   
 Execute the maven lifecycle in the directory where the :file:`pom.xml` file is located:
 
