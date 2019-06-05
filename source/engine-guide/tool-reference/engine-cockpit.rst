@@ -88,6 +88,8 @@ Security
 --------
 
 
+.. _engine-cockpit-security-system:
+
 Security System
 ^^^^^^^^^^^^^^^
 
@@ -101,7 +103,7 @@ process is finished you will see the log about what has been done.
     eDirectory) can be synchronized.
 
 You can edit a configured external security system (not ivy Security System)
-directly in your :ref:`ivy-securitysystem-yaml` file or you can click on the name of the system
+directly in your :file:`ivy.yaml` file or you can click on the name of the system
 to open the :ref:`engine-cockpit-security-system-detail` view.
 
 .. figure:: images/engine-cockpit-security-system.png
@@ -114,13 +116,16 @@ Security System detail
 
 On the security system detail view you have the possibility to change a
 configured security system. The settings is read directly from the
-:ref:`ivy-securitysystem-yaml` file. Every change you make and save will be written directly
+:file:`ivy.yaml` file. Every change you make and save will be written directly
 back to the yaml file. The placeholder in the empty fields are the default
 values from the system. So you don't need to define those if they are the same.
 
+If you want the know more about how to configure a security system, have a look
+at the :ref:`ivy-securitysystem-yaml` file.
+
 .. note::
     If you had something configured and you delete this entry, the entry will be
-    removed from the :ref:`ivy-securitysystem-yaml` file. 
+    removed from the :file:`ivy.yaml` file. 
 
 .. figure:: images/engine-cockpit-security-system-detail.png
 
@@ -162,6 +167,14 @@ grey. The user can have permissions directly granted / denied or over a role. If
 the permission is granted or denied from a role you can override it for this
 user.
 
+Additional user properties can be configured manually (over the buttons
+:guilabel:`Add`, :guilabel:`Edit` and :guilabel:`Delete`) or they can be read
+from a :ref:`engine-cockpit-security-system`. To do so, the user needs to be
+synced from a security system with :ref:`Additional LDAP Attributes
+<engine-cockpit-security-system-detail>` configured. If this is the case,
+properties (e.g. phone number) should be appearing here. Be aware of that this
+properties can only be edited on your security system.
+
 .. figure:: images/engine-cockpit-user-detail.png
 
 
@@ -190,6 +203,9 @@ the :guilabel:`Users` panel you can add users to this role or remove them. The
 You can add more or remove a role here. The :guilabel:`Permission` panel has the
 same functionalities, as the one you can find in the
 :ref:`engine-cockpit-user-detail` view.
+
+You can add additional properties to a role over the buttons :guilabel:`Add`,
+:guilabel:`Edit` and :guilabel:`Delete` on the panel :guilabel:`Properties`.
 
 .. figure:: images/engine-cockpit-role-detail.png
 
