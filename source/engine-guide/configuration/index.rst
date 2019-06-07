@@ -158,12 +158,6 @@ the environment variable with :code:`IVY_`.
 So to overwrite the :code:`SystemDb:Url:code:` of the :ref:`ivy-yaml` file, the
 environment variable :code:`IVY_SYSTEMDB_URL` must be set.
 
-Global application values
--------------------------
-
-The :ref:`app-yaml` in the :file:`/configuration` folder can be used to set
-global application configuration values that are applied to all applications on
-the engine.
 
 
 Docker Containers
