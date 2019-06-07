@@ -3,8 +3,8 @@
 app.yaml
 --------
 
-:file:`[engineDir]/configuration/app.yaml`
+:file:`[engineDir]/configuration/defaults/app.yaml`
 
-.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/defaults/app.yaml
+.. literalinclude:: ../../../../../workspace/ch.ivyteam.base/src/ch/ivyteam/ivy/configuration/internal/defaults/app.yaml
   :language: yaml
   :linenos:
