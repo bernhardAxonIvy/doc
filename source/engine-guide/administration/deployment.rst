@@ -114,11 +114,16 @@ Configure Application
 
 If you are deploying a full application zip-archive you can optionally add an
 :ref:`app-yaml` in the root of your zip-archive, which contains the
-configuration of the application. 
+configuration of the application.
 
 .. literalinclude:: includes/sample-app.yaml
   :language: yaml
   :linenos:
+
+This `app.yaml` will be deployed in the root folder of the application and
+serves as additional configuration for the application with less priority
+over the regular :ref:`app-APPNAME.yaml <app-yaml>` in the
+:ref:`configuration` directory.
 
 
 .. _deployment-versioning:
