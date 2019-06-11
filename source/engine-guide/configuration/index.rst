@@ -212,9 +212,9 @@ Configuration File Reference
    :maxdepth: 1
 
    files/ivy-yaml
-   files/app-yaml
    files/ivy-webserver-yaml
    files/ivy-securitysystem-yaml
+   files/app-yaml
    files/log4jconfig-xml
    files/ivy-cache-properties
    files/web-xml
