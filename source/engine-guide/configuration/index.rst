@@ -128,6 +128,43 @@ There is a smooth `Secrets`_ integration, which is very useful in container
 environments such as Docker.
 
 
+Business Calendar
+-----------------
+
+A business calendar defines the official business hours and business days.
+It is defined in the application's :ref:`app-yaml`. An application contains
+at least one business calendar; if none is defined, a default calendar is
+automatically generated.
+
+Business calendars belonging to the same application have a tree structure,
+with a root calendar defining the default values. All calendars besides the
+root one have to define a parent calendar, either the root or another child
+calendar. A child calendar inherits all values from all its ancestors, up to
+the root calendar.
+
+Following information needs to be provided:
+* Parent calendar name (optional for root)
+* First day of the week (optional)
+* Working times: A list of time ranges to specify the business hours during
+  the day, usually morning and afternoon
+* Free days: A list of non-business days. These can be weekly (e.g. Sunday),
+  yearly (e.g. New Year), relative to Easter (e.g. Good Friday) or fixed days
+  (e.g. a special event).
+
+By defining these values, business calendar calculation can be executed, e.g.
+finding the next business day or the first business day for a month.
+
+For more information consult the :ref:`app-yaml` document.
+
+.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/examples/app-businesscalendar.yaml
+  :language: yaml
+  :linenos:
+
+It is also possible to manage business calendars through our API. See our public
+API documentation here: :public-api:`IBusinessCalendarSettings
+  </ch/ivyteam/ivy/application/calendar/IBusinessCalendarSettings.html>`.
+
+
 Html Theme
 ----------
 
