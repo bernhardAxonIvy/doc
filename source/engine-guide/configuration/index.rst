@@ -155,7 +155,7 @@ separated by :code:`:` characters. While the environment variable must be
 written uppercase and separated by :code:`_` characters. You need also to prefix
 the environment variable with :code:`IVY_`.
 
-So to overwrite the :code:`SystemDb:Url:code:` of the :ref:`ivy-yaml` file, the
+So to overwrite the :code:`SystemDb:Url` of the :ref:`ivy-yaml` file, the
 environment variable :code:`IVY_SYSTEMDB_URL` must be set.
 
 
