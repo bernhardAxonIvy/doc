@@ -1,4 +1,4 @@
-# app.yaml located in <application-directory>/app.yaml
+# app.yaml located in e.g. <configuration>/app-myApp.yaml
 EMailNotification:  
   DailySummaryOn: monday, tuesday, wednesday, thursday, friday
   OnNewTasks: true

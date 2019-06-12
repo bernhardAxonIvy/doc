@@ -120,10 +120,10 @@ configuration of the application.
   :language: yaml
   :linenos:
 
-This `app.yaml` will be deployed in the root folder of the application and
-serves as additional configuration for the application with less priority
-over the regular :ref:`app-APPNAME.yaml <app-yaml>` in the
-:ref:`configuration` directory.
+This `app.yaml` will be deployed in the root folder of the application itself 
+and serves as additional configuration for the application but with less priority
+over the regular :ref:`app.yaml <app-yaml>` (e.g. :file:`app-myApp.yaml`) in the
+:file:`configuration` directory.
 
 
 .. _deployment-versioning:
