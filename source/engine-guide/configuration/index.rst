@@ -108,9 +108,28 @@ Users are able to customize their notification settings in a workflow ui like
 the Portal. The content of the task email notifications can be customized by
 providing :ref:`standard-processes`.
 
+Advanced Configuration
+======================
+
+Passwords
+---------
+
+You may want to encrypt sensitive data like a password in your configuration
+files. To do this you can enclose any value with ``"${encrypt:}"``. The
+|ivy-engine| will automatically encrypt and replace that value in file, when the
+configuration will be loaded. The system database password can be encrypted as
+follows: 
+
+.. literalinclude:: includes/ivy-password.yaml
+    :language: yaml
+    :linenos:
+
+There is a smooth `Secrets`_ integration, which is very useful in container
+environments such as Docker.
+
 
 Html Theme
-==========
+----------
 
 The look and feel of Html Dialogs is defined by its theme. You can change the
 appearance of any dialog on several scopes:
@@ -124,23 +143,6 @@ appearance of any dialog on several scopes:
 
 * Or at session level via the :public-api:`IvyPrimefacesThemeResolver
   </ch/ivyteam/ivy/jsf/primefaces/theme/IvyPrimefacesThemeResolver.html>`.
-
-
-Passwords
-=========
-
-You may want to encrypt sensitive data like a password in your configuration
-files. To do this you can enclose any value with ``"${encrypt:}"``. The
-|ivy-engine| will automatically encrypt and replace that value in file, when the
-configuration will be loaded. The system database password can be encrypted as
-follows: 
-
-.. literalinclude:: includes/ivy-password.yaml
-    :language: yaml
-    :linenos:
-
-There is a smooth `Secrets`_ integration, which is very useful in container
-environments such as Docker. 
 
 
 Overriding Configuration
