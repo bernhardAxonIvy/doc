@@ -120,10 +120,13 @@ configuration of the application.
   :language: yaml
   :linenos:
 
-This `app.yaml` will be deployed in the root folder of the application itself 
-and serves as additional configuration for the application but with less priority
-over the regular :ref:`app.yaml <app-yaml>` (e.g. :file:`app-myApp.yaml`) in the
-:file:`configuration` directory.
+This file should usually always contain configurations which are the same for all
+installations of the application or serve as good defaults like the :code:`StandardProcess`.
+The reason is that this :file:`app.yaml` will be deployed in the root folder of the
+application itself and serves as additional configuration for the application
+but with a lower priority than the regular :ref:`app.yaml <app-yaml>` 
+(e.g. :file:`app-myApp.yaml`) in the :file:`configuration` directory.
+
 
 
 .. _deployment-versioning:
