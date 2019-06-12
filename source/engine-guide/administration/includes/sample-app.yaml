@@ -1,8 +1,4 @@
 # sample app.yaml which can be part of the full application zip-archive
-SecuritySystem: ActiveDirectoryOfMyCompany
-EMailNotification:  
-  DailySummaryOn: monday, tuesday, wednesday, thursday, friday
-  OnNewTasks: true
 StandardProcess: 
   DefaultPages: ch.ivyteam.ivy.project.portal:portalTemplate
   MailNotification: ch.ivyteam.ivy.project.portal:portalTemplates
