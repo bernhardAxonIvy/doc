@@ -143,10 +143,13 @@ calendar. A child calendar inherits all values from all its ancestors, up to
 the root calendar.
 
 Following information needs to be provided:
+
 * Parent calendar name (optional for root)
 * First day of the week (optional)
-* Working times: A list of time ranges to specify the business hours during the day, usually morning and afternoon.
-* Free days: A list of non-business days. These can be weekly (e.g. Sunday), yearly (e.g. New Year), relative to Easter (e.g. Good Friday) or fixed days (e.g. a special event).
+* Working times: A list of time ranges to specify the business hours during
+  the day, usually morning and afternoon.
+* Free days: A list of non-business days. These can be weekly (e.g. Sunday),
+  yearly (e.g. New Year), relative to Easter (e.g. Good Friday) or fixed days (e.g. a special event).
 
 By defining these values, business calendar calculation can be executed, e.g.
 finding the next business day or the first business day for a month.
