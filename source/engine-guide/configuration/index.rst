@@ -64,7 +64,7 @@ system is used. There are two types of security systems:
   Used to manage the users directly on the |ivy-engine|. There is only one
   Internal Security System, which is called Ivy Security System. No further
   settings are available for this Security System. This is also the default
-  Security System for application which has no security system definied.
+  Security System for application which has no security system defined.
 * **External Security System**:
   Used to synchronize users from a name and directory service such as Active
   Directory. The example below shows a simple connection to an Active Directory.
@@ -145,8 +145,7 @@ the root calendar.
 Following information needs to be provided:
 * Parent calendar name (optional for root)
 * First day of the week (optional)
-* Working times: A list of time ranges to specify the business hours during
-  the day, usually morning and afternoon.
+* Working times: A list of time ranges to specify the business hours during the day, usually morning and afternoon.
 * Free days: A list of non-business days. These can be weekly (e.g. Sunday),
   yearly (e.g. New Year), relative to Easter (e.g. Good Friday) or fixed days
   (e.g. a special event).
