@@ -146,7 +146,7 @@ Following information needs to be provided:
 * Parent calendar name (optional for root)
 * First day of the week (optional)
 * Working times: A list of time ranges to specify the business hours during
-  the day, usually morning and afternoon
+  the day, usually morning and afternoon.
 * Free days: A list of non-business days. These can be weekly (e.g. Sunday),
   yearly (e.g. New Year), relative to Easter (e.g. Good Friday) or fixed days
   (e.g. a special event).
@@ -156,13 +156,13 @@ finding the next business day or the first business day for a month.
 
 For more information consult the :ref:`app-yaml` document.
 
-.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/examples/app-businesscalendar.yaml
+.. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/examples/app-businesscalendar.yaml
   :language: yaml
   :linenos:
 
 It is also possible to manage business calendars through our API. See our public
 API documentation here: :public-api:`IBusinessCalendarSettings
-  </ch/ivyteam/ivy/application/calendar/IBusinessCalendarSettings.html>`.
+</ch/ivyteam/ivy/application/calendar/IBusinessCalendarSettings.html>`.
 
 
 Html Theme
