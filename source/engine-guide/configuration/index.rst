@@ -142,6 +142,9 @@ It is defined in the application's :ref:`app-yaml`. An application contains
 at least one business calendar; if none is defined, a default calendar is
 automatically generated.
 
+Here is an example of a business calendar definition;
+see :ref:`app-businesscalendar-yaml` for more detailed information.
+
 .. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/examples/app-businesscalendar.yaml
   :language: yaml
   :linenos:
