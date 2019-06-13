@@ -64,7 +64,7 @@ system is used. There are two types of security systems:
   Used to manage the users directly on the |ivy-engine|. There is only one
   Internal Security System, which is called Ivy Security System. No further
   settings are available for this Security System. This is also the default
-  Security System for application which has no security system definied.
+  Security System for application which has no security system defined.
 * **External Security System**:
   Used to synchronize users from a name and directory service such as Active
   Directory. The example below shows a simple connection to an Active Directory.
@@ -108,9 +108,50 @@ Users are able to customize their notification settings in a workflow ui like
 the Portal. The content of the task email notifications can be customized by
 providing :ref:`standard-processes`.
 
+Advanced Configuration
+======================
+
+Passwords
+---------
+
+You may want to encrypt sensitive data like a password in your configuration
+files. To do this you can enclose any value with ``"${encrypt:}"``. The
+|ivy-engine| will automatically encrypt and replace that value in file, when the
+configuration will be loaded. The system database password can be encrypted as
+follows: 
+
+.. literalinclude:: includes/ivy-password.yaml
+    :language: yaml
+    :linenos:
+
+There is a smooth `Secrets`_ integration, which is very useful in container
+environments such as Docker.
+
+
+Business Calendar
+-----------------
+
+A business calendar defines the official business hours and business days.
+These settings are used for business calendar calculations, e.g. what date will
+it be in three business days.
+See at :designer-guide:`Designer Guide </ivy.concepts.html>`
+and :public-api:`IBusinessCalendar </ch/ivyteam/ivy/application/calendar/IBusinessCalendar.html>`
+for more information.
+
+It is defined in the application's :ref:`app-yaml`. An application contains
+at least one business calendar; if none is defined, a default calendar is
+automatically generated.
+
+Here is an example of a business calendar definition;
+see :ref:`app-businesscalendar-yaml` for more detailed information.
+
+.. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/examples/app-businesscalendar.yaml
+  :language: yaml
+  :linenos:
+
 
 Html Theme
-==========
+----------
 
 The look and feel of Html Dialogs is defined by its theme. You can change the
 appearance of any dialog on several scopes:
@@ -124,23 +165,6 @@ appearance of any dialog on several scopes:
 
 * Or at session level via the :public-api:`IvyPrimefacesThemeResolver
   </ch/ivyteam/ivy/jsf/primefaces/theme/IvyPrimefacesThemeResolver.html>`.
-
-
-Passwords
-=========
-
-You may want to encrypt sensitive data like a password in your configuration
-files. To do this you can enclose any value with ``"${encrypt:}"``. The
-|ivy-engine| will automatically encrypt and replace that value in file, when the
-configuration will be loaded. The system database password can be encrypted as
-follows: 
-
-.. literalinclude:: includes/ivy-password.yaml
-    :language: yaml
-    :linenos:
-
-There is a smooth `Secrets`_ integration, which is very useful in container
-environments such as Docker. 
 
 
 Overriding Configuration
@@ -215,6 +239,7 @@ Configuration File Reference
    files/ivy-webserver-yaml
    files/ivy-securitysystem-yaml
    files/app-yaml
+   files/app-businesscalendar-yaml
    files/log4jconfig-xml
    files/ivy-cache-properties
    files/web-xml
