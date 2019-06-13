@@ -151,8 +151,6 @@ Following information needs to be provided:
 By defining these values, business calendar calculation can be executed, e.g.
 finding the next business day or the first business day for a month.
 
-For more information consult the :ref:`app-yaml` document.
-
 .. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/examples/app-businesscalendar.yaml
   :language: yaml
   :linenos:
