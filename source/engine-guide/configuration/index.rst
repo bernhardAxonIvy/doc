@@ -3,7 +3,7 @@
 Configuration
 *************
 
-The |ivy-engine| is configured by files. Most of them are located in the
+The |ivy-engine| is configured by files. They are located in the
 :file:`/configuration` directory of the engine.
 
 
@@ -18,8 +18,7 @@ environment and runtime behaviour of the |ivy-engine|.
   :linenos:
 
 
-Template files
---------------
+.. rubric:: Craft you own configuration
 
 To craft your own configuration you would typically copy values from our
 template files, located under :file:`[engineDir]/configuration/defaults` or the
@@ -139,15 +138,14 @@ follows:
     :language: yaml
     :linenos:
 
-There is a smooth `Secrets`_ integration, which is very useful in container
+There is a smooth :ref:`configuration_containers_secrets` integration, which is very useful in container
 environments such as Docker. 
 
 
 Overriding Configuration
 ========================
 
-Environment variables
----------------------
+.. rubric:: Environment variables
 
 Configuration entries of YAML files can be overridden with environment variables
 of the operating system. Configuration keys in YAML are hierarchic object trees
@@ -194,8 +192,9 @@ And let's run the container with this configuration
 For further docker examples have a look at our `docker-samples
 <https://github.com/ivy-samples/docker-samples>`_ GitHub repository. 
 
-Secrets
--------
+
+.. _configuration_containers_secrets:
+.. rubric:: Secrets
 
 You can use Docker Secrets to store passwords. Simply create a file in
 :file:`/run/secrets` which has the same name as the configuration entry. For
