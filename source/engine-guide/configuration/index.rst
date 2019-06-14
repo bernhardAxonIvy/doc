@@ -21,11 +21,12 @@ environment and runtime behaviour of the |ivy-engine|.
 .. rubric:: Craft you own configuration
 
 To craft your own configuration you would typically copy values from our
-template files, located under :file:`[engineDir]/configuration/defaults` or the
-:ref:`configuration-file-reference` and adjust them according to your needs. The
-template files outline valid configuration attributes and document possible
-values. They are constantly improved by us, and are not designed to store your
-actual configuration.
+**reference** files, located under :file:`[engineDir]/configuration/reference` or
+see te :ref:`configuration-file-reference` and adjust them according to your needs. 
+Alternative, you can also copy and modify whole **templates**,
+which are provided under :file:`[enginDir]/configuration/templates`.
+Of course, most settings can also be adjusted in our :ref:`engine-cockpit`.
+
 
 
 .. _config-systemdb:
