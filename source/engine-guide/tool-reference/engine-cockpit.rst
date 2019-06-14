@@ -1,3 +1,5 @@
+.. _engine-cockpit:
+
 Engine Cockpit
 ==============
 

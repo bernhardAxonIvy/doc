@@ -3,7 +3,7 @@
 Configuration
 *************
 
-The |ivy-engine| is configured by files. Most of them are located in the
+The |ivy-engine| is configured by files. They are located in the
 :file:`/configuration` directory of the engine.
 
 
@@ -18,15 +18,15 @@ environment and runtime behaviour of the |ivy-engine|.
   :linenos:
 
 
-Template files
---------------
+.. rubric:: Craft you own configuration
 
 To craft your own configuration you would typically copy values from our
-template files, located under :file:`[engineDir]/configuration/defaults` or the
-:ref:`configuration-file-reference` and adjust them according to your needs. The
-template files outline valid configuration attributes and document possible
-values. They are constantly improved by us, and are not designed to store your
-actual configuration.
+**reference** files, located under :file:`[engineDir]/configuration/reference` or
+see te :ref:`configuration-file-reference` and adjust them according to your needs. 
+Alternative, you can also copy and modify whole **templates**,
+which are provided under :file:`[enginDir]/configuration/templates`.
+Of course, most settings can also be adjusted in our :ref:`engine-cockpit`.
+
 
 
 .. _config-systemdb:
@@ -108,6 +108,8 @@ Users are able to customize their notification settings in a workflow ui like
 the Portal. The content of the task email notifications can be customized by
 providing :ref:`standard-processes`.
 
+
+
 Advanced Configuration
 ======================
 
@@ -124,8 +126,8 @@ follows:
     :language: yaml
     :linenos:
 
-There is a smooth `Secrets`_ integration, which is very useful in container
-environments such as Docker.
+There is a smooth :ref:`configuration_containers_secrets` integration, which is very useful in container
+environments such as Docker. 
 
 
 Business Calendar
@@ -145,7 +147,7 @@ automatically generated.
 Here is an example of a business calendar definition;
 see :ref:`app-businesscalendar-yaml` for more detailed information.
 
-.. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/examples/app-businesscalendar.yaml
+.. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/app-businesscalendar.yaml
   :language: yaml
   :linenos:
 
@@ -167,11 +169,11 @@ appearance of any dialog on several scopes:
   </ch/ivyteam/ivy/jsf/primefaces/theme/IvyPrimefacesThemeResolver.html>`.
 
 
+
 Overriding Configuration
 ========================
 
-Environment variables
----------------------
+.. rubric:: Environment variables
 
 Configuration entries of YAML files can be overridden with environment variables
 of the operating system. Configuration keys in YAML are hierarchic object trees
@@ -218,8 +220,9 @@ And let's run the container with this configuration
 For further docker examples have a look at our `docker-samples
 <https://github.com/ivy-samples/docker-samples>`_ GitHub repository. 
 
-Secrets
--------
+
+.. _configuration_containers_secrets:
+.. rubric:: Secrets
 
 You can use Docker Secrets to store passwords. Simply create a file in
 :file:`/run/secrets` which has the same name as the configuration entry. For
