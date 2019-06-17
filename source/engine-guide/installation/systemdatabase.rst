@@ -64,7 +64,7 @@ affected column has a case insensitive collation.
 MySQL
 -----
 
-.. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/examples/ivy-systemdb-mysql.yaml
+.. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/ivy-systemdb-mysql.yaml
   :language: yaml
   :linenos:
 
@@ -78,7 +78,7 @@ We only support **InnoDB** as storage engine. If database will be created by the
 MariaDB
 -------
 
-.. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/examples/ivy-systemdb-mariadb.yaml
+.. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/ivy-systemdb-mariadb.yaml
   :language: yaml
   :linenos:
 
@@ -92,7 +92,7 @@ We only support **InnoDB** as storage engine. If database will be created by the
 PostgreSQL
 ----------
 
-.. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/examples/ivy-systemdb-postgres.yaml
+.. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/ivy-systemdb-postgres.yaml
   :language: yaml
   :linenos:
 
@@ -104,7 +104,7 @@ If database will be created by the |ivy-engine| the encoding is set to ``UTF8``.
 Microsoft SQL Server
 --------------------
 
-.. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/examples/ivy-systemdb-mssql.yaml
+.. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/ivy-systemdb-mssql.yaml
   :language: yaml
   :linenos:
 
@@ -120,7 +120,7 @@ database instance.
 Oracle
 ------
 
-.. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/examples/ivy-systemdb-oracle.yaml
+.. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/ivy-systemdb-oracle.yaml
   :language: yaml
   :linenos:
 
