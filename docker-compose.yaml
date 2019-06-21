@@ -2,7 +2,7 @@ version: '3.3'
 services:
   doc:
     build: .
-    entrypoint: "sphinx-autobuild -H 0.0.0.0 source build/html"
+    entrypoint: "make livehtml"
     volumes:
      - "./..:/ivy-core"     
     ports:
