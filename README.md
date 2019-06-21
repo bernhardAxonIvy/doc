@@ -2,17 +2,15 @@
 
 ## build
 
-    # first download static images
+    # download static images
     mvn clean package
 
-    # generate doc (Linux)
-    docker build -t doc-builder . && docker run -v $(pwd)/..:/ivy-core doc-builder make html && firefox ./build/html/index.html
+	# start docker-compose
+	docker-compose up
     
-    #generate doc (Windows)
-    docker build -t doc-builder . && docker run -v %cd%/..:/ivy-core doc-builder make html && firefox ./build/html/index.html
+Now you can browse the documentation at http://127.0.0.1:8000
+Everytime when you make a file change, the documentation will be rebuild.
 
-Alternatively you can install python, pip and pip packages directly on your system.
-Check `Dockerfile` to see what is needed.
 
 ## dev environment setup
 
