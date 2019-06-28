@@ -3,7 +3,7 @@
 Configuration
 *************
 
-The |ivy-engine| is configured by files. Most of them are located in the
+The |ivy-engine| is configured by files. They are located in the
 :file:`/configuration` directory of the engine.
 
 
@@ -18,15 +18,15 @@ environment and runtime behaviour of the |ivy-engine|.
   :linenos:
 
 
-Template files
---------------
+.. rubric:: Craft you own configuration
 
 To craft your own configuration you would typically copy values from our
-template files, located under :file:`[engineDir]/configuration/defaults` or the
-:ref:`configuration-file-reference` and adjust them according to your needs. The
-template files outline valid configuration attributes and document possible
-values. They are constantly improved by us, and are not designed to store your
-actual configuration.
+**reference** files, located under :file:`[engineDir]/configuration/reference` or
+see te :ref:`configuration-file-reference` and adjust them according to your needs. 
+Alternative, you can also copy and modify whole **templates**,
+which are provided under :file:`[enginDir]/configuration/templates`.
+Of course, most settings can also be adjusted in our :ref:`engine-cockpit`.
+
 
 
 .. _config-systemdb:
@@ -64,7 +64,7 @@ system is used. There are two types of security systems:
   Used to manage the users directly on the |ivy-engine|. There is only one
   Internal Security System, which is called Ivy Security System. No further
   settings are available for this Security System. This is also the default
-  Security System for application which has no security system definied.
+  Security System for application which has no security system defined.
 * **External Security System**:
   Used to synchronize users from a name and directory service such as Active
   Directory. The example below shows a simple connection to an Active Directory.
@@ -109,8 +109,51 @@ the Portal. The content of the task email notifications can be customized by
 providing :ref:`standard-processes`.
 
 
+
+Advanced Configuration
+======================
+
+Passwords
+---------
+
+You may want to encrypt sensitive data like a password in your configuration
+files. To do this you can enclose any value with ``"${encrypt:}"``. The
+|ivy-engine| will automatically encrypt and replace that value in file, when the
+configuration will be loaded. The system database password can be encrypted as
+follows: 
+
+.. literalinclude:: includes/ivy-password.yaml
+    :language: yaml
+    :linenos:
+
+There is a smooth :ref:`configuration_containers_secrets` integration, which is very useful in container
+environments such as Docker. 
+
+
+Business Calendar
+-----------------
+
+A business calendar defines the official business hours and business days.
+These settings are used for business calendar calculations, e.g. what date will
+it be in three business days.
+See at :designer-guide:`Designer Guide </ivy.concepts.html>`
+and :public-api:`IBusinessCalendar </ch/ivyteam/ivy/application/calendar/IBusinessCalendar.html>`
+for more information.
+
+It is defined in the application's :ref:`app-yaml`. An application contains
+at least one business calendar; if none is defined, a default calendar is
+automatically generated.
+
+Here is an example of a business calendar definition;
+see :ref:`app-businesscalendar-yaml` for more detailed information.
+
+.. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/app-businesscalendar.yaml
+  :language: yaml
+  :linenos:
+
+
 Html Theme
-==========
+----------
 
 The look and feel of Html Dialogs is defined by its theme. You can change the
 appearance of any dialog on several scopes:
@@ -126,28 +169,11 @@ appearance of any dialog on several scopes:
   </ch/ivyteam/ivy/jsf/primefaces/theme/IvyPrimefacesThemeResolver.html>`.
 
 
-Passwords
-=========
-
-You may want to encrypt sensitive data like a password in your configuration
-files. To do this you can enclose any value with ``"${encrypt:}"``. The
-|ivy-engine| will automatically encrypt and replace that value in file, when the
-configuration will be loaded. The system database password can be encrypted as
-follows: 
-
-.. literalinclude:: includes/ivy-password.yaml
-    :language: yaml
-    :linenos:
-
-There is a smooth `Secrets`_ integration, which is very useful in container
-environments such as Docker. 
-
 
 Overriding Configuration
 ========================
 
-Environment variables
----------------------
+.. rubric:: Environment variables
 
 Configuration entries of YAML files can be overridden with environment variables
 of the operating system. Configuration keys in YAML are hierarchic object trees
@@ -155,7 +181,7 @@ separated by :code:`:` characters. While the environment variable must be
 written uppercase and separated by :code:`_` characters. You need also to prefix
 the environment variable with :code:`IVY_`.
 
-So to overwrite the :code:`SystemDb:Url:code:` of the :ref:`ivy-yaml` file, the
+So to overwrite the :code:`SystemDb:Url` of the :ref:`ivy-yaml` file, the
 environment variable :code:`IVY_SYSTEMDB_URL` must be set.
 
 
@@ -194,8 +220,9 @@ And let's run the container with this configuration
 For further docker examples have a look at our `docker-samples
 <https://github.com/ivy-samples/docker-samples>`_ GitHub repository. 
 
-Secrets
--------
+
+.. _configuration_containers_secrets:
+.. rubric:: Secrets
 
 You can use Docker Secrets to store passwords. Simply create a file in
 :file:`/run/secrets` which has the same name as the configuration entry. For
@@ -215,6 +242,7 @@ Configuration File Reference
    files/ivy-webserver-yaml
    files/ivy-securitysystem-yaml
    files/app-yaml
+   files/app-businesscalendar-yaml
    files/log4jconfig-xml
    files/ivy-cache-properties
    files/web-xml
