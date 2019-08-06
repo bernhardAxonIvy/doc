@@ -1,11 +1,24 @@
 # -*- coding: utf-8 -*-
-import sys, os
-from datetime import datetime
 
+def getCurrentYear():
+    from datetime import datetime
+    return str(datetime.today().year)
+
+def parseVersionFromPom():
+    from xml.etree import ElementTree as et
+    tree = et.ElementTree()
+    tree.parse('../pom.xml')
+    ns = {"mvn":"http://maven.apache.org/POM/4.0.0"}
+    version = tree.getroot().find('./mvn:parent/mvn:version', ns).text
+    if version.endswith('-SNAPSHOT'):
+        version = version[:-9]
+    return version
+
+# project
 project = 'Axon.ivy Digital Business Platform'
-copyright = str(datetime.today().year) + ', AXON Ivy AG'
-versionFile = '../target/version.py'
-exec(compile(open(versionFile, "rb").read(), versionFile, 'exec'))
+copyright = getCurrentYear() + ', AXON Ivy AG'
+version = parseVersionFromPom()
+release = version
 
 # general options
 needs_sphinx = '1.5.6'
@@ -18,7 +31,6 @@ extensions = [
     'sphinxprettysearchresults',
     'sphinxcontrib.httpdomain'
 ]
-
 
 templates_path = ['_templates']
 exclude_trees = []
