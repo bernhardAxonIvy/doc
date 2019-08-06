@@ -222,10 +222,10 @@ Global Variables
 The view **Global Variables** shows you all global variables which are defined
 for every application. They can be configured on the project or set in the
 :ref:`app-yaml` file. You can switch the environment at the top. To add a new
-variable click on the :guilabel:`New` button. If you want to edit a variable click on
-the :guilabel:`Pencil` button or the :guilabel:`Delete` button to delete one.
-To delete a global variable you have to remove it on the **Default** environment.
-Deleting one on a specific environment only resets it to its default value.
+variable or edit one click on the :guilabel:`New` or :guilabel:`Pencil` button.
+If you do so your change will be written to the :ref:`app-yaml` file. You can
+reset a global variable to its environment value by clicking on the
+:guilabel:`Reset` button. 
 
 .. figure:: images/engine-cockpit-configuration-variables.png
 
@@ -283,13 +283,12 @@ External Database Detail
 In the **external database detail** view, you can see all configurations from
 the selected external database. You can test if the configuration works and a
 connection to this database can be established, when you click on the
-:guilabel:`Arrow` button. If you click on the :guilabel:`Pencil` button you
-notice that you can't edit those configurations here. But you see a snippet from
-the :ref:`app-yaml` file, how the configuration above would look like.
+:guilabel:`Arrow` button. You can change the most important information directly here too.
+If you click on the :guilabel:`Reset` button the database will be reset to the original setting.
 
 .. note:: 
-    It could be that the configurations here are not the same as they are configured on the
-    project. Maybe they were overwritten inside the :ref:`app-yaml` file.
+    Not every value can be modified here yet. But you can override them in the
+    :ref:`app-yaml` file.
 
 .. figure:: images/engine-cockpit-external-database-detail.png
 
@@ -315,11 +314,13 @@ the service click on one entry to switch to the
 Web Service Detail
 """"""""""""""""""
 
-On this view all configurations from a web service will be shown. If you wish to
-edit the service you can't do that here. But if you click on the
-:guilabel:`Pencil` button you will get a snippet from this web service. When you
-want to change some configurations you can edit them in the :ref:`app-yaml` file
-as like you see it in the snippet.
+On this view all configurations from a web service will be shown. You can change
+the credentials or the endpoints here. Or you can reset them to their original
+setting by clicking on the :guilabel:`Reset` button.
+
+.. note:: 
+    If you wish to change a value which is not supported by this editor you can
+    do so by modify the :ref:`app-yaml` file.
 
 .. figure:: images/engine-cockpit-webservice-detail.png
 
@@ -345,8 +346,13 @@ Rest Client Detail
 """"""""""""""""""
 
 On the **rest client detail** page all configurations for this service are
-shown. You can click on the :guilabel:`Pencil` button to get a snippet for the
-:ref:`app-yaml` file. This snippet shows you an example how you can override this rest client.
+shown. Some of those configurations can be modified directly here in this
+editor. You can reset you changes too by clicking on the :guilabel:`Reset`
+button.
+
+.. note:: 
+    If you wish to change a value which is not supported by this editor you can
+    do so by modify the :ref:`app-yaml` file.
 
 .. figure:: images/engine-cockpit-rest-client-detail.png
 
