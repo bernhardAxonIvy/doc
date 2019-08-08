@@ -105,7 +105,7 @@ process is finished you will see the log about what has been done.
     eDirectory) can be synchronized.
 
 You can edit a configured external security system (not ivy Security System)
-directly in your :file:`ivy.yaml` file or you can click on the name of the system
+directly in your :ref:`ivy-yaml` file or you can click on the name of the system
 to open the :ref:`engine-cockpit-security-system-detail` view.
 
 .. figure:: images/engine-cockpit-security-system.png
@@ -118,7 +118,7 @@ Security System detail
 
 On the security system detail view you have the possibility to change a
 configured security system. The settings is read directly from the
-:file:`ivy.yaml` file. Every change you make and save will be written directly
+:ref:`ivy-yaml` file. Every change you make and save will be written directly
 back to the yaml file. The placeholder in the empty fields are the default
 values from the system. So you don't need to define those if they are the same.
 
@@ -127,7 +127,7 @@ at the :ref:`ivy-securitysystem-yaml` file.
 
 .. note::
     If you had something configured and you delete this entry, the entry will be
-    removed from the :file:`ivy.yaml` file. 
+    removed from the :ref:`ivy-yaml` file. 
 
 .. figure:: images/engine-cockpit-security-system-detail.png
 
@@ -316,7 +316,11 @@ Web Service Detail
 
 On this view all configurations from a web service will be shown. You can change
 the credentials or the endpoints here. Or you can reset them to their original
-setting by clicking on the :guilabel:`Reset` button.
+setting by clicking on the :guilabel:`Reset` button. To test if an endpoint is
+accessible press on the :guilabel:`Arrow` button next to it. Please be aware of
+that only *HttpBasic* authentication will be supported and the request is a empty
+*POST* message, which means depending on implementation of the web service the
+status code can be different.
 
 .. note:: 
     If you wish to change a value which is not supported by this editor you can
@@ -347,8 +351,10 @@ Rest Client Detail
 
 On the **rest client detail** page all configurations for this service are
 shown. Some of those configurations can be modified directly here in this
-editor. You can reset you changes too by clicking on the :guilabel:`Reset`
-button.
+editor. You can reset you changes by clicking on the :guilabel:`Reset`
+button. If you want to test your configuration, click on the :guilabel:`Arrow`
+button. This will start a *HEAD* request with the given authentication
+credentials.
 
 .. note:: 
     If you wish to change a value which is not supported by this editor you can
