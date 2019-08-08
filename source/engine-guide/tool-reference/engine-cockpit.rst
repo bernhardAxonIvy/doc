@@ -319,8 +319,8 @@ Web Service Detail
 On this view all configurations from a web service will be shown. You can change
 the credentials or the endpoints here. Or you can reset them to their original
 setting by clicking on the :guilabel:`Reset` button. To test if an endpoint is
-accessible press on the :guilabel:`Arrow` button next to it. Please be aware of
-that only *HttpBasic* authentication will be supported and the request is a empty
+accessible press on the :guilabel:`Arrow` button next to it. Please be aware
+that only *HttpBasic* authentication will be supported and the request is an empty
 *POST* message, which means depending on implementation of the web service the
 status code can be different.
 
@@ -353,7 +353,7 @@ Rest Client Detail
 
 On the **rest client detail** page all configurations for this service are
 shown. Some of those configurations can be modified directly here in this
-editor. You can reset you changes by clicking on the :guilabel:`Reset`
+editor. You can reset your changes by clicking on the :guilabel:`Reset`
 button. If you want to test your configuration, click on the :guilabel:`Arrow`
 button. This will start a *HEAD* request with the given authentication
 credentials.
