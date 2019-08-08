@@ -283,8 +283,10 @@ External Database Detail
 In the **external database detail** view, you can see all configurations from
 the selected external database. You can test if the configuration works and a
 connection to this database can be established, when you click on the
-:guilabel:`Arrow` button. You can change the most important information directly here too.
-If you click on the :guilabel:`Reset` button the database will be reset to the original setting.
+:guilabel:`Arrow` button. You can change the most important information directly
+here too. If you click on the :guilabel:`Reset` button the database will be
+reset to the original setting. In this view you can see information about the
+last 200 executed *SQL* queries and used connections too.
 
 .. note:: 
     Not every value can be modified here yet. But you can override them in the
