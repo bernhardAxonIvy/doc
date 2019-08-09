@@ -12,46 +12,7 @@
 	</parent>
 
     <build>
-		<plugins>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>build-helper-maven-plugin</artifactId>
-				<version>1.8</version>
-				<executions>
-				<execution>
-					<id>parse-version</id>
-					<goals>
-						<goal>parse-version</goal>
-					</goals>
-				</execution>
-				</executions>
-			</plugin>
-
-			<plugin>
-				<artifactId>maven-resources-plugin</artifactId>
-				<version>3.1.0</version>
-				<executions>
-				<execution>
-					<id>copy-resources</id>
-					<phase>validate</phase>
-					<goals>
-						<goal>copy-resources</goal>
-					</goals>
-					<configuration>
-						<outputDirectory>${basedir}/target</outputDirectory>
-						<resources>          
-							<resource>							     
-								<directory>.</directory>
-								<filtering>true</filtering>
-								<includes>
-									<include>version.py</include>
-								</includes>
-							</resource>
-						</resources>              
-					</configuration>            
-				</execution>
-				</executions>
-			</plugin>
+		<plugins>		
 			
 		    <plugin>
 		        <groupId>org.apache.maven.plugins</groupId>
@@ -73,6 +34,7 @@
 		                    </artifactItems>
 		                </configuration>
 		            </execution>
+
 					<execution>
 						<id>unpack-engine-cockpit-images</id>
 						<goals><goal>unpack</goal></goals>

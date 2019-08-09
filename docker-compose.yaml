@@ -1,6 +1,6 @@
 version: '3.3'
 services:
-  doc:
+  builder:
     build: .
     entrypoint: "make livehtml"
     volumes:

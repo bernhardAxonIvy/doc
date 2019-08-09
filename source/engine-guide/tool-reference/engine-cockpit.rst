@@ -105,7 +105,7 @@ process is finished you will see the log about what has been done.
     eDirectory) can be synchronized.
 
 You can edit a configured external security system (not ivy Security System)
-directly in your :file:`ivy.yaml` file or you can click on the name of the system
+directly in your :ref:`ivy-yaml` file or you can click on the name of the system
 to open the :ref:`engine-cockpit-security-system-detail` view.
 
 .. figure:: images/engine-cockpit-security-system.png
@@ -118,7 +118,7 @@ Security System detail
 
 On the security system detail view you have the possibility to change a
 configured security system. The settings is read directly from the
-:file:`ivy.yaml` file. Every change you make and save will be written directly
+:ref:`ivy-yaml` file. Every change you make and save will be written directly
 back to the yaml file. The placeholder in the empty fields are the default
 values from the system. So you don't need to define those if they are the same.
 
@@ -127,7 +127,7 @@ at the :ref:`ivy-securitysystem-yaml` file.
 
 .. note::
     If you had something configured and you delete this entry, the entry will be
-    removed from the :file:`ivy.yaml` file. 
+    removed from the :ref:`ivy-yaml` file. 
 
 .. figure:: images/engine-cockpit-security-system-detail.png
 
@@ -222,10 +222,10 @@ Global Variables
 The view **Global Variables** shows you all global variables which are defined
 for every application. They can be configured on the project or set in the
 :ref:`app-yaml` file. You can switch the environment at the top. To add a new
-variable click on the :guilabel:`New` button. If you want to edit a variable click on
-the :guilabel:`Pencil` button or the :guilabel:`Delete` button to delete one.
-To delete a global variable you have to remove it on the **Default** environment.
-Deleting one on a specific environment only resets it to its default value.
+variable or edit one click on the :guilabel:`New` or :guilabel:`Pencil` button.
+If you do so your change will be written to the :ref:`app-yaml` file. You can
+reset a global variable to its environment value by clicking on the
+:guilabel:`Reset` button. 
 
 .. figure:: images/engine-cockpit-configuration-variables.png
 
@@ -283,13 +283,14 @@ External Database Detail
 In the **external database detail** view, you can see all configurations from
 the selected external database. You can test if the configuration works and a
 connection to this database can be established, when you click on the
-:guilabel:`Arrow` button. If you click on the :guilabel:`Pencil` button you
-notice that you can't edit those configurations here. But you see a snippet from
-the :ref:`app-yaml` file, how the configuration above would look like.
+:guilabel:`Arrow` button. You can change the most important information directly
+here too. If you click on the :guilabel:`Reset` button the database will be
+reset to the original setting. In this view you can see information about the
+last 200 executed *SQL* queries and used connections too.
 
 .. note:: 
-    It could be that the configurations here are not the same as they are configured on the
-    project. Maybe they were overwritten inside the :ref:`app-yaml` file.
+    Not every value can be modified here yet. But you can override them in the
+    :ref:`app-yaml` file.
 
 .. figure:: images/engine-cockpit-external-database-detail.png
 
@@ -315,11 +316,17 @@ the service click on one entry to switch to the
 Web Service Detail
 """"""""""""""""""
 
-On this view all configurations from a web service will be shown. If you wish to
-edit the service you can't do that here. But if you click on the
-:guilabel:`Pencil` button you will get a snippet from this web service. When you
-want to change some configurations you can edit them in the :ref:`app-yaml` file
-as like you see it in the snippet.
+On this view all configurations from a web service will be shown. You can change
+the credentials or the endpoints here. Or you can reset them to their original
+setting by clicking on the :guilabel:`Reset` button. To test if an endpoint is
+accessible press on the :guilabel:`Arrow` button next to it. Please be aware
+that only *HttpBasic* authentication will be supported and the request is an empty
+*POST* message, which means depending on implementation of the web service the
+status code can be different.
+
+.. note:: 
+    If you wish to change a value which is not supported by this editor you can
+    do so by modify the :ref:`app-yaml` file.
 
 .. figure:: images/engine-cockpit-webservice-detail.png
 
@@ -345,8 +352,15 @@ Rest Client Detail
 """"""""""""""""""
 
 On the **rest client detail** page all configurations for this service are
-shown. You can click on the :guilabel:`Pencil` button to get a snippet for the
-:ref:`app-yaml` file. This snippet shows you an example how you can override this rest client.
+shown. Some of those configurations can be modified directly here in this
+editor. You can reset your changes by clicking on the :guilabel:`Reset`
+button. If you want to test your configuration, click on the :guilabel:`Arrow`
+button. This will start a *HEAD* request with the given authentication
+credentials.
+
+.. note:: 
+    If you wish to change a value which is not supported by this editor you can
+    do so by modify the :ref:`app-yaml` file.
 
 .. figure:: images/engine-cockpit-rest-client-detail.png
 
