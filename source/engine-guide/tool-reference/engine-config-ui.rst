@@ -45,7 +45,7 @@ Licence
 
 On the :guilabel:`Licence` tab you have to upload a valid licence:
 
-.. figure:: /_images/engine-config-ui/engine-config-ui/engine-config-ui-licence.png
+.. figure:: /_images/engine-config-ui/engine-config-ui-licence.png
 
 Use the :guilabel:`Upload Licence` button to open the file browser and select
 the licence which should be used. 
