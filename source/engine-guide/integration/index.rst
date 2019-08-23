@@ -13,7 +13,7 @@ responsible to identify the user (either automatically or by login). After that
 the user is able to operate on all web sites that are integrated into the web
 front-end server.
 
-.. image:: /_images/integration/web-frontend-server.png
+.. image:: /_images/engine-integration/web-frontend-server.png
 
 
 .. _integration-directory:

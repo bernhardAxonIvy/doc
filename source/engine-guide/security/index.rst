@@ -23,7 +23,7 @@ be done by the IT Operation provider:
 8. Ensure that the provider performs **daily backups** (database, relevant
    engine folders).
 
-.. figure:: /_images/integration/secure-engine-setup.png
+.. figure:: /_images/engine-installation/secure-engine-setup.png
    :alt: Deployment sample with combined front-end server and ivy engine
    :align: center
 
