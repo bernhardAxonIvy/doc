@@ -1,4 +1,4 @@
 build
+_build_txt
 
-**/images/**
-source/_build/**
+source/_images

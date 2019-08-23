@@ -56,7 +56,7 @@ follows:
 #. In the appearing list of cluster nodes press the name of a cluster node to
    see it's details.
 
-.. figure:: images/ivy-cluster-node-detail.png
+.. figure:: /_images/ivy-cluster/ivy-cluster-node-detail.png
 
 More technical details about load balancing and sticky sessions can be found on
 the `Apache Tomcat web site <http://tomcat.apache.org/>`_.

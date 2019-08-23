@@ -36,24 +36,26 @@ templates_path = ['_templates']
 exclude_trees = []
 source_suffix = ['.rst']
 source_encoding = 'utf-8-sig'
+exclude_patterns = ['**/_*.rst'] # all rst files starting with _ do we use as includes
 
 # html options
 html_theme = 'sphinx_rtd_theme'
 html_use_index = True
 html_show_sourcelink = False
 html_static_path = ['_static']
-html_logo = '_static/images/axonivylogo.png'
+html_logo = '_images/logo/axonivylogo.png'
 html_theme_options = {
     'logo_only': True
 }
-html_favicon = '_static/images/favicon.png'
+html_favicon = '_images/logo/favicon.png'
 
 # base urls
 # https://stackoverflow.com/questions/1227037/substitutions-inside-links-in-rest-sphinx
 extlinks = {
     'dev-url':  ('https://developer.axonivy.com%s', None),
     'public-api':  ('https://developer.axonivy.com/doc/latest/PublicAPI%s', None),
-    'designer-guide': ('https://developer.axonivy.com/doc/latest/DesignerGuideHtml%s', None)
+    'designer-guide': ('https://developer.axonivy.com/doc/latest/DesignerGuideHtml%s', None),
+    'java-api':  ('https://docs.oracle.com/javase/8/docs/api%s', None),
 }
 
 # token replacements

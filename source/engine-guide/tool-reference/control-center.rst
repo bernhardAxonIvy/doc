@@ -34,7 +34,7 @@ note that closing this console window will terminate the |ivy-engine| without
 shutting it down properly. To stop the engine, click the red :guilabel:`stop`
 button.
 
-.. figure:: images/control-center-start-server.png
+.. figure:: /_images/control-center/control-center-start-server.png
 
 
 Register Windows Service
@@ -46,7 +46,7 @@ can register it as a Windows service. To do so, select the entry **|ivy-engine|
 :guilabel:`Windows Service` on the right. A dialog will open, prompting you for
 additional configuration data:
 
-.. figure:: images/control-center-windows-service.png
+.. figure:: /_images/control-center/control-center-windows-service.png
 
 First of all press :guilabel:`Register service` to register the service and to
 enable the rest of the configuration sections.
@@ -111,7 +111,7 @@ Windows Service. :guilabel:`Remove` removes the selected entry from the list and
 :guilabel:`Edit` allows to edit the configuration for the selected entry in the
 server list.
 
-.. figure:: images/control-center-create-new-server.png
+.. figure:: /_images/control-center/control-center-create-new-server.png
 
 In the configuration dialog for a normal application you can set the base name
 and/or refine with the instance name (in the server list the instance name is
@@ -123,7 +123,7 @@ binaries (the ones with *C* at the end of the file name, e.g.
 :file:`AxonIvyEngineC.exe`) then tick the check box :guilabel:`Show console`. It
 has no effect on all other binaries.
 
-.. figure:: images/control-center-create-new-service.png
+.. figure:: /_images/control-center/control-center-create-new-service.png
 
 In the configuration dialog for adding & editing a service entry, you can choose
 an already existing service from the combo box or set the service name when you

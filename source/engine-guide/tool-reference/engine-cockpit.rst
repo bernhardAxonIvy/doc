@@ -39,7 +39,7 @@ can test it by clicking on the :guilabel:`Send` button and send a test mail. On
 the licence panel you have the possibility to upload a licence. To do so click
 on the :guilabel:`Upload Licence` button.
 
-.. figure:: images/engine-cockpit-dashboard.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-dashboard.png
 
 
 .. _engine-cockpit-application:
@@ -58,7 +58,7 @@ For deployment of a new version of an app, you can click on the
 :guilabel:`Deployment` button to open the **Deployment Dialog**. Have a look at
 the :ref:`engine-cockpit-application-detail` view for more information.
 
-.. figure:: images/engine-cockpit-applications.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-applications.png
 
 
 .. _engine-cockpit-application-detail:
@@ -83,7 +83,7 @@ can set additional deployment options. For more information have a look at
     For CI/CD pipelines deployment visit the :ref:`deployment-deploying`
     chapter.
 
-.. figure:: images/engine-cockpit-application-detail.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-application-detail.png
 
 
 Security
@@ -108,7 +108,7 @@ You can edit a configured external security system (not ivy Security System)
 directly in your :ref:`ivy-yaml` file or you can click on the name of the system
 to open the :ref:`engine-cockpit-security-system-detail` view.
 
-.. figure:: images/engine-cockpit-security-system.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-security-system.png
 
 
 .. _engine-cockpit-security-system-detail:
@@ -129,7 +129,7 @@ at the :ref:`ivy-securitysystem-yaml` file.
     If you had something configured and you delete this entry, the entry will be
     removed from the :ref:`ivy-yaml` file. 
 
-.. figure:: images/engine-cockpit-security-system-detail.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-security-system-detail.png
 
 
 Users
@@ -148,7 +148,7 @@ required and needs to be unique.
 To get more information about a user or change some settings, you can click on
 one user to go to the :ref:`engine-cockpit-user-detail` view.
 
-.. figure:: images/engine-cockpit-users.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-users.png
 
 
 .. _engine-cockpit-user-detail:
@@ -177,7 +177,7 @@ synced from a security system with :ref:`Additional LDAP Attributes
 properties (e.g. phone number) should be appearing here. Be aware of that this
 properties can only be edited on your security system.
 
-.. figure:: images/engine-cockpit-user-detail.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-user-detail.png
 
 
 Roles
@@ -189,7 +189,7 @@ see here, if a role has a role member (role icon with a plus). For the detailed
 view of a role you can click on the role name. Then you switch to the
 :ref:`engine-cockpit-role-detail` page.
 
-.. figure:: images/engine-cockpit-roles.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-roles.png
 
 
 .. _engine-cockpit-role-detail:
@@ -209,7 +209,7 @@ same functionalities, as the one you can find in the
 You can add additional properties to a role over the buttons :guilabel:`Add`,
 :guilabel:`Edit` and :guilabel:`Delete` on the panel :guilabel:`Properties`.
 
-.. figure:: images/engine-cockpit-role-detail.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-role-detail.png
 
 
 Configuration
@@ -227,7 +227,7 @@ If you do so your change will be written to the :ref:`app-yaml` file. You can
 reset a global variable to its environment value by clicking on the
 :guilabel:`Reset` button. 
 
-.. figure:: images/engine-cockpit-configuration-variables.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-configuration-variables.png
 
 
 Business Calendar
@@ -236,13 +236,13 @@ Business Calendar
 The **Business Calendar** view allows you to see all configured business calendars.
 This overview shows you the hierarchical order of each calendar.
 
-.. figure:: images/engine-cockpit-configuration-businesscalendar.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-configuration-businesscalendar.png
 
 By clicking on one of the calendars you get redirected to its actual configurations.
 The panel **Week configuration** shows you the calendar configuration while
 the other three panels show you the registered free days.
 
-.. figure:: images/engine-cockpit-configuration-businesscalendar-detail.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-configuration-businesscalendar-detail.png
 
 
 Services
@@ -255,7 +255,7 @@ Email
 In the **email** section you can change the default email notification settings
 for each application. 
 
-.. figure:: images/engine-cockpit-email.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-email.png
 
 
 External Databases
@@ -272,7 +272,7 @@ database click on one to go to the
     If you want to add a new external database configuration, please have a look
     at :designer-guide:`Designer Guide </ivy.configuration.html#ivy.database>`.
 
-.. figure:: images/engine-cockpit-external-databases.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-external-databases.png
 
 
 .. _engine-cockpit-external-database-detail:
@@ -292,7 +292,7 @@ last 200 executed *SQL* queries and used connections too.
     Not every value can be modified here yet. But you can override them in the
     :ref:`app-yaml` file.
 
-.. figure:: images/engine-cockpit-external-database-detail.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-external-database-detail.png
 
 
 Web Services
@@ -308,7 +308,7 @@ the service click on one entry to switch to the
     :designer-guide:`Designer Guide
     </ivy.configuration.html#ivy-editors-webservice>`.
 
-.. figure:: images/engine-cockpit-webservice.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-webservice.png
 
 
 .. _engine-cockpit-webservice-detail:
@@ -328,7 +328,7 @@ status code can be different.
     If you wish to change a value which is not supported by this editor you can
     do so by modify the :ref:`app-yaml` file.
 
-.. figure:: images/engine-cockpit-webservice-detail.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-webservice-detail.png
 
 
 Rest Clients
@@ -343,7 +343,7 @@ top. Click on one rest client to get all configurations on the
     If you want to add a new rest client, please have a look at
     :designer-guide:`Designer Guide </ivy.configuration.html#ivy-rest-client>`.
 
-.. figure:: images/engine-cockpit-rest-clients.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-rest-clients.png
 
 
 .. _engine-cockpit-rest-client-detail:
@@ -362,7 +362,7 @@ credentials.
     If you wish to change a value which is not supported by this editor you can
     do so by modify the :ref:`app-yaml` file.
 
-.. figure:: images/engine-cockpit-rest-client-detail.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-rest-client-detail.png
 
 
 System Configuration
@@ -383,7 +383,7 @@ the possibility to reset a configuration or view the configuration file.
     For more information about the configuration, please have a look at the
     :ref:`configuration` section. 
 
-.. figure:: images/engine-cockpit-system-config.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-system-config.png
 
 
 Monitor
@@ -394,7 +394,7 @@ where your engine is running on. On the monitor page you will have an overview
 about cpu load, memory load, network traffic and disk read write. The memory
 monitor shows you in addition the max and usage of the jvm.
 
-.. figure:: images/engine-cockpit-monitor.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor.png
 
 
 Logs
@@ -405,4 +405,4 @@ The **logs** view shows you the latest entries of the :file:`console.log`,
 the :guilabel:`-` to hide it. If you want to see the logs of an other day, you
 can change the date at the top right.
 
-.. figure:: images/engine-cockpit-logs.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-logs.png

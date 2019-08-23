@@ -34,7 +34,7 @@ Refresh the main page of the Axon.ivy Engine. There is now a new application
 called **IvyDemoApp** with a section called **WorkflowDemos**. Under it links
 are available to start processes.
 
-.. figure:: images/workflow-demos.png
+.. figure:: /_images/engine-getting-started/workflow-demos.png
 
 Congratulations you have installed and configured your first Axon.ivy Engine and
 also deployed your first Axon.ivy processes.

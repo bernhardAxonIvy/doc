@@ -8,7 +8,7 @@ allows you to monitor the memory and CPU usage of the Axon.ivy Engine process.
 It can be used to analyze problems in your Axon.ivy projects like memory leaks
 or thread dead locks.
 
-.. figure:: images/visualvm.png
+.. figure:: /_images/visualvm/visualvm.png
 
 VisualVM can connect to all Java processes running on the same host and with the
 same user. In addition you can use JMX (See section :ref:`Java Management
@@ -39,7 +39,7 @@ The plugin itself should be mostly self explanatory. It consists of multiple
 tabs for the different aspects. Most of the tabs contain a number of charts that
 always have a similar structure:
 
-.. figure:: images/visualvm-plugin.png
+.. figure:: /_images/visualvm/visualvm-plugin.png
 
 
 Installation

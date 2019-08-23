@@ -36,7 +36,7 @@ service. You can check the operative state with :code:`systemctl status
 axonivy-engine-7x`. The output of the service status will expose an URI where
 the Axon.ivy Engine page is accessible.
 
-.. figure:: images/systemctl-status-axonivy-engine.png
+.. figure:: /_images/engine-getting-started/systemctl-status-axonivy-engine.png
 
 Copy this URL. On your client machine open a web browser and navigate to that
 URL. This will display the Axon.ivy Engine main page. 

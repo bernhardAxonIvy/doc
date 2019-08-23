@@ -3,7 +3,7 @@ Use the Engine
 
 The main page of the Axon.ivy Engine looks like this
 
-.. figure:: images/engine-mainpage.png
+.. figure:: /_images/engine-getting-started/engine-mainpage.png
 
 The Axon.ivy Engine is running in Demo Mode. This is because you did not install
 a valid license yet nor did you configure a system database. Note, that
@@ -16,18 +16,18 @@ the user names (E.g. **demo** for the **demo** user). Login as **demo** user and
 try to create a **TODO** task for the guest user using the **Axon.ivy
 Selfservice** process:
 
-.. figure:: images/portal.png
+.. figure:: /_images/engine-getting-started/portal.png
 
 Configure the **TODO** task as follows:
 
-.. figure:: images/selfservice.png
+.. figure:: /_images/engine-getting-started/selfservice.png
 
 Start the workflow by pressing the :guilabel:`Start Workflow` button. After
 that, logout, then login again as **guest** user. On the task list, you now see
 the new **TODO** task that you created before. Try to work on the task by
 clicking on the arrow located on the right side of the task:
 
-.. figure:: images/tasklist.png
+.. figure:: /_images/engine-getting-started/tasklist.png
 
 Go ahead and play around with the Selfservice process. Try out different types of tasks.
 
