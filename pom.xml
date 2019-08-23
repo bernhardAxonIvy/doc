@@ -24,7 +24,7 @@
 		                <goals><goal>unpack</goal></goals>
 		                <phase>generate-resources</phase>
 		                <configuration>
-		                    <outputDirectory>source</outputDirectory>
+		                    <outputDirectory>source/_images</outputDirectory>
 		                    <artifactItems>
 		                        <artifactItem>
 		                            <groupId>ch.ivyteam.ivy</groupId>

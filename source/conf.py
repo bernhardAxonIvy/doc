@@ -43,11 +43,11 @@ html_theme = 'sphinx_rtd_theme'
 html_use_index = True
 html_show_sourcelink = False
 html_static_path = ['_static']
-html_logo = '_static/images/axonivylogo.png'
+html_logo = '_images/logo/axonivylogo.png'
 html_theme_options = {
     'logo_only': True
 }
-html_favicon = '_static/images/favicon.png'
+html_favicon = '_images/logo/favicon.png'
 
 # base urls
 # https://stackoverflow.com/questions/1227037/substitutions-inside-links-in-rest-sphinx
