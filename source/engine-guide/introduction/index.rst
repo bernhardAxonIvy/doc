@@ -110,7 +110,7 @@ Installation Environment
 
 The following diagram shows the installation environment of an |ivy-engine|:
 
-.. figure:: images/overview.png
+.. figure:: /_images/integration/overview.png
    :alt: |ivy-engine| Installation
    :align: center
 
@@ -150,7 +150,7 @@ can hold the Axon.ivy system database is the only special infrastructure it
 needs. The deployed projects can be stored on a local harddisk on same machine
 that the |ivy-engine| Standard Edition is running on.
 
-.. figure:: images/standalone-setup.png
+.. figure:: /_images/integration/standalone-setup.png
    :alt: |ivy-engine| Standard Edition
    :align: center
 
@@ -168,7 +168,7 @@ all share the same system database which is normally stored on a dedicated
 database. The deployed projects are stored on a file system that can be accessed
 by all nodes.
 
-.. figure:: images/cluster-setup.png
+.. figure:: /_images/integration/cluster-setup.png
    :alt: |ivy-engine| Enterprise Edition
    :align: center
 

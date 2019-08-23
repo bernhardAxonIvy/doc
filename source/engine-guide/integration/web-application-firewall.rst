@@ -14,7 +14,7 @@ Most WAF or IAM systems allow to configure a way how the user name of the
 identified user is transmitted to the web applications. With Axon.ivy Engine a
 typical system landscape will look like this:
 
-.. figure:: images/waf-iam-integration.png
+.. figure:: /_images/engine-integration/waf-iam-integration.png
 
 The only available access point must be the WAF. Any traffic has to be routed
 over it. The WAF tries to protect the web application behind it (e.g. Axon.ivy

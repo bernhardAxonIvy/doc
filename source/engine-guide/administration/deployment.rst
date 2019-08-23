@@ -28,7 +28,7 @@ either already installed in the application or part of the deployment.
 We recommend to build a zip-archive, which contains all projects of an
 application.
 
-.. figure:: images/full-application-zip.png
+.. figure:: /_images/deployment/full-application-zip.png
     :align: center
 
     Sample full application zip-archive

@@ -21,7 +21,7 @@ IIS 8 (Windows Server 2012)
 #. Allow the user groups **Authenticated Users** and **IUSR** to have **Full
    control** permission on the integration directory.
 
-   .. figure:: images/iis-directory-security.png
+   .. figure:: /_images/iis/iis-directory-security.png
 #. Install Features 
    
    .. note::
@@ -37,7 +37,7 @@ IIS 8 (Windows Server 2012)
    **ISAPI Extensions** and **ISAPI Filters** are installed. If this is not the
    case select the menu **Add Role Services** to install the missing services. 
 
-   .. figure:: images/iis-server-manager.png
+   .. figure:: /_images/iis/iis-server-manager.png
 #. Feature delegation
    
    .. note::
@@ -52,13 +52,13 @@ IIS 8 (Windows Server 2012)
    node that represent your machine. In the **Feature View** open the **Feature
    Delegation** entry. 
 
-   .. figure:: images/iis-feature-delegation.png
+   .. figure:: /_images/iis/iis-feature-delegation.png
 
    Ensure that the **Delegation** of the **Handler Mappings** are set to
    **Read/Write**. Use the menu **Read/Write** on the Actions pane to change the
    **Delegation** to Read/Write.
 
-   .. figure:: images/iis-edit-feature-delegation.png
+   .. figure:: /_images/iis/iis-edit-feature-delegation.png
 #. Virtual ivy directory
 
    .. note::
@@ -76,7 +76,7 @@ IIS 8 (Windows Server 2012)
    the Virtual Directory with the path of the integration directory. Click
    **OK** to close the dialog and create the Virtual Directory:
 
-   .. figure:: images/iis-add-virtual-directory.png
+   .. figure:: /_images/iis/iis-add-virtual-directory.png
 #. Handler Mapping Permissions
 
    .. note::
@@ -90,16 +90,16 @@ IIS 8 (Windows Server 2012)
    Select the new created Virtual Directory **ivy** in the **Connections** pane
    and open the **Handler Mappings** entry in the **Feature View**:
 
-   .. figure:: images/iis-edit-feature-permission.png
+   .. figure:: /_images/iis/iis-edit-feature-permission.png
 
    In the **Actions** pane select the **Edit Feature Permissions ...** menu:
 
-   .. figure:: images/iis-handler-mappings.png
+   .. figure:: /_images/iis/iis-handler-mappings.png
    
    On the **Edit Feature Permission** dialog select all three permission and
    click **OK**:
 
-   .. figure:: images/iis-add-execute-permission.png
+   .. figure:: /_images/iis/iis-add-execute-permission.png
 #. Configure Error Page
 
    .. note::
@@ -116,16 +116,16 @@ IIS 8 (Windows Server 2012)
    Select the new created Virtual Directory **ivy** in the **Connections** pane
    and open the **Error Pages** entry in the **Feature View**:
    
-   .. figure:: images/iis-error-pages-select.png
+   .. figure:: /_images/iis/iis-error-pages-select.png
 
    Right click and select **Edit Feature Settings...** or select the same from
    the **Actions** pane (in the right hand side)
 
-   .. figure:: images/iis-error-pages-edit-feature.png
+   .. figure:: /_images/iis/iis-error-pages-edit-feature.png
 
    Select the **Detailed errors** radio button and click on **OK**
 
-   .. figure:: images/iis-error-pages-set-detailed-errors.png
+   .. figure:: /_images/iis/iis-error-pages-set-detailed-errors.png
 #. Install ISAPI filter
 
    .. note::
@@ -139,18 +139,18 @@ IIS 8 (Windows Server 2012)
    Select the Web Site in the **Connections** pane and open the **ISAPI
    Filters** entry in the **Feature View**:
 
-   .. figure:: images/iis-isapi-filter.png
+   .. figure:: /_images/iis/iis-isapi-filter.png
 
    In the **Actions** pane select the **Add ...** menu:
 
-   .. figure:: images/iis-isapi-filter-add.png
+   .. figure:: /_images/iis/iis-isapi-filter-add.png
 
    On the **Add ISAPI Filter** dialog configure the **Filter name** with
    **Axon.ivy Engine** and the **Executable** with the path of the
    :file:`isapi_redirect-1.2.42.dll` located in the integration directory. Click
    **OK** to add the ISAPI Filter:
 
-   .. figure:: images/iis-isapi-filter-add-dialog.png
+   .. figure:: /_images/iis/iis-isapi-filter-add-dialog.png
 #. Change ISAPI filter restriction
 
    .. note::
@@ -164,11 +164,11 @@ IIS 8 (Windows Server 2012)
    In the **Connections** pane select the node that represent your machine and
    open the **ISAPI and CGI Restrictions** entry in the **Features View**:
 
-   .. figure:: images/iis-isapi-restriction.png
+   .. figure:: /_images/iis/iis-isapi-restriction.png
 
    In the **Actions** pane select the **Add ...** menu:
 
-   .. figure:: images/iis-isapi-restriction-add.png
+   .. figure:: /_images/iis/iis-isapi-restriction-add.png
 
    On the **Add ISAPI or CGI Restriction** dialog configure the **ISAPI or CGI
    path** with the path of the :file:`isapi_redirect-1.2.42.dll` located in the
@@ -176,7 +176,7 @@ IIS 8 (Windows Server 2012)
    **Allow extension path to execute** check box. Click **OK** to add the ISAPI
    or CGI Restriction:
 
-   .. figure:: images/iis-isapi-restriction-add-dialog.png
+   .. figure:: /_images/iis/iis-isapi-restriction-add-dialog.png
 #. If your Microsoft Internet Information Server is not running on the same host
    as the Axon.ivy Engine or if you have changed the AJP port of the Axon.ivy
    Engine then open the file :file:`worker.properties` inside the integration
@@ -330,7 +330,7 @@ Validate that under the **Role Services** the service **Window Authentication**
 is installed. If this is not the case select the menu **Add Role Services** to
 install the missing service. 
 
-.. figure:: images/iis-single-sign-on-feature.png
+.. figure:: /_images/iis/iis-single-sign-on-feature.png
 
 
 **Deactivate Anonymous Authentication**
@@ -357,7 +357,7 @@ Make sure that all other authentication modes such as **Anonymous
 Authentication** or **Digest Authentication** are disabled, otherwise IIS will
 use those authentication modes and Single Sign On will not work.
 
-.. figure:: images/iis-single-sign-on-disable.png
+.. figure:: /_images/iis/iis-single-sign-on-disable.png
 
 
 **Activate Windows Authentication**
@@ -404,7 +404,7 @@ Validate that under the **Role Services** the service **Basic Authentication**
 is installed. If this is not the case select the menu **Add Role Services** to
 install the missing service. 
 
-.. figure:: images/iis-basic-authentication-feature.png
+.. figure:: /_images/iis/iis-basic-authentication-feature.png
    
 
 **Activate Basic Authentication**
@@ -423,7 +423,7 @@ Information Services (IIS) Manager). In the **Connections** pane select the
 **Authentication** entry. Select the **Basic Authentication** and use the menu
 **Enable** in the **Actions** pane to enable Basic Authentication.
 
-.. figure:: images/iis-basic-authentication-activate.png
+.. figure:: /_images/iis/iis-basic-authentication-activate.png
    
 
 

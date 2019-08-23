@@ -66,7 +66,7 @@ The following default pages can be customized:
     | **Error Page** which visualizes error on the front end                                 | no signature: globally defined in :ref:`web-xml` |
     +----------------------------------------------------------------------------------------+--------------------------------------------------+
 
-.. figure:: images/standard-process-task-list.png
+.. figure:: /_images/standard-process/standard-process-task-list.png
     :align: center
 
     Task List provided by JsfWorkflowUI
@@ -99,7 +99,7 @@ The following email notifications can be customized:
     | **Daily Task Summary** page with all open tasks for the user. This notification is executed once a day for each user.                                                                                                                      | MailNotification_DailyTaskSummary(Number notificationUserId)                   |
     +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
 
-.. figure:: images/standard-process-new-task.png
+.. figure:: /_images/standard-process/standard-process-new-task.png
     :align: center
 
     New Task Mail provided by JsfWorkflowUI

@@ -22,14 +22,14 @@ folders. Then, navigate to your temporary download folder and copy the file
 Right click the :file:`AxonIvyEngine\*.zip` file and press :guilabel:`Extract
 All ...` from the context menu.
 
-.. figure:: images/unzip-windows.png
+.. figure:: /_images/engine-getting-started/unzip-windows.png
 
 On the appearing dialog press the :guilabel:`Extract` button. After the
 :file:`AxonIvyEngine\*.zip` is extracted navigate into the new
 :file:`AxonIvyEngine` folder. The content of the installation folder looks like
 this:
 
-.. figure:: images/engine-folder.png
+.. figure:: /_images/engine-getting-started/engine-folder.png
 
 .. Hint:: 
   The most important sub folders in the |ivy-engine| installation folder are:
@@ -47,7 +47,7 @@ tool to start and stop the |ivy-engine| in different ways (as Windows Service,
 as normal user process, with a console window). Select the |ivy-engine| and
 press the green play button to start the |ivy-engine| as a normal user process:
 
-.. figure:: images/controlcenter.png
+.. figure:: /_images/engine-getting-started/controlcenter.png
 
 .. Hint::
   You can use the Control Center also to register Axon.ivy Engine as Windows
@@ -84,7 +84,7 @@ http://localhost:8080/ivy) by clicking on the **Config** menu.
 On the first page use the :guilabel:`Upload Licence` button to install your
 license file.
 
-.. figure:: images/license.png
+.. figure:: /_images/engine-getting-started/license.png
 
 Some information of your license will be displayed on the page as soon as you
 have installed it. Press the :guilabel:`Next` button to continue.
@@ -95,16 +95,16 @@ running and listening. Configure the **Username** and **Password** of a database
 user that has the right to create a new database on the database server. Press
 the :guilabel:`Create Database` button.
 
-.. figure:: images/systemdatabase.png
+.. figure:: /_images/engine-getting-started/systemdatabase.png
 
 On the appearing dialog configure the name of the Axon.ivy system database.
 Press the :guilabel:`Create Database` button to create the system database.
 
-.. figure:: images/createdatabase.png
+.. figure:: /_images/engine-getting-started/createdatabase.png
 
 As soon as the database creation is finished the following dialog appears:
 
-.. figure:: images/createdatabase-success.png
+.. figure:: /_images/engine-getting-started/createdatabase-success.png
 
 Press the :guilabel:`Save and connect` button to save the configuration and
 connect to the newly created system database. 
@@ -117,7 +117,7 @@ Press the :guilabel:`Next` button.
 
 On the next page, you can configure system administrators. 
 
-.. figure:: images/administrator.png
+.. figure:: /_images/engine-getting-started/administrator.png
 
 Fill in the form and press the :guilabel:`Add Administrator` button. 
 
@@ -134,7 +134,7 @@ On the next page configure which protocol connectors and ports the Axon.ivy
 Engine internal web server should provide. You do not need the AJP protocol. So
 let's disable it.
 
-.. figure:: images/webserver.png
+.. figure:: /_images/engine-getting-started/webserver.png
 
 .. include:: _webserver.rst
 
@@ -142,7 +142,7 @@ Press the :guilabel:`Next` button.
 
 On the next page, the configuration is summarized.
 
-.. figure:: images/summary.png
+.. figure:: /_images/engine-getting-started/summary.png
 
 Press the :guilabel:`Save` button to save the configuration. Switch back to the
 **Control Center** and restart the Axon.ivy Engine by stopping and starting it
@@ -163,7 +163,7 @@ WorkflowDemos and drop it in :file:`[engineDir]/deploy` folder. Refresh the
 main page of the Axon.ivy Engine. There is now a new section called
 WorkflowDemos available with new links to start processes.
 
-.. figure:: images/workflow-demos.png
+.. figure:: /_images/engine-getting-started/workflow-demos.png
 
 Congratulations you have installed and configured your first Axon.ivy Engine and
 deployed your first Axon.ivy project.

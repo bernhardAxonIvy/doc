@@ -66,7 +66,7 @@ monitoring tools provide a user interface to browse the available MBeans. MBeans
 are mostly shown in a tree which is built with the information provided in the
 names of MBeans. 
 
-.. figure:: images/visualvm-mbeans.png
+.. figure:: /_images/visualvm/visualvm-mbeans.png
 
 The names of MBeans provided by Axon.ivy are structured so that the name
 contains the Application, Process Model, Process Model Version or Environment

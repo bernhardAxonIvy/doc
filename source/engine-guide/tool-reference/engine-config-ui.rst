@@ -45,7 +45,7 @@ Licence
 
 On the :guilabel:`Licence` tab you have to upload a valid licence:
 
-.. figure:: images/engine-config-ui-licence.png
+.. figure:: /_images/engine-config-ui/engine-config-ui/engine-config-ui-licence.png
 
 Use the :guilabel:`Upload Licence` button to open the file browser and select
 the licence which should be used. 
@@ -62,7 +62,7 @@ System Database
 On the :guilabel:`System Database` tab the Axon.ivy Engine system database can
 be configured, created and converted:
 
-.. figure:: images/engine-config-ui-system-database.png
+.. figure:: /_images/engine-config-ui/engine-config-ui-system-database.png
 
 First choose the database system and the JDBC driver you want to use. At the
 moment the Axon.ivy Engine supports the following database systems:
@@ -143,7 +143,7 @@ System Administrators
 On the :guilabel:`Administrators` tab you can configure users that have the
 right to administrate the Axon.ivy Engine:
 
-.. figure:: images/engine-config-ui-admins.png
+.. figure:: /_images/engine-config-ui/engine-config-ui-admins.png
 
 Defining an email address for the administrators is recommended. Notifications
 of critical events like licence limits reached are sent to these email
@@ -161,7 +161,7 @@ On the :guilabel:`Web Server` tab you can configure which protocols the internal
 web server of Axon.ivy Engine should support and on which IP ports the web
 server is listening:
 
-.. figure:: images/engine-config-ui-webserver.png
+.. figure:: /_images/engine-config-ui/engine-config-ui-webserver.png
 
 The following protocols are supported:
 
@@ -194,7 +194,7 @@ This tab is only visible if you have installed an Axon.ivy Enterprise Edition
 licence. On the :guilabel:`Cluster` tab you have to configure some information
 according the local cluster node:
 
-.. figure:: images/engine-config-ui-cluster.png
+.. figure:: /_images/engine-config-ui/engine-config-ui-cluster.png
 
 Use the :guilabel:`Add local Node` button to add this installation as a new
 Engine cluster node to the list of cluster nodes in your Axon.ivy Engine

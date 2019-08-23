@@ -23,7 +23,7 @@ be done by the IT Operation provider:
 8. Ensure that the provider performs **daily backups** (database, relevant
    engine folders).
 
-.. figure:: images/deployment.png
+.. figure:: /_images/integration/secure-engine-setup.png
    :alt: Deployment sample with combined front-end server and ivy engine
    :align: center
 
@@ -126,9 +126,9 @@ segments.
 .. Warning::
     When using the request filter on IIS the URL parts are generally not
     allowed. A filter */ivy/error* means that */ivy/bla/ivy/error/test* is also
-    not allowed (because it’s a part of the URL).
+    not allowed (because it is a part of the URL).
 
-.. figure:: images/request-filter.png
+.. figure:: /_images/iis/iis-request-filter.png
    :alt: IIS Request Filter Config
    :align: center
 
