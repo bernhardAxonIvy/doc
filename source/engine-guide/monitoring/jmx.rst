@@ -26,12 +26,8 @@ On **Windows**: activate remote access by uncommenting the following line in the
 
     ivy.management.port=9003
 
-On **Linux**: activate remote access by uncommenting the following line in the
-:ref:`linux-launcher-config`:
-
-.. code-block:: properties
-
-    #JAVA_OPTS="$JAVA_OPTS -Dcom.sun.management.jmxremote.port=9003 -Dcom.sun.management.jmxremote.login.config=jmx -Djava.security.auth.login.config=configuration/jaas.config -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.autodiscovery=true"
+On **Linux**: activate remote access by uncommenting all lines
+in the jmx section of :ref:`jvm-options`.
 
 
 Auto Discovery (JDP)
@@ -49,7 +45,7 @@ However, you can disable this feature by uncommenting the following line in the
     ivy.management.autodiscovery=false
 
 On **Linux**: Auto discovery is enabled in the pre-configured (but uncommented)
-:code:`JAVA_OPT` of the :ref:`linux-launcher-config`. But you can disable it at
+:code:`JAVA_OPT` of the :ref:`jvm-options`. But you can disable it at
 any time by changing its value to :code:`false`:
 
 .. code-block:: properties
