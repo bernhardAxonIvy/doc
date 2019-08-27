@@ -71,20 +71,3 @@ following list shows all available options and explains them:
 +-------------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ivy.application.singleton     | no         | Is the application a singleton (true, false; only for application launcher).                                                                                                |
 +-------------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-.. _linux-launcher-config:
-
-Linux Launcher Configuration
-----------------------------
-
-The Java virtual machine (JVM) options for the Engine are configured in the
-:file:`AxonIvyEngine.conf` file. For all other helper programs the JVM options
-are configured in the :file:`control.conf` file.
-
-.. tip::
-    If you want to configure the memory (-Xmx, -Xms, etc.) or optimize any other
-    JVM options of the Engine then edit the :file:`AxonIvyEngine.conf` file.
-
-.. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.product/root/bin/linux/AxonIvyEngine.conf
-    :language: bash
