@@ -19,15 +19,7 @@ the monitoring tool, then JMX remote access has to be activated. Remote access
 is protected by a user name and password of an Axon.ivy Engine Administrator, so
 all Axon.ivy Engine Administrator have access.
 
-On **Windows**: activate remote access by uncommenting the following line in the
-:ref:`windows-program-launch-config`:
-
-.. code-block:: properties
-
-    ivy.management.port=9003
-
-On **Linux**: activate remote access by uncommenting all lines
-in the jmx section of :ref:`jvm-options`.
+Activate remote access by uncommenting all lines in the jmx section of :ref:`jvm-options`.
 
 
 Auto Discovery (JDP)
@@ -36,17 +28,8 @@ Auto Discovery (JDP)
 Some monitoring tools can auto discover running JMX servers in the network. So
 that the user does not have to know the JMX ip and port.
 
-On **Windows**: Auto discovery is enabled by default if JMX is activated.
-However, you can disable this feature by uncommenting the following line in the
-:ref:`windows-program-launch-config`:
-
-.. code-block:: properties
-
-    ivy.management.autodiscovery=false
-
-On **Linux**: Auto discovery is enabled in the pre-configured (but uncommented)
-:code:`JAVA_OPT` of the :ref:`jvm-options`. But you can disable it at
-any time by changing its value to :code:`false`:
+You can disable this behavior in :ref:`jvm-options`
+by setting the jmx autodiscovery property to false:
 
 .. code-block:: properties
 
