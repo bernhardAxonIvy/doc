@@ -11,30 +11,38 @@ Windows Service
 ---------------
 
 The binary :file:`bin/AxonIvyEngineService.exe` is the implementation of
-Axon.ivy Engine as Windows Service. But it can also be used to register,
-unregister, start and stop Axon.ivy Engine as Windows Service. 
+Axon.ivy Engine as Windows Service. It can also be used as command
+line tool to register, unregister, start and stop Axon.ivy Engine
+as Windows Service. The command line tool must *run as administrator*.
 
-The following options are available for Axon.ivy Engine Service program:
+.. rubric:: Register Axon.ivy Engine as Windows Service
 
 .. code-block:: powershell
 
-  AxonIvyEngineService.exe [-start|-stop|-register [username password]|-unregister]
+   AxonIvyEngineService.exe -register [windowsServiceName] [username] [password]
 
-+-------------+------------+---------------------------------------------------------------------------+-------------------------------+
-| Options     | Parameters | Description                                                               | Mandatory                     |
-+=============+============+===========================================================================+===============================+
-| -start      |            | Starts the Axon.ivy Engine Windows Service                                | no                            |
-+-------------+------------+---------------------------------------------------------------------------+-------------------------------+
-| -stop       |            | Stops the Axon.ivy Engine Windows Service                                 | no                            |
-+-------------+------------+---------------------------------------------------------------------------+-------------------------------+
-| -register   |            | Registers the Axon.ivy Engine Windows Service within Windows              | no                            |
-+-------------+------------+---------------------------------------------------------------------------+-------------------------------+
-|             | username   | The user name of the user in which context the windows service should run | no                            |
-+-------------+------------+---------------------------------------------------------------------------+-------------------------------+
-|             | password   | The password of the user in which context the windows service should run  | yes, if username is specified |
-+-------------+------------+---------------------------------------------------------------------------+-------------------------------+
-| -unregister |            | Unregisters the Axon.ivy Engine Windows Service from Windows              | no                            |
-+-------------+------------+---------------------------------------------------------------------------+-------------------------------+
+.. rubric:: Unregister Axon.ivy Engine as Windows Service
+
+.. code-block:: powershell
+
+   AxonIvyEngineService.exe -unregister [windowsServiceName]
+
+.. rubric:: Start the Windows Service
+
+.. code-block:: powershell
+
+   AxonIvyEngineService.exe -start [windowsServiceName]
+
+.. rubric:: Stop the Windows Service
+
+.. code-block:: powershell
+
+   AxonIvyEngineService.exe -stop [windowsServiceName]
+
+Parameters:
+  - ``windowsServiceName`` is always optional and set by default to **Axon.ivy Engine**.
+  - ``username`` is optional and defines under which user the windows service should run
+  - ``password`` is mandatory if ``username`` is set and defines the password for the given user.
 
 .. Note::
     You can also use the :ref:`control-center` to register, unregister, start
