@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 
-def getCurrentYear():
+def get_current_year():
     from datetime import datetime
     return str(datetime.today().year)
 
-def parseVersionFromPom():
+def parse_version_from_pom():
     from xml.etree import ElementTree as et
     tree = et.ElementTree()
     tree.parse('../pom.xml')
@@ -14,10 +14,28 @@ def parseVersionFromPom():
         version = version[:-9]
     return version
 
+def get_extensions():
+    # extensions needed every time
+    extensions = [
+       'sphinx.ext.extlinks',    
+       'sphinxcontrib.httpdomain'
+    ]
+    # extensions which slows down build
+    # only used in real build
+    slowExtensions = [
+       'sphinxprettysearchresults'
+    ]
+    # tags is a sphinx feature    
+    # can be set by command line with -t
+    if tags.has('enableAllExtensions'):
+        extensions.extend(slowExtensions)
+    return extensions
+
+
 # project
 project = 'Axon.ivy Digital Business Platform'
-copyright = getCurrentYear() + ', AXON Ivy AG'
-version = parseVersionFromPom()
+copyright = get_current_year() + ', AXON Ivy AG'
+version = parse_version_from_pom()
 release = version
 
 # general options
@@ -26,12 +44,7 @@ master_doc = 'index'
 pygments_style = 'tango'
 add_function_parentheses = True
 
-extensions = [
-    'sphinx.ext.extlinks',
-    'sphinxprettysearchresults',
-    'sphinxcontrib.httpdomain'
-]
-
+extensions = get_extensions()
 templates_path = ['_templates']
 exclude_trees = []
 source_suffix = ['.rst']
@@ -67,7 +80,7 @@ replacements = {
     '|axon-ivy|': 'Axon.ivy',
 }
 
-def replaceToken(app, docname, source):
+def replace_token(app, docname, source):
     result = source[0]
     for key in app.config.replacements:
         result = result.replace(key, app.config.replacements[key])
@@ -75,4 +88,4 @@ def replaceToken(app, docname, source):
 
 def setup(app):
     app.add_config_value('replacements', {}, True)
-    app.connect('source-read', replaceToken)
+    app.connect('source-read', replace_token)
