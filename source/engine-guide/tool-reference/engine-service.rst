@@ -41,7 +41,7 @@ as Windows Service. The command line tool must *run as administrator*.
 
 Parameters:
   - ``windowsServiceName`` is always optional and set by default to **Axon.ivy Engine**.
-  - ``username`` is optional and defines under which user the windows service should run
+  - ``username`` is optional and defines under which user the windows service should run.
   - ``password`` is mandatory if ``username`` is set and defines the password for the given user.
 
 .. Note::
