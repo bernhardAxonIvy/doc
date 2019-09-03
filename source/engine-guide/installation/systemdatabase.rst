@@ -146,7 +146,7 @@ If database will be created by the |ivy-engine| the collate is set to ``Latin1_G
   If this should happen, then you may customize (and increase) the number of
   open cursors per connection with the Java system property
   ``ch.ivyteam.ivy.persistence.db.oracle.MaxOpenCursors``. It can be set in the
-  :ref:`launch-config`.
+  :ref:`jvm-options`.
 
 .. note:: Schema Creation
     
