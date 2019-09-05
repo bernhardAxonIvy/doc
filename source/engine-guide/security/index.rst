@@ -232,6 +232,10 @@ set in the :ref:`ivy-yaml` and :ref:`ivy-webserver-yaml`.
   the REST APIs require a Cross-Site Request Forgery (CSRF) token by default.
 * ``Session.RenewIdOnLogin`` should always be set to ``true``, so that
   the session id is renewed after Login.
+  
+By default, all cookies (inclusive the session cookie ``JSESSIONID``) have set 
+the ``same-site`` cookie header to value ``Strict``. You can change this to a 
+less secure value if you need to in :ref:`context-xml`.  
 
 
 Only grant ivy permissions where required
