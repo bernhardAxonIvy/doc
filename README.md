@@ -6,78 +6,109 @@ Using reStructredText as markup language.
 
 ## Build
 
-    # download static images
+    # download images
     mvn clean package
 
-	# start docker-compose
-	docker-compose up
+    # build and serve doc
+    docker-compose up
 
 You can browse the documentation at http://127.0.0.1:8000
 
 
 ## Dev Environment Setup
 
-We recommend to use Eclipse or Visual Studio Code.
+Use Eclipse or Visual Studio Code.
 
-* Eclipse
-  * Plugin 
+* **Eclipse**
+    * [LiClipseText](https://marketplace.eclipse.org/content/liclipsetext)
+      seems to be better maintained.
+    * [ReST Editor](https://marketplace.eclipse.org/content/rest-editor)
+      could be interesting but under active development.
 
-* Visual Studio Code
-  * Plugin lextudio.restructuredtext for syntax highlighting and code completion.
-  * Plugin rewrap to wrap lines to 80 characters with ALT+Q
+* **Visual Studio Code**
+    * Plugin *lextudio.restructuredtext* for syntax highlighting and code completion.
+    * Plugin *rewrap* to wrap lines to 80 characters with ALT+Q
 
 
-## References
+## Links
 
-* http://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html
-* https://www.sphinx-doc.org/en/master/index.html
-* https://sphinx-rtd-theme.readthedocs.io/en/latest/demo/demo.html
-* https://raw.githubusercontent.com/rtfd/sphinx_rtd_theme/master/docs/demo/demo.rst
-* https://rest-sphinx-memo.readthedocs.io/en/latest/ReST.html#tables
+* [Sphinx](https://www.sphinx-doc.org/)
+* [reStructuredtext Reference](http://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html)
+* [sphinx-rtd-theme demo](https://sphinx-rtd-theme.readthedocs.io/en/latest/demo/demo.html) and its [raw sources](https://raw.githubusercontent.com/rtfd/sphinx_rtd_theme/master/docs/demo/demo.rst)
+* [reStructuredtext tables](https://rest-sphinx-memo.readthedocs.io/en/latest/ReST.html#tables)
 
 
 ## Guidelines
 
+1. **Prevent big files**. If you use includes the included file should start with underscore.
+2. **No binary files**. Use another repository for binary files.
+
+
+## Samples
+
 - GUI elements
-  :guilabel:`Next` button'
+
+	:guilabel:`Next button'
 
 - Files and Directories
-  :file:`docker-entrypoint.sh`
-  :file:`[engineDir]/configuration/defaults`
+
+	:file:`docker-entrypoint.sh`
+	:file:`[engineDir]/configuration/defaults`
 
 - Inline code
-  :code:`docker run -p 8080:8080 axonivy/axonivy-engine:dev`
+
+	:code:`docker run -p 8080:8080 axonivy/axonivy-engine:dev`
 
 - Inline code block
-  .. code-block:: bash
 
-    docker run -p 8080:8080 axonivy/axonivy-engine
+	.. code-block:: bash
+       
+       docker run -p 8080:8080 axonivy/axonivy-engine
 
 - Include code files
-  .. literalinclude:: includes/docker-entrypoint.sh
-    :language: bash
-    :linenos:
+
+	.. literalinclude:: includes/docker-entrypoint.sh
+       :language: bash
+       :linenos:
 
 - Links to dev.axonivy.com
-  :dev-url:`Download </download>`
+
+	:dev-url:`Download </download>`
 
 - Links to public api
-  :public-api:`IvyPrimefacesThemeResolver </ch/ivyteam/ivy/jsf/primefaces/theme/IvyPrimefacesThemeResolver.html>`
+
+	:public-api:`IvyPrimefacesThemeResolver </ch/ivyteam/ivy/jsf/primefaces/theme/IvyPrimefacesThemeResolver.html>`
 
 - Warnings
-  .. Warn:: Attention! Make a backup!
+
+	.. Warn:: Attention! Make a backup!
 
 - Tips
-  .. Tip:: Best Practice. Advice!
+
+	.. Tip:: Best Practice. Advice!
 
 - External Link
-  `Title <https://www.google.ch>`_ 
+
+	`Title <https://www.google.ch>`_ 
 
 - Internal link (original title)
-  :ref:`web-xml`
+
+	:ref:`web-xml`
 
 - Interanl Link (custom title)
-  :ref:`prepared <deployment-prepare>`
+
+	:ref:`prepared <deployment-prepare>`
 
 - Image
-  .. figure:: images/workflow-demos.png
+
+	.. figure:: images/workflow-demos.png
+
+- Headings  
+
+	# with overline, for parts
+    * with overline, for chapters
+    =, for sections
+    -, for subsections
+    ^, for subsubsections
+    ", for paragraphs
+
