@@ -72,7 +72,11 @@ We only support **InnoDB** as storage engine. If database will be created by the
 |ivy-engine| the charset is set to ``utf8`` and collation is set to
 ``utf8_unicode_ci``.
 
-
+.. tip::
+  If you experience bad query performance in Portal, then try to increase the
+  setting ``innodb-buffer-pool-size`` in the :file:`my.cnf` configuration 
+  file of the database. 
+    
 .. _systemdb-mariadb:
 
 MariaDB
@@ -86,6 +90,10 @@ We only support **InnoDB** as storage engine. If database will be created by the
 |ivy-engine| the charset is set to ``utf8`` and collation is set to
 ``utf8_unicode_ci``.
 
+.. tip::
+  If you experience bad query performance in Portal, then try to increase the
+  setting ``innodb-buffer-pool-size`` in the :file:`my.cnf` configuration 
+  file of the database. 
 
 .. _systemdb-postgres:
 
@@ -98,6 +106,10 @@ PostgreSQL
 
 If database will be created by the |ivy-engine| the encoding is set to ``UTF8``.
 
+.. tip::
+  If you experience bad query performance in Portal, then try to increase the
+  setting ``work_mem`` in the :file:`postgresql.conf` configuration 
+  file of the database.     
 
 .. _systemdb-mssql:
 
