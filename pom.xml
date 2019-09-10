@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>doc-product</artifactId>
@@ -11,56 +12,69 @@
 		<relativePath>../development/ch.ivyteam.ivy.build.maven/config</relativePath>
 	</parent>
 
-    <build>
-		<plugins>		
-			
-		    <plugin>
-		        <groupId>org.apache.maven.plugins</groupId>
-		        <artifactId>maven-dependency-plugin</artifactId>
-		        <version>2.10</version>
-		        <executions>
-		            <execution>
-		                <id>unpack-doc-images</id>
-		                <goals><goal>unpack</goal></goals>
-		                <phase>generate-resources</phase>
-		                <configuration>
-		                    <outputDirectory>source/_images</outputDirectory>
-		                    <artifactItems>
-		                        <artifactItem>
-		                            <groupId>ch.ivyteam.ivy</groupId>
-		                            <artifactId>doc-images</artifactId>
-		                            <type>zip</type>
-		                        </artifactItem>
-		                    </artifactItems>
-		                </configuration>
-		            </execution>
+	<properties>
+		<images.folder>source/_images</images.folder>
+	</properties>
+
+	<build>
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+
+					<execution>
+						<id>unpack-doc-images</id>
+						<goals>
+							<goal>unpack</goal>
+						</goals>
+						<phase>generate-resources</phase>
+						<configuration>
+							<outputDirectory>${images.folder}</outputDirectory>
+							<artifactItems>
+								<artifactItem>
+									<groupId>ch.ivyteam.ivy</groupId>
+									<artifactId>doc-images</artifactId>
+									<type>zip</type>
+								</artifactItem>
+
+								<artifactItem>
+									<groupId>ch.ivyteam.ivy.screenshot</groupId>
+									<artifactId>doc-screenshots</artifactId>
+									<type>zip</type>
+								</artifactItem>
+							</artifactItems>
+						</configuration>
+					</execution>
 
 					<execution>
 						<id>unpack-engine-cockpit-images</id>
-						<goals><goal>unpack</goal></goals>
+						<goals>
+							<goal>unpack</goal>
+						</goals>
 						<phase>generate-resources</phase>
 						<configuration>
-							<outputDirectory>source/_images/engine-cockpit</outputDirectory>
+							<outputDirectory>${images.folder}/engine-cockpit</outputDirectory>
 							<artifactItems>
-		                        <artifactItem>
-		                            <groupId>ch.ivyteam.ivy</groupId>
-		                            <artifactId>engine-cockpit-selenium-test</artifactId>
-		                            <type>zip</type>
-		                        </artifactItem>
-		                    </artifactItems>
+								<artifactItem>
+									<groupId>ch.ivyteam.ivy</groupId>
+									<artifactId>engine-cockpit-selenium-test</artifactId>
+									<type>zip</type>
+								</artifactItem>
+							</artifactItems>
 						</configuration>
 					</execution>
-		        </executions>
-		        
-		        <configuration>
-		        	<overWriteSnapshots>true</overWriteSnapshots>
-		        </configuration>
-		    </plugin>
-    
+				</executions>
+
+				<configuration>
+					<overWriteSnapshots>true</overWriteSnapshots>
+				</configuration>
+			</plugin>
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>
-				<version>3.1.1</version>
 				<executions>
 					<execution>
 						<phase>install</phase>
@@ -75,7 +89,19 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>			
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-clean-plugin</artifactId>
+				<configuration>
+					<filesets>
+						<fileset>
+							<directory>${images.folder}</directory>
+						</fileset>
+					</filesets>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
