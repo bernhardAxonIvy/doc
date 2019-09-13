@@ -215,7 +215,10 @@ And let's run the container with this configuration
 
 .. code-block:: bash
 
-  docker run -v ivy.yaml:/etc/axonivy-engine/ivy.yaml ... 
+  docker run -v $(pwd)/ivy.yaml:/etc/axonivy-engine/ivy.yaml ... 
+  
+.. tip::
+  On Windows use :code:`%cd%/ivy.yaml` instead of :code:`$(pwd)/ivy.yaml`  
 
 For further docker examples have a look at our `docker-samples
 <https://github.com/ivy-samples/docker-samples>`_ GitHub repository. 
