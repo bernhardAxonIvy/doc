@@ -270,7 +270,7 @@ database click on one to go to the
 
 .. note::
     If you want to add a new external database configuration, please have a look
-    at :designer-guide:`Designer Guide </ivy.configuration.html#ivy.database>`.
+    at :ref:`database-configuration`.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-external-databases.png
 
@@ -305,8 +305,8 @@ the service click on one entry to switch to the
 
 .. note::
     If you want to add a new web service, please have a look at
-    :designer-guide:`Designer Guide
-    </ivy.configuration.html#ivy-editors-webservice>`.
+    :ref:`Designer Guide
+    <webservice-clients-configuration>`.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-webservice.png
 
@@ -341,7 +341,7 @@ top. Click on one rest client to get all configurations on the
 
 .. note::
     If you want to add a new rest client, please have a look at
-    :designer-guide:`Designer Guide </ivy.configuration.html#ivy-rest-client>`.
+    :ref:`Designer Guide <rest-clients-configuration>`.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-rest-clients.png
 
