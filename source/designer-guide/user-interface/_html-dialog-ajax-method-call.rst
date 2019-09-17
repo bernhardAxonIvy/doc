@@ -1,0 +1,32 @@
+Ajax Method Call API
+--------------------
+
+Methods of a Html Dialog can be called with JavaScript through a REST
+like interface. This Ajax method call API of Axon.ivy can be used to
+integrate JavaScript libraries like D3, jQuery or your own JavaScript
+scripts. See the Ajax Method Call Demo in the Html Dialog Demo Project:
+
+::
+
+         <script type="text/javascript">
+                   // jQuery is used to intercept the click on the Button with id #hello
+                   $("#hello").click(function(){
+
+                           // The ivyajaxapi.js script provides the logic object, 
+                           // which contains a function for each method available on the dialogs interface.
+                           // If you would like to use the REST API in a more advanced way or without jQuery, 
+                           // have a look at the generated ivyajaxapi.js script to see how the REST API is used.
+                           logic.helloWorld( 
+                               
+                               // The first parameter is a data structure, which represents the list of parameters
+                               {"name": "World"},
+                               
+                               // The second parameter is a function, which is called on a successful response.
+                               function(returnData)
+                               {
+                                   // returnData is a JavaScript Object containing one field for each Method return value.
+                                   // returnData.result accesses the return value named result.
+                                   $("#result").html(returnData.result);
+                               });
+                   });
+           </script>

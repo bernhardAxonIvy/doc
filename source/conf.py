@@ -67,7 +67,6 @@ html_favicon = '_images/logo/favicon.png'
 extlinks = {
     'dev-url':  ('https://developer.axonivy.com%s', None),
     'public-api':  ('https://developer.axonivy.com/doc/latest/PublicAPI%s', None),
-    'designer-guide': ('https://developer.axonivy.com/doc/latest/DesignerGuideHtml%s', None),
     'java-api':  ('https://docs.oracle.com/javase/8/docs/api%s', None),
 }
 
