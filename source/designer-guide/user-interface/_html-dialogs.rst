@@ -35,8 +35,8 @@ doc <http://www.primefaces.org/docs/vdl/>`__.
 
 The elements of the PrimeFaces library are introduced with the ``<p:>``
 namespace on your XHTML page. In addition also the
-**primefaces-extension**\ ``<pe:`` and **primefaces-mobile** ``<pm:``
-widget libraries are included in the Axon.ivy installation.
+**primefaces-extension**\ ``<pe:`` widget library is included in the
+Axon.ivy installation.
 
 .. note::
 
