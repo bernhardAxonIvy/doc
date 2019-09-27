@@ -66,10 +66,6 @@ To install a licence file follow the steps below:
    :file:`\*.lic` (e.g. from :file:`foo_bar_another_licence.lic` to
    :file:`foo_bar_another_licence.lic.old`).
 
-.. Hint::
-  You may leave :file:`demo.lic` in the configuration folder, because this
-  licence is taken only if no other licence files are found.
-
 
 Installed Files and Directories
 -------------------------------
@@ -87,8 +83,6 @@ After the installation the following files and folders are located in the
 | | reference/                     | Documentation for all available configurations                                                                                                                                     |
 +-+-+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | | templates/                     | Use case driven configuration templates                                                                                                                                            |
-+-+-+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | demo.lic                       | Demo licence file                                                                                                                                                                  |
 +-+-+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | | :ref:`ivy-yaml`                | Main configuration file of the Axon.ivy Engine. Configures environments such as the system database, e-mail servers, administrators and more.                                      |
 +-+-+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
