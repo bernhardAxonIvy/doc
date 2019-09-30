@@ -249,6 +249,22 @@ Services
 --------
 
 
+Search Engine
+^^^^^^^^^^^^^
+
+You can use the **search engine** view, to get an overview of your running
+Elastic Search instance. The information panel shows you some configurations and
+gives you the possibility to jump quickly to the
+:ref:`engine-cockpit-system-configuration` view by clicking on the
+:guilabel:`cog` button. If you click on the :guilabel:`bug` button a new dialog
+opens, where you can run some queries against your Search Engine.
+
+The indices panel list all indices from the Search Engine. You can trigger a
+*reindex* here or run a document specific query command.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-search-engine.png
+
+
 Email
 ^^^^^
 
@@ -364,6 +380,8 @@ credentials.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-rest-client-detail.png
 
+
+.. _engine-cockpit-system-configuration:
 
 System Configuration
 --------------------
