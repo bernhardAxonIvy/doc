@@ -50,21 +50,23 @@ without demo projects.
 Installing a Licence
 --------------------
 
-By default a demo licence is installed that allows you to run the |ivy-engine|
-in demo mode. You have to install a licence in order to run |ivy-engine| in a
-production environment.
+By default the |ivy-engine| is runnnig in demo mode.
+You have to install a licence in order to run |ivy-engine| in a production environment.
 
-.. Note::
+.. note::
   The licence file contains the name of the host where the engine is installed
   on. The licence will only work if the name of the machine exactly matches the
   name stored in the licence file.
 
 To install a licence file follow the steps below:
 
-#. Copy the licence file :file:`\*.lic` to the directory configuration/.
-#. Change the extension of your old licence files to anything, but
-   :file:`\*.lic` (e.g. from :file:`foo_bar_another_licence.lic` to
-   :file:`foo_bar_another_licence.lic.old`).
+#. Copy the licence file :file:`\*.lic` to the directory :file:`[engineDir]/configuration`.
+#. Remove all other licence files in the :file:`[engineDir]/configuration` directory.
+
+.. note::
+  For container based installations it is also possible to make the license file
+  available via :ref:`environment variables or docker-secrets <configuration_containers_licence>`.
+
 
 
 Installed Files and Directories
