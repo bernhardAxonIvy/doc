@@ -41,23 +41,28 @@ For further docker examples have a look at our `docker-samples
 Licence
 *******
 
-You can provide the licence either:
+You can provide the licence either by:
 
-* Packaging as part of your docker image in the :file:`configuration` folder.
+* Packaging it as part of your docker image in the :file:`configuration` folder:
 
   .. code-block:: dockerfile
   
      ADD licence.lic /etc/axonivy-engine/licence.lic
 
-* Map the licence file into the :file:`configuration` folder.
+* Mapping it into the :file:`configuration` folder:
    
   .. code-block:: bash
 
      docker run -v $(pwd)/licence.lic:/etc/axonivy-engine/licence.lic ... 
 
-* Provide it due runtime as environment variable ``IVY_LICENCE``
+* Provide it as environment variable ``IVY_LICENCE``:
 
-* Map it as docker secret in ``/run/secrets/ivy.Licence``
+  .. code-block:: bash
+     
+     export IVY_LICENCE=$(<licence.lic)
+     docker run -e IVY_LICENCE ... 
+
+* Mapping it as docker secret into file ``/run/secrets/ivy.Licence``
 
 
 .. _configuration_containers_secrets:
