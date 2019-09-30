@@ -224,6 +224,12 @@ And let's run the container with this configuration
 For further docker examples have a look at our `docker-samples
 <https://github.com/ivy-samples/docker-samples>`_ GitHub repository. 
 
+.. _configuration_containers_licence:
+.. rubric:: Licence
+
+If you do not want to package the license file as part of your container image,
+you can also make it available at runtime as an environment variable ``IVY_LICENCE``
+or as a docker secret ``/run/secrets/ivy.Licence``.
 
 .. _configuration_containers_secrets:
 .. rubric:: Secrets
