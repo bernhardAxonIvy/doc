@@ -50,9 +50,8 @@ without demo projects.
 Installing a Licence
 --------------------
 
-By default a demo licence is installed that allows you to run the |ivy-engine|
-in demo mode. You have to install a licence in order to run |ivy-engine| in a
-production environment.
+By default the |ivy-engine| is runnnig in demo mode.
+You have to install a licence in order to run |ivy-engine| in a production environment.
 
 .. note::
   The licence file contains the name of the host where the engine is installed
