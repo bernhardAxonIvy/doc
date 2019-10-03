@@ -59,8 +59,10 @@ You can provide the licence either by:
 
   .. code-block:: bash
      
-     export IVY_LICENCE=$(<licence.lic)
-     docker run -e IVY_LICENCE ... 
+     export IVY_LICENCE=$(<licence.lic>)
+     # In Windows Powershell:
+     # set IVY_LICENCE=[string](Get-Content -Path <licence.lic> -raw)
+     docker run -e IVY_LICENCE=$IVY_LICENCE ... 
 
 * Mapping it as docker secret into file ``/run/secrets/ivy.Licence``
 
