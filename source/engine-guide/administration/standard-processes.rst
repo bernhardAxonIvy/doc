@@ -50,21 +50,24 @@ The following default pages can be customized:
 
 .. table::
 
-    +----------------------------------------------------------------------------------------+--------------------------------------------------+
-    | Default Page                                                                           | Process Start Signature                          |
-    +========================================================================================+==================================================+
-    | **Application Home Page** as the entry page to the application.                        | DefaultApplicationHomePage()                     |
-    +----------------------------------------------------------------------------------------+--------------------------------------------------+
-    | **Task List** with all tasks the current user can work on.                             | DefaultTaskListPage()                            |
-    +----------------------------------------------------------------------------------------+--------------------------------------------------+
-    | **Process Start List** with all processes which the current user can start.            | DefaultProcessStartListPage()                    |
-    +----------------------------------------------------------------------------------------+--------------------------------------------------+
-    | **End Page** which will be displayed to the user after a task or process is completed. | DefaultEndPage(Number endedTaskId)               |
-    +----------------------------------------------------------------------------------------+--------------------------------------------------+
-    | **Login Page** which comes up whenever authentication is needed.                       | DefaultLoginPage(String originalUrl)             |
-    +----------------------------------------------------------------------------------------+--------------------------------------------------+
-    | **Error Page** which visualizes error on the front end                                 | no signature: globally defined in :ref:`web-xml` |
-    +----------------------------------------------------------------------------------------+--------------------------------------------------+
+    +----------------------------------------------------------------------------------------+----------------------------------------------------+
+    | Default Page                                                                           | Process Start Signature                            |
+    +========================================================================================+====================================================+
+    | **Application Home Page** as the entry page to the application.                        | DefaultApplicationHomePage()                       |
+    +----------------------------------------------------------------------------------------+----------------------------------------------------+
+    | **Task List** with all tasks the current user can work on.                             | DefaultTaskListPage()                              |
+    +----------------------------------------------------------------------------------------+----------------------------------------------------+
+    | **Process Start List** with all processes which the current user can start.            | DefaultProcessStartListPage()                      |
+    +----------------------------------------------------------------------------------------+----------------------------------------------------+
+    | **End Page** which will be displayed to the user after a task or process is completed. | DefaultEndPage(Number endedTaskId)                 |
+    +----------------------------------------------------------------------------------------+----------------------------------------------------+
+    | **Login Page** which comes up whenever authentication is needed.                       | DefaultLoginPage(String originalUrl)               |
+    +----------------------------------------------------------------------------------------+----------------------------------------------------+
+    | **Error Page** which visualizes error on the front end                                 | no signature: globally defined in :ref:`web-xml`   |
+    +----------------------------------------------------------------------------------------+----------------------------------------------------+
+    | **Open Task Ui Page** as the entry page for a task which should be opened in frame.    | OpenTaskUi(String taskUiUrl, Number runningTaskId) |
+    | Add *?embedInFrame* to task start url to trigger this page.                            |                                                    |
+    +----------------------------------------------------------------------------------------+----------------------------------------------------+
 
 .. figure:: /_images/standard-process/standard-process-task-list.png
     :align: center
