@@ -56,7 +56,7 @@ html_theme = 'sphinx_rtd_theme'
 html_use_index = True
 html_show_sourcelink = False
 html_static_path = ['_static']
-html_logo = '_images/logo/axonivylogo.png'
+html_logo = '_images/logo/axonivylogo.svg'
 html_theme_options = {
     'logo_only': True
 }
