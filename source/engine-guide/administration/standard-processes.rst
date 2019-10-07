@@ -65,8 +65,8 @@ The following default pages can be customized:
     +----------------------------------------------------------------------------------------+----------------------------------------------------+
     | **Error Page** which visualizes error on the front end                                 | no signature: globally defined in :ref:`web-xml`   |
     +----------------------------------------------------------------------------------------+----------------------------------------------------+
-    | **Open Task Ui Page** as the entry page for a task which should be opened in frame.    | OpenTaskUi(String taskUiUrl, Number runningTaskId) |
-    | Add *?embedInFrame* to task start url to trigger this page.                            |                                                    |
+    | **Frame Page** as the entry page to embed the given url in a frame.                    | DefaultFramePage(String relativeUrl,               |
+    |                                                                                        | Number taskId)                                     |
     +----------------------------------------------------------------------------------------+----------------------------------------------------+
 
 .. figure:: /_images/standard-process/standard-process-task-list.png
