@@ -6,8 +6,6 @@ a process at a high level, where details of the technical implementation
 are hidden inside the element itself. Thus BPMN Activities behave
 similar to a *Embedded Sub*, but their purpose is different.
 
-They are intensively used by the :ref:`import-axonivy-modeler-processes`.
-
 Available BPMN Activity Elements
 --------------------------------
 

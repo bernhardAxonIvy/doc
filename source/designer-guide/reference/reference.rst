@@ -70,7 +70,6 @@ Wizards
 -  :ref:`refactoring-wizards-delete`
 -  :ref:`Export Axon.ivy Archive wizard <designer-export-project>`
 -  :ref:`Import Axon.ivy Archive wizard <designer-import-project>`
--  :ref:`import-axonivy-modeler-processes`
 -  :ref:`cms-import`
 -  :ref:`cms-export`
 
