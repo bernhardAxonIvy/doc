@@ -1,42 +1,121 @@
+/* use nice blue on the left side */
 .wy-side-nav-search {
   background-color: #007095;
 }
+.wy-nav-side {
+  background-color: #007095;
+}
 
-
-
+/* mobile */
+.wy-nav-top {
+  background-color: #007095;
+}
 
 /* fix coloring of visited links */
+.wy-nav-content a:link  {
+  color: #007095;
+}
 .wy-nav-content a:visited  {
-    color: #2980B9;
+  color: #007095;
+}
+.wy-nav-content a:hover {
+  color: #49BAD6;
 }
 
 /* spaces between single li elements */
 .wy-nav-content li {
-    margin: 0 0 4px 0;
+  margin: 0 0 4px 0;
 }
+
+
+/* level 1 */
+.wy-menu-vertical li.toctree-l1.current > a {
+  background-color: #F9FAFA;
+  border-top: solid 1px #F9FAFA;
+  border-bottom: solid 1px #F9FAFA;
+}
+
+/* level 2 */
+.wy-menu-vertical li.toctree-l2.current > a {
+  background-color: #F9FAFA;
+}
+.wy-menu-vertical li.toctree-l2.current li.toctree-l3 > a {
+  background-color: #F9FAFA;
+}
+
+/* level 3 */
+.wy-menu-vertical li.toctree-l3.current li.toctree-l4 > a {
+  background-color: #F9FAFA;
+}
+
+.wy-menu-vertical li.current {
+  /*background-color: #D9DADA;*/
+  background-color: #F4F5F5;
+}
+
+.wy-menu-vertical a {
+  color: white;
+}
+
+.wy-menu-vertical a:hover {
+  background-color: #9C9D9D;
+}
+
 
 /* make images captions nice */
 .wy-nav-content p.caption {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 .wy-nav-content p.caption span.caption-text {
-    font-weight: bold;
-    font-style: normal;
-    font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 14px;
 }
+
+/* listings */
+.rst-content dl:not(.docutils) dt {
+  background-color: white;
+  color: #007095;
+  border-top: 0px;
+}
+
+
+/* back/forward buttons */
+.btn-neutral {
+  border-radius: 15px;
+  background-color: #F4F5F5;
+  font-size: 12px;
+}
+
+
+
+/*
+.rst-content .tip {
+  background-color:#D4EBA2;
+}
+.rst-content .tip .admonition-title {
+  background-color: #98A874;
+}
+
+.rst-content .note {
+  background-color: #90DDE9;
+}
+.rst-content .note .admonition-title {
+  background-color: #49BAD6;
+}
+*/
+
 
 /* fix table widhts */
 /* https://rackerlabs.github.io/docs-rackspace/tools/rtd-tables.html */
 @media screen and (min-width: 767px) {
-
-    .wy-table-responsive table td {
-       /* !important prevents the common CSS stylesheets from overriding
-          this as on RTD they are loaded after this stylesheet */
-       white-space: normal !important;
-       vertical-align: top !important;
-    }
- 
-    .wy-table-responsive {
-       overflow: visible !important;
-    }
- }
+  .wy-table-responsive table td {
+     /* !important prevents the common CSS stylesheets from overriding
+        this as on RTD they are loaded after this stylesheet */
+     white-space: normal !important;
+     vertical-align: top !important;
+  }
+  .wy-table-responsive {
+     overflow: visible !important;
+  }
+}
