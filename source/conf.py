@@ -60,6 +60,7 @@ html_logo = '_images/logo/axonivylogo.svg'
 html_theme_options = {
     'logo_only': True
 }
+html_show_sphinx = False
 html_favicon = '_images/logo/favicon.png'
 
 # base urls
