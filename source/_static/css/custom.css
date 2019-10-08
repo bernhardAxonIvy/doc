@@ -1,7 +1,9 @@
 .wy-side-nav-search {
-    /*background-color: #a4b104;*/
-    background-color: #616161;
+  background-color: #007095;
 }
+
+
+
 
 /* fix coloring of visited links */
 .wy-nav-content a:visited  {
