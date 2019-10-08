@@ -54,9 +54,20 @@ By default the |ivy-engine| is runnnig in demo mode.
 You have to install a licence in order to run |ivy-engine| in a production environment.
 
 .. note::
-  The licence file contains the name of the host where the engine is installed
-  on. The licence will only work if the name of the machine exactly matches the
-  name stored in the licence file.
+  The licence file contains a list of public URLs. If a user uses an URL that does not match an entry in the 
+  list of the licence she will get a `400 - Bad Request` error.
+  
+  Example:
+  
+  Let's assume your Axon.ivy Engine is installed on a machine with the name ``axonivyprod`` and listens on port 8080. 
+  Intranet users use ``http://axonivyprod:8080/ivy/*`` to communicate with the Axon.ivy Engine. 
+  For users on the internet there is a reverse proxy with the DNS name ``www.customer.com`` that forwards requests to ``axonivyprod``. 
+  Internet users use ``http://www.customer.com/ivy/*`` to communicate with the Axon.ivy Engine. 
+  In this case the licence must contain two entries: ``axonivyprod`` and ``www.customer.com``.
+  
+  As long as the users communicate over the standard ``http`` or ``https`` ports (80, 443, 8080, 8443) and the 
+  default context path ``/ivy``, the list of public URLs contains host names only (e.g. ``www.customer.com``, ``axonivyprod``).
+  If this is not the case then the entries must contain the port and/or context path (e.g. ``www.customer.com/axon``, ``axonivyprod:9090``, ``www.customer.com:90/axonivy``).    
 
 To install a licence file follow the steps below:
 
