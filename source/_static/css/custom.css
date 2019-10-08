@@ -1,3 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+h1,h2,.rst-content .toctree-wrapper p.caption,h3,h4,h5,h6,legend {
+  font-family: Roboto, Helvetica Neue, Arial, sans-serif;
+}
+.rst-content .sidebar .sidebar-title {
+  font-family: Roboto, Helvetica Neue, Arial, sans-serif;
+}
+.rst-versions {
+  font-family: Roboto, Helvetica Neue, Arial, sans-serif;
+}
+.btn {
+  font-family: Roboto, Helvetica Neue, Arial, sans-serif;
+}
+input[type="button"],input[type="reset"],input[type="submit"] {
+  font-family: Roboto, Helvetica Neue, Arial, sans-serif;
+}
+input[type="text"],input[type="password"],input[type="email"],input[type="url"],input[type="date"],input[type="month"],input[type="time"],input[type="datetime"],input[type="datetime-local"],input[type="week"],input[type="number"],input[type="search"],input[type="tel"],input[type="color"]
+{
+  font-family: Roboto, Helvetica Neue, Arial, sans-serif;
+}
+textarea {
+  font-family: Roboto, Helvetica Neue, Arial, sans-serif;
+}
+body {
+  font-family: Roboto, Helvetica Neue, Arial, sans-serif;
+}
+
+
 /* use nice blue on the left side */
 .wy-side-nav-search {
   background-color: #007095;
