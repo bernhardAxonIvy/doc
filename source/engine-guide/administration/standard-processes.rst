@@ -66,7 +66,7 @@ The following default pages can be customized:
     | **Error Page** which visualizes error on the front end                                 | no signature: globally defined in :ref:`web-xml`   |
     +----------------------------------------------------------------------------------------+----------------------------------------------------+
     | **Frame Page** as the entry page to embed a given url in a frame.                      | DefaultFramePage(String relativeUrl,               |
-    |                                                                                        | Number runningTaskId)                                     |
+    |                                                                                        | Number runningTaskId)                              |
     +----------------------------------------------------------------------------------------+----------------------------------------------------+
 
 .. figure:: /_images/standard-process/standard-process-task-list.png
