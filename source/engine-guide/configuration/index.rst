@@ -23,30 +23,14 @@ which are provided under :file:`[enginDir]/configuration/templates`.
 Of course, most settings can also be adjusted in our :ref:`engine-cockpit`.
 
 
+.. rubric:: Configure your engine
+
 .. toctree::
-   :maxdepth: 2
-   :hidden:
+   :maxdepth: 1
 
    system-database
    users
    email
-   
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-
    advanced-configuration
-
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-
    docker-container
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-
    file-reference

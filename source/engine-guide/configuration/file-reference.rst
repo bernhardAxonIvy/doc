@@ -1,7 +1,7 @@
 .. _configuration-file-reference:
 
-Configuration File Reference
-============================
+File Reference
+==============
 
 .. toctree::
    :maxdepth: 1
