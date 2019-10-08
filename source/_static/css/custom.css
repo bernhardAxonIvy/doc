@@ -62,19 +62,23 @@ body {
   background-color: #F9FAFA;
   border-top: solid 1px #F9FAFA;
   border-bottom: solid 1px #F9FAFA;
+  border-right: solid 1px #c9c9c9;
 }
 
 /* level 2 */
 .wy-menu-vertical li.toctree-l2.current > a {
   background-color: #F9FAFA;
+  border-right: solid 1px #c9c9c9;
 }
 .wy-menu-vertical li.toctree-l2.current li.toctree-l3 > a {
   background-color: #F9FAFA;
+  border-right: solid 1px #c9c9c9;
 }
 
 /* level 3 */
 .wy-menu-vertical li.toctree-l3.current li.toctree-l4 > a {
   background-color: #F9FAFA;
+  border-right: solid 1px #c9c9c9;
 }
 
 .wy-menu-vertical li.current {
