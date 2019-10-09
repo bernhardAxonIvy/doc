@@ -1,9 +1,9 @@
 version: '3.3'
 services:
   builder:
-    image: axonivy/build-container:read-the-docs-1.0
-    entrypoint: "make -C /doc-build livehtml BASEDIR=/ivy-core/doc"
-    volumes:
-     - "./..:/ivy-core"     
+    image: axonivy/build-container:read-the-docs-1.1
     ports:
      - "8000:8000"
+    volumes:
+     - "./..:/ivy-core"     
+    entrypoint: "make livehtml BASEDIR=/ivy-core/doc"
