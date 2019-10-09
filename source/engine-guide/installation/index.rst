@@ -50,16 +50,27 @@ without demo projects.
 Installing a Licence
 --------------------
 
-By default the |ivy-engine| is runnnig in demo mode.
+By default the |ivy-engine| is running in demo mode.
 You have to install a licence in order to run |ivy-engine| in a production environment.
 
-.. note::
-  The licence file contains the name of the host where the engine is installed
-  on. The licence will only work if the name of the machine exactly matches the
-  name stored in the licence file.
+To order a licence file you need to know the public URLs that end users will use to access your engine.
 
+.. admonition:: Example
+  
+  Let's assume your Axon.ivy Engine is installed on a machine with the DNS name ``axonivyprod`` and listens on port 8080. Users access the engine in two different ways:
+  
+  * Intranet users use ``http://axonivyprod:8080/ivy/*`` to access it. 
+  * Internet users use ``http://www.customer.com/ivy/*`` to access it through a reverse proxy.
+  
+  In this case the licence must contain two public URLs: ``axonivyprod`` and ``www.customer.com``.
+    
+  If the users do not access over the standard ``http`` or ``https`` ports (80, 443, 8080, 8443) and the 
+  default context path ``/ivy`` then the public URLs must also contain the port and/or context path 
+  (e.g. ``www.customer.com/axon``, ``axonivyprod:9090``, ``www.customer.com:90/axon``).    
+
+  
 To install a licence file follow the steps below:
-
+  
 #. Copy the licence file :file:`\*.lic` to the directory :file:`[engineDir]/configuration`.
 #. Remove all other licence files in the :file:`[engineDir]/configuration` directory.
 
