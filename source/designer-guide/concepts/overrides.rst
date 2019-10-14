@@ -208,7 +208,7 @@ create or delete overrides. The editor shows the overrides of that type
 for reasons of a centralized overview and for convenience, rather than
 to provide an interface to edit them.
 
-.. figure:: /_images/overrides/override-editor.png
+.. figure:: /_images/designer-configuration/override-editor.png
    :alt: Override Editor
 
    Override Editor
@@ -253,7 +253,7 @@ Configuration Overrides
    list (multi-select a few lines and hit *Delete*) or use the
    Configuration Editor to add new overriding Configuration entries.
 
-.. |override-tree-node| image:: /_images/overrides/override-treenode.png
+.. |override-tree-node| image:: /_images/designer-configuration/override-treenode.png
 
 
 
@@ -287,7 +287,7 @@ performs two tasks:
    can set an explicit data class in the values tab of the original
    process's inscription.
 
-.. figure:: /_images/overrides/new-override-wizard.png
+.. figure:: /_images/designer-configuration/override-wizard.png
    :alt: New Override Wizard
 
    New Override Wizard
