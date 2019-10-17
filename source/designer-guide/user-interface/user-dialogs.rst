@@ -344,7 +344,7 @@ Data Class
    The Data Class that holds the data of the User Dialog.
 
 Interface
-   The Interface defines the ways of interaction with other User Dialogs
+   The Interface list the ways of interaction with other User Dialogs
    or business processes.
 
 Accessibility
@@ -385,15 +385,15 @@ Dialog Type
       after creation.
 
 View Type
-   A view type defines the base layout of a User Dialog. Depending on
-   the dialog type the view layouts vary and have the following
-   attributes:
+   A view type defines how the User Dialog will be. It depends on the dialog
+   type. You can choose if a User Dialog should be created with the *css grid*, so
+   it acts responsive to the display width or not. If you want a
+   reusable Html component, select a *Component* type.
 
-   **For the dialog types Html Dialog (JSF) and Offline Dialog (JSF)**
-   the view type could be selected from a predefined list of layouts.
-   The list contains page and component layouts. Use a page layout for a
-   standalone Html page, select a component layout to create a reusable
-   Html component.
+Layout
+   The layout can only be changed if you choose *Html Dialog* and not
+   *Component* as view type. All your templates which are located in your
+   webContent/layouts folder are listed here. 
 
 Page 2: Dialog Data
 ^^^^^^^^^^^^^^^^^^^

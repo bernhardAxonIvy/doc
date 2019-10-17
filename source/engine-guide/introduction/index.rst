@@ -15,7 +15,7 @@ on:
 * Explore **demo projects** in the |ivy-designer| and deploy them to the
   |ivy-engine|.
 * Read the designer guide to know how to **model, simulate and implement**
-  digital businss process.
+  digital business process.
 * Go trough the Migration Notes to **upgrade** an existing |ivy-engine|.
 
 All above mentioned documentations are brief and tend to describe only necessary
