@@ -20,8 +20,9 @@ redefinitions:
    Global Variables): Redefine values and properties of global artifacts
    depending on the execution context.
 
--  Redefinition with overrides (e.g. for Html Dialogs and/or Sub Processes):
-   Define a replacement component for an already existing component.
+-  Redefinition with overrides (e.g. for Html Dialogs, Html Dialog components
+   and/or Sub Processes): Define a replacement component for an already 
+   existing component.
 
 This chapter only deals with the third category of artifact
 redefinitions (overrides).
@@ -46,7 +47,7 @@ the so-called **case scope** is crucial. The case scope is determined by
 the project, in which the current case was started, e.g. where the start
 of the running business process was invoked. All component look-ups as
 well as configuration and content management references are processed
-within the case scope, i.e. the look up of such artifacts always starts
+within the case scope, i.e. the lookup of such artifacts always starts
 at the project that defines the case scope.
 
 Example: The Acme Web shop
@@ -235,13 +236,20 @@ Sub Process Overrides
    used to "restore" a previously deleted mapping).
 
 Html Dialog Overrides
-   This section shows all Html Dialog overrides that are registered for
-   the selected project. You can delete an existing override by pressing
-   the *delete* icon in the section's tool bar. This will only delete
-   the mapping (and thus the execution of the override) but not the
-   replacement Html Dialog itself. You can add new Html Dialog overrides
-   by clicking on the *wizard* icon in the tool bar (this can also be
-   used to "restore" a previously deleted mapping).
+   This section shows all Html Dialog (HD) overrides that are registered for
+   the selected project.
+ 
+   Overrides can be defined for full HDs as well as for HD components.
+   Override a full HD - defined in a (sub) process - or a HD component defined
+   in a parent project by adding a mapping entry in this section.
+   See chapter :ref:`user-dialogs` for more information about HDs.
+
+   You can delete an existing override by pressing the *delete* icon in the
+   section's tool bar. This will only delete the mapping (and thus the
+   execution of the override) but not the replacement HD itself. You can
+   add new HD overrides by clicking on the *wizard* icon in the tool bar
+   (this can also be used to "restore" a previously deleted mapping or if you
+   want to override a HD with an already existing dialog).
 
 Content Object Overrides
    This section shows all Content Objects that are redefined in the
