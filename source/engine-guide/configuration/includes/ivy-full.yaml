@@ -1,6 +1,5 @@
 # sample ivy.yaml with some often used entries defined
 SystemDb:
-  Driver: org.mariadb.jdbc.Driver
   Url: jdbc:mariadb://myDbHost:3306/AxonIvySystemDatabase
   UserName: root
   Password: 1234
