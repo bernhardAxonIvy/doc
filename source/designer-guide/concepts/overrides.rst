@@ -20,8 +20,9 @@ redefinitions:
    Global Variables): Redefine values and properties of global artifacts
    depending on the execution context.
 
--  Redefinition with overrides (e.g. for Sub Processes): Define a
-   replacement component for an already existing component.
+-  Redefinition with overrides (e.g. for Html Dialogs, Html Dialog components
+   and/or Sub Processes): Define a replacement component for an already 
+   existing component.
 
 This chapter only deals with the third category of artifact
 redefinitions (overrides).
@@ -46,7 +47,7 @@ the so-called **case scope** is crucial. The case scope is determined by
 the project, in which the current case was started, e.g. where the start
 of the running business process was invoked. All component look-ups as
 well as configuration and content management references are processed
-within the case scope, i.e. the look up of such artifacts always starts
+within the case scope, i.e. the lookup of such artifacts always starts
 at the project that defines the case scope.
 
 Example: The Acme Web shop
@@ -58,9 +59,9 @@ As an example, imagine a web shop application. It contains the following
 |image0|
 
 The main process itself (Order) and each of the depicted sub processes
-(DoOrder, ProcessOrder, Shipment) are defined in own projects. All of
+(DoOrder, ProcessOrder, Shipment) are defined in their own projects. All of
 those projects together form a (generic) web shop application, depicted
-below. The web shop project contains the business process and it's
+below. The web shop project contains the business process and its
 start; the Frontend project contains the DoOrder sub process; the
 backend project contains the ProcessOrder sub process; the Shipment
 project contains the Shipping sub process.
@@ -87,7 +88,7 @@ request is issued through the *Acme web shop* project instead of the
 have *Acme web shop* as their case scope.
 
 Knowing this, we can now specifically override and redefine Content
-Objects, Configuration entries or Sub Processes from the original
+Objects, Configuration entries, Html Dialogs or Sub Processes from the original
 generic *web shop* application by redefining them inside the *Acme web
 shop* project. Afterwards, whenever a business process with case scope
 *Acme web shop* is started, then the overridden artifacts and components
@@ -105,7 +106,7 @@ overrides in a general way:
 
    Adapting a generic application with overrides
 
-It can be seen that multiple adoptions (Client A, Client B) may be
+It can be seen that multiple adaptions (Client A, Client B) may be
 created for a generic main project. Also, each adaption may override
 different components.
 
@@ -185,9 +186,10 @@ Overrides Editor
 
 The Axon.ivy *Overrides Editor* shows the registered and active
 overrides for a specific project. The overrides are listed in 4
-different sections: Sub Processes, Content Objects and Configurations.
+different sections: Sub Processes, Html Dialogs, Content Objects and
+Configurations.
 
-Sub Process overrides require - for technical reasons - the registration
+Html Dialog and Sub Process overrides require - for technical reasons - the registration
 of a mapping (this is done automatically by the New Override Wizard)
 which maps the original component's identifier to the replacement
 identifier. This mapping is displayed in the Override Editor and can be
@@ -208,7 +210,7 @@ create or delete overrides. The editor shows the overrides of that type
 for reasons of a centralized overview and for convenience, rather than
 to provide an interface to edit them.
 
-.. figure:: /_images/overrides/override-editor.png
+.. figure:: /_images/designer-configuration/override-editor.png
    :alt: Override Editor
 
    Override Editor
@@ -233,6 +235,22 @@ Sub Process Overrides
    by clicking on the *wizard* icon in the tool bar (this can also be
    used to "restore" a previously deleted mapping).
 
+Html Dialog Overrides
+   This section shows all Html Dialog (HD) overrides that are registered for
+   the selected project.
+ 
+   Overrides can be defined for full HDs as well as for HD components.
+   Override a full HD - defined in a (sub) process - or a HD component defined
+   in a parent project by adding a mapping entry in this section.
+   See chapter :ref:`user-dialogs` for more information about HDs.
+
+   You can delete an existing override by pressing the *delete* icon in the
+   section's tool bar. This will only delete the mapping (and thus the
+   execution of the override) but not the replacement HD itself. You can
+   add new HD overrides by clicking on the *wizard* icon in the tool bar
+   (this can also be used to "restore" a previously deleted mapping or if you
+   want to override a HD with an already existing dialog).
+
 Content Object Overrides
    This section shows all Content Objects that are redefined in the
    selected project, i.e. the Content Objects for which there is an
@@ -253,7 +271,7 @@ Configuration Overrides
    list (multi-select a few lines and hit *Delete*) or use the
    Configuration Editor to add new overriding Configuration entries.
 
-.. |override-tree-node| image:: /_images/overrides/override-treenode.png
+.. |override-tree-node| image:: /_images/designer-configuration/override-treenode.png
 
 
 
@@ -287,7 +305,7 @@ performs two tasks:
    can set an explicit data class in the values tab of the original
    process's inscription.
 
-.. figure:: /_images/overrides/new-override-wizard.png
+.. figure:: /_images/designer-configuration/override-wizard.png
    :alt: New Override Wizard
 
    New Override Wizard
@@ -303,15 +321,20 @@ Features
 
 Original Type
    Choose the type of component for which an override replacement should
-   be created.
+   be created (Html Dialog or Sub Process).
 
 Original Identifier
    Specify the identifier of the original component that should be
    overridden at runtime. Use the button next to the text field to
-   select from the available Sub Processes. Please note that only
-   components from required projects can be overridden, there is no
+   select from the available Html Dialogs or Sub Processes. Please note that
+   only components from required projects can be overridden, there is no
    point in defining an override for a component in the same project
    (see :ref:`overrides`).
+
+Existing component
+   If you want to override the original compoenent with an already existing
+   one, choose the button next to the Project drop-down box to select one
+   from the current project.
 
 Replacement Namespace
    Chose a namespace for the replacement component.
