@@ -218,7 +218,7 @@ wrapper object for a byte array.
 List
 ~~~~
 
-:public-api:`List </PublicAPI/ch/ivyteam/ivy/scripting/objects/List.html>` objects
+:public-api:`List </ch/ivyteam/ivy/scripting/objects/List.html>` objects
 can contain any number of other objects of any type. Each
 object in a list has an index which starts at zero.
 
