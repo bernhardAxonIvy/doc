@@ -121,7 +121,8 @@ Request 2, and the execution of the original y/Q in Request 1.
 .. note::
 
    If it should happen that the business process m/P2 is executed
-   through the main project directly, then no overrides will be applied
+   through the main project directly and without any OverrideProject
+   configuration in the :ref:`app-yaml`, then no overrides will be applied
    at all. Since such a "direct" invocation normally results in an
    unwanted case scope, it should be prevented. The easiest way to do so
    is the usage of a :ref:`overrides-process-facade` as described below.
@@ -137,6 +138,14 @@ that processes are always and solely started from the adapted customer
 projects to ensure the proper case scope. This requires that all
 business processes (or rather their request start elements) must be
 copied to the adapter project.
+
+.. note::
+
+   It is possible to manually configure the case-scope for each application.
+   The engine will then consider the configured case-scope for each
+   override. This allows you to leave the business processes in the
+   base project instead of copying them to the specialized one.
+   To do so you have to configure the **OverrideProject** in the :ref:`app-yaml`.
 
 To simplify this task and to reduce the work to the copying of a single
 file, it is recommended to employ the *process facade* design pattern.
