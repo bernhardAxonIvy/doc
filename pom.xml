@@ -12,6 +12,8 @@
 		<relativePath>../development/ch.ivyteam.ivy.build.maven/config</relativePath>
 	</parent>
 
+	<name>Axon.ivy Digital Business Platform</name>
+
 	<properties>
 		<images.folder>source/_images</images.folder>
 	</properties>
@@ -23,12 +25,9 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
 				<executions>
-
 					<execution>
 						<id>unpack-doc-images</id>
-						<goals>
-							<goal>unpack</goal>
-						</goals>
+						<goals><goal>unpack</goal></goals>
 						<phase>generate-resources</phase>
 						<configuration>
 							<outputDirectory>${images.folder}</outputDirectory>
@@ -50,9 +49,7 @@
 
 					<execution>
 						<id>unpack-engine-cockpit-images</id>
-						<goals>
-							<goal>unpack</goal>
-						</goals>
+						<goals><goal>unpack</goal></goals>
 						<phase>generate-resources</phase>
 						<configuration>
 							<outputDirectory>${images.folder}/engine-cockpit</outputDirectory>
@@ -63,6 +60,25 @@
 									<type>zip</type>
 								</artifactItem>
 							</artifactItems>
+						</configuration>
+					</execution>
+					
+					<execution>
+						<id>integrate-public-api</id>
+						<phase>package</phase>
+						<goals><goal>unpack</goal></goals>
+						<configuration>
+							<artifactItems>
+								<artifactItem>
+									<groupId>ch.ivyteam.ivy</groupId>
+									<artifactId>ch.ivyteam.ivy.javadoc</artifactId>
+									<classifier>publicapidoc</classifier>
+									<version>${ivy.javadoc.version}</version>
+									<type>jar</type>
+								</artifactItem>
+							</artifactItems>
+							<excludes>META-INF/**</excludes>
+							<outputDirectory>build/html/public-api</outputDirectory>
 						</configuration>
 					</execution>
 				</executions>
