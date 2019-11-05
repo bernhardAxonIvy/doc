@@ -58,14 +58,16 @@ To learn more about PrimeFaces themes, the web site `PrimeFaces
 Themes <http://www.primefaces.org/themes.html>`__ is the right starting
 point:
 
-The theme called **modena-ivy** is configured as default. However, you
-can easily configure another default theme with the following steps:
+The theme called **modena-ivy** is configured as the default. New dialogs
+will be created with the **serenity-ivy** theme, if you choose a standard
+version 8 layout. However, you can easily configure another default theme with
+the following steps:
 
 -  The `PrimeFaces Community
-   Themes <http://www.primefaces.org/themes.html>`__ are already
-   included in the product. To use a own theme copy your themeXY.jar
-   file into the folder **/webapps/ivy/WEB-INF/lib** of Designer and
-   Engine respectively
+   Themes <http://www.primefaces.org/themes.html>`__ and `Serenity Themes
+   <https://www.primefaces.org/layouts/serenity>`__ are already included in the
+   product. To use a own theme copy your themeXY.jar file into the folder
+   **/webapps/ivy/WEB-INF/lib** of Designer and Engine respectively
 
 -  Edit the theme setting parameter ``primefaces.THEME`` in the file
    **/webapps/ivy/WEB-INF/web.xml**
@@ -87,11 +89,35 @@ can easily configure another default theme with the following steps:
 
 .. tip::
 
-   By using the ``ch.ivyteam.ivy.jsf.primefaces.IvyPrimefacesThemeResolver``
-   the theme can be configured by application and session. See *Engine
-   Guide > Miscellaneous > Html Dialogs > Primefaces Theme*
+   By using the ``ch.ivyteam.ivy.jsf.primefaces.IvyPrimefacesThemeResolver`` the
+   theme can be configured by application and session. See :ref:`web-xml` or
+   :ref:`app-yaml`
 
 
+Serenity Themes
+~~~~~~~~~~~~~~~
+
+If you choose a **serenity** theme, you have the possibility to choose all
+default serenity themes or the **serentiy-ivy** theme. If you do so you have to
+import an additional layout.css file:
+
+::
+
+  e.g. serenity-lime theme
+
+  <h:head>
+    <f:attribute name="primefaces.THEME" value="serenity-lime" />
+    <h:outputStylesheet name="css/layout-lime.css" library="serenity-layout" />
+    ...
+  </h:head>
+
+  or the serentiy-ivy theme
+
+  <h:head>
+    <f:attribute name="primefaces.THEME" value="serenity-ivy" />
+    <h:outputStylesheet name="css/layout-ivy.css" library="serenity-layout" />
+    ...
+  </h:head>
 
 
 
