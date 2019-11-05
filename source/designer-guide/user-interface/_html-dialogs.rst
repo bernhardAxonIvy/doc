@@ -98,7 +98,7 @@ Serenity Themes
 ~~~~~~~~~~~~~~~
 
 If you choose a **serenity** theme, you have the possibility to choose all
-default serenity themes or the **serentiy-ivy** theme. If you do so you have
+default serenity themes or the **serentiy-ivy** theme. If you do so you have to
 import an additional layout.css file:
 
 ::
@@ -115,7 +115,7 @@ import an additional layout.css file:
 
   <h:head>
     <f:attribute name="primefaces.THEME" value="serenity-ivy" />
-    <h:outputStylesheet name="css/layout-ivy.css" library="serenity-layout-ivy" />
+    <h:outputStylesheet name="css/layout-ivy.css" library="serenity-layout" />
     ...
   </h:head>
 
