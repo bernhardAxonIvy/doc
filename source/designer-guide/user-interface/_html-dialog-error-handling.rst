@@ -4,15 +4,27 @@ Error Handling
 The exception handling in HTML Dialogs can be customized. Depending on
 the request type the customization differs.
 
-HTTP Request
+.. _user-dialogs-error-pages:
+
+Error Pages
 ^^^^^^^^^^^^
 
-If an exception occurs in a non-ajax HTTP request, the user will be
-redirected to the specified error page. The customization of these error
-pages is described in the chapter *Configuration / Error Handling* of
-the engine guide.
+Error pages inform the user on unexpected errors that occurred during the execution of 
+process activities or HTML dialog interactions.
 
-AJAX Request
+The default error pages can examined in the product (see ``webapps/ivy/ivy-error-page.xhtml``).
+These pages can be customized to met the look of your workflow application and your 
+companies identity. 
+Moreover, you can adjust the displayed information. The :public-api:`ErrorPageMBean </ch/ivyteam/ivy/webserver/ErrorPageMBean.html>` is 
+accessible within error pages to provide context information on the error and its engine state.
+Other IVY APIs are not intended to work in case of an error.
+
+Custom errors pages must be registered in the global :ref:`web-xml`.
+
+.. tip:: Keep in mind that error pages and its configuration do not live within the project. Therefore it is crucial to document or automate their deployment to the engine.
+
+
+AJAX Errors
 ^^^^^^^^^^^^
 
 If an exception occurs in an ajax-based HTTP request, the configured

@@ -163,7 +163,7 @@ An error is caught in the following order:
 #. By a Project Error Process in the top-level project.
 
 #. If the error is not caught it is displayed to the user on the
-   standard error page.
+   standard :ref:`user-dialogs-error-pages`.
 
 .. note::
 
