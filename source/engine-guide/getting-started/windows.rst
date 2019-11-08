@@ -79,7 +79,7 @@ creation of the system database differs a little bit depending on the database
 system you use. We will use a PostgreSQL database server.
 
 You can start the configuration on the main page of the Axon.ivy Engine (e.g.
-http://localhost:8080/ivy) by clicking on the **Config** menu.
+http://localhost:8080) by clicking on the **Config** menu.
 
 On the first page use the :guilabel:`Upload Licence` button to install your
 license file.
@@ -150,7 +150,7 @@ again.
 
 Note, that the HTTP port of the Axon.ivy Engine may have changed. If you did
 change the HTTP settings. So open again a web browser and navigate to
-http://localhost:8080/ivy. Have you seen that the header with the demo mode
+http://localhost:8080. Have you seen that the header with the demo mode
 message is gone? You now have a production ready Axon.ivy Engine.
 
 

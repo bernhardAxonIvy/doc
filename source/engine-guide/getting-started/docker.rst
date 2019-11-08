@@ -11,7 +11,7 @@ can be easily started with the following command:
 
   docker run -p 8080:8080 axonivy/axonivy-engine
 
-After startup, the engine is available at http://localhost:8080/ivy. On `GitHub
+After startup, the engine is available at http://localhost:8080. On `GitHub
 <https://github.com/ivy-samples/docker-samples>`_ you can find many examples for
 using our docker image.
 

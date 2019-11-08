@@ -77,7 +77,7 @@ options <deployment-options>`.
 Check the results
 -----------------
 
-Go to the server info page, which is by default http://localhost:8080/ivy. You
+Go to the server info page, which is by default http://localhost:8080. You
 should see now your new processes available. If you think there is missing
 something you better check the deployment logs.
 
@@ -254,7 +254,7 @@ Execute the :code:`deploy-to-engine` goal in the directory where the :file:`pom.
 	
 	
 The next example deploys the current project to the application **portal** to an
-|ivy-engine| which is accessible at http://localhost:8080/ivy. You
+|ivy-engine| which is accessible at http://localhost:8080. You
 need to configure the credentials of an administrator user in the maven
 :file:`settings.xml` file. Your custom defined :file:`serverId` must match with
 :code:`deployServerId`.
