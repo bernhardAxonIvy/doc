@@ -38,20 +38,8 @@ at runtime instead of the originally referenced component.
    This happens completely independent of the original designers
    intention and will take place every time a component is looked up.
 
-
-Case Scope
-----------
-
-How is a component looked up? For the lookup of components at runtime,
-the so-called **case scope** is crucial. The case scope is determined by
-the project, in which the current case was started, e.g. where the start
-of the running business process was invoked. All component look-ups as
-well as configuration and content management references are processed
-within the case scope, i.e. the lookup of such artifacts always starts
-at the project that defines the case scope.
-
 Example: The Acme Web shop
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------
 
 As an example, imagine a web shop application. It contains the following
 (generic) business process:
@@ -68,11 +56,6 @@ project contains the Shipping sub process.
 
 |image1|
 
-In this scenario, regardless of the task that is currently being
-executed (customer, back office, shipping), the case scope will always
-be the web shop project, because the business process is started from
-there.
-
 We now define an additional project, Acme web shop. The new project is
 dependent on web shop and the intention is to bundle all Acme-specific
 overrides and adoptions in this project. The already existing projects
@@ -81,111 +64,116 @@ web shop application, with the following project dependency tree:
 
 |image2|
 
-If the main business process is copied from the *web shop* project to
-the *Acme web shop* project, and if it is ensured that the process
-request is issued through the *Acme web shop* project instead of the
-*web shop* project, then all tasks of an order case will consequently
-have *Acme web shop* as their case scope.
-
 Knowing this, we can now specifically override and redefine Content
 Objects, Configuration entries, Html Dialogs or Sub Processes from the original
 generic *web shop* application by redefining them inside the *Acme web
-shop* project. Afterwards, whenever a business process with case scope
-*Acme web shop* is started, then the overridden artifacts and components
-will be used instead of the original ones, due to the case-scope based
-lookup mechanism.
+shop* project.
+
+There are two ways to use the Acme web shop project as an overriding
+project. You can either define the :ref:`override_configuration` in
+the generic web shop application or you use the :ref:`case_scope`
+to your advantage.
+
+.. _override_configuration:
+
+Override configuration
+----------------------
+
+
+
+
+.. _case_scope:
+
+Case Scope
+----------
+
+How is a component looked up? For the lookup of components at runtime,
+the so-called **case scope** is crucial. The case scope is determined by
+the project, in which the current case was started, e.g. where the start
+of the running business process was invoked. All component look-ups as
+well as configuration and content management references are processed
+within the case scope, i.e. the lookup of such artifacts always starts
+at the project that defines the case scope.
+
+To make use of the case scope the main business process has to be copied
+from the *web shop* project to the *Acme web shop* project, and if it is
+ensured that the process request is issued through the *Acme web shop* project
+instead of the *web shop* project, then all tasks of an order case will 
+consequently have *Acme web shop* as their case scope. At the same time if the
+request is issued through the generic *web shop* project it will not consider
+any override definitions.
 
 General Definition
-------------------
+   The following figure illustrates the adaption of an application with
+   overrides in a general way:
 
-The following figure illustrates the adaption of an application with
-overrides in a general way:
+   .. figure:: /_images/overrides/adapted-application.png
+      :alt: Adapting a generic application with overrides
 
-.. figure:: /_images/overrides/adapted-application.png
-   :alt: Adapting a generic application with overrides
+      Adapting a generic application with overrides
 
-   Adapting a generic application with overrides
+   It can be seen that multiple adaptions (Client A, Client B) may be
+   created for a generic main project. Also, each adaption may override
+   different components.
 
-It can be seen that multiple adaptions (Client A, Client B) may be
-created for a generic main project. Also, each adaption may override
-different components.
+   Because Request 1 and Request 2 have different cases scopes, Request 1
+   (issued through the *Client A* project) will use the overridden Sub
+   Process x.B' instead of the original x.B; Request 2, however, will use
+   the original x.B Sub Process, because there is no redefinition within
+   the case scope of the *Client B* project. Likewise the invocation of the
+   Sub Process y/Q will result in the execution of the override y/Q' in
+   Request 2, and the execution of the original y/Q in Request 1.
 
-Because Request 1 and Request 2 have different cases scopes, Request 1
-(issued through the *Client A* project) will use the overridden Sub
-Process x.B' instead of the original x.B; Request 2, however, will use
-the original x.B Sub Process, because there is no redefinition within
-the case scope of the *Client B* project. Likewise the invocation of the
-Sub Process y/Q will result in the execution of the override y/Q' in
-Request 2, and the execution of the original y/Q in Request 1.
+   .. note::
 
-.. note::
-
-   If it should happen that the business process m/P2 is executed
-   through the main project directly and without any OverrideProject
-   configuration in the :ref:`app-yaml`, then no overrides will be applied
-   at all. Since such a "direct" invocation normally results in an
-   unwanted case scope, it should be prevented. The easiest way to do so
-   is the usage of a :ref:`overrides-process-facade` as described below.
+      If it should happen that the business process m/P2 is executed
+      through the main project directly then no overrides will be applied
+      at all. Since such a "direct" invocation normally results in an
+      unwanted case scope, it should be prevented. The easiest way to do so
+      is the usage of a :ref:`overrides-process-facade` as described below.
 
 
-.. _overrides-process-facade:
+   .. _overrides-process-facade:
 
 Process Facade
---------------
+   If the override mechanics are to work as intended, it must be ensured
+   that processes are always and solely started from the adapted customer
+   projects to ensure the proper case scope. This requires that all
+   business processes (or rather their request start elements) must be
+   copied to the adapter project.
 
-If the override mechanics are to work as intended, it must be ensured
-that processes are always and solely started from the adapted customer
-projects to ensure the proper case scope. This requires that all
-business processes (or rather their request start elements) must be
-copied to the adapter project.
+   To simplify this task and to reduce the work to the copying of a single
+   file, it is recommended to employ the *process facade* design pattern.
 
-.. note::
+   Inside the main project of the generic application create a single
+   process (e.g. Main) that holds the start elements of all the elementary
+   business processes of the application. Factor the logic of those
+   processes out into sub processes and call them from the facade process
+   stubs, as illustrated below. With this approach, only one process (the
+   facade) has to be copied to the top-level customer project.
 
-   It is possible to manually configure the case-scope for each application.
-   The engine will then consider the configured case-scope for each
-   override. This allows you to leave the business processes in the
-   base project instead of copying them to the specialized one.
-   To do so you have to configure the **OverrideProject** in the :ref:`app-yaml`.
+   .. warning::
 
-To simplify this task and to reduce the work to the copying of a single
-file, it is recommended to employ the *process facade* design pattern.
+      When factoring out sub processes, please keep in mind that you should
+      not use task switches in sub processes of required projects. As a
+      general recommendation, any factored out sub process should roughly
+      correspond to the contents of a task (or parts of such), but should
+      not span multiple tasks.
 
-Inside the main project of the generic application create a single
-process (e.g. Main) that holds the start elements of all the elementary
-business processes of the application. Factor the logic of those
-processes out into sub processes and call them from the facade process
-stubs, as illustrated below. With this approach, only one process (the
-facade) has to be copied to the top-level customer project.
+   .. figure:: /_images/overrides/process-facade.png
+      :alt: Implementing a process facade with process stubs
 
-.. warning::
+      Implementing a process facade with process stubs
 
-   When factoring out sub processes, please keep in mind that you should
-   not use task switches in sub processes of required projects. As a
-   general recommendation, any factored out sub process should roughly
-   correspond to the contents of a task (or parts of such), but should
-   not span multiple tasks.
+   The portal website, the workflow UI or whichever other means that are
+   used to start the application's business processes should only show the
+   processes from the copied facade process. As all the out factored Sub
+   Processes will also be available from the adapter project, no further
+   changes have to be made.
 
-.. figure:: /_images/overrides/process-facade.png
-   :alt: Implementing a process facade with process stubs
-
-   Implementing a process facade with process stubs
-
-The portal website, the workflow UI or whichever other means that are
-used to start the application's business processes should only show the
-processes from the copied facade process. As all the out factored Sub
-Processes will also be available from the adapter project, no further
-changes have to be made.
-
-.. |image0| image:: /_images/overrides/webshop-process.png
-.. |image1| image:: /_images/overrides/case-scope-1.png
-.. |image2| image:: /_images/overrides/case-scope-2.png
-
-
-
-
-
-
-
+   .. |image0| image:: /_images/overrides/webshop-process.png
+   .. |image1| image:: /_images/overrides/case-scope-1.png
+   .. |image2| image:: /_images/overrides/case-scope-2.png
 
 
 .. _overrides-editor:
