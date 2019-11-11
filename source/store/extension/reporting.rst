@@ -11,6 +11,18 @@ reports of your process models.
 
    Process Model Reporting Wizard
 
+Install
+~~~~~~~~~~~~~
+
+Process Model reporting is an extension that must be installed before it can be used. 
+
+- Open the Menu: Help->Install New Software...-
+- Work with combo: select the pre-configured Update Site of Axon.ivy ``https://download.axonivy.rocks/p2/...`` 
+- Check ``Axon.ivy Designer Projet Reporting`` from the list of installable features
+- Click through the install Wizard by clicking next and confirm upcoming install request.
+
+Visit <https://file.axonivy.rocks/p2> for detailed installation instructions.
+
 Accessibility
 ~~~~~~~~~~~~~
 
