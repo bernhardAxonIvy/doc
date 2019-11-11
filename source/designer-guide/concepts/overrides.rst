@@ -79,8 +79,30 @@ to your advantage.
 Override configuration
 ----------------------
 
+You can define an overriding project which will be considered for each
+overridden component on execution time. In the web shop example this
+would be the *Acme web shop* project.
 
+Not overridden componentes will still be loaded from the base *web shop*
+project. Without any configuration the engine will stay in its case
+scope as described in :ref:`case_scope`.
 
+This configuration allows you to leave complex business processes in the
+base project and only define specialized components in the overriding
+project.
+
+Configuration
+   To configure the overridding project for your base project, add the
+   **OverrideProject** key to the :ref:`app-yaml`. Make sure your overriding
+   project is dependent on the base project and that each override is defined
+   in your overriding project as described in :ref:`overrides-editor`.
+
+   .. note::
+
+      Make sure you have the overriding project configured in the **Designer**
+      as well to see the overriding while designing. You find the 
+      :ref:`app-yaml` for the Designer under
+      *designerDir/configuration/app-designer.yaml*
 
 .. _case_scope:
 
