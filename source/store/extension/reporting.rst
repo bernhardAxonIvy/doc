@@ -1,10 +1,11 @@
 .. _extension-birt-process-reporting:
 
-Process Reporting extension
+Process Reporting
 ------------------------------
 
 The Axon.ivy Process Model Reporting Wizard lets you create customized
 reports of your process models.
+This simplifies the examination of current workflow processes from a management perspective and makes adjustments towards IT governance possible.
 
 .. figure:: /_images/process-modeling/report-configuration-wizard.png
    :alt: Process Model Reporting Wizard
@@ -21,7 +22,7 @@ Process Model reporting is an extension that must be installed before it can be 
 - Check ``Axon.ivy Designer Projet Reporting`` from the list of installable features
 - Click through the install Wizard by clicking next and confirm upcoming install request.
 
-Visit <https://file.axonivy.rocks/p2> for detailed installation instructions.
+Visit https://file.axonivy.rocks/p2 for detailed installation instructions.
 
 Accessibility
 ~~~~~~~~~~~~~
