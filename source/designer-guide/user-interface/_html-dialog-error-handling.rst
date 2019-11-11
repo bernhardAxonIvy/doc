@@ -12,7 +12,7 @@ Error Pages
 Error pages inform the user on unexpected errors that occurred during the execution of 
 process activities or HTML dialog interactions.
 
-The default error pages can examined in the product (see ``webapps/ivy/ivy-error-page.xhtml``).
+The default error pages can be examined in the product (see ``webapps/ivy/ivy-error-page.xhtml``).
 These pages can be customized to met the look of your workflow application and your 
 companies identity. 
 Moreover, you can adjust the displayed information. The :public-api:`ErrorPageMBean </ch/ivyteam/ivy/webserver/ErrorPageMBean.html>` is 
@@ -21,7 +21,7 @@ Other IVY APIs are not intended to work in case of an error.
 
 Custom errors pages must be registered in the global :ref:`web-xml`.
 
-.. tip:: Keep in mind that error pages and its configuration do not live within the project. Therefore it is crucial to document or automate their deployment to the engine.
+.. tip:: Keep in mind that error pages and its configuration do not live within the project. Therefore it is crucial to document or automate their deployment. Otherwise error page configurations might get lost during migrations to newer version of Axon.ivy.
 
 
 AJAX Errors
