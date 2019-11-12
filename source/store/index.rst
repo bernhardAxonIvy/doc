@@ -35,3 +35,15 @@ You can have insights in all features like:
 * Rule Engine
 * Connectivity (REST/SOAP)
 * Html Dialog
+
+
+Extensions
+----------
+
+The Axon.ivy Designer can be enriched with further functionality by installing pre-configured extensions.
+See the following selection of promoted extensions:
+
+.. toctree::
+   :maxdepth: 1
+   
+   extension/reporting
