@@ -81,7 +81,14 @@ Override configuration
 
 You can define an overriding project which will be considered for each
 overridden component on execution time. In the web shop example this
-would be the *Acme web shop* project.
+would be the *Acme web shop* project. This configuration allows you
+to override *Sub Processes*, *Html Dialogs*, *Html Dialog components*,
+*Content Objects* and *configurations*.
+
+   .. note::
+
+      Global Variables have to be defined in the :ref:`app-yaml` of the
+      overridding project as well and not only in the project definitions.
 
 Not overridden componentes will still be loaded from the base *web shop*
 project. Without any configuration the engine will stay in its case
@@ -116,6 +123,12 @@ of the running business process was invoked. All component look-ups as
 well as configuration and content management references are processed
 within the case scope, i.e. the lookup of such artifacts always starts
 at the project that defines the case scope.
+
+   .. warning::
+
+      Please note that *Html Dialogs* and *Html Dialog components* can not
+      be overridden by case scope. If you want to override them you have to
+      set a :ref:`override_configuration`.
 
 To make use of the case scope the main business process has to be copied
 from the *web shop* project to the *Acme web shop* project, and if it is
