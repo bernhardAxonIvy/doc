@@ -165,10 +165,7 @@ General Definition
       through the main project directly then no overrides will be applied
       at all. Since such a "direct" invocation normally results in an
       unwanted case scope, it should be prevented. The easiest way to do so
-      is the usage of a :ref:`overrides-process-facade` as described below.
-
-
-   .. _overrides-process-facade:
+      is the usage of a Process Facade as described below.
 
 Process Facade
    If the override mechanics are to work as intended, it must be ensured
