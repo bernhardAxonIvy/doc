@@ -81,17 +81,12 @@ the overriding project, if they exist.
 In our webshop example the overriding project would be the *Acme web shop*.
 Starting a process from either the *Web shop* or the specialized
 *Acme web shop* will always result in the overridden components
-being loaded. Not overridden componentes will still be loaded from
+being loaded. Not overridden components will still be loaded from
 the base *Web shop* project.
 
 By defining the overriding project you can leave complex business processes
 in the base project and only define specialized components in the overriding
 project.
-
-   .. note::
-
-      Global Variables have to be defined in the :ref:`app-yaml` of the
-      overridding project as well and not only in the project definitions.
 
 Configuration
    To strictly set the overriding project you have to configure it in
