@@ -102,7 +102,7 @@ Cancel Button
    ``your_ivy_workspace/.metadata/.plugins/ch.ivyteam.ivy.designer.reporting.ui/lastReportconfiguration.xml``
 
 Save the Configuration...
-   Report configurations can be stored for later re-usal. 
+   Report configurations can be stored for later reuse. 
    The default location for report configurations is
    ``IvyDesigner/reporting/configurations/``.
 
