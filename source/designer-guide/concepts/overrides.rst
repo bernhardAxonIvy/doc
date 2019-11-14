@@ -21,22 +21,14 @@ redefinitions:
    depending on the execution context.
 
 -  Redefinition with overrides (e.g. for Html Dialogs, Html Dialog components
-   and/or Sub Processes): Define a replacement component for an already 
+   and/or Sub Processes): Define a replacement component for an already
    existing component.
-
-This chapter only deals with the third category of artifact
-redefinitions (overrides).
 
 By defining overrides on project level, the lookup of a certain
 component can be redirected to a replacement component. When a component
 is referenced in a process model of that project then the lookup for
 this component will yield a different component (i.e. the replacement)
 at runtime instead of the originally referenced component.
-
-.. warning::
-
-   This happens completely independent of the original designers
-   intention and will take place every time a component is looked up.
 
 Example: The Acme Web shop
 --------------------------
@@ -56,68 +48,84 @@ project contains the Shipping sub process.
 
 |image1|
 
-We now define an additional project, Acme web shop. The new project is
+We now define an additional project, *Acme web shop*. The new project is
 dependent on web shop and the intention is to bundle all Acme-specific
 overrides and adoptions in this project. The already existing projects
-plus this new project form together a more specific and customized Acme
-web shop application, with the following project dependency tree:
+plus this new project form together a more specific and customized *Acme
+web shop* application, with the following project dependency tree:
 
 |image2|
 
-Knowing this, we can now specifically override and redefine Content
-Objects, Configuration entries, Html Dialogs or Sub Processes from the original
-generic *web shop* application by redefining them inside the *Acme web
-shop* project.
+Knowing this, we can now specifically override and redefine components
+from the original generic *web shop* application by redefining them
+inside the *Acme web shop* project.
 
-There are two ways to use the Acme web shop project as an overriding
-project. You can either define the :ref:`override_configuration` in
-the generic web shop application or you use the :ref:`case_scope`
-to your advantage.
+There are two ways to use the *Acme web shop* project as an overriding
+project. You can either define a :ref:`strict_overriding` in
+the generic *Web shop* application or you use the :ref:`case_scope`
+which allows multitenancy. In both cases make sure your overriding project
+is dependent on the base project and that each override is defined
+in your overriding project as described in :ref:`overrides-editor`.
 
-.. _override_configuration:
+.. _strict_overriding:
 
-Override configuration
-----------------------
+Strict Overriding
+-----------------
 
-You can define an overriding project which will be considered for each
-overridden component on execution time. In the web shop example this
-would be the *Acme web shop* project. This configuration allows you
-to override *Sub Processes*, *Html Dialogs*, *Html Dialog components*,
-*Content Objects* and *configurations*.
+If you want to customize your standard product for a specific
+customer then the easiest way to realize overrides is by defining an
+overriding project which contains all the customized components.
+This means that overridden components are always resolved from
+the overriding project, if they exist.
+
+In our webshop example the overriding project would be the *Acme web shop*.
+Starting a process from either the *Web shop* or the specialized
+*Acme web shop* will always result in the overridden components
+being loaded. Not overridden componentes will still be loaded from
+the base *Web shop* project.
+
+By defining the overriding project you can leave complex business processes
+in the base project and only define specialized components in the overriding
+project.
 
    .. note::
 
       Global Variables have to be defined in the :ref:`app-yaml` of the
       overridding project as well and not only in the project definitions.
 
-Not overridden componentes will still be loaded from the base *web shop*
-project. Without any configuration the engine will stay in its case
-scope as described in :ref:`case_scope`.
-
-This configuration allows you to leave complex business processes in the
-base project and only define specialized components in the overriding
-project.
-
 Configuration
-   To configure the overridding project for your base project, add the
-   **OverrideProject** key to the :ref:`app-yaml`. Make sure your overriding
-   project is dependent on the base project and that each override is defined
-   in your overriding project as described in :ref:`overrides-editor`.
+   To strictly set the overriding project you have to configure it in
+   the :ref:`app-yaml`.
+
+   .. literalinclude:: includes/sample-projectOverride.yaml
+      :language: yaml
 
    .. note::
 
       Make sure you have the overriding project configured in the **Designer**
-      as well to see the overriding while designing. You find the 
-      :ref:`app-yaml` for the Designer under
+      as well to see the overriding while designing your processes.
+      You find the :ref:`app-yaml` for the Designer under
       *designerDir/configuration/app-designer.yaml*
+
 
 .. _case_scope:
 
 Case Scope
 ----------
 
+In the case you want to be able to execute your process with either the
+overridden components or without considering any overrides, you can
+use the case scope to your advantage.
+
+Imagine you have two types of customers, private ones and resellers.
+When ordering from your *Web shop* you want to distinguish between those
+two groups. For your resellers you use special calculations for the prices
+while your private customers get the normal list prices. In this case
+the case scope could be used by providing the *Acme web shop* to your
+resellers and the *Web shop* to your private customers.
+
 How is a component looked up? For the lookup of components at runtime,
-the so-called **case scope** is crucial. The case scope is determined by
+the so-called case scope is crucial. The case scope is determined by
 the project, in which the current case was started, e.g. where the start
 of the running business process was invoked. All component look-ups as
 well as configuration and content management references are processed
@@ -128,12 +136,12 @@ at the project that defines the case scope.
 
       Please note that *Html Dialogs* and *Html Dialog components* can not
       be overridden by case scope. If you want to override them you have to
-      set a :ref:`override_configuration`.
+      set a :ref:`strict_overriding`.
 
 To make use of the case scope the main business process has to be copied
 from the *web shop* project to the *Acme web shop* project, and if it is
 ensured that the process request is issued through the *Acme web shop* project
-instead of the *web shop* project, then all tasks of an order case will 
+instead of the *web shop* project, then all tasks of an order case will
 consequently have *Acme web shop* as their case scope. At the same time if the
 request is issued through the generic *web shop* project it will not consider
 any override definitions.
@@ -208,10 +216,15 @@ Process Facade
    .. |image2| image:: /_images/overrides/case-scope-2.png
 
 
-.. _overrides-editor:
 
-Overrides Editor
-----------------
+
+Overrides Tool Reference
+------------------------
+
+Override editor
+~~~~~~~~~~~~~~~
+
+.. _overrides-editor:
 
 The Axon.ivy *Overrides Editor* shows the registered and active
 overrides for a specific project. The overrides are listed in 4
@@ -267,7 +280,7 @@ Sub Process Overrides
 Html Dialog Overrides
    This section shows all Html Dialog (HD) overrides that are registered for
    the selected project.
- 
+
    Overrides can be defined for full HDs as well as for HD components.
    Override a full HD - defined in a (sub) process - or a HD component defined
    in a parent project by adding a mapping entry in this section.
@@ -308,7 +321,7 @@ Configuration Overrides
 .. _override-new-wizard:
 
 New Override Wizard
--------------------
+~~~~~~~~~~~~~~~~~~~
 
 The *New Override Wizard* lets you create a new override. The wizard
 performs two tasks:

@@ -1,0 +1,9 @@
+# == OverrideProject ==
+#
+# You can define an override project where your overriding SubProcesses and HtmlDialogs are located.
+# On execution the engine will check if an override exists in the defined project and if so, it gets executed in the declared project context.
+# This allows you to place your processes in your base project without having to copy them to your specialized project.
+# You can get the project id from the ivy project deployment defintion in the format <group-id>:<project-id>.
+# @designer.guide.url@/concepts/overrides.html
+#
+OverrideProject: ch.ivyteam.ivy:overrideProject
