@@ -112,3 +112,13 @@ Use Eclipse or Visual Studio Code.
     ^, for subsubsections
     ", for paragraphs
 
+- GUI descriptors
+
+  Marks up the *actual UI text* of a navigation menu or form select element.
+  
+    Select :menuselection:`Help` from menu.
+
+  When writing about multi-level menus, use a single ``:menuselection:`` role, and separate menu choices with ``-->``.
+
+    To save your file, go to :menuselection:`File --> Save` in the Main Menu.
+
