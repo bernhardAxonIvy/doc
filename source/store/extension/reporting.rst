@@ -17,17 +17,17 @@ Install
 
 Process Model reporting is an extension that must be installed before it can be used. 
 
-- Open the Menu: Help->Install New Software...
-- Work with combo: select the pre-configured Update Site of Axon.ivy ``https://download.axonivy.rocks/p2/...`` 
-- Check ``Axon.ivy Designer Projet Reporting`` from the list of installable features
-- Click through the install Wizard by clicking next and confirm upcoming install request.
+- Open the Menu: :menuselection:`Help --> New Software...`
+- Work with the combo on top: select the pre-configured update site of Axon.ivy ``https://download.axonivy.rocks/p2/...`` 
+- Check ``Axon.ivy Designer Project Reporting`` from the list of installable features
+- Click through the install wizard by clicking next and confirm upcoming install request.
 
 Visit https://file.axonivy.rocks/p2 for detailed installation instructions.
 
 Accessibility
 ~~~~~~~~~~~~~
 
-Axon.ivy->Create Report...
+:menuselection:`Axon.ivy --> Create Report...`
 
 Features
 ~~~~~~~~
@@ -49,27 +49,24 @@ Save to Folder
 
 Report Template
    Choose a report template, also known as *BIRT report design*
-   file(\*.rptdesign) which defines the structure and contents of your
+   file (\*.rptdesign) which defines the structure and contents of your
    report. There are some BIRT report designs provided by default (e.g.
-   ``Default.rptdesign``). Please use the predefined report designs
-   unless you want to create a custom report design.
+   ``Default.rptdesign``). 
 
    .. note::
    
       In case you want to create a custom BIRT report design you first need
       to install a BIRT Report Designer which can be found on the `BIRT
-      Website <http://www.eclipse.org/birt/phoenix/>`__. With the BIRT
-      Report Designer you can create your own reports. In order to use the
+      Website <http://www.eclipse.org/birt/phoenix/>`__. In order to use the
       Process Model Data, as e.g. Process model images, process names, User
-      Dialog interfaces, data class attributes etc., or predefined themes
-      in your newly created report design, you need to use the
+      Dialog interfaces, data class attributes etc., you need to use the
       ``IvyDesigner/reporting/designs/Axon.ivy.rptlibrary``
       BIRT Report Library within your report and link against its Data
       Source, Data Sets and Parameters. In this way you will also be able
       to use the predefined themes of the Report Library.
       
       For further information on how the BIRT Designer can be used, please
-      refer to a BIRT Book or online Resource which can be found at
+      refer to a BIRT book or online resources which can be found at
       http://www.eclipse.org/birt/ or http://www.birt-exchange.com.
 
 Corporate Identity
@@ -89,40 +86,32 @@ Corporate Identity
       first page of your report.
 
 Projects
-   This Tree shows the currently active projects that can be reported.
+   This tree shows the currently active projects that can be reported.
    You may check or uncheck the individual Process Models, Process
    Groups, Processes, User Dialogs or Data Classes that are to be
    reported.
 
 Maximum nesting depth
    Choose the maximum depth up to which nested embedded sub processes
-   should be reported. By default and when the field is empty all
+   should be reported. By default, and when the field is empty, all
    embedded sub processes are reported.
 
 Cancel Button
-   To cancel report creation. The current report configuration settings
+   Aborts the report creation. The current report configuration settings
    will be stored to
    ``your_ivy_workspace/.metadata/.plugins/ch.ivyteam.ivy.designer.reporting.ui/lastReportconfiguration.xml``
 
 Save the Configuration...
-   To save the report configuration you have entered up to now into an
-   XML report configuration file (\*.rptconfig). This allows you to store
-   multiple configurations for different types of reports and reuse them
-   later. Note that currently the selected Projects, Processes, User
-   Dialogs etc. are not remembered, as they might not be available at
-   loading time. The default place where the report configurations are
-   stored is in ``IvyDesigner/reporting/configurations/``.
+   Report configurations can be stored for later re-usal. 
+   The default location for report configurations is
+   ``IvyDesigner/reporting/configurations/``.
 
 Load a Configuration...
-   This allows you to load a previously stored report configuration
-   files (\*.rptconfig).
+   Loads a previously stored report configuration
+   file (\*.rptconfig).
 
 Create the Report...
-   This will start the generation of the reports. While the report is
-   being generated you will be informed about its progress. After the
-   report has been generated a confirmation window will provide you with
-   links to the generated reports. The default destination where reports
-   are stored is ``IvyDesigner/reporting/reports/``.
-
-   The report configuration will be stored to
-   ``your_ivy_workspace/.metadata/.plugins/ch.ivyteam.ivy.designer.reporting.ui/lastReportconfiguration.xml``
+   This will start the generation of the reports. While the reports are
+   being generated you will be informed about its progress. After all
+   reports have been generated, a confirmation window will display 
+   links to the generated reports. 
