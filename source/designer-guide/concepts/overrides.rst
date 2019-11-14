@@ -221,10 +221,10 @@ Process Facade
 Overrides Tool Reference
 ------------------------
 
+.. _overrides-editor:
+
 Override editor
 ~~~~~~~~~~~~~~~
-
-.. _overrides-editor:
 
 The Axon.ivy *Overrides Editor* shows the registered and active
 overrides for a specific project. The overrides are listed in 4
