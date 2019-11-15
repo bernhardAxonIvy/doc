@@ -88,6 +88,13 @@ By defining the overriding project you can leave complex business processes
 in the base project and only define specialized components in the overriding
 project.
 
+The lookup of components happens hierarchically. If the engine
+cannot locate an overridden component in the overriding project
+it will go down the dependency tree until it encounters the
+wanted component. So maybe you want to provide a third webshop
+which builds upon the *Acme web shop*. In this case the overriding
+project would be the most specialized web shop in the dependency tree.
+
 Configuration
    To strictly set the overriding project you have to configure it in
    the :ref:`app-yaml`.
