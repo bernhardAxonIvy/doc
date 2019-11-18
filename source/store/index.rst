@@ -1,14 +1,14 @@
 Store
 =====
 
-In our :dev-url:`store </store>` we provide powerful extensions around the Axon.ivy Platform.
+In our :dev-url:`store </market>` we provide powerful extensions around the Axon.ivy Platform.
 From complete workflow user interfaces, components to generate documents to simple demo projects and much more.
 Take a look around. 
  
 Portal
 ------
 
-The :dev-url:`portal </store/portal>` is a complete workflow user interface that fully exploits all
+The :dev-url:`portal </market/portal>` is a complete workflow user interface that fully exploits all
 the features of the Axon.ivy Platform with a web-based, modern interface
 the Portal provides you with key functionalities on all your devices:
 
@@ -20,7 +20,7 @@ the Portal provides you with key functionalities on all your devices:
 Doc Factory
 -----------
 
-The :dev-url:`Document Factory </store/doc-factory>` is a system that allows generating automatically documents like serial
+The :dev-url:`Document Factory </market/doc-factory>` is a system that allows generating automatically documents like serial
 letters with the help of Microsoft Office Templates (.dot or .dotx files).
 The Document Factory is open, can be extended and is based on the Java Library Aspose that is included in Axon.ivy platform.
 
@@ -28,7 +28,7 @@ The Document Factory is open, can be extended and is based on the Java Library A
 Demos
 -----
 
-These :dev-url:`projects </store/demos>` impressively demonstrate the power of the Axon.ivy Digital Business Platform.
+These :dev-url:`projects </market/demos>` impressively demonstrate the power of the Axon.ivy Digital Business Platform.
 You can have insights in all features like:
 
 * Workflow
