@@ -13,5 +13,5 @@ Axon.ivy
    :maxdepth: 1
    :caption: Ressources
    
-   store/index
+   market/index
    javadoc/index
