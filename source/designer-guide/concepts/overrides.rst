@@ -134,12 +134,6 @@ well as configuration and content management references are processed
 within the case scope, i.e. the lookup of such artifacts always starts
 at the project that defines the case scope.
 
-   .. warning::
-
-      Please note that *Html Dialogs* and *Html Dialog components* can not
-      be overridden by case scope. If you want to override them you have to
-      set a :ref:`strict_overriding`.
-
 To make use of the case scope the main business process has to be copied
 from the *web shop* project to the *Acme web shop* project, and if it is
 ensured that the process request is issued through the *Acme web shop* project
