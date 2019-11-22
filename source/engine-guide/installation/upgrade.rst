@@ -9,13 +9,13 @@ Migration Notes. Therefore, you can skip section Project Migration and steps 2
 and 4 in the section Upgrade.
 
 .. WARNING::
-    Upgrading from Xpert.ivy Server 3.x to Axon.ivy Engine 5.x and later is not
+    Upgrading from Xpert.ivy Server 3.x to |ivy-engine| 4.x and later is not
     supported.
 
 Preparation
 -----------
 
-#. Install the new Axon.ivy Engine version to a new installation directory (See
+#. Install the new |ivy-engine| version to a new installation directory (See
    section :ref:`install_engine`).
 #. Read the Migration Notes document of the new version.
 #. If necessary (according to the Migration Notes), request a new licence (see
@@ -27,10 +27,10 @@ Preparation
    :file:`configuration` directory of the new installation.
 #. Unless a new licence is required you should also copy the old licence file to
    the new installation.
-#. Modifications on any other configuration files located in the
+#. If you have modified any other configuration files located in the
    :file:`configuration`, :file:`elasticsearch/config`,
    :file:`webapps/ivy/WEB-INF` or :file:`webapps/ivy/META-INF` directories of
-   the old installation may be ported over to the corresponding files in the new
+   the old installation then apply the changes also in the corresponding files in the new
    installation, if required. To see what has been changed, we recommend the
    usage of some diff tool to compare the individual config files of old and new
    installation.
@@ -41,7 +41,7 @@ Preparation
    versions and install them.
 
 .. WARNING::
-    Before upgrading of an Axon.ivy Engine read the Migration Notes document of
+    Before upgrading of an |ivy-engine| read the Migration Notes document of
     the new version carefully. This document will tell you exactly what has
     changed since the last version and will list any additional steps to be
     undertaken, which might not be described here.
@@ -54,16 +54,15 @@ migration is required, all projects deployed to process model versions in state
 PREPARED, RELEASED, DEPRECATED and ARCHIVED must be converted. The following
 steps are necessary for every process model version:
 
-#. Copy the project from the process model version file directory on the engine
-   to a local directory on your developer machine.
-#. Import the project into your Designer workspace.
+#. Import the version that is deployed on your |ivy-engine| from your source repository
+   into into your Designer workspace.
 #. Migrate the project according the Migration Notes of the Designer. Usually
    this is achieved by invoking the project conversion action on each project
    (see Designer Guide for more information). Some manual adaptions may be
    necessary.
 #. Test the migrated project in the Designer.
 
-All migrated projects must be redeployed to the new, upgraded engine version
+All migrated projects must be redeployed to the new, upgraded |ivy-engine| version
 (see next section).
 
 
@@ -75,15 +74,15 @@ Upgrade
    Or set ``autoConvert`` property to true in the :ref:`ivy-yaml`.
 #. :ref:`Start <control-center>` the |ivy-engine|.
 #. :ref:`Redeploy <deployment>` all converted/migrated Axon.ivy projects.
-#. You may now delete the old engine installation directory, **unless** the
+#. You may now delete the old |ivy-engine| installation directory, **unless** the
    following warning applies to your installation:
 
 .. WARNING::
-    Please note that the new, upgraded engine installation will still refer to
+    Please note that the new, upgraded |ivy-engine| installation will still refer to
     the application file directories that were used by the old installation. As
     a consequence, you must never delete the directory of an old installation,
     if it contains application file directories (you can check the file
-    directory by displaying the application information inside the Axon.ivy
-    Engine Administration). If the application file directories of your
-    installation are stored elsewhere, then the deletion of the old engine
+    directory of an application in the :ref:`engine-cockpit`). 
+    If the application file directories of your
+    installation are stored elsewhere, then the deletion of the old |ivy-engine|
     installation will not cause any problems.

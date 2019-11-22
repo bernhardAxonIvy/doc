@@ -3,7 +3,7 @@
 System Databases
 ================
 
-The |ivy-engine| system database is used by the server to store configuration,
+The |ivy-engine| system database is used to store configuration,
 security, content and workflow information. See :ref:`Configuration
 <config-systemdb>` to find out how you can create and configure |ivy-engine|
 system databases. |ivy-engine| supports the following database systems to host
@@ -16,7 +16,7 @@ the system database:
 * :ref:`systemdb-oracle`
 
 You have the choice to create the database without the tables on your own. Or
-let the |ivy-engine| Config makes you that. In the second case, good defaults
+let the :ref:`engine-cockpit` make you that. In the second case, good default
 creation parameters will be applied.
 
 
@@ -183,7 +183,7 @@ If database will be created by the |ivy-engine| the collate is set to ``Latin1_G
        Oracle database.
     #. Create a new user (e.g. AxonIvy). Grant all necessary permissions to the
        user so that he can create and alter tables, indexes, sequences. Of
-       course the user must be able to insert, update, delete and select data
+       course, the user must be able to insert, update, delete and select data
        from the tables of the system database. This is optional you can use an
        already existing Oracle user or let the Axon.ivy Engine create one for
        you with the Axon.ivy Engine Configuration.

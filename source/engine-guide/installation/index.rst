@@ -1,19 +1,9 @@
 Installation
 ************
 
-.. toctree::
-   :maxdepth: 1
-
-   standard-edition
-   enterprise-edition
-   upgrade
-   systemdatabase
-
-
 .. _install_engine:
 
-Install |ivy-engine|
-=======================
+.. rubric:: Install |ivy-engine|
 
 To install the |ivy-engine| extract the correct zip file for your platform to
 the directory where you want to install the |ivy-engine|. For Debian based
@@ -33,31 +23,53 @@ following platforms are supported:
 +-------+--------------+----------------------+-----------------------------------------------------------------------------------------------+
 
 \* The *All* and *Slim_All* engines are delivered with launchers for Linux and
-Windows, but without a JRE. To use the slim engine set up the ``IVY_JAVA_HOME``
+Windows, but without a JRE. To use the slim |ivy-engine| set up the ``IVY_JAVA_HOME``
 environment variable pointing to a supported x64 JRE, or the ``JAVA_HOME``
-environment variable pointing to a supported x64 JDK. The slim engine comes
+environment variable pointing to a supported x64 JDK. The slim |ivy-engine| comes
 without demo projects.
 
 .. Note::
     Note, that the installation procedure implies sufficient administration and
-    access rights on the system. For example the access to drive :file:`C:` on a
+    access rights on the system. For example, the access to drive :file:`C:` on a
     Windows Server 2008 system is very restrictive that you might install the
     programs on drive :file:`D:` instead.
 
 
+.. _start_engine:
+
+.. rubric:: Start the |ivy-engine|
+
+You can start the |ivy-engine| by navigation to the :file:`bin` folder and executing the
+:file:`AxonIvyEngine` binary on Linux:
+
+.. code:: bash
+
+    cd bin
+    ./AxonIvyEngine
+    
+and the :file:`AxonIvyEngineC.exe` on Windows:
+
+.. code:: cmd
+
+    cd bin
+    AxonIvyEngineC.exe
+    
+Alternative, you can start the :ref:`control-center` UI and use it to start the |ivy-engine|.     
+
+By default the |ivy-engine| starts in :ref:`demo-mode`.
+
+
 .. _installing-a-licence:
 
-Installing a Licence
---------------------
+.. rubric:: Installing a Licence
 
-By default the |ivy-engine| is running in demo mode.
-You have to install a licence in order to run |ivy-engine| in a production environment.
+You have to install a licence in order to run |ivy-engine| in :ref:`production-mode`.
 
-To order a licence file you need to know the public URLs that end users will use to access your engine.
+To order a licence file you need to know the public URLs that end users will use to access your |ivy-engine|.
 
 .. admonition:: Example
   
-  Let's assume your Axon.ivy Engine is installed on a machine with the DNS name ``axonivyprod`` and listens on port 8080. Users access the engine in two different ways:
+  Let's assume your |ivy-engine| is installed on a machine with the DNS name ``axonivyprod`` and listens on port 8080. Users access the |ivy-engine| in two different ways:
   
   * Intranet users use ``http://axonivyprod:8080/ivy/*`` to access it. 
   * Internet users use ``http://www.customer.com/ivy/*`` to access it through a reverse proxy.
@@ -69,7 +81,7 @@ To order a licence file you need to know the public URLs that end users will use
   (e.g. ``www.customer.com/axon``, ``axonivyprod:9090``, ``www.customer.com:90/axon``).    
 
   
-To install a licence file follow the steps below:
+To install a licence file use the :ref:`engine-cockpit` or follow the steps below:
   
 #. Copy the licence file :file:`\*.lic` to the directory :file:`[engineDir]/configuration`.
 #. Remove all other licence files in the :file:`[engineDir]/configuration` directory.
@@ -78,127 +90,21 @@ To install a licence file follow the steps below:
   For container based installations it is also possible to make the license file
   available via :ref:`environment variables or docker-secrets <configuration_containers_licence>`.
 
+.. rubric:: Creating a system database
 
+You have to create and configure a :ref:`system database <systemdb>` in order to run |ivy-engine| in :ref:`production-mode`.
 
-Installed Files and Directories
--------------------------------
+See :ref:`Configuration <config-systemdb>` to find out how you can create and configure |ivy-engine|
+:ref:`system database <systemdb>`. 
 
-After the installation the following files and folders are located in the
-|ivy-engine| installation folder:
+.. rubric:: Detailed Installation Information
 
-+----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Folder / File                    | Description                                                                                                                                                                        |
-+==================================+====================================================================================================================================================================================+
-| bin/                             | Programs to start and configure the engine                                                                                                                                         |
-+----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| configuration/                   | Axon.ivy Engine configuration data                                                                                                                                                 |
-+-+--------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | reference/                     | Documentation for all available configurations                                                                                                                                     |
-+-+-+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | templates/                     | Use case driven configuration templates                                                                                                                                            |
-+-+-+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | :ref:`ivy-yaml`                | Main configuration file of the Axon.ivy Engine. Configures environments such as the system database, e-mail servers, administrators and more.                                      |
-+-+-+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | :ref:`ivy-cache-properties`    | System database cache configurations                                                                                                                                               |
-+-+-+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | keystore.p12                   | Keystore with the default signature of the Axon.ivy Engine (for https/ssl)                                                                                                         |
-+-+-+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | truststore.p12                 | Empty truststore can be used to add trusted server certificate for SSL connection clients                                                                                          |
-+-+-+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | :ref:`jvm-options`             | Java Virtual Machine (JVM) options of the Axon.ivy Engine.                                                                                                                         |
-+-+-+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | :ref:`log4jconfig-xml`         | Logging configuration                                                                                                                                                              |
-+-+-+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| doc/                             | Engine-Guide, New and Noteworthy, Migration Notes and more                                                                                                                         |
-+----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| dropins/                         | Third party extension libraries that contribute to the Axon.ivy runtime                                                                                                            |
-+----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| elasticsearch/                   | Bundled Elasticsearch server                                                                                                                                                       |
-+----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| jre/                             | Java Runtime Environment for Axon.ivy Engine                                                                                                                                       |
-+----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| logs/                            | Log files                                                                                                                                                                          |
-+----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| misc/                            |                                                                                                                                                                                    |
-+-+--------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | apache/                        | Files to integrate Axon.ivy into an Apache web server                                                                                                                              |
-+-+--------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | iis/                           | Files to integrate Axon.ivy into a Microsoft Internet Information Server (IIS)                                                                                                     |
-+-+--------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | visualvm/                      | The Axon.ivy VisualVM plugin file                                                                                                                                                  |
-+-+--------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| system/                          | The OSGi system                                                                                                                                                                    |
-+-+--------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | application/                   | System application                                                                                                                                                                 |
-+-+--------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | configuration/                 | OSGi configuration                                                                                                                                                                 |
-+-+--------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | demo-applications/demo-portal/ | Demo portal application which gets deployed in demo mode                                                                                                                           |
-+-+--------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | features/                      | Installed OSGi features                                                                                                                                                            |
-+-+--------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | lib/boot/                      | OSGi boot classpath libraries                                                                                                                                                      |
-+-+--------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | plugins/                       | Installed OSGi plugins. Basically all default or automatically installed java libraries of the Axon.ivy Engine                                                                     |
-+-+--------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| webapps/                         |                                                                                                                                                                                    |
-+-+--------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | ivy/                           | Axon.ivy Engine web interface                                                                                                                                                      |
-+-+--------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | ivy/info/                      | Info Web Pages                                                                                                                                                                     |
-+-+--------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | ivy/WEB-INF/                   | Contains the :ref:`web-xml` file                                                                                                                                                   |
-+-+--------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | ivy/META-INF/                  | Contains the :ref:`context-xml` file                                                                                                                                               |
-+-+--------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| | ivy/wf/                        | Contains the workflow web interface                                                                                                                                                |
-+-+--------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| work/                            | Temporary files that are created and used by the Axon.ivy Engine                                                                                                                   |
-+----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. toctree::
+   :maxdepth: 1
 
-
-
-Windows Programs
-^^^^^^^^^^^^^^^^
-
-The :file:`bin` folder of a windows installation contains the following native
-dynamic link libraries and executable files:
-
-+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| File                          | Description                                                                                                                                                                  |
-+===============================+==============================================================================================================================================================================+
-| AxonIvyEngine.exe             | Starts the Axon.ivy Engine. See :ref:`axonivy-engine`.                                                                                                                       |
-+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| AxonIvyEngineC.exe            | Same as AxonIvyEngine.exe but additionally logs any output to a console window.                                                                                              |
-+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| AxonIvyEngineService.exe      | Executable of the Windows service. See :ref:`engine-service`.                                                                                                                |
-+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ControlCenter.exe             | Program that allows to configure, start and stop the Axon.ivy Engine. It also permits to configure the Windows services. See :ref:`control-center`.                          |
-+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ControlCenterC.exe            | Same as ControlCenter.exe but additionally logs any output to a console window.                                                                                              |
-+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| JavaWindowsServiceHandler.dll | Library that contains native methods to register, unregister, configure, start and stop windows services                                                                     |
-+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| JVMLauncher.dll               | Library containing code to launch the Java virtual machine.                                                                                                                  |
-+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-Linux Programs
-^^^^^^^^^^^^^^
-
-The :file:`bin` folder of a Linux installation contains the following script
-files:
-
-+-----------------------+---------------------------------------------------------------------------------------------------------------------------+
-| File                  | Description                                                                                                               |
-+=======================+===========================================================================================================================+
-| AxonIvyEngine         | Starts the Axon.ivy Engine. See :ref:`axonivy-engine`.                                                                    |
-+-----------------------+---------------------------------------------------------------------------------------------------------------------------+
-| AxonIvyEngine.service | Template systemd script of the Linux service. It will be copied to /etc/systemd/system/ by running InstallService.sh.     |
-+-----------------------+---------------------------------------------------------------------------------------------------------------------------+
-| ControlCenter         | Program that allows to configure, start and stop the Axon.ivy Engine. See :ref:`control-center`.                          |
-+-----------------------+---------------------------------------------------------------------------------------------------------------------------+
-| InstallService.sh     | Script to install the Axon.ivy Engine as a daemon. See :ref:`engine-service`.                                             |
-+-----------------------+---------------------------------------------------------------------------------------------------------------------------+
-| launcher.sh           | Helper script to launch a Java program.                                                                                   |
-+-----------------------+---------------------------------------------------------------------------------------------------------------------------+
+   standard-edition
+   enterprise-edition
+   upgrade
+   systemdatabase
+   engine-modes
+   files

@@ -5,10 +5,10 @@ The main page of the Axon.ivy Engine looks like this
 
 .. figure:: /_images/engine-getting-started/engine-mainpage.png
 
-The Axon.ivy Engine is running in Demo Mode. This is because you did not install
+The Axon.ivy Engine is running in :ref:`demo-mode`. This is because you did not install
 a valid license yet nor did you configure a system database. Note, that
-everything that you do with the Axon.ivy Engine running in Demo Mode is lost
-when you shut down the engine. However, you can use the engine also in Demo Mode
+everything that you do with the Axon.ivy Engine running in :ref:`demo-mode` is lost
+when you shut down the engine. However, you can use the engine also in :ref:`demo-mode`
 and tryout the pre-installed Portal application by clicking on the
 :guilabel:`Portal` Home link. To login use one of the predefined demo users:
 **demo**, **guest** or **admin**. The passwords of the demo users are equal to

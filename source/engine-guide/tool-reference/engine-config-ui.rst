@@ -36,7 +36,7 @@ Configuration.
 
 If you are not able to start the Axon.ivy Engine anymore. Remove the installed license
 file from the `configuration` directory. Start the Axon.ivy Engine one more time. The
-Axon.ivy Engine will start in demo mode now.
+Axon.ivy Engine will start in :ref:`demo-mode` now.
 
 
 
@@ -52,7 +52,7 @@ the licence which should be used.
 
 .. note::
     It is possible to configure the engine without a valid licence, but the
-    engine will always start in the demo mode if you do not have a valid licence
+    engine will always start in the :ref:`demo-mode` if you do not have a valid licence
     and therefore does not use your configuration. 
 
 

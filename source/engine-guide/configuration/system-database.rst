@@ -3,7 +3,7 @@
 System Database
 ===============
 
-An untouched |ivy-engine| runs in demo mode. In consequence workflow data is
+An untouched |ivy-engine| runs in :ref:`demo-mode`. In consequence workflow data is
 never stored, but kept in a memory database. To run a productive engine an
 external system database must be connected, where workflow data will be stored.
 
