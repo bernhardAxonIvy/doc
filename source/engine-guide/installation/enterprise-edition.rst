@@ -15,7 +15,7 @@ Consult the chapter Web Server :ref:`integration` for more information.
 
 
 Installation of the first |ivy-engine| node
--------------------------------------------
+----------------------------------------------
 
 Follow the :ref:`installation-standard-edition` process to install the first
 |ivy-engine| Enterprise Edition node. Except that the license for the
@@ -31,7 +31,7 @@ list of nodes of the |ivy-engine| Enterprise Edition.
 
 
 Installation of another |ivy-engine| node on a different machine
-----------------------------------------------------------------
+-------------------------------------------------------------------
 
 To install further |ivy-engine| Enterprise Edition nodes on other machines
 proceed as follows:
@@ -54,7 +54,7 @@ proceed as follows:
 
 
 Installation of another |ivy-engine| node on the same machine
--------------------------------------------------------------
+----------------------------------------------------------------
 
 To install further |ivy-engine| nodes on the same machine where a node is already
 installed proceed as follows:

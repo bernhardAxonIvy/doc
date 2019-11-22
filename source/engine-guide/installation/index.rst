@@ -49,7 +49,7 @@ You can start the |ivy-engine| by navigation to the :file:`bin` folder and execu
     
 and the :file:`AxonIvyEngineC.exe` on Windows:
 
-.. code:: cmd
+.. code:: doscon
 
     cd bin
     AxonIvyEngineC.exe
