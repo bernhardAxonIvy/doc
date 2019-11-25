@@ -54,8 +54,7 @@ and the :file:`AxonIvyEngineC.exe` on Windows:
     cd bin
     AxonIvyEngineC.exe
     
-Alternative, you can start the :ref:`control-center` UI and use it to start the |ivy-engine|.     
-
+Alternative, you can use the :ref:`control-center` to start the |ivy-engine|.     
 By default the |ivy-engine| starts in :ref:`demo-mode`.
 
 
@@ -64,7 +63,6 @@ By default the |ivy-engine| starts in :ref:`demo-mode`.
 .. rubric:: Installing a Licence
 
 You have to install a licence in order to run |ivy-engine| in :ref:`production-mode`.
-
 To order a licence file you need to know the public URLs that end users will use to access your |ivy-engine|.
 
 .. admonition:: Example
@@ -93,7 +91,6 @@ To install a licence file use the :ref:`engine-cockpit` or follow the steps belo
 .. rubric:: Creating a system database
 
 You have to create and configure a :ref:`system database <systemdb>` in order to run |ivy-engine| in :ref:`production-mode`.
-
 See :ref:`Configuration <config-systemdb>` to find out how you can create and configure |ivy-engine|
 :ref:`system database <systemdb>`. 
 
