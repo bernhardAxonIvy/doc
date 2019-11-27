@@ -25,7 +25,7 @@ Configure the **TODO** task as follows:
 Start the workflow by pressing the :guilabel:`Start Workflow` button. After
 that, logout, then login again as **guest** user. On the task list, you now see
 the new **TODO** task that you created before. Try to work on the task by
-clicking on the arrow located on the right side of the task:
+clicking on it:
 
 .. figure:: /_images/engine-getting-started/tasklist.png
 

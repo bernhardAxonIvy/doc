@@ -79,15 +79,39 @@ creation of the system database differs a little bit depending on the database
 system you use. We will use a PostgreSQL database server.
 
 You can start the configuration on the main page of the Axon.ivy Engine (e.g.
-http://localhost:8080) by clicking on the **Config** menu.
+http://localhost:8080) by clicking on the link of the **Demo Mode** warning
+message.
 
-On the first page use the :guilabel:`Upload Licence` button to install your
-license file.
+On the first page use the :guilabel:`Choose licence` button to install your
+license file or drop it inside the field.
 
-.. figure:: /_images/engine-getting-started/license.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-setup-licence.png
 
-Some information of your license will be displayed on the page as soon as you
-have installed it. Press the :guilabel:`Next` button to continue.
+Your installed licence can be viewed if you click on the link at the top right.
+Press the :guilabel:`Next` button to continue.
+
+On the next page, you can configure system administrators. 
+
+.. figure:: /_images/engine-getting-started/administrator.png
+
+Click :guilabel:`Add Administrator`, fill in the form and press the
+:guilabel:`Add Administrator` button. 
+
+.. Note::
+  Administrators can administrate the Axon.ivy Engine. For example, they can add
+  or remove users, assign user to roles, deploy projects, etc. Therefore, you
+  need at least one administrator to administrate the Axon.ivy Engine. The Email
+  addresses of administrators are used to send mail notifications if license
+  problems occur.
+
+On the next page configure which protocol connectors and ports the Axon.ivy
+Engine internal web server should provide. 
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-setup-webserver.png
+
+.. include:: _webserver.rst
+
+Press the :guilabel:`Next` button.
 
 On the next screen choose the correct **Database** and **Driver** (in our case
 PostgreSQL). Configure the **Host** and **Port** where your database server is
@@ -98,7 +122,8 @@ the :guilabel:`Create Database` button.
 .. figure:: /_images/engine-getting-started/systemdatabase.png
 
 On the appearing dialog configure the name of the Axon.ivy system database.
-Press the :guilabel:`Create Database` button to create the system database.
+Press the :guilabel:`Save and create` button to save and create the system
+database.
 
 .. figure:: /_images/engine-getting-started/createdatabase.png
 
@@ -106,47 +131,22 @@ As soon as the database creation is finished the following dialog appears:
 
 .. figure:: /_images/engine-getting-started/createdatabase-success.png
 
-Press the :guilabel:`Save and connect` button to save the configuration and
-connect to the newly created system database. 
+Press the :guilabel:`Connect` button to connect to the newly created system
+database. 
 
 .. Note::
   The system database is used by the Axon.ivy Engine to store configurations,
   users, roles, process instances, tasks and process data
 
-Press the :guilabel:`Next` button.
+Press the :guilabel:`Finish` button.
 
-On the next page, you can configure system administrators. 
-
-.. figure:: /_images/engine-getting-started/administrator.png
-
-Fill in the form and press the :guilabel:`Add Administrator` button. 
-
-.. Note::
-  Administrators can administrate the Axon.ivy Engine. For example, they can add
-  or remove users, assign user to roles, deploy projects, etc. Therefore, you
-  need at least one administrator to administrate the Axon.ivy Engine. The Email
-  addresses of administrators are used to send mail notifications if license
-  problems occur.
-
-Press the :guilabel:`Next` button.
-
-On the next page configure which protocol connectors and ports the Axon.ivy
-Engine internal web server should provide. You do not need the AJP protocol. So
-let's disable it.
-
-.. figure:: /_images/engine-getting-started/webserver.png
-
-.. include:: _webserver.rst
-
-Press the :guilabel:`Next` button.
-
-On the next page, the configuration is summarized.
+A dialog appears and you can click :guilabel:`OK` to go back to the *main
+page*. 
 
 .. figure:: /_images/engine-getting-started/summary.png
 
-Press the :guilabel:`Save` button to save the configuration. Switch back to the
-**Control Center** and restart the Axon.ivy Engine by stopping and starting it
-again. 
+Switch back to the **Control Center** and restart the Axon.ivy Engine by
+stopping and starting it again. 
 
 Note, that the HTTP port of the Axon.ivy Engine may have changed. If you did
 change the HTTP settings. So open again a web browser and navigate to
@@ -156,7 +156,7 @@ message is gone? You now have a production ready Axon.ivy Engine.
 
 
 Deploy a project
---------------------------
+----------------
 
 Let's deploy an Axon.ivy project to the Axon.ivy Engine. Simply download
 WorkflowDemos and drop it in :file:`[engineDir]/deploy` folder. Refresh the
