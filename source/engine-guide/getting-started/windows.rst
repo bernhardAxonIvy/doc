@@ -143,7 +143,7 @@ Press the :guilabel:`Finish` button.
 A dialog appears and you can click :guilabel:`OK` to go back to the *main
 page*. 
 
-.. figure:: /_images/engine-getting-started/summary.png
+.. figure:: /_images/engine-getting-started/setup-finish.png
 
 Switch back to the **Control Center** and restart the Axon.ivy Engine by
 stopping and starting it again. 
