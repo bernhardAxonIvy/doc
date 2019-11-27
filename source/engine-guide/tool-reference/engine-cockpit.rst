@@ -5,10 +5,6 @@ Engine Cockpit
 
 The **Engine Cockpit** is the application to administrate your engine.
 
-.. warning::
-    Please be aware, that this tool is in a development stage. That means not
-    every part is fully functional and can change before its release.
-
 
 Opening the tool
 ----------------
