@@ -43,8 +43,8 @@ Default Pages
 
 To customize default pages, you must implement processes with a predefined
 process start signature. Checkout the process :file:`Processes/Workflow/Home` in
-the JsfWorkflowUI which also overrides all types of default pages. The
-JsfWorkflowUI can be found in :file:`[engineDir]/projects/JsfWorkflowUi.iar`. 
+the BasicWorkflowUI which also overrides all types of default pages. The
+BasicWorkflowUI can be found over the **Ivy Projects Importer**. 
 
 The following default pages can be customized: 
 
@@ -72,7 +72,7 @@ The following default pages can be customized:
 .. figure:: /_images/standard-process/standard-process-task-list.png
     :align: center
 
-    Task List provided by JsfWorkflowUI
+    Task List provided by BasicWorkflowUI
 
 
 .. _standard-process-email:
@@ -83,9 +83,9 @@ Email Notifications
 To customize the content of the email notification, you must implement processes
 with a predefined process start signature. Checkout the processes
 :file:`Processes/NewTaskMailContent` and
-:file:`Processes/DailyTaskSummaryMailContent` in the JsfWorkflowUI which also
-provides standard processes for email notification. The JsfWorkflowUI can be
-found in :file:`[engineDir]/projects/JsfWorkflowUi.iar`.
+:file:`Processes/DailyTaskSummaryMailContent` in the BasicWorkflowUI which also
+provides standard processes for email notification. The BasicWorkflowUI can be
+found over the **Ivy Projects Importer**.
 
 Mail notifications require a configured mail server and enabled notification
 settings as described in :ref:`config-email`.
@@ -105,7 +105,7 @@ The following email notifications can be customized:
 .. figure:: /_images/standard-process/standard-process-new-task.png
     :align: center
 
-    New Task Mail provided by JsfWorkflowUI
+    New Task Mail provided by BasicWorkflowUI
 
 
 Implementation hints
