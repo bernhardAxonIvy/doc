@@ -35,6 +35,20 @@ installed license file from the :file:`configuration` directory. The
 |ivy-engine| should now start up in :ref:`demo-mode`.
 
 
+To do so, start your preferred web browser and open the address:
+http://ServerName:Port/ivy/faces/view/system/engine-cockpit/setup.xhtml
+
+.. tip::
+    You can launch the :ref:`setup-wizard` directly as well. To do so, open the
+    address:
+    http://ServerName:Port/ivy/faces/view/system/engine-cockpit/setup.xhtml
+
+.. note::
+    For the usage of this tool, you will need a valid user with enough rights
+    for the login. If you run in :ref:`demo-mode` the administrator is
+    **admin**.
+
+
 .. _setup-wizard-licence:
 
 Licence
