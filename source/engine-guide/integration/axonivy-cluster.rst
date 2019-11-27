@@ -1,3 +1,5 @@
+.. _axonivy-cluster:
+
 Axon.ivy Cluster
 ================
 

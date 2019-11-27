@@ -1,3 +1,5 @@
+.. _enterprise-edition:
+
 Enterprise Edition
 ==================
 
