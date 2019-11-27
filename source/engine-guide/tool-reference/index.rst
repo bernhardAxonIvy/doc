@@ -8,6 +8,7 @@ Tool-Reference
    engine-config-cli
    engine-service
    engine-config-ui
+   setup-wizard
    engine-cockpit
    control-center
    api-reference

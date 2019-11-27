@@ -36,10 +36,9 @@ Engine Enterprise Edition will only work correctly, if the load balancer sends
 all request of the same http session to the same node (sticky sessions). To
 support this requirement, each Axon.ivy Engine Enterprise Edition node will add
 a special identifier called jvm route to the http session identifier. The jvm
-route identifier is calculated from the host name and the :ref:`Local Cluster
-Node Identifier <tool-reference-engine-config-ui-cluster>`. The **route**
-attribute configured on a node worker must be equal with the jvm route of the
-node:
+route identifier is calculated from the *host name* and the *local cluster node
+identifier*. The **route** attribute configured on a node worker must be equal
+with the jvm route of the node:
 
 .. code-block:: properties
     

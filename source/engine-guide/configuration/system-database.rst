@@ -18,5 +18,5 @@ To run the |ivy-engine| with a System Database a license is required. See
 :ref:`installing-a-licence`.
 
 The schema of the Axon.ivy System Database must exist on the referenced database
-system. The :ref:`engine-config-ui` and :ref:`engine-config-cli` simplify the
+system. The :ref:`setup-wizard` and :ref:`engine-config-cli` simplify the
 creation of the SystemDb connection.

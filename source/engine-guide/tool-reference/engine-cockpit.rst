@@ -381,10 +381,26 @@ credentials.
 .. figure:: /_images/engine-cockpit/engine-cockpit-rest-client-detail.png
 
 
+System
+------
+
+
+.. _engine-cockpit-system-admins:
+
+Administrators
+^^^^^^^^^^^^^^
+
+
+.. _engine-cockpit-systemdb:
+
+System Database
+^^^^^^^^^^^^^^^
+
+
 .. _engine-cockpit-system-configuration:
 
 System Configuration
---------------------
+^^^^^^^^^^^^^^^^^^^^
 
 On the **system configuration** page you will have an overview about all your
 configurations defined in your running engine. Configurations which are grey,

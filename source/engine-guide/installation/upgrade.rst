@@ -70,7 +70,7 @@ Upgrade
 -------
 
 #. :ref:`Stop <control-center>` the |ivy-engine|.
-#. Either convert the system database with the :ref:`engine-config-ui`.
+#. Either convert the system database with the :ref:`Engine Cockpit <engine-cockpit-systemdb>`.
    Or set ``autoConvert`` property to true in the :ref:`ivy-yaml`.
 #. :ref:`Start <control-center>` the |ivy-engine|.
 #. :ref:`Redeploy <deployment>` all converted/migrated Axon.ivy projects.
