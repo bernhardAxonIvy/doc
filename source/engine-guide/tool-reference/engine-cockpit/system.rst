@@ -15,10 +15,6 @@ Defining an email address for the administrators is mandatory. Notifications
 of critical events, such as license violations, are sent to administrator email
 addresses.
 
-.. warning::
-    Be sure you have always one administrator configured. Otherwise, you can not
-    longer access the :ref:`engine-cockpit` or :ref:`setup-wizard`!
-
 .. note::
     Changes to administrators will only take charge after you restart your the
     engine.
