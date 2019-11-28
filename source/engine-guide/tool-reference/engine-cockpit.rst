@@ -6,31 +6,29 @@ Engine Cockpit
 The **Engine Cockpit** is the application to administrate your engine.
 
 
-Opening the tool
-----------------
+**Opening the tool**
 
-After you have successfully started the Axon.ivy Engine, you can launch the engine cockpit tool.
-
-To do so, start your preferred web browser and open the address:
+After you have successfully started the Axon.ivy Engine, you can launch the engine cockpit tool 
+via the Axon.ivy Engine info page. 
+To do so, open the address: http://ServerName:Port/ivy in your browser and click on the :guilabel:`Cockpit` tab. 
+This will open the dashboard: 
 http://ServerName:Port/ivy/faces/view/system/engine-cockpit/dashboard.xhtml
 
-.. tip::
-    You can launch the engine cockpit over the Axon.ivy Engine info page as
-    well. To do so, open the address: http://ServerName:Port/ivy in your browser
-    and click on the :guilabel:`Cockpit` tab
-
 .. note::
-    For the usage of this tool, you will need a valid user with enough rights
-    for the login.
+    For the usage of this tool, you will need an administrator user account. 
+    If you run in :ref:`demo-mode`, the administrator user and password is
+    **admin**.
 
 
 Dashboard
 ---------
 
-The **dashboard** provides you a quick overview of your running engine. There
-are real time information about open sessions, user count, working tasks and
-deployed applications. In addition it will show you information about your
-system where the engine is running on. If you have a EMail Server configured you
+The **dashboard** provides you a quick overview of your running engine. It displays 
+real time informations about open sessions, user count, working tasks and
+deployed applications. In addition, it will show you information about the host 
+where the engine is running on. 
+
+If you have a EMail Server configured you
 can test it by clicking on the :guilabel:`Send` button and send a test mail. On
 the licence panel you have the possibility to upload a licence. To do so click
 on the :guilabel:`Upload Licence` button.
@@ -43,14 +41,16 @@ on the :guilabel:`Upload Licence` button.
 Applications
 ------------
 
-On the **applications** page you have a list with each application which is
-running on the engine. You can start, stop or lock these applications. Every
-application has its process models and process model versions. Those can be
+On the **applications** page you have a list of all workflow applications which are
+running on the engine. 
+
+You control the state of these applications with start, stop and lock actions. 
+Every application has its process models and process model versions. They can be
 started and stopped too. You can add a new application by clicking on the
 :guilabel:`Add` button. By clicking on a application, you switch to the
 :ref:`engine-cockpit-application-detail` view.
 
-For deployment of a new version of an app, you can click on the
+To deploy new versions of an app, you can click on the
 :guilabel:`Deployment` button to open the **Deployment Dialog**. Have a look at
 the :ref:`engine-cockpit-application-detail` view for more information.
 
@@ -64,9 +64,8 @@ Application detail
 
 The **application detail** page gives you similar information like the dashboard
 but specific for the chosen application. In addition you can change the active
-environment, start or stop the application. On the **Security System** panel you
-have the possibility to change your security system. You can choose every system
-you have configured in your :ref:`ivy-yaml` file.
+environment, start or stop the application. Furthermore, the :ref:`engine-cockpit-security-system` can 
+be chosen in the security system panel. 
 
 If you want to deploy an Axon.ivy project, click on the :guilabel:`Deployment`
 button and select your :file:`.iar` or :file:`.zip` file. For the deployment you
@@ -101,7 +100,7 @@ process is finished you will see the log about what has been done.
     eDirectory) can be synchronized.
 
 You can edit a configured external security system (not ivy Security System)
-directly in your :ref:`ivy-yaml` file or you can click on the name of the system
+directly in your files (see :ref:`configuration-security-system`) or you can click on the name of the system
 to open the :ref:`engine-cockpit-security-system-detail` view.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-security-system.png
@@ -390,8 +389,8 @@ The **administrators** page gives you the possibility to manage the users which
 have administrator privileges. Your changes will be written directly to the
 :ref:`ivy-yaml` file. 
 
-Defining an email address for the administrators is required. Notifications
-of critical events like licence limits reached are sent to these email
+Defining an email address for the administrators is mandatory. Notifications
+of critical events, such as license violations, are sent to administrator email
 addresses.
 
 .. warning::
