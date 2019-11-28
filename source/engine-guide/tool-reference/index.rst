@@ -8,6 +8,6 @@ Tool-Reference
    engine-config-cli
    engine-service
    setup-wizard
-   engine-cockpit
+   engine-cockpit/index
    control-center
    api-reference
