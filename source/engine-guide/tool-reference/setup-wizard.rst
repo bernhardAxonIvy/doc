@@ -3,22 +3,20 @@
 Setup Wizard
 ============
 
-The Setup Wizard is a simple user interface, based on the :ref:`engine-cockpit`,
-that lets operators apply the basic configuration that is necessary to have a
-productive engine running. This includes especially the installation of a
+The Setup Wizard is a simple user interface, for operators to apply the 
+initial configuration that is necessary to turn a demo engine into a
+productive |ivy-engine| instance. This includes especially the installation of a
 license and the creation of a system database.
-
-Advanced users might prefer to use configurations files :ref:`ivy-yaml` and the
-:ref:`engine-config-cli` to roll out and |ivy-engine| into production.
-Configuration files make the installation process faster re-reproducible in
-various environments such as dev, test and prod.
-
-Usage: The Wizard will guide you through the different steps. Your changes will
-saved immediately to the :ref:`ivy-yaml` file or the configuration folder.
 
 .. note::
     The changes that you make with the :ref:`setup-wizard` do not become active
-    unless you restart the engine.
+    unless you restart the engine. Even though, configurations are constantly written
+    from the wizard to the :ref:`ivy-yaml` file.
+
+Advanced users might prefer to manually craft configurations in :ref:`ivy-yaml` and 
+use the :ref:`engine-config-cli` to roll out and |ivy-engine| into production.
+Configuration files make the installation process faster re-reproducible in
+various environments such as dev, test and prod.
 
 
 .. _setup-wizard-launchers:
@@ -26,26 +24,18 @@ saved immediately to the :ref:`ivy-yaml` file or the configuration folder.
 Launchers
 ---------
 
-Use the program launchers of the :ref:`axonivy-engine` to start the
-|ivy-engine|. If the engine runs in the :ref:`demo-mode` you see a warning on
-the info page with a link to the :ref:`setup-wizard`.
+Start the :ref:`axonivy-engine` using its launcher. 
+If the engine runs in the :ref:`demo-mode` you see a warning on
+the info page with a link to the :ref:`setup-wizard`. 
+E.g. http://myServer:myPort/ivy/faces/view/system/engine-cockpit/setup.xhtml
 
 If you are not able to start the |ivy-engine| anymore, you may remove the
 installed license file from the :file:`configuration` directory. The
 |ivy-engine| should now start up in :ref:`demo-mode`.
 
-
-To do so, start your preferred web browser and open the address:
-http://ServerName:Port/ivy/faces/view/system/engine-cockpit/setup.xhtml
-
-.. tip::
-    You can launch the :ref:`setup-wizard` directly as well. To do so, open the
-    address:
-    http://ServerName:Port/ivy/faces/view/system/engine-cockpit/setup.xhtml
-
 .. note::
-    For the usage of this tool, you will need a valid user with enough rights
-    for the login. If you run in :ref:`demo-mode` the administrator is
+    For the usage of this tool, you will need an administrator user account. 
+    If you run in :ref:`demo-mode` the administrator user and password is
     **admin**.
 
 
@@ -78,22 +68,16 @@ right to administrate the |ivy-engine|:
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-setup-admins.png
 
-Defining an email address for the administrators is required. Notifications
-of critical events like licence limits reached are sent to these email
-addresses.
-
-.. note::
-    This administrators will be written to the :ref:`ivy-yaml` file.
-
+Defining an email address for the administrators is mandatory. Notifications
+of critical events, such as licence violations, are sent to administrator email adresses.
 
 .. _setup-wizard-webserver:
 
 Web Server Ports
 ----------------
 
-On the :guilabel:`Web Server` step you can configure which protocols the internal
-web server of |ivy-engine| should support and on which IP ports the web
-server is listening:
+On the :guilabel:`Web Server` step you can configure the enabled web protocols of the |ivy-engine|. 
+Furthermore, IP port bindings can be customized:
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-setup-webserver.png
 
@@ -110,11 +94,8 @@ The following protocols are supported:
 +----------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. note::
-    This settings will be written to the :ref:`ivy-yaml` file.
-
-.. note::
     In case you disable HTTP port, then the specified port will still opened by
-    the engine for internal purposes. Even though the engine will refuse
+    the engine for internal purposes. Even though, the engine will refuse
     connections from remote hosts. 
 
 
@@ -142,9 +123,9 @@ the chosen **database system** and **JDBC driver**. Click on the database system
 to configure the connection settings. The applied db user needs the following
 privileges:
 
-* CREATE DATABASE (to create the system database out of the Engine Configuration)
-* CREATE, ALTER, DROP Tables, Views, Indexes, Triggers (to update the Axon.ivy Engine)
-* INSERT, SELECT, UPDATE, DELETE data
+* ``CREATE DATABASE`` (to create the system database out of the Engine Configuration)
+* ``CREATE``, ``ALTER``, ``DROP``: Tables, Views, Indexes, Triggers (to update the Axon.ivy Engine)
+* ``INSERT``, ``SELECT``, ``UPDATE``, ``DELETE`` data
 
 In a third step you can configure additional connection properties. When
 clicking on the :guilabel:`Add Property` button a dialog will show, where you
@@ -169,15 +150,15 @@ information is necessary. It must be defined in the **creation dialog**. See
 chosen database system.
 
 .. note::
-    You can previously create an empty database/schema. In this case the server
-    configuration tool will only create the necessary tables into the given
-    database/schema. If the database/schema doesn't exist already, the server
-    configuration tool creates it with a best practice configuration. In this
+    You can previously create an empty database/schema. In this case the wizard
+    will only create the necessary tables into the given
+    database/schema. If the database/schema doesn't exist already, the wizard
+    creates it with a best practice configuration. In this
     case the applied db user needs the following privileges:
     
-    * CREATE, ALTER, DROP Tables, Views, Indexes, Triggers (to update the
+    * ``CREATE``, ``ALTER``, ``DROP``: Tables, Views, Indexes, Triggers (to update the
       Axon.ivy Engine)
-    * INSERT, SELECT, UPDATE, DELETE data
+    * ``INSERT``, ``SELECT``, ``UPDATE``, ``DELETE`` data
  
     The best practice configurations are documented in chapter :ref:`System
     Database <systemdb>`.
@@ -195,9 +176,6 @@ Convert an old System Database
 
 If the system database has an older version, use the :guilabel:`Migrate
 Database` button to convert it to the latest version. 
-
-.. warning::
-    Please do not close your browser window while your conversion is running!
 
 .. warning::
     Depending on the conversion steps and your database system it may be
