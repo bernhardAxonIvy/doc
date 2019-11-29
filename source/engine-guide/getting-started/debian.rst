@@ -20,11 +20,11 @@ can download and install it with the following bash script:
 .. Note::
   The most important folders of the Axon.ivy Engine are:
 
-  * :file:`/usr/lib/axonivy-engine-7x/` is the root installation folder with
+  * :file:`/usr/lib/axonivy-engine-8/` is the root installation folder with
     symlinks to all locations which are relevant to the engine.
-  * :file:`/etc/axonivy-engine-7x/` folder which contains the configuration
+  * :file:`/etc/axonivy-engine-8/` folder which contains the configuration
     files.
-  * :file:`/var/lib/axonivy-engine-7x/deploy` folder which is used to deploy
+  * :file:`/var/lib/axonivy-engine-8/deploy` folder which is used to deploy
     Axon.ivy projects.
 
 
@@ -33,7 +33,7 @@ Examine the Engine
 
 After the installation the engine will automatically be started as systemd
 service. You can check the operative state with :code:`systemctl status
-axonivy-engine-7x`. The output of the service status will expose an URI where
+axonivy-engine-8`. The output of the service status will expose an URI where
 the Axon.ivy Engine page is accessible.
 
 .. figure:: /_images/engine-getting-started/systemctl-status-axonivy-engine.png
@@ -64,14 +64,14 @@ Shutdown the Axon.ivy Engine first by stopping its service
 
 .. code:: bash
 
-    systemctl stop axonivy-engine-7x.service
+    systemctl stop axonivy-engine-8.service
 
 Let's install the license. You can do this by simple copy the license
 :file:`*.lic` file into the :file:`configuration` folder
 
 .. code:: bash
 
-    cp ~/license.lic /etc/axonivy-engine-7x
+    cp ~/license.lic /etc/axonivy-engine-8
 
 To configure the system database, use the :code:`config-db` command of the
 **EngineConfigCli** tool. Replace **yourdatabasserver** with the name of the
@@ -81,7 +81,7 @@ create a new database on the database server.
 
 .. code:: bash
 
-    cd /usr/lib/axonivy-engine-7x/bin
+    cd /usr/lib/axonivy-engine-8/bin
     ./EngineConfigCli config-db org.postgresql.Driver \
     jdbc:postgresql://yourdatabaseserver:5432/AxonIvySystemDatabase \
     dbuser password
@@ -97,7 +97,7 @@ Now, let's create the system database with the :code:`create-db` command
   roles, process instances, tasks and process data.
 
 Next, define an administrator by modifying the :ref:`ivy-yaml` file of the
-:file:`/etc/axonivy-engine-7x` directory:
+:file:`/etc/axonivy-engine-8` directory:
 
 .. literalinclude:: includes/sample-ivy.yaml
   :language: yaml
@@ -112,7 +112,7 @@ Next, define an administrator by modifying the :ref:`ivy-yaml` file of the
 
 Optionally, disable the AJP protocol connector of the Axon.ivy Engine internal
 web server in the :ref:`ivy-webserver-yaml` file of the
-:file:`/etc/axonivy-engine-7x` directory:
+:file:`/etc/axonivy-engine-8` directory:
 
 .. literalinclude:: includes/sample-ivy-no-ajp.yaml
   :language: yaml
@@ -124,7 +124,7 @@ Now, start the Axon.ivy Engine again
 
 .. code:: bash
 
-    systemctl start axonivy-engine-7x.service
+    systemctl start axonivy-engine-8.service
 
 Note, that the HTTP port of the Axon.ivy Engine may have changed. If you did
 change the http settings! So open again a web browser and navigate to
