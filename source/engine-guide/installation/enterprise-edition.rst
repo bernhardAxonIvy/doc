@@ -26,10 +26,8 @@ Enterprise Edition is issued.
 For an |ivy-engine| Enterprise Edition installation an external Elasticsearch
 server installation is mandatory. See Elasticsearch section in :ref:`ivy-yaml`.
 
-At point 5 an additional :guilabel:`Cluster` configuration tab will be displayed
-in the :ref:`Engine Config UI <tool-reference-engine-config-ui-cluster>`. Inside
-this tab use the :guilabel:`Add local node` button to add the new node to the
-list of nodes of the |ivy-engine| Enterprise Edition. 
+To define a new node, use the :ref:`engine-config-cli` with the
+**config-cluster** command.
 
 
 Installation of another |ivy-engine| node on a different machine
@@ -45,12 +43,8 @@ proceed as follows:
 #. Replace the licence file from the first |ivy-engine| Enterprise Edition
    node with the Axon.ivy Enterprise Edition licence for this node in the
    :file:`configuration` directory.
-#. Start the :ref:`engine-config-ui` program. The :guilabel:`system database`,
-   :guilabel:`administrators` and :guilabel:`web server` tab should display the
-   values you have configured on the first node. Change to the
-   :guilabel:`Cluster` tab and use the :guilabel:`Add local node` button to add
-   the node to the list of nodes of the |ivy-engine| Enterprise Edition.
-   :guilabel:`Save` your changes.
+#. Use the :ref:`engine-config-cli` with the **config-cluster** command to add 
+   a new local node.
 #. :ref:`Start <control-center>` the |ivy-engine| Enterprise Edition node and
    test if it is running.
 
@@ -73,13 +67,10 @@ installed proceed as follows:
         Every cluster node needs its own licence file even if nodes run on
         the same machine.
 
-#. Start the :ref:`engine-config-ui` program. The :guilabel:`system database`
-   and :guilabel:`administrators` tab should display the values you have
-   configured for the first node.
-#. Change to the :guilabel:`web server` tab and specify different port numbers
-   than those you have specified for the other nodes on this machine.
-#. Change to the :guilabel:`Cluster` tab and use the :guilabel:`Add local node`
-   button to add the node to the list of nodes of the |ivy-engine| Enterprise
-   Edition. :guilabel:`Save` your changes.
+#. Specify different port numbers for the **web server connectors** as you specified 
+   for the other nodes on this machine. You can do that over the :ref:`configuration` 
+   files (:ref:`ivy-webserver-yaml`).
+#. Use the :ref:`engine-config-cli` with the **config-cluster** command to add 
+   a new local node.
 #. :ref:`Start <control-center>` the |ivy-engine| Enterprise Edition node and
    test if it is running.
