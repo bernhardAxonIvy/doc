@@ -4,7 +4,7 @@ Deploy an Axon.ivy project to the Engine
 Let's deploy an Axon.ivy project to the Axon.ivy Engine. We use demos that are
 shipped with the Axon.ivy Designer.::
 
-    cd /var/lib/axonivy-engine-7x/deploy
+    cd /var/lib/axonivy-engine-8/deploy
     sudo -u ivy wget https://developer.axonivy.com/permalink/lib/dev/demos.zip
 
 .. Note::
