@@ -13,7 +13,7 @@ can download and install it with the following bash script:
 .. code:: bash
 
     cd /tmp
-    wget https://developer.axonivy.com/permalink/latest/axonivy-engine.deb -O axonivy-engine.deb
+    wget https://developer.axonivy.com/permalink/8.0/axonivy-engine.deb -O axonivy-engine.deb
     sudo dpkg -i axonivy-engine.deb
     rm -f /tmp/axonivy-engine.deb
 
