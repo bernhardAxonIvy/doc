@@ -41,7 +41,7 @@ Maintenance Mode
 In the maintenance mode you can use the :ref:`engine-cockpit` to fix licence or system database configuration problems. 
 
 .. warning::
-    In maintenance mode all functions of the |ivy-engine| expect the :ref:`engine-cockpit` are disabled! 
+    In maintenance mode all functions of the |ivy-engine| except the :ref:`engine-cockpit` are disabled! 
 
 The |ivy-engine| starts automatically in maintenance mode if there is a problem with the licence or the system database.
 
