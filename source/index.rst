@@ -11,7 +11,7 @@ Axon.ivy
 
 .. toctree::
    :maxdepth: 1
-   :caption: Ressources
+   :caption: Resources
    
    market/index
    javadoc/index
