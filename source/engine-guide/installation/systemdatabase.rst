@@ -143,7 +143,7 @@ database instance.
 
 .. tip:: 
   If you cannot connect to a Microsoft SQL Server, check first if the tcp/ip
-  protocol for sql server is activated (by default it's deactivated). Sql Server
+  protocol for SQL Server is activated (by default it's deactivated). SQL Server
   Authentication must be enabled too. By default only Windows Authentication is
   enabled which is not supported by JDBC drivers.
 
