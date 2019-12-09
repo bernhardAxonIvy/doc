@@ -141,10 +141,11 @@ database instance.
   character columns from different databases because the data 
   must be converted from one collate to another.
 
-.. warning:: 
-  If you cannot create a sqlserver database during an engine setup, check first
-  if the tcp/ip protocol for sql server is activated (by default it's
-  deactivated).
+.. tip:: 
+  If you cannot connect to a Microsoft SQL Server, check first if the tcp/ip
+  protocol for sql server is activated (by default it's deactivated). Sql Server
+  Authentication must be enabled too. By default only Windows Authentication is
+  enabled which is not supported by JDBC drivers.
 
 
 .. _systemdb-oracle:
