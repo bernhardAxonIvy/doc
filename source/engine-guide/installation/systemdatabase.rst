@@ -141,6 +141,12 @@ database instance.
   character columns from different databases because the data 
   must be converted from one collate to another.
 
+.. warning:: 
+  If you cannot create a sqlserver database during an engine setup, check first
+  if the tcp/ip protocol for sql server is activated (by default it's
+  deactivated).
+
+
 .. _systemdb-oracle:
 
 Oracle
