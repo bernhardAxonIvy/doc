@@ -234,8 +234,8 @@ set in the :ref:`ivy-yaml` and :ref:`ivy-webserver-yaml`.
   the session id is renewed after Login.
   
 By default, all cookies (inclusive the session cookie ``JSESSIONID``) have set 
-the ``same-site`` cookie header to value ``Strict``. You can change this to a 
-less secure value if you need to in :ref:`context-xml`.  
+the ``same-site`` cookie header to value ``lax``. You can disable or harden XSS
+cookie restrictions in :ref:`context-xml`.
 
 
 Only grant ivy permissions where required
