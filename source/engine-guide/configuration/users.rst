@@ -3,7 +3,32 @@
 Users
 =====
 
-Users are kept in a so-called security system which can be defined in
+.. _engine-administrators:
+
+Administrators
+--------------
+
+Administrators can configure, monitor and manage the |ivy-engine|.
+At least on administrator must be configured in :ref:`ivy-yaml`.
+
+
+.. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/ivy-administrator.yaml
+  :language: yaml
+  :linenos:
+
+
+It is highly recommended to hash passwords of administrators by enclosing the
+password in cleartext with :code:`"${hash:` and :code:`}"` like
+:code:`"${hash:1234}"` for password :code:`1234`. Hashed passwords
+can not be decrypted anymore.
+The |ivy-engine| will automatically hash and replace the password in file,
+when the configuration will be loaded
+
+
+Workflow Users
+--------------
+
+Workflow Users are kept in a so-called security system which can be defined in
 :ref:`ivy-yaml`. Each application defines in :ref:`app-yaml` which security
 system is used. There are two types of security systems: 
 

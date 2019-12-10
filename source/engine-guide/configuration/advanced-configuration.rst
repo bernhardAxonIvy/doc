@@ -15,7 +15,7 @@ follows:
     :linenos:
 
 There is a smooth :ref:`configuration_containers_secrets` integration, which is very useful in container
-environments such as Docker. 
+environments such as Docker. Be aware that :ref:`passwords of administrators <engine-administrators>` always should be hashed.
 
 .. _configuration-business-calendar:
 
