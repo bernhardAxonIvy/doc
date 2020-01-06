@@ -9,7 +9,7 @@
 		<groupId>ch.ivyteam.ivy</groupId>
 		<artifactId>ch.ivyteam.ivy.build.config</artifactId>
 		<version>8.0.2-SNAPSHOT</version>
-		<relativePath>../development/ch.ivyteam.ivy.build.maven/config</relativePath>
+		<relativePath>../maven/config</relativePath>
 	</parent>
 
 	<name>Axon.ivy Digital Business Platform</name>
