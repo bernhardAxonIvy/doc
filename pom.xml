@@ -7,9 +7,9 @@
 
 	<parent>
 		<groupId>ch.ivyteam.ivy</groupId>
-		<artifactId>maven-config</artifactId>
+		<artifactId>maven-config-dependencies</artifactId>
 		<version>8.0.2-SNAPSHOT</version>
-		<relativePath>../maven/config</relativePath>
+		<relativePath>../maven/config/dependencies</relativePath>
 	</parent>
 
 	<name>Axon.ivy Digital Business Platform</name>
