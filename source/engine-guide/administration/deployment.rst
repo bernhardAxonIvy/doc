@@ -229,6 +229,9 @@ application **portal** of the |ivy-engine|.
       -Divy.deploy.engine.url=http://localhost:8080/ivy \
       -Divy.deploy.engine.app=portal
 
+The *http based deployment* method uses the internal
+:ref:`api-reference-deployment` rest api.
+
 
 .. _deployment-maven-plugin-build:
 
