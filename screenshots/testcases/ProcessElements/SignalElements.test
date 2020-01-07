@@ -1,0 +1,41 @@
+--- RCPTT testcase ---
+Format-Version: 1.0
+Contexts: _PRrTwNcsEeaidO8WBzHpig
+Element-Name: SignalElements
+Element-Type: testcase
+Element-Version: 3.0
+External-Reference: 
+Id: _geUGAJ47Eem1xsH9pgqBEw
+Runtime-Version: 2.5.0.201908212005
+Save-Time: 9/9/19, 6:06 PM
+Testcase-Type: ecl
+
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Content-Type: text/ecl
+Entry-Name: .content
+
+importProject "documentationExampleProject"
+
+// Signal Start Event - Signal Tab
+openInscription
+	-processName "signalElements"
+	-elementName "user:created"
+	-elementType "Signal Start Event"
+captureInscription
+	-elementType "Signal Start Event"
+	-tabName "Signal"
+	-width 455 -height 320
+	-screenshot "signal-start-event-tab-signal.png"
+
+
+// Signal Boundary Event - Signal Tab
+openInscription
+	-processName "signalElements"
+	-elementName "admin:quit:userKey"
+	-elementType "Signal Boundary Event"
+captureInscription
+	-elementType "Signal Boundary Event"
+	-tabName "Signal"
+	-width 455 -height 320
+	-screenshot "signal-boundary-event-tab-signal.png"
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

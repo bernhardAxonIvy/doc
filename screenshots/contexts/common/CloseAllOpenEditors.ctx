@@ -1,0 +1,24 @@
+--- RCPTT testcase ---
+Format-Version: 1.0
+Context-Type: org.eclipse.rcptt.ctx.ecl
+Element-Name: CloseAllOpenEditors
+Element-Type: context
+Element-Version: 2.0
+Id: _upxLkAoJEeqYrKoACbyZaQ
+Runtime-Version: 2.5.0.201907212359
+Save-Time: 11/18/19, 2:46 PM
+
+------=_.ecl.context-718f04b4-ed39-33e3-af62-0995e4561998
+Content-Type: text/ecl
+Entry-Name: .ecl.context
+
+try
+{
+	get-menu -path "File/Close All" | click
+	get-window "Save Resource" | get-button "Don't Save" | click
+}
+-catch
+{
+	//do nothing
+}
+------=_.ecl.context-718f04b4-ed39-33e3-af62-0995e4561998--

@@ -1,0 +1,29 @@
+--- RCPTT testcase ---
+Format-Version: 1.0
+Contexts: _y5zpEF73Eea4DszzhZF9qA
+Element-Name: RestClientEditor
+Element-Type: testcase
+Element-Version: 3.0
+External-Reference: 
+Id: _63kQ4Aa0EeiM3vZlrfoIUw
+Runtime-Version: 2.5.0.201908212005
+Save-Time: 9/9/19, 5:41 PM
+Testcase-Type: ecl
+
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Content-Type: text/ecl
+Entry-Name: .content
+
+importProject -projectName "documentationExampleProject"
+
+with [get-view "Axon.ivy Projects" | get-tree] {
+	select "documentationExampleProject/Definitions/Rest Clients" | double-click
+}
+get-eclipse-window | resizeWindow 1050 850
+with [get-editor documentationExampleProject] {
+    maximize
+	get-section "REST Clients" | get-tree | select approvalService
+    get-tab-folder | get-object | captureScreenshot "designer-configuration/rest-client-editor.png"
+}
+get-editor documentationExampleProject | close
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

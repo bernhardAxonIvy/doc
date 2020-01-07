@@ -1,0 +1,30 @@
+--- RCPTT testcase ---
+Format-Version: 1.0
+Contexts: _y5zpEF73Eea4DszzhZF9qA
+Element-Name: Simulation
+Element-Type: testcase
+Element-Version: 3.0
+External-Reference: 
+Id: _ecXRcF_cEeaAcqEsdR5JMw
+Runtime-Version: 2.5.0.201908212005
+Save-Time: 9/10/19, 9:10 AM
+Testcase-Type: ecl
+
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Content-Type: text/ecl
+Entry-Name: .content
+
+importProject "QuickStartTutorial"
+
+OpenPerspective "Process Development"
+get-eclipse-window | resizeWindow 1500 790
+get-button "Start Engine and show overview page" | click
+find-tab-folder "Web Browser" | get-object | captureScreenshot "simulation-debugging/process-start-overview.png"
+
+get-button "Select content and formatting language for design and simulation .*" | click
+with [get-window "Content and Formatting Language Settings"] {
+	get-group "Formatting Language" | get-list | select "English (United States)"
+	wait 500
+	saveWindowContentScreenshot "simulation-debugging/content-formatting-language-settings.png"
+}
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

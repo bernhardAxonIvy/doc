@@ -1,0 +1,45 @@
+--- RCPTT testcase ---
+Format-Version: 1.0
+Contexts: _y5zpEF73Eea4DszzhZF9qA
+Element-Name: WorkbenchPerspectives
+Element-Type: testcase
+Element-Version: 3.0
+External-Reference: 
+Id: _XZLCgF-PEeaD4tjI89nDAg
+Runtime-Version: 2.5.0.201908212005
+Save-Time: 9/9/19, 5:44 PM
+Testcase-Type: ecl
+
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Content-Type: text/ecl
+Entry-Name: .content
+
+importProject -projectName "QuickStartTutorial"
+
+with [get-view "Axon.ivy Projects" | get-tree] {
+	get-item QuickStartTutorial | click
+	get-item "QuickStartTutorial/Processes/MyProcess" | click
+	select "QuickStartTutorial/Processes/MyProcess" | double-click
+}
+get-button "Process Model" | click
+
+get-eclipse-window | resizeWindow 1020 755
+get-eclipse-window | get-object | captureScreenshot "designer/workbench.png"
+
+OpenPerspective "Process Development"
+
+get-eclipse-window | maximize
+get-eclipse-window | resizeWindow 800 800
+
+wait 1000
+get-button "Process Model" | get-object | invoke getParent | invoke getParent | invoke getParent | captureScreenshot "designer/switch-perspectives.png"
+
+importProject -projectName "documentationExampleProject"
+get-view "Axon.ivy Projects" | get-tree | get-item "documentationExampleProject/Html Dialogs/screenshot.project/exampleHtmlDialog/exampleHtmlDialog Interface" | double-click
+
+get-eclipse-window | maximize
+get-eclipse-window | resizeWindow 800 800
+
+get-button "Process Model" | get-object | invoke getParent | invoke getParent | invoke getParent | invoke getParent | 
+	captureScreenshot "designer/toolbar.png"
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

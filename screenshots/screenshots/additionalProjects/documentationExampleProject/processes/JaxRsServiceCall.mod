@@ -1,0 +1,406 @@
+[Ivy]
+159FF3D428E42BB5 7.5.0 #module
+>Proto >Proto Collection #zClass
+Jl0 JaxRsServiceCall Big #zClass
+Jl0 B #cInfo
+Jl0 #process
+Jl0 @TextInP .type .type #zField
+Jl0 @TextInP .processKind .processKind #zField
+Jl0 @AnnotationInP-0n ai ai #zField
+Jl0 @MessageFlowInP-0n messageIn messageIn #zField
+Jl0 @MessageFlowOutP-0n messageOut messageOut #zField
+Jl0 @TextInP .xml .xml #zField
+Jl0 @TextInP .responsibility .responsibility #zField
+Jl0 @StartRequest f0 '' #zField
+Jl0 @EndTask f1 '' #zField
+Jl0 @RestClientCall f46 '' #zField
+Jl0 @PushWFArc f3 '' #zField
+Jl0 @PushWFArc f2 '' #zField
+Jl0 @StartRequest f38 '' #zField
+Jl0 @EndTask f37 '' #zField
+Jl0 @RestClientCall f39 '' #zField
+Jl0 @PushWFArc f41 '' #zField
+Jl0 @PushWFArc f40 '' #zField
+Jl0 @StartRequest f5 '' #zField
+Jl0 @EndTask f6 '' #zField
+Jl0 @RestClientCall f14 '' #zField
+Jl0 @PushWFArc f7 '' #zField
+Jl0 @PushWFArc f8 '' #zField
+Jl0 @EndTask f4 '' #zField
+Jl0 @RestClientCall f9 '' #zField
+Jl0 @StartRequest f10 '' #zField
+Jl0 @PushWFArc f11 '' #zField
+Jl0 @PushWFArc f12 '' #zField
+Jl0 @StartRequest f13 '' #zField
+Jl0 @EndTask f15 '' #zField
+Jl0 @RestClientCall f16 '' #zField
+Jl0 @PushWFArc f17 '' #zField
+Jl0 @PushWFArc f18 '' #zField
+Jl0 @StartRequest f19 '' #zField
+Jl0 @EndTask f20 '' #zField
+Jl0 @RestClientCall f21 '' #zField
+Jl0 @PushWFArc f22 '' #zField
+Jl0 @PushWFArc f23 '' #zField
+>Proto Jl0 Jl0 JaxRsServiceCall #zField
+Jl0 f0 outLink axonTimeline.ivp #txt
+Jl0 f0 inParamDecl '<> param;' #txt
+Jl0 f0 requestEnabled true #txt
+Jl0 f0 triggerEnabled false #txt
+Jl0 f0 callSignature axonTimeline() #txt
+Jl0 f0 persist false #txt
+Jl0 f0 taskData 'TaskTriggered.EXPRI=2
+TaskTriggered.EXROL=Everybody
+TaskTriggered.EXTYPE=0
+TaskTriggered.PRI=2
+TaskTriggered.ROL=Everybody
+TaskTriggered.TYPE=0' #txt
+Jl0 f0 caseData businessCase.attach=true #txt
+Jl0 f0 showInStartList 1 #txt
+Jl0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <name>axonTimeline.ivp</name>
+    </language>
+</elementInfo>
+' #txt
+Jl0 f0 @C|.responsibility Everybody #txt
+Jl0 f0 81 49 30 30 -51 17 #rect
+Jl0 f0 @|StartRequestIcon #fIcon
+Jl0 f1 337 49 30 30 0 15 #rect
+Jl0 f1 @|EndIcon #fIcon
+Jl0 f46 clientId d6b7615f-1087-483d-9dbe-9b704bbe7f02 #txt
+Jl0 f46 path statuses/user_timeline.json #txt
+Jl0 f46 queryParams 'screen_name="AxonIvy";
+' #txt
+Jl0 f46 templateParams 'api.version="1.1";
+' #txt
+Jl0 f46 headers 'Accept=application/json;
+' #txt
+Jl0 f46 method GET #txt
+Jl0 f46 clientCode 'import com.fasterxml.jackson.databind.JsonNode;
+
+JsonNode node = client
+	.path("statuses/user_timeline.json")
+	.request().get(JsonNode.class) as JsonNode;
+in.name = node.get("user").asText();' #txt
+Jl0 f46 resultType com.fasterxml.jackson.databind.JsonNode #txt
+Jl0 f46 responseCode 'in.name = result.get("user").asText();' #txt
+Jl0 f46 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <name>Call twitter</name>
+        <nameStyle>12,7
+</nameStyle>
+    </language>
+</elementInfo>
+' #txt
+Jl0 f46 167 42 112 44 -33 -7 #rect
+Jl0 f46 @|RestClientCallIcon #fIcon
+Jl0 f3 expr out #txt
+Jl0 f3 111 64 167 64 #arcP
+Jl0 f2 279 64 337 64 #arcP
+Jl0 f38 outLink addDocument.ivp #txt
+Jl0 f38 inParamDecl '<String name> param;' #txt
+Jl0 f38 requestEnabled true #txt
+Jl0 f38 triggerEnabled false #txt
+Jl0 f38 callSignature addDocument(String) #txt
+Jl0 f38 persist false #txt
+Jl0 f38 taskData 'TaskTriggered.EXPRI=2
+TaskTriggered.EXROL=Everybody
+TaskTriggered.EXTYPE=0
+TaskTriggered.PRI=2
+TaskTriggered.ROL=Everybody
+TaskTriggered.TYPE=0' #txt
+Jl0 f38 caseData businessCase.attach=true #txt
+Jl0 f38 showInStartList 1 #txt
+Jl0 f38 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <name>addDocument.ivp</name>
+    </language>
+</elementInfo>
+' #txt
+Jl0 f38 @C|.responsibility Everybody #txt
+Jl0 f38 82 141 30 30 -54 17 #rect
+Jl0 f38 @|StartRequestIcon #fIcon
+Jl0 f37 339 141 30 30 0 15 #rect
+Jl0 f37 @|EndIcon #fIcon
+Jl0 f39 clientId a320a922-175c-43c0-adc6-b6694ecae306 #txt
+Jl0 f39 path document #txt
+Jl0 f39 method POST #txt
+Jl0 f39 bodyInputType RAW #txt
+Jl0 f39 bodyRaw '{
+	"id" : 42,
+	"firstname" : "<%=in.name%>"
+}' #txt
+Jl0 f39 bodyForm 'title="I need a new car";
+description="really, I''m sick of my old Fiat Punto";
+' #txt
+Jl0 f39 bodyEntity in.person #txt
+Jl0 f39 clientCode 'out.name = client.request().get().readEntity(String.class) as String;' #txt
+Jl0 f39 resultType java.util.List<java.lang.Integer> #txt
+Jl0 f39 responseCode 'out.documentId = result.get(0).toNumber();
+
+if (response.hasLink("/"+out.documentId))
+{
+	ivy.log.info(
+		response.getLink("/"+out.documentId).getUri()
+	);
+}' #txt
+Jl0 f39 clientErrorCode ivy:error:rest:client #txt
+Jl0 f39 statusErrorCode ivy:error:rest:client #txt
+Jl0 f39 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <name>Update
+document name</name>
+        <nameStyle>20,7
+</nameStyle>
+    </language>
+</elementInfo>
+' #txt
+Jl0 f39 162 134 128 44 -45 -15 #rect
+Jl0 f39 @|RestClientCallIcon #fIcon
+Jl0 f41 290 156 339 156 #arcP
+Jl0 f40 expr out #txt
+Jl0 f40 112 156 162 156 #arcP
+Jl0 f5 outLink approve.ivp #txt
+Jl0 f5 inParamDecl '<> param;' #txt
+Jl0 f5 requestEnabled true #txt
+Jl0 f5 triggerEnabled false #txt
+Jl0 f5 callSignature approve() #txt
+Jl0 f5 persist false #txt
+Jl0 f5 startName '3. Calls a BPM process from REST service' #txt
+Jl0 f5 taskData 'TaskTriggered.EXPRI=2
+TaskTriggered.EXROL=Everybody
+TaskTriggered.EXTYPE=0
+TaskTriggered.PRI=2
+TaskTriggered.ROL=Everybody
+TaskTriggered.TYPE=0' #txt
+Jl0 f5 caseData businessCase.attach=false #txt
+Jl0 f5 showInStartList 1 #txt
+Jl0 f5 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <name>createApproval
+viaREST.ivp</name>
+        <nameStyle>26,5,7
+</nameStyle>
+    </language>
+</elementInfo>
+' #txt
+Jl0 f5 @C|.responsibility Everybody #txt
+Jl0 f5 78 225 30 30 -40 17 #rect
+Jl0 f5 @|StartRequestIcon #fIcon
+Jl0 f6 334 225 30 30 0 15 #rect
+Jl0 f6 @|EndIcon #fIcon
+Jl0 f14 clientId e61c6d1f-106e-46ea-8327-fe18e4c1d912 #txt
+Jl0 f14 method JAX_RS #txt
+Jl0 f14 clientCode 'import javax.ws.rs.client.Entity;
+import com.fasterxml.jackson.databind.JsonNode;
+import javax.ws.rs.core.MultivaluedHashMap;
+import javax.ws.rs.core.MultivaluedMap;
+
+MultivaluedMap map = new MultivaluedHashMap();
+map.add("title","I need a new car");
+map.add("description", "really, I''m sick of my old Fiat Punto");
+map.add("cost", in.price.toString());
+
+JsonNode result = client.request()
+	.put(Entity.form(map))
+	.readEntity(JsonNode.class) as JsonNode;
+	
+ivy.log.info(result);' #txt
+Jl0 f14 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <name>create
+JAX-RS approval</name>
+        <nameStyle>22,7
+</nameStyle>
+    </language>
+</elementInfo>
+' #txt
+Jl0 f14 157 218 128 44 -44 -15 #rect
+Jl0 f14 @|RestClientCallIcon #fIcon
+Jl0 f7 expr out #txt
+Jl0 f7 108 240 157 240 #arcP
+Jl0 f8 285 240 334 240 #arcP
+Jl0 f4 334 312 30 30 0 15 #rect
+Jl0 f4 @|EndIcon #fIcon
+Jl0 f9 clientId e61c6d1f-106e-46ea-8327-fe18e4c1d912 #txt
+Jl0 f9 method PUT #txt
+Jl0 f9 bodyInputType FORM #txt
+Jl0 f9 bodyForm 'title="I need a new car";
+description="really, I''m sick of my old Fiat Punto";
+' #txt
+Jl0 f9 resultType com.fasterxml.jackson.databind.JsonNode #txt
+Jl0 f9 responseCode ivy.log.info(result); #txt
+Jl0 f9 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <name>form approval</name>
+        <nameStyle>1,5
+3,5
+9,5
+</nameStyle>
+    </language>
+</elementInfo>
+' #txt
+Jl0 f9 165 305 112 44 -43 -7 #rect
+Jl0 f9 @|RestClientCallIcon #fIcon
+Jl0 f10 outLink formInput.ivp #txt
+Jl0 f10 inParamDecl '<> param;' #txt
+Jl0 f10 requestEnabled true #txt
+Jl0 f10 triggerEnabled false #txt
+Jl0 f10 callSignature formInput() #txt
+Jl0 f10 persist false #txt
+Jl0 f10 startName '3. Calls a BPM process from REST service' #txt
+Jl0 f10 taskData 'TaskTriggered.EXPRI=2
+TaskTriggered.EXROL=Everybody
+TaskTriggered.EXTYPE=0
+TaskTriggered.PRI=2
+TaskTriggered.ROL=Everybody
+TaskTriggered.TYPE=0' #txt
+Jl0 f10 caseData businessCase.attach=false #txt
+Jl0 f10 showInStartList 1 #txt
+Jl0 f10 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <name>formInput.ivp</name>
+        <nameStyle>13,5,7
+</nameStyle>
+    </language>
+</elementInfo>
+' #txt
+Jl0 f10 @C|.responsibility Everybody #txt
+Jl0 f10 78 312 30 30 -40 17 #rect
+Jl0 f10 @|StartRequestIcon #fIcon
+Jl0 f11 277 327 334 327 #arcP
+Jl0 f12 expr out #txt
+Jl0 f12 108 327 165 327 #arcP
+Jl0 f13 outLink entityInput.ivp #txt
+Jl0 f13 inParamDecl '<> param;' #txt
+Jl0 f13 requestEnabled true #txt
+Jl0 f13 triggerEnabled false #txt
+Jl0 f13 callSignature entityInput() #txt
+Jl0 f13 persist false #txt
+Jl0 f13 startName '3. Calls a BPM process from REST service' #txt
+Jl0 f13 taskData 'TaskTriggered.EXPRI=2
+TaskTriggered.EXROL=Everybody
+TaskTriggered.EXTYPE=0
+TaskTriggered.PRI=2
+TaskTriggered.ROL=Everybody
+TaskTriggered.TYPE=0' #txt
+Jl0 f13 caseData businessCase.attach=false #txt
+Jl0 f13 showInStartList 1 #txt
+Jl0 f13 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <name>entityInput.ivp</name>
+    </language>
+</elementInfo>
+' #txt
+Jl0 f13 @C|.responsibility Everybody #txt
+Jl0 f13 76 391 30 30 -44 17 #rect
+Jl0 f13 @|StartRequestIcon #fIcon
+Jl0 f15 332 391 30 30 0 15 #rect
+Jl0 f15 @|EndIcon #fIcon
+Jl0 f16 clientId a320a922-175c-43c0-adc6-b6694ecae306 #txt
+Jl0 f16 path crm #txt
+Jl0 f16 method PUT #txt
+Jl0 f16 bodyInputType ENTITY #txt
+Jl0 f16 bodyForm 'title="I need a new car";
+description="really, I''m sick of my old Fiat Punto";
+' #txt
+Jl0 f16 bodyEntity in.person #txt
+Jl0 f16 resultType com.fasterxml.jackson.databind.JsonNode #txt
+Jl0 f16 responseCode ivy.log.info(result); #txt
+Jl0 f16 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <name>entity CRM</name>
+        <nameStyle>6,5
+1,5
+3,5
+</nameStyle>
+    </language>
+</elementInfo>
+' #txt
+Jl0 f16 163 384 112 44 -32 -7 #rect
+Jl0 f16 @|RestClientCallIcon #fIcon
+Jl0 f17 275 406 332 406 #arcP
+Jl0 f18 expr out #txt
+Jl0 f18 106 406 163 406 #arcP
+Jl0 f19 outLink dynamicProperties.ivp #txt
+Jl0 f19 inParamDecl '<> param;' #txt
+Jl0 f19 requestEnabled true #txt
+Jl0 f19 triggerEnabled false #txt
+Jl0 f19 callSignature dynamicProperties() #txt
+Jl0 f19 persist false #txt
+Jl0 f19 taskData 'TaskTriggered.EXPRI=2
+TaskTriggered.EXROL=Everybody
+TaskTriggered.EXTYPE=0
+TaskTriggered.PRI=2
+TaskTriggered.ROL=Everybody
+TaskTriggered.TYPE=0' #txt
+Jl0 f19 caseData businessCase.attach=true #txt
+Jl0 f19 showInStartList 1 #txt
+Jl0 f19 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <name>dynamicProperties.ivp</name>
+    </language>
+</elementInfo>
+' #txt
+Jl0 f19 @C|.responsibility Everybody #txt
+Jl0 f19 81 465 30 30 -68 17 #rect
+Jl0 f19 @|StartRequestIcon #fIcon
+Jl0 f20 337 465 30 30 0 15 #rect
+Jl0 f20 @|EndIcon #fIcon
+Jl0 f21 clientId a320a922-175c-43c0-adc6-b6694ecae306 #txt
+Jl0 f21 path document #txt
+Jl0 f21 properties 'username=in.person.name;
+password=in.generatedPassword;
+' #txt
+Jl0 f21 method HEAD #txt
+Jl0 f21 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <name>Check NEW docs</name>
+    </language>
+</elementInfo>
+' #txt
+Jl0 f21 168 458 112 44 -52 -7 #rect
+Jl0 f21 @|RestClientCallIcon #fIcon
+Jl0 f22 expr out #txt
+Jl0 f22 111 480 168 480 #arcP
+Jl0 f23 280 480 337 480 #arcP
+>Proto Jl0 .type com.axonivy.JaxRsServiceCallData #txt
+>Proto Jl0 .processKind NORMAL #txt
+>Proto Jl0 0 0 32 24 18 0 #rect
+>Proto Jl0 @|BIcon #fIcon
+Jl0 f0 mainOut f3 tail #connect
+Jl0 f3 head f46 mainIn #connect
+Jl0 f46 mainOut f2 tail #connect
+Jl0 f2 head f1 mainIn #connect
+Jl0 f39 mainOut f41 tail #connect
+Jl0 f41 head f37 mainIn #connect
+Jl0 f38 mainOut f40 tail #connect
+Jl0 f40 head f39 mainIn #connect
+Jl0 f5 mainOut f7 tail #connect
+Jl0 f7 head f14 mainIn #connect
+Jl0 f14 mainOut f8 tail #connect
+Jl0 f8 head f6 mainIn #connect
+Jl0 f10 mainOut f12 tail #connect
+Jl0 f12 head f9 mainIn #connect
+Jl0 f9 mainOut f11 tail #connect
+Jl0 f11 head f4 mainIn #connect
+Jl0 f13 mainOut f18 tail #connect
+Jl0 f18 head f16 mainIn #connect
+Jl0 f16 mainOut f17 tail #connect
+Jl0 f17 head f15 mainIn #connect
+Jl0 f19 mainOut f22 tail #connect
+Jl0 f22 head f21 mainIn #connect
+Jl0 f21 mainOut f23 tail #connect
+Jl0 f23 head f20 mainIn #connect

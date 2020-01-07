@@ -1,0 +1,44 @@
+--- RCPTT testcase ---
+Format-Version: 1.0
+Element-Name: ToolbarElements
+Element-Type: testcase
+Element-Version: 3.0
+External-Reference: 
+Id: _wxwAwFTNEeaUV_J5BuL85w
+Runtime-Version: 2.5.0.201908212005
+Save-Time: 9/10/19, 9:37 AM
+Testcase-Type: ecl
+
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Content-Type: text/ecl
+Entry-Name: .content
+
+
+importProject "QuickStartTutorial"
+ 
+OpenPerspective "Process Development"
+get-button New | get-object | captureScreenshot "designer/button-new.png"
+get-button "Save .*" | get-object | captureScreenshot "designer/button-save.png"
+get-button "Start Engine and show overview page" | get-object | captureScreenshot "designer/button-start-engine-and-overview.png"
+get-button "Start Engine and show overview page" | get-object | captureScreenshot "simulation-debugging/button-engine-start-with-page.png"
+get-button "Start Engine" | get-object | captureScreenshot "designer/button-start-engine.png"
+get-button "Start Engine" | get-object | captureScreenshot "simulation-debugging/button-engine-start.png"
+get-button "Stop all Engines" | get-object | captureScreenshot "designer/button-stop-engine.png"
+get-button "Stop all Engines" | get-object | captureScreenshot "simulation-debugging/button-engine-stop.png"
+get-button "Engine Speed" | get-object | captureScreenshot "designer/button-animation-speed.png"
+get-button "Engine Speed" | get-object | captureScreenshot "simulation-debugging/button-engine-speed.png"
+get-button "Suppress simulation and animation in general." | get-object | captureScreenshot "designer/button-animation-toggler.png"
+get-button "Suppress simulation and animation in general." | get-object | captureScreenshot "simulation-debugging/button-engine-animation.png"
+get-button "Select content and formatting language for design and simulation .*" | get-object | captureScreenshot "designer/button-content-formatting-language.png"
+get-button Search | get-object | captureScreenshot "designer/button-search.png"
+
+with [get-view "Axon.ivy Projects" | get-tree] {
+    select "QuickStartTutorial/Processes/exampleProcess" | double-click
+    select "QuickStartTutorial/Processes/MyProcess" | double-click
+}
+
+get-button "Back to exampleProcess .*" | get-object | captureScreenshot "designer/button-previous-modification.png"
+get-button "Back to exampleProcess .*" | click
+get-button "Open Perspective" | get-object | captureScreenshot "designer/button-open-perspective.png"
+get-button "Select content and formatting language for design and simulation .*" | get-object | captureScreenshot "simulation-debugging/button-languages.png"
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

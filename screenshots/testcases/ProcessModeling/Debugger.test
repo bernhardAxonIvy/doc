@@ -1,0 +1,91 @@
+--- RCPTT testcase ---
+Format-Version: 1.0
+Contexts: _PRrTwNcsEeaidO8WBzHpig
+Element-Name: Debugger
+Element-Type: testcase
+Element-Version: 3.0
+External-Reference: 
+Id: _axKUIGBiEeaAcqEsdR5JMw
+Runtime-Version: 2.5.0.201908212005
+Save-Time: 9/10/19, 9:03 AM
+Tags: skipOnLinux
+Testcase-Type: ecl
+
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Content-Type: text/ecl
+Entry-Name: .content
+
+importProject -projectName QuickStartTutorial
+
+OpenView Debug
+with [get-view "Axon.ivy Projects" | get-tree] {
+	get-item "QuickStartTutorial/Processes/exampleProcess" | double-click
+}
+find-tab-folder Debug | get-object | captureScreenshot "simulation-debugging/debug-view.png"
+
+importProject -projectName documentationExampleProject
+
+with [get-view "Axon.ivy Projects" | get-tree] {
+	get-item "documentationExampleProject/Processes/JaxRsServiceCall" | double-click
+}
+
+get-button "Start Engine and show overview page" | click
+OpenView "Web Browser"
+get-view "Web Browser" | get-combo | set-text "http://localhost:8081/ivy/pro/designer/documentationExampleProject/159FF3D428E42BB5/approve.ivp"
+get-view "Web Browser" | get-button "Go to the selected URL" | click
+
+OpenView Outline
+get-view Outline | get-tree | select "JaxRsServiceCall/create JAX-RS approval : Rest Service Call Activity" | click
+
+OpenView History
+get-view History | get-tree | select
+"HTTP GET JaxRsServiceCall.mod\\/approve.ivp\\(.*\) \\[new Engine\\]/.*/in = com.axonivy.JaxRsServiceCallData \\(documentId=null, " + 
+	"generatedPassword=null, lastUpdate=null, name=null, person=null, price=null\\)/price = null"
+find-tab-folder History | get-object | captureScreenshot "simulation-debugging/history-view.png"
+
+OpenView Breakpoints
+get-view Breakpoints | get-tree | get-menu "Import Breakpoints..." | click
+set-dialog-result File [format "%s/%s" [substitute-variables "${system_property:additionalFiles}"] "breakpoints.bkpt"
+	| str]
+with [get-window "Import Breakpoints"] {
+	get-button "Browse..." | click
+	get-button "Update existing breakpoints" | check
+	get-button "Next >" | click
+	get-button Finish | click
+}
+find-tab-folder Breakpoints | get-object | captureScreenshot "simulation-debugging/breakpoint-view.png"
+with [get-view Breakpoints] {
+	get-button "Remove Selected Breakpoints (Delete)" | get-object | captureScreenshot "simulation-debugging/button-breakpoint-remove-one.png"
+	get-button "Remove All Breakpoints" | get-object | captureScreenshot "simulation-debugging/button-breakpoint-remove-all.png"
+	get-button "Show Breakpoints Supported by Selected Target" | get-object | captureScreenshot "simulation-debugging/button-breakpoint-target.png"
+	get-tree | select "exampleProcess.mod [f3]"
+	get-button "Go to File for Breakpoint" | get-object | captureScreenshot "simulation-debugging/button-breakpoint-goto-file.png"
+	get-button "Skip All Breakpoints.*" | get-object | captureScreenshot "simulation-debugging/button-breakpoint-skip-all.png"
+	get-button "Expand All .*" | get-object | captureScreenshot "simulation-debugging/button-breakpoint-tree-expand.png"
+	get-button "Collapse All .*" | get-object | captureScreenshot "simulation-debugging/button-breakpoint-tree-unexpand.png"
+	get-button "Link with Debug View" | get-object | captureScreenshot "simulation-debugging/button-breakpoint-link.png"
+	get-button "Add Java Exception Breakpoint" | get-object | captureScreenshot "simulation-debugging/button-breakpoint-java.png"
+}
+
+OpenView Variables
+with [get-view Variables] {
+	get-button "Collapse All .*" | get-object | captureScreenshot "simulation-debugging/button-variable-collapse.png"
+}
+
+// TODO Same image name?
+//OpenView Expressions
+//with [get-view Expressions] {
+//	get-button "Collapse All .*" | get-object | captureScreenshot "simulation-debugging/button-variable-collapse.png"
+//}
+
+importProject documentationExampleProject
+
+openInscription -processName runtimeLogProcess -elementName ivyLog -elementType "Script Step"
+
+with [get-window "Inscribe Script Step"] {
+	resizeWindow 550 400
+	get-tab-folder | get-tab-item Code | click
+	wait 500
+	saveWindowContentScreenshot "simulation-debugging/runtimelog-script.png"
+}
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

@@ -1,0 +1,50 @@
+--- RCPTT testcase ---
+Format-Version: 1.0
+Element-Name: DataClassEditor
+Element-Type: testcase
+Element-Version: 3.0
+External-Reference: 
+Id: _nL-4cBVAEeeAwNHEHXL8Yw
+Runtime-Version: 2.5.0.201908212005
+Save-Time: 9/9/19, 5:47 PM
+Testcase-Type: ecl
+
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Content-Type: text/ecl
+Entry-Name: .content
+
+proc setTableColumnWidth [val name] [val size]
+{
+	get-column-header $name | get-object | invoke setWidth $size
+}
+
+proc openDataClass [val path]
+{
+	get-view "Axon.ivy Projects" | get-tree | get-item $path | double-click
+}
+
+// DataClass editor general
+importProject -projectName "QuickStartTutorial"
+openDataClass -path "QuickStartTutorial/Data Classes/quickStartTutorial/Data"
+get-eclipse-window | resizeWindow 700 500
+with [get-editor Data]
+{
+  maximize
+  with [get-table]
+  { 
+    setTableColumnWidth Name 100
+	setTableColumnWidth Type 100
+	setTableColumnWidth Persistent 100
+	setTableColumnWidth Comment 200
+  }
+}
+find-tab-folder Data | get-object | captureScreenshot "data-class/data-class-editor.png"
+get-editor Data | close
+
+
+// CaseMap sample
+importProject -projectName "documentationExampleProject"
+openDataClass -path "documentationExampleProject/Data Classes/com.axonivy/CreditDossier"
+get-eclipse-window | resizeWindow 500 600
+find-tab-folder CreditDossier | get-object | captureScreenshot "casemap/credit-dossier-data.png"
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

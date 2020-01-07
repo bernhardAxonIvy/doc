@@ -1,0 +1,149 @@
+--- RCPTT testcase ---
+Format-Version: 1.0
+Contexts: _PRrTwNcsEeaidO8WBzHpig
+Element-Name: RestClientCallActivity
+Element-Type: testcase
+Element-Version: 3.0
+External-Reference: 
+Id: _odS0sPXvEeeFEMShsGve8A
+Runtime-Version: 2.5.0.201907282359
+Save-Time: 10/14/19, 10:07 AM
+Testcase-Type: ecl
+
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Content-Type: text/ecl
+Entry-Name: .content
+
+importProject -projectName "documentationExampleProject"
+
+let [val processName "JaxRsServiceCall"][val type "Rest Service Call Activity"]
+{
+	openInscription
+		-processName $processName
+		-elementName "Call twitter"
+		-elementType $type
+	captureInscription
+		-elementType $type
+		-tabName "Request"
+		-width 590 -height 550
+		-screenshot "rest-client-activity-tab-request-get.png"
+		
+		// legacy: replaced by other screenshot captureInscriptionPart below
+/*
+	openInscription
+		-processName $processName
+		-elementName "Update document name"
+		-elementType $type
+	captureInscription
+		-elementType $type
+		-tabName "Request"
+		-width 553 -height 550
+		-screenshot "restClient_requestTabPostJson.png"
+
+	openInscription
+		-processName $processName
+		-elementName "form approval"
+		-elementType $type
+	captureInscription
+		-elementType $type
+		-tabName "Request"
+		-width 553 -height 550
+		-screenshot "restClient_requestTabPutForm.png"
+
+	openInscription
+		-processName $processName
+		-elementName "entity CRM"
+		-elementType $type
+	captureInscription
+		-elementType $type
+		-tabName "Request"
+		-width 553 -height 550
+		-screenshot "restClient_requestTabPutEntity.png"
+*/
+
+	openInscription
+		-processName $processName
+		-elementName "create JAX-RS approval"
+		-elementType $type
+	captureInscription
+		-elementType $type
+		-tabName "Request"
+		-width 620 -height 670
+		-screenshot "rest-client-activity-tab-request-jax-rs.png"
+
+	openInscription
+		-processName $processName
+		-elementName "Update document name"
+		-elementType $type
+	captureInscription
+		-elementType $type
+		-tabName "Response"
+		-width 580 -height 500
+		-screenshot "rest-client-activity-tab-response.png"
+
+	// capture input methods
+	openInscription
+		-processName $processName
+		-elementName "Update document name"
+		-elementType $type
+	with [get-window "Inscribe Rest Service Call Activity"]
+	{
+		resizeWindow -width 553 -height 550
+
+    	get-tab-folder | get-tab-item Request | click
+	    with [get-group Body] {
+	        get-button raw | click
+	        captureInscriptionPart -screenshot "rest-client-activity-input-raw-json.png"
+
+	        get-button form | click
+	        captureInscriptionPart -screenshot "rest-client-activity-input-form-string.png"
+
+	        get-button entity | click
+	        captureInscriptionPart -screenshot "rest-client-activity-input-entity-json.png"
+	        get-button raw | click
+	    }
+	    get-button Cancel | click
+	}
+
+	// capture target widgets
+	openInscription
+		-processName $processName
+		-elementName "Call twitter"
+		-elementType $type
+	with [get-window "Inscribe Rest Service Call Activity"]
+	{
+		resizeWindow -width 580 -height 700
+
+    	get-tab-folder | get-tab-item "Request" | click
+    	with [get-group "Target" ] {
+        	with [get-section "Parameters"] {
+            	captureInscriptionPart -screenshot "rest-client-activity-request-parameters.png"
+            	click // collapse
+        	}
+			resizeWindow -width 590 -height 700
+			wait 2000
+        	with [get-section "Headers"] {
+            	captureInscriptionPart -screenshot "rest-client-activity-request-headers.png"
+            	click // collapse
+        	}
+    	}
+	    get-button Cancel | click
+	}
+	openInscription
+		-processName $processName
+		-elementName "Check NEW docs"
+		-elementType $type
+	with [get-window "Inscribe Rest Service Call Activity"]
+	{
+		resizeWindow -width 553 -height 600
+
+    	get-tab-folder | get-tab-item "Request" | click
+    	with [get-group Target] {
+        	with [get-section "Properties"] {
+            	captureInscriptionPart -screenshot "rest-client-activity-request-properties.png"
+        	}
+    	}
+	    get-button Cancel | click
+	}
+}
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

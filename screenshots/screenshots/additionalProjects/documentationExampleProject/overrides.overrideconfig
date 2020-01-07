@@ -1,0 +1,8 @@
+{
+  /HTML_DIALOG {
+    /com.acme.base.BasePersonEditor "com.acme.PersonEditor"
+  }
+  /PROCESS {
+    /baseSubProcess "subProcess"
+  }
+}

@@ -1,0 +1,28 @@
+--- RCPTT testcase ---
+Format-Version: 1.0
+Context-Type: org.eclipse.rcptt.ctx.ecl
+Element-Name: SaveScreenshot
+Element-Type: context
+Element-Version: 2.0
+Id: _860kMGYMEeaQw6NMNnj8Pw
+Runtime-Version: 2.5.0.201908212005
+Save-Time: 9/9/19, 5:39 PM
+
+------=_.ecl.context-718f04b4-ed39-33e3-af62-0995e4561998
+Content-Type: text/ecl
+Entry-Name: .ecl.context
+
+proc captureScreenshot [val imagePath] {
+	let [val screenshotPath [format "screenshots/%s" $imagePath]] {
+    	save-screenshot $screenshotPath	    
+	}
+}
+
+proc saveWindowContentScreenshot [val imagePath] {
+	with [get-control Any -index 0] 
+	{
+		get-object | captureScreenshot $imagePath		
+	}
+}
+
+------=_.ecl.context-718f04b4-ed39-33e3-af62-0995e4561998--

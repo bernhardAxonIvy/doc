@@ -1,0 +1,26 @@
+--- RCPTT testcase ---
+Format-Version: 1.0
+Element-Name: ProcessModelingSuite
+Element-Type: testsuite
+Element-Version: 2.0
+Id: _aankEF78Eea4DszzhZF9qA
+Manually-Ordered: true
+Runtime-Version: 2.5.0.201908212005
+Save-Time: 9/10/19, 3:06 PM
+
+------=_testcase-items-62c497da-4241-31f4-811a-6b453a3ecff8
+Content-Type: text/testcase
+Entry-Name: testcase-items
+
+_Tiq00F78Eea4DszzhZF9qA	// kind: 'test' name: 'ImportsExports' path: 'ImportsExports.test'
+_xSFEAF78Eea4DszzhZF9qA	// kind: 'test' name: 'ConvertionsPropertiesmodifications' path: 'ConvertionsPropertiesmodifications.test'
+_AizY0F-9EeaD4tjI89nDAg	// kind: 'test' name: 'Validation' path: 'Validation.test'
+_xsvRYF-ZEeaD4tjI89nDAg	// kind: 'test' name: 'ProcessWizards' path: 'ProcessWizards.test'
+_T6W6UJ74EemTQM74WTOsYA	// kind: 'test' name: 'ProcessInscription' path: 'ProcessInscription.test'
+_4o9nYF-_EeaD4tjI89nDAg	// kind: 'test' name: 'ProcessEditor' path: 'ProcessEditor.test'
+_Hh07QF_PEeaAcqEsdR5JMw	// kind: 'test' name: 'Views' path: 'Views.test'
+_ecXRcF_cEeaAcqEsdR5JMw	// kind: 'test' name: 'Simulation' path: 'Simulation.test'
+_axKUIGBiEeaAcqEsdR5JMw	// kind: 'test' name: 'Debugger' path: 'Debugger.test'
+_aG9N0GCUEeaAcqEsdR5JMw	// kind: 'test' name: 'RuntimeLogView' path: 'RuntimeLogView.test'
+
+------=_testcase-items-62c497da-4241-31f4-811a-6b453a3ecff8--

@@ -1,0 +1,93 @@
+--- RCPTT testcase ---
+Format-Version: 1.0
+Element-Name: ScreenshotAllInscriptions
+Element-Type: testcase
+Element-Version: 3.0
+External-Reference: 
+Id: _uSNWUFIhEemi0ZP8qibuzA
+Runtime-Version: 2.3.0.201806262310
+Save-Time: 4/18/19 2:07 PM
+Testcase-Type: ecl
+
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Content-Type: text/ecl
+Entry-Name: .content
+
+proc openInscription [val outlineName] [val inscriptionName] {
+	get-view Outline | get-tree | select $outlineName | double-click
+	waitWindowExistsMaxRetries $inscriptionName 5
+}
+
+
+proc captureInscription [val parentfolder] [val subfolder] [val screenshot]
+{
+	let [val targetPath [concat "../" $parentfolder "/" $subfolder "/" $screenshot]]
+	{
+		with [get-window "Inscribe.*"] 
+		{
+			resizeWindow -width 700 -height 800
+		    with [get-tab-folder] 
+		    {
+				get-object | saveScreenshot $targetPath
+		    }
+		}
+		log -message [format "screenshot taken to 'system_property:folderPath/%s'" $targetPath]
+	}
+}
+
+proc loopTabs [val tabFolder] [val parentfolder]
+{
+	let [val numberOfTabs [$tabFolder | get-object | invoke getItemCount]]
+	{
+		loop [val index 0]
+		{
+			if [lt $index $numberOfTabs]
+			{
+				$tabFolder | get-object | invoke setSelection $index
+
+				captureInscription
+					-parentfolder $parentfolder
+					-subfolder [get-window "Inscribe.*" | get-text]
+					-screenshot [concat $index "-" [$tabFolder | get-tab-item -index $index | get-text] " Tab.png"]
+				
+				recur [$index | plus 1]
+			}
+		}
+	}
+}
+
+proc captureProcess [val projectName] [val processName] [val parentfolder]
+{
+	get-view "Axon.ivy Projects" | get-tree | get-item [concat $projectName $processName] | double-click
+
+	get-view Outline | get-tree | get-items | foreach [val element]
+	{
+		openInscription $element "Inscribe.*"
+
+		try {
+			loopTabs [get-window "Inscribe.*" | get-tab-folder] $parentfolder
+			get-window "Inscribe.*" | get-button Cancel | click
+		} -catch
+		{
+			//Empty catch needed for non-process elements in outline view
+		}
+	}
+}
+
+let [val project "documentationExampleProject"]
+{
+	import-project $project
+	openOutlineView
+	
+	captureProcess $project "/Processes/AllElements/Inscribed/AllElementsInscribedProcess" "AllTabsScreenshotsInscribed"
+    captureProcess $project "/Processes/AllElements/Inscribed/AllElementsInscribedSubProcess" "AllTabsScreenshotsInscribed"
+
+	captureProcess $project "/Processes/AllElements/MinimalInscription/Activity" "AllTabsScreenshots"
+	captureProcess $project "/Processes/AllElements/MinimalInscription/BPMN" "AllTabsScreenshots"
+	captureProcess $project "/Processes/AllElements/MinimalInscription/EventAndGateway" "AllTabsScreenshots"
+	captureProcess $project "/Processes/AllElements/MinimalInscription/SubProcess" "AllTabsScreenshots"
+	captureProcess $project "/Processes/AllElements/MinimalInscription/WSProcess" "AllTabsScreenshots"
+	captureProcess $project "/Html Dialogs/ch.ivyteam.wf/PaymentRegistration/PaymentRegistration Logic" "AllTabsScreenshots"
+}
+
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

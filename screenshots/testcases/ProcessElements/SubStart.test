@@ -1,0 +1,43 @@
+--- RCPTT testcase ---
+Format-Version: 1.0
+Contexts: _PRrTwNcsEeaidO8WBzHpig
+Element-Name: SubStart
+Element-Type: testcase
+Element-Version: 3.0
+External-Reference: 
+Id: _k4giIG2jEemcXJL_epBUHw
+Runtime-Version: 2.5.0.201908212005
+Save-Time: 9/10/19, 10:09 AM
+Testcase-Type: ecl
+
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Content-Type: text/ecl
+Entry-Name: .content
+
+importProject "documentationExampleProject"
+
+let [val processName "subProcess"][val elementName "call(Data,String)"][val elementType "Callable Subprocess Start"]
+{
+	openInscription
+		-processName $processName
+		-elementName $elementName
+		-elementType $elementType
+		
+	captureInscription
+		-elementType $elementType
+		-tabName "Start"
+		-width 650 -height 600
+		-screenshot "tab-start.png"
+		
+	openInscription
+		-processName $processName
+		-elementName $elementName
+		-elementType $elementType
+		
+	captureInscription
+		-elementType $elementType
+		-tabName "Result"
+		-width 650 -height 600
+		-screenshot "tab-result.png"
+}
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

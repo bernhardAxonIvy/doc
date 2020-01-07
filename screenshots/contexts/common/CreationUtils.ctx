@@ -1,0 +1,87 @@
+--- RCPTT testcase ---
+Format-Version: 1.0
+Context-Type: org.eclipse.rcptt.ctx.ecl
+Element-Name: CreationUtils
+Element-Type: context
+Element-Version: 2.0
+Id: _uUaD0AbNEeqelOY6v4JKGw
+Runtime-Version: 2.5.0.201907212359
+Save-Time: 11/14/19, 1:22 PM
+
+------=_.ecl.context-718f04b4-ed39-33e3-af62-0995e4561998
+Content-Type: text/ecl
+Entry-Name: .ecl.context
+
+proc createProject [val projectName] {
+	get-view "Axon.ivy Projects" | get-tree | key-type "M1+n"
+	with [get-window New] {
+		get-editbox -after [get-label "Wizards:"] | set-text "Axon.ivy"
+		get-tree | select "Axon.ivy/Axon.ivy Project"
+		get-button "Next >" | click
+	}
+	with [get-window "New Axon.ivy Project"] {
+		get-editbox -after [get-label "Project Name:"] | set-text $projectName
+		get-editbox -after [get-label "Group ID:"] | set-text "ch.ivyteam.ivy"
+		get-editbox -after [get-label "Project ID:"] | set-text $projectName
+		with [get-button "Next >"] {
+			double-click
+		}
+		get-button Finish | click
+	}
+}
+
+proc createCaseMap [val project] [val ns] [val name] {
+	get-menu "File/New/Case Map" | click
+
+	with [get-window "New Case Map"] {
+		get-combo -after [get-label "Project Name:"] | select $project
+		get-combo -after [get-label "Namespace:"] | set-text $ns
+		get-editbox -after [get-label "Name:"] | set-text $name
+		get-button Finish | click
+	}
+}
+
+proc createHtmlDialog [val project -value ""] [val ns -value "com.axon.test" ] [val name] {
+	get-menu "File/New/Html Dialog" | click
+
+	with [get-window "New User Dialog"] {
+	 	if [ $project | not-eq "" ]
+	 	{
+			get-combo -after [get-label "Project:"] | select $project
+		}
+		get-editbox -after [get-label "Namespace:"] | set-text $ns
+		get-editbox -after [get-label "Name:"] | set-text $name
+		get-button "Next >" | click
+		get-button Finish | click
+	}
+}
+
+proc createDataClass [val project] [val ns] [val name] {
+	get-menu "File/New/Data Class" | click
+
+	with [get-window "New Data Class"] {
+		get-combo -after [get-label "Project Name:"] | select $project
+		get-editbox -after [get-label "Namespace:"] | set-text $ns
+		get-editbox -after [get-label "Data Class Name:"] | set-text $name
+		get-button Finish | click
+	}
+}
+
+proc createSubProcess [val project] [val processName]
+{
+	get-menu -path "File/New/Process" | click
+	
+	with [get-window "New Process"]
+	{
+	    with [get-group Process]
+	    {
+	        get-editbox -after [get-label "Name:"] | set-text $processName
+	        get-combo -after [get-label "Project:"] | select $project
+	        get-button "Callable Sub Process" | click
+	    }
+	    get-button "Next >" | click
+	    get-button Finish | click
+	}
+}
+
+------=_.ecl.context-718f04b4-ed39-33e3-af62-0995e4561998--
