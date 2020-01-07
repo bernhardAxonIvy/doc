@@ -77,7 +77,7 @@
 					</plugin>
 
 					<plugin>
-						<groupId>ch.ivyteam.ivy</groupId>
+						<groupId>ch.ivyteam.maven</groupId>
 						<artifactId>image-dpi-plugin</artifactId>
 						<version>0.0.1-SNAPSHOT</version>
 						<executions>
