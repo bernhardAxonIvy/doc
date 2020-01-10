@@ -71,10 +71,9 @@
 							<artifactItems>
 								<artifactItem>
 									<groupId>ch.ivyteam.ivy</groupId>
-									<artifactId>ch.ivyteam.ivy.javadoc</artifactId>
-									<classifier>publicapidoc</classifier>
-									<version>${ivy.javadoc.version}</version>
-									<type>jar</type>
+									<artifactId>public-api</artifactId>
+									<version>${ivy.publicapi.version}</version>
+									<classifier>javadoc</classifier>
 								</artifactItem>
 							</artifactItems>
 							<excludes>META-INF/**</excludes>
