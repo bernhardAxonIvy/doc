@@ -2,6 +2,20 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
+	<parent>
+		<groupId>ch.ivyteam.ivy</groupId>
+		<artifactId>maven-config-rcptt</artifactId>
+		<version>8.0.2-SNAPSHOT</version>
+		<relativePath>../../../maven/config/rcptt</relativePath>
+	</parent>
+
+	<artifactId>all-screenshots-config</artifactId>
+	<packaging>pom</packaging>
+
+	<properties>
+		<root.target>${project.basedir}/../target</root.target>
+	</properties>
+
 	<profiles>
 		<profile>
 			<id>linux</id>
@@ -24,32 +38,6 @@
 		</profile>
 	</profiles>
 
-	<parent>
-		<groupId>ch.ivyteam.ivy</groupId>
-		<artifactId>maven-config-rcptt</artifactId>
-		<version>8.0.2-SNAPSHOT</version>
-		<relativePath>../../../maven/config/rcptt</relativePath>
-	</parent>
-
-	<groupId>ch.ivyteam.ivy.screenshot</groupId>
-	<artifactId>all-screenshots-config</artifactId>
-	<packaging>pom</packaging>
-	<version>8.0.2-SNAPSHOT</version>
-
-	<properties>
-		<root.target>${project.basedir}/../target</root.target>
-	</properties>
-
-	<repositories>
-		<repository>
-			<id>nexus.ivyteam.io</id>
-			<url>https://nexus.ivyteam.io/repository/maven/</url>
-			<snapshots>
-				<updatePolicy>always</updatePolicy>
-			</snapshots>
-		</repository>
-	</repositories>
-
 	<dependencies>
 		<dependency>
 			<groupId>ch.ivyteam.maven</groupId>
@@ -58,5 +46,33 @@
 			<type>jar</type>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>flatten-maven-plugin</artifactId>
+				<version>1.1.0</version>
+				<configuration>
+				</configuration>
+				<executions>
+					<execution>
+						<id>flatten</id>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>flatten</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>flatten.clean</id>
+						<phase>clean</phase>
+						<goals>
+							<goal>clean</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>

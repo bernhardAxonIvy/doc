@@ -2,8 +2,6 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>doc-product</artifactId>
-	<packaging>pom</packaging>
 
 	<parent>
 		<groupId>ch.ivyteam.ivy</groupId>
@@ -11,7 +9,10 @@
 		<version>8.0.2-SNAPSHOT</version>
 		<relativePath>../maven/config/dependencies</relativePath>
 	</parent>
-
+	
+	<groupId>ch.ivyteam.doc</groupId>
+	<artifactId>doc-product</artifactId>
+	<packaging>pom</packaging>
 	<name>Axon.ivy Digital Business Platform</name>
 
 	<properties>
@@ -33,13 +34,13 @@
 							<outputDirectory>${images.folder}</outputDirectory>
 							<artifactItems>
 								<artifactItem>
-									<groupId>ch.ivyteam.ivy</groupId>
+									<groupId>ch.ivyteam.doc</groupId>
 									<artifactId>doc-images</artifactId>
 									<type>zip</type>
 								</artifactItem>
 
 								<artifactItem>
-									<groupId>ch.ivyteam.ivy.screenshot</groupId>
+									<groupId>ch.ivyteam.doc</groupId>
 									<artifactId>doc-screenshots</artifactId>
 									<type>zip</type>
 								</artifactItem>
@@ -70,7 +71,7 @@
 						<configuration>
 							<artifactItems>
 								<artifactItem>
-									<groupId>ch.ivyteam.ivy</groupId>
+									<groupId>ch.ivyteam.doc</groupId>
 									<artifactId>public-api</artifactId>
 									<version>${ivy.publicapi.version}</version>
 									<classifier>javadoc</classifier>

@@ -2,16 +2,15 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>ch.ivyteam.ivy.screenshot</groupId>
-	<artifactId>documentation-screenshots</artifactId>
-	<packaging>rcpttTest</packaging>
-
 	<parent>
-		<groupId>ch.ivyteam.ivy.screenshot</groupId>
+		<groupId>ch.ivyteam.ivy</groupId>
 		<artifactId>all-screenshots-config</artifactId>
 		<version>8.0.2-SNAPSHOT</version>
-		<relativePath>maven/</relativePath>
+		<relativePath>maven</relativePath>
 	</parent>
+
+	<artifactId>documentation-screenshots</artifactId>
+	<packaging>rcpttTest</packaging>
 
 	<properties>
 		<savedScreenshotsFolderPath>${project.build.directory}/aut/screenshots</savedScreenshotsFolderPath>

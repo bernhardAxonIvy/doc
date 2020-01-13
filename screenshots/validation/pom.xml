@@ -3,16 +3,14 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>ch.ivyteam.ivy.screenshot</groupId>
+		<groupId>ch.ivyteam.ivy</groupId>
 		<artifactId>all-screenshots-config</artifactId>
 		<version>8.0.2-SNAPSHOT</version>
-		<relativePath>../maven/</relativePath>
+		<relativePath>../maven</relativePath>
 	</parent>
 
-	<groupId>ch.ivyteam.ivy.screenshot</groupId>
 	<artifactId>all-screenshots-validate</artifactId>
 	<packaging>pom</packaging>
-	<version>8.0.2-SNAPSHOT</version>
 
 	<dependencies>
 		<dependency>
