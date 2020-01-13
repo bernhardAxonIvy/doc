@@ -4,11 +4,12 @@
 
 	<parent>
 		<groupId>ch.ivyteam.ivy</groupId>
-		<artifactId>all-screenshots-config</artifactId>
+		<artifactId>maven-config-rcptt</artifactId>
 		<version>8.0.2-SNAPSHOT</version>
-		<relativePath>maven</relativePath>
+		<relativePath>../../maven/config/rcptt</relativePath>
 	</parent>
-
+	
+	<groupId>ch.ivyteam.doc</groupId>
 	<artifactId>documentation-screenshots</artifactId>
 	<packaging>rcpttTest</packaging>
 
@@ -16,7 +17,6 @@
 		<savedScreenshotsFolderPath>${project.build.directory}/aut/screenshots</savedScreenshotsFolderPath>
 		<additionalProjects>${project.basedir}/screenshots/additionalProjects</additionalProjects>
 		<additionalFiles>${project.basedir}/screenshots/additionalFiles</additionalFiles>
-
 		<maven.test.failure.ignore>true</maven.test.failure.ignore>
 	</properties>
 
@@ -41,66 +41,6 @@
 				</plugins>
 			</build>
 		</profile>
-
-		<profile>
-			<id>screenshot-all</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.eclipse.rcptt</groupId>
-						<artifactId>rcptt-maven-plugin</artifactId>
-						<version>${rcptt.version}</version>
-						<configuration>
-							<suites>
-								<suite>ScreenshotAll</suite>
-							</suites>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-
-		<profile>
-			<id>screenshot-doc</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.eclipse.rcptt</groupId>
-						<artifactId>rcptt-maven-plugin</artifactId>
-						<version>${rcptt.version}</version>
-						<configuration>
-							<suites>
-								<suite>AutoScreenshot</suite>
-							</suites>
-						</configuration>
-					</plugin>
-
-					<plugin>
-						<groupId>ch.ivyteam.maven</groupId>
-						<artifactId>image-dpi-plugin</artifactId>
-						<version>0.0.1-SNAPSHOT</version>
-						<executions>
-							<execution>
-								<id>change.dpi</id>
-								<goals>
-									<goal>change-png-dpi</goal>
-								</goals>
-								<phase>test</phase>
-								<configuration>
-									<fileSet>
-										<directory>${savedScreenshotsFolderPath}</directory>
-										<includes>
-											<include>**/*.png</include>
-										</includes>
-									</fileSet>
-									<dpiValue>150</dpiValue>
-								</configuration>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
 	</profiles>
 
 	<build>
@@ -114,6 +54,9 @@
 					<execution>
 						<id>default-execute</id>
 						<configuration>
+							<suites>
+								<suite>AutoScreenshot</suite>
+							</suites>
 							<aut>
 								<vmArgs>
 									<vmArg>-DadditionalProjects=${additionalProjects}</vmArg>
@@ -123,7 +66,31 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>			
+			</plugin>
+
+			<plugin>
+				<groupId>ch.ivyteam.maven</groupId>
+				<artifactId>image-dpi-plugin</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+				<executions>
+					<execution>
+						<id>change.dpi</id>
+						<goals>
+							<goal>change-png-dpi</goal>
+						</goals>
+						<phase>test</phase>
+						<configuration>
+							<fileSet>
+								<directory>${savedScreenshotsFolderPath}</directory>
+								<includes>
+									<include>**/*.png</include>
+								</includes>
+							</fileSet>
+							<dpiValue>150</dpiValue>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 </project>
