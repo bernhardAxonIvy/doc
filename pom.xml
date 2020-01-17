@@ -56,7 +56,7 @@
 							<outputDirectory>${images.folder}/engine-cockpit</outputDirectory>
 							<artifactItems>
 								<artifactItem>
-									<groupId>ch.ivyteam.ivy</groupId>
+									<groupId>ch.ivyteam.enginecockpit</groupId>
 									<artifactId>engine-cockpit-selenium-test</artifactId>
 									<type>zip</type>
 								</artifactItem>
