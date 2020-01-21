@@ -104,10 +104,11 @@ Configuration
 
    .. note::
 
-      Make sure you have the overriding project configured in the **Designer**
-      as well to see the overriding while designing your processes.
-      You find the :ref:`app-yaml` for the Designer under
-      *designerDir/configuration/app-designer.yaml*
+      While working on your project with strict overriding you have to define
+      the overriding project in the **Designer** as well. This can easily be
+      achieved with the :ref:`overrides-editor`. Alternatively you can find
+      the :ref:`app-yaml` for the Designer under
+      *designerDir/configuration/app-designer.yaml*.
 
 
 .. _case_scope:
@@ -227,6 +228,12 @@ overrides for a specific project. The overrides are listed in 4
 different sections: Sub Processes, Html Dialogs, Content Objects and
 Configurations.
 
+When working with :ref:`strict_overriding` you can define the overriding
+project at the top of the override editor. If you want to use the
+:ref:`case_scope` you have to leave this entry empty. Creating an override
+for an Html Dialog or Sub Process with the :ref:`override-new-wizard`
+will offer you to set the appropriate project.
+
 Html Dialog and Sub Process overrides require - for technical reasons - the registration
 of a mapping (this is done automatically by the New Override Wizard)
 which maps the original component's identifier to the replacement
@@ -329,6 +336,9 @@ performs two tasks:
    list of overrides that are known to the system. The list of those
    mappings can later be inspected and edited with the
    :ref:`overrides-editor`.
+
+3. It will ask you if it should add the configuration for
+   :ref:`strict_overriding` to the *designer-app.yaml* if necessary.
 
 .. note::
 
