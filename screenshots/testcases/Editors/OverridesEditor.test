@@ -28,6 +28,7 @@ proc overrideSubProcess [val project] [val subProcessToOverride] [val overriding
 	    	get-group "Override definition.*" | get-button "Select overriding component" | click
 	    	get-window "Select Process" | get-table | select [concat $overridingSubProcess ".*"] | double-click
 	    }
+	    set-dialog-result MessageBox 32 //SWT.OK
 	    get-button Finish | click
 	}
 }
@@ -46,6 +47,7 @@ proc overrideHtmlDialog [val project] [val dialogToOverride] [val overridingDial
 	    	get-group "Override definition.*" | get-button "Select overriding component" | click
 	    	get-window "Select Dialog" | get-table | select [concat $overridingDialog ".*"] | double-click
 	    }
+	    set-dialog-result MessageBox 32 //SWT.OK
 	    get-button Finish | click
 	}
 }
