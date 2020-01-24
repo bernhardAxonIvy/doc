@@ -84,6 +84,7 @@ proc waitWindowInvisible [val windowName]
 
 proc resizeWindow [val "window" -input] [val width] [val height]
 {
+	$window | maximize
 	$window | get-object | invoke setSize $width $height
 	wait 500
 }
