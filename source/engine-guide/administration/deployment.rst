@@ -254,8 +254,8 @@ Execute the :code:`deploy-to-engine` goal in the directory where the :file:`pom.
 .. code-block:: bash
 
     mvn ivy:deploy-to-engine
-	
-	
+
+
 The next example deploys the current project to the application **portal** to an
 |ivy-engine| which is accessible at http://localhost:8080. You
 need to configure the credentials of an administrator user in the maven

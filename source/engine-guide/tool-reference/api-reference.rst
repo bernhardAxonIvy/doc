@@ -42,12 +42,12 @@ Deployment
         14:14:51.708 Info: Start deploying project(s) of file 'Test.iar' to application 'test'.
 
         14:14:51.710 Info: Using DeploymentOptions[overwriteConfiguration=false,cleanupConfiguration=DISABLED,deployTestUsers=FALSE,targetVersion=AUTO,targetState=ACTIVE_AND_RELEASED,targetFileFormat=AUTO]
-		
+
         14:14:51.728 Info: Synchronize project directory ...
         14:14:51.729 Info: - Cleaning target archive ...
         14:14:51.729 Info: - Copying new project to test/Test/1.zip ...
         14:14:51.730 Info: Successful synchronized.
-		
+
         14:14:51.730 Info: Project(s) of file 'test.iar' successful deployed to application 'test' in 22 ms.
 
     :param applicationName: *(required)* name of the target application

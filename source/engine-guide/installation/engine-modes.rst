@@ -53,4 +53,3 @@ You can disable the automatically switching to maintenance mode in the :ref:`ivy
   
 If disable and there is a licence or system database problem the |ivy-engine| fail to start and report an error.
 You can then start the |ivy-engine| explicitly in maintenance mode by using the :ref:`command line option <axonivy-engine>` :code:`-maintenance`.
-
