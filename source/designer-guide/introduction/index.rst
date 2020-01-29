@@ -4,9 +4,7 @@ Introduction
 You are now reading |ivy-designer| documentation. In case you want to know more
 on:
 
-* :dev-url:`Download </download>` the **latest** |axon-ivy| version.
-
-* Read the Readme.html in the installation directory for the **system requirements**.
+* Install |ivy-designer| following the steps in the :ref:`installation instructions <designer-install>`.
 * Working with Axon.ivy Designer: Start with the :dev-url:`Quick Start Tutorial </tutorial>`.
 * Explore demo projects by :ref:`importing <importing-demo-projects>` them in the |ivy-designer|.
 * Read the engine guide to know how to adminsitrate an |ivy-engine|.
@@ -25,6 +23,8 @@ development, to get to know new features or to eliminate potential problems.
 .. toctree::
    :maxdepth: 1
 
+
+   installation
    workbench
    perspectives
    menus

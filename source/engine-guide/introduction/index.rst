@@ -8,15 +8,14 @@ About this guide
 You are now reading |ivy-engine| documentation. In case you want to know more
 on:
 
-* :dev-url:`Download </download>` the **latest** |axon-ivy| version.
-* Read the Readme.html in the installation directory for the **system
-  requirements**.
+* :dev-url:`Download </download>` the **latest** |ivy-engine| version.
+* Check if your system meets the minimal :ref:`system requirements <engine-system-requirements>`.
 * Start with the :ref:`getting-started` chapter to quickly run an |ivy-engine|.
 * Explore **demo projects** in the |ivy-designer| and deploy them to the
   |ivy-engine|.
 * Read the designer guide to know how to **model, simulate and implement**
   digital business process.
-* Go trough the Migration Notes to **upgrade** an existing |ivy-engine|.
+* Go through the Migration Notes to **upgrade** an existing |ivy-engine|.
 
 All above mentioned documentations are brief and tend to describe only necessary
 functionality. We highly encourage reading these documentations to speed up your

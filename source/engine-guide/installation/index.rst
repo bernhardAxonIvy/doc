@@ -1,6 +1,11 @@
 Installation
 ************
 
+.. rubric:: System Requirements
+
+Before installing |ivy-engine| check if your system meets the
+:ref:`system requirements <engine-system-requirements>`.
+
 .. _install_engine:
 
 .. rubric:: Install |ivy-engine|
@@ -99,6 +104,7 @@ See :ref:`Configuration <config-systemdb>` to find out how you can create and co
 .. toctree::
    :maxdepth: 1
 
+   system-requirements
    standard-edition
    enterprise-edition
    upgrade
