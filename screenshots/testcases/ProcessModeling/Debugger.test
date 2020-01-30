@@ -17,15 +17,23 @@ Entry-Name: .content
 
 importProject -projectName QuickStartTutorial
 
+get-eclipse-window | maximize
+
 OpenView Debug
 with [get-view "Axon.ivy Projects" | get-tree] {
 	get-item "QuickStartTutorial/Processes/exampleProcess" | double-click
 }
-find-tab-folder Debug | get-object | captureScreenshot "simulation-debugging/debug-view.png"
+
+with [find-tab-folder Debug]
+{
+	resizeWindow 500 300
+	get-object | captureScreenshot "simulation-debugging/debug-view.png"
+}
 
 importProject -projectName documentationExampleProject
 
-with [get-view "Axon.ivy Projects" | get-tree] {
+with [get-view "Axon.ivy Projects" | get-tree]
+{
 	get-item "documentationExampleProject/Processes/JaxRsServiceCall" | double-click
 }
 
@@ -41,7 +49,12 @@ OpenView History
 get-view History | get-tree | select
 "HTTP GET JaxRsServiceCall.mod\\/approve.ivp\\(.*\) \\[new Engine\\]/.*/in = com.axonivy.JaxRsServiceCallData \\(documentId=null, " + 
 	"generatedPassword=null, lastUpdate=null, name=null, person=null, price=null\\)/price = null"
-find-tab-folder History | get-object | captureScreenshot "simulation-debugging/history-view.png"
+
+with [find-tab-folder History]
+{
+	resizeWindow 500 300
+	get-object | captureScreenshot "simulation-debugging/history-view.png"
+}
 
 OpenView Breakpoints
 get-view Breakpoints | get-tree | get-menu "Import Breakpoints..." | click
@@ -53,7 +66,13 @@ with [get-window "Import Breakpoints"] {
 	get-button "Next >" | click
 	get-button Finish | click
 }
-find-tab-folder Breakpoints | get-object | captureScreenshot "simulation-debugging/breakpoint-view.png"
+
+with [find-tab-folder Breakpoints]
+{
+	resizeWindow 500 300
+	get-object | captureScreenshot "simulation-debugging/breakpoint-view.png"
+}
+
 with [get-view Breakpoints] {
 	get-button "Remove Selected Breakpoints (Delete)" | get-object | captureScreenshot "simulation-debugging/button-breakpoint-remove-one.png"
 	get-button "Remove All Breakpoints" | get-object | captureScreenshot "simulation-debugging/button-breakpoint-remove-all.png"
@@ -68,21 +87,17 @@ with [get-view Breakpoints] {
 }
 
 OpenView Variables
-with [get-view Variables] {
+with [get-view Variables]
+{
 	get-button "Collapse All .*" | get-object | captureScreenshot "simulation-debugging/button-variable-collapse.png"
 }
-
-// TODO Same image name?
-//OpenView Expressions
-//with [get-view Expressions] {
-//	get-button "Collapse All .*" | get-object | captureScreenshot "simulation-debugging/button-variable-collapse.png"
-//}
 
 importProject documentationExampleProject
 
 openInscription -processName runtimeLogProcess -elementName ivyLog -elementType "Script Step"
 
-with [get-window "Inscribe Script Step"] {
+with [get-window "Inscribe Script Step"]
+{
 	resizeWindow 550 400
 	get-tab-folder | get-tab-item Code | click
 	wait 500

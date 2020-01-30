@@ -35,13 +35,11 @@ with [get-editor documentationExampleProject] {
     get-tab-folder | get-object | wsScreenshot "webservice-client-editor.png"
 
 	get-section Authentication | get-object | wsScreenshot "webservice-client-auth.png"
-	get-section Features | get-object | wsScreenshot "webservice-client-features.png"
-	get-section Properties | get-object | wsScreenshot "webservice-client-properties.png"
-
-	// collapse - make space
 	get-section Authentication | click
-    get-section Features | click
-    get-section Properties | click
+	get-section Features | get-object | wsScreenshot "webservice-client-features.png"
+	get-section Features | click
+	get-section Properties | get-object | wsScreenshot "webservice-client-properties.png"
+	get-section Properties | click
 
     // expand select
     with [get-section "Endpoint URI"] {

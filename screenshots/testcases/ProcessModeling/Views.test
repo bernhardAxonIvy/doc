@@ -21,18 +21,27 @@ with [get-view "Axon.ivy Projects" | get-tree]
 	get-item "QuickStartTutorial/Processes/MyProcess" | double-click
 }
 
+get-eclipse-window | maximize
 wait 500
+
 OpenView Outline
-get-eclipse-window | resizeWindow 735 855
-find-tab-folder Outline | get-object | captureScreenshot "process-modeling/outline-view.png"
+with [find-tab-folder Outline]
+{
+	resizeWindow 500 200
+	get-object | captureScreenshot "process-modeling/outline-view.png"
+}
 
 OpenView "Process Templates"
-get-eclipse-window | resizeWindow 840 880
 get-view "Process Templates" | get-table | select templateExample
-find-tab-folder "Process Templates" | get-object | captureScreenshot "process-modeling/process-template-view.png"
+with [find-tab-folder "Process Templates"]
+{
+	resizeWindow 700 200
+	find-tab-folder "Process Templates" | get-object | captureScreenshot "process-modeling/process-template-view.png"
+}
 	
 importProject -projectName QuickStartTutorial
-with [get-view "Axon.ivy Projects" | get-tree] {
+with [get-view "Axon.ivy Projects" | get-tree]
+{
 	get-item "QuickStartTutorial/Html Dialogs/quickStartTutorial/EnterProduct" | click
 	select "QuickStartTutorial/Html Dialogs/quickStartTutorial/EnterProduct" | get-menu Delete | click
 }
@@ -43,21 +52,31 @@ get-window "Validation Results" | close
 
 OpenView Problems
 get-view Problems | get-tree | select "Errors (.*)/User Dialog 'quickStartTutorial.EnterProduct' not found."
-get-eclipse-window | resizeWindow 1090 860
-find-tab-folder Problems | get-object | captureScreenshot "process-modeling/problem-view.png"
+with [find-tab-folder Problems]
+{
+	resizeWindow 800 300
+	get-object | captureScreenshot "process-modeling/problem-view.png"
+}
 
 get-view "Axon.ivy Projects" | get-tree | get-item "QuickStartTutorial/Processes/MyProcess" | double-click
+get-eclipse-window | resizeWindow 1090 860
 wait 1000
 find-tab-folder MyProcess | get-object | captureScreenshot "process-modeling/process-element-with-problem-marker.png"
+get-eclipse-window | maximize
 
 importProject -projectName documentationExampleProject
 
 OpenView "Reference View"
-get-eclipse-window | resizeWindow 960 790
-with [get-view "Axon.ivy Projects" | get-tree] {
+with [get-view "Axon.ivy Projects" | get-tree]
+{
 	select documentationExampleProject | get-menu "Show References" | click
 }
-find-tab-folder "Reference View" | get-object | captureScreenshot "process-modeling/reference-view.png"
+
+with [find-tab-folder "Reference View"]
+{
+	resizeWindow 500 200
+	find-tab-folder "Reference View" | get-object | captureScreenshot "process-modeling/reference-view.png"
+}
 
 with [get-view "Reference View"] {
 	get-button "Refresh .*" | get-object | captureScreenshot "process-modeling/reference-view-refresh.png"
