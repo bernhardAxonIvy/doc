@@ -15,6 +15,7 @@
 
   <properties>
     <images.folder>source/_images</images.folder>
+    <includes.target.folder>${project.build.directory}/resources/includes</includes.target.folder>
   </properties>
 
   <build>
@@ -93,6 +94,69 @@
         <configuration>
           <overWriteSnapshots>true</overWriteSnapshots>
         </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>buildnumber-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>build-date</id>
+            <goals>
+              <goal>create-timestamp</goal>
+            </goals>
+            <configuration>
+              <timestampFormat>dd.MM.yyyy</timestampFormat>
+              <timestampPropertyName>build-date</timestampPropertyName>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>replace-other-tokens</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${includes.target.folder}</outputDirectory>
+              <resources>
+                <resource>
+                  <directory>source/axonivy/release-notes</directory>
+                  <filtering>true</filtering>
+                </resource>
+              </resources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>ch.ivyteam.maven</groupId>
+        <artifactId>changelog-generator-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>replace-changelog-tokens</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>generate-changelog</goal>
+            </goals>
+            <configuration>
+              <jiraServerId>axonivy.jira</jiraServerId>
+              <filterBy>project in (XIVY,IVYPORTAL) AND fixVersion = ${ivy-version}</filterBy>
+              <orderBy>project,"Epic Link" ASC,fixVersion DESC,key</orderBy>
+              <whitelistJiraLabels>security,performance</whitelistJiraLabels>
+              <fileset>
+                <directory>${includes.target.folder}</directory>
+              </fileset>
+            </configuration>
+          </execution>
+        </executions>
       </plugin>
 
       <plugin>
