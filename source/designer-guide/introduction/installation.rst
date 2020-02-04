@@ -24,7 +24,7 @@ Hardware requirements may vary depending on how many projects you are working on
 
 :Memory (RAM): Minimum is 3 GB, we recommend to use 8 GB.
 
-:Harddisk: Minimum is 2 GB, we recommend 100 GB on a Solid State Disk (SSD).
+:Disk Space: Minimum is 2 GB, we recommend 100 GB on a Solid State Disk (SSD).
 
 :Processor: Minimum is 2 cores with 2 GHz, we recommend 8 cores with 2.5 GHz.
 

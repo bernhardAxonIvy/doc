@@ -1,7 +1,7 @@
-.. _migration-upgrade:
+.. _migration-upgrade-engine:
 
-Upgrade
--------
+Upgrade Engine
+--------------
 
 #. :ref:`Stop <control-center>` the |ivy-engine|.
 #. Either :ref:`convert the system database <upgrade-system-db>` with the :ref:`Engine Cockpit <engine-cockpit-systemdb>`
