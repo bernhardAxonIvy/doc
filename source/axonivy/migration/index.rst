@@ -5,14 +5,12 @@ Migration
 
 To successfully migrate |axon-ivy| to a newer version follow these steps:
 
+#. :ref:`Read the Migration Notes document <migration-notes>`. This document
+   will tell you what has changed since the last version and will list any
+   additional steps you need to take to successfully migrate your system.
 #. :ref:`Prepare your new |ivy-engine| <migration-preperation>`
 #. :ref:`Migrate your projects <migration-project>`
-#. :ref:`Upgrade to your new |ivy-engine| <migration-upgrade>`
-
-Before upgrading of an |ivy-engine| read the :ref:`migration-notes` document
-of the new version carefully. This document will tell you exactly what has
-changed since the last version and will list any additional steps you need to
-take to successfully migrate your system.
+#. :ref:`Upgrade to your new |ivy-engine| <migration-upgrade-engine>`
 
 .. toctree::
    :hidden:
@@ -20,5 +18,5 @@ take to successfully migrate your system.
 
    preparation
    project-migration
-   upgrade
+   upgrade-engine
    migration-notes
