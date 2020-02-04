@@ -7,3 +7,4 @@ Axon.ivy
    what-axon-ivy
    why-axon-ivy
    migration/index
+   release-notes/index
