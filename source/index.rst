@@ -8,6 +8,7 @@ Axon.ivy
    axonivy/index
    designer-guide/index
    engine-guide/index
+   portal/index
 
 .. toctree::
    :maxdepth: 1
