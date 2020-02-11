@@ -8,6 +8,7 @@ Axon.ivy
    axonivy/index
    designer-guide/index
    engine-guide/index
+   concepts/index
    portal/index
 
 .. toctree::

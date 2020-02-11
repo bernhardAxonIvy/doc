@@ -107,6 +107,6 @@ server.
 #. Provide a link to the source code of the Ivy Project in the
    ``Source-Code-Management`` section
 
-#. Configure the goals ``clean verify`` in the :guilabel:``Build`` section
+#. Configure the goals ``clean verify`` in the :guilabel:`Build` section
 
 #. :guilabel:`Save` the Job and :guilabel:`Run` it

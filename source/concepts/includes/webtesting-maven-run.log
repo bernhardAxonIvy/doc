@@ -1,0 +1,7 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] crm                                                                [iar]
+[INFO] mycrm-test                                                         [iar]
+[INFO] crm.modules                                                        [pom]
