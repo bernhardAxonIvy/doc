@@ -9,11 +9,11 @@ Axon.ivy
    designer-guide/index
    engine-guide/index
    concepts/index
-   portal-guide/index
+   portal/index
 
 .. toctree::
    :maxdepth: 1
    :caption: Resources
    
    market/index
-   public-api/index
+   javadoc/index
