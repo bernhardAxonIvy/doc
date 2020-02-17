@@ -325,7 +325,7 @@ Every time a :ref:`process <glossar-process>` is started a
 :ref:`case <glossar-case>` is created. This tab allows you to define
 additional information for the cases. The information defined on this
 tab has no effect how Axon.ivy treats the cases. But they can be
-accessed through the :public-api:`Public API </>`, which allows you
+accessed through the :ref:`public-api`, which allows you
 to use them for example to filter the task list.
 
 You can define the name, the description and the category for the

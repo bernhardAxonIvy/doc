@@ -69,6 +69,26 @@
               </artifactItems>
             </configuration>
           </execution>
+
+          <execution>
+            <id>integrate-public-api</id>
+            <phase>package</phase>
+            <goals>
+              <goal>unpack</goal>
+            </goals>
+            <configuration>
+              <artifactItems>
+                <artifactItem>
+                  <groupId>ch.ivyteam.doc</groupId>
+                  <artifactId>public-api</artifactId>
+                  <version>${ivy.publicapi.version}</version>
+                  <classifier>javadoc</classifier>
+                </artifactItem>
+              </artifactItems>
+              <excludes>META-INF/**</excludes>
+              <outputDirectory>build/html/public-api</outputDirectory>
+            </configuration>
+          </execution>
         </executions>
 
         <configuration>
