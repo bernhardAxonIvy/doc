@@ -301,7 +301,7 @@ project you use:
                       
 
 The following environment objects are available on ``ivy`` (details of
-the objects are described in the :ref:`public-api`):
+the objects are described in the :public-api:`Public API </>`):
 
 -  ``cal`` - an :public-api:`IDefaultBusinessCalendar </ch/ivyteam/ivy/application/calendar/IDefaultBusinessCalendar.html>`
    object that gives access to business calendar informations and calculations.
