@@ -8,10 +8,12 @@ Axon.ivy
    axonivy/index
    designer-guide/index
    engine-guide/index
+   concepts/index
+   portal-guide/index
 
 .. toctree::
    :maxdepth: 1
    :caption: Resources
    
    market/index
-   javadoc/index
+   public-api/index

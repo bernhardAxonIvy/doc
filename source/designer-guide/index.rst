@@ -14,6 +14,6 @@ Designer Guide
    user-interface/index
    3rd-party-integration/index
    configuration/index
-   concepts/index
+   how-to/index
    troubleshooting/index
    reference/index

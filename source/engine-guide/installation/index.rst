@@ -107,7 +107,6 @@ See :ref:`Configuration <config-systemdb>` to find out how you can create and co
    system-requirements
    standard-edition
    enterprise-edition
-   upgrade
    systemdatabase
    engine-modes
    files

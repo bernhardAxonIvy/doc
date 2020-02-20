@@ -16,7 +16,7 @@ This is the default installation.
 
 :Memory (RAM): Minimum is 8 GB, we recommend to use 32 GB.
 
-:Harddisk: Minimum is 20 GB, we recommend 100 GB on a Solid State Disk (SSD).
+:Disk Space: Minimum is 20 GB, we recommend 100 GB on a Solid State Disk (SSD).
 
 :Processor: Minimum is 4 cores with 2 GHz, we recommend 16 cores with 2.5 GHz.
 
@@ -27,7 +27,7 @@ This must be configured explicitly.
 
 :Memory (RAM): Minimum is 4 GB, we recommend to use 16 GB.
 
-:Harddisk: Minimum is 1 GB, we recommend 20 GB on a Solid State Disk (SSD).
+:Disk Space: Minimum is 1 GB, we recommend 20 GB on a Solid State Disk (SSD).
 
 :Processor: Minimum is 4 cores with 2 GHz, we recommend 16 cores with 2.5 GHz.
 
