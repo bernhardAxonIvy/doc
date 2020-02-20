@@ -161,7 +161,7 @@ See the `Axon.ivy Project Build Plugin deploy documentation
 for more information about the deployment properties.
 
 
-There are three distinct locations where you can put your options file:
+There are multiple locations where you can put your options file:
 
     #. **Deployment specific options file** - If you want to provide options for a single
        deployment simply create a file that has the same prefix as the file you want to
@@ -169,15 +169,10 @@ There are three distinct locations where you can put your options file:
        is :file:`myProject.iar` then create an options file that is called
        :file:`myProject.iar.options.yaml`. Note, that after the deployment the
        :file:`myProject.iar.options.yaml` file will be removed automatically.
-    #. **Global options file** - Create a file called :file:`deploy.options.yaml` in the
-       deployment directory of an application. This global options file control all
-       deployments inside the application.
     #. **Inside the file that you are deploying** - Put a :file:`deploy.options.yaml`
        file inside your project directory, :file:`\*.iar` or :file:`\*.zip` that you want to deploy.
 
-If there are multiple options files available, then only the options file with
-the highest location priority is considered, other options files will be
-ignored. 
+A specific deployment options file will take precedence over a packed options in the deployable file.
 
 
 
