@@ -5,8 +5,8 @@ Element-Name: Process
 Element-Type: context
 Element-Version: 2.0
 Id: _PRrTwNcsEeaidO8WBzHpig
-Runtime-Version: 2.5.0.201908212005
-Save-Time: 9/9/19, 5:50 PM
+Runtime-Version: 2.5.0.202001211718
+Save-Time: 2/27/20, 11:15 AM
 
 ------=_.ecl.context-718f04b4-ed39-33e3-af62-0995e4561998
 Content-Type: text/ecl
@@ -20,7 +20,7 @@ proc openInscription[val processName] [val elementName] [val elementType]
     		get-item $processPath | double-click
 		}
 	}
-	
+
 	OpenView -viewName Outline
 	let [val outlineElementName [format "%s/%s : %s" $processName $elementName $elementType]]
 	{
@@ -32,12 +32,12 @@ proc openInscription[val processName] [val elementName] [val elementType]
 proc openHtmlDialogInscription[val dialogName] [val elementName] [val elementType]
 {
 	with [get-view "Axon.ivy Projects" | get-tree] {
-		let [val processPath [format "documentationExampleProject/Html Dialogs/screenshot.project/%s/%s Logic" $dialogName $dialogName]]
+		let [val processPath [format "documentationExampleProject/Html Dialogs/screenshot.project.%s/%s Logic" $dialogName $dialogName]]
 		{
     		get-item $processPath | double-click
 		}
 	}
-	
+
 	OpenView -viewName Outline
 	let [val outlineElementName [format "%sProcess/%s : %s" $dialogName $elementName $elementType]]
 	{
@@ -52,10 +52,10 @@ proc captureInscription [val elementType][val tabName][val screenshot][val width
 	{
 		let [val targetPath [format "process-elements/%s" $screenshot]]
 		{
-			with [get-window $inscriptionEditor] 
+			with [get-window $inscriptionEditor]
 			{
 				resizeWindow -width $width -height $height
-			    with [get-tab-folder] 
+			    with [get-tab-folder]
 			    {
 			        get-tab-item $tabName | click
 				    wait -ms 2000 // wait for UI animation (radio switches, button highlight, etc.)
