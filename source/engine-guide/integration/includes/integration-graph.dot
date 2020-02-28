@@ -1,0 +1,25 @@
+
+digraph integrationSetup {
+  node [
+    shape=box, 
+    style=filled,
+    margin=0 width=2 height=0.8
+    fontcolor="white",
+    fontname="UbuntuMono"
+    color="#007095",
+    fixedsize=true,
+  ];
+
+  browser [ label="Browser", pos = "0,2!", width=1.5];
+
+  webFrontendServer [ ratio=compress,label="Web Front-End Server" pos = "3,2!" ];
+
+  engine [ label="Axon.ivy Engine", pos = "6,3.3!", height = "1.3" color="#C7D426", fontcolor="black"];
+  webServerX [ label="Web Server X",pos = "6,2!" ];
+  webServerY [ label="Web Server Y",pos = "6,1!" ];
+
+  browser -> webFrontendServer;
+  webFrontendServer -> engine;
+  webFrontendServer -> webServerX;
+  webFrontendServer -> webServerY;
+}
