@@ -6,8 +6,8 @@ Element-Type: testcase
 Element-Version: 3.0
 External-Reference: 
 Id: _axKUIGBiEeaAcqEsdR5JMw
-Runtime-Version: 2.5.0.201908212005
-Save-Time: 9/10/19, 9:03 AM
+Runtime-Version: 2.5.0.202001211718
+Save-Time: 2/28/20, 10:35 AM
 Tags: skipOnLinux
 Testcase-Type: ecl
 
@@ -47,7 +47,7 @@ get-view Outline | get-tree | select "JaxRsServiceCall/create JAX-RS approval : 
 
 OpenView History
 get-view History | get-tree | select
-"HTTP GET JaxRsServiceCall.mod\\/approve.ivp\\(.*\) \\[new Engine\\]/.*/in = com.axonivy.JaxRsServiceCallData \\(documentId=null, " + 
+"HTTP GET JaxRsServiceCall.mod\\/approve.ivp\\(.*\) \\[new Engine\\]/.*/in = com.axonivy.JaxRsServiceCallData \\(documentId=null, " +
 	"generatedPassword=null, lastUpdate=null, name=null, person=null, price=null\\)/price = null"
 
 with [find-tab-folder History]
@@ -102,5 +102,6 @@ with [get-window "Inscribe Script Step"]
 	get-tab-folder | get-tab-item Code | click
 	wait 500
 	saveWindowContentScreenshot "simulation-debugging/runtimelog-script.png"
+	get-button "Cancel" | click
 }
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

@@ -16,8 +16,9 @@ proc importProject [val projectName] {
 	if  -condition [find-in-workspace [format "%s/\.project" $projectName] | length | equals 0 ] // only import if not already present
 		-then
 	{
-		get-menu "File/Import..." | click
-		get-window Import | get-tree | select "General/Existing Projects into Workspace" | double-click
+		get-quick-access | set-text "Import (Existing Projects into"
+		get-quick-access | key-type Enter
+		get-window Import | get-button "Select root directory:" | click
 		set-dialog-result Folder [format "%s/%s" [substitute-variables "${system_property:additionalProjects}"] $projectName | str]
 		with [get-window Import] {
 			get-button "Browse..." | click
