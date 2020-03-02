@@ -72,8 +72,11 @@ All well known web browsers are supported:
 - Firefox
 - Chrome
 - Opera
-- Edge
 - Safari
+- Microsoft Edge
+- Internet Explorer 11 [1]_
 
 For security reasons we recommend to use the latest available web browser versions.
 Most other web browser that support the latest JavaScript, Html 5 and CSS 3 specifications will work, too.
+
+.. [1] Internet Explorer 11 is supported but we do not recommend using it. Microsoft only supports Internet Explorer 11 for backward compatibility. Microsoft recommends using Edge instead.
