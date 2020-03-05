@@ -9,9 +9,93 @@ Release Notes Axon.ivy ${ivy-version} (${release.name})
 Changes in ${ivy-version}, ${build-date}
 --------------------------------------------------------------------------------
 
-We strongly recommend to install this release because it fixes security issues!
+We suggest to install this release if you are suffering from any of these issues.
 
 @changelog@
+
+Changes in 8.0.2.2001241016, 24.01.2020
+--------------------------------------------------------------------------------
+
+We strongly recommend to install this release because it fixes security issues!
+
++ XIVY-3256      Story          Query API to search users
++ XIVY-3418      Story          Automatically add override project configuration to designer app yaml
++ XIVY-3465      Story          Provide an API to synch a single user with the external security system
++ XIVY-3470      Story          Improve Setup Wizard
++ XIVY-3486      Story          Official support for Windows Server 2019
++ XIVY-3516      Story          BPMN Export with connector labels
++ XIVY-3524      Story          Support Microsoft SQL Server 2019
+! XIVY-3528      Story          Possible Security leak in static pages
++ XIVY-3189      Bug            New process start not found without engine restart in designer
++ XIVY-3295      Bug            CaseMap (start) is not removed from Engine if it is deleted from Project in Designer
++ XIVY-3489      Bug            Configuration prints warn logs on SecuritySystem#MAP if DefaultContext has commas
++ XIVY-3490      Bug            Designer freeze if Html content in CMS is opened
++ XIVY-3495      Bug            Ivy Components not updated after project dependency change
++ XIVY-3496      Bug            Undo throws error if the last action was an Alternative Gateway condition reordering
++ XIVY-3497      Bug            Oracle System Database creation is wrong
++ XIVY-3499      Bug            Cut off SWT tables on Windows
++ XIVY-3502      Bug            Demo Project Import failure
++ XIVY-3505      Bug            Deployment REST API ignores deploy.options.yaml in zip
++ XIVY-3510      Bug            Remote debugging does not work if enabled in jvm.options file
++ XIVY-3511      Bug            SSO does not work with AJP with the default configuration
++ XIVY-3513      Bug            Initial Oracle startup fails while content conversion
++ XIVY-3514      Bug            Process Templates loose icon after designer restart
++ XIVY-3517      Bug            Update debian package dependecies to java 11
++ XIVY-3536      Bug            NPE on Maven 'update project' if an packed '.iar' project is in the workspace
++ IVYPORTAL-9276 Technical task Enhance chat (UI + feature)
++ IVYPORTAL-9355 Technical task Clear option "Kein Stellvertreter" (no deputy) when select Deputy dropdown
++ IVYPORTAL-9469 Technical task One more configuration level for IFrame: Server level + update Portal doc
++ IVYPORTAL-9524 Technical task [BUG] Display wrong chart name on Dashboard
++ IVYPORTAL-9526 Technical task [BUG] Wrong highlighted submenu items when cancel leaving task
++ IVYPORTAL-9562 Technical task [BUG] Cannot open external link on left menu (iPhone + iPad)
++ IVYPORTAL-7219 Story          Create Configuration File for Developers - PortalSettings and Global Variables
++ IVYPORTAL-7609 Story          Growl Message - Separate positive and negative Feedback after Task 
++ IVYPORTAL-8200 Story          Reset task when leaving for side step
++ IVYPORTAL-8412 Story          Select all button in Task/Case Category Filter
++ IVYPORTAL-8673 Story          Environment handling for express II
++ IVYPORTAL-9347 Story          Analyse and Improve Portal performance II
++ IVYPORTAL-9350 Story          Analyse and improve Performance for Statistics II
++ IVYPORTAL-9598 Story          Enhance process List - Creating and Categorization II
++ IVYPORTAL-9453 Bug            Inconsistent Behaviour Case Details and related tasks and cases
+
+Changes in 8.0.1.1912241208, 24.12.2019
+--------------------------------------------------------------------------------
+
+We strongly recommend to install this release because it fixes security issues!
+
++ XIVY-2946      Story          Understandable error message if BusinessCaseData is saved to a non persistent Business Case
++ XIVY-3318      Story          API to get business case data of a business case
++ XIVY-3466      Story          Support SVG images in CMS
++ XIVY-3477      Story          Simplify HtmlPageToMailConverter
++ XIVY-3479      Story          HTTP deployment to app 'System' as bad default
++ XIVY-3494      Story          BusinessCaseData demo park task with data in WorkflowDemos
+* XIVY-3351      Bug            Sync user at login with single sign-on
++ XIVY-3378      Bug            Deployment fails when Global Variables are configured in yaml
++ XIVY-3405      Bug            Execution of method was not successful in Html Dialog
++ XIVY-3426      Bug            Rule Beans can't generate DMN due to JAXB
++ XIVY-3440      Bug            errorPage.getLocale() throws NPE in ErrorPage
++ XIVY-3441      Bug            Engine logs invisible in maven console out
++ XIVY-3468      Bug            Style of html dialog looks strange after change in HtmlDialog UI Editor on Windows
++ XIVY-3472      Bug            Can not see second input parameter on Callable Subprocess Start
+* XIVY-3473      Bug            No administrators after migrating from 7 to 8
+! XIVY-3474      Bug            Passwords of new administrators will not be hashed in ivy.yaml
+* XIVY-3476      Bug            Process start links broken (view expired) when called from third party site
++ XIVY-3478      Bug            Properties in Web Service Call Activity Request not visible
++ XIVY-3481      Bug            Error 'Attachment download failed for url' when engine sends task notification mails
++ XIVY-3482      Bug            SVG images appears as attachment in task notification mails
++ XIVY-3485      Bug            Reordering of Alternative Gateway conditions not working in embeded subprocess
++ XIVY-3488      Bug            Task notification mail is not nicely formatted
++ XIVY-3491      Bug            Change location of custom jsf error pages
++ XIVY-3500      Bug            BPMN exporter wrong label positions on bmpn.io
++ IVYPORTAL-9244 Technical task Enhancement for Express category
++ IVYPORTAL-9249 Technical task [BUG] Display error when session expired
++ IVYPORTAL-9284 Technical task Remove express process in User Favorites when it is deleted
++ IVYPORTAL-9295 Technical task Increase space for User Favorites
++ IVYPORTAL-9466 Technical task Remove white space: upload document
++ IVYPORTAL-9476 Technical task [Bug]  Export excel error in task analysis
++ IVYPORTAL-8872 Story          Analyse and Improve Portal performance
++ IVYPORTAL-9345 Story          Handle migration HIDDEN tasks/cases from 7.0.10 to 8.0
++ IVYPORTAL-9351 Story          Enable/disable counting task/case when displaying task/case list
 
 Changes in 8.0.0.1912040933, 04.12.2019
 --------------------------------------------------------------------------------
