@@ -16,6 +16,32 @@ front-end server.
 .. graphviz:: includes/integration-graph.dot
    :layout: neato
 
+
+.. rubric:: Security
+
+It is very important that the communication between the front-end server
+and the Axon.ivy Engine is **exclusive**. This means no one else should be able to 
+communicate directly with the Axon.ivy Engine.
+
+If front-end server and Axon.ivy Engine runs on the same host, this is
+secure by default and no more security considerations must be done.
+
+If front-end server and Axon.ivy Engine runs on two different hosts, you need to
+ensure exclusive access to the Axon.ivy Engine. You can do this with one of
+the following approaches:
+
+#. Configure your network so that only the front-end server
+   can communicate with the Axon.ivy Engine.
+#. Setup a firewall rule on the Axon.ivy Engine host,
+   which blocks all requests from another IP address other than the front-end server.
+
+Furthermore you need to bind AJP to the public network address of the Axon.ivy Engine
+in :ref:`ivy.yaml <ivy-webserver-yaml>`, because AJP is bound by default to :code:`localhost`:
+
+.. literalinclude:: includes/ivy-ajp-other-host.yaml
+    :language: yaml
+
+
 .. _integration-directory:
 
 .. rubric:: Integration Directory
