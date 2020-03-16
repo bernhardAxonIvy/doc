@@ -28,3 +28,13 @@ Global deploy.options.yaml removed
 The `deploy.options.yaml` in the deployment directory can no longer be used to influence deployments.
 We think that it made deployments unnecessary hard to track and that users are better of with 
 the deploy.options packed as part of the application ZIP or specific yaml per artifact. :ref:`deployment-options` 
+
+
+Static JSF pages moved to webContent/view
+-----------------------------------------
+
+The location of static JSF pages has been changed to :file:`webContent/view` to
+improve security. With 8.0 the static pages were located directly inside the
+:file:`webContent` folder. From 9.1 and later, these pages are no longer
+accessible. Please refer to the chapter :ref:`static-jsf-pages` for more
+information.
