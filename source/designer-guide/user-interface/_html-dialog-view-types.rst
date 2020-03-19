@@ -59,6 +59,15 @@ following contract:
 -  ``webContent/layouts/[MyTemplateName].xhtml``
 -  ``webContent/layouts/[A sub folder]/[for additional template content]``
 
+.. note::
+
+    A layout can be anywhere in the :file:`webContent` folder, but as mentioned
+    before we recommend to store it in the :file:`webContent/layouts` folder. 
+    
+    Please don't store it into the :file:`webContent/view` folder. This location
+    is intended for :ref:`static-jsf-pages`, which would mean that you could
+    call the layout directly.
+
 
 .. _html-dialog-component:
 
