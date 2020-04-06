@@ -38,3 +38,11 @@ improve security. With 8.0 the static pages were located directly inside the
 :file:`webContent` folder. From 9.1 and later, these pages are no longer
 accessible. Please refer to the chapter :ref:`static-jsf-pages` for more
 information.
+
+
+Special handling for Informix as external third-party database
+--------------------------------------------------------------
+
+Informix is a database management system and can be integrated with Axon.ivy like any other database system.
+We have removed special handlings for Informix as these should no longer be necessary.
+If you are using Informix and have any problems, please contact us.
