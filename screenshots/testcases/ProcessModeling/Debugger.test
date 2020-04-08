@@ -39,7 +39,7 @@ with [get-view "Axon.ivy Projects" | get-tree]
 
 get-button "Start Engine and show overview page" | click
 OpenView "Web Browser"
-get-view "Web Browser" | get-combo | set-text "http://localhost:8081/ivy/pro/designer/documentationExampleProject/159FF3D428E42BB5/approve.ivp"
+get-view "Web Browser" | get-combo | set-text "http://localhost:8081/designer/pro/documentationExampleProject/159FF3D428E42BB5/approve.ivp"
 get-view "Web Browser" | get-button "Go to the selected URL" | click
 
 OpenView Outline

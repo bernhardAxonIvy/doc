@@ -19,7 +19,7 @@ importProject -projectName "documentationExampleProject"
 get-button "Start Engine and show overview page" | click
 OpenView "Runtime Log"
 get-view "Runtime Log.*" | get-button "Clear all log entries" | click
-get-view "Web Browser" | get-combo | set-text "http://localhost:8081/ivy/pro/designer/documentationExampleProject/1567F0BE1CC43932/start.ivp"
+get-view "Web Browser" | get-combo | set-text "http://localhost:8081/designer/pro/documentationExampleProject/1567F0BE1CC43932/start.ivp"
 get-view "Web Browser" | get-button "Go to the selected URL" | click
 
 OpenView "Runtime Log"
