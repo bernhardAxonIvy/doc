@@ -4,10 +4,10 @@ import static com.codeborne.selenide.Selenide.*;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
-import com.axonivy.ivy.supplements.IvySelenide;
-import com.axonivy.ivy.supplements.engine.EngineUrl;
+import com.axonivy.ivy.webtest.IvyWebTest;
+import com.axonivy.ivy.webtest.engine.EngineUrl;
 
-@IvySelenide
+@IvyWebTest
 public class WebTestRegistrationForm
 {
   @Test

@@ -64,17 +64,15 @@ project:
 
 #. Convert Projects to Maven Projects
 
-   - Open the Package Explorer *(Windows -> Show View -> Other -> Package Explorer)*
-
-   - Within the Package Explorer, convert both projects (``crm`` and
-     ``crmIntegrationTests``) to Maven Projects. *(Right click on the project ->
-     Configure -> Convert to Maven Project)*.
+   - Convert both projects (``crm`` and ``crmIntegrationTests``) to Maven
+     Projects. *(Right click on the project -> Configure -> Convert to Maven
+     Project)*.
 
 #. Define a test source directory
 
    - Open the :github-build-examples:`.classpath </crmIntegrationTests/.classpath#L28-L33>`
      file. This can be found if you disable the ``.* resource`` filter inside
-     the Package Explorer (or open the file directory from the *File Explorer*).
+     the Project Tree (or open the file directory from the *File Explorer*).
      
      
    - Add the following lines to the :file:`.classpath` file:
@@ -124,7 +122,7 @@ Let's start by extending our test class added above with a
 :github-build-examples:`real test implementation
 </crmIntegrationTests/src_test/ch/ivyteam/integrationtest/WebTestRegistrationForm.java#L22-L39>`.
 First we need to start a process (you can use the ``EngineUrl`` utility from the
-:ref:`primeui-tester` to do this). 
+:ref:`web-tester` to do this). 
 
 This process opens a dialog with two input fields (``firstname`` and
 ``lastname``) and a submit button. After submitting, a second dialog with your
@@ -137,7 +135,7 @@ inputs is displayed.
 
 .. tip::
 
-  The :ref:`@IvySelenide <primeui-tester>` annotation can be configured (e.g to choose your ``browser``
+  The :ref:`@IvyWebTest <web-tester>` annotation can be configured (e.g to choose your ``browser``
   or change if it should be started ``headless``).
 
 
@@ -366,19 +364,19 @@ object:
   WebDriver driver = WebDriverRunner.getWebDriver();
 
 
-.. _primeui-tester:
+.. _web-tester:
 
-PrimeUi-Tester
-^^^^^^^^^^^^^^
+Web-Tester
+^^^^^^^^^^
 
-With the `primeui-tester <https://github.com/ivy-supplements/primeui-tester>`__
-we provide you the annotation ``@IvySelenide``, which sets up the browser
+With the `web-tester <https://github.com/axonivy/web-tester>`__
+we provide you the annotation ``@IvyWebTest``, which sets up the browser
 connection for you. It can be configured with some parameters:
 
 .. code-block:: java
 
-  //Default (same as simple @IvySelenide)
-  @IvySelenide(browser = "firefox", headless = true, reportFolder = "target/selenide/reports")
+  //Default (same as simple @IvyWebTest)
+  @IvyWebTest(browser = "firefox", headless = true, reportFolder = "target/selenide/reports")
 
 - **browser**: The browser which should run the test e.g: chrome, firefox, ie,
   phantomjs, htmlunit, safari, opera
