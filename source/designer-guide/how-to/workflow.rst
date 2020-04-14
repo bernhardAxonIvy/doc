@@ -188,20 +188,20 @@ There is a REST API available that uses HTTP, JSON (application/json) as
 content type and HTTP basic as authentication method. Over this
 interface the following services are available:
 
-HTTP GET /ivy/api/{application name}/workflow/processstarts
+HTTP GET /{application name}/api/workflow/processstarts
    Returns all process starts that can be started by the authenticated
    user.
 
-HTTP GET /ivy/api/{application name}/workflow/task/{taskId}
+HTTP GET /{application name}/api/workflow/task/{taskId}
    Returns the task with the given task identifier.
 
-HTTP GET /ivy/api/{application name}/workflow/tasks
+HTTP GET /{application name}/api/workflow/tasks
    Returns the tasks the authenticated user can work on.
 
-HTTP GET /ivy/api/{application name}/workflow/tasks/count
+HTTP GET /{application name}/api/workflow/tasks/count
    Returns the number of tasks the authenticated user can work on.
 
-HTTP GET /ivy/api/{application name}/engine/info
+HTTP GET /{application name}/api/engine/info
    Returns the version and the name of the engine
 
 

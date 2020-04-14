@@ -6,6 +6,6 @@
     <deployToEngineApplication>portal</deployToEngineApplication>
     <deployMethod>HTTP</deployMethod>
     <deployServerId>serverId</deployServerId>
-    <deployEngineUrl>http://localhost:8080/ivy</deployEngineUrl>
+    <deployEngineUrl>http://localhost:8080/</deployEngineUrl>
   </configuration>
 </plugin>

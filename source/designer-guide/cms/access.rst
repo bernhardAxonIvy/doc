@@ -37,10 +37,10 @@ Access with a Browser
 
 Some content objects can be accessed directly from the browser with the
 URL pattern
-``http://<servername>:<port>/ivy/cm/<application name>/<process model>/<path in CMS>``. Assumed you
+``http://<servername>:<port>/<application name>/cm/<process model>/<path in CMS>``. Assumed you
 have created a page in a CMS with the path /StaticContent/MyPage in a
 project named Test. Type the URL
-``http://localhost:8081/ivy/cm/designer/Test/StaticContent/MyPage`` in
+``http://localhost:8081/designer/cm/Test/StaticContent/MyPage`` in
 your browser and the page will be rendered in there.
 
 .. note::

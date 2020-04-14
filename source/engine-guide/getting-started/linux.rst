@@ -99,7 +99,7 @@ output a URL is displayed
 .. code:: bash
 
     [100%] Service ProcessModelVersion Portal/AxonIvyExpress$1 started [0ms]
-    Go to http://yourservername:8080/ivy to see the info page of Axon.ivy Engine.
+    Go to http://yourservername:8080/ to see the info page of Axon.ivy Engine.
     Axon.ivy Engine is running and ready to serve. [9375ms]
     Type 'shutdown' and confirm with ENTER to stop the running engine instance
 
@@ -132,7 +132,7 @@ system you use. We will use a PostgreSQL database server.
 Shutdown the Axon.ivy Engine first by typing **shutdown** and **Y**::
 
     ...
-    Go to http://ivy1:8080/ivy to see the info page of Axon.ivy Engine.
+    Go to http://ivy1:8080/ to see the info page of Axon.ivy Engine.
     Axon.ivy Engine is running and ready to serve. [11596ms]
     Type 'shutdown' and confirm with ENTER to stop the running engine instance
     shutdown
@@ -199,7 +199,7 @@ Now, start the Axon.ivy Engine again as background process.::
 
 Note, that the HTTP port of the Axon.ivy Engine may have changed. If you did
 change the http settings! So open again a web browser and navigate to
-http://yourservername:yourportnumber/ivy. Note, that the header with the demo
+http://yourservername:yourportnumber/. Note, that the header with the demo
 mode message is gone. You now have a production ready Axon.ivy Engine.
 
 

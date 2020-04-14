@@ -216,12 +216,12 @@ application **portal** of the |ivy-engine|.
 
 .. code-block:: bash
 
-    # http based deployment to http://localhost:8080/ivy
+    # http based deployment to http://localhost:8080/
     # default credentials admin/admin used for demo engine
     mvn com.axonivy.ivy.ci:project-build-plugin:7.4.0-SNAPSHOT:deploy-to-engine \
       -Divy.deploy.file=myProject.iar \
       -Divy.deploy.method=HTTP \
-      -Divy.deploy.engine.url=http://localhost:8080/ivy \
+      -Divy.deploy.engine.url=http://localhost:8080/ \
       -Divy.deploy.engine.app=portal
 
 The *http based deployment* method uses the internal

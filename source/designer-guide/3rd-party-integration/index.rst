@@ -146,13 +146,13 @@ annotations can be used. A REST resource is created by adding a Java
 class to the ``src`` directory. The Java class has to use the correct
 annotations (as shown below), then it will be detected as a REST
 resource and published automatically. After publishing, the resource
-will be available on the base path */ivy/api/*.
+will be available on the base path */<appName>/api/*.
 
 ::
 
    /**
     * Provides the person REST resource 
-    * on the path /ivy/api/myApplicationName/person
+    * on the path /myApplicationName/api/person
     */
    @Path("person")
    public class CustomProjectResource {

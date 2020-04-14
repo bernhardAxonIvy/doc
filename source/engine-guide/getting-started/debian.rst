@@ -128,7 +128,7 @@ Now, start the Axon.ivy Engine again
 
 Note, that the HTTP port of the Axon.ivy Engine may have changed. If you did
 change the http settings! So open again a web browser and navigate to
-http://yourservername:yourportnumber/ivy. Note, that the header with the demo
+http://yourservername:yourportnumber/. Note, that the header with the demo
 mode message is gone. You now have a production ready Axon.ivy Engine.
 
 .. include:: _deploy-project.rst

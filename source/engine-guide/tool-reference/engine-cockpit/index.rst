@@ -10,9 +10,9 @@ The **Engine Cockpit** is the application to administrate your engine.
 
 After you have successfully started the Axon.ivy Engine, you can launch the engine cockpit tool 
 via the Axon.ivy Engine info page. 
-To do so, open the address: http://ServerName:Port/ivy in your browser and click on the :guilabel:`Cockpit` tab. 
+To do so, open the address: http://ServerName:Port/ in your browser and click on the :guilabel:`Cockpit` tab. 
 This will open the dashboard: 
-http://ServerName:Port/ivy/faces/view/system/engine-cockpit/dashboard.xhtml
+http://ServerName:Port/system/faces/view/engine-cockpit/dashboard.xhtml
 
 .. note::
     For the usage of this tool, you will need an administrator user account. 

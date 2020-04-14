@@ -82,7 +82,7 @@ Testing the Engine
 ------------------
 
 Once you've started the Axon.ivy Engine, try to open the following address in
-your preferred web browser: http://ServerName:Port/ivy. If a web page with the
+your preferred web browser: http://ServerName:Port/. If a web page with the
 Axon.ivy logo appears, the installation and configuration of the Axon.ivy Engine
 was successful and you may continue with the next chapter.
 

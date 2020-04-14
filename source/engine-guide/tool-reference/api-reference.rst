@@ -3,7 +3,7 @@ API Reference
 
 The REST API allows you to get information about a running Axon.ivy engine and
 to control it remotely, which is by default accessible at
-http://localhost:8080/ivy/api.
+http://localhost:8080/<appName>/api.
 
 .. _api-reference-csrf:
 .. note:: 
@@ -29,7 +29,7 @@ Deployment
     .. sourcecode:: bash
 
         curl -X POST \
-          http://localhost:8080/ivy/api/system/apps/test \
+          http://localhost:8080/system/api/system/apps/test \
           -u admin:admin \
           -H 'X-Requested-By: curl' \
           -F fileToDeploy=@/home/user/Documents/Test.zip \

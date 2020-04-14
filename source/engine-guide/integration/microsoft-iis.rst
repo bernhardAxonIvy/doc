@@ -198,16 +198,16 @@ IIS 8 (Windows Server 2012)
 #. Update the :ref:`external base URL <integration-external-base-url>` as shown
    in the :ref:`ivy-webserver-yaml`
 #. Check if the integration is working by opening a web browser on the address
-   http://<your host>/ivy/
+   http://<your host>/
 
 
 .. _integration-microsoft-iis-change-context-uri:
 
-Change context URI /ivy/
-------------------------
+Change base URI
+---------------
 
 You might like to make the Axon.ivy engine accessible under a custom context URI
-other than /ivy.
+other than '/'.
 
 #. Change the context name of Axon.ivy as shown in the :ref:`ivy-webserver-yaml`
 
@@ -222,7 +222,7 @@ other than /ivy.
 
    .. code-block:: properties
    
-        #/ivy/* AxonIvyEngine 
+        #/* AxonIvyEngine 
         /workflow/*=AxonIvyEngine
 
 
@@ -242,13 +242,13 @@ accessible through a single IIS host.
    In our scenario the integration directory from the Axon.ivy 5.x Engine was
    used to make the engine instance accessible under http://localhost/ivy.
 
-#. The contexts of the Axon.ivy Engines must be unique. By default the context
-   is set to **/ivy/**. If different versions of ivy engines are accessed from
-   the same IIS host, it's useful to change the contexts so that it matches the
-   ivy version. For detailed explanation see
+#. The base URI of the Axon.ivy Engines must be unique. By default the base URI
+   is set to **/ivy/** (since 9.1 it is **/**). If different versions of ivy
+   engines are accessed from the same IIS host, it's useful to change the
+   contexts so that it matches the ivy version. For detailed explanation see
    :ref:`integration-microsoft-iis-change-context-uri`
    
-   In our scenario the context URI of the Axon.ivy 5.x Engine was changed to
+   In our scenario the base URI of the Axon.ivy 5.x Engine was changed to
    **/ivy5/** and the Xpert.ivy 3.9 Server kept his default context **/ivy/**.
 
 #. All Axon.ivy Engines, which are accessed from the same IIS, must listen on a

@@ -22,6 +22,36 @@ There are no known issues with :code:`HttpAsyncClient`, but if you still want to
 web service client configuration.
 
 
+Engine default base path changed
+--------------------------------
+
+We changed the default value of the :ref:`WebServer.IvyContextName
+<ivy-webserver-yaml>` from :code:`"ivy"` to :code:`""`. This means the default
+engine URL has changed (from :code:`http://localhost:8080/ivy/`) to
+:code:`http://localhost:8080/`. 
+
+
+Every Ivy application is now a tomcat webapp
+--------------------------------------------
+
+With the new engine every ivy application will be its own tomcat webapp. This
+means some URL paths will change. If you have a :ref:`front-end-server`
+configured and you block some URLs for security reasons, you need to adjust them.
+Here some examples:
+
++------------------------------------+------------------------------------+
+| Old URL                            | New URL                            |
++====================================+====================================+
+| /<servlet>/**<appName>**/<pmv>/... | /**<appName>**/<servlet>/<pmv>/... |
++------------------------------------+------------------------------------+
+| /pro/myApp/myPmv/...               | /myApp/pro/myPmv/...               |
++------------------------------------+------------------------------------+
+| /api/myApp/myPmv/...               | /myApp/api/myPmv/...               |
++------------------------------------+------------------------------------+
+| /wf/myApp/myPmv/...                | /myApp/wf/myPmv/...                |
++------------------------------------+------------------------------------+
+
+
 Global deploy.options.yaml removed
 ----------------------------------
 

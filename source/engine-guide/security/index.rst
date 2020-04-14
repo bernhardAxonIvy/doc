@@ -30,6 +30,8 @@ be done by the IT Operation provider:
    Deployment sample with combined front-end server and ivy engine
 
 
+.. _front-end-server:
+
 Front-end Server
 ================
 
@@ -83,38 +85,33 @@ Path Configuration
 ------------------
 
 **Aim**
-    Only allow paths from the front-end server to the Axon.ivy Engine that are
+    Deny all pages and only allow paths from the front-end server to the Axon.ivy Engine that are
     required by your ivy projects to work correctly.
 
 **Test**
-    Check if you can reach http(s)://<front-end-server>/ivy/error (and all other
+    Check if you can reach http(s)://<front-end-server>/error (and all other
     blocked URLs). Also check if you can access your process that should be
     available to end users. Note that the ivy servlet is not necessarily running
-    under /ivy/. It is best to automate these tests for continuous security.
+    under /. It is best to automate these tests for continuous security.
 
 **Expected Outcome**
     Forbidden paths should not be reachable (HTTP Status: 4xx). The process
     should be reachable for end users.
 
 **Example for a JSF-based Application**
-    Filter following URL parts:
+    Allow following URL parts:
 
-    +------------------------+--------------------------------------------------+
-    | URL Part               | Used for                                         |
-    +========================+==================================================+
-    | /ivy/error             | Displaying and administering Errors              |
-    +------------------------+--------------------------------------------------+
-    | /ivy/pagearchive       | Page Archive                                     |
-    +------------------------+--------------------------------------------------+
-    | /ivy/api/              | Workflow API, REST APIs                          |
-    +------------------------+--------------------------------------------------+
-    | /ivy/wf/               | Server Workflow UI                               |
-    +------------------------+--------------------------------------------------+
-    | /ivy/info              | Process overview page                            |
-    +------------------------+--------------------------------------------------+
-    | /ivy/faces/view/system | Engine Cockpit (Setup Wizard)                    |
-    +------------------------+--------------------------------------------------+
-
+    +------------------------------+--------------------------------------------------+
+    | URL Part                     | Used for                                         |
+    +==============================+==================================================+
+    | /<appName>                   | All application specific URLs                    |
+    +------------------------------+--------------------------------------------------+
+    | /error                       | Displaying and administering Errors              |
+    +------------------------------+--------------------------------------------------+
+    | /info                        | Engine info page                                 |
+    +------------------------------+--------------------------------------------------+
+    | /system                      | Engine Cockpit (Setup Wizard)                    |
+    +------------------------------+--------------------------------------------------+
 
 Block URLs in IIS
 ^^^^^^^^^^^^^^^^^
@@ -141,14 +138,21 @@ accessible anymore.
 Block URLs in nginx
 ^^^^^^^^^^^^^^^^^^^
 
-In the nginx server configuration, URLs can be blocked like this (repeat for the
-other URLs).
+In the nginx server configuration, URLs can be blocked/allowed like this
+(`docker-samples
+<https://github.com/ivy-samples/docker-samples/blob/master/ivy-reverse-proxy-nginx/ivy.conf>`_).
 
 .. code-block:: nginx
 
-    location /ivy/pro/System {
+    location / {
         deny all;
         return 403;
+
+        location /demo-portal/ {
+            allow all;
+            include /etc/nginx/ivy-reverse.conf;
+            proxy_pass http://ivy:8080/demo-portal/;
+        }
     }
 
 After changing the configuration restart nginx and check that the URLs are not
@@ -170,10 +174,6 @@ to block system processes:
 
 After changing the configuration restart the ivy Engine and check that the URLs
 are not accessible anymore.
-
-.. Tip::
-    If the URLs are still accessible after blocking them in the web.xml make
-    sure that you didn't include the servlet path (/ivy) in the URL pattern. 
 
 
 HTTPS

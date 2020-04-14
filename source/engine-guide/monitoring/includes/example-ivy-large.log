@@ -1,5 +1,5 @@
 10:49:40.904 DEBUG [...rformanceLogValve] [http-8081-1] [requestId=43]  
-  Entry url=http://localhost:8080/ivy/pro/myapp/OpenEditor/13224891E742EE17/start4.ivp client=0:0:0:0:0:0:0:1 session=null httpsession=C900A5BC35251533DEB5B36E4316EE98
+  Entry url=http://localhost:8080/myapp/pro/OpenEditor/13224891E742EE17/start4.ivp client=0:0:0:0:0:0:0:1 session=null httpsession=C900A5BC35251533DEB5B36E4316EE98
 10:49:41.020 INFO [...nEditor.user_code] [http-8081-1] [application=2147483647, client=0:0:0:0:0:0:0:1, requestId=43, task=1, pmv=designer$OpenEditor$1, processElement=13224891E742EE17-f26-t, session=1, request=HTTP GET test.mod/start4.ivp(1.1.0.0), executionContext=1]  
   This is my log message
 10:49:41.050 INFO [...ner.OpenEditor.db] [Process Extension Thread 1] [application=2147483647, client=0:0:0:0:0:0:0:1, requestId=43, task=1, pmv=designer$OpenEditor$1, processElement=13224891E742EE17-f29-bean, session=1, request=HTTP GET test.mod/start4.ivp(1.1.0.0), executionContext=SYSTEM]
@@ -7,4 +7,4 @@
 10:49:41.050 INFO [...ner.OpenEditor.db] [Process Extension Thread 1] [application=2147483647, client=0:0:0:0:0:0:0:1, requestId=43, task=1, pmv=designer$OpenEditor$1, processElement=13224891E742EE17-f29-bean, session=1, request=HTTP GET test.mod/start4.ivp(1.1.0.0), executionContext=SYSTEM]
   Executed database statement successfully in 0 milli seconds 
 10:49:41.100 DEBUG [...rformanceLogValve] [http-8081-1] [requestId=43]
-  Exit url=http://localhost:8080/ivy/pro/myapp/OpenEditor/13224891E742EE17/start4.ivp client=0:0:0:0:0:0:0:1 session=1 httpsession=C900A5BC35251533DEB5B36E4316EE98 duration=194181 us
+  Exit url=http://localhost:8080/myapp/pro/OpenEditor/13224891E742EE17/start4.ivp client=0:0:0:0:0:0:0:1 session=1 httpsession=C900A5BC35251533DEB5B36E4316EE98 duration=194181 us

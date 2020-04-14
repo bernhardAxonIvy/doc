@@ -92,7 +92,7 @@ REST Client Section
      {ivy.engine.host}, {ivy.engine.http.port}, {ivy.engine.context},
      {ivy.request.application}.
 
-     E.g. ``http://{ivy.engine.host}:}{ivy.engine.http.port}/{ivy.engine.context}/api/{ivy.request.application}/my/service``
+     E.g. ``http://{ivy.engine.host}:{ivy.engine.http.port}(/{ivy.engine.context})/{ivy.request.application}/api/my/service``
 
 Authentication Section
 ^^^^^^^^^^^^^^^^^^^^^^
