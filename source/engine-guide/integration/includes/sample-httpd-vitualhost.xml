@@ -5,5 +5,5 @@
   ServerAlias www.ivy.soreco.wan
   ErrorLog "logs/ivy.soreco.wan-error.log"
   CustomLog "logs/ivy.soreco.wan-access.log" common
-  JkMount /* AxonIvyEngine
+  JkMount /ivy/* AxonIvyEngine
 </VirtualHost>

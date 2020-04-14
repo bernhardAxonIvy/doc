@@ -43,17 +43,17 @@ Windows configuration
         # Select the timestamp log format
         JkLogStampFormat "[%a %b %d %H:%M:%S %Y] "
 
-        # Mount the uri "/*" to the worker AxonIvyEngine.
-        JkMount  /* AxonIvyEngine
+        # Mount the uri "/ivy/*" to the worker AxonIvyEngine.
+        JkMount  /ivy/* AxonIvyEngine
 
 #. If you have configured virtual hosts in your apache configuration you have to
-   map the URI **/\*** in all virtual host you want to integrate Axon.ivy
+   map the URI **/ivy/\*** in all virtual host you want to integrate Axon.ivy
    Engine into. This can be done by copying the following line from the
    :file:`mod_jk.conf` file to the appropriate virtual host definitions:
 
    .. code-block:: apache
 
-        JkMount /* AxonIvyEngine
+        JkMount /ivy/* AxonIvyEngine
    
    Copy this to the appropriate virtual host definitions, e.g.:
    
@@ -70,7 +70,13 @@ Windows configuration
 #. Update the :ref:`external base URL <integration-external-base-url>` as shown
    in the :ref:`ivy-webserver-yaml`
 #. Restart the Apache HTTP Server and the Axon.ivy overview page should be
-   accessible under http://apacheHostName/
+   accessible under http://apacheHostName/ivy
+
+.. note::
+
+   This apache integration documentation suppose you use **"ivy"** as
+   :ref:`IvyContextName <ivy-webserver-yaml>`. The default since 9.1 however is
+   **""**.
 
 
 .. _apache-linux-example-config:
@@ -125,14 +131,14 @@ assume that an Ubuntu distribution is installed as Operating System.
 #. Update the :ref:`external base URL <integration-external-base-url>` as shown
    in the :ref:`ivy-webserver-yaml`
 #. Restart the Apache HTTP Server and the Axon.ivy overview page should be
-   accessible under http://apacheHostName/
+   accessible under http://apacheHostName/ivy
 
 
-Change base URI
----------------
+Change base URI /ivy/
+---------------------
 
 You might like to make the Axon.ivy engine accessible under a custom base URI
-other than **/**. 
+other than **/ivy**. 
 
 #. Change the base name of Axon.ivy as shown in the :ref:`ivy-webserver-yaml`
 
@@ -147,7 +153,7 @@ other than **/**.
 
    .. code-block:: apache
 
-        #JkMount  /* AxonIvyEngine 
+        #JkMount  /ivy/* AxonIvyEngine 
         JkMount  /workflow/* AxonIvyEngine
 
 #. If you have a virtual host configuration, the :code:`JkMount` command with

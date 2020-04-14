@@ -198,16 +198,22 @@ IIS 8 (Windows Server 2012)
 #. Update the :ref:`external base URL <integration-external-base-url>` as shown
    in the :ref:`ivy-webserver-yaml`
 #. Check if the integration is working by opening a web browser on the address
-   http://<your host>/
+   http://<your host>/ivy/
+
+.. note::
+
+   This Microsoft IIS integration documentation suppose you use **"ivy"** as
+   :ref:`IvyContextName <ivy-webserver-yaml>`. The default since 9.1 however is
+   **""**.
 
 
 .. _integration-microsoft-iis-change-context-uri:
 
-Change base URI
----------------
+Change base URI /ivy/
+---------------------
 
 You might like to make the Axon.ivy engine accessible under a custom context URI
-other than '/'.
+other than '/ivy'.
 
 #. Change the context name of Axon.ivy as shown in the :ref:`ivy-webserver-yaml`
 
@@ -222,7 +228,7 @@ other than '/'.
 
    .. code-block:: properties
    
-        #/* AxonIvyEngine 
+        #/ivy/* AxonIvyEngine 
         /workflow/*=AxonIvyEngine
 
 
