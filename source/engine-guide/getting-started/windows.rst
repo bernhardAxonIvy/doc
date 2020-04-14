@@ -92,7 +92,7 @@ Press the :guilabel:`Next` button to continue.
 
 On the next page, you can configure system administrators. 
 
-.. figure:: /_images/engine-getting-started/administrator.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-dialog-new-admin.png
 
 Click :guilabel:`Add Administrator`, fill in the form and press the
 :guilabel:`Add Administrator` button. 
@@ -119,20 +119,16 @@ running and listening. Configure the **Username** and **Password** of a database
 user that has the right to create a new database on the database server. Press
 the :guilabel:`Create Database` button.
 
-.. figure:: /_images/engine-getting-started/systemdatabase.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-setup-systemdb.png
 
 On the appearing dialog configure the name of the Axon.ivy system database.
 Press the :guilabel:`Save and create` button to save and create the system
 database.
 
-.. figure:: /_images/engine-getting-started/createdatabase.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-dialog-setup-systemdb-create.png
 
-As soon as the database creation is finished the following dialog appears:
-
-.. figure:: /_images/engine-getting-started/createdatabase-success.png
-
-Press the :guilabel:`Connect` button to connect to the newly created system
-database. 
+As soon as the database creation is finished you can click on the
+:guilabel:`Connect` button to connect to the new system database. 
 
 .. Note::
   The system database is used by the Axon.ivy Engine to store configurations,
@@ -140,10 +136,10 @@ database.
 
 Press the :guilabel:`Finish` button.
 
-A dialog appears and you can click :guilabel:`OK` to go back to the *main
-page*. 
+A dialog appears (you may see configuration warnings that should be resolved
+first) and you can click :guilabel:`OK` to go back to the *main page*. 
 
-.. figure:: /_images/engine-getting-started/setup-finish.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-dialog-setup-finish.png
 
 Switch back to the **Control Center** and restart the Axon.ivy Engine by
 stopping and starting it again. 
