@@ -14,6 +14,19 @@ In addition, the memory monitor displays the max and current memory usage of the
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor.png
 
 
+.. _engine-cockpit-monitor-mbeans:
+
+MBeans
+^^^^^^
+
+The **MBeans** view shows a tree with all :ref:`jmx` MBeans of the engine. 
+Click on one of the MBeans to see all its attributes. Click on an attribute with numeric values 
+to trace the value of the attribute in the chart. You can add multiple attributes to the chart. 
+Click on the remove icon in the table below the chart to remove the attribute from the chart.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-mbeans.png
+
+
 Logs
 ^^^^
 
