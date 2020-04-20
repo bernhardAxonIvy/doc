@@ -5,8 +5,8 @@ Java Management Extensions (JMX)
 
 Java Management Extensions (JMX) is a technology to read and write runtime
 information from a java processes. This allows monitoring tools to monitor the
-state the Axon.ivy Engine, e.g. with :ref:`visualvm`, Java Mission Control or
-Nagios. A monitoring tool that runs on the same machine and with the same user
+state of Axon.ivy Engine, e.g. with :ref:`visualvm`, Java Mission Control, Nagios, Prometheus, etc. 
+A monitoring tool that runs on the same machine and with the same user
 as the Axon.ivy Engine can connect to Axon.ivy Engine without any additional
 configuration.
 
@@ -41,11 +41,14 @@ Provided MBeans
 
 The Axon.ivy Engine provides performance and management information by a set of
 MBeans. These allows to monitor internals of the Axon.ivy Engine. Most
-monitoring tools provide a user interface to browse the available MBeans. MBeans
-are mostly shown in a tree which is built with the information provided in the
+monitoring tools provide a user interface to browse the available MBeans. 
+MBeans are mostly shown in a tree which is built with the information provided in the
 names of MBeans. 
 
 .. figure:: /_images/visualvm/visualvm-mbeans.png
+
+Use the build in :ref:`engine-cockpit-monitor-mbeans` browser of the :ref:`engine-cockpit` to inspect 
+the various MBeans without to install an external monitoring tool.
 
 The names of MBeans provided by Axon.ivy are structured so that the name
 contains the Application, Process Model, Process Model Version or Environment
