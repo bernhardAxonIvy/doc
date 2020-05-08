@@ -69,6 +69,20 @@ improve security. With 8.0 the static pages were located directly inside the
 accessible. Please refer to the chapter :ref:`static-jsf-pages` for more
 information.
 
+Daily Jobs are only executed at configured time
+-----------------------------------------------
+
+Daily jobs like sending task summary emails or synchronizing users
+were executed once a day. If the Axon.ivy Engine was not running
+at the configured time the job was executed on the next start of
+the Axon.ivy Engine.
+
+Then you may be confronted with heavy workloads
+which makes the Axon.ivy Engine unusable for other tasks.
+Therefore the daily jobs are now only executed at the configured time
+if the Axon.ivy Engine is not running at this time the job will not
+be executed.
+
 
 Special handling for Informix as external third-party database
 --------------------------------------------------------------
