@@ -7,7 +7,7 @@ REST.Servlet:
   # If the Mobile Workflow REST API is not used on your engine (e.g. by the Axon.ivy Mobile App) you can disable it
   MobileWorkflow.API: false
 
-  # REST resource for remote deployment under '/system/api/system/apps/{application}' 
+  # REST resource for remote deployment under '/system/api/apps/{application}' 
   # If remote deployment is not used on your engine you can disable it
   # The REST Deployment is used from the deployment feature of the Engine Cockpit
   Deployment: false

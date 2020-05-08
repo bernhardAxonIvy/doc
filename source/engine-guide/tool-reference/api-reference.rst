@@ -19,7 +19,7 @@ http://localhost:8080/<appName>/api.
 Deployment
 ----------
 
-.. http:post:: /system/apps/(applicationName)
+.. http:post:: /system/api/apps/(applicationName)
 
     Deploy a project :file:`.iar` file or multiple projects in a :file:`.zip` file to an
     application.
@@ -29,7 +29,7 @@ Deployment
     .. sourcecode:: bash
 
         curl -X POST \
-          http://localhost:8080/system/api/system/apps/test \
+          http://localhost:8080/system/api/apps/test \
           -u admin:admin \
           -H 'X-Requested-By: curl' \
           -F fileToDeploy=@/home/user/Documents/Test.zip \
