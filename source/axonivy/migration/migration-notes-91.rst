@@ -90,3 +90,10 @@ Special handling for Informix as external third-party database
 Informix is a database management system and can be integrated with Axon.ivy like any other database system.
 We have removed special handlings for Informix as these should no longer be necessary.
 If you are using Informix and have any problems, please contact us.
+
+
+Subversion Client Subclipse unpluged from Designer
+--------------------------------------------------------------
+
+Subversion Client Subclipse is removed but can be easily installed with the Eclipse Marketplace in Designer.
+Go to :menuselection:`Help --> Eclipse Marketplace` and search for Subclipse and install it.
