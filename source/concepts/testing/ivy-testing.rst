@@ -16,7 +16,7 @@ The setup steps are the same as in the Process Test chapter.
 TODO: setup test project -> link to Process Test chapter
 
 Instead of creating a test with the annotation :code:`@IvyProcessTest`, you must 
-annotate you test class with :code:`@IvyTest`. 
+annotate your test class with :code:`@IvyTest`. 
 
 .. literalinclude:: includes/ivytesting/ivytesting-setup-test.java
   :language: java
