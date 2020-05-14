@@ -1,23 +1,4 @@
-.. _testing:
-
-Testing
-=======
-
-Writing test code has a bad reputation, however they can make your life much
-easier. Think about the following points:
-
-- Tests can make the **functionality of a software reliable**
-
-- **Quality** can be maintained
-
-- **Repetitive tasks** can be reduced to a minimum. Let the computer do it!
-
-- Ensure that the software **does what it supposed to do** (e.g after a code
-  change or even a platform update).
-
-Write good software without tests is nearly impossible and we want give you the
-ability to write tests for your software as easy as possible. Let’s get started!
-
+.. _web-testing:
 
 Web Testing
 -----------
@@ -77,7 +58,7 @@ project:
      
    - Add the following lines to the :file:`.classpath` file:
 
-     .. literalinclude:: includes/webtesting-setup-classpath.xml
+     .. literalinclude:: includes/webtesting/webtesting-setup-classpath.xml
         :language: xml
 
    - Add a new folder :file:`src_test` to the ``crmIntegrationTests`` project *(Right
@@ -91,7 +72,7 @@ project:
     
    - Add the following dependency and repository to the :file:`pom.xml` file:
 
-     .. literalinclude:: includes/webtesting-setup-pom.xml
+     .. literalinclude:: includes/webtesting/webtesting-setup-pom.xml
         :language: xml
 
 #. Add a test class
@@ -103,7 +84,7 @@ project:
    
    - Add the following code inside:
 
-     .. literalinclude:: includes/webtesting-setup-test.java
+     .. literalinclude:: includes/webtesting/webtesting-setup-test.java
         :language: java
 
 #. Run test
@@ -128,7 +109,7 @@ This process opens a dialog with two input fields (``firstname`` and
 ``lastname``) and a submit button. After submitting, a second dialog with your
 inputs is displayed. 
 
-.. literalinclude:: includes/webtesting-test-extend.java
+.. literalinclude:: includes/webtesting/webtesting-test-extend.java
   :language: java
 
 .. figure:: /_images/testing/webtesting-run.gif
@@ -245,7 +226,7 @@ setup a maven module build:
      file (ensure the correct **modules** ``crm`` and ``crmIntegrationTests`` are
      set):
 
-     .. literalinclude:: includes/webtesting-maven-module.xml
+     .. literalinclude:: includes/webtesting/webtesting-maven-module.xml
         :language: xml
 
    - Your :github-build-examples:`folder structure <>` should look like the
@@ -273,7 +254,7 @@ setup a maven module build:
 
    - This should trigger a run which starts with something like:
 
-     .. literalinclude:: includes/webtesting-maven-run.log
+     .. literalinclude:: includes/webtesting/webtesting-maven-run.log
         :language: none
 
      But it ends with some **Errors**. To fix those let's continue with the next
@@ -292,19 +273,19 @@ define these steps in the :github-build-examples:`pom.xml
    </crmIntegrationTests/pom.xml#L44-L45>` and :github-build-examples:`test
    application name </crmIntegrationTests/pom.xml#L14-L16>`
    
-   .. literalinclude:: includes/webtesting-maven-init.xml
+   .. literalinclude:: includes/webtesting/webtesting-maven-init.xml
       :language: xml
 
 #. :github-build-examples:`Start </crmIntegrationTests/pom.xml#L52-L58>`
    an engine
 
-   .. literalinclude:: includes/webtesting-maven-start.xml
+   .. literalinclude:: includes/webtesting/webtesting-maven-start.xml
       :language: xml
 
 #. :github-build-examples:`Deploy </crmIntegrationTests/pom.xml#L59-L70>`
    our ``crm`` project to the engine
 
-   .. literalinclude:: includes/webtesting-maven-deploy.xml
+   .. literalinclude:: includes/webtesting/webtesting-maven-deploy.xml
       :language: xml
 
    .. tip::
@@ -316,12 +297,12 @@ define these steps in the :github-build-examples:`pom.xml
 #. :github-build-examples:`Stop </crmIntegrationTests/pom.xml#L71-L77>`
    the engine after the tests are finished
 
-   .. literalinclude:: includes/webtesting-maven-stop.xml
+   .. literalinclude:: includes/webtesting/webtesting-maven-stop.xml
       :language: xml
 
 #. Add the :github-build-examples:`test runner plugin </crmIntegrationTests/pom.xml#L80-L101>`
 
-   .. literalinclude:: includes/webtesting-maven-surefire.xml
+   .. literalinclude:: includes/webtesting/webtesting-maven-surefire.xml
       :language: xml
 
 #. Run module build in IDE
