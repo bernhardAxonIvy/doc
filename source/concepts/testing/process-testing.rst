@@ -34,9 +34,8 @@ Line 8:
 
 Line 11:
   We want to test a specific process in this test class, we can define the
-  process under test by adding it as a field, here it's called
-  ``INVOICE_PROCESS`` and is of the type ``BpmProcess``. If you prefere to
-  declare your process locally in the test method you might do so.
+  process under test by adding it as a field. It's called ``INVOICE_PROCESS``
+  and is of the type ``BpmProcess``.
 
 Line 13:
   Our process under test contains two start elements. For our first test we only
@@ -57,6 +56,9 @@ Lets start simple by testing the following process:
 
 TODO: process image
 
+Execute a process
+"""""""""""""""""
+
 .. literalinclude:: includes/processtesting/processtesting-test-part1.java
     :language: java
     :emphasize-lines: 4, 9, 12
@@ -65,8 +67,8 @@ TODO: process image
 Now let us break this code down:
 
 Line 4-7:
-  Here we tell our ``BpmClient`` that we want to test and execute our invoice
-  process. After calling the ``execute`` method the ``BpmClient`` drives our
+  Here we tell our ``BpmClient`` that we want to test and execute our start
+  element. After calling the ``execute`` method the ``BpmClient`` drives our
   process just after the first task.
   
 .. note::
@@ -85,6 +87,9 @@ Line 12:
   ``Session`` of your executed process. Use it to fetch information about the
   active ``Case``/``Tasks``, executed ``Tasks`` or the ``Session``.
 
+
+Drive on execution
+""""""""""""""""""
 
 As noted above the ``BpmClient`` doesn't run through the whole process at once,
 so now we want to drive the current process further.
@@ -112,12 +117,16 @@ Line 18:
 To send you off on your own we just have to go over two more concepts; mocking elements and
 asserting process data.
 
+
+Mocking dialogs
+"""""""""""""""
+
 Process tests aren't meant to assert UI elements like Html Dialogs. Because
-dialogs are an important data input interface between users and our processes we
-have to mock those inputs. If you want to test the dialogs themself have a
+dialogs are an important data input interface between users and our processes,
+we have to mock those inputs. If you want to test the dialogs themself have a
 closer look at the :ref:`web-testing` chapter.
 
-Let's add a second test to assert our second process start ``checkOrder`` which
+Lets add a second test to assert our second process start ``checkOrder`` which
 contains an Html Dialog we want to mock.
 
 .. literalinclude:: includes/processtesting/processtesting-test-part3.java
@@ -140,7 +149,7 @@ Line 8:
   reaches the declared element ``check order`` it will return ``true`` for the
   ``valid`` field in its data.
 
-Line 15-17:
+Line 15-16:
   With the ``data`` API you can assert the process data of executed elements.
 
 Congratulations, you have learned all the necessary tools and the most important
@@ -155,13 +164,7 @@ Select
 """"""
 
 There are multiple ways to select processes and elements. The easiest way would
-be to find them by their ``name``, if an element doesn't have a ``name`` its
-``fieldId`` can be used.
-
-.. tip::
-
-  The ``fieldId`` can easily be deduced with the ``Outline View`` in the
-  designer.
+be to find them by their ``name``.
 
 .. literalinclude:: includes/processtesting/processtesting-select.java
     :language: java
@@ -187,6 +190,17 @@ Most processes require a specific ``user`` or ``role`` to execute. You can
 define them by calling ``as``.
 
 .. literalinclude:: includes/processtesting/processtesting-as.java
+    :language: java
+
+
+Mock
+""""
+
+There are two ways of mocking an element. Either the element doesn't return
+anything or the element returns some data. If your process runs through an html
+dialog you always have to install a mock for it.
+
+.. literalinclude:: includes/processtesting/processtesting-mock.java
     :language: java
 
 
@@ -218,15 +232,4 @@ can get the ``data`` of the last executed element or of a desired element. If an
 element is executed multiple times you can access the ``data`` as a list.
 
 .. literalinclude:: includes/processtesting/processtesting-data.java
-    :language: java
-
-
-Mock
-""""
-
-There are two ways of mocking an element. Either the element doesn't return
-anything or the element returns some data. If your process runs through an html
-dialog you always have to install a mock for it.
-
-.. literalinclude:: includes/processtesting/processtesting-mock.java
     :language: java

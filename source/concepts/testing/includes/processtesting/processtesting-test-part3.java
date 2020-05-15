@@ -12,7 +12,6 @@ void checkOrder(BpmClient bpmClient)
           .process(CHECK_ORDER_START)
           .execute();
     
-  ProcessData data = result.data();
-  Order orderData = data.last();
+  Order orderData = result.data().last();
   assertThat(orderData.getValid()).isTrue();
 }
