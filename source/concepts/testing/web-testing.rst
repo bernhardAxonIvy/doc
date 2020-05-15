@@ -17,36 +17,7 @@ Setup test project
 To get started we have to create a test project, the following step-by-step
 instructions show you how to create this new test project:
 
-#. Add a new Axon.ivy Project
-
-   - Enter the same name as the ``crm`` project but with a name postfix (e.g:
-     ``crmIntegrationTests``)
-
-   - Make the ``crmIntegrationTests`` project depending on the
-     ``crm`` project. Do so by select the the project ``crm`` as **Required
-     Project** inside the creation wizard *(or later over: Definitions ->
-     Deployment -> Required Projects)*.
-
-#. Convert Projects to Maven Projects
-
-   - Convert both projects (``crm`` and ``crmIntegrationTests``) to Maven
-     Projects. *(Right click on the project -> Configure -> Convert to Maven
-     Project)*.
-
-#. Define a test source directory
-
-   - Open the :github-build-examples:`.classpath </crmIntegrationTests/.classpath#L28-L33>`
-     file. This can be found if you disable the ``.* resource`` filter inside
-     the Project Tree (or open the file directory from the *File Explorer*).
-     
-     
-   - Add the following lines to the :file:`.classpath` file:
-
-     .. literalinclude:: includes/webtesting/webtesting-setup-classpath.xml
-        :language: xml
-
-   - Add a new folder :file:`src_test` to the ``crmIntegrationTests`` project *(Right
-     click on the project -> New -> Folder)*
+.. include:: test-project-setup.rst
 
 #. Add test util dependencies
 
@@ -78,6 +49,8 @@ instructions show you how to create this new test project:
    - To run this test right-clicking inside this class -> Run As -> JUnit Test
 
    - A new **JUnit** View should have been opened and the test should be green.
+
+.. |PROJECT| replace:: ``crmIntegrationTests``
 
 
 Write Web Test
