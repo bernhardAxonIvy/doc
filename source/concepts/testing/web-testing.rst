@@ -182,7 +182,7 @@ On your selected element you can check some conditions too (e.g is the element
 
 
 Run automated
-~~~~~~~~~~~~~
+^^^^^^^^^^^^^
 
 Now let's look at how you can run your web tests automated
 (:ref:`continuous-integration`). This is important if you want fast feedback on
@@ -192,7 +192,7 @@ breaking changes, maybe introduced by a team member.
 .. _webtesting-maven-build:
 
 Module build
-^^^^^^^^^^^^
+""""""""""""
 
 Both projects needs to be compiled in the same run. For this we need firstly to
 setup a maven module build:
@@ -246,7 +246,7 @@ setup a maven module build:
 
 
 Run integration tests
-^^^^^^^^^^^^^^^^^^^^^
+"""""""""""""""""""""
 
 To run our tests within a maven build, we need to start an engine, deploy the
 ``crm`` project to it, and then stop the engine after the tests are finished. We can
@@ -296,7 +296,7 @@ define these steps in the :github-build-examples:`pom.xml
 
 
 Further Resources
-~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^
 
 If you want to know more about web testing, take a look at the
 :github-build-examples:`second test in our demo project
@@ -309,7 +309,7 @@ the **CI/CD videos** in our :dev-url:`Tutorial section </tutorial>`.
 
 
 Selenium
-^^^^^^^^
+""""""""
 
 Selenium is open source and works across different browsers and platforms. To
 communicate with the browser, selenium provides the **WebDriver** specification. 
@@ -332,7 +332,7 @@ object:
 .. _web-tester:
 
 Web-Tester
-^^^^^^^^^^
+""""""""""
 
 With the `web-tester <https://github.com/axonivy/web-tester>`__
 we provide you the annotation ``@IvyWebTest``, which sets up the browser

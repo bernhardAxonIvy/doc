@@ -7,8 +7,8 @@ Ivy Testing
 or you can use the **Ivy** functionality within the test class itself.
 
 
-How to write a Ivy Test
-~~~~~~~~~~~~~~~~~~~~~~~
+How to write an Ivy Test
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 First you have to create a new test project, if you don't have one yet. 
 The setup steps are the same as in the Process Test chapter.
