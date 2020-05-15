@@ -18,6 +18,17 @@ easier. Think about the following points:
 Write good software without tests is nearly impossible and we want give you the
 ability to write tests for your software as easy as possible. Let’s get started!
 
+.. tip::
+
+  The following guide is based on a :github-build-examples:`demo project <>` and
+  uses the name ``crm`` for the project to be tested and the two testing projects
+  ``crmTests`` for the :ref:`process-<process-testing>` and
+  :ref:`ivy-testing<ivy-testing>` as well as ``crmIntegrationTests`` for the
+  :ref:`web-testing<web-testing>`. 
+  
+  Since this documentation only shows how to setup a test project and perform
+  simple tests, you should take a closer look at the demo project.
+
 .. toctree::
    :maxdepth: 1
 

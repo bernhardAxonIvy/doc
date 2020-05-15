@@ -11,27 +11,11 @@ the functionality (happy path) of this process is still ensured.
 **Web Integration tests** will always follow the same steps and can be highly
 automated.
 
-
-How to write a Web Test
-~~~~~~~~~~~~~~~~~~~~~~~
-
-The first step in writing your own web tests is to create a new test project.
-
-.. tip::
-
-  The following guide is based on a :github-build-examples:`demo project <>` and
-  uses the name ``crm`` for the project to be tested and the name
-  ``crmIntegrationTests`` for the one containing the tests. 
-  
-  Since this documentation only shows how to setup a test project and perform a
-  simple test, you should take a look at the demo project.
-  
-
 Setup test project
 ^^^^^^^^^^^^^^^^^^
 
-The following step-by-step instructions show you how to create a new test
-project:
+To get started we have to create a test project, the following step-by-step
+instructions show you how to create this new test project:
 
 #. Add a new Axon.ivy Project
 
