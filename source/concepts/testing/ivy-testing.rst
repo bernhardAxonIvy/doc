@@ -13,12 +13,12 @@ How to write an Ivy Test
 First you have to create a new test project, if you don't have one yet. 
 The setup steps are the same as in the Process Test chapter.
 
-.. include:: test-project-setup.rst
+.. |PROJECT| replace:: ``crmTests``
+.. include:: includes/test-project-setup.txt
 
 #. Create a new test class called ``TestIvy`` in the just created
    ``src_test`` folder and add the code below.
 
-.. |PROJECT| replace:: ``crmTests``
 
 Instead of creating a test with the annotation :code:`@IvyProcessTest`, you must 
 annotate your test class with :code:`@IvyTest`. 

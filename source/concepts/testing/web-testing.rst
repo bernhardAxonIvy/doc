@@ -17,7 +17,8 @@ Setup test project
 To get started we have to create a test project, the following step-by-step
 instructions show you how to create this new test project:
 
-.. include:: test-project-setup.rst
+.. |PROJECT| replace:: ``crmIntegrationTests``
+.. include:: includes/test-project-setup.txt
 
 #. Add test util dependencies
 
@@ -49,8 +50,6 @@ instructions show you how to create this new test project:
    - To run this test right-clicking inside this class -> Run As -> JUnit Test
 
    - A new **JUnit** View should have been opened and the test should be green.
-
-.. |PROJECT| replace:: ``crmIntegrationTests``
 
 
 Write Web Test

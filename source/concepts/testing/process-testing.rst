@@ -13,7 +13,8 @@ less likely to introduce bugs and errors into your processes.
 Setup test project
 ^^^^^^^^^^^^^^^^^^
 
-.. include:: test-project-setup.rst
+.. |PROJECT| replace:: ``crmTests``
+.. include:: includes/test-project-setup.txt
 
 #. Create a new test class called ``TestInvoiceProcess`` in the just created
    ``src_test`` folder and add the code below.
@@ -22,8 +23,6 @@ Setup test project
     :language: java
     :emphasize-lines: 8, 11, 13, 16
     :linenos:
-
-.. |PROJECT| replace:: ``crmTests``
 
 We now have a minimal test setup to get started. A few things to note at this
 point:
