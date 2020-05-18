@@ -5,7 +5,4 @@ assertThat(((Order)result.data().last()).getValid()).isFalse();
 assertThat(((Order)result.data().lastOnElement(writeInvoiceElement)).getValid()).isFalse();
 
 /* Process data for each execution of the element */
-result.data().onElement(writeInvoiceElement)
-        .stream()
-        .map(data -> (Order)data)
-        .forEach(data -> assertThat(data.getValid()).isFalse());
+assertThat(((Order)result.data().onElement(writeInvoiceElement).get(0)).getValid()).isFalse();
