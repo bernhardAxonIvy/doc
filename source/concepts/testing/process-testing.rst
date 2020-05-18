@@ -53,7 +53,8 @@ Write Process Test
 Now that everything is ready we can start writing our first actual process test.
 Lets start simple by testing the following process:
 
-TODO: process image
+.. figure:: /_images/testing/write-invoice-process.png
+
 
 Execute a process
 """""""""""""""""
@@ -67,7 +68,7 @@ Now let us break this code down:
 
 Line 4-7:
   Here we tell our ``BpmClient`` that we want to test and execute our start
-  element. After calling the ``execute`` method the ``BpmClient`` drives our
+  element. After calling the :ref:`execute<process-testing-start>` method the ``BpmClient`` drives our
   process just after the first task.
   
 .. note::
@@ -77,23 +78,21 @@ Line 4-7:
   ``skipTaskList`` flags and stops the execution either way.
 
 Line 9:
-  You have multiple APIs to assert you processes, one of it is the ``History``.
+  You have multiple APIs to assert you processes, one of it is the :ref:`process-testing-history`.
   The ``History`` gives you access to the executed process elements, in this
   example we just assert the names of the executed elements.
 
 Line 12:
-  The ``Workflow`` API gives you access to the ``Case``, ``Tasks`` as well as the
+  The :ref:`process-testing-workflow` API gives you access to the ``Case``, ``Tasks`` as well as the
   ``Session`` of your executed process. Use it to fetch information about the
   active ``Case``/``Tasks``, executed ``Tasks`` or the ``Session``.
 
 
-Drive on execution
-""""""""""""""""""
+Drive the execution on
+""""""""""""""""""""""
 
 As noted above the ``BpmClient`` doesn't run through the whole process at once,
-so now we want to drive the current process further.
-
-TODO: process image with arrow where we are?
+this means we now want to drive the current process further.
 
 .. literalinclude:: includes/processtesting/processtesting-test-part2.java
     :language: java
@@ -109,9 +108,9 @@ Line 17:
 
 Line 18:
   Of course we can't just drive a process's task along without declaring an
-  appropriate ``Session``. To declare said ``Session`` you can call the ``as``
-  method and append the desired ``Session``, ``User`` or ``Role`` that should
-  execute the next task.
+  appropriate ``Session``. To declare said ``Session`` you can call the
+  :ref:`process-testing-as` method and append the desired ``Session``, ``User``
+  or ``Role`` that should execute the next task.
 
 To send you off on your own we just have to go over two more concepts; mocking elements and
 asserting process data.
@@ -135,10 +134,12 @@ contains an Html Dialog we want to mock.
 
 Line 1:
   Because we want to test the second process ``checkOrder`` we add another
-  variable for its start.
+  variable for its start. The process is available in our
+  :github-build-examples:`demo project <>`.
 
 Line 6:
-  We are telling the ``BpmClient`` that we are declaring a mock for an element.
+  We are telling the ``BpmClient`` that we are declaring a
+  :ref:`process-testing-mock` for an element.
 
 Line 7:
   Here we select the element we want to mock by its name.
@@ -149,7 +150,7 @@ Line 8:
   ``valid`` field in its data.
 
 Line 15-16:
-  With the ``data`` API you can assert the process data of executed elements.
+  With the :ref:`process-testing-data` API you can assert the process data of executed elements.
 
 Congratulations, you have learned all the necessary tools and the most important
 APIs to ensure your processes continuance. In the next sections we will take a
@@ -158,6 +159,8 @@ closer look at some API details.
 
 API
 ^^^
+
+.. _process-testing-select:
 
 Select
 """"""
@@ -168,6 +171,8 @@ be to find them by their ``name``.
 .. literalinclude:: includes/processtesting/processtesting-select.java
     :language: java
 
+
+.. _process-testing-start:
 
 Start
 """""
@@ -182,6 +187,8 @@ is especially useful if there are multiple active ``tasks`` available.
     :language: java
 
 
+.. _process-testing-as:
+
 As
 ""
 
@@ -191,6 +198,8 @@ define them by calling ``as``.
 .. literalinclude:: includes/processtesting/processtesting-as.java
     :language: java
 
+
+.. _process-testing-mock:
 
 Mock
 """"
@@ -203,6 +212,8 @@ dialog you always have to install a mock for it.
     :language: java
 
 
+.. _process-testing-history:
+
 History
 """""""
 
@@ -213,6 +224,8 @@ assert exact element objects or the elements names.
     :language: java
 
 
+.. _process-testing-workflow:
+
 Workflow
 """"""""
 
@@ -222,6 +235,8 @@ act on the active ``task``.
 .. literalinclude:: includes/processtesting/processtesting-workflow.java
     :language: java
 
+
+.. _process-testing-data:
 
 Data
 """"
