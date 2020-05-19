@@ -3,10 +3,12 @@
 Unit Tests
 ----------
 
-You can easily write Unit Tests in the Designer to test your Java source code.
-To aid you in writing your tests you can access the
-:public-api:`Ivy</ch/ivyteam/ivy/environment/Ivy.html>` context to assert
-``Ivy`` specific information.
+You can easily write Unit Tests in the Designer to test your Java source code
+using JUnit 5. If your code uses the
+:public-api:`Ivy</ch/ivyteam/ivy/environment/Ivy.html>` environment you can
+either mock it or use the
+:public-api:`@IvyTest</ch/ivyteam/ivy/environment/IvyTest.html>` annotation that
+correctly sets up the environment.
 
 
 How to write Unit Tests
@@ -23,7 +25,7 @@ First you have to create a new test project, if you don't have one yet.
    library. You can add the JUnit 5 library by hovering over the ``@Test``
    annotation and choose the ``Add JUnit 5 library to build path`` option.
 
-.. literalinclude:: includes/ivytesting/unittesting-setup-test.java
+.. literalinclude:: includes/unittesting/unittesting-setup-test-part1.java
   :language: java
 
 At this point you have the setup to start writing conventional Unit Tests. The
@@ -38,7 +40,7 @@ To gain access to the :public-api:`Ivy</ch/ivyteam/ivy/environment/Ivy.html>`
 context you have to annotate your test class with the
 :public-api:`@IvyTest</ch/ivyteam/ivy/environment/IvyTest.html>` annotation.
 
-.. literalinclude:: includes/ivytesting/ivytesting-setup-test.java
+.. literalinclude:: includes/unittesting/unittesting-setup-test-part2.java
   :language: java
 
 .. note::
@@ -53,7 +55,7 @@ This :code:`@IvyTest` annotation allows you to access most of the ``Ivy``
 API. For example, you can check if the ``CMS`` has the correct content 
 for the supported languages.
 
-.. literalinclude:: includes/ivytesting/ivytesting-test-extend.java
+.. literalinclude:: includes/unittesting/unittesting-test-extend.java
   :language: java
 
 .. tip::
@@ -72,11 +74,11 @@ value. The value is automatically reset to the original value after the test
 is executed. All you have to do is to tell the test that you want an instance of
 the :code:`AppFixure` class. Let's take a look at it:
 
-.. literalinclude:: includes/ivytesting/ivytesting-test-fixure-var.java
+.. literalinclude:: includes/unittesting/unittesting-test-fixure-var.java
   :language: java
 
 If you want to change the active environment, you can do so in a similar way:
 
-.. literalinclude:: includes/ivytesting/ivytesting-test-fixure-env.java
+.. literalinclude:: includes/unittesting/unittesting-test-fixure-env.java
   :language: java
 
