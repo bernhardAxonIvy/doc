@@ -15,15 +15,16 @@ easier. Think about the following points:
 - Ensure that the software **does what it supposed to do** (e.g after a code
   change or even a platform update).
 
-Write good software without tests is nearly impossible and we want give you the
-ability to write tests for your software as easy as possible. Let’s get started!
+Write good software without tests is nearly impossible and we want to give you
+the ability to write tests for your software as easy as possible. Let’s get
+started!
 
 .. tip::
 
   The following guide is based on a :github-build-examples:`demo project <>` and
   uses the name ``crm`` for the project to be tested and the two testing projects
   ``crmTests`` for the :ref:`process-<process-testing>` and
-  :ref:`ivy-testing<ivy-testing>` as well as ``crmIntegrationTests`` for the
+  :ref:`unit-testing<unit-testing>` as well as ``crmIntegrationTests`` for the
   :ref:`web-testing<web-testing>`. 
   
   Since this documentation only shows how to setup a test project and perform
@@ -33,5 +34,5 @@ ability to write tests for your software as easy as possible. Let’s get starte
    :maxdepth: 1
 
    process-testing
-   ivy-testing
+   unit-testing
    web-testing

@@ -7,7 +7,7 @@ ExecutionResult result = bpmClient.start()
 /* Execution with a specific user */
 result = bpmClient.start()
         .process(WRITE_INVOICE_START)
-        .as().user(user)
+        .as().user("James Bond")
         .execute();
 
 /* Execution by selecting a specific role */

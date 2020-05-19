@@ -2,13 +2,13 @@
 
 #. Add a new Axon.ivy Project
 
-   - Enter the same name as the ``crm`` project but with a name postfix (e.g:
-     |PROJECT|)
+   - Enter the same name as the project you would like to test (e.g. ``crm``)
+     but with a postfix (e.g.: |PROJECT|).
 
-   - Make the |PROJECT| project depending on the
-     ``crm`` project. Do so by select the the project ``crm`` as **Required
-     Project** inside the creation wizard *(or later over: Definitions ->
-     Deployment -> Required Projects)*.
+   - Make the test project (e.g. |PROJECT|) depending on your project (e.g.
+     ``crm``). Do so by selecting the project ``crm`` as **Required Project**
+     inside the creation wizard *(or later over: Definitions -> Deployment ->
+     Required Projects)*.
 
 #. Convert Projects to Maven Projects
 
