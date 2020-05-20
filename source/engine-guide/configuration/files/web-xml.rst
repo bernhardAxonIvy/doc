@@ -3,8 +3,8 @@
 web.xml
 -------
 
-:file:`[engineDir]/webapps/ivy/WEB-INF/web.xml`
+:file:`[engineDir]/configuration/reference/web.xml`
 
-.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/webapps/ivy/WEB-INF/web.xml
+.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.server.file.feature/root//configuration/reference/web.xml
   :language: xml
   :linenos:
