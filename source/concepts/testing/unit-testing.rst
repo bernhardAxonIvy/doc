@@ -29,12 +29,12 @@ First you have to create a new test project, if you don't have one yet.
   :language: java
 
 At this point you have the setup to start writing conventional Unit Tests. The
-following documentation explains in detail how you can access and assert
-different information of the ``Ivy`` context.
+following documentation explains in detail how you can set up and use the
+``Ivy`` context.
 
 
-Access the Ivy context
-^^^^^^^^^^^^^^^^^^^^^^
+Set up the Ivy environment
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To gain access to the :public-api:`Ivy</ch/ivyteam/ivy/environment/Ivy.html>`
 context you have to annotate your test class with the
@@ -42,18 +42,19 @@ context you have to annotate your test class with the
 
 .. literalinclude:: includes/unittesting/unittesting-setup-test-part2.java
   :language: java
+  :emphasize-lines: 8
 
 .. note::
 
-  If you run your test as :code:`@IvyTest` (without process), you have the 
+  If you run your test as ``@IvyTest`` (without process), you have the 
   advantage that the bpm engine is not started, which speeds up the test execution.
 
-Write Ivy Test
-^^^^^^^^^^^^^^
+Write Ivy Tests
+^^^^^^^^^^^^^^^
 
-This :code:`@IvyTest` annotation allows you to access most of the ``Ivy`` 
-API. For example, you can check if the ``CMS`` has the correct content 
-for the supported languages.
+Here we test a class called ``OrderUtil``. This class needs access to different
+``Ivy`` resources like ``global variables``. Without properly setting up the
+``Ivy`` environment we would have to mock all those accesses.
 
 .. literalinclude:: includes/unittesting/unittesting-test-extend.java
   :language: java
@@ -76,9 +77,10 @@ the :code:`AppFixure` class. Let's take a look at it:
 
 .. literalinclude:: includes/unittesting/unittesting-test-fixure-var.java
   :language: java
+  :emphasize-lines: 2, 5
 
 If you want to change the active environment, you can do so in a similar way:
 
 .. literalinclude:: includes/unittesting/unittesting-test-fixure-env.java
   :language: java
-
+  :emphasize-lines: 5

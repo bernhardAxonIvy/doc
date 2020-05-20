@@ -1,15 +1,16 @@
 @Test
-public void cmsContent()
+void products()
 {
-  //check if the content inside the cms has a specific value
-  assertThat(Ivy.cms().co("/Test/content")).isEqualTo("Hello World");
+  /* OrderUtil should return two products */
+  assertThat(OrderUtil.getProducts()).hasSize(2);
+  Product table = OrderUtil.getProducts().get(0);
+  Product chair = OrderUtil.getProducts().get(1);
   
-  //check if the content inside the same cms has specified a value for German
-  assertThat(Ivy.cms().coLocale("/Test/content", Locale.GERMAN)).isEqualTo("Hallo Welt");
+  /* The first product is a table and costs 375.50 */
+  assertThat(table.getName()).isEqualTo("Table");
+  assertThat(table.getSinglePrice()).isEqualTo(375.5);
   
-  //change the language for this test session
-  Ivy.session().setContentLocale(Locale.GERMAN);
-  
-  //check if the default content of the same cms is now in German
-  assertThat(Ivy.cms().co("/Test/content")).isEqualTo("Hallo Welt");
+  /* The second product is a chair and costs 89.60 */
+  assertThat(chair.getName()).isEqualTo("Chair");
+  assertThat(chair.getSinglePrice()).isEqualTo(89.60);
 }

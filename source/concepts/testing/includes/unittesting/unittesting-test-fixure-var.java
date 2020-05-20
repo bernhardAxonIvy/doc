@@ -1,11 +1,12 @@
 @Test
-public void globalVariables(AppFixure fixure)
+void products_globalVariable(AppFixture fixture)
 {
-  //check the value of a global variable
-  assertThat(Ivy.var().getVariableNames()).contains("variable");
-  assertThat(Ivy.var().get("variable")).isEqualTo("Hi");
+  /* The AppFixture can manipulate global variables. */
+  fixture.var("table", "799.95");
   
-  //change an global variable for this test
-  fixure.var("variable", "Hello");
-  assertThat(Ivy.var().get("variable")).isEqualTo("Hello");
+  assertThat(OrderUtil.getProducts()).hasSize(2);
+  Product table = OrderUtil.getProducts().get(0);
+  
+  /* Normally the price of a table would be 375.50 */
+  assertThat(table.getSinglePrice()).isEqualTo(799.95);
 }
