@@ -7,6 +7,6 @@ void products_globalVariable(AppFixture fixture)
   assertThat(OrderUtil.getProducts()).hasSize(2);
   Product table = OrderUtil.getProducts().get(0);
   
-  /* Normally the price of a table would be 500.- */
+  /* Normally the price of a table would be 375.50 */
   assertThat(table.getSinglePrice()).isEqualTo(799.95);
 }
