@@ -20,29 +20,21 @@ the following steps:
    product. To use a own theme copy your themeXY.jar file into the folder
    **/webapps/ivy/WEB-INF/lib** of Designer and Engine respectively
 
--  Edit the theme setting parameter ``primefaces.THEME`` in the file
-   **/webapps/ivy/WEB-INF/web.xml**
-
--  The parameter ``primefaces.THEME`` can also be set as a head
-   attribute in your **template.xhtml** file (works only with
-   IvyPrimefacesThemeResolver).
+-  The parameter ``primefaces.THEME`` can be set as a head
+   attribute in your **template.xhtml** file.
 
    ::
 
       <h:head>
           ...
-          <f:attribute name="primefaces.THEME" value="#{theme}"/>
+          <f:attribute name="primefaces.THEME" value="serenity-ivy"/>
           ...
       </h:head>
 
--  Restart Axon.ivy
-
-
-.. tip::
-
-   By using the ``ch.ivyteam.ivy.jsf.primefaces.IvyPrimefacesThemeResolver`` the
-   theme can be configured by application and session. See :ref:`web-xml` or
-   :ref:`app-yaml`
+-  If not defined as head attribute, the theme can be configured by application.
+   See :ref:`app-yaml`
+-  The application configuraiton can also be overridden per session by using 
+   ``ch.ivyteam.ivy.jsf.primefaces.IvyPrimefacesThemeResolver.setSessionTheme(String theme)`` 
 
 
 Serenity Themes
