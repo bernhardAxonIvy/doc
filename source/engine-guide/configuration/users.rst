@@ -39,7 +39,9 @@ system is used. There are two types of security systems:
   Security System for application which has no security system defined.
 * **External Security System**:
   Used to synchronize users from a name and directory service such as Active
-  Directory. The example below shows a simple connection to an Active Directory.
+  Directory. In addition to the users in the External Security System,
+  new users can also be manually added and managed as with an Ivy Security System.
+  The example below shows a simple connection to an Active Directory.
   Have a look at the :ref:`ivy-securitysystem-yaml` for all supported name
   and directory services and further settings.
 

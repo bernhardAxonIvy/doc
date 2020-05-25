@@ -53,10 +53,6 @@ about the user and if they have an open session. You can add a new users too. To
 do so, click on the :guilabel:`New` button and fill in the dialog. The name is
 required and needs to be unique.
 
-.. warning::
-    You can't add a new user to a chosen application, if the application is
-    connected to an external active directory.
-
 To get more information about a user or change some settings, you can click on
 one user to go to the :ref:`engine-cockpit-user-detail` view.
 
@@ -70,7 +66,10 @@ User detail
 
 On the detail view of a user you can change information and settings. The
 :guilabel:`Information` panel shows you the attributes of the user. You can
-change all of them except the name. It's also possible to delete the user here.
+change all of them except the name. It's also possible to enable, disable or delete
+the user here. By disabling the user he won't be able to login, all active sessions
+will be killed and he won't count as named user anymore. Deleting the users will
+remove him completely from the system.
 The :guilabel:`Email Notification Settings` panel shows the notification
 settings for the user. The :guilabel:`Roles` panel shows you a tree with all
 roles. The user is a direct member of a role, if the role has a black check.
@@ -86,8 +85,7 @@ Additional user properties can be configured manually (over the buttons
 from a :ref:`engine-cockpit-security-system`. To do so, the user needs to be
 synced from a security system with :ref:`Additional LDAP Attributes
 <engine-cockpit-security-system-detail>` configured. If this is the case,
-properties (e.g. phone number) should be appearing here. Be aware of that this
-properties can only be edited on your security system.
+properties (e.g. phone number) should be appearing here.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-user-detail.png
 
