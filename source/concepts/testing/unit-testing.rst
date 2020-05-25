@@ -84,3 +84,11 @@ If you want to change the active environment, you can do so in a similar way:
 .. literalinclude:: includes/unittesting/unittesting-test-fixure-env.java
   :language: java
   :emphasize-lines: 5
+
+Moreover it's possible to use the ``AppFixture`` to login with an existing user.
+You can either login with a username or with an ``IUser`` object, which in this
+example we injected as a parameter.
+
+.. literalinclude:: includes/unittesting/unittesting-test-fixure-login.java
+  :language: java
+  :emphasize-lines: 2, 5, 13
