@@ -42,7 +42,7 @@ context you have to annotate your test class with the
 
 .. literalinclude:: includes/unittesting/unittesting-setup-test-part2.java
   :language: java
-  :emphasize-lines: 8
+  :emphasize-lines: 7
 
 .. note::
 
