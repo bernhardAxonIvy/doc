@@ -97,3 +97,11 @@ Subversion Client Subclipse unpluged from Designer
 
 Subversion Client Subclipse is removed but can be easily installed with the Eclipse Marketplace in Designer.
 Go to :menuselection:`Help --> Eclipse Marketplace` and search for Subclipse and install it.
+
+
+The context.xml and web.xml are moved to configuration folder
+-------------------------------------------------------------
+
+The :ref:`context-xml` and :ref:`web-xml` are now in the global :file:`/configuration/` folder.
+Before they where located under :file:`webapps/ivy/META-INF/context.xml` and :file:`webapps/ivy/WEB-INF/web.xml`.
+If you had modified them you have to apply these changes to the files at the new location.
