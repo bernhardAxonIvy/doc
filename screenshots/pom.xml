@@ -68,30 +68,6 @@
           </execution>
         </executions>
       </plugin>
-
-      <plugin>
-        <groupId>ch.ivyteam.maven</groupId>
-        <artifactId>image-dpi-plugin</artifactId>
-        <version>9.1.1-SNAPSHOT</version>
-        <executions>
-          <execution>
-            <id>change.dpi</id>
-            <goals>
-              <goal>change-png-dpi</goal>
-            </goals>
-            <phase>test</phase>
-            <configuration>
-              <fileSet>
-                <directory>${savedScreenshotsFolderPath}</directory>
-                <includes>
-                  <include>**/*.png</include>
-                </includes>
-              </fileSet>
-              <dpiValue>150</dpiValue>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
     </plugins>
   </build>
 </project>
