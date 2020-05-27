@@ -160,7 +160,7 @@ Block URLs on the ivy Engine / Tomcat
 
 Alternatively, URLs can also be blocked directly on the ivy Engine which
 utilizes and underlying Apache Tomcat for serving HTTP requests. Open the
-:ref:`web-xml` file in :file:`[engineDir]/webapps/ivy/WEB-INF/` in a text
+:ref:`web-xml` file in :file:`[engineDir]/configuration/` in a text
 editor and add the following configuration inside the :code:`<web-app>` tag (!)
 to block system processes: 
 

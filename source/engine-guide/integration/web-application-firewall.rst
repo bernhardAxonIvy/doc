@@ -30,7 +30,7 @@ the user to the current Axon.ivy Engine session. This works best if Axon.ivy
 Engine also uses a directory server like Microsoft Active Directory to
 synchronize users. The Valve that reads the user name from a HTTP header is
 disabled by default. To enable it, open the file :ref:`context-xml` in the
-:file:`[engineDir]/webapps/ivy/META-INF` directory and uncomment the following
+:file:`[engineDir]/configuration` directory and uncomment the following
 line:
 
 .. literalinclude:: includes/sample-valve-context.xml
