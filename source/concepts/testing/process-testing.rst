@@ -167,8 +167,14 @@ APIs to ensure your processes continuance. In the next sections we will take a
 closer look at some API details.
 
 
-API
-^^^
+API Reference
+^^^^^^^^^^^^^
+
+The following section shows some of the more common API calls you can use. If
+you want to see the whole capabilities of each API you can follow the links in
+each subsection to the :public-api:`Public
+API</ch/ivyteam/ivy/bpm/engine/client/package-summary.html>`.
+
 
 .. _process-testing-select:
 
