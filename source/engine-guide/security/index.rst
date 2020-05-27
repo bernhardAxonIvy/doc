@@ -104,13 +104,9 @@ Path Configuration
     +------------------------------+--------------------------------------------------+
     | URL Part                     | Used for                                         |
     +==============================+==================================================+
-    | /<appName>                   | All application specific URLs                    |
+    | /<appName>   | All application specific URLs                                    |
     +------------------------------+--------------------------------------------------+
-    | /error                       | Displaying and administering Errors              |
-    +------------------------------+--------------------------------------------------+
-    | /info                        | Engine info page                                 |
-    +------------------------------+--------------------------------------------------+
-    | /system                      | Engine Cockpit (Setup Wizard)                    |
+    | /system      | Engine info page and Engine Cockpit (Setup Wizard)               |
     +------------------------------+--------------------------------------------------+
 
 Block URLs in IIS
