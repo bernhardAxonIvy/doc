@@ -129,10 +129,18 @@ Microsoft SQL Server
   :linenos:
 
 If database will be created by the |ivy-engine| the collate is set to
-``Latin1_General_CI_AI``. If you want to connect to an existing instance of a MS
-SQL Server you have to configure an additional connection property that is
-called ``instance`` / ``instanceName`` containing the name of the corresponding
-database instance.
+``Latin1_General_CI_AI``.
+
+
+Instance Name
+*************
+
+Microsoft recommends not to use the ``instanceName`` and prefer specifying
+the port in the connection url because for each connection there is a round trip
+to determine the port. If you still need to work with the ``instanceName`` you
+must define it as additional connection property and you must remove
+the port in the connection url.
+
 
 .. tip::
   If you want to join tables of the system database with tables of another business database, 
