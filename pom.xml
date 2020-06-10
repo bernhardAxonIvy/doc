@@ -16,6 +16,7 @@
   <properties>
     <images.folder>source/_images</images.folder>
     <includes.target.folder>${project.build.directory}/resources/includes</includes.target.folder>
+    <engine.guide.url>https://developer.axonivy.com/doc/${doc.version}/engine-guide</engine.guide.url>
   </properties>
 
   <build>
@@ -109,6 +110,29 @@
                 <resource>
                   <directory>source/axonivy/release-notes</directory>
                   <filtering>true</filtering>
+                </resource>
+              </resources>
+            </configuration>
+          </execution>
+          <execution>
+            <id>copy-configuration-files</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${includes.target.folder}</outputDirectory>
+              <delimiters>
+                <delimiter>@</delimiter>
+              </delimiters>
+              <useDefaultDelimiters>false</useDefaultDelimiters>
+              <resources>
+                <resource>
+                  <directory>../workspace/ch.ivyteam.base/src/ch/ivyteam/ivy/configuration/internal/defaults</directory>
+                  <filtering>true</filtering>
+                  <includes>
+                    <include>*.yaml</include>
+                  </includes>
                 </resource>
               </resources>
             </configuration>
