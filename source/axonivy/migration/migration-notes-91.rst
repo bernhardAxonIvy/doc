@@ -3,6 +3,17 @@
 Migrating from 8.0 to 9.1
 =========================
 
+
+License
+-------
+
+You need to request a new license for Axon.ivy Engine 9.1.
+We have simplified the licence check for :ref:`public urls <installing-a-licence>` and won't
+check anymore for ports and paths (context). You only need to specify
+the DNS names/Hostnames or IP addresses through which the Axon.ivy Engine
+can be accessed.
+
+
 VisualVM Plugin in the Axon.ivy Market
 --------------------------------------
 

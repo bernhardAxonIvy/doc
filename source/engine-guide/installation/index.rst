@@ -72,18 +72,23 @@ To order a licence file you need to know the public URLs that end users will use
 
 .. admonition:: Example
   
-  Let's assume your |ivy-engine| is installed on a machine with the DNS name ``axonivyprod`` and listens on port 8080. Users access the |ivy-engine| in two different ways:
+  Let's assume your |ivy-engine| is installed on a machine with the DNS name ``axonivyprod``.
+  Users access the |ivy-engine| in two different ways:
   
-  * Intranet users use ``http://axonivyprod:8080/*`` to access it. 
-  * Internet users use ``http://www.customer.com/*`` to access it through a reverse proxy.
-  
-  In this case the licence must contain two public URLs: ``axonivyprod`` and ``www.customer.com``.
-    
-  If the users do not access over the standard ``http`` or ``https`` ports (80, 443, 8080, 8443) and the 
-  default base path ``/`` then the public URLs must also contain the port and/or base path 
-  (e.g. ``www.customer.com/axon``, ``axonivyprod:9090``, ``www.customer.com:90/axon``).    
+  * Intranet users use ``http://axonivyprod:8080`` to access it. 
+  * Internet users use ``https://www.customer.com`` to access it through a reverse proxy.
 
+  An admistrator accesses the |ivy-engine| with an IP Address ``http://192.168.1.19``.
   
+  In this case the licence must contain three public URLs:
+  
+  * ``axonivyprod``
+  * ``www.customer.com``
+  * ``192.168.1.19``
+
+  Remark: Access via ``localhost``, ``127.0.0.1`` and ``::1`` is always possible
+  and needs not to be provided in the licence..
+
 To install a licence file use the :ref:`engine-cockpit` or follow the steps below:
   
 #. Copy the licence file :file:`\*.lic` to the directory :file:`[engineDir]/configuration`.
