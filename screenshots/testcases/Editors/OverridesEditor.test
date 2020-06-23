@@ -1,6 +1,6 @@
 --- RCPTT testcase ---
 Format-Version: 1.0
-Contexts: _y5zpEF73Eea4DszzhZF9qA,_uUaD0AbNEeqelOY6v4JKGw,_lbFrAAbTEeqelOY6v4JKGw
+Contexts: _y5zpEF73Eea4DszzhZF9qA,_uUaD0AbNEeqelOY6v4JKGw
 Element-Name: OverridesEditor
 Element-Type: testcase
 Element-Version: 3.0
@@ -86,7 +86,7 @@ proc takeWizardScreenshot [val project] [val dialogName]
 
 proc closeAllEditors
 {
-	get-menu -path "File/Close All" | click
+	get-menu -path "File/Close All.*" | click
 }
 
 proc createOverrides [val webShop] [val acmeWebShop]
@@ -98,36 +98,36 @@ proc createOverrides [val webShop] [val acmeWebShop]
 	createHtmlDialog $webShop "ch.ivy.webshop" "shoppingBasket"
 	createHtmlDialog $acmeWebShop "ch.ivy.webshop.acme" "shoppingBasket"
 	takeWizardScreenshot $acmeWebShop "shoppingBasket"
-	
+
 	overrideHtmlDialog $acmeWebShop "shoppingBasket" "shoppingBasket"
 	closeAllEditors
-	
+
 	openDefinition $acmeWebShop "Overrides"
 	deleteNotWantedCmsOverrides $acmeWebShop
 }
 
-let [val webShop "Web_shop"] [val acmeWebShop "Acme_web_shop"]
-{
-	createProject $webShop
-	createProject $acmeWebShop
-	addRequiredProject $acmeWebShop $webShop
-	createOverrides $webShop $acmeWebShop
-	
-	with [get-view "Axon.ivy Projects" | get-tree] 
-	{
-		get-item [concat $acmeWebShop "/Definitions/Overrides"] | double-click
+let [val webShop "Web_shop"] [val acmeWebShop "Acme_web_shop"]{
+	try{
+		createProject $webShop
+		createProject $acmeWebShop
+		addRequiredProject $acmeWebShop $webShop
+		togglePresentation -flat true
+		createOverrides $webShop $acmeWebShop
+
+		with [get-view "Axon.ivy Projects" | get-tree]{
+			get-item [concat $acmeWebShop "/Definitions/Overrides"] | double-click
+		}
+
+		get-eclipse-window | resizeWindow 1050 850
+		with [get-editor $acmeWebShop]{
+			maximize
+			get-control Any -after [get-label "Override Definitions"] | get-object | captureScreenshot "designer-configuration/overrides-editor.png"
+		}
+
+		get-editor $acmeWebShop | close
+	} -finally {
+		deleteProject $acmeWebShop
+		deleteProject $webShop
 	}
-	
-	get-eclipse-window | resizeWindow 1050 850
-	with [get-editor $acmeWebShop]
-	{
-	    maximize
-	    get-control Any -after [get-label "Override Definitions"] | get-object | captureScreenshot "designer-configuration/overrides-editor.png"
-	}
-	
-	get-editor $acmeWebShop | close
-	
-	deleteProject $acmeWebShop
-	deleteProject $webShop
 }
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

@@ -15,6 +15,7 @@ Content-Type: text/ecl
 Entry-Name: .content
 
 importProject -projectName "QuickStartTutorial"
+togglePresentation -flat true
 
 with [get-view "Axon.ivy Projects" | get-tree] {
 	get-item QuickStartTutorial | click

@@ -1,6 +1,5 @@
 --- RCPTT testcase ---
 Format-Version: 1.0
-Contexts: _lbFrAAbTEeqelOY6v4JKGw
 Element-Name: RefactoringWizards
 Element-Type: testcase
 Element-Version: 3.0
@@ -16,6 +15,7 @@ Entry-Name: .content
 
 importProject "documentationExampleProject"
 importProject "QuickStartTutorial"
+togglePresentation -flat true
 
 with [get-view "Axon.ivy Projects" | get-tree] {
 	select "documentationExampleProject/Html Dialogs/screenshot.project.exampleHtmlDialog" | get-menu Move | click

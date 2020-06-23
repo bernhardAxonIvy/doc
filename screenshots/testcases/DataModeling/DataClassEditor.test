@@ -5,8 +5,8 @@ Element-Type: testcase
 Element-Version: 3.0
 External-Reference: 
 Id: _nL-4cBVAEeeAwNHEHXL8Yw
-Runtime-Version: 2.5.0.201908212005
-Save-Time: 9/9/19, 5:47 PM
+Runtime-Version: 2.5.0.202001211718
+Save-Time: 6/23/20, 11:16 AM
 Testcase-Type: ecl
 
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
@@ -25,13 +25,15 @@ proc openDataClass [val path]
 
 // DataClass editor general
 importProject -projectName "QuickStartTutorial"
+togglePresentation -flat true
+
 openDataClass -path "QuickStartTutorial/Data Classes/quickStartTutorial/Data"
 get-eclipse-window | resizeWindow 700 500
 with [get-editor Data]
 {
   maximize
   with [get-table]
-  { 
+  {
     setTableColumnWidth Name 100
 	setTableColumnWidth Type 100
 	setTableColumnWidth Persistent 100
