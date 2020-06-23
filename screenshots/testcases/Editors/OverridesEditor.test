@@ -111,6 +111,7 @@ let [val webShop "Web_shop"] [val acmeWebShop "Acme_web_shop"]{
 		createProject $webShop
 		createProject $acmeWebShop
 		addRequiredProject $acmeWebShop $webShop
+		togglePresentation -flat true
 		createOverrides $webShop $acmeWebShop
 
 		with [get-view "Axon.ivy Projects" | get-tree]{

@@ -38,7 +38,7 @@ proc deleteProject [val projectName]
 	with [get-window Refactoring] {
 	    get-button "Delete project contents on disk (cannot be undone)" | check
 	    get-button Finish | click
-	}		
+	}
 }
 
 proc deleteAllProjects
@@ -47,12 +47,12 @@ proc deleteAllProjects
 	with [get-window Refactoring] {
 	    get-button "Delete project contents on disk (cannot be undone)" | check
 	    get-button Finish | click
-	}		
+	}
 }
 
 proc openDefinition [val projectName] [val definitions]
 {
-	with [get-view "Axon.ivy Projects" | get-tree] 
+	with [get-view "Axon.ivy Projects" | get-tree]
 	{
 		get-item [concat $projectName "/Definitions/" $definitions] | double-click
 	}
@@ -66,7 +66,7 @@ proc addRequiredProject [val project] [val requiredProject]
 		get-tab-folder | get-tab-item "Required Projects" | click
 		get-section "Required Projects" | get-button Add | click
 	}
-	
+
 	with [get-window "Add Required Project"]
 	{
 	    get-combo -after [get-label "Select project:"] | select [concat $requiredProject ".*"]
@@ -86,5 +86,14 @@ proc assertNoRunningOperations {
 			}
 		}
 	} | constrain-max duration 10000
+}
+
+proc togglePresentation[val -name "navigator" -value "Axon.ivy Projects"][val flat]
+{
+	if [$flat]{
+		get-view $navigator | get-menu -path "Package Presentation/Flat" | click
+	} -else {
+		get-view $navigator| get-menu -path "Package Presentation/Hierarchical" | click
+	}
 }
 ------=_.ecl.context-718f04b4-ed39-33e3-af62-0995e4561998--
