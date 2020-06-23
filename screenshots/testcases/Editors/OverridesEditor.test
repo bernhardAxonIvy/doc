@@ -86,7 +86,7 @@ proc takeWizardScreenshot [val project] [val dialogName]
 
 proc closeAllEditors
 {
-	get-menu -path "File/Close All" | click
+	get-menu -path "File/Close All.*" | click
 }
 
 proc createOverrides [val webShop] [val acmeWebShop]

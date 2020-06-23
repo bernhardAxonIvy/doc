@@ -72,7 +72,7 @@ proc addRequiredProject [val project] [val requiredProject]
 	    get-combo -after [get-label "Select project:"] | select [concat $requiredProject ".*"]
 	    get-button OK | click
 	}
-	get-button "Save (M1+S)" | click
+	get-button "Save .*" | click
 }
 
 proc assertNoRunningOperations {
