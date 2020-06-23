@@ -25,6 +25,7 @@ proc openDataClass [val path]
 
 // DataClass editor general
 importProject -projectName "QuickStartTutorial"
+togglePresentation -flat true
 
 openDataClass -path "QuickStartTutorial/Data Classes/quickStartTutorial/Data"
 get-eclipse-window | resizeWindow 700 500

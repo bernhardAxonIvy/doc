@@ -14,6 +14,7 @@ Content-Type: text/ecl
 Entry-Name: .content
 
 importProject -projectName "documentationExampleProject"
+togglePresentation -flat true
 
 get-view "Axon.ivy Projects" | get-tree | select "documentationExampleProject/Html Dialogs/screenshot.project.example" +
 	"HtmlDialog" | get-menu Delete | click

@@ -15,6 +15,7 @@ Entry-Name: .content
 
 importProject "documentationExampleProject"
 importProject "QuickStartTutorial"
+togglePresentation -flat true
 
 with [get-view "Axon.ivy Projects" | get-tree] {
 	select "documentationExampleProject/Html Dialogs/screenshot.project.exampleHtmlDialog" | get-menu Move | click
