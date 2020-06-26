@@ -9,7 +9,7 @@
   </parent>
 
   <groupId>ch.ivyteam.doc</groupId>
-  <artifactId>documentation-screenshots</artifactId>
+  <artifactId>documentation-screenshots-designer</artifactId>
   <packaging>rcpttTest</packaging>
 
   <properties>

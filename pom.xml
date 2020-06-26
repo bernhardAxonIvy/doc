@@ -49,6 +49,12 @@
                   <artifactId>doc-screenshots</artifactId>
                   <type>zip</type>
                 </artifactItem>
+
+                <artifactItem>
+                  <groupId>ch.ivyteam.doc</groupId>
+                  <artifactId>doc-screenshots-engine</artifactId>
+                  <type>zip</type>
+                </artifactItem>
               </artifactItems>
             </configuration>
           </execution>

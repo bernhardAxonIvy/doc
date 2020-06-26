@@ -9,9 +9,8 @@ shipped with the Axon.ivy Designer.::
 
 .. Note::
 
-    Here we deploy a new application by dropping packed (IAR) projects into it.
-    However it is also possible to deploy full applications as ZIP or unpacked
-    projects.
+    Here we deploy a new application by dropping a ZIP into it. However it is
+    also possible to deploy single packed (IAR) projects or unpacked projects.
 
 You can monitor the deployment with::
 
@@ -31,10 +30,7 @@ As soon as the deployment is finished the zip-file will be postfixed with
     multiple Axon.ivy Engines.
 
 Refresh the main page of the Axon.ivy Engine. There is now a new application
-called **IvyDemoApp** with a section called **WorkflowDemos**. Under it links
-are available to start processes.
-
-.. figure:: /_images/engine-getting-started/workflow-demos.png
+called **IvyDemoApp**.
 
 Congratulations you have installed and configured your first Axon.ivy Engine and
 also deployed your first Axon.ivy processes.
