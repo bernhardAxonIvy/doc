@@ -14,34 +14,8 @@ automated.
 Setup test project
 ^^^^^^^^^^^^^^^^^^
 
-To get started we have to create a test project, the following step-by-step
-instructions show you how to create this new test project:
-
-.. |PROJECT| replace:: ``crmIntegrationTests``
+.. |TESTKIND| replace:: ``IvyWebTest``
 .. include:: includes/test-project-setup.txt
-
-#. Add test util dependencies
-
-   - Open the :github-build-examples:`pom.xml </crmIntegrationTests/pom.xml#L25-L41>`
-     file of the ``crmIntegrationTests`` project *(Right click on pom.xml or Deployment
-     -> Open With -> Maven POM Editor)* 
-    
-   - Add the following dependency and repository to the :file:`pom.xml` file:
-
-     .. literalinclude:: includes/webtesting/webtesting-setup-pom.xml
-        :language: xml
-
-#. Add a test class
-
-   - Create a new class (e.g :github-build-examples:`WebTestRegistrationForm
-     </crmIntegrationTests/src_test/ch/ivyteam/integrationtest/WebTestRegistrationForm.java>`)
-     inside of the :file:`src_test` folder *(Right click on 'src_test' -> New ->
-     Class, e.g 'WebTest' as name)*
-   
-   - Add the following code inside:
-
-     .. literalinclude:: includes/webtesting/webtesting-setup-test.java
-        :language: java
 
 #. Run test
 

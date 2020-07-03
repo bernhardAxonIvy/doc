@@ -13,41 +13,30 @@ less likely to introduce bugs and errors into your processes.
 Setup test project
 ^^^^^^^^^^^^^^^^^^
 
-.. |PROJECT| replace:: ``crmTests``
+.. |TESTKIND| replace:: ``IvyProcessTest``
 .. include:: includes/test-project-setup.txt
 
-#. Create a new test class called ``TestInvoiceProcess`` in the just created
-   ``src_test`` folder and add the code below. The designer will tell you that
-   it can't resolve the ``@Test`` annotation because it's missing the JUnit 5
-   library. You can add the JUnit 5 library by hovering over the ``@Test``
-   annotation and choose the ``Add JUnit 5 library to build path`` option.
-
-.. literalinclude:: includes/processtesting/processtesting-setup-test.java
-    :language: java
-    :emphasize-lines: 8, 11, 13, 16
-    :linenos:
-
-We now have a minimal test setup to get started. A few things to note at this
+We now have a minimal test called ``SampleIvyProcessTest``. A few things to note at this
 point:
 
-Line 8:
-  Here we annotate the class as an :public-api:`@IvyProcessTest
+Line 24:
+  The test class is annotated as an :public-api:`@IvyProcessTest
   </ch/ivyteam/ivy/bpm/exec/client/IvyProcessTest.html>`, this enables us to run
   process tests.
 
-Line 11:
-  We want to test a specific process in this test class, we can define the
-  process under test by adding it as a constant. It's called ``INVOICE_PROCESS``
-  and is of the type
+Line 27:
+  We want to test a specific process in this test class, we have defined the
   :public-api:`BpmProcess</ch/ivyteam/ivy/bpm/engine/client/element/BpmProcess.html>`.
-
-Line 13:
-  Our process under test contains two start elements. For our first test we only
-  want to test ``writeInvoice``, so we define it as a constant as well. It's
-  called ``WRITE_INVOICE_START`` and is of the type
+  under test with a constant called ``testee``. The passed string argument
+  defines the current process we run tests on. Replace ``MyProcess``
+  with a process that actually exists in your project under test.
+  
+Line 31:
+  If our process under test contains multiple start elements. 
+  We'd have to define the start element to be executed.
   :public-api:`BpmElement</ch/ivyteam/ivy/bpm/engine/client/element/BpmElement.html>`.
 
-Line 16:
+Line 30:
   In each test method you have to pass in a
   :public-api:`BpmClient</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html>`.
   This client is supplied by the process testing framework and embodies an Ivy
