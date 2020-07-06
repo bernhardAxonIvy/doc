@@ -14,7 +14,7 @@ Setup test project
 ^^^^^^^^^^^^^^^^^^
 
 .. |TESTKIND| replace:: ``IvyProcessTest``
-.. include:: includes/test-project-setup.txt
+.. include:: includes/test-project-setup.rst
 
 We now have a minimal test called ``SampleIvyProcessTest``. A few things to note at this
 point:
@@ -32,9 +32,10 @@ Line 27:
   with a process that actually exists in your project under test.
   
 Line 31:
+  The proces under test can directly be started, since it has only one start element.
   If our process under test contains multiple start elements. 
-  We'd have to define the start element to be executed.
-  :public-api:`BpmElement</ch/ivyteam/ivy/bpm/engine/client/element/BpmElement.html>`.
+  We'd have to define the start element to be executed using the 
+  :public-api:`BpmElement</ch/ivyteam/ivy/bpm/engine/client/element/BpmElement.html>` selector.
 
 Line 30:
   In each test method you have to pass in a

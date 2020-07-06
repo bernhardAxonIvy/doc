@@ -15,7 +15,7 @@ How to write Unit Tests
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 .. |TESTKIND| replace:: ``IvyTest``
-.. include:: includes/test-project-setup.txt
+.. include:: includes/test-project-setup.rst
 
 #. Run test
 
