@@ -36,10 +36,6 @@ To gain access to the :public-api:`Ivy</ch/ivyteam/ivy/environment/Ivy.html>`
 context the ``SampleIvyTest`` class is annotate with the
 :public-api:`@IvyTest</ch/ivyteam/ivy/environment/IvyTest.html>` annotation.
 
-.. literalinclude:: includes/unittesting/unittesting-setup-test-part2.java
-  :language: java
-  :emphasize-lines: 7
-
 .. note::
 
   If you run your test as ``@IvyTest`` (without process), you have the 
