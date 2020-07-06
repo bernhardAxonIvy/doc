@@ -14,30 +14,26 @@ correctly sets up the environment.
 How to write Unit Tests
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-First you have to create a new test project, if you don't have one yet.
+.. |TESTKIND| replace:: ``IvyTest``
+.. include:: includes/test-project-setup.rst
 
-.. |PROJECT| replace:: ``crmTests``
-.. include:: includes/test-project-setup.txt
+#. Run test
 
-#. Create a new test class called ``TestIvy`` in the just created
-   ``src_test`` folder and add the code below. The designer will tell you that
-   it can't resolve the ``@Test`` annotation because it's missing the JUnit 5
-   library. You can add the JUnit 5 library by hovering over the ``@Test``
-   annotation and choose the ``Add JUnit 5 library to build path`` option.
+   - Make sure the engine is started with your projects
 
-.. literalinclude:: includes/unittesting/unittesting-setup-test-part1.java
-  :language: java
+   - To run this test right-clicking inside this class -> Run As -> JUnit Test
 
-At this point you have the setup to start writing conventional Unit Tests. The
-following documentation explains in detail how you can set up and use the
-``Ivy`` context.
+   - A new **JUnit** View should have been opened and the test should be green.
+
+
+This is already all you need to start writing conventional Unit Tests.
 
 
 Set up the Ivy environment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To gain access to the :public-api:`Ivy</ch/ivyteam/ivy/environment/Ivy.html>`
-context you have to annotate your test class with the
+context the ``SampleIvyTest`` class is annotate with the
 :public-api:`@IvyTest</ch/ivyteam/ivy/environment/IvyTest.html>` annotation.
 
 .. literalinclude:: includes/unittesting/unittesting-setup-test-part2.java
