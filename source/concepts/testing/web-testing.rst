@@ -15,7 +15,7 @@ Setup test project
 ^^^^^^^^^^^^^^^^^^
 
 .. |TESTKIND| replace:: ``IvyWebTest``
-.. include:: includes/test-project-setup.rst
+.. include:: includes/test-project-setup.txt
 
 #. Run test
 

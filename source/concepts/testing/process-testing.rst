@@ -14,7 +14,7 @@ Setup test project
 ^^^^^^^^^^^^^^^^^^
 
 .. |TESTKIND| replace:: ``IvyProcessTest``
-.. include:: includes/test-project-setup.rst
+.. include:: includes/test-project-setup.txt
 
 We now have a minimal test called ``SampleIvyProcessTest``. A few things to note at this
 point:
