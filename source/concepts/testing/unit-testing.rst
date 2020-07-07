@@ -15,7 +15,7 @@ How to write Unit Tests
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 .. |TESTKIND| replace:: ``IvyTest``
-.. include:: includes/test-project-setup.rst
+.. include:: includes/test-project-setup.txt
 
 #. Run test
 
@@ -35,10 +35,6 @@ Set up the Ivy environment
 To gain access to the :public-api:`Ivy</ch/ivyteam/ivy/environment/Ivy.html>`
 context the ``SampleIvyTest`` class is annotate with the
 :public-api:`@IvyTest</ch/ivyteam/ivy/environment/IvyTest.html>` annotation.
-
-.. literalinclude:: includes/unittesting/unittesting-setup-test-part2.java
-  :language: java
-  :emphasize-lines: 7
 
 .. note::
 
