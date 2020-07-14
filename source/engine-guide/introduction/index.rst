@@ -27,11 +27,10 @@ Installation Environment
 
 The following diagram shows the installation environment of an |ivy-engine|:
 
-.. figure:: /_images/engine-installation/overview.png
-   :alt: |ivy-engine| Installation
-   :align: center
+.. graphviz:: includes/overview.dot
+   :layout: neato
 
-   |ivy-engine| Installation
+
 
 The |ivy-engine| needs a system database to store its configuration, users,
 roles and assigned permissions and the states, cases, tasks from the deployed
