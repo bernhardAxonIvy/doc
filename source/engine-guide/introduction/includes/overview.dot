@@ -25,7 +25,7 @@ digraph overview {
   activeDirectory [ label="Active\nDirectory", width="1.1" pos="6,0.6!"];
 
   systemdb [ label="System Database", pos="8,2.5!" width=1.7 height=3.5 style="dotted" fontcolor="black" labelloc="t"]
-  postgres [ label="PostgreSQL", pos="8,3.5!" width=1 height=0.5 ]
+  postgres [ label="PostgreSQL", pos="8,3.5!" width=1 height=0.5 fontsize=15]
   mysql [ label="MySQL", pos="8,2.9!" width=1 height=0.5]
   mariadb [ label="MariaDB", pos="8,2.3!" width=1 height=0.5]
   mssql [ label="Sql Server", pos="8,1.7!" width=1 height=0.5]
