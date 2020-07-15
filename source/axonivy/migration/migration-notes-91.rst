@@ -8,7 +8,7 @@ License
 -------
 
 You need to request a new license for Axon.ivy Engine 9.1.
-We have simplified the license check for :ref:`public urls <installing-a-licence>` and won't
+We have simplified the licence check for :ref:`public urls <installing-a-licence>` and won't
 check anymore for ports and paths (context). You only need to specify
 the DNS names/Hostnames or IP addresses through which the Axon.ivy Engine
 can be accessed.
@@ -19,28 +19,6 @@ VisualVM Plugin in the Axon.ivy Market
 
 The Axon.ivy Visual VM plugin is now available in the :dev-url:`Axon.ivy Market </market/visualvm-plugin>`
 and not bundled anymore with the Axon.ivy Engine in the directory :file:`[engineDir]/misc/visualvm/`.
-
-
-Changes to the database
------------------------
-
-We have introduced a new table IWA_SecurityMember that contains entries for all users and roles. We also
-removed most of the foreign key references to the tables IWA_User and IWA_Role and replaced them with
-references to IWA_SecurityMember. Entries in table IWA_SecurityMember will not be deleted even if a
-corresponding user or role is deleted.
-
-During migration all users and roles that could not be mapped to existing entries (e.g. because they were
-deleted from the database) but still have an entry in a Name column, will be added to the IWA_SecurityMembers
-table, to ensure referential integrity.
-Migration to the new database schema is done automatically, but note that the following database definitions
-have changed:
-
-- In view **IWA_TaskQuery** the naming of the activator columns has slightly changed, to match the Java
-  API method naming:
-  - Activator changes to OriginalActivator
-  - CurrentActivator changes to Activator
-- Column **IWA_WorkflowEvent.UserId** now references IWA_SecurityMember.SecurityMemberId and changes to
-  a VARCHAR(210) value.
 
 
 Using HttpAsyncClient for CXF web service calls
@@ -125,8 +103,8 @@ We have removed special handlings for Informix as these should no longer be nece
 If you are using Informix and have any problems, please contact us.
 
 
-Subversion Client Subclipse unplugged from Designer
----------------------------------------------------
+Subversion Client Subclipse unpluged from Designer
+--------------------------------------------------------------
 
 Subversion Client Subclipse is removed but can be easily installed with the Eclipse Marketplace in Designer.
 Go to :menuselection:`Help --> Eclipse Marketplace` and search for Subclipse and install it.
