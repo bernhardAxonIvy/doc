@@ -75,10 +75,11 @@ Static JSF pages moved to webContent/view
 -----------------------------------------
 
 The location of static JSF pages has been changed to :file:`webContent/view` to
-improve security. With 8.0 the static pages were located directly inside the
-:file:`webContent` folder. From 9.1 and later, these pages are no longer
+improve security. With 8.0 (pre 8.0.4) the static pages were located directly inside the
+:file:`webContent` folder. From 9.1 (8.0.4) and later, these pages are no longer
 accessible. Please refer to the chapter :ref:`static-jsf-pages` for more
 information.
+
 
 Daily Jobs are only executed at configured time
 -----------------------------------------------
@@ -104,7 +105,7 @@ If you are using Informix and have any problems, please contact us.
 
 
 Subversion Client Subclipse unpluged from Designer
---------------------------------------------------------------
+--------------------------------------------------
 
 Subversion Client Subclipse is removed but can be easily installed with the Eclipse Marketplace in Designer.
 Go to :menuselection:`Help --> Eclipse Marketplace` and search for Subclipse and install it.

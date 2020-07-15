@@ -5,7 +5,7 @@ digraph integrationSetup {
     style=filled,
     margin=0 width=2 height=0.8
     fontcolor="white",
-    fontname="UbuntuMono"
+    fontsize=16
     color="#007095",
     fixedsize=true,
   ];

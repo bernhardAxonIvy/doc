@@ -1,32 +1,16 @@
 .. _test-project-setup:
 
-#. Add a new Axon.ivy Project
+To get started we have to create a test project. The 'Axon.ivy Test Project' 
+wizard will help you to setup a test project with all the required 
+configurations and a simple sample test.
 
-   - Enter the same name as the project you would like to test (e.g. ``crm``)
-     but with a postfix (e.g.: |PROJECT|).
+#. Add a new Axon.ivy Test Project
 
-   - Make the test project (e.g. |PROJECT|) depending on your project (e.g.
-     ``crm``). Do so by selecting the project ``crm`` as **Required Project**
-     inside the creation wizard *(or later over: Definitions -> Deployment ->
-     Required Projects)*.
+   - Right click on a projet you would like to cover with Tests.
+     Select: New -> Axon.ivy Test Project in the context menu.
 
-#. Convert Projects to Maven Projects
+   - Pick the test flavour |TESTKIND| to include in the 'New Axon.ivy Test Project' wizard.
 
-   - Convert both projects (``crm`` and |PROJECT|) to Maven
-     Projects. *(Right click on the project -> Configure -> Convert to Maven
-     Project)*.
+   - Finish the wizard. A sample test will be included in the ``src_test`` 
+     directory of the just created project.
 
-#. Define a test source directory
-
-   - Open the :github-build-examples:`.classpath </crmTests/.classpath#L28-L33>`
-     file. This can be found if you disable the ``.* resource`` filter inside
-     the Project Tree (or open the file directory from the *File Explorer*).
-     
-     
-   - Add the following lines to the :file:`.classpath` file:
-
-     .. literalinclude:: includes/webtesting/webtesting-setup-classpath.xml
-        :language: xml
-
-   - Add a new folder :file:`src_test` to the |PROJECT| project *(Right
-     click on the project -> New -> Folder)*
