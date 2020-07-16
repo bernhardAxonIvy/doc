@@ -182,63 +182,12 @@ setup a maven module build:
 
    - Set **Goals** to ``clean verify`` and click **Run**
 
-   - This should trigger a run which starts with something like:
+   - This should trigger a run which starts and ends with something like:
 
      .. literalinclude:: includes/webtesting/webtesting-maven-run.log
         :language: none
 
-     But it ends with some **Errors**. To fix those let's continue with the next
-     steps.
-
-
-Run integration tests
-"""""""""""""""""""""
-
-To run our tests within a maven build, we need to start an engine, deploy the
-``crm`` project to it, and then stop the engine after the tests are finished. We can
-define these steps in the :github-build-examples:`pom.xml
-</crmIntegrationTests/pom.xml>` file of our ``crmIntegrationTests`` project:
-
-#. Set :github-build-examples:`test sources dir
-   </crmIntegrationTests/pom.xml#L44-L45>` and :github-build-examples:`test
-   application name </crmIntegrationTests/pom.xml#L14-L16>`
-   
-   .. literalinclude:: includes/webtesting/webtesting-maven-init.xml
-      :language: xml
-
-#. :github-build-examples:`Start </crmIntegrationTests/pom.xml#L52-L58>`
-   an engine
-
-   .. literalinclude:: includes/webtesting/webtesting-maven-start.xml
-      :language: xml
-
-#. :github-build-examples:`Deploy </crmIntegrationTests/pom.xml#L59-L70>`
-   our ``crm`` project to the engine
-
-   .. literalinclude:: includes/webtesting/webtesting-maven-deploy.xml
-      :language: xml
-
-   .. tip::
-
-     In the demo project we use the :github-build-examples:`dependency plugin
-     </crmIntegrationTests/pom.xml#L102-L113>` to evaluate the **deployFile**
-     attribute.
-
-#. :github-build-examples:`Stop </crmIntegrationTests/pom.xml#L71-L77>`
-   the engine after the tests are finished
-
-   .. literalinclude:: includes/webtesting/webtesting-maven-stop.xml
-      :language: xml
-
-#. Add the :github-build-examples:`test runner plugin </crmIntegrationTests/pom.xml#L80-L101>`
-
-   .. literalinclude:: includes/webtesting/webtesting-maven-surefire.xml
-      :language: xml
-
-#. Run module build in IDE
-
-   - Try to run the module build as before in second step of the
-     :ref:`webtesting-maven-build` section. The build should now succeed.
+     Congratulations, you can run your tests automated with maven!
 
 
 Further Resources
