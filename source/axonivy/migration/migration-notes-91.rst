@@ -117,3 +117,12 @@ The context.xml and web.xml are moved to configuration folder
 The :ref:`context-xml` and :ref:`web-xml` are now in the global :file:`/configuration/` folder.
 Before they where located under :file:`webapps/ivy/META-INF/context.xml` and :file:`webapps/ivy/WEB-INF/web.xml`.
 If you had modified them you have to apply these changes to the files at the new location.
+
+
+New security system config Membership.UserMemberOfLookupAllowed
+---------------------------------------------------------------
+
+There is a new security system config `Membership.UserMemberOfLookupAllowed` which is `true` per default.
+Means normally you don't have to do anything. Only if your active directory or eDirectory does not allow to read the 
+memberOf property of a user (groups of a user), then you have to set this config property to `false`.
+The config property `Membership.UseUserMemberOfForUserRoleMembership` was removed.
