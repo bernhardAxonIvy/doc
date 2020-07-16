@@ -1,9 +1,0 @@
-<properties>
-  <test.application>CrmApplication</test.application>
-</properties>
-
-<build>
-  <testSourceDirectory>src_test</testSourceDirectory>
-  <testOutputDirectory>target/test-classes</testOutputDirectory>
-  ...
-</build>
