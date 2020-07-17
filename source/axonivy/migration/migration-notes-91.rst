@@ -129,7 +129,7 @@ If you are using Informix and have any problems, please contact us.
 
 
 Subversion Client Subclipse unplugged from Designer
---------------------------------------------------
+---------------------------------------------------
 
 Subversion Client Subclipse is removed but can be easily installed with the Eclipse Marketplace in Designer.
 Go to :menuselection:`Help --> Eclipse Marketplace` and search for Subclipse and install it.
