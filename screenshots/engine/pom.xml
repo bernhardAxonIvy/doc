@@ -11,6 +11,7 @@
 
   <properties>
     <app>demo-portal</app>
+    <engine.dir>${project.build.directory}/ivyEngine</engine.dir>
   </properties>
 
   <repositories>
@@ -37,6 +38,34 @@
 
   <build>
     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>local.engine</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <target>
+                <unzip dest="${engine.dir}">
+                  <fileset dir="${basedir}/../../../workspace/ch.ivyteam.ivy.server.product">
+                    <filename name="target/products/AxonIvyEngine*_All_x64.zip" />
+                    <exclude name="target/products/*Slim*.zip" />
+                  </fileset>
+                </unzip>
+
+                <chmod perm="+x" type="file">
+                  <fileset dir="${engine.dir}/elasticsearch/bin" />
+                </chmod>
+              </target>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
       <plugin>
         <groupId>com.axonivy.ivy.ci</groupId>
         <artifactId>project-build-plugin</artifactId>
@@ -67,7 +96,7 @@
         <configuration>
           <ivyVersion>${ivy-version}</ivyVersion>
           <osArchitecture>All_x64</osArchitecture>
-          <engineListPageUrl>${build.last.sucess.url}</engineListPageUrl>
+          <engineDirectory>${engine.dir}</engineDirectory>
         </configuration>
       </plugin>
       <plugin>
