@@ -47,8 +47,6 @@ Here are some examples:
 +------------------------------------+------------------------------------+
 
 
-
-
 Global deploy.options.yaml removed
 **********************************
 
@@ -131,12 +129,6 @@ If you are using Informix and have any problems, please contact us.
 
 
 
-
-
-
-
-
-
 More changes
 ------------
 
@@ -175,22 +167,3 @@ The :code:`HttpAsyncClient` has improved performance and provides better support
 There are no known issues with :code:`HttpAsyncClient`, but if you still want to use
 :code:`HttpURLConnection` you can set the property :code:`use.async.http.conduit` to :code:`false` on the
 web service client configuration.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
