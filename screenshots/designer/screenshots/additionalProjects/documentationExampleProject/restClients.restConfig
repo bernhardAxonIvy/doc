@@ -27,7 +27,7 @@
         <uuid>a320a922-175c-43c0-adc6-b6694ecae306</uuid>
         <name>JsonProcessing</name>
         <configuration>
-            <uri>http://zugtstweb:8080/json-processing-webapp-2.25</uri>
+            <uri>http://test-webservices.ivyteam.io:8080/json-processing-webapp-2.25</uri>
         </configuration>
     </restClient>
     <restClient>
