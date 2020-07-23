@@ -5,13 +5,15 @@ Configuration
 Global Variables
 ^^^^^^^^^^^^^^^^
 
-The view **Global Variables** shows you all global variables which are defined
-for every application. They can be configured on the project or set in the
-:ref:`app-yaml` file. You can switch the environment at the top. To add a new
-variable or edit one click on the :guilabel:`New` or :guilabel:`Pencil` button.
-If you do so your change will be written to the :ref:`app-yaml` file. You can
-reset a global variable to its environment value by clicking on the
-:guilabel:`Reset` button. 
+The view **Global Variables** displays all global variables that are defined
+for each application. The global variables can be configured in the project or
+set in the :ref:`app-yaml` file. You can switch the environment in the drop-down
+box at the top.
+
+You can add a new variable by clicking :guilabel:`New` or edit an existing one by
+clicking the :guilabel:`Pencil` button. Any changes will be written directly to the
+:ref:`app-yaml` file. You can reset a global variable to its environment value by
+clicking the :guilabel:`Reset` button. 
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-configuration-variables.png
 
@@ -19,13 +21,13 @@ reset a global variable to its environment value by clicking on the
 Business Calendar
 ^^^^^^^^^^^^^^^^^
 
-The **Business Calendar** view allows you to see all configured business calendars.
-This overview shows you the hierarchical order of each calendar.
+The **Business Calendar** view shows all configured business calendars for each
+application. Business calendars are displayed in hierarchical order.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-configuration-businesscalendar.png
 
-By clicking on one of the calendars you get redirected to its actual configurations.
-The panel **Week configuration** shows you the calendar configuration while
-the other three panels show you the registered free days.
+By clicking on one of the calendars you get redirected to the calendar's detail view.
+The configurations are grouped by **Week configuration**, the recurring holidays
+relative to easter, recurring fixed days of the year and non-recurring holidays.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-configuration-businesscalendar-detail.png

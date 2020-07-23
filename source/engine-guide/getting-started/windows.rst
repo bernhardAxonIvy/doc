@@ -66,12 +66,12 @@ page of the Axon.ivy Engine is displayed.
 Configure the Engine
 --------------------
 
-Now, let's configure the Axon.ivy Engine with a license and system database. 
+Now, let's configure the Axon.ivy Engine with a licence and system database. 
 
-To start with that you must first request a valid Axon.ivy Engine license.
-Either you get a license for your productive system through one of our sales
-personal or contact our support for time limited tryout licenses. If you do not
-have a license you can skip this section and continue with the next section.
+To start with that you must first request a valid Axon.ivy Engine licence.
+Either you get a licence for your productive system through one of our sales
+personal or contact our support for time limited trial licences. If you do not
+have a licence you can skip this section and continue with the next section.
 
 Moreover, you need to have a supported database server up and running with a
 database user that has the rights to create new databases. The configuration and
@@ -83,7 +83,7 @@ You can start the :ref:`setup-wizard` on the main page of the Axon.ivy Engine
 warning message.
 
 On the first page use the :guilabel:`Choose licence` button to install your
-license file or drop it inside the field.
+licence file or drop it inside the field.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-setup-licence.png
 
@@ -101,7 +101,7 @@ Click :guilabel:`Add Administrator`, fill in the form and press the
   Administrators can administrate the Axon.ivy Engine. For example, they can add
   or remove users, assign user to roles, deploy projects, etc. Therefore, you
   need at least one administrator to administrate the Axon.ivy Engine. The Email
-  addresses of administrators are used to send mail notifications if license
+  addresses of administrators are used to send mail notifications if licence
   problems occur.
 
 On the next page configure which protocol connectors and ports the Axon.ivy

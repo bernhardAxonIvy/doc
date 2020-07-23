@@ -87,7 +87,7 @@ To order a licence file you need to know the public URLs that end users will use
   * ``192.168.1.19``
 
   Remark: Access via ``localhost``, ``127.0.0.1`` and ``::1`` is always possible
-  and needs not to be provided in the licence..
+  and needs not to be provided in the licence.
 
 To install a licence file use the :ref:`engine-cockpit` or follow the steps below:
   
@@ -95,7 +95,7 @@ To install a licence file use the :ref:`engine-cockpit` or follow the steps belo
 #. Remove all other licence files in the :file:`[engineDir]/configuration` directory.
 
 .. note::
-  For container based installations it is also possible to make the license file
+  For container based installations it is also possible to make the licence file
   available via :ref:`environment variables or docker-secrets <configuration_containers_licence>`.
 
 .. rubric:: Creating a system database

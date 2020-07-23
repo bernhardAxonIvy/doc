@@ -3,17 +3,17 @@
 Axon.ivy Engine
 ===============
 
-This program starts an instance of the Axon.ivy Engine. 
+This program starts an instance of an |ivy-engine|.
 
 .. tip::
-    An Axon.ivy Engine can also be started as service. More information can
-    be found in the section :ref:`engine-service` chapter.
+    An |ivy-engine| can also be started as a service. For more information
+    see section :ref:`engine-service`.
 
 
 Launchers
 ---------
 
-The following program launchers are available for the Axon.ivy Engine program:
+The following program launchers are available for the |ivy-engine|:
 
 +---------------------------------+----------+-----------------+
 | Launcher                        | Platform | Console support |
@@ -29,7 +29,7 @@ The following program launchers are available for the Axon.ivy Engine program:
 Options
 -------
 
-The following options are available for the Axon.ivy Engine program:
+The following options are available for the |ivy-engine|:
 
 +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
 | Option       | Description                                                                                                                                         | Mandatory |

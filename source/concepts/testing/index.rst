@@ -3,21 +3,21 @@
 Testing
 =======
 
-Writing test code has a bad reputation, however they can make your life much
-easier. Think about the following points:
+Writing test code can sometimes be tedious and time consuming, however in the
+long run these tests make your life a lot easier. Think about the following points:
 
 - Tests can make the **functionality of a software reliable**
 
-- **Quality** can be maintained
+- Through tests **quality** can be maintained
 
 - **Repetitive tasks** can be reduced to a minimum. Let the computer do it!
 
-- Ensure that the software **does what it supposed to do** (e.g after a code
+- Ensure that your software **does what it supposed to do** (e.g after a code
   change or even a platform update).
 
-Write good software without tests is nearly impossible and we want to give you
-the ability to write tests for your software as easy as possible. Let’s get
-started!
+Writing good software without tests is nearly impossible, and we want to make
+it as easy as possible for you to write tests for your |axon-ivy| project.
+Let's get started!
 
 .. tip::
 

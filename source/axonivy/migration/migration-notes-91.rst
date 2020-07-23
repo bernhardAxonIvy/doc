@@ -6,14 +6,14 @@ Migrating from 8.0 to 9.1
 Be aware of
 -----------
 
-License
+Licence
 *******
 
-You need to request a new license for Axon.ivy Engine 9.1.
-We have also simplified the license check for :ref:`public urls <installing-a-licence>` compared to 8.0
-and do not check anymore for ports and paths (context). You only need to specify
-the DNS names/Hostnames or IP addresses through which the Axon.ivy Engine
-can be accessed.
+You need to request a new licence for |ivy-engine| 9.1.
+We have simplified the licence check for :ref:`public urls <installing-a-licence>` compared to 8.0
+and do not check for ports and paths (context) anymore. When requesting a
+new 9.1 licence, you only need to specify the DNS names/Hostnames or IP
+addresses through which the |ivy-engine| can be accessed.
 
 
 Engine default base path changed
@@ -51,35 +51,35 @@ Global deploy.options.yaml removed
 **********************************
 
 The :file:`deploy.options.yaml` in the deployment directory can no longer be used to influence deployments.
-We think that it made deployments unnecessary hard to track and that users are better of with 
+We think that it made deployments unnecessary hard to track and that administrators are better off with 
 the :ref:`deployment options <deployment-options>` packed as part of the application ZIP or specific yaml per artifact.
 
 
 Static JSF pages moved to webContent/view
 *****************************************
 
-The location of static JSF pages in your Axon.ivy Project has been changed to :file:`webContent/view` to
-improve security. With 8.0 (pre 8.0.4) the static pages were located directly inside the
-:file:`webContent` folder. From 9.1 (8.0.4) and later, these pages are no longer
-accessible. You will need to move the static JSF pages to the new folder in your Axon.ivy Project.
+The location of static JSF pages in your |axon-ivy| Project have been changed to :file:`webContent/view`
+in order to improve security. In 8.0 (pre 8.0.4) the static pages were located directly inside the
+:file:`webContent` folder. From 9.1 (8.0.4) on these pages are no longer accessible.
+You need to move the static JSF pages to the new folder in your |axon-ivy| Project.
 Please refer to the chapter :ref:`static-jsf-pages` for more information.
 
 
 context.xml and web.xml moved to configuration folder
 *****************************************************
 
-The :ref:`context-xml` and :ref:`web-xml` are now in the global :file:`/configuration/` folder.
-Before they where located under :file:`webapps/ivy/META-INF/context.xml` and :file:`webapps/ivy/WEB-INF/web.xml`.
-If you had modified them you have to apply these changes to the files at the new location.
+The :ref:`context-xml` and :ref:`web-xml` files are now in the global :file:`/configuration/` folder.
+Prior to 9.1 they were located under :file:`webapps/ivy/META-INF/context.xml` and :file:`webapps/ivy/WEB-INF/web.xml`.
+If you modified them you need to apply these changes to the files in the new location.
 
 
 New security system config Membership.UserMemberOfLookupAllowed
 ***************************************************************
 
-There is a new security system config :code:`Membership.UserMemberOfLookupAllowed` which is :code:`true` per default.
-Means normally you don't have to do anything. Only if your active directory or eDirectory does not allow to read the 
-memberOf property of a user (groups of a user), then you have to set this config property to :code:`false`.
-The config property :code:`Membership.UseUserMemberOfForUserRoleMembership` was removed.
+We introduced a new security system configuration property :code:`Membership.UserMemberOfLookupAllowed`,
+with :code:`true` as its default value. If your active directory or eDirectory does not allow to read the
+:code:`memberOf` property of a user (groups of a user), you need to set this configuration property to :code:`false`.
+With the introduction of this new property we removed the property :code:`Membership.UseUserMemberOfForUserRoleMembership`.
 
 
 
@@ -89,40 +89,41 @@ Good to know
 ------------
 
 
-VisualVM Plugin in the Axon.ivy Market
-**************************************
+VisualVM Plugin in the |axon-ivy| Market
+****************************************
 
-The Axon.ivy Visual VM plugin to Monitor your Axon.ivy Engine is now available in the :dev-url:`Axon.ivy Market </market/visualvm-plugin>`
-and not bundled anymore with the Axon.ivy Engine in the directory :file:`[engineDir]/misc/visualvm/`.
+The |axon-ivy| Visual VM plugin to monitor your |ivy-engine| is now available in the :dev-url:`Axon.ivy Market </market/visualvm-plugin>`.
+It is not bundled with the |ivy-engine| in the directory :file:`[engineDir]/misc/visualvm/` anymore.
 
 
-Subversion Client unplugged from Designer
-*****************************************
+Subversion Client unplugged from |ivy-designer|
+***********************************************
 
-Subversion Client Subclipse is removed from Axon.ivy Designer but can be easily installed with the Eclipse Marketplace in Designer.
+We removed the Subversion client Subclipse from the |ivy-designer|. It can still
+be easily installed through the Eclipse Marketplace in the  Designer.
 Go to :menuselection:`Help --> Eclipse Marketplace`, search for **Subclipse** and install it.
 
 
 Daily Jobs are only executed at configured time
 ***********************************************
 
-Daily jobs like sending **task summary emails** or **synchronizing users**
-were executed once a day. If the Axon.ivy Engine was not running
-at the configured time the job was executed on the next start of
-the Axon.ivy Engine.
+Daily jobs are now executed only at the configured time, even
+if the |ivy-engine| was not running at the last execution time.
 
-But then you may be confronted with heavy workloads
-which makes the Axon.ivy Engine unusable for other tasks.
-Therefore the daily jobs are now only executed at the configured time
-if the Axon.ivy Engine is not running at this time the job will not
-be executed.
+Daily jobs like sending **task summary emails** or **synchronizing users**
+are executed once a day. Prior to 9.1, if the |ivy-engine| was not running
+at the configured time, the daily jobs were executed on the next start of
+the |ivy-engine|. This lead sometimes to a heavy workload on start-up,
+making the |ivy-engine| unusable for other tasks.
+
+We changed this behavior in order to make the |ivy-engine| responsive straight after start-up.
 
 
 Special handling for Informix as external third-party database
 **************************************************************
 
 Informix is a database management system and can be integrated with Axon.ivy like any other database system.
-We have removed special handlings for Informix as these should no longer be necessary.
+We have removed any special handling for Informix as this is no longer necessary.
 If you are using Informix and have any problems, please contact us.
 
 
@@ -133,8 +134,8 @@ More changes
 ------------
 
 
-Changes to the Axon.ivy System Database
-***************************************
+Changes to the |axon-ivy| System Database
+*****************************************
 
 We have introduced a new table :code:`IWA_SecurityMember` that contains entries for all users and roles. We also
 removed most of the foreign key references to the tables :code:`IWA_User` and :code:`IWA_Role` and replaced them with
@@ -143,12 +144,13 @@ corresponding user or role is deleted.
 
 During migration all users and roles that could not be mapped to existing entries (e.g. because they were
 deleted from the database) but still have an entry in a :code:`Name` column, will be added to the :code:`IWA_SecurityMembers`
-table, to ensure referential integrity.
+table, to ensure referential integrity. All security members added this way will be in state :code:`disabled`.
+
 Migration to the new database schema is done automatically, but note that the following database definitions
 have changed:
 
 - In view :code:`IWA_TaskQuery` the naming of the activator columns has slightly changed, to match the Java
-  API method naming:
+  API methods naming:
 
   - :code:`ActivatorName` and :code:`ActivatorDisplayName` change to :code:`OriginalActivatorName` and :code:`OriginalActivatorDisplayName`
   - :code:`CurrentActivatorName` and :code:`CurrentDisplayName` change to :code:`ActivatorName` and :code:`ActivatorDisplayName`

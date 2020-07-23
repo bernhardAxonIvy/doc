@@ -6,7 +6,7 @@ Setup Wizard
 The Setup Wizard is a simple user interface, for operators to apply the 
 initial configuration that is necessary to turn a demo engine into a
 productive |ivy-engine| instance. This includes especially the installation of a
-license and the creation of a system database.
+licence and the creation of a system database.
 
 .. note::
     The changes that you make with the :ref:`setup-wizard` do not become active
@@ -30,7 +30,7 @@ the info page with a link to the :ref:`setup-wizard`.
 E.g. http://myServer:myPort/system/faces/view/engine-cockpit/setup.xhtml
 
 If you are not able to start the |ivy-engine| anymore, you may remove the
-installed license file from the :file:`configuration` directory. The
+installed licence file from the :file:`configuration` directory. The
 |ivy-engine| should now start up in :ref:`demo-mode`.
 
 .. note::

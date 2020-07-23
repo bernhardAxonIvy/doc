@@ -5,14 +5,14 @@ Preparation
 
 #. Install the new |ivy-engine| version to a new installation directory (See
    section :ref:`install_engine`).
-#. If necessary (according to the Migration Notes), request a new license (see
+#. If necessary (according to the Migration Notes), request a new licence (see
    section :ref:`installing-a-licence`).
 #. Back up the system database and the application file directories of the old
    installation.
 #. Copy the file :file:`serverconfig.xml` plus all YAML and properties files from the
    :file:`configuration` directory of the old installation directory to the
    :file:`configuration` directory of the new installation.
-#. Unless a new license is required you should also copy the old license file to
+#. Unless a new licence is required you should also copy the old licence file to
    the new installation.
 #. If you have modified any other configuration files located in the
    :file:`configuration`, :file:`elasticsearch/config`,
