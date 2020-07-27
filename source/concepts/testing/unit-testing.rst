@@ -3,7 +3,7 @@
 Unit Tests
 ----------
 
-You can easily write Unit Tests in the Designer to test your Java source code
+You can easily write Unit Tests in the |ivy-designer| to test your Java source code
 using JUnit 5. If your code uses the
 :public-api:`Ivy</ch/ivyteam/ivy/environment/Ivy.html>` environment you can
 either mock it or use the
@@ -12,74 +12,74 @@ correctly sets up the environment.
 
 
 How to write Unit Tests
-^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~
 
 .. |TESTKIND| replace:: ``IvyTest``
 .. include:: includes/test-project-setup.txt
 
 #. Run test
 
-   - Make sure the engine is started with your projects
+   - Make sure the |ivy-engine| is started with your projects
 
-   - To run this test right-clicking inside this class -> Run As -> JUnit Test
+   - To run this test right-click inside this class -> Run As -> JUnit Test
 
-   - A new **JUnit** View should have been opened and the test should be green.
+   - A new **JUnit** View should be opened and the test should be green.
 
 
 This is already all you need to start writing conventional Unit Tests.
 
 
 Set up the Ivy environment
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To gain access to the :public-api:`Ivy</ch/ivyteam/ivy/environment/Ivy.html>`
-context the ``SampleIvyTest`` class is annotate with the
+context the ``SampleIvyTest`` class is annotated with the
 :public-api:`@IvyTest</ch/ivyteam/ivy/environment/IvyTest.html>` annotation.
 
 .. note::
 
-  If you run your test as ``@IvyTest`` (without process), you have the 
-  advantage that the bpm engine is not started, which speeds up the test execution.
+  If you run your test with ``@IvyTest`` (without process) the bpm engine does
+  not get started. This speeds up test execution.
 
-Write Ivy Tests
-^^^^^^^^^^^^^^^
+Write a Unit Test
+~~~~~~~~~~~~~~~~~
 
 Here we test a class called ``OrderUtil``. This class needs access to different
 ``Ivy`` resources like ``global variables``. Without properly setting up the
-``Ivy`` environment we would have to mock all those accesses.
+``Ivy`` environment we would have to mock all those resources.
 
 .. literalinclude:: includes/unittesting/unittesting-test-extend.java
   :language: java
 
 .. tip::
 
-  Take a look at the 
+  Have a look at the 
   :github-build-examples:`demo project </crmTests/src_test/ch/ivyteam/test>` 
   to see what else is possible.
 
 
 Change application runtime
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 For some test cases, you may need to change the environment or use a different
-value for your global variable. In this case use ``AppFixture`` to change the
-value. The value is automatically reset to the original value after the test
-is executed. All you have to do is to tell the test that you want an instance of
-the :code:`AppFixure` class. Let's take a look at it:
+value for a global variable. In this case use ``AppFixture`` to change the
+value. The value gets automatically reset to the original value after test
+execution. All you have to do is to tell the test that you want an instance of
+the :code:`AppFixure` class. Let's have a look at it:
 
 .. literalinclude:: includes/unittesting/unittesting-test-fixure-var.java
   :language: java
   :emphasize-lines: 2, 5
 
-If you want to change the active environment, you can do so in a similar way:
+If you want to change the active environment, you can do that in a similar way:
 
 .. literalinclude:: includes/unittesting/unittesting-test-fixure-env.java
   :language: java
   :emphasize-lines: 5
 
-Moreover it's possible to use the ``AppFixture`` to login with an existing user.
-You can either login with a username or with an ``IUser`` object, which in this
-example we injected as a parameter.
+Furthermore it is possible to use the ``AppFixture`` to login with an existing user.
+You can either login with a user name or with an ``IUser`` object. In the
+example below we injected the ``IUser`` object as a method parameter.
 
 .. literalinclude:: includes/unittesting/unittesting-test-fixure-login.java
   :language: java

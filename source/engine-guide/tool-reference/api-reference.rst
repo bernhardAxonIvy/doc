@@ -1,8 +1,8 @@
 API Reference
 =============
 
-The REST API allows you to get information about a running Axon.ivy engine and
-to control it remotely, which is by default accessible at
+The REST API allows you to get information about a running |ivy-engine|
+and to control it remotely. The API is by default accessible under
 http://localhost:8080/<appName>/api.
 
 .. _api-reference-csrf:

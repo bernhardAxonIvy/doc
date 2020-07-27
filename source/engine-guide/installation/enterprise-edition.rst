@@ -20,7 +20,7 @@ Installation of the first |ivy-engine| node
 ----------------------------------------------
 
 Follow the :ref:`installation-standard-edition` process to install the first
-|ivy-engine| Enterprise Edition node. Except that the license for the
+|ivy-engine| Enterprise Edition node. Except that the licence for the
 Enterprise Edition is issued.
 
 For an |ivy-engine| Enterprise Edition installation an external Elasticsearch

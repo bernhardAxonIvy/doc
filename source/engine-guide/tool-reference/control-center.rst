@@ -3,7 +3,7 @@
 Control Center
 ==============
 
-The Control Center integrates all tools to configure the engine, register as a
+The Control Center integrates all tools to configure an engine, register it as a
 Windows service and to start & stop the installed |ivy-engine|.
 
 
@@ -60,18 +60,19 @@ enable the rest of the configuration sections.
     should work.
 
 Now you may configure the user under which the service (and therefore the
-Axon.ivy Engine) will be executed. This can be either the system user or any
-other user with sufficient rights to start services and access the Axon.ivy
-Engine installation directory (read and write).
+|ivy-engine|) will be executed. This can either be the system user or any
+other user with sufficient rights to start services and access the |ivy-engine|
+installation directory (read and write).
 
 By default, the service start kind is :guilabel:`Manually`. To start the engine
 each time Windows is booted, choose the setting :guilabel:`Automatically`.
 
-The last thing that can be configured are the services that the Axon.ivy Engine
+The last thing that can be configured are the services that the |ivy-engine|
 depends on. This might be the database management system on which the system
 database is located or the web server in which Axon.ivy is integrated (IIS or
-Apache). All the services that you add in this list will be started before
-Axon.ivy and if any of these services fail to start, Axon.ivy won't start too.
+Apache). All the services you add in this list will be started before the
+|ivy-engine|, and if any of these services fail to start, |ivy-engine| won't
+start, either.
 
 After you have finished the configuration, click :guilabel:`Ok`. Now you will be
 able to start the engine from the control center or you may also use the Windows
@@ -81,21 +82,16 @@ Service Management Console.
 Testing the Engine
 ------------------
 
-Once you've started the Axon.ivy Engine, try to open the following address in
+Once you've started the |ivy-engine|, try to open the following address in
 your preferred web browser: http://ServerName:Port/. If a web page with the
-Axon.ivy logo appears, the installation and configuration of the Axon.ivy Engine
+|axon-ivy| logo appears, the installation and configuration of the |ivy-engine|
 was successful and you may continue with the next chapter.
 
 
 Service List Configuration
 --------------------------
 
-The Control Center integrates all tools to configure the engine, the (Windows)
-service and to start/stop the installed Axon.ivy Engine.
-
-To open the Control Center application, go to your Axon.ivy Engine installation
-directory and launch the :file:`ControlCenter.exe` or the ControlCenter program
-located in the :file:`bin` folder.
+The Control Center also allows you to configure and |ivy-engine| configuration.
 
 .. Note::
     The indication whether the program behind an entry in the server list is
@@ -105,8 +101,8 @@ located in the :file:`bin` folder.
     console* setting because only Axon.ivy Engine binaries can be started in a
     console (third party applications cannot).
 
-:guilabel:`Add` opens a dialog to choose the type for the new entry. You are
-able to decided between a normal Axon.ivy Engine or an Axon.ivy Engine as a
+:guilabel:`Add` first opens a dialog to choose the type for the new entry. You can choose
+between a normal |ivy-engine| setup or to setup an|ivy-engine| as a
 Windows Service. :guilabel:`Remove` removes the selected entry from the list and
 :guilabel:`Edit` allows to edit the configuration for the selected entry in the
 server list.
@@ -114,24 +110,22 @@ server list.
 .. figure:: /_images/control-center/control-center-create-new-server.png
 
 In the configuration dialog for a normal application you can set the base name
-and/or refine with the instance name (in the server list the instance name is
+and/or change with the instance name (in the server list the instance name is
 printed in brackets after the name). Add the server binary (or your third party
-tool) in the :guilabel:`Server start executable` and the configuration utility
-in the field :guilabel:`Configuration program` (or the configuration program of
-your third party application). If and only if you choose the console based
-binaries (the ones with *C* at the end of the file name, e.g.
-:file:`AxonIvyEngineC.exe`) then tick the check box :guilabel:`Show console`. It
-has no effect on all other binaries.
+tool) in the :guilabel:`Engine start executable`. If and only if you choose the
+console based binaries (the ones with *C* at the end of the file name, e.g.
+:file:`AxonIvyEngineC.exe`) you should tick the check box :guilabel:`Show console`.
+It has no effect on all other binaries.
 
 .. figure:: /_images/control-center/control-center-create-new-service.png
 
-In the configuration dialog for adding & editing a service entry, you can choose
-an already existing service from the combo box or set the service name when you
-did not already register the service. Set the configuration program and the
-service binary similarly to the description above. For simply starting &
-stopping existing services from the Control Center, it is not necessary to
-define the service binary
+In the configuration dialog for adding and editing a service entry, you can choose
+an already existing service from the combo box or set the service name if you
+have not already registered the service. Set the 
+service binary equivalent to the description above. To simply start and
+stop existing services from the Control Center, it is not necessary to
+define the service binary.
 
 .. Note::
-    The name in this dialog must be exactly the same name that is used to
+    The name in this dialog must be exactly the same name used to
     register the service. Otherwise the lookup will not work.

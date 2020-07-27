@@ -1,5 +1,5 @@
-ExecutionResult result = bpmClient
-        .start().process(WRITE_INVOICE_START)
+ExecutionResult result = bpmClient.start()
+        .process(WRITE_INVOICE_START)
         .execute();
 
 /* Execute any active task after the previous result */

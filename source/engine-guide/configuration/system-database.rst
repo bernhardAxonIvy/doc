@@ -14,7 +14,7 @@ set.
   :language: yaml
   :linenos:
 
-To run the |ivy-engine| with a System Database a license is required. See
+To run the |ivy-engine| with a System Database a licence is required. See
 :ref:`installing-a-licence`.
 
 The schema of the Axon.ivy System Database must exist on the referenced database

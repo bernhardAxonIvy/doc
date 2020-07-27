@@ -7,16 +7,14 @@ System
 Administrators
 ^^^^^^^^^^^^^^
 
-The **administrators** page gives you the possibility to manage the users which
-have administrator privileges. Your changes will be written directly to the
-:ref:`ivy-yaml` file. 
+The **Administrators** page allows you to manage users with administrator
+privileges. Any changes are stored to the :ref:`ivy-yaml` file. 
 
-Defining an email address for the administrators is mandatory. Notifications
-of critical events, such as license violations, are sent to administrator email
-addresses.
+You need to specify an email address for administrators as they are used to
+send notifications of critical events to, e.g. licence violations.
 
 .. note::
-    Changes to administrators will only take charge after you restart your the
+    Changes to administrators will only take effect after you restart the
     engine.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-system-admins.png
@@ -27,15 +25,18 @@ addresses.
 System Database
 ^^^^^^^^^^^^^^^
 
-For a successful configuration please consider the documentation on the
-:ref:`Setup Wizard <setup-wizard-systemdb>`.
+In the **System Database** page you to manage system database configuration.
+Any changes are stored in the :ref:`ivy-yaml` file. 
+
+Please refer to the :ref:`Setup Wizard <setup-wizard-systemdb>` documentation
+on how to configure your engine's system database.
 
 .. warning::
     Before you save your configurations, be sure you can connect to the
-    database. Otherwise, you may have problems on your startup.
+    database. Otherwise you may have problems when restarting the engine.
 
 .. note::
-    Changes to system database will only take charge after you restart your the
+    Changes to system database will only take effect after you restarting the
     engine.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-system-database.png
@@ -46,19 +47,19 @@ For a successful configuration please consider the documentation on the
 System Configuration
 ^^^^^^^^^^^^^^^^^^^^
 
-On the **system configuration** page you will have an overview about all your
-configurations defined in your running engine. Configurations which are grey,
-are default values. If you click on the :guilabel:`New` button, you can add new
-configurations. If you want to edit an existing configuration, click on the
-:guilabel:`Pencil` button. If you click on the button :guilabel:`More`, you have
-the possibility to reset a configuration or view the configuration file.
+The **System Configuration** page displays an overview over all your engine's
+configuration settings. Configurations in grey represent default values. If you
+click on the :guilabel:`New` button, you can add a new configuration setting.
+If you want to edit an existing configuration, click on the
+:guilabel:`Pencil` button. Clicking the button :guilabel:`More` button allows you
+to reset a configuration setting or view the complete configuration file.
 
 .. warning::
-    Application configurations are not shown on this view. You can see defined
-    application configurations on the :ref:`engine-cockpit-application-detail` view.
+    Application configurations are not shown on this view. You can see application
+    configuration settings in the :ref:`engine-cockpit-application-detail` page.
 
 .. note::
-    For more information about the configuration, please have a look at the
+    For more information about the configuration, please refer to the
     :ref:`configuration` section. 
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-system-config.png

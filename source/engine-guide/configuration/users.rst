@@ -9,7 +9,7 @@ Administrators
 --------------
 
 Administrators can configure, monitor and manage the |ivy-engine|.
-At least on administrator must be configured in :ref:`ivy-yaml`.
+At least one administrator must be configured in :ref:`ivy-yaml`.
 
 
 .. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/ivy-administrator.yaml
