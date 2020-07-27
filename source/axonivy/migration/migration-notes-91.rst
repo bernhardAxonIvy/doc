@@ -97,7 +97,7 @@ It is not bundled with the |ivy-engine| in the directory :file:`[engineDir]/misc
 
 
 Subversion Client unplugged from |ivy-designer|
-***********************************************
+***************************************************
 
 We removed the Subversion client Subclipse from the |ivy-designer|. It can still
 be easily installed through the Eclipse Marketplace in the  Designer.
