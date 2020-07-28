@@ -4,15 +4,34 @@ Microsoft IIS
 =============
 
 
-IIS 8 (Windows Server 2012)
----------------------------
+Automatic Configuration
+-----------------------
 
-.. note::
-    There is a batch script autoconfig.bat in the folder
-    :file:`[engineDir]/misc/iis` of your engine installation, which installs
-    and configures the IIS automatically on a Windows 2012 Server. If you are
-    setting up a new IIS Server you can use this script instead of following the
-    instructions below.
+The script ``autoconfig.bat`` in folder :file:`[engineDir]/misc/iis`
+of your |ivy-engine| automatically installs and configures IIS.
+
+This is the recommended way to integrate a new IIS Server with an |ivy-engine|.
+If you have an already existing IIS Server installation, follow the steps in
+chapter :ref:`integration-microsoft-iis-manual-install`.
+
+After running the ``autoconfig.bat`` script, you need to set the ``IvyContextName``
+to **"ivy"**, as the script presumes this value and the default is **""** since
+version 9.1. See :ref:`ivy-webserver-yaml` on how to configure ``IvyContextName``
+and AJP settings.
+
+   .. code-block:: yaml
+
+      # sample ivy.yaml with 'ivy' as context name
+      WebServer.IvyContextName: ivy
+
+You can check if the integration is working by opening a web browser on address
+http://<your host>/ivy/
+
+
+.. _integration-microsoft-iis-manual-install:
+
+Manual Configuration
+--------------------
 
 #. If your Microsoft Internet Information Server is not running on the same host
    as the Axon.ivy Engine then copy the integration directory to the host where
@@ -202,7 +221,7 @@ IIS 8 (Windows Server 2012)
 
 .. note::
 
-   This Microsoft IIS integration documentation suppose you use **"ivy"** as
+   This Microsoft IIS integration documentation presumes you use **"ivy"** as
    :ref:`IvyContextName <ivy-webserver-yaml>`. The default since 9.1 however is
    **""**.
 
@@ -306,21 +325,25 @@ Single Sign On
 Axon.ivy Engine supports single sign on in Windows environments. The following
 preconditions must be fulfilled for single sign on:
 
-* The application on the Axon.ivy Engine must use Active Directory Security
+* The application on the Axon.ivy Engine must use an Active Directory Security
   System
 * The Axon.ivy Engine must be integrated into a Microsoft Internet Information
   Server (IIS)
 
 
-IIS 8 (Windows Server 2012)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Automatic Configuration
+^^^^^^^^^^^^^^^^^^^^^^^
 
-.. note::
-    There is a batch script :file:`autoconfigSSO.bat` in the folder
-    :file:`[engineDir]/misc/iis` of your engine installation. This script
-    automatically sets up SSO on a Windows 2012 Server. If you are setting up a
-    new IIS Server you can use this script instead of following the instructions
-    below.
+The script ``autoconfigSSO.bat`` in folder :file:`[engineDir]/misc/iis` of
+your |ivy-engine| automatically configures IIS with SSO.
+
+This is the recommended way to setup SSO on a new IIS Server with an
+|ivy-engine|. If you have an already existing IIS Server installation,
+configure it manually, as described in the chapter below.
+
+
+Manual Configuration
+^^^^^^^^^^^^^^^^^^^^
 
 **Install Windows Authentication**
 
@@ -379,22 +402,24 @@ use those authentication modes and Single Sign On will not work.
 Basic Authentication
 --------------------
 
-In the following situations Basic Authentication is required:
+Basic Authentication is required in the following situations:
 
-* to use the Axon.ivy Mobile App
-* to provide REST services which require authentication
+* when using the Axon.ivy Mobile App
+* when providing REST services which require authentication
 
 
-IIS 8 (Windows Server 2012)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Automatic Configuration
+^^^^^^^^^^^^^^^^^^^^^^^
 
-.. note::
-    There is a batch script :file:`autoconfigBasicAuth.bat` in the folder
-    :file:`[engineDir]/misc/iis` of your engine installation. This script
-    automatically sets up Basic Authentication on a Windows 2012 Server. If you
-    are setting up a new IIS Server you can use this script instead of following
-    the instructions below.
+The script ``autoconfigBasicAuth.bat`` in folder :file:`[engineDir]/misc/iis`
+of your |ivy-engine| automatically configures IIS with Basic Authentication.
 
+This is the recommended way to setup Basic Authentication on a new IIS Server
+with an |ivy-engine|. If you have an already existing IIS Server installation,
+configure it manually, as described in the chapter below.
+
+Manual Configuration
+^^^^^^^^^^^^^^^^^^^^
 
 **Install Basic Authentication**
 
@@ -437,7 +462,7 @@ Error Handling
 ---------------
 
 If the engine is running behind an IIS web server and an error occurs on the
-Engine IIS shows its own error page and hides the error page coming from the
+Engine, IIS shows its own error page and hides the error page coming from the
 Engine. This is the default IIS behavior.
 
 The Axon.ivy IIS integration script configures the IIS to show the detailed
