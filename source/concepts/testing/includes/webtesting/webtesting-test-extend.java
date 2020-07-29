@@ -2,7 +2,7 @@
 public void registerNewCustomer()
 {
   // valid links can be copied from the start page of the internal web-browser
-  open(EngineUrl.createProcessUrl("{{startLink}}"));
+  open(EngineUrl.createProcessUrl("myWorkflow/154616078A1D629D/start.ivp"));
   
   // fill new customer form
   $(By.id("form:firstname")).sendKeys("Unit");
