@@ -46,6 +46,24 @@ Here are some examples:
 | /wf/myApp/myPmv/...                | /myApp/wf/myPmv/...                |
 +------------------------------------+------------------------------------+
 
+Web integration tests simplified
+**********************************
+
+Selenium based integration test do no longer require huge manually crafted maven build pom.xml definitions. 
+We introduced an new lifecycle called `iar-integration-test <http://axonivy.github.io/project-build-plugin/release/9.1/lifecycle.html>`_ that basically binds all the plugin executions
+whiche are required to have a running in memory engine with your workflow app deployed.
+
+Here's how you make use of these simplified stack in the ``pom.xml`` of a test project:
+
+#. change the packaging from type ``iar`` to ``iar-integration-test``
+#. remove manually bound executions of the goals ``start-test-engine`` and ``stop-test-engine``
+#. consider removing bound deployment executions (goal ``deploy-to-engine`` or ``deploy-iar``). The new plugin lifecycle automatically takes all your IAR dependencies and deploys them.
+#. remove unittest jvm argLine configurations that propagate the start engine url (``test.engine.url``) and test application hint (``test.engine.app``).
+#. verify that your web tests stick to a naming pattern which complies with the `maven-failsafe-plugin includes <https://maven.apache.org/surefire/maven-failsafe-plugin/integration-test-mojo.html#includes>`_. If not, rename the unit tests to end with ``IT`` (e.g. WebTestCustomerOnboardingIT.java)
+#. run the maven build to verify your changes.
+
+A `sample conversion <https://github.com/axonivy/project-build-examples/commit/f8c66777cdcbb469c0b6830b485b0427931963d5>`_ can be reviewed on Github. Another way to get a valid example is to use the new ``Axon.ivy Test Project`` wizard of the |ivy-designer|, select ``IvyWebTest`` as testing flavour and examine the created ``pom.xml`` in the newly created test project.
+
 
 Global deploy.options.yaml removed
 **********************************
