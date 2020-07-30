@@ -4,33 +4,33 @@ Process Element Performance
 Configure
 ---------
 
-On an Axon.ivy Engine it is possible to dump out performance statistic
-informations, periodically into a CSV formatted file. This allows to analyse the
+It is possible to configure |ivy-engine| to print out performance statistic
+informations periodically into a CSV formatted file. This allows to analyze the
 performance of the engine and to detect long running and performance intensive
 process elements and processes. The file contains detailed informations of each
 executed process element since the last dump.
 
-After activation the informations are collected and written to the :file:`log`
-directory of the Axon.ivy Engine installation. The file contains the following
-name: :file:`performance_statistic_jjjj-mm-tt_hh-mm-tt.csv`
+After activation, all performance related information is collected and written
+to the :file:`log` directory of your |ivy-engine| installation. The file name
+has the pattern :file:`performance_statistic_jjjj-mm-tt_hh-mm-tt.csv`
 (e.g. :file:`performance_statistic_2011-03-15_09-21-05.csv`)
 
-Process element performance statistics are not collected by default. They can be
-enabled in the :code:`ProcessEngine` section of the :ref:`ivy-yaml` file.
+Process element performance statistics are not collected by default. They need to
+be enabled in the :code:`ProcessEngine` section of the :ref:`ivy-yaml` file.
 
-Analyse
+Analyze
 -------
 
-All time values are in milliseconds. The execution of some process elements are
-separated in two categories internal and external.
+All time values are in milliseconds. The execution of most process elements gets
+divided into two categories, internal and external.
 
 **Internal Category**
     The internal category is used for the execution time in the process engine
-    itself without the external exection.
+    itself, without the external execution time.
 
 **External Category**
     The external category is used for execution time in external systems. In the
-    table below the process elements are listed which use the external category.
+    table below the process elements are listed that use the external category.
 
 +-----------------------+---------------------------------------------------------------------+------------------------------------------------------------+
 | Process Element       | Internal Category                                                   | External Category                                          |
@@ -44,13 +44,13 @@ separated in two categories internal and external.
 | Program Interface     |                                                                     | The execution of the defined Java-Class.                   |
 +-----------------------+---------------------------------------------------------------------+------------------------------------------------------------+
 
-For each executed process element one entry in the view is created. See the
-table below which information is available.
+An entry in the view is created for each executed process element. The table below
+shows what information is available.
 
 +-----------------+--------------------------------------------------------------+
 | Name            | Description                                                  |
 +=================+==============================================================+
-| Entry ID        | Entry ID, useful to order the entries by its first exection. |
+| Entry ID        | Entry ID, useful to order the entries by its first execution.|
 +-----------------+--------------------------------------------------------------+
 | Application     | Application of the process element.                          |
 +-----------------+--------------------------------------------------------------+
