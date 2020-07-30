@@ -24,6 +24,7 @@ We changed the default value of the :ref:`WebServer.IvyContextName
 engine URL has changed (from :code:`http://localhost:8080/ivy/`) to
 :code:`http://localhost:8080/`.
 
+If you have a :ref:`front-end-server` configured, you have to manually define the ``WebServer.IvyContextName`` with the old value ``ivy``. Otherwise the AJP uri workers will not find a valid path.
 
 URL changes
 ***********
