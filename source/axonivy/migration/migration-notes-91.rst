@@ -11,9 +11,9 @@ Licence
 
 You need to request a new licence for |ivy-engine| 9.1.
 
-.. container:: admonition toggle
+.. container:: admonition note toggle
 
-  .. container:: header btn btn-neutral
+  .. container:: admonition-title header
 
      **Details**
 
@@ -39,9 +39,9 @@ URL changes
 
 The paths in the URL have changed. The name of the application is now at the top.
 
-.. container:: admonition toggle
+.. container:: admonition note toggle
 
-  .. container:: header btn btn-neutral
+  .. container:: admonition-title header
   
      **Details**
 
@@ -71,9 +71,9 @@ Web integration tests simplified
 Selenium based integration test do no longer require huge manually crafted maven build pom.xml definitions. 
 Existing ``pom.xml`` files for test projects must be manually simplified.
 
-.. container:: admonition toggle
+.. container:: admonition note toggle
 
-  .. container:: header btn btn-neutral
+  .. container:: admonition-title header
 
      **Details**
  
@@ -96,9 +96,9 @@ Global deploy.options.yaml removed
 
 The :file:`deploy.options.yaml` in the deployment directory can no longer be used to influence deployments.
 
-.. container:: admonition toggle
+.. container:: admonition note toggle
 
-  .. container:: header btn btn-neutral
+  .. container:: admonition-title header
 
      **Details**
   
@@ -112,9 +112,9 @@ Static JSF pages moved to webContent/view
 The location of static JSF pages in your |axon-ivy| Project have been changed to :file:`webContent/view`
 in order to improve security. 
 
-.. container:: admonition toggle
+.. container:: admonition note toggle
 
-  .. container:: header btn btn-neutral
+  .. container:: admonition-title header
 
      **Details**
 
@@ -130,9 +130,9 @@ context.xml and web.xml moved to configuration folder
 The :ref:`context-xml` and :ref:`web-xml` files are now in the global :file:`/configuration/` folder.
 If you modified them you need to apply these changes to the files in the new location.
 
-.. container:: admonition toggle
+.. container:: admonition note toggle
 
-  .. container:: header btn btn-neutral
+  .. container:: admonition-title header
 
      **Details**
  
@@ -176,9 +176,9 @@ Daily Jobs are only executed at configured time
 Daily jobs are now executed only at the configured time, even
 if the |ivy-engine| was not running at the last execution time.
 
-.. container:: admonition toggle
+.. container:: admonition note toggle
 
-  .. container:: header btn btn-neutral
+  .. container:: admonition-title header
 
      **Details**
 
@@ -212,9 +212,9 @@ Changes to the |axon-ivy| System Database
 We have introduced a new table :code:`IWA_SecurityMember` that contains entries for all users and roles.
 Migration to the new database schema is done automatically.
 
-.. container:: admonition toggle
+.. container:: admonition note toggle
 
-  .. container:: header btn btn-neutral
+  .. container:: admonition-title header
 
      **Details**
  
@@ -245,9 +245,9 @@ Using HttpAsyncClient for CXF web service calls
 We switched the default connection implementation of CXF web service calls from
 :code:`HttpURLConnection` to :code:`org.apache.http.nio.client.HttpAsyncClient`.
 
-.. container:: admonition toggle
+.. container:: admonition note toggle
 
-  .. container:: header btn btn-neutral
+  .. container:: admonition-title header
 
      **Details**
   
