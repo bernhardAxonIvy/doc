@@ -35,7 +35,7 @@ the heap or CPU usage or create thread dumps.
     If you want to do that, use the |axon-ivy| :ref:`JMX extensions <jmx>`
     in combination with tools like Nagios or IBM Tivoli.
 
-The plugin is consists of multiple tabs for different aspects.
+The plugin is consisting of multiple tabs for different aspects.
 Most of the tabs contain charts structured similar to this:
 
 .. figure:: /_images/visualvm/visualvm-plugin.png
