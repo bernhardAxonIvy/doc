@@ -4,32 +4,34 @@ Java Management Extensions (JMX)
 ================================
 
 Java Management Extensions (JMX) is a technology to read and write runtime
-information from a java processes. This allows monitoring tools to monitor the
-state of Axon.ivy Engine, e.g. with :ref:`visualvm`, Java Mission Control, Nagios, Prometheus, etc. 
-A monitoring tool that runs on the same machine and with the same user
-as the Axon.ivy Engine can connect to Axon.ivy Engine without any additional
+information from Java processes. This allows tools to monitor the
+state of an |ivy-engine|, e.g. with :ref:`visualvm`, Java Mission Control,
+Nagios, Prometheus, etc. 
+
+A monitoring tool running on the same machine and with the same user
+as the |ivy-engine| can connect to |ivy-engine| without any additional
 configuration.
 
 
 Activate Remote Access
 ----------------------
 
-If the Axon.ivy Engine is running under another user or on a remote host than
-the monitoring tool, then JMX remote access has to be activated. Remote access
-is protected by a user name and password of an Axon.ivy Engine Administrator, so
-all Axon.ivy Engine Administrator have access.
+If the |ivy-engine| is running under another user or on a remote host than
+the monitoring tool, JMX remote access has to be activated. Remote access
+is protected by a user name and password of an |ivy-engine| administrator, so
+all |ivy-engine| administrators have access.
 
-Activate remote access by uncommenting all lines in the jmx section of :ref:`jvm-options`.
+Activate remote access by uncommenting all lines in the JMX section of :ref:`jvm-options`.
 
 
 Auto Discovery (JDP)
 --------------------
 
-Some monitoring tools can auto discover running JMX servers in the network. So
-that the user does not have to know the JMX ip and port.
+Some monitoring tools can auto discover running JMX servers in the network. This way,
+a user does not have to know the JMX ip and port.
 
 You can disable this behavior in :ref:`jvm-options`
-by setting the jmx autodiscovery property to false:
+by setting the JMX autodiscovery property to false:
 
 .. code-block:: properties
 
@@ -39,35 +41,33 @@ by setting the jmx autodiscovery property to false:
 Provided MBeans
 ---------------
 
-The Axon.ivy Engine provides performance and management information by a set of
-MBeans. These allows to monitor internals of the Axon.ivy Engine. Most
+The |ivy-engine| provides performance and management information by a set of
+MBeans. They allow tools to monitor internals of the |ivy-engine|. Most
 monitoring tools provide a user interface to browse the available MBeans. 
-MBeans are mostly shown in a tree which is built with the information provided in the
-names of MBeans. 
+MBeans are mostly shown in a tree built with the information provided in the
+names of the MBeans. 
 
 .. figure:: /_images/visualvm/visualvm-mbeans.png
 
-Use the build in :ref:`engine-cockpit-monitor-mbeans` browser of the :ref:`engine-cockpit` to inspect 
-the various MBeans without to install an external monitoring tool.
+The :ref:`engine-cockpit` also contains a built-in :ref:`engine-cockpit-monitor-mbeans`
+browser. This way you do not need to install a an external monitoring tool.
 
-The names of MBeans provided by Axon.ivy are structured so that the name
-contains the Application, Process Model, Process Model Version or Environment
-where this is reasonable. 
+Where possible, |ivy-engine| MBeans names contain application, process 
+model, process model version, or environment name. 
 
-.. note::
-    Examples of typical Axon.ivy MBean names: 
+**Examples of typical Axon.ivy MBean names:**
 
-    .. code-block:: properties
+.. code-block:: properties
 
-        ivy Engine:type=External Web Service,application=MyApplication,environment=Default,name=Echo (43838347ABCD)
-        ivy Engine:type=Job Manager
-        ivy Engine:type=Process Start Event Bean,application=MyApplication,pm=MyProcessModel,pmv=1,name="MyStartEventBean (3485471349/start.ivp)"
+    ivy Engine:type=External Web Service,application=MyApplication,environment=Default,name=Echo (43838347ABCD)
+    ivy Engine:type=Job Manager
+    ivy Engine:type=Process Start Event Bean,application=MyApplication,pm=MyProcessModel,pmv=1,name="MyStartEventBean (3485471349/start.ivp)"
 
-The name and description of a MBean can be found in its meta information (see
+The name and description of an MBean can be found in its meta information (see
 the Metadata tab in the MBeans tab of VisualVM). MBeans provide information
 through attributes and operations. The description of the attributes and
-operations can also be found in its meta information (see too the tool tips in
-the Attributes and Operations tab of the MBeans tab of VisualVM).
+operations can also be found in the meta information (also the tool tips in
+the Attributes and Operations tab of VisualVM's MBeans tab).
 
 .. warning::
     Manipulating attribute values or calling operations on MBeans will
@@ -75,19 +75,19 @@ the Attributes and Operations tab of the MBeans tab of VisualVM).
     your running applications.
 
     If not mentioned otherwise, a manipulation only affects the currently
-    running engine. The manipulation will not survive a engine restart.
+    running engine. It will not survive a engine restart.
     
     Manipulations that survive a engine restart contain the following text in
-    the description of the attribute or operation: (Persistent).
+    the description of the attribute or operation: ``(Persistent)``.
 
-In addition to the MBeans provided by Axon.ivy some third party libraries
-included in Axon.ivy provide their own MBeans. One of them is Apache Tomcat that
+In addition to the MBeans provided by |axon-ivy|, some third party libraries
+included in |axon-ivy| provide their own MBeans. One of them is Apache Tomcat, which
 is used as internal web server. Its MBeans provide information about the
 handling of HTTP requests like request count, errors, execution time, sessions,
-etc. Moreover, the Java virtual machine also provides some MBeans that provide
+etc. Moreover, the Java Virtual Machine also provides some MBeans that contain
 information about the used memory (Java heap), CPU usage, uptime, etc.
 
-Below a not complete list of provided information:
+The list below contains some of the provided information:
 
 **External Database** (connections, transactions, errors, execution time, etc.)
 
