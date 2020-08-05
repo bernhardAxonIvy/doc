@@ -13,89 +13,321 @@ We suggest to install this release if you are suffering from any of these issues
 
 @changelog@
 
-Changes in 8.0.2.2001241016, 24.01.2020
+Changes in 9.1.0, 05.08.2020
 --------------------------------------------------------------------------------
 
-We strongly recommend to install this release because it fixes security issues!
+We suggest to install this release if you are suffering from any of these issues.
 
-+ XIVY-3256      Story          Query API to search users
-+ XIVY-3418      Story          Automatically add override project configuration to designer app yaml
-+ XIVY-3465      Story          Provide an API to synch a single user with the external security system
-+ XIVY-3470      Story          Improve Setup Wizard
-+ XIVY-3486      Story          Official support for Windows Server 2019
-+ XIVY-3516      Story          BPMN Export with connector labels
-+ XIVY-3524      Story          Support Microsoft SQL Server 2019
-! XIVY-3528      Story          Possible Security leak in static pages
-+ XIVY-3189      Bug            New process start not found without engine restart in designer
-+ XIVY-3295      Bug            CaseMap (start) is not removed from Engine if it is deleted from Project in Designer
-+ XIVY-3489      Bug            Configuration prints warn logs on SecuritySystem#MAP if DefaultContext has commas
-+ XIVY-3490      Bug            Designer freeze if Html content in CMS is opened
-+ XIVY-3495      Bug            Ivy Components not updated after project dependency change
-+ XIVY-3496      Bug            Undo throws error if the last action was an Alternative Gateway condition reordering
-+ XIVY-3497      Bug            Oracle System Database creation is wrong
-+ XIVY-3499      Bug            Cut off SWT tables on Windows
-+ XIVY-3502      Bug            Demo Project Import failure
-+ XIVY-3505      Bug            Deployment REST API ignores deploy.options.yaml in zip
-+ XIVY-3510      Bug            Remote debugging does not work if enabled in jvm.options file
-+ XIVY-3511      Bug            SSO does not work with AJP with the default configuration
-+ XIVY-3513      Bug            Initial Oracle startup fails while content conversion
-+ XIVY-3514      Bug            Process Templates loose icon after designer restart
-+ XIVY-3517      Bug            Update debian package dependecies to java 11
-+ XIVY-3536      Bug            NPE on Maven 'update project' if an packed '.iar' project is in the workspace
-+ IVYPORTAL-9276 Technical task Enhance chat (UI + feature)
-+ IVYPORTAL-9355 Technical task Clear option "Kein Stellvertreter" (no deputy) when select Deputy dropdown
-+ IVYPORTAL-9469 Technical task One more configuration level for IFrame: Server level + update Portal doc
-+ IVYPORTAL-9524 Technical task [BUG] Display wrong chart name on Dashboard
-+ IVYPORTAL-9526 Technical task [BUG] Wrong highlighted submenu items when cancel leaving task
-+ IVYPORTAL-9562 Technical task [BUG] Cannot open external link on left menu (iPhone + iPad)
-+ IVYPORTAL-7219 Story          Create Configuration File for Developers - PortalSettings and Global Variables
-+ IVYPORTAL-7609 Story          Growl Message - Separate positive and negative Feedback after Task 
-+ IVYPORTAL-8200 Story          Reset task when leaving for side step
-+ IVYPORTAL-8412 Story          Select all button in Task/Case Category Filter
-+ IVYPORTAL-8673 Story          Environment handling for express II
-+ IVYPORTAL-9347 Story          Analyse and Improve Portal performance II
-+ IVYPORTAL-9350 Story          Analyse and improve Performance for Statistics II
-+ IVYPORTAL-9598 Story          Enhance process List - Creating and Categorization II
-+ IVYPORTAL-9453 Bug            Inconsistent Behaviour Case Details and related tasks and cases
-
-Changes in 8.0.1.1912241208, 24.12.2019
---------------------------------------------------------------------------------
-
-We strongly recommend to install this release because it fixes security issues!
-
-+ XIVY-2946      Story          Understandable error message if BusinessCaseData is saved to a non persistent Business Case
-+ XIVY-3318      Story          API to get business case data of a business case
-+ XIVY-3466      Story          Support SVG images in CMS
-+ XIVY-3477      Story          Simplify HtmlPageToMailConverter
-+ XIVY-3479      Story          HTTP deployment to app 'System' as bad default
-+ XIVY-3494      Story          BusinessCaseData demo park task with data in WorkflowDemos
-* XIVY-3351      Bug            Sync user at login with single sign-on
-+ XIVY-3378      Bug            Deployment fails when Global Variables are configured in yaml
-+ XIVY-3405      Bug            Execution of method was not successful in Html Dialog
-+ XIVY-3426      Bug            Rule Beans can't generate DMN due to JAXB
-+ XIVY-3440      Bug            errorPage.getLocale() throws NPE in ErrorPage
-+ XIVY-3441      Bug            Engine logs invisible in maven console out
-+ XIVY-3468      Bug            Style of html dialog looks strange after change in HtmlDialog UI Editor on Windows
-+ XIVY-3472      Bug            Can not see second input parameter on Callable Subprocess Start
-* XIVY-3473      Bug            No administrators after migrating from 7 to 8
-! XIVY-3474      Bug            Passwords of new administrators will not be hashed in ivy.yaml
-* XIVY-3476      Bug            Process start links broken (view expired) when called from third party site
-+ XIVY-3478      Bug            Properties in Web Service Call Activity Request not visible
-+ XIVY-3481      Bug            Error 'Attachment download failed for url' when engine sends task notification mails
-+ XIVY-3482      Bug            SVG images appears as attachment in task notification mails
-+ XIVY-3485      Bug            Reordering of Alternative Gateway conditions not working in embeded subprocess
-+ XIVY-3488      Bug            Task notification mail is not nicely formatted
-+ XIVY-3491      Bug            Change location of custom jsf error pages
-+ XIVY-3500      Bug            BPMN exporter wrong label positions on bmpn.io
-+ IVYPORTAL-9244 Technical task Enhancement for Express category
-+ IVYPORTAL-9249 Technical task [BUG] Display error when session expired
-+ IVYPORTAL-9284 Technical task Remove express process in User Favorites when it is deleted
-+ IVYPORTAL-9295 Technical task Increase space for User Favorites
-+ IVYPORTAL-9466 Technical task Remove white space: upload document
-+ IVYPORTAL-9476 Technical task [Bug]  Export excel error in task analysis
-+ IVYPORTAL-8872 Story          Analyse and Improve Portal performance
-+ IVYPORTAL-9345 Story          Handle migration HIDDEN tasks/cases from 7.0.10 to 8.0
-+ IVYPORTAL-9351 Story          Enable/disable counting task/case when displaying task/case list
++ XIVY-4473       Technical task  cms tree in linux always disapearing in dark mode
++ XIVY-494        Story          Simply setup of test environment in a new or (existing) ivy project
++ XIVY-622        Story          Introduce a TEST-IAR lifecycle with good default goal executions for integration test projects
++ XIVY-1260       Story          Mapping function Recordset.toList(Class<T>) : List<T>
++ XIVY-1606       Story          Support custom annotation processors like Lombok
++ XIVY-1919       Story          Mock Support for Activities
++ XIVY-2275       Story          Provide a virgin engine to run integration-tests on it
++ XIVY-2965       Story          Toolsupport to create IvyTestProject in designer
++ XIVY-2982       Story          Include Mavenizer into the product
++ XIVY-3123       Story          Validate ivy scriptlets with maven in complex applications
++ XIVY-3138       Story          Expose Java Warnings detected during ivy project build
++ XIVY-3147       Story          Transform release documents to readthedocs
++ XIVY-3157       Story          Streamline JUNIT 5 based Test usage and architecture
++ XIVY-3198       Story          Support new Project On-Boarding features of Eclipse 2019-03
++ XIVY-3256       Story          Query API to search users
++ XIVY-3344       Story          Disable users instead of deleting them when user will be synchronized
++ XIVY-3372       Story          Self managed users in a managed security system
++ XIVY-3389       Story          Upgrade hsqldb to 2.5.0
++ XIVY-3418       Story          Automatically add override project configuration to designer app yaml
++ XIVY-3432       Story          Use external identifier (AD: objectGUID, ND: guid) to synchronize external users 
++ XIVY-3448       Story          State of the art IvyProjectTree: fast & featured
++ XIVY-3450       Story          Prototype how to run process tests
++ XIVY-3451       Story          Support Ivy.* API in Tests
++ XIVY-3452       Story          Write unit test for our workflow demos to learn what infrastructure is needed 
++ XIVY-3453       Story          Document how to run UI tests with maven and Axon.ivy
++ XIVY-3465       Story          Provide an API to synch a single user with the external security system
++ XIVY-3467       Story          Sticky hint on engine cockpit if a restart is needed
++ XIVY-3484       Story          Prototype: Every ivy application is a Tomcat webapp
++ XIVY-3501       Story          Support Swimlanes for BPMN Export
++ XIVY-3503       Story          Improve Task- and CaseQuery Performance by improving workflow data model
++ XIVY-3530       Story          Default Html Dialog theme that is easy to customize and good looking by default 
++ XIVY-3535       Story          Add new APIs to easily iterate over large datasets 
++ XIVY-3538       Story          Improve security concept for static pages
++ XIVY-3556       Story          Upgrade eclipse targetplatform to 2020-03
++ XIVY-3557       Story          Switch Axon.ivy Project Tree to Eclipse navigator framework
++ XIVY-3562       Story          API sugar to ease writing BpmClient tests
++ XIVY-3563       Story          Automated deployment of required projects
++ XIVY-3564       Story          Provide BpmClient with an OSGi instance of the ivy-core
++ XIVY-3565       Story          Provide valid Testing classpath to run BpmClient tests
++ XIVY-3566       Story          Document how to run BPM.exec tests in Axon.ivy
++ XIVY-3567       Story          Filter and order users by display name
++ XIVY-3568       Story          Provide new IvyWebTest artifact
++ XIVY-3573       Story          Ensure that mail notification works with a lot of users
++ XIVY-3574       Story          Share demo projects on GitHub
++ XIVY-3576       Story          Provide visualvm plugin in the Axon.ivy Market
++ XIVY-3578       Story          Include portal-user-examples in demo portal app
++ XIVY-3584       Story          Remove legacy data from RichDialog Interface Descriptor
++ XIVY-3585       Story          Remove irritating db drivers logs in engine start
++ XIVY-3588       Story          Enhance Axon.ivy Project Navigator
++ XIVY-3590       Story          Enhance UserQuery with grouping and global query executor
++ XIVY-3591       Story          Provide information about the communication with the external mail server over JMX
++ XIVY-3592       Story          Support workstation for NTLM Authentication in CXF Web Service Client
++ XIVY-3597       Story          Provide Apache http as connection provider for CXF Web Service Calls
++ XIVY-3603       Story          Rules as first class citizens in the Axon.ivy Project Navigator
++ XIVY-3604       Story          Prototype: Every ivy application is a Tomcat webapp ||
++ XIVY-3614       Story          Provide a LdapBrowser in the Cockpit
++ XIVY-3690       Story          Deprecate the web service client AXIS stack
++ XIVY-3718       Story          Support more than one required projects level and ivy archives
++ XIVY-3726       Story          Introduce new versioning concept for LE and LTS versions
++ XIVY-3738       Story          Show Project Library version for PMVs
++ XIVY-3748       Story          Add loading icon to Html Dialog templates
++ XIVY-3754       Story          Business Process Testing Findings
++ XIVY-3765       Story          Every ivy application is a Tomcat webapp 
++ XIVY-3854       Story          User friendly default error pages
++ XIVY-3866       Story          Provide Public API to create URIs
++ XIVY-3867       Story          Streamline Uri's
++ XIVY-3870       Story          Support IAR binaries on JDT runtime classpath
++ XIVY-3872       Story          Provide easy to use API to test a process with multiple tasks
++ XIVY-3875       Story          Add MBean browser and Chart to Monitor section of Cockpit
++ XIVY-3982       Story          Allow users to set External DB driver properties in Cockpit
++ XIVY-3985       Story          Improve performance and memory consumption of user synch
++ XIVY-4014       Story          Cache REST client to improve performance
++ XIVY-4040       Story          Improve performance of (yaml) file based Configuration API
++ XIVY-4045       Story          Unassigned Tasks for disabled users
++ XIVY-4065       Story          Do not log web service process start and stops in runtime log 
++ XIVY-4068       Story          Deterministic daily job executions
++ XIVY-4075       Story          Add support report feature to the cockpit
++ XIVY-4079       Story          Unplug Subversion Client Subclipse from Designer
++ XIVY-4081       Story          Upgrade eclipse target platform to 2020-06
++ XIVY-4083       Story          Cleanup webapps directory
++ XIVY-4084       Story          Speed up role synch of user synch
++ XIVY-4085       Story          Read nested groups on user synch with one query from Active Directory
++ XIVY-4158       Story          (Prepare) Release 9.1
++ XIVY-4160       Story          Show PMV dependencies in Cockpit 
++ XIVY-4196       Story          Restyle filter concept for all table views in Engine Cockpit
++ XIVY-4207       Story          Pack internal faces-config.xml into jar
++ XIVY-4241       Story          Upgrade JAX-RS REST library Jersey to 2.31
++ XIVY-4246       Story          Switching from external security system to internal security system
+! XIVY-4440       Story          Upgrade Tomcat to fix CVE-2020-13935
++ XIVY-4466       Story          Upgrade CXF to 3.3.7
++ XIVY-3381       Improvement    Override feature for a whole process to define the case scope
++ XIVY-3583       Improvement    Detoxify the engine info page
++ XIVY-3609       Improvement    Update Axon.ivy engine debian package always faces change in ivy.yaml
++ XIVY-3779       Improvement    Enhance core config api to check if restart is needed
++ XIVY-3857       Improvement    SystemDb should not run unnecessary ContentConversions
++ XIVY-4296       Improvement    DocFactory provides a CallSubprocess that expands nested objects.
++ XIVY-4327       Improvement    Update environment overview in documentation
++ XIVY-2221       Bug            JUNIT runtime classpath in Designer
++ XIVY-2397       Bug            Maven project build plugin does not work if engine directory is not writable
++ XIVY-2996       Bug            Can not separate test and normal classes with project-build-plugin
+* XIVY-3351       Bug            Synch user at login with single sign-on
++ XIVY-3356       Bug            Do not process error pages after rest provider exception
++ XIVY-3405       Bug            Execution of method was not successful in Html Dialog
++ XIVY-3426       Bug            Rule Beans can't generate DMN due to JAXB
++ XIVY-3440       Bug            errorPage.getLocale() throws NPE in ErrorPage
++ XIVY-3442       Bug            Rule Beans decision table minimized after added column
++ XIVY-3444       Bug            ViewExpiredException when user from other app in same browser logs out
++ XIVY-3449       Bug            project build plugin excludes compiled classes dir from IAR if set to 'target/classes '
++ XIVY-3495       Bug            Ivy Components not updated after project dependency change
++ XIVY-3506       Bug            CaseQuery order descriptions not working with OracleDb, HsqlDb and MSSql
++ XIVY-3519       Bug            Could not find any registered converter-class in Axon.ivy Designer
++ XIVY-3523       Bug            Licence file loading problems not reported in Log
++ XIVY-3526       Bug            Fix Runtimelog for MAC Designer
++ XIVY-3533       Bug            IvyComponents not sorted alphabetically in HtmlDialog Toolbar
++ XIVY-3541       Bug            Synchronize User does not respect deleted users for license check when creating new users
++ XIVY-3544       Bug            Error in Log when deploying over REST
++ XIVY-3546       Bug            Support undefined names in CXF WebServiceClient generation
++ XIVY-3547       Bug            Web Service Client Generation can not handle url parameters
++ XIVY-3549       Bug            Thirdparty java libraries can not be resolved in dependent project if required project is packed
++ XIVY-3550       Bug            Custom Field Table Editor is hiding first line
++ XIVY-3555       Bug            Process Data Validator only respects ivy data classes
++ XIVY-3559       Bug            Can not start process in designer if web browser view is closed
++ XIVY-3560       Bug            Counting license users triggered by VisualVM Plugin can stale engine with lots of users
++ XIVY-3571       Bug            Can not load rules from new excel (xlsx) documents
++ XIVY-3575       Bug            Can not pass null to method start events of Html Dialog
++ XIVY-3577       Bug            Can not reference to xhtml template in folder webContent/view
++ XIVY-3579       Bug            Re-deployment of a taskswitch gateway corrupts system-db
++ XIVY-3582       Bug            Streamline ivy.webserver.yaml connector defaults with tomcat properties
++ XIVY-3586       Bug            CXF WebService client generation causes compile error
++ XIVY-3587       Bug            Designer starts with error message if casemap is in workspace
++ XIVY-3589       Bug            NPE on Engine start if project files are missing for dependencies
++ XIVY-3594       Bug             Engine can not be started sometimes because of PersitentObjectDeletedException
+! XIVY-3598       Bug            AJP vulnerabilty Ghostcat (CVE-2020-1938)
++ XIVY-3605       Bug            Counting license users triggered by AD import or user creation can stale engine with lots of users
++ XIVY-3741       Bug            Redirect to Standard Pages when in Frame
++ XIVY-3773       Bug            Maven build plugin copies engine without same file permissions
++ XIVY-3774       Bug            Maven build plugin logs strange warning about deploy directory 
++ XIVY-3780       Bug            Prevent that a lot of IllegalArgumentException are thrown and catched in normal program flow while rendering JSF resources
++ XIVY-3849       Bug            Rest Client WebTarget fails with Error when being reused
++ XIVY-3850       Bug            Simplify licence model and introduce a new licence 9.x
++ XIVY-3869       Bug            Errors like StackOverflowError are wrapped into PersistencyException and may lead to database connection leaks
++ XIVY-3871       Bug            Re-deployment of multi IAR ZIP file may not re-deploy all IARs
++ XIVY-3884       Bug            JSF Managed Bean Name not the same on Designer and Engine if class name starts with two upper case letters
++ XIVY-3888       Bug            REST activity call fails: missing truststore on MAC Designer
++ XIVY-3946       Bug            Project REST resources are not accessible > 404 error
++ XIVY-3956       Bug            Process Editor default zoom way too small on MAC Designer
++ XIVY-3975       Bug            ivy.html.startInFrameRef generates corrupt urls
++ XIVY-3979       Bug            Can't see sources while debugging with IAR in workspace
++ XIVY-3995       Bug            Single IAR deployments are silently ignored
++ XIVY-4009       Bug            Poor engine class-scanning performance when using PACKED pmv file format
++ XIVY-4023       Bug            External Browser opens many tabs in a row on Engine Start
++ XIVY-4024       Bug            Debug View always PopUp when ivyEngines are started
++ XIVY-4031       Bug            Unexpected error when creating new APP
++ XIVY-4055       Bug            AWT Thread blocked when jumping to referenced process on Mac
++ XIVY-4059       Bug            Allow users to use AJP with HTTPS on the frontend webserver
++ XIVY-4076       Bug            Remove error report servlet from core
++ XIVY-4080       Bug            Cockpit needs very long time to load roles and roles of users if there are more than 10'000 roles
++ XIVY-4118       Bug            Session-Leak with REST Services over IIS/SSO
++ XIVY-4135       Bug            WebApp classloader clash on engine migrated from 7.0
++ XIVY-4147       Bug            Support MSSQL instance name with non JDTS driver
++ XIVY-4159       Bug            Application overview not displayed due to NPE
++ XIVY-4161       Bug            Designer process reporting fails and aborts report creation
++ XIVY-4166       Bug            Yaml template links not resolved in our public Docs
++ XIVY-4194       Bug            ProcessSearch broken after handling in memory search hits
++ XIVY-4197       Bug            Can't launch RequestStart in EmbeddedSub with Designer
++ XIVY-4199       Bug            Absolute uris generated in static xhtml pages broken
++ XIVY-4240       Bug            Starts in embedded subs of user dialog logic can not be found
++ XIVY-4249       Bug            NullPointerException when opening External Case Map Editor
++ XIVY-4283       Bug            Show growls for engine cockpit action errors instead of error page
++ XIVY-4295       Bug            Support annotation associations for BPMN Export
++ XIVY-4303       Bug            Special characters wrongfully URL encrypted in Engine Cockpit redirects
++ XIVY-4378       Bug            Bad performance when create a rule session of a rule base the first time
++ XIVY-4387       Bug            BasicWFUI CaseDetail Page does not implement "Show System Tasks" option
++ XIVY-4390       Bug            SystemDatabase overview in Engine-Cockpit checks connection initial with empty password
++ XIVY-4426       Bug            Reduce swallow letters in some search inputs in Engine Cockpit
++ XIVY-4441       Bug            HTML Dialogs should be good looking on mobile too
++ XIVY-4478       Bug            OutOfMemory Exception when calling IWorkflowContext.getRunningCasesCount(IProcessModelVersion)
++ XIVY-4504       Bug            Infopage shows error "Parameter cms must not be null" if file resouces of app with casemaps is not available
++ XIVY-4515       Bug            REST activity does not show active POST method
++ IVYPORTAL-9469  Technical task One more configuration level for IFrame: Server level + update Portal doc
++ IVYPORTAL-9506  Technical task Consolidate task and case action button
++ IVYPORTAL-9672  Technical task Statistic do not update when changed language II
++ IVYPORTAL-9685  Technical task [BUG] Mandatory validation missing when add note
++ IVYPORTAL-9690  Technical task Case Description in CaseList it not consistent with Task Description in TaskList
++ IVYPORTAL-9694  Technical task Broken UI in Case details with lots of technical case
++ IVYPORTAL-9698  Technical task [BUG] Wrong extension detection in Express Management
++ IVYPORTAL-9701  Technical task Enhance Case note with multi line
++ IVYPORTAL-9710  Technical task Cannot import Express with umlaut characters
++ IVYPORTAL-9729  Technical task Label Favourites (GB) vs Favorites (US)
++ IVYPORTAL-9761  Technical task Note is not updated when added (First task)
++ IVYPORTAL-9762  Technical task Make "No sidestep" message unclickable
++ IVYPORTAL-9849  Technical task Minor Improvement for mobile II
++ IVYPORTAL-9853  Technical task [BUG] Open wrong task
++ IVYPORTAL-9854  Technical task Should not let user create adhoc task for first task (CREATED state) II
++ IVYPORTAL-9875  Technical task [BUG] header of Process History has wrong position after sort
++ IVYPORTAL-9919  Technical task [BUG] "Back" button don't show on case details page
++ IVYPORTAL-9923  Technical task Incorrect Date time of done task (Task Note)
++ IVYPORTAL-9924  Technical task Process Owner list is not correct after saving express workflow
++ IVYPORTAL-9939  Technical task [UI] Some tables not aligned on small screen
++ IVYPORTAL-9940  Technical task [UI] Remove unnecessary white space of Task/Case Details on small screen
++ IVYPORTAL-9941  Technical task Broken UI in case list with long description case
++ IVYPORTAL-9955  Technical task Hide Process navigation letter on horizontal screen of very short height screen 
++ IVYPORTAL-9967  Technical task [BUG] - Clean up obsoleted data deletes wrong UserFavorites process
++ IVYPORTAL-9973  Technical task Broken UI on Related task and case
++ IVYPORTAL-10031 Technical task [Bug]  Break UI announcement 
++ IVYPORTAL-10034 Technical task [BUG] Redundance tooltip when delete document
++ IVYPORTAL-10035 Technical task Missing validation for max-length of chart name in Create new statistic page
++ IVYPORTAL-10052 Technical task Remove "views" in SubMenuItem.java and update migration note
++ IVYPORTAL-10061 Technical task [Bug] Category Filter not update after change language
++ IVYPORTAL-10077 Technical task Update layout for Casemap II
++ IVYPORTAL-10078 Technical task Add End page for examples in portal-user-examples II
++ IVYPORTAL-10111 Technical task Reduce width for Document component columns
++ IVYPORTAL-10129 Technical task Enhance changing language
++ IVYPORTAL-10135 Technical task Show All Steps for Process Chain in iFrame
++ IVYPORTAL-10150 Technical task Remove poi-ooxml dependency
++ IVYPORTAL-10151 Technical task Fix Portal Warnings
++ IVYPORTAL-10152 Technical task Check and remove obsolete Portal cookies
++ IVYPORTAL-10200 Technical task [BUG] - White list extension property work incorrectly with empty value
++ IVYPORTAL-10315 Technical task [BUG] Error message on already started task II
++ IVYPORTAL-10334 Technical task [BUG] Express final review task goes to Express End page when user clicks Cancel
++ IVYPORTAL-10363 Technical task Breadcrumb issue (from Breadcrumb story)
++ IVYPORTAL-10379 Technical task Changing task expiry date fails but not show validation message
++ IVYPORTAL-10390 Technical task Technical case list in Case Details is different from "Show more technical cases" page 
++ IVYPORTAL-10414 Technical task [BUG] Error message in absence dialog is duplicated
++ IVYPORTAL-10428 Technical task Fix Class cast exception for Document features (Multi-app)
++ IVYPORTAL-10445 Technical task Back button on Task Details cannot work after cancelled task II
++ IVYPORTAL-10446 Technical task Remove obsolete portal-components.js II
++ IVYPORTAL-10478 Technical task Enhance Environment component style
++ IVYPORTAL-10480 Technical task Add new GUI Test for Back Button in Task/Case details
++ IVYPORTAL-10529 Technical task [BUG] height of main content with header & footer auto minimized when resize
++ IVYPORTAL-10535 Technical task Adapt Application name validate when add new application
++ IVYPORTAL-10540 Technical task [BUG] Task filter displays wrong saved task responsible
++ IVYPORTAL-10542 Technical task NPE when uncheck then select a selected case filter
++ IVYPORTAL-10554 Technical task Adapt Manage Columns in Task Analysis
++ IVYPORTAL-10583 Technical task Update UI when don't have any document, note
++ IVYPORTAL-10597 Technical task Chat panel is obscured by Header and Footer component
++ IVYPORTAL-10607 Technical task Incorrect user order in dropdown II
++ IVYPORTAL-10619 Technical task Update document for My Profile page
++ IVYPORTAL-10637 Technical task Reset task/case filter button is not shown after changing filter values
++ IVYPORTAL-10642 Technical task Hide search input and create external process link in global search result
++ IVYPORTAL-10665 Technical task Case and Task Details do not scroll smoothly (Mobile)
++ IVYPORTAL-10667 Technical task Scroll issue with Portal 8 + 9
++ IVYPORTAL-10668 Technical task Task list and case list missing scroll when have lots of task,case
++ IVYPORTAL-10682 Technical task Display wrong task priority
++ IVYPORTAL-10686 Technical task Cannot remove filter in task analysis 
++ IVYPORTAL-10746 Technical task Responsive dialog small ui bugs II
++ IVYPORTAL-10750 Technical task Enhance Documentation related to AdHoc II
++ IVYPORTAL-10751 Technical task Minor UI bugs II
++ IVYPORTAL-10757 Technical task Broken UI when change state filter in task list, case list
++ IVYPORTAL-10792 Technical task Black icon in express
++ IVYPORTAL-10803 Technical task Cannot sort column (Related technical case page)
++ IVYPORTAL-10830 Technical task Broken responsive in ProcessHistoryComponent
++ IVYPORTAL-10859 Technical task Fix bug TaskFilterData cannot be cast II
++ IVYPORTAL-10865 Technical task Add loading icon to Html Dialog templates II
++ IVYPORTAL-10866 Technical task Disable Delegate, Add Adhoc for READY_FOR_JOIN task II
++ IVYPORTAL-10867 Technical task Add "Clear the delay" action in task action for DELAYED task II
++ IVYPORTAL-6301  Story          Consolidate Email Settings and Language Settings in 1 Settings Menu
++ IVYPORTAL-7219  Story          Create Configuration File for Developers - PortalSettings and Global Variables
++ IVYPORTAL-7933  Story          Handle the breadcrumb menu in the portal
++ IVYPORTAL-8207  Story          Express - handle Read Only view
++ IVYPORTAL-8412  Story          Select all button in Task/Case Category Filter
++ IVYPORTAL-8673  Story          Environment handling for express II
++ IVYPORTAL-9598  Story          Enhance process List - Creating and Categorization II
++ IVYPORTAL-9625  Story          Improve Standard Growl Messages after Tasks and Process creation II
++ IVYPORTAL-9629  Story          New PortalExamples Project for Business users
++ IVYPORTAL-9732  Story          Priorization of SASS CSS entries to low
++ IVYPORTAL-9735  Story          Configurable Environment Info
++ IVYPORTAL-9763  Story          Improve Task analysis feature and performance II
++ IVYPORTAL-9764  Story          Improve Absences Management II
++ IVYPORTAL-9787  Story          Automate updating Portal document images
++ IVYPORTAL-9789  Story          Make dialog responsive
++ IVYPORTAL-9944  Story          Destroy case in case details
++ IVYPORTAL-9978  Story          Create a User Selection Combobox Component II
++ IVYPORTAL-9979  Story          Use UserQuery API II
++ IVYPORTAL-10049 Story          Transparency about PMV in Version Info Dialog
++ IVYPORTAL-10058 Story          Enhance TaskTemplate and iframeTemplate
++ IVYPORTAL-10069 Story          Harmonise visibility for statistics according to "normal" permissions
++ IVYPORTAL-10071 Story          Improve hide system tasks from history
++ IVYPORTAL-10132 Story          Query user by global executor  and filter/order display name
++ IVYPORTAL-10140 Story          Refactor Growl message
++ IVYPORTAL-10159 Story          Handle the breadcrumb menu in the portal II
++ IVYPORTAL-10209 Story          Placeholders in header and footer 
++ IVYPORTAL-10227 Story          Show/hide document component in task detail/case detail
++ IVYPORTAL-10228 Story          Improve Displaying logged in user
++ IVYPORTAL-10233 Story          Portal overlay Guide - The first time a user is logged in
++ IVYPORTAL-10236 Story          Enhance visibility of tasks and cases depending on permissions
++ IVYPORTAL-10245 Story          Portal User Example Guide 
++ IVYPORTAL-10252 Story          Adapt Portal url changes II
++ IVYPORTAL-10305 Story          PortalSetting for Global search
++ IVYPORTAL-10306 Story          Enhance visibility of case owner
++ IVYPORTAL-10340 Story          Adapt new disable/enable mechanism of IUser
++ IVYPORTAL-10341 Story          Adapt new mechanism to use external identifier to synchronize external users
++ IVYPORTAL-10353 Story          Portal Multi App with Class Cast Exception
++ IVYPORTAL-10396 Story          Enhance visibility of tasks and cases for Administrator in portal
++ IVYPORTAL-10416 Story          Portal uses the standard ivy Theme for portal II
++ IVYPORTAL-10417 Story          Adapt Link Colours and Task widget colours II
++ IVYPORTAL-10641 Story          Update Portal documentation before release 9.1
++ IVYPORTAL-10651 Story          Provide a param to set isWorkingOnATask 
++ IVYPORTAL-10771 Story          Improve IFrames Recognition
++ IVYPORTAL-10824 Story          Adapt Task/CaseQuery for filtering user, role
++ IVYPORTAL-10842 Story          Enhance Buttons in Portal II
++ IVYPORTAL-7778  Bug            Error when clean up obsolete data
++ IVYPORTAL-9453  Bug            Inconsistent Behaviour Case Details and related tasks and cases
++ IVYPORTAL-9730  Bug            Saved filter is not reseted after changing filters
++ IVYPORTAL-9745  Bug            Filter in Task list - Responsible not considered correctly. 
++ IVYPORTAL-10065 Bug            Improve document symbol in case details
++ IVYPORTAL-10128 Bug            Permission UserCreateSubstitute not respected in add absence dialog
++ IVYPORTAL-10214 Bug            Navigation technical case back to business case
++ IVYPORTAL-10351 Bug            Portal chat doesn't work with load balance
++ IVYPORTAL-10563 Bug            Portal totally blocked due to parallel request from Chat and XHR II
 
 Changes in 8.0.0.1912040933, 04.12.2019
 --------------------------------------------------------------------------------
@@ -1977,7 +2209,7 @@ Otherwise, use the latest Long Term Support version.
 Axon.ivy Core:
 - Case Map Runtime
 - Business Case Context (Business Data in the context of a Business Case) 
-	
+  
 Axon.ivy Designer:
 - Case Map Designer (Editor, Wizard, etc.)
 - Enhanced activity to call REST Web Services
@@ -2084,7 +2316,7 @@ Axon.ivy Core:
 - Fuzzy search and scored query support in Business Data search API.
 - User defined business data id.
 - Customizable web service process endpoints.
-	
+  
 Axon.ivy Designer:
 - New checkbox on Request Start (Trigger) and Signal Start to control if started cases should be attached to Business Case.   
 - New redesigned inscription mask to configure task and case with support for new category field.
@@ -2156,19 +2388,19 @@ Axon.ivy Engine:
 + XIVY-1617 Bug          Strange and random project validation problems if project class throws Exception in static initializer
 + XIVY-1624 Bug          Exception: Lookup for ivy project based REST resources failed java.lang.IllegalArgumentException: Parameter processModelVersion must not be null
 
-+ IVYPORTAL-3394 Story   Session "Agile Uni for Portal"	
-+ IVYPORTAL-3369 Bug     Related tasks of Case not display all Tasks	
-+ IVYPORTAL-3350 Story   Get back PortalGUITest after new design applied	
-+ IVYPORTAL-3325 Story   URL detection on single server	
-+ IVYPORTAL-3324 Story   Small bugfixes	
-+ IVYPORTAL-3323 Story   Create a 6.4 hotfix	
-+ IVYPORTAL-3288 Story   Bug fix for Portal	
-+ IVYPORTAL-3247 Story   Bug fix for release	
-+ IVYPORTAL-3219 Story   Test migration	
-+ IVYPORTAL-3217 Story   Test integrated Portal on Jakobshorn	
-+ IVYPORTAL-3158 Story   Test chrome compatibility	
-+ IVYPORTAL-2818 Story   JUnits in build	
-+ IVYPORTAL-2771 Story   Autodetection if no extranet URL is set	
++ IVYPORTAL-3394 Story   Session "Agile Uni for Portal" 
++ IVYPORTAL-3369 Bug     Related tasks of Case not display all Tasks  
++ IVYPORTAL-3350 Story   Get back PortalGUITest after new design applied  
++ IVYPORTAL-3325 Story   URL detection on single server 
++ IVYPORTAL-3324 Story   Small bugfixes 
++ IVYPORTAL-3323 Story   Create a 6.4 hotfix  
++ IVYPORTAL-3288 Story   Bug fix for Portal 
++ IVYPORTAL-3247 Story   Bug fix for release  
++ IVYPORTAL-3219 Story   Test migration 
++ IVYPORTAL-3217 Story   Test integrated Portal on Jakobshorn 
++ IVYPORTAL-3158 Story   Test chrome compatibility  
++ IVYPORTAL-2818 Story   JUnits in build  
++ IVYPORTAL-2771 Story   Autodetection if no extranet URL is set  
 
 Changes in 6.4.0.52683 27.10.2016 (since product release 6.3.0.52421, 12.09.2016)
 ---------------------------------------------------------------------------------
@@ -2180,7 +2412,7 @@ Otherwise, use the latest Long Term Support version.
 
 Axon.ivy Core:
 - Auto initialize Data Classes in Html Dialogs 
-	
+  
 Axon.ivy Designer:
 - Easy import of Axon.ivy sample projects
   
@@ -2239,9 +2471,9 @@ Otherwise, use the latest Long Term Support version.
 
 Axon.ivy Core:
 - Business Data 
-	- Repository API to save and load business data values
-	- Search API to search for business data values
-	
+  - Repository API to save and load business data values
+  - Search API to search for business data values
+  
 Axon.ivy Designer:
 - Web Service Call Element
   - New options to control how the request parameters are set up and mapped.
@@ -3374,7 +3606,7 @@ Bug fixes and feature implementations:
 * Issue #25102 (Improvement): Improve validation in HTML Dialog Views for variables declared in tags
 * Issue #25105 (Bug): Option "do not use groups of a user" not working
 * Issue #25115 (Improvement): Docfactory: upgrade the aspose Total License and the Aspose libs
-		   
+       
 The following issues fixed in 5.0 update releases are also included in 5.1
 --------------------------------------------------------------------------
 
@@ -4598,14 +4830,14 @@ Changes in 4.1.3 (since product release 4.1.2.32567, 09.04.2010)
 
 Xpert.ivy Designer:
 
-	- RBrowser runs on more operating systems such as Windows Vista, Windows 7 
-	  and on 64bit systems
+  - RBrowser runs on more operating systems such as Windows Vista, Windows 7 
+    and on 64bit systems
   
 Xpert.ivy Server:
 
-	- User properties can now be created and edited in the Server 
-	  Administration Tool
-	
+  - User properties can now be created and edited in the Server 
+    Administration Tool
+  
 Bugfixes and feature implementations:
 
 * Issue #17887 (Bug): RD Window Config: Maximize too big -> Taskbar invisible
@@ -4778,7 +5010,7 @@ Xpert.ivy Designer:
     and Rich Dialogs.
   - The history view has two new toolbar icons to navigate to the next and 
     previous process element. During the navigation the selection and expanded 
-	state of the tree are restored 
+  state of the tree are restored 
   - The amount of data in the history view can be configured
   - Inscription mask does no longer close with ESC key without asking the 
     user if he wants to save the changed data.
@@ -4797,25 +5029,25 @@ Xpert.ivy Designer:
     information specified in the JPA Entity classes.
   - The CommonDialogs project has been integrated to the new IvyAddOns project. 
     The IvyAddOns project contains other useful features for the work with 
-	Xpert.ivy for example DynamicDialogs.
+  Xpert.ivy for example DynamicDialogs.
   - New process element Program User Interface. This element is not on the 
     palette, but it can be used by OEM Partners to implement their own UI 
-	technology.
+  technology.
   - New version of the subversion plugin 1.6.2
   
 Xpert.ivy Server:
 
-	- Config Project has become obsolete
-	- New project to process model version deployment wizard
-	- Check if the project to deploy is compatible with the existing pmv 
-	  before deploying it to a pmv
-	- Check if the project is complete before deploying it to a pmv
-	- Server side ULC logging can be configured
-	- Environments with Global Variables and Database Configurations can 
-	  configured in the Server Administrator
-	- Support Single Sign On in combination with IIS and NTML	
-	- Tabs in Server Administrator application can now only be opened once
-	 
+  - Config Project has become obsolete
+  - New project to process model version deployment wizard
+  - Check if the project to deploy is compatible with the existing pmv 
+    before deploying it to a pmv
+  - Check if the project is complete before deploying it to a pmv
+  - Server side ULC logging can be configured
+  - Environments with Global Variables and Database Configurations can 
+    configured in the Server Administrator
+  - Support Single Sign On in combination with IIS and NTML 
+  - Tabs in Server Administrator application can now only be opened once
+   
 Bugfixes and feature implementations:
 
 * Issue #15753 (Bug): DB Step: Fehler beim Zugriff auf ID-Feld mit Sql Server
@@ -4971,7 +5203,7 @@ Bugfixes and feature implementations:
 * Issue #20018 (Bug): Entity Class Editor: SameMappedByField
 * Issue #20021 (Bug): Thread synchronization in class 
                GlobalIvyScriptClassRepository blocks request threads. This 
-			   leads to bad performance under heavy load
+         leads to bad performance under heavy load
 * Issue #20025 (Improvement): RFE 0023: Selection- and ValueChangeEvent
 * Issue #20027 (Bug): DataClass Felder mit primitiven Datentypen
 * Issue #20064 (Bug): ULC FileChooserConfig die Applikation blokiert.
