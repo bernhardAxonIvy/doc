@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>sampleProject</groupId>
   <artifactId>sampleProject</artifactId>
-  <version>9.1.0-SNAPSHOT</version>
+  <version>9.2.0-SNAPSHOT</version>
   <packaging>iar</packaging>
   <build>
     <plugins>
