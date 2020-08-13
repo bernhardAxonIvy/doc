@@ -1,3 +1,5 @@
+.. _monitoring:
+
 Monitoring
 **********
 
@@ -7,4 +9,6 @@ Monitoring
    logging
    process-element-performance
    jmx
+   engine-cockpit
    visualvm
+

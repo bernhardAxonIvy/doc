@@ -1,23 +1,36 @@
+.. _engine-cockpit-monitor:
+
 Monitor
 -------
 
-The **engine cockpit** allows you to **monitor** the system
-your engine is running on.
+The **Engine Cockpit** allows you to :ref:`monitor <monitoring>` your |ivy-engine|.
 
-Resources
-^^^^^^^^^
+OS
+^^
 
-The the **Resources** page shows an overview
-of the cpu load, memory load, network traffic and disk read-write activity. 
+The **OS** page shows an overview
+of the CPU load, memory load, network traffic and disk read-write activity. 
 Additionaly, the memory monitor displays the max and current memory usage of the jvm.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor.png
 
 
+Engine
+^^^^^^
+
+The **Engine** pages allows you to monitor some critical indicators of your |ivy-engine|:
+
+- **JVM**: CPU load, number of threads, loaded and unloaded classes.
+- **Memory**: Heap and non heap memory, garbage collections time.
+- **Requests**: Number of processed incoming requests, errors, received and sent bytes, processing time.
+- **Sessions**: Number of HTTP, Ivy and licensed sessions.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-jvm.png
+
 .. _engine-cockpit-monitor-mbeans:
 
 MBeans
-^^^^^^
+""""""
 
 The **MBeans** view diplays a tree with all engine :ref:`jmx` MBeans. 
 Click on one of the MBeans to see all its attributes. Click on an attribute with numeric
@@ -27,6 +40,20 @@ the attribute from the chart.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-mbeans.png
 
+Services
+^^^^^^^^
+
+The **Services** pages allows you to monitor some critical indicators of external services your |ivy-engine| communicates with:
+
+- **Email**: Number of mails sent, execution time to send mails. 
+- **System Database**: Number of open and used connections, number of transactions and errors, transaction processing time.
+- **External Databases**: Number of open and used connections, number of queries and errors, query execution time of the selected external database.
+- **Web Services**: Number of calls and errors, execution time of the selected web service.
+- **Rest Clients**: Number of open and used connections, Number of calls and errors, execution time of the selected Rest client.
+
+You can choose which External Database, Web Service or Rest Client is displayed with the chooser on the breadcrumb.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-external-databases.png
 
 Logs
 ^^^^
