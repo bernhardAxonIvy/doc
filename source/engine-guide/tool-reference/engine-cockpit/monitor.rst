@@ -12,7 +12,7 @@ The **OS** page shows an overview
 of the CPU load, memory load, network traffic and disk read-write activity. 
 Additionaly, the memory monitor displays the max and current memory usage of the jvm.
 
-.. figure:: /_images/engine-cockpit/engine-cockpit-monitor.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-os.png
 
 
 Engine
@@ -38,7 +38,7 @@ values to display the value of the attribute over time in a chart. You can add m
 attributes to the chart. Click on the remove icon in the table below the chart to remove
 the attribute from the chart.
 
-.. figure:: /_images/engine-cockpit/engine-cockpit-mbeans.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-mbeans.png
 
 Services
 ^^^^^^^^
@@ -63,4 +63,4 @@ The **logs** view shows the current engine log files :file:`console.log`,
 Click on :guilabel:`+` to show or :guilabel:`-` to hide the log file details. If you
 want to look at the logs of an different day, you can change the date at the top right.
 
-.. figure:: /_images/engine-cockpit/engine-cockpit-logs.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-logs.png
