@@ -12,6 +12,8 @@ for each application.
 .. figure:: /_images/engine-cockpit/engine-cockpit-email.png
 
 
+.. _engine-cockpit-external-database:
+
 External Databases
 ^^^^^^^^^^^^^^^^^^
 

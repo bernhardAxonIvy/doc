@@ -137,23 +137,18 @@ Instance Name
 
 Microsoft recommends not to use the ``instanceName`` and prefer specifying
 the port in the connection url because for each connection there is a round trip
-to determine the port. If you still need to work with the ``instanceName`` you
+to determine the port. Therefore you will need to configure a static
+TCP port (e.g. 1433) in the **SQL Server Configuration Manager**.
+
+If you still need to work with the ``instanceName`` you
 must define it as additional connection property and you must remove
 the port in the connection url.
 
-
-.. tip::
-  If you want to join tables of the system database with tables of another business database, 
-  then ensure that all involved databases use the same collate. 
-  Otherwise, you will get bad performance when comparing 
-  character columns from different databases because the data 
-  must be converted from one collate to another.
-
 .. tip:: 
-  If you cannot connect to a Microsoft SQL Server, check first if the tcp/ip
-  protocol for SQL Server is activated (by default it's deactivated). SQL Server
-  Authentication must be enabled too. By default only Windows Authentication is
-  enabled which is not supported by JDBC drivers.
+  If you cannot connect to a Microsoft SQL Server, check first if the TCP/IP
+  protocol for SQL Server is activated (by default it's deactivated). If you still
+  face problems then you may check if SQL Server Authentication is activated. By
+  default only Windows Authentication is enabled.
 
 
 .. _systemdb-oracle:
