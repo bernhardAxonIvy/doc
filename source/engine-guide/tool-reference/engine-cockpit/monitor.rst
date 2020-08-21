@@ -51,7 +51,7 @@ The **Services** pages allows you to monitor some critical indicators of externa
 - **Web Services**: Number of calls and errors, execution time of the selected web service.
 - **Rest Clients**: Number of open and used connections, Number of calls and errors, execution time of the selected Rest client.
 
-You can choose which External Database, Web Service or Rest Client is displayed with the chooser on the breadcrumb.
+You can open these live stats from the detailed view of the desired service using the monitor button at the right side.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-external-databases.png
 
