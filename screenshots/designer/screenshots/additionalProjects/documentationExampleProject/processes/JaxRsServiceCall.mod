@@ -1,5 +1,5 @@
 [Ivy]
-159FF3D428E42BB5 7.5.0 #module
+159FF3D428E42BB5 9.2.0 #module
 >Proto >Proto Collection #zClass
 Jl0 JaxRsServiceCall Big #zClass
 Jl0 B #cInfo
@@ -84,7 +84,8 @@ JsonNode node = client
 	.request().get(JsonNode.class) as JsonNode;
 in.name = node.get("user").asText();' #txt
 Jl0 f46 resultType com.fasterxml.jackson.databind.JsonNode #txt
-Jl0 f46 responseCode 'in.name = result.get("user").asText();' #txt
+Jl0 f46 responseMapping 'out.name=result.get("user").asText();;
+' #txt
 Jl0 f46 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
@@ -128,6 +129,7 @@ Jl0 f37 @|EndIcon #fIcon
 Jl0 f39 clientId a320a922-175c-43c0-adc6-b6694ecae306 #txt
 Jl0 f39 path document #txt
 Jl0 f39 method POST #txt
+Jl0 f39 clientCode 'out.name = client.request().get().readEntity(String.class) as String;' #txt
 Jl0 f39 bodyInputType RAW #txt
 Jl0 f39 bodyRaw '{
 	"id" : 42,
@@ -136,16 +138,12 @@ Jl0 f39 bodyRaw '{
 Jl0 f39 bodyForm 'title="I need a new car";
 description="really, I''m sick of my old Fiat Punto";
 ' #txt
-Jl0 f39 bodyEntity in.person #txt
-Jl0 f39 clientCode 'out.name = client.request().get().readEntity(String.class) as String;' #txt
+Jl0 f39 bodyObjectCode 'param = in.person;' #txt
 Jl0 f39 resultType java.util.List<java.lang.Integer> #txt
-Jl0 f39 responseCode 'out.documentId = result.get(0).toNumber();
-
-if (response.hasLink("/"+out.documentId))
-{
-	ivy.log.info(
-		response.getLink("/"+out.documentId).getUri()
-	);
+Jl0 f39 responseMapping 'out.documentId=result.get(0).toNumber();
+' #txt
+Jl0 f39 responseCode 'if (response.hasLink("/"+out.documentId)){
+	ivy.log.info(response.getLink("/"+out.documentId).getUri());
 }' #txt
 Jl0 f39 clientErrorCode ivy:error:rest:client #txt
 Jl0 f39 statusErrorCode ivy:error:rest:client #txt
@@ -313,7 +311,9 @@ Jl0 f16 bodyInputType ENTITY #txt
 Jl0 f16 bodyForm 'title="I need a new car";
 description="really, I''m sick of my old Fiat Punto";
 ' #txt
-Jl0 f16 bodyEntity in.person #txt
+Jl0 f16 bodyObjectType ch.ivyteam.test.Person #txt
+Jl0 f16 bodyObjectMapping 'param=in.person;
+' #txt
 Jl0 f16 resultType com.fasterxml.jackson.databind.JsonNode #txt
 Jl0 f16 responseCode ivy.log.info(result); #txt
 Jl0 f16 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
