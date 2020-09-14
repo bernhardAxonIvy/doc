@@ -138,6 +138,7 @@
                   <filtering>true</filtering>
                   <includes>
                     <include>*.yaml</include>
+                    <include>*.xml</include>
                   </includes>
                 </resource>
               </resources>

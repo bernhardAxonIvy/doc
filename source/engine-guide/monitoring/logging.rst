@@ -4,7 +4,7 @@ Logging
 Axon.ivy uses a library called `log4j
 <http://logging.apache.org/log4j/1.2/index.html>`_ to log certain events. The
 logging configuration file is located in directory :file:`{engineDir}/configuration`
-and is called :ref:`log4jconfig-xml`. By default, log events are
+and is called :ref:`log4j2-xml`. By default, log events are
 written to the console and to log files. The log files are written to the
 :file:`{engineDir}/logs` directory.
 
@@ -118,7 +118,7 @@ If you want to know the time when a request was received by the |ivy-engine|
 and when it processed processed the request, you need to use the log category
 **ch.ivyteam.ivy.webserver.internal.PerformanceLogValve**
 
-Configuration Example (:ref:`log4jconfig-xml`):
+Configuration Example (:ref:`log4j2-xml`):
 
 .. literalinclude:: includes/log4jconfig-category-example.xml
     :language: xml
@@ -132,7 +132,7 @@ The log level of these messages is ``DEBUG``. You need to set the appender's
 threshold to ``DEBUG`` in order to write log messages with this priority to
 the appender's destination.
 
-Configuration Example (:ref:`log4jconfig-xml`):
+Configuration Example (:ref:`log4j2-xml`):
 
 .. literalinclude:: includes/log4jconfig-appender-example.xml
     :language: xml

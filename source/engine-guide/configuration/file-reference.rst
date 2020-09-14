@@ -12,7 +12,7 @@ File Reference
    files/app-yaml
    files/app-businesscalendar-yaml
    files/jvm-options
-   files/log4jconfig-xml
+   files/log4j2-xml
    files/ivy-cache-properties
    files/web-xml
    files/context-xml
