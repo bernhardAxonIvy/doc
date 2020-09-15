@@ -4,6 +4,27 @@ Migrating from 9.1 to 9.2
 =========================
 
 
+Upgrade Log4j 1 to Log4j 2
+**************************
+
+Logs are written now with Log4j 2 which has
+a new configuration format. If you made
+any custom logging configuration you need
+to adapt these changes to the new logging
+configuration.
+
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Details**
+
+  The legacy logging configuration file :file:`[engineDir]/configuration/log4jconfig.xml`
+  is no longer in charge. You need to make all your custom logging configuration in
+  :file:`[engineDir]/configuration/log4j2.xml`. Read more about customizing the :ref:`logging`.
+
+
 Legacy jDTS driver for MS SQL Server dropped
 ********************************************
 

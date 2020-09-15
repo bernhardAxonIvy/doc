@@ -1,4 +1,4 @@
-.. _config-logging:
+.. _logging:
 
 Logging
 =======
