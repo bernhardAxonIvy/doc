@@ -11,4 +11,3 @@ Monitoring
    jmx
    engine-cockpit
    visualvm
-

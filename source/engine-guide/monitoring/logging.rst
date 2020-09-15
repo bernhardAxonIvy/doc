@@ -1,153 +1,86 @@
+.. _config-logging:
+
 Logging
 =======
 
-Axon.ivy uses a library called `log4j
-<http://logging.apache.org/log4j/1.2/index.html>`_ to log certain events. The
-logging configuration file is located in directory :file:`{engineDir}/configuration`
-and is called :ref:`log4j2-xml`. By default, log events are
-written to the console and to log files. The log files are written to the
-:file:`{engineDir}/logs` directory.
+In order to successfully run an |ivy-engine|, you need to be prepared in
+case of errors or even failures. Therefore mission critical events are logged.
+Each event has a level:
 
-Each log message has a log level:
+* **FATAL** systems runs partially or not at all
+* **ERROR** something is not working properly
+* **WARNING** warning which can lead someday to an error
+* **INFO** neutral message
+* **DEBUG/TRACE** low-level events, needed for troubleshooting
 
-+-----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Log Level | Description                                                                                                                                                                |
-+===========+============================================================================================================================================================================+
-| FATAL     | This level is used to report problems that may cause the engine not to work correctly.                                                                                     |
-+-----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ERROR     | This level is used to report problems that something has not worked as expected and may cause that the user gets an error message on the UI.                               |
-+-----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| WARN      | This level is used to report problems that have to be solved because it can lead to errors later.                                                                          |
-+-----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| INFO      | This level is used to report that something was done. (E.g. for example a database call)                                                                                   |
-+-----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| DEBUG     | This level is used to report internal events. Most of these events are only interesting for developers. However, some of them may also be interesting for troubleshooting. |
-+-----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-You can control what log levels should be written for which logs. The following
-is configured as default:
-
-+-------------------+-----------+
-| Logging Type      | Log Level |
-+===================+===========+
-| Console log       | WARN      |
-+-------------------+-----------+
-| File log          | WARN      |
-+-------------------+-----------+
-| Config log        | INFO      |
-+-------------------+-----------+
-| Windows Event Log | FATAL     |
-+-------------------+-----------+
+Axon.ivy comes with a sophisticated :ref:`default log configuration <log4j2-xml>`
+which logs all warning, error and fatal events in the :file:`logs`
+directory of the |ivy-engine|. The log files will be roated and compressed
+every day.
 
 
-Log Message Format
-------------------
+Customization
+-------------
 
-A log message looks like this:
-
-.. literalinclude:: includes/example-ivy.log
-    
-
-The first entry of a log message is the exact time when it was written
-(``12:23:17.910``). This is followed by the log level of the message (``INFO``). Next is the
-log category (``[runtimelog.LicenseOrder.LicenseOrder.db]``), followed by the name of the
-thread in whose context the log message was written (``[ivy background
-operation pool-thread-5]``). The next section contains a lot of Axon.ivy context
-information, e.g. the active user session or process model version when the log
-message was written. The content of the context information depends on the context the
-log message was written in. The following context informations exist:
-
-+------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-| Info             | Description                                                                                                                          |
-+==================+======================================================================================================================================+
-| application      | The identifier of the current application.                                                                                           |
-+------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-| client           | The IP address and maybe the host name of the current web client.                                                                    |
-+------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-| executionContext | The security execution context that is used to check permissions. This can be the current session or SYSTEM if security is disabled. |
-+------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-| request          | Information about the current request is written to the log.                                                                         |
-+------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-| requestId        | The identifier of the current request. Can be used to filter all messages that are written in the context of the same request.       |
-+------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-| pmv              | The identification string of the current process model version.                                                                      |
-+------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-| processElement   | The process element that is currently executed.                                                                                      |
-+------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-| hd               | The fully qualified name of the Html Dialog.                                                                                         |
-+------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-| session          | The current Axon.ivy session. The identifier of the session and the user name (if a user is logged in).                              |
-+------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-| task             | The identifier of the current task.                                                                                                  |
-+------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-
-On the next line the actual log message is printed. In case of an error, a java
-exception stack trace may follow on the next lines.
+The logging configuration can be fully customized to your needs.
+For example, you can change the log level of a logger so that the log events are logged in a log file.
+Therefore you need to know that
+Axon.ivy uses `Log4j 2 <https://logging.apache.org/log4j/2.x/>`_ for logging and
+comes with a built-in :ref:`default configuration <log4j2-xml>` which can be 
+customized by providing a configuration in :file:`[engineDir]/configuration/log4j2.xml`.
+The custom configuration will be `merged <http://logging.apache.org/log4j/2.x/manual/configuration.html#CompositeConfiguration>`_
+with the default configuration automatically on the fly.
 
 
 Runtime Log
 -----------
 
-On the |ivy-designer| certain process events are logged to the runtime
-log view. The Process Designer itself can write to the runtime log using the
-``ivy.log`` object. On the |ivy-engine|, all information written to the runtime
-log is handled by Log4j. It is written to the console, to log files and to the
-Windows Event Log.
+The Runtime Log is a well-known `designer feature <simulate-process-models-debugger-runtimelog-view>`_ and disabled by default
+in the |ivy-engine| to prevent a flood of log messages, which can decrease
+performance and filling the disk.
+But you can set the log level of a specific runtime logger and bring them even to another file to get the logs also on the |ivy-engine|.
 
-The runtime log entries are written as special log categories whose names start
-with ``runtimelog`` followed by the application name, the process model name and the
-runtime log category. For example: the category name
-**runtimelog.app.hrm.user_code** represents the runtime log of the application
-called **app** with the process model called **hrm** and the runtime log
-category **user_code**.
+The name of the runtime logger has a well defined format:
+
+**runtimelog.[app name].[process model name].[category]**
 
 **Example:**
 
-The following xml snippet can be added to the Log4j configuration file. Log4J will
-then, after a restart, write the runtime log of the process model **hrm** of application
-**app** into its own log file called :file:`runtimelog.app.hrm.log`:
-
-.. literalinclude:: includes/log4jconfig-example.xml
-    :language: xml
+.. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/log4j2-runtimelog.xml
+  :language: xml
+  :linenos:
 
 
-Request/Performance Logging
----------------------------
+Request Tracing
+---------------
 
-If you want to know the time when a request was received by the |ivy-engine|
-and when it processed processed the request, you need to use the log category
-**ch.ivyteam.ivy.webserver.internal.PerformanceLogValve**
+If you experience poor performance, you can trace the individual requests
+to the |ivy-engine| by setting the level of the request performance logger in :file:`[engineDir]/configuration/log4j2.xml`:
 
-Configuration Example (:ref:`log4j2-xml`):
+.. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/log4j2-performance-request.xml
+  :language: xml
+  :linenos:
 
-.. literalinclude:: includes/log4jconfig-category-example.xml
-    :language: xml
+This will make a log when the request was received by the internal web server
+and when the request was processed with the time spent for processing.
 
-This log category logs the entry of a request right after the internal web server
-has received it. The exit is logged after the request was processed by the web
-server. The exit log message contains the time spent to process the request, in
-microseconds.
-
-The log level of these messages is ``DEBUG``. You need to set the appender's
-threshold to ``DEBUG`` in order to write log messages with this priority to
-the appender's destination.
-
-Configuration Example (:ref:`log4j2-xml`):
-
-.. literalinclude:: includes/log4jconfig-appender-example.xml
-    :language: xml
-
-If you want to know what the |ivy-engine| did between the entry and exit
-of a request, you can use the context information **requestId**. It can be found
-in every log message. A unique request identifier is assigned to every
-request. By filtering the log for messages with the same **requestId** you find
-out what kind of operations the |ivy-engine| has done during the request.
+A unique request identifier **requestId** is assigned to every request. This can be used
+to find out what the |ivy-engine| did while processing the request.
 
 **Example:**
 
-.. literalinclude:: includes/example-ivy-large.log
+.. literalinclude:: includes/request-tracing.log
+  :language: none
 
-The example above shows the log messages when the request with id 43 has entered
-and exited the web server. During the request a message was written to the user
-runtime log and a database SELECT statement was executed. The whole request was
-processed within 196 ms.
+The example above shows the log messages when the request with id **61** has entered
+and exited the web server. During the request a database :code:`SELECT` statement was executed.
+The whole request was processed in 16 ms.
+
+
+Log format
+----------
+
+A single event can be found as a log entry in the format
+**[datetime][level][logger name][thread name]{context infos}** followed by the message itself like:
+
+.. literalinclude:: includes/log-message.log
