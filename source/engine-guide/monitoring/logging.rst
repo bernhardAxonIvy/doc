@@ -18,11 +18,6 @@ which logs all warning, error and fatal events in the :file:`logs`
 directory of the |ivy-engine|. The log files will be roated and compressed
 every day.
 
-A single event can be found as a log entry in the format
-**[datetime][level][logger name][thread name]{context infos}** followed by the message itself like:
-
-.. literalinclude:: includes/log-message.log
-
 
 Customization
 -------------
@@ -42,7 +37,8 @@ Runtime Log
 
 The Runtime Log is a well-known `designer feature <simulate-process-models-debugger-runtimelog-view>`_ and disabled by default
 in the |ivy-engine| to prevent a flood of log messages, which can decrease
-performance and filling the disk. But you can set the log level of a specific runtime logger to get the logs also on the |ivy-engine|.
+performance and filling the disk.
+But you can set the log level of a specific runtime logger and bring them even to another file to get the logs also on the |ivy-engine|.
 
 The name of the runtime logger has a well defined format:
 
@@ -79,3 +75,12 @@ to find out what the |ivy-engine| did while processing the request.
 The example above shows the log messages when the request with id **61** has entered
 and exited the web server. During the request a database :code:`SELECT` statement was executed.
 The whole request was processed in 16 ms.
+
+
+Log format
+----------
+
+A single event can be found as a log entry in the format
+**[datetime][level][logger name][thread name]{context infos}** followed by the message itself like:
+
+.. literalinclude:: includes/log-message.log
