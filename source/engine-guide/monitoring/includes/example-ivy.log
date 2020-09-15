@@ -1,2 +1,0 @@
-2018-11-20 12:23:17.910 INFO [runtimelog.LicenseOrder.LicenseOrder.db] [ivy background operation pool-thread-5] [request=call(36764.36363.0.0), session=491 (fred), task=36363, application=2, requestId=3634, executionContext=SYSTEM, pmv=LicenseOrder$LicenseOrder$1, processElement=156B16E81393F7E9-f3] 
-    Executed database statement successfully in 2,787 milli seconds
