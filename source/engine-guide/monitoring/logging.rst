@@ -18,6 +18,10 @@ which logs all warning, error and fatal events in the :file:`logs`
 directory of the |ivy-engine|. The log files will be roated and compressed
 every day.
 
+Keep in mind that an unfavorable log configuration can lead to failures.
+For example, if the root log level is set to DEBUG, so many logs are written
+that the engine has no more resources for other tasks.
+
 
 Customization
 -------------
