@@ -1,17 +1,31 @@
-private static final BpmElement CHECK_ORDER_START = INVOICE_PROCESS.elementName("checkOrder.ivp");
-
-@Test
-void checkOrder(BpmClient bpmClient)
-{
-  bpmClient.mock()
-          .element(INVOICE_PROCESS.elementName("check order"))
-          .with(Order.class, (in, out) -> out.setValid(Boolean.TRUE));
+  @Test
+  void writeInvoice(BpmClient bpmClient)
+  {
+    ExecutionResult result = bpmClient
+            .start()
+            .process(WRITE_INVOICE_START)
+            .execute();
     
-  ExecutionResult result = bpmClient
-          .start()
-          .process(CHECK_ORDER_START)
-          .execute();
+    History history = result.history();
+    assertThat(history.elementNames()).containsExactly("writeInvoice.ivp", "write invoice");
     
-  Order orderData = result.data().last();
-  assertThat(orderData.getValid()).isTrue();
-}
+    Workflow workflow = result.workflow();
+    assertThat(workflow.executedTask().getName()).isEqualTo("start write invoice");
+    
+    bpmClient
+            .mock()
+            .uiOf(WRITE_INVOICE)
+            .with((params, results) -> results.set("total", 935));
+    
+    result = bpmClient
+            .start()
+            .anyActiveTask(result)
+            .as().everybody()
+            .execute();
+    
+    history = result.history();
+    assertThat(history.elementNames()).containsExactly("write invoice", "end");
+    
+    Order orderData = result.data().last();
+    assertThat(orderData.getTotal()).isEqualTo(935);
+  }

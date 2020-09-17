@@ -20,5 +20,5 @@ void writeInvoice(BpmClient bpmClient)
   
   history = result.history();
   assertThat(history.elementNames())
-          .containsExactly("write invoice", "writeInvoiceDialog()", "endWriteInvoiceDialog");
+          .containsExactly("write invoice", "end");
 }

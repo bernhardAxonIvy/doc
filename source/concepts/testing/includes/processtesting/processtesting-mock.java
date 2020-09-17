@@ -15,3 +15,8 @@ myOrderData.setValid(Boolean.TRUE);
 bpmClient.mock()
         .element(INVOICE_PROCESS.elementName("check order"))
         .with(in -> myOrderData);
+
+/* Mocking only the UI part of the element */
+bpmClient.mock()
+        .uiOf(INVOICE_PROCESS.elementName("check order"))
+        .with((params, results) -> results.set("total", 935));
