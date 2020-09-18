@@ -21,25 +21,25 @@ You now have a simple test called ``SampleIvyProcessTest``.
 
 Note a few things at this point:
 
-Line 24:
+Line 28:
   The test class is annotated as an :public-api:`@IvyProcessTest
   </ch/ivyteam/ivy/bpm/exec/client/IvyProcessTest.html>`, this enables you to run
   this test as a process tests.
 
-Line 27:
+Line 31:
   As you want to test a specific process in this test class, the generated test class defines
   the :public-api:`BpmProcess</ch/ivyteam/ivy/bpm/engine/client/element/BpmProcess.html>`
   under test in a constant called ``testee``. The passed in ``String`` argument defines the
   process to run the test against. Replace ``MyProcess`` with a process that actually exists
   in your project under test.
   
-Line 31:
+Line 35:
   The process under test can be directly started since it has only one start element.
   If your process under test contains multiple start elements you need to define the
   start element to be executed by using the 
   :public-api:`BpmElement</ch/ivyteam/ivy/bpm/engine/client/element/BpmElement.html>` selector.
 
-Line 30:
+Line 34:
   In each test method you have to pass in a
   :public-api:`BpmClient</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html>`.
   This client is supplied by the process testing framework and represents an |ivy-engine| that
@@ -60,12 +60,12 @@ Execute a process
 
 .. literalinclude:: includes/processtesting/processtesting-test-part1.java
     :language: java
-    :emphasize-lines: 4, 5, 7, 12, 15
+    :emphasize-lines: 11, 12, 13, 14, 16, 17, 19
     :linenos:
 
 Now let us have a closer look at the code:
 
-Line 4-7:
+Line 11-14:
   Here you tell your ``BpmClient`` that you want to test and execute your start
   element. After calling the :ref:`execute<process-testing-start>` method the
   ``BpmClient`` drives your process just after the first task.
@@ -76,18 +76,25 @@ Line 4-7:
   runs task by task. It also ignores ``skipTaskList`` flags and stops the
   execution at ``system tasks``.
 
-Line 12:
-  The :ref:`process-testing-workflow` API gives you access to the ``Case``,
-  ``Tasks`` as well as the ``Session`` of your executed process. Use it to fetch
-  information about the active ``Case``/``Tasks``, executed ``Tasks`` or the
-  ``Session``.
-
-Line 15:
+Line 16-17:
   You have multiple APIs to assert your processes, one of it is the
   :ref:`process-testing-history`. The ``History`` gives you access to the
   executed process elements, in this example we just assert the names of the
   executed elements.
 
+.. note::
+
+  You can use different libraries to assert the results. JUnit5 has already built in some
+  assertions (``org.junit.jupiter.api.Assertions``).
+  However, we love to write assertions with the `AssertJ <https://assertj.github.io/doc/>`_ library which provides a huge 
+  feature set. To start with AssertJ add the dependency in your ``pom.xml`` file. Then add a 
+  ``static import org.assertj.core.api.Assertions.*``
+
+Line 19:
+  The :ref:`process-testing-workflow` API gives you access to the ``Case``,
+  ``Tasks`` as well as the ``Session`` of your executed process. Use it to fetch
+  information about the active ``Case``/``Tasks``, executed ``Tasks`` or the
+  ``Session``.
 
 Continue the process execution
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -114,7 +121,13 @@ Line 18:
   :ref:`process-testing-as` method and append the desired ``Session``, ``User``
   or ``Role`` that should execute the next task.
 
-Before you start writing test code we need to introduce you to two more concepts,
+If you execute this test then you will face the following error:
+
+.. code-block:: none
+
+  No mock installed for UserTask 'write invoice' [1720E35BB7789886-f2]
+  
+To fix this we need to introduce you to two more concepts,
 mocking elements and asserting process data.
 
 
@@ -126,32 +139,25 @@ dialogs are an important data input interface between users and your processes,
 you have to mock those inputs. If you want to test the dialogs themselves have a
 closer look at the :ref:`web-testing` chapter.
 
-Let us add a second test to assert your second process start ``checkOrder``, which
-contains an Html Dialog you want to mock.
+Let us add a ui mock for the UI of the UserTask 'write invoice' element.
 
 .. literalinclude:: includes/processtesting/processtesting-test-part3.java
     :language: java
-    :emphasize-lines: 1, 6, 7, 8, 15, 16
+    :emphasize-lines: 16, 17, 18, 29, 30
     :linenos:
 
-Line 1:
-  Because you want to test the second process ``checkOrder`` you need to add
-  another constant for its start. The process is available in our
-  :github-build-examples:`demo project <>`.
-
-Line 6:
+Line 16:
   Here you are telling the ``BpmClient`` that you are declaring a
   :ref:`process-testing-mock` for an element.
 
-Line 7:
-  Here you select the element you want to mock by its name.
+Line 17:
+  Here you select the element, you want to mock the UI of, by its name.
 
-Line 8:
-  Your process uses the ``Order.ivyClass`` as its data class. When the execution
-  reaches the declared element ``check order``, it will return ``true`` for the
-  ``valid`` field in its data.
+Line 18:
+  The HTML Dialog of the UserTask 'write invoice' returns a single value called ``total``. 
+  So lets mock the UI part to simulate that the user enters a total of ``935`` on the UI.
 
-Line 15-16:
+Line 29-30:
   With the :ref:`process-testing-data` API you can assert the process data of
   the executed elements.
 
@@ -218,8 +224,11 @@ Mock
 
 There are two ways of
 :public-api:`mocking</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html#mock()>`
-an element. Either the element does not return anything, or the element returns
-some data. If your process runs through an Html Dialog you always need to mock it.
+an element. Either you mock the entire element or the UI or call part. 
+If you mock the entire element nothing configured on the element is tested at all.
+On the other hand if you mock the UI or call part of an element its mapping code is executed and tested. 
+
+If your process runs through an Html Dialog you always need to mock it.
 
 .. literalinclude:: includes/processtesting/processtesting-mock.java
     :language: java
