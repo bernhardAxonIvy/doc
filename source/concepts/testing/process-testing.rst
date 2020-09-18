@@ -21,25 +21,25 @@ You now have a simple test called ``SampleIvyProcessTest``.
 
 Note a few things at this point:
 
-Line 24:
+Line 28:
   The test class is annotated as an :public-api:`@IvyProcessTest
   </ch/ivyteam/ivy/bpm/exec/client/IvyProcessTest.html>`, this enables you to run
   this test as a process tests.
 
-Line 27:
+Line 31:
   As you want to test a specific process in this test class, the generated test class defines
   the :public-api:`BpmProcess</ch/ivyteam/ivy/bpm/engine/client/element/BpmProcess.html>`
   under test in a constant called ``testee``. The passed in ``String`` argument defines the
   process to run the test against. Replace ``MyProcess`` with a process that actually exists
   in your project under test.
   
-Line 31:
+Line 35:
   The process under test can be directly started since it has only one start element.
   If your process under test contains multiple start elements you need to define the
   start element to be executed by using the 
   :public-api:`BpmElement</ch/ivyteam/ivy/bpm/engine/client/element/BpmElement.html>` selector.
 
-Line 30:
+Line 34:
   In each test method you have to pass in a
   :public-api:`BpmClient</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html>`.
   This client is supplied by the process testing framework and represents an |ivy-engine| that
@@ -60,7 +60,7 @@ Execute a process
 
 .. literalinclude:: includes/processtesting/processtesting-test-part1.java
     :language: java
-    :emphasize-lines: 11, 12, 13, 14, 16, 19
+    :emphasize-lines: 11, 12, 13, 14, 16, 17, 19
     :linenos:
 
 Now let us have a closer look at the code:
@@ -76,12 +76,20 @@ Line 11-14:
   runs task by task. It also ignores ``skipTaskList`` flags and stops the
   execution at ``system tasks``.
 
-Line 16:
+Line 16-17:
   You have multiple APIs to assert your processes, one of it is the
   :ref:`process-testing-history`. The ``History`` gives you access to the
   executed process elements, in this example we just assert the names of the
-  executed elements.
+  executed elements.  
 
+.. note::
+
+  You can use different libraries to assert the results. JUnit5 has already build in some
+  assertions (``org.junit.jupiter.api.Assertions``).
+  However, we love to write assertions with the `AssertJ <https://assertj.github.io/doc/>`_ library which provides a huge 
+  feature set. To start with AssertJ add the dependency to it in your ``pom.xml`` file. Then add a 
+  ``static import org.assertj.core.api.Assertions.*``.  
+  
 Line 19:
   The :ref:`process-testing-workflow` API gives you access to the ``Case``,
   ``Tasks`` as well as the ``Session`` of your executed process. Use it to fetch
