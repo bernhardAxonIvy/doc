@@ -80,16 +80,16 @@ Line 16-17:
   You have multiple APIs to assert your processes, one of it is the
   :ref:`process-testing-history`. The ``History`` gives you access to the
   executed process elements, in this example we just assert the names of the
-  executed elements.  
+  executed elements.
 
 .. note::
 
-  You can use different libraries to assert the results. JUnit5 has already build in some
+  You can use different libraries to assert the results. JUnit5 has already built in some
   assertions (``org.junit.jupiter.api.Assertions``).
   However, we love to write assertions with the `AssertJ <https://assertj.github.io/doc/>`_ library which provides a huge 
-  feature set. To start with AssertJ add the dependency to it in your ``pom.xml`` file. Then add a 
-  ``static import org.assertj.core.api.Assertions.*``.  
-  
+  feature set. To start with AssertJ add the dependency in your ``pom.xml`` file. Then add a 
+  ``static import org.assertj.core.api.Assertions.*``
+
 Line 19:
   The :ref:`process-testing-workflow` API gives you access to the ``Case``,
   ``Tasks`` as well as the ``Session`` of your executed process. Use it to fetch
@@ -150,12 +150,12 @@ Line 16:
   Here you are telling the ``BpmClient`` that you are declaring a
   :ref:`process-testing-mock` for an element.
 
-Line 7:
+Line 17:
   Here you select the element, you want to mock the UI of, by its name.
 
-Line 8:
+Line 18:
   The HTML Dialog of the UserTask 'write invoice' returns a single value called ``total``. 
-  So lets mock the UI part simulate that the user enter a total of ``935`` on the UI.
+  So lets mock the UI part to simulate that the user enters a total of ``935`` on the UI.
 
 Line 29-30:
   With the :ref:`process-testing-data` API you can assert the process data of
