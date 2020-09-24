@@ -87,8 +87,7 @@ Line 16-17:
   You can use different libraries to assert the results. JUnit5 has already built in some
   assertions (``org.junit.jupiter.api.Assertions``).
   However, we love to write assertions with the `AssertJ <https://assertj.github.io/doc/>`_ library which provides a huge 
-  feature set. To start with AssertJ add the dependency in your ``pom.xml`` file. Then add a 
-  ``static import org.assertj.core.api.Assertions.*``
+  feature set. To start with AssertJ add a ``static import org.assertj.core.api.Assertions.assertThat;``.
 
 Line 19:
   The :ref:`process-testing-workflow` API gives you access to the ``Case``,
