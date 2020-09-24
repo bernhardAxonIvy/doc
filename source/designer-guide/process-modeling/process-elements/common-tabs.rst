@@ -301,9 +301,11 @@ Group
       the same time.
 
    -  **Lifetime**: Groups can be invalidated either on request (see
-      Caching Mode: Invalidate Cache), at a specific time of the day or
-      after a configurable period of time. Invalidating a group always
-      means to remove all its entries from the cache.
+      Caching Mode: Invalidate Cache), at a specific time of the day 
+      (String with time format :code:`"HH:mms:ss"`. E.g :code:`"23:50:00"`) or
+      after a configurable period of time (In seconds. E.g. 
+      :code:`3600` for one hour). Invalidating a group always means to 
+      remove all its entries from the cache.
 
 Entry
    -  **Name**: Must be unique within the group but you are allowed to
@@ -313,7 +315,9 @@ Entry
 
    -  **Lifetime**: Single cache entries can be invalidated either on
       request (see Caching Mode: Invalidate Cache), at a specific time
-      of the day or after a configurable period of time.
+      of the day (String with time format :code:`"HH:mm:ss"`. E.g :code:`"23:50:00"`) 
+      or after a configurable period of time (In seconds. E.g. 
+      :code:`3600` for one hour).
 
 
 .. _process-element-tab-case:
