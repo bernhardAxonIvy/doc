@@ -74,7 +74,7 @@ one of the many available resources in the Internet.
 .. tip::
 
    In Axon.ivy, we integrate the open source rule engine
-   `Drools <http://www.drools.org>`__ to give you the flexibility to use
+   `Drools <https://www.drools.org>`__ to give you the flexibility to use
    a rule engine if you want. We wrapped some of the most basic features
    of Drools into our own UI and API. If you need more than that, then
    simply use the normal full blown Drools API.
@@ -146,22 +146,15 @@ which rules apply and which rules to fire.
 
 To run the rule engine you have to use the Public API of the rule
 engine, e.g. in a script step or in a Java class. Use
-``ivy.rules.engine`` to access the execution part of the rule engine
-API. First you will need to create a so called *rule base*. A rule base
-is a container in which you can load multiple rule files.
+``ivy.rules`` to build and execute rules on data objects.
+First you will need to create a :public-api:`RuleExecutor </ch/ivyteam/ivy/rule/engine/api/IRuleExecutor.html>` with all rules.
 
 ::
 
-   IRuleBase myRuleBase = ivy.rules.engine.createRuleBase();
-   myRuleBase.loadRulesFromNamespace("my.rule.name.space");
+   IRuleExecutor ruleExecutor = ivy.rules.create()
+      .namespace("my.rule.name.space")
+      .executor();
 
-
-.. tip::
-
-   In the designer, the rule files are hot deployed into rule base. So
-   when you are running your process and you change a rule file that is
-   loaded in a rule base, then the Designer automatically unloads the
-   old version of the rule file and loads the new one.
 
 .. tip::
 
@@ -173,12 +166,11 @@ is a container in which you can load multiple rule files.
 
 Now, what you need too is an instance of the data model that you used in
 the pre-conditions and the actions of your rules. You can either give
-the root object of your data or a list of objects. So, create a session,
-load the data into it and execute:
+the root object of your data or a list of objects.
 
 ::
 
-   myRuleBase.createSession().execute(out.myDataForTheRules);
+   ruleExecutor.execute(out.myDataForTheRules);
 
 You should now see the result of the actions applied in the data that
 you passed into the rule engine before.
