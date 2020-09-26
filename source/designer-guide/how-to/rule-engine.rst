@@ -175,14 +175,6 @@ the root object of your data or a list of objects.
 You should now see the result of the actions applied in the data that
 you passed into the rule engine before.
 
-.. tip::
-
-   You can use the Public API in JUnit tests directly. Use this to test
-   standalone rules and even groups of rules or all your rules with a
-   pre-defined input and assert if the output matches your expectations.
-   You must extend from ``AbstractRuleEngineTest`` and be aware that
-   only rule files inside the same project can be resolved.
-
 
 Demo project
 ------------
