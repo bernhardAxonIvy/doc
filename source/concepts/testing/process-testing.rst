@@ -82,13 +82,6 @@ Line 16-17:
   executed process elements, in this example we just assert the names of the
   executed elements.
 
-.. note::
-
-  You can use different libraries to assert the results. JUnit5 has already built in some
-  assertions (``org.junit.jupiter.api.Assertions``).
-  However, we love to write assertions with the `AssertJ <https://assertj.github.io/doc/>`_ library which provides a huge 
-  feature set. To start with AssertJ add a ``static import org.assertj.core.api.Assertions.assertThat;``.
-
 Line 19:
   The :ref:`process-testing-workflow` API gives you access to the ``Case``,
   ``Tasks`` as well as the ``Session`` of your executed process. Use it to fetch
