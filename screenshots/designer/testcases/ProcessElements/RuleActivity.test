@@ -1,0 +1,29 @@
+--- RCPTT testcase ---
+Format-Version: 1.0
+Contexts: _PRrTwNcsEeaidO8WBzHpig
+Element-Name: RuleActivity
+Element-Type: testcase
+Element-Version: 3.0
+External-Reference: 
+Id: _A-rvQAlkEeuzu6oG9Jfk2Q
+Save-Time: 10/8/20 2:50 PM
+Testcase-Type: ecl
+
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Content-Type: text/ecl
+Entry-Name: .content
+
+importProject -projectName "documentationExampleProject"
+
+
+openInscription
+	-processName "rule"
+	-elementName "ruleActivity"
+	-elementType "Rule Activity"
+captureInscription
+	-elementType "Rule Activity"
+	-tabName "Call"
+	-width 455 -height 430
+	-screenshot "call-tab-rule.png"
+
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
