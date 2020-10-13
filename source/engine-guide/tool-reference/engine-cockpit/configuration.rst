@@ -22,12 +22,14 @@ Business Calendar
 ^^^^^^^^^^^^^^^^^
 
 The **Business Calendar** view shows all configured business calendars for each
-application. Business calendars are displayed in hierarchical order.
+application. Business calendars are displayed in hierarchical order and can be
+created in the :ref:`app.yaml<app-businesscalendar-yaml>`.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-configuration-businesscalendar.png
 
-By clicking on one of the calendars you get redirected to the calendar's detail view.
-The configurations are grouped by **Week configuration**, the recurring holidays
-relative to easter, recurring fixed days of the year and non-recurring holidays.
+By clicking on one of the calendars you get redirected to the calendar's detail
+view. The configurations are grouped by **Week configuration** and **Free
+Days**. Free days can contain fixed dates, dates repeating every year and days
+relative to easter.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-configuration-businesscalendar-detail.png

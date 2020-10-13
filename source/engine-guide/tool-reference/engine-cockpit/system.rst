@@ -42,6 +42,22 @@ on how to configure your engine's system database.
 .. figure:: /_images/engine-cockpit/engine-cockpit-system-database.png
 
 
+.. _engine-cockpit-licence:
+
+Licence
+^^^^^^^
+
+In the **Licence** view you can upload or renew a licence. If you have a valid
+licence you see a table with all information about it. On the right side you
+have a live overview of your active sessions with the ability to kill sessions.
+
+.. tip::
+    **Anonymous or System Sessions** do not appear in the session table but
+    they are counted as normal **Sessions or Licenced Sessions**.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-licence.png
+
+
 .. _engine-cockpit-system-configuration:
 
 System Configuration

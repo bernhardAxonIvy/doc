@@ -29,8 +29,9 @@ real time information about open sessions, user count, working tasks and
 deployed applications. In addition, it shows information about the host 
 the engine is running on.
 
-In the :guilabel:`Licence` panel you can to upload a licence. To do so click
-on the :guilabel:`Upload Licence` button.
+In the :guilabel:`Licence` panel you have a quick overview of your licence. In
+the :ref:`engine-cockpit-licence` view you have more information and the ability
+to upload a new licence.
 
 If you have configured an EMail server you can test it by clicking on the
 :guilabel:`Send` button in the :guilabel:`Email` panel. This will send a test mail.
