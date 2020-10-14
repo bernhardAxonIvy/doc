@@ -43,16 +43,15 @@ started a business case is automatically created. See :ref:`casemap-execution`.
 Lifecycle
 ~~~~~~~~~
 
-The first case of a process always acts as Business Case (see image 'Initial Case').
-If later an additional process case is attached to this initial case, this first
-initial case will be copied and treated as Business Case (see image 'Multiple Cases').
+The first case of a process always acts as Business Case (see image 'First Case').
+All later attached cases are sub cases of the Business Case (see image 'Multiple Cases').
 
-.. figure:: /_images/workflow/business-case-initial-case.png
-   :alt: Initial Case
+.. figure:: /_images/workflow/business-case-first-case.png
+   :alt: First Case
 
-   Initial Case
+   First Case
 
-.. figure:: /_images/workflow/business-case-after-attach.png
+.. figure:: /_images/workflow/business-case-sub-case.png
    :alt: Multiple Cases
 
    Multiple Cases
