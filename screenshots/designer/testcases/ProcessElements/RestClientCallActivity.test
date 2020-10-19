@@ -16,8 +16,10 @@ Entry-Name: .content
 
 importProject -projectName "documentationExampleProject"
 
-let [val processName "JaxRsServiceCall"][val type "Rest Service Call Activity"]
-{
+global [val processName "JaxRsServiceCall"]
+global [val type "Rest Service Call Activity"]
+
+proc simpleGET{
 	openInscription
 		-processName $processName
 		-elementName "Call twitter"
@@ -27,40 +29,9 @@ let [val processName "JaxRsServiceCall"][val type "Rest Service Call Activity"]
 		-tabName "Request"
 		-width 590 -height 550
 		-screenshot "rest-client-activity-tab-request-get.png"
+}
 
-		// legacy: replaced by other screenshot captureInscriptionPart below
-/*
-	openInscription
-		-processName $processName
-		-elementName "Update document name"
-		-elementType $type
-	captureInscription
-		-elementType $type
-		-tabName "Request"
-		-width 553 -height 550
-		-screenshot "restClient_requestTabPostJson.png"
-
-	openInscription
-		-processName $processName
-		-elementName "form approval"
-		-elementType $type
-	captureInscription
-		-elementType $type
-		-tabName "Request"
-		-width 553 -height 550
-		-screenshot "restClient_requestTabPutForm.png"
-
-	openInscription
-		-processName $processName
-		-elementName "entity CRM"
-		-elementType $type
-	captureInscription
-		-elementType $type
-		-tabName "Request"
-		-width 553 -height 550
-		-screenshot "restClient_requestTabPutEntity.png"
-*/
-
+proc jaxRsRequest{
 	openInscription
 		-processName $processName
 		-elementName "create JAX-RS approval"
@@ -70,7 +41,9 @@ let [val processName "JaxRsServiceCall"][val type "Rest Service Call Activity"]
 		-tabName "Request"
 		-width 620 -height 670
 		-screenshot "rest-client-activity-tab-request-jax-rs.png"
+}
 
+proc responseMapping{
 	openInscription
 		-processName $processName
 		-elementName "Update document name"
@@ -80,70 +53,78 @@ let [val processName "JaxRsServiceCall"][val type "Rest Service Call Activity"]
 		-tabName "Response"
 		-width 580 -height 500
 		-screenshot "rest-client-activity-tab-response.png"
+}
 
-	// capture input methods
+proc inputMethods{
 	openInscription
 		-processName $processName
 		-elementName "Update document name"
 		-elementType $type
-	with [get-window "Inscribe Rest Service Call Activity"]
-	{
+	with [get-window "Inscribe Rest Service Call Activity"]{
 		resizeWindow -width 553 -height 580
 
-    	get-tab-folder | get-tab-item Request | click
-	    with [get-group Body] {
-	        get-button "Raw" | click
-	        captureInscriptionPart -screenshot "rest-client-activity-input-raw-json.png"
+		get-tab-folder | get-tab-item Request | click
+		with [get-group Body] {
+			get-button "Raw" | click
+			captureInscriptionPart -screenshot "rest-client-activity-input-raw-json.png"
 
-	        get-button "Form" | click
-	        captureInscriptionPart -screenshot "rest-client-activity-input-form-string.png"
+			get-button "Form" | click
+			captureInscriptionPart -screenshot "rest-client-activity-input-form-string.png"
 
-	        get-button "Entity" | click
-	        captureInscriptionPart -screenshot "rest-client-activity-input-entity-json.png"
-	        get-button "Raw" | click
-	    }
-	    get-button Cancel | click
+			get-button "Entity" | click
+			captureInscriptionPart -screenshot "rest-client-activity-input-entity-json.png"
+			get-button "Raw" | click
+		}
+		get-button Cancel | click
 	}
+}
 
-	// capture target widgets
+proc targetSettings{
 	openInscription
 		-processName $processName
 		-elementName "Call twitter"
 		-elementType $type
-	with [get-window "Inscribe Rest Service Call Activity"]
-	{
+	with [get-window "Inscribe Rest Service Call Activity"]{
 		resizeWindow -width 580 -height 700
 
-    	get-tab-folder | get-tab-item "Request" | click
-    	with [get-group "Target" ] {
-        	with [get-section "Parameters"] {
-            	captureInscriptionPart -screenshot "rest-client-activity-request-parameters.png"
-            	click // collapse
-        	}
+		get-tab-folder | get-tab-item "Request" | click
+		with [get-group "Target" ] {
+			with [get-section "Parameters"] {
+				captureInscriptionPart -screenshot "rest-client-activity-request-parameters.png"
+				click // collapse
+			}
 			resizeWindow -width 590 -height 700
 			wait 2000
-        	with [get-section "Headers"] {
-            	captureInscriptionPart -screenshot "rest-client-activity-request-headers.png"
-            	click // collapse
-        	}
-    	}
-	    get-button Cancel | click
+			with [get-section "Headers"] {
+				captureInscriptionPart -screenshot "rest-client-activity-request-headers.png"
+				click // collapse
+			}
+		}
+		get-button Cancel | click
 	}
 	openInscription
 		-processName $processName
 		-elementName "Check NEW docs"
 		-elementType $type
-	with [get-window "Inscribe Rest Service Call Activity"]
-	{
+	with [get-window "Inscribe Rest Service Call Activity"]{
 		resizeWindow -width 553 -height 600
-
-    	get-tab-folder | get-tab-item "Request" | click
-    	with [get-group Target] {
-        	with [get-section "Properties"] {
-            	captureInscriptionPart -screenshot "rest-client-activity-request-properties.png"
-        	}
-    	}
-	    get-button Cancel | click
+		get-tab-folder | get-tab-item "Request" | click
+		with [get-group Target] {
+			with [get-section "Properties"] {
+				captureInscriptionPart -screenshot "rest-client-activity-request-properties.png"
+			}
+		}
+		get-button Cancel | click
 	}
 }
+
+
+simpleGET
+jaxRsRequest
+responseMapping
+inputMethods
+targetSettings
+
+
+
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
