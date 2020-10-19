@@ -80,4 +80,20 @@
             </feature>
         </configuration>
     </restClient>
+    <restClient>
+        <uuid>dd8023aa-c07a-456b-8b00-192a4ce9684f</uuid>
+        <name>uiPath (UiPath.WebApi 11.0)</name>
+        <description>Orchestrator API</description>
+        <configuration>
+            <uri>https://platform.uipath.com/</uri>
+            <property>
+                <name>JSON.Deserialization.FAIL_ON_UNKNOWN_PROPERTIES</name>
+                <value>false</value>
+                <password>false</password>
+            </property>
+            <feature>
+                <class>ch.ivyteam.ivy.rest.client.mapper.JsonFeature</class>
+            </feature>
+        </configuration>
+    </restClient>
 </restClients>

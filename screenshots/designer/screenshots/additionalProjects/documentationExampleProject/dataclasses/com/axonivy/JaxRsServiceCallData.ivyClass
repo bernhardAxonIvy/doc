@@ -12,3 +12,5 @@ lastUpdate Date #field
 lastUpdate PERSISTENT #fieldModifier
 generatedPassword String #field
 generatedPassword PERSISTENT #fieldModifier
+robots java.util.List<com.uipath.orchestrator.client.RobotDto> #field
+robots PERSISTENT #fieldModifier

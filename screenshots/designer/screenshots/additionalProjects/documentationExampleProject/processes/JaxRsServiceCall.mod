@@ -41,6 +41,21 @@ Jl0 @EndTask f20 '' #zField
 Jl0 @RestClientCall f21 '' #zField
 Jl0 @PushWFArc f22 '' #zField
 Jl0 @PushWFArc f23 '' #zField
+Jl0 @StartRequest f24 '' #zField
+Jl0 @RestClientCall f25 '' #zField
+Jl0 @EndTask f26 '' #zField
+Jl0 @PushWFArc f27 '' #zField
+Jl0 @PushWFArc f28 '' #zField
+Jl0 @RestClientCall f29 '' #zField
+Jl0 @StartRequest f30 '' #zField
+Jl0 @EndTask f31 '' #zField
+Jl0 @PushWFArc f32 '' #zField
+Jl0 @PushWFArc f33 '' #zField
+Jl0 @RestClientCall f44 '' #zField
+Jl0 @EndTask f45 '' #zField
+Jl0 @StartRequest f47 '' #zField
+Jl0 @PushWFArc f48 '' #zField
+Jl0 @PushWFArc f49 '' #zField
 >Proto Jl0 Jl0 JaxRsServiceCall #zField
 Jl0 f0 outLink axonTimeline.ivp #txt
 Jl0 f0 inParamDecl '<> param;' #txt
@@ -138,7 +153,9 @@ Jl0 f39 bodyRaw '{
 Jl0 f39 bodyForm 'title="I need a new car";
 description="really, I''m sick of my old Fiat Punto";
 ' #txt
-Jl0 f39 bodyObjectCode 'param = in.person;' #txt
+Jl0 f39 bodyObjectType ch.ivyteam.test.Person #txt
+Jl0 f39 bodyObjectMapping 'param=in.person;
+' #txt
 Jl0 f39 resultType java.util.List<java.lang.Integer> #txt
 Jl0 f39 responseMapping 'out.documentId=result.get(0).toNumber();
 ' #txt
@@ -376,8 +393,168 @@ Jl0 f21 @|RestClientCallIcon #fIcon
 Jl0 f22 expr out #txt
 Jl0 f22 111 480 168 480 #arcP
 Jl0 f23 280 480 337 480 #arcP
+Jl0 f24 outLink readRobots.ivp #txt
+Jl0 f24 inParamDecl '<> param;' #txt
+Jl0 f24 requestEnabled true #txt
+Jl0 f24 triggerEnabled false #txt
+Jl0 f24 callSignature readRobots() #txt
+Jl0 f24 caseData businessCase.attach=true #txt
+Jl0 f24 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <name>readRobots.ivp</name>
+        <desc>read with OPENAPI</desc>
+    </language>
+</elementInfo>
+' #txt
+Jl0 f24 @C|.responsibility Everybody #txt
+Jl0 f24 465 49 30 30 -39 17 #rect
+Jl0 f24 @|StartRequestIcon #fIcon
+Jl0 f25 clientId dd8023aa-c07a-456b-8b00-192a4ce9684f #txt
+Jl0 f25 path /odata/Robots #txt
+Jl0 f25 queryParams '$$expand=;
+$$filter="Type eq ''UNATTENDED''";
+$$select=;
+$$orderby=;
+$$top=;
+$$skip=;
+$$count=;
+' #txt
+Jl0 f25 resultType com.uipath.orchestrator.client.ODataValueOfIEnumerableOfRobotDto #txt
+Jl0 f25 responseMapping 'out.robots=result.value;
+' #txt
+Jl0 f25 clientErrorCode ivy:error:rest:client #txt
+Jl0 f25 statusErrorCode ivy:error:rest:client #txt
+Jl0 f25 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <name>RPA: get Robots</name>
+    </language>
+</elementInfo>
+' #txt
+Jl0 f25 552 42 112 44 -50 -7 #rect
+Jl0 f25 @|RestClientCallIcon #fIcon
+Jl0 f26 721 49 30 30 16 0 #rect
+Jl0 f26 @|EndIcon #fIcon
+Jl0 f27 495 64 552 64 #arcP
+Jl0 f28 664 64 721 64 #arcP
+Jl0 f29 clientId dd8023aa-c07a-456b-8b00-192a4ce9684f #txt
+Jl0 f29 path /odata/Jobs/UiPath.Server.Configuration.OData.StartJobs #txt
+Jl0 f29 queryParams '$$expand=;
+$$filter=;
+$$select=;
+$$orderby=;
+$$count=;
+' #txt
+Jl0 f29 method POST #txt
+Jl0 f29 bodyInputType ENTITY #txt
+Jl0 f29 bodyObjectType com.uipath.orchestrator.client.JobsStartJobsParameters #txt
+Jl0 f29 bodyObjectMapping 'param.startInfo.inputArguments=in.name;
+param.startInfo.robotIds=[in.robots.get(0).getId()];
+' #txt
+Jl0 f29 resultType com.uipath.orchestrator.client.ODataValueOfIEnumerableOfJobDto #txt
+Jl0 f29 clientErrorCode ivy:error:rest:client #txt
+Jl0 f29 statusErrorCode ivy:error:rest:client #txt
+Jl0 f29 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <name>RPA: start JOB</name>
+    </language>
+</elementInfo>
+' #txt
+Jl0 f29 552 138 112 44 -43 -7 #rect
+Jl0 f29 @|RestClientCallIcon #fIcon
+Jl0 f30 outLink runJob.ivp #txt
+Jl0 f30 inParamDecl '<> param;' #txt
+Jl0 f30 requestEnabled true #txt
+Jl0 f30 triggerEnabled false #txt
+Jl0 f30 callSignature runJob() #txt
+Jl0 f30 caseData businessCase.attach=true #txt
+Jl0 f30 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <name>runJob.ivp</name>
+        <desc>POST payload bean</desc>
+    </language>
+</elementInfo>
+' #txt
+Jl0 f30 @C|.responsibility Everybody #txt
+Jl0 f30 465 145 30 30 -39 17 #rect
+Jl0 f30 @|StartRequestIcon #fIcon
+Jl0 f31 721 145 30 30 16 0 #rect
+Jl0 f31 @|EndIcon #fIcon
+Jl0 f32 664 160 721 160 #arcP
+Jl0 f33 495 160 552 160 #arcP
+Jl0 f44 clientId dd8023aa-c07a-456b-8b00-192a4ce9684f #txt
+Jl0 f44 path /api/RobotsService/UploadScreenshot #txt
+Jl0 f44 queryParams '$$expand=;
+$$filter=;
+$$select=;
+$$orderby=;
+$$count=;
+' #txt
+Jl0 f44 method POST #txt
+Jl0 f44 bodyInputType FORM #txt
+Jl0 f44 bodyMediaType multipart/form-data #txt
+Jl0 f44 bodyForm 'file=new java.io.File("/tmp/screen.png");
+robotKey=in.name;
+jobKey=in.documentId.toString();
+' #txt
+Jl0 f44 bodyObjectType com.uipath.orchestrator.client.Body #txt
+Jl0 f44 bodyObjectMapping 'param.startInfo.inputArguments=in.name;
+param.startInfo.robotIds=[in.robots.get(0).getId()];
+' #txt
+Jl0 f44 clientErrorCode ivy:error:rest:client #txt
+Jl0 f44 statusErrorCode ivy:error:rest:client #txt
+Jl0 f44 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <name>RPA: screenshot</name>
+        <desc>mulitpart file upload</desc>
+    </language>
+</elementInfo>
+' #txt
+Jl0 f44 552 234 112 44 -51 -7 #rect
+Jl0 f44 @|RestClientCallIcon #fIcon
+Jl0 f45 721 241 30 30 16 0 #rect
+Jl0 f45 @|EndIcon #fIcon
+Jl0 f47 outLink monitor.ivp #txt
+Jl0 f47 inParamDecl '<> param;' #txt
+Jl0 f47 requestEnabled true #txt
+Jl0 f47 triggerEnabled false #txt
+Jl0 f47 callSignature monitor() #txt
+Jl0 f47 caseData businessCase.attach=true #txt
+Jl0 f47 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <name>monitor.ivp</name>
+    </language>
+</elementInfo>
+' #txt
+Jl0 f47 @C|.responsibility Everybody #txt
+Jl0 f47 465 241 30 30 -39 17 #rect
+Jl0 f47 @|StartRequestIcon #fIcon
+Jl0 f48 664 256 721 256 #arcP
+Jl0 f49 495 256 552 256 #arcP
 >Proto Jl0 .type com.axonivy.JaxRsServiceCallData #txt
 >Proto Jl0 .processKind NORMAL #txt
+>Proto Jl0 .xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<elementInfo>
+    <language>
+        <swimlaneLabel>classic REST</swimlaneLabel>
+        <swimlaneLabel>open API</swimlaneLabel>
+    </language>
+    <swimlaneOrientation>true</swimlaneOrientation>
+    <swimlaneSize>416</swimlaneSize>
+    <swimlaneSize>384</swimlaneSize>
+    <swimlaneColor gradient="false">-1</swimlaneColor>
+    <swimlaneColor gradient="false">-1</swimlaneColor>
+    <swimlaneType>LANE</swimlaneType>
+    <swimlaneType>LANE</swimlaneType>
+    <swimlaneSpaceBefore>0</swimlaneSpaceBefore>
+    <swimlaneSpaceBefore>0</swimlaneSpaceBefore>
+</elementInfo>
+' #txt
 >Proto Jl0 0 0 32 24 18 0 #rect
 >Proto Jl0 @|BIcon #fIcon
 Jl0 f0 mainOut f3 tail #connect
@@ -404,3 +581,15 @@ Jl0 f19 mainOut f22 tail #connect
 Jl0 f22 head f21 mainIn #connect
 Jl0 f21 mainOut f23 tail #connect
 Jl0 f23 head f20 mainIn #connect
+Jl0 f24 mainOut f27 tail #connect
+Jl0 f27 head f25 mainIn #connect
+Jl0 f25 mainOut f28 tail #connect
+Jl0 f28 head f26 mainIn #connect
+Jl0 f30 mainOut f33 tail #connect
+Jl0 f33 head f29 mainIn #connect
+Jl0 f29 mainOut f32 tail #connect
+Jl0 f32 head f31 mainIn #connect
+Jl0 f47 mainOut f49 tail #connect
+Jl0 f49 head f44 mainIn #connect
+Jl0 f44 mainOut f48 tail #connect
+Jl0 f48 head f45 mainIn #connect
