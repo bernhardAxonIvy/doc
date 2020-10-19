@@ -428,11 +428,11 @@ Jl0 f25 statusErrorCode ivy:error:rest:client #txt
 Jl0 f25 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
-        <name>RPA: get Robots</name>
+        <name>RPA: get robots</name>
     </language>
 </elementInfo>
 ' #txt
-Jl0 f25 552 42 112 44 -50 -7 #rect
+Jl0 f25 552 42 112 44 -49 -7 #rect
 Jl0 f25 @|RestClientCallIcon #fIcon
 Jl0 f26 721 49 30 30 16 0 #rect
 Jl0 f26 @|EndIcon #fIcon
@@ -458,11 +458,11 @@ Jl0 f29 statusErrorCode ivy:error:rest:client #txt
 Jl0 f29 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
-        <name>RPA: start JOB</name>
+        <name>RPA: start job</name>
     </language>
 </elementInfo>
 ' #txt
-Jl0 f29 552 138 112 44 -43 -7 #rect
+Jl0 f29 552 138 112 44 -42 -7 #rect
 Jl0 f29 @|RestClientCallIcon #fIcon
 Jl0 f30 outLink runJob.ivp #txt
 Jl0 f30 inParamDecl '<> param;' #txt

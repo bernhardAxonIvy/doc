@@ -118,6 +118,54 @@ proc targetSettings{
 	}
 }
 
+proc oas3_get{
+	openInscription
+		-processName $processName
+		-elementName "RPA: get robots"
+		-elementType $type
+	with [get-window "Inscribe Rest Service Call Activity"] {
+		get-tab-folder | get-tab-item Request | click
+		get-group Target | get-button "API Browser" | click -metaKeys ""
+	}
+	with[get-window "Select service resource"]{
+		wait -ms 500 // wait for UI animation (radio switches, button highlight, etc.)
+		get-object | captureScreenshot  "process-elements/rest-client-activity-oas3-browser.png"
+		get-button Cancel | click -metaKeys ""
+	}
+	captureInscription
+		-elementType $type
+		-tabName "Request"
+		-width 590 -height 590
+		-screenshot "rest-client-activity-tab-request-get-oas3.png"
+}
+
+proc oas3_postEntity{
+	openInscription
+		-processName $processName
+		-elementName "RPA: start job"
+		-elementType $type
+	with [get-window "Inscribe Rest Service Call Activity"] {
+		get-tab-folder | get-tab-item Request | click
+		get-group Target | get-section Parameters | click // collapse
+	}
+	captureInscription
+		-elementType $type
+		-tabName "Request"
+		-width 590 -height 570
+		-screenshot "rest-client-activity-tab-request-post-oas3.png"
+}
+
+proc oas3_multiPart{
+	openInscription
+		-processName $processName
+		-elementName "RPA: screenshot"
+		-elementType $type
+	captureInscription
+		-elementType $type
+		-tabName "Request"
+		-width 590 -height 550
+		-screenshot "rest-client-activity-tab-request-multiPart-oas3.png"
+}
 
 simpleGET
 jaxRsRequest
@@ -125,6 +173,8 @@ responseMapping
 inputMethods
 targetSettings
 
-
+oas3_get
+oas3_postEntity
+oas3_multiPart
 
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
