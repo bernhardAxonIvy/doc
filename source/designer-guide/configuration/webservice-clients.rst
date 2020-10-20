@@ -191,6 +191,7 @@ Endpoint URI Section
 
    Endpoint URIs Section
 
+
 The following attributes are available in the *Ports* section:
 
 - :guilabel:`Ports`
@@ -218,3 +219,10 @@ The following attributes are available in the *Ports* section:
   This list is optional. If this list is empty and no default URI is
   specified then an exception is raised during the call and the process
   continues with error handling.
+ 
+.. tip::
+
+   To consume a SOAP service running in the same Axon.ivy Engine /
+   Application as the client the placeholder :code:`{ivy.engine.baseurl}` can be used.
+
+   E.g. ``{ivy.engine.baseurl}/ws/myservice``
