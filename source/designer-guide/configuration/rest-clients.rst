@@ -97,21 +97,33 @@ REST Client Section
 
 .. _rest-clients-generator-wizard:
 
-Open API Client Generator
+OpenAPI Client Generator
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-The Open API client generator wizard enables validation and inscription editor simplification features 
-around concrete calls with a :ref:`process-element-rest-client-activity`.
+The OpenAPI client generator wizard enables validation and inscription editor simplification features 
+around concrete calls with a :ref:`process-element-rest-client-activity`. 
+Click the *Generate REST classes* button to start the wizard. 
 
-Open API Clients
+.. figure:: /_images/designer-configuration/rest-client-editor-main-section.png
+
+**OpenAPI Clients**
 
 - expose valid resource+method combos and their documentation
-
 - display and validate typed query and path parameters
-
 - are aware of the payload being to and fro and generates java objects for them
 
-Migrate to Open API
-- lucybot
+**Pre-Requisites**
+
+- In oder to generator an `OpenAPI <https://swagger.io/docs/specification/about/>`__ client you need an OpenAPI 3.0 JSON service descriptor. 
+- The legacy Swagger 2.0 openapi.json format is also supported by the client generator.
+
+.. figure:: /_images/designer-configuration/rest-client-generator-wizard.png
+
+**Migrate to OpenAPI**
+
+OpenAPI isn't the only popular format to describe REST service capabilities. 
+However, there are converters around to turn other specifications into an OpenAPI compliant JSON.
+
+- Web-converter: `lucybot <https://lucybot-inc.github.io/api-spec-converter/>`__
 
 
 Authentication Section
