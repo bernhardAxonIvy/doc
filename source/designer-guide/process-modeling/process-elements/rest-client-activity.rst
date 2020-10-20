@@ -39,7 +39,7 @@ Target
       in the :ref:`rest-clients-configuration`. Use the attribute browser on
       the right side to insert dynamic parts to the URI.
 
-   -  **API Browser**: Open API method browser that shows als valid remote 
+   -  **API Browser**: Open API method browser that shows valid remote 
       service resources and their documentation.
       Once selected, the chosen method will automatically fill essential
       inscription editor parts to make the service call valid.
