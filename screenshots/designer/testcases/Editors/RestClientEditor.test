@@ -21,9 +21,22 @@ with [get-view "Axon.ivy Projects" | get-tree] {
 }
 get-eclipse-window | resizeWindow 1050 850
 with [get-editor documentationExampleProject] {
-    maximize
-	get-section "REST Clients" | get-tree | select approvalService
-    get-tab-folder | get-object | captureScreenshot "designer-configuration/rest-client-editor.png"
+	maximize
+	get-section "REST Clients" | get-tree | select "petstore.*"
+	get-tab-folder | get-object | captureScreenshot "designer-configuration/rest-client-editor.png"
+
+	with[get-section "REST Client" | get-section "REST Client"]
+	{
+		get-object | captureScreenshot "designer-configuration/rest-client-editor-main-section.png"
+		get-button "Generate REST classes" | click -metaKeys ""
+		with [get-window -class JaxRsGenerateDialog] {
+			get-editbox -after [get-label "Schema URI"] | set-text "https://petstore3.swagger.io/api/v3/openapi.json"
+			get-button "Check URI" | click -metaKeys ""
+			get-editbox -after [get-label Namespace] | set-text "io.swagger.petstore.client"
+			get-object | captureScreenshot "designer-configuration/rest-client-generator-wizard.png"
+			get-button OK | click -metaKeys ""
+		}
+	}
 }
 get-editor documentationExampleProject | close
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

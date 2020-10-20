@@ -96,4 +96,19 @@
             </feature>
         </configuration>
     </restClient>
+    <restClient>
+        <uuid>68495fd9-df01-442c-8049-d1cb60427e32</uuid>
+        <name>petstore</name>
+        <configuration>
+            <uri>https://petstore3.swagger.io/api/v3</uri>
+            <property>
+                <name>JSON.Deserialization.FAIL_ON_UNKNOWN_PROPERTIES</name>
+                <value>false</value>
+                <password>false</password>
+            </property>
+            <feature>
+                <class>ch.ivyteam.ivy.rest.client.mapper.JsonFeature</class>
+            </feature>
+        </configuration>
+    </restClient>
 </restClients>
