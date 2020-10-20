@@ -6,8 +6,8 @@ Element-Type: testcase
 Element-Version: 3.0
 External-Reference: 
 Id: _63kQ4Aa0EeiM3vZlrfoIUw
-Runtime-Version: 2.5.0.201908212005
-Save-Time: 9/9/19, 5:41 PM
+Runtime-Version: 2.5.0.202001211718
+Save-Time: 10/20/20, 1:42 PM
 Testcase-Type: ecl
 
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
@@ -34,7 +34,7 @@ with [get-editor documentationExampleProject] {
 			get-button "Check URI" | click -metaKeys ""
 			get-editbox -after [get-label Namespace] | set-text "io.swagger.petstore.client"
 			get-object | captureScreenshot "designer-configuration/rest-client-generator-wizard.png"
-			get-button OK | click -metaKeys ""
+			get-button Cancel | click -metaKeys ""
 		}
 	}
 }
