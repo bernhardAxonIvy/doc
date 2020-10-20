@@ -94,6 +94,26 @@ REST Client Section
 
      E.g. ``http://{ivy.engine.host}:{ivy.engine.http.port}(/{ivy.engine.context})/{ivy.request.application}/api/my/service``
 
+
+.. _rest-clients-generator-wizard:
+
+Open API Client Generator
+^^^^^^^^^^^^^^^^^^^^^^^^^
+The Open API client generator wizard enables validation and inscription editor simplification features 
+around concrete calls with a :ref:`process-element-rest-client-activity`.
+
+Open API Clients
+
+- expose valid resource+method combos and their documentation
+
+- display and validate typed query and path parameters
+
+- are aware of the payload being to and fro and generates java objects for them
+
+Migrate to Open API
+- lucybot
+
+
 Authentication Section
 ^^^^^^^^^^^^^^^^^^^^^^
 

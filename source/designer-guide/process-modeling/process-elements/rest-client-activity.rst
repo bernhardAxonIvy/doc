@@ -27,17 +27,27 @@ On this tab you can configure the call to the REST service.
    REST Client Request tab
 
 Target
-   -  **HTTP-Method**: The first combo lets you select the HTTP method
+   -  **REST-Client**: The first combo lets you pick a pre-configured
+      :ref:`rest-clients-configuration`.
+
+   -  **HTTP-Method**: The second combo lets you select the HTTP method
       to use. You can choose one of the well known methods like GET,
       POST, PUT or DELETE.
-
-   -  **REST-Client**: The second combo lets you pick a pre-configured
-      :ref:`rest-clients-configuration`.
 
    -  **Path**: The text input can be used to define a resource-path.
       The provided path will be added to the base URI which is defined
       in the :ref:`rest-clients-configuration`. Use the attribute browser on
       the right side to insert dynamic parts to the URI.
+
+   -  **API Browser**: Open API method browser that shows als valid remote 
+      service resources and their documentation.
+      Once selected, the chosen method will automatically fill essential
+      inscription editor parts to make the service call valid.
+
+      If this browser is not displaying any method: Use the :ref:`rest-clients-generator-wizard`
+      and generate the Open API client in advance.
+
+      |image16|
 
    -  **Parameters**: Use this table to define query parameters that
       should be added to the URI. Or switch the type to 'template' in
@@ -79,8 +89,8 @@ Body
       |image4|
 
    -  **Form**: Send form values as content of type
-      ``application/x-www-form-urlencoded`` The form values are
-      scriptable.
+      ``application/x-www-form-urlencoded`` or as ``multipart/form-data``.
+      The form values are scriptable.
 
       |image5|
 
@@ -278,3 +288,4 @@ as an example:
 .. |image13| image:: /_images/process-elements/rest-client-activity-consume-generated-class.png
 .. |image14| image:: /_images/process-elements/rest-client-activity-consume-nodes-manually.png
 .. |image15| image:: /_images/process-elements/rest-client-activity-tab-request-jax-rs.png
+.. |image16| image:: /_images/process-elements/rest-client-activity-oas3-browser.png
