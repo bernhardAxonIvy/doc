@@ -39,7 +39,6 @@ any custom logging configuration you need
 to adapt these changes to the new logging
 configuration.
 
-
 .. container:: admonition note toggle
 
   .. container:: admonition-title header
@@ -49,6 +48,35 @@ configuration.
   The legacy logging configuration file :file:`[engineDir]/configuration/log4jconfig.xml`
   is no longer in charge. You need to make all your custom logging configuration in
   :file:`[engineDir]/configuration/log4j2.xml`. Read more about customizing the :ref:`logging`.
+
+
+
+Workflow Event Log API removed
+******************************
+
+The Workflow Event Log API has been deprecated in Axon.ivy 8.0
+and has been removed now. It was never Public API, so most project should
+not be affected.
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Details**
+
+  The API consists of the following methods, interfaces and enums:
+
+    * :code:`ch.ivyteam.ivy.workflow.IWorkflowContext.findEventLog(...)`
+    * :code:`ch.ivyteam.ivy.workflow.IWorkflowContext.createEventLog(...)`
+    * :code:`ch.ivyteam.ivy.workflow.IWorkflowContext.createEventLogPropertyFilter(...)`
+    * :code:`ch.ivyteam.ivy.workflow.eventlog.EventLogDescription`
+    * :code:`ch.ivyteam.ivy.workflow.eventlog.EventLogProperty`
+    * :code:`ch.ivyteam.ivy.workflow.eventlog.EventLogSeverity`
+    * :code:`ch.ivyteam.ivy.workflow.eventlog.EventLogStatus`
+    * :code:`ch.ivyteam.ivy.workflow.eventlog.IEventLog`
+    * :code:`ch.ivyteam.ivy.workflow.eventlog.IEventLogCase`
+    * :code:`ch.ivyteam.ivy.workflow.eventlog.IEventLogTask`
+
 
 
 Legacy jDTS driver for MS SQL Server dropped
