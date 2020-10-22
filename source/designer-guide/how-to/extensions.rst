@@ -74,33 +74,29 @@ Instead of using the generic extendible process element with your Java
 class, you can go one step further and implement your own process
 elements, available in the process editor palette.
 
-It is recommended to define a ``name`` and ``icon`` for your custom
-process element implementation. This makes the element easier to
-recognize and separates the technical implementation from the project
-you are currently working on.
-
 To implement your own process elements in an `Eclipse bundle <extensions-bundles>`
-and added this way to the Axon.ivy
-core, you need to implement the extension point
-:public-api:`IExtensibleStandardProcessElementExtension </ch/ivyteam/ivy/process/element/IExtensibleStandardProcessElementExtension.html>`.
-This is not needed if your custom process element is only used in your
-project.
+you need to implement two extension points, one for the execution (Engine) and one
+for the user interface (Designer):
 
-Once the element is available on the palette, you can customize it even
-further by providing detailed names
-:public-api:`IProcessElementUiInformationExtension </ch/ivyteam/ivy/designer/process/ui/info/IProcessElementUiInformationExtension.html>`,
-palette appearance informations
-:public-api:`IIvyProcessPaletteExtension </ch/ivyteam/ivy/designer/process/ui/editor/palette/IIvyProcessPaletteExtension.html>`
-and/or classpath dependency configurations
-:public-api:`IIvyProjectClassPathExtension </ch/ivyteam/ivy/java/IIvyProjectClassPathExtension.html>`.
+:public-api:`IBpmnProcessElement </ch/ivyteam/ivy/bpm/exec/IBpmnProcessElement.html>`
+  You need to specify a name, an executor class. Optionally, you can also specify what kind
+  of process element you are providing (default is `Activity`), and a validator class.
+
+:public-api:`IBpmnProcessElementUi </ch/ivyteam/ivy/designer/process/ui/info/IBpmnProcessElementUi.html>`
+  This extension point allows you to define a visual representation of your custom process
+  element in the |ivy-designer|. By adding custom tabs to the Inscription mask you can also
+  make your process element configurable. The configuration can be stored in a `String`.
+  The name must be specified and match the name defined in your IBpmnProcessElement
+  implementation. It is recommended to add an icon.
+
+You need to implement both process element extension points in order to have a working process element.
 
 .. tip::
 
    Sample implementations of custom process elements can be found on
    GitHub in our open source
-   `repository <https://github.com/ivy-supplements>`__. E.g.
+   `repository <https://github.com/ivy-supplements>`__, e.g.
 
-   -  https://github.com/ivy-supplements/bpm-beans/tree/master/rule-beans
    -  https://github.com/ivy-supplements/birt-reporting
    -  https://github.com/ivy-supplements/bpm-beans/tree/master/blockchain-beans
 
@@ -189,7 +185,7 @@ following these steps:
    **Overview** tab and click on the link **Export Wizard**. As
    **Destination Directory** choose the ``dropins`` directory of your
    Axon.ivy Designer or Engine installation. Press the **Finish**
-   button. Your plugin is created into the ``dropins/plugins``
+   button. Your plugin is created in the ``dropins/plugins``
    directory.
 
 Installation
@@ -226,21 +222,6 @@ Axon.ivy supports the following extension points:
   element using the ivy.extensions environment variable.
 
 
-:public-api:`IExtensibleStandardProcessElementExtension </ch/ivyteam/ivy/process/element/IExtensibleStandardProcessElementExtension.html>`
-  This extension point can be used to define your own process elements based on the process
-  elements Program Interface (PI), Start Event, Intermediate Event and Call and Wait.
-  The process element will appear in the community drawer of the process editor unless
-  defined with an IIvyProcessPaletteExtension.
-
-
-:public-api:`IIvyProcessPaletteExtension </ch/ivyteam/ivy/designer/process/ui/editor/palette/IIvyProcessPaletteExtension.html>`
-  Adds new groups and process element entries to the process editor palette. 
-
-
-:public-api:`IProcessElementUiInformationExtension </ch/ivyteam/ivy/designer/process/ui/info/IProcessElementUiInformationExtension.html>`
-  Provides labels (name, description) for your own process elements.
-
-
 :public-api:`IIvyProjectClassPathExtension </ch/ivyteam/ivy/java/IIvyProjectClassPathExtension.html>`
   Adds libraries or classes from bundles to the ivy project class path. This extension point allows to
   add libraries or classes to the compile and the runtime class path. This is useful if you want to
@@ -248,8 +229,19 @@ Axon.ivy supports the following extension points:
   use them as Program Interface (PI), Start Event, Intermediate Event and Call&Wait bean.
 
 
-:public-api:`BpmnInscriptionEditor </ch/ivyteam/ivy/designer/process/ui/thirdparty/BpmnInscriptionEditor.html>`
-  Provides advanced UI editor tabs that can be implemented in any supported technology stack (e.g. SWT instead of Swing). 
+:public-api:`IBpmnProcessElement </ch/ivyteam/ivy/bpm/exec/IBpmnProcessElement.html>`
+  Extension point to define the execution part of your custom process element. The code
+  provided in the executor class will be run on the |ivy-engine| during process execution.
+  The user interface part to configure your element can be implemented with extension
+  point IBpmnProcessElementUi. An optional validator class can be specified that will be
+  run during execution as well as project validation in the |ivy-designer|.
+
+
+:public-api:`IBpmnProcessElementUi </ch/ivyteam/ivy/designer/process/ui/info/IBpmnProcessElementUi.html>`
+  Extension point to define the user interface part of your custom process element. You only
+  need to provide a name matching the name specified in the IBpmnProcessElement implementation.
+  Optionally, you can specify an icon, a short name, a description, additional editor tabs, add
+  new palette groups, and add the element to a specific group at a specific position.
 
 
 .. |image0| image:: /_images/extensions/new-bean-class-smart-button.png
