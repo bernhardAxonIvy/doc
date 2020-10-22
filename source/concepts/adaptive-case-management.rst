@@ -111,8 +111,8 @@ Public API of ch.ivyteam.ivy.workflow.businesscase.IBusinessCase.
 
 ::
 
-   ivy.case.getBusinessCase().getActiveTasks(); // get involved tasks that are active
-   ivy.case.getBusinessCase().getTasks(); // get all involved tasks
+   ivy.case.getBusinessCase().tasks().allActive(); // get involved tasks that are active
+   ivy.case.getBusinessCase().tasks().all(); // get all involved tasks
 
 Aborting tasks
 ~~~~~~~~~~~~~~
