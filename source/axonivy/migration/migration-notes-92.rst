@@ -22,11 +22,6 @@ Additional cases will be sub cases of the business case.
 
   This change also means that the business case can now have tasks as direct
   children and not only sub cases as children.
-  :public-api:`BusinessCase#getTasks</ch/ivyteam/ivy/workflow/businesscase/IBusinessCase.html#getTasks()>`
-  and
-  :public-api:`IBusinessCase#getActiveTasks</ch/ivyteam/ivy/workflow/businesscase/IBusinessCase.html#getActiveTasks()>`
-  have been adapted in this way, which only return the direct tasks of the business case and not all tasks
-  of all sub cases as well.
 
 
 
