@@ -32,7 +32,7 @@ Namespace
 
 Data Object
    The data object to apply the ruleset to. It must match the type defined
-   in the rule set. The data object needs to be defined in process data class.
+   in the rule set.
 
 .. |image0| image:: /_images/process-elements/rule-activity.png
 .. |image1| image:: /_images/process-elements/call-tab-rule.png
