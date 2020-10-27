@@ -3,7 +3,7 @@
 System Databases
 ================
 
-The |ivy-engine| system database is used to store configuration,
+The |ivy-engine| system database (:ref:`schema <systemdb_schema>`) is used to store configuration,
 security, content and workflow information. See :ref:`Configuration
 <config-systemdb>` to find out how you can create and configure |ivy-engine|
 system databases. |ivy-engine| supports the following database systems to host
