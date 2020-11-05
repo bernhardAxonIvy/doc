@@ -57,7 +57,7 @@ deployment is executed when the engine is starting.
   as the filename.
 
 We strongly recommend to **automate the deployment** in a CI/CD pipeline. For
-this purpose we offer a :ref:`<deployment-rest-api>` which is
+this purpose we offer a :ref:`REST API<deployment-rest-api>` which is
 accessible via HTTP/HTTPS. If you don't have the possibility to connect to the
 |ivy-engine| in this way you can use the file based deployment mechanism (e.g.
 via SSH) as described above. For both scenarios you can use well-known command
@@ -202,7 +202,7 @@ For the :ref:`file based deployment <deployment-deploying>` the deployment
 folder must be available on the same machine on which the build is
 executed. You may use Windows-Shares or SMB-Configurations.
 
-On the other hand the HTTP deployment is based on the :ref:`<deployment-rest-api>` 
+On the other hand the HTTP deployment is based on the :ref:`REST API<deployment-rest-api>` 
 service of the |ivy-engine|. For the deployment you
 need the credentials of an administrator.
 
