@@ -221,6 +221,8 @@ The API Browser can be accessed with a webbrowser of your choice under the follo
 - In the |ivy-designer|: ``/designer/api-browser`` (e.g. http://localhost:8081/designer/api-browser)
 - In the |ivy-engine|: ``/system/api-browser`` (e.g. http://localhost:8080/system/api-browser)
 
+.. figure:: /_images/concepts-integration/api-browse-app.png
+    :align: center
 
 
 Workflow API
