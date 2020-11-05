@@ -1,3 +1,5 @@
+.. _3rd-party-integration:
+
 3rd Party Integration
 *********************
 

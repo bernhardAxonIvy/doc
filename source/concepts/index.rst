@@ -7,5 +7,6 @@ Concepts
    :maxdepth: 2
 
    adaptive-case-management
+   3rd-party-integration/index
    error-handling
    testing/index

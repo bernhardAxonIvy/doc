@@ -12,7 +12,6 @@ Designer Guide
    ivyscript/index
    cms/index
    user-interface/index
-   3rd-party-integration/index
    configuration/index
    how-to/index
    troubleshooting/index
