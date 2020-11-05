@@ -41,15 +41,20 @@ public class TestApiBrowserScreenshot
   @Test
   void deploy()
   {
-    open(EngineUrl.create().app("system").toUrl()+"/api-browser");
+    open(apiBrowser());
     $(By.id("operations-engine-deploy")).click();
     takeScreenshot("api-browse-engine", 500);
+  }
+
+  private static String apiBrowser()
+  {
+    return EngineUrl.create().app("system").toUrl()+"/api-browser";
   }
   
   @Test
   void app()
   {
-    open(EngineUrl.create().app("system").toUrl()+"/api-browser?urls.primaryName="+TestEngineScreenshots.DEMO_PORTAL);
+    open(apiBrowser()+"/index.html?urls.primaryName="+TestEngineScreenshots.DEMO_PORTAL);
     $$(".swagger-ui section.models h4 span").find(text("Schemas")).shouldBe(visible);
     takeScreenshot("api-browse-app", 500);
   }
