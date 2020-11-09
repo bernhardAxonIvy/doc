@@ -2,7 +2,8 @@ If you encounter any problems, check the following sources:
 
 .. rubric:: Axon.ivy Community
 
-The `Axon.ivy Community <https://community.axonivy.com/>`_ contains a considerable
+The `Axon.ivy Community <https://community.axonivy.com/>`_ (or the old 
+`Axon.ivy Q&A <https://answers.axonivy.com/>`_) contains a considerable
 amount of questions and answers related to Axon.ivy Designer and Engine.
 
 .. rubric:: Stack Overflow
