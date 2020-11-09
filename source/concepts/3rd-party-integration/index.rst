@@ -198,7 +198,7 @@ API publishing
 
 Once you have provided new REST APIs with your project you need to share the service capabilities
 with your service users. This is simple, since services defined within ivy projects will 
-be published as `OpenAPI <https://www.openapis.org/>`__ service specification. One only needs to share the specification 
+be published as `OpenAPI <https://www.openapis.org/>`__ service specification. You only need to share the specification 
 as file or serve it on a public URL so that clients can start using it.
 
 The technical interface description is available under the following URL path:
@@ -213,7 +213,7 @@ API Browser
 -----------
 
 All `OpenAPI <https://www.openapis.org/>`__ services can be easily inspected with the API Browser. 
-It gives consumers of you services not only a detailed service description, but a simple client to fire real calls
+It gives consumers of your services not only a detailed service description, but a simple client to fire real calls
 against the services too.
 
 The API Browser can be accessed with a webbrowser of your choice under the following URL paths:
