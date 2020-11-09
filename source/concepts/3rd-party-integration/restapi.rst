@@ -103,7 +103,9 @@ The API Browser can be accessed with a webbrowser of your choice under the follo
 Secure APIs
 -----------
 
-REST APIs provided by an |ivy-engine| are protected by default to provide a safe interactions with your API clients.
+REST APIs served by the |ivy-engine| are protected by default to provide safe interactions with your API clients.
+
+
 
 CSRF protection
 ^^^^^^^^^^^^^^^
