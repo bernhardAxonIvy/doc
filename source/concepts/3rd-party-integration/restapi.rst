@@ -58,20 +58,6 @@ will be available on the base path */<appName>/api/*.
        }
    }
 
-
-.. note::
-
-   To call a modifying REST service via ``PUT``, ``POST`` or ``DELETE`` the
-   caller needs to provide a HTTP Header called ``X-Requested-By`` with
-   any value e.g. ``ivy``. This is the `Jersey provided
-   protection <https://github.com/jersey/jersey/blob/master/core-server/src/main/java/org/glassfish/jersey/server/filter/CsrfProtectionFilter.java>`__
-   of REST services against cross-site request forgery (CSRF). If the
-   CSRF header is not provided on a modifying REST request the request
-   will fail with an HTTP Status 400 (Bad Request).
-
-   User provided REST services via ``GET``, ``HEAD`` or ``OPTIONS`` should
-   therefore be implemented in a way that they don't modify data.
-
 Further information is available in the `JAX-RS API
 Specification <https://docs.oracle.com/javaee/7/api/javax/ws/rs/package-summary.html#package.description>`__.
 If you are looking for a sample about how to use JAX-RS in an ivy
@@ -111,6 +97,28 @@ The API Browser can be accessed with a webbrowser of your choice under the follo
 
 .. figure:: /_images/concepts-integration/api-browse-app.png
     :align: center
+
+
+Secure APIs
+-----------
+
+REST APIs provided by an |ivy-engine| are protected by default to provide a safe interactions with your API clients.
+
+CSRF protection
+^^^^^^^^^^^^^^^
+To call a modifying REST service via ``PUT``, ``POST`` or ``DELETE`` the
+caller needs to provide a HTTP Header called ``X-Requested-By`` with
+any value e.g. ``ivy``. The `CSRF filter <https://github.com/jersey/jersey/blob/master/core-server/src/main/java/org/glassfish/jersey/server/filter/CsrfProtectionFilter.java>`__
+protects REST services against cross-site request forgery (CSRF). If the
+CSRF header is not provided on a modifying REST request the request
+will fail with an HTTP Status 400 (Bad Request).
+
+User provided REST services via ``GET``, ``HEAD`` or ``OPTIONS`` should
+therefore be implemented in a way that they don't modify data.
+
+The CSRF protection filter is enabled by default. However, it can be turned of
+in an environment where the client can be trusted (e.g. intranet). See the 
+property ``REST.Servlet.CSRF.Protection`` in the :ref:`ivy-webserver-yaml`
 
 
 Workflow API
