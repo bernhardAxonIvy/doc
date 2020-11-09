@@ -180,29 +180,28 @@ the :ref:`ivy environment variable <ivyscript-reference-environmentvariable>`.
    and cases of the current user.
 
 
+.. _mobile-workflow-api:
+
 REST API
 ~~~~~~~~
 
-There is a REST API available that uses HTTP, JSON (application/json) as
-content type and HTTP basic as authentication method. Over this
-interface the following services are available:
+There is a REST API available that allows third party services to interact with 
+workflow Tasks, Cases and the like. The API was designed to allow mobile devices to use the workflow. 
 
-HTTP GET /{application name}/api/workflow/processstarts
-   Returns all process starts that can be started by the authenticated
-   user.
+The so called mobile workflow API is disabled by default. You can enabled it by
+setting the configuration ``REST.Servlet.MobileWorkflow.API: true``.
 
-HTTP GET /{application name}/api/workflow/task/{taskId}
-   Returns the task with the given task identifier.
+.. literalinclude:: includes/mobile.wf.enable.ivy.yaml
+  :language: yaml
+  :linenos:
 
-HTTP GET /{application name}/api/workflow/tasks
-   Returns the tasks the authenticated user can work on.
+Once the mobile workflow API is enabled, you may browse it's
+services by using the :ref:`integration-rest-api-browser`.
 
-HTTP GET /{application name}/api/workflow/tasks/count
-   Returns the number of tasks the authenticated user can work on.
-
-HTTP GET /{application name}/api/engine/info
-   Returns the version and the name of the engine
-
+If any REST workflow API is missing for your specific use-case, 
+keep in mind that you can provide additional APIs very easily 
+by creating REST API service classes in your project. See 
+:ref:`integration-rest-provider`
 
 
 Workflow States

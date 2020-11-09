@@ -1,3 +1,5 @@
+.. _3rd-party-integration:
+
 3rd Party Integration
 *********************
 
@@ -137,6 +139,8 @@ the REST service.
 Examples can be found in the :ref:`ConnectivityDemos <importing-demo-projects>` project.
 
 
+.. _integration-rest-provider:
+
 Provide own REST Services
 -------------------------
 
@@ -187,9 +191,41 @@ project, you can study the *ConnectivityDemos* sample project in the
 Designer.
 
 
+.. _integration-rest-api-spec:
+
+API publishing
+--------------
+
+Once you have provided new REST APIs with your project you need to share the service capabilities
+with your service users. This is simple, since services defined within ivy projects will 
+be published as `OpenAPI <https://www.openapis.org/>`__ service specification. You only need to share the specification 
+as file or serve it on a public URL so that clients can start using it.
+
+The technical interface description is available under the following URL path:
+
+``/<appName>/api/openapi.json``
+e.g. http://localhost:8081/designer/openapi.json
+
+
+.. _integration-rest-api-browser:
+
+API Browser
+-----------
+
+All `OpenAPI <https://www.openapis.org/>`__ services can be easily inspected with the API Browser. 
+It gives consumers of your services not only a detailed service description, but a simple client to fire real calls
+against the services too.
+
+The API Browser can be accessed with a webbrowser of your choice under the following URL paths:
+
+- In the |ivy-designer|: ``/designer/api-browser`` (e.g. http://localhost:8081/designer/api-browser)
+- In the |ivy-engine|: ``/system/api-browser`` (e.g. http://localhost:8080/system/api-browser)
+
+
+
 Workflow API
 ------------
 
-Axon.ivy provides a basic :ref:`Workflow API REST Service <workflow-api>`.
+Axon.ivy provides a basic :ref:`Workflow API REST Service <mobile-workflow-api>`.
 It can be used to enable remote systems to request information about
 tasks of a user etc.

@@ -11,4 +11,3 @@ Tool-Reference
    engine-cockpit/index
    control-center
    systemdb-schema/index
-   api-reference
