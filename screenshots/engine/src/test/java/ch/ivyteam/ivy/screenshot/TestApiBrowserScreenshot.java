@@ -42,13 +42,13 @@ public class TestApiBrowserScreenshot
   void deploy()
   {
     open(apiBrowser());
-    $(By.id("operations-engine-deploy")).click();
+    $(By.id("operations-engine-deploy")).shouldBe(visible).click();
     takeScreenshot("api-browse-engine", 500);
   }
 
   private static String apiBrowser()
   {
-    return EngineUrl.create().app("system").toUrl()+"/api-browser";
+    return EngineUrl.create().app("system").path("api-browser").toUrl();
   }
   
   @Test
