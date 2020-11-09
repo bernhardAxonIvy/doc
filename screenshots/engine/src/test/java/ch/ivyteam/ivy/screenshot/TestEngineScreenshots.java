@@ -27,7 +27,7 @@ public class TestEngineScreenshots
 {
   
   private static final int BROWSER_WIDTH = 1200;
-  private static final String DEMO_PORTAL = "demo-portal";
+  public static final String DEMO_PORTAL = "demo-portal";
 
   @BeforeAll
   static void setup()
