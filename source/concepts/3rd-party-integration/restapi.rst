@@ -98,6 +98,8 @@ The API Browser can be accessed with a webbrowser of your choice under the follo
     :align: center
 
 
+.. _integration-rest-secure:
+
 Secure APIs
 -----------
 
@@ -108,9 +110,8 @@ CSRF protection
 To call a modifying REST service via ``PUT``, ``POST`` or ``DELETE`` the
 caller needs to provide a HTTP Header called ``X-Requested-By`` with
 any value e.g. ``ivy``. The `CSRF filter <https://github.com/jersey/jersey/blob/master/core-server/src/main/java/org/glassfish/jersey/server/filter/CsrfProtectionFilter.java>`__
-protects REST services against cross-site request forgery (CSRF). If the
-CSRF header is not provided on a modifying REST request the request
-will fail with an HTTP Status 400 (Bad Request).
+protects REST services against cross-site request forgery (CSRF). If client omits the header on a modifying REST request, the reponse
+will indicate a failure with the HTTP status code 400 (Bad Request).
 
 User provided REST services via ``GET``, ``HEAD`` or ``OPTIONS`` should
 therefore be implemented in a way that they don't modify data.
