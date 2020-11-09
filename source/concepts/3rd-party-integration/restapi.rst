@@ -60,9 +60,8 @@ will be available on the base path */<appName>/api/*.
 
 Further information is available in the `JAX-RS API
 Specification <https://docs.oracle.com/javaee/7/api/javax/ws/rs/package-summary.html#package.description>`__.
-If you are looking for a sample about how to use JAX-RS in an ivy
-project, you can study the *ConnectivityDemos* sample project in the
-Designer.
+
+Many example REST services are available in the :ref:`ConnectivityDemos <importing-demo-projects>`.
 
 
 .. _integration-rest-api-spec:
