@@ -106,6 +106,21 @@ Secure APIs
 REST APIs served by the |ivy-engine| are protected by default to provide safe interactions with your API clients.
 
 
+Basic auth
+^^^^^^^^^^
+REST APIs are protected with Basic authentication so that only known users of the security system can get valid responses.
+Setting HTTP Basic authentication headers from am an API client is simple and widely supported. However, since HTTP Basic
+headers can be easily decrypted, it is strongly recommend to allow :ref:`only encrypted HTTPS traffic <security-https>` on the REST APIs.
+
+You can customized the authentication for a specific API method by setting security annotations headers:
+
+- @PermitAll: allows unauthenticated access to anonymous users
+- @RolesAllowed: users must be authenticated and own the defined roles
+- @DenyAll: nobody is allowed to invoke this service
+
+The security annotations can be reviewed in the 
+`Secure Service <https://github.com/ivy-samples/ivy-project-demos/blob/master/connectivity/connectivity-demos/src/com/axonivy/connectivity/rest/provider/SecureService.java>`__ 
+within the :ref:`ConnectivityDemos <importing-demo-projects>`.
 
 CSRF protection
 ^^^^^^^^^^^^^^^

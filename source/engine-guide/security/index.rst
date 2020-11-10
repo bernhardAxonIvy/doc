@@ -172,6 +172,8 @@ After changing the configuration restart the ivy Engine and check that the URLs
 are not accessible anymore.
 
 
+.. _security-https:
+
 HTTPS
 =====
 
