@@ -80,6 +80,8 @@ The technical interface description is available under the following URL path:
 e.g. http://localhost:8081/designer/openapi.json
 
 
+.. _integration-rest-api-spec-annotate:
+
 Custom OpenAPI docs
 ^^^^^^^^^^^^^^^^^^^
 The automatically generated OpenAPI specification exposes all strict service capabilities 
@@ -90,14 +92,21 @@ with explanatory documents. What's more, you may like to expose and explain tech
 implementation details, such as strictly required params or possible response statuses. 
 All of these docs, can be provided by adding optional OpenAPI annotations to your REST APIs.
 
-The highlighted lines in the follow example show frequent 
+The highlighted lines in the following example show frequent 
 use cases of optional OpenAPI docs annotations.
 
-.. literalinclude:: includes/OpenApiResource.java
-  :language: java
-  :start-after: import com.axonivy.connectivity.Person;
-  :emphasize-lines: 7, 12, 13, 15, 17
-  :linenos:
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Example OpenApiResource.java**
+
+
+  .. literalinclude:: includes/OpenApiResource.java
+    :language: java
+    :start-after: import com.axonivy.connectivity.Person;
+    :emphasize-lines: 7, 12, 13, 15, 17
+    :linenos:
 
 
 
