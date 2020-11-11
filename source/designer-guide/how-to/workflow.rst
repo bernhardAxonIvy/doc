@@ -444,14 +444,7 @@ For example:
    next.
 
    Set the desired business calendar on the case if the default calendar
-   does not apply:.. container:: admonition note toggle
-
-  .. container:: admonition-title header
-
-     **OpenAPI engine deployment**
-
-  .. figure:: /_images/concepts-integration/api-browse-engine.png
-    :align: center
+   does not apply:
    
    .. figure:: /_images/business-calendar/business-calendar-request-start.png
 
