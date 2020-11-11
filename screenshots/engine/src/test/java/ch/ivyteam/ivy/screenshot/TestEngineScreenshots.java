@@ -135,8 +135,8 @@ public class TestEngineScreenshots
   private void defineGroupAssingeeForProcessStep()
   {
     PrimeUi.selectOneRadio(By.id("assignee-selection-form:assignee-type")).selectItemByValue("Group");
-    $(By.id("assignee-selection-form:role-selection_input")).shouldBe(visible).sendKeys("Everybody");
-    $(By.id("assignee-selection-form:role-selection_panel")).shouldBe(visible)
+    $(By.id("assignee-selection-form:role-selection-component:role-selection_input")).shouldBe(visible).sendKeys("Everybody");
+    $(By.id("assignee-selection-form:role-selection-component:role-selection_panel")).shouldBe(visible)
             .find("ul li[data-item-label='Everybody']").click();
     addAssignee("Everybody");
   }
