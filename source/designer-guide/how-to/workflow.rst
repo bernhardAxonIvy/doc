@@ -198,6 +198,15 @@ setting the configuration ``REST.Servlet.MobileWorkflow.API: true``.
 Once the mobile workflow API is enabled, you may browse it's
 services by using the :ref:`integration-rest-api-browser`.
 
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **OpenAPI mobile**
+
+  .. figure:: /_images/concepts-integration/api-browse-mobile.png
+    :align: center
+
 If any REST workflow API is missing for your specific use-case, 
 keep in mind that you can provide additional APIs very easily 
 by creating REST API service classes in your project. See 

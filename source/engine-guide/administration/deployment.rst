@@ -183,7 +183,13 @@ REST API
 The |ivy-engine| comes with REST deployment API which can be used to deploy new applications or projects.
 It can be inspected with the :ref:`integration-rest-api-browser` (e.g. under http://localhost:8080/system/api-browser/?urls.primaryName=system ).
 
-.. figure:: /_images/concepts-integration/api-browse-engine.png
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **OpenAPI engine deployment**
+
+  .. figure:: /_images/concepts-integration/api-browse-engine.png
     :align: center
 
 The REST deployment API makes highly customized deployment chains possible. However, the 
