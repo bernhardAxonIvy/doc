@@ -198,6 +198,15 @@ setting the configuration ``REST.Servlet.MobileWorkflow.API: true``.
 Once the mobile workflow API is enabled, you may browse it's
 services by using the :ref:`integration-rest-api-browser`.
 
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **OpenAPI mobile**
+
+  .. figure:: /_images/concepts-integration/api-browse-mobile.png
+    :align: center
+
 If any REST workflow API is missing for your specific use-case, 
 keep in mind that you can provide additional APIs very easily 
 by creating REST API service classes in your project. See 
@@ -435,7 +444,14 @@ For example:
    next.
 
    Set the desired business calendar on the case if the default calendar
-   does not apply:
+   does not apply:.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **OpenAPI engine deployment**
+
+  .. figure:: /_images/concepts-integration/api-browse-engine.png
+    :align: center
    
    .. figure:: /_images/business-calendar/business-calendar-request-start.png
 
