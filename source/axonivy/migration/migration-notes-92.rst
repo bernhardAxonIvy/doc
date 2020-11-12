@@ -46,6 +46,25 @@ configuration.
 
 
 
+SSL Client Configuration
+************************
+
+We made the life of Axon.ivy Engine administrators easier
+due simplification of the SSL configuration.
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Details**
+
+  We removed :code:`SSL.Client.UseSystemTruststore` and :code:`SSL.Client.UseCustomTruststore` in the :ref:`ivy-yaml`.
+  It's not possible to configure them anymore. The system trustore of the JVM and the custom
+  truststore of ivy are always active now. If you don't trust a certificate
+  remove them out of the specific truststore. 
+
+
+
 Workflow Event Log API removed
 ******************************
 
