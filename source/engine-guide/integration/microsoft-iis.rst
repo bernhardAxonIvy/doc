@@ -250,6 +250,12 @@ other than '/ivy'.
         #/ivy/* AxonIvyEngine 
         /workflow/*=AxonIvyEngine
 
+#. If you're using AJP, you will also need to modify the :file:`misc/iis/isapi_redirect.properties` file:
+
+   .. code-block:: properties
+
+        extension_uri=/workflow/isapi_redirect.dll
+
 
 Access multiple Axon.ivy Engines through one IIS
 ------------------------------------------------
