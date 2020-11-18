@@ -23,7 +23,7 @@ Demo Mode
 |ivy-engine| offers a demo mode for demonstration purposes.
 The demo mode allows you to install and start the |ivy-engine| without 
 configuration and without a productive licence.  You can play 
-with the |ivy-engine|. Try out the :ref:`Portal <portal>` and 
+with the |ivy-engine|. Try out the :dev-url:`Portal </market/portal>` and 
 :ref:`Cockpit <engine-cockpit>`, deploy projects, etc. The username of 
 the administrator in demo mode is **admin** and password **admin**. 
   
