@@ -121,3 +121,29 @@ still have used the jDTS driver.
   #. Edit all **External Databases** with :guilabel:`Driver` **net.sourceforge.jtds.jdbc.Driver**
   #. Choose **com.microsoft.sqlserver.jdbc.SQLServerDriver** as :guilabel:`Driver`
   #. Save configuration
+
+
+
+Enabled JavaTime module for Rest Clients by default
+***************************************************
+
+The standard JSON serialization feature for Rest Clients is now aware of JavaTime objects,
+such as ZonedDateTime, and will therefore optimize their JSON representation.
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Details**
+
+  E.g. ``java.time.ZonedDateTime`` will be serialized as a simple timestamp number, rathern than a complex object structure.
+
+  This change should not have any side-effects on existing clients since java.time objects
+  which did not have any special serializer features enabled could not be serialized in way that provides any
+  value outside of the java world.
+  
+  However, if you face any issues with change java.time object serialization. You may disable
+  the JavaTime module by setting the RestClient property ``JSON.Module.JavaTime=false``
+
+
+
