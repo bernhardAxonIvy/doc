@@ -129,13 +129,13 @@ Enabled JavaTime module for Rest Clients by default
 
 The standard JSON serialization feature for Rest Clients is now aware of JavaTime objects,
 such as ZonedDateTime, and will therefore optimize their JSON representation.
-
+  
 .. container:: admonition note toggle
 
   .. container:: admonition-title header
 
      **Details**
-
+  
   E.g. ``java.time.ZonedDateTime`` will be serialized as a simple timestamp number, rathern than a complex object structure.
 
   This change should not have any side-effects on existing clients since java.time objects
@@ -147,3 +147,25 @@ such as ZonedDateTime, and will therefore optimize their JSON representation.
 
 
 
+Removed StartSignalEventElementQuery
+************************************
+
+There was an API to create a Query for StartSignalEventElements (StartSignalEventElementQuery), as the
+StartElements are no longer part of the System Database, we removed this API. If you had this API in usage, 
+please change to the simpler methods *all()*, *matches(pattern)* or *contains(part)*.
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Details**
+
+  Repalce usages of:
+  
+    * :code:`Ivy.wf().signals().receivers().createStartSignalQuery()`
+    
+  With one of:
+  
+    * :code:`Ivy.wf().signals().receivers().all()`
+    * :code:`Ivy.wf().signals().receivers().matches(pattern)`
+    * :code:`Ivy.wf().signals().receivers().contains(part)`
