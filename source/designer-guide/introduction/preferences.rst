@@ -50,10 +50,11 @@ on the designer.
    
    Email Preferences
 
+Use custom mail server
+   If selected all mails will be sent to the configured mail server.
 
 SMTP host name
-   The name of your outgoing email server (the SMTP server). Please
-   refer to your system administrator to get this name.
+   Hostname of your outgoing email server (the SMTP server).
 
 Use default SMTP port
    If selected the default SMTP port depending on the encryption method
@@ -69,17 +70,6 @@ SMTP user name
 SMTP password
    The password for the given user name above.
 
-Test email address (from)
-   In the designer, this email address overwrites the sender setting in
-   the inscription mask of the :ref:`process-element-email-step`.
-   Mails are not sent to
-   the address that is configured in the inscription mask but to this
-   address. Therefore you can test the functioning of your processes
-   without sending emails to the real addresses.
-
-Test email address (to)
-   The same principle as above but for the recipient.
-
 Encryption method
    The encryption method used for the communication with your mail
    server.
@@ -93,6 +83,17 @@ Use SSL client key
 SSL client key alias
    The name (alias) of the key to send to the SMTP server. If empty the
    first key found in the key store is used.
+
+Test mail address (from)
+   In the designer, this email address overwrites the sender setting in
+   the inscription mask of the :ref:`process-element-email-step`.
+   Mails are not sent to
+   the address that is configured in the inscription mask but to this
+   address. Therefore you can test the functioning of your processes
+   without sending emails to the real addresses.
+
+Test mail address (to)
+   The same principle as above but for the recipient.
 
 Send Test Email
    Sends a test mail with the current settings. With the default
@@ -366,12 +367,6 @@ Key Store Settings
       default algorithm is used.
 
 Trust Store Settings
-   Use custom trust store
-      If selected the trust store configured below is used to read
-      trusted server certificates and/or certificates of certification
-      authorities. It is possible to use both the system and custom
-      trust store.
-
    Trust store file
       The file containing the trusted server certificates and/or
       certificates of certification authorities. Press Add... to add a
@@ -392,19 +387,10 @@ Trust Store Settings
       The algorithm used to read the trust store. If emtpy the system
       default algorithm is used.
 
-   Use system trust store
-      If selected the system default trust store is used. It is possible
-      to use both the system and custom trust store. The system trust
-      store can be configured by setting the Java system property
-      ``javax.net.ssl.trustStore``. If this property is not set then the
-      file ``jre/lib/security/jssecacerts`` is used as trust store. If
-      this file is also not available the file
-      ``jre/lib/security/cacerts`` is used.
-
    Trust manager class
       The full qualified class name of a trust manager class that is
-      used to validate server certificates. This setting is only
-      considered if neither a custom nor a system trust store is used.
+      used to validate server certificates. If set system- and custom
+      truststore are not in charge anymore.
 
 Other SSL Settings
    Enable insecure SSL and HTTPS connections
