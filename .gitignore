@@ -1,4 +1,5 @@
 build
 _build_txt
+.vscode
 
 source/_images
