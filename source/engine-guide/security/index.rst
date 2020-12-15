@@ -228,6 +228,8 @@ set in the :ref:`ivy-yaml` and :ref:`ivy-webserver-yaml`.
   exception details are shown to end users.
 * ``REST.Servlet.CSRF.Protection`` should always be set to ``true``, so that
   the REST APIs require a Cross-Site Request Forgery (CSRF) token by default.
+  See :ref:`Secure REST APIs <integration-rest-secure>` for more information about
+  secure REST API configuration.
 * ``Session.RenewIdOnLogin`` should always be set to ``true``, so that
   the session id is renewed after Login.
   
