@@ -31,7 +31,7 @@ To define a new web service interface, add a new process of kind
 :ref:`Webservice <process-kind-webservice>` to your
 project. Define the supported parameters by configuring the
 :ref:`process-element-web-service-process-start` event. Now you can
-implement the business logic of the web service just a simple as any
+implement the business logic of the web service just as simple as any
 other process flow.
 
 Once the service is implemented. Start the process engine and hit the
@@ -45,4 +45,5 @@ Have a look at our :dev-url:`video tutorials </tutorial>` to see web
 service integrations in action.
 
 If you are looking for web service integration examples with Axon.ivy,
-have a look at the *ConnectivityDemos* sample project in the Designer.
+have a look at the :ref:`ConnectivityDemos <importing-demo-projects>`
+sample project in the Designer.
