@@ -32,7 +32,7 @@ Examples can be found in the :ref:`ConnectivityDemos <importing-demo-projects>` 
 Provide own REST Services
 -------------------------
 
-To provide a custom REST services from an ivy project,
+To provide a custom REST service from an ivy project,
 `JAX-RS <https://docs.oracle.com/javaee/7/api/javax/ws/rs/package-summary.html#package.description>`__
 annotations can be used. A REST resource is created by adding a Java
 class to the ``src`` directory. The Java class has to use the correct
@@ -139,7 +139,7 @@ REST APIs served by the |ivy-engine| are protected by default to provide safe in
 Basic auth
 ^^^^^^^^^^
 REST APIs are protected with Basic authentication so that only known users of the security system can get valid responses.
-Setting HTTP Basic authentication headers from am an API client is simple and widely supported. However, since HTTP Basic
+Setting HTTP Basic authentication headers from an API client is simple and widely supported. However, since HTTP Basic
 headers can be easily decrypted, it is strongly recommend to allow :ref:`only encrypted HTTPS traffic <security-https>` on the REST APIs.
 
 You can customized the authentication for a specific API method by setting security annotations headers:
@@ -155,7 +155,7 @@ within the :ref:`ConnectivityDemos <importing-demo-projects>`.
 CSRF protection
 ^^^^^^^^^^^^^^^
 To call a modifying REST service via ``PUT``, ``POST`` or ``DELETE`` the
-caller needs to provide a HTTP Header called ``X-Requested-By`` with
+caller needs to provide a HTTP header called ``X-Requested-By`` with
 any value e.g. ``ivy``. The `CSRF filter <https://github.com/jersey/jersey/blob/master/core-server/src/main/java/org/glassfish/jersey/server/filter/CsrfProtectionFilter.java>`__
 protects REST services against cross-site request forgery (CSRF). If client omits the header on a modifying REST request, the reponse
 will indicate a failure with the HTTP status code 400 (Bad Request).
@@ -163,7 +163,7 @@ will indicate a failure with the HTTP status code 400 (Bad Request).
 User provided REST services via ``GET``, ``HEAD`` or ``OPTIONS`` should
 therefore be implemented in a way that they don't modify data.
 
-The CSRF protection filter is enabled by default. However, it can be turned of
+The CSRF protection filter is enabled by default. However, it can be turned off
 in an environment where the client can be trusted (e.g. intranet). See the 
 property ``REST.Servlet.CSRF.Protection`` in the :ref:`ivy-webserver-yaml`
 
