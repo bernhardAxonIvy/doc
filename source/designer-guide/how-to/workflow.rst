@@ -59,17 +59,20 @@ All later attached cases are sub cases of the Business Case (see image 'Multiple
 
 .. _workflow-categories:
 
-Case and Task Categories
-------------------------
+Start, Case and Task Categories
+-------------------------------
 
-A Case or a Task can be assigned to a category. A category is a
+A Start, Case or a Task can be assigned to a category. A category is a
 structured String (e.g. ``Finance/Invoices``) and categorize them into a
-hierarchical structure. It is beside the name of a Task (or Case) an
-important identification attribute of a Case or Task.
+hierarchical structure. It is beside the name an
+important identification attribute of a Start, Case or Task.
 
 The ``Category`` API allows to get localized information from the CMS.
 E.g. the ``name`` of the category ``Finance/Invoices`` is stored in the
 CMS at ``/Categories/Finance/Invoices/name``.
+
+To display a tooltip or an icon for a category on start lists configure
+the ``tooltip`` and ``cssIcon`` in the CMS (e.g. ``/Categories/Finance/Invoice/cssIcon``).
 
 The following example shows a simple usage of a category on Case level.
 The API on Task level is identical.
@@ -85,7 +88,7 @@ The API on Task level is identical.
 
    The project
    :ref:`WorkflowDemos <importing-demo-projects>`
-   demonstrates the usage of case and task categorisation. Typically the
+   demonstrates the usage of start, case and task categorisation. Typically the
    case category is used to categorize the over-all process (i.e.
    Business Case) and the task category is used to categorize a single
    or set of unions of work. Because the clear separation of case and
