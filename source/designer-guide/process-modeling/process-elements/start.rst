@@ -68,9 +68,13 @@ decription.
 Request Tab
 ~~~~~~~~~~~
 
-This tab contains the configuration for the HTTP-Request start. Name and
-description which is displayed on the start list. The required
-permissions to start the process, and the workflow mode.
+This tab contains the configuration for the HTTP-Request start. 
+Name, description and category which is displayed on the start list. 
+The required permissions to start the process, and the workflow mode.
+
+Name, description and category
+will be used as :ref:`case <glossar-case>` name, description and category if not otherwise configured on the 
+:ref:`process-element-tab-case`. 
 
 .. figure:: /_images/process-elements/request-start-tab-request.png
 
@@ -96,6 +100,15 @@ Name
 Description
    Sets a description of the process start. It is displayed in the start
    list of the Process Start Overview HTML page.
+
+Category
+   Defines the category of the process start. 
+   This is used to group process starts on the start list.
+   
+   .. note::
+
+     Look at the :ref:`workflow concept <workflow-categories>` for some more
+     information about categorization.
 
 Responsible Role
    Users which want to start the process must be assigned to this role.
