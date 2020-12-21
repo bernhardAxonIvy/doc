@@ -1,0 +1,74 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>ch.ivyteam.ivy</groupId>
+    <artifactId>maven-config</artifactId>
+    <version>9.2.0-SNAPSHOT</version>
+    <relativePath>../../maven/config</relativePath>
+  </parent>
+
+  <groupId>ch.ivyteam.doc</groupId>
+  <artifactId>doc-openapi</artifactId>
+  <packaging>pom</packaging>
+
+  <properties>
+    <ivy.engine.download.url>file://${project.basedir}/../../workspace/ch.ivyteam.ivy.server.product/target/products/AxonIvyEngine${build.version.revision}_All_x64.zip</ivy.engine.download.url>
+    <ivy.engine.directory>target/ivyEngine</ivy.engine.directory>
+    <openapi.output>target/openapi/</openapi.output>
+    <maven.antrun.plugin.version>3.0.0</maven.antrun.plugin.version>
+  </properties>
+
+  <build>    
+    <plugins>
+      <plugin>
+        <groupId>com.axonivy.ivy.ci</groupId>
+        <artifactId>project-build-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <ivyVersion>${ivy-version}</ivyVersion>
+          <osArchitecture>All_x64</osArchitecture>
+          <additionalVmOptions>-Divy.REST.Servlet.MobileWorkflow.API=true</additionalVmOptions>
+        </configuration>
+        <executions>
+          <execution>
+            <id>unpack-engine</id>
+            <phase>initialize</phase>
+            <goals>
+              <goal>installEngine</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>start-engine</id>
+            <phase>initialize</phase>
+            <goals>
+              <goal>start-test-engine</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <version>${maven.antrun.plugin.version}</version>
+        <executions>
+          <execution>
+            <id>system-openapi</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <target>
+                <mkdir dir="${openapi.output}"></mkdir>
+                <get dest="${openapi.output}system.json" src="${test.engine.url}system/api/openapi.json"></get>
+                <get dest="${openapi.output}workflow.json" src="${test.engine.url}demo-portal/api/openapi.json"></get>
+              </target>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
