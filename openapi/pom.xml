@@ -13,14 +13,39 @@
   <packaging>pom</packaging>
 
   <properties>
-    <ivy.engine.download.url>file://${project.basedir}/../../workspace/ch.ivyteam.ivy.server.product/target/products/AxonIvyEngine${build.version.revision}_All_x64.zip</ivy.engine.download.url>
-    <ivy.engine.directory>target/ivyEngine</ivy.engine.directory>
-    <openapi.output>target/openapi/</openapi.output>
+    <ivy.engine.download.url>file://${project.build.directory}/AxonIvyEngine_All_x64.zip</ivy.engine.download.url>
+    <ivy.engine.directory>${project.build.directory}/ivyEngine</ivy.engine.directory>
+    <openapi.output>${project.build.directory}/openapi/</openapi.output>
     <maven.antrun.plugin.version>3.0.0</maven.antrun.plugin.version>
   </properties>
 
   <build>    
     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <version>${maven.antrun.plugin.version}</version>
+        <executions>
+          <execution>
+            <id>copy-engine</id>
+            <phase>initialize</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <target>
+                <copy toDir="${project.build.directory}">
+                  <fileset dir="${project.basedir}/../../workspace/ch.ivyteam.ivy.server.product/target/products/">
+                    <include name="AxonIvyEngine*_All_x64.zip" />
+                    <exclude name="AxonIvyEngine*_Slim_All_x64.zip" />
+                  </fileset>
+                  <globmapper from="AxonIvyEngine*_All_x64.zip" to="AxonIvyEngine_All_x64.zip" />
+                </copy>
+              </target>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
       <plugin>
         <groupId>com.axonivy.ivy.ci</groupId>
         <artifactId>project-build-plugin</artifactId>
