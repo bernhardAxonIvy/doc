@@ -58,6 +58,40 @@ have a live overview of your active sessions with the ability to kill sessions.
 .. figure:: /_images/engine-cockpit/engine-cockpit-licence.png
 
 
+.. _engine-cockpit-web-server:
+
+Web Server
+^^^^^^^^^^
+
+This **Web Server** view gives you the ability to quickly change your Tomcat
+Connectors or Frontend Server settings. There is also a data panel, that shows
+you all the headers of the current request and how the engine generates some
+URLs. 
+
+You may also get some messages here. These appear if the URL of your Browser and
+the **external base URL** or the **frontend base URL** do not match. 
+
+.. tip::
+    We add the `RemoteIpFilter
+    <https://tomcat.apache.org/tomcat-9.0-doc/api/org/apache/catalina/filters/RemoteIpFilter.html>`_
+    servlet to our |ivy-engine| by default to resolve data represented by a
+    proxy or load balancer via request headers (e.g X-Forwarded-For). You can
+    configure the name of these headers by adding a new entry in our
+    :ref:`web-xml` as below.
+
+    .. container:: admonition note toggle
+
+      .. container:: admonition-title header
+
+        **Details**
+
+      .. literalinclude:: includes/web-remoteipfilter.xml
+        :language: xml
+        :linenos:
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-web-server.png
+
+
 .. _engine-cockpit-system-configuration:
 
 System Configuration
