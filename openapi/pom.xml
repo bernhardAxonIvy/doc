@@ -79,7 +79,7 @@
         <version>${maven.antrun.plugin.version}</version>
         <executions>
           <execution>
-            <id>system-openapi</id>
+            <id>openapi-specs</id>
             <phase>verify</phase>
             <goals>
               <goal>run</goal>
@@ -90,6 +90,32 @@
                 <get dest="${openapi.output}system.json" src="${test.engine.url}system/api/openapi.json"></get>
                 <get dest="${openapi.output}workflow.json" src="${test.engine.url}demo-portal/api/openapi.json"></get>
               </target>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>config-json</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${openapi.output}</outputDirectory>
+              <resources>
+                <resrouce>
+                  <directory>.</directory>
+                  <includes>
+                    <include>config.json</include>
+                  </includes>
+                  <filtering>true</filtering>
+                </resrouce>
+              </resources>
             </configuration>
           </execution>
         </executions>

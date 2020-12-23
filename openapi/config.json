@@ -1,0 +1,5 @@
+{"urls": [ 
+    {"url": "/doc/${ivy-release-version}/openapi/system.json", "name": "system"},
+    {"url": "/doc/${ivy-release-version}/openapi/workflow.json", "name": "workflow"}
+]}
+  
