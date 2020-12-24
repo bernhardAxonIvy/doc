@@ -180,7 +180,7 @@ A specific deployment options file will take precedence over a packed options in
 REST API
 --------
 
-The |ivy-engine| comes with :api-browser-url:`REST deployment API <system.json>`
+The |ivy-engine| comes with :api-browser-url:`REST deployment API <system>`
 which can be used to deploy new applications or projects. It can be inspected
 with the :ref:`integration-rest-api-browser`.
 

@@ -188,7 +188,7 @@ the :ref:`ivy environment variable <ivyscript-reference-environmentvariable>`.
 REST API
 ~~~~~~~~
 
-There is a :api-browser-url:`REST workflow API <workflow.json>`
+There is a :api-browser-url:`REST workflow API <workflow>`
 available that allows third party services to interact with workflow Tasks,
 Cases and the like. The API was designed to allow mobile devices to use the
 workflow. 
