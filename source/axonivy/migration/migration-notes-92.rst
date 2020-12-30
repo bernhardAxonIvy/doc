@@ -24,6 +24,29 @@ Additional cases will be sub cases of the business case.
   children and not only sub cases as children.
 
 
+New app.yaml locations
+**********************
+
+Towards highly configurable ivy projects we needed to move :file:`app.yaml` to new places
+in the Axon.ivy Engine.
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Details**
+
+  * :file:`app.yaml` in application directory are moved to the subfolder :file:`config`.
+    This migration is done automatically.
+    e.g. :file:`[engineDir]/applications/myApplication/app.yaml` to :file:`[engineDir]/applications/myApplication/config/app.yaml`.
+
+  * :file:`app-<APP>.yaml` in configuration directory are renamed to :file:`app.yaml` and moved to the subfolder :file:`<APP>`.
+    This migration is done automatically.
+    e.g. :file:`[engineDir]/configuration/app-myApplication.yaml` to :file:`[engineDir]/configuration/myApplication/app.yaml`.
+
+  * :file:`app.yaml` in full application deployment zip must be placed in the subfolder :file:`config`.
+    You need to do that but we still support the legacy place in the root of the full application deployment zip.
+
 
 Upgrade Log4j 1 to Log4j 2
 **************************

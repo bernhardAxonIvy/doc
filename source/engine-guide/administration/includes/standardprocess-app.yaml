@@ -1,4 +1,4 @@
-# app.yaml located in e.g. <configuration>/app-myApp.yaml which actives the portal default processes 
+# app.yaml located in e.g. <configuration>/myApp/app.yaml which actives the portal default processes 
 # To enable these custom processes, the library id of the ivy project must be specified here.
 # The library id is <group-id>:<project-id> from the ivy project deployment defintion.
 StandardProcess: 
