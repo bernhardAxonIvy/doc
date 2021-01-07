@@ -31,8 +31,13 @@ Hardware requirements may vary depending on how many projects you are working on
 
 .. rubric:: Software Requirements
 
-|ivy-designer| needs Java OpenJDK 11 to run. Note that OpenJDK is already included in the Windows installation.
+|ivy-designer| needs Java SE 11 to run. 
 
+Note, that Java SE 11 provided by `AdoptOpenJDK <https://adoptopenjdk.net/>`_ is already included in our Windows installation.    
+On Linux and macOS we do not include Java SE 11. You may want to use Java SE 11 provided by your operating system or 
+`AdoptOpenJDK <https://adoptopenjdk.net/>`_.
+
+We test |ivy-designer| with `AdoptOpenJDK <https://adoptopenjdk.net/>`_ and with `OpenJDK <https://openjdk.java.net/>`_.
 
 .. rubric:: Operating Systems
 
@@ -40,4 +45,4 @@ Hardware requirements may vary depending on how many projects you are working on
 
 :Linux: All Debian based Linux x64 with GTK 3 (tested on Ubuntu 18.04)
 
-:OS X (BETA): OS X High Sierra x64 (*this is a BETA version; use at your own risk*)
+:macOS (BETA): macOS Big Sur x64 (*this is a BETA version; use at your own risk*)
