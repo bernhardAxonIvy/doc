@@ -35,7 +35,13 @@ This must be configured explicitly.
 Software Requirements
 ---------------------
 
-|ivy-engine| needs Java OpenJDK 11 to run. Note that OpenJDK is already included in the Windows installation.
+|ivy-engine| needs Java SE 11 to run. 
+
+Note, that Java SE 11 provided by `AdoptOpenJDK <https://adoptopenjdk.net/>`_ is already included in our Windows installation and Docker container.    
+On Linux we do not include Java SE 11. You may want to use Java SE 11 provided by your operating system or 
+`AdoptOpenJDK <https://adoptopenjdk.net/>`_.
+
+We test |ivy-engine| with `AdoptOpenJDK <https://adoptopenjdk.net/>`_ and with `OpenJDK <https://openjdk.java.net/>`_.
 
 
 Operating Systems
