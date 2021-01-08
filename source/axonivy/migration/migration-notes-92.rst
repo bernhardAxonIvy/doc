@@ -36,16 +36,23 @@ in the Axon.ivy Engine.
 
      **Details**
 
-  * :file:`app.yaml` in application directory are moved to the subfolder :file:`config`.
-    This migration is done automatically.
-    e.g. :file:`[engineDir]/applications/myApplication/app.yaml` to :file:`[engineDir]/applications/myApplication/config/app.yaml`.
+  .. container:: detail 
 
-  * :file:`app-<APP>.yaml` in configuration directory are renamed to :file:`app.yaml` and moved to the subfolder :file:`<APP>`.
-    This migration is done automatically.
-    e.g. :file:`[engineDir]/configuration/app-myApplication.yaml` to :file:`[engineDir]/configuration/myApplication/app.yaml`.
+    If the new engine is aware of the existing applications, the :file:`app.yaml`
+    files should be migrated automatically. The new locations look like the following:
 
-  * :file:`app.yaml` in full application deployment zip must be placed in the subfolder :file:`config`.
-    You need to do that but we still support the legacy place in the root of the full application deployment zip.
+    +-------------------------------------------------------+-------------------------------------------------------------+
+    | Old Location                                          | New Location                                                |
+    +=======================================================+=============================================================+
+    | /[engineDir]/applications/**myApplication**/app.yaml  | /[engineDir]/applications/**myApplication**/config/app.yaml |
+    +-------------------------------------------------------+-------------------------------------------------------------+
+    | /[engineDir]/configuration/app-**myApplication**.yaml | /[engineDir]/configuration/**myApplication**/app.yaml       |
+    +-------------------------------------------------------+-------------------------------------------------------------+
+
+    If you deploy an :file:`app.yaml` in full application zip, it must be placed
+    now in the subfolder :file:`config`. For compatibility reasons the old
+    legacy place in the root of the full application deployment zip is still
+    supportet at the moment.
 
 
 Upgrade Log4j 1 to Log4j 2
