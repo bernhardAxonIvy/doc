@@ -109,6 +109,16 @@ Category
 
      Look at the :ref:`workflow concept <workflow-categories>` for some more
      information about categorization.
+     
+Custom Fields 
+   Here you can set additional information for the start. The set
+   values are only informational and have no effect on how this start is
+   treated by Axon.ivy. These custom fields can easily be queried on
+   the :public-api:`IWebStartable </ch/ivyteam/ivy/workflow/start/IWebStartable.html>` interface to allow sorting, filtering or 
+   displaying additional information in start lists
+   
+   To display an icon for a start on start lists configure
+   the ``cssIcon`` custom field.     
 
 Responsible Role
    Users which want to start the process must be assigned to this role.
