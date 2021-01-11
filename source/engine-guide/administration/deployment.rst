@@ -28,14 +28,18 @@ either already installed in the application or part of the deployment.
 We recommend to build a zip-archive, which contains all projects of an
 application.
 
-.. figure:: /_images/deployment/full-application-zip.png
-    :align: center
+::
 
-    Sample full application zip-archive
+    app.zip
+    ├── config
+    │   └── app.yaml
+    ├── base.iar
+    ├── solution.iar
+    └── customer.iar
 
 You are able to :ref:`configure the application <deployment-configure-app>`
 within a full application zip-archive. Also, proper :ref:`versioning
-<deployment-versioning>` is important. 
+<deployment-versioning>` is important.
 
 
 
