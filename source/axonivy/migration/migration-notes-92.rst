@@ -75,6 +75,15 @@ configuration.
   :file:`[engineDir]/configuration/log4j2.xml`. Read more about customizing the :ref:`logging`.
 
 
+HTTPS port disabled by default
+******************************
+
+HTTPS port is now disabled by default on the Axon.ivy Engine,
+because you should always terminate SSL on the reverse proxy
+(frontend webserver). If you need HTTPS directly on the Axon.ivy
+Engine then you need to set the property
+:code:`WebServer.HTTPS.Enabled` to :code:`true` in :ref:`ivy-webserver-yaml`.
+
 
 SSL Client Configuration
 ************************
