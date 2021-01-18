@@ -18,3 +18,4 @@ to display a end page.
    user-dialogs
    static-jsf-pages
    web-page
+   standard-processes/index

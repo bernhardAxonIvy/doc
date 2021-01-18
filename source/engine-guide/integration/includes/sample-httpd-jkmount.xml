@@ -1,5 +1,0 @@
-<VirtualHost *:80>
-  ...
-  #Mounts the URI /ivy/* to the worker AxonIvyEngine
-  JkMount /ivy/* AxonIvyEngine
-</VirtualHost>

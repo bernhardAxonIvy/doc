@@ -4,9 +4,9 @@ Preparation
 -----------
 
 #. Install the new |ivy-engine| version to a new installation directory (See
-   section :ref:`install_engine`).
+   section :ref:`getting-started`).
 #. If necessary (according to the Migration Notes), request a new licence (see
-   section :ref:`installing-a-licence`).
+   section :ref:`licence`).
 #. Back up the system database and the application file directories of the old
    installation.
 #. Copy the file :file:`serverconfig.xml` plus all YAML and properties files from the

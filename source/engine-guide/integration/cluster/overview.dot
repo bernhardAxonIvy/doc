@@ -1,0 +1,28 @@
+
+digraph overview {
+  node [
+    shape=box, 
+    style=filled,
+    margin=0 width=2 height=0.8
+    fontcolor="white",    
+    color="#007095",
+    fixedsize=true,
+    fontsize=18
+  ];
+
+  browser [ label="Browser", pos = "0,2.5!", width=1];
+
+  loadbalancer [ label="Load Balancer",pos = "2.25,2.5!" width="1.5"];
+ 
+  cluster [ label="Axon.ivy Cluster",pos = "5.4,2.5!" width=1.8 height=3.1 style="dotted" fontcolor="black" labelloc="t"];
+  engine1 [label="Node 1", pos="5.4,3.2!", height="0.8", width="1.5", color="#C7D426", fontcolor="black"];
+  engine2 [label="Node 2", pos="5.4,2.3!", height="0.8", width="1.5", color="#C7D426", fontcolor="black"];
+  engine3 [label="Node 3", pos="5.4,1.4!", height="0.8", width="1.5", color="#C7D426", fontcolor="black"];
+  
+  systemdb [ label="System\nDatabase", pos="8,2.5!" width="1.5" height="0.8"]
+
+  browser -> loadbalancer [ label="HTTPS"];
+  loadbalancer -> cluster [ label="HTTP\nHTTPS" ];
+  
+  cluster -> systemdb [ label="JDBC" ];
+}

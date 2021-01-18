@@ -6,9 +6,7 @@ EngineConfigCli
 The console program is used to configure the |ivy-engine|. E.g. to configure,
 create or convert the system database.
 
-
-Options
--------
+.. rubric:: Options
 
 +----------------+------------------------------------------------------------------------+
 | Option         | Description                                                            |

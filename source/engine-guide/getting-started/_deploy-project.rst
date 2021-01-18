@@ -1,5 +1,5 @@
-Deploy an Axon.ivy project to the Engine
-----------------------------------------
+Deploy an Axon.ivy project
+--------------------------
 
 Let's deploy an Axon.ivy project to the Axon.ivy Engine. We use demos that are
 shipped with the Axon.ivy Designer.::

@@ -3,16 +3,21 @@
 Engine Guide
 ************
 
-.. toctree::
-   :maxdepth: 2
+This guide covers all aspects of an Axon.ivy Engine lifecycle, including
+installation, configuration and production operation. If you want to get
+familiar with the Axon.ivy Engine for the first time, we recommend to dive
+in :ref:`getting-started`.
 
-   introduction/index
+|
+
+.. toctree::
+   :maxdepth: 1
+
    getting-started/index
-   installation/index
    configuration/index
-   security/index
    integration/index
-   administration/index
+   deployment/index
+   security/index
    monitoring/index
    tool-reference/index
    troubleshooting/index

@@ -2,11 +2,10 @@ Tool-Reference
 **************
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   axonivy-engine
+   axonivy-engine/index
    engine-config-cli
-   engine-service
    setup-wizard
    engine-cockpit/index
    control-center

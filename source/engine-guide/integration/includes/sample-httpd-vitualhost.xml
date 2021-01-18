@@ -1,9 +1,0 @@
-<VirtualHost *:80>
-  ServerAdmin webmaster@ivy.soreco.wan
-  DocumentRoot "C:/Program Files (x86)/Apache Software Foundation/Apache2.2/docs/ivy.soreco.wan"
-  ServerName ivy.soreco.wan
-  ServerAlias www.ivy.soreco.wan
-  ErrorLog "logs/ivy.soreco.wan-error.log"
-  CustomLog "logs/ivy.soreco.wan-access.log" common
-  JkMount /ivy/* AxonIvyEngine
-</VirtualHost>

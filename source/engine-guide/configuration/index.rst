@@ -28,7 +28,7 @@ Of course, most settings can also be adjusted in our :ref:`engine-cockpit`.
 .. toctree::
    :maxdepth: 1
 
-   system-database
+   system-database/index
    users
    email
    advanced-configuration

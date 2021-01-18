@@ -10,4 +10,3 @@ Monitoring
    process-element-performance
    jmx
    engine-cockpit
-   visualvm
