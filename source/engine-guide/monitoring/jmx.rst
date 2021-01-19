@@ -47,7 +47,7 @@ monitoring tools provide a user interface to browse the available MBeans.
 MBeans are mostly shown in a tree built with the information provided in the
 names of the MBeans. 
 
-.. figure:: /_images/visualvm/visualvm-mbeans.png
+.. figure:: /_images/monitoring/visualvm-mbeans.png
 
 The :ref:`engine-cockpit` also contains a built-in :ref:`engine-cockpit-monitor-mbeans`
 browser. This way you do not need to install a an external monitoring tool.

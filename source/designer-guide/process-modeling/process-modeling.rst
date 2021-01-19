@@ -342,7 +342,7 @@ None/Container
    Authentication is not handled by the web service element. However, if
    the web container (Tomcat) or a web server (Microsoft IIS/Apache)
    handles user authentication, the user is passed through to Axon.ivy
-   (e.g. Single Sign On).
+   (e.g. Single Sign-on).
 
 WS Security
    UsernameToken with Password will be sent in clear-text to the ivy

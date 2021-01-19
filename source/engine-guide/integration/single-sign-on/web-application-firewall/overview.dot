@@ -1,0 +1,26 @@
+
+digraph overview {
+  node [
+    shape=box, 
+    style=filled,
+    margin=0 width=2 height=0.8
+    fontcolor="white",    
+    color="#007095",
+    fixedsize=true,
+    fontsize=18
+  ];
+
+  browser [ label="Browser", pos = "0,3!", width=1];
+
+  waf [ label="Web Application\nFirewall (WAF)",pos = "3.5,3!" width=1.6];
+  iam [ label="Identity and\nAccess Mgmt.\n(IAM)",pos = "3.5,1.5!" height=1.1 width=1.6];
+  ad [ label="Active\nDirectory",pos = "3.5,0!" height=0.9 width=1.6];
+ 
+  engine [label="Axon.ivy\nEngine", pos="7,3!", width="1.5", color="#C7D426", fontcolor="black"];
+  
+  browser -> waf [ label="WAF_SESSION=X"];
+  waf -> engine [ label="JSessionID=Y\nuserName=Z"];
+  engine -> ad;
+  iam -> ad;
+  waf -> iam;
+}

@@ -2,10 +2,10 @@
 <web-app>
    ...
     <security-constraint>
-      <display-name>Restrict access to System Processes</display-name>
+      <display-name>Restrict access to system</display-name>
         <web-resource-collection>
-          <web-resource-name>System Processes</web-resource-name>
-          <url-pattern>/system/pro/*</url-pattern>
+          <web-resource-name>System</web-resource-name>
+          <url-pattern>/system/*</url-pattern>
         </web-resource-collection>
       <auth-constraint />
     </security-constraint>

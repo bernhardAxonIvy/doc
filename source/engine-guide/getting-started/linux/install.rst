@@ -39,9 +39,9 @@ Download the latest engine
     cd ivy
     mkdir engine
     cd engine
-    wget https://developer.axonivy.com/permalink/8.0/axonivy-engine.zip -O engine.zip
+    wget https://developer.axonivy.com/permalink/|version|/axonivy-engine.zip -O engine.zip
 
-.. include:: ../_distro.rst
+.. include:: ../_packages.rst
 
 To install Axon.ivy Engine simply unzip the downloaded file
 :file:`AxonIvyEngine*.zip` into a new :file:`AxonIvyEngine*` folder

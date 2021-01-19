@@ -1,0 +1,19 @@
+
+digraph overview {
+  node [
+    shape=box, 
+    style=filled,
+    margin=0 width=2 height=0.8
+    fontcolor="white",    
+    color="#007095",
+    fixedsize=true,
+    fontsize=18
+  ];
+
+  browser [ label="Browser", pos = "0,3!", width=1];
+  reverseproxy [ label="Reverse Proxy",pos = "3.5,3!" width=1.6]; 
+  engine [label="Axon.ivy\nEngine", pos="7,3!", width="1.5", color="#C7D426", fontcolor="black"];
+  
+  browser -> reverseproxy [ label="HTTPS"];
+  reverseproxy -> engine [ label="JSessionID=Y\nuserName=Z"];
+}

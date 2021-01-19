@@ -14,7 +14,7 @@ creation of the system database differs a little bit depending on the database
 system you use. We will use a PostgreSQL database server.
 
 You can start the :ref:`setup-wizard` on the main page of the Axon.ivy Engine
-(e.g. http://localhost:8080) by clicking on the link of the **Demo Mode**
+(e.g. http://localhost:8080) by clicking on the link of the demo mode
 warning message.
 
 On the first page use the :guilabel:`Choose licence` button to install your

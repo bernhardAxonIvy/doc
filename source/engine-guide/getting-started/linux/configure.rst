@@ -57,7 +57,7 @@ Now, let's create the system database with the :code:`create-db` command:
 Next, define an administrator by modifying the :ref:`ivy-yaml` file of the
 :file:`configuration` directory: 
 
-.. literalinclude:: ../includes/sample-ivy.yaml
+.. literalinclude:: sample-ivy.yaml
   :language: yaml
   :linenos:
 
@@ -67,13 +67,6 @@ Next, define an administrator by modifying the :ref:`ivy-yaml` file of the
     etc. Therefore, you need at least one administrator so that you can later
     administrate the Axon.ivy Engine. The Email address of administrators are
     used to send mail notifications if licence problems occur.
-
-Lastly, disable the AJP protocol connector of the Axon.ivy Engine internal web
-server in the :ref:`ivy-webserver-yaml` file of the :file:`configuration` directory:
-
-.. literalinclude:: ../includes/sample-ivy-no-ajp.yaml
-  :language: yaml
-  :linenos:
 
 .. include:: ../_webserver.rst
 

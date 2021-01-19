@@ -31,7 +31,9 @@ We changed the default value of the :ref:`WebServer.IvyContextName
 engine URL has changed (from :code:`http://localhost:8080/ivy/`) to
 :code:`http://localhost:8080/`.
 
-If you have a :ref:`front-end-server` configured, you have to manually define the ``WebServer.IvyContextName`` with the old value ``ivy``. Otherwise the AJP uri workers will not find a valid path.
+If you have a :ref:`Reverse Proxy <reverse-proxy>` configured, you have to manually define
+the ``WebServer.IvyContextName`` with the old value ``ivy``. Otherwise the AJP
+uri workers will not find a valid path.
 
 
 URL changes
@@ -48,7 +50,7 @@ The paths in the URL have changed. The name of the application is now at the top
   .. container:: detail
 
     Setting up a classic frontend server is now much easier, because you can now define routes on app level.
-    If you have a :ref:`front-end-server` configured and you block some URLs for security reasons, you need to adjust them.
+    If you have a :ref:`Reverse Proxy <reverse-proxy>` configured and you block some URLs for security reasons, you need to adjust them.
 
     Here are some examples:
 

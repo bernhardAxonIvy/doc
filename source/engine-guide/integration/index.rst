@@ -3,10 +3,10 @@
 Integration
 ************
 
-A minimal setup of a productive Axon.ivy Engine setup only requires the Axon.ivy
-Engine itself and a database management system to hold the system database. But
-to increase security, performance and reliability, other services must be
-additionally installed and integrated.
+A minimal setup of a productive Axon.ivy Engine environment only requires the
+Axon.ivy Engine itself and a database management system to hold the system
+database. But to increase security, performance and reliability, other services
+must be additionally installed and integrated.
 
 |
 

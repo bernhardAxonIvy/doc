@@ -29,7 +29,8 @@ Of course, most settings can also be adjusted in our :ref:`engine-cockpit`.
    :maxdepth: 1
 
    system-database/index
-   users
+   administrators
+   users/index
    email
    advanced-configuration
    docker-container

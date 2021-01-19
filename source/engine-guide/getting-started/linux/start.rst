@@ -1,8 +1,8 @@
 Start the Engine
 ----------------
 
-Start the Axon.ivy Engine by navigation to the bin folder and executing the
-:file:`AxonIvyEngine` binary
+Start the Axon.ivy Engine by navigation to the :file:`bin` folder and executing
+the :file:`AxonIvyEngine` binary
 
 .. code:: bash
 

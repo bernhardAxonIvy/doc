@@ -328,11 +328,13 @@ accessible through a single IIS host.
         /ivy5/*=AxonIvyEngine5x
 
 
-Single Sign On
+.. _reverse-proxy-iis-sso:
+
+Single Sign-on
 --------------
 
-Axon.ivy Engine supports single sign on in Windows environments. The following
-preconditions must be fulfilled for single sign on:
+Axon.ivy Engine supports Single Sign-on in Windows environments. The following
+preconditions must be fulfilled for Single Sign-on:
 
 * The application on the Axon.ivy Engine must use an Active Directory Security
   System
@@ -393,7 +395,7 @@ Information Services (IIS) Manager). In the **Connections** pane select the
 
 Make sure that all other authentication modes such as **Anonymous
 Authentication** or **Digest Authentication** are disabled, otherwise IIS will
-use those authentication modes and Single Sign On will not work.
+use those authentication modes and Single Sign-on will not work.
 
 .. figure:: /_images/iis/iis-single-sign-on-disable.png
 
@@ -468,7 +470,7 @@ Information Services (IIS) Manager). In the **Connections** pane select the
 
 
 Error Handling
----------------
+--------------
 
 If the engine is running behind an IIS web server and an error occurs on the
 Engine, IIS shows its own error page and hides the error page coming from the
@@ -486,3 +488,27 @@ steps:
    from the **Actions** pane (on the right hand side)
 #. Select the “Detailed errors for local requests ...” radio button and click
    OK.
+
+
+.. _reverse-proxy-iis-block-urls:
+
+Block URLs in IIS
+-----------------
+
+Unfortunately, IIS does not seem to have support for white listing URLs, so we
+have to use a black list approach using request filtering, in which we block URL
+segments.
+
+.. Warning::
+    When using the request filter on IIS the URL parts are generally not
+    allowed. A filter */ivy/error* means that */ivy/bla/ivy/error/test* is also
+    not allowed (because it is a part of the URL).
+
+.. figure:: /_images/iis/iis-request-filter.png
+   :alt: IIS Request Filter Config
+   :align: center
+
+   IIS Request Filter Config
+
+After changing the configuration restart IIS and check that the URLs are not
+accessible anymore.

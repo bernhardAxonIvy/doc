@@ -1,3 +1,5 @@
+.. _reverse-proxy-apache:
+
 Apache httpd
 ============
 

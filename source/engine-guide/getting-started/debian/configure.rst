@@ -17,14 +17,14 @@ Shutdown the Axon.ivy Engine first by stopping its service
 
 .. code:: bash
 
-    systemctl stop axonivy-engine-8.service
+    systemctl stop axonivy-engine-9.service
 
 Let's install the licence. You can do this by simple copy the licence
 :file:`*.lic` file into the :file:`configuration` folder
 
 .. code:: bash
 
-    cp ~/licence.lic /etc/axonivy-engine-8
+    cp ~/licence.lic /etc/axonivy-engine-9
 
 To configure the system database, use the :code:`config-db` command of the
 **EngineConfigCli** tool. Replace **yourdatabasserver** with the name of the
@@ -34,7 +34,7 @@ create a new database on the database server.
 
 .. code:: bash
 
-    cd /usr/lib/axonivy-engine-8/bin
+    cd /usr/lib/axonivy-engine-9/bin
     ./EngineConfigCli config-db org.postgresql.Driver \
     jdbc:postgresql://yourdatabaseserver:5432/AxonIvySystemDatabase \
     dbuser password
@@ -50,9 +50,9 @@ Now, let's create the system database with the :code:`create-db` command
   roles, process instances, tasks and process data.
 
 Next, define an administrator by modifying the :ref:`ivy-yaml` file of the
-:file:`/etc/axonivy-engine-8` directory:
+:file:`/etc/axonivy-engine-9` directory:
 
-.. literalinclude:: ../includes/sample-ivy.yaml
+.. literalinclude:: ../linux/sample-ivy.yaml
   :language: yaml
   :linenos:
 
@@ -63,21 +63,13 @@ Next, define an administrator by modifying the :ref:`ivy-yaml` file of the
   administrate the Axon.ivy Engine. The Email address of administrators are used
   to send mail notifications if licence problems occur.
 
-Optionally, disable the AJP protocol connector of the Axon.ivy Engine internal
-web server in the :ref:`ivy-webserver-yaml` file of the
-:file:`/etc/axonivy-engine-8` directory:
-
-.. literalinclude:: ../includes/sample-ivy-no-ajp.yaml
-  :language: yaml
-  :linenos:
-
 .. include:: ../_webserver.rst
 
 Now, start the Axon.ivy Engine again
 
 .. code:: bash
 
-    systemctl start axonivy-engine-8.service
+    systemctl start axonivy-engine-9.service
 
 Note, that the HTTP port of the Axon.ivy Engine may have changed. If you did
 change the http settings! So open again a web browser and navigate to

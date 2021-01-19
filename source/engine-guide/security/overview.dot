@@ -1,0 +1,24 @@
+
+digraph overview {
+  node [
+    shape=box, 
+    style=filled,
+    margin=0 width=2 height=0.8
+    fontcolor="white",    
+    color="#007095",
+    fixedsize=true,
+    fontsize=18
+  ];
+
+  browser [ label="Browser", pos = "0,2.5!", width=1];
+
+  reverseproxy [ label="Reverse Proxy",pos = "2.25,2.5!" width="1.5"]; 
+  
+  engine [label="Axon.ivy Engine", pos="5.4,2.5!", height="0.8", width="1.5", color="#C7D426", fontcolor="black"];
+    
+  systemdb [ label="System\nDatabase", pos="8,2.5!" width="1.5" height="0.8"]
+
+  browser -> reverseproxy [ label="HTTPS"];
+  reverseproxy -> engine [ label="HTTP\nHTTPS" ];  
+  engine -> systemdb [ label="JDBC" ];
+}

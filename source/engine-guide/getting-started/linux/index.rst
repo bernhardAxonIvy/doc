@@ -1,7 +1,7 @@
 .. _getting-started-linux:
 
-Linux (with console tools only)
-===============================
+Linux
+=====
 
 In this section, you will learn how to install and configure an Axon.ivy Engine
 on a Linux server only using the console. On the Linux machine no windowing

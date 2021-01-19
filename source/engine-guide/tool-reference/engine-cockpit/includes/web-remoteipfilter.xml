@@ -1,8 +1,0 @@
-<filter>
-  <filter-name>org.apache.catalina.filters.RemoteIpFilter</filter-name>
-  <filter-class>org.apache.catalina.filters.RemoteIpFilter</filter-class>
-  <init-param>
-    <param-name>protocolHeader</param-name>
-    <param-value>x-forwarded-proto</param-value>
-  </init-param>
-</filter>

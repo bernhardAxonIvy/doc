@@ -69,25 +69,9 @@ you all the headers of the current request and how the engine generates some
 URLs. 
 
 You may also get some messages here. These appear if the URL of your Browser and
-the **external base URL** or the **frontend base URL** do not match. 
-
-.. tip::
-    We add the `RemoteIpFilter
-    <https://tomcat.apache.org/tomcat-9.0-doc/api/org/apache/catalina/filters/RemoteIpFilter.html>`_
-    servlet to our |ivy-engine| by default to resolve data represented by a
-    proxy or load balancer via request headers (e.g X-Forwarded-For). You can
-    configure the name of these headers by adding a new entry in our
-    :ref:`web-xml` as below.
-
-    .. container:: admonition note toggle
-
-      .. container:: admonition-title header
-
-        **Details**
-
-      .. literalinclude:: includes/web-remoteipfilter.xml
-        :language: xml
-        :linenos:
+the **external base URL** or the **frontend base URL** do not match. If this is
+the case please have a look how to properly setup a :ref:`reverse proxy
+<reverse-proxy>`.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-web-server.png
 

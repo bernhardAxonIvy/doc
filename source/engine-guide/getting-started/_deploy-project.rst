@@ -1,11 +1,13 @@
 Deploy an Axon.ivy project
 --------------------------
 
-Let's deploy an Axon.ivy project to the Axon.ivy Engine. We use demos that are
-shipped with the Axon.ivy Designer.::
+Let's deploy an Axon.ivy project to the Axon.ivy Engine. First we
+go in the :file:`deploy` directory and download the demo application.
 
-    cd /var/lib/axonivy-engine-8/deploy
-    sudo -u ivy wget https://developer.axonivy.com/permalink/lib/dev/demos.zip
+.. code:: bash
+
+    cd /var/lib/axonivy-engine-9/deploy
+    sudo -u ivy wget https://developer.axonivy.com/permalink/lib/9/demos.zip
 
 .. Note::
 
@@ -29,8 +31,6 @@ As soon as the deployment is finished the zip-file will be postfixed with
     used to build multi tenancy or stages (DEV, Q&A, PROD) without to install
     multiple Axon.ivy Engines.
 
-Refresh the main page of the Axon.ivy Engine. There is now a new application
-called **IvyDemoApp**.
-
+Refresh the main page of the Axon.ivy Engine. There is now a new application.
 Congratulations you have installed and configured your first Axon.ivy Engine and
 also deployed your first Axon.ivy processes.

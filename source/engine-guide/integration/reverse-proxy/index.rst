@@ -8,8 +8,10 @@ point of entry for one or more services from outside the network. The reverse
 proxy receives all requests from the clients and forwards them to the Axon.ivy
 Engine which handles them. This allows to integrate the processes and
 applications that you are running on an Axon.ivy Engine into a company or web
-portal. By using a reverse proxy you can upgrade the reverse proxy to the 
-last patch level and you can restrict the access to Axon.ivy Engine.
+portal. The use of a reverse proxy provides more security. The reverse proxy can
+and must be updated at any time to receive the latest security updates, because
+this is also the entry point for attackers. In addition, access to critical
+resources such as the Engine Cockpit can be blocked.
 
 We always recommend to run a productive Axon.ivy Engine behind a reverse proxy.
 You should terminate the SSL traffic (HTTPS) on the reverse proxy and let the
@@ -17,7 +19,7 @@ reverse proxy communicate with the Axon.ivy Engine over plain HTTP, because the
 setup is more easy and this will also increase the performance. We do not
 recommend AJP as the protocol between the reverse proxy and the Axon.ivy Engine,
 but this is at the moment still needed when integrating with :ref:`Microsoft
-ISS <reverse-proxy-iis>`.
+IIS <reverse-proxy-iis>`.
 
 |
 
@@ -37,11 +39,9 @@ reverse proxy servers:
     microsoft-iis/index
 
 Read carefully how to improve security by :ref:`restricting the access
-<reverse-proxy-secure>` to an Axon.ivy Engine when using a reverse proxy.
-
-Some reverse proxy servers provides :ref:`Single Sign On (SSO) <single-sign-on>`
-functionality. The reverse proxy then is responsible to identify the user either
-automatically or by login.
+<reverse-proxy-secure>` to an Axon.ivy Engine when using a reverse proxy. Some
+reverse proxy servers provides :ref:`Single Sign-on (SSO) <single-sign-on>`
+functionality. The reverse proxy then is responsible to authenticate the user.
 
 |
 

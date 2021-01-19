@@ -138,9 +138,11 @@ REST APIs served by the |ivy-engine| are protected by default to provide safe in
 
 Basic auth
 ^^^^^^^^^^
-REST APIs are protected with Basic authentication so that only known users of the security system can get valid responses.
-Setting HTTP Basic authentication headers from an API client is simple and widely supported. However, since HTTP Basic
-headers can be easily decrypted, it is strongly recommend to allow :ref:`only encrypted HTTPS traffic <security-https>` on the REST APIs.
+REST APIs are protected with Basic authentication so that only known users of
+the security system can get valid responses. Setting HTTP Basic authentication
+headers from an API client is simple and widely supported. However, since HTTP
+Basic headers can be easily decrypted, it is strongly recommend to allow
+:ref:`only encrypted HTTPS traffic <reverse-proxy-secure-https>` on the REST APIs.
 
 You can customized the authentication for a specific API method by setting security annotations headers:
 
