@@ -162,6 +162,24 @@ still have used the jDTS driver.
   #. Save configuration
 
 
+Remove support for MySQL 5.5 as system database
+***********************************************
+
+MySQL 5.5 has been released in 2010 and is end of life. We do no longer support
+for MySQL 5.5. We recommend to upgrade to MySQL 8.
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Details**
+  
+  If you use mysql as system database or as external database then you may have
+  configured :code:`com.mysql.jdbc.Driver` as driver. MySQL has deprecated
+  this driver and you should change it to :code:`com.mysql.cj.jdbc.Driver`. The
+  old driver still works.
+
+
 
 Enabled JavaTime module for Rest Clients by default
 ***************************************************
