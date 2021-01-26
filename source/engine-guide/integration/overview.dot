@@ -34,7 +34,7 @@ digraph overview {
   elasticsearch [ label="External\n Elasticsearch\n (optional)", pos="5.4,4.25!" width=1.5 fontsize=15]
 
   browser -> frontendServers [ label="HTTPS"];
-  frontendServers -> engine [ label="HTTP\nHTTPS\nAJP" ];
+  frontendServers -> engine [ label="HTTP\nHTTPS" ];
   engine -> userManagement [ label="LDAP" ];
   engine -> systemdb [ label="JDBC" ];
   engine -> elasticsearch [label="HTTP\nHTTPS"];

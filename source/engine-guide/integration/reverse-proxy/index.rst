@@ -16,10 +16,11 @@ resources such as the Engine Cockpit can be blocked.
 We always recommend to run a productive Axon.ivy Engine behind a reverse proxy.
 You should terminate the SSL traffic (HTTPS) on the reverse proxy and let the
 reverse proxy communicate with the Axon.ivy Engine over plain HTTP, because the
-setup is more easy and this will also increase the performance. We do not
-recommend AJP as the protocol between the reverse proxy and the Axon.ivy Engine,
-but this is at the moment still needed when integrating with :ref:`Microsoft
-IIS <reverse-proxy-iis>`.
+setup is more easy and this will also increase the performance.
+
+It's still possible to use AJP as the protocol between the reverse proxy and the
+Axon.ivy Engine, but this is deprecated and will be removed in future versions
+of Axon.ivy Engine. Start using HTTP or HTTPS instead of AJP.
 
 |
 

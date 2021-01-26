@@ -7,9 +7,11 @@
     port 8080 by default.
   * **HTTPS** Like HTTP but secure. It uses TLS to encrypt the communication between the
     web browser and server. Axon.ivy Engine uses port 8443 by default.
-  * **AJP** This protocol is used to communicate with a Microsoft IIS or Apache httpd
-    front-end server. AJP means Apache Jakarta Protocol. Axon.ivy Engine uses
-    port 8009 by default.
+  * **AJP** This protocol is used to integrate Microsoft
+    IIS or Apache httpd as :ref:`reverse proxy <reverse-proxy>` server. Axon.ivy
+    Engine uses port 8009 by default. AJP is deprecated and will be removed in
+    future versions of Axon.ivy Engine use HTTP or HTTPS to integrate a revesee
+    proxy.
 
   Have a look at the :ref:`ivy.yaml <ivy-webserver-yaml>` to see what other parts of the
   webserver and its connectors can be adjusted for your needs.

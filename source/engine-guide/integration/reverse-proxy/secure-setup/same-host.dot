@@ -17,5 +17,5 @@ digraph overview {
   host [ label="Host",pos = "4.5,2.6!" width=4.8 height=1.6 style="dotted" fontcolor="black" labelloc="t"];
   
   browser -> reverseproxy [ label="HTTPS"];
-  reverseproxy -> engine [ label="HTTP\nHTTPS AJP" ];
+  reverseproxy -> engine [ label="HTTP\nHTTPS" ];
 }
