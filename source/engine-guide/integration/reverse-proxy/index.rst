@@ -44,6 +44,10 @@ Read carefully how to improve security by :ref:`restricting the access
 reverse proxy servers provides :ref:`Single Sign-on (SSO) <single-sign-on>`
 functionality. The reverse proxy then is responsible to authenticate the user.
 
+The Engine Cockpit is providing :ref:`web server view
+<engine-cockpit-web-server>` for debugging purpose while integrating a reverse
+proxy. 
+
 |
 
 
