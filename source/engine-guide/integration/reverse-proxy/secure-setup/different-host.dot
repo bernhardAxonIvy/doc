@@ -18,5 +18,5 @@ digraph overview {
   hostEngine [ label="Host Axon.ivy Engine",pos = "6.0,2.6!" width=2 height=1.4 style="dotted" fontcolor="black" labelloc="t"];
   
   browser -> reverseproxy [ label="HTTPS"];
-  reverseproxy -> engine [ label="HTTP\nHTTPS AJP" ];
+  reverseproxy -> engine [ label="HTTP\nHTTPS" ];
 }

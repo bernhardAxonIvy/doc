@@ -90,7 +90,7 @@ The following protocols are supported:
 +----------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 | HTTPS    | HTTP protocol over secure socket layer (SSL).                                                                                                    |
 +----------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-| AJP      | Apache Jakarta Protocol. This protocol is used for the communication of the embedded Servlet Engine with external WebServers like IIS or Apache. |
+| AJP      | Apache Jakarta Protocol. This protocol is used to integrate a reverse proxy like IIS or Apache. Deprecated - use HTTP or HTTPS!                  |
 +----------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. note::
