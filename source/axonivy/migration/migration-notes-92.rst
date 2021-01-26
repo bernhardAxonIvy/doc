@@ -85,6 +85,36 @@ Engine then you need to set the property
 :code:`WebServer.HTTPS.Enabled` to :code:`true` in :ref:`ivy-webserver-yaml`.
 
 
+AJP support is deprecated
+*************************
+
+AJP is used to integrate the Axon.ivy Engine with Microsoft IIS  or Apache http
+as :ref:`reverse proxy <reverse-proxy>`. We still support AJP but you should
+migrate to modern URL rewrite approach based on HTTP/HTTPS.
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Details**
+
+  AJP's days are numbered. It is not being further developed and thus prevents
+  the use of new web features such as websockets. We highly recommend to migrate
+  to modern URL rewrite approach based on HTTP/HTTPS, because in future versions
+  of Axon.ivy Engine you won't be able to use AJP.
+
+  If you are using Microsoft IIS as your reverse proxy proceed as follows:
+
+  #. Open the IIS administration interface
+  #. Delete the virtualy directory named :guilabel:`ivy` which is
+     under :guilabel:`Default Website`.
+  #. Follow the :ref:`instructions <reverse-proxy-iis>` how to integrate Microsoft
+     IIS with modern URL rewrite.
+
+  If you are using Apache http as your reverse proxy you need to
+  :ref:`reconfigure Apache http <reverse-proxy-apache>`.
+
+
 SSL Client Configuration
 ************************
 
