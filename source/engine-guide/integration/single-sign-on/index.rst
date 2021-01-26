@@ -23,10 +23,10 @@ The Axon.ivy Engine will automatically log on the user.
 
 |
 
-We provide auto configuration scripts for :ref:`Single Sign-on with Microsoft
-IIS <reverse-proxy-iis-sso>` as reverse proxy. You can integrate Axon.ivy Engine
-with every :ref:`Web Application Firewall <web-application-firewall>`. And if
-nothing fits your needs than you are able to implement your :ref:`own SSO
+We provide auto configuration scripts to configure :ref:`Single Sign-on with
+Microsoft IIS <reverse-proxy-iis>` as reverse proxy. You can integrate Axon.ivy
+Engine with every :ref:`Web Application Firewall <web-application-firewall>`.
+And if nothing fits your needs than you are able to implement your :ref:`own SSO
 solution <sso-custom-solution>`.
 
 .. toctree::

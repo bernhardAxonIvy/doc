@@ -8,9 +8,6 @@ Upgrade Engine
    or set the ``autoConvert`` property in the :ref:`ivy-yaml` to ``true``.
 #. :ref:`Start <control-center>` the |ivy-engine|.
 #. :ref:`Re-deploy <deployment>` all converted/migrated |axon-ivy| projects.
-#. If the Engine is integrated with a reverse proxy (e.g. IIS or Apache), 
-   it is best practice to check if the most recent Apache Tomcat Connector is installed.
-   For more information refer to the :ref:`upgrade-tomcat-connect` page.
 #. You may now delete the old |ivy-engine| installation directory, **unless** the
    following warning applies to your installation:
 
@@ -29,5 +26,4 @@ Upgrade Engine
    :maxdepth: 1
 
    upgrade-systemdatabase
-   upgrade-tomcat-connector
 

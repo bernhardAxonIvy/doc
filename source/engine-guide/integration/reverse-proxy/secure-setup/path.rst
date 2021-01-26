@@ -31,9 +31,10 @@ appreciated by your end users. E.g. when a user is accessing
 .. rubric:: Examples
 
 The configuration examples for :ref:`NGINX <reverse-proxy-nginx>` and for
-:ref:`Apache http <reverse-proxy-apache>` follows all these recommendations.
-:ref:`IIS <reverse-proxy-iis-block-urls>` only provides a black list approach to
-do that.
+:ref:`Apache http <reverse-proxy-apache>` follows all these recommendations. The
+provided configuration script for :ref:`Microsoft IIS <reverse-proxy-iis>`
+routes all traffic to the Axon.ivy Engine. We recommend to only route specific
+applications by manually modifing the rules in :guilabel:`URL Rewrite`.
 
 
 Block URLs on the Axon.ivy Engine
