@@ -91,7 +91,7 @@ Frontend config combined into BaseUrl
 *************************************
 
 The configuration of the frontend url in :ref:`ivy.yaml <ivy-yaml>` has been
-simplified. You need to define now the :ref:`BaseUrl` in your :file:`ivy.yaml`.
+simplified. You need to define now the :code:`BaseUrl` in your :file:`ivy.yaml`.
 Combined out of the old frontend properties :code:`Frontend.Host`,
 :code:`Frontend.Protocol` and :code:`Frontend.Port`.
 
