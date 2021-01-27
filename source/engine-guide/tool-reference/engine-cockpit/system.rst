@@ -69,8 +69,9 @@ shows you all the headers of the current request and how the engine generates
 some URLs.
 
 You may also get some messages here. These appear if the URL of your browser and
-the **external base URL** or the **base URL** do not match. If this is the case
-please have a look how to properly setup a :ref:`reverse proxy <reverse-proxy>`.
+the **external base URL** or the configured **base URL** do not match. If this
+is the case please have a look how to properly setup a :ref:`reverse proxy
+<reverse-proxy>`.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-web-server.png
 
