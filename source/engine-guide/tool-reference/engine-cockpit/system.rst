@@ -64,14 +64,13 @@ Web Server
 ^^^^^^^^^^
 
 This **Web Server** view gives you the ability to quickly change your Tomcat
-Connectors or Frontend Server settings. There is also a data panel, that shows
-you all the headers of the current request and how the engine generates some
-URLs. 
+Connectors or reverse proxy server settings. There is also a data panel, that
+shows you all the headers of the current request and how the engine generates
+some URLs.
 
-You may also get some messages here. These appear if the URL of your Browser and
-the **external base URL** or the **frontend base URL** do not match. If this is
-the case please have a look how to properly setup a :ref:`reverse proxy
-<reverse-proxy>`.
+You may also get some messages here. These appear if the URL of your browser and
+the **external base URL** or the **base URL** do not match. If this is the case
+please have a look how to properly setup a :ref:`reverse proxy <reverse-proxy>`.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-web-server.png
 
