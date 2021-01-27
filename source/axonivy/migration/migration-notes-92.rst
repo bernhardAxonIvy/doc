@@ -70,19 +70,31 @@ configuration.
 
      **Details**
 
-  The legacy logging configuration file :file:`[engineDir]/configuration/log4jconfig.xml`
-  is no longer in charge. You need to make all your custom logging configuration in
-  :file:`[engineDir]/configuration/log4j2.xml`. Read more about customizing the :ref:`logging`.
+  The legacy logging configuration file
+  :file:`[engineDir]/configuration/log4jconfig.xml` is no longer in charge. You
+  need to make all your custom logging configuration in
+  :file:`[engineDir]/configuration/log4j2.xml`. Read more about customizing the
+  :ref:`logging`.
 
 
 HTTPS port disabled by default
 ******************************
 
-HTTPS port is now disabled by default on the Axon.ivy Engine,
-because you should always terminate SSL on the reverse proxy
-(frontend webserver). If you need HTTPS directly on the Axon.ivy
-Engine then you need to set the property
+HTTPS port is now disabled by default on the Axon.ivy Engine, because you should
+always terminate SSL on the reverse proxy (frontend webserver). If you need
+HTTPS directly on the Axon.ivy Engine then you need to set the property
 :code:`WebServer.HTTPS.Enabled` to :code:`true` in :ref:`ivy-webserver-yaml`.
+
+
+
+Frontend config combined into BaseUrl
+*************************************
+
+The configuration of the frontend url in :ref:`ivy.yaml <ivy-yaml>` has been
+simplified. You need to define now the :ref:`BaseUrl` in your :file:`ivy.yaml`.
+Combined out of the old frontend properties :code:`Frontend.Host`,
+:code:`Frontend.Protocol` and :code:`Frontend.Port`.
+
 
 
 AJP support is deprecated
