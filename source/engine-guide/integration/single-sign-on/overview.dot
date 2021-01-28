@@ -15,5 +15,5 @@ digraph overview {
   engine [label="Axon.ivy\nEngine", pos="7,3!", width="1.5", color="#C7D426", fontcolor="black"];
   
   browser -> reverseproxy [ label="HTTPS"];
-  reverseproxy -> engine [ label="JSessionID=Y\nuserName=Z"];
+  reverseproxy -> engine [ label="HTTP Header\nRemoteUser=john"];
 }
