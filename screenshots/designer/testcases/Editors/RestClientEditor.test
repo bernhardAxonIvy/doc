@@ -7,7 +7,7 @@ Element-Version: 3.0
 External-Reference: 
 Id: _63kQ4Aa0EeiM3vZlrfoIUw
 Runtime-Version: 2.5.0.202001211718
-Save-Time: 10/20/20, 1:42 PM
+Save-Time: 1/28/21, 1:44 PM
 Testcase-Type: ecl
 
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
@@ -31,7 +31,7 @@ with [get-editor documentationExampleProject] {
 		get-button "Generate REST classes" | click -metaKeys ""
 		with [get-window -class JaxRsGenerateDialog] {
 			get-editbox -after [get-label "Schema URI"] | set-text "https://petstore3.swagger.io/api/v3/openapi.json"
-			get-button "Check URI" | click -metaKeys ""
+			wait -ms 2500
 			get-editbox -after [get-label Namespace] | set-text "io.swagger.petstore.client"
 			get-object | captureScreenshot "designer-configuration/rest-client-generator-wizard.png"
 			get-button Cancel | click -metaKeys ""
