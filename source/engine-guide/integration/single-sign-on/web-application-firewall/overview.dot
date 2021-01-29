@@ -19,7 +19,7 @@ digraph overview {
   engine [label="Axon.ivy\nEngine", pos="7,3!", width="1.5", color="#C7D426", fontcolor="black"];
   
   browser -> waf [ label="WAF_SESSION=X"];
-  waf -> engine [ label="JSessionID=Y\nRemoteUser=john"];
+  waf -> engine [ label="JSessionID=Y\nX-Forwarded-User=john"];
   engine -> ad;
   iam -> ad;
   waf -> iam;
