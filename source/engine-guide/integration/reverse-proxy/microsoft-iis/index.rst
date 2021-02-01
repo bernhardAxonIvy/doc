@@ -8,17 +8,17 @@ execute the powershell script :download:`iis-proxy-setup.ps1`. Right click
 on the file and click :guilabel:`Run with PowerShell`.
 
 This script will guide you to setup IIS as reverse proxy for the Axon.ivy
-Engine. It is splitted in four parts:
+Engine. It is divided into several parts:
 
 * **IIS Setup** will install all required features as the IIS itself, URL
   Rewrite and Application Request Routing (ARR) modules. Furthermore it will
-  enable the reverse proxy capabilites. The most important configuration entries
-  in the IIS are the :guilabel:`Authentication` and :guilabel:`URL Rewrite`.
+  enable the reverse proxy capabilities. The most important configuration entries
+  in the IIS are the :guilabel:`Authentication` and :guilabel:`URL Rewrite` modules.
 
   .. figure:: /_images/iis/iis-overview.png
 
 * **Rewrite Rule** configures the rule for url rewriting. This will
-  add an new rule :code:`ivy-route-all` to the :guilabel:`Default Website`. This
+  add a new rule :code:`ivy-route-all` to the :guilabel:`Default Website`. This
   will route all traffic to the Axon.ivy Engine which runs on the same host at
   :code:`http://localhost:8080`. You may adjust this rule according to your
   needs when your Axon.ivy Engine runs on a different host. We also recommend to
@@ -33,12 +33,9 @@ Engine. It is splitted in four parts:
   enable Windows Authentication and will add a HTTP request header :code:`user`
   with the current user to the request wich will be forwared to the Axon.ivy
   Engine. You will also need to :ref:`activate Single Sign-on <single-sign-on>`
-  on the Axon.ivy Engine.
+  on the Axon.ivy Engine. Furthermore this will also enable Basic Authentication
+  which is required for REST Clients like the Axon.ivy Mobile App to call
+  the protected REST Services provided by the Axon.ivy Engine. If you don't need
+  this you can manually disable it.
 
-  .. figure:: /_images/iis/iis-authentication-windows.png
-
-* **Basic Authentication** needs to be activated if the Axon.ivy Engine
-  populates REST Services for the Axon.ivy Mobile App or when deployed
-  Axon.ivy projects provides REST services.
-
-  .. figure:: /_images/iis/iis-authentication-basic.png
+  .. figure:: /_images/iis/iis-authentication.png
