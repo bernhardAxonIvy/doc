@@ -30,12 +30,12 @@ Engine. It is divided into several parts:
   .. figure:: /_images/iis/iis-url-rewrite.png
 
 * **Setup SSO** will configure :ref:`Single Sign-on <single-sign-on>`. This will
-  enable Windows Authentication and will add a HTTP request header :code:`user`
-  with the current user to the request wich will be forwared to the Axon.ivy
-  Engine. You will also need to :ref:`activate Single Sign-on <single-sign-on>`
-  on the Axon.ivy Engine. Furthermore this will also enable Basic Authentication
-  which is required for REST Clients like the Axon.ivy Mobile App to call
-  the protected REST Services provided by the Axon.ivy Engine. If you don't need
-  this you can manually disable it.
+  enable Windows Authentication and will add a HTTP request header
+  :code:`X-Forwarded-User` with the current user to the request wich will be
+  forwared to the Axon.ivy Engine. You will also need to :ref:`activate Single
+  Sign-on <single-sign-on>` on the Axon.ivy Engine. Furthermore this will also
+  enable Basic Authentication which is required for REST Clients like the
+  Axon.ivy Mobile App to call the protected REST Services provided by the
+  Axon.ivy Engine. If you don't need this you can manually disable it.
 
   .. figure:: /_images/iis/iis-authentication.png
