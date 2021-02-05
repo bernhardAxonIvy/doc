@@ -432,6 +432,9 @@ Editor Menu
 To open the *editor menu* right click anywhere on the editors area
 canvas (i.e. background). The following actions are available:
 
+Jump to Data Class
+   Opens the data class editor of the data class used by the current process.
+ 
 Leave Subprocess
    Will jump out of an *embedded subprocess* to the process that
    contains the *Embedded Sub* element.
@@ -523,10 +526,6 @@ Open Document Reference
    Opens document URLs which are configured in the elements 'Name'
    inscription tab.
 
-Attach boundary event
-   Attaches an additional boundary event to the currently selected
-   activity.
-
 Breakpoint
    Add a *regular* or *conditional* breakpoint to the element or remove
    all breakpoints from the element.
@@ -537,13 +536,6 @@ Connect
    create an arrow by clicking on the process element where the arrow
    should start and then move the mouse while you keep the mouse button
    pressed to the process element where the arrow should end.
-
-Disconnect
-   Disconnects this element from another element. Click on another
-   element to remove the connection between the two elements.
-
-Move
-   See :ref:`process-editor-selection-menu`.
 
 Extended Functions
    Select from extended layout functions for the element. You can *reset
@@ -583,14 +575,17 @@ Change type
    be kept, but its field ids will change. This makes the Process Model
    incompatible when elements are wrapped for the first time. See
    :ref:`Embedded Subprocess <process-kind-embedded-subprocess>`.
+   
+Move
+   Move the selected element.
 
 Search callers of this process
    Displays all callers of a Start in the Search view.
 
-Search callers of this exception element
-   Displays all process elements that call an Exception Start when an
+Search callers of this error element
+   Displays all process elements that call an Error Start when an
    exception occurred.
-
+      
 Jump to connected element
    Will jump out of an *embedded subprocess* to the process that
    contains the *Embedded Sub* element and selects the process element
@@ -614,6 +609,14 @@ Edit Java Class
 
 Edit User Dialog
    Opens the view editor (e.g. JSF Editor) for the selected User Dialog.
+   
+Attach boundary event
+   Attaches an additional boundary event to the currently selected
+   activity.
+   
+Change Icon
+   Changes the decorator icon of an element. 
+   You can use any image in your project as decorator icon by using the *Browse ...* sub menu.  
 
 Arrow Menu
 ^^^^^^^^^^
@@ -695,13 +698,13 @@ Same Width and Height
 Set to default size
    Resets the size of the selected elements to their default sizes.
 
-Wrap into Subprocess
-   Creates an *embedded subprocess* from the selected elements.
-
 Create template
    Creates a new *process template* from the selected elements. After
    prompting for a name for the selection, the new template will be
    available from the :ref:`process-template-view`.
+
+Wrap into Subprocess
+   Creates an *embedded subprocess* from the selected elements.
 
 Delete selection
    Deletes all of the selected elements from the process.
