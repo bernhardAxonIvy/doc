@@ -294,3 +294,34 @@ please change to the simpler methods *all()*, *matches(pattern)* or *contains(pa
     * :code:`Ivy.wf().signals().receivers().all()`
     * :code:`Ivy.wf().signals().receivers().matches(pattern)`
     * :code:`Ivy.wf().signals().receivers().contains(part)`
+
+
+
+Maven dependencies automatically packed to ivy archives
+*******************************************************
+
+With 9.2, it is no longer necessary to copy maven dependencies to a specific
+folder manually or with the maven dependency plugin. However, this "old" way
+still works.
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Details**
+
+  There is a new project-build-plugin version 9.2.0, with to new mojo execution steps:
+  
+    * :code:`maven-dependency` is executed in the **package** phase; This step
+      copies your maven dependencies to the :file:`lib/mvn-deps` folder.
+    * :code:`maven-dependency-cleanup` is executed in the **clean** phase; This
+      step deletes the :file:`lib/mvn-deps` folder.
+  
+  When you use the functions to **pack or export project** projects in the
+  |ivy-designer|, the same happens as with the plugin:
+    
+    * Your maven dependencies are copied to the :file:`lib/mvn-deps` folder.
+
+  The |ivy-engine| will recognize the **jar** files in this folder. So it is no
+  longer necessary to use the **maven dependency plugin** and you don't have to
+  add any entries to the :file:`.classpath` file.
