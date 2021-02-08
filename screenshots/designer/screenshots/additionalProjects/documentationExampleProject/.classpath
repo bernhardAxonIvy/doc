@@ -42,6 +42,6 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry exported="true" kind="lib" path="lib_generated/client/jaxRsClient_dd8023aa-c07a-456b-8b00-192a4ce9684f.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/generated/rest/jaxRsClient_dd8023aa-c07a-456b-8b00-192a4ce9684f.jar"/>
 	<classpathentry kind="output" path="classes"/>
 </classpath>
