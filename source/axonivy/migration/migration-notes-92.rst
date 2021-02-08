@@ -312,16 +312,27 @@ still works.
 
   There is a new project-build-plugin version 9.2.0, with to new mojo execution steps:
   
-    * :code:`maven-dependency` is executed in the **package** phase; This step
-      copies your maven dependencies to the :file:`lib/mvn-deps` folder.
-    * :code:`maven-dependency-cleanup` is executed in the **clean** phase; This
-      step deletes the :file:`lib/mvn-deps` folder.
+    * :project-build-plugin-doc:`maven-dependency <maven-dependency-mojo.html>`: 
+      Copy maven dependencies to :file:`lib/mvn-deps`
+    * :project-build-plugin-doc:`maven-dependency-cleanup <maven-dependency-cleanup-mojo.html>`: 
+      Remove :file:`lib/mvn-deps` folder.
   
   When you use the functions to **pack or export project** projects in the
   |ivy-designer|, the same happens as with the plugin:
     
     * Your maven dependencies are copied to the :file:`lib/mvn-deps` folder.
 
-  The |ivy-engine| will recognize the **jar** files in this folder. So it is no
-  longer necessary to use the **maven dependency plugin** and you don't have to
-  add any entries to the :file:`.classpath` file.
+  If you used the **maven dependency plugin** to copy your dependencies or if
+  you have made manual entries to the :file:`.classpath` file, you can remove
+  those now and use the normal `maven dependencies
+  <https://maven.apache.org/pom.html#Dependencies>`__ descriptor. 
+  
+  .. warning::
+  
+    Only dependencies with the scope :code:`compile`, :code:`system` and
+    :code:`runtime` are copied. To reduce the size of your ivy archive make sure
+    that your dependencies are correctly configured:
+
+      * Mark test dependencies with the scope :code:`test`
+      * `Exclude transient dependencies <https://maven.apache.org/pom.html#exclusions>`__ which are already delivered by the core
+        
