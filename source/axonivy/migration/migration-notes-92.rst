@@ -330,8 +330,8 @@ still works.
   .. warning::
   
     Only dependencies with the scope :code:`compile`, :code:`system` and
-    :code:`runtime` are copied. To reduce the size of your ivy archive make sure
-    that your dependencies are correctly configured:
+    :code:`runtime` are copied. To reduce the size of your ivy archive, make sure
+    that your dependencies are configured correctly:
 
       * Mark test dependencies with the scope :code:`test`
       * `Exclude transient dependencies <https://maven.apache.org/pom.html#exclusions>`__ which are already delivered by the core
