@@ -312,9 +312,9 @@ still works.
 
   There is a new project-build-plugin version 9.2.0, with to new mojo execution steps:
   
-    * :project-build-plugin-doc:`maven-dependency <maven-dependency-mojo.html>`: 
+    * :project-build-plugin-doc:`maven-dependency <9.2/maven-dependency-mojo.html>`: 
       Copy maven dependencies to :file:`lib/mvn-deps`
-    * :project-build-plugin-doc:`maven-dependency-cleanup <maven-dependency-cleanup-mojo.html>`: 
+    * :project-build-plugin-doc:`maven-dependency-cleanup <9.2/maven-dependency-cleanup-mojo.html>`: 
       Remove :file:`lib/mvn-deps` folder.
   
   When you use the functions to **pack or export project** projects in the
