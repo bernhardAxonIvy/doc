@@ -328,13 +328,15 @@ still works.
   now and use the normal `maven dependencies
   <https://maven.apache.org/pom.html#Dependencies>`__ descriptor. To remove
   those entries you can edit the :file:`.classpath` file directly or use the
-  |ivy-designer|:
+  |ivy-designer|.
 
-    #. Right click on project
-    #. Properties
-    #. Java Build Path
-    #. Libraries
-    #. Remove manual added libraries (*.jar)
+  **Before:**
+
+  .. figure:: /_images/migration/9.2/mvn-deps-before.png
+
+  **After:**
+
+  .. figure:: /_images/migration/9.2/mvn-deps-after.png
   
   .. warning::
   
