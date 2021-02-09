@@ -18,13 +18,14 @@ Changes in 9.1.0, 05.08.2020
 
 We suggest to install this release if you are suffering from any of these issues.
 
-+ XIVY-4473       Technical task  cms tree in linux always disapearing in dark mode
++ XIVY-4473       Technical task Cms tree in linux always disapearing in dark mode
 + XIVY-494        Story          Simply setup of test environment in a new or (existing) ivy project
 + XIVY-622        Story          Introduce a TEST-IAR lifecycle with good default goal executions for integration test projects
 + XIVY-1260       Story          Mapping function Recordset.toList(Class<T>) : List<T>
 + XIVY-1606       Story          Support custom annotation processors like Lombok
 + XIVY-1919       Story          Mock Support for Activities
 + XIVY-2275       Story          Provide a virgin engine to run integration-tests on it
++ XIVY-2946       Story          Understandable error message if BusinessCaseData is saved to a non persistent Business Case
 + XIVY-2965       Story          Toolsupport to create IvyTestProject in designer
 + XIVY-2982       Story          Include Mavenizer into the product
 + XIVY-3123       Story          Validate ivy scriptlets with maven in complex applications
@@ -44,10 +45,19 @@ We suggest to install this release if you are suffering from any of these issues
 + XIVY-3452       Story          Write unit test for our workflow demos to learn what infrastructure is needed 
 + XIVY-3453       Story          Document how to run UI tests with maven and Axon.ivy
 + XIVY-3465       Story          Provide an API to synch a single user with the external security system
++ XIVY-3466       Story          Support SVG images in CMS
 + XIVY-3467       Story          Sticky hint on engine cockpit if a restart is needed
++ XIVY-3470       Story          Improve Setup Wizard
++ XIVY-3477       Story          Simplify HtmlPageToMailConverter
++ XIVY-3479       Story          HTTP deployment to app 'System' as bad default
 + XIVY-3484       Story          Prototype: Every ivy application is a Tomcat webapp
++ XIVY-3486       Story          Official support for Windows Server 2019
++ XIVY-3494       Story          BusinessCaseData demo park task with data in WorkflowDemos
 + XIVY-3501       Story          Support Swimlanes for BPMN Export
 + XIVY-3503       Story          Improve Task- and CaseQuery Performance by improving workflow data model
++ XIVY-3516       Story          BPMN Export with connector labels
++ XIVY-3524       Story          Support Microsoft SQL Server 2019
+! XIVY-3528       Story          Possible Security leak in static pages
 + XIVY-3530       Story          Default Html Dialog theme that is easy to customize and good looking by default 
 + XIVY-3535       Story          Add new APIs to easily iterate over large datasets 
 + XIVY-3538       Story          Improve security concept for static pages
@@ -118,20 +128,49 @@ We suggest to install this release if you are suffering from any of these issues
 + XIVY-2221       Bug            JUNIT runtime classpath in Designer
 + XIVY-2397       Bug            Maven project build plugin does not work if engine directory is not writable
 + XIVY-2996       Bug            Can not separate test and normal classes with project-build-plugin
++ XIVY-3189       Bug            New process start not found without engine restart in designer
++ XIVY-3295       Bug            CaseMap (start) is not removed from Engine if it is deleted from Project in Designer
 * XIVY-3351       Bug            Synch user at login with single sign-on
 + XIVY-3356       Bug            Do not process error pages after rest provider exception
++ XIVY-3378       Bug            Deployment fails when Global Variables are configured in yaml
 + XIVY-3405       Bug            Execution of method was not successful in Html Dialog
 + XIVY-3426       Bug            Rule Beans can't generate DMN due to JAXB
 + XIVY-3440       Bug            errorPage.getLocale() throws NPE in ErrorPage
++ XIVY-3441       Bug            Engine logs invisible in maven console out
++ XIVY-3468       Bug            Style of html dialog looks strange after change in HtmlDialog UI Editor on Windows
 + XIVY-3442       Bug            Rule Beans decision table minimized after added column
 + XIVY-3444       Bug            ViewExpiredException when user from other app in same browser logs out
 + XIVY-3449       Bug            project build plugin excludes compiled classes dir from IAR if set to 'target/classes '
++ XIVY-3472       Bug            Can not see second input parameter on Callable Subprocess Start
+* XIVY-3473       Bug            No administrators after migrating from 7 to 8
+! XIVY-3474       Bug            Passwords of new administrators will not be hashed in ivy.yaml
+* XIVY-3476       Bug            Process start links broken (view expired) when called from third party site
++ XIVY-3478       Bug            Properties in Web Service Call Activity Request not visible
++ XIVY-3481       Bug            Error 'Attachment download failed for url' when engine sends task notification mails
++ XIVY-3482       Bug            SVG images appears as attachment in task notification mails
++ XIVY-3485       Bug            Reordering of Alternative Gateway conditions not working in embeded subprocess
++ XIVY-3488       Bug            Task notification mail is not nicely formatted
++ XIVY-3489       Bug            Configuration prints warn logs on SecuritySystem#MAP if DefaultContext has commas
++ XIVY-3490       Bug            Designer freeze if Html content in CMS is opened
++ XIVY-3491       Bug            Change location of custom jsf error pages
 + XIVY-3495       Bug            Ivy Components not updated after project dependency change
++ XIVY-3496       Bug            Undo throws error if the last action was an Alternative Gateway condition reordering
++ XIVY-3497       Bug            Oracle System Database creation is wrong
++ XIVY-3499       Bug            Cut off SWT tables on Windows
++ XIVY-3500       Bug            BPMN exporter wrong label positions on bmpn.io
++ XIVY-3502       Bug            Demo Project Import failure
++ XIVY-3505       Bug            Deployment REST API ignores deploy.options.yaml in zip
 + XIVY-3506       Bug            CaseQuery order descriptions not working with OracleDb, HsqlDb and MSSql
++ XIVY-3510       Bug            Remote debugging does not work if enabled in jvm.options file
++ XIVY-3511       Bug            SSO does not work with AJP with the default configuration
++ XIVY-3513       Bug            Initial Oracle startup fails while content conversion
++ XIVY-3514       Bug            Process Templates loose icon after designer restart
++ XIVY-3517       Bug            Update debian package dependecies to java 11
 + XIVY-3519       Bug            Could not find any registered converter-class in Axon.ivy Designer
 + XIVY-3523       Bug            Licence file loading problems not reported in Log
 + XIVY-3526       Bug            Fix Runtimelog for MAC Designer
 + XIVY-3533       Bug            IvyComponents not sorted alphabetically in HtmlDialog Toolbar
++ XIVY-3536       Bug            NPE on Maven 'update project' if an packed '.iar' project is in the workspace
 + XIVY-3541       Bug            Synchronize User does not respect deleted users for license check when creating new users
 + XIVY-3544       Bug            Error in Log when deploying over REST
 + XIVY-3546       Bug            Support undefined names in CXF WebServiceClient generation
