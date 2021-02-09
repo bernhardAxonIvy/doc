@@ -340,6 +340,8 @@ still works.
   
   .. warning::
   
+    Make sure that your project is converted to a maven project!
+
     Only dependencies with the scope :code:`compile`, :code:`system` and
     :code:`runtime` are copied. To reduce the size of your ivy archive, make sure
     that your dependencies are configured correctly:
