@@ -294,3 +294,55 @@ please change to the simpler methods *all()*, *matches(pattern)* or *contains(pa
     * :code:`Ivy.wf().signals().receivers().all()`
     * :code:`Ivy.wf().signals().receivers().matches(pattern)`
     * :code:`Ivy.wf().signals().receivers().contains(part)`
+
+
+
+Maven dependencies automatically packed to ivy archives
+*******************************************************
+
+With 9.2, it is no longer necessary to copy maven dependencies to a specific
+folder manually or with the maven dependency plugin. However, this `old way <https://answers.axonivy.com/questions/2089/add-library-with-pom-xml>`__
+still works.
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Details**
+
+  There is a new project-build-plugin version 9.2.0, with to new execution
+  goals, which are active per default:
+  
+    * :project-build-plugin-doc:`maven-dependency <9.2/maven-dependency-mojo.html>`: 
+      Copy maven dependencies to :file:`lib/mvn-deps`
+    * :project-build-plugin-doc:`maven-dependency-cleanup <9.2/maven-dependency-cleanup-mojo.html>`: 
+      Remove :file:`lib/mvn-deps` folder.
+  
+  When you use the functions to **pack or export project** projects in the
+  |ivy-designer|, the same happens as with the plugin:
+    
+    * Your maven dependencies are copied to the :file:`lib/mvn-deps` folder.
+
+  If you used the **maven dependency plugin** to copy your dependencies and you
+  have made manual entries to the :file:`.classpath` file, you can remove those
+  now and use the normal `maven dependencies
+  <https://maven.apache.org/pom.html#Dependencies>`__ descriptor. To remove
+  those entries you can edit the :file:`.classpath` file directly or use the
+  |ivy-designer|.
+
+  **Before:**
+
+  .. figure:: /_images/migration/9.2/mvn-deps-before.png
+
+  **After:**
+
+  .. figure:: /_images/migration/9.2/mvn-deps-after.png
+  
+  .. warning::
+  
+    Only dependencies with the scope :code:`compile`, :code:`system` and
+    :code:`runtime` are copied. To reduce the size of your ivy archive, make sure
+    that your dependencies are configured correctly:
+
+      * Mark test dependencies with the scope :code:`test`
+      * `Exclude transient dependencies <https://maven.apache.org/pom.html#exclusions>`__ which are already delivered by the core
