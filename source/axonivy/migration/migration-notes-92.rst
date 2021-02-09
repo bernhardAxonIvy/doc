@@ -310,7 +310,8 @@ still works.
 
      **Details**
 
-  There is a new project-build-plugin version 9.2.0, with to new mojo execution steps:
+  There is a new project-build-plugin version 9.2.0, with to new execution
+  goals, which are active per default:
   
     * :project-build-plugin-doc:`maven-dependency <9.2/maven-dependency-mojo.html>`: 
       Copy maven dependencies to :file:`lib/mvn-deps`
@@ -322,10 +323,18 @@ still works.
     
     * Your maven dependencies are copied to the :file:`lib/mvn-deps` folder.
 
-  If you used the **maven dependency plugin** to copy your dependencies or if
-  you have made manual entries to the :file:`.classpath` file, you can remove
-  those now and use the normal `maven dependencies
-  <https://maven.apache.org/pom.html#Dependencies>`__ descriptor. 
+  If you used the **maven dependency plugin** to copy your dependencies and you
+  have made manual entries to the :file:`.classpath` file, you can remove those
+  now and use the normal `maven dependencies
+  <https://maven.apache.org/pom.html#Dependencies>`__ descriptor. To remove
+  those entries you can edit the :file:`.classpath` file directly or use the
+  |ivy-designer|:
+
+    #. Right click on project
+    #. Properties
+    #. Java Build Path
+    #. Libraries
+    #. Remove manual added libraries (*.jar)
   
   .. warning::
   
