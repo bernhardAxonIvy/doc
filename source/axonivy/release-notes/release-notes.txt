@@ -2998,7 +2998,7 @@ Axon.ivy Engine:
 + 22926 Improvement   Deliver ivy projects as ivy archives in Designer and Server
 + 22971 Bug           Class loading exception blocks server start in some cases
 + 23041 Bug           Cannot configure web service fallback server correctly
-+ 23067 Bug           Passswörter länger als 28 Zeichen
++ 23067 Bug           PasswÃ¶rter lÃ¤nger als 28 Zeichen
 + 23079 Feature       PublicAPI method to get all task (process) stages
 + 23080 Feature       PublicAPI getter for Process Category and Name
 + 23216 Improvement   Use of authentification types is not clear
@@ -3432,7 +3432,7 @@ Axon.ivy Engine:
 - New JSF Workflow UI 
 
 Bug fixes and feature implementations:           
-* Issue #15481 (Improvement): Content Editor: Export File ist für Images noch nicht implementiert
+* Issue #15481 (Improvement): Content Editor: Export File ist fÃ¼r Images noch nicht implementiert
 * Issue #15793 (Feature): RD-Interface: Usability
 * Issue #16612 (Feature): New Process-Wizard: Process Templates
 * Issue #16951 (Bug): Library dependencies: Probleme bei Import von mehreren Projekten
@@ -3447,13 +3447,13 @@ Bug fixes and feature implementations:
 * Issue #19514 (Improvement): Run CMS delete async in a runnable
 * Issue #19580 (Bug): Copy/Paste from CMS to another fails
 * Issue #20403 (Bug): ivy.rd.startProcess does not work if the started process opens a rich dialog in a call sub
-* Issue #20723 (Improvement): Neue CMS Einträge für alle ausgewählten Sprachen erstellen
+* Issue #20723 (Improvement): Neue CMS EintrÃ¤ge fÃ¼r alle ausgewÃ¤hlten Sprachen erstellen
 * Issue #20728 (Improvement): Process Editor: Show pathes in Alternatives
 * Issue #20776 (Feature): create mutliple co's at once
 * Issue #20779 (Bug): It is not possible to configure an unkown JDBC Driver (Others/Others) on the Server
 * Issue #20809 (Bug): Strange error dialog in server administrator AD authentication
 * Issue #21071 (Improvement): RD Logic creation productivity improvement
-* Issue #21249 (Improvement): SMTP Einstellungen über Admin UI testen
+* Issue #21249 (Improvement): SMTP Einstellungen Ã¼ber Admin UI testen
 * Issue #21560 (Bug): Unify default content object value icon
 * Issue #22307 (Bug): Import of content object value after modifying value does not work
 * Issue #22401 (Improvement): Total User Count in Admin Ui
@@ -4416,7 +4416,7 @@ Xpert.ivy Server:
 
 Bug fixes and feature implementations:
 
-* Issue #2864 (Feature): Kopieren und Einfügen von Elementen
+* Issue #2864 (Feature): Kopieren und EinfÃ¼gen von Elementen
 * Issue #15791 (Improvement): Bemerkung edit -> automatisch "wrap text" anwenden
 * Issue #16994 (Feature): Mechanism of copyProperties and deepCopy are needed feature
 * Issue #17049 (Bug): Project Close: Bereits geladene Prozesse werden nicht unloaded
@@ -4428,7 +4428,7 @@ Bug fixes and feature implementations:
 * Issue #19488 (Bug): IntermediateEvent element seams to not support the task name scripting
 * Issue #19672 (Bug): db fields for insert/update on DB step always validates to Boolean
 * Issue #19870 (Improvement): Pack a Xpert.ivy project as a Library (jar)
-* Issue #19911 (Bug): CustomDecimalFields von 10,5 auf x,5 erhöhen
+* Issue #19911 (Bug): CustomDecimalFields von 10,5 auf x,5 erhÃ¶hen
 * Issue #20306 (Bug): Enable project version validator on project import or svn checkout
 * Issue #20407 (Bug): Weird warning message during deployment of a project
 * Issue #20416 (Improvement): Manulles Clear des Runtime Log
@@ -4447,9 +4447,9 @@ Bug fixes and feature implementations:
 * Issue #21892 (Bug): Mandatory TextArea does not validate properly
 * Issue #22060 (Bug): Server resolves the librarydependency to deleted PMVs
 * Issue #22104 (Bug): Data Classes Editor: Navigation with Tab is not working
-* Issue #22132 (Bug): Migration 4.1.1 -> 4.1.3: ClassCastException bei Rückkehr von RD in Business-Prozess
+* Issue #22132 (Bug): Migration 4.1.1 -> 4.1.3: ClassCastException bei RÃ¼ckkehr von RD in Business-Prozess
 * Issue #22153 (Improvement): The DB Step Tab is not aware of stored-procedures
-* Issue #22169 (Bug): Fehler im ErrorLog beim Öffnen des DataClass Editors
+* Issue #22169 (Bug): Fehler im ErrorLog beim Ã–ffnen des DataClass Editors
 * Issue #22185 (Improvement): DataClass editor: jump to attr. type class
 * Issue #22214 (Feature): Deployment of customer ULC Widgets (Clientside Classes)
 * Issue #22243 (Bug): focus problems on data class editor
@@ -4526,7 +4526,7 @@ Bug fixes and feature implementations:
 * Issue #22850 (Improvement): Support pack200 compression format for web start client
 * Issue #22866 (Documentation): Missing documentation about SmartTable / Column Defintion: It, Index, originalIndex, value
 * Issue #22881 (Feature): Fehlende Swimlane Features
-* Issue #22886 (Bug): Combine to Composite ist nicht mehr möglich wenn ein einzelnes Element selektiert ist
+* Issue #22886 (Bug): Combine to Composite ist nicht mehr mÃ¶glich wenn ein einzelnes Element selektiert ist
 * Issue #22891 (Bug): Can't destroy Task which is in state WAITING_FOR_INTERMEDIATE_EVENT
 * Issue #22899 (Bug): ULC roundtrips for key and focus events should always be async
 * Issue #22902 (Bug): Error Marker for Alternative Gateway
@@ -4548,8 +4548,8 @@ Bug fixes and feature implementations:
 * Issue #23099 (Improvement): RBrowser session recycling improvement
 * Issue #23104 (Bug): Web Service port types on Ivy Server are not created
 * Issue #23120 (Bug): Application cache is in fact environment cache
-* Issue #23128 (Bug): Missing Error Marker bei Callsub nach geänderter Signatur
-* Issue #23129 (Bug): Missing Error Marker wenn Fehler im CodeBlock wegen geänderter Java Klasse/Methode
+* Issue #23128 (Bug): Missing Error Marker bei Callsub nach geÃ¤nderter Signatur
+* Issue #23129 (Bug): Missing Error Marker wenn Fehler im CodeBlock wegen geÃ¤nderter Java Klasse/Methode
 * Issue #23135 (Improvement): Integration of animated RTextField
 * Issue #23142 (Bug): query method with argument count = 0 always returns all results instead of 0
 * Issue #23162 (Improvement): Integration of animated RComboBox
@@ -4785,7 +4785,7 @@ Bugfixes and feature implementations:
 * Issue #17433 (Feature): Xpert.Ivy as eclipse Feature - for update reasons
 * Issue #19389 (Feature): Put WS classes in a jar after generation
 * Issue #19506 (Feature): Simple Workflow UI in Server
-* Issue #19842 (Feature): Roundtrip-Element für Refresh von Client-GUI / ProgressBar
+* Issue #19842 (Feature): Roundtrip-Element fÃ¼r Refresh von Client-GUI / ProgressBar
 * Issue #20281 (Feature): IvyScript Help in Attribute Browser (use JavaDoc)
 * Issue #20285 (Feature): Add HTML Table content object
 * Issue #20477 (Feature): Missing Callable process start element from palette
@@ -4809,9 +4809,9 @@ Bugfixes and feature implementations:
 * Issue #21451 (Improvement): Provide Thumbnail view for RichDialog search
 * Issue #21776 (Documentation): add section for instance parameter in sql server
 * Issue #15690 (Bug): Prozesseditor: Transparenz Stil auf Subprozess?
-* Issue #17101 (Bug): IvyScript: Innere Klassen können nicht importiert werden
-* Issue #17371 (Bug): Process-Editor: Für Pfeile kann dash style/color nicht mehr gesetzt werden
-* Issue #17564 (Bug): Test Cases für Rich Dialogs
+* Issue #17101 (Bug): IvyScript: Innere Klassen kÃ¶nnen nicht importiert werden
+* Issue #17371 (Bug): Process-Editor: FÃ¼r Pfeile kann dash style/color nicht mehr gesetzt werden
+* Issue #17564 (Bug): Test Cases fÃ¼r Rich Dialogs
 * Issue #17752 (Bug): Configuration Editor: Refresh problem
 * Issue #18019 (Bug): Process Editor: Cannot copy Annotations
 * Issue #18176 (Bug): Widget Config - Properties view : focus lost
@@ -4834,7 +4834,7 @@ Bugfixes and feature implementations:
 * Issue #20269 (Bug): Callable Process as Component
 * Issue #20328 (Bug): Validation of the email property "TO" before sending recognises not all wrong adresses.
 * Issue #20487 (Bug): ULC Client Application sometimes does not have the same HTTP Session it was started in
-* Issue #20748 (Bug): Leere Beschreibung bei Environments führt beim Deployment in einer Oracle Db zu einem Fehler
+* Issue #20748 (Bug): Leere Beschreibung bei Environments fÃ¼hrt beim Deployment in einer Oracle Db zu einem Fehler
 * Issue #20772 (Bug): Refactoring of Dataclasses (rename, move) not working
 * Issue #21132 (Bug): RD project converter fails
 * Issue #21145 (Bug): CMS value change problem, remove the content of a string value
@@ -5115,7 +5115,7 @@ Bugfixes and feature implementations:
 * Issue #17999 (Bug): Change input in Callable Subprocess Start dialog 
 * Issue #18064 (Feature): Check compatibility of new deploying project with 
                existing pmv
-* Issue #18366 (Feature): CMS Search über alle abhängigen CMS
+* Issue #18366 (Feature): CMS Search Ã¼ber alle abhÃ¤ngigen CMS
 * Issue #18498 (Bug): FWK005 parse may not be called while parsing
 * Issue #18558 (Major Feature): Callable Process as Component
 * Issue #18562 (Improvement): Extend CMS Search: Also index/search 
@@ -5174,8 +5174,8 @@ Bugfixes and feature implementations:
 * Issue #19502 (Bug): ServerConfig: Create Admin, Wrong Email-Address
 * Issue #19504 (Bug): Server Config: Admin change password
 * Issue #19508 (Documentation): Table changes 
-* Issue #19521 (Bug): IVY Server neustart bei RD-Änderung notwendig
-* Issue #19530 (Improvement): Validierung für RComboBox und RLookupTextField
+* Issue #19521 (Bug): IVY Server neustart bei RD-Ã„nderung notwendig
+* Issue #19530 (Improvement): Validierung fÃ¼r RComboBox und RLookupTextField
 * Issue #19532 (Bug): Delete of System Application should not possible
 * Issue #19534 (Bug): Synthetica L&F does not work in applet mode
 * Issue #19557 (Bug): Selection in the cms editor is lost if the text in the 
@@ -5205,9 +5205,9 @@ Bugfixes and feature implementations:
 * Issue #19751 (Bug): JDIC package nicht komplett in Ivy integriert
 * Issue #19758 (Bug): root rich dialog of window does not receive broadcast 
                events
-* Issue #19771 (Bug): Systemtasks werden nach Neustart nicht ausgeführt
+* Issue #19771 (Bug): Systemtasks werden nach Neustart nicht ausgefÃ¼hrt
 * Issue #19778 (Documentation): DesignerDOC PDF: 5 images out of margin 
-* Issue #19784 (Bug): Import AD-User aus anderer Domäne führt zu Fehler
+* Issue #19784 (Bug): Import AD-User aus anderer DomÃ¤ne fÃ¼hrt zu Fehler
 * Issue #19790 (Bug): RTable empty table rendering problem
 * Issue #19794 (Bug): Enable Regular Garbage Collection on the Server
 * Issue #19806 (Bug): PermGen setting in ilc not functional
@@ -5224,7 +5224,7 @@ Bugfixes and feature implementations:
                hits ENTER
 * Issue #19903 (Bug): broken setRootVisible(false)  - e.g. IvyAdminTools
 * Issue #19904 (Bug): Broken: RTree widget in VE
-* Issue #19909 (Bug): Verschachtelt Daten können nicht via HTTP-Parameter 
+* Issue #19909 (Bug): Verschachtelt Daten kÃ¶nnen nicht via HTTP-Parameter 
                gesendet werden
 * Issue #19922 (Improvement): ULCExtension integration
 * Issue #19923 (Bug): server log: java.lang.NullPointerException
@@ -5255,7 +5255,7 @@ Bugfixes and feature implementations:
 * Issue #20136 (Bug): User sometime do not have the configured roles in 
                Designer runtime
 * Issue #20138 (Improvement): LookupTextField: setSelected(List/Record)Entry 
-               unterstützen
+               unterstÃ¼tzen
 * Issue #20159 (Documentation): Extend System Requriements in readme
 * Issue #20289 (Bug): Database Schema for Persistence is not generated for 
                specific Environment
