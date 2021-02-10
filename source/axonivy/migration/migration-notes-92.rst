@@ -310,7 +310,7 @@ still works.
 
      **Details**
 
-  There is a new project-build-plugin version 9.2.0, with to new execution
+  There is a new project-build-plugin version 9.2.1, with to new execution
   goals, which are active per default:
   
     * :project-build-plugin-doc:`maven-dependency <9.2/maven-dependency-mojo.html>`: 
