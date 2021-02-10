@@ -16,7 +16,6 @@
     <ivy.engine.download.url>file://${project.build.directory}/AxonIvyEngine_All_x64.zip</ivy.engine.download.url>
     <ivy.engine.directory>${project.build.directory}/ivyEngine</ivy.engine.directory>
     <openapi.output>${project.build.directory}/openapi/</openapi.output>
-    <maven.antrun.plugin.version>3.0.0</maven.antrun.plugin.version>
   </properties>
 
   <build>    
@@ -24,7 +23,6 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-antrun-plugin</artifactId>
-        <version>${maven.antrun.plugin.version}</version>
         <executions>
           <execution>
             <id>copy-engine</id>
@@ -46,6 +44,7 @@
           </execution>
         </executions>
       </plugin>
+
       <plugin>
         <groupId>com.axonivy.ivy.ci</groupId>
         <artifactId>project-build-plugin</artifactId>
@@ -76,7 +75,6 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-antrun-plugin</artifactId>
-        <version>${maven.antrun.plugin.version}</version>
         <executions>
           <execution>
             <id>openapi-specs</id>
