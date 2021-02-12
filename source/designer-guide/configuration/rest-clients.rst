@@ -69,6 +69,11 @@ REST Client Section
   The name of the REST client. The REST client can be referenced by
   this name. Can be modified. Note that references using the name will
   break if you change it.
+  
+- :guilable:`Icon`
+  Choose an icon that represents the system that this REST client
+  communicates with. The icon will also be used as decorator icon on 
+  REST client call process elements that references this REST client.  
 
 - :guilabel:`Description`
   Description of the REST client.
