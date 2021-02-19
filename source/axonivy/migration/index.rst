@@ -3,20 +3,23 @@
 Migration
 =========
 
-To successfully migrate |axon-ivy| to a newer version follow these steps:
+The migration process from one |ivy-engine| version to another differs 
+hightly among the supported operating systems and the kind of migration.
 
-#. :ref:`Read the Migration Notes document <migration-notes>`. This document
-   will tell you what has changed since the last version and will list any
-   additional steps you need to take to successfully migrate your system.
-#. :ref:`Prepare your new |ivy-engine| <migration-preperation>`
-#. :ref:`Migrate your projects <migration-project>`
-#. :ref:`Upgrade to your new |ivy-engine| <migration-upgrade-engine>`
+**Update:**
+
+If you are looking for the steps update to keep your |ivy-engine| on the
+latest patch level, please consulte the :ref:`migration-upgrade-engine-hotfix` chapter.
+
+**Migrate:**
+
+When you aim for a migration to another major version (e.g. ``8.0`` > ``9.2``) 
+please consult the :ref:`migration-upgrade-engine-major` chapter.
 
 .. toctree::
    :hidden:
    :maxdepth: 1
 
-   preparation
-   project-migration
-   upgrade-engine
+   upgrade-engine-hotfix
+   upgrade-engine-major
    migration-notes
