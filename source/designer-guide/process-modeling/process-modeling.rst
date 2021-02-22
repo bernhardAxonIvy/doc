@@ -557,6 +557,10 @@ Send Signal
    dialog uses the signal code configured on the process element as
    default value.
 
+Change Icon
+   Changes the decorator icon of an element. 
+   You can use any image in your project as decorator icon by using the *Browse ...* sub menu.  
+
 Enter Subprocess
    Enters the embedded subprocess and shows the encapsulated process.
 
@@ -613,10 +617,6 @@ Edit User Dialog
 Attach boundary event
    Attaches an additional boundary event to the currently selected
    activity.
-   
-Change Icon
-   Changes the decorator icon of an element. 
-   You can use any image in your project as decorator icon by using the *Browse ...* sub menu.  
 
 Arrow Menu
 ^^^^^^^^^^
