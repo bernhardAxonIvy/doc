@@ -9,7 +9,7 @@ that will increase your productivity and ability to react on new business needs.
 
 This chapter focuses on migrations from a major version to another (e.g. form ``8.0`` to ``10.0``).
 If you are only intersted in applying hotfix upgrades (e.g. from ``8.0.6`` to ``8.0.13``), 
-please consult the simpler :ref:`migration-upgrade-hotfix` chapter.
+please consult the simpler :ref:`migration-upgrade-engine-hotfix` chapter.
 
 Switching from a Long-Term-Supported (LTS) release train (e.g. ``8.0``) to a LE (Leading Edge) release (e.g. ``9.1``) follows
 the same logic as described in this chapter. Nevertheless, be aware that we do not recommend switching 
@@ -39,6 +39,7 @@ using:
 
 
  * :ref:`migration-upgrade-engine-major-deb`
+ * :ref:`migration-upgrade-engine-major-docker`
  * :ref:`migration-upgrade-engine-major-win`
  * :ref:`migration-upgrade-engine-major-lin`
 
@@ -62,6 +63,20 @@ So you can proceed for your major version migration as follows:
 
 #. Apply the :ref:`migration-upgrade-engine-common` 
 
+
+
+.. _migration-upgrade-engine-major-docker:
+
+Docker
+==========
+
+Docker's infrastructure enables you to do automate various kinds of infrastructure setups. Consequently, the 
+kind of major migration steps are various too and highly dependent on your concrete setup. 
+However, here are the major steps to do when migrating a docker based |ivy-engine| to another major version.
+
+#. Switch your setup to the axonivy-engine tag you are aiming for. (e.g. from ``8.0`` to ``10.0``)
+#. Migrate your configuration files as shown in the :ref:`Migration Notes document <migration-notes>`
+#. Apply the :ref:`migration-upgrade-engine-common` 
 
 
 
