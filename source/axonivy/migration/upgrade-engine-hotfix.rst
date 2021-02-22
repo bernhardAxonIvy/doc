@@ -91,26 +91,3 @@ Prepartion:
 .. include:: _hotfixWizard.rst
 
 
-
-.. _migration-wizard:
-
-Engine Migration Wizard
-----------------------------
-
-Then Migration Wizard helps you to migrate crucial configurations to your new |ivy-engine| installation.
-
-The Wizard is expected to be run from a fresh downloaded and yet untouched |ivy-engine|. 
-
-#. Start the Migration Wizard
-
-   #. :ref:`Start <control-center>` the new |ivy-engine|.
-   #. Browse to URI where the engine runs: http://localhost:8080 .
-   #. Choose ``Setup Wizard`` -> ``Migration Wizard`` in your Browser.
-   
-#. Use the Migration Wizard
-
-   #. Provide the old |ivy-engine| installation directory to the Migration Wizard.
-   #. Run the MigrationTasks.
-   #. The wizard may asks for your consent to select the best migration scenario for you.
-   #. Restart the |ivy-engine|.
-
