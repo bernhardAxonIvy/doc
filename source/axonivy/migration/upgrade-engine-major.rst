@@ -2,7 +2,7 @@
 
 
 Major Upgrade
-------------
+---------------
 
 Upgrades to a new |ivy-engine| version are warmly recommended to benefit of new features
 that will increase your productivity and ability to react on new business needs. 
@@ -38,6 +38,14 @@ environment, so please jump right to the execution environment you are
 using:
 
 
+ * :ref:`migration-upgrade-engine-major-deb`
+ * :ref:`migration-upgrade-engine-major-win`
+ * :ref:`migration-upgrade-engine-major-lin`
+
+
+
+.. _migration-upgrade-engine-major-deb:
+
 Debian
 ==========
 
@@ -56,6 +64,9 @@ So you can proceed for your major version migration as follows:
 
 
 
+
+.. _migration-upgrade-engine-major-win:
+
 Windows
 ==========
 
@@ -65,6 +76,9 @@ On Windows the migration is very similar to a hotfix migration. However, some ad
 #. Apply the additional steps required in a major upgrade. See the :ref:`migration-upgrade-engine-common`.
 
 
+
+.. _migration-upgrade-engine-major-lin:
+
 Linux (generic)
 ====================
 
@@ -72,6 +86,7 @@ On Linux systems without Debian's apt support the migration is very similar to a
 
 #. Do all steps as you would do in a :ref:`Linux hotfix migration <migration-upgrade-engine-hotfix-lin>`.
 #. Apply the additional steps required in a major upgrade. See the :ref:`migration-upgrade-engine-common`.
+
 
 
 .. _migration-upgrade-engine-common:
@@ -97,7 +112,7 @@ Common Migration Steps
 Project-Migration
 ++++++++++++++++++
 
-If you face incompatibilites in the UI or the logs while using the new |ivy-engine|, here's how you make your projects compatible with the new |ivy-engine| version. 
+If you face incompatibilites in the UI or see errors in the logs while using the new |ivy-engine|, here's how you make your projects compatible with the new |ivy-engine| version. 
 
 #. Download the latest |ivy-designer| which is available for the release you are migrating to.
 #. Import the version that is deployed on your |ivy-engine| from your source repository
