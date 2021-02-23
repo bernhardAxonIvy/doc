@@ -7,4 +7,8 @@ On Windows the migration is very similar to a hotfix migration. However, some ad
 
 .. include:: ../_prepareWin.rst
 .. include:: ../_wizardMigration.rst
-.. include:: _common.rst
+
+
+Major-Migration:
+
+#. Apply the :ref:`migration-upgrade-engine-common` 

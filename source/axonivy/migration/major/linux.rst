@@ -7,4 +7,7 @@ On Linux systems without Debian's apt support the migration is very similar to a
 
 .. include:: ../_prepareLin.rst
 .. include:: ../_wizardMigration.rst
-.. include:: _common.rst
+
+Major-Migration:
+
+#. Apply the :ref:`migration-upgrade-engine-common` 

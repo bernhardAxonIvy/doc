@@ -46,3 +46,5 @@ using:
    docker
    windows
    linux
+   common
+   upgrade-systemdatabase

@@ -1,7 +1,9 @@
 .. _migration-upgrade-engine-common:
 
 Common Migration Steps
-++++++++++++++++++++++++++++++++++++
+=======================
+
+After running Operating System specific migration steps:
 
 #. Restart the Axon.ivy Engine .
 #. Very likely you will need a new license after a major version change.

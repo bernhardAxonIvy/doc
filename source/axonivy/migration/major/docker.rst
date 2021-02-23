@@ -10,5 +10,3 @@ However, here are the major steps to do when migrating a docker based |ivy-engin
 #. Switch your setup to the axonivy-engine tag you are aiming for. (e.g. from ``8.0`` to ``10.0``)
 #. Migrate your configuration files as shown in the :ref:`Migration Notes document <migration-notes>`
 #. Apply the :ref:`migration-upgrade-engine-common` 
-
-.. include:: _common.rst
