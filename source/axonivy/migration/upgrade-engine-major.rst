@@ -13,9 +13,9 @@ please consult the simpler :ref:`migration-upgrade-engine-hotfix` chapter.
 
 Switching from a Long-Term-Supported (LTS) release train (e.g. ``8.0``) to a LE (Leading Edge) release (e.g. ``9.1``) follows
 the same logic as described in this chapter. Nevertheless, be aware that we do not recommend switching 
-light-heartedly from an LTS to a LE version as the possability to face braking changes
+light-heartedly from an LTS to a LE version as the possability to face breaking changes
 are more likely and the effort to migrate between the LE versions is higher.
-See our `release-cycle <https://dev.axonivy.com/release-cycle>`_ for more informations on our release concept. 
+See our release-cycle (:dev-url:`/release-cycle`) for more informations on our release concept. 
 
 
 Backward-compatibility
@@ -25,7 +25,7 @@ The |ivy-engine| can run and execute workflow applications that have been built 
 an older engine version. Even so, we do recommend to **simulate migrations to new versions
 in a testing environment** since there is a chance that your project relies upon a no longer 
 supported infrastructure, such as old Primefaces versions, java libraries or internal
-java classes from the ivy-core. By sticking only to PublicAPI and best practices however, 
+java classes from the |ivy-engine|. By sticking only to PublicAPI and best practices however, 
 you have a minimal risk to face these versions incompatibilities.
 
 To start with, we warmly recommend to :ref:`Read the Migration Notes document <migration-notes>`
@@ -94,7 +94,7 @@ On Windows the migration is very similar to a hotfix migration. However, some ad
 
 .. _migration-upgrade-engine-major-lin:
 
-Linux (generic)
+Linux
 ====================
 
 On Linux systems without Debian's apt support the migration is very similar to a hotfix migration. However, some additional steps are required at the end.

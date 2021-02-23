@@ -5,8 +5,8 @@ Hotfix Upgrade
 ---------------
 
 It's important to keep your productive |ivy-engine| stable and up to date. 
-Otherwise you risk to be vulnerable to known **security leaks** and or users
-may face inconveniences due to known and addresses **bug fixes**. In addition,
+Otherwise you risk to be vulnerable to known **security leaks** and users
+may face inconveniences due to known and addressed **bug fixes**. In addition,
 **performance issues** may be solved and make using the |ivy-engine|
 more fun on a daily basis.
 
@@ -27,6 +27,7 @@ Migration comparison:
 +----------+---------+------------+------------------+---------+
 
 
+.. _migration-upgrade-engine-hotfix-deb:
 
 Debian
 ==========
@@ -38,8 +39,10 @@ This can be done manually or even automated with the two commands below:
 .. code:: bash
 
     wget https://dev.axonivy.com/permalink/9.0/axonivy-engine.deb
-    sudo apt install axonivy-engine.deb
+    sudo apt install ./axonivy-engine.deb
 
+
+.. _migration-upgrade-engine-hotfix-docker:
 
 Docker
 ==========
@@ -67,12 +70,13 @@ This section describes the hotfix procedure for engines running on Windows witho
 
 Prepartion:
 
-#. Download the latest |ivy-engine| hotfix version that matches your release train https://dev.axonivy.com/permalink/8.0/axonivy-engine-windows.zip
+#. Download the latest |ivy-engine| hotfix version that matches your release train :dev-url:`/download`
 #. :ref:`Stop <control-center>` the running |ivy-engine| instance.
 #. Rename the directory of the previously installed |ivy-engine| : e.g. from ``C:\tools\ivy\engine-8`` to ``C:\tools\ivy\engine-8_backup805``
 #. Unpack the hotfix version of the |ivy-engine| into the directory where the previous instance was running : e.g. to ``C:\tools\ivy\engine-8``.
 
 .. include:: _hotfixWizard.rst
+
 
 .. _migration-upgrade-engine-hotfix-lin:
 
@@ -83,7 +87,7 @@ This section describes the hotfix procedure for all Linux distributions that are
 
 Prepartion:
 
-#. Download the latest |ivy-engine| hotfix version that matches your release train https://dev.axonivy.com/permalink/8.0/axonivy-engine.zip
+#. Download the latest |ivy-engine| hotfix version that matches your release train :dev-url:`/download`
 #. Stop the running |ivy-engine| instance.
 #. Rename the directory of the previously installed |ivy-engine| : e.g. from ``opt/ivy/engine-8`` to ``opt/ivy/engine-8_backup805``
 #. Unpack the hotfix version of the |ivy-engine| into the directory where the previous instance was running : e.g. to ``opt/ivy/engine-8``.
