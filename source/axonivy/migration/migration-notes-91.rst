@@ -9,6 +9,8 @@ Be aware of
 Licence
 *******
 
+|tag-ops-changed|
+
 You need to request a new licence for |ivy-engine| 9.1.
 
 .. container:: admonition note toggle
@@ -26,6 +28,8 @@ You need to request a new licence for |ivy-engine| 9.1.
 Engine default base path changed
 ********************************
 
+|tag-ops-changed| |tag-ops-wizard|
+
 We changed the default value of the :ref:`WebServer.IvyContextName
 <ivy-webserver-yaml>` from :code:`"ivy"` to :code:`""`. This means the default
 engine URL has changed (from :code:`http://localhost:8080/ivy/`) to
@@ -38,6 +42,8 @@ uri workers will not find a valid path.
 
 URL changes
 ***********
+
+|tag-ops-changed|
 
 The paths in the URL have changed. The name of the application is now at the top.
 
@@ -70,6 +76,8 @@ The paths in the URL have changed. The name of the application is now at the top
 Web integration tests simplified
 **********************************
 
+|tag-project-changed|
+
 Selenium based integration test do no longer require huge manually crafted maven build pom.xml definitions. 
 Existing ``pom.xml`` files for test projects must be manually simplified.
 
@@ -96,6 +104,8 @@ Existing ``pom.xml`` files for test projects must be manually simplified.
 Global deploy.options.yaml removed
 **********************************
 
+|tag-ops-removed|
+
 The :file:`deploy.options.yaml` in the deployment directory can no longer be used to influence deployments.
 
 .. container:: admonition note toggle
@@ -110,6 +120,8 @@ The :file:`deploy.options.yaml` in the deployment directory can no longer be use
 
 Static JSF pages moved to webContent/view
 *****************************************
+
+|tag-project-changed|
 
 The location of static JSF pages in your |axon-ivy| Project have been changed to :file:`webContent/view`
 in order to improve security. 
@@ -129,6 +141,8 @@ in order to improve security.
 context.xml and web.xml moved to configuration folder
 *****************************************************
 
+|tag-ops-changed| |tag-ops-wizard|
+
 The :ref:`context-xml` and :ref:`web-xml` files are now in the global :file:`/configuration/` folder.
 If you modified them you need to apply these changes to the files in the new location.
 
@@ -143,6 +157,8 @@ If you modified them you need to apply these changes to the files in the new loc
 
 New security system config Membership.UserMemberOfLookupAllowed
 ***************************************************************
+
+|tag-ops-changed|
 
 We introduced a new security system configuration property :code:`Membership.UserMemberOfLookupAllowed`,
 with :code:`true` as its default value. If your active directory or eDirectory does not allow to read the
@@ -160,12 +176,16 @@ Good to know
 VisualVM Plugin in the |axon-ivy| Market
 ****************************************
 
+|tag-ops-changed|
+
 The |axon-ivy| Visual VM plugin to monitor your |ivy-engine| is now available in the :dev-url:`Axon.ivy Market </market/visualvm-plugin>`.
 It is not bundled with the |ivy-engine| in the directory :file:`[engineDir]/misc/visualvm/` anymore.
 
 
 Subversion Client unplugged from |ivy-designer|
 ***************************************************
+
+|tag-project-changed|
 
 We removed the Subversion client Subclipse from the |ivy-designer|. It can still
 be easily installed through the Eclipse Marketplace in the  Designer.
@@ -174,6 +194,8 @@ Go to :menuselection:`Help --> Eclipse Marketplace`, search for **Subclipse** an
 
 Daily Jobs are only executed at configured time
 ***********************************************
+
+|tag-ops-changed|
 
 Daily jobs are now executed only at the configured time, even
 if the |ivy-engine| was not running at the last execution time.
@@ -196,6 +218,8 @@ if the |ivy-engine| was not running at the last execution time.
 Special handling for Informix as external third-party database
 **************************************************************
 
+|tag-project-removed|
+
 Informix is a database management system and can be integrated with Axon.ivy like any other database system.
 We have removed any special handling for Informix as this is no longer necessary.
 If you are using Informix and have any problems, please contact us.
@@ -210,6 +234,8 @@ More changes
 
 Changes to the |axon-ivy| System Database
 *****************************************
+
+|tag-ops-changed|
 
 We have introduced a new table :code:`IWA_SecurityMember` that contains entries for all users and roles.
 Migration to the new database schema is done automatically.
@@ -243,6 +269,8 @@ Migration to the new database schema is done automatically.
 
 Using HttpAsyncClient for CXF web service calls
 ***********************************************
+
+|tag-project-changed|
 
 We switched the default connection implementation of CXF web service calls from
 :code:`HttpURLConnection` to :code:`org.apache.http.nio.client.HttpAsyncClient`.
