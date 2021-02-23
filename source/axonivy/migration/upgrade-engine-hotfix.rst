@@ -34,11 +34,12 @@ Debian
 
 The Debian package of the |ivy-engine| is built to allow hotfix installations with minimal effort.
 Just download and install the latest available package over your existing installation. 
-This can be done manually or even automated with the two commands below:
+This can be done manually or even automated with the snippet below:
 
 .. code:: bash
 
-    wget https://dev.axonivy.com/permalink/9.0/axonivy-engine.deb
+    release=8.0
+    wget https://dev.axonivy.com/permalink/${release}/axonivy-engine.deb
     sudo apt install ./axonivy-engine.deb
 
 
@@ -47,16 +48,20 @@ This can be done manually or even automated with the two commands below:
 Docker
 ==========
 
-We recommend to keep your docker-engine save and sound, by choosing a generic
-release train version tag (e.g. ``8.0``) for your images, rather than a specific hotfix version (e.g. ``8.0.13``).
+It's good practice to keep your docker-engine save and sound, by frequently switching
+to the latest available docker-images. We recommend to rely upon specific tags (e.g. ``8.0.6``)
+so that you know that absolutely no magic can happen when you role out into production. 
 
-The command to pull the latest images may differ to the approach you are using docker. 
+To update your engine to the latest version you are just required to switch your image 
+version declaration to the latest hotfix in your release train 
+(e.g. from  ``axonivy/axonivy-engine:8.0.6`` to ``axonivy/axonivy-engine:8.0.13``).
+Then you can pull the new images, run integration tests and roll the update out into production.
 
-Here's a Docker-Compose example that updates the |ivy-engine| to the latest hotfix version:
+The command to pull the latest images may differ to the approach you are using to run docker. 
+Here's a Docker-Compose example that pulls the new |ivy-engine| hotfix version:
 
 .. code:: bash
 
-    docker-compose down
     docker-compose pull
     docker-compose up
 

@@ -5,7 +5,8 @@ Major Upgrade
 ---------------
 
 Upgrades to a new |ivy-engine| version are warmly recommended to benefit of new features
-that will increase your productivity and ability to react on new business needs. 
+that will increase your productivity and ability to react on new business needs.
+You can have a look on the latest features here: :dev-url:`/news` 
 
 This chapter focuses on migrations from a major version to another (e.g. form ``8.0`` to ``10.0``).
 If you are only intersted in applying hotfix upgrades (e.g. from ``8.0.6`` to ``8.0.13``), 
