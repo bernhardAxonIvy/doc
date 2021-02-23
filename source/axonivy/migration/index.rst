@@ -19,8 +19,8 @@ please consult the :ref:`migration-upgrade-engine-major` chapter.
 
 .. toctree::
    :hidden:
-   :maxdepth: 1
+   :maxdepth: 3
 
-   upgrade-engine-hotfix
+   hotfix/index
    upgrade-engine-major
    migration-notes

@@ -143,7 +143,6 @@ If you face incompatibilites in the UI or see errors in the logs while using the
    #. Other versions in state ``PREPARED`` or ``ARCHIVED`` may be easier to delete, rather than updatig and re-deploying them.
 
 .. toctree::
-   :hidden:
    :maxdepth: 1
 
    upgrade-systemdatabase
