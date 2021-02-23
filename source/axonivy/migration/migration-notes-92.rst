@@ -7,6 +7,8 @@ Migrating from 9.1 to 9.2
 Business Case Lifecycle
 ***********************
 
+|tag-project-changed|
+
 The lifecycle of the :ref:`business-case` has been simplified.
 The first case is the business case and will stay the business case forever.
 Additional cases will be sub cases of the business case.
@@ -26,6 +28,8 @@ Additional cases will be sub cases of the business case.
 
 New app.yaml locations
 **********************
+
+|tag-ops-changed|
 
 Towards highly configurable ivy projects we needed to move :file:`app.yaml` to new places
 in the Axon.ivy Engine.
@@ -58,6 +62,8 @@ in the Axon.ivy Engine.
 Upgrade Log4j 1 to Log4j 2
 **************************
 
+|tag-ops-changed|
+
 Logs are written now with Log4j 2 which has
 a new configuration format. If you made
 any custom logging configuration you need
@@ -80,6 +86,8 @@ configuration.
 HTTPS port disabled by default
 ******************************
 
+|tag-ops-changed|
+
 HTTPS port is now disabled by default on the Axon.ivy Engine, because you should
 always terminate SSL on the reverse proxy (frontend webserver). If you need
 HTTPS directly on the Axon.ivy Engine then you need to set the property
@@ -90,6 +98,8 @@ HTTPS directly on the Axon.ivy Engine then you need to set the property
 Frontend config combined into BaseUrl
 *************************************
 
+|tag-ops-changed|
+
 The configuration of the frontend url in :ref:`ivy.yaml <ivy-yaml>` has been
 simplified. You need to define now the :code:`BaseUrl` in your :file:`ivy.yaml`.
 Combined out of the old frontend properties :code:`Frontend.Host`,
@@ -99,6 +109,8 @@ Combined out of the old frontend properties :code:`Frontend.Host`,
 
 AJP support is deprecated
 *************************
+
+|tag-ops-deprecated|
 
 AJP is used to integrate the Axon.ivy Engine with Microsoft IIS  or Apache http
 as :ref:`reverse proxy <reverse-proxy>`. We still support AJP but you should
@@ -130,6 +142,8 @@ migrate to modern URL rewrite approach based on HTTP/HTTPS.
 SSL Client Configuration
 ************************
 
+|tag-ops-changed|
+
 We made the life of Axon.ivy Engine administrators easier
 due simplification of the SSL configuration.
 
@@ -148,6 +162,8 @@ due simplification of the SSL configuration.
 
 Workflow Event Log API removed
 ******************************
+
+|tag-project-removed|
 
 The Workflow Event Log API has been deprecated in Axon.ivy 8.0
 and has been removed now. It was never Public API, so most project should
@@ -176,6 +192,8 @@ not be affected.
 
 Legacy jDTS driver for MS SQL Server dropped
 ********************************************
+
+|tag-ops-removed| |tag-project-removed|
 
 The legacy jDTS driver have been dropped. You need
 to switch to the official Microsoft JDBC Driver for
@@ -207,6 +225,8 @@ still have used the jDTS driver.
 Remove support for MySQL 5.5 as system database
 ***********************************************
 
+|tag-ops-removed|
+
 MySQL 5.5 has been released in 2010 and is end of life. We do no longer support
 for MySQL 5.5. We recommend to upgrade to MySQL 8.
 
@@ -225,6 +245,8 @@ for MySQL 5.5. We recommend to upgrade to MySQL 8.
 
 Coerce to zero in JSF
 *********************
+
+|tag-project-changed|
 
 We use now the JSF standard and do not coerce to zero anymore
 for number value objects like :code:`java.lang.Integer` or
@@ -252,6 +274,8 @@ for number value objects like :code:`java.lang.Integer` or
 Enabled JavaTime module for Rest Clients by default
 ***************************************************
 
+|tag-project-changed|
+
 The standard JSON serialization feature for Rest Clients is now aware of JavaTime objects,
 such as ZonedDateTime, and will therefore optimize their JSON representation.
   
@@ -274,6 +298,8 @@ such as ZonedDateTime, and will therefore optimize their JSON representation.
 
 Removed StartSignalEventElementQuery
 ************************************
+
+|tag-project-removed|
 
 There was an API to create a Query for StartSignalEventElements (StartSignalEventElementQuery), as the
 StartElements are no longer part of the System Database, we removed this API. If you had this API in usage, 
@@ -299,6 +325,8 @@ please change to the simpler methods *all()*, *matches(pattern)* or *contains(pa
 
 Maven dependencies automatically packed to ivy archives
 *******************************************************
+
+|tag-project-changed|
 
 With 9.2, it is no longer necessary to copy maven dependencies to a specific
 folder manually or with the maven dependency plugin. However, this `old way <https://answers.axonivy.com/questions/2089/add-library-with-pom-xml>`__
