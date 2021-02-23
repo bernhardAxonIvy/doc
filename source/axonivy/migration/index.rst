@@ -22,5 +22,5 @@ please consult the :ref:`migration-upgrade-engine-major` chapter.
    :maxdepth: 3
 
    hotfix/index
-   upgrade-engine-major
+   major/index
    migration-notes
