@@ -16,7 +16,7 @@ Start the Axon.ivy Engine and open the :ref:`setup-wizard`. Switch to the
 
 **Step 2**
 
-To automatically convert your old system database click the **Migrate Database**
+To automatically convert your old system database, click the **Migrate Database**
 button. A dialog appears asking for confirmation.
 
 Confirm the dialog and the system database will be converted automatically. The

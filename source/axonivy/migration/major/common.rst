@@ -23,11 +23,11 @@ After running Operating System specific migration steps:
 Project-Migration
 ++++++++++++++++++
 
-If you face incompatibilites in the UI or see errors in the logs while using the new Axon.ivy Engine, here's how you make your projects compatible with the new Axon.ivy Engine version. 
+If you face incompatibilities in the UI or see errors in the logs while using the new Axon.ivy Engine, here's how you make your projects compatible with the new Axon.ivy Engine version. 
 
 #. Download the latest Axon.ivy Designer which is available for the release you are migrating to.
 #. Import the version that is deployed on your Axon.ivy Engine from your source repository
-   into into your Axon.ivy Designer workspace.
+   into your Axon.ivy Designer workspace.
 #. Migrate the project according the description in section :ref:`project-convert` of the
    Axon.ivy Designer Guide. Usually this is achieved by invoking the project conversion action
    on each project. Some manual adaptations may be necessary.
@@ -35,4 +35,4 @@ If you face incompatibilites in the UI or see errors in the logs while using the
 #. All migrated projects must be re-deployed to the new, upgraded Axon.ivy Engine version. 
 
    #. Not only the ``RELEASE`` process model version (PMVs) must be updated and re-deployed, but all ``DEPRECATED`` projects too.
-   #. Other versions in state ``PREPARED`` or ``ARCHIVED`` may be easier to delete, rather than updatig and re-deploying them.
+   #. Other versions in state ``PREPARED`` or ``ARCHIVED`` may be easier to delete, rather than updating and re-deploying them.

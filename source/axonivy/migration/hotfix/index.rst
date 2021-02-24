@@ -5,16 +5,16 @@ Hotfix Upgrade
 ---------------
 
 It's important to keep your productive |ivy-engine| stable and up to date. 
-Otherwise you risk to be vulnerable to known **security leaks** and users
+Otherwise, you risk to be vulnerable to known **security leaks** and users
 may face inconveniences due to known and addressed **bug fixes**. In addition,
 **performance issues** may be solved and make using the |ivy-engine|
 more fun on a daily basis.
 
 This chapter focuses on hotfix migration in the same release train (e.g. from ``8.0.6`` to ``8.0.13``). 
-If you want to jump from a major version to another (e.g. form ``8.0`` to ``10.0``) please 
+If you want to jump from a major version to another (e.g. from ``8.0`` to ``10.0``) please 
 consult the :ref:`migration-upgrade-engine-major` chapter.
 
-The way to migrate to the latest hotfix highly dependes on the hosting 
+The way to migrate to the latest hotfix highly depends on the hosting 
 environment, so please jump right to the execution environment you are
 using:
 
