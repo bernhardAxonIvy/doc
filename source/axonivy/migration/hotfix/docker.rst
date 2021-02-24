@@ -5,7 +5,7 @@ Docker
 
 It's good practice to keep your docker-engine save and sound, by frequently switching
 to the latest available docker-images. We recommend to rely upon specific tags (e.g. ``8.0.6``)
-so that you know that absolutely no magic can happen when you role out into production. 
+so that you know that absolutely no magic can happen when you role the solution out into production. 
 
 To update your engine to the latest version you are just required to switch your image 
 version declaration to the latest hotfix in your release train 
