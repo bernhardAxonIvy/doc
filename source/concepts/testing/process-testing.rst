@@ -196,6 +196,10 @@ if there are multiple active ``tasks`` available.
 .. literalinclude:: includes/processtesting/processtesting-start.java
     :language: java
 
+To test callable sub processes use the ``subProcess`` method instead of the ``process`` method.
+
+.. literalinclude:: includes/processtesting/processtesting-start-sub-process.java
+    :language: java
 
 .. _process-testing-as:
 
