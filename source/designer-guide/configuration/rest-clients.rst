@@ -214,8 +214,29 @@ Consult the Jackson documentation for a list of all configurable
 items:
 
 - `Jackson Deserialization features <https://github.com/FasterXML/jackson-databind/wiki/Deserialization-Features>`__
-   can be set using ``Deserialization.`` as prefix. E.g. ``Deserialization.FAIL_ON_UNKNOWN_PROPERTIES``
+  can be set using ``Deserialization.`` as prefix. E.g. ``Deserialization.FAIL_ON_UNKNOWN_PROPERTIES``
 
 - `Jackson Serialization features <https://github.com/FasterXML/jackson-databind/wiki/Serialization-features>`__
   can be set using ``Serialization.`` as prefix. E.g. ``Serialization.WRITE_ENUMS_USING_INDEX``
+
+**Path properties**
+
+Properties prefixed with ``PATH.`` are used in resource paths on calling activities. 
+So if your target resources contain templates like ``{api.version}`` which 
+re-occur on each and every instance of a calling activity, you should set it as global 
+path property on the RestClient, rather than re-declaring it on every instance 
+of the calling element.
+
+Example:
+
+- Given a valid resources of your remote service looks like this: ``https://api.twitter.com/{api.version}/status/...``
+
+- Then the path template ``{api.version}`` can be set globally on the RestClient as property. 
++------------------+----------+
+| Property         | Value    |
++------------------+----------+
+| PATH.api.version |    2     |
++------------------+----------+
+
+- The resolved uri would consequently looks as follows: ``https://api.twitter.com/2/status/...``
 
