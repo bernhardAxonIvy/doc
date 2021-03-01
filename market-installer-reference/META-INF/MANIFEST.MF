@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Market Installer Reference
+Bundle-SymbolicName: ch.ivyteam.ivy.market.installer.reference
+Bundle-Version: 9.2.0.qualifier
+Require-Bundle: ch.ivyteam.base,
+ ch.ivyteam.lib.classgraph,
+ ch.ivyteam.ivy.designer.project.ui,
+ ch.ivyteam.lib.freemarker,
+ ch.ivyteam.lib.jackson,
+ ch.ivyteam.lib.test,
+ ch.ivyteam.ivy.webservice.client.openapi.codegen,
+ ch.ivyteam.lib.apache.commons.text
+Bundle-Vendor: AXON Ivy AG
+Bundle-ClassPath: patch.jar,
+ .
+Bundle-ActivationPolicy: lazy
+Eclipse-ExtensibleAPI: true
