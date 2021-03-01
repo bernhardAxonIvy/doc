@@ -229,11 +229,14 @@ of the calling element.
 
 Example:
 
-- Given a valid resource of your remote service looks like this: ``https://api.twitter.com/{api.version}/status/...``
-- Then the path template ``{api.version}`` can be set globally on the RestClient as property
+Given a valid resource of your remote service looks like this: ``https://api.twitter.com/{api.version}/status/...``
+
+Then the path template ``{api.version}`` can be set globally on the RestClient as property
+
 +------------------+----------+
 | Property         | Value    |
 +------------------+----------+
 | PATH.api.version |    2     |
 +------------------+----------+
-- The resolved uri would consequently looks as follows: ``https://api.twitter.com/2/status/...``
+
+The resolved uri would consequently look as follows: ``https://api.twitter.com/2/status/...``
