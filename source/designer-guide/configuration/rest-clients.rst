@@ -7,6 +7,11 @@ REST Clients
 The REST clients configuration contains the definition of all REST
 services, which can be consumed from a BPM process.
 
+.. tip::
+
+   Before you create a new REST Client you should have a look at the
+   :ref:`Axon.ivy Market <market>`. You may find there already a connector.
+
 
 REST Client
 -----------
