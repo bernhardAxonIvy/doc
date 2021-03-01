@@ -59,6 +59,75 @@ in the Axon.ivy Engine.
     supportet at the moment.
 
 
+Rename GlobalVariables in app.yaml
+**********************************
+
+|tag-project-changed| |tag-ops-changed| |tag-ops-wizard|
+
+The :code:`GlobalVariables` in the :ref:`app-yaml` are renamed to :code:`Variables`.
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Details**
+
+  .. container:: detail 
+
+    Old :file:`app.yaml`:
+    
+    .. code-block:: yaml
+    
+      GlobalVariables:
+        myVariable: value
+
+    New :file:`app.yaml`:
+
+    .. code-block:: yaml
+
+      Variables:
+        myVariable: value
+
+
+Custom Application Properties are moved to the app.yaml
+*******************************************************
+
+|tag-ops-changed| |tag-project-deprecated|
+
+All custom application properties from the System Database table
+:code:`IWA_ApplicationProperty` are migrated to the :file:`app.yaml`. The
+Table itself is dropped. All API's for custom application properties are deprecated.
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Details**
+
+  .. container:: detail 
+
+    Old Table :code:`IWA_ApplicationProperty`:
+    
+    +--------------------+----------------+
+    | PropertyName       | PropertyValue  |
+    +====================+================+
+    | custom.myProperty  | value          |
+    +--------------------+----------------+
+
+    New :file:`app.yaml`:
+
+    .. code-block:: yaml
+
+      Variables:
+        myProperty: value
+
+    Use :public-api:`Ivy.var() </ch/ivyteam/ivy/environment/Ivy.html#var()>` instead of the following deprecated API's:
+
+    * :public-api:`ICustomProperties </ch/ivyteam/ivy/application/property/ICustomProperties.html>`
+    * :public-api:`ICustomProperty </ch/ivyteam/ivy/application/property/ICustomProperty.html>`
+    * :public-api:`ICustomPropertyProvider </ch/ivyteam/ivy/application/property/ICustomPropertyProvider.html>`
+
+
 Upgrade Log4j 1 to Log4j 2
 **************************
 
