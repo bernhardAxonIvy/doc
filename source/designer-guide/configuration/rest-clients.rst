@@ -229,7 +229,7 @@ of the calling element.
 
 Example:
 
-- Given a valid resources of your remote service looks like this: ``https://api.twitter.com/{api.version}/status/...``
+- Given a valid resource of your remote service looks like this: ``https://api.twitter.com/{api.version}/status/...``
 
 - Then the path template ``{api.version}`` can be set globally on the RestClient as property. 
 +------------------+----------+
