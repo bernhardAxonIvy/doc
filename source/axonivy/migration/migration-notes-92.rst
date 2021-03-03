@@ -62,7 +62,7 @@ in the Axon.ivy Engine.
 Rename GlobalVariables in app.yaml
 **********************************
 
-|tag-project-changed| |tag-ops-changed| |tag-ops-wizard|
+|tag-project-changed| |tag-ops-changed|
 
 The :code:`GlobalVariables` in the :ref:`app-yaml` are renamed to :code:`Variables`.
 
