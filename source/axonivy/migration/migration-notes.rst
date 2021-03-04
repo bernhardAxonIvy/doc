@@ -23,3 +23,14 @@ working with the newest version. Go through the migration notes from version to 
 * :dev-url:`Migrating from 5.1 to 6.0 </doc/6.0.0/migration-notes>`
 * :dev-url:`Migrating from 5.0 to 5.1 </doc/5.1.0/migration-notes>`
 * :dev-url:`Migrating from 4.3 to 5.0 </doc/5.0.5/migration-notes>`
+
+
+**Tag Legend:**
+
+* |tag-ops-wizard| This Migration is handled by the :ref:`migration-wizard`.
+* |tag-ops-changed| Change in the engine operation. Please check if this effects you.
+* |tag-ops-deprecated| Deprecation in the engine operation. This will may be removed in near future, so please have a look if this effects you.
+* |tag-ops-removed| Removal in the engine operation. Please check if this effects you.
+* |tag-project-changed| Change in the project behavior. Please check if this effects you.
+* |tag-project-deprecated| Deprecation in the project behavior. This will may be removed in near future, so please have a look if this effects you.
+* |tag-project-removed| Removal in the project behavior. Please check if this effects you.
