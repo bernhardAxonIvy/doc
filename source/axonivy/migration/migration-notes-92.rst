@@ -445,3 +445,6 @@ still works.
 
       * Mark test dependencies with the scope :code:`test`
       * `Exclude transient dependencies <https://maven.apache.org/pom.html#exclusions>`__ which are already delivered by the core
+
+
+.. include:: _tagLegend.rst

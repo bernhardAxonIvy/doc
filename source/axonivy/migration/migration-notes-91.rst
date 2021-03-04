@@ -286,3 +286,6 @@ We switched the default connection implementation of CXF web service calls from
   There are no known issues with :code:`HttpAsyncClient`, but if you still want to use
   :code:`HttpURLConnection` you can set the property :code:`use.async.http.conduit` to :code:`false` on the
   web service client configuration.
+
+
+.. include:: _tagLegend.rst
