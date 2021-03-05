@@ -45,18 +45,18 @@ in the Axon.ivy Engine.
     If the new engine is aware of the existing applications, the :file:`app.yaml`
     files should be migrated automatically. The new locations look like the following:
 
-    +-------------------------------------------------------+-------------------------------------------------------------+
-    | Old Location                                          | New Location                                                |
-    +=======================================================+=============================================================+
-    | /[engineDir]/applications/**myApplication**/app.yaml  | /[engineDir]/applications/**myApplication**/config/app.yaml |
-    +-------------------------------------------------------+-------------------------------------------------------------+
-    | /[engineDir]/configuration/app-**myApplication**.yaml | /[engineDir]/configuration/**myApplication**/app.yaml       |
-    +-------------------------------------------------------+-------------------------------------------------------------+
+    +-------------------------------------------------------+--------------------------------------------------------------------------+
+    | Old Location                                          | New Location                                                             |
+    +=======================================================+==========================================================================+
+    | /[engineDir]/applications/**myApplication**/app.yaml  | /[engineDir]/applications/**myApplication**/config/app.yaml              |
+    +-------------------------------------------------------+--------------------------------------------------------------------------+
+    | /[engineDir]/configuration/app-**myApplication**.yaml | /[engineDir]/configuration/applications/**myApplication**/app.yaml       |
+    +-------------------------------------------------------+--------------------------------------------------------------------------+
 
     If you deploy an :file:`app.yaml` in full application zip, it must be placed
     now in the subfolder :file:`config`. For compatibility reasons the old
     legacy place in the root of the full application deployment zip is still
-    supportet at the moment.
+    supported at the moment.
 
 
 Rename GlobalVariables in app.yaml
