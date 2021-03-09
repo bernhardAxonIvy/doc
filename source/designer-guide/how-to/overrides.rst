@@ -338,7 +338,7 @@ performs two tasks:
    :ref:`overrides-editor`.
 
 3. It will ask you if it should add the configuration for
-   :ref:`strict_overriding` to the *designer-app.yaml* if necessary.
+   :ref:`strict_overriding` to the *designer/app.yaml* if necessary.
 
 .. note::
 
