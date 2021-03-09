@@ -11,7 +11,7 @@ Require-Bundle: ch.ivyteam.base,
  ch.ivyteam.lib.test,
  ch.ivyteam.ivy.webservice.client.openapi.codegen,
  ch.ivyteam.lib.apache.commons.text
-Bundle-Vendor: AXON Ivy AG
+Bundle-Vendor: Axon Ivy AG
 Bundle-ClassPath: patch.jar,
  .
 Bundle-ActivationPolicy: lazy

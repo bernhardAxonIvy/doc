@@ -151,7 +151,7 @@ following these steps:
          |                       | used for              |                                      |
          |                       | documentation only.   |                                      |
          +-----------------------+-----------------------+--------------------------------------+
-         | Plug-In Provider      | The provider of the   | AXON Ivy AG                          |
+         | Plug-In Provider      | The provider of the   | Axon Ivy AG                          |
          |                       | plugin. The provider  |                                      |
          |                       | is used for           |                                      |
          |                       | documentation only.   |                                      |
