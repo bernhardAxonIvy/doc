@@ -4,6 +4,19 @@ Migrating from 9.1 to 9.2
 =========================
 
 
+.. _migrate-91-92-project-version:
+
+New project version
+*******************
+
+Due to the migration of the :ref:`Global Variable
+<migrate-91-92-globalvar-migration>`, we introducing a new project version
+:code:`92000`. If you want to deploy a project to a |ivy-engine| 9.2, your
+project must be in this version. If you have a running project, it should still
+be able to run, but **we recommend migrating your projects** to the new version
+and redeploying them to your engine.
+
+
 Business Case Lifecycle
 ***********************
 
@@ -59,8 +72,8 @@ in the Axon Ivy Engine.
     supported at the moment.
 
 
-Rename GlobalVariables in app.yaml
-**********************************
+Rename Global Variables in app.yaml
+***********************************
 
 |tag-project-changed| |tag-ops-changed|
 
@@ -87,6 +100,52 @@ The :code:`GlobalVariables` in the :ref:`app-yaml` are renamed to :code:`Variabl
 
       Variables:
         myVariable: value
+
+
+.. _migrate-91-92-globalvar-migration:
+
+Global Variables are moved to the yaml configuration
+****************************************************
+
+|tag-ops-changed| |tag-project-changed|
+
+All **Global Variables** are migrated to the :file:`variables.yaml` file in the
+project and to the :file:`app.yaml` file on the engine. The System Database
+table :code:`IWA_GlobalVariables` is dropped.
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Details**
+
+  .. container:: detail 
+
+    **Project:**
+
+    There is a new :ref:`project version <migrate-91-92-project-version>`, which
+    migrates your existing Global Variables from the project configuration
+    (:file:`<project>/config/GlobalVariables`) to the new
+    :file:`<project>/config/variables.yaml` file.
+
+    The :ref:`Global Variable config editor <variables>` will be  removed from
+    the |ivy-designer|. With this release there will be no UI editor
+    replacement, but you can define your variables with the normal **Generic
+    Text Editor**.
+
+    .. code-block:: yaml
+
+      Variables:
+        #This is the description for the variable myProperty
+        myProperty: value
+
+    **Engine:**
+
+    Old, already deployed and running projects should still be able executable
+    after the migration. However, due technical reasons, you will lose the
+    description metadata for your Global Variables. If you want them back
+    please :ref:`migrate your projects <migrate-91-92-project-version>` and
+    deploy them again to your engine.
 
 
 Custom Application Properties API deprecated

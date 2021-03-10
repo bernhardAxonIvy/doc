@@ -54,13 +54,12 @@ Web Service
 Stores and access data in external systems by using web services.
 More information can be found in the chapter :ref:`process-element-web-service-call-activity`.
 
-Global Variables
-----------------
+Variables
+---------
 
-Stores simple name/value configuration pairs. A global variable can have
-a different value per environment. On the engine there is a UI to change
-the values of a global variable.
-More information can be found in the chapter :ref:`global-variables`.
+Stores simple name/value configuration pairs. A variable can have a different
+value per environment. On the |ivy-engine| there is a UI to change the values of
+a variable. More information can be found in the chapter :ref:`variables`.
 
 Application Custom Properties
 -----------------------------
@@ -99,7 +98,7 @@ Summary
 +-------------------------------+------------+----------------------+--------------+------------+----------------+-------------+-----------+-----------+
 | Persistency                   | no         | yes                  | yes          | yes        | no             | yes         | no        | Expert    |
 +-------------------------------+------------+----------------------+--------------+------------+----------------+-------------+-----------+-----------+
-| Global Variables              | no         | yes                  | yes          | yes        | no             | yes         | yes       | Advanced  |
+| Variables                     | no         | yes                  | yes          | yes        | no             | yes         | yes       | Advanced  |
 +-------------------------------+------------+----------------------+--------------+------------+----------------+-------------+-----------+-----------+
 | Application Custom Properties | no         | no                   | no           | yes        | no             | no          | no        | Advanced  |
 +-------------------------------+------------+----------------------+--------------+------------+----------------+-------------+-----------+-----------+

@@ -3,26 +3,21 @@
 Environments
 ============
 
-Environments represent different runtime infrastructures. There are two
-use cases for environments:
+Environments represent different runtime infrastructures. They can be used for
+e.g:
 
 -  **Staging**: Software goes through a software development cycle and
    is often tested on different environments before it is deployed on
    the productive environment. Typical environments in this case are
    "development", "testing" and "production".
 
--  **Multi-Tenancy**: If software must meet the multi-tenancy
-   requirement, environments can be used for the individual tenants. In
-   this case the environments would be named after the customer, for
-   example "customer1", "customerX" and "customerZ".
-
-:ref:`global-variables`,
+:ref:`variables`,
 :ref:`Databases <database-configuration>`,
 :ref:`SOAP Web Services <webservice-clients-configuration>` and
 :ref:`Rest Clients <rest-clients-configuration>`
 comes with environment support.
 Defining an environment value in these features is always optional. For example:
-If you have multiple environments and using Global Variables, you don't
+If you have multiple environments and using Variables, you don't
 have to specify values for all environments. If one is missing, it will
 fallback to the default value.
 
@@ -33,8 +28,7 @@ The environment editor is part of the :ref:`configuration-management`.
 By using the add configuration
 function a new environment will be added. The name of the environment is
 the name of the configuration. If you delete or rename an environment,
-all associated values will be removed. For example, environment specific
-values in Global Variables are deleted.
+all associated values will be removed. 
 
 .. figure:: /_images/designer-configuration/environment-configuration.png
    :alt: Environment Configuration

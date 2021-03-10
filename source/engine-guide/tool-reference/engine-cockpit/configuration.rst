@@ -2,17 +2,17 @@ Configuration
 -------------
 
 
-Global Variables
-^^^^^^^^^^^^^^^^
+Variables
+^^^^^^^^^
 
-The view **Global Variables** displays all global variables that are defined
-for each application. The global variables can be configured in the project or
+The view **Variables** displays all variables that are defined
+for each application. The variables can be configured in the project or
 set in the :ref:`app-yaml` file. You can switch the environment in the drop-down
 box at the top.
 
 You can add a new variable by clicking :guilabel:`New` or edit an existing one by
 clicking the :guilabel:`Pencil` button. Any changes will be written directly to the
-:ref:`app-yaml` file. You can reset a global variable to its environment value by
+:ref:`app-yaml` file. You can reset a variable to its default value by
 clicking the :guilabel:`Reset` button. 
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-configuration-variables.png
