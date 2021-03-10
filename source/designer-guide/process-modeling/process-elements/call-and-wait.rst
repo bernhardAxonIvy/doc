@@ -9,9 +9,9 @@ Call & Wait
 Element Details
 ---------------
 
-This element is one of Axon.ivy facilities to integrate custom-made
+This element is one of Axon Ivy facilities to integrate custom-made
 software, legacy systems, proprietary applications or any other external
-system through an Axon.ivy Java interface. The Call & Wait element is
+system through an Axon Ivy Java interface. The Call & Wait element is
 splitted into a Call part and a Wait part. The Call part is similar to
 the :ref:`process-element-pi` process
 element. It can be used to call (send request) an external system.
@@ -42,7 +42,7 @@ static inner Java class of the Call part with the name
 interface. The Call & Wait element
 instantiates the ``IntermediateEvent`` Java class. It can then trigger
 the event by calling the method ``fireProcessIntermediateEventEx`` on
-the Axon.ivy runtime engine :public-api:`IProcessIntermediateEventBeanRuntime </ch/ivyteam/ivy/process/intermediateevent/IProcessIntermediateEventBeanRuntime.html>`.
+the Axon Ivy runtime engine :public-api:`IProcessIntermediateEventBeanRuntime </ch/ivyteam/ivy/process/intermediateevent/IProcessIntermediateEventBeanRuntime.html>`.
 The common way to implement a Wait (Intermediate Event) bean is to
 extend the abstract base class
 :public-api:`AbstractProcessIntermediateEventBean </ch/ivyteam/ivy/process/intermediateevent/AbstractProcessIntermediateEventBean.html>`.
@@ -50,13 +50,13 @@ extend the abstract base class
 The interface also includes an inner editor class to parametrize the
 beans. The editor provides one configuration which is set on both beans
 the Call and the Wait bean. You will find the documentation of the
-interface and the abstract class in the Java Doc of the Axon.ivy Public
+interface and the abstract class in the Java Doc of the Axon Ivy Public
 API.
 
 
 .. note::
 
-   An Axon.ivy Engine Enterprise Edition consists of multiple server
+   An Axon Ivy Engine Enterprise Edition consists of multiple server
    instances (nodes) that are running on different machines.
    
    As described above Call & Wait consists of two parts:

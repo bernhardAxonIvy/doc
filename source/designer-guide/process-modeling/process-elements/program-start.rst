@@ -11,25 +11,25 @@ Element Details
 
 The program start element allows to start a process by a trigger from
 embedded external Java code. This opens a possibility to integrate an
-Axon.ivy application into other applications and systems. The program
+Axon Ivy application into other applications and systems. The program
 start element will instantiate a Java class that must implement the
 :public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>`
 interface. The Java class can then start the
 process by calling the method ``fireProcessStartEventRequest`` on the
-Axon.ivy runtime engine
+Axon Ivy runtime engine
 :public-api:`IProcessStartEventBeanRuntime </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBeanRuntime.html>`.
 The common
 way to implement a Start Event Bean is to extend the abstract base class
 :public-api:`AbstractProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/AbstractProcessStartEventBean.html>`.
 The interface also includes an inner
 editor class to parametrize the bean. You will find the documentation of
-the interfaces and abstract class in the Java Doc of the Axon.ivy Public
+the interfaces and abstract class in the Java Doc of the Axon Ivy Public
 API.
 
 
 .. note::
 
-   An Axon.ivy Engine Enterprise Edition consists of multiple engine
+   An Axon Ivy Engine Enterprise Edition consists of multiple engine
    instances (nodes) that are running on different machines.
    
    Normally

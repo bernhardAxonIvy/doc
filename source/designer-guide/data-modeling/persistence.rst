@@ -4,7 +4,7 @@ Persistence
 ===========
 
 This chapter introduces the :ref:`persistence-configuration-editor` and the
-:ref:`persistence-api` of Axon.ivy. The persistence
+:ref:`persistence-api` of Axon Ivy. The persistence
 framework is based on the `Java Persistence
 API <http://en.wikipedia.org/wiki/Java_Persistence_API>`__, aka JPA) and
 provides support for storing and loading business objects from and to a
@@ -77,7 +77,7 @@ Namespace
    Chose a namespace for your Entity Class. The name space lets you
    create a structure to organise your data. Use the dot character '.'
    to separate the folders from each other. The namespace will be
-   visible in the Axon.ivy project tree.
+   visible in the Axon Ivy project tree.
 
 Entity Class Name
    Enter the name of your Entity Class. Do not use the same name twice
@@ -95,8 +95,8 @@ Entity DB Table Name
 Entity Class Editor
 -------------------
 
-The Axon.ivy Entity Class editor lets you configure the process data
-objects of Axon.ivy similar to the :ref:`data-class-editor`.
+The Axon Ivy Entity Class editor lets you configure the process data
+objects of Axon Ivy similar to the :ref:`data-class-editor`.
 The process data is the data that
 "flows" through your processes. Additionally an Entity Class has
 information where and how to store the data of a class and its
@@ -109,7 +109,7 @@ Fields.
 Accessibility
 ^^^^^^^^^^^^^
 
-Axon.ivy Project Tree > double click on a Entity Class entry in the tree
+Axon Ivy Project Tree > double click on a Entity Class entry in the tree
 
 New > Entity Class > then the editor opens if the class was created
 successfully
@@ -378,7 +378,7 @@ then define an explicit list of managed entity classes for each unit.
 Accessibility
 ^^^^^^^^^^^^^
 
-*Axon.ivy Project Tree > double click on the Persistence label.*
+*Axon Ivy Project Tree > double click on the Persistence label.*
 
 Features
 ^^^^^^^^
@@ -468,7 +468,7 @@ database.
 Accessibility
 ^^^^^^^^^^^^^
 
-*Axon.ivy Project Tree > double click on the Persistence label > Select
+*Axon Ivy Project Tree > double click on the Persistence label > Select
 a persistence unit > Generate Schema.*
 
 

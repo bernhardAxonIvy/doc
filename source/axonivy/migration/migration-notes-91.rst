@@ -98,7 +98,7 @@ Existing ``pom.xml`` files for test projects must be manually simplified.
   #. verify that your web tests stick to a naming pattern which complies with the `maven-failsafe-plugin includes <https://maven.apache.org/surefire/maven-failsafe-plugin/integration-test-mojo.html#includes>`_. If not, rename the unit tests to end with ``IT`` (e.g. WebTestCustomerOnboardingIT.java)
   #. run the maven build to verify your changes.
 
-  A `sample conversion <https://github.com/axonivy/project-build-examples/commit/f8c66777cdcbb469c0b6830b485b0427931963d5>`_ can be reviewed on Github. Another way to get a valid example is to use the new ``Axon.ivy Test Project`` wizard of the |ivy-designer|, select ``IvyWebTest`` as testing flavour and examine the created ``pom.xml`` in the newly created test project.
+  A `sample conversion <https://github.com/axonivy/project-build-examples/commit/f8c66777cdcbb469c0b6830b485b0427931963d5>`_ can be reviewed on Github. Another way to get a valid example is to use the new ``Axon Ivy Test Project`` wizard of the |ivy-designer|, select ``IvyWebTest`` as testing flavour and examine the created ``pom.xml`` in the newly created test project.
   
 
 Global deploy.options.yaml removed
@@ -178,7 +178,7 @@ VisualVM Plugin in the |axon-ivy| Market
 
 |tag-ops-changed|
 
-The |axon-ivy| Visual VM plugin to monitor your |ivy-engine| is now available in the :dev-url:`Axon.ivy Market </market/visualvm-plugin>`.
+The |axon-ivy| Visual VM plugin to monitor your |ivy-engine| is now available in the :dev-url:`Axon Ivy Market </market/visualvm-plugin>`.
 It is not bundled with the |ivy-engine| in the directory :file:`[engineDir]/misc/visualvm/` anymore.
 
 
@@ -220,7 +220,7 @@ Special handling for Informix as external third-party database
 
 |tag-project-removed|
 
-Informix is a database management system and can be integrated with Axon.ivy like any other database system.
+Informix is a database management system and can be integrated with Axon Ivy like any other database system.
 We have removed any special handling for Informix as this is no longer necessary.
 If you are using Informix and have any problems, please contact us.
 

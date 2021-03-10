@@ -124,7 +124,7 @@ to configure the connection settings. The applied db user needs the following
 privileges:
 
 * ``CREATE DATABASE`` (to create the system database out of the Engine Configuration)
-* ``CREATE``, ``ALTER``, ``DROP``: Tables, Views, Indexes, Triggers (to update the Axon.ivy Engine)
+* ``CREATE``, ``ALTER``, ``DROP``: Tables, Views, Indexes, Triggers (to update the Axon Ivy Engine)
 * ``INSERT``, ``SELECT``, ``UPDATE``, ``DELETE`` data
 
 In a third step you can configure additional connection properties. When
@@ -157,7 +157,7 @@ chosen database system.
     case the applied db user needs the following privileges:
     
     * ``CREATE``, ``ALTER``, ``DROP``: Tables, Views, Indexes, Triggers (to update the
-      Axon.ivy Engine)
+      Axon Ivy Engine)
     * ``INSERT``, ``SELECT``, ``UPDATE``, ``DELETE`` data
  
     The best practice configurations are documented in chapter :ref:`System

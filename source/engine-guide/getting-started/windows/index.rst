@@ -3,7 +3,7 @@
 Windows
 =======
 
-In this section, you will learn how to install and configure an Axon.ivy Engine
+In this section, you will learn how to install and configure an Axon Ivy Engine
 on a Windows machine:
 
 .. toctree::

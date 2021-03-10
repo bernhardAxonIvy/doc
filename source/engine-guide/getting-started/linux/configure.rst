@@ -1,7 +1,7 @@
 Configure the Engine
 --------------------
 
-Now, let's configure the Axon.ivy Engine with a licence and system database. 
+Now, let's configure the Axon Ivy Engine with a licence and system database. 
 
 To start with that you must first request a valid |ivy-engine| licence.
 Either you get a licence for your productive system through one of our sales
@@ -13,15 +13,15 @@ database user that has the rights to create new databases. The configuration and
 creation of the system database differs a little bit depending on the database
 system you use. We will use a PostgreSQL database server.
 
-Shutdown the Axon.ivy Engine first by typing **shutdown** and **Y**::
+Shutdown the Axon Ivy Engine first by typing **shutdown** and **Y**::
 
     ...
-    Go to http://ivy1:8080/ to see the info page of Axon.ivy Engine.
-    Axon.ivy Engine is running and ready to serve. [11596ms]
+    Go to http://ivy1:8080/ to see the info page of Axon Ivy Engine.
+    Axon Ivy Engine is running and ready to serve. [11596ms]
     Type 'shutdown' and confirm with ENTER to stop the running engine instance
     shutdown
-    Should 'Axon.ivy Engine' be stopped? ([Y]es / [N]o): Y
-    Stopping Axon.ivy Engine ...
+    Should 'Axon Ivy Engine' be stopped? ([Y]es / [N]o): Y
+    Stopping Axon Ivy Engine ...
     [  0%] Stopping Server
     ...
 
@@ -51,7 +51,7 @@ Now, let's create the system database with the :code:`create-db` command:
     ./EngineConfigCli create-db
 
 .. Note::
-    The system database is used by Axon.ivy Engine to store configurations,
+    The system database is used by Axon Ivy Engine to store configurations,
     users, roles, process instances, tasks and process data.
 
 Next, define an administrator by modifying the :ref:`ivy-yaml` file of the
@@ -62,19 +62,19 @@ Next, define an administrator by modifying the :ref:`ivy-yaml` file of the
   :linenos:
 
 .. Note::
-    Administrators can administrate the Axon.ivy Engine. For example, they can
+    Administrators can administrate the Axon Ivy Engine. For example, they can
     add or remove users, assign user to roles, enable or disable applications,
     etc. Therefore, you need at least one administrator so that you can later
-    administrate the Axon.ivy Engine. The Email address of administrators are
+    administrate the Axon Ivy Engine. The Email address of administrators are
     used to send mail notifications if licence problems occur.
 
 .. include:: ../_webserver.rst
 
-Now, start the Axon.ivy Engine again as background process.::
+Now, start the Axon Ivy Engine again as background process.::
     
     nohup ./AxonIvyEngine &
 
-Note, that the HTTP port of the Axon.ivy Engine may have changed. If you did
+Note, that the HTTP port of the Axon Ivy Engine may have changed. If you did
 change the http settings! So open again a web browser and navigate to
 http://yourservername:yourportnumber/. Note, that the header with the demo
-mode message is gone. You now have a production ready Axon.ivy Engine.
+mode message is gone. You now have a production ready Axon Ivy Engine.

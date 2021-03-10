@@ -11,7 +11,7 @@ digraph overview {
   ];
 
   browser [ label="Browser", pos = "0,2.5!", width="1.3" height="0.8"];
-  engine [label="Axon.ivy\nEngine", pos="3,2.5!", height="0.8", width="1.3", color="#C7D426", fontcolor="black"];
+  engine [label="Axon Ivy\nEngine", pos="3,2.5!", height="0.8", width="1.3", color="#C7D426", fontcolor="black"];
   systemdb [ label="System\nDatabase", pos="6,2.5!" width="1.3" height="0.8"]
   
   browser -> engine [ label="HTTP"];

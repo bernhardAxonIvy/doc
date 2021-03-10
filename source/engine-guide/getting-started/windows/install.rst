@@ -1,7 +1,7 @@
 Install the Engine
 ------------------
 
-We suggest that you install the Axon.ivy Engine into a new folder called
+We suggest that you install the Axon Ivy Engine into a new folder called
 :file:`ivy\\engine` on one of your drives (e.g. :file:`c:\\ivy\\engine`). To do
 so open a Windows Explorer and navigate to :file:`C:\\` and create those new
 folders. Then, navigate to your temporary download folder and copy the file
@@ -20,7 +20,7 @@ this:
 .. figure:: /_images/engine-getting-started/engine-folder.png
 
 .. Hint:: 
-  The most important folders in the Axon.ivy Engine installation folder are:
+  The most important folders in the Axon Ivy Engine installation folder are:
 
   * :file:`bin` folder contains all the executables
   * :file:`configuration` folder contains the configuration files.

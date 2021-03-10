@@ -2,10 +2,10 @@ Docker Containers
 =================
 
 Container technology empowers you to pull up reproducible, documented and
-complete isolated infrastructures. Axon.ivy fully supports container
+complete isolated infrastructures. Axon Ivy fully supports container
 environments such as `Docker <https://www.docker.com/>`_, `Kubernetes
 <https://kubernetes.io/>`_ or `OpenShift <https://openshift.io/>`_. You can
-easily customize the configuration of an Axon.ivy engine by using system
+easily customize the configuration of an Axon Ivy engine by using system
 environment variables or by providing configuration files like the
 :ref:`ivy-yaml` file. 
 

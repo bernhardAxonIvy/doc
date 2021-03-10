@@ -32,7 +32,7 @@ New app.yaml locations
 |tag-ops-changed|
 
 Towards highly configurable ivy projects we needed to move :file:`app.yaml` to new places
-in the Axon.ivy Engine.
+in the Axon Ivy Engine.
 
 .. container:: admonition note toggle
 
@@ -157,9 +157,9 @@ HTTPS port disabled by default
 
 |tag-ops-changed|
 
-HTTPS port is now disabled by default on the Axon.ivy Engine, because you should
+HTTPS port is now disabled by default on the Axon Ivy Engine, because you should
 always terminate SSL on the reverse proxy (frontend webserver). If you need
-HTTPS directly on the Axon.ivy Engine then you need to set the property
+HTTPS directly on the Axon Ivy Engine then you need to set the property
 :code:`WebServer.HTTPS.Enabled` to :code:`true` in :ref:`ivy-webserver-yaml`.
 
 
@@ -181,7 +181,7 @@ AJP support is deprecated
 
 |tag-ops-deprecated|
 
-AJP is used to integrate the Axon.ivy Engine with Microsoft IIS  or Apache http
+AJP is used to integrate the Axon Ivy Engine with Microsoft IIS  or Apache http
 as :ref:`reverse proxy <reverse-proxy>`. We still support AJP but you should
 migrate to modern URL rewrite approach based on HTTP/HTTPS.
 
@@ -194,7 +194,7 @@ migrate to modern URL rewrite approach based on HTTP/HTTPS.
   AJP's days are numbered. It is not being further developed and thus prevents
   the use of new web features such as websockets. We highly recommend to migrate
   to modern URL rewrite approach based on HTTP/HTTPS, because in future versions
-  of Axon.ivy Engine you won't be able to use AJP.
+  of Axon Ivy Engine you won't be able to use AJP.
 
   If you are using Microsoft IIS as your reverse proxy proceed as follows:
 
@@ -213,7 +213,7 @@ SSL Client Configuration
 
 |tag-ops-changed|
 
-We made the life of Axon.ivy Engine administrators easier
+We made the life of Axon Ivy Engine administrators easier
 due simplification of the SSL configuration.
 
 .. container:: admonition note toggle
@@ -234,7 +234,7 @@ Workflow Event Log API removed
 
 |tag-project-removed|
 
-The Workflow Event Log API has been deprecated in Axon.ivy 8.0
+The Workflow Event Log API has been deprecated in Axon Ivy 8.0
 and has been removed now. It was never Public API, so most project should
 not be affected.
 
@@ -281,7 +281,7 @@ still have used the jDTS driver.
   #. Choose :guilabel:`Driver` **Microsoft SQL Server**
   #. Click :guilabel:`Check Connection`
   #. Click :guilabel:`Save`
-  #. Restart Axon.ivy Engine
+  #. Restart Axon Ivy Engine
 
   **External Databases**
   

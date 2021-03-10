@@ -1,5 +1,5 @@
 ================================================================================
-Release Notes Axon.ivy ${ivy-version} (${release.name})
+Release Notes Axon Ivy ${ivy-version} (${release.name})
 ================================================================================
 
 ! - Critical: We strongly recommend to install this release because it fixes this security issue!

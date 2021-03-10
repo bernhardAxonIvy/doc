@@ -4,8 +4,8 @@ Offline Tasks
 =============
 
 Offline tasks are designed for use on a mobile device without connection
-to the Axon.ivy Engine. Typically the task data and the task forms are
-loaded during the synchronization with the Axon.ivy Engine and then
+to the Axon Ivy Engine. Typically the task data and the task forms are
+loaded during the synchronization with the Axon Ivy Engine and then
 handled locally by an app on a mobile device (e.g. a smartphone or a
 tablet). When the form is completed, the mobile app will transfer the
 entered form data to the server as soon as the connection to the

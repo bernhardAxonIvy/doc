@@ -3,8 +3,8 @@
 Market
 ======
 
-The `Axon.ivy Market <https://market.axonivy.com>`_ provides powerful add-ons
-for the Axon.ivy platform. These include complete workflow user interfaces,
+The `Axon Ivy Market <https://market.axonivy.com>`_ provides powerful add-ons
+for the Axon Ivy platform. These include complete workflow user interfaces,
 components for generating documents, connectors for connecting third-party
 systems and much more. Take a look around.
 
@@ -12,13 +12,13 @@ systems and much more. Take a look around.
 Install from the Market
 -----------------------
 
-Most of the extensions in the Axon.ivy Market can be installed in Axon.ivy
-Designer. Therefore you need to open the Market in Axon.ivy Designer
-(:menuselection:`Axon.ivy --> Axon.ivy Market`).
+Most of the extensions in the Axon Ivy Market can be installed in Axon Ivy
+Designer. Therefore you need to open the Market in Axon Ivy Designer
+(:menuselection:`Axon Ivy --> Axon Ivy Market`).
 
 .. image:: /_images/market/market-designer-menu.png
 
-Which will open the Axon.ivy Market in a view.
+Which will open the Axon Ivy Market in a view.
 
 .. image:: /_images/market/market-designer-view.png
 

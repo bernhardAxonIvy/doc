@@ -14,7 +14,7 @@ document and that it is displayed in a web browser.
 PrimeFaces JSF Component Library
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Axon.ivy is bundled with the JSF component library
+Axon Ivy is bundled with the JSF component library
 `PrimeFaces <http://primefaces.org/>`__, an open source JSF component
 library developed by Prime Teknoloji. It provides a collection of mostly
 visual components (widgets). These can be used by JSF programmers in
@@ -36,13 +36,13 @@ doc <http://www.primefaces.org/docs/vdl/>`__.
 The elements of the PrimeFaces library are introduced with the ``<p:>``
 namespace on your XHTML page. In addition also the
 **primefaces-extension**\ ``<pe:`` widget library is included in the
-Axon.ivy installation.
+Axon Ivy installation.
 
 .. note::
 
    It is also possible to install and use additional JSF libraries. To
    do so you copy the concerning .jar file into the folder
-   **/webapps/ivy/WEB-INF/lib** of Axon.ivy Designer and Axon.ivy Engine
+   **/webapps/ivy/WEB-INF/lib** of Axon Ivy Designer and Axon Ivy Engine
    respectively. Then you have to add a namespace attribute **xmlns:xx**
    on your html pages to use the widgets.
 
@@ -50,15 +50,15 @@ Axon.ivy installation.
 Html Dialog Data Binding and Event Mapping
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-An Html Dialog follows the model-view-controller pattern of the Axon.ivy
+An Html Dialog follows the model-view-controller pattern of the Axon Ivy
 :ref:`user-dialog-concept`. So part of an
 implemented HD is a data class (the model) whose data fields can be
 bound to widget properties of the view. To define such a binding,
-Axon.ivy provides the special object **data**.
+Axon Ivy provides the special object **data**.
 
 On the other hand, the controller part of an Html Dialog is implemented
 by a series of UI processes that can be mapped to events on the view
-such as mouse clicks. To define such an event mapping, Axon.ivy provides
+such as mouse clicks. To define such an event mapping, Axon Ivy provides
 the keyword **logic** to call an event process or a method process in
 the logic.
 

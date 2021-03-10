@@ -1,9 +1,9 @@
 Deployment
 ==========
 
-This chapter explains how an Axon.ivy Designer Project can be deployed
-to an Axon.ivy Engine. Before deploying an Axon.ivy project it is
-important to understand some major concepts and terms of the Axon.ivy
+This chapter explains how an Axon Ivy Designer Project can be deployed
+to an Axon Ivy Engine. Before deploying an Axon Ivy project it is
+important to understand some major concepts and terms of the Axon Ivy
 Engine. The following chapter introduces these concepts and terms.
 
 .. _application:
@@ -13,7 +13,7 @@ Application
 
 |image0|
 
-On the Axon.ivy Engine, applications can be configured. An application
+On the Axon Ivy Engine, applications can be configured. An application
 spans up an environment in which roles, users, external databases,
 tasks, cases and process models exist. Applications are completely
 independent of each other. E.g. a user of one application can **not**
@@ -27,11 +27,11 @@ Process Model
 |image1|
 
 Within an application multiple process models can be configured. A
-process model on the Engine corresponds to an Axon.ivy project on the
+process model on the Engine corresponds to an Axon Ivy project on the
 Designer. The difference is that a process model may hold multiple
-different versions of the same Axon.ivy project. A process model version
-- as its name suggests - is a version of an Axon.ivy project. In fact
-this version represents the state of an Axon.ivy project at the time it
+different versions of the same Axon Ivy project. A process model version
+- as its name suggests - is a version of an Axon Ivy project. In fact
+this version represents the state of an Axon Ivy project at the time it
 was deployed on the Engine.
 
 .. _process-model-version:
@@ -42,9 +42,9 @@ Process Model Version
 |image2|
 
 A process model can have multiple versions called process model
-versions. These versions allow to change an Axon.ivy project without
+versions. These versions allow to change an Axon Ivy project without
 worrying about the compatibility of currently running cases on the
-Engine. How does this work? When an Axon.ivy project has been finished
+Engine. How does this work? When an Axon Ivy project has been finished
 or reached a milestone, it is going to be deployed as the first process
 model version. Users can use this project, they start processes. Some of
 the processes may last long time (weeks, months, or even years). While
@@ -63,7 +63,7 @@ processes that are started in a process model are started in the
 released process model version! A complete list of release state can be
 found in the following list:
 
-.. table:: Release states of process model versions on Axon.ivy Engine
+.. table:: Release states of process model versions on Axon Ivy Engine
    :widths: 20 80
 
    +-----------------------------------+------------------------------------------+
@@ -127,7 +127,7 @@ Configuration Example
 ---------------------
 
 The following table shows an example of how applications, process models
-and process model versions on an Axon.ivy Engine can be configured.
+and process model versions on an Axon Ivy Engine can be configured.
 
 .. table:: Configuration Example
    :widths: 15 15 15 55
@@ -154,7 +154,7 @@ and process model versions on an Axon.ivy Engine can be configured.
    |                 |                 |                 | Management      |
    |                 |                 |                 | process model.  |
    |                 |                 |                 | Corresponds to  |
-   |                 |                 |                 | the Axon.ivy    |
+   |                 |                 |                 | the Axon Ivy    |
    |                 |                 |                 | project called  |
    |                 |                 |                 | "HRM".          |
    +-----------------+-----------------+-----------------+-----------------+
@@ -197,7 +197,7 @@ and process model versions on an Axon.ivy Engine can be configured.
    |                 | Finance         |                 | Finance process |
    |                 |                 |                 | model.          |
    |                 |                 |                 | Corresponds to  |
-   |                 |                 |                 | the Axon.ivy    |
+   |                 |                 |                 | the Axon Ivy    |
    |                 |                 |                 | project         |
    |                 |                 |                 | Finance.        |
    +-----------------+-----------------+-----------------+-----------------+
@@ -217,14 +217,14 @@ and process model versions on an Axon.ivy Engine can be configured.
    |                 |                 |                 | users of the    |
    |                 |                 |                 | company are     |
    |                 |                 |                 | managed by the  |
-   |                 |                 |                 | Axon.ivy        |
+   |                 |                 |                 | Axon Ivy        |
    |                 |                 |                 | Engine.         |
    +-----------------+-----------------+-----------------+-----------------+
    |                 | HRM             |                 | Human Resource  |
    |                 |                 |                 | Management      |
    |                 |                 |                 | process model.  |
    |                 |                 |                 | Corresponds to  |
-   |                 |                 |                 | the Axon.ivy    |
+   |                 |                 |                 | the Axon Ivy    |
    |                 |                 |                 | project called  |
    |                 |                 |                 | "HRM".          |
    +-----------------+-----------------+-----------------+-----------------+
@@ -243,18 +243,18 @@ and process model versions on an Axon.ivy Engine can be configured.
    |                 |                 |                 | version.        |
    +-----------------+-----------------+-----------------+-----------------+
 
-Axon.ivy Project Deployment
+Axon Ivy Project Deployment
 ---------------------------
 
-To deploy an Axon.ivy project to the Axon.ivy Engine execute the
+To deploy an Axon Ivy project to the Axon Ivy Engine execute the
 following steps:
 
 #. Export all files of the project you want to deploy to a zip file
-   using the Export wizard of Axon.ivy Designer (See next section).
+   using the Export wizard of Axon Ivy Designer (See next section).
 
-#. Copy the zip file with your project files to the Axon.ivy Engine.
+#. Copy the zip file with your project files to the Axon Ivy Engine.
 
-#. Start the Engine Administrator application on the Axon.ivy Engine
+#. Start the Engine Administrator application on the Axon Ivy Engine
 
 #. Choose or create an application
 
@@ -272,16 +272,16 @@ following steps:
 
 .. tip::
 
-   More information about the deployment of Axon.ivy projects or
+   More information about the deployment of Axon Ivy projects or
    applications, process models and process model versions can be found
-   in the Axon.ivy Engine Guide.
+   in the Axon Ivy Engine Guide.
 
 Export all Project Files to a ZIP-File
 --------------------------------------
 
 For the deploying of a project it is useful to export all files of a
 project to a zip file. This can be done with the export wizard of
-Axon.ivy Designer. Start the export wizard either by using the menu
+Axon Ivy Designer. Start the export wizard either by using the menu
 :guilabel:`File` > :guilabel:`Export ...` or by using the context menu
 :guilabel:`Export ...` in the Ivy Project Tree on a selected project.
 

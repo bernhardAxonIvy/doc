@@ -35,7 +35,7 @@ obfuscates the most used business path. But it could be available as an
 optional side task that the line manager can start and then gets
 executed within the current process context.
 
-In Axon.ivy processes with side tasks can be invoked through Triggers or
+In Axon Ivy processes with side tasks can be invoked through Triggers or
 Signals.
 
 **Triggers**
@@ -147,7 +147,7 @@ processes could look like this when simplified:
 
 .. figure:: /_images/adaptive-case-management/acm-business-data.png 
 
-To store this kind of data Axon.ivy provides a simple repository that is
+To store this kind of data Axon Ivy provides a simple repository that is
 called Business Data. This stored data can then be accessed by multiple
 processes instances during the lifetime of a long living complex
 process. The repository provides access to the data with simple store

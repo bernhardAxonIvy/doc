@@ -19,7 +19,7 @@ Error Report
 
 On Error Dialogs it is possible to generate an Error Report. This report
 contains information about the error, the designer machine and the
-current state of the Axon.ivy Designer.
+current state of the Axon Ivy Designer.
 
 .. note::
 
@@ -35,7 +35,7 @@ The Event Details View of the
 :ref:`simulate-process-models-debugger-runtimelog-view` provides a
 button to generate and save an error report for a given log entry.
 
-Moreover, you can also use the menu :guilabel:`Axon.ivy` > :guilabel:`Debug` > :guilabel:`Save Debug Report`
+Moreover, you can also use the menu :guilabel:`Axon Ivy` > :guilabel:`Debug` > :guilabel:`Save Debug Report`
 to generate and save such a report without an error.
 
 
@@ -53,6 +53,6 @@ OutOfMemoryException: Java heap space
 If this error occurs, then the Designer requests more memory than it is
 allowed to use. This can happen when a lot of data is used during the
 process simulations. Ensure, that your computer has enough memory. Then
-you can increase the maximal memory consumption of the Axon.ivy
-Designer. Just open the ``Axon.ivy Designer.ini`` and change the value in
+you can increase the maximal memory consumption of the Axon Ivy
+Designer. Just open the ``Axon Ivy Designer.ini`` and change the value in
 the line after ``-Xmx`` to a higher one.

@@ -3,7 +3,7 @@
 Html Dialog Preferences
 -----------------------
 
-In the Axon.ivy Designer preferences you can configure the templates
+In the Axon Ivy Designer preferences you can configure the templates
 used for the creation of Html Dialogs and Offline Dialogs.
 
 .. note::
@@ -18,7 +18,7 @@ used for the creation of Html Dialogs and Offline Dialogs.
 Accessibility
 ^^^^^^^^^^^^^
 
-Axon.ivy Designer *Menu -> Windows -> Preferences -> Web -> HTML Files -> Editor -> Templates*
+Axon Ivy Designer *Menu -> Windows -> Preferences -> Web -> HTML Files -> Editor -> Templates*
 
 Html Dialog View Type Templates
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

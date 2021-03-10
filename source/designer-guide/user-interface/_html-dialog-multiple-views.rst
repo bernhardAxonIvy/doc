@@ -11,7 +11,7 @@ Dialog and to abstract it from the business process.
 How to add a view
 ^^^^^^^^^^^^^^^^^
 
-In the :guilabel:`New` menu in the Axon.ivy project tree you find the
+In the :guilabel:`New` menu in the Axon Ivy project tree you find the
 :guilabel:`New Html Dialog View` wizard to add a view to a Html Dialog. Just
 enter the name of the view and the xhtml file for the view is created
 and added to the Html Dialog. In the ivy project tree all view files of
@@ -29,7 +29,7 @@ load the next view.
 
 You find an example of a multi view Html Dialog in the :ref:`HtmlDialogDemos
 project <importing-demo-projects>` that is provided
-with the Axon.ivy Designer.
+with the Axon Ivy Designer.
 
 ::
 

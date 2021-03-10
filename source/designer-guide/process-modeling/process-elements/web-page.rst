@@ -57,7 +57,7 @@ Output Links
 
 Form Archive
    Each page (including the forms located on it and the inputs of the
-   user) are archived on the Axon.ivy Engine. The archived pages (forms)
+   user) are archived on the Axon Ivy Engine. The archived pages (forms)
    are associated with the running case and the running task and can be
    inspected (viewed) afterwards in the workflow user interface.
 

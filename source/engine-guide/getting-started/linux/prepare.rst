@@ -1,7 +1,7 @@
 Prepare your Machine
 --------------------
 
-Before starting with the installation of Axon.ivy Engine prepare your Linux
+Before starting with the installation of Axon Ivy Engine prepare your Linux
 machine with the necessary tools and software needed for the installation (wget,
 unzip, Java 11 runtime). Most distribution may have pre-installed these tools but
 especially certain Docker images may have not. On Debian (e.g. Ubuntu, etc.)

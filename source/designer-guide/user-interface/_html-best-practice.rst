@@ -11,7 +11,7 @@ may specify client side validation scripts to validate user input before
 submitting a form. If the validation fails (i.e. some user input is
 invalid) then the form will not be submitted.
 
-Out of the box, Axon.ivy allows you to select from a number of
+Out of the box, Axon Ivy allows you to select from a number of
 predefined scripts, e.g. *Integer > 0* as shown below:
 
 |image4|
@@ -36,7 +36,7 @@ The JavaScript validation function must always define the same 3
 parameters: ``field`` is the field that is being validated, ``msg`` is
 the custom validation alert message that may optionally be defined when
 selecting a validation script and ``loc`` is the language code that will
-be provided by the Axon.ivy runtime system.
+be provided by the Axon Ivy runtime system.
 
 The above defined checks if the given input field contains a number
 between 10 and 20 and if so, ``true`` is returned. If the value is not a
@@ -46,7 +46,7 @@ the form, as long as the field value is not correct).
 
 In order for the script to be able to selected from the Form Field
 Details Editor, it must be located in the
-``webContent/scripts/validation`` folder of the Axon.ivy project where
+``webContent/scripts/validation`` folder of the Axon Ivy project where
 it will be used:
 
 |image5|

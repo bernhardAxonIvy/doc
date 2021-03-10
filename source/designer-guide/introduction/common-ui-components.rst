@@ -2,7 +2,7 @@ Common UI Components
 ====================
 
 
-Axon.ivy uses some UI components that are widely used in the UI panels
+Axon Ivy uses some UI components that are widely used in the UI panels
 of the product. This chapter introduces these components.
 
 
@@ -261,7 +261,7 @@ Refactoring Wizards
 -------------------
 
 Refactoring wizards appear when you *rename*, *move*, *delete* or
-*copy/paste* Axon.ivy artifacts.
+*copy/paste* Axon Ivy artifacts.
 
 The wizards allow you to specify the new name/namespace/location of the
 artifacts that should be refactored and will give you an overview of the
@@ -379,10 +379,10 @@ Delete Wizard
    
    Delete Wizard
 
-If the selected resources are not Axon.ivy artifacts, then you will be
+If the selected resources are not Axon Ivy artifacts, then you will be
 presented with a confirmation dialog for the delete operation.
 
-If you select an Axon.ivy artifact (Axon.ivy projects, User Dialog,
+If you select an Axon Ivy artifact (Axon Ivy projects, User Dialog,
 Process, Data Class) for deletion, then you might be presented with a
 list of references that will break, if the operation is executed.
 

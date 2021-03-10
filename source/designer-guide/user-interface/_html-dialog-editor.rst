@@ -28,7 +28,7 @@ views.
 Accessibility
 ~~~~~~~~~~~~~
 
-Axon.ivy Project Tree -> double click on the *View* node of a Html
+Axon Ivy Project Tree -> double click on the *View* node of a Html
 Dialog:
 
 Graphical View
