@@ -17,7 +17,7 @@ Entry-Name: .content
 importProject -projectName QuickStartTutorial
 togglePresentation -flat true
 
-with [get-view "Axon.ivy Projects" | get-tree]
+with [get-view "Axon Ivy Projects" | get-tree]
 {
 	get-item "QuickStartTutorial/Processes/MyProcess" | double-click
 }
@@ -41,14 +41,14 @@ with [find-tab-folder "Process Templates"]
 }
 
 importProject -projectName QuickStartTutorial
-with [get-view "Axon.ivy Projects" | get-tree]
+with [get-view "Axon Ivy Projects" | get-tree]
 {
 	get-item "QuickStartTutorial/Html Dialogs/quickStartTutorial.EnterProduct" | click
 	select "QuickStartTutorial/Html Dialogs/quickStartTutorial.EnterProduct" | get-menu Delete | click
 }
 get-window Refactoring | get-button Finish | click
 
-get-view "Axon.ivy Projects" | get-tree | select QuickStartTutorial | get-menu Validate | click
+get-view "Axon Ivy Projects" | get-tree | select QuickStartTutorial | get-menu Validate | click
 get-window "Validation Results" | close
 
 OpenView Problems
@@ -59,7 +59,7 @@ with [find-tab-folder Problems]
 	get-object | captureScreenshot "process-modeling/problem-view.png"
 }
 
-get-view "Axon.ivy Projects" | get-tree | get-item "QuickStartTutorial/Processes/MyProcess" | double-click
+get-view "Axon Ivy Projects" | get-tree | get-item "QuickStartTutorial/Processes/MyProcess" | double-click
 get-eclipse-window | resizeWindow 1090 860
 wait 1000
 find-tab-folder "MyProcess.mod" | get-object | captureScreenshot "process-modeling/process-element-with-problem-marker.png"
@@ -68,7 +68,7 @@ get-eclipse-window | maximize
 importProject -projectName documentationExampleProject
 
 OpenView "Reference View"
-with [get-view "Axon.ivy Projects" | get-tree]
+with [get-view "Axon Ivy Projects" | get-tree]
 {
 	select documentationExampleProject | get-menu "Show References" | click
 }

@@ -14,7 +14,7 @@ Entry-Name: .ecl.context
 
 proc "import-ivy-projects" [val archiveGroup] {
 	get-menu "File/Import..." | click
-	get-window Import | get-tree | select "Axon.ivy/Ivy Projects.*" | double-click
+	get-window Import | get-tree | select "Axon Ivy/Ivy Projects.*" | double-click
 	with [get-window "Ivy Projects Import"] {
 		get-tree| get-item $archiveGroup | check
     	get-button Finish | click
@@ -24,17 +24,17 @@ proc "import-ivy-projects" [val archiveGroup] {
 
 proc packProject [val projectName]
 {
-	get-view "Axon.ivy Projects" | get-tree | select $projectName | get-menu -path "Pack Project (*.iar)" | click
+	get-view "Axon Ivy Projects" | get-tree | select $projectName | get-menu -path "Pack Project (*.iar)" | click
 }
 
 proc unpackProject [val projectName]
 {
-	get-view "Axon.ivy Projects" | get-tree | select $projectName | get-menu -path "Unpack Project (*.iar)" | click
+	get-view "Axon Ivy Projects" | get-tree | select $projectName | get-menu -path "Unpack Project (*.iar)" | click
 }
 
 proc deleteProject [val projectName]
 {
-	get-view "Axon.ivy Projects" | get-tree | select $projectName | get-menu -path Delete | click
+	get-view "Axon Ivy Projects" | get-tree | select $projectName | get-menu -path Delete | click
 	with [get-window Refactoring] {
 	    get-button "Delete project contents on disk (cannot be undone)" | check
 	    get-button Finish | click
@@ -43,7 +43,7 @@ proc deleteProject [val projectName]
 
 proc deleteAllProjects
 {
-	get-view "Axon.ivy Projects" | get-tree | select ".*" -all | get-menu -path Delete | click
+	get-view "Axon Ivy Projects" | get-tree | select ".*" -all | get-menu -path Delete | click
 	with [get-window Refactoring] {
 	    get-button "Delete project contents on disk (cannot be undone)" | check
 	    get-button Finish | click
@@ -52,7 +52,7 @@ proc deleteAllProjects
 
 proc openDefinition [val projectName] [val definitions]
 {
-	with [get-view "Axon.ivy Projects" | get-tree]
+	with [get-view "Axon Ivy Projects" | get-tree]
 	{
 		get-item [concat $projectName "/Definitions/" $definitions] | double-click
 	}
@@ -88,7 +88,7 @@ proc assertNoRunningOperations {
 	} | constrain-max duration 10000
 }
 
-proc togglePresentation[val -name "navigator" -value "Axon.ivy Projects"][val flat]
+proc togglePresentation[val -name "navigator" -value "Axon Ivy Projects"][val flat]
 {
 	if [$flat]{
 		get-view $navigator | get-menu -path "Package Presentation/Flat" | click

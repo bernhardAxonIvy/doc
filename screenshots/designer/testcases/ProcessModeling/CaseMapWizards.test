@@ -15,7 +15,7 @@ Entry-Name: .content
 
 importProject -projectName "QuickStartTutorial"
 
-with [get-view "Axon.ivy Projects" | get-tree] {
+with [get-view "Axon Ivy Projects" | get-tree] {
 	get-item "QuickStartTutorial" | click
 	select "QuickStartTutorial" | get-menu "New/Case Map" | click
 }

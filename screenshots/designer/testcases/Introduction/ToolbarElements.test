@@ -32,7 +32,7 @@ get-button "Suppress simulation and animation in general." | get-object | captur
 get-button "Select content and formatting language for design and simulation .*" | get-object | captureScreenshot "designer/button-content-formatting-language.png"
 get-button Search | get-object | captureScreenshot "designer/button-search.png"
 
-with [get-view "Axon.ivy Projects" | get-tree] {
+with [get-view "Axon Ivy Projects" | get-tree] {
     select "QuickStartTutorial/Processes/exampleProcess" | double-click
     select "QuickStartTutorial/Processes/MyProcess" | double-click
 }

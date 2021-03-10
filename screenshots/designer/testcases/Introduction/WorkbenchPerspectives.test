@@ -17,7 +17,7 @@ Entry-Name: .content
 importProject -projectName "QuickStartTutorial"
 togglePresentation -flat true
 
-with [get-view "Axon.ivy Projects" | get-tree] {
+with [get-view "Axon Ivy Projects" | get-tree] {
 	get-item QuickStartTutorial | click
 	get-item "QuickStartTutorial/Processes/MyProcess" | click
 	select "QuickStartTutorial/Processes/MyProcess" | double-click
@@ -36,7 +36,7 @@ wait 1000
 get-button "Process Model" | get-object | invoke getParent | invoke getParent | invoke getParent | captureScreenshot "designer/switch-perspectives.png"
 
 importProject -projectName "documentationExampleProject"
-get-view "Axon.ivy Projects" | get-tree | get-item "documentationExampleProject/Html Dialogs/screenshot.project.exampleHtmlDialog/exampleHtmlDialog Interface" | double-click
+get-view "Axon Ivy Projects" | get-tree | get-item "documentationExampleProject/Html Dialogs/screenshot.project.exampleHtmlDialog/exampleHtmlDialog Interface" | double-click
 
 get-eclipse-window | maximize
 get-eclipse-window | resizeWindow 800 800

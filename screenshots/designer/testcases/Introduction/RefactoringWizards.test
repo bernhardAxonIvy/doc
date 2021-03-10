@@ -17,7 +17,7 @@ importProject "documentationExampleProject"
 importProject "QuickStartTutorial"
 togglePresentation -flat true
 
-with [get-view "Axon.ivy Projects" | get-tree] {
+with [get-view "Axon Ivy Projects" | get-tree] {
 	select "documentationExampleProject/Html Dialogs/screenshot.project.exampleHtmlDialog" | get-menu Move | click
 }
 with [get-window Refactoring] {
@@ -32,7 +32,7 @@ with [get-window Refactoring] {
 	get-button Cancel | click
 }
 
-with [get-view "Axon.ivy Projects" | get-tree] {
+with [get-view "Axon Ivy Projects" | get-tree] {
 	get-item "documentationExampleProject/Html Dialogs/screenshot.project.exampleHtmlDialog" | click
 	get-item "documentationExampleProject/Html Dialogs/screenshot.project.exampleHtmlDialog" | click
 	select "documentationExampleProject/Html Dialogs/screenshot.project.exampleHtmlDialog" | get-menu Rename | click
@@ -44,7 +44,7 @@ with [get-window Refactoring] {
 	get-button Cancel | click
 }
 
-with [get-view "Axon.ivy Projects" | get-tree] {
+with [get-view "Axon Ivy Projects" | get-tree] {
 	get-item "documentationExampleProject/Html Dialogs/screenshot.project.exampleHtmlDialog" | click
 	get-item "documentationExampleProject/Html Dialogs/screenshot.project.exampleHtmlDialog" | click
 	select "documentationExampleProject/Html Dialogs/screenshot.project.exampleHtmlDialog" | get-menu Delete | click
@@ -55,7 +55,7 @@ with [get-window Refactoring] {
 	get-button Cancel | click
 }
 
-with [get-view "Axon.ivy Projects" | get-tree] {
+with [get-view "Axon Ivy Projects" | get-tree] {
 	get-item "documentationExampleProject/Html Dialogs/screenshot.project.exampleHtmlDialog" | click
 	select "documentationExampleProject/Html Dialogs/screenshot.project.exampleHtmlDialog" | get-menu Copy | click
 	get-item "documentationExampleProject/Html Dialogs" | click

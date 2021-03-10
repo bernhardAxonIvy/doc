@@ -114,7 +114,7 @@ let [val webShop "Web_shop"] [val acmeWebShop "Acme_web_shop"]{
 		togglePresentation -flat true
 		createOverrides $webShop $acmeWebShop
 
-		with [get-view "Axon.ivy Projects" | get-tree]{
+		with [get-view "Axon Ivy Projects" | get-tree]{
 			get-item [concat $acmeWebShop "/Definitions/Overrides"] | double-click
 		}
 

@@ -16,7 +16,7 @@ Entry-Name: .content
 
 importProject -projectName "QuickStartTutorial"
 
-with [get-view "Axon.ivy Projects" | get-tree] {
+with [get-view "Axon Ivy Projects" | get-tree] {
 	select "QuickStartTutorial/Processes/MyProcess" | double-click
 }
 

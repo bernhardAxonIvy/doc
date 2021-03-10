@@ -14,8 +14,8 @@ Entry-Name: .ecl.context
 
 proc createProject [val projectName] {
 	get-button New | click -arrow
-	get-menu -path "Axon.ivy Project" | click
-	with [get-window "New Axon.ivy Project"] {
+	get-menu -path "Axon Ivy Project" | click
+	with [get-window "New Axon Ivy Project"] {
 		get-editbox -after [get-label "Project Name:"] | set-text $projectName
 		get-editbox -after [get-label "Group ID:"] | set-text "ch.ivyteam.ivy"
 		get-editbox -after [get-label "Project ID:"] | set-text $projectName

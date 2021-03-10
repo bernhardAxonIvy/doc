@@ -20,7 +20,7 @@ proc setTableColumnWidth [val name] [val size]
 
 proc openDataClass [val path]
 {
-	get-view "Axon.ivy Projects" | get-tree | get-item $path | double-click
+	get-view "Axon Ivy Projects" | get-tree | get-item $path | double-click
 }
 
 // DataClass editor general

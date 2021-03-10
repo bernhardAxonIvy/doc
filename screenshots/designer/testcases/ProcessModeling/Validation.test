@@ -16,13 +16,13 @@ Entry-Name: .content
 importProject -projectName "documentationExampleProject"
 togglePresentation -flat true
 
-get-view "Axon.ivy Projects" | get-tree | select "documentationExampleProject/Html Dialogs/screenshot.project.example" +
+get-view "Axon Ivy Projects" | get-tree | select "documentationExampleProject/Html Dialogs/screenshot.project.example" +
 	"HtmlDialog" | get-menu Delete | click
 get-window Refactoring | get-button Finish | click
 get-view Problems | click
 wait 1000
 
-get-view "Axon.ivy Projects" | get-tree | select documentationExampleProject | get-menu Validate | click
+get-view "Axon Ivy Projects" | get-tree | select documentationExampleProject | get-menu Validate | click
 get-window "Validation Results" | close
 OpenView Problems
 get-view Problems | get-tree | select "Errors .*/User Dialog 'screenshot.project.exampleHtmlDialog' not found."

@@ -17,7 +17,7 @@ importProject -projectName "QuickStartTutorial"
 
 get-button "Process Model" | click
 
-get-view "Axon.ivy Projects" | get-tree | get-item "QuickStartTutorial/Processes/MyProcess" | double-click
+get-view "Axon Ivy Projects" | get-tree | get-item "QuickStartTutorial/Processes/MyProcess" | double-click
 
 get-eclipse-window | resizeWindow 1090 580
 find-tab-folder "MyProcess.mod" | get-object | captureScreenshot "process-modeling/process-editor.png"

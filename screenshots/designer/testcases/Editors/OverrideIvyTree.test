@@ -19,7 +19,7 @@ let [val acmeWebShop "Acme_web_shop"]
 	createProject -projectName $acmeWebShop
 	try{
 		get-eclipse-window | resizeWindow 1050 550
-		with [get-view "Axon.ivy Projects" | get-tree]{
+		with [get-view "Axon Ivy Projects" | get-tree]{
 			select [concat $acmeWebShop "/Definitions/Overrides"] | double-click
 			get-object | captureScreenshot "designer-configuration/overrides-treenode.png"
 		}

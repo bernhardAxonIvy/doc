@@ -16,7 +16,7 @@ Entry-Name: .content
 
 importProject -projectName "documentationExampleProject"
 
-with [get-view "Axon.ivy Projects" | get-tree] {
+with [get-view "Axon Ivy Projects" | get-tree] {
 	select "documentationExampleProject/Definitions/Rest Clients" | double-click
 }
 get-eclipse-window | resizeWindow 1050 850

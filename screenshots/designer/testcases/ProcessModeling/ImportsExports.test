@@ -18,17 +18,17 @@ importProject -projectName "documentationExampleProject"
 
 OpenView CMS
 get-view CMS | close
-with [get-view "Axon.ivy Projects"] {
+with [get-view "Axon Ivy Projects"] {
 	get-button "Collapse All.*" | click
 	get-tree | get-item "documentationExampleProject/Definitions/Deployment" | click
 	get-tree | get-item "documentationExampleProject" | click
 }
 
 get-eclipse-window | get-object | invoke setSize 1300 800
-find-tab-folder "Axon.ivy Projects" | get-object | captureScreenshot "ivy-project/project-tree-full.png"
+find-tab-folder "Axon Ivy Projects" | get-object | captureScreenshot "ivy-project/project-tree-full.png"
 
-get-view "Axon.ivy Projects" | get-tree | get-menu "New/Axon.ivy Project" | click
-with [get-window "New Axon.ivy Project"] {
+get-view "Axon Ivy Projects" | get-tree | get-menu "New/Axon Ivy Project" | click
+with [get-window "New Axon Ivy Project"] {
 	get-editbox -after [get-label "Project Name:"] | set-text InvoiceManager
 	get-editbox -after [get-label "Group ID:"] | set-text "com.acme.ivy"
 	get-editbox -after [get-label "Project ID:"] | set-text invoice
@@ -50,7 +50,7 @@ with [get-window "New Axon.ivy Project"] {
 
 try{
 	get-eclipse-window | get-object | invoke setSize 950 650
-	get-view "Axon.ivy Projects" | get-tree | select "InvoiceManager/Definitions/Deployment" | double-click
+	get-view "Axon Ivy Projects" | get-tree | select "InvoiceManager/Definitions/Deployment" | double-click
 
 	find-tab-folder InvoiceManager | get-object | captureScreenshot "ivy-project/deployment-descriptor-editor-deployment.png"
 
@@ -70,7 +70,7 @@ try{
 	find-tab-folder "Project Graph" | get-object | captureScreenshot "ivy-project/project-graph-view.png"
 
 
-	get-view "Axon.ivy Projects" | get-tree | get-menu "Import..." | click
+	get-view "Axon Ivy Projects" | get-tree | get-menu "Import..." | click
 	get-window Import | get-tree | select "General/Existing Projects into Workspace" | double-click
 	set-dialog-result Folder [format "%s/%s" [substitute-variables "${system_property:additionalProjects}"] "QuickStartTutorial" | str]
 	with [get-window Import] {
@@ -84,8 +84,8 @@ try{
 		get-button Cancel | click
 	}
 
-	get-view "Axon.ivy Projects" | get-tree | get-menu "Import..." | click
-	get-window Import | get-tree | select "Axon.ivy/Ivy Archive \\(\\*.iar\\)" | double-click
+	get-view "Axon Ivy Projects" | get-tree | get-menu "Import..." | click
+	get-window Import | get-tree | select "Axon Ivy/Ivy Archive \\(\\*.iar\\)" | double-click
 	set-dialog-result Folder [substitute-variables "${system_property:additionalProjects}"]
 	with [get-window "Import ivy Archives.*"] {
 		get-button "Browse ..." | click

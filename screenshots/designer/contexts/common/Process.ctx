@@ -14,7 +14,7 @@ Entry-Name: .ecl.context
 
 proc openInscription[val processName] [val elementName] [val elementType]
 {
-	with [get-view "Axon.ivy Projects" | get-tree] {
+	with [get-view "Axon Ivy Projects" | get-tree] {
 		let [val processPath [format "documentationExampleProject/Processes/%s" $processName ]]
 		{
     		get-item $processPath | double-click
@@ -31,7 +31,7 @@ proc openInscription[val processName] [val elementName] [val elementType]
 
 proc openHtmlDialogInscription[val dialogName] [val elementName] [val elementType]
 {
-	with [get-view "Axon.ivy Projects" | get-tree] {
+	with [get-view "Axon Ivy Projects" | get-tree] {
 		let [val processPath [format "documentationExampleProject/Html Dialogs/screenshot.project.%s/%s Logic" $dialogName $dialogName]]
 		{
     		get-item $processPath | double-click

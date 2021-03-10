@@ -20,7 +20,7 @@ importProject -projectName QuickStartTutorial
 get-eclipse-window | maximize
 
 OpenView Debug
-with [get-view "Axon.ivy Projects" | get-tree] {
+with [get-view "Axon Ivy Projects" | get-tree] {
 	get-item "QuickStartTutorial/Processes/exampleProcess" | double-click
 }
 
@@ -32,7 +32,7 @@ with [find-tab-folder Debug]
 
 importProject -projectName documentationExampleProject
 
-with [get-view "Axon.ivy Projects" | get-tree]
+with [get-view "Axon Ivy Projects" | get-tree]
 {
 	get-item "documentationExampleProject/Processes/JaxRsServiceCall" | double-click
 }

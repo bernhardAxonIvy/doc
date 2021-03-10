@@ -16,7 +16,7 @@ Entry-Name: .content
 
 importProject -projectName "documentationExampleProject"
 
-with [get-view "Axon.ivy Projects" | get-tree] {
+with [get-view "Axon Ivy Projects" | get-tree] {
 	get-item "documentationExampleProject/Processes" | click
 	select "documentationExampleProject/Processes" | get-menu "New/Process" | click
 }
@@ -31,7 +31,7 @@ with [get-window "New Process"] {
 	get-button Cancel | click
 }
 
-with [get-view "Axon.ivy Projects" | get-tree] {
+with [get-view "Axon Ivy Projects" | get-tree] {
 	get-item "documentationExampleProject/Processes" | click
 	select "documentationExampleProject/Processes" | get-menu "New/Process" | click
 }
@@ -54,7 +54,7 @@ with [get-window "New Process"] {
 	get-button Finish | click
 }
 
-with [get-view "Axon.ivy Projects" | get-tree] {
+with [get-view "Axon Ivy Projects" | get-tree] {
 	get-item "documentationExampleProject/Processes" | click
 	select "documentationExampleProject/Processes" | get-menu "New/Process Group" | click
 }
