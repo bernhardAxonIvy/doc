@@ -1,10 +1,10 @@
 If you encounter any problems, check the following sources:
 
-.. rubric:: Axon.ivy Community
+.. rubric:: Axon Ivy Community
 
-The `Axon.ivy Community <https://community.axonivy.com/>`_ (or the old 
-`Axon.ivy Q&A <https://answers.axonivy.com/>`_) contains a considerable
-amount of questions and answers related to Axon.ivy Designer and Engine.
+The `Axon Ivy Community <https://community.axonivy.com/>`_ (or the old 
+`Axon Ivy Q&A <https://answers.axonivy.com/>`_) contains a considerable
+amount of questions and answers related to Axon Ivy Designer and Engine.
 
 .. rubric:: Stack Overflow
 

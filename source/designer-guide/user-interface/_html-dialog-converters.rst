@@ -21,7 +21,7 @@ Custom Faces Converters
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 Custom Faces Converters can be implemented as a Java class with a
-specific ``FacesConverter`` annotation and then be used in your Axon.ivy
+specific ``FacesConverter`` annotation and then be used in your Axon Ivy
 project.
 
 Example:

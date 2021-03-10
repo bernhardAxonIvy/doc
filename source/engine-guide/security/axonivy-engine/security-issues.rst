@@ -3,7 +3,7 @@
 Security issues
 ---------------
 
-If a security issue was found in the Axon.ivy Engine or Designer it is visible
+If a security issue was found in the Axon Ivy Engine or Designer it is visible
 in the :ref:`release notes <release-notes>`, annotated with an exclamation mark
 (!):
 

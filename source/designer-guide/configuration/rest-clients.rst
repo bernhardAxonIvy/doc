@@ -10,7 +10,7 @@ services, which can be consumed from a BPM process.
 .. tip::
 
    Before you create a new REST Client you should have a look at the
-   :ref:`Axon.ivy Market <market>`. You may find there already a connector.
+   :ref:`Axon Ivy Market <market>`. You may find there already a connector.
 
 
 REST Client
@@ -96,8 +96,8 @@ REST Client Section
 
   .. tip::
 
-     To consume a REST service running in the same Axon.ivy Engine /
-     Application as the client a set of Axon.ivy placeholders can be
+     To consume a REST service running in the same Axon Ivy Engine /
+     Application as the client a set of Axon Ivy placeholders can be
      used. These placeholders are automatically resolved:
      {ivy.engine.host}, {ivy.engine.http.port}, {ivy.engine.context},
      {ivy.request.application}.

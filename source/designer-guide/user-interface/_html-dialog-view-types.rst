@@ -29,7 +29,7 @@ implements defined parts of it. For example the layout provides the
 header- and footer-area whereas the content-area is individually
 implemented on each dialog.
 
-Axon.ivy brings a set of predefined layouts. The layout (together with
+Axon Ivy brings a set of predefined layouts. The layout (together with
 the view type) is chosen in the
 :ref:`New User Dialog Wizard <user-dialog-new-wizard-page-1>`.
 
@@ -40,7 +40,7 @@ documentation.
 Custom Html Dialog Layouts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Axon.ivy is not limited to the usage of the built-in Html Dialog
+Axon Ivy is not limited to the usage of the built-in Html Dialog
 Layouts. Custom layouts can be added with small effort.
 
 In order to add a custom layout - which is a normal .xhtml file - it

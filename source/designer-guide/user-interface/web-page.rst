@@ -3,13 +3,13 @@
 Web Page
 ========
 
-This chapter shows how Web Pages and -content are used within Axon.ivy.
+This chapter shows how Web Pages and -content are used within Axon Ivy.
 
 Using Web Pages (web content) in a Business Process
 ---------------------------------------------------
 
 As an alternative to User Dialogs, you can display Web Pages or other
-web resources to the user of an Axon.ivy process application in a
+web resources to the user of an Axon Ivy process application in a
 browser to let him or her interact with the executed process.
 
 Such content is embedded within a business process by using the 

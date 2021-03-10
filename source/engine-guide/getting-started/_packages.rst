@@ -1,6 +1,6 @@
 .. note::
 
-  Axon.ivy Engine is provided in different packages:
+  Axon Ivy Engine is provided in different packages:
 
   * **Windows** Preferable package for Windows which comes with
     a bundled Java Runtime.

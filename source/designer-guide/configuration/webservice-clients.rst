@@ -222,7 +222,7 @@ The following attributes are available in the *Ports* section:
  
 .. tip::
 
-   To consume a SOAP service running in the same Axon.ivy Engine /
+   To consume a SOAP service running in the same Axon Ivy Engine /
    Application as the client the placeholder :code:`{ivy.engine.baseurl}` can be used.
 
    E.g. ``{ivy.engine.baseurl}/ws/myservice``

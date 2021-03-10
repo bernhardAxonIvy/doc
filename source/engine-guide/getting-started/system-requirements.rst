@@ -10,7 +10,7 @@ concurrent sessions and deployed applications.
 Hardware Requirements
 ---------------------
 
-By default the Axon.ivy Engine is running with the bundled Elasticsearch server.
+By default the Axon Ivy Engine is running with the bundled Elasticsearch server.
 It's possible to run the Elasticsearch server :ref:`externally <elasticsearch>`.
 Depending on that the hardware minimum requirements changes.
 
@@ -42,7 +42,7 @@ Depending on that the hardware minimum requirements changes.
 Software Requirements
 ---------------------
 
-Axon.ivy Engine needs Java SE 11 to run and is tested with `AdoptOpenJDK
+Axon Ivy Engine needs Java SE 11 to run and is tested with `AdoptOpenJDK
 <https://adoptopenjdk.net/>`_ and with `OpenJDK <https://openjdk.java.net/>`_.
 
 Note, that Java SE 11 `AdoptOpenJDK <https://adoptopenjdk.net/>`_ is already

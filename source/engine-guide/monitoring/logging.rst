@@ -13,7 +13,7 @@ Each event has a level:
 * **INFO** neutral message
 * **DEBUG/TRACE** low-level events, needed for troubleshooting
 
-Axon.ivy comes with a sophisticated :ref:`default log configuration <log4j2-xml>`
+Axon Ivy comes with a sophisticated :ref:`default log configuration <log4j2-xml>`
 which logs all warning, error and fatal events in the :file:`logs`
 directory of the |ivy-engine|. The log files will be roated and compressed
 every day.
@@ -29,7 +29,7 @@ Customization
 The logging configuration can be fully customized to your needs.
 For example, you can change the log level of a logger so that the log events are logged in a log file.
 Therefore you need to know that
-Axon.ivy uses `Log4j 2 <https://logging.apache.org/log4j/2.x/>`_ for logging and
+Axon Ivy uses `Log4j 2 <https://logging.apache.org/log4j/2.x/>`_ for logging and
 comes with a built-in :ref:`default configuration <log4j2-xml>` which can be 
 customized by providing a configuration in :file:`[engineDir]/configuration/log4j2.xml`.
 The custom configuration will be `merged <http://logging.apache.org/log4j/2.x/manual/configuration.html#CompositeConfiguration>`_

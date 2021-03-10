@@ -14,7 +14,7 @@ digraph overview {
 
   reverseproxy [ label="Reverse Proxy",pos = "2.25,2.5!" width="1.5"]; 
   
-  engine [label="Axon.ivy Engine", pos="5.4,2.5!", height="0.8", width="1.5", color="#C7D426", fontcolor="black"];
+  engine [label="Axon Ivy Engine", pos="5.4,2.5!", height="0.8", width="1.5", color="#C7D426", fontcolor="black"];
     
   systemdb [ label="System\nDatabase", pos="8,2.5!" width="1.5" height="0.8"]
 

@@ -1,10 +1,10 @@
 CMS Access
 ----------
 
-In Axon.ivy
+In Axon Ivy
 ^^^^^^^^^^^
 
-CMS content can be used in the most locations where Axon.ivy displays
+CMS content can be used in the most locations where Axon Ivy displays
 text for example in User Dialogs, Web Pages or in processes. Use Content
 Objects to set the text of your labels, the images for your icons or the
 content of your HTML pages. There are two ways how to use content from
@@ -24,7 +24,7 @@ the CMS:
    same environment variable is available with
    ``ch.ivyteam.ivy.environment.Ivy.cms()``.
 
-Depending on the context Axon.ivy will return the content (link) in the
+Depending on the context Axon Ivy will return the content (link) in the
 correct form. If you use a document Content Object in the 
 :ref:`html-panel-editor`, then it will be rendered
 as a link to the document in the HTML page.
@@ -45,7 +45,7 @@ your browser and the page will be rendered in there.
 
 .. note::
 
-   The engine of the Axon.ivy Designer must be started to render the
+   The engine of the Axon Ivy Designer must be started to render the
    Content Objects.
 
 .. note::
@@ -64,17 +64,17 @@ Content resolution
 
 If content from the CMS is requested, it is addressed using the URI of
 the Content Object. But the real content (the text, the string, ...) is
-stored in a Content Object Value. How does Axon.ivy resolve the Content
+stored in a Content Object Value. How does Axon Ivy resolve the Content
 Object Value whose content is returned?
 
-First, Axon.ivy tries to find the requested Content Object. It looks up
-in the current project first. If not found Axon.ivy will recursively
+First, Axon Ivy tries to find the requested Content Object. It looks up
+in the current project first. If not found Axon Ivy will recursively
 look up in the CMS's of the required projects in a breadth-first manner
 (i.e. first it searches in all of the directly required projects, then
 in all of the required projects of the directly required projects and so
 on).
 
-Second, as soon as Axon.ivy has found the Content Object, it evaluates
+Second, as soon as Axon Ivy has found the Content Object, it evaluates
 which is the correct value to return. First, the lookup locale is
 defined. The algorithm to resolve the lookup locale is like this:
 
@@ -92,7 +92,7 @@ defined. The algorithm to resolve the lookup locale is like this:
 
 #. Otherwise use the default locale of the operating system.
 
-When Axon.ivy knows the lookup locale, then it tries to resolve the
+When Axon Ivy knows the lookup locale, then it tries to resolve the
 correct value. The algorithm for that is like this:
 
 #. If there is a value with the same locale like the lookup locale, then

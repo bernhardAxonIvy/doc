@@ -14,7 +14,7 @@ digraph overview {
 
   loadbalancer [ label="Load Balancer",pos = "2.25,2.5!" width="1.5"];
  
-  cluster [ label="Axon.ivy Cluster",pos = "5.4,2.5!" width=1.8 height=3.1 style="dotted" fontcolor="black" labelloc="t"];
+  cluster [ label="Axon Ivy Cluster",pos = "5.4,2.5!" width=1.8 height=3.1 style="dotted" fontcolor="black" labelloc="t"];
   engine1 [label="Node 1", pos="5.4,3.2!", height="0.8", width="1.5", color="#C7D426", fontcolor="black"];
   engine2 [label="Node 2", pos="5.4,2.3!", height="0.8", width="1.5", color="#C7D426", fontcolor="black"];
   engine3 [label="Node 3", pos="5.4,1.4!", height="0.8", width="1.5", color="#C7D426", fontcolor="black"];

@@ -1,7 +1,7 @@
 Data Storage
 ============
 
-Axon.ivy provides multiple possibilities to manage and store project
+Axon Ivy provides multiple possibilities to manage and store project
 specific data. This chapter provides an overview of all the
 possibilities with their advantages and disadvantages. Which one should
 be used depends from case to case.
@@ -37,7 +37,7 @@ Database
 
 Stores and access data in an external database systems. An own database
 server is necessary and the database schema must be managed outside of
-Axon.ivy.
+Axon Ivy.
 More information can be found in the chapter :ref:`process-element-db-step`.
 
 Persistency (Java Persistence API)

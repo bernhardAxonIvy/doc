@@ -144,7 +144,7 @@ creation.
    correct checking depending on the type of the tested object.
 
 
-Axon.ivy also supports auto-initialization of AXIS types:
+Axon Ivy also supports auto-initialization of AXIS types:
 
 - ``org.apache.axis.types.Time`` to ``'00:00:00'``
 - ``org.apache.axis2.databinding.types.Time`` to ``'00:00:00'``

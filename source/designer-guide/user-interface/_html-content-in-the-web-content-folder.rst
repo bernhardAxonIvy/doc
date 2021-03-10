@@ -28,7 +28,7 @@ imports a JavaScript file in the web content and so on).
 
 .. tip::
 
-   To gain access to Axon.ivy functionality please insert the following
+   To gain access to Axon Ivy functionality please insert the following
    code to your hand-made JSP page in the web content folder:
 
    ::

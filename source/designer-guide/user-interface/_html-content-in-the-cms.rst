@@ -459,7 +459,7 @@ Input Kind
       |                 |                 | kind, the user                                                     | type="file">``                   |
       |                 |                 | can choose a                                                       |                                  |
       |                 |                 | file to upload                                                     |                                  |
-      |                 |                 | to the Axon.ivy                                                    |                                  |
+      |                 |                 | to the Axon Ivy                                                    |                                  |
       |                 |                 | Engine file                                                        |                                  |
       |                 |                 | area                                                               |                                  |
       +-----------------+-----------------+--------------------------------------------------------------------+----------------------------------+
@@ -490,7 +490,7 @@ Input Kind
       |                 |                 | dates are                                                          |                                  |
       |                 |                 | entered in a                                                       |                                  |
       |                 |                 | 2-digit format,                                                    |                                  |
-      |                 |                 | then Axon.ivy                                                      |                                  |
+      |                 |                 | then Axon Ivy                                                      |                                  |
       |                 |                 | will interpret                                                     |                                  |
       |                 |                 | numbers within                                                     |                                  |
       |                 |                 | the next 20                                                        |                                  |
@@ -519,7 +519,7 @@ Input Kind
       +-----------------+-----------------+--------------------------------------------------------------------+----------------------------------+
 
 Displayed Name
-   Axon.ivy adds a text label to the form field for reference. The text
+   Axon Ivy adds a text label to the form field for reference. The text
    of this label can be set here using process data or CMS entries.
 
 Orientation
@@ -576,7 +576,7 @@ Input Validation
    validation fails on some of the form fields, then a message will be
    displayed to the user and the form will not be sent.
 
-   Axon.ivy offers you a number of built in validation functions that
+   Axon Ivy offers you a number of built in validation functions that
    can be selected from the *Input Validation* combo box. The scripts
    that are available depend on the input kind of the currently edited
    form field (e.g. different scripts are available for checkbox and

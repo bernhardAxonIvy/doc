@@ -1,7 +1,7 @@
 Extensions
 ==========
 
-This chapters shows how easily a process or the Axon.ivy engine itself
+This chapters shows how easily a process or the Axon Ivy engine itself
 can be customized with your own logic.
 
 
@@ -10,13 +10,13 @@ can be customized with your own logic.
 Extendible Process Elements
 ---------------------------
 
-Axon.ivy comes with four generic process elements that can be used to
+Axon Ivy comes with four generic process elements that can be used to
 address particular execution behaviour requirements none of the standard
 process elements can fulfill.
 
 All generic process elements contain a tab in which a Java class can be
 selected. The Java class implements the actual execution behaviour. Some
-standard implementations are shipped with the Axon.ivy core, and with
+standard implementations are shipped with the Axon Ivy core, and with
 these elements developers are able to specify their own implementation
 as part of the project.
 
@@ -103,19 +103,19 @@ You need to implement both process element extension points in order to have a w
 
 .. _extensions-bundles:
 
-Axon.ivy extensions bundles (Eclipse plugin)
+Axon Ivy extensions bundles (Eclipse plugin)
 --------------------------------------------
 
-In order to provide an Axon.ivy extension for the Designer or Engine you
+In order to provide an Axon Ivy extension for the Designer or Engine you
 need to provide it as an Eclipse plugin.
 
 Development
 ~~~~~~~~~~~
 
-You can create your own Eclipse plugin in the Axon.ivy Designer by
+You can create your own Eclipse plugin in the Axon Ivy Designer by
 following these steps:
 
-#. Start Axon.ivy Designer
+#. Start Axon Ivy Designer
 
 #. Switch to the :guilabel:`Plug-in Development Perspective`. Menu: :guilabel:`Window` >
    :guilabel:`Open Perspective` > :guilabel:`Other...` > :guilabel:`Plug-in Development`
@@ -184,23 +184,23 @@ following these steps:
 #. Switch back to the **META-INF/MANIFEST.MF** file editor. Choose the
    **Overview** tab and click on the link **Export Wizard**. As
    **Destination Directory** choose the ``dropins`` directory of your
-   Axon.ivy Designer or Engine installation. Press the **Finish**
+   Axon Ivy Designer or Engine installation. Press the **Finish**
    button. Your plugin is created in the ``dropins/plugins``
    directory.
 
 Installation
 ~~~~~~~~~~~~
 
-Follow these steps to install your extensions in an Axon.ivy Designer or
+Follow these steps to install your extensions in an Axon Ivy Designer or
 Engine:
 
 #. Stop the running instance (if applicable).
 
 #. Copy your plugin (bundle) that contains your extension classes to the
-   ``dropins`` directory inside the Axon.ivy Designer or Engine
+   ``dropins`` directory inside the Axon Ivy Designer or Engine
    installation directory.
 
-#. Start the Axon.ivy Designer or Engine.
+#. Start the Axon Ivy Designer or Engine.
 
 .. tip::
 
@@ -212,11 +212,11 @@ Engine:
 Extension Point Reference
 -------------------------
 
-Axon.ivy supports the following extension points:
+Axon Ivy supports the following extension points:
 
 
 :public-api:`IServerExtension </ch/ivyteam/ivy/server/IServerExtension.html>`
-  A Server extension can be used to start and stop your code when the Axon.ivy
+  A Server extension can be used to start and stop your code when the Axon Ivy
   Engine is started or stopped. Server extensions can be accessed from Process
   Start Event and Process Intermediate Event Beans and also from every process
   element using the ivy.extensions environment variable.

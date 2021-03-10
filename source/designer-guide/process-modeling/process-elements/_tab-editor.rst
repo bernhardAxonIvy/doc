@@ -30,7 +30,7 @@ that can be used by your own process elements. For instance, you can
 easily transfer process data to your legacy system.
 
 The following part shows the implementation of the above editor. As
-mentioned earlier Axon.ivy provides the
+mentioned earlier Axon Ivy provides the
 :public-api:`IIvyScriptEditor </ch/ivyteam/ivy/process/extension/IIvyScriptEditor.html>` that
 represents a text field with ivyScript support and smart buttons. Inside
 ``createEditorPanelContent`` use the method ``createIvyScriptEditor``

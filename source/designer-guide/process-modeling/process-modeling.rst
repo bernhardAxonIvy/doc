@@ -3,7 +3,7 @@
 Process Modeling
 ================
 
-This chapter introduces Axon.ivy processes and how to work with them.
+This chapter introduces Axon Ivy processes and how to work with them.
 The creation and logical organisation of processes is explained as well
 as the functionality of the :ref:`process-editor` and the different kinds of processes.
 
@@ -44,7 +44,7 @@ same data is available as inside the caller process).
    Wrapping process elements into an embedded subprocess does not
    influence the functionality of most process elements. But the
    wrapping influences the way process elements are addressed by
-   Axon.ivy. This may cause incompatibilities with older versions of the
+   Axon Ivy. This may cause incompatibilities with older versions of the
    process and will hinder you to deploy such a process over an already
    deployed older version of the process. The process elements that may
    cause such incompatibilities are:
@@ -341,7 +341,7 @@ one of the following available authentication methods:
 None/Container
    Authentication is not handled by the web service element. However, if
    the web container (Tomcat) or a web server (Microsoft IIS/Apache)
-   handles user authentication, the user is passed through to Axon.ivy
+   handles user authentication, the user is passed through to Axon Ivy
    (e.g. Single Sign-on).
 
 WS Security
@@ -371,7 +371,7 @@ HTTP Basic
 
    If the web container (Tomcat) or a web server (Microsoft IIS/Apache)
    already handels user authentication, the user is passed through to
-   Axon.ivy without doing an additional HTTP Basic authentication.
+   Axon Ivy without doing an additional HTTP Basic authentication.
 
 .. _process-editor:
 
@@ -393,7 +393,7 @@ editor consists of two parts:
 Accessibility
 ~~~~~~~~~~~~~
 
-Axon.ivy Project Tree > double click on a *process* node inside the
+Axon Ivy Project Tree > double click on a *process* node inside the
 project tree (|image3|)
 
 .. _process-editor-palette:
@@ -808,7 +808,7 @@ to the template store by pressing 't' on a selection of elements in the
 Accessibility
 ~~~~~~~~~~~~~
 
-Window > Show View > Axon.ivy > Process Template View
+Window > Show View > Axon Ivy > Process Template View
 
 Features
 ~~~~~~~~
@@ -871,7 +871,7 @@ View*.
 Reference View
 --------------
 
-The Reference view shows the references between the various Axon.ivy
+The Reference view shows the references between the various Axon Ivy
 project artifacts. A reference of an artifact is everything which is
 used/called from the artifact (e.g. call to a callable process or User
 Dialog) or which is embedded in the artifact (e.g. embedded sub element

@@ -1,9 +1,9 @@
 Engine Modes
 ============
-Axon.ivy Engine runs in different modes. If you have configured your Axon.ivy
+Axon Ivy Engine runs in different modes. If you have configured your Axon Ivy
 Engine correctly it runs in :ref:`production-mode`. This is the standard mode.
 The :ref:`demo-mode` and the :ref:`maintenance-mode` are special modes in which
-your Axon.ivy Engine only runs if you have not yet configured it or there are
+your Axon Ivy Engine only runs if you have not yet configured it or there are
 problems with your configuration.
 
 
@@ -11,7 +11,7 @@ problems with your configuration.
 
 Production Mode
 ---------------
-This is the standard mode. Ensure you run your Axon.ivy Engine in this mode. The
+This is the standard mode. Ensure you run your Axon Ivy Engine in this mode. The
 production mode is active if a valid licence is installed and a system database
 is configured and available in the correct version.
 
@@ -20,17 +20,17 @@ is configured and available in the correct version.
 
 Demo Mode
 ---------
-Axon.ivy Engine offers a demo mode for demonstration purposes. The demo mode
-allows you to install and start the Axon.ivy Engine without configuration and
-without a productive licence.  You can play with the Axon.ivy Engine. Try out
+Axon Ivy Engine offers a demo mode for demonstration purposes. The demo mode
+allows you to install and start the Axon Ivy Engine without configuration and
+without a productive licence.  You can play with the Axon Ivy Engine. Try out
 the :dev-url:`Portal </market/portal>` and :ref:`Cockpit <engine-cockpit>`,
 deploy projects, etc. The username of the administrator in demo mode is
 **admin** and password **admin**. 
 
 .. warning:: 
-    The Axon.ivy Engine uses a memory database as system database in demo mode.
+    The Axon Ivy Engine uses a memory database as system database in demo mode.
     This means that all your data, all cases that are created by any sessions in
-    demo mode are lost when you shut down the Axon.ivy Engine.
+    demo mode are lost when you shut down the Axon Ivy Engine.
 
 
 .. _maintenance-mode:
@@ -41,10 +41,10 @@ In the maintenance mode you can use the :ref:`engine-cockpit` to fix licence or
 system database configuration problems. 
 
 .. warning::
-    In maintenance mode all functions of the Axon.ivy Engine except the
+    In maintenance mode all functions of the Axon Ivy Engine except the
     :ref:`engine-cockpit` are disabled! 
 
-The Axon.ivy Engine starts automatically in maintenance mode if there is a
+The Axon Ivy Engine starts automatically in maintenance mode if there is a
 problem with the licence or the system database. You can disable the
 automatically switching to maintenance mode in the :ref:`ivy-yaml` file:
 
@@ -52,7 +52,7 @@ automatically switching to maintenance mode in the :ref:`ivy-yaml` file:
 
   Boot.MaintenanceMode: DISABLED
 
-If disable and there is a licence or system database problem the Axon.ivy Engine
-fail to start and report an error. You can then start the Axon.ivy Engine
+If disable and there is a licence or system database problem the Axon Ivy Engine
+fail to start and report an error. You can then start the Axon Ivy Engine
 explicitly in maintenance mode by using the :ref:`command line option
 <axonivy-engine>` :code:`-maintenance`.

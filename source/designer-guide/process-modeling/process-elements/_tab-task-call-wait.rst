@@ -11,7 +11,7 @@ for the task list itself.
 
 Custom fields
    The values set on this table are only informational and have no
-   effect on how this task is treated by Axon.ivy.
+   effect on how this task is treated by Axon Ivy.
    See :ref:`Custom Fields <process-element-tab-task-custom-fields>`.
 
 Code

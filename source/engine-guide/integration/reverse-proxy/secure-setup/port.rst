@@ -4,9 +4,9 @@ Port
 ----
 
 It is very important that the communication between the reverse proxy and the
-Axon.ivy Engine is **exclusive** or restricted for administrators - especially
+Axon Ivy Engine is **exclusive** or restricted for administrators - especially
 when :ref:`Single Sign-on <single-sign-on>` is activated. This means no one else
-should be able to communicate directly with the Axon.ivy Engine over ports e.g.
+should be able to communicate directly with the Axon Ivy Engine over ports e.g.
 8080, 8443 ror 8009 from the outside. How to configure this properly depends on
 the setup.
 
@@ -14,7 +14,7 @@ the setup.
 Same host
 ^^^^^^^^^
 
-If the reverse proxy and the Axon.ivy Engine runs on the same host. 
+If the reverse proxy and the Axon Ivy Engine runs on the same host. 
 
 |
 
@@ -24,9 +24,9 @@ If the reverse proxy and the Axon.ivy Engine runs on the same host.
 |
 
 Then you just need to bind the connector - protocol between the reverse proxy
-and the Axon.ivy Engine - to localhost. For example when using HTTP then you
+and the Axon Ivy Engine - to localhost. For example when using HTTP then you
 need to bind the HTTP connector to localhost (same for HTTPS). This ensures that
-the Axon.ivy Engine can only be accessed via localhost.
+the Axon Ivy Engine can only be accessed via localhost.
 
 .. code-block:: yaml
 
@@ -39,7 +39,7 @@ the Axon.ivy Engine can only be accessed via localhost.
 Different Host
 ^^^^^^^^^^^^^^
 
-If the reverse proxy and the Axon.ivy Engine runs on two different hosts.
+If the reverse proxy and the Axon Ivy Engine runs on two different hosts.
 
 |
 
@@ -51,7 +51,7 @@ If the reverse proxy and the Axon.ivy Engine runs on two different hosts.
 You can do this with one of the following approaches:
 
 #. Configure your network so that only the reverse proxy
-   can communicate with the Axon.ivy Engine.
-#. Setup a firewall rule on the Axon.ivy Engine host,
+   can communicate with the Axon Ivy Engine.
+#. Setup a firewall rule on the Axon Ivy Engine host,
    which blocks all requests from another IP address other than the reverse
    proxy.
