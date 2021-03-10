@@ -54,5 +54,5 @@ If this error occurs, then the Designer requests more memory than it is
 allowed to use. This can happen when a lot of data is used during the
 process simulations. Ensure, that your computer has enough memory. Then
 you can increase the maximal memory consumption of the Axon Ivy
-Designer. Just open the ``Axon Ivy Designer.ini`` and change the value in
+Designer. Just open the ``AxonIvyDesigner.ini`` and change the value in
 the line after ``-Xmx`` to a higher one.
