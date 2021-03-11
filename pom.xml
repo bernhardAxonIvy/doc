@@ -11,7 +11,7 @@
   <groupId>ch.ivyteam.doc</groupId>
   <artifactId>doc-product</artifactId>
   <packaging>pom</packaging>
-  <name>Axon Ivy Digital Business Platform</name>
+  <name>Axon Ivy Platform</name>
 
   <properties>
     <images.folder>source/_images</images.folder>

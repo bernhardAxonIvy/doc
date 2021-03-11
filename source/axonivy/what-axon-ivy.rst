@@ -3,7 +3,7 @@
 What is |axon-ivy|?
 ===================
 
-|axon-ivy| is a Digital Business Platform that simplifies and automates the
+|axon-ivy| is a Digital Process Automation Platform that simplifies and automates the
 interaction of humans with their digital systems. The platform is typically in
 charge of the most precious business cases where companies produce value. Here
 is how we do it:

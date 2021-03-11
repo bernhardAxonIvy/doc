@@ -3,7 +3,7 @@ Axon Ivy
 
 .. toctree::
    :maxdepth: 2
-   :caption: Digital Business Platform
+   :caption: Process Automation Platform
 
    axonivy/index
    designer-guide/index
