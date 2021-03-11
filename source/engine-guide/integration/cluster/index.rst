@@ -4,7 +4,7 @@ Cluster
 =======
 
 If you have a lot of load on your system or need increased resilience, then you
-should consider running the Axon Ivy engine in a Cluster. This has two has two
+should consider running the Axon Ivy Engine in a Cluster. This has two has two
 major advantages:
 
 * **Performance and scalability**:
