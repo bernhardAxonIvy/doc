@@ -103,5 +103,5 @@ Within this file you can overwrite some colors. For example, the **primary-color
 
    For all possible variables, have a look at our :ref:`HtmlDialogDemos
    <importing-demo-projects>`. These use an additional file `color-customize.css
-   <https://github.com/ivy-samples/ivy-project-demos/blob/master/HtmlDialogDemos/HtmlDialogDemos/webContent/layouts/styles/color-customize.css#L1-L54>`_
+   <https://github.com/ivy-samples/ivy-project-demos/blob/master/html-dialog/html-dialog-demos/webContent/layouts/styles/color-customize.css#L1-L54>`_
    to override colors.
