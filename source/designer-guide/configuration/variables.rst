@@ -3,21 +3,25 @@
 Variables
 =========
 
-Variables acts as global constants which can be used in your application.
-Variables are simple key/value pairs which can be specified by the developer.
-Some examples for variables are:
+Variables are simple key/value pairs which can be used in your application.
+Some examples for Variables are:
 
+-  Customizing of workflow application
+-  Multi-Tenancy
+-  Settings
 -  Company data (name, address, contacts)
 -  Simple Rule Values (e.g. credit account)
--  Path values for saving files
--  Path values for 3rd party systems and some other variables
+
+To see which Variables exists on the |ivy-engine| you can use the :ref:`Engine
+Cockpit Variables View <engine-cockpit-variables>`.
+
 
 Editor
 ------
 
-In the current version there is no UI editor for maintaining your variables. However, you
-can use the normal **Generic Text Editor** to add new variables. To do this, add or
-edit the :file:`<project>/config/variables.yaml` file:
+The |ivy-designer| delivers a **Yaml-Editor** to edit the
+:file:`<project>/config/variables.yaml` file, where you can maintain you
+variables.
 
 
 .. literalinclude:: includes/variables.yaml
@@ -25,49 +29,53 @@ edit the :file:`<project>/config/variables.yaml` file:
    :linenos: 
 
 - :guilabel:`Name`
-  The name is identifier for the variable  (e.g *myVariable*)
+  The name is identifier for the Variable  (e.g *myVariable*)
 
 - :guilabel:`Default value`
-  The default value is provided by the value itself.
+  The default value is the value (e.g *value* for the *myVariable*)
 
 - :guilabel:`Description`
-  The description is can be added before the variable itself, started by a :code:`#`.
+  The description is can be added before the Variable itself, started by a :code:`#`
 
 - :guilabel:`Metadata`
-  You can specify additional meta data for a variable. Strings, Boolean values
+  You can specify additional meta data for a Variable. Strings, Boolean values
   and numbers are recognized by the default value, but there are other types you
   can define:
 
-  * **password:** This tells the engine that the value of this variable
+  * **password:** This tells the engine that the value of this Variable
     should be written encrypted to the yaml files.
   * **daytime:** This value will be interpreted as daytime 
   * **enum:** The enum annotation will give you the possibility to define possible 
-    values for this variable. 
-  * **file:** The file annotation will tell the engine to retrieve the value for this variable 
+    values for this Variable. 
+  * **file:** The file annotation will tell the engine to retrieve the value for this Variable 
     from an external file. This file can be a :file:`.json` or a :file:`.txt`
-    file. If your variable is called :code:`myFile` and it should be a
+    file. If your Variable is called :code:`myFile` and it should be a
     :code:`json` file, then your file must be at the location
     :file:`variables/myFile.json` or the :code:`variables` prefix can also be
     part of the file name itself :file:`variables.myFile.json`.
 
 
-Environments
-------------
+Environments for Variables
+--------------------------
 
-You can override the default value of a variable for a particular
+You can override the default value of a Variable for a particular
 :ref:`Environment <configuration-environments>`, by adding a
 :file:`<project>/config/_<environment>/variables.yaml` file and defining your
-variables in there.
+Variables in there. This can be useful if you need different values for the same
+Variable, if this is used in different software development stages ("testing",
+"productive").
 
 
-Access variables in IvyScript
-------------------------------------
+Access Variables
+----------------
 
-In order the access the variables in your code a new environment
-variable ``var`` was introduced in :ref:`ivyscript` which provides a
-comfortable access to your defined variables. This approach has the
-advantage that, if variables are removed developers will
-immediately informed in which process element the variable was used.
+-> neu schreiben (neu var???) weil in ivvscript nutzbar -> überall nutzbar
+
+To access the Variables in your code, you can use the :public-api:`var
+</ch/ivyteam/ivy/environment/Ivy.html#var>` method. In :ref:`ivyscript`, you
+can use it with the name of the Variable to get a convenient access to your
+defined Variables. In addition, this approach has the advantage that you have
+validation notifications when a Variable is removed by a developer. 
 
 .. code-block:: java
   
@@ -76,8 +84,8 @@ immediately informed in which process element the variable was used.
 If you want to access **Metadata**, you can also use the :code:`var` keyword.
 This will deliver an :public-api:`interface
 </ch/ivyteam/ivy/vars/Variables.html>` where you can get, for example, a
-:public-api:`variable object </ch/ivyteam/ivy/vars/Variable.html>`. This
-contains additional metadata for that variable.
+:public-api:`Variable object </ch/ivyteam/ivy/vars/Variable.html>`. This
+contains additional metadata for that Variable.
 
 .. code-block:: java
 

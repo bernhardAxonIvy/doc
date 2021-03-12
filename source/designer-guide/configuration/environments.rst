@@ -3,13 +3,8 @@
 Environments
 ============
 
-Environments represent different runtime infrastructures. They can be used for
-e.g:
-
--  **Staging**: Software goes through a software development cycle and
-   is often tested on different environments before it is deployed on
-   the productive environment. Typical environments in this case are
-   "development", "testing" and "production".
+Environments represent different runtime infrastructures. For example they can be used for
+different software development stages ("development", "testing", "production").
 
 :ref:`variables`,
 :ref:`Databases <database-configuration>`,

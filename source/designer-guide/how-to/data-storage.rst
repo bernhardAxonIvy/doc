@@ -57,17 +57,10 @@ More information can be found in the chapter :ref:`process-element-web-service-c
 Variables
 ---------
 
-Stores simple name/value configuration pairs. A variable can have a different
-value per environment. On the |ivy-engine| there is a UI to change the values of
-a variable. More information can be found in the chapter :ref:`variables`.
-
-Application Custom Properties
------------------------------
-
-Stores simple name/value pairs. Good alternative for storing small
-amount of data instead using a database.
-More information can be found in the Public API
-:public-api:`ICustomProperties </ch/ivyteam/ivy/application/property/ICustomProperties.html>`.
+Stores simple name/value configuration pairs. A Variable can have a different
+value per environment. On the |ivy-engine| there is a :ref:`UI
+<engine-cockpit-variables>` to change the values of a Variable. More information
+can be found in the chapter :ref:`variables`.
 
 User Properties
 ---------------
@@ -99,8 +92,6 @@ Summary
 | Persistency                   | no         | yes                  | yes          | yes        | no             | yes         | no        | Expert    |
 +-------------------------------+------------+----------------------+--------------+------------+----------------+-------------+-----------+-----------+
 | Variables                     | no         | yes                  | yes          | yes        | no             | yes         | yes       | Advanced  |
-+-------------------------------+------------+----------------------+--------------+------------+----------------+-------------+-----------+-----------+
-| Application Custom Properties | no         | no                   | no           | yes        | no             | no          | no        | Advanced  |
 +-------------------------------+------------+----------------------+--------------+------------+----------------+-------------+-----------+-----------+
 | User Properties               | no         | no                   | no           | yes        | no             | no          | no        | Advanced  |
 +-------------------------------+------------+----------------------+--------------+------------+----------------+-------------+-----------+-----------+
