@@ -89,43 +89,20 @@ The :code:`GlobalVariables` in the :ref:`app-yaml` are renamed to :code:`Variabl
         myVariable: value
 
 
-Custom Application Properties are moved to the app.yaml
-*******************************************************
+Custom Application Properties API deprecated
+********************************************
 
-|tag-ops-changed| |tag-project-deprecated|
+|tag-project-deprecated|
 
-All custom application properties from the System Database table
-:code:`IWA_ApplicationProperty` are migrated to the :file:`app.yaml`. The
-Table itself is dropped. All API's for custom application properties are deprecated.
-
-.. container:: admonition note toggle
-
-  .. container:: admonition-title header
-
-     **Details**
-
-  .. container:: detail 
-
-    Old Table :code:`IWA_ApplicationProperty`:
-    
-    +--------------------+----------------+
-    | PropertyName       | PropertyValue  |
-    +====================+================+
-    | custom.myProperty  | value          |
-    +--------------------+----------------+
-
-    New :file:`app.yaml`:
-
-    .. code-block:: yaml
-
-      Variables:
-        myProperty: value
-
-    Use :public-api:`Ivy.var() </ch/ivyteam/ivy/environment/Ivy.html#var()>` instead of the following deprecated API's:
-
-    * :public-api:`ICustomProperties </ch/ivyteam/ivy/application/property/ICustomProperties.html>`
-    * :public-api:`ICustomProperty </ch/ivyteam/ivy/application/property/ICustomProperty.html>`
-    * :public-api:`ICustomPropertyProvider </ch/ivyteam/ivy/application/property/ICustomPropertyProvider.html>`
+The Public-API's :public-api:`ICustomProperties
+</ch/ivyteam/ivy/application/property/ICustomProperties.html>`, 
+:public-api:`ICustomProperty
+</ch/ivyteam/ivy/application/property/ICustomProperty.html>` and
+:public-api:`ICustomPropertyProvider
+</ch/ivyteam/ivy/application/property/ICustomPropertyProvider.html>` are
+deprecated and will be removed in near future. Please use the
+:public-api:`Ivy.var() </ch/ivyteam/ivy/environment/Ivy.html#var()>` API to
+create application variables.
 
 
 Upgrade Log4j 1 to Log4j 2
