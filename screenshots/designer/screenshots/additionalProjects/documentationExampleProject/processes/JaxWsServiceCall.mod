@@ -1,5 +1,5 @@
 [Ivy]
-160DF556A2226E66 7.5.0 #module
+160DF556A2226E66 9.2.0 #module
 >Proto >Proto Collection #zClass
 Jl0 JaxWsServiceCall Big #zClass
 Jl0 B #cInfo
@@ -47,9 +47,7 @@ Jl0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ' #txt
 Jl0 f0 @C|.responsibility Everybody #txt
 Jl0 f0 81 49 30 30 -47 17 #rect
-Jl0 f0 @|StartRequestIcon #fIcon
 Jl0 f1 337 49 30 30 0 15 #rect
-Jl0 f1 @|EndIcon #fIcon
 Jl0 f3 actionTable 'out=in;
 ' #txt
 Jl0 f3 cache '{/cache true /invalidation false /scope 0 /groupname "\"geoip\""/invalidation_time_group ""/lifetime_group "0"/identifier "\"address\""/invalidation_time_entry ""/lifetime_entry "0"}' #txt
@@ -64,13 +62,11 @@ Jl0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 Jl0 f3 160 42 128 44 -58 -7 #rect
-Jl0 f3 @|WebServiceIcon #fIcon
 Jl0 f4 expr out #txt
 Jl0 f4 111 64 160 64 #arcP
 Jl0 f2 expr out #txt
 Jl0 f2 288 64 337 64 #arcP
 Jl0 f5 339 152 30 30 0 15 #rect
-Jl0 f5 @|EndIcon #fIcon
 Jl0 f6 actionTable 'out=in;
 out.user.country=wsResponse.countryCode;
 ' #txt
@@ -89,7 +85,6 @@ Jl0 f6 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 Jl0 f6 170 145 112 44 -33 -7 #rect
-Jl0 f6 @|WebServiceIcon #fIcon
 Jl0 f7 outLink geoIp.ivp #txt
 Jl0 f7 inParamDecl '<> param;' #txt
 Jl0 f7 requestEnabled true #txt
@@ -115,7 +110,6 @@ Jl0 f7 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ' #txt
 Jl0 f7 @C|.responsibility Everybody #txt
 Jl0 f7 83 152 30 30 -28 17 #rect
-Jl0 f7 @|StartRequestIcon #fIcon
 Jl0 f8 expr out #txt
 Jl0 f8 113 167 170 167 #arcP
 Jl0 f9 expr out #txt

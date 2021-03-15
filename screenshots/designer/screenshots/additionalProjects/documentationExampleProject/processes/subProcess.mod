@@ -1,5 +1,5 @@
 [Ivy]
-16A7DD0A1D330578 7.5.0 #module
+16A7DD0A1D330578 9.2.0 #module
 >Proto >Proto Collection #zClass
 ss0 subProcess Big #zClass
 ss0 B #cInfo
@@ -33,9 +33,7 @@ ss0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 ss0 f0 81 49 30 30 0 15 #rect
-ss0 f0 @|StartSubIcon #fIcon
 ss0 f1 337 49 30 30 0 15 #rect
-ss0 f1 @|EndSubIcon #fIcon
 ss0 f2 111 64 337 64 #arcP
 >Proto ss0 .type screenshot.project.subProcessData #txt
 >Proto ss0 .processKind CALLABLE_SUB #txt

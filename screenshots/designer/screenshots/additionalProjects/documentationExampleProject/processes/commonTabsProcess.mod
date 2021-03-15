@@ -1,5 +1,5 @@
 [Ivy]
-168F0C6DF682858E 7.5.0 #module
+168F0C6DF682858E 9.2.0 #module
 >Proto >Proto Collection #zClass
 cs0 commonTabsProcess Big #zClass
 cs0 B #cInfo
@@ -34,9 +34,7 @@ cs0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ' #txt
 cs0 f0 @C|.responsibility Everybody #txt
 cs0 f0 81 49 30 30 -25 17 #rect
-cs0 f0 @|StartRequestIcon #fIcon
 cs0 f1 529 49 30 30 0 15 #rect
-cs0 f1 @|EndIcon #fIcon
 cs0 f3 actionTable 'out=in;
 out.addPerson="John Doe";
 out.organisation="AXON ivy";
@@ -63,7 +61,6 @@ Uses the system wide user id list to find and expand users.</desc>
 </elementInfo>
 ' #txt
 cs0 f3 128 42 192 44 -86 -7 #rect
-cs0 f3 @|StepIcon #fIcon
 cs0 f4 expr out #txt
 cs0 f4 111 64 128 64 #arcP
 cs0 f5 requestActionDecl '<> param;' #txt
@@ -82,7 +79,6 @@ cs0 f5 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 cs0 f5 360 42 112 44 -41 -7 #rect
-cs0 f5 @|UserTaskIcon #fIcon
 cs0 f6 expr out #txt
 cs0 f6 320 64 360 64 #arcP
 cs0 f2 expr in #txt

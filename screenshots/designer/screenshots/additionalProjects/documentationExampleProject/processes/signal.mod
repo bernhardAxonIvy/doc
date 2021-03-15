@@ -1,5 +1,5 @@
 [Ivy]
-1675F79D89ABB65A 7.5.0 #module
+1675F79D89ABB65A 9.2.0 #module
 >Proto >Proto Collection #zClass
 sl0 signal Big #zClass
 sl0 B #cInfo
@@ -32,9 +32,7 @@ sl0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ' #txt
 sl0 f0 @C|.responsibility Everybody #txt
 sl0 f0 81 49 30 30 -25 17 #rect
-sl0 f0 @|StartRequestIcon #fIcon
 sl0 f1 337 49 30 30 0 15 #rect
-sl0 f1 @|EndIcon #fIcon
 sl0 f2 111 64 337 64 #arcP
 sl0 f47 actionTable 'out.city="Lucerne";
 ' #txt
@@ -50,7 +48,6 @@ sl0 f47 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 sl0 f47 329 145 30 30 -40 17 #rect
-sl0 f47 @|SignalStartEventIcon #fIcon
 sl0 f34 outLink start2.ivp #txt
 sl0 f34 inParamDecl '<ch.ivyteam.test.Person in> param;' #txt
 sl0 f34 inParamTable 'out.city="Zug";
@@ -121,7 +118,6 @@ param.in.city
 ' #txt
 sl0 f34 @C|.responsibility Everybody #txt
 sl0 f34 81 137 30 30 -32 17 #rect
-sl0 f34 @|StartRequestIcon #fIcon
 sl0 f34 -1|-1|-9671572 #nodeStyle
 >Proto sl0 .type screenshot.project.Data #txt
 >Proto sl0 .processKind NORMAL #txt

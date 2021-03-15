@@ -1,5 +1,5 @@
 [Ivy]
-16BD5F7B1D71F926 7.5.0 #module
+16BD5F7B1D71F926 9.2.0 #module
 >Proto >Proto Collection #zClass
 cs0 processCallElements Big #zClass
 cs0 B #cInfo
@@ -39,9 +39,7 @@ cs0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ' #txt
 cs0 f0 @C|.responsibility Everybody #txt
 cs0 f0 81 49 30 30 -25 17 #rect
-cs0 f0 @|StartRequestIcon #fIcon
 cs0 f1 337 49 30 30 0 15 #rect
-cs0 f1 @|EndIcon #fIcon
 cs0 f3 outLink start2.ivp #txt
 cs0 f3 inParamDecl '<> param;' #txt
 cs0 f3 requestEnabled true #txt
@@ -57,9 +55,7 @@ cs0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ' #txt
 cs0 f3 @C|.responsibility Everybody #txt
 cs0 f3 81 209 30 30 -29 17 #rect
-cs0 f3 @|StartRequestIcon #fIcon
 cs0 f4 337 209 30 30 0 15 #rect
-cs0 f4 @|EndIcon #fIcon
 cs0 f7 processCall processCallElements:start(String) #txt
 cs0 f7 requestActionDecl '<String city> param;' #txt
 cs0 f7 requestMappingAction 'param.city="Zug";
@@ -76,7 +72,6 @@ cs0 f7 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 cs0 f7 152 202 144 44 -64 -7 #rect
-cs0 f7 @|TriggerIcon #fIcon
 cs0 f8 expr out #txt
 cs0 f8 111 224 152 224 #arcP
 cs0 f5 expr out #txt
@@ -98,7 +93,6 @@ cs0 f2 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 cs0 f2 168 42 112 44 -36 -7 #rect
-cs0 f2 @|CallSubIcon #fIcon
 cs0 f6 expr out #txt
 cs0 f6 111 64 168 64 #arcP
 cs0 f9 expr out #txt

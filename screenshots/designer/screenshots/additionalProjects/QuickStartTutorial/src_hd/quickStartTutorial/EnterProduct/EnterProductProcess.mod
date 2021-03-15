@@ -1,5 +1,5 @@
 [Ivy]
-148655EC6EF98127 7.5.0 #module
+148655EC6EF98127 9.2.0 #module
 >Proto >Proto Collection #zClass
 Es0 EnterProductProcess Big #zClass
 Es0 RD #cInfo
@@ -36,9 +36,7 @@ Es0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 Es0 f0 83 51 26 26 -29 15 #rect
-Es0 f0 @|UdInitIcon #fIcon
 Es0 f1 339 51 26 26 0 12 #rect
-Es0 f1 @|UdProcessEndIcon #fIcon
 Es0 f3 guid 148655EC70D9F08E #txt
 Es0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
@@ -48,15 +46,12 @@ Es0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 Es0 f3 83 147 26 26 -15 12 #rect
-Es0 f3 @|UdEventIcon #fIcon
 Es0 f4 211 147 26 26 0 12 #rect
-Es0 f4 @|UdExitEndIcon #fIcon
 Es0 f5 expr out #txt
 Es0 f5 109 160 211 160 #arcP
 Es0 f6 actionTable 'out=in;
 ' #txt
 Es0 f6 168 42 112 44 0 -8 #rect
-Es0 f6 @|StepIcon #fIcon
 Es0 f7 expr out #txt
 Es0 f7 109 64 168 64 #arcP
 Es0 f2 expr out #txt
@@ -64,7 +59,6 @@ Es0 f2 280 64 339 64 #arcP
 >Proto Es0 .type quickStartTutorial.EnterProduct.EnterProductData #txt
 >Proto Es0 .processKind HTML_DIALOG #txt
 >Proto Es0 -8 -8 16 16 16 26 #rect
->Proto Es0 '' #fIcon
 Es0 f3 mainOut f5 tail #connect
 Es0 f5 head f4 mainIn #connect
 Es0 f0 mainOut f7 tail #connect

@@ -1,5 +1,5 @@
 [Ivy]
-167C6BD0817F2889 7.5.0 #module
+167C6BD0817F2889 9.2.0 #module
 >Proto >Proto Collection #zClass
 el0 exampleWsProcess Big #zClass
 el0 WS #cInfo
@@ -42,9 +42,7 @@ el0 ws0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ' #txt
 el0 ws0 @C|.responsibility Everybody #txt
 el0 ws0 81 49 30 30 -15 17 #rect
-el0 ws0 @|StartWSIcon #fIcon
 el0 ws1 337 49 30 30 0 15 #rect
-el0 ws1 @|EndWSIcon #fIcon
 el0 f0 expr out #txt
 el0 f0 111 64 337 64 #arcP
 >Proto el0 .webServiceName screenshot.project.exampleWsCall #txt
@@ -52,6 +50,5 @@ el0 f0 111 64 337 64 #arcP
 >Proto el0 .type screenshot.project.Order #txt
 >Proto el0 .processKind WEB_SERVICE #txt
 >Proto el0 -8 -8 16 16 16 26 #rect
->Proto el0 '' #fIcon
 el0 ws0 mainOut f0 tail #connect
 el0 f0 head ws1 mainIn #connect

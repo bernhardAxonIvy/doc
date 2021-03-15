@@ -1,5 +1,5 @@
 [Ivy]
-1690A66F13A54F43 7.5.0 #module
+1690A66F13A54F43 9.2.0 #module
 >Proto >Proto Collection #zClass
 Is0 IvyScriptProcess Big #zClass
 Is0 B #cInfo
@@ -32,9 +32,7 @@ Is0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ' #txt
 Is0 f0 @C|.responsibility Everybody #txt
 Is0 f0 81 49 30 30 -25 17 #rect
-Is0 f0 @|StartRequestIcon #fIcon
 Is0 f1 337 49 30 30 0 15 #rect
-Is0 f1 @|EndIcon #fIcon
 Is0 f3 dialogId screenshot.project.exampleHtmlDialog #txt
 Is0 f3 startMethod start(screenshot.project.Data) #txt
 Is0 f3 requestActionDecl '<screenshot.project.Data data> param;' #txt
@@ -55,7 +53,6 @@ Is0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 Is0 f3 168 42 112 44 -49 -7 #rect
-Is0 f3 @|UserTaskIcon #fIcon
 Is0 f4 expr out #txt
 Is0 f4 111 64 168 64 #arcP
 Is0 f2 expr in #txt

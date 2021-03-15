@@ -1,5 +1,5 @@
 [Ivy]
-167C7307A5664620 7.5.0 #module
+167C7307A5664620 9.2.0 #module
 >Proto >Proto Collection #zClass
 es0 taskEventAndGateway Big #zClass
 es0 B #cInfo
@@ -60,9 +60,7 @@ es0 f5 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ' #txt
 es0 f5 @C|.responsibility Everybody #txt
 es0 f5 81 49 30 30 -24 19 #rect
-es0 f5 @|StartRequestIcon #fIcon
 es0 f6 337 49 30 30 0 15 #rect
-es0 f6 @|EndIcon #fIcon
 es0 f9 actionTable 'out=in1;
 ' #txt
 es0 f9 outLinks "TaskA.ivp" #txt
@@ -90,7 +88,6 @@ es0 f9 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 es0 f9 208 48 32 32 -60 17 #rect
-es0 f9 @|TaskSwitchIcon #fIcon
 es0 f7 expr out #txt
 es0 f7 type screenshot.project.Data #txt
 es0 f7 var in1 #txt
@@ -100,7 +97,6 @@ es0 f8 expr data #txt
 es0 f8 outCond ivp=="TaskA.ivp" #txt
 es0 f8 240 64 337 64 #arcP
 es0 f0 337 145 30 30 0 15 #rect
-es0 f0 @|EndIcon #fIcon
 es0 f2 outLink axonTimeline2.ivp #txt
 es0 f2 inParamDecl '<> param;' #txt
 es0 f2 requestEnabled true #txt
@@ -124,7 +120,6 @@ es0 f2 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ' #txt
 es0 f2 @C|.responsibility Everybody #txt
 es0 f2 81 145 30 30 -24 19 #rect
-es0 f2 @|StartRequestIcon #fIcon
 es0 f10 dialogId com.acme.PersonEditor #txt
 es0 f10 startMethod start(ch.ivyteam.test.Person) #txt
 es0 f10 requestActionDecl '<ch.ivyteam.test.Person person> param;' #txt
@@ -152,7 +147,6 @@ es0 f10 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 es0 f10 168 138 112 44 -45 -7 #rect
-es0 f10 @|UserTaskIcon #fIcon
 es0 f1 expr out #txt
 es0 f1 type screenshot.project.Data #txt
 es0 f1 var in1 #txt
@@ -171,9 +165,7 @@ TaskA.SKIP_TASK_LIST=false
 TaskA.TYPE=0' #txt
 es0 f4 template "" #txt
 es0 f4 209 241 30 30 0 16 #rect
-es0 f4 @|TaskSwitchSimpleIcon #fIcon
 es0 f11 337 241 30 30 0 15 #rect
-es0 f11 @|EndIcon #fIcon
 es0 f12 outLink axonTimeline22.ivp #txt
 es0 f12 inParamDecl '<> param;' #txt
 es0 f12 requestEnabled true #txt
@@ -197,7 +189,6 @@ es0 f12 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ' #txt
 es0 f12 @C|.responsibility Everybody #txt
 es0 f12 81 241 30 30 -24 19 #rect
-es0 f12 @|StartRequestIcon #fIcon
 es0 f13 expr out #txt
 es0 f13 type screenshot.project.Data #txt
 es0 f13 var in1 #txt
@@ -228,9 +219,7 @@ es0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ' #txt
 es0 f3 @C|.responsibility Everybody #txt
 es0 f3 81 433 30 30 -25 17 #rect
-es0 f3 @|StartRequestIcon #fIcon
 es0 f16 337 433 30 30 0 15 #rect
-es0 f16 @|EndIcon #fIcon
 es0 f17 dialogId screenshot.project.exampleHtmlDialog #txt
 es0 f17 startMethod start(screenshot.project.Data) #txt
 es0 f17 requestActionDecl '<screenshot.project.Data data> param;' #txt
@@ -253,7 +242,6 @@ es0 f17 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 es0 f17 152 426 144 44 -65 -7 #rect
-es0 f17 @|UserTaskIcon #fIcon
 es0 f18 expr out #txt
 es0 f18 type screenshot.project.Data #txt
 es0 f18 var in1 #txt
@@ -278,9 +266,7 @@ es0 f20 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ' #txt
 es0 f20 @C|.responsibility Everybody #txt
 es0 f20 81 337 30 30 -29 17 #rect
-es0 f20 @|StartRequestIcon #fIcon
 es0 f21 337 337 30 30 0 15 #rect
-es0 f21 @|EndIcon #fIcon
 es0 f22 dialogId screenshot.project.exampleHtmlDialog #txt
 es0 f22 startMethod start(screenshot.project.Data) #txt
 es0 f22 requestActionDecl '<screenshot.project.Data data> param;' #txt
@@ -297,7 +283,6 @@ es0 f22 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 es0 f22 168 330 112 44 -50 -7 #rect
-es0 f22 @|UserTaskIcon #fIcon
 es0 f23 expr out #txt
 es0 f23 type screenshot.project.Data #txt
 es0 f23 var in1 #txt

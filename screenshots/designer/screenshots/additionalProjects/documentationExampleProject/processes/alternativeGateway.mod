@@ -1,5 +1,5 @@
 [Ivy]
-16B9DA1B2A591E8C 7.5.0 #module
+16B9DA1B2A591E8C 9.2.0 #module
 >Proto >Proto Collection #zClass
 cs0 alternativeGateway Big #zClass
 cs0 B #cInfo
@@ -36,11 +36,8 @@ cs0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ' #txt
 cs0 f0 @C|.responsibility Everybody #txt
 cs0 f0 81 49 30 30 -25 17 #rect
-cs0 f0 @|StartRequestIcon #fIcon
 cs0 f1 209 145 30 30 0 15 #rect
-cs0 f1 @|EndIcon #fIcon
 cs0 f2 208 48 32 32 0 16 #rect
-cs0 f2 @|AlternativeIcon #fIcon
 cs0 f3 expr out #txt
 cs0 f3 111 64 208 64 #arcP
 cs0 f4 dialogId screenshot.project.exampleHtmlDialog #txt
@@ -58,7 +55,6 @@ cs0 f4 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 cs0 f4 296 42 112 44 -36 -7 #rect
-cs0 f4 @|UserDialogIcon #fIcon
 cs0 f5 dialogId screenshot.project.exampleHtmlDialog #txt
 cs0 f5 startMethod start(screenshot.project.Data) #txt
 cs0 f5 requestActionDecl '<screenshot.project.Data data> param;' #txt
@@ -74,7 +70,6 @@ cs0 f5 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 cs0 f5 296 106 112 44 -43 -7 #rect
-cs0 f5 @|UserDialogIcon #fIcon
 cs0 f6 expr in #txt
 cs0 f6 outCond 'in.quantity >= 100' #txt
 cs0 f6 240 64 296 64 #arcP

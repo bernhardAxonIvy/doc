@@ -1,5 +1,5 @@
 [Ivy]
-1562D1CBAC49CCF8 7.5.0 #module
+1562D1CBAC49CCF8 9.2.0 #module
 >Proto >Proto Collection #zClass
 es0 exampleProcess Big #zClass
 es0 B #cInfo
@@ -51,9 +51,7 @@ es0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ' #txt
 es0 f0 @C|.responsibility Secretary #txt
 es0 f0 81 49 30 30 -21 17 #rect
-es0 f0 @|StartRequestIcon #fIcon
 es0 f1 337 49 30 30 0 15 #rect
-es0 f1 @|EndIcon #fIcon
 es0 f3 dialogId com.acme.PersonEditor #txt
 es0 f3 startMethod start(ch.ivyteam.test.Person) #txt
 es0 f3 requestActionDecl '<ch.ivyteam.test.Person person> param;' #txt
@@ -74,7 +72,6 @@ es0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 es0 f3 168 42 112 44 -48 -7 #rect
-es0 f3 @|UserDialogIcon #fIcon
 es0 f4 expr out #txt
 es0 f4 111 64 168 64 #arcP
 es0 f2 expr out #txt

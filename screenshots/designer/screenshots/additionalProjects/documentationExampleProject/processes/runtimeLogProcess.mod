@@ -1,5 +1,5 @@
 [Ivy]
-1567F0BE1CC43932 7.5.0 #module
+1567F0BE1CC43932 9.2.0 #module
 >Proto >Proto Collection #zClass
 rs0 runtimeLogProcess Big #zClass
 rs0 B #cInfo
@@ -31,9 +31,7 @@ rs0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ' #txt
 rs0 f0 @C|.responsibility Everybody #txt
 rs0 f0 81 49 30 30 -21 17 #rect
-rs0 f0 @|StartRequestIcon #fIcon
 rs0 f1 337 49 30 30 0 15 #rect
-rs0 f1 @|EndIcon #fIcon
 rs0 f3 actionTable 'out=in;
 ' #txt
 rs0 f3 actionCode 'ivy.log.error("This is an error");
@@ -55,7 +53,6 @@ rs0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 rs0 f3 168 42 112 44 -17 -8 #rect
-rs0 f3 @|StepIcon #fIcon
 rs0 f4 expr out #txt
 rs0 f4 111 64 168 64 #arcP
 rs0 f2 expr out #txt

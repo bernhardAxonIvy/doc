@@ -1,5 +1,5 @@
 [Ivy]
-16BADA40155E7401 7.5.0 #module
+16BADA40155E7401 9.2.0 #module
 >Proto >Proto Collection #zClass
 ee0 endPage Big #zClass
 ee0 B #cInfo
@@ -30,7 +30,6 @@ ee0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ' #txt
 ee0 f0 @C|.responsibility Everybody #txt
 ee0 f0 81 49 30 30 -25 17 #rect
-ee0 f0 @|StartRequestIcon #fIcon
 ee0 f1 template "endpage.xhtml" #txt
 ee0 f1 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
@@ -40,7 +39,6 @@ ee0 f1 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 ee0 f1 305 49 30 30 0 15 #rect
-ee0 f1 @|EndRequestIcon #fIcon
 ee0 f2 expr out #txt
 ee0 f2 111 64 305 64 #arcP
 >Proto ee0 .type screenshot.project.Data #txt

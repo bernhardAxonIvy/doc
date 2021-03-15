@@ -1,5 +1,5 @@
 [Ivy]
-167356B1245C7158 7.5.0 #module
+167356B1245C7158 9.2.0 #module
 >Proto >Proto Collection #zClass
 es0 exampleHtmlDialogProcess Big #zClass
 es0 RD #cInfo
@@ -37,9 +37,7 @@ es0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 es0 f0 83 51 26 26 -35 15 #rect
-es0 f0 @|UdInitIcon #fIcon
 es0 f1 211 51 26 26 0 12 #rect
-es0 f1 @|UdProcessEndIcon #fIcon
 es0 f2 expr out #txt
 es0 f2 109 64 211 64 #arcP
 es0 f3 guid 167356B127CB3D50 #txt
@@ -53,9 +51,7 @@ es0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 es0 f3 83 147 26 26 -16 12 #rect
-es0 f3 @|UdEventIcon #fIcon
 es0 f4 211 147 26 26 0 12 #rect
-es0 f4 @|UdExitEndIcon #fIcon
 es0 f5 expr out #txt
 es0 f5 109 160 211 160 #arcP
 es0 f6 guid 16B2C446B197B00C #txt
@@ -70,15 +66,12 @@ es0 f6 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 es0 f6 83 211 26 26 -66 15 #rect
-es0 f6 @|UdMethodIcon #fIcon
 es0 f7 211 211 26 26 0 12 #rect
-es0 f7 @|UdProcessEndIcon #fIcon
 es0 f8 expr out #txt
 es0 f8 109 224 211 224 #arcP
 >Proto es0 .type screenshot.project.exampleHtmlDialog.exampleHtmlDialogData #txt
 >Proto es0 .processKind HTML_DIALOG #txt
 >Proto es0 -8 -8 16 16 16 26 #rect
->Proto es0 '' #fIcon
 es0 f0 mainOut f2 tail #connect
 es0 f2 head f1 mainIn #connect
 es0 f3 mainOut f5 tail #connect
