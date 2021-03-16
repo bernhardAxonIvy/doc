@@ -19,3 +19,11 @@ mvn clean verify
 ### Screenshot Node
 
 Screenshots will be taken on **ZugPcScreenshot**. Will be automatically logged in as locadmin.
+
+
+
+## Run in RCPTT Tool
+
+new Aut with vm args: 
+-DadditionalProjects=${workspace_loc:documentation-screenshots-designer}/screenshots/additionalProjects 
+-DadditionalFiles=${workspace_loc:documentation-screenshots-designer}/screenshots/additionalFiles

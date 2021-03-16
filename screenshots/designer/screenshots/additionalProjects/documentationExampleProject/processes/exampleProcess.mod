@@ -25,7 +25,7 @@ es0 f0 triggerEnabled false #txt
 es0 f0 callSignature start(String) #txt
 es0 f0 persist false #txt
 es0 f0 startName 'Create new invoice' #txt
-es0 f0 startDescription 'Region: <%=param.city%>' #txt
+es0 f0 startDescription 'Region: City' #txt
 es0 f0 taskData 'TaskTriggered.CATEGORY=Personal/Tasks
 TaskTriggered.EXP=ivy.cal.getWorkDayIn(3).getDurationFromNow()
 TaskTriggered.EXPRI=2
