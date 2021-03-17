@@ -46,7 +46,7 @@ New app.yaml locations
 
 |tag-ops-changed|
 
-Towards highly configurable ivy projects we needed to move :file:`app.yaml` to new places
+Shifting towards highly configurable ivy projects we needed to move the :file:`app.yaml` to a new location
 in the Axon Ivy Engine.
 
 .. container:: admonition note toggle

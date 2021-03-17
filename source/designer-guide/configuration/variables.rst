@@ -3,17 +3,16 @@
 Variables
 =========
 
-Variables are simple key/value pairs which can be used in your application.
-Some examples for Variables are:
+Variables are dynamic key/value pairs which can be used to configure your application at runtime.
+So, by using Variables, rather than static texts, you can master the following scenarios at ease:
 
--  Customizing of workflow application
--  Multi-Tenancy
--  Settings
+-  Workflow-Application customizations (branding, multi-tenancy)
+-  Different runtime settings (staging vs. production) 
 -  Company data (name, address, contacts)
 -  Simple Rule Values (e.g. credit account)
 
-To see which Variables exists on the |ivy-engine| you can use the :ref:`Engine
-Cockpit Variables View <engine-cockpit-variables>`.
+To see and configure Variables at runtime, use the :ref:`Engine
+Cockpit Variables View <engine-cockpit-variables>` on the |ivy-engine|. 
 
 
 .. _variables-yaml:
@@ -74,8 +73,6 @@ Variable, if this is used in different software development stages ("testing",
 
 Access Variables
 ----------------
-
--> neu schreiben (neu var???) weil in ivvscript nutzbar -> überall nutzbar
 
 To access the Variables in your code, you can use the :public-api:`var
 </ch/ivyteam/ivy/environment/Ivy.html#var>` method. In :ref:`ivyscript`, you
