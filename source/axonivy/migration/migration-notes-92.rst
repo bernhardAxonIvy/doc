@@ -79,7 +79,8 @@ Rename Global Variables in app.yaml
 
 |tag-project-changed| |tag-ops-changed|
 
-The :code:`GlobalVariables` in the :ref:`app-yaml` are renamed to :code:`Variables`.
+The :code:`GlobalVariables` in the :ref:`app-yaml` are renamed to
+:code:`Variables`. This is done automatically by the system database migration.
 
 .. container:: admonition note toggle
 
@@ -127,18 +128,18 @@ the old to the new format for you.
 
     **Project:**
 
-    Global Variables are no longer defined using the :ref:‘configuration Editor’
-    but by the :ref:‘/config/variables.yaml’ within your project.
+    Global Variables are no longer defined using the :ref:`configuration-editor`
+    but by the :ref:`variables.yaml <variables-yaml>` within your project.
 
-    By running the latest :ref:project-migration in your designer, your existing
-    Global Variables are automatically migrated into the ‘variable.yaml’ files.
+    By running the latest :ref:`migration-project` in your designer, your existing
+    Global Variables are automatically migrated into the :file:`variable.yaml` files.
 
     **Operation:**
 
     We have dropped the system database table :code:`IWA_GlobalVariables` and
     migrated this data to the :ref:`app-yaml`. We recommend that you
     :ref:`migrate your projects <migration-project>` and redeploy them to your
-    engine. If you used you :ref:`app-yaml` to override your Global Varaibles,
+    engine. If you used you :ref:`app-yaml` to override your Global Variables,
     please be also informed about the change:
     :ref:`migrate-91-92-app-env-support`.
 

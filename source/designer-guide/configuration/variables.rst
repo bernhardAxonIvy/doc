@@ -16,6 +16,8 @@ To see which Variables exists on the |ivy-engine| you can use the :ref:`Engine
 Cockpit Variables View <engine-cockpit-variables>`.
 
 
+.. _variables-yaml:
+
 Editor
 ------
 
@@ -63,7 +65,11 @@ You can override the default value of a Variable for a particular
 :file:`<project>/config/_<environment>/variables.yaml` file and defining your
 Variables in there. This can be useful if you need different values for the same
 Variable, if this is used in different software development stages ("testing",
-"productive").
+"productive"). You don't have to provide the metadata (e.g description) again:
+
+.. literalinclude:: includes/variables_env.yaml
+   :language: yaml
+   :linenos: 
 
 
 Access Variables
