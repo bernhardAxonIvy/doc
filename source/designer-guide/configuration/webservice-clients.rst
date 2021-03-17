@@ -65,6 +65,11 @@ The following attributes are available in the *Web Service* Section:
   The name attribute specifies the displayed name of a web service
   configuration. The name is not used as identifier, so it can be
   changed at any time.
+  
+- :guilabel:`Icon`
+  Choose an icon that represents the system that this web service
+  communicates with. The icon will also be used as decorator icon on 
+  Web Service process elements that references this web service.  
 
 - :guilabel:`Description`
   Description of the web service. This field is for documentation
