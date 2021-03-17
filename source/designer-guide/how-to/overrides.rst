@@ -16,8 +16,8 @@ redefinitions:
    Configurations): Simply define an already existing artifact with the
    same name again in a different project.
 
--  Redefinition with environments (e.g. for Databases, Web Services,
-   Global Variables): Redefine values and properties of global artifacts
+-  Redefinition with environments (e.g. for Databases, Web Services): Redefine
+   values and properties of global artifacts
    depending on the execution context.
 
 -  Redefinition with overrides (e.g. for Html Dialogs, Html Dialog components

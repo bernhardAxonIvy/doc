@@ -54,21 +54,13 @@ Web Service
 Stores and access data in external systems by using web services.
 More information can be found in the chapter :ref:`process-element-web-service-call-activity`.
 
-Global Variables
-----------------
+Variables
+---------
 
-Stores simple name/value configuration pairs. A global variable can have
-a different value per environment. On the engine there is a UI to change
-the values of a global variable.
-More information can be found in the chapter :ref:`global-variables`.
-
-Application Custom Properties
------------------------------
-
-Stores simple name/value pairs. Good alternative for storing small
-amount of data instead using a database.
-More information can be found in the Public API
-:public-api:`ICustomProperties </ch/ivyteam/ivy/application/property/ICustomProperties.html>`.
+Stores simple name/value configuration pairs. A Variable can have a different
+value per environment. On the |ivy-engine| there is a :ref:`UI
+<engine-cockpit-variables>` to change the values of a Variable. More information
+can be found in the chapter :ref:`variables`.
 
 User Properties
 ---------------
@@ -99,9 +91,7 @@ Summary
 +-------------------------------+------------+----------------------+--------------+------------+----------------+-------------+-----------+-----------+
 | Persistency                   | no         | yes                  | yes          | yes        | no             | yes         | no        | Expert    |
 +-------------------------------+------------+----------------------+--------------+------------+----------------+-------------+-----------+-----------+
-| Global Variables              | no         | yes                  | yes          | yes        | no             | yes         | yes       | Advanced  |
-+-------------------------------+------------+----------------------+--------------+------------+----------------+-------------+-----------+-----------+
-| Application Custom Properties | no         | no                   | no           | yes        | no             | no          | no        | Advanced  |
+| Variables                     | no         | yes                  | yes          | yes        | no             | yes         | yes       | Advanced  |
 +-------------------------------+------------+----------------------+--------------+------------+----------------+-------------+-----------+-----------+
 | User Properties               | no         | no                   | no           | yes        | no             | no          | no        | Advanced  |
 +-------------------------------+------------+----------------------+--------------+------------+----------------+-------------+-----------+-----------+

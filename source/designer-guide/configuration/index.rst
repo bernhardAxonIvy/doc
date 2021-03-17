@@ -9,7 +9,7 @@ configuration editor and the various configuration types.
 
    configuration
    environments
-   global-variables
+   variables
    database
    rest-clients
    webservice-clients

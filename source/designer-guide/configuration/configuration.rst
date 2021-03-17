@@ -7,7 +7,7 @@ Axon Ivy allows for individual configuration of many of its features,
 specifically for the following:
 
 -  :ref:`configuration-environments`
--  :ref:`global-variables`
+-  :ref:`variables`
 -  :ref:`Output Format <configuration-types>`
 
 The specifics of the above described :ref:`configuration-types` are

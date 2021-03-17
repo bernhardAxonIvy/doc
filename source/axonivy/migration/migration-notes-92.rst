@@ -4,6 +4,21 @@ Migrating from 9.1 to 9.2
 =========================
 
 
+.. _migrate-91-92-project-version:
+
+New project version
+*******************
+
+|tag-ops-changed|
+
+Due to the migration of the :ref:`Global Variable
+<migrate-91-92-globalvar-migration>`, we introducing a new project version
+:code:`92000`. If you want to deploy a project to a |ivy-engine| 9.2, your
+project must be in this version. If you have a running project, it should still
+be able to run, but :ref:`we recommend migrating your projects
+<migration-project>` to the new version and redeploying them to your engine.
+
+
 Business Case Lifecycle
 ***********************
 
@@ -31,7 +46,7 @@ New app.yaml locations
 
 |tag-ops-changed|
 
-Towards highly configurable ivy projects we needed to move :file:`app.yaml` to new places
+Shifting towards highly configurable ivy projects we needed to move the :file:`app.yaml` to a new location
 in the Axon Ivy Engine.
 
 .. container:: admonition note toggle
@@ -59,12 +74,13 @@ in the Axon Ivy Engine.
     supported at the moment.
 
 
-Rename GlobalVariables in app.yaml
-**********************************
+Rename Global Variables in app.yaml
+***********************************
 
 |tag-project-changed| |tag-ops-changed|
 
-The :code:`GlobalVariables` in the :ref:`app-yaml` are renamed to :code:`Variables`.
+The :code:`GlobalVariables` in the :ref:`app-yaml` are renamed to
+:code:`Variables`. This is done automatically by the system database migration.
 
 .. container:: admonition note toggle
 
@@ -87,6 +103,59 @@ The :code:`GlobalVariables` in the :ref:`app-yaml` are renamed to :code:`Variabl
 
       Variables:
         myVariable: value
+
+
+.. _migrate-91-92-globalvar-migration:
+
+Global Variables in yaml files
+******************************
+
+|tag-ops-changed| |tag-project-changed|
+
+Global Variables are stored in new locations. While developing the project
+the Variables are now stored in the :ref:`variables.yaml <variables>`. On the
+|ivy-engine| Global Variables have been moved from the System Database to the
+:ref:`app-yaml`. Even so, database and project migrations do the conversion from
+the old to the new format for you.
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Details**
+
+  .. container:: detail 
+
+    **Project:**
+
+    Global Variables are no longer defined using the :ref:`configuration-editor`
+    but by the :ref:`variables.yaml <variables-yaml>` within your project.
+
+    By running the latest :ref:`migration-project` in your designer, your existing
+    Global Variables are automatically migrated into the :file:`variable.yaml` files.
+
+    **Operation:**
+
+    We have dropped the system database table :code:`IWA_GlobalVariables` and
+    migrated this data to the :ref:`app-yaml`. We recommend that you
+    :ref:`migrate your projects <migration-project>` and redeploy them to your
+    engine. If you used you :ref:`app-yaml` to override your Global Variables,
+    please be also informed about the change:
+    :ref:`migrate-91-92-app-env-support`.
+
+
+.. _migrate-91-92-app-env-support:
+
+App yaml with environment support
+*********************************
+
+|tag-ops-changed|
+
+As we now :ref:`support Environments for our app.yaml
+<advanced-config-env-overriding>`, the :ref:`app-yaml` will no longer override
+all environment values. If you want to override a value for a specific
+environment, define this value in the :file:`_<environment>/app.yaml` file
+besides the normal :file:`app.yaml` file.
 
 
 Custom Application Properties API deprecated

@@ -362,8 +362,8 @@ the objects are described in the :public-api:`Public API </>`):
    and :ref:`persistence-api` for more information about the API of the
    :ref:`Persistence <persistence>`)
 
--  ``var`` - references to the global variables that are defined for
-   this application (see :ref:`global-variables` for more information)
+-  ``var`` - references to the variables that are defined for
+   this application (see :ref:`variables` for more information)
 
 -  ``rules`` - references to the :ref:`rule engine integration <rule-engine>` within Axon Ivy.
 

@@ -45,8 +45,8 @@ Write a Unit Test
 ~~~~~~~~~~~~~~~~~
 
 Here we test a class called ``OrderUtil``. This class needs access to different
-``Ivy`` resources like ``global variables``. Without properly setting up the
-``Ivy`` environment we would have to mock all those resources.
+``Ivy`` resources like :ref:`Variables <variables>`. Without properly setting up
+the ``Ivy`` environment we would have to mock all those resources.
 
 .. literalinclude:: includes/unittesting/unittesting-test-extend.java
   :language: java
@@ -61,11 +61,12 @@ Here we test a class called ``OrderUtil``. This class needs access to different
 Change application runtime
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For some test cases, you may need to change the environment or use a different
-value for a global variable. In this case use ``AppFixture`` to change the
-value. The value gets automatically reset to the original value after test
-execution. All you have to do is to tell the test that you want an instance of
-the :code:`AppFixure` class. Let's have a look at it:
+For some test cases, you may need to change the
+:ref:`Environment <configuration-environments>` or use a different value for a
+:ref:`Variable <variables>`. In this case use ``AppFixture`` to change the value. 
+The value gets automatically reset to the original value after the test execution. 
+All you have to do is to tell the test that you want an instance of the
+:code:`AppFixure` class. Let's have a look at it:
 
 .. literalinclude:: includes/unittesting/unittesting-test-fixure-var.java
   :language: java

@@ -1,0 +1,27 @@
+Variables:
+  # This is the description for the variable myVariable
+  myVariable: value
+
+  # This is another description for a boolean variable
+  booleanVar: false
+
+  # This is number variable
+  numberVar: 123456
+
+  # This is a password variable
+  # [password]
+  password: test
+
+  # This is a daytime variable
+  # [daytime]
+  daytime: '10:30'
+
+  # This is a enum variable with possible predefined values
+  # [enum: hi, hello, hallo]
+  enum: hi
+
+  # This is a file variable. 
+  # The value of this variable is defined in an external file (variables/file.json).
+  # The file extensions 'json' and 'txt' are supported at this moment.
+  # [file: json]
+  file: 

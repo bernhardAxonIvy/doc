@@ -1,7 +1,7 @@
 @Test
 void products_globalVariable(AppFixture fixture)
 {
-  /* The AppFixture can manipulate global variables. */
+  /* The AppFixture can manipulate variables. */
   fixture.var("table", "799.95");
   
   assertThat(OrderUtil.getProducts()).hasSize(2);
