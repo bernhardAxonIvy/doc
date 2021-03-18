@@ -62,6 +62,10 @@ databases you use in your project and the extending projects.
 
   The field :guilabel:`Max Connections` lets you specify the number of
   concurrent connections to your database.
+  
+  Choose an :guilabel:`Icon` that represents the database. 
+  The icon will also be used as decorator icon on 
+  Database process elements that references this database.  
 
 - :guilabel:`Connection Properties`
   Specify the properties for the connection to your database.
