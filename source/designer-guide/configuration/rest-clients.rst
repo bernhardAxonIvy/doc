@@ -128,12 +128,20 @@ Click the *Generate REST classes* button to start the wizard.
 
 .. figure:: /_images/designer-configuration/rest-client-generator-wizard.png
 
+
 **Migrate to OpenAPI**
 
-OpenAPI isn't the only popular format to describe REST service capabilities. 
-However, there are converters around to turn other specifications into an OpenAPI compliant JSON.
+OpenAPI isn't the only popular format to describe REST service capabilities.
 
-- Web-converter: `lucybot <https://lucybot-inc.github.io/api-spec-converter/>`__
+You may need to integrate an `OData service <https://www.odata.org/>`__ then you
+can convert your OData service description with our `OData converter
+<http://odata-converter.axonivy.com>`__. The service description is usually
+available under the given service url ending with :code:`$metadata` e.g.
+:code:`https://myService/cars/$metadata`
+
+If you have other types of service description then you may have a look at
+`lucybot <https://lucybot-inc.github.io/api-spec-converter/>`__ which is able to
+convert many other specifications to OpenAPI.
 
 
 Authentication Section
