@@ -62,6 +62,7 @@
                 <vmArgs>
                   <vmArg>-DadditionalProjects=${additionalProjects}</vmArg>
                   <vmArg>-DadditionalFiles=${additionalFiles}</vmArg>
+                  <vmArg>-noverify</vmArg>
                 </vmArgs>
               </aut>
             </configuration>
