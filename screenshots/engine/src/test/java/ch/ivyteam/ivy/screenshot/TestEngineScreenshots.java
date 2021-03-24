@@ -60,16 +60,17 @@ public class TestEngineScreenshots
     loginToPortal("demo");
     $(By.id("process-widget:create-express-workflow")).waitUntil(visible, 60000);
     takeScreenshot("engine-portal-starts", 300);
-    
+
     defineProcessProperties();
     defineProcessStep();
     defineSecondProcessStep();
     takeScreenshot("engine-portal-express", 900);
     $(By.id("form:save")).shouldBe(visible).click();
     $(".home-page-container").shouldBe(visible);
-    
+
     open(EngineUrl.create().path("starts").toUrl());
-    $$(".js-process-start-list-item > form > .process-item").find(text("Setup Axon.ivy Engine")).shouldBe(visible).click();
+    $(".process-input-switch-selection").click();
+    $$(".js-process-start-list-item > form > .process-item").find(text("Setup Axon Ivy Engine")).shouldBe(visible).click();
     $(By.id("form:user-task-dyna-form")).find("textarea").shouldBe(visible).sendKeys("Hi");
     $(By.id("form:ok-btn")).shouldBe(visible).click();
     
@@ -101,8 +102,8 @@ public class TestEngineScreenshots
   private void defineProcessProperties()
   {
     $(By.id("process-widget:create-express-workflow")).click();
-    $(By.id("form:process-name")).shouldBe(visible).sendKeys("Setup Axon.ivy Engine");
-    $(By.id("form:process-description")).shouldBe(visible).sendKeys("Please setup a new Axon.ivy Engine on your prod server!");
+    $(By.id("form:process-name")).shouldBe(visible).sendKeys("Setup Axon Ivy Engine");
+    $(By.id("form:process-description")).shouldBe(visible).sendKeys("Please setup a new Axon Ivy Engine on your prod server!");
     $(By.id("form:user-interface-type")).shouldBe(visible).click();
     $(By.id("delete-all-defined-tasks-warning-ok")).shouldBe(visible).click();
   }
