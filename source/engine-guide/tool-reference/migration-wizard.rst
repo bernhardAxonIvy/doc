@@ -11,11 +11,11 @@ Please consult the :ref:`migration` chapter for details instructions when to use
 
 **Start**
 
-.. figure:: /_images/engine-cockpit/engine-cockpit-maintenance.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-setup-intro.png
 
 #. :ref:`Start <control-center>` a new yet untouched |ivy-engine|.
 #. Browse to URI where the engine runs: e.g. http://localhost:8080 .
-#. Choose ``Setup Wizard`` -> ``Migration Wizard`` in your Browser.
+#. Choose ``Setup Wizard`` -> ``Migration Engine`` in your Browser.
    
 **Usage**
 
