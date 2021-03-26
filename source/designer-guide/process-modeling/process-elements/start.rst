@@ -117,8 +117,11 @@ Custom Fields
    the :public-api:`IWebStartable </ch/ivyteam/ivy/workflow/start/IWebStartable.html>` interface to allow sorting, filtering or 
    displaying additional information in start lists
    
-   To display an icon for a start on start lists configure
-   the ``cssIcon`` custom field.     
+   .. tip::
+
+      To display an icon for a start on start lists configure the ``cssIcon``
+      custom field. You can find a list of possible icons in the :ref:`Html
+      Dialog Demos <importing-demo-projects>`.
 
 Responsible Role
    Users which want to start the process must be assigned to this role.
