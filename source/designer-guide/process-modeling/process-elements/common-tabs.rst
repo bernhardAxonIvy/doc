@@ -167,8 +167,8 @@ Definition of input parameters
    order or the type, changes also the signature. All referenced
    elements have to be updated. The list may be left empty if the
    operation does not require any input parameters. To add a new
-   parameter, click the green plus icon and specify the name and type of
-   the parameter.
+   parameter, click the green plus icon and specify the name, type 
+   and description of the parameter.
 
 Mapping of input parameters
    The input parameters defined above are available as fields on the
@@ -208,7 +208,12 @@ Code
    the process data. The internal process data is hidden and
    encapsulated from the environment. This makes it impossible to inject
    unintended, insecure data into the process data.
-
+   
+Tags   
+   Tag the element as ``DEPRECATED`` or ``CONNECTOR``. 
+   If you tag a start as ``DEPRECATED`` then all Call Subs elements that use it will issue a deprecation validation warning.
+   If you tag a start as ``CONNECTOR`` it will be displayed in the Connector Dialog.
+   Tags are only available for Sub Process Start elements.    
 
 .. _process-element-tab-result:
 
@@ -228,7 +233,7 @@ Output Parameters
    This table is used to define the output parameters of the operation.
    The list may be left empty if the operation does not return any data.
    To add a new parameter, click the green plus icon and specify the
-   name and type of the parameter.
+   name, type and description of the parameter.
 
 Mapping of process data
    For each defined output parameter you must now specify the value that
