@@ -129,6 +129,8 @@ Click the *Generate REST classes* button to start the wizard.
 .. figure:: /_images/designer-configuration/rest-client-generator-wizard.png
 
 
+.. _rest-clients-openapi-migrate:
+
 **Migrate to OpenAPI**
 
 OpenAPI isn't the only popular format to describe REST service capabilities.
