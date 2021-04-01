@@ -34,8 +34,8 @@ Process Call Tab
 
 In this tab you choose the process to be called and map process data
 attributes to the input parameters of the called process. You can use
-any IvyScript expression in the parameter mapping.
-
+any IvyScript expression in the parameter mapping. 
+Use the tooltip of a parameter to get the parameter description. 
 
 .. include:: _tab-output.rst
 
