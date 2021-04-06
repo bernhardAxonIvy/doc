@@ -361,34 +361,6 @@ MySQL 5.5. We recommend to upgrade to MySQL 8.
 
 
 
-Coerce to zero in JSF
-*********************
-
-|tag-project-changed|
-
-We now use the JSF standard and do not coerce to zero anymore
-for number value objects like :code:`java.lang.Integer` or
-:code:`java.lang.Double`.
-  
-.. container:: admonition note toggle
-
-  .. container:: admonition-title header
-
-     **Details**
-  
-  We now use the JSF standard for :code:`org.apache.el.parser.COERCE_TO_ZERO` which is
-  by default :code:`false`. This means that number value objects like :code:`java.lang.Integer` or
-  :code:`java.lang.Double` are no longer coerced to zero (0) if they are :code:`null`. They will
-  stay :code:`null`. Be aware that in Ivy script auto initialization happens if the value object
-  is :code:`null`, which will turn the value to :code:`0`. This does not effect primitive numbers like
-  :code:`int` or :code:`double`. For a deeper discussion about this topic, read this widely acclaimed
-  article on the web: https://balusc.omnifaces.org/2015/10/the-empty-string-madness.html.
-
-  You are still able to set :code:`org.apache.el.parser.COERCE_TO_ZERO` to :code:`true` in
-  :ref:`jvm-options`. 
-
-
-
 Enabled JavaTime module for Rest Clients by default
 ***************************************************
 
