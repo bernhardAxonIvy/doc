@@ -216,7 +216,7 @@ HTTPS directly on the Axon Ivy Engine then you need to set the property
 Frontend config combined into BaseUrl
 *************************************
 
-|tag-ops-changed|
+|tag-ops-changed| |tag-ops-wizard|
 
 The configuration of the frontend url in :ref:`ivy.yaml <ivy-yaml>` has been
 simplified. You need to define now the :code:`BaseUrl` in your :file:`ivy.yaml`.
