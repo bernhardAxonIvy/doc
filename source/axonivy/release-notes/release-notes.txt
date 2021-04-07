@@ -13,6 +13,357 @@ We suggest to install this release if you are suffering from any of these issues
 
 @changelog@
 
+Changes in 9.2.0, 07.04.2021
+--------------------------------------------------------------------------------
+
+We suggest to install this release if you are suffering from any of these issues.
+
++ XIVY-1227       Story          User defined decorator icon on process steps (especially for PI elements)
++ XIVY-2099       Story          Upgrade Hibernate ORM to 5.x and Hibernate Validator to 6.x
++ XIVY-2588       Story          Create new rule call process element
++ XIVY-2757       Story          Explain how to operate a secure Axon.ivy Engine
++ XIVY-2865       Story          Split commons.lib in multiple library bundles
++ XIVY-3007       Story          UI support to send files with the RestClientCall activity
++ XIVY-3015       Story          Change default proxy server forwarding from ajp to url rewrite
++ XIVY-3031       Story          Implement monitoring into Engine-Cockpit
++ XIVY-3209       Story          Remove IvyProject Conversion before 5.0
++ XIVY-3241       Story          Simplify business calendar view in Engine Cockpit
++ XIVY-3445       Story          Update Drools DRL editor to newest version
++ XIVY-3507       Story          Migrate to new Engine with a simple Setup-Wizard
++ XIVY-3508       Story          Generate POJOs based on REST service meta data 
++ XIVY-3509       Story          Ease selection of resources and methods from OpenAPI services
++ XIVY-3518       Story          Concept how to migrate custom application properties to app.yaml
++ XIVY-3532       Story          Bundled Elasticsearch should be started on Engine if Portal is installed
++ XIVY-3599       Story          Drop legacy jTDS Driver for Microsoft SQL Server
++ XIVY-3601       Story          Research Native Azure Active Directory Support
++ XIVY-3852       Story          Support DMN files for our Rule Engine
++ XIVY-4016       Story          Prototype better business case solution
++ XIVY-4019       Story          Core and project REST services should provide OpenAPI based documentation
++ XIVY-4046       Story          Common approach to handle OAuth2 Rest Clients
++ XIVY-4049       Story          Allow users to define an ICON for Rest Client definitions
++ XIVY-4050       Story          Prototype Connectors marketplace with Designer import capability
++ XIVY-4069       Story          Streamline approach to scan classes: Glassgraph for REST resources
++ XIVY-4077       Story          Add rule engine demo tests
++ XIVY-4148       Story          Show in application tree on the parent if a child is not running or if there are missing dependencies
++ XIVY-4155       Story          Enhance process start with category
++ XIVY-4157       Story          Provide an unique identifier for IWebStartable
++ XIVY-4165       Story          Video tutorial for Testing
++ XIVY-4182       Story          Simplify usage of LDAP(s) connections to Active Directory
++ XIVY-4206       Story          Flag to disable daily synchronization on an external SecuritySystem
++ XIVY-4293       Story          Remove legacy Event Log
++ XIVY-4389       Story          Upgrade Eclipse targetplatfrom to 2021-03
++ XIVY-4392       Story          Remove cluster node configurations from system database
++ XIVY-4393       Story          Upgrade to latest JGroup 5.0
++ XIVY-4443       Story          SSO with OAuth/OpenId and SAML with Keycloak as Idendity Provider demo for docker-samples
++ XIVY-4476       Story          Update ivy-core-thirdparty-libs
++ XIVY-4512       Story          Standard REST serialization feature to ommit NULL values
++ XIVY-4519       Story          Signed AxonIvyDesigner.app to avoid Gatekeeper warnings
++ XIVY-4528       Story          Reliable Inscription Editor on Mac Designer
++ XIVY-4554       Story          Better handling of long user/role property values
++ XIVY-4557       Story          Simplify necessary casts when workings with Ivy.persistence Queries
++ XIVY-4558       Story          Improve SOAP web service lists by displaying main endpoint instead of WSDL URL
++ XIVY-4568       Story          MappingTable for REST activity request-/response- data
++ XIVY-4569       Story          API to read valid OpenAPI schema resource requests
++ XIVY-4607       Story          Move cockpit service monitors to detail view sidebar
++ XIVY-4613       Story          Auto scale values in engine cockpit monitoring graphs
++ XIVY-4618       Story          Remove IIvyProjectClassLoader interfaces
++ XIVY-4651       Story          Provide API to get task of html dialog running in a html frame from outside the html frame (Portal)
++ XIVY-4652       Story          Provide an API to get available custom field names 
++ XIVY-4674       Story          Support baseURL variables when generating Rest Clients
++ XIVY-4678       Story          Support Testing of CallSubs
++ XIVY-4683       Story          Update Aspose to version 20.8
++ XIVY-4689       Story          Hot reload custom log4j2 configuration
++ XIVY-4705       Story          LTS builds must generate a source backup for a software escrow
++ XIVY-4718       Story          Improve Rule API so that rule sessions are cached by default
++ XIVY-4736       Story          Add monitoring (live stats) to cluster view of Cockpit
++ XIVY-4740       Story          UI supported OpenAPI File-Upload
++ XIVY-4769       Story          Provide AssertJ in Test Project by default
++ XIVY-4772       Story          OData integration
++ XIVY-4778       Story          Print current date and time in console log
++ XIVY-4784       Story          Add rule test in rule demos
++ XIVY-4794       Story          Exception when browsing LDAP tree in engine cockpit
++ XIVY-4803       Story          Implement new Business Case Solution
++ XIVY-4809       Story          Provide demo test project in ivy project import
++ XIVY-4813       Story          Provide API to clear RuleExecutor cache
++ XIVY-4837       Story          Expand / Collapse all buttons for trees in the Engine Cockpit
++ XIVY-4840       Story          New licence view for the Engine Cockpit
++ XIVY-4841       Story          Improve UX for External DB View in the Engine Cockpit
+! XIVY-4849       Story          CVE-2020-13943 Apache Tomcat HTTP/2 Request mix-up
++ XIVY-4854       Story          Fix test environment for horizontal scaling
++ XIVY-4868       Story          Easy StandardProcess selector in the cockpit
++ XIVY-4872       Story          Raise serenity version to 2.1.1
++ XIVY-4880       Story          Use adopopenjdk in our engine docker images
++ XIVY-4888       Story          Display mandatory REST parameters in Request Tab
++ XIVY-4899       Story          Remove Start Process Elements out of Database
++ XIVY-4905       Story          Deliver Streamline Icons with the serenity-ivy theme
++ XIVY-4906       Story          Refresh the look of the Engine Cockpit
++ XIVY-4975       Story          Integrate dependent maven libraries when creating an ivy archive
++ XIVY-4995       Story          Support maven encrypted passwords for REST deployment
++ XIVY-5001       Story          Custom fields on process starts
++ XIVY-5003       Story          Axon.ivy Market in Designer
++ XIVY-5004       Story          integrate doc-factory as Installable connector
++ XIVY-5005       Story          Integrate UiPath as installable connector
++ XIVY-5006       Story          Integrate MS Graph connector (outlook > calendar, mail, contacts, tasks) by example 
++ XIVY-5007       Story          Integrate Docu-Sign as installable connector
++ XIVY-5008       Story          Promote Market in Designer
++ XIVY-5012       Story          Public 'swagger-ui' to browse our ivy-core REST apis
++ XIVY-5014       Story          Always activate SSL system- and custom trustore
++ XIVY-5026       Story          Smoothly shutdown engine on SIGTERM (CTRL-C in console)
++ XIVY-5041       Story          Bundled JRE for Mac to ease AxonIvyDesigner.app usage
++ XIVY-5042       Story          Market Documentation
++ XIVY-5072       Story          Refresh Twitter-Client as Connector with OpenAPI
++ XIVY-5091       Story          connector-testing: keep connectors stable over time
++ XIVY-5125       Story          Add a sample with adjustable rules to the rules demos
++ XIVY-5140       Story          API to get application configuration property values and meta data 
++ XIVY-5159       Story          Remove Intermediate Event Element out of Database
++ XIVY-5162       Story          Genderize.io Connector Review
++ XIVY-5184       Story          Handle completed docuSigned envelopes: JWT auth
++ XIVY-5208       Story          OAuth2: native 'Auth-Code-Flow' without modeling entry/exit points
++ XIVY-5214       Story          Use client properties to craft resource paths
++ XIVY-5266       Story          Simplify appliance of connectors in processes
++ XIVY-5267       Story          Provide System Database Documentation in Engine Guide
++ XIVY-5268       Story          Support PostgreSQL 13
++ XIVY-5292       Story          Merge global variables in variables.yaml
++ XIVY-5294       Story          Make app configuration environment aware
++ XIVY-5364       Story          Properly document how to integrate reverse proxy nginx and apache
++ XIVY-5374       Story          Disable HTTPS port by default on Axon Ivy Engine
++ XIVY-5379       Story          Change style of primefaces fieldset in our serenity-ivy theme
++ XIVY-5387       Story          Restructure engine guide
++ XIVY-5408       Story          Upgrade mysql jdbc driver to 8 and drop support for mysql 5.5
++ XIVY-5409       Story          Propose well known names for custom fields
++ XIVY-5415       Story          List available connectors prominently when creating a new rest-client
++ XIVY-5416       Story          Guide user to create an OpenAPI rest-client directly with a wizard
++ XIVY-5442       Story          Simple Single Sign-on configuration
++ XIVY-5468       Story          Deprecate ICase#ensureBusinessCase
++ XIVY-5521       Story          Release 9.2
++ XIVY-5531       Story          Improve Maven Dependency iar copy
++ XIVY-5537       Story          Improve Icon menu and browser
++ XIVY-5538       Story          Add description to CallSubs parameter and a flag to mark it as connector
++ XIVY-5539       Story          Add decorator icon to webservice and database configuration
++ XIVY-5540       Story          Rollout new product and company name Axon Ivy
++ XIVY-5541       Story          Remove OpenAPI road-blocks for Connector implementors
++ XIVY-5603       Story          Rename GlobalVariables to Variables in app.yaml
++ XIVY-5604       Story          Provide link to server start list on info page
++ XIVY-5847       Story          Deprecate Custom Application Properties API
++ XIVY-5866       Story          Fail clearly with a meaningful message if the spec can not be read as OpenAPI
++ XIVY-5887       Story          AxonIvyDesigner.app out of BETA phase
++ XIVY-5904       Story          MigrationTask: frontend properties to baseURL
++ XIVY-2745       Improvement    Upgrade to log4j2
++ XIVY-3581       Improvement    The default filename of a packed ivyProject should be ProjectID-ProjectVersion.iar 
++ XIVY-3670       Improvement    Permissions filtering in Engine Cockpit is confusing
++ XIVY-4587       Improvement    Deprecated flag for CallSubs
++ XIVY-4588       Improvement    Update hibernate that MS SQL 2014 is supported
++ XIVY-4589       Improvement    Db-Step should support MS SQL types such as nvarchar(max)
++ XIVY-4980       Improvement    Clean Name Label for Signature on Start Tab
++ XIVY-5032       Improvement    Designer should allow to export an already packed .iar 
++ XIVY-5139       Improvement    Improve the documentation of JVM memory heap size
++ XIVY-5286       Improvement    Document how to use integrated Security with sqlserver JDBC driver
++ XIVY-5287       Improvement    Improve usersynch.log if the application is deactivated
++ XIVY-3512       Epic           Connect with charm and low code
++ XIVY-4444       Epic           Add support for DMN based rules
++ XIVY-2977       Bug            Integration tests for DocFactory
++ XIVY-3253       Bug            WebService Process is executed even though parameter mapping has failed
++ XIVY-3282       Bug            Can't find repo data after Signal call
++ XIVY-3436       Bug            Global Variables which contains underscores can not be overriden with environment variables
++ XIVY-3515       Bug            Better fieldName suggestion on html dialog creation to prevent JSF 'property not found' exceptions
++ XIVY-3844       Bug            Wrong Hotkeys when selecting Types or Content in some Inscription Masks
++ XIVY-3851       Bug            Prevent that a lot of MissingResourceException are thrown when processing a JSF resource request
++ XIVY-3886       Bug            Performance Log Valve always prints session=null
++ XIVY-4053       Bug            Frequently occurring NPE in ProcessEditor on Mac and sometimes in Windows
++ XIVY-4054       Bug            IllegalArgumentException logged when entering ScriptCellEditor
++ XIVY-4145       Bug            User is not synchronized after failed login
++ XIVY-4152       Bug            Improve DataCache docs regarding valid literals for lifetime and fixed time attributes
++ XIVY-4205       Bug            Disable Task-Mail notifications job for inactive Applications
++ XIVY-4297       Bug            CXF Web Service Client comes in trouble under high pressure
++ XIVY-4309       Bug            Designer Process Performance view cannot go to process element
++ XIVY-4333       Bug            Can't open multiple resources in a row with the Axon Ivy Project navigator
++ XIVY-4446       Bug            NullPointerException when calling Task#canUserResumeTask
++ XIVY-4470       Bug            engine animation speed change throwes an error if you close a project
++ XIVY-4510       Bug            REST activity fails to send query param with dollar sign ($)
++ XIVY-4516       Bug            REST runtime logs do not expose HTTP headers
++ XIVY-4531       Bug            Last InscriptionEditor tab invisible on Mac
++ XIVY-4550       Bug            DB element inscription blocks the UI and occasionally throws OutOfMemoryException
++ XIVY-4555       Bug            NPE in ProcessModelVersion.getProjectUri() if project of pmv is missing
++ XIVY-4559       Bug            Deployment of REST services defined in projects fails if any released PMV has no project
++ XIVY-4561       Bug            REST services returns 204 (NO_CONTENT) if PMV is inactive instead of 503 (SERVICE_UNAVAILABLE)
++ XIVY-4566       Bug            ClassCastException in system event listener after redeployment of project with the listener class
++ XIVY-4586       Bug            Support UserTasks in BpmClient tests
++ XIVY-4590       Bug            temp_folder.listFiles() returns files that are permament 
++ XIVY-4591       Bug            WebServiceStarts are not deployed to BpmProcessTest engine
++ XIVY-4592       Bug            RestServices are not correctly started in BpmProcessTest engine
++ XIVY-4612       Bug            Rest client connection not closed when return type is not set
++ XIVY-4671       Bug            Implementation of JAXB-API not found during WebService Call or WebService Process Service construction
++ XIVY-4682       Bug            Weird log entries if database connection with MS SQL Server Driver is lost during Insert by the database element
++ XIVY-4710       Bug            SingleSignOnValve does not support async request processing
++ XIVY-4711       Bug            Method Recordset.add(CompositeObject) causes WARN logs
++ XIVY-4716       Bug            Error in logs when creating an error report
++ XIVY-4727       Bug            Deployment error while validating User Task
++ XIVY-4738       Bug            Cannot configure empty value for global variables in Cockpit
++ XIVY-4746       Bug            Update javassist to 3.27.0-GA that static mocking with powermock works
++ XIVY-4748       Bug            New Axon Ivy Test Project has wrong Default Namespace
++ XIVY-4801       Bug            Primefaces DataTable: NullPointerException with multiViewState=true
++ XIVY-4818       Bug            Task post-construct code block way too small
++ XIVY-4823       Bug            Including same image multiple times in mail step are shown only once
++ XIVY-4828       Bug            DB Step Element throw error "Cannot evaluate last inserted id" if primary key is not long
++ XIVY-4842       Bug            Fix BusinessData filter API Javadoc
++ XIVY-4867       Bug            Rename deploy option labels in the cockpit
++ XIVY-4877       Bug            Excel export demo don't work with our docker engine
++ XIVY-4887       Bug            Javadoc for IvyScript Number class is wrong for some conversion methods (e.g floatValue)
++ XIVY-4891       Bug            BusinessCalendar fixed days are may be written in wrong format from the core
++ XIVY-4893       Bug            NPE on Engine Cockpit PMV Detail view if required projects has an unspecified version
++ XIVY-4898       Bug            ClassCastException antlr.CommonToken cannot be cast to antlr.Token
++ XIVY-4904       Bug            There could occur an NPE while insert data over the DB Element
++ XIVY-4907       Bug            First Tab occasionally 'blank' on inscription editor
++ XIVY-4909       Bug            Dialog/UserTask present wrong start signature
++ XIVY-4963       Bug            Endless loop in HttpClient Worker Thread with TLS 1.3
++ XIVY-4993       Bug            Propagate reverse proxy URI info to ivy engine
++ XIVY-5013       Bug            Make Axis2 HttpClient Connection pool configurable
++ XIVY-5018       Bug            If pm is deleted which contains required pmvs dependent pmvs aren't correctly updated
++ XIVY-5019       Bug            Html Dialog Validation takes very long
++ XIVY-5020       Bug            Sometimes Ctrl+Space takes very long in the Html Dialog Editor (UI freeze)
++ XIVY-5022       Bug            Html Dialog Editor takes very long in first startup
++ XIVY-5037       Bug            Update statistic reports wrong host name host.docker.internal if Docker for Windows is installed on machine
++ XIVY-5038       Bug            Open Rest Request Inscription fast and async
++ XIVY-5040       Bug            Engine cannot restart same web service start in different apps
++ XIVY-5075       Bug            DB Activity can not deal with Postgres schemas 
++ XIVY-5085       Bug            Copy Paste of Web Service Process Start throws an error
++ XIVY-5131       Bug            Maven-install fails on second attempts in same workspace
++ XIVY-5134       Bug            CMS values lost without feedback on Mac
++ XIVY-5150       Bug            Overrides Editor not displaying it's entries after opening on Mac
++ XIVY-5151       Bug            Override Editor fails to add new overrides without feedback
++ XIVY-5152       Bug            Can not generate OpenAPI client for 'Genesis' swagger-20 definition
++ XIVY-5217       Bug            Task expiry code timeout proposal delivers wrong timestamp
++ XIVY-5239       Bug            Distracting standard output when running @IvyProcessTest 
++ XIVY-5284       Bug            Engine does not start: MBean for parameter object is already registered
++ XIVY-5288       Bug            Can not connect Note to Embedded Subprocess
++ XIVY-5309       Bug            Engine Cockpit can't show more than 3 role hierarchy
++ XIVY-5314       Bug            Cannot reliably sort business data with more than one fields
++ XIVY-5334       Bug            Cockpit: Every test of a External Database blocks a connection
++ XIVY-5341       Bug            Resilient error handling when app.yaml is not well formatted
++ XIVY-5342       Bug            Pre Conditions using BusinessData on CaseMap SideSteps evaluate false
++ XIVY-5345       Bug            OpenApi client with 'yaml' as feed fails on inscription
++ XIVY-5410       Bug            ivyScript File class does not work in process tests (NPE)
++ XIVY-5411       Bug            Migration to 9.1 is failing due constraint violation exception
++ XIVY-5413       Bug            Can not show engine home page
++ XIVY-5454       Bug            NPE when sending task mails
++ XIVY-5460       Bug            Grey process editor on first open
++ XIVY-5467       Bug            Can't use pe:inputPhone
++ XIVY-5505       Bug            Release Notes does not contain all issues
+! XIVY-5569       Bug            Deployment Service vulnerable to Path Traversal Attack
+! XIVY-5629       Bug            Upgrade Tomcat to 9.0.43 to fix CVE-2021-25122
++ XIVY-5630       Bug            ivyProjectTree does not show namespace of dialogs
++ XIVY-5635       Bug            MyFaces throws NullPointerException when using attributes in composite component
++ XIVY-5641       Bug            SYSTEM user gets synched during Task Mail Notification
++ XIVY-5699       Bug            Axon Ivy Engine Docker image has broken package dependencies
++ XIVY-5765       Bug            WS Axis2 calls with insecure SSL setting do not work
++ XIVY-5794       Bug            Theme related web assets (css, images) not refreshed in browser
++ XIVY-5843       Bug            Not all POI libraries on Designer classpath
++ XIVY-5870       Bug            No OpenAPi support in Rest Inscription if element is in dependent project
++ IVYPORTAL-10692 Technical task Add pencil button for inline editing like task priority, expiry,....
++ IVYPORTAL-10804 Technical task My profile optimized for smaller devices
++ IVYPORTAL-10840 Technical task Technical case list in Case Information is different from "Show more technical cases" page 
++ IVYPORTAL-10877 Technical task Delete filter is not back to default filter
++ IVYPORTAL-10878 Technical task TaskAction call many ajax request
++ IVYPORTAL-10889 Technical task Wrong save task filter with state
++ IVYPORTAL-10903 Technical task FindUser api not work correctly if excludeUser greater than 1
++ IVYPORTAL-10937 Technical task Can't redirect to link of 3rd party application
++ IVYPORTAL-10954 Technical task Broken link in document
++ IVYPORTAL-10976 Technical task Update document for Iframe
++ IVYPORTAL-10985 Technical task Update Portal developer guide for CronByGlobalVariableTriggerStartEventBean
++ IVYPORTAL-11015 Technical task Update document: Portal Icons and doc process chain via script
++ IVYPORTAL-11020 Technical task Case details in Case information dialog isn't consistent with case details page
++ IVYPORTAL-11026 Technical task Check and correct log levels
++ IVYPORTAL-11054 Technical task Correct Logentries while executing Express
++ IVYPORTAL-11057 Technical task Enhance Workflow Events Read All link
++ IVYPORTAL-11066 Technical task Information Email step for Express execution is not displayed in process chain
++ IVYPORTAL-11072 Technical task CMS updates
++ IVYPORTAL-11098 Technical task Enhance display style for Roles in Chart filters
++ IVYPORTAL-11130 Technical task Fix scrollbar in case information dialog
++ IVYPORTAL-11136 Technical task Correct selector name for js in Portal
++ IVYPORTAL-11148 Technical task Add Serializable for Beans to avoid Random JSF errors
++ IVYPORTAL-11159 Technical task Process navigate bar not good with 1 or 2 chars
++ IVYPORTAL-11160 Technical task Handle styling issues for case details customization with iFrame in firefox
++ IVYPORTAL-11163 Technical task Method loadSubmenuItemOverride call 2 time when init page
++ IVYPORTAL-11253 Technical task Show Validation Message Wrong on Task/Case Filter when input date "from" larger than date "to"
++ IVYPORTAL-11276 Technical task Task delegation does not work if switching user/role
++ IVYPORTAL-11320 Technical task Portal message is displayed in express form improperly
++ IVYPORTAL-11321 Technical task Improve portal exception handle
++ IVYPORTAL-11344 Technical task Bug when apply Default column config for Case list
++ IVYPORTAL-11395 Technical task Document Portal User guide, small typo
++ IVYPORTAL-11407 Technical task Improve Document component responsiveness
++ IVYPORTAL-11417 Technical task Break long text in custom task/case list fields
++ IVYPORTAL-11428 Technical task Docu Portal Userguide, small typo
++ IVYPORTAL-11430 Technical task Exception when change GUI Chart position
++ IVYPORTAL-11462 Technical task Improve Portal ajax exception dialog
++ IVYPORTAL-11469 Technical task Default show 2 charts in Statistic page
++ IVYPORTAL-11475 Technical task Chart is duplicated after changed language
++ IVYPORTAL-11521 Technical task  Problem with programatically removing roles since Axon.Ivy 8
++ IVYPORTAL-11589 Technical task Improve showcase Process History component, use the reality example instead of Alpha, Beta company
++ IVYPORTAL-11637 Technical task Fix Javascript error "checkUrl is not defined" when opening tasks in IFrame
++ IVYPORTAL-11650 Technical task ProcessHistory component doesn't sort by default field
++ IVYPORTAL-11668 Technical task More header column in CaseList is not align with cell
++ IVYPORTAL-11669 Technical task Task/Case sort by default column does not work
++ IVYPORTAL-11671 Technical task Cannot manage column for Task/Case list if hideWidgetHeader param is true
++ IVYPORTAL-11713 Technical task Missing CMS for compact task list sort field on developer example
++ IVYPORTAL-11728 Technical task Use global variable of JavaScript instead of cookie for session timeout counter
++ IVYPORTAL-11765 Technical task Apply the new BusinessCase concept for Adhoc process
++ IVYPORTAL-11817 Technical task Apply new spelling of Axon Ivy for Portal 9.2
++ IVYPORTAL-11863 Technical task Allow add icon for "Create new Externallink/Express process" form
++ IVYPORTAL-12000 Technical task Add Link description for external link
++ IVYPORTAL-6073  Story          Create property for sorting of task and case
++ IVYPORTAL-6302  Story          Portal Homepage selection in user profile for each profile
++ IVYPORTAL-6370  Story          Forgot Password in portal
++ IVYPORTAL-7984  Story          Excel Export for task and case list
++ IVYPORTAL-8322  Story          Adapt layout for Created / expiry / done information in task and case list
++ IVYPORTAL-9588  Story          Apply HtmlOverride Approach for PortalCustomizations
++ IVYPORTAL-9726  Story          Handle Mobile Design for Substitute UI
++ IVYPORTAL-9978  Story          Create a User Selection Combobox Component
++ IVYPORTAL-9979  Story          Use new UserQuery API in Portal
++ IVYPORTAL-10047 Story          No access message instead of login form for SSO
++ IVYPORTAL-10235 Story          Enhance Navigation from a task inside the "Case Information" 
++ IVYPORTAL-10530 Story          Adapt unassigned task in Portal
++ IVYPORTAL-10555 Story          Enhance "Show business details" link to support start in IFrame
++ IVYPORTAL-10557 Story          Adapt new Shadow style for Portal component
++ IVYPORTAL-10584 Story          Create "Full Mode Process List" 
++ IVYPORTAL-10674 Story          General Settings in MyProfile
++ IVYPORTAL-10810 Story          Grid CSS in Iframe is not responsive
++ IVYPORTAL-10890 Story          Update business user document for LE
++ IVYPORTAL-10946 Story          Adjust scope of global configuration (app, settings, announcement) 
++ IVYPORTAL-10956 Story          Enhance usage of portal in Cluster environment
++ IVYPORTAL-10961 Story          Enhance visibility of technical tasks
++ IVYPORTAL-11025 Story          Create a chooser Component to select a role 
++ IVYPORTAL-11028 Story          Remove multiapp implementation
++ IVYPORTAL-11031 Story          Support skip task list for tasks in iFrame
++ IVYPORTAL-11076 Story          Enhance delegation with a comment
++ IVYPORTAL-11106 Story          Portal Homepage selection in user profile for each user
++ IVYPORTAL-11201 Story          Enhance Naming of Statistics - Multilingual support
++ IVYPORTAL-11206 Story          Add the "completed on" date column and also filter on Task list
++ IVYPORTAL-11263 Story          Keep chat notification after restarting engine
++ IVYPORTAL-11350 Story          Add a link to case details in our standard growl messages
++ IVYPORTAL-11389 Story          Duration of cases and tasks
++ IVYPORTAL-11422 Story          User Favorites in Portal - Multilingual
++ IVYPORTAL-11473 Story          Store favorite processes without links of processes
++ IVYPORTAL-11477 Story          Add Category in Task and case list
++ IVYPORTAL-11507 Story          New Task Details style
++ IVYPORTAL-11508 Story          New colors for statistic charts
++ IVYPORTAL-11509 Story          Refactor left Menu - Improvements
++ IVYPORTAL-11518 Story          Improve documentation - List of supported methods 
++ IVYPORTAL-11525 Story          New Case Details style
++ IVYPORTAL-11594 Story          Sticky sort in same session for task list, case list, dashboard
++ IVYPORTAL-11023 Bug            Group chat list not updated
++ IVYPORTAL-11056 Bug            Height of User Default Process is not good
++ IVYPORTAL-11104 Bug            Improve the iframe area of portal. high and width
++ IVYPORTAL-11167 Bug            Not match announcement
++ IVYPORTAL-11514 Bug            Session Expiry when using IFrame
++ IVYPORTAL-11523 Bug            Improve: save task filter 
++ IVYPORTAL-11536 Bug            Improve TaskTemplate-8 - java.lang.IndexOutOfBoundsException"
++ IVYPORTAL-11615 Bug            Express task - Selection Date component is broken
++ IVYPORTAL-11616 Bug            Start Adhoc task - a growl message is throwing with error type
++ IVYPORTAL-11660 Bug            Fix alignment in Express
++ IVYPORTAL-11784 Bug            Growl Message for express user task with email do not show error
++ IVYPORTAL-11801 Bug            Bug Express - Able to start
++ IVYPORTAL-11842 Bug            Values of SideSteps are NOT updated with skipping TaskList in CaseMap
+
 Changes in 9.1.0, 05.08.2020
 --------------------------------------------------------------------------------
 
