@@ -14,7 +14,7 @@ Application
 |image0|
 
 On the Axon Ivy Engine, applications can be configured. An application
-spans up an environment in which roles, users, external databases,
+spans up an environment in which roles, users, databases,
 tasks, cases and process models exist. Applications are completely
 independent of each other. E.g. a user of one application can **not**
 work on a task of another application.

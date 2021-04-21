@@ -35,7 +35,7 @@ used in the HTML User Dialog.
 Database
 --------
 
-Stores and access data in an external database systems. An own database
+Stores and access data in a database systems. An own database
 server is necessary and the database schema must be managed outside of
 Axon Ivy.
 More information can be found in the chapter :ref:`process-element-db-step`.
@@ -43,7 +43,7 @@ More information can be found in the chapter :ref:`process-element-db-step`.
 Persistency (Java Persistence API)
 ----------------------------------
 
-Stores and access data in an external database systems. An own database
+Stores and access data in a database systems. An own database
 server is necessary. The database schema can be generated. JPA is a Java
 standard that is well documented and widely used. 
 More information can be found in the chapter :ref:`persistence`.
