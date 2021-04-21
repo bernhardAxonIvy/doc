@@ -45,3 +45,7 @@ the conversion from the old to the new format for you automatically.
     migrated its data to the :ref:`app-yaml`. We recommend that you
     :ref:`migrate your projects <migration-project>` and redeploy them to your
     engine.
+
+    All APIs to load databases configuration from :code:`IApplication` and :code:`IEnvironment`
+    has been removed. They were introduced to show the configuration in the legacy AdminUI.
+    They were never intended to use it in your Axon Ivy Projects.
