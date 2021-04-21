@@ -12,32 +12,32 @@ for each application.
 .. figure:: /_images/engine-cockpit/engine-cockpit-email.png
 
 
-.. _engine-cockpit-external-database:
+.. _engine-cockpit-database:
 
-External Databases
-^^^^^^^^^^^^^^^^^^
+Databases
+^^^^^^^^^
 
-The **external databases** view displays an overview of your configured
-external databases within your projects. You can switch the application
+The **databases** view displays an overview of your configured
+databases within your projects. You can switch the application
 by clicking on the tabs at the top of the view. If you want to display a different
 environment, you can change it at the top right. To get more information about a
 database click on an entry to view its
-:ref:`engine-cockpit-external-database-detail` page.
+:ref:`engine-cockpit-database-detail` page.
 
 .. note::
-    If you want to add a new external database configuration, please refer
+    If you want to add a new database configuration, please refer
     to :ref:`database-configuration`.
 
-.. figure:: /_images/engine-cockpit/engine-cockpit-external-databases.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-databases.png
 
 
-.. _engine-cockpit-external-database-detail:
+.. _engine-cockpit-database-detail:
 
-External Database Detail
-""""""""""""""""""""""""
+Database Detail
+"""""""""""""""
 
-In the **External Database Detail** view you see all configurations of
-the selected external database. You can test if the configuration works and a
+In the **Database Detail** view you see all configurations of
+the selected database. You can test if the configuration works and a
 connection to this database can be established by clicking on the
 :guilabel:`Arrow` button. You can change most connection values in this view.
 If you click on the :guilabel:`Reset` button the database configuration will be
@@ -48,7 +48,7 @@ last 200 executed *SQL* queries and its used connections too.
     Not every value can be modified here yet. But you can override them in the
     :ref:`app-yaml` file.
 
-.. figure:: /_images/engine-cockpit/engine-cockpit-external-database-detail.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-database-detail.png
 
 
 Web Services

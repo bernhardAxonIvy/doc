@@ -1,7 +1,7 @@
 .. _database-configuration:
 
-Database
-========
+Databases
+=========
 
 This chapter deals with the database configuration. To use databases in
 your business or User Dialog processes you need to define some database

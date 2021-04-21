@@ -334,7 +334,7 @@ still have used the jTDS driver.
 
   **External Databases**
   
-  #. Go to :ref:`Engine Cockpit / External Databases <engine-cockpit-external-database>`
+  #. Go to :ref:`Engine Cockpit / External Databases <engine-cockpit-database>`
   #. Edit all **External Databases** with :guilabel:`Driver` **net.sourceforge.jtds.jdbc.Driver**
   #. Choose **com.microsoft.sqlserver.jdbc.SQLServerDriver** as :guilabel:`Driver`
   #. Save configuration

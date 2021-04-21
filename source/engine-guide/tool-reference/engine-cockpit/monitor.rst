@@ -47,13 +47,13 @@ The **Services** pages allows you to monitor some critical indicators of externa
 
 - **Email**: Number of mails sent, execution time to send mails. 
 - **System Database**: Number of open and used connections, number of transactions and errors, transaction processing time.
-- **External Databases**: Number of open and used connections, number of queries and errors, query execution time of the selected external database.
+- **Databases**: Number of open and used connections, number of queries and errors, query execution time of the selected database.
 - **Web Services**: Number of calls and errors, execution time of the selected web service.
 - **Rest Clients**: Number of open and used connections, Number of calls and errors, execution time of the selected Rest client.
 
 You can open these live stats from the detailed view of the desired service using the monitor button at the right side.
 
-.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-external-databases.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-databases.png
 
 Logs
 ^^^^

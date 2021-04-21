@@ -10,7 +10,7 @@ configuration editor and the various configuration types.
    configuration
    environments
    variables
-   database
+   databases
    rest-clients
    webservice-clients
    roles-users
