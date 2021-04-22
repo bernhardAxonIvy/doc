@@ -4,8 +4,8 @@ Cluster
 =======
 
 If you have a lot of load on your system or need increased resilience, then you
-should consider running the Axon Ivy Engine in a Cluster. This has two has two
-major advantages:
+should consider running the Axon Ivy Engine in a Cluster (Axon Ivy Engine Enterprise Edition). 
+This has two has two major advantages:
 
 * **Performance and scalability**:
   An Axon Ivy Engine Enterprise Edition can serve more clients than the
@@ -19,13 +19,13 @@ major advantages:
   all other components the engine is depending on (Load Balancer, Database
   Server, File Share) have a high availability.
 
-Compared to a single node setup you will confronted with a more **complex** system,
+Compared to a single node setup you will be confronted with a more **complex** system,
 higher **hardware costs** and higher **licence fees**. And therfore you need an
 :ref:`enterprise-license`.
 
 This is how an Axon Ivy Engine Cluster setup looks like. The user will access the
 Axon Ivy Engine Cluster over a :ref:`load balancer <cluster-load-balancer>`
-which will route the traffic to one :ref:`node <cluster-node>` of the cluster.
+which will route the traffic to the :ref:`nodes <cluster-node>` of the cluster.
 All cluster nodes shares the same system database.
 
 |

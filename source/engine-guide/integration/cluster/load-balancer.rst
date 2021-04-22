@@ -16,3 +16,5 @@ is always forwarded to the same cluster node (IP based stickiness). Another
 possible configuration is to use the Axon Ivy Session Id to provide session
 stickiness. The session id is provided by Axon Ivy Engine Enterprise Edition as
 HTTP session cookie with the name :code:`JSESSIONID`.
+
+Often :ref:`Reverse Proxy <reverse-proxy>` can be configured as load balancer.

@@ -3,20 +3,18 @@
 Enterprise License
 ==================
 
-If you request an enterprise licence there are addtional
-infos needed as for a Standard Edition :ref:`licence`.
+You need an enterprise licence to run Axon Ivy Engine as a Cluster (Axon Ivy Engine Enterprise Edition). 
 
+The information needed to request an enterprise licence are the same 
+as for a Standard Edition :ref:`licence`.
 
-Cluster Name
-------------
+Cluster Nodes
+-------------
 
-If you want to run multiple clusters in the same network (same broadcast
-domain). Each single cluster needs a unique name that they don't intefer each
-other.
+Each node that you add to Axon Ivy Engine Cluster costs an additional licence fee. 
+Therefore, the number of nodes in your Cluster is limited by the licence.
 
-
-Cluster Node ID
----------------
-
-Each cluster node needs a enterprise licence. If you want to run multiple nodes
-on the same host. Then a unique id for each node is required.
+.. warning:: 
+  If you add more nodes to your Cluster than your licence 
+  was issued for then the nodes that are not licensed correctly will respond with
+  error code :code:`503 Service Unavailable`.
