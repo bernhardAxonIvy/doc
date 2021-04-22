@@ -48,8 +48,8 @@ variables.
   * **daytime:** This value will be interpreted as daytime 
   * **enum:** The enum annotation will give you the possibility to define possible 
     values for this Variable. 
-  * **file:** The file annotation will tells the engine to retrieve the value for this Variable 
-    from an external file. This file can be a :file:`.json` or a :file:`.txt`
+  * **file:** The file annotation configures the value of this Variable 
+    to be read from an external file. This file can be a :file:`.json` or a :file:`.txt`
     file. If your Variable is called :code:`myFile` and it should be a
     :code:`json` file, then your file must be located at 
     :file:`<project>/config/variables/myFile.json`. 
