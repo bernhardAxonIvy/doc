@@ -49,3 +49,12 @@ the conversion from the old to the new format for you automatically.
     All APIs to load databases configuration from :code:`IApplication` and :code:`IEnvironment`
     has been removed. They were introduced to show the configuration in the legacy AdminUI.
     They were never intended to use it in your Axon Ivy Projects.
+
+Cluster Name
+************
+
+|tag-ops-changed| |tag-ops-wizard|
+
+The name of a :ref:`cluster <cluster>` (Axon Ivy Engine Enterprise Edition) can now be configured 
+in the :ref:`ivy.yaml <ivy-yaml>` file. Before it was preconfigured in the :ref:`licence <licence>` 
+file as :code:`server.cluster.name` property. 
