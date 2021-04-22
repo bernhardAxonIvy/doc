@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<databaseconfigs>
-    <databaseconfig name="ERP" url="jdbc:hsqldb:mem:ERP" driver="org.hsqldb.jdbc.JDBCDriver" user="" password=""/>
-    <databaseconfig name="HRM" url="jdbc:hsqldb:mem:HRM" driver="org.hsqldb.jdbc.JDBCDriver" user="" password=""/>
-</databaseconfigs>
