@@ -8,12 +8,12 @@ influence the :ref:`deployment behavior <deployment-options>`.
 
 .. _deployment-configure-app:
 
-Configure Application
-^^^^^^^^^^^^^^^^^^^^^
+Application configuration
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you are deploying a full application zip-archive you can optionally add an
-:ref:`app-yaml` in a dedicated :file:`config` folder of your zip-archive, which contains the
-configuration of the application.
+:ref:`app-yaml` in a dedicated :file:`config` folder of your zip-archive, 
+which contains the configuration of the application.
 
 .. literalinclude:: sample-app.yaml
   :language: yaml
@@ -22,11 +22,33 @@ configuration of the application.
 This file should always contain configurations which are the same for all
 installations of the application or serve as good defaults like configuration of 
 the :code:`StandardProcess`.
-The reason is that this :file:`app.yaml` will be deployed in the :file:`config` folder of the
-application itself and serves as additional configuration for the application
+
+**Priority** 
+
+The :file:`app.yaml` will be deployed into the :file:`config` folder of the
+application itself and serves as additional configuration for the application,
 but with a lower priority than the regular :ref:`<APPNAME>/app.yaml <app-yaml>` 
 (e.g. :file:`myApp/app.yaml`) in the :file:`configuration` directory.
 
+Overriding variables
++++++++++++++++++++++
+
+The :file:`app.yaml` file can override :ref:`variables` declared in projects.
+
+If these variables are values of type file (e.g :code:`[file: json]`), then
+these files values can also be overriden by adding them to the :file:`app.zip` 
+under :file:`<app.zip>/config/variables/myVariableName.json` as shown below.
+
+::
+
+    app.zip
+    ├── config
+    │   |──variables
+    |   |  └─ userSettings.json
+    │   └── app.yaml
+    ├── base.iar
+    ├── solution.iar
+    └── customer.iar
 
 
 .. _deployment-versioning:
