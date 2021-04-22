@@ -30,10 +30,10 @@ variables.
    :linenos: 
 
 - :guilabel:`Name`
-  The name is identifier for the Variable  (e.g *myVariable*)
+  The name is identifier for the Variable  (e.g *myTextVar*)
 
 - :guilabel:`Default value`
-  The default value is the value (e.g *value* for the *myVariable*)
+  The default value is the value (e.g *value* for the *myTextVar*)
 
 - :guilabel:`Description`
   The description is can be added before the Variable itself, started by a :code:`#`
@@ -48,12 +48,15 @@ variables.
   * **daytime:** This value will be interpreted as daytime 
   * **enum:** The enum annotation will give you the possibility to define possible 
     values for this Variable. 
-  * **file:** The file annotation will tell the engine to retrieve the value for this Variable 
+  * **file:** The file annotation will tells the engine to retrieve the value for this Variable 
     from an external file. This file can be a :file:`.json` or a :file:`.txt`
     file. If your Variable is called :code:`myFile` and it should be a
-    :code:`json` file, then your file must be at the location
-    :file:`variables/myFile.json` or the :code:`variables` prefix can also be
-    part of the file name itself :file:`variables.myFile.json`.
+    :code:`json` file, then your file must be located at 
+    :file:`<project>/config/variables/myFile.json`. 
+    Alternatively the :code:`variables` prefix can also be
+    part of the file-name rather than a parent directory. 
+    So, the file :file:`<project>/config/variables.myFile.json` could also serve 
+    the value for the variable called :code:`myFile`.
 
 
 Environments for Variables
