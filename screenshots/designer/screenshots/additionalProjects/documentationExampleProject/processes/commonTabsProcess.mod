@@ -45,6 +45,7 @@ if(StringUtils.isNotEmpty(in.addPerson))
 {
 	ivy.log.debug("About to add ''" + in.addPerson + "'' to " + in.organisation);
 }' #txt
+cs0 f3 @CG|tags PERSON,COMMON #txt
 cs0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>

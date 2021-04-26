@@ -47,6 +47,21 @@ Means/Documents
       In generated HTML reports, a link is inserted for these document
       references.
 
+Tags
+   Contains a list of keywords associated with the process element. These tags
+   help describe elements and allow them to be found again by searching. Any
+   word can be added as tag name.
+
+   There are two tags with special meanings for some start elements,
+   ``CONNECTOR`` and ``DEPRECATED``:
+
+   -  ``CONNECTOR``: This tag marks a Sub Process Start element as deprecated.
+      Call Subs elements using a deprecated element will be marked with a
+      deprecation validation warning.
+   -  ``DEPRECATED``: Setting this tag allows a Sub Process Start, a Request
+      Start or a WebService Start element to be displayed in the Connector
+      Dialog.
+
 
 .. _process-element-tab-output:
 
@@ -207,13 +222,7 @@ Code
    Only the defined input parameter on the signature can be assigned to
    the process data. The internal process data is hidden and
    encapsulated from the environment. This makes it impossible to inject
-   unintended, insecure data into the process data.
-   
-Tags   
-   Tag the element as ``DEPRECATED`` or ``CONNECTOR``. 
-   If you tag a start as ``DEPRECATED`` then all Call Subs elements that use it will issue a deprecation validation warning.
-   If you tag a start as ``CONNECTOR`` it will be displayed in the Connector Dialog.
-   Tags are only available for Sub Process Start elements.    
+   unintended, insecure data into the process data.   
 
 .. _process-element-tab-result:
 
