@@ -1,5 +1,5 @@
 [Ivy]
-175083477C6BF05D 9.2.0 #module
+175083477C6BF05D 9.3.0 #module
 >Proto >Proto Collection #zClass
 re0 rule Big #zClass
 re0 B #cInfo
@@ -29,9 +29,7 @@ re0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ' #txt
 re0 f0 @C|.responsibility Everybody #txt
 re0 f0 81 49 30 30 -21 17 #rect
-re0 f0 @|StartRequestIcon #fIcon
 re0 f1 337 49 30 30 0 15 #rect
-re0 f1 @|EndIcon #fIcon
 re0 f3 @AbstractThirdPartyProgramInterface|type screenshot.project.RuleData #txt
 re0 f3 @AbstractThirdPartyProgramInterface|timeout 0 #txt
 re0 f3 @AbstractThirdPartyProgramInterface|beanConfig "{""namespace"":""rule.demo"",""dataObject"":""in.member""}" #txt
@@ -43,7 +41,6 @@ re0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 re0 f3 168 42 112 44 -29 -8 #rect
-re0 f3 @|RuleActivity #fIcon
 re0 f4 111 64 168 64 #arcP
 re0 f2 expr out #txt
 re0 f2 280 64 337 64 #arcP
