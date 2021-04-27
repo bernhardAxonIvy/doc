@@ -14,7 +14,7 @@ New project version
 Due to the migration of the :ref:`External Databases
 <migrate-92-93-external-database-migration>` and :ref:`Rest Clients
 <migrate-92-93-rest-clients>`  we introducing a new project version
-:code:`93000`. If you want to deploy a project to an |ivy-engine| 9.3, your
+:code:`93100`. If you want to deploy a project to an |ivy-engine| 9.3, your
 project must be in this version. If you have a running project, it will still be
 able to run, but :ref:`we recommend migrating your projects <migration-project>`
 to the new version and redeploying them to your engine.
