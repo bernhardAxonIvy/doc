@@ -53,14 +53,13 @@ Tags
    word can be added as tag name.
 
    There are two tags with special meanings for some start elements,
-   ``CONNECTOR`` and ``DEPRECATED``:
+   ``DEPRECATED`` and ``CONNECTOR``:
 
-   -  ``CONNECTOR``: This tag marks a Sub Process Start element as deprecated.
-      Call Subs elements using a deprecated element will be marked with a
-      deprecation validation warning.
-   -  ``DEPRECATED``: Setting this tag allows a Sub Process Start, a Request
-      Start or a WebService Start element to be displayed in the Connector
-      Dialog.
+   -  ``DEPRECATED``: This tag marks a Sub Process Start, a Request Start or a
+      WebService Start element as deprecated. Call elements using a deprecated
+      element will be marked with a deprecation validation warning.
+   -  ``CONNECTOR``: Setting this tag allows a Sub Process Start element to be
+      displayed in the Connector Dialog.
 
 
 .. _process-element-tab-output:
