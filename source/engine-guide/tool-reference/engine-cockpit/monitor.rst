@@ -22,12 +22,25 @@ The **Engine** pages allows you to monitor some critical indicators of your |ivy
 
 - **JVM**: CPU load, number of threads, loaded and unloaded classes.
 - **Memory**: Heap and non heap memory, garbage collections time.
-- **Requests**: Number of processed incoming requests, errors, received and sent bytes, processing time.
-- **Sessions**: Number of HTTP, Ivy and licensed sessions.
+- **Cache**: System database caches and their metrics
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-jvm.png
 
 .. _engine-cockpit-monitor-mbeans:
+
+Cache
+"""""
+
+The **Cache** view displays a table with all system database caches and their metrics.
+The caches reduce the amount of system database read access.
+ 
+Increasing the amount of data that is cached may help solve performance problems. 
+You should try to increase the cache limits if you have a lot of read misses and the number 
+of cached entities are near the limit or above. 
+If this case the number of both corresponding columns are displayed in red. The cache limits
+can be configured in the :ref:`ivy.yaml <ivy-cache-properties>` file.     
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-cache.png
 
 MBeans
 """"""
