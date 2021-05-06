@@ -52,9 +52,6 @@ Shows the REST clients and its environment configurations.
 - :guilabel:`Add Client`
   Adds a new REST client.
 
-- :guilabel:`Add Environment`
-  Adds a new environment configuration for the selected REST client.
-
 - :guilabel:`Remove`
   Removes the selected environment or REST client configuration.
 
