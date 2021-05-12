@@ -23,17 +23,7 @@ get-eclipse-window | resizeWindow 1050 850
 with [get-editor documentationExampleProject] {
 	maximize
 	get-section "All Database Configurations" | get-tree | select "ERP"
-	get-tab-folder | get-object | captureScreenshot "designer-configuration/database-editor.png"
-	
-	get-section "All Database Configurations" | get-button "Add Environment" | click
-	
-	waitWindowExists "Add Environment"
-	
-	with [get-window "Add Environment"]
-	{
-		get-object | captureScreenshot "designer-configuration/database-environment.png"
-		get-button "Cancel" | click
-	}
+	get-tab-folder | get-object | captureScreenshot "designer-configuration/database-editor.png"	
 }
 get-editor documentationExampleProject | close
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
