@@ -32,18 +32,6 @@ databases you use in your project and the extending projects.
 - :guilabel:`New`
   Add a new database configuration
 
-- :guilabel:`Add environment`
-  Add an environment configuration for the selected database. Select
-  one or more environments for the environment list. For new
-  environment configurations the standard configuration is taken.
-  Please note, existing environment configurations will be overridden,
-  if you add an environment twice.
-
-  .. figure:: /_images/designer-configuration/database-environment.png
-     :alt: Add environment
-
-     Add environment
-
 - :guilabel:`Remove`
   Remove the selected database configuration
 
