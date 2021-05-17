@@ -19,10 +19,12 @@ digraph overview {
   engine2 [label="Node 2", pos="5.4,2.3!", height="0.8", width="1.5", color="#C7D426", fontcolor="black"];
   engine3 [label="Node 3", pos="5.4,1.4!", height="0.8", width="1.5", color="#C7D426", fontcolor="black"];
   
-  systemdb [ label="System\nDatabase", pos="8,2.5!" width="1.5" height="0.8"]
+  systemdb [ label="System\nDatabase", pos="8,3.2!" width="1.5" height="0.8"]
+  elasticsearch [ label="Elasticsearch", pos="8,1.4!" width="1.5" height="0.8"]
 
   browser -> loadbalancer [ label="HTTPS"];
   loadbalancer -> cluster [ label="HTTP\nHTTPS" ];
   
   cluster -> systemdb [ label="JDBC" ];
+  cluster -> elasticsearch [ label="HTTP\nHTTPS" ];
 }

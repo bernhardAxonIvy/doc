@@ -10,8 +10,7 @@ this :file:`Dockerfile` as template.
 
 **Examples**
 
-On GitHub in the `docker-samples
-<https://github.com/ivy-samples/docker-samples>`_ repository you can find many
+On GitHub in the :dev-url:`docker-samples </link/docker-samples>` repository you can find many
 examples how to use the Axon Ivy Engine docker image.
 
 |

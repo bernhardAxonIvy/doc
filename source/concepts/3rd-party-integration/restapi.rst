@@ -150,8 +150,8 @@ You can customized the authentication for a specific API method by setting secur
 - @RolesAllowed: users must be authenticated and own the defined roles
 - @DenyAll: nobody is allowed to invoke this service
 
-The security annotations can be reviewed in the 
-`Secure Service <https://github.com/ivy-samples/ivy-project-demos/blob/master/connectivity/connectivity-demos/src/com/axonivy/connectivity/rest/provider/SecureService.java>`__ 
+The security annotations can be reviewed in the
+:dev-url:`Secure Service </link/demos/blob/master/connectivity/connectivity-demos/src/com/axonivy/connectivity/rest/provider/SecureService.java>`
 within the :ref:`ConnectivityDemos <importing-demo-projects>`.
 
 CSRF protection

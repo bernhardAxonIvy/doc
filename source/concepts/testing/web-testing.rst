@@ -31,7 +31,7 @@ Write a Web Test
 
 Let's start by extending our test class generated before with a
 :github-build-examples:`real test implementation
-</crmIntegrationTests/src_test/ch/ivyteam/integrationtest/WebTestRegistrationForm.java#L22-L39>`.
+</crmIntegrationTests/src_test/ch/ivyteam/integrationtest/WebTestRegistrationFormIT.java#L22-L39>`.
 First, we need to start a process. To do this you can use the ``EngineUrl`` utility from the
 :ref:`web-tester`. 
 
@@ -192,9 +192,8 @@ Further Resources
 
 If you want to know more about web testing, have a look at the
 :github-build-examples:`second test in our demo project
-</crmIntegrationTests/src_test/ch/ivyteam/integrationtest/WebTestOrderForm.java>`
-or at our `other demo projects
-<https://github.com/ivy-samples/ivy-project-demos>`__ and how they are tested.
+</crmIntegrationTests/src_test/ch/ivyteam/integrationtest/WebTestOrderFormIT.java>`
+or at our :dev-url:`other demo projects </link/demos>` and how they are tested.
 
 If you want to learn more about how to build a CI/CD pipeline, take a look at
 the **CI/CD videos** in our :dev-url:`Tutorial section </tutorial>`.
@@ -227,7 +226,7 @@ object:
 Web-Tester
 ^^^^^^^^^^
 
-With the `web-tester <https://github.com/axonivy/web-tester>`__
+With the :dev-url:`web-tester </link/webtester>`
 project we provide the testing annotation ``@IvyWebTest``. This annotation sets up
 the browser connection for you. It can be configured with some parameters:
 
