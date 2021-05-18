@@ -85,6 +85,18 @@ Cluster Name
 
 |tag-ops-changed| |tag-ops-wizard|
 
-The name of a :ref:`cluster <cluster>` (Axon Ivy Engine Enterprise Edition) can now be configured 
+The name of a :ref:`cluster <cluster>` (|ivy-engine| Enterprise Edition) can now be configured 
 in the :ref:`ivy.yaml <ivy-yaml>` file. Before it was preconfigured in the :ref:`licence <licence>` 
 file as :code:`server.cluster.name` property. 
+
+
+JGroups Configuration
+*********************
+
+|tag-ops-changed|
+
+By default, the :file:`jgroups.xml` file does not need to be provided in the ``configuration``
+folder any more. Please remove your existing :file:`jgroups.xml` file from the ``configuration``
+folder, if you haven't made any changes to it; otherwise replace it with a standard JGroups 5.0
+:file:`jgroups.xml` file and re-apply your changes to this file. :file:`jgroups.xml` files used
+in earlier versions of the |ivy-engine| are not compatible with JGroups 5.0.
