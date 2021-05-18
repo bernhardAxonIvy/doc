@@ -113,6 +113,35 @@ the conversion from the old to the new format for you automatically.
     engine.
 
 
+.. _migrate-92-93-webservice-clients:
+
+Defining Web Service Clients
+****************************
+
+|tag-ops-changed| |tag-project-changed|
+
+Web Service Clients are stored in new locations. During development, the project's
+Web Service Clients are now stored in the :ref:`webservice-clients.yaml <webservice-clients-configuration>` file. On the
+|ivy-engine|, Web Service Clients have been moved from the System Database to the
+applications's :ref:`app-yaml` file. Furthermore, web service clients and project migrations do
+the conversion from the old to the new format for you automatically.
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+      **Details**
+
+  .. container:: detail 
+
+    We have dropped the system database tables :code:`IWA_WebService`,
+    :code:`IWA_WebServiceEndpoints`, :code:`IWA_WebServiceEnvironments`,
+    :code:`IWA_WebServiceFeature`, :code:`IWA_WebServicePortType` and
+    :code:`IWA_WebServiceProperty` and migrated its data to the :ref:`app-yaml`.
+    We recommend that you :ref:`migrate your projects <migration-project>` and
+    redeploy them to your engine.
+
+
 Environments
 ************
 
