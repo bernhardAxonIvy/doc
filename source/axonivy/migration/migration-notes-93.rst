@@ -80,6 +80,17 @@ the conversion from the old to the new format for you automatically.
     engine.
 
 
+Environments
+************
+
+Editors like the Web Service Client Editor, the Rest Client Editor and the
+Database Editor are not environment aware anymore. Learn how you can define
+:ref:`environment aware configurations <configuration-environments>`.
+
+Read more here about the future of environments:
+https://community.axonivy.com/d/142-environments-will-disappear-in-the-long-term
+
+
 Cluster Name
 ************
 

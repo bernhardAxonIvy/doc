@@ -3,18 +3,21 @@
 Environments
 ============
 
-Environments represent different runtime infrastructures. For example they can be used for
-different software development stages ("development", "testing", "production").
+Environments represent different runtime infrastructures. For example they can
+be used for different software development stages ("development", "testing",
+"production"). :ref:`variables`, :ref:`Databases <database-configuration>`,
+:ref:`SOAP Web Services <webservice-clients-configuration>` and :ref:`Rest
+Clients <rest-clients-configuration>` comes with environment support. Defining
+an environment value in these features is always optional. For example: If you
+have multiple environments and using Variables, you don't have to specify values
+for all environments. If one is missing, it will fallback to the default value.
 
-:ref:`variables`,
-:ref:`Databases <database-configuration>`,
-:ref:`SOAP Web Services <webservice-clients-configuration>` and
-:ref:`Rest Clients <rest-clients-configuration>`
-comes with environment support.
-Defining an environment value in these features is always optional. For example:
-If you have multiple environments and using Variables, you don't
-have to specify values for all environments. If one is missing, it will
-fallback to the default value.
+If you want define a configuration e.g. rest client for a specific environment
+then you need to create a new folder in your project for the given environment
+e.g: :file:`[project]/config/_[env]` > :file:`[project]/config/_dev`. Then
+you can copy the configuration file e.g. :file:`rest-clients.yaml` there. You can then
+edit this with the given editor - by double clicking on the file.
+
 
 Editor
 ------
@@ -31,6 +34,7 @@ all associated values will be removed.
    
    Environment Configuration
 
+
 Change environment for simulation
 ---------------------------------
 
@@ -43,26 +47,9 @@ setting the environment in the preferences.
    
    Environment Preferences
 
+
 Change environment at runtime
 -----------------------------
 
-The active environment can be specified in app.yaml. If no environment
-is active at all, the default environment will be taken.
-
-To fulfill the requirements of multi-tenancy you may need to use the
-following api. The active environment can be set on case, session or
-application. If the environment is set on multiple levels, the level
-with the smallest scope is taken.
-
-.. table:: Scopes
-
-   +--------------------+-----------------------------------------------------------------+
-   | Scope              | API                                                             |
-   +====================+=================================================================+
-   | Case               | ``ivy.case.setActiveEnvironment(String name)``                  |
-   +--------------------+-----------------------------------------------------------------+
-   | Session            | ``ivy.session.setActiveEnvironment(String name)``               |
-   +--------------------+-----------------------------------------------------------------+
-   | Application        | ``ivy.wf.getApplication().setActiveEnvironment(String name)``   |
-   +--------------------+-----------------------------------------------------------------+
-
+The active environment can be specified in :ref:`app-yaml`. If no environment is
+active at all, the default environment will be taken.
