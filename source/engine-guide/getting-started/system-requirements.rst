@@ -79,8 +79,8 @@ System Database
 +---------------------+-----------------------+-----------+
 
 
-HtmlDialog Clients
-------------------
+Browsers
+--------
 All well known web browsers are supported:
 
 - Firefox
