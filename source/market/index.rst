@@ -18,15 +18,10 @@ Designer. Therefore you need to open the Market in Axon Ivy Designer
 
 .. image:: /_images/market/market-designer-menu.png
 
-Which will open the Axon Ivy Market in a view.
-
-.. image:: /_images/market/market-designer-view.png
-
-Select one extension and click on the :guilabel:`Install` button in the header.
-
-.. image:: /_images/market/market-designer-install.png
-
-Follow the installation wizard to empower your project.
+Which will open the `Axon Ivy Market <https://market.axonivy.com>`_ in a view.
+Here you can select your desired extension and click on the :guilabel:`Install`
+button in the header. Now you can follow the installation wizard to empower your
+project.
 
 .. image:: /_images/market/market-designer-install-wizard.png
 
