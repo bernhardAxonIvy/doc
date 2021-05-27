@@ -37,10 +37,7 @@ These generic elements are:
 .. tip::
 
    Sample implementations of custom process elements can be found on
-   GitHub in our open source
-   `repository <https://github.com/ivy-supplements>`__, e.g.
-
-   https://github.com/ivy-supplements/bpm-beans/tree/master/ldap-beans
+   GitHub in our open source `repository <https://github.com/axonivy>`__, e.g. https://github.com/axonivy/bpm-beans
 
 
 .. _new-bean-class-wizard:
@@ -94,11 +91,7 @@ You need to implement both process element extension points in order to have a w
 .. tip::
 
    Sample implementations of custom process elements can be found on
-   GitHub in our open source
-   `repository <https://github.com/ivy-supplements>`__, e.g.
-
-   -  https://github.com/ivy-supplements/birt-reporting
-   -  https://github.com/ivy-supplements/bpm-beans/tree/master/blockchain-beans
+   GitHub in our open source `repository <https://github.com/axonivy>`__, e.g. https://github.com/axonivy/bpm-beans
 
 
 .. _extensions-bundles:
