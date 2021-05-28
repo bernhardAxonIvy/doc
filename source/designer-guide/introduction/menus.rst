@@ -184,6 +184,6 @@ Help menu
 2 - Help (Designer Guide)
    Opens the Help browser to access this documentation here.
 
-3 - About Axon Ivy Designer
-   Shows system information about the used Axon Ivy Designer application
+3 - About |ivy-designer|
+   Shows system information about the used |ivy-designer| application
    (e.g. version and build number).

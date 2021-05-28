@@ -13,7 +13,7 @@ Install from the Market
 -----------------------
 
 Most of the extensions in the Axon Ivy Market can be installed in Axon Ivy
-Designer. Therefore you need to open the Market in Axon Ivy Designer
+Designer. Therefore you need to open the Market in |ivy-designer|
 (:menuselection:`Axon Ivy --> Axon Ivy Market`).
 
 .. image:: /_images/market/market-designer-menu.png

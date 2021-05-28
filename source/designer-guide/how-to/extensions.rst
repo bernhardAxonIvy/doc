@@ -105,10 +105,10 @@ need to provide it as an Eclipse plugin.
 Development
 ~~~~~~~~~~~
 
-You can create your own Eclipse plugin in the Axon Ivy Designer by
+You can create your own Eclipse plugin in the |ivy-designer| by
 following these steps:
 
-#. Start Axon Ivy Designer
+#. Start |ivy-designer|
 
 #. Switch to the :guilabel:`Plug-in Development Perspective`. Menu: :guilabel:`Window` >
    :guilabel:`Open Perspective` > :guilabel:`Other...` > :guilabel:`Plug-in Development`
@@ -177,23 +177,23 @@ following these steps:
 #. Switch back to the **META-INF/MANIFEST.MF** file editor. Choose the
    **Overview** tab and click on the link **Export Wizard**. As
    **Destination Directory** choose the ``dropins`` directory of your
-   Axon Ivy Designer or Engine installation. Press the **Finish**
+   |ivy-designer| or Engine installation. Press the **Finish**
    button. Your plugin is created in the ``dropins/plugins``
    directory.
 
 Installation
 ~~~~~~~~~~~~
 
-Follow these steps to install your extensions in an Axon Ivy Designer or
+Follow these steps to install your extensions in an |ivy-designer| or
 Engine:
 
 #. Stop the running instance (if applicable).
 
 #. Copy your plugin (bundle) that contains your extension classes to the
-   ``dropins`` directory inside the Axon Ivy Designer or Engine
+   ``dropins`` directory inside the |ivy-designer| or Engine
    installation directory.
 
-#. Start the Axon Ivy Designer or Engine.
+#. Start the |ivy-designer| or Engine.
 
 .. tip::
 

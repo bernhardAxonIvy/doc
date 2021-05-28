@@ -29,7 +29,7 @@ load the next view.
 
 You find an example of a multi view Html Dialog in the :ref:`HtmlDialogDemos
 project <importing-demo-projects>` that is provided
-with the Axon Ivy Designer.
+with the |ivy-designer|.
 
 ::
 

@@ -45,7 +45,7 @@ your browser and the page will be rendered in there.
 
 .. note::
 
-   The engine of the Axon Ivy Designer must be started to render the
+   The engine of the |ivy-designer| must be started to render the
    Content Objects.
 
 .. note::

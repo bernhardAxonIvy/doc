@@ -42,7 +42,7 @@ is how we do it:
     become reasonable and predictable.
 
 The |ivy-platform| consists on the one hand of the
-:ref:`Axon Ivy Designer <designer-guide>` which
+:ref:`|ivy-designer| <designer-guide>` which
 enables the drawing, simulation and implementation of automated business
 processes. The other part is the application server
 :ref:`|ivy-engine| <engine-guide>` that

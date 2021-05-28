@@ -1,7 +1,7 @@
 Deployment
 ==========
 
-This chapter explains how an Axon Ivy Designer Project can be deployed
+This chapter explains how an |ivy-designer| Project can be deployed
 to an |ivy-engine|. Before deploying an Axon Ivy project it is
 important to understand some major concepts and terms of the Axon Ivy
 Engine. The following chapter introduces these concepts and terms.
@@ -250,7 +250,7 @@ To deploy an Axon Ivy project to the |ivy-engine| execute the
 following steps:
 
 #. Export all files of the project you want to deploy to a zip file
-   using the Export wizard of Axon Ivy Designer (See next section).
+   using the Export wizard of |ivy-designer| (See next section).
 
 #. Copy the zip file with your project files to the |ivy-engine|.
 
@@ -281,7 +281,7 @@ Export all Project Files to a ZIP-File
 
 For the deploying of a project it is useful to export all files of a
 project to a zip file. This can be done with the export wizard of
-Axon Ivy Designer. Start the export wizard either by using the menu
+|ivy-designer|. Start the export wizard either by using the menu
 :guilabel:`File` > :guilabel:`Export ...` or by using the context menu
 :guilabel:`Export ...` in the Ivy Project Tree on a selected project.
 

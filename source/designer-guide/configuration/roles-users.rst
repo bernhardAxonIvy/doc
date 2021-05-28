@@ -136,7 +136,7 @@ by double clicking on the :guilabel:`Test Users` node in the
 .. note::
 
    Test users are only used in the process **simulation** within the
-   Axon Ivy Designer and they are not uploaded to the engine at the
+   |ivy-designer| and they are not uploaded to the engine at the
    deployment. Users for deployed processes on the |ivy-engine| need
    to be created and configured on the engine.
    

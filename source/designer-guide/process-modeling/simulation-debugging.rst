@@ -647,7 +647,7 @@ On the right hand side the following buttons are located:
 |dimage5| Save Error Report
    If you click on this button an error report that contains information
    about the error, the designer machine and the current state of the
-   Axon Ivy Designer.
+   |ivy-designer|.
 
 How to log
 ^^^^^^^^^^

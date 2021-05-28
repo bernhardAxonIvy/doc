@@ -42,7 +42,7 @@ Axon Ivy installation.
 
    It is also possible to install and use additional JSF libraries. To
    do so you copy the concerning .jar file into the folder
-   **/webapps/ivy/WEB-INF/lib** of Axon Ivy Designer and |ivy-engine|
+   **/webapps/ivy/WEB-INF/lib** of |ivy-designer| and |ivy-engine|
    respectively. Then you have to add a namespace attribute **xmlns:xx**
    on your html pages to use the widgets.
 

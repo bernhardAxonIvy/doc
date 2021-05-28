@@ -3,7 +3,7 @@
 Preferences
 ===========
 
-In the preferences you can configure some Axon Ivy Designer settings to
+In the preferences you can configure some |ivy-designer| settings to
 adapt it to your personal working style. Most of these settings you can
 overwrite in the :ref:`project-preferences`.
 

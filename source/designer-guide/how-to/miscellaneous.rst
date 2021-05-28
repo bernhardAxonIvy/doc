@@ -360,7 +360,7 @@ Recreate indices
 
    You may use as well other search facilities within this dialog to
    search for parts that are not covered by the Axon Ivy search page.
-   e.g. if you write your own Java classes in the Axon Ivy Designer you
+   e.g. if you write your own Java classes in the |ivy-designer| you
    may use the Java search.
 
 Search result view
@@ -387,7 +387,7 @@ Update Notification
 -------------------
 
 When newer Axon Ivy versions are available a dialog appears after
-starting Axon Ivy Designer. The dialog contains information about the
+starting |ivy-designer|. The dialog contains information about the
 new versions and where those can be downloaded.
 
 Use the checkboxes provided on the dialog if you don't want to see the

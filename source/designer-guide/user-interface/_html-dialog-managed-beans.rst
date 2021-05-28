@@ -25,7 +25,7 @@ lifecycle scope of the managed bean:
    not behave as expected.
 
 In the :ref:`HtmlDialogDemo Project <importing-demo-projects>` that is included in
-the Axon Ivy Designer you find an example.
+the |ivy-designer| you find an example.
 
 Bean Validation (JSR 303)
 ^^^^^^^^^^^^^^^^^^^^^^^^^ 

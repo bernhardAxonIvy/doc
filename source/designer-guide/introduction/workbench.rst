@@ -6,7 +6,7 @@ Axon Ivy Workbench
 Axon Ivy is based on the Eclipse platform. So when you start Axon Ivy
 Designer you launch an Eclipse workbench.
 
-The first thing you see after starting Axon Ivy Designer is a dialog
+The first thing you see after starting |ivy-designer| is a dialog
 that allows you to select the location of the **workspace**. The
 workspace is the root directory where your work will be stored.
 
@@ -14,7 +14,7 @@ After the workspace location is chosen, the workbench window is
 displayed. Initially, at the first start the Welcome Screen is
 displayed. On this screen different links to tutorials and documents are
 displayed. New users should click on the :dev-url:`Quick Start Tutorial </tutorial>`
-to learn how to use Axon Ivy Designer.
+to learn how to use |ivy-designer|.
 
 You can get the Welcome Screen back at any time by selecting :guilabel:`Help` >
 :guilabel:`Welcome`.

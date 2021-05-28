@@ -19,7 +19,7 @@ Error Report
 
 On Error Dialogs it is possible to generate an Error Report. This report
 contains information about the error, the designer machine and the
-current state of the Axon Ivy Designer.
+current state of the |ivy-designer|.
 
 .. note::
 

@@ -385,7 +385,7 @@ Axon Ivy > Axon Ivy Archive (\*.iar)
 Importing demo projects
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-The Axon Ivy Designer can import several demo projects, which are
+The |ivy-designer| can import several demo projects, which are
 provided from our maven repository (internet connection needed). Those
 demo projects are in the Ivy Archive (\*.iar) format and can be imported
 with the help of the *Sample* icon on the welcome page.
@@ -564,7 +564,7 @@ CMS if you create a new Content Object or not. Do not use this option if
 you do not need content in multiple languages or if you :ref:`export the CMS
 content <cms-export>` to translate it. Use the option if you know
 that you need to translate the vast majority of Content Objects within
-the Axon Ivy Designer
+the |ivy-designer|
 
 Furthermore, you have the choice between different HTML page layouts and
 CSS style sheets for use as default values for HTML dialog pages.
