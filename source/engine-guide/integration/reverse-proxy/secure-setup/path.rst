@@ -13,7 +13,7 @@ comes at the root together. For example: If your application is named
 
 .. rubric:: Restrict system access
 
-The Axon Ivy Engine itselfs provides administration functionally under the base
+The Axon Ivy Engine itself provides administration functionally under the base
 url :code:`system` e.g. :code:`https://ivyengine/system`. Do not allow or
 explicit restrict the access to this url in your reverse proxy configuration.
 

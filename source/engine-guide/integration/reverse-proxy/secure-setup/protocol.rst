@@ -9,7 +9,7 @@ should be configured on the reverse proxy. Only current TLS/SSL settings and
 only up-to-date systems should be used. Consult the manual of your reverse proxy
 server for a secure HTTPS setup.
 
-If not explicitily required than we recommend to terminate the SSL traffic on
+If not explicitly required than we recommend to terminate the SSL traffic on
 your reverse proxy and let the reverse proxy communicate with the Axon Ivy Engine
 over plain HTTP. 
 

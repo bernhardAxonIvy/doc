@@ -14,4 +14,4 @@ answered on the web, e.g. on `Stack Overflow <https://stackoverflow.com/>`_.
 .. rubric:: Support
 
 You can get support via ivy@axonivy.com (support may be subject to charging,
-depending on your licence agreement).
+depending on your license agreement).

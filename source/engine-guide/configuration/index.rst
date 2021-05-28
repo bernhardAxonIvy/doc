@@ -6,7 +6,7 @@ Configuration
 The |ivy-engine| is configured by files. They are located in the
 :file:`/configuration` directory of the engine. The :ref:`ivy-yaml`
 file contains the most important entries that define the
-environment and runtime behaviour of the |ivy-engine|.
+environment and runtime behavior of the |ivy-engine|.
 
 .. literalinclude:: includes/ivy-full.yaml
   :language: yaml

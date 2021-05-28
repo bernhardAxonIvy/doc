@@ -3,7 +3,7 @@
 Elasticsearch
 =============
 
-Axon Ivy Engine is using Elasticsearch for fulltext searches. Elasticsearch
+Axon Ivy Engine is using Elasticsearch for full-text searches. Elasticsearch
 itself is bundled with Axon Ivy Engine and will be started on demand.
 
 |

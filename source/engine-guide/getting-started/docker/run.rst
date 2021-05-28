@@ -15,7 +15,7 @@ folder somewhere in your file system and copy paste the following files to it:
 .. literalinclude:: ivy.yaml
    :language: yaml
 
-Provide a valid licence file in the same folder with the name
+Provide a valid license file in the same folder with the name
 :file:`licence.lic`. If you don't do that than this example should still work
 but the Axon Ivy Engine will run in :ref:`demo mode <demo-mode>`.
 

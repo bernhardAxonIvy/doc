@@ -32,6 +32,6 @@ created in the :ref:`app.yaml<app-businesscalendar-yaml>`.
 By clicking on one of the calendars you get redirected to the calendar's detail
 view. The configurations are grouped by **Week configuration** and **Free
 Days**. Free days can contain fixed dates, dates repeating every year and days
-relative to easter.
+relative to Easter.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-configuration-businesscalendar-detail.png

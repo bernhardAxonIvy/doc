@@ -1,12 +1,12 @@
 Configure the Engine
 --------------------
 
-Now, let's configure the Axon Ivy Engine with a licence and system database. 
+Now, let's configure the Axon Ivy Engine with a license and system database. 
 
-To start with that you must first request a valid Axon Ivy Engine licence.
-Either you get a licence for your productive system through one of our sales
-personal or contact our support for time limited trial licences. If you do not
-have a licence you can skip this section and continue with the next section.
+To start with that you must first request a valid Axon Ivy Engine license.
+Either you get a license for your productive system through one of our sales
+personal or contact our support for time limited trial licenses. If you do not
+have a license you can skip this section and continue with the next section.
 
 Moreover, you need to have a supported database server up and running with a
 database user that has the rights to create new databases. The configuration and
@@ -17,12 +17,12 @@ You can start the :ref:`setup-wizard` on the main page of the Axon Ivy Engine
 (e.g. http://localhost:8080) by clicking on the link of the demo mode
 warning message.
 
-On the first page use the :guilabel:`Choose licence` button to install your
-licence file or drop it inside the field.
+On the first page use the :guilabel:`Choose license` button to install your
+license file or drop it inside the field.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-setup-licence.png
 
-Your installed licence can be viewed if you click on the link at the top right.
+Your installed license can be viewed if you click on the link at the top right.
 Press the :guilabel:`Next` button to continue.
 
 On the next page, you can configure system administrators. 
@@ -36,7 +36,7 @@ Click :guilabel:`Add Administrator`, fill in the form and press the
   Administrators can administrate the Axon Ivy Engine. For example, they can add
   or remove users, assign user to roles, deploy projects, etc. Therefore, you
   need at least one administrator to administrate the Axon Ivy Engine. The Email
-  addresses of administrators are used to send mail notifications if licence
+  addresses of administrators are used to send mail notifications if license
   problems occur.
 
 On the next page configure which protocol connectors and ports the Axon Ivy

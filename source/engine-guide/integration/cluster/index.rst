@@ -20,7 +20,7 @@ A Cluster setup has two major advantages:
   Server, File Share) have a high availability.
 
 Compared to a single node setup you will be confronted with a more **complex** system,
-higher **hardware costs** and higher **licence fees** as you will need an
+higher **hardware costs** and higher **license fees** as you will need an
 :ref:`enterprise-license`.
 
 The diagram below shows how an |ivy-engine| Cluster setup looks like. A user accesses

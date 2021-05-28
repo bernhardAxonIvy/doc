@@ -6,7 +6,7 @@ Setup Wizard
 The Setup Wizard is a simple user interface, for operators to apply the 
 initial configuration that is necessary to turn a demo engine into a
 productive |ivy-engine| instance. This includes especially the installation of a
-licence and the creation of a system database.
+license and the creation of a system database.
 
 .. note::
     The changes that you make with the :ref:`setup-wizard` do not become active
@@ -30,7 +30,7 @@ the info page with a link to the :ref:`setup-wizard`.
 E.g. http://myServer:myPort/system/faces/view/engine-cockpit/setup.xhtml
 
 If you are not able to start the |ivy-engine| anymore, you may remove the
-installed licence file from the :file:`configuration` directory. The
+installed license file from the :file:`configuration` directory. The
 |ivy-engine| should now start up in :ref:`demo-mode`.
 
 .. note::
@@ -39,22 +39,22 @@ installed licence file from the :file:`configuration` directory. The
     **admin**.
 
 
-.. _setup-wizard-licence:
+.. _setup-wizard-license:
 
-Licence
+License
 -------
 
-On the :guilabel:`Licence` step you have to upload a valid licence:
+On the :guilabel:`License` step you have to upload a valid license:
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-setup-licence.png
 
-Use the :guilabel:`Choose licence` button to open the file browser and select
-the licence which should be used or simply drop your licence inside the marked
+Use the :guilabel:`Choose license` button to open the file browser and select
+the license which should be used or simply drop your license inside the marked
 field.
 
 .. note::
-    It is possible to configure the engine without a valid licence, but the
-    engine will always start in the :ref:`demo-mode` if you do not have a valid licence
+    It is possible to configure the engine without a valid license, but the
+    engine will always start in the :ref:`demo-mode` if you do not have a valid license
     and therefore does not use your configuration. 
 
 
@@ -69,7 +69,7 @@ right to administrate the |ivy-engine|:
 .. figure:: /_images/engine-cockpit/engine-cockpit-setup-admins.png
 
 Defining an email address for the administrators is mandatory. Notifications
-of critical events, such as licence violations, are sent to administrator email adresses.
+of critical events, such as license violations, are sent to administrator email addresses.
 
 .. _setup-wizard-webserver:
 

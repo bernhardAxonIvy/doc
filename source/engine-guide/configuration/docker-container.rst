@@ -36,12 +36,12 @@ For further docker examples have a look at our
 :dev-url:`docker-samples </link/docker-samples>` GitHub repository. 
 
 
-.. _configuration_containers_licence:
+.. _configuration_containers_license:
 
-Licence
+License
 *******
 
-You can provide the licence either by:
+You can provide the license either by:
 
 * Packaging it as part of your docker image in the :file:`configuration` folder:
 

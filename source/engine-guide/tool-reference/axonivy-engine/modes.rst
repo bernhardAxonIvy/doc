@@ -12,7 +12,7 @@ problems with your configuration.
 Production Mode
 ---------------
 This is the standard mode. Ensure you run your Axon Ivy Engine in this mode. The
-production mode is active if a valid licence is installed and a system database
+production mode is active if a valid license is installed and a system database
 is configured and available in the correct version.
 
 
@@ -22,7 +22,7 @@ Demo Mode
 ---------
 Axon Ivy Engine offers a demo mode for demonstration purposes. The demo mode
 allows you to install and start the Axon Ivy Engine without configuration and
-without a productive licence.  You can play with the Axon Ivy Engine. Try out
+without a productive license.  You can play with the Axon Ivy Engine. Try out
 the :dev-url:`Portal </market/portal>` and :ref:`Cockpit <engine-cockpit>`,
 deploy projects, etc. The username of the administrator in demo mode is
 **admin** and password **admin**. 
@@ -37,7 +37,7 @@ deploy projects, etc. The username of the administrator in demo mode is
 
 Maintenance Mode
 ----------------
-In the maintenance mode you can use the :ref:`engine-cockpit` to fix licence or
+In the maintenance mode you can use the :ref:`engine-cockpit` to fix license or
 system database configuration problems. 
 
 .. warning::
@@ -45,14 +45,14 @@ system database configuration problems.
     :ref:`engine-cockpit` are disabled! 
 
 The Axon Ivy Engine starts automatically in maintenance mode if there is a
-problem with the licence or the system database. You can disable the
+problem with the license or the system database. You can disable the
 automatically switching to maintenance mode in the :ref:`ivy-yaml` file:
 
 .. code:: yaml
 
   Boot.MaintenanceMode: DISABLED
 
-If disable and there is a licence or system database problem the Axon Ivy Engine
+If disable and there is a license or system database problem the Axon Ivy Engine
 fail to start and report an error. You can then start the Axon Ivy Engine
 explicitly in maintenance mode by using the :ref:`command line option
 <axonivy-engine>` :code:`-maintenance`.

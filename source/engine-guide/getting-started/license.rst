@@ -79,11 +79,11 @@ Public URLs are the links that end users will use to access your Axon Ivy Engine
   An administrator accesses the Axon Ivy Engine with an IP Address
   ``http://192.168.1.19``.
   
-  In this case the licence must contain three public URLs:
+  In this case the license must contain three public URLs:
   
   * ``axonivyprod``
   * ``www.customer.com``
   * ``192.168.1.19``
 
   Remark: Access via ``localhost``, ``127.0.0.1`` and ``::1`` is always possible
-  and needs not to be provided in the licence.
+  and needs not to be provided in the license.

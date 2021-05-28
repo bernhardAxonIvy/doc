@@ -32,7 +32,7 @@ The following options are available for the |ivy-engine|:
 +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
 | Option       | Description                                                                                                                                         | Mandatory |
 +==============+=====================================================================================================================================================+===========+
-| -start       | Starts the engine. Same behaviour as if no options are given. Allows to stop the engine by pressing a key in the console if a console is available. | no        |
+| -start       | Starts the engine. Same behavior as if no options are given. Allows to stop the engine by pressing a key in the console if a console is available.  | no        |
 +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
 | -startdaemon | Starts the engine. Does not allow to stop the engine by pressing a key in the console.                                                              | no        |
 +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-----------+

@@ -7,7 +7,7 @@ The Axon Ivy Engine sends emails for different purposes:
 
 * Emails that are sent within a process via the mail step.
 * New task assignment and daily task summaries to users.
-* Licence expiration reminders to the administrators.
+* License expiration reminders to the administrators.
 
 For this you have to configure an email server in :ref:`ivy-yaml`: 
 

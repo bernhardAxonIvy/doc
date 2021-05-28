@@ -51,9 +51,9 @@ You should also be aware of all :ref:`integration <integration>` possibilities.
 For example:
 
 * We always highly recommend for security reasons the use of a reverse proxy.
-* Users can be managed in an externel user management system to minimise the
+* Users can be managed in an external user management system to minimize the
   administration effort.
-* For high availaibilty, performance and scalabilty the Axon Ivy Engine can be
+* For high availability, performance and scalability the Axon Ivy Engine can be
   clustered.
 
 .. toctree::

@@ -1,12 +1,12 @@
 Configure the Engine
 --------------------
 
-Now, let's configure the Axon Ivy Engine with a licence and system database. 
+Now, let's configure the Axon Ivy Engine with a license and system database. 
 
-To start with that you must first request a valid |ivy-engine| licence.
-Either you get a licence for your productive system through one of our sales
-personal or contact our support for time limited trial licences. If you do not
-have a licence you can skip this section and continue with the next section.
+To start with that you must first request a valid |ivy-engine| license.
+Either you get a license for your productive system through one of our sales
+personal or contact our support for time limited trial licenses. If you do not
+have a license you can skip this section and continue with the next section.
 
 Moreover, you need to have a supported database server up and running with a
 database user that has the rights to create new databases. The configuration and
@@ -25,7 +25,7 @@ Shutdown the Axon Ivy Engine first by typing **shutdown** and **Y**::
     [  0%] Stopping Server
     ...
 
-Let's install the licence. You can do this by simple copy the licence :file:`*.lic`
+Let's install the license. You can do this by simple copy the license :file:`*.lic`
 file into the :file:`configuration` folder
 
 .. code:: bash
@@ -66,7 +66,7 @@ Next, define an administrator by modifying the :ref:`ivy-yaml` file of the
     add or remove users, assign user to roles, enable or disable applications,
     etc. Therefore, you need at least one administrator so that you can later
     administrate the Axon Ivy Engine. The Email address of administrators are
-    used to send mail notifications if licence problems occur.
+    used to send mail notifications if license problems occur.
 
 .. include:: ../_webserver.rst
 

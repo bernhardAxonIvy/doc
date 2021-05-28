@@ -77,7 +77,7 @@ Application Environments Overriding
 ***********************************
 
 You can override :ref:`app-yaml` configuration files by adding an additional
-:file:`app.yaml` in a subdirectory :file:`_<environment>` in parallel to the
+:file:`app.yaml` in a sub-directory :file:`_<environment>` in parallel to the
 normal app.yaml. 
 
 ::

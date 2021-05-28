@@ -5,9 +5,9 @@ Configure
 ---------
 
 It is possible to configure |ivy-engine| to print out performance statistic
-informations periodically into a CSV formatted file. This allows to analyze the
+information periodically into a CSV formatted file. This allows to analyze the
 performance of the engine and to detect long running and performance intensive
-process elements and processes. The file contains detailed informations of each
+process elements and processes. The file contains detailed information of each
 executed process element since the last dump.
 
 After activation, all performance related information is collected and written

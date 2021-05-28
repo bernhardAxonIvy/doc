@@ -10,7 +10,7 @@ OS
 
 The **OS** page shows an overview
 of the CPU load, memory load, network traffic and disk read-write activity. 
-Additionaly, the memory monitor displays the max and current memory usage of the jvm.
+Additionally, the memory monitor displays the max and current memory usage of the jvm.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-os.png
 
@@ -45,7 +45,7 @@ can be configured in the :ref:`ivy.yaml <ivy-cache-properties>` file.
 MBeans
 """"""
 
-The **MBeans** view diplays a tree with all engine :ref:`jmx` MBeans. 
+The **MBeans** view displays a tree with all engine :ref:`jmx` MBeans. 
 Click on one of the MBeans to see all its attributes. Click on an attribute with numeric
 values to display the value of the attribute over time in a chart. You can add multiple
 attributes to the chart. Click on the remove icon in the table below the chart to remove

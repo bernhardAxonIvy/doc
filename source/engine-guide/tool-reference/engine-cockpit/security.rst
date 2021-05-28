@@ -29,7 +29,7 @@ or you can click on the name of the system to open the
 Security System detail
 """"""""""""""""""""""
 
-On the security system detail view you can change a onfigured security
+On the security system detail view you can change a configured security
 system. The settings are read directly from the :ref:`ivy-yaml` file.
 Every change you make and save will be written directly back to the yam
 file. The placeholders in the empty fields are the system default values.
@@ -74,8 +74,8 @@ the user. After disabling the user will not be able to login, all active session
 will be closed, and he won't count as named user anymore. Deleting a user will
 remove him from the users table in the database.
 
-The :guilabel:`Roles` panel diplays a tree with all roles a user has. The user
-is a direct member of a role if the role has a black tick. If the tick is grey
+The :guilabel:`Roles` panel displays a tree with all roles a user has. The user
+is a direct member of a role if the role has a black tick. If the tick is gray
 the user inherits the membership from a child or member role.
 
 Additional user properties can be configured manually (over the buttons :guilabel:`Add`,
@@ -90,7 +90,7 @@ settings.
 In the :guilabel:`Permissions` panel you can see what permissions a user has and change
 them. A tick is shown if the user has a permission or permissions within a group. The
 tick is black if the user has this permission or all the permissions underneath this
-permission group. The tick is grey if the user has only some of the permission of a group.
+permission group. The tick is gray if the user has only some of the permission of a group.
 The user can have permissions directly granted / denied, or through a role. If
 the permission is granted or denied through a role you can override this for the
 user.

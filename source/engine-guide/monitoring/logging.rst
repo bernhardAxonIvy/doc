@@ -15,7 +15,7 @@ Each event has a level:
 
 Axon Ivy comes with a sophisticated :ref:`default log configuration <log4j2-xml>`
 which logs all warning, error and fatal events in the :file:`logs`
-directory of the |ivy-engine|. The log files will be roated and compressed
+directory of the |ivy-engine|. The log files will be rotated and compressed
 every day.
 
 Keep in mind that an unfavorable log configuration can lead to failures.

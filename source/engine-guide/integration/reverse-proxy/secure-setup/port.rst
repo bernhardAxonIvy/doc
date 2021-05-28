@@ -7,7 +7,7 @@ It is very important that the communication between the reverse proxy and the
 Axon Ivy Engine is **exclusive** or restricted for administrators - especially
 when :ref:`Single Sign-on <single-sign-on>` is activated. This means no one else
 should be able to communicate directly with the Axon Ivy Engine over ports e.g.
-8080, 8443 ror 8009 from the outside. How to configure this properly depends on
+8080, 8443 or 8009 from the outside. How to configure this properly depends on
 the setup.
 
 

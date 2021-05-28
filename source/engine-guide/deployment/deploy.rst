@@ -8,9 +8,9 @@ dropping the file in the :ref:`deployment directory <ivy-yaml>`, the deployment
 will be started immediately if the |ivy-engine| is running. Otherwise, the
 deployment is executed when the engine is starting. 
 
-  There are subdirectories in the deployment directory for each application. The
-  project can be copied to the corresponding subdirectory. It is also possible
-  to create a subdirectory manually. In this case a new application will be
+  There are sub-directories in the deployment directory for each application. The
+  project can be copied to the corresponding sub-directory. It is also possible
+  to create a sub-directory manually. In this case a new application will be
   created. Alternatively, the project can also be placed in the deployment
   directory itself. It is then deployed into the application with the same name
   as the filename.

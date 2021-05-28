@@ -11,7 +11,7 @@ The **Administrators** page allows you to manage users with administrator
 privileges. Any changes are stored to the :ref:`ivy-yaml` file. 
 
 You need to specify an email address for administrators as they are used to
-send notifications of critical events to, e.g. licence violations.
+send notifications of critical events to, e.g. license violations.
 
 .. note::
     Changes to administrators will only take effect after you restart the
@@ -42,18 +42,18 @@ on how to configure your engine's system database.
 .. figure:: /_images/engine-cockpit/engine-cockpit-system-database.png
 
 
-.. _engine-cockpit-licence:
+.. _engine-cockpit-license:
 
-Licence
+License
 ^^^^^^^
 
-In the **Licence** view you can upload or renew a licence. If you have a valid
-licence you see a table with all information about it. On the right side you
+In the **License** view you can upload or renew a license. If you have a valid
+license you see a table with all information about it. On the right side you
 have a live overview of your active sessions with the ability to kill sessions.
 
 .. tip::
     **Anonymous or System Sessions** do not appear in the session table but
-    they are counted as normal **Sessions or Licenced Sessions**.
+    they are counted as normal **Sessions or Licensed Sessions**.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-licence.png
 

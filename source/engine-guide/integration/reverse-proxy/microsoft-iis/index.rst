@@ -31,8 +31,8 @@ Engine. It is divided into several parts:
 
 * **Setup SSO** will configure :ref:`Single Sign-on <single-sign-on>`. This will
   enable Windows Authentication and will add a HTTP request header
-  :code:`X-Forwarded-User` with the current user to the request wich will be
-  forwared to the Axon Ivy Engine. You will also need to :ref:`activate Single
+  :code:`X-Forwarded-User` with the current user to the request which will be
+  forwarded to the Axon Ivy Engine. You will also need to :ref:`activate Single
   Sign-on <single-sign-on>` on the Axon Ivy Engine. Furthermore this will also
   enable Basic Authentication which is required for REST Clients like the
   Axon Ivy Mobile App to call the protected REST Services provided by the

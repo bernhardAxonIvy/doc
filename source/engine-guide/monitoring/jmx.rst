@@ -119,7 +119,7 @@ The list below contains some of the provided information:
 
     *:type=GlobalRequestProcessor,name=*
 
-**Number of Sessions** (HTTP sessions, Axon Ivy sessions, licence relevant sessions, etc.)
+**Number of Sessions** (HTTP sessions, Axon Ivy sessions, license relevant sessions, etc.)
 
 .. code-block:: properties
 
