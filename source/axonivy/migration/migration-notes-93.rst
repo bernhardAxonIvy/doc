@@ -30,7 +30,7 @@ Defining Databases
 Databases are stored in new locations. During development, the project's
 Databases are now stored in the :ref:`databases.yaml <database-configuration>` file. On the
 |ivy-engine|, Databases have been moved from the System Database to the
-applications's :ref:`app-yaml` file. Furthermore, database and project migrations do
+application's :ref:`app-yaml` file. Furthermore, database and project migrations do
 the conversion from the old to the new format for you automatically.
 
 .. container:: admonition note toggle
@@ -62,7 +62,7 @@ Defining Rest Clients
 Rest Clients are stored in new locations. During development, the project's
 Rest Clients are now stored in the :ref:`rest-clients.yaml <rest-clients-configuration>` file. On the
 |ivy-engine|, Rest Clients have been moved from the System Database to the
-applications's :ref:`app-yaml` file. Furthermore, rest clients and project migrations do
+application's :ref:`app-yaml` file. Furthermore, rest clients and project migrations do
 the conversion from the old to the new format for you automatically.
 
 .. container:: admonition note toggle
@@ -97,7 +97,7 @@ Cluster Name
 |tag-ops-changed| |tag-ops-wizard|
 
 The name of a :ref:`cluster <cluster>` (|ivy-engine| Enterprise Edition) can now be configured 
-in the :ref:`ivy.yaml <ivy-yaml>` file. Before it was preconfigured in the :ref:`licence <licence>` 
+in the :ref:`ivy.yaml <ivy-yaml>` file. Before, it was pre-configured in the :ref:`license <license>` 
 file as :code:`server.cluster.name` property. 
 
 

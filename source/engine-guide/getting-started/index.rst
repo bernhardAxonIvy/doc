@@ -43,8 +43,8 @@ runtime environments:
 
 .. rubric:: Productive Setup
 
-To run an Axon Ivy Engine in production, you must order a :ref:`licence
-<licence>` for the Axon Ivy Engine and install the Axon Ivy Engine on a system
+To run an Axon Ivy Engine in production, you must order a :ref:`license
+<license>` for the Axon Ivy Engine and install the Axon Ivy Engine on a system
 that fulfils the :ref:`system requirements <engine-system-requirements>`.
 
 You should also be aware of all :ref:`integration <integration>` possibilities.

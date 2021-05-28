@@ -47,7 +47,7 @@ The common way to implement a Wait (Intermediate Event) bean is to
 extend the abstract base class
 :public-api:`AbstractProcessIntermediateEventBean </ch/ivyteam/ivy/process/intermediateevent/AbstractProcessIntermediateEventBean.html>`.
 
-The interface also includes an inner editor class to parametrize the
+The interface also includes an inner editor class to parameterize the
 beans. The editor provides one configuration which is set on both beans
 the Call and the Wait bean. You will find the documentation of the
 interface and the abstract class in the Java Doc of the Axon Ivy Public
@@ -68,11 +68,11 @@ API.
      (when the external event arrives) the task state will change. Such a
      task can be executed on every node.
      
-   This is the standard behaviour in
+   This is the standard behavior in
    order to eliminate racing conditions in normal *Call & Wait* situations.
 
-   Described behaviour is regarded as correct and it should cover most of
-   the use cases. In case you understood the behaviour and still you need
+   Described behavior is regarded as correct and it should cover most of
+   the use cases. In case you understood the behavior and still you need
    the *Wait part* of your *Call & Wait* bean to run on all closer nodes,
    you may instruct the engine to do so. Just have your bean class
    implement the (empty) marker interface :public-api:`IMultiNodeCapable </ch/ivyteam/ivy/process/beans/IMultiNodeCapable.html>` and the
@@ -137,7 +137,7 @@ Timeout Error
 Wait Tab
 ~~~~~~~~
 
-On this tab you define the timeout behaviour during the Wait part of the
+On this tab you define the timeout behavior during the Wait part of the
 element.
 
 .. figure:: /_images/process-elements/call-and-wait-tab-wait.png

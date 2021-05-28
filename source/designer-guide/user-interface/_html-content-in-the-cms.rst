@@ -286,7 +286,7 @@ execution of a process link will lead to the continuation of the process
 of a static link leads to some other HTML page independent of the
 process.
 
-Links can be rendered in many different forms, e.g. both the "classical"
+Links can be rendered in many different forms, e.g. both the "classic"
 hyperlink as well as the display of a form with a submit button are
 considered to be special forms of links.
 

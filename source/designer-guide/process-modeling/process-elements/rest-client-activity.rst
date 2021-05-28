@@ -100,7 +100,7 @@ Body
       REST service. Most Java objects should be serializable as JSON
       (application/json) without additional configuration.
 
-      The serialization behaviour can be configured for special needs
+      The serialization behavior can be configured for special needs
       via :ref:`properties <rest-clients-configuration-properties>` on
       the client.
 

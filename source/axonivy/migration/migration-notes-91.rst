@@ -6,12 +6,12 @@ Migrating from 8.0 to 9.1
 Be aware of
 -----------
 
-Licence
+License
 *******
 
 |tag-ops-changed|
 
-You need to request a new licence for |ivy-engine| 9.1.
+You need to request a new license for |ivy-engine| 9.1.
 
 .. container:: admonition note toggle
 
@@ -19,9 +19,9 @@ You need to request a new licence for |ivy-engine| 9.1.
 
      **Details**
 
-  We have simplified the licence check for :ref:`public urls <licence>` compared to 8.0
+  We have simplified the license check for :ref:`public urls <license>` compared to 8.0
   and do not check for ports and paths (context) anymore. When requesting a
-  new 9.1 licence, you only need to specify the DNS names/Hostnames or IP
+  new 9.1 license, you only need to specify the DNS names/Hostnames or IP
   addresses through which the |ivy-engine| can be accessed.
 
 

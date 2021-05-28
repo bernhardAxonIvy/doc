@@ -63,7 +63,7 @@ Event Tab
 
 On this tab you define the Java class that the IntermediateEvent should
 instantiate, the identifier of the event to wait for and the timeout
-behaviour.
+behavior.
 
 |image2|
 

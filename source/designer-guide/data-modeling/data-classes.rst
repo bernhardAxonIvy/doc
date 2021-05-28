@@ -65,7 +65,7 @@ Project Name
 
 Namespace
    Choose a namespace for your Data Class. The name space lets you
-   create a structure to organise your data. Use the dot character '.'
+   create a structure to organize your data. Use the dot character '.'
    to separate the folders from each other. The namespace will be
    visible in the Axon Ivy project tree.
 
@@ -113,7 +113,7 @@ Comment
    Use this field to document your data class
 
 Annotations
-   Annotations can be set to control certain behaviours:
+   Annotations can be set to control certain behaviors:
 
    BusinessCaseData
       Objects of the data class are stored in the Business Data Store
@@ -190,7 +190,7 @@ Combine into new Data Class refactoring
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Over time the amount of attributes in a Data Class may become excessive.
-This decreases the maintainability and reusability of your process
+This decreases the maintainability and re-usability of your process
 logic. Therefore the editor allows you to extract multiple attributes
 from an existing Data Class into a new Data Class. The extracted
 attributes will be replaced with a delegate field for the new Data

@@ -20,7 +20,7 @@ See our release-cycle (:dev-url:`/release-cycle`) for more information on our re
 
  
 
-**Backward-compatibility**
+**Backwards-compatibility**
 
 The |ivy-engine| can run and execute workflow applications that have been built towards
 an older engine version. Even so, we do recommend to **simulate migrations to new versions

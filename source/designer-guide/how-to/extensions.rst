@@ -11,11 +11,11 @@ Extendible Process Elements
 ---------------------------
 
 Axon Ivy comes with four generic process elements that can be used to
-address particular execution behaviour requirements none of the standard
+address particular execution behavior requirements none of the standard
 process elements can fulfill.
 
 All generic process elements contain a tab in which a Java class can be
-selected. The Java class implements the actual execution behaviour. Some
+selected. The Java class implements the actual execution behavior. Some
 standard implementations are shipped with the Axon Ivy core, and with
 these elements developers are able to specify their own implementation
 as part of the project.

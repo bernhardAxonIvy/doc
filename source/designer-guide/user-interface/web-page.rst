@@ -155,7 +155,7 @@ of the user.
 
    Some browsers delegate the displaying of certain file types to third
    party plugins and/or applications depending on the configuration of
-   the client. Thus this behaviour cannot be controlled by Ivy.
+   the client. Thus this behavior cannot be controlled by Ivy.
 
 
 .. include:: _html-content-in-the-cms.rst

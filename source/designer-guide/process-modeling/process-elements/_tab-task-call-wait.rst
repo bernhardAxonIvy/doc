@@ -2,9 +2,9 @@ Task Tab
 ~~~~~~~~
 
 On this tab you configure the task which is created when this element is
-executed by the awaitet event. This task will not appear in any user
+executed by the awaited event. This task will not appear in any user
 task list and is exclusively handled by the system. The values on this
-tab are therefore only relevant for analysing the finished tasks and not
+tab are therefore only relevant for analyzing the finished tasks and not
 for the task list itself.
 
 .. figure:: /_images/process-elements/call-and-wait-tab-task.png

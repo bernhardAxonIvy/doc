@@ -31,7 +31,7 @@ in the Java Doc of the Axon Ivy Public API.
    since it has become very easy to create and call your own Java
    classes from IvyScript. However, the PI element still provides a
    standardized interface to a third party Java class and can provide a
-   custom made editor for parametrization.
+   custom made editor for parameterization.
 
 
 Inscription

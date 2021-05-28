@@ -4,7 +4,7 @@ Process Modeling
 ================
 
 This chapter introduces Axon Ivy processes and how to work with them.
-The creation and logical organisation of processes is explained as well
+The creation and logical organization of processes is explained as well
 as the functionality of the :ref:`process-editor` and the different kinds of processes.
 
 Process Kinds
@@ -370,7 +370,7 @@ HTTP Basic
       connection (e.g. HTTPS).
 
    If the web container (Tomcat) or a web server (Microsoft IIS/Apache)
-   already handels user authentication, the user is passed through to
+   already handles user authentication, the user is passed through to
    Axon Ivy without doing an additional HTTP Basic authentication.
 
 .. _process-editor:
@@ -733,7 +733,7 @@ and lanes are colored background swimlanes with a label that is placed
 *vertical* orientation.
 
 Swimlanes are available for all process kinds and are typically used to
-visualize organisations, roles, responsibility assignments or systems
+visualize organizations, roles, responsibility assignments or systems
 for process elements or sections of process logic.
 
 A pool or lane can be widened or narrowed by dragging it's border/edge

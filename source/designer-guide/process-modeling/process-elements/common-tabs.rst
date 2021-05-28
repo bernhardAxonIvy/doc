@@ -115,7 +115,7 @@ Code Tab
 --------
 
 The code tab is part of almost all inscription masks and allows the user
-to define the semantics (behaviour) of the corresponding process element
+to define the semantics (behavior) of the corresponding process element
 with the built-in :ref:`ivyscript`.
 
 .. figure:: /_images/process-elements/tab-code.png
@@ -420,7 +420,7 @@ Task Options
 
    The task can be blocked before a user can work on it. So the user
    will not see the task in his tasklist or get any notification about
-   its existance until the delay period is over. This ivyScript
+   its existence until the delay period is over. This ivyScript
    expression defines the :ref:`ivyscript-datatype-duration` the task is
    blocked.
 
@@ -445,7 +445,7 @@ Task Expiry
 
    Executes an :ref:`process-element-error-start` that
    compensates the expired task. Here you can implemented any custom
-   behaviour and access the full workflow API.
+   behavior and access the full workflow API.
 
    **Responsible**
 

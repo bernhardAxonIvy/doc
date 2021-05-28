@@ -27,7 +27,7 @@ system, without manual intervention by a user.
    times the task had failed before (1, 2, 4, 8 minutes, ... up to 23
    hours).
 
-   This is a default behaviour. To change it consult the documentation
+   This is a default behavior. To change it consult the documentation
    of :public-api:`SystemTaskFailureBehaviour </ch/ivyteam/ivy/workflow/SystemTaskFailureBehaviour.html>`
 
 .. warning::

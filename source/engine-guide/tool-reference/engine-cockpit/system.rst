@@ -104,9 +104,9 @@ to reset a configuration setting or view the complete configuration file.
 Cluster
 ^^^^^^^
 
-If your engine runs with an :ref:`license-edition` licence, your are able to
+If your engine runs with an :ref:`license-edition` license, your are able to
 define :ref:`cluster`. In addition your engine cockpit will provide a
-**Cluster** navigation menuitem. This will give you an overview of your
+**Cluster** navigation menu item. This will give you an overview of your
 running nodes and a detail view dialog if you click on one node.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-cluster.png

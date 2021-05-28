@@ -48,7 +48,7 @@ Start Tab
 
 On this tab you can define a name and parameters (which results in a so
 called Signature) to start the process. See :ref:`process-element-tab-start` for a more detailed
-decription.
+description.
 
 .. note::
 
@@ -159,11 +159,11 @@ Violation error
       Usually only processes including at least one :ref:`process-element-task-switch-gateway` have this option
       selected. Because per default a new task is in state ``CREATED``
       until the task become persisted. If the option is selected, the
-      task gets directly into the state ``RESUMED``. With this behaviour
+      task gets directly into the state ``RESUMED``. With this behavior
       it's possible to distinguish tasks which have a :ref:`process-element-task-switch-gateway` in their process and
       others without one. This helps to separate tasks in the task
       overview from workflow starts (with different steps) and simple
-      process starts (which e.g. only outputs some informations).
+      process starts (which e.g. only outputs some information).
 
 
 .. _process-element-start-request-trigger-tab:

@@ -3,7 +3,7 @@ Converters
 
 Converters are used to convert number or date/time values for string
 representation and vice versa. If you want to display a ``Number`` or
-``Date``/``DateTime`` process data attribute well formated in an input
+``Date``/``DateTime`` process data attribute well formatted in an input
 widget then use the basic converters provided by the JSF core framework:
 **convertNumber** and **convertDateTime**.
 

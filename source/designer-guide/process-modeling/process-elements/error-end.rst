@@ -11,7 +11,7 @@ Element Details
 
 The Error End Event can be used to leave the happy path of a process by
 throwing an error (e.g. if an approval is denied). It can also be used
-to re-throw previously catched errors.
+to re-throw previously caught errors.
 
 See the :ref:`Error Handling <error-handling-error-start-event>`
 concept for sample use cases.

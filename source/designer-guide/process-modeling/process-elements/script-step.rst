@@ -43,8 +43,8 @@ Disable Permission Checks (Execute this Script Step as SYSTEM)
 
    .. warning::
 
-      Use this possiblity with caution! In this case you as process
-      developer are reponsible that only authorized users can reach this
+      Use this feature with caution! As the process developer you
+      need to make sure that only authorized users can reach this
       Script Step in the process.
 
 .. |image0| image:: /_images/process-elements/script-step.png

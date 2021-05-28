@@ -38,7 +38,7 @@ layouts, handlers are already configured. See ``webContent/layouts/includes/exce
 
 The above ajax exception handler will catch every exception of every
 type. If an exception occurs the action in ``onexception`` will be
-executed. In this example, a Primeface dialog will be shown.
+executed. In this example, a Primefaces dialog will be shown.
 
 ::
 

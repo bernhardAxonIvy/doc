@@ -8,8 +8,8 @@ After running Operating System specific migration steps:
 #. Restart the Axon Ivy Engine .
 #. Very likely you will need a new license after a major version change.
 
-   #. Request a new licence as described in the :ref:`licence` chapter.
-   #. Copy the new licence to the ``configuration`` directory or upload it using the :ref:`Engine Cockpit <setup-wizard>`
+   #. Request a new license as described in the :ref:`license` chapter.
+   #. Copy the new license to the ``configuration`` directory or upload it using the :ref:`Engine Cockpit <setup-wizard>`
 #. Migrate the Database to the latest version: :ref:`upgrade-system-db`
 
    a. Either :ref:`convert the system database <upgrade-system-db>` with the :ref:`Engine Cockpit <engine-cockpit-systemdb>`

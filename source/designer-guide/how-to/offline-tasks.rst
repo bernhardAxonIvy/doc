@@ -104,7 +104,7 @@ whole user task is set back to suspended.
 
    Placing an Html Dialog element after an (Offline) User Task element
    is not a good idea, since it will not be handled correctly by an app
-   that submitted the offline form. Generally it's best practise to
+   that submitted the offline form. Generally it's best practice to
    place a task switch (Task Switch element of another User Task) as
    soon as possible after a User Task element.
 

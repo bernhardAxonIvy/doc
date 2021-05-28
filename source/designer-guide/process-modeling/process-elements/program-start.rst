@@ -22,7 +22,7 @@ The common
 way to implement a Start Event Bean is to extend the abstract base class
 :public-api:`AbstractProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/AbstractProcessStartEventBean.html>`.
 The interface also includes an inner
-editor class to parametrize the bean. You will find the documentation of
+editor class to parameterize the bean. You will find the documentation of
 the interfaces and abstract class in the Java Doc of the Axon Ivy Public
 API.
 
@@ -74,7 +74,7 @@ Java Class to execute
 
 Responsible role
    Defines the role that is required to be able to start a process. The
-   bean will set up an authorised session that calls the
+   bean will set up an authorized session that calls the
    ``fireProcessStartEventRequest()`` from the ``eventRuntime`` to
    trigger a process.
    

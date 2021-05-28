@@ -6,7 +6,7 @@ Enterprise License
 You need an enterprise license to run |ivy-engine| as a Cluster (|ivy-engine| Enterprise Edition). 
 
 The information needed to request an enterprise license are the same 
-as for a Standard Edition :ref:`licence`.
+as for a Standard Edition :ref:`license`.
 
 Cluster Nodes
 -------------

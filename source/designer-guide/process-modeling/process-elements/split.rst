@@ -26,7 +26,7 @@ be manipulated in each path individually.
 .. warning:
 
    Do not put any user interaction (User Dialog, HTML Page) or task
-   element within a splitted process path.
+   element within a split process path.
 
 
 Inscription

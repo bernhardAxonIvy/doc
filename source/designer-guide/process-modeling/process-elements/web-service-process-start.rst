@@ -121,7 +121,7 @@ Task Tab
 
 This tab defines information relevant to the task. The task created for
 a web service call will normally not appear in a task list of a user.
-The values on this tab are therefore only relevant for analysing the
+The values on this tab are therefore only relevant for analyzing the
 finished tasks and not for the task list itself.
 
 .. figure:: /_images/process-elements/web-service-process-start-tab-task.png

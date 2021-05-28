@@ -75,7 +75,7 @@ Project Name
 
 Namespace
    Chose a namespace for your Entity Class. The name space lets you
-   create a structure to organise your data. Use the dot character '.'
+   create a structure to organize your data. Use the dot character '.'
    to separate the folders from each other. The namespace will be
    visible in the Axon Ivy project tree.
 
@@ -387,9 +387,9 @@ Data source
    Here you have to choose a database configuration which will be the
    data source of this persistence unit. Means all the data are loaded
    and stored within this database. Go to the :ref:`database-configuration-editor`
-   to configure available datasources.
+   to configure available data sources.
 
-   There is also an ``IvySystemDatabase`` datasource which points to the
+   There is also an ``IvySystemDatabase`` data source which points to the
    current System Database. Normally you would prefer your own database
    to split valuable customer data from the system data.
 

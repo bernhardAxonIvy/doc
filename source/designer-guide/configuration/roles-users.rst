@@ -20,7 +20,7 @@ Role Concept
 ------------
 
 The hierarchy of the roles is built upon the principle of
-specialization. Each child role specialises its parent role(s) meaning
+specialization. Each child role specializes its parent role(s) meaning
 that a role **Team A** always implicitly contains its parent roles. The role
 **Everybody** is the root for all roles, all roles specialize this role.
 For example in the figure below, a member user of role **Team A** also has

@@ -68,7 +68,7 @@ level, it can't be caught on the same process level.
 
 Error End Events can also be used to re-throw a pre-defined ivy error
 with a specific error that has a meaning to the business. (e.g. if a
-webservice is not available)
+web service is not available)
 
 |image1|
 

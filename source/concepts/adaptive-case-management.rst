@@ -189,7 +189,7 @@ Regaining the big picture
 
 Real world BPM projects have shown that big processes tend to get
 increasingly complex and need to be split up into huge process
-landscapes, which leads to an intransparent main process flow. Users of
+landscapes, which leads to an in-transparent main process flow. Users of
 the process often do not see how their work contributes to the bigger
 business process and therefore great opportunities for improvements are
 not taken. There is also a big need for a unique view of adaptive case
@@ -329,7 +329,7 @@ in the Workflow chapter).
 The inscribed pattern on the Signal Boundary Event defines the filter
 for awaited signals codes:
 
-Listens for a cancelled order signal with a specific id defined as
+Listens for a canceled order signal with a specific id defined as
 macro:
 
 ::

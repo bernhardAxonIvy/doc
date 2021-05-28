@@ -10,7 +10,7 @@ solution may be redefined in the context of a specific installation or
 customer.
 
 To permit this, Axon Ivy knows various concepts of context-sensitive
-redefinitions:
+re-definitions:
 
 -  Regular redefinition (e.g. for Content Objects and/or
    Configurations): Simply define an already existing artifact with the
@@ -43,7 +43,7 @@ The main process itself (Order) and each of the depicted sub processes
 those projects together form a (generic) web shop application, depicted
 below. The web shop project contains the business process and its
 start; the Frontend project contains the DoOrder sub process; the
-backend project contains the ProcessOrder sub process; the Shipment
+Backend project contains the ProcessOrder sub process; the Shipment
 project contains the Shipping sub process.
 
 |image1|
@@ -63,7 +63,7 @@ inside the *Acme web shop* project.
 There are two ways to use the *Acme web shop* project as an overriding
 project. You can either define a :ref:`strict_overriding` in
 the generic *Web shop* application or you use the :ref:`case_scope`
-which allows multitenancy. In both cases make sure your overriding project
+which allows multi-tenancy. In both cases make sure your overriding project
 is dependent on the base project and that each override is defined
 in your overriding project as described in :ref:`overrides-editor`.
 

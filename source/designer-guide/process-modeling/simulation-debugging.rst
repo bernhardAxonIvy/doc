@@ -423,7 +423,7 @@ Popup Menu
 .. warning::
 
    Changing the value may cause exceptions or introduce undesired side
-   effects with very weird behaviour in the continuation of the
+   effects with very weird behavior in the continuation of the
    execution. Please use this feature with precaution!
 
 
@@ -682,7 +682,7 @@ Process Performance View
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Process Performance View displays process performance statistics.
-This allows to analyse the performance and to detect long running and
+This allows to analyze the performance and to detect long running and
 performance intensive process elements and processes. The view contains
 detailed information of each executed process element.
 
@@ -703,7 +703,7 @@ Accessibility
 
 *Window > Show View > Other... > Axon Ivy > Process Performance*
 
-Analyse the Performance Statistic
+Analyze the Performance Statistic
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 All time values are in milliseconds. The execution of some process

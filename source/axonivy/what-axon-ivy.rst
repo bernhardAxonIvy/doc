@@ -27,10 +27,10 @@ is how we do it:
     can easily be orchestrated by our platform. An initial application that
     leads users through the process can be generated without the need to hire a
     software engineer. People can contribute to the process by using their
-    favourite device such as a smartphone or workstation.
+    favorite device such as a smartphone or workstation.
 
 **Improve**
-    The digitalization of your company can **evolve over time**, we favour small
+    The digitalization of your company can **evolve over time**, we favor small
     predictable improvements over big bang solutions. The |ivy-platform| allows
     you to start simple and fast with your existing environment. You may start
     with just task notifications that are sent to users that should contribute

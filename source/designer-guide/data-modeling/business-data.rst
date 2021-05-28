@@ -265,7 +265,7 @@ Elasticsearch
    limitations.
 
    Do not use ``Map``\ s with random or generated keys in your data
-   structure. This will lead in a explosion of Elasticsaerch mappings.
+   structure. This will lead in a explosion of Elasticsearch mappings.
 
    Prevent cyclic references and back references from lists to the
    parent object. This can lead to huge json while expanding these data
@@ -288,7 +288,7 @@ objects, which may not be serialized by default.
    provide and consume :ref:`integration-rest`. If you customize
    the serialization of Jackson, it will very likely also affect the
    serialization of Java objects which are used as input or return
-   parameter of any REST service. If a serialization behaviour must only
+   parameter of any REST service. If a serialization behavior must only
    be applied for the BusinessData serialization, declare it as :ref:`business-data-own-module`.
 
 Custom constructor

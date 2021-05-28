@@ -33,7 +33,7 @@ the following steps:
 
 -  If not defined as head attribute, the theme can be configured by application.
    See :ref:`app-yaml`
--  The application configuraiton can also be overridden per session by using 
+-  The application configuration can also be overridden per session by using 
    ``ch.ivyteam.ivy.jsf.primefaces.IvyPrimefacesThemeResolver.setSessionTheme(String theme)`` 
 
 

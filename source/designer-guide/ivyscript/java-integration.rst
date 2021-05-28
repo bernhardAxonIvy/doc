@@ -31,7 +31,7 @@ implementations of Date, Time and combined Date-Time information are
 encountered (e.g. ``java.util.Date``, ``java.sql.Date``, Axis Time,
 etc). To further complicate matters, some of those implementations are -
 for historical reasons - mutable (e.g. ``java.util.Date``) which is from
-todays' perspective an unwelcomed behavior. This has been remedied by
+today's perspective an unwelcome behavior. This has been remedied by
 some other implementations.
 
 To facilitate working with values of those different types, IvyScript
@@ -78,7 +78,7 @@ neither when reading nor when writing those types.
                   
 
    is valid and permitted in IvyScript, the actual type of the *myDate*
-   object will aways be IvyScript ``DateTime``, due to the
+   object will always be IvyScript ``DateTime``, due to the
    auto-conversion. This can lead to confusion.
 
 When trying to find out if date or time values are ``null`` or not

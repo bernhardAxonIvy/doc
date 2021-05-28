@@ -10,7 +10,7 @@ configurations plus a simple sample test.
 
      Select: New -> Axon Ivy Test Project in the context menu.
 
-   - Pick the test flavour |TESTKIND| to include in the 'New Axon Ivy Test Project' wizard.
+   - Pick the test flavor |TESTKIND| to include in the 'New Axon Ivy Test Project' wizard.
 
    - Finish the wizard.
 

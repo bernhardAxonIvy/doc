@@ -72,7 +72,7 @@ in the Axon Ivy Engine.
     +-------------------------------------------------------+--------------------------------------------------------------------------+
 
     If you deploy an :file:`app.yaml` in an application zip file, it must be placed
-    now in the subfolder :file:`config`. For compatibility reasons the old
+    now in the sub-folder :file:`config`. For compatibility reasons the old
     legacy place in the root of the full application deployment zip is still
     supported for the time being.
 
@@ -118,7 +118,7 @@ Defining Global Variables
 Global Variables are stored in new locations. During development, the project's
 Global Variables are now stored in the :ref:`variables.yaml <variables>` file. On the
 |ivy-engine|, Global Variables have been moved from the System Database to the
-applications's :ref:`app-yaml` file. Furthermore, database and project migrations do
+application's :ref:`app-yaml` file. Furthermore, database and project migrations do
 the conversion from the old to the new format for you automatically.
 
 .. container:: admonition note toggle
@@ -375,7 +375,7 @@ such as ZonedDateTime, and will therefore optimize their JSON representation.
 
      **Details**
   
-  E.g. ``java.time.ZonedDateTime`` will be serialized as a simple timestamp number, rathern than a complex object structure.
+  E.g. ``java.time.ZonedDateTime`` will be serialized as a simple timestamp number, rather than a complex object structure.
 
   This change should not have any side-effects on existing clients since java.time objects,
   which did not have any special serializer features enabled, could not be serialized in a

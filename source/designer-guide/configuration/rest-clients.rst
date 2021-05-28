@@ -16,11 +16,11 @@ services, which can be consumed from a BPM process.
 REST Client
 -----------
 
-A REST client can be referenced by its name or by its universal unique
-identifier (uuid). The uuid is generated when a new REST client is
+A REST client can be referenced by its name or by its universally unique
+identifier (UUID). The UUID is generated when a new REST client is
 created and will never change. The name of a REST client is given when a
 new REST client is created. It can be changed later. By referencing a
-REST client by its uuid ensures that renaming of the REST client will
+REST client by its UUID ensures that renaming of the REST client will
 not break the reference.
 
 Further information about how to use the REST clients can be found in
@@ -65,7 +65,7 @@ REST Client Section
 
 - :guilabel:`UUID`
   Universal unique identifier of the REST client. The REST client can
-  be referenced by this uuid. Cannot be modified.
+  be referenced by this UUID. Cannot be modified.
 
 - :guilabel:`Name`
   The name of the REST client. The REST client can be referenced by

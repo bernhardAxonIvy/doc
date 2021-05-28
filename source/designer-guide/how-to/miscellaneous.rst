@@ -441,7 +441,7 @@ searching these plugins arose in the past years.
 
 And the conclusion, you can use all these plugins and integrate them
 into your Axon Ivy installation to interact seamlessly between your
-favourite plugin set and the built-in Axon Ivy features.
+favorite plugin set and the built-in Axon Ivy features.
 
 .. note::
 

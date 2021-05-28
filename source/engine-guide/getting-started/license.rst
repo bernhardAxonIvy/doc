@@ -1,4 +1,4 @@
-.. _licence:
+.. _license:
 
 License
 =======
@@ -35,7 +35,7 @@ Concurrent Sessions
 -------------------
 
 The number of users that are currently working with Axon Ivy are known as
-**conccurent sessions**. Axon Ivy controls the number of sessions as follows:
+**concurrent sessions**. Axon Ivy controls the number of sessions as follows:
 
 - Sessions where no user is authenticated are counted as one concurrent users.
 - Sessions where the same user is authenticated are counted as on concurrent

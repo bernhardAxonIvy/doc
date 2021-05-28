@@ -88,13 +88,13 @@ The API on Task level is identical.
 
    The project
    :ref:`WorkflowDemos <importing-demo-projects>`
-   demonstrates the usage of start, case and task categorisation. Typically the
+   demonstrates the usage of start, case and task categorization. Typically the
    case category is used to categorize the over-all process (i.e.
    Business Case) and the task category is used to categorize a single
    or set of unions of work. Because the clear separation of case and
    task categorization even complex use cases could be handled.
 
-   E.g. in a midsized company the process to request an address from a
+   E.g. in a mid-sized company the process to request an address from a
    customer change exists in multiple forms. There is one in the
    customer portal and one for partner agencies. The process executed
    from the customer portal has the case category

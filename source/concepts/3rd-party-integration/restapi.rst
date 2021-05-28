@@ -89,7 +89,7 @@ without additional effort for you as a service provider.
 
 However, there are many service interfaces that become easier to use if they are enriched
 with explanatory documents. What's more, you may like to expose and explain technical 
-implementation details, such as strictly required params or possible response statuses. 
+implementation details, such as strictly required parameters or possible response statuses. 
 All of these docs, can be provided by adding optional OpenAPI annotations to your REST APIs.
 
 The highlighted lines in the following example show frequent 
@@ -119,7 +119,7 @@ All `OpenAPI <https://www.openapis.org/>`__ services can be easily inspected wit
 It gives consumers of your services not only a detailed service description, but a simple client to fire real calls
 against the services too.
 
-The API Browser can be accessed with a webbrowser of your choice under the following URL paths:
+The API Browser can be accessed with a web browser of your choice under the following URL paths:
 
 - In the |ivy-designer|: ``/designer/api-browser`` (e.g. http://localhost:8081/designer/api-browser)
 - In the |ivy-engine|: ``/system/api-browser`` (e.g. http://localhost:8080/system/api-browser)
@@ -159,7 +159,7 @@ CSRF protection
 To call a modifying REST service via ``PUT``, ``POST`` or ``DELETE`` the
 caller needs to provide a HTTP header called ``X-Requested-By`` with
 any value e.g. ``ivy``. The `CSRF filter <https://github.com/jersey/jersey/blob/master/core-server/src/main/java/org/glassfish/jersey/server/filter/CsrfProtectionFilter.java>`__
-protects REST services against cross-site request forgery (CSRF). If client omits the header on a modifying REST request, the reponse
+protects REST services against cross-site request forgery (CSRF). If client omits the header on a modifying REST request, the response
 will indicate a failure with the HTTP status code 400 (Bad Request).
 
 User provided REST services via ``GET``, ``HEAD`` or ``OPTIONS`` should

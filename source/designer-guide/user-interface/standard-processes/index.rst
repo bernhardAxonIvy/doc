@@ -3,7 +3,7 @@
 Standard Processes
 ******************
 
-With standard processes you can change the default workflow behaviour by simply
+With standard processes you can change the default workflow behavior by simply
 providing a custom implementation in your ivy project.
 
 For example: Once a user has completed a task, he will be redirected to his
