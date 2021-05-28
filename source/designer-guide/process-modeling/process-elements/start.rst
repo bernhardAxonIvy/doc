@@ -113,7 +113,7 @@ Category
 Custom Fields 
    Here you can set additional information for the start. The set
    values are only informational and have no effect on how this start is
-   treated by Axon Ivy. These custom fields can easily be queried on
+   treated by |axon-ivy|. These custom fields can easily be queried on
    the :public-api:`IWebStartable </ch/ivyteam/ivy/workflow/start/IWebStartable.html>` interface to allow sorting, filtering or 
    displaying additional information in start lists
    
@@ -135,8 +135,8 @@ Responsible Role
 Anonymous
    If the checkbox has been checked anonymous users (which own the
    *Everybody* role by default) may start the process. If unchecked it
-   limits the process to users that are registered in the Axon Ivy
-   Engine as users.
+   limits the process to users that are registered in the |ivy-engine|
+   as users.
 
 Violation error
    The selected exception element is thrown when the user lacks the
@@ -263,7 +263,7 @@ Expiry
 
 Custom fields
    The values set on this table are only informational and have no
-   effect on how this task is treated by Axon Ivy.
+   effect on how this task is treated by |axon-ivy|.
 
 Code
    This is a post construct code block for the Task that is defined in

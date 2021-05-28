@@ -3,8 +3,8 @@
 NGINX
 =====
 
-This is how the configuration for NGINX as reverse proxy in front of Axon Ivy
-Engine can look like:
+This is how the configuration for NGINX as reverse proxy in front of |ivy-engine|
+can look like:
 
 * All HTTP traffic is redirected to HTTPS
 * Only the application `demo-portal` is available over the reverse proxy

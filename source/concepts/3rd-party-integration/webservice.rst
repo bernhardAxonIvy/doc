@@ -2,7 +2,7 @@ Web Services
 ============
 
 SOAP based web services are often used to integrate various systems
-together. The tooling of Axon Ivy makes the integration of remote web
+together. The tooling of |axon-ivy| makes the integration of remote web
 services very easy and intuitive. There is no need to care much about
 the technical details behind the scenes.
 
@@ -44,6 +44,6 @@ Getting started
 Have a look at our :dev-url:`video tutorials </tutorial>` to see web
 service integrations in action.
 
-If you are looking for web service integration examples with Axon Ivy,
+If you are looking for web service integration examples with |axon-ivy|,
 have a look at the :ref:`ConnectivityDemos <importing-demo-projects>`
 sample project in the Designer.

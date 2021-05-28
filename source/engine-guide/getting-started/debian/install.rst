@@ -19,4 +19,4 @@ can download and install it with the following bash script:
   * :file:`/etc/axonivy-engine-*/` folder which contains the configuration
     files.
   * :file:`/var/lib/axonivy-engine-*/deploy` folder which is used to deploy
-    Axon Ivy projects.
+    |axon-ivy| projects.

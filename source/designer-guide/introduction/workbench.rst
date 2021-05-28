@@ -1,10 +1,10 @@
 .. _axonivy-workbench:
 
-Axon Ivy Workbench
-==================
+|axon-ivy| Workbench
+====================
 
-Axon Ivy is based on the Eclipse platform. So when you start Axon Ivy
-Designer you launch an Eclipse workbench.
+|axon-ivy| is based on the Eclipse platform. So when you start the |ivy-designer|
+you launch an Eclipse workbench.
 
 The first thing you see after starting |ivy-designer| is a dialog
 that allows you to select the location of the **workspace**. The
@@ -20,15 +20,15 @@ You can get the Welcome Screen back at any time by selecting :guilabel:`Help` >
 :guilabel:`Welcome`.
 
 .. figure:: /_images/designer/workbench.png
-   :alt: Axon Ivy Workbench Overview
+   :alt: |axon-ivy| Workbench Overview
    :align: center
 
-   Axon Ivy Workbench Overview
+   |axon-ivy| Workbench Overview
 
 
 
-Axon Ivy Editors and Views
---------------------------
+|axon-ivy| Editors and Views
+----------------------------
 
 Editors and views are visual components in the workbench. They are the
 tools to work with.

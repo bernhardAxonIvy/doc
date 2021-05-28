@@ -3,9 +3,9 @@
 Simulating process models
 =========================
 
-This chapter deals with Axon Ivy debugging and simulation features.
+This chapter deals with |axon-ivy| debugging and simulation features.
 Processes, workflows, User Dialogs and changes on these should be tested
-before being deployed on an Axon Ivy production Engine. Therefore the
+before being deployed on an |axon-ivy| production Engine. Therefore the
 Designer allows to simulate processes on your local computer, to debug
 it in depth and to inspect the execution history of all variable values.
 Hereby the process flow can be animated to visually observe the actual
@@ -53,7 +53,7 @@ Engine Actions
 ~~~~~~~~~~~~~~
 
 You are able to control the simulation and to influence the animation
-using the actions in the toolbar or the Axon Ivy menu.
+using the actions in the toolbar or the |axon-ivy| menu.
 
 .. figure:: /_images/simulation-debugging/menu-engine.png
    :alt: Engine Sub-Menu
@@ -130,7 +130,7 @@ To get or set the content or formatting language in IvyScript use
 ``ivy.session.contentLocale`` respectively
 ``ivy.session.formattingLocale``.
 
-Find out more about Axon Ivy's scripting language :ref:`ivyscript`.
+Find out more about |axon-ivy|'s scripting language :ref:`ivyscript`.
 
 .. |image20d| image:: /_images/simulation-debugging/button-languages.png
 
@@ -540,7 +540,7 @@ Runtime Log View
 ~~~~~~~~~~~~~~~~
 
 The Runtime Log view displays a list of events. This events occur during
-the simulation. When you start the Axon Ivy process engine, this log
+the simulation. When you start the |axon-ivy| process engine, this log
 view is opened by default and all entries are cleared.
 
 .. figure:: /_images/simulation-debugging/runtimelog-view.png
@@ -572,7 +572,7 @@ Element
    The identifier of the process element which logged the event.
 
 Category
-   The log category refers to the Axon Ivy part which has logged the
+   The log category refers to the |axon-ivy| part which has logged the
    event (e.g. user_code: ivyScript by user; process: log from/during
    process model execution).
 
@@ -607,7 +607,7 @@ Project
    The name of the project the log event was logged.
 
 Category
-   The log category refers to the Axon Ivy part which has logged the
+   The log category refers to the |axon-ivy| part which has logged the
    event (e.g. user_code: ivyScript by user; process: log from/during
    process model execution).
 
@@ -663,7 +663,7 @@ below:
 
    IvyScript to log into Runtime Log
 
-Find out more about Axon Ivy scripting language :ref:`ivyscript`.
+Find out more about |axon-ivy| scripting language :ref:`ivyscript`.
 
 .. |dimage0| image:: /_images/simulation-debugging/runtimelog-view-details-button-previous-event.png
 .. |dimage1| image:: /_images/simulation-debugging/runtimelog-view-details-button-next-event.png

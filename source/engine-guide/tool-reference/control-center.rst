@@ -69,7 +69,7 @@ each time Windows is booted, choose the setting :guilabel:`Automatically`.
 
 The last thing that can be configured are the services that the |ivy-engine|
 depends on. This might be the database management system on which the system
-database is located or the web server in which Axon Ivy is integrated (IIS or
+database is located or the web server in which |axon-ivy| is integrated (IIS or
 Apache). All the services you add in this list will be started before the
 |ivy-engine|, and if any of these services fail to start, |ivy-engine| won't
 start, either.

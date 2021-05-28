@@ -3,7 +3,7 @@
 Configuration Management
 ========================
 
-Axon Ivy allows for individual configuration of many of its features,
+|axon-ivy| allows for individual configuration of many of its features,
 specifically for the following:
 
 -  :ref:`configuration-environments`
@@ -28,7 +28,7 @@ All configurations can be created, edited and deleted using the
 
 .. tip::
 
-   In Axon Ivy, each project has its own *configuration database*.
+   In |axon-ivy|, each project has its own *configuration database*.
 
    Lookup of any configurations is performed by an *(type, configuration
    name)* request. If the look-up of such a configuration fails for the

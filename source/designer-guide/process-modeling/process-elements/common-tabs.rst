@@ -74,7 +74,7 @@ or only of single member of it.
 
 .. note::
 
-   In Axon Ivy input and output of process are always set to the
+   In |axon-ivy| input and output of process are always set to the
    corresponding data class, i.e. in a User Dialog logic element it is
    the User Dialog Data Class and in a process element it is the project
    Data Class (or the one which was assigned to the process).
@@ -341,7 +341,7 @@ Case Tab
 Every time a :ref:`process <glossar-process>` is started a
 :ref:`case <glossar-case>` is created. This tab allows you to define
 additional information for the cases. The information defined on this
-tab has no effect how Axon Ivy treats the cases. But they can be
+tab has no effect how |axon-ivy| treats the cases. But they can be
 accessed through the :public-api:`Public API </>`, which allows you
 to use them for example to filter the task list.
 
@@ -366,7 +366,7 @@ Case Custom Fields
 
    Here you can set additional information for the created case. The set
    values are only informational and have no effect on how this case is
-   treated by Axon Ivy. These custom fields can easily be queried on
+   treated by |axon-ivy|. These custom fields can easily be queried on
    case user interfaces to allow sorting and filtering.
 
 
@@ -466,7 +466,7 @@ Task Custom Fields
 
    Here you can set additional information for the created task. The set
    values are only informational and have no effect on how this task is
-   treated by Axon Ivy. These custom fields can easily be queried on
+   treated by |axon-ivy|. These custom fields can easily be queried on
    task user interfaces to allow sorting and filtering.
 
 

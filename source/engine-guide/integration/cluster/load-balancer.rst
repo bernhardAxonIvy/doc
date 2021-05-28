@@ -13,7 +13,7 @@ As described above, the load balancer must ensure that all requests from the sam
 user session is forwarded to the same cluster node. This can be done by
 configuring the load balancer in such a way that all requests sent from one client IP address
 is always forwarded to the same cluster node (IP based stickiness). Another
-possible configuration is to use the Axon Ivy Session Id to provide session
+possible configuration is to use the |axon-ivy| Session Id to provide session
 stickiness. The session id is provided by |ivy-engine| Enterprise Edition as a
 HTTP session cookie with the name :code:`JSESSIONID`.
 

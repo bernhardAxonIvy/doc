@@ -3,9 +3,9 @@
 Toolbar
 =======
 
-The main window of Axon Ivy shows a toolbar with various buttons which
+The main window of |axon-ivy| shows a toolbar with various buttons which
 is situated right below the menu bar of the application. This section
-explains the most important actions for Axon Ivy users that can be found
+explains the most important actions for |axon-ivy| users that can be found
 on the toolbar.
 
 .. Note::
@@ -27,11 +27,11 @@ New Wizard Selector
    
    This button opens a drop down list with all available *new wizards*
    to create new resources for editing. Some of the shown wizards are
-   contributed by the Eclipse system and are not Axon Ivy specific.
+   contributed by the Eclipse system and are not |axon-ivy| specific.
 
-   To create new Axon Ivy resources it is recommended to use the menu
-   entry :guilabel:`Axon Ivy` > :guilabel:`New...` or to use the
-   context menu in the Axon Ivy project tree.
+   To create new |axon-ivy| resources it is recommended to use the menu
+   entry :guilabel:`|axon-ivy|` > :guilabel:`New...` or to use the
+   context menu in the |axon-ivy| project tree.
 
 
 Save

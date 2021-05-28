@@ -1,7 +1,7 @@
 Reference
 =========
 
-This chapter provides a linked reference of the Axon Ivy application
+This chapter provides a linked reference of the |axon-ivy| application
 parts.
 
 .. _designer-reference-editors:

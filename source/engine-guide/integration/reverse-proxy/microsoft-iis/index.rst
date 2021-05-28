@@ -7,8 +7,8 @@ To use Microsoft IIS as reverse proxy in front of |ivy-engine| download and
 execute the powershell script :download:`iis-proxy-setup.ps1`. Right click
 on the file and click :guilabel:`Run with PowerShell`.
 
-This script will guide you to setup IIS as reverse proxy for the Axon Ivy
-Engine. It is divided into several parts:
+This script will guide you to setup IIS as reverse proxy for the |ivy-engine|.
+It is divided into several parts:
 
 * **IIS Setup** will install all required features as the IIS itself, URL
   Rewrite and Application Request Routing (ARR) modules. Furthermore it will
@@ -35,7 +35,7 @@ Engine. It is divided into several parts:
   forwarded to the |ivy-engine|. You will also need to :ref:`activate Single
   Sign-on <single-sign-on>` on the |ivy-engine|. Furthermore this will also
   enable Basic Authentication which is required for REST Clients like the
-  Axon Ivy Mobile App to call the protected REST Services provided by the
+  |axon-ivy| Mobile App to call the protected REST Services provided by the
   |ivy-engine|. If you don't need this you can manually disable it.
 
   .. figure:: /_images/iis/iis-authentication.png

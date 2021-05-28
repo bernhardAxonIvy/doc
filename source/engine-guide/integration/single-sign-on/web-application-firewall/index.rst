@@ -20,8 +20,8 @@ typical system landscape will look like this:
 |
 
 The only available access point must be the WAF. Any traffic has to be routed
-over it. The WAF tries to protect the web application behind it (e.g. Axon Ivy
-Engine) from attacks. The WAF uses the IAM to identify users and to protect
+over it. The WAF tries to protect the web application behind it (e.g. |ivy-engine|)
+from attacks. The WAF uses the IAM to identify users and to protect
 certain resources from unauthorized access. The IAM itself may use a directory
 server like Microsoft Active Directory to know users. The WAF can be configured
 to provide the name of the identified user either as HTTP header or HTTP cookie

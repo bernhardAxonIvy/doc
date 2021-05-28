@@ -4,7 +4,7 @@ Deployment
 ==========
 
 Bring your processes to life by deploying them on an |ivy-engine|. Deployment
-simply means to install an Axon Ivy project on an |ivy-engine|. Proceed as
+simply means to install an |axon-ivy| project on an |ivy-engine|. Proceed as
 follows to deploy a project.
 
 #. Get a :ref:`prepared <deployment-prepare>` ivy project from your developer.

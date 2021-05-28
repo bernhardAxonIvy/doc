@@ -1,7 +1,7 @@
 Configuration
 *************
 
-This chapter explains the configuration concept of Axon Ivy and describes the
+This chapter explains the configuration concept of |axon-ivy| and describes the
 configuration editor and the various configuration types.
 
 .. toctree::

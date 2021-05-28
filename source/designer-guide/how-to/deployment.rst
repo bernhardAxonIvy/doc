@@ -2,9 +2,9 @@ Deployment
 ==========
 
 This chapter explains how an |ivy-designer| Project can be deployed
-to an |ivy-engine|. Before deploying an Axon Ivy project it is
-important to understand some major concepts and terms of the Axon Ivy
-Engine. The following chapter introduces these concepts and terms.
+to an |ivy-engine|. Before deploying an |axon-ivy| project it is
+important to understand some major concepts and terms of the |ivy-engine|.
+The following chapter introduces these concepts and terms.
 
 .. _application:
 
@@ -27,11 +27,11 @@ Process Model
 |image1|
 
 Within an application multiple process models can be configured. A
-process model on the Engine corresponds to an Axon Ivy project on the
+process model on the Engine corresponds to an |axon-ivy| project on the
 Designer. The difference is that a process model may hold multiple
-different versions of the same Axon Ivy project. A process model version
-- as its name suggests - is a version of an Axon Ivy project. In fact
-this version represents the state of an Axon Ivy project at the time it
+different versions of the same |axon-ivy| project. A process model version
+- as its name suggests - is a version of an |axon-ivy| project. In fact
+this version represents the state of an |axon-ivy| project at the time it
 was deployed on the Engine.
 
 .. _process-model-version:
@@ -42,9 +42,9 @@ Process Model Version
 |image2|
 
 A process model can have multiple versions called process model
-versions. These versions allow to change an Axon Ivy project without
+versions. These versions allow to change an |axon-ivy| project without
 worrying about the compatibility of currently running cases on the
-Engine. How does this work? When an Axon Ivy project has been finished
+Engine. How does this work? When an |axon-ivy| project has been finished
 or reached a milestone, it is going to be deployed as the first process
 model version. Users can use this project, they start processes. Some of
 the processes may last long time (weeks, months, or even years). While
@@ -154,7 +154,7 @@ and process model versions on an |ivy-engine| can be configured.
    |                 |                 |                 | Management      |
    |                 |                 |                 | process model.  |
    |                 |                 |                 | Corresponds to  |
-   |                 |                 |                 | the Axon Ivy    |
+   |                 |                 |                 | the |axon-ivy|    |
    |                 |                 |                 | project called  |
    |                 |                 |                 | "HRM".          |
    +-----------------+-----------------+-----------------+-----------------+
@@ -197,7 +197,7 @@ and process model versions on an |ivy-engine| can be configured.
    |                 | Finance         |                 | Finance process |
    |                 |                 |                 | model.          |
    |                 |                 |                 | Corresponds to  |
-   |                 |                 |                 | the Axon Ivy    |
+   |                 |                 |                 | the |axon-ivy|    |
    |                 |                 |                 | project         |
    |                 |                 |                 | Finance.        |
    +-----------------+-----------------+-----------------+-----------------+
@@ -217,14 +217,14 @@ and process model versions on an |ivy-engine| can be configured.
    |                 |                 |                 | users of the    |
    |                 |                 |                 | company are     |
    |                 |                 |                 | managed by the  |
-   |                 |                 |                 | Axon Ivy        |
+   |                 |                 |                 | |axon-ivy|        |
    |                 |                 |                 | Engine.         |
    +-----------------+-----------------+-----------------+-----------------+
    |                 | HRM             |                 | Human Resource  |
    |                 |                 |                 | Management      |
    |                 |                 |                 | process model.  |
    |                 |                 |                 | Corresponds to  |
-   |                 |                 |                 | the Axon Ivy    |
+   |                 |                 |                 | the |axon-ivy|    |
    |                 |                 |                 | project called  |
    |                 |                 |                 | "HRM".          |
    +-----------------+-----------------+-----------------+-----------------+
@@ -243,10 +243,10 @@ and process model versions on an |ivy-engine| can be configured.
    |                 |                 |                 | version.        |
    +-----------------+-----------------+-----------------+-----------------+
 
-Axon Ivy Project Deployment
----------------------------
+|axon-ivy| Project Deployment
+-----------------------------
 
-To deploy an Axon Ivy project to the |ivy-engine| execute the
+To deploy an |axon-ivy| project to the |ivy-engine| execute the
 following steps:
 
 #. Export all files of the project you want to deploy to a zip file
@@ -272,7 +272,7 @@ following steps:
 
 .. tip::
 
-   More information about the deployment of Axon Ivy projects or
+   More information about the deployment of |axon-ivy| projects or
    applications, process models and process model versions can be found
    in the |ivy-engine| Guide.
 

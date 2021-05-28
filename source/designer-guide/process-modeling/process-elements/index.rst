@@ -7,7 +7,7 @@ This chapter provides detailed explanations for the usage and
 configuration of all process elements, for both business processes and
 user dialog logic.
 
-Axon Ivy provides a lot of useful process elements that can be used to
+|axon-ivy| provides a lot of useful process elements that can be used to
 define processes. These elements reside in the palette on the right edge
 of the Process editor. You can drag and drop the elements on the editor
 to use them in a specific process flow. You then can connect two

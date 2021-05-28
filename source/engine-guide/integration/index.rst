@@ -27,8 +27,8 @@ must be additionally installed and integrated.
   For scalability, to increase performance and provide high availability its
   possible to run the |ivy-engine| in a cluster.
 * :ref:`Elasticsearch <elasticsearch>`:
-  An Elasticsearch server is bundled with the Axon Ivy
-  Engine. For high traffic systems it may make sense to install the Elasticsearch
+  An Elasticsearch server is bundled with the |ivy-engine|.
+  For high traffic systems it may make sense to install the Elasticsearch
   Server on a dedicated node.
 * :ref:`systemdb`:
   The |ivy-engine| needs a database management system to store its workflow data.

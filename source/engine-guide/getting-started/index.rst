@@ -4,7 +4,7 @@ Getting Started
 ***************
 
 Here you will learn how to install and configure an |ivy-engine| and
-ultimately how to bring your process to life by deploying your Axon Ivy
+ultimately how to bring your process to life by deploying your |axon-ivy|
 projects. You will see that a minimal setup of an |ivy-engine| is
 straightforward. Next to the |ivy-engine| itself you only need a browser of
 your choice (e.g. Firefox) and a database management system (e.g. Postgres) for

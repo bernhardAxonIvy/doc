@@ -86,7 +86,7 @@ Data types are divided into two categories:
 
    Data Type Browser for Ivy base types
 
-This category contains the Axon Ivy base types. These types may be used
+This category contains the |axon-ivy| base types. These types may be used
 within IvyScript without any restriction. Note that for convenience
 reasons database ``Record`` and ``Recordset``, ``XML``, ``Tree`` and
 ``List`` types are supported out of the box.

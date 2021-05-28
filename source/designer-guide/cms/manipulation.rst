@@ -108,7 +108,7 @@ available for manual choosing, use :guilabel:`Add from file(s)...` if you want
 to create such Content Objects.
 
 In the name column you can use a simple name, an absolute or relative
-path. If you do so, then Axon Ivy will check the corresponding path and
+path. If you do so, then |axon-ivy| will check the corresponding path and
 create folder Content Objects where necessary.
 
 For text based types you can edit the text directly in the value column.
@@ -123,11 +123,11 @@ and is overwritten if changed.
 If you choose to create the Content Objects from file
 (the :guilabel:`Add from file(s)...`) command in the popup menu, then first a
 file chooser dialog is opened. In there select the files that you want
-to have in the CMS and click :guilabel:`OK`. Then Axon Ivy will create a Content
+to have in the CMS and click :guilabel:`OK`. Then |axon-ivy| will create a Content
 Object for each file. The type is detected automatically (if it cannot
 be detected then that file will be omitted), the name is set to the file
 name and the default value is the file content. After the file chooser,
-Axon Ivy opens the normal Add Content Object dialog so that you can
+|axon-ivy| opens the normal Add Content Object dialog so that you can
 revise the decisions before the Content Objects gets actually created.
 
 You can add Content Objects too from the web. Just copy the URL and

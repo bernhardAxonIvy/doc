@@ -137,7 +137,7 @@ Priority
 
 Custom fields
    The values set on this table are only informational and have no
-   effect on how this task is treated by Axon Ivy.
+   effect on how this task is treated by |axon-ivy|.
 
 Code
    This is a post construct code block for the Task that is defined in

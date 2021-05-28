@@ -1,8 +1,8 @@
 Menus
 =====
 
-The main window of Axon Ivy contains multiple menus. This section
-explains the most important menus and menu items for Axon Ivy users.
+The main window of |axon-ivy| contains multiple menus. This section
+explains the most important menus and menu items for |axon-ivy| users.
 
 .. Note::
 
@@ -25,11 +25,11 @@ File menu
 1 - New ...
    This menu item opens a sub menu with all available *new wizards* to
    create new resources for editing. Some of the shown wizards are
-   contributed by the Eclipse system and are not Axon Ivy specific.
+   contributed by the Eclipse system and are not |axon-ivy| specific.
 
-   To create new Axon Ivy resources it is recommended to use the menu
-   entry :guilabel:`Axon Ivy` > :guilabel:`New...` or to use the context
-   menu in the Axon Ivy project tree.
+   To create new |axon-ivy| resources it is recommended to use the menu
+   entry :guilabel:`|axon-ivy|` > :guilabel:`New...` or to use the context
+   menu in the |axon-ivy| project tree.
 
 2 - Switch Workspace...
    Allows you to switch to a different workspace. A workspace is a
@@ -66,7 +66,7 @@ Search menu
 
 1 - Search...
    Opens the Search dialog where search tabs allow you to search for
-   Axon Ivy artifacts or file contents.
+   |axon-ivy| artifacts or file contents.
 
 2 - File...
    Same as :guilabel:`Search...` but opens directly on the 
@@ -74,7 +74,7 @@ Search menu
    Search dialog, where search queries for any text within any resource
    of the current project or even in the whole workspace can be started.
 
-3 - Axon Ivy Search
+3 - |axon-ivy| Search
    Same as :guilabel:`Search...` but opens directly on the :ref:`designer-search`
    tab of the Search dialog, where a search for
    Processes, CMS Objects or Data Classes can be started.
@@ -102,20 +102,20 @@ Project menu
    changes are made in a project.
 
 
-Axon Ivy menu
--------------
+|axon-ivy| menu
+---------------
 
 .. figure:: /_images/designer/menu-ivy.png
-   :alt: Axon Ivy Menu
+   :alt: |axon-ivy| Menu
    :align: center
    
-   Axon Ivy menu
+   |axon-ivy| menu
 
 
 1 - New ...
    This menu item opens a sub menu with all available *new wizards* to
-   create new Axon Ivy specific resources (such as User Dialogs or Data
-   classes or Axon Ivy projects).
+   create new |axon-ivy| specific resources (such as User Dialogs or Data
+   classes or |axon-ivy| projects).
 
 2 - Engine Menu
    Offers the operations 
@@ -128,7 +128,7 @@ Axon Ivy menu
    See also :ref:`toolbar` section.
 
 3 - Preferences
-   Opens the Preferences editor for the Axon Ivy specific preferences
+   Opens the Preferences editor for the |axon-ivy| specific preferences
    only.
 
    See also :ref:`workspace-preferences` section.
@@ -151,18 +151,18 @@ Window menu
 2 - Show View
    Opens a sub menu with the available views for the current
    perspective. Non-standard views can be selected from the sub menu
-   :guilabel:`Other...`. The complete set of Axon Ivy specific views is available
-   below the Axon Ivy folder.
+   :guilabel:`Other...`. The complete set of |axon-ivy| specific views is available
+   below the |axon-ivy| folder.
 
 3 - Preferences...
    Opens the Preferences editor for the all settings that are
-   available on the Eclipse platform. The Axon Ivy specific
-   preferences are available under the Axon Ivy branch of the
+   available on the Eclipse platform. The |axon-ivy| specific
+   preferences are available under the |axon-ivy| branch of the
    preferences tree.
 
-   For convenience use the menu :guilabel:`Axon Ivy` >
+   For convenience use the menu :guilabel:`|axon-ivy|` >
    :guilabel:`Preferences...` to open the
-   preference editor for the Axon Ivy specific settings only.
+   preference editor for the |axon-ivy| specific settings only.
 
    See also :ref:`workspace-preferences` section.
 
@@ -178,7 +178,7 @@ Help menu
 
 
 1 - Welcome
-   Opens the welcome screen as shown on the first start of Axon Ivy
+   Opens the welcome screen as shown on the first start of |axon-ivy|
    after installation.
 
 2 - Help (Designer Guide)

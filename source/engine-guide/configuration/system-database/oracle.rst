@@ -45,8 +45,8 @@ If database will be created by the |ivy-engine| the collate is set to ``Latin1_G
        .. literalinclude:: ../../../../../workspace/ch.ivyteam.db/src/ch/ivyteam/db/jdbc/sql/oracle-create-user.sql
          :language: sql
 
-    #. You may want to create a new tablespace (e.g. AxonIvy) where the Axon Ivy
-       Engine System Database can store the table data. This is optional you can
+    #. You may want to create a new tablespace (e.g. AxonIvy) where the |ivy-engine|
+       System Database can store the table data. This is optional you can
        use an already existing tablespace.
 
 .. warning:: 

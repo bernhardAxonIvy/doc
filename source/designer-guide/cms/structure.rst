@@ -15,9 +15,9 @@ for different regions which use the same language (see how this is used
 for the :ref:`resolution of CMS content <cms-content-resolution>` at
 runtime).
 
-In Axon Ivy, each project has its own CMS. Content Objects are looked up
+In |axon-ivy|, each project has its own CMS. Content Objects are looked up
 by means of the Content Object URI mentioned above. If the lookup for a
-Content Object fails in the current project, then Axon Ivy will
+Content Object fails in the current project, then |axon-ivy| will
 recursively lookup the URI in the CMS's of the required projects
 (breadth-first).
 

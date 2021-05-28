@@ -1,8 +1,8 @@
 Projects
 ========
 
-Axon Ivy Projects can be seen as development modules that encapsulate
-the processes and other artifacts that form an application. An Axon Ivy
+|axon-ivy| Projects can be seen as development modules that encapsulate
+the processes and other artifacts that form an application. An |axon-ivy|
 project roughly comprises of processes, User Dialogs, Data Classes, a
 Content Management System and various configurations. All of those
 aspects are explained in separate chapters of this document.
@@ -57,11 +57,11 @@ which will prevent the application from running.
 Ivy Archives
 ------------
 
-There are two different types of Axon Ivy projects available. Normal
-Axon Ivy projects are used to develop artifacts. Artifacts in those
+There are two different types of |axon-ivy| projects available. Normal
+|axon-ivy| projects are used to develop artifacts. Artifacts in those
 projects are changed frequently. Once the artifacts of a project are
 developed and stable you can export the normal Ivy project to an
-Axon Ivy Archive. Archives are pre-built Ivy projects that are stored in
+|axon-ivy| Archive. Archives are pre-built Ivy projects that are stored in
 one single ``*.iar`` file.
 
 Ivy Archives can be imported to a workspace like normal Ivy projects.
@@ -70,12 +70,12 @@ already contain all built artifacts. Therefore, they do not have to be
 built or validated again in the workspace. As a consequence Ivy Archives
 will improve your workspace build, refresh and update time.
 
-There are multiple ways to create or import Axon Ivy Archives:
+There are multiple ways to create or import |axon-ivy| Archives:
 
--  Axon Ivy Archives can be :ref:`exported <designer-export-project>`
+-  |axon-ivy| Archives can be :ref:`exported <designer-export-project>`
    and :ref:`imported <designer-import-project>`.
 
--  Axon Ivy Projects can be packed (archived) or unpacked (unarchived)
+-  |axon-ivy| Projects can be packed (archived) or unpacked (unarchived)
    inside the workspace.
    
    .. figure:: /_images/ivy-project/ivy-archive-pack.png
@@ -96,19 +96,19 @@ Ivy Project View
 Here all the projects (including their content) in a given workspace are
 displayed in a tree view. This is the central component to obtain an
 overview of the project and to start the specific editors for all
-Axon Ivy entities.
+|axon-ivy| entities.
 
 .. figure:: /_images/ivy-project/project-tree-full.png
-   :alt: Axon Ivy Project View with some content
+   :alt: |axon-ivy| Project View with some content
 
-   Axon Ivy Project View with some content
+   |axon-ivy| Project View with some content
 
 Some of the entries are categorized such as User Dialogs and processes,
 but in general double-clicking on the leafs opens the :ref:`corresponding editor <designer-reference-editors>`.
 Furthermore a popup menu is provided
 with the most important interactions:
 
--  *New...* - Opens a wizard for creating new Axon Ivy entities such as
+-  *New...* - Opens a wizard for creating new |axon-ivy| entities such as
    User Dialogs or processes.
 
 -  *Refresh* - Use this to inform and refresh the project tree whenever
@@ -123,8 +123,8 @@ with the most important interactions:
 -  *Convert Project* - :ref:`Converts a project <project-convert>` so
    that it has the newest format.
 
--  *Export Axon Ivy Archive (.iar)* - Starts the :ref:`Export Wizard <designer-export-project>` 
-   to export normal Axon Ivy projects to Axon Ivy Archives.
+-  *Export |axon-ivy| Archive (.iar)* - Starts the :ref:`Export Wizard <designer-export-project>` 
+   to export normal |axon-ivy| projects to |axon-ivy| Archives.
 
 -  *Import* - Opens the Import Wizard. Very useful to :ref:`import new projects <designer-import-project>`
    from the file system or from a source repository such as Subversion or CVS
@@ -140,8 +140,8 @@ with the most important interactions:
 
    .. warning::
 
-      Please rename your resources only in Axon Ivy and not in *Java* or
-      *Resource* perspectives. Trying to do renaming of Axon Ivy
+      Please rename your resources only in |axon-ivy| and not in *Java* or
+      *Resource* perspectives. Trying to do renaming of |axon-ivy|
       artifacts in other perspectives may result in an unusable project.
 
 -  *Move* - Moves the selected resources to another project. The `move
@@ -150,7 +150,7 @@ with the most important interactions:
 
    .. note::
 
-      If Axon Ivy artifacts (such as User Dialogs, Processes or Data
+      If |axon-ivy| artifacts (such as User Dialogs, Processes or Data
       Classes) are moved, then the wizard will show an overview of the
       references (e.g. calls to sub processes) that might be broken by
       the operation.
@@ -174,7 +174,7 @@ with the most important interactions:
 
    .. note::
 
-      If Axon Ivy artifacts (such as Axon Ivy projects, User Dialogs,
+      If |axon-ivy| artifacts (such as |axon-ivy| projects, User Dialogs,
       Processes or Data Classes) should be deleted, then the
       :ref:`refactoring-wizards-delete` opens and shows an
       overview of the references that might be broken by the operation.
@@ -209,7 +209,7 @@ with the most important interactions:
 New Project Wizard
 ------------------
 
-The *New Axon Ivy Project wizard* lets you create a new Axon Ivy
+The *New |axon-ivy| Project wizard* lets you create a new |axon-ivy|
 project. The wizard consists of three pages, of which two are optional.
 
 On the first page you must specify the settings that are required for
@@ -257,7 +257,7 @@ Project ID
 
 Default namespace
    Define the default namespace for your project. This namespace will be
-   used as standard namespace for new Axon Ivy artifacts. It is also the
+   used as standard namespace for new |axon-ivy| artifacts. It is also the
    namespace into which the project's default data class (``Data``) will
    be generated.
 
@@ -331,7 +331,7 @@ Description
 Importing a Project
 -------------------
 
-You can import existing Axon Ivy projects into your workspace using the
+You can import existing |axon-ivy| projects into your workspace using the
 *Import Wizard*. Projects can be exported from the workspace using the
 *Export Wizard* (See section :ref:`designer-export-project`.
 This allows you to exchange or share your projects with other people.
@@ -346,7 +346,7 @@ You can access the Import Wizard over the menu:
 Features
 ~~~~~~~~
 
-For Axon Ivy users the following import sources and formats are useful:
+For |axon-ivy| users the following import sources and formats are useful:
 
 General > Existing Projects into Workspace
    Imports a project from a project directory located somewhere in the
@@ -357,7 +357,7 @@ General > Existing Projects into Workspace
 
    In the wizard page seen above you can select either the directory
    where your project(s) resides or a archive file (zip, jar, tar-gz)
-   that contains the project(s). If Axon Ivy finds valid projects in the
+   that contains the project(s). If |axon-ivy| finds valid projects in the
    given directory or archive file, they can be (de-)selected for the
    import and you can decide whether the projects should be copied into
    your workspace directory or not (which has no effect if a project
@@ -365,19 +365,19 @@ General > Existing Projects into Workspace
    *Finish* the import is performed and you will find the imported
    projects in the :ref:`ivy-project-view`.
 
-Axon Ivy > Axon Ivy Archive (\*.iar)
-   Imports Axon Ivy Archives (\*.iar) into the workspace.
+|axon-ivy| > |axon-ivy| Archive (\*.iar)
+   Imports |axon-ivy| Archives (\*.iar) into the workspace.
 
    .. figure:: /_images/ivy-project/project-import-wizard.png
 
    In the wizard page seen above you can select the directory where your
-   Axon Ivy Archives resides. If Axon Ivy finds valid Axon Ivy Archives
+   |axon-ivy| Archives resides. If |axon-ivy| finds valid |axon-ivy| Archives
    in the given directory, they can be (de-)selected for the import and
-   you can decide whether the Axon Ivy Archives should be copied into
-   your workspace directory or not (which has no effect if an Axon Ivy
+   you can decide whether the |axon-ivy| Archives should be copied into
+   your workspace directory or not (which has no effect if an |axon-ivy|
    Archive already is in the workspace directory). After clicking on the
    button *Finish* the import is performed and you will find the
-   imported Axon Ivy Archives in the :ref:`ivy-project-view`.
+   imported |axon-ivy| Archives in the :ref:`ivy-project-view`.
 
 
 .. _importing-demo-projects:
@@ -418,7 +418,7 @@ Following projects are available for the Designer:
 Exporting a Project
 -------------------
 
-Axon Ivy projects can be exported from the workspace to various output
+|axon-ivy| projects can be exported from the workspace to various output
 formats using the *Export Wizard*.
 
 Accessibility
@@ -431,7 +431,7 @@ You can access the Export Wizard over the menu:
 Features
 ~~~~~~~~
 
-For Axon Ivy users the following output formats are useful:
+For |axon-ivy| users the following output formats are useful:
 
 General > Archive File
    Exports projects to a \*.zip or \*.tar file.
@@ -440,7 +440,7 @@ General > File System
    Exports projects to the file system.
 
 Axon Ivy > Axon Ivy Archive (\*.iar)
-   Exports a normal Axon Ivy project to an Axon Ivy Archive (\*.iar file).
+   Exports a normal |axon-ivy| project to an |axon-ivy| Archive (\*.iar file).
    
    .. figure:: /_images/ivy-project/project-export-wizard.png
 
@@ -455,10 +455,10 @@ Axon Ivy > Axon Ivy Archive (\*.iar)
 Converting Projects
 -------------------
 
-If the project format version changes with a new Axon Ivy release, then
+If the project format version changes with a new |axon-ivy| release, then
 old projects will show an error marker, describing them as *out of date*
 or having an invalid version. This can happen, when the technical format
-for Axon Ivy projects changes with a new Axon Ivy release (e.g. the way
+for |axon-ivy| projects changes with a new |axon-ivy| release (e.g. the way
 how some artifacts are stored may be changed, new artifacts may be
 introduced, etc.). :
 
@@ -481,12 +481,12 @@ not (see :ref:`project-preferences` below):
 
    Project version after conversion
 
-Axon Ivy can convert your old projects automatically to the newest
+|axon-ivy| can convert your old projects automatically to the newest
 project format for you. During this process, all existing artifacts will
-be converted (if necessary) so as to work with the new Axon Ivy version,
+be converted (if necessary) so as to work with the new |axon-ivy| version,
 and any missing but required artifacts will be added.
 
-To run the project conversion, select the project's node in the Axon Ivy
+To run the project conversion, select the project's node in the |axon-ivy|
 project view and right click to bring up the context menu. Select
 *Convert Project* to initiate the conversion. A log screen will appear
 that documents the conversion process (this log is also saved in the
@@ -527,19 +527,19 @@ some project specific properties, that do not have a global default
 value. Those are described in the sections below.
 
 
-Axon Ivy - Project Information
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+|axon-ivy| - Project Information
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The main project properties page shows information about the project.
 
 .. figure:: /_images/ivy-project/preferences-convert-project.png
-   :alt: Project Properties Axon Ivy information
+   :alt: Project Properties |axon-ivy| information
 
-   Project Properties Axon Ivy information
+   Project Properties |axon-ivy| information
 
 Project format version
    Shows the version of the project format. If the project was created
-   with an old version of Axon Ivy, this is indicated with an warning
+   with an old version of |axon-ivy|, this is indicated with an warning
    message. Consult the Chapter :ref:`project-convert` to learn how to convert your
    project to a new version of the project format.
 
@@ -559,7 +559,7 @@ set here.
 
 In the list at the top you can add and remove languages to/from the CMS
 and you can set the default language. Just below you can define whether
-Axon Ivy should automatically create a value for every language of the
+|axon-ivy| should automatically create a value for every language of the
 CMS if you create a new Content Object or not. Do not use this option if
 you do not need content in multiple languages or if you :ref:`export the CMS
 content <cms-export>` to translate it. Use the option if you know
@@ -620,7 +620,7 @@ Optional classpath containers
 Project Deployment Descriptor
 -----------------------------
 
-Each Axon Ivy project has a *deployment descriptor*. The deployment
+Each |axon-ivy| project has a *deployment descriptor*. The deployment
 descriptor defines various properties of a project that are important
 with respect to deployment on the engine. Specifically the descriptor
 defines:
@@ -706,7 +706,7 @@ Projects can be built on a continuous integration server. See
 Accessibility
 ~~~~~~~~~~~~~
 
-Axon Ivy Project Tree -> double click on the *Deployment* node inside
+|axon-ivy| Project Tree -> double click on the *Deployment* node inside
 the project tree (|imagef0|)
 
 Deployment Tab
@@ -862,10 +862,10 @@ Accessibility
 
 
 
-Validating Axon Ivy projects and resources
-------------------------------------------
+Validating |axon-ivy| projects and resources
+--------------------------------------------
 
-Axon Ivy comes with various validators which verify that projects and
+|axon-ivy| comes with various validators which verify that projects and
 its resources do not have any errors. After a resource has changed the
 responsible validator will run automatically and report errors or
 warnings.

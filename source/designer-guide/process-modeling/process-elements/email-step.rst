@@ -12,8 +12,7 @@ Element Details
 This element allows to send e-mails out of processes (e.g. for
 information or alert purposes). The general configuration must be set in
 the :ref:`workspace-preferences-email` for the
-|ivy-designer| and in the :ref:`ivy.yaml <config-email>` for the Axon Ivy
-Engine.
+|ivy-designer| and in the :ref:`ivy.yaml <config-email>` for the |ivy-engine|.
 
 With the default E-Mail preferences mails will be sent to a
 :ref:`workspace-preferences-email-developer-smtp` that quickly shows you the
@@ -100,7 +99,7 @@ below on the screenshot represents one file. You can choose a file
 directly, take a process attribute with the type *File*, select a CMS
 entry or even build up the filename using script(s). The provided
 reference will be searched as CMS entry first, if no CMS entries found
-then the system will search the name as file in your :ref:`Axon Ivy file
+then the system will search the name as file in your :ref:`|axon-ivy| file
 area <ivyscript-reference-file>`.
 
 .. note::

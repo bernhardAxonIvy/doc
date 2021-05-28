@@ -12,7 +12,7 @@ It provides portable APIs for developing, exposing and accessing web
 applications designed and implemented in compliance with principles of
 REST architectural style.
 
-Axon Ivy uses the reference implementation libraries of JAX-RS called
+|axon-ivy| uses the reference implementation libraries of JAX-RS called
 `Jersey <https://jersey.github.io/>`__.
 
 
@@ -173,6 +173,6 @@ property ``REST.Servlet.CSRF.Protection`` in the :ref:`ivy-webserver-yaml`
 Workflow API
 ------------
 
-Axon Ivy provides a basic :ref:`Workflow API REST Service <mobile-workflow-api>`.
+|axon-ivy| provides a basic :ref:`Workflow API REST Service <mobile-workflow-api>`.
 It can be used to enable remote systems to request information about
 tasks of a user etc.

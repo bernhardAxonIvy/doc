@@ -4,7 +4,7 @@ Migration Notes
 ---------------
 
 This chapter informs you in detail about incompatibilities that were introduced between
-different Axon Ivy versions and tells you what needs to be done to get your existing projects
+different |axon-ivy| versions and tells you what needs to be done to get your existing projects
 working with the newest version. Go through the migration notes from version to version.
 
 .. toctree::

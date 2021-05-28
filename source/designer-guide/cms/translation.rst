@@ -14,8 +14,8 @@ you can use your favorite translation tool for the actual translations.
 Export from CMS
 ---------------
 
-Click :guilabel:`Export...` from the Axon Ivy project tree view or from the
-:guilabel:`File` menu. Then choose *CMS* from the category *Axon Ivy*.
+Click :guilabel:`Export...` from the |axon-ivy| project tree view or from the
+:guilabel:`File` menu. Then choose *CMS* from the category *|axon-ivy|*.
 
 .. figure:: /_images/cms/cms-export.png
 
@@ -32,8 +32,8 @@ exported.
 Import into CMS
 ---------------
 
-Click :guilabel:`Import...` from the Axon Ivy project tree view or from the
-:guilabel:`File` menu. Then choose *CMS* from the category *Axon Ivy*.
+Click :guilabel:`Import...` from the |axon-ivy| project tree view or from the
+:guilabel:`File` menu. Then choose *CMS* from the category *|axon-ivy|*.
 
 .. figure:: /_images/cms/cms-import.png
 

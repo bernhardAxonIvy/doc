@@ -57,4 +57,4 @@ To install |ivy-engine| simply unzip the downloaded file
 
   * :file:`bin` folder which contains all the executables.
   * :file:`configuration` folder which contains the configuration files.
-  * :file:`deploy` folder which is used to deploy Axon Ivy projects.
+  * :file:`deploy` folder which is used to deploy |axon-ivy| projects.

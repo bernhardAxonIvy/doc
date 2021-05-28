@@ -26,7 +26,7 @@ a call to ``user.setName(...)`` returns object ``user``).
 Working with different Date, Time and DateTime implementations
 --------------------------------------------------------------
 
-When working with Databases and Web Services in Axon Ivy, then different
+When working with Databases and Web Services in |axon-ivy|, then different
 implementations of Date, Time and combined Date-Time information are
 encountered (e.g. ``java.util.Date``, ``java.sql.Date``, Axis Time,
 etc). To further complicate matters, some of those implementations are -

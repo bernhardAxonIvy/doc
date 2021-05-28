@@ -283,7 +283,7 @@ Workflow Event Log API removed
 
 |tag-project-removed|
 
-The Workflow Event Log API has been deprecated in Axon Ivy 8.0
+The Workflow Event Log API has been deprecated in |axon-ivy| 8.0
 and has been removed now. As it was never Public API, most projects will
 not be affected.
 

@@ -49,7 +49,7 @@ the conversion from the old to the new format for you automatically.
 
     All APIs to load databases configuration from :code:`IApplication` and :code:`IEnvironment`
     has been removed. They were introduced to show the configuration in the legacy AdminUI.
-    They were never intended to use it in your Axon Ivy Projects.
+    They were never intended to use it in your |axon-ivy| Projects.
 
 
 .. _migrate-92-93-rest-clients:

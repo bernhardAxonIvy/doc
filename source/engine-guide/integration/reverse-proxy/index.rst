@@ -5,8 +5,8 @@ Reverse Proxy
 
 The purpose of a reverse proxy (or frontend web server) is to provide a single
 point of entry for one or more services from outside the network. The reverse
-proxy receives all requests from the clients and forwards them to the Axon Ivy
-Engine which handles them. This allows to integrate the processes and
+proxy receives all requests from the clients and forwards them to the |ivy-engine|
+which handles them. This allows to integrate the processes and
 applications that you are running on an |ivy-engine| into a company or web
 portal. The use of a reverse proxy provides more security. The reverse proxy can
 and must be updated at any time to receive the latest security updates, because
@@ -54,8 +54,8 @@ proxy.
 .. rubric:: Base URL
 
 Beside the setup of the reverse proxy itself you always need to configure the
-base url in the :ref:`ivy.yaml <ivy-yaml>`. The Axon Ivy
-Engine will use this configuration to create absolute links that are accessible
+base url in the :ref:`ivy.yaml <ivy-yaml>`. The |ivy-engine|
+will use this configuration to create absolute links that are accessible
 to clients (e.g. for links in :ref:`task mails <standard-process-email>`).
 
    .. code-block:: yaml

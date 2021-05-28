@@ -105,9 +105,9 @@ Process Element
 .. _glossar-process-model:
 
 Process Model
-   A Process Model on the Engine corresponds to an Axon Ivy project on
+   A Process Model on the Engine corresponds to an |axon-ivy| project on
    the Designer. The difference is that a Process Model may hold
-   multiple different versions of the same Axon Ivy project. These are
+   multiple different versions of the same |axon-ivy| project. These are
    called :ref:`Process Model Version <glossar-process-model-version>`.
 
    See also section :ref:`Process Model <process-model>` in
@@ -118,7 +118,7 @@ Process Model
 Process Model Version
    A :ref:`Process Model <glossar-process-model>` can have multiple
    versions called Process Model Versions. These versions allow to
-   change an Axon Ivy project without worrying about the compatibility
+   change an |axon-ivy| project without worrying about the compatibility
    of currently running :ref:`Cases <glossar-case>` on the Engine.
 
    See also section :ref:`Process Model Version <process-model-version>` in chapter
@@ -137,7 +137,7 @@ Signature
    its parameters, but usually excludes the return type(s) of the
    method.
 
-   Within *Axon Ivy*, signatures act as unique identifiers for specific
+   Within *|axon-ivy|*, signatures act as unique identifiers for specific
    start elements (e.g. method starts, request starts, trigger starts,
    call sub starts), within the same process, only one element with the
    same signature may exist. The same holds true for signatures of start
@@ -190,4 +190,4 @@ User Dialog
 
 View Type
    A View Type defines the default content of a :ref:`user-dialogs` View.
-   Axon Ivy has predefined View Types, i.e. Page and Component.
+   |axon-ivy| has predefined View Types, i.e. Page and Component.

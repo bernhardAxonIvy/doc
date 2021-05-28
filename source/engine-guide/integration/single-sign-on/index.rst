@@ -14,8 +14,7 @@ browsing the |ivy-engine| over and intermediate service - a :ref:`reverse
 proxy server <reverse-proxy>`. The reverse proxy server is responsible to
 authenticate the user and enhance the request with an identifier of the user.
 The |ivy-engine| will automatically log on the user when the user is known in
-the :ref:`security system <configuration-security-system>` of the Axon Ivy
-Engine.
+the :ref:`security system <configuration-security-system>` of the |ivy-engine|.
 
 
 |

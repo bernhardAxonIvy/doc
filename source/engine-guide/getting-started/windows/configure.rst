@@ -39,7 +39,7 @@ Click :guilabel:`Add Administrator`, fill in the form and press the
   addresses of administrators are used to send mail notifications if license
   problems occur.
 
-On the next page configure which protocol connectors and ports the Axon Ivy
+On the next page configure which protocol connectors and ports the |axon-ivy|
 Engine internal web server should provide. 
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-setup-webserver.png
@@ -56,7 +56,7 @@ the :guilabel:`Create Database` button.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-setup-systemdb.png
 
-On the appearing dialog configure the name of the Axon Ivy system database.
+On the appearing dialog configure the name of the |axon-ivy| system database.
 Press the :guilabel:`Save and create` button to save and create the system
 database.
 

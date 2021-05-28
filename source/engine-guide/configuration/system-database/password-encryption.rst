@@ -5,7 +5,7 @@ Password Encryption
 *******************
 
 User passwords are stored encrypted in the system database. Passwords of
-Axon Ivy users are hashed by using the bcrypt algorithm.
+|axon-ivy| users are hashed by using the bcrypt algorithm.
 
 Passwords of technical users that are used to communicate with external systems
 are encrypted using the AES algorithm. The secret key for the AES algorithm is

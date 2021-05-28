@@ -3,7 +3,7 @@
 Process Modeling
 ================
 
-This chapter introduces Axon Ivy processes and how to work with them.
+This chapter introduces |axon-ivy| processes and how to work with them.
 The creation and logical organization of processes is explained as well
 as the functionality of the :ref:`process-editor` and the different kinds of processes.
 
@@ -44,7 +44,7 @@ same data is available as inside the caller process).
    Wrapping process elements into an embedded subprocess does not
    influence the functionality of most process elements. But the
    wrapping influences the way process elements are addressed by
-   Axon Ivy. This may cause incompatibilities with older versions of the
+   |axon-ivy|. This may cause incompatibilities with older versions of the
    process and will hinder you to deploy such a process over an already
    deployed older version of the process. The process elements that may
    cause such incompatibilities are:
@@ -341,7 +341,7 @@ one of the following available authentication methods:
 None/Container
    Authentication is not handled by the web service element. However, if
    the web container (Tomcat) or a web server (Microsoft IIS/Apache)
-   handles user authentication, the user is passed through to Axon Ivy
+   handles user authentication, the user is passed through to |axon-ivy|
    (e.g. Single Sign-on).
 
 WS Security
@@ -371,7 +371,7 @@ HTTP Basic
 
    If the web container (Tomcat) or a web server (Microsoft IIS/Apache)
    already handles user authentication, the user is passed through to
-   Axon Ivy without doing an additional HTTP Basic authentication.
+   |axon-ivy| without doing an additional HTTP Basic authentication.
 
 .. _process-editor:
 
@@ -393,7 +393,7 @@ editor consists of two parts:
 Accessibility
 ~~~~~~~~~~~~~
 
-Axon Ivy Project Tree > double click on a *process* node inside the
+|axon-ivy| Project Tree > double click on a *process* node inside the
 project tree (|image3|)
 
 .. _process-editor-palette:
@@ -871,7 +871,7 @@ View*.
 Reference View
 --------------
 
-The Reference view shows the references between the various Axon Ivy
+The Reference view shows the references between the various |axon-ivy|
 project artifacts. A reference of an artifact is everything which is
 used/called from the artifact (e.g. call to a callable process or User
 Dialog) or which is embedded in the artifact (e.g. embedded sub element

@@ -25,10 +25,10 @@ its default settings (via :guilabel:`Window` > :guilabel:`Reset Perspective`).
 
 .. _perspectives-axonivy:
 
-Perspectives provided by Axon Ivy
----------------------------------
+Perspectives provided by |axon-ivy|
+-----------------------------------
 
-Axon Ivy provides following perspectives:
+|axon-ivy| provides following perspectives:
 
 -  Process Model: :ref:`Create and edit business process diagrams <process-modeling>`.
 

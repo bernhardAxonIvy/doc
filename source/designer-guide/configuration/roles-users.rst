@@ -5,9 +5,9 @@ Role is a widely used term in the computer industry and means a group of
 users of a certain system which share a common property. This enables an
 administrator to define configurations for this groups (roles) of users
 at once instead of defining it for each and every user individually.
-Axon Ivy incorporates a sophisticated role and user model to support:
+|axon-ivy| incorporates a sophisticated role and user model to support:
 
--  **Authentication** - Who may login into Axon Ivy
+-  **Authentication** - Who may login into |axon-ivy|
 -  **Authorization** - Control who is allowed to do what
 -  **Task assignment** - Decide who has to perform a task in a workflow
 -  **User dependent UI elements** - Configure who can see and operate on UI elements

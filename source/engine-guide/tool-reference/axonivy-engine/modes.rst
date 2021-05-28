@@ -1,7 +1,7 @@
 Engine Modes
 ============
-|ivy-engine| runs in different modes. If you have configured your Axon Ivy
-Engine correctly it runs in :ref:`production-mode`. This is the standard mode.
+|ivy-engine| runs in different modes. If you have configured your |ivy-engine|
+correctly it runs in :ref:`production-mode`. This is the standard mode.
 The :ref:`demo-mode` and the :ref:`maintenance-mode` are special modes in which
 your |ivy-engine| only runs if you have not yet configured it or there are
 problems with your configuration.

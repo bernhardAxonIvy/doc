@@ -3,7 +3,7 @@
 Data Classes
 ============
 
-This chapter deals with the Axon Ivy Data Classes. In general, a Data
+This chapter deals with the |axon-ivy| Data Classes. In general, a Data
 Class holds the data that flows through your business or User Dialog
 process. You can build complex data structures out of your Data Classes.
 Use composition to split up your data if the amount of your data is
@@ -13,7 +13,7 @@ getting bigger.
 Types of Data Classes
 ---------------------
 
-There are four kinds of Data Classes in Axon Ivy.
+There are four kinds of Data Classes in |axon-ivy|.
 
 Global Data Classes
    The global Data Classes are placed in the Data Class node in your
@@ -67,7 +67,7 @@ Namespace
    Choose a namespace for your Data Class. The name space lets you
    create a structure to organize your data. Use the dot character '.'
    to separate the folders from each other. The namespace will be
-   visible in the Axon Ivy project tree.
+   visible in the |axon-ivy| project tree.
 
 Data Class Name
    Enter the name of your Data Class. Do not use the same name twice in
@@ -80,8 +80,8 @@ Data Class Name
 Data Class Editor
 -----------------
 
-The Axon Ivy Data Class editor lets you configure the process data
-objects of Axon Ivy. The process data is the data that **flows** through
+The |axon-ivy| Data Class editor lets you configure the process data
+objects of |axon-ivy|. The process data is the data that **flows** through
 your processes. It represents the state of the respective process.
 
 Use this editor to add new data fields to your process data class, to
@@ -97,7 +97,7 @@ Field.
 Accessibility
 ^^^^^^^^^^^^^
 
-#. Axon Ivy Project Tree > double click on a Data Class entry in the
+#. |axon-ivy| Project Tree > double click on a Data Class entry in the
    tree.
 
 #. New > Data Class > then the editor opens if the class was created

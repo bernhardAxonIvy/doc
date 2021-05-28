@@ -55,7 +55,7 @@ browser. This way you do not need to install a an external monitoring tool.
 Where possible, |ivy-engine| MBeans names contain application, process 
 model, process model version, or environment name. 
 
-**Examples of typical Axon Ivy MBean names:**
+**Examples of typical |axon-ivy| MBean names:**
 
 .. code-block:: properties
 
@@ -119,7 +119,7 @@ The list below contains some of the provided information:
 
     *:type=GlobalRequestProcessor,name=*
 
-**Number of Sessions** (HTTP sessions, Axon Ivy sessions, license relevant sessions, etc.)
+**Number of Sessions** (HTTP sessions, |axon-ivy| sessions, license relevant sessions, etc.)
 
 .. code-block:: properties
 

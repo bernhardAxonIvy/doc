@@ -1,7 +1,7 @@
 Process Extensions
 ==================
 
-Axon Ivy contains :ref:`extendible-process-elements` that can be
+|axon-ivy| contains :ref:`extendible-process-elements` that can be
 used to address particular execution behavior requirements none of the
 standard process elements can fulfill. By implementing one of these Java
 interfaces any 3rd party logic can be weaved into the process during

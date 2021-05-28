@@ -4,7 +4,7 @@ License
 =======
 
 To run the |ivy-engine| in :ref:`production mode <production-mode>` you need
-a license, which you can apply for via your Axon Ivy Partner, Axon Ivy Sales or
+a license, which you can apply for via your |axon-ivy| Partner, |axon-ivy| Sales or
 directly via support@axonivy.com. A time-limited license is provided whereby the
 edition, the number of named users, the number of concurrent sessions and the
 public URLs are licensed.
@@ -24,9 +24,9 @@ the Enterprise Edition, which allows to run the |ivy-engine| in a
 Named Users
 -----------
 
-The number of registered users within Axon Ivy are called **named users**. This
-means all users that have an account in Axon Ivy and therefore can login to
-Axon Ivy. Because accounts are managed per application one user can have
+The number of registered users within |axon-ivy| are called **named users**. This
+means all users that have an account in |axon-ivy| and therefore can login to
+|axon-ivy|. Because accounts are managed per application one user can have
 multiple accounts. One per application. However, accounts in different
 applications that have the same user name are counted as one named user.
 
@@ -34,8 +34,8 @@ applications that have the same user name are counted as one named user.
 Concurrent Sessions
 -------------------
 
-The number of users that are currently working with Axon Ivy are known as
-**concurrent sessions**. Axon Ivy controls the number of sessions as follows:
+The number of users that are currently working with |axon-ivy| are known as
+**concurrent sessions**. |axon-ivy| controls the number of sessions as follows:
 
 - Sessions where no user is authenticated are counted as one concurrent users.
 - Sessions where the same user is authenticated are counted as on concurrent

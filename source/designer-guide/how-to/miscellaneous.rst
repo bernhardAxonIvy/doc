@@ -2,7 +2,7 @@ Miscellaneous
 =============
 
 This chapter deals with several concepts and features that are
-integrated into Axon Ivy to leverage user convenience and experience.
+integrated into |axon-ivy| to leverage user convenience and experience.
 
 
 .. _data-cache:
@@ -10,7 +10,7 @@ integrated into Axon Ivy to leverage user convenience and experience.
 Data Caching
 ------------
 
-Axon Ivy offers a feature to store data temporarily into a *data cache*
+|axon-ivy| offers a feature to store data temporarily into a *data cache*
 in the engine's memory. If you want to read data that stays unchanged
 for some time, you do not need to re-read the data every time you need
 to access it. If this data is read by long-running queries from a
@@ -150,9 +150,9 @@ does invalidate all groups and therefore as well all entries.
 System Events
 -------------
 
-Axon Ivy offers the concept of system events, which can be understood as
-messages that are broadcasted across the Axon Ivy installation. While
-Axon Ivy itself (e.g. the workflow subsystem) generates events that
+|axon-ivy| offers the concept of system events, which can be understood as
+messages that are broadcasted across the |axon-ivy| installation. While
+|axon-ivy| itself (e.g. the workflow subsystem) generates events that
 interested participants may subscribe to (e.g. to be informed when a
 case is created or finished), it is also possible for implementors to
 define their own events and to broadcast them to any component that
@@ -164,7 +164,7 @@ communication* (within the same Application).
 Concept and general usage
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-System events are messages that are broadcasted across the Axon Ivy
+System events are messages that are broadcasted across the |axon-ivy|
 system and that will be delivered to any interested party. System events
 have a name and are categorized, and they may carry an optional
 parameter object. System events can only be sent within the same
@@ -180,7 +180,7 @@ never generate any events of this type.
 
 |image0|
 
-The Axon Ivy system itself currently only generates events of the
+The |axon-ivy| system itself currently only generates events of the
 category ``WORKFLOW``. Inside this category, events with the following
 names are generated:
 
@@ -306,17 +306,17 @@ to the following:
 
 .. _designer-search:
 
-Axon Ivy Search
----------------
+|axon-ivy| Search
+-----------------
 
 In a workspace with many large projects it is sometimes hard to find
 specific Ivy elements. Then a powerful search mechanism can save the
-day. To use the Axon Ivy search, just click on the |image1| symbol in
+day. To use the |axon-ivy| search, just click on the |image1| symbol in
 the toolbar to open the search dialog. In the dialog that opens navigate
-to the Axon Ivy tab. At present, searching for 
+to the |axon-ivy| tab. At present, searching for 
 :ref:`cms`, :ref:`data-classes`, :ref:`persistence-entity-classes`,
 :ref:`Process Models <process-modeling>` and :ref:`Process Elements <process-elements>`
-is supported by Axon Ivy.
+is supported by |axon-ivy|.
 
 Search page
 ~~~~~~~~~~~
@@ -359,7 +359,7 @@ Recreate indices
 .. note::
 
    You may use as well other search facilities within this dialog to
-   search for parts that are not covered by the Axon Ivy search page.
+   search for parts that are not covered by the |axon-ivy| search page.
    e.g. if you write your own Java classes in the |ivy-designer| you
    may use the Java search.
 
@@ -386,14 +386,14 @@ For standard searches, only *Project* and *Namespace* grouping is available.
 Update Notification
 -------------------
 
-When newer Axon Ivy versions are available a dialog appears after
+When newer |axon-ivy| versions are available a dialog appears after
 starting |ivy-designer|. The dialog contains information about the
 new versions and where those can be downloaded.
 
 Use the checkboxes provided on the dialog if you don't want to see the
 dialog again either for the same versions or for any new versions.
 
-If you want to check for new versions manually use the menu :guilabel:`Axon Ivy` >
+If you want to check for new versions manually use the menu :guilabel:`|axon-ivy|` >
 :guilabel:`Check for Updates ...`
 
 .. note::
@@ -424,11 +424,11 @@ If you want to check for new versions manually use the menu :guilabel:`Axon Ivy`
 Eclipse Plugin Mechanism
 ------------------------
 
-You need a database frontend in Axon Ivy? Or editing support for any
+You need a database frontend in |axon-ivy|? Or editing support for any
 other programming or data declaration languages such as C/C++, PHP or
 XML? Or you have UML models to view? No problem at all.
 
-Axon Ivy is based on the widely used
+|axon-ivy| is based on the widely used
 `Eclipse <http://www.eclipse.org>`__ platform which offers a
 sophisticated plugin mechanism to integrate third-party modules. In
 these days, Eclipse which originally has been developed as an IDE for
@@ -440,13 +440,13 @@ for browsing and
 searching these plugins arose in the past years.
 
 And the conclusion, you can use all these plugins and integrate them
-into your Axon Ivy installation to interact seamlessly between your
-favorite plugin set and the built-in Axon Ivy features.
+into your |axon-ivy| installation to interact seamlessly between your
+favorite plugin set and the built-in |axon-ivy| features.
 
 .. note::
 
    Please follow the installation instructions of the specific plugin to
-   integrate it into your Axon Ivy installation
+   integrate it into your |axon-ivy| installation
 
 
 

@@ -310,8 +310,8 @@ the objects are described in the :public-api:`Public API </>`):
    object, the representation of the request against the server to execute the
    current step
 
--  ``response`` - an :public-api:`IResponse </ch/ivyteam/ivy/request/IResponse.html>` object, the response of the Axon Ivy
-   Engine on the request to execute the most current step
+-  ``response`` - an :public-api:`IResponse </ch/ivyteam/ivy/request/IResponse.html>` object, the response of the |ivy-engine|
+   on the request to execute the most current step
 
 -  ``wf`` - an :public-api:`IWorkflowContext </ch/ivyteam/ivy/workflow/IWorkflowContext.html>` object giving access to all workflow
    objects (all tasks, all cases) of all users for the application under
@@ -344,7 +344,7 @@ the objects are described in the :public-api:`Public API </>`):
 -  ``cms`` - a :public-api:`IContentManagmentSystem </ch/ivyteam/ivy/cm/IContentManagementSystem.html>` object representing the CMS
    used in this project.
 
--  ``html`` - a :public-api:`IHtmlDialogContext </ch/ivyteam/ivy/htmldialog/IHtmlDialogContext.html>` object specifies the Axon Ivy
+-  ``html`` - a :public-api:`IHtmlDialogContext </ch/ivyteam/ivy/htmldialog/IHtmlDialogContext.html>` object specifies the |axon-ivy|
    HTML environment
 
 -  ``log`` - a :public-api:`Logger </ch/ivyteam/log/Logger.html>` object. You can define log outputs here that
@@ -352,7 +352,7 @@ the objects are described in the :public-api:`Public API </>`):
    :ref:`Runtime Log View <simulate-process-models-debugger-runtimelog-view>`.
 
 -  ``extensions`` - a :public-api:`IExtensions </ch/ivyteam/ivy/extension/IExtensions.html>` instance allowing access to
-   Axon Ivy ``extensions``
+   |axon-ivy| ``extensions``
 
 -  ``datacache`` - the reference to the :public-api:`IDataCacheContext </ch/ivyteam/ivy/data/cache/IDataCacheContext.html>` instances
    for the application and session (see :ref:`data-cache`)
@@ -365,7 +365,7 @@ the objects are described in the :public-api:`Public API </>`):
 -  ``var`` - references to the variables that are defined for
    this application (see :ref:`variables` for more information)
 
--  ``rules`` - references to the :ref:`rule engine integration <rule-engine>` within Axon Ivy.
+-  ``rules`` - references to the :ref:`rule engine integration <rule-engine>` within |axon-ivy|.
 
 
 .. note::
