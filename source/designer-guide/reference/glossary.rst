@@ -5,7 +5,7 @@ This chapter provides an alphabetized glossary for specialized
 expressions and terms that are employed in this book.
 
 Application
-   On the Axon Ivy Engine one or more Applications can exist. The
+   On the |ivy-engine| one or more Applications can exist. The
    Application defines the container wherein the :ref:`Process Models <glossar-process-model>` can be deployed.
 
    Also :Ref:`Users <glossar-user>` and :ref:`Roles <glossar-role>`

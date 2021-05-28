@@ -24,7 +24,7 @@ main features:
 
 -  **Installation** of IAR artifacts into the local Maven repository
 
--  **Deployment** of IAR artifacts to an Axon Ivy Engine
+-  **Deployment** of IAR artifacts to an |ivy-engine|
 
 
 Runtime

@@ -3,7 +3,7 @@
 Email
 =====
 
-The Axon Ivy Engine sends emails for different purposes:
+The |ivy-engine| sends emails for different purposes:
 
 * Emails that are sent within a process via the mail step.
 * New task assignment and daily task summaries to users.

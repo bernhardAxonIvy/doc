@@ -3,7 +3,7 @@
 License
 =======
 
-To run the Axon Ivy Engine in :ref:`production mode <production-mode>` you need
+To run the |ivy-engine| in :ref:`production mode <production-mode>` you need
 a license, which you can apply for via your Axon Ivy Partner, Axon Ivy Sales or
 directly via support@axonivy.com. A time-limited license is provided whereby the
 edition, the number of named users, the number of concurrent sessions and the
@@ -17,7 +17,7 @@ Edition
 
 There is a choice between **Standard Edition** and **Enterprise Edition**. If
 you expect high load or need increased reliability, then you should look into
-the Enterprise Edition, which allows to run the Axon Ivy Engine in a
+the Enterprise Edition, which allows to run the |ivy-engine| in a
 :ref:`cluster <cluster>`.
 
 
@@ -66,17 +66,17 @@ the number of concurrent sessions that are counted.
 Public URLs
 -----------
 
-Public URLs are the links that end users will use to access your Axon Ivy Engine.
+Public URLs are the links that end users will use to access your |ivy-engine|.
 
 .. admonition:: Example
   
-  Let's assume your Axon Ivy Engine is installed on a machine with the DNS name
-  ``axonivyprod``. Users access the Axon Ivy Engine in two different ways:
+  Let's assume your |ivy-engine| is installed on a machine with the DNS name
+  ``axonivyprod``. Users access the |ivy-engine| in two different ways:
   
   * Intranet users use ``http://axonivyprod:8080`` to access it. 
   * Internet users use ``https://www.customer.com`` to access it through a reverse proxy.
 
-  An administrator accesses the Axon Ivy Engine with an IP Address
+  An administrator accesses the |ivy-engine| with an IP Address
   ``http://192.168.1.19``.
   
   In this case the license must contain three public URLs:

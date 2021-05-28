@@ -50,7 +50,7 @@ New file locations
 |tag-ops-changed|
 
 Shifting towards highly configurable ivy projects we needed to move the :file:`app.yaml` to a new location
-in the Axon Ivy Engine.
+in the |ivy-engine|.
 
 .. container:: admonition note toggle
 
@@ -206,9 +206,9 @@ HTTPS port disabled by default
 
 |tag-ops-changed|
 
-HTTPS port is now disabled by default on the Axon Ivy Engine, because you should
+HTTPS port is now disabled by default on the |ivy-engine|, because you should
 always terminate SSL on the reverse proxy (frontend webserver). If you need
-HTTPS directly on the Axon Ivy Engine then you need to set the property
+HTTPS directly on the |ivy-engine| then you need to set the property
 :code:`WebServer.HTTPS.Enabled` to :code:`true` in :ref:`ivy-webserver-yaml`.
 
 
@@ -230,7 +230,7 @@ AJP support is deprecated
 
 |tag-ops-deprecated|
 
-AJP is used to integrate the Axon Ivy Engine with Microsoft IIS  or Apache http
+AJP is used to integrate the |ivy-engine| with Microsoft IIS  or Apache http
 as :ref:`reverse proxy <reverse-proxy>`. We still support AJP but you should
 migrate to a more modern URL rewrite approach based on HTTP/HTTPS.
 
@@ -243,7 +243,7 @@ migrate to a more modern URL rewrite approach based on HTTP/HTTPS.
   AJP's days are numbered. It is not getting developed any further and prevents
   the use of new web features such as websockets. We highly recommend to migrate
   to a modern URL rewrite approach based on HTTP/HTTPS, in future versions
-  of Axon Ivy Engine you won't be able to use AJP.
+  of |ivy-engine| you won't be able to use AJP.
 
   If you are using Microsoft IIS as your reverse proxy proceed as follows:
 
@@ -262,7 +262,7 @@ SSL Client Configuration
 
 |tag-ops-changed|
 
-We made the life of Axon Ivy Engine administrators easier
+We made the life of |ivy-engine| administrators easier
 with some simplifications in the SSL configuration.
 
 .. container:: admonition note toggle
@@ -330,7 +330,7 @@ still have used the jTDS driver.
   #. Choose :guilabel:`Driver` **Microsoft SQL Server**
   #. Click :guilabel:`Check Connection`
   #. Click :guilabel:`Save`
-  #. Restart Axon Ivy Engine
+  #. Restart |ivy-engine|
 
   **External Databases**
   

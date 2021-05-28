@@ -35,10 +35,10 @@ If database will be created by the |ivy-engine| the collate is set to ``Latin1_G
     
     Before you can create the system database tables on a Oracle Database you have to do the following steps:
 
-    #. You may want to create a new Oracle database where the Axon Ivy Engine
+    #. You may want to create a new Oracle database where the |ivy-engine|
        System Database is located. This is optional you can use an already existing
        Oracle database.
-    #. Create a new user (e.g. AxonIvy) or let the Axon Ivy Engine create one
+    #. Create a new user (e.g. AxonIvy) or let the |ivy-engine| create one
        for you with the Setup Wizard. You can use the following script to
        create a new user with sufficient permissions:
 

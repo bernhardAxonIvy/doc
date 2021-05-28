@@ -45,5 +45,5 @@ The |ivy-platform| consists on the one hand of the
 :ref:`Axon Ivy Designer <designer-guide>` which
 enables the drawing, simulation and implementation of automated business
 processes. The other part is the application server
-:ref:`Axon Ivy Engine <engine-guide>` that
+:ref:`|ivy-engine| <engine-guide>` that
 executes your business cases and provides a shared interface for process users.

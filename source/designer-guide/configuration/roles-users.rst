@@ -116,7 +116,7 @@ the new place in the hierarchy.
 
 .. warning::
 
-   Roles created in the designer are not uploaded to the Axon Ivy Engine
+   Roles created in the designer are not uploaded to the |ivy-engine|
    until the deployment of the project. They are merged with all other
    roles in the same application context. Consider that the deployment
    will fail if the same role exist in more than one project in
@@ -137,7 +137,7 @@ by double clicking on the :guilabel:`Test Users` node in the
 
    Test users are only used in the process **simulation** within the
    Axon Ivy Designer and they are not uploaded to the engine at the
-   deployment. Users for deployed processes on the Axon Ivy Engine need
+   deployment. Users for deployed processes on the |ivy-engine| need
    to be created and configured on the engine.
    
 .. figure:: /_images/designer-configuration/test-user-editor.png

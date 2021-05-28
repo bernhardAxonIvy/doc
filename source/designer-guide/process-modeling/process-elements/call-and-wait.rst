@@ -56,7 +56,7 @@ API.
 
 .. note::
 
-   An Axon Ivy Engine Enterprise Edition consists of multiple server
+   An |ivy-engine| Enterprise Edition consists of multiple server
    instances (nodes) that are running on different machines.
    
    As described above Call & Wait consists of two parts:

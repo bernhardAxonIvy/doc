@@ -4,11 +4,11 @@ Apache httpd
 ============
 
 This is how the configuration for Apache httpd as reverse proxy in front of
-Axon Ivy Engine can look like:
+|ivy-engine| can look like:
 
 * All HTTP traffic is redirected to HTTPS
 * Only the application `demo-portal` is available over the reverse proxy
-* Apache httpd communicates over HTTP with the Axon Ivy Engine
+* Apache httpd communicates over HTTP with the |ivy-engine|
 
 .. literalinclude:: vhosts.conf
     :language: apache

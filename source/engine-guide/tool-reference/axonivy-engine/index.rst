@@ -1,4 +1,4 @@
-Axon Ivy Engine
+|ivy-engine|
 ***************
 
 .. toctree::

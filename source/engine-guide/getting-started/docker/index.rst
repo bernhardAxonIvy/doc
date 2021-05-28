@@ -3,7 +3,7 @@
 Docker
 ======
 
-In this example you learn how you can run the Axon Ivy Engine in a docker
+In this example you learn how you can run the |ivy-engine| in a docker
 compose setup.
 
 .. toctree::

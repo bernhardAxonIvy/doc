@@ -3,12 +3,12 @@
 System Database
 ===============
 
-An untouched Axon Ivy Engine runs in :ref:`demo mode <demo-mode>`. In
+An untouched |ivy-engine| runs in :ref:`demo mode <demo-mode>`. In
 consequence workflow data is never stored, but kept in a memory database. To run
 a productive engine an external system database must be connected, where
 workflow data will be stored.
 
-To define the database of the Axon Ivy Engine, the :code:`SystemDb` entries must be
+To define the database of the |ivy-engine|, the :code:`SystemDb` entries must be
 set.
 
 .. literalinclude:: ivy-systemdb.yaml
@@ -27,7 +27,7 @@ The following database management systems are supported, choose one:
    oracle 
 
 Use the :ref:`setup-wizard` or the :ref:`engine-config-cli` to create the system
-database. To run the Axon Ivy Engine with a system database a :ref:`license
+database. To run the |ivy-engine| with a system database a :ref:`license
 <license>` is required.
 
 |

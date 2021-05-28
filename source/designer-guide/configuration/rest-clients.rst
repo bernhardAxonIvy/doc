@@ -93,7 +93,7 @@ REST Client Section
 
   .. tip::
 
-     To consume a REST service running in the same Axon Ivy Engine /
+     To consume a REST service running in the same |ivy-engine| /
      Application as the client a set of Axon Ivy placeholders can be
      used. These placeholders are automatically resolved:
      {ivy.engine.host}, {ivy.engine.http.port}, {ivy.engine.context},

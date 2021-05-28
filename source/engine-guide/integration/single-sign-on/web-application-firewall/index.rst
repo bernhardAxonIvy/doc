@@ -9,7 +9,7 @@ and Access Management (IAM) System it also protects against unauthorized access
 and supports Single Sign-on (SSO).
 
 Most WAF or IAM systems allow to configure a way how the user name of the
-identified user is transmitted to the web applications. With Axon Ivy Engine a
+identified user is transmitted to the web applications. With |ivy-engine| a
 typical system landscape will look like this:
 
 |
@@ -25,4 +25,4 @@ Engine) from attacks. The WAF uses the IAM to identify users and to protect
 certain resources from unauthorized access. The IAM itself may use a directory
 server like Microsoft Active Directory to know users. The WAF can be configured
 to provide the name of the identified user either as HTTP header or HTTP cookie
-to the web application (Axon Ivy Engine).
+to the web application (|ivy-engine|).

@@ -129,7 +129,7 @@ Responsible Role
    .. tip::
 
       In the Designer you can create test users and assign them the role
-      to test this element, on the Axon Ivy Engine you must create the
+      to test this element, on the |ivy-engine| you must create the
       real users separately (roles can be imported from the designer).
 
 Anonymous

@@ -1,7 +1,7 @@
 Extensions
 ==========
 
-This chapters shows how easily a process or the Axon Ivy Engine itself
+This chapters shows how easily a process or the |ivy-engine| itself
 can be customized with your own logic.
 
 

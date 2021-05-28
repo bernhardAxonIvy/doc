@@ -693,7 +693,7 @@ detailed information of each executed process element.
 
 .. note::
 
-   On the Axon Ivy Engine there is the possibility to dump out
+   On the |ivy-engine| there is the possibility to dump out
    performance statistics to a comma separated value file (*.csv). Check
    the Engine Guide for more information: *Monitoring > Process Element
    Performance Statistic and Analysis*

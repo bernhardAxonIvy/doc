@@ -15,7 +15,7 @@ is in turn called the **dependent project*** with respect to its required
 projects.
 
 Once you have finished your development you will usually want to install
-the implemented application or workflow on an Axon Ivy Engine. Projects
+the implemented application or workflow on an |ivy-engine|. Projects
 form the single unit of deployment for this purpose, i.e. you deploy
 each project into a container on the engine which is called *process model version*.
 A project may be deployed in multiple versions on the

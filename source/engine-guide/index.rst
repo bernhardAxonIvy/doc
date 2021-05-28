@@ -3,9 +3,9 @@
 Engine Guide
 ************
 
-This guide covers all aspects of an Axon Ivy Engine lifecycle, including
+This guide covers all aspects of an |ivy-engine| lifecycle, including
 installation, configuration and production operation. If you want to get
-familiar with the Axon Ivy Engine for the first time, we recommend to dive
+familiar with the |ivy-engine| for the first time, we recommend to dive
 in :ref:`getting-started`.
 
 |

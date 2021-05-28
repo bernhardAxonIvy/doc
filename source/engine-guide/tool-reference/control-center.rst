@@ -95,10 +95,10 @@ The Control Center also allows you to configure and |ivy-engine| configuration.
 
 .. Note::
     The indication whether the program behind an entry in the server list is
-    running or not is only shown for the Axon Ivy Engine binaries of the
+    running or not is only shown for the |ivy-engine| binaries of the
     installation the Control Center belongs to and for any Windows services
-    (including the Axon Ivy Engine services). This applies too for the *show
-    console* setting because only Axon Ivy Engine binaries can be started in a
+    (including the |ivy-engine| services). This applies too for the *show
+    console* setting because only |ivy-engine| binaries can be started in a
     console (third party applications cannot).
 
 :guilabel:`Add` first opens a dialog to choose the type for the new entry. You can choose

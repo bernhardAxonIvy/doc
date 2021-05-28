@@ -2,7 +2,7 @@ Deployment
 ==========
 
 This chapter explains how an Axon Ivy Designer Project can be deployed
-to an Axon Ivy Engine. Before deploying an Axon Ivy project it is
+to an |ivy-engine|. Before deploying an Axon Ivy project it is
 important to understand some major concepts and terms of the Axon Ivy
 Engine. The following chapter introduces these concepts and terms.
 
@@ -13,7 +13,7 @@ Application
 
 |image0|
 
-On the Axon Ivy Engine, applications can be configured. An application
+On the |ivy-engine|, applications can be configured. An application
 spans up an environment in which roles, users, databases,
 tasks, cases and process models exist. Applications are completely
 independent of each other. E.g. a user of one application can **not**
@@ -63,7 +63,7 @@ processes that are started in a process model are started in the
 released process model version! A complete list of release state can be
 found in the following list:
 
-.. table:: Release states of process model versions on Axon Ivy Engine
+.. table:: Release states of process model versions on |ivy-engine|
    :widths: 20 80
 
    +-----------------------------------+------------------------------------------+
@@ -127,7 +127,7 @@ Configuration Example
 ---------------------
 
 The following table shows an example of how applications, process models
-and process model versions on an Axon Ivy Engine can be configured.
+and process model versions on an |ivy-engine| can be configured.
 
 .. table:: Configuration Example
    :widths: 15 15 15 55
@@ -246,15 +246,15 @@ and process model versions on an Axon Ivy Engine can be configured.
 Axon Ivy Project Deployment
 ---------------------------
 
-To deploy an Axon Ivy project to the Axon Ivy Engine execute the
+To deploy an Axon Ivy project to the |ivy-engine| execute the
 following steps:
 
 #. Export all files of the project you want to deploy to a zip file
    using the Export wizard of Axon Ivy Designer (See next section).
 
-#. Copy the zip file with your project files to the Axon Ivy Engine.
+#. Copy the zip file with your project files to the |ivy-engine|.
 
-#. Start the Engine Administrator application on the Axon Ivy Engine
+#. Start the Engine Administrator application on the |ivy-engine|
 
 #. Choose or create an application
 
@@ -274,7 +274,7 @@ following steps:
 
    More information about the deployment of Axon Ivy projects or
    applications, process models and process model versions can be found
-   in the Axon Ivy Engine Guide.
+   in the |ivy-engine| Guide.
 
 Export all Project Files to a ZIP-File
 --------------------------------------

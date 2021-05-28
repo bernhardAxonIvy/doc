@@ -29,7 +29,7 @@ API.
 
 .. note::
 
-   An Axon Ivy Engine Enterprise Edition consists of multiple engine
+   An |ivy-engine| Enterprise Edition consists of multiple engine
    instances (nodes) that are running on different machines.
    
    Normally

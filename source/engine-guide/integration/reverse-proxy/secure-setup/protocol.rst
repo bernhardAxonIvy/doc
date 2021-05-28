@@ -10,12 +10,12 @@ only up-to-date systems should be used. Consult the manual of your reverse proxy
 server for a secure HTTPS setup.
 
 If not explicitly required than we recommend to terminate the SSL traffic on
-your reverse proxy and let the reverse proxy communicate with the Axon Ivy Engine
+your reverse proxy and let the reverse proxy communicate with the |ivy-engine|
 over plain HTTP. 
 
 * The **setup is less complicated**, because you don't have to configure SSL
-  on the Axon Ivy Engine.
-* **Performance** will be increased, because the Axon Ivy Engine does not need
+  on the |ivy-engine|.
+* **Performance** will be increased, because the |ivy-engine| does not need
   to encrypt and decrypt data.
 
 .. rubric:: Remarks
