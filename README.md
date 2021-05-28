@@ -3,7 +3,7 @@
 Based on [sphinx](http://www.sphinx-doc.org).
 Using reStructredText as markup language.
 
-**Note:** All Ivy documentation must be written English with *American spelling*!
+**Note:** All Ivy documentation must be written in English with *American spelling*!
 
 
 ## Build
