@@ -204,7 +204,7 @@ its features.
 **Client properties**
 
 Well known properties of the client are documented here:
-`org.glassfish.jersey.client.ClientProperties <https://jersey.github.io/apidocs/latest/jersey/org/glassfish/jersey/client/ClientProperties.html>`__.
+`org.glassfish.jersey.client.ClientProperties <https://eclipse-ee4j.github.io/jersey.github.io/apidocs/latest/jersey/org/glassfish/jersey/client/ClientProperties.html>`__.
 
 In order to configure SSL client authentication for a REST client
 call, you need to specify the property *SSL.keyAlias*. The value of
@@ -252,3 +252,20 @@ Then the path template ``{api.version}`` can be set globally on the RestClient a
 +------------------+----------+
 
 The resolved uri would consequently look as follows: ``https://api.twitter.com/2/status/...``
+
+**Connection properties**
+
+You can configure the library that is used to create and manage connections by setting a connection 
+provider ``jersey.client.connectorProvider``. By default Apache HTTP Client 
+(``org.glassfish.jersey.apache.connector.ApacheConnectorProvider``) is used. 
+This library uses a connection pool to reuse connections. The connection pool is limited to 5 connections 
+by default. You can see how many connections are currently in use by using the 
+:ref:`live stats <engine-cockpit-monitor-services>` in the :ref:`engine-cockpit`.
+If all connections are in use most of the time you should consider increasing the maximum connections 
+of the pool to avoid performance issues. You can configure it by setting the property ``jersey.client.pool.maxConnections``. 
+
+As an alternative to Apache HTTP Client you can use ``java.net.URLConnection`` from the Java core library 
+(``org.glassfish.jersey.client.HttpUrlConnectorProvider``). This connection provider does not have a maximum connection limit 
+but has other restrictions like no NTLM support.
+
+  
