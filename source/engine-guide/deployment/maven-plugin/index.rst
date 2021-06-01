@@ -101,5 +101,5 @@ Execute the maven lifecycle in the directory where the :file:`pom.xml` file is l
 
     mvn site-deploy 
 
-Further examples are documented on GitHub in the `project-build-examples
-<https://github.com/axonivy/project-build-examples>`_ repository.
+Further examples are documented on GitHub in the :link-url:`project-build-examples
+<build-examples>` repository.

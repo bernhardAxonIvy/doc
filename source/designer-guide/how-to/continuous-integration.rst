@@ -86,7 +86,7 @@ Technical documentation
    `Github.io <https://axonivy.github.io/project-build-plugin>`__
 
 -  The source code of the ivy project build plugin is available on
-   :dev-url:`Github.com </link/build-plugin>`.
+   :link-url:`Github.com <build-plugin>`.
 
 
 Continuous Integration Job with Jenkins

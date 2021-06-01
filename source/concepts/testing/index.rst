@@ -21,7 +21,7 @@ Let's get started!
 
 .. tip::
 
-  The following guide is based on a :github-build-examples:`demo project <>` and
+  The following guide is based on a :link-url:`demo project <build-examples-test-project>` and
   uses the name ``crm`` for the project to be tested and the two testing projects
   ``crmTests`` for the :ref:`process-<process-testing>` and
   :ref:`unit-testing<unit-testing>` as well as ``crmIntegrationTests`` for the

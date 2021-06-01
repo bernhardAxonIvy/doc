@@ -38,4 +38,4 @@ Craft your own installable product
 ----------------------------------
 
 You are able to craft your own installable product. Read more about this here:
-https://dev.axonivy.com/link/market-contribute
+:link-url:`Contributing to the |axon-ivy| Market <market-contribute>`

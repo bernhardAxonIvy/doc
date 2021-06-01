@@ -54,7 +54,7 @@ the ``Ivy`` environment we would have to mock all those resources.
 .. tip::
 
   Have a look at the 
-  :github-build-examples:`demo project </crmTests/src_test/ch/ivyteam/test>` 
+  :link-url:`demo project <build-examples-unit-tests>` 
   to see what else is possible.
 
 

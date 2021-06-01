@@ -103,5 +103,5 @@ Within this file you can overwrite some colors. For example, the **primary-color
 
    For all possible variables, have a look at our :ref:`HtmlDialogDemos
    <importing-demo-projects>`. These use an additional file
-   :dev-url:`color-customize.css </link/demos/blob/master/html-dialog/html-dialog-demos/webContent/layouts/styles/color-customize.css#L1-L54>`
+   :link-url:`color-customize.css <demos-hd-color-custom-css>`
    to override colors.

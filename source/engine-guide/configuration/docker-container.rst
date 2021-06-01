@@ -33,7 +33,7 @@ And let's run the container with this configuration
   On Windows use :code:`%cd%/ivy.yaml` instead of :code:`$(pwd)/ivy.yaml`  
 
 For further docker examples have a look at our
-:dev-url:`docker-samples </link/docker-samples>` GitHub repository. 
+:link-url:`docker-samples <docker-samples>` GitHub repository. 
 
 
 .. _configuration_containers_license:

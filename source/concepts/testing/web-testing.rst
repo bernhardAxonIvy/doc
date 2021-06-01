@@ -30,8 +30,7 @@ Write a Web Test
 ~~~~~~~~~~~~~~~~
 
 Let's start by extending our test class generated before with a
-:github-build-examples:`real test implementation
-</crmIntegrationTests/src_test/ch/ivyteam/integrationtest/WebTestRegistrationFormIT.java#L22-L39>`.
+:link-url:`real test implementation <build-examples-web-test-base>`.
 First, we need to start a process. To do this you can use the ``EngineUrl`` utility from the
 :ref:`web-tester`. 
 
@@ -81,8 +80,7 @@ Usually you use the ``By.id`` selector to do this:
 
     $$(By.cssClass("ui-outputlabel")); //Find all <p:outputLabel> elements
   
-  Have a look at the :github-build-examples:`demo project
-  </crmIntegrationTests/src_test/ch/ivyteam/integrationtest/WebTestOrderForm.java#L114-L156>`
+  Have a look at the :link-url:`demo project <build-examples-web-test-select>`
   to see more options.
 
 
@@ -120,8 +118,7 @@ On your selected element you can check certain conditions (e.g is the element
     //<h:outputText> element should be visible and have text "Unit Test"
     $(By.id("form:newCustomer")).shouldBe(visible, text("Unit Test"));
 
-  Have a look at the :github-build-examples:`demo project
-  </crmIntegrationTests/src_test/ch/ivyteam/integrationtest/WebTestOrderForm.java#L164-L181>`
+  Have a look at the :link-url:`demo project <build-examples-web-test-condition>`
   to see more options.
 
 
@@ -150,14 +147,14 @@ run. To do this, we need to first setup a Maven module build:
 
    - Create a :file:`pom.xml` file in the :file:`compile-test` folder.
 
-   - Add the following code to the :github-build-examples:`pom.xml </pom.xml>`
+   - Add the following code to the :link-url:`pom.xml <build-examples-web-test-pom>`
      file (ensure the correct **modules** ``crm`` and ``crmIntegrationTests`` are
      set):
 
      .. literalinclude:: includes/webtesting/webtesting-maven-module.xml
         :language: xml
 
-   - Your :github-build-examples:`folder structure <>` should now look like this:
+   - Your :link-url:`folder structure <build-examples>` should now look like this:
 
      .. code-block:: none
 
@@ -191,9 +188,8 @@ Further Resources
 ~~~~~~~~~~~~~~~~~
 
 If you want to know more about web testing, have a look at the
-:github-build-examples:`second test in our demo project
-</crmIntegrationTests/src_test/ch/ivyteam/integrationtest/WebTestOrderFormIT.java>`
-or at our :dev-url:`other demo projects </link/demos>` and how they are tested.
+:link-url:`second test in our demo project <build-examples-web-test>`
+or at our :link-url:`other demo projects <demos>` and how they are tested.
 
 If you want to learn more about how to build a CI/CD pipeline, take a look at
 the **CI/CD videos** in our :dev-url:`Tutorial section </tutorial>`.
@@ -226,7 +222,7 @@ object:
 Web-Tester
 ^^^^^^^^^^
 
-With the :dev-url:`web-tester </link/webtester>`
+With the :link-url:`web-tester <webtester>`
 project we provide the testing annotation ``@IvyWebTest``. This annotation sets up
 the browser connection for you. It can be configured with some parameters:
 

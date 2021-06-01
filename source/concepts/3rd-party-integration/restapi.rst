@@ -151,7 +151,7 @@ You can customized the authentication for a specific API method by setting secur
 - @DenyAll: nobody is allowed to invoke this service
 
 The security annotations can be reviewed in the
-:dev-url:`Secure Service </link/demos/blob/master/connectivity/connectivity-demos/src/com/axonivy/connectivity/rest/provider/SecureService.java>`
+:link-url:`Secure Service <demos-connect-secure-service-java>`
 within the :ref:`ConnectivityDemos <importing-demo-projects>`.
 
 CSRF protection
