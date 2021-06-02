@@ -53,6 +53,8 @@ the attribute from the chart.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-mbeans.png
 
+.. _engine-cockpit-monitor-services:
+
 Services
 ^^^^^^^^
 
