@@ -600,13 +600,13 @@ With these preferences you can adjust the Java settings of the project.
    Java preferences
 
 Optional classpath containers
-   Defines optional libraries which can be accessed by Java or IvyScript
-   code of the project.
+   Defines optional libraries that can be accessed in your Java or IvyScript
+   code.
 
-   If migrated your project from 6.0 or older you may have used CXF or
-   AXIS2 libraries by accident in your code. With the classpath
-   container checkboxes you can put these libraries on the classpath to
-   avoid compilation or runtime errors.
+   If you migrated your project from version 6.0 or older you may have used
+   CXF libraries in your code. By ticking the classpath container checkbox
+   you can put these libraries on the classpath and avoid compilation or
+   runtime errors.
 
 .. |image0| image:: /_images/ivy-project/preferences-cms.png
 
@@ -675,7 +675,7 @@ version range. This is also illustrated in the above figure.
 
 When deploying projects on the engine, the availability of the required
 projects (and their versions) is checked. If the required project
-versions can not be resolved, then a project can not be deployed.
+versions cannot be resolved, then a project cannot be deployed.
 Therefore projects must be deployed *bottom up*, i.e. one must start by
 deploying first the required projects that are lowest in the dependency
 hierarchy.
@@ -699,8 +699,8 @@ The deployment descriptor editor consists of two tabs:
 -  The *Required Projects* tab is used to define other projects
    (possibly in a specific version) that the project depends on.
 
-The deployment description is stored as Maven pom.xml so that Ivy
-Projects can be built on a continuous integration server. See
+The deployment description is stored as Maven pom.xml, allowing Ivy
+Projects to be built on a continuous integration server. See
 :ref:`continuous-integration`.
 
 Accessibility
@@ -718,14 +718,14 @@ Group ID
    Identifies your project uniquely across all projects. It has to
    follow the package name rules, which means that it has to contain at
    least the domain name you control, and you can create as many
-   subgroups as you want. e.g. ``com.acme.ria``. .
+   subgroups as you want. e.g. ``com.acme.ria``.
 
 Project ID
-   You can choose whatever name you want with lowercase letters and no
-   strange symbols, e.g. ``users`` or ``user-manager``.
+   You can choose any name you want in lowercase letters and without
+   special symbols, e.g. ``users`` or ``user-manager``.
 
-   During deployment to the engine the concatenated Group ID + Project
-   ID will act as unique identifier of the project, once it is deployed.
+   On deployment to the |ivy-engine| the concatenated Group ID + Project
+   ID will act as unique identifier of the project.
 
 Project Version
    The current development version of the project.
@@ -769,12 +769,12 @@ Required Projects
    artifacts are searched (Use the **Up Button** and **Down Button** to
    change the order). The general search order in the dependency graph
    is *breadth first*, but the order that you define here is the search
-   order that will be used at a specific node when searching the graph.
+   order that will be used on a specific node when searching the graph.
 
    Clicking the *Add* button brings up a dialog with a selection box, in
    which any of the projects that are currently present in the workspace
-   may be selected as required project. Closed projects or projects,
-   that are already (directly) required, can not be selected.
+   may be selected as required project. Closed projects or projects
+   that are already (directly) required, cannot be selected.
 
    Selecting an entry in the table and subsequently clicking the
    *Remove* button removes a project dependency.
@@ -801,7 +801,7 @@ Required Project Details
    require a project B from a project A, if B also requires A (or if B
    requires any project that in turn requires A, which would form a
    larger cycle). Error markers will be displayed when the workspace is
-   built, and cycles are detected, because this condition can lead to
+   built, and cycles are detected as this condition can lead to
    endless recursion and other unpredictable behavior when looking up
    artifacts.
 
@@ -859,6 +859,20 @@ Accessibility
 .. |image5| image:: /_images/ivy-project/project-graph-button-auto-show.png
 .. |image6| image:: /_images/ivy-project/project-graph-view-open-action.png
 
+
+Adding additional dependencies
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To add Java libraries to your projects that are not included in the |axon-ivy|
+platform, you can include them as Maven dependencies.
+ 
+To add a new dependency, open the Deployment Descriptor with the Maven POM
+Editor by right clicking on the Deployment Descriptor file and choosing
+**Open With -> Maven POM Editor**
+
+Then go to the *Dependencies* tab and click **Add...** to add a new dependency.
+All libraries included in the dependencies will be added to the classpath
+and are also included in the packaged |axon-ivy| project.
 
 
 
