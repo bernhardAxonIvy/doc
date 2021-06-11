@@ -261,7 +261,7 @@ Project Dependencies
 
 Elasticsearch
    The business data will be duplicated to Elasticsearch. This offers us
-   powerfull search capabilities but we also have to deal with their
+   powerful search capabilities but we also have to deal with their
    limitations.
 
    Do not use ``Map``\ s with random or generated keys in your data
