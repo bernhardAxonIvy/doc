@@ -603,11 +603,6 @@ Optional classpath containers
    Defines optional libraries which can be accessed by Java or IvyScript
    code of the project.
 
-   If migrated your project from 6.0 or older you may have used CXF or
-   AXIS2 libraries by accident in your code. With the classpath
-   container checkboxes you can put these libraries on the classpath to
-   avoid compilation or runtime errors.
-
 .. |image0| image:: /_images/ivy-project/preferences-cms.png
 
 
