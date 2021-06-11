@@ -28,7 +28,7 @@ Working with different Date, Time and DateTime implementations
 
 When working with Databases and Web Services in |axon-ivy|, then different
 implementations of Date, Time and combined Date-Time information are
-encountered (e.g. ``java.util.Date``, ``java.sql.Date``, Axis Time,
+encountered (e.g. ``java.util.Date``, ``java.sql.Date``,
 etc). To further complicate matters, some of those implementations are -
 for historical reasons - mutable (e.g. ``java.util.Date``) which is from
 today's perspective an unwelcome behavior. This has been remedied by
@@ -44,14 +44,6 @@ following table:
    +--------------------------+------------------+
    | Java type                | Ivy type         |
    +==========================+==================+
-   | Axis1 ``Time``           | Ivy ``Time``     |
-   +--------------------------+------------------+
-   | Axis2 ``Time``           | Ivy ``Time``     |
-   +--------------------------+------------------+
-   | Axis1 ``Duration``       | Ivy ``Duration`` |
-   +--------------------------+------------------+
-   | Axis2 ``Duration``       | Ivy ``Duration`` |
-   +--------------------------+------------------+
    | JDBC (SQL) ``Timestamp`` | Ivy ``DateTime`` |
    +--------------------------+------------------+
    | JDBC (SQL) ``Date``      | Ivy ``Date``     |
@@ -116,14 +108,6 @@ The following auto-casting rules are supported by IvyScript
    +--------------------------+-----+----------------------+
    | Java type                |     | Ivy type             |
    +==========================+=====+======================+
-   | Axis1 ``Time``           | <-> | Ivy ``Time``         |
-   +--------------------------+-----+----------------------+
-   | Axis2 ``Time``           | <-> | Ivy ``Time``         |
-   +--------------------------+-----+----------------------+
-   | Axis1 ``Duration``       | <-> | Ivy ``Duration``     |
-   +--------------------------+-----+----------------------+
-   | Axis2 ``Duration``       | <-> | Ivy ``Duration``     |
-   +--------------------------+-----+----------------------+
    | JDBC (SQL) ``Timestamp`` | <-> | Ivy ``DateTime``     |
    +--------------------------+-----+----------------------+
    | JDBC (SQL) ``Date``      | <-> | Ivy ``Date``         |

@@ -143,14 +143,6 @@ creation.
    and IvyScript base types never, this operator will always ensure the
    correct checking depending on the type of the tested object.
 
-
-|axon-ivy| also supports auto-initialization of AXIS types:
-
-- ``org.apache.axis.types.Time`` to ``'00:00:00'``
-- ``org.apache.axis2.databinding.types.Time`` to ``'00:00:00'``
-- ``org.apache.axis.types.Duration`` to ``'PT0S'``
-- ``org.apache.axis2.databinding.types.Duration`` to ``'PT0S'``
-
 A ``java.util.Date`` is auto-initialized to a default value of ``'0001-01-01 00:00:00'``.
 
 However, you do not have to compare the values of those types against

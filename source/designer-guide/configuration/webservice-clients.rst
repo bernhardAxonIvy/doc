@@ -82,9 +82,8 @@ The following attributes are available in the *Web Service* Section:
 
 - :guilabel:`Library`
   The library that is used to generate the web service client classes.
-  Unless you have some special reasons to use the older Axis framework,
-  please select Apache CXF. Note that you have to regenerate the web
-  service client classes if you change this setting.
+  Note that you have to regenerate the web service client classes if you
+  change this setting.
 
 - :guilabel:`Generate WS classes`
   After specifying the mandatory fields WSDL URL and Library you can

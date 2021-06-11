@@ -4,6 +4,18 @@ Migrating from 9.2 to 9.3
 =========================
 
 
+Drop AXIS Technology for Web Service Client
+*******************************************
+
+|tag-project-changed|
+
+With Axon Ivy 7.1 we have introduced CXF Web Service Client as a super fast,
+secure and future driven technology to call SOAP Web Services. AXIS is
+making more and more trouble and to keep the quality of the Axon Ivy Platform
+on a high level we need to cut AXIS off. You will need now to convert all Web
+Service Clients based on AXIS (1+2) to CXF in the Axon Ivy Designer.
+
+
 .. _migrate-92-93-project-version:
 
 New project version
