@@ -5,8 +5,7 @@ Element-Type: testsuite
 Element-Version: 2.0
 Id: _aankEF78Eea4DszzhZF9qA
 Manually-Ordered: true
-Runtime-Version: 2.5.0.201908212005
-Save-Time: 9/10/19, 3:06 PM
+Save-Time: 6/11/21, 11:37 AM
 
 ------=_testcase-items-62c497da-4241-31f4-811a-6b453a3ecff8
 Content-Type: text/testcase
@@ -22,5 +21,6 @@ _Hh07QF_PEeaAcqEsdR5JMw	// kind: 'test' name: 'Views' path: 'Views.test'
 _ecXRcF_cEeaAcqEsdR5JMw	// kind: 'test' name: 'Simulation' path: 'Simulation.test'
 _axKUIGBiEeaAcqEsdR5JMw	// kind: 'test' name: 'Debugger' path: 'Debugger.test'
 _aG9N0GCUEeaAcqEsdR5JMw	// kind: 'test' name: 'RuntimeLogView' path: 'RuntimeLogView.test'
+_FJy5oMqXEeuQl4EYZuiPlA	// kind: 'test' name: 'ProjectProperties' path: 'ProjectProperties.test'
 
 ------=_testcase-items-62c497da-4241-31f4-811a-6b453a3ecff8--
