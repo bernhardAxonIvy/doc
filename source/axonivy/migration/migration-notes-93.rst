@@ -27,9 +27,9 @@ Service Clients based on AXIS (1+2) to CXF in the Axon Ivy Designer.
     #. Open the Web Service Client Editor
     #. Open a Web Service Client which was based on AXIS 1 or AXIS 2
     #. Change to CXF
-    #. Click on the button ::guilabel:`Generate WS classes`
+    #. Click on the button :guilabel:`Generate WS classes`
     #. Repeat step 4, 5 and 6 for all your web service clients
-    #. Validate your project by right-click on the project and ::guilabel:`Validate`
+    #. Validate your project by right-click on the project and :guilabel:`Validate`
 
     It is quite possible that the web service calls now work with CXF without
     further intervention, especially with AXIS 1. With AXIS 2, the data mappings
