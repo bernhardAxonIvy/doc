@@ -15,6 +15,26 @@ making more and more trouble and to keep the quality of the Axon Ivy Platform
 on a high level we need to cut AXIS off. You will need now to convert all Web
 Service Clients based on AXIS (1+2) to CXF in the Axon Ivy Designer.
 
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Details**
+
+  .. container:: detail 
+
+    #. Convert project to latest version which will remove all AXIS 1 and AXIS 2 artifacts
+    #. Open the Web Service Client Editor
+    #. Open a Web Service Client which was based on AXIS 1 or AXIS 2
+    #. Change :guilabel:`Library` to :guilabel:`Apache CXF`
+    #. Click on the button :guilabel:`Generate WS classes`
+    #. Repeat step 4, 5 and 6 for all your web service clients
+    #. Validate your project by right-click on the project and :guilabel:`Validate`
+
+    It is quite possible that the web service calls now work with CXF without
+    further intervention, especially with AXIS 1. With AXIS 2, the data mappings
+    on the inscription masks will most likely still have to be adjusted.
+
 
 .. _migrate-92-93-project-version:
 
@@ -26,7 +46,7 @@ New project version
 Due to the migration of the :ref:`External Databases
 <migrate-92-93-external-database-migration>`, :ref:`Rest Clients
 <migrate-92-93-rest-clients>` and projects to Eclipse Maven projects, we
-introduced a new project version :code:`93200`. If you want to deploy a project
+introduced a new project version :code:`93300`. If you want to deploy a project
 to an |ivy-engine| 9.3, this must be your project version. If you
 have a running project, it will still be able to run, but
 :ref:`we recommend migrating your projects <migration-project>`
