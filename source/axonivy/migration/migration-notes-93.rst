@@ -26,7 +26,7 @@ Service Clients based on AXIS (1+2) to CXF in the Axon Ivy Designer.
     #. Convert project to latest version which will remove all AXIS 1 and AXIS 2 artifacts
     #. Open the Web Service Client Editor
     #. Open a Web Service Client which was based on AXIS 1 or AXIS 2
-    #. Change to CXF
+    #. Change :guilabel:`Library` to :guilabel:`Apache CXF`
     #. Click on the button :guilabel:`Generate WS classes`
     #. Repeat step 4, 5 and 6 for all your web service clients
     #. Validate your project by right-click on the project and :guilabel:`Validate`
