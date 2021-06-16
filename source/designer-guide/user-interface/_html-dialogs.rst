@@ -100,5 +100,6 @@ See also Public API ``ch.ivyteam.ivy.scripting.objects.jsf.el.AutoInitializable`
 .. include:: _html-dialog-validators.rst
 .. include:: _html-dialog-managed-beans.rst
 .. include:: _html-dialog-ajax-method-call.rst
+.. include:: _html-dialog-workflow.rst
 .. include:: _html-dialog-error-handling.rst
 .. include:: _html-dialog-csrf.rst
