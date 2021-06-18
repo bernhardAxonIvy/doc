@@ -15,12 +15,12 @@ import io.github.classgraph.ClassGraph;
 class TestGenerateDoc
 {
   private static JsonSchemaGenerator SCHEMA_GENERATOR = new JsonSchemaGenerator(new ObjectMapper());
-  
+
   @Test
   void generate() throws Exception
   {
     var marketInstallers = findInstallersOnClasspath();
-    
+
     var installers = marketInstallers.stream()
             .map(this::toInstaller)
             .sorted(Comparator.comparing(Installer::getName))
@@ -28,7 +28,7 @@ class TestGenerateDoc
 
     HtmlWriter.generate(installers);
   }
-  
+
   private List<String> findInstallersOnClasspath()
   {
     var graph = new ClassGraph().enableAllInfo();
@@ -45,7 +45,7 @@ class TestGenerateDoc
       var clazz = TestGenerateDoc.class.getClassLoader().loadClass(name);
       var instance = (MarketProductInstaller) clazz.getDeclaredConstructor().newInstance();
       var schema = SCHEMA_GENERATOR.generateSchema(instance.payload());
-      
+
       var example = ExampleJsonCreator.create(schema.asObjectSchema());
       var description = DescriptionCreator.create(schema.asObjectSchema());
       return new Installer(instance.id(), instance.description(), example, description);

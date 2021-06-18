@@ -79,7 +79,7 @@ public class UserTimeline {
     private String lang;
 
     /**
-     * 
+     *
      * @return
      *     The createdAt
      */
@@ -88,7 +88,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @param createdAt
      *     The created_at
      */
@@ -97,7 +97,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @return
      *     The id
      */
@@ -106,7 +106,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @param id
      *     The id
      */
@@ -115,7 +115,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @return
      *     The idStr
      */
@@ -124,7 +124,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @param idStr
      *     The id_str
      */
@@ -133,7 +133,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @return
      *     The text
      */
@@ -142,7 +142,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @param text
      *     The text
      */
@@ -151,7 +151,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @return
      *     The entities
      */
@@ -160,7 +160,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @param entities
      *     The entities
      */
@@ -169,7 +169,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @return
      *     The truncated
      */
@@ -178,7 +178,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @param truncated
      *     The truncated
      */
@@ -187,7 +187,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @return
      *     The source
      */
@@ -196,7 +196,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @param source
      *     The source
      */
@@ -205,7 +205,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @return
      *     The inReplyToStatusId
      */
@@ -214,7 +214,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @param inReplyToStatusId
      *     The in_reply_to_status_id
      */
@@ -223,7 +223,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @return
      *     The inReplyToStatusIdStr
      */
@@ -232,7 +232,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @param inReplyToStatusIdStr
      *     The in_reply_to_status_id_str
      */
@@ -241,7 +241,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @return
      *     The inReplyToUserId
      */
@@ -250,7 +250,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @param inReplyToUserId
      *     The in_reply_to_user_id
      */
@@ -259,7 +259,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @return
      *     The inReplyToUserIdStr
      */
@@ -268,7 +268,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @param inReplyToUserIdStr
      *     The in_reply_to_user_id_str
      */
@@ -277,7 +277,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @return
      *     The inReplyToScreenName
      */
@@ -286,7 +286,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @param inReplyToScreenName
      *     The in_reply_to_screen_name
      */
@@ -295,7 +295,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @return
      *     The user
      */
@@ -304,7 +304,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @param user
      *     The user
      */
@@ -313,7 +313,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @return
      *     The geo
      */
@@ -322,7 +322,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @param geo
      *     The geo
      */
@@ -331,7 +331,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @return
      *     The coordinates
      */
@@ -340,7 +340,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @param coordinates
      *     The coordinates
      */
@@ -349,7 +349,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @return
      *     The place
      */
@@ -358,7 +358,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @param place
      *     The place
      */
@@ -367,7 +367,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @return
      *     The contributors
      */
@@ -376,7 +376,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @param contributors
      *     The contributors
      */
@@ -385,7 +385,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @return
      *     The isQuoteStatus
      */
@@ -394,7 +394,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @param isQuoteStatus
      *     The is_quote_status
      */
@@ -403,7 +403,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @return
      *     The retweetCount
      */
@@ -412,7 +412,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @param retweetCount
      *     The retweet_count
      */
@@ -421,7 +421,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @return
      *     The favoriteCount
      */
@@ -430,7 +430,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @param favoriteCount
      *     The favorite_count
      */
@@ -439,7 +439,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @return
      *     The favorited
      */
@@ -448,7 +448,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @param favorited
      *     The favorited
      */
@@ -457,7 +457,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @return
      *     The retweeted
      */
@@ -466,7 +466,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @param retweeted
      *     The retweeted
      */
@@ -475,7 +475,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @return
      *     The lang
      */
@@ -484,7 +484,7 @@ public class UserTimeline {
     }
 
     /**
-     * 
+     *
      * @param lang
      *     The lang
      */

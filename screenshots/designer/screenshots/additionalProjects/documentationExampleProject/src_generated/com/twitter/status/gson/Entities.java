@@ -24,7 +24,7 @@ public class Entities {
     private List<Object> urls = new ArrayList<Object>();
 
     /**
-     * 
+     *
      * @return
      *     The hashtags
      */
@@ -33,7 +33,7 @@ public class Entities {
     }
 
     /**
-     * 
+     *
      * @param hashtags
      *     The hashtags
      */
@@ -42,7 +42,7 @@ public class Entities {
     }
 
     /**
-     * 
+     *
      * @return
      *     The symbols
      */
@@ -51,7 +51,7 @@ public class Entities {
     }
 
     /**
-     * 
+     *
      * @param symbols
      *     The symbols
      */
@@ -60,7 +60,7 @@ public class Entities {
     }
 
     /**
-     * 
+     *
      * @return
      *     The userMentions
      */
@@ -69,7 +69,7 @@ public class Entities {
     }
 
     /**
-     * 
+     *
      * @param userMentions
      *     The user_mentions
      */
@@ -78,7 +78,7 @@ public class Entities {
     }
 
     /**
-     * 
+     *
      * @return
      *     The urls
      */
@@ -87,7 +87,7 @@ public class Entities {
     }
 
     /**
-     * 
+     *
      * @param urls
      *     The urls
      */

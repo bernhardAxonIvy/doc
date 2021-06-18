@@ -15,14 +15,14 @@ public class DescriptionCreator
   public static void traverse(ObjectSchema schema, StringBuilder builder)
   {
     builder.append("<ul>");
-    
+
     var props = schema.getProperties();
-    
+
     for (var entry : props.entrySet())
     {
       var name = entry.getKey();
       var value = entry.getValue();
-      
+
       switch (value.getType())
       {
         case STRING:
@@ -46,7 +46,7 @@ public class DescriptionCreator
             // throw new RuntimeException(value.get$schema());
           }
           break;
-          
+
         case ARRAY:
           var items = value.asArraySchema().getItems();
           var innerObjectSchema = items.asSingleItems().getSchema().asObjectSchema();
@@ -67,11 +67,11 @@ public class DescriptionCreator
     }
     builder.append("</ul>");
   }
-  
+
   private static void enclose(StringBuilder builder, String text, JsonSchema value)
   {
     builder.append("<li>");
-    
+
     if (Boolean.TRUE.equals(value.getRequired()))
     {
       builder.append("<span title=\"required\">");
@@ -83,7 +83,7 @@ public class DescriptionCreator
     {
       builder.append(" *</a>");
     }
-    
+
     var description = value.getDescription();
     if (description != null)
     {

@@ -25,7 +25,7 @@ import com.codeborne.selenide.WebDriverRunner;
 @IvyWebTest
 public class TestEngineScreenshots
 {
-  
+
   private static final int BROWSER_WIDTH = 1200;
   public static final String DEMO_PORTAL = "demo-portal";
 
@@ -35,7 +35,7 @@ public class TestEngineScreenshots
     open();
     resizeBrowser(new Dimension(BROWSER_WIDTH, 900));
   }
-  
+
   @BeforeEach
   void beforeEach()
   {
@@ -43,7 +43,7 @@ public class TestEngineScreenshots
     Configuration.savePageSource = false;
     Configuration.timeout = 10000;
   }
-  
+
   @Test
   void info()
   {
@@ -52,7 +52,7 @@ public class TestEngineScreenshots
     $$("h2").shouldHave(size(1), texts(DEMO_PORTAL));
     takeScreenshot("engine-mainpage", 700);
   }
-  
+
   @Test
   void portalExpress()
   {
@@ -73,10 +73,10 @@ public class TestEngineScreenshots
     $$(".js-process-start-list-item > form > .process-item").find(text("Setup Axon Ivy Engine")).shouldBe(visible).click();
     $(By.id("form:user-task-dyna-form")).find("textarea").shouldBe(visible).sendKeys("Hi");
     $(By.id("form:ok-btn")).shouldBe(visible).click();
-    
+
     open(EngineUrl.create().path("logout").toUrl());
     loginToPortal("guest");
-    
+
     $(By.id("task-widget:task-list-scroller")).findAll("a.compact-task-start-link").shouldHave(texts("Hi"));
     removeWelcomeGuide();
     takeScreenshot("engine-portal-home", 500);
@@ -115,7 +115,7 @@ public class TestEngineScreenshots
     defineGroupAssingeeForProcessStep();
     $(By.id("form:defined-tasks-list:0:default-task-responsible-link")).shouldHave(text("Everybody"));
   }
-  
+
   private void defineSecondProcessStep()
   {
     $(By.id("form:defined-tasks-list:0:add-step-button")).shouldBe(visible).click();
@@ -148,7 +148,7 @@ public class TestEngineScreenshots
     $(By.id("assignee-selection-form:selected-assignee-fieldset")).shouldHave(text(expectedAssignee));
     $(By.id("assignee-selection-form:save-assignee-button")).shouldBe(visible).click();
   }
-  
+
   public void takeScreenshot(String fileName, int height)
   {
     Dimension oldSize = WebDriverRunner.getWebDriver().manage().window().getSize();
@@ -157,7 +157,7 @@ public class TestEngineScreenshots
     Selenide.screenshot(fileName);
     resizeBrowser(oldSize);
   }
-  
+
   private static void resizeBrowser(Dimension size)
   {
     WebDriverRunner.getWebDriver().manage().window().setSize(size);

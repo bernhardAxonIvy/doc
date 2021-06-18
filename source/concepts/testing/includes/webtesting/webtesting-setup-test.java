@@ -13,6 +13,6 @@ public class WebTestRegistrationForm
   @Test
   public void registerNewCustomer()
   {
-    
+
   }
 }

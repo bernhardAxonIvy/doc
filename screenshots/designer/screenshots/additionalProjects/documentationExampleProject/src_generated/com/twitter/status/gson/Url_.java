@@ -24,7 +24,7 @@ public class Url_ {
     private List<Integer> indices = new ArrayList<Integer>();
 
     /**
-     * 
+     *
      * @return
      *     The url
      */
@@ -33,7 +33,7 @@ public class Url_ {
     }
 
     /**
-     * 
+     *
      * @param url
      *     The url
      */
@@ -42,7 +42,7 @@ public class Url_ {
     }
 
     /**
-     * 
+     *
      * @return
      *     The expandedUrl
      */
@@ -51,7 +51,7 @@ public class Url_ {
     }
 
     /**
-     * 
+     *
      * @param expandedUrl
      *     The expanded_url
      */
@@ -60,7 +60,7 @@ public class Url_ {
     }
 
     /**
-     * 
+     *
      * @return
      *     The displayUrl
      */
@@ -69,7 +69,7 @@ public class Url_ {
     }
 
     /**
-     * 
+     *
      * @param displayUrl
      *     The display_url
      */
@@ -78,7 +78,7 @@ public class Url_ {
     }
 
     /**
-     * 
+     *
      * @return
      *     The indices
      */
@@ -87,7 +87,7 @@ public class Url_ {
     }
 
     /**
-     * 
+     *
      * @param indices
      *     The indices
      */

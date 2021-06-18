@@ -133,7 +133,7 @@ public class User {
     private Boolean notifications;
 
     /**
-     * 
+     *
      * @return
      *     The id
      */
@@ -142,7 +142,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param id
      *     The id
      */
@@ -151,7 +151,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The idStr
      */
@@ -160,7 +160,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param idStr
      *     The id_str
      */
@@ -169,7 +169,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The name
      */
@@ -178,7 +178,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param name
      *     The name
      */
@@ -187,7 +187,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The screenName
      */
@@ -196,7 +196,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param screenName
      *     The screen_name
      */
@@ -205,7 +205,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The location
      */
@@ -214,7 +214,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param location
      *     The location
      */
@@ -223,7 +223,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The description
      */
@@ -232,7 +232,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param description
      *     The description
      */
@@ -241,7 +241,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The url
      */
@@ -250,7 +250,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param url
      *     The url
      */
@@ -259,7 +259,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The entities
      */
@@ -268,7 +268,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param entities
      *     The entities
      */
@@ -277,7 +277,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The _protected
      */
@@ -286,7 +286,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param _protected
      *     The protected
      */
@@ -295,7 +295,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The followersCount
      */
@@ -304,7 +304,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param followersCount
      *     The followers_count
      */
@@ -313,7 +313,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The friendsCount
      */
@@ -322,7 +322,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param friendsCount
      *     The friends_count
      */
@@ -331,7 +331,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The listedCount
      */
@@ -340,7 +340,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param listedCount
      *     The listed_count
      */
@@ -349,7 +349,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The createdAt
      */
@@ -358,7 +358,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param createdAt
      *     The created_at
      */
@@ -367,7 +367,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The favouritesCount
      */
@@ -376,7 +376,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param favouritesCount
      *     The favourites_count
      */
@@ -385,7 +385,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The utcOffset
      */
@@ -394,7 +394,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param utcOffset
      *     The utc_offset
      */
@@ -403,7 +403,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The timeZone
      */
@@ -412,7 +412,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param timeZone
      *     The time_zone
      */
@@ -421,7 +421,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The geoEnabled
      */
@@ -430,7 +430,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param geoEnabled
      *     The geo_enabled
      */
@@ -439,7 +439,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The verified
      */
@@ -448,7 +448,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param verified
      *     The verified
      */
@@ -457,7 +457,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The statusesCount
      */
@@ -466,7 +466,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param statusesCount
      *     The statuses_count
      */
@@ -475,7 +475,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The lang
      */
@@ -484,7 +484,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param lang
      *     The lang
      */
@@ -493,7 +493,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The contributorsEnabled
      */
@@ -502,7 +502,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param contributorsEnabled
      *     The contributors_enabled
      */
@@ -511,7 +511,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The isTranslator
      */
@@ -520,7 +520,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param isTranslator
      *     The is_translator
      */
@@ -529,7 +529,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The isTranslationEnabled
      */
@@ -538,7 +538,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param isTranslationEnabled
      *     The is_translation_enabled
      */
@@ -547,7 +547,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The profileBackgroundColor
      */
@@ -556,7 +556,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param profileBackgroundColor
      *     The profile_background_color
      */
@@ -565,7 +565,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The profileBackgroundImageUrl
      */
@@ -574,7 +574,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param profileBackgroundImageUrl
      *     The profile_background_image_url
      */
@@ -583,7 +583,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The profileBackgroundImageUrlHttps
      */
@@ -592,7 +592,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param profileBackgroundImageUrlHttps
      *     The profile_background_image_url_https
      */
@@ -601,7 +601,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The profileBackgroundTile
      */
@@ -610,7 +610,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param profileBackgroundTile
      *     The profile_background_tile
      */
@@ -619,7 +619,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The profileImageUrl
      */
@@ -628,7 +628,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param profileImageUrl
      *     The profile_image_url
      */
@@ -637,7 +637,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The profileImageUrlHttps
      */
@@ -646,7 +646,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param profileImageUrlHttps
      *     The profile_image_url_https
      */
@@ -655,7 +655,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The profileBannerUrl
      */
@@ -664,7 +664,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param profileBannerUrl
      *     The profile_banner_url
      */
@@ -673,7 +673,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The profileLinkColor
      */
@@ -682,7 +682,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param profileLinkColor
      *     The profile_link_color
      */
@@ -691,7 +691,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The profileSidebarBorderColor
      */
@@ -700,7 +700,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param profileSidebarBorderColor
      *     The profile_sidebar_border_color
      */
@@ -709,7 +709,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The profileSidebarFillColor
      */
@@ -718,7 +718,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param profileSidebarFillColor
      *     The profile_sidebar_fill_color
      */
@@ -727,7 +727,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The profileTextColor
      */
@@ -736,7 +736,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param profileTextColor
      *     The profile_text_color
      */
@@ -745,7 +745,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The profileUseBackgroundImage
      */
@@ -754,7 +754,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param profileUseBackgroundImage
      *     The profile_use_background_image
      */
@@ -763,7 +763,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The hasExtendedProfile
      */
@@ -772,7 +772,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param hasExtendedProfile
      *     The has_extended_profile
      */
@@ -781,7 +781,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The defaultProfile
      */
@@ -790,7 +790,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param defaultProfile
      *     The default_profile
      */
@@ -799,7 +799,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The defaultProfileImage
      */
@@ -808,7 +808,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param defaultProfileImage
      *     The default_profile_image
      */
@@ -817,7 +817,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The following
      */
@@ -826,7 +826,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param following
      *     The following
      */
@@ -835,7 +835,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The followRequestSent
      */
@@ -844,7 +844,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param followRequestSent
      *     The follow_request_sent
      */
@@ -853,7 +853,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @return
      *     The notifications
      */
@@ -862,7 +862,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      * @param notifications
      *     The notifications
      */

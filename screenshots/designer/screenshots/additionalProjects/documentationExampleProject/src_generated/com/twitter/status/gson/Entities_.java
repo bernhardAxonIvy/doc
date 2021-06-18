@@ -16,7 +16,7 @@ public class Entities_ {
     private Description description;
 
     /**
-     * 
+     *
      * @return
      *     The url
      */
@@ -25,7 +25,7 @@ public class Entities_ {
     }
 
     /**
-     * 
+     *
      * @param url
      *     The url
      */
@@ -34,7 +34,7 @@ public class Entities_ {
     }
 
     /**
-     * 
+     *
      * @return
      *     The description
      */
@@ -43,7 +43,7 @@ public class Entities_ {
     }
 
     /**
-     * 
+     *
      * @param description
      *     The description
      */

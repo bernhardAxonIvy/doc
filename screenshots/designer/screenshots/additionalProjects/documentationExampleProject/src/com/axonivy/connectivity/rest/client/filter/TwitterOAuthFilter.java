@@ -16,11 +16,11 @@ import ch.ivyteam.ivy.security.IUser;
 
 /**
  * Implements the OAuth Authentication for the twitter API.
- * 
+ *
  * Adapted from jersey-example on github:
  * https://github.com/jersey/jersey/blob/master/examples/oauth-client-twitter/src/main/java/org/glassfish/jersey/examples/oauth/twitterclient/App.java
  */
-public class TwitterOAuthFilter implements Feature 
+public class TwitterOAuthFilter implements Feature
 {
   public static final String AUTHORIZATION_FLOW = "flow";
   public static final String PROPERTY_CONSUMER_KEY = "consumerKey";
@@ -28,23 +28,23 @@ public class TwitterOAuthFilter implements Feature
 
     private static final String PROPERTY_TOKEN = "token";
     private static final String PROPERTY_TOKEN_SECRET = "tokenSecret";
-  
+
     @Override
-  public boolean configure(FeatureContext context) 
+  public boolean configure(FeatureContext context)
     {
       String consumerKey = (String) context.getConfiguration().getProperty(PROPERTY_CONSUMER_KEY);
         String consumerSecret = (String) context.getConfiguration().getProperty(PROPERTY_CONSUMER_SECRET);
         ConsumerCredentials credentials = new ConsumerCredentials(consumerKey, consumerSecret);
-        
+
     Feature twitterOauth = createOauthFeature(credentials);
     context.register(twitterOauth);
     return true;
   }
-    
+
   private static Feature createOauthFeature(ConsumerCredentials consumerCredentials)
   {
     AccessToken accessToken = readToken();
-        if (accessToken == null) 
+        if (accessToken == null)
         {
           final OAuth1AuthorizationFlow authFlow = creatAuthFlow(consumerCredentials);
             throw BpmError.create("twitter:authorization:required")
@@ -54,7 +54,7 @@ public class TwitterOAuthFilter implements Feature
         return OAuth1ClientSupport.builder(consumerCredentials).feature()
                 .accessToken(accessToken).build();
   }
-  
+
   private static OAuth1AuthorizationFlow creatAuthFlow(ConsumerCredentials consumerCredentials)
   {
     return OAuth1ClientSupport.builder(consumerCredentials)
@@ -64,7 +64,7 @@ public class TwitterOAuthFilter implements Feature
                         "https://api.twitter.com/oauth/authorize")
                 .build();
   }
-  
+
   private static AccessToken readToken()
   {
     IUser user = Ivy.session().getSessionUser();
@@ -74,11 +74,11 @@ public class TwitterOAuthFilter implements Feature
       HttpSession session = getHttpSession();
       System.out.println("READING TOKEN FROM SESSION");
       return toAccessToken(
-          (String)session.getAttribute(PROPERTY_TOKEN), 
+          (String)session.getAttribute(PROPERTY_TOKEN),
           (String)session.getAttribute(PROPERTY_TOKEN_SECRET));
     }
     return toAccessToken(
-        user.getProperty(PROPERTY_TOKEN), 
+        user.getProperty(PROPERTY_TOKEN),
         user.getProperty(PROPERTY_TOKEN_SECRET));
   }
 
@@ -106,7 +106,7 @@ public class TwitterOAuthFilter implements Feature
     user.setProperty(PROPERTY_TOKEN_SECRET, accessToken.getAccessTokenSecret());
   }
 
-  private static HttpSession getHttpSession() 
+  private static HttpSession getHttpSession()
   {
     return ((IHttpProcessModelVersionRequest)Ivy.request()).getHttpSession();
   }

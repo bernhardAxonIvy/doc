@@ -20,7 +20,7 @@ public class ExampleJsonCreator
     {
       var name = entry.getKey();
       var value = entry.getValue();
-      
+
       switch (value.getType())
       {
         case STRING:
@@ -47,7 +47,7 @@ public class ExampleJsonCreator
             // throw new RuntimeException(value.get$schema());
           }
           break;
-          
+
         case ARRAY:
           var items = value.asArraySchema().getItems();
           var innerSchema = items.asSingleItems().getSchema();
@@ -55,7 +55,7 @@ public class ExampleJsonCreator
           {
             var innerObjectSchema = innerSchema.asObjectSchema();
             builder.append("\n");
-            
+
             builder.append("<span title=\""+value.getDescription()+"\">");
             write(builder, "\""+name+"\": [ {", deep + 1);
             builder.append("</span>");
@@ -67,7 +67,7 @@ public class ExampleJsonCreator
             writeValue(builder, name, value, deep + 1);
           }
           break;
-        
+
         case ANY:
         case NULL:
           throw new RuntimeException("null");
@@ -77,7 +77,7 @@ public class ExampleJsonCreator
     findLastCommanAndRemove(builder);
     write(builder, "}", deep);
   }
-  
+
   private static void findLastCommanAndRemove(StringBuilder builder)
   {
     var val = builder.toString();
@@ -88,15 +88,15 @@ public class ExampleJsonCreator
       builder.replace(lastIndexOfComma, lastIndexOfComma + 1, "");
     }
   }
-  
+
   private static void writeValue(StringBuilder builder, String name, JsonSchema value, int deep)
   {
     builder.append("\n");
-    
+
     builder.append("<span title=\""+value.getDescription()+"\">");
     write(builder, "\""+name+"\": ", deep);
     builder.append("</span>");
-    
+
     switch (value.getType())
     {
       case BOOLEAN:
@@ -116,7 +116,7 @@ public class ExampleJsonCreator
     }
     builder.append(",");
   }
-  
+
   private static void write(StringBuilder builder, String value, int deep)
   {
     builder.append(" ".repeat(deep * 2));

@@ -15,7 +15,7 @@ public class Url {
     private List<Url_> urls = new ArrayList<Url_>();
 
     /**
-     * 
+     *
      * @return
      *     The urls
      */
@@ -24,7 +24,7 @@ public class Url {
     }
 
     /**
-     * 
+     *
      * @param urls
      *     The urls
      */

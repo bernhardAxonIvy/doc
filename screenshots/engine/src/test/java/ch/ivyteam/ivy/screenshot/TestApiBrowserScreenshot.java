@@ -35,7 +35,7 @@ public class TestApiBrowserScreenshot
     open();
     resizeBrowser(new Dimension(BROWSER_WIDTH, 1600));
   }
-  
+
   @BeforeEach
   void beforeEach()
   {
@@ -43,7 +43,7 @@ public class TestApiBrowserScreenshot
     Configuration.savePageSource = false;
     Configuration.timeout = 10000;
   }
-  
+
   @Test
   void deploy() throws IOException
   {
@@ -62,7 +62,7 @@ public class TestApiBrowserScreenshot
     $$(".swagger-ui section.models h4 span").find(text("Schemas")).shouldBe(visible);
     takeScreenshot("api-browse-app", 500);
   }
-  
+
   @Test
   void mobileWfUi() throws IOException
   {
@@ -70,16 +70,16 @@ public class TestApiBrowserScreenshot
     resizeBrowser(new Dimension(BROWSER_WIDTH, 1200));
     takeScreenshot("api-browse-mobile", $("#operations-tag-mobile").parent().shouldBe(visible));
   }
-  
+
   private static void takeScreenshot(String name, SelenideElement ele) throws IOException
   {
     File screenshot = ele.screenshot();
-    Files.move(screenshot.toPath(), 
-      new File(screenshot.getParentFile(), name+".png").toPath(), 
+    Files.move(screenshot.toPath(),
+      new File(screenshot.getParentFile(), name+".png").toPath(),
       StandardCopyOption.REPLACE_EXISTING
     );
   }
-  
+
   public static void takeScreenshot(String fileName, int height)
   {
     Dimension oldSize = WebDriverRunner.getWebDriver().manage().window().getSize();
@@ -87,12 +87,12 @@ public class TestApiBrowserScreenshot
     Selenide.screenshot(fileName);
     resizeBrowser(oldSize);
   }
-  
+
   private static void resizeBrowser(Dimension size)
   {
     WebDriverRunner.getWebDriver().manage().window().setSize(size);
   }
-  
+
   private static String apiBrowser()
   {
     return EngineUrl.create().app("system").path("api-browser").toUrl();

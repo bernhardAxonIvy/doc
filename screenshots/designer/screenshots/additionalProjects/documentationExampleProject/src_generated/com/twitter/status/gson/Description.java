@@ -15,7 +15,7 @@ public class Description {
     private List<Object> urls = new ArrayList<Object>();
 
     /**
-     * 
+     *
      * @return
      *     The urls
      */
@@ -24,7 +24,7 @@ public class Description {
     }
 
     /**
-     * 
+     *
      * @param urls
      *     The urls
      */
