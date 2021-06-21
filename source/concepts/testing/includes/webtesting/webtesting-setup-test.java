@@ -8,11 +8,9 @@ import com.axonivy.ivy.webtest.IvyWebTest;
 import com.axonivy.ivy.webtest.engine.EngineUrl;
 
 @IvyWebTest
-public class WebTestRegistrationForm
-{
+public class WebTestRegistrationForm {
   @Test
-  public void registerNewCustomer()
-  {
+  public void registerNewCustomer() {
 
   }
 }

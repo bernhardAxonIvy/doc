@@ -25,28 +25,24 @@ import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
 
 @IvyWebTest
-public class TestApiBrowserScreenshot
-{
+public class TestApiBrowserScreenshot {
   private static final int BROWSER_WIDTH = 700;
 
   @BeforeAll
-  static void setup()
-  {
+  static void setup() {
     open();
     resizeBrowser(new Dimension(BROWSER_WIDTH, 1600));
   }
 
   @BeforeEach
-  void beforeEach()
-  {
+  void beforeEach() {
     Configuration.reportsFolder = "target/screenshots/concepts-integration";
     Configuration.savePageSource = false;
     Configuration.timeout = 10000;
   }
 
   @Test
-  void deploy() throws IOException
-  {
+  void deploy() throws IOException {
     open(apiBrowser());
     $(By.id("operations-engine-deploy")).shouldBe(visible).click();
     Selenide.executeJavaScript("scroll(0,0);");
@@ -55,8 +51,7 @@ public class TestApiBrowserScreenshot
   }
 
   @Test
-  void app()
-  {
+  void app() {
     open(apiBrowser()+"/index.html?urls.primaryName="+TestEngineScreenshots.DEMO_PORTAL);
     $(By.id("operations-tag-mobile")).shouldBe(visible).click(); // Hide
     $$(".swagger-ui section.models h4 span").find(text("Schemas")).shouldBe(visible);
@@ -64,15 +59,13 @@ public class TestApiBrowserScreenshot
   }
 
   @Test
-  void mobileWfUi() throws IOException
-  {
+  void mobileWfUi() throws IOException {
     open(apiBrowser()+"/index.html?urls.primaryName="+TestEngineScreenshots.DEMO_PORTAL);
     resizeBrowser(new Dimension(BROWSER_WIDTH, 1200));
     takeScreenshot("api-browse-mobile", $("#operations-tag-mobile").parent().shouldBe(visible));
   }
 
-  private static void takeScreenshot(String name, SelenideElement ele) throws IOException
-  {
+  private static void takeScreenshot(String name, SelenideElement ele) throws IOException {
     File screenshot = ele.screenshot();
     Files.move(screenshot.toPath(),
       new File(screenshot.getParentFile(), name+".png").toPath(),
@@ -80,21 +73,18 @@ public class TestApiBrowserScreenshot
     );
   }
 
-  public static void takeScreenshot(String fileName, int height)
-  {
+  public static void takeScreenshot(String fileName, int height) {
     Dimension oldSize = WebDriverRunner.getWebDriver().manage().window().getSize();
     resizeBrowser(new Dimension(BROWSER_WIDTH, height));
     Selenide.screenshot(fileName);
     resizeBrowser(oldSize);
   }
 
-  private static void resizeBrowser(Dimension size)
-  {
+  private static void resizeBrowser(Dimension size) {
     WebDriverRunner.getWebDriver().manage().window().setSize(size);
   }
 
-  private static String apiBrowser()
-  {
+  private static String apiBrowser() {
     return EngineUrl.create().app("system").path("api-browser").toUrl();
   }
 }

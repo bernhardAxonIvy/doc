@@ -14,8 +14,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 
 @Path("zip")
 @Tag(name = "CRM") // a name that can be used to cluster similar services
-public class OpenApiResource
-{
+public class OpenApiResource {
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   @Operation(description = "finds customers in the CRM by ZIP code") // prose text
@@ -25,8 +24,7 @@ public class OpenApiResource
     @QueryParam("zip") String zip, // mandatory parameter with rich docs.
     @Parameter(example = "active, inactive, suspended")
     @QueryParam("status") String status
-  )
-  {
+  ) {
     return UserRepo.findByZip(zip, status);
   }
 }

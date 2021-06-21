@@ -23,30 +23,26 @@ import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.WebDriverRunner;
 
 @IvyWebTest
-public class TestEngineScreenshots
-{
+public class TestEngineScreenshots {
 
   private static final int BROWSER_WIDTH = 1200;
   public static final String DEMO_PORTAL = "demo-portal";
 
   @BeforeAll
-  static void setup()
-  {
+  static void setup() {
     open();
     resizeBrowser(new Dimension(BROWSER_WIDTH, 900));
   }
 
   @BeforeEach
-  void beforeEach()
-  {
+  void beforeEach() {
     Configuration.reportsFolder = "target/screenshots/engine-getting-started";
     Configuration.savePageSource = false;
     Configuration.timeout = 10000;
   }
 
   @Test
-  void info()
-  {
+  void info() {
     open(EngineUrl.create().app("system").toUrl());
     Selenide.executeJavaScript("$('.ui-message-error').hide();");
     $$("h2").shouldHave(size(1), texts(DEMO_PORTAL));
@@ -54,8 +50,7 @@ public class TestEngineScreenshots
   }
 
   @Test
-  void portalExpress()
-  {
+  void portalExpress() {
     open(EngineUrl.create().path("starts").toUrl());
     loginToPortal("demo");
     $(By.id("process-widget:create-express-workflow")).waitUntil(visible, 60000);
@@ -82,25 +77,21 @@ public class TestEngineScreenshots
     takeScreenshot("engine-portal-home", 500);
   }
 
-  private void removeWelcomeGuide()
-  {
-    if ($(By.id("welcome-portal-guide-component:welcome-portal-guide")).is(visible))
-    {
+  private void removeWelcomeGuide() {
+    if ($(By.id("welcome-portal-guide-component:welcome-portal-guide")).is(visible)) {
       PrimeUi.selectBooleanCheckbox(By.id("welcome-portal-guide-component:dont-show-again-chbox")).setChecked();
       $(By.id("welcome-portal-guide-component:finish")).shouldBe(visible).click();
       $(By.id("welcome-portal-guide-component:welcome-portal-guide")).shouldNotBe(visible);
     }
   }
 
-  private void loginToPortal(String user)
-  {
+  private void loginToPortal(String user) {
     $(By.id("login:login-form:username")).shouldBe(visible).sendKeys(user);
     $(By.id("login:login-form:password")).shouldBe(visible).sendKeys(user);
     $(By.id("login:login-form:login-command")).shouldBe(visible).click();
   }
 
-  private void defineProcessProperties()
-  {
+  private void defineProcessProperties() {
     $(By.id("process-widget:create-express-workflow")).click();
     $(By.id("form:process-name")).shouldBe(visible).sendKeys("Setup Axon Ivy Engine");
     $(By.id("form:process-description")).shouldBe(visible).sendKeys("Please setup a new Axon Ivy Engine on your prod server!");
@@ -108,16 +99,14 @@ public class TestEngineScreenshots
     $(By.id("delete-all-defined-tasks-warning-ok")).shouldBe(visible).click();
   }
 
-  private void defineProcessStep()
-  {
+  private void defineProcessStep() {
     $(By.id("form:defined-tasks-list:0:default-task-name")).shouldBe(visible).sendKeys("Hello world!");
     $(By.id("form:defined-tasks-list:0:default-task-responsible-link")).shouldBe(visible).click();
     defineGroupAssingeeForProcessStep();
     $(By.id("form:defined-tasks-list:0:default-task-responsible-link")).shouldHave(text("Everybody"));
   }
 
-  private void defineSecondProcessStep()
-  {
+  private void defineSecondProcessStep() {
     $(By.id("form:defined-tasks-list:0:add-step-button")).shouldBe(visible).click();
     $(By.id("form:defined-tasks-list:1:default-task-name")).shouldBe(visible).sendKeys("Hi");
     $(By.id("form:defined-tasks-list:1:default-task-responsible-link")).shouldBe(visible).click();
@@ -125,16 +114,14 @@ public class TestEngineScreenshots
     $(By.id("form:defined-tasks-list:1:default-task-responsible-link")).shouldHave(text("Portal Guest User"));
   }
 
-  private void defineUserAssingeeForProcessStep()
-  {
+  private void defineUserAssingeeForProcessStep() {
     $(By.id("assignee-selection-form:user-selection-component:user-selection_input")).shouldBe(visible).sendKeys("guest");
     $(By.id("assignee-selection-form:user-selection-component:user-selection_panel")).shouldBe(visible)
             .find("tr[data-item-label='Portal Guest User']").click();
     addAssignee("Portal Guest User");
   }
 
-  private void defineGroupAssingeeForProcessStep()
-  {
+  private void defineGroupAssingeeForProcessStep() {
     PrimeUi.selectOneRadio(By.id("assignee-selection-form:assignee-type")).selectItemByValue("Group");
     $(By.id("assignee-selection-form:role-selection-component:role-selection_input")).shouldBe(visible).sendKeys("Everybody");
     $(By.id("assignee-selection-form:role-selection-component:role-selection_panel")).shouldBe(visible)
@@ -142,15 +129,13 @@ public class TestEngineScreenshots
     addAssignee("Everybody");
   }
 
-  private void addAssignee(String expectedAssignee)
-  {
+  private void addAssignee(String expectedAssignee) {
     $(By.id("assignee-selection-form:add-assignee-button")).shouldBe(visible, enabled).click();
     $(By.id("assignee-selection-form:selected-assignee-fieldset")).shouldHave(text(expectedAssignee));
     $(By.id("assignee-selection-form:save-assignee-button")).shouldBe(visible).click();
   }
 
-  public void takeScreenshot(String fileName, int height)
-  {
+  public void takeScreenshot(String fileName, int height) {
     Dimension oldSize = WebDriverRunner.getWebDriver().manage().window().getSize();
     resizeBrowser(new Dimension(BROWSER_WIDTH, height));
     Selenide.executeJavaScript("scroll(0,0);");
@@ -158,8 +143,7 @@ public class TestEngineScreenshots
     resizeBrowser(oldSize);
   }
 
-  private static void resizeBrowser(Dimension size)
-  {
+  private static void resizeBrowser(Dimension size) {
     WebDriverRunner.getWebDriver().manage().window().setSize(size);
   }
 }

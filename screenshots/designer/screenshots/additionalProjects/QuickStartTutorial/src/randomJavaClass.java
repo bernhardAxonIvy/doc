@@ -1,12 +1,10 @@
 import java.util.Random;
 
-public class randomJavaClass
-{
+public class randomJavaClass {
   Random random = new Random();
   static double randomInt = Math.random();
 
-  public static void main(String[] args)
-  {
+  public static void main(String[] args) {
     System.out.println(randomInt);
     System.out.println("Breakpoint2");
     System.out.println("Breakpoint3");

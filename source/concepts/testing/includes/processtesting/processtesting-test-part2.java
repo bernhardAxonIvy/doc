@@ -1,6 +1,5 @@
 @Test
-void writeInvoice(BpmClient bpmClient)
-{
+void writeInvoice(BpmClient bpmClient) {
   ExecutionResult result = bpmClient
           .start()
           .process(WRITE_INVOICE_START)

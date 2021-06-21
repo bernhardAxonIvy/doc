@@ -12,13 +12,11 @@ import com.fasterxml.jackson.module.jsonSchema.JsonSchemaGenerator;
 import ch.ivyteam.ivy.market.installer.MarketProductInstaller;
 import io.github.classgraph.ClassGraph;
 
-class TestGenerateDoc
-{
+class TestGenerateDoc {
   private static JsonSchemaGenerator SCHEMA_GENERATOR = new JsonSchemaGenerator(new ObjectMapper());
 
   @Test
-  void generate() throws Exception
-  {
+  void generate() throws Exception {
     var marketInstallers = findInstallersOnClasspath();
 
     var installers = marketInstallers.stream()
@@ -29,19 +27,15 @@ class TestGenerateDoc
     HtmlWriter.generate(installers);
   }
 
-  private List<String> findInstallersOnClasspath()
-  {
+  private List<String> findInstallersOnClasspath() {
     var graph = new ClassGraph().enableAllInfo();
-    try (var result = graph.scan())
-    {
+    try (var result = graph.scan()) {
       return result.getClassesImplementing(MarketProductInstaller.class.getName()).getNames();
     }
   }
 
-  public Installer toInstaller(String name)
-  {
-    try
-    {
+  public Installer toInstaller(String name) {
+    try {
       var clazz = TestGenerateDoc.class.getClassLoader().loadClass(name);
       var instance = (MarketProductInstaller) clazz.getDeclaredConstructor().newInstance();
       var schema = SCHEMA_GENERATOR.generateSchema(instance.payload());
@@ -50,8 +44,7 @@ class TestGenerateDoc
       var description = DescriptionCreator.create(schema.asObjectSchema());
       return new Installer(instance.id(), instance.description(), example, description);
     }
-    catch (Exception ex)
-    {
+    catch (Exception ex) {
       throw new RuntimeException(ex);
     }
   }

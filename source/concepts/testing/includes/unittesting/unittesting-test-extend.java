@@ -1,6 +1,5 @@
 @Test
-void products()
-{
+void products() {
   /* OrderUtil should return two products */
   assertThat(OrderUtil.getProducts()).hasSize(2);
   Product table = OrderUtil.getProducts().get(0);

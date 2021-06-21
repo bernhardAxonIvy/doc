@@ -1,6 +1,5 @@
 @Test
-void products_testEnv(AppFixture fixture)
-{
+void products_testEnv(AppFixture fixture) {
   /* We can switch the used environment with the AppFixture. */
   fixture.environment("test-env");
 

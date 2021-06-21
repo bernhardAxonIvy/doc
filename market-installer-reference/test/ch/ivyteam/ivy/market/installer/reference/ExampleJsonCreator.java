@@ -3,26 +3,21 @@ package ch.ivyteam.ivy.market.installer.reference;
 import com.fasterxml.jackson.module.jsonSchema.JsonSchema;
 import com.fasterxml.jackson.module.jsonSchema.types.ObjectSchema;
 
-public class ExampleJsonCreator
-{
-  public static String create(ObjectSchema schema)
-  {
+public class ExampleJsonCreator {
+  public static String create(ObjectSchema schema) {
     var text = new StringBuilder();
     text.append("{");
     example(schema, text, 0);
     return text.toString();
   }
 
-  private static void example(ObjectSchema schema, StringBuilder builder, int deep)
-  {
+  private static void example(ObjectSchema schema, StringBuilder builder, int deep) {
     var props = schema.getProperties();
-    for (var entry : props.entrySet())
-    {
+    for (var entry : props.entrySet()) {
       var name = entry.getKey();
       var value = entry.getValue();
 
-      switch (value.getType())
-      {
+      switch (value.getType()) {
         case STRING:
         case BOOLEAN:
         case INTEGER:
@@ -32,16 +27,14 @@ public class ExampleJsonCreator
 
         case OBJECT:
           var sche = value.asObjectSchema();
-          if (sche != null)
-          {
+          if (sche != null) {
             builder.append("\n");
             builder.append("<span title=\""+value.getDescription()+"\">");
             write(builder, "\""+name+"\": {", deep + 1);
             builder.append("</span>");
             example(sche, builder, deep +1);
           }
-          else
-          {
+          else {
             // TODO snapshots are here ...
             // value.asSimpleTypeSchema()
             // throw new RuntimeException(value.get$schema());
@@ -51,8 +44,7 @@ public class ExampleJsonCreator
         case ARRAY:
           var items = value.asArraySchema().getItems();
           var innerSchema = items.asSingleItems().getSchema();
-          if (innerSchema.isObjectSchema())
-          {
+          if (innerSchema.isObjectSchema()) {
             var innerObjectSchema = innerSchema.asObjectSchema();
             builder.append("\n");
 
@@ -62,8 +54,7 @@ public class ExampleJsonCreator
             example(innerObjectSchema, builder, deep + 1);
             builder.append(" ],");
           }
-          else
-          {
+          else {
             writeValue(builder, name, value, deep + 1);
           }
           break;
@@ -78,27 +69,23 @@ public class ExampleJsonCreator
     write(builder, "}", deep);
   }
 
-  private static void findLastCommanAndRemove(StringBuilder builder)
-  {
+  private static void findLastCommanAndRemove(StringBuilder builder) {
     var val = builder.toString();
     var lastIndexOfComma = val.lastIndexOf(",");
     var lastIndexOfQutoe = val.lastIndexOf("\"");
-    if (lastIndexOfComma > lastIndexOfQutoe)
-    {
+    if (lastIndexOfComma > lastIndexOfQutoe) {
       builder.replace(lastIndexOfComma, lastIndexOfComma + 1, "");
     }
   }
 
-  private static void writeValue(StringBuilder builder, String name, JsonSchema value, int deep)
-  {
+  private static void writeValue(StringBuilder builder, String name, JsonSchema value, int deep) {
     builder.append("\n");
 
     builder.append("<span title=\""+value.getDescription()+"\">");
     write(builder, "\""+name+"\": ", deep);
     builder.append("</span>");
 
-    switch (value.getType())
-    {
+    switch (value.getType()) {
       case BOOLEAN:
         builder.append("false");
         break;
@@ -117,8 +104,7 @@ public class ExampleJsonCreator
     builder.append(",");
   }
 
-  private static void write(StringBuilder builder, String value, int deep)
-  {
+  private static void write(StringBuilder builder, String value, int deep) {
     builder.append(" ".repeat(deep * 2));
     builder.append(value);
   }

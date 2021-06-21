@@ -1,6 +1,5 @@
 @Test
-public void registerNewCustomer()
-{
+public void registerNewCustomer() {
   // valid links can be copied from the start page of the internal web-browser
   open(EngineUrl.createProcessUrl("myWorkflow/154616078A1D629D/start.ivp"));
 

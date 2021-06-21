@@ -1,6 +1,5 @@
 @Test
-void products_userLogin(AppFixture fixture, @Named("M") IUser user)
-{
+void products_userLogin(AppFixture fixture, @Named("M") IUser user) {
   /* Login with a username */
   fixture.loginUser("James Bond");
   var products = OrderUtil.getProductsWithClearance();
