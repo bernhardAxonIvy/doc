@@ -144,3 +144,19 @@ folder any more. Please remove your existing :file:`jgroups.xml` file from the `
 folder, if you haven't made any changes to it; otherwise replace it with a standard JGroups 5.0
 :file:`jgroups.xml` file and re-apply your changes to this file. :file:`jgroups.xml` files used
 in earlier versions of the |ivy-engine| are not compatible with JGroups 5.0.
+
+System Database Cache Configuration and MBean (JMX)
+***************************************************
+
+|tag-ops-changed|
+
+We have changed the system database cache configuration. Instead of configuring a ``UsageLimit`` 
+you can now configure a ``TimeToIdle`` (TTI) value. As alternative you can also configure a ``TimeToLive`` (TTL) value.
+The ``TimeToIdle`` value specifies how long after the last usage a cached object will be hold in the cache. Whereas
+the ``TimeToLive`` value specifies how long after the first usage a cached object will be hold in the cache.
+Have a look at ``configuration\ivy.cache.properties`` and replace all configured ``UsageLimit`` 
+values with appropriate ``TimeToIdle`` and/or ``TimeToLive`` values. By default, the ``TimeToIdle`` 
+value is 600 (10 minutes) and the ``TimeToLive`` is 0 (disabled).
+
+The ``usageLimit`` attribute on MBeans with name pattern ``ivy Engine:type=CacheClassPersistencyService,name=*,strategy=CacheAllRemoveUnused``
+was removed. Instead, the ``timeToIdle`` and ``timeToLive`` attributes were introduced.  
