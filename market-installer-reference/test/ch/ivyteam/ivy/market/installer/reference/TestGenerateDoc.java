@@ -43,8 +43,7 @@ class TestGenerateDoc {
       var example = ExampleJsonCreator.create(schema.asObjectSchema());
       var description = DescriptionCreator.create(schema.asObjectSchema());
       return new Installer(instance.id(), instance.description(), example, description);
-    }
-    catch (Exception ex) {
+    } catch (Exception ex) {
       throw new RuntimeException(ex);
     }
   }

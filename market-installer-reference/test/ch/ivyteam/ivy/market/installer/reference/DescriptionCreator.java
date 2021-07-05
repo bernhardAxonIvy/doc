@@ -32,8 +32,7 @@ public class DescriptionCreator {
           if (sche != null) {
             enclose(builder, name, value);
             traverse(sche, builder);
-          }
-          else {
+          } else {
             // TODO snapshots are here ...
             // value.asSimpleTypeSchema()
             // throw new RuntimeException(value.get$schema());
@@ -46,8 +45,7 @@ public class DescriptionCreator {
           if (innerObjectSchema != null) {
             enclose(builder, name, value);
             traverse(innerObjectSchema, builder);
-          }
-          else {
+          } else {
             enclose(builder, name, value);
           }
           break;
