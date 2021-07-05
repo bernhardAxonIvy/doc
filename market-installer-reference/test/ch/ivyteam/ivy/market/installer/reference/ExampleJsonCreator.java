@@ -33,8 +33,7 @@ public class ExampleJsonCreator {
             write(builder, "\""+name+"\": {", deep + 1);
             builder.append("</span>");
             example(sche, builder, deep +1);
-          }
-          else {
+          } else {
             // TODO snapshots are here ...
             // value.asSimpleTypeSchema()
             // throw new RuntimeException(value.get$schema());
@@ -53,8 +52,7 @@ public class ExampleJsonCreator {
             builder.append("</span>");
             example(innerObjectSchema, builder, deep + 1);
             builder.append(" ],");
-          }
-          else {
+          } else {
             writeValue(builder, name, value, deep + 1);
           }
           break;
