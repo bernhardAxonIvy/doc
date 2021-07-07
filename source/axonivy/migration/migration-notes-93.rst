@@ -180,12 +180,12 @@ System Database Cache Configuration and MBean (JMX)
 |tag-ops-changed|
 
 We have changed the system database cache configuration. Instead of configuring a ``UsageLimit`` 
-you can now configure a ``TimeToIdle`` (TTI) value. As alternative you can also configure a ``TimeToLive`` (TTL) value.
-The ``TimeToIdle`` value specifies how long after the last usage a cached object will be hold in the cache. Whereas
-the ``TimeToLive`` value specifies how long after the first usage a cached object will be hold in the cache.
+you can now configure a ``TimeToIdle`` (TTI) value. As an alternative, you can also configure a ``TimeToLive`` (TTL) value.
+The ``TimeToIdle`` value specifies how long after the *last* usage a cached object will be held in the cache. Whereas
+the ``TimeToLive`` value specifies how long after the *first* usage a cached object will be held in the cache.
 Have a look at ``configuration\ivy.cache.properties`` and replace all configured ``UsageLimit`` 
 values with appropriate ``TimeToIdle`` and/or ``TimeToLive`` values. By default, the ``TimeToIdle`` 
 value is 600 (10 minutes) and the ``TimeToLive`` is 0 (disabled).
 
 The ``usageLimit`` attribute on MBeans with name pattern ``ivy Engine:type=CacheClassPersistencyService,name=*,strategy=CacheAllRemoveUnused``
-was removed. Instead, the ``timeToIdle`` and ``timeToLive`` attributes were introduced.  
+has been removed. Instead, the ``timeToIdle`` and ``timeToLive`` attributes have been introduced.
