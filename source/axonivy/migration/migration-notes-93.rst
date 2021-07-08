@@ -153,6 +153,32 @@ Read more here about the future of environments:
 https://community.axonivy.com/d/142-environments-will-disappear-in-the-long-term
 
 
+Configuration deployment options removed
+****************************************
+
+|tag-ops-changed|
+
+Now that most of the app configuration is defined in yaml files, the
+:code:`configuration` deployment options are disregarded and can be removed from your
+:ref:`deploy.options.yaml <deployment-options>` file.
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Details**
+
+  .. container:: detail 
+
+    The following options are deprecated and can be removed:
+
+    .. code-block:: yaml
+    
+      configuration:
+        overwrite: false               # [false], true
+        cleanup: DISABLED              # [DISABLED], REMOVE_UNUSED, REMOVE_ALL
+
+
 Cluster Name
 ************
 
