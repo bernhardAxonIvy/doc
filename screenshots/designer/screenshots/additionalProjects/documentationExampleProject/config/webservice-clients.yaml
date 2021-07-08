@@ -1,11 +1,11 @@
 WebServiceClients:
   Personal Service:
     Id: 1610883FA3A6C2CB
-    Description: ''
   GeoIpService:
     Id: 160DF5320F0D7ACD
     WsdlUrl: http://www.webservicex.net/geoipservice.asmx?WSDL
     WsCallLibrary: CXF
+    ServiceClass: net.webservicex.client.GeoIPService
     Endpoints:
       GeoIPServiceSoap:
       - http://www.webservicex.net/geoipservice.asmx
