@@ -16,7 +16,7 @@ database configuration settings on your productive server.
 Database Configuration Editor
 -----------------------------
 
-The |axon-ivy| database configuration editor lets you configure the
+The database configuration editor lets you configure the
 databases you use in your project and the extending projects.
 
 .. figure:: /_images/designer-configuration/database-editor.png

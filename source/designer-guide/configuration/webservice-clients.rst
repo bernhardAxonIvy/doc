@@ -3,7 +3,8 @@
 Web Service Clients
 ===================
 
-This chapter describes how web service configurations are organized.
+The web wervice clients configuration contains the definition of all web
+services, which can be consumed from a BPM process.
 
 .. figure:: /_images/designer-configuration/webservice-client-editor.png
    :alt: Web Service Clients Editor
@@ -11,41 +12,16 @@ This chapter describes how web service configurations are organized.
    Web Service Clients Editor
 
 
-Client Tree
------------
-Web service configurations are displayed in a tree hierarchy. The tree
-editor helps to add and delete existing tree elements (web service
-groups, web service configurations and web service environment
-configurations).
+Web Service Clients Tree
+-----------------------
 
-In the editor the groups are symbolized with a folder icon. The web
-service configuration elements are symbolized with a globe icon. On the
-right side there are buttons offering the following functions:
+Shows the web service clients.
 
 - :guilabel:`Add Client`
   Adds a new web service client configuration.
 
-- :guilabel:`Add Environment`
-  Adds an environment configuration to the selected web service
-  configuration. Select one or more environments from the environment
-  list.
-
-  .. figure:: /_images/designer-configuration/webservice-client-environment.png
-     :alt: Add Environment
-
-     Add Environment
-
-- :guilabel:`Add Group`
-  Adds a new web service group. These can be used to structure your
-  service trees.
-
 - :guilabel:`Remove`
   Remove the current selection.
-
-.. warning::
-
-   Entries you want to erase might still be in use. Check all
-   dependencies before removing elements from the tree.
 
 
 Client Details Editor
@@ -53,8 +29,7 @@ Client Details Editor
 
 Details of currently selected web service configuration node are
 displayed on the right hand side. In this editor details of an tree
-element (web service group, web service configuration or web service
-environment configuration) can be changed.
+element can be changed.
 
 Web Service Client Section
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
