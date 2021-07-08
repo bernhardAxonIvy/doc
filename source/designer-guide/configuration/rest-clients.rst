@@ -34,8 +34,7 @@ per environment.
 REST Client Editor
 ------------------
 
-The REST client Editor allows to configure REST client default and
-environments configurations.
+The REST client Editor allows to configure REST client configurations.
 
 .. figure:: /_images/designer-configuration/rest-client-editor.png
    :alt: Rest Client Editor
@@ -47,18 +46,19 @@ environments configurations.
 REST Clients Tree Editor
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Shows the REST clients and its environment configurations.
+Shows the REST clients.
 
 - :guilabel:`Add Client`
   Adds a new REST client.
 
 - :guilabel:`Remove`
-  Removes the selected environment or REST client configuration.
+  Removes the selected REST client configuration.
+
 
 REST Client Details Editor
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Shows the currently selected REST client or environment configuration.
+Shows the currently selected REST client.
 
 REST Client Section
 ^^^^^^^^^^^^^^^^^^^
