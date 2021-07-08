@@ -47,13 +47,6 @@ with [get-editor documentationExampleProject] {
         get-list | select GeoIPServiceSoap12
         get-object | wsScreenshot "webservice-client-endpoint-uris.png"
     }
-    
-    get-section "Web Service Clients" | get-button "Add Environment" | click
-    wait 2000 // window will be faded in
-    with [get-window "Add Environment"] {
-    	get-object | wsScreenshot "webservice-client-environment.png"
-    	get-button Cancel | click
-    }
 }
 get-editor documentationExampleProject | close
 
