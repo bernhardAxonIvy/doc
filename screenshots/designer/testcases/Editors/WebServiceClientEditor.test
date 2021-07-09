@@ -30,7 +30,7 @@ proc wsScreenshot [val path]
 get-eclipse-window | resizeWindow 1000 880
 with [get-editor documentationExampleProject] {
     maximize
-	get-section "Web Service Clients" | get-tree | select "/GeoIpService"
+	get-section "Web Service Clients" | get-tree | select "GeoIpService"
     get-tab-folder | get-object | wsScreenshot "webservice-client-editor.png"
 
 	get-section Authentication | get-object | wsScreenshot "webservice-client-auth.png"
@@ -49,5 +49,4 @@ with [get-editor documentationExampleProject] {
 }
 get-editor documentationExampleProject | close
 
-//get-editor documentationExampleProject | get-section "Web Service Clients" | get-tree | select "/GeoIpService" | double-click
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
