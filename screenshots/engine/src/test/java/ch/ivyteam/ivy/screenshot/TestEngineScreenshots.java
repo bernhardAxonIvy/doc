@@ -64,7 +64,7 @@ public class TestEngineScreenshots {
     $(".home-page-container").shouldBe(visible);
 
     open(EngineUrl.create().path("starts").toUrl());
-    $(".process-input-switch-selection").click();
+    $(By.id("process-widget:process-view-mode:view-mode-selection:2")).parent().click(); // Select compact mode
     $$(".js-process-start-list-item > form > .process-item").find(text("Setup Axon Ivy Engine")).shouldBe(visible).click();
     $(By.id("form:user-task-dyna-form")).find("textarea").shouldBe(visible).sendKeys("Hi");
     $(By.id("form:ok-btn")).shouldBe(visible).click();
