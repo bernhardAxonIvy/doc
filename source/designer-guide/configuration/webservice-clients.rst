@@ -13,7 +13,7 @@ services, which can be consumed from a BPM process.
 
 
 Web Service Clients Tree
------------------------
+------------------------
 
 Shows the web service clients.
 
