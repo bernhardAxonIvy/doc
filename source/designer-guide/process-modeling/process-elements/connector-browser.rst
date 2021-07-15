@@ -16,7 +16,7 @@ which makes it possible to select an installed third-party connector.
 Connector Browser
 ~~~~~~~~~~~~~~~~~
 
-List insertable connectors: either OpenAPI RestService Clients
+Lists insertable connectors: either OpenAPI RestService Clients
 or :ref:`process-element-sub-process-start` instances which are tagged as connector on the :ref:`process-element-tab-name`.
 Furthermore, it's an easy starting point to install additional connectors from the Market.
 
