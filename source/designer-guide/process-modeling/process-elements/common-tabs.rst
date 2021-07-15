@@ -59,7 +59,7 @@ Tags
       WebService Start element as deprecated. Call elements using a deprecated
       element will be marked with a deprecation validation warning.
    -  ``CONNECTOR``: Setting this tag allows a Sub Process Start element to be
-      displayed in the Connector Dialog.
+      displayed in the Connector Dialog. See :ref:`process-element-connector-activity`
 
 
 .. _process-element-tab-output:

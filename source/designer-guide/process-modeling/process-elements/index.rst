@@ -77,6 +77,7 @@ The icons on the tab indicate their state:
    call-sub
    trigger-step
    program-interface-activity
+   connector-browser
    note
    web-service-process-start
    sub-process-start
