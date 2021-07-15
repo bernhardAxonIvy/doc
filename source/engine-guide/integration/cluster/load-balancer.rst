@@ -26,5 +26,15 @@ HAProxy is a free, fast and reliable solution offering high availability, load
 balancing, and proxying for TCP and HTTP-based applications. It is very easy to
 setup and also offers a Docker image that only needs minimal configuration.
 
-We provide an :link-url:`sample on GitHub <docker-scaling>` how to setup an
+We provide a :link-url:`sample on GitHub <docker-scaling-haproxy>` how to setup an
 |ivy-engine| Cluster using HAProxy as the load balancer within docker-compose.
+
+NGINX
+-----
+
+NGINX is a free, open source HTTP and reverse proxy server, a mail proxy server,
+and a generic TCP/UDP proxy server with load balancing features. It also offers a
+Docker image with minimal configuration needs.
+
+We provide a :link-url:`sample on GitHub <docker-scaling-nginx>` on how to setup an
+|ivy-engine| Cluster using NGINX as the load balancer within docker-compose.

@@ -38,8 +38,8 @@ All cluster nodes share the same system database and Elasticsearch server.
 **Runtime**
 
 We recommend operating an |ivy-engine| Cluster in a containerized 
-environment like Docker or Kubernetes. See our
-:link-url:`example configuration on GitHub <docker-scaling>`
+environment like Docker or Kubernetes. See our example configurations on GitHub
+for :link-url:`NGINX <docker-scaling-nginx>` and :link-url:`HAProxy <docker-scaling-haproxy>`
 on how to setup an |ivy-engine| Cluster with docker-compose.
 
 |
