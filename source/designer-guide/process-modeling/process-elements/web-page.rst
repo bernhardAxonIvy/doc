@@ -55,12 +55,6 @@ Output Links
    cursor shortly over one of the outgoing arrows of the element shows a
    tool tip that indicates the name of the corresponding link.
 
-Form Archive
-   Each page (including the forms located on it and the inputs of the
-   user) are archived on the |ivy-engine|. The archived pages (forms)
-   are associated with the running case and the running task and can be
-   inspected (viewed) afterwards in the workflow user interface.
-
 Responsible Role
    Restricts the access to this dialog to the given role.
 
