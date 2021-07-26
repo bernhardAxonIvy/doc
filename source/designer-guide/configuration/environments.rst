@@ -19,22 +19,6 @@ you can copy the configuration file e.g. :file:`rest-clients.yaml` there. You ca
 edit this with the given editor - by double clicking on the file.
 
 
-Editor
-------
-
-The environment editor is part of the :ref:`configuration-management`.
-By using the add configuration
-function a new environment will be added. The name of the environment is
-the name of the configuration. If you delete or rename an environment,
-all associated values will be removed. 
-
-.. figure:: /_images/designer-configuration/environment-configuration.png
-   :alt: Environment Configuration
-   :align: center
-   
-   Environment Configuration
-
-
 Change environment for simulation
 ---------------------------------
 
@@ -52,4 +36,4 @@ Change environment at runtime
 -----------------------------
 
 The active environment can be specified in :ref:`app-yaml`. If no environment is
-active at all, the default environment will be taken.
+active at all, the Default environment will be taken.
