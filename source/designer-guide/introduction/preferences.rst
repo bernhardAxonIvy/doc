@@ -8,26 +8,6 @@ adapt it to your personal working style. Most of these settings you can
 overwrite in the :ref:`project-preferences`.
 
 
-.. _workspace-preferences-deprecation:
-
-Deprecation Settings
---------------------
-
-Some features are deprecated but still supported. These settings allow
-you to enable deprecated features.
-
-.. figure:: /_images/designer/preferences-deprecation.png
-   :alt: Deprecation Preferences
-   :align: center
-   
-   Deprecation Preferences
-
-Allow to define multi language configurations
-   If you enable this checkbox some
-   :ref:`configuration <configuration-editor-multi-language-selector>` can
-   be made language dependent.
-
-
 
 .. _workspace-preferences-email:
 

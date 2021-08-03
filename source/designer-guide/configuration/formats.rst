@@ -1,27 +1,7 @@
-.. _configuration-types:
+.. _configuration-formats:
 
-Configuration Types
--------------------
-
-The *configuration database* of a project contains configurations for
-various configurable targets (e.g. date or time values, input text fields, etc).
-
-The user can define configurations for the following three aspects of an
-application: *formats*, *styles* and *validation*. Each of those aspects
-encompasses a number of configurable types (e.g. *date* or *time* or
-*number*) for each of which an arbitrary number of *named*
-configurations can be defined, which can then be referred from different
-locations in the configuration.
-
-This section briefly discusses the different configuration types and
-explains the usage of their respective *configuration editors*.
-
-
-Format Configurations
-^^^^^^^^^^^^^^^^^^^^^
-
-Purpose
-~~~~~~~
+Formats
+-------
 
 Format configurations define how values of a specific type will be
 rendered when output to the user. Formats can be defined for all the
