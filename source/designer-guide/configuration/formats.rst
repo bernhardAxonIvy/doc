@@ -31,12 +31,6 @@ available on all types.
    *Preview* editor area after each selection or option that you enable
    for an understanding what the effects are for each language.
 
-.. figure:: /_images/designer-configuration/config-editor-format.png
-   :alt: Configuration Editor Format
-   :align: center
-   
-   Configuration Editor Format
-
 - :guilabel:`Format Type`
   Select a predefined kind of formatting. The selected format kind may
   be further specified in the editor areas *Option*, *Format Pattern*
