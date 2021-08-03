@@ -472,15 +472,6 @@ The HTML Panel Editor is explained in the
 :ref:`HTML <html-panel-editor>` chapter.
 
 
-.. _cms-smart-table-content-editor:
-
-Smart Table Content Editor
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The Smart Table Content Editor is explained in the
-:ref:`HTML <html-smart-table-content-editor>` chapter.
-
-
 .. _cms-jsp-editor:
 
 JSP Editor

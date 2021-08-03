@@ -101,16 +101,7 @@ manipulation of the values.
    |                 |                 | dynamic tabular                                           |                                                                                            |
    |                 |                 | HTML content                                              |                                                                                            |
    |                 |                 | from process                                              |                                                                                            |
-   |                 |                 | data.                                                     |                                                                                            |
-   +-----------------+-----------------+-----------------------------------------------------------+--------------------------------------------------------------------------------------------+
-   | |image28|       | Smart Table     | Generates                                                 | :ref:`cms-smart-table-content-editor`                                                      |
-   |                 |                 | dynamic tabular                                           |                                                                                            |
-   |                 |                 | HTML content                                              |                                                                                            |
-   |                 |                 | from process                                              |                                                                                            |
-   |                 |                 | data gathered                                             |                                                                                            |
-   |                 |                 | from a data                                               |                                                                                            |
-   |                 |                 | base, Supports                                            |                                                                                            |
-   |                 |                 | paging.                                                   |                                                                                            |
+   |                 |                 | data.                                                     |                                                                                            |   
    +-----------------+-----------------+-----------------------------------------------------------+--------------------------------------------------------------------------------------------+
    | |image29|       | Document        | Any document                                              | :ref:`cms-document-editor`                                                                 |
    |                 |                 | (the most                                                 |                                                                                            |
@@ -134,5 +125,4 @@ manipulation of the values.
 .. |image24| image:: /_images/cms/icon-jsp.png
 .. |image25| image:: /_images/cms/icon-result-table.png
 .. |image26| image:: /_images/cms/icon-link.png
-.. |image28| image:: /_images/cms/icon-smart-table.png
 .. |image29| image:: /_images/cms/icon-document.png

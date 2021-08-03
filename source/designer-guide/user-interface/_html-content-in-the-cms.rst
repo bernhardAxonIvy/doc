@@ -88,7 +88,6 @@ Insert Content ...
    :ref:`Process Links <cms-html-link-editor>`,
    :ref:`Tables <cms-html-table-editor>`,
    :ref:`Result Tables <cms-result-table-editor>`,
-   :ref:`Smart Tables <cms-smart-table-content-editor>`,
    :ref:`Images <cms-image-editor>`
    ) and insert them or already existing content objects into the panel.
 
