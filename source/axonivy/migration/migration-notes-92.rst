@@ -131,7 +131,7 @@ the conversion from the old to the new format for you automatically.
 
     **Project:**
 
-    Global Variables are no longer defined using the :ref:`configuration-editor`
+    Global Variables are no longer defined using the configuration editor
     but in the :ref:`variables.yaml <variables-yaml>` file within your project.
 
     By running the latest :ref:`migration-project` in your Designer, your existing

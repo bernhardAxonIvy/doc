@@ -10,7 +10,6 @@ Editors
 -------
 
 -  :ref:`casemap-editor`
--  :ref:`configuration-editor`
 -  :ref:`cms-content-object-editor`
 -  :ref:`database-configuration-editor`
 -  :ref:`data-class-editor`

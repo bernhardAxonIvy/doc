@@ -64,7 +64,7 @@ available on all types.
   Specify your own format with a script. The *value* variable will
   contain the value to be formatted. If you want to specify different
   patterns for different languages you should use the
-  :ref:`configuration-editor-multi-language-selector` to create
+  configuration-editor-multi-language-selector to create
   multiple configurations for various languages.
 
 - :guilabel:`Preview`
