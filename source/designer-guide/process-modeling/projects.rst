@@ -261,21 +261,6 @@ Default namespace
    namespace into which the project's default data class (``Data``) will
    be generated.
 
-Create default configurations
-   If your project is a base or standalone project (e.g. if it doesn't
-   have any dependencies on required projects) then you should leave
-   this box checked. As a result of this, the new project will be
-   initialized with default configurations in its configuration
-   database.
-
-   However, if you're creating a project that is dependent on other
-   projects (see wizard page 2) then you should uncheck this box,
-   because configurations are inherited from required projects. If you
-   leave the box checked, then the default configurations that are
-   created for the new project may possibly shadow (i.e. override)
-   custom configurations with the same name from any required projects
-   that you may have.
-
 .. figure:: /_images/ivy-project/new-project-wizard-2.png
    :alt: New Project Wizard: Second Page
 
@@ -292,13 +277,6 @@ Required Projects
 
    You can always reconfigure the required projects at a later point of
    time in the :ref:`project-deployment-descriptor`.
-
-   .. warning
-
-      Please note that adding required projects may produce a warning (as
-      shown in the snapshot above) due to the generated default
-      configurations. The reason for this warning is explained in the
-      *First Page* section above (Feature *Create default configurations*).
 
 .. figure:: /_images/ivy-project/new-project-wizard-3.png
    :alt: New Project Wizard: Third Page
