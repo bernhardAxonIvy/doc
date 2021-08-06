@@ -43,10 +43,14 @@ New project version
 
 |tag-ops-changed|
 
-Due to the migration of the :ref:`External Databases
-<migrate-92-93-external-database-migration>`, :ref:`Rest Clients
-<migrate-92-93-rest-clients>` and projects to Eclipse Maven projects, we
-introduced a new project version :code:`93300`. If you want to deploy a project
+Due to the migration of the
+:ref:`External Databases <migrate-92-93-external-database-migration>`,
+:ref:`Rest Clients <migrate-92-93-rest-clients>`,
+:ref:`Web Service Clients <migrate-92-93-webservice-clients>`,
+:ref:`Environments <migrate-92-93-envs>`,
+:ref:`Formats <migrate-92-93-formats>`
+and projects to Eclipse Maven projects, we
+introduced a new project version :code:`93600`. If you want to deploy a project
 to an |ivy-engine| 9.3, this must be your project version. If you
 have a running project, it will still be able to run, but
 :ref:`we recommend migrating your projects <migration-project>`
@@ -142,6 +146,8 @@ the conversion from the old to the new format for you automatically.
     redeploy them to your engine.
 
 
+.. _migrate-92-93-envs:
+
 Environments
 ************
 
@@ -152,6 +158,17 @@ configurations <configuration-environments>`.
 
 Read more here about the future of environments:
 https://community.axonivy.com/d/142-environments-will-disappear-in-the-long-term
+
+
+.. _migrate-92-93-formats:
+
+Formats
+*******
+
+:ref:`Formats <configuration-formats>` are migrated from the so called config
+cms to the :file:`config/formats.yaml` in your project. There is no more UI
+Editor to edit those formats. If you migrate a running Axon Ivy Engine you need
+to convert your projects and redeploy them again to make the formats work.
 
 
 Configuration deployment options removed

@@ -3,10 +3,9 @@
 Databases
 =========
 
-This chapter deals with the database configuration. To use databases in
-your business or User Dialog processes you need to define some database
-configurations first. After you have configured the databases (data
-sources) you can use them in your process steps. The process steps
+To use databases in your business or User Dialog processes you need to define
+some database configurations first. After you have configured the databases
+(data sources) you can use them in your process steps. The process steps
 references only the database configuration ids. So you can use different
 database configuration settings on your productive server.
 

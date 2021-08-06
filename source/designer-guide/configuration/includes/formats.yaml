@@ -1,0 +1,79 @@
+Formats:
+
+  # for strings you can only define script
+  # whereas value will be replaced with the value itself
+  String:
+    myStringFormat:
+      Script: "Hello value"
+
+  # for boolean you can only define script
+  # whereas value will be replaced with the value itself
+  Boolean: 
+    myBooleanFormat:
+      Script: "Hello value"
+
+  Number:
+    # will truncate decimal places
+    myNumberIntegerFormat:
+      Type: INTEGER
+
+    # can be used to define integer and fraction part
+    myNumberNumberFormat:
+      Type: NUMBER
+      IntegerDigits: 3
+      FactionDigits: 4
+      Grouping: true
+    
+    # for currency
+    myNumberCurrencyFormat:
+      Type: CURRENCY
+      IntegerDigits: 3
+      FactionDigits: 4
+      Grouping: true
+    
+    # for percent
+    myNumberPercentFormat:
+      Type: PERCENT
+      IntegerDigits: 3
+      FactionDigits: 4
+      Grouping: true
+
+    # do whatever it needs with script
+    myNumberScriptFormat:
+      Type: Script
+      Script: "Hello value"
+  
+    # use a pattern
+    myNumberPatternFormat:
+      Type: Pattern
+      Pattern: "Hello value"
+  
+  # for date you can define a script or a pattern
+  Date:
+    myDateScriptFormat:
+      Type: Script
+      Script: "Hello value"
+  
+    myDatePatternFormat:
+      Type: Pattern
+      Pattern: "Hello value"
+
+  # for datetime you can define a script or a pattern
+  DateTime:
+    myDateTimeScriptFormat:
+      Type: Script
+      Script: "Hello value"
+  
+    myDateTimePatternFormat:
+      Type: Pattern
+      Pattern: "Hello value"
+
+  # for time you can define a script or a pattern
+  Time:
+    myTimeScriptFormat:
+      Type: Script
+      Script: "Hello value"
+  
+    myTimePatternFormat:
+      Type: Pattern
+      Pattern: "Hello value"
