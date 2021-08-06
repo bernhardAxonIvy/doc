@@ -4,76 +4,76 @@ Formats:
   # whereas value will be replaced with the value itself
   String:
     myStringFormat:
-      Script: "Hello value"
+      Script: '"Hello " + value"'
 
   # for boolean you can only define script
   # whereas value will be replaced with the value itself
   Boolean: 
     myBooleanFormat:
-      Script: "Hello value"
+      Script: '"Hello " + value"'
 
   Number:
     # will truncate decimal places
     myNumberIntegerFormat:
-      Type: INTEGER
+      Type: integer
 
     # can be used to define integer and fraction part
     myNumberNumberFormat:
-      Type: NUMBER
+      Type: number
       IntegerDigits: 3
       FactionDigits: 4
       Grouping: true
     
     # for currency
     myNumberCurrencyFormat:
-      Type: CURRENCY
+      Type: currency
       IntegerDigits: 3
       FactionDigits: 4
       Grouping: true
     
     # for percent
     myNumberPercentFormat:
-      Type: PERCENT
+      Type: percent
       IntegerDigits: 3
       FactionDigits: 4
       Grouping: true
 
     # do whatever it needs with script
     myNumberScriptFormat:
-      Type: Script
-      Script: "Hello value"
+      Type: script
+      Script: '"Hello " + value"'
   
     # use a pattern
     myNumberPatternFormat:
-      Type: Pattern
-      Pattern: "Hello value"
+      Type: pattern
+      Pattern: "#,#00.0#"
   
   # for date you can define a script or a pattern
   Date:
     myDateScriptFormat:
-      Type: Script
-      Script: "Hello value"
+      Type: script
+      Script: '"Hello " + value"'
   
     myDatePatternFormat:
-      Type: Pattern
-      Pattern: "Hello value"
+      Type: pattern
+      Pattern: "EEEE dd. MMMM yyyy"
 
   # for datetime you can define a script or a pattern
   DateTime:
     myDateTimeScriptFormat:
-      Type: Script
-      Script: "Hello value"
+      Type: script
+      Script: '"Hello " + value"'
   
     myDateTimePatternFormat:
-      Type: Pattern
-      Pattern: "Hello value"
+      Type: pattern
+      Pattern: "EEEE dd. MMMM yyyy, HH:mm:ss"
 
   # for time you can define a script or a pattern
   Time:
     myTimeScriptFormat:
-      Type: Script
-      Script: "Hello value"
+      Type: script
+      Script: '"Hello " + value"'
   
     myTimePatternFormat:
-      Type: Pattern
-      Pattern: "Hello value"
+      Type: pattern
+      Pattern: "HH:mm:ss:SSS"
