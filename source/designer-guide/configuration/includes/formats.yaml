@@ -21,21 +21,21 @@ Formats:
     myNumberNumberFormat:
       Type: NUMBER
       IntegerDigits: 3
-      FactionDigits: 4
+      FractionDigits: 4
       Grouping: true
     
     # for currency
     myNumberCurrencyFormat:
       Type: CURRENCY
       IntegerDigits: 3
-      FactionDigits: 4
+      FractionDigits: 4
       Grouping: true
     
     # for percent
     myNumberPercentFormat:
       Type: PERCENT
       IntegerDigits: 3
-      FactionDigits: 4
+      FractionDigits: 4
       Grouping: true
 
     # do whatever it needs with script
