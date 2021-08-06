@@ -32,7 +32,6 @@ with [get-window "New Axon Ivy Project"] {
 	get-editbox -after [get-label "Project Name:"] | set-text InvoiceManager
 	get-editbox -after [get-label "Group ID:"] | set-text "com.acme.ivy"
 	get-editbox -after [get-label "Project ID:"] | set-text invoice
-	get-button "Create default configurations .*" | check
 	wait 500
 	saveWindowContentScreenshot "ivy-project/new-project-wizard-1.png"
 	get-button "Next >" | click
