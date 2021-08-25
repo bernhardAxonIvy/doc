@@ -56,6 +56,18 @@ Default namespace
    namespace into which the project's default data class (``Data``) will
    be generated.
 
+Location
+   Defines where to project will be created on your local disk. 
+   By default the location will be your eclipse workspace.
+   If a project is selected while opening the wizard, the location will
+   be adjusted, so that the new project is created as child of the existing project, 
+   which is handy to build multi-module projects.
+   At any rate, you can adjust the default path to your needs.
+
+
+Dependencies
+~~~~~~~~~~~~~
+
 .. figure:: /_images/ivy-project/new-project-wizard-2.png
    :alt: New Project Wizard: Second Page
 
@@ -73,24 +85,16 @@ Required Projects
    You can always reconfigure the required projects at a later point of
    time in the :ref:`project-deployment-descriptor`.
 
+New process
+~~~~~~~~~~~~~
+
 .. figure:: /_images/ivy-project/new-project-wizard-3.png
    :alt: New Project Wizard: Third Page
 
    New Project Wizard: Third Page
 
-The third page is optional. It allows you to define information about
-the implementor and the purpose of the new project. This information has
-documentation value only.
+The third page is optional. It allows you to quickly define a first
+process that will be located in your new project. 
 
-You can always specify and change this information at a later point of
-time in the :ref:`project-deployment-descriptor`.
-
-Provider
-   Define the company or individual that develops and maintains this
-   project.
-
-Description
-   Describe the purpose of the project's contents or what the
-   application is, that it implements.
-
-
+However, you can always skip this page and define processes later on
+using the :ref:`process-new-wizard`.
