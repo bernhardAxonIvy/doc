@@ -1,0 +1,85 @@
+
+.. _designer-import-project:
+
+Importing a Project
+--------------------
+
+You can import existing |axon-ivy| projects into your workspace using the
+*Import Wizard*. Projects can be exported from the workspace using the
+*Export Wizard* (See section :ref:`designer-export-project`.
+This allows you to exchange or share your projects with other people.
+
+Accessibility
+~~~~~~~~~~~~~
+
+You can access the Import Wizard over the menu:
+
+*File -> Import ...*
+
+Features
+~~~~~~~~
+
+For |axon-ivy| users the following import sources and formats are useful:
+
+General > Existing Projects into Workspace
+   Imports a project from a project directory located somewhere in the
+   file system into the workspace. The project directory may or may not
+   be located in the workspace directory.
+
+   .. figure:: /_images/ivy-project/project-import.png
+
+   In the wizard page seen above you can select either the directory
+   where your project(s) resides or a archive file (zip, jar, tar-gz)
+   that contains the project(s). If |axon-ivy| finds valid projects in the
+   given directory or archive file, they can be (de-)selected for the
+   import and you can decide whether the projects should be copied into
+   your workspace directory or not (which has no effect if a project
+   already is in the workspace directory). After clicking on the button
+   *Finish* the import is performed and you will find the imported
+   projects in the :ref:`ivy-project-view`.
+
+|axon-ivy| > |axon-ivy| Archive (\*.iar)
+   Imports |axon-ivy| Archives (\*.iar) into the workspace.
+
+   .. figure:: /_images/ivy-project/project-import-wizard.png
+
+   In the wizard page seen above you can select the directory where your
+   |axon-ivy| Archives resides. If |axon-ivy| finds valid |axon-ivy| Archives
+   in the given directory, they can be (de-)selected for the import and
+   you can decide whether the |axon-ivy| Archives should be copied into
+   your workspace directory or not (which has no effect if an |axon-ivy|
+   Archive already is in the workspace directory). After clicking on the
+   button *Finish* the import is performed and you will find the
+   imported |axon-ivy| Archives in the :ref:`ivy-project-view`.
+
+
+.. _importing-demo-projects:
+
+Importing demo projects
+~~~~~~~~~~~~~~~~~~~~~~~
+
+The |ivy-designer| can import several demo projects, which are
+provided from our maven repository (internet connection needed). Those
+demo projects are in the Ivy Archive (\*.iar) format and can be imported
+with the help of the *Sample* icon on the welcome page.
+
+Following projects are available for the Designer:
+
+.. table:: Demo projects for the Designer.
+
+   +--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Project name       | Demo content                                                                                                                                                      |
+   +====================+===================================================================================================================================================================+
+   | ConnectivityDemos  | Demonstrates the consuming and providing of :ref:`integration-rest` with ivy.                                                                                     |
+   +--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | ErrorHandlingDemos | Samples that demonstrate the :ref:`error-handling`.                                                                                                               |
+   +--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | HtmlDialogDemos    | Demonstrates several JSF components that can be used in :ref:`html-dialogs`.                                                                                      |
+   +--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | QuickStartTutorial | The same project that is built in the :ref:`QuickStart Tutorial <axonivy-workbench>`.                                                                             |
+   +--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | RuleEngineDemos    | Shows how to use the :ref:`rule-engine`.                                                                                                                          |
+   +--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | WorkflowDemos      | Demonstrates how to handle typical Workflow use cases, makes use of features like :ref:`Signals <signal-reference>` and :ref:`business-data`                      |
+   +--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+

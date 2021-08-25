@@ -4,7 +4,7 @@ Process Modeling
 .. toctree::
    :maxdepth: 1
 
-   projects
+   projects/index
    process-modeling
    simulation-debugging
    casemap
