@@ -74,7 +74,9 @@ Dependencies
    New Project Wizard: Second Page
 
 The second page is optional. It allows you to specify any project from
-the workspace as a required project.
+the workspace as a required project. 
+If there are yet no projects in the workspace, this page
+isn't being displayed in the wizard.
 
 Required Projects
    Check the projects that the new project should be depend upon. The
@@ -98,3 +100,18 @@ process that will be located in your new project.
 
 However, you can always skip this page and define processes later on
 using the :ref:`process-new-wizard`.
+
+Data Class
+~~~~~~~~~~~~~
+
+.. figure:: /_images/ivy-project/new-project-wizard-4.png
+   :alt: New Project Wizard: Fourth Page
+
+   New Project Wizard: Fourth Page
+
+An optional page to adjust the Data Class being used by 
+the first process, that may have been defined on the previous page.
+
+However, you can change the Data later on if needed.
+Detailed description on the Data Class creation can be found under 
+:ref:`process-new-wizard-data`.

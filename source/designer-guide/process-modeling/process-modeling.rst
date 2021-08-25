@@ -187,6 +187,9 @@ Type
    elements. Please note that no user interaction may occur in a web
    service process.
 
+
+.. _process-new-wizard-data:
+
 Process Data (page2)
 ~~~~~~~~~~~~~~~~~~~~
 
