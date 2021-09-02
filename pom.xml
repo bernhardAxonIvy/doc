@@ -36,7 +36,7 @@
             </goals>
             <phase>generate-resources</phase>
             <configuration>
-              <outputDirectory>images/cache</outputDirectory>
+              <outputDirectory>${images.folder}</outputDirectory>
               <artifactItems>
                 <artifactItem>
                   <groupId>ch.ivyteam.doc</groupId>
