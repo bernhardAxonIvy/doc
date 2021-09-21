@@ -268,4 +268,15 @@ As an alternative to Apache HTTP Client you can use ``java.net.URLConnection`` f
 (``org.glassfish.jersey.client.HttpUrlConnectorProvider``). This connection provider does not have a maximum connection limit 
 but has other restrictions like no NTLM support.
 
-  
+
+Dynamic properties
+^^^^^^^^^^^^^^^^^^^^^^^^^
+You may need to adjust property values for multiple runtime environments. 
+E.g. to call different service URIs for testing than in production, 
+consequently with other credentials or OAUTH2 application identifiers.
+
+You can forsee and simplify these configuration adjustments for operations
+by using :ref:`dynamic-config` expressions in properties or any other configuration value.
+E.g. the property ``appId=${ivy.var.cloudAppId}`` will at runtime
+have the value of the variable called ``cloudAppId``.
+

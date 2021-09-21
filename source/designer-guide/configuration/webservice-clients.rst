@@ -198,10 +198,17 @@ The following attributes are available in the *Ports* section:
   This list is optional. If this list is empty and no default URI is
   specified then an exception is raised during the call and the process
   continues with error handling.
- 
-.. tip::
 
-   To consume a SOAP service running in the same |ivy-engine| /
-   Application as the client the placeholder :code:`{ivy.engine.baseurl}` can be used.
 
-   E.g. ``{ivy.engine.baseurl}/ws/myservice``
+Dynamic endpoint URIs
+^^^^^^^^^^^^^^^^^^^^^^^^^
+You may need to adapt the endpoint URI to call according to your runtime
+environment. E.g. if you have different endpoints for staging and production.
+Therefore we support :ref:`dynamic-config` expressions in URIs. 
+As as en example, an endpoint URI defined as  ``http://${ivy.var.erpHost}/soap/service`` 
+will consume the host to call from the variable named ``erpHost``. 
+
+The same mechanisms also work in properties alike, so you can also
+re-use a variable to inject the credentials used to authenticate 
+the service call.
+

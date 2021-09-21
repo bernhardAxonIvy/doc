@@ -109,9 +109,10 @@ Use Eclipse or Visual Studio Code.
 
 	# with overline, for parts
     * with overline, for chapters
-    =, for sections
-    -, for subsections
-    ^, for subsubsections
+    =, for sections (h1)
+    -, for subsections (h2)
+    ~, for sub-sub-sections (h3)
+    ^, for sub-sub-sub-sections (h4)
     ", for paragraphs
 
 - GUI descriptors
