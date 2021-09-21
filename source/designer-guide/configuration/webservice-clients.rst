@@ -198,39 +198,17 @@ The following attributes are available in the *Ports* section:
   This list is optional. If this list is empty and no default URI is
   specified then an exception is raised during the call and the process
   continues with error handling.
- 
 
 
-Dynamic configurations
------------------------
+Dynamic endpoint URIs
+^^^^^^^^^^^^^^^^^^^^^^^^^
+You may need to adapt the endpoint URI to call according to your runtime
+environment. E.g. if you have different endpoints for staging and production.
+Therefore we support :ref:`dynamic-config` expressions in URIs. 
+As as en example, an endpoint URI defined as  ``http://${ivy.var.erpHost}/soap/service`` 
+will consume the host to call from the variable named ``erpHost``. 
 
-You may use dynamic expressions in your configurations in order to
-reduce post installation configurations for different runtime 
-environments.
-To do so, you can add dynamic references to :ref:`variables` into properties or URIs. 
-As an example, for an endpoint URI defined as :code:`${ivy.var.myVariable}/resource` 
-the value of the variable called `myVariable`  will be injected
-at runtime into the URI. 
+The same mechanisms also work in properties alike, so you can also
+re-use a variable to inject the credentials used to authenticate 
+the service call.
 
-Furthermore, we provide a set of expressions that can be used to refer to 
-the currently running |ivy-engine|+Application in oder to simplify calls
-from an ivy process to it's own backend.
-
-Expression Reference
-~~~~~~~~~~~~~~~~~~~~
-
-+----------------------------------------+---------------------------------------------------------+
-| **Expression**                         | **Runtime Value**                                       |
-+----------------------------------------+---------------------------------------------------------+
-| ``${ivy.var.myVar}``                   | myVarValue                                              |
-+----------------------------------------+---------------------------------------------------------+
-| ``${ivy.app.baseurl}``                 | http://myHost:8080/myContext/myApp                      |
-+----------------------------------------+---------------------------------------------------------+
-| ``${ivy.engine.baseurl}``              | http://myHost:8080/myContext                            |
-+----------------------------------------+---------------------------------------------------------+
-| ``${ivy.engine.host}``                 | myHost                                                  |
-+----------------------------------------+---------------------------------------------------------+
-| ``${ivy.engine.http.port}``            | 8080                                                    |
-+----------------------------------------+---------------------------------------------------------+
-| ``${ivy.engine.context}``              | myContext *(empty by default)*                          |
-+----------------------------------------+---------------------------------------------------------+

@@ -60,3 +60,14 @@ databases you use in your project and the extending projects.
 - :guilabel:`Additional Connection Properties`
   If your database needs more information you can use this section
   to define the additional properties.
+
+Dynamic properties
+^^^^^^^^^^^^^^^^^^^^^^^^^
+You may need to adjust property values for multiple runtime environments. 
+E.g. to call different database hosts for testing than in production, 
+consequently with other credentials.
+
+You can forsee and simplify these configuration adjustments for operations
+by using :ref:`dynamic-config` expressions in properties or any other configuration value.
+E.g. the property ``databaseName=${ivy.var.cloudDb}`` will at runtime
+have the value of the variable called ``cloudDb``.
