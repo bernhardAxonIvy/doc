@@ -233,3 +233,19 @@ value is 600 (10 minutes) and the ``TimeToLive`` is 0 (disabled).
 
 The ``usageLimit`` attribute on MBeans with name pattern ``ivy Engine:type=CacheClassPersistencyService,name=*,strategy=CacheAllRemoveUnused``
 has been removed. Instead, the ``timeToIdle`` and ``timeToLive`` attributes have been introduced.
+
+
+
+Default rest client entity processing changed to buffered
+*********************************************************
+
+|tag-project-changed| 
+
+Since using the *ApacheConnectorProvider* as default provider
+for rest clients also the default of entity processing
+has changed from :code:`BUFFERED` to :code:`CHUNKED`. Which means that
+the http header :code:`Content-length` is not set which makes trouble
+with a lot of services. So we switched the default to :code:`BUFFERED`
+from now on. If you need chuncked processing you can change that
+in your rest client config by setting the property :code:`jersey.config.client.request.entity.processing`
+to :code:`CHUNKED`.
