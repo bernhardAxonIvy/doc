@@ -1,5 +1,6 @@
 package ch.ivyteam.ivy.screenshot;
 
+import static com.codeborne.selenide.CollectionCondition.itemWithText;
 import static com.codeborne.selenide.CollectionCondition.size;
 import static com.codeborne.selenide.CollectionCondition.texts;
 import static com.codeborne.selenide.Condition.enabled;
@@ -61,7 +62,7 @@ public class TestEngineScreenshots {
     defineSecondProcessStep();
     takeScreenshot("engine-portal-express", 900);
     $(By.id("form:save")).shouldBe(visible).click();
-    $(".home-page-container").shouldBe(visible);
+    $(".dashboard__body").shouldBe(visible);
 
     open(EngineUrl.create().path("starts").toUrl());
     $(By.id("process-widget:process-view-mode:view-mode-selection:2")).parent().click(); // Select compact mode
@@ -72,7 +73,7 @@ public class TestEngineScreenshots {
     open(EngineUrl.create().path("logout").toUrl());
     loginToPortal("guest");
 
-    $(By.id("task-widget:task-list-scroller")).findAll("a.compact-task-start-link").shouldHave(texts("Hi"));
+    $(By.className("dashboard-tasks--table")).findAll("td.dashboard-tasks__name").shouldHave(itemWithText("Hi"));
     removeWelcomeGuide();
     takeScreenshot("engine-portal-home", 500);
   }
