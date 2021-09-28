@@ -91,15 +91,6 @@ REST Client Section
 
      ivy.rest.client("twitter").resolveTemplate("version", "1.1").get()
 
-  .. tip::
-
-     To consume a REST service running in the same |ivy-engine| /
-     Application as the client a set of |axon-ivy| placeholders can be
-     used. These placeholders are automatically resolved:
-     {ivy.engine.host}, {ivy.engine.http.port}, {ivy.engine.context},
-     {ivy.request.application}.
-
-     E.g. ``http://{ivy.engine.host}:{ivy.engine.http.port}(/{ivy.engine.context})/{ivy.request.application}/api/my/service``
 
 
 .. _rest-clients-generator-wizard:
