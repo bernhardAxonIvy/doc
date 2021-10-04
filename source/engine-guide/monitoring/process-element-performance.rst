@@ -1,19 +1,32 @@
+.. _process-element-performance:
+
 Process Element Performance
 ===========================
 
-Configure
----------
+To optimize the performance of your processes and process elements you can 
+use the process element performance statistic to analyze the performance of 
+the engine. This allows you to detect long running and performance intensive 
+process elements and processes which you then can optimize. 
+ 
+Engine Cockpit
+--------------
+
+You can activate and analyze the results of the performance statistic in the 
+:ref:`engine-cockpit-monitor-performance` view of the :ref:`engine-cockpit`.
+  
+.. _process-element-performance-file:
+  
+CSV Statistic File
+------------------
 
 It is possible to configure |ivy-engine| to print out performance statistic
-information periodically into a CSV formatted file. This allows to analyze the
-performance of the engine and to detect long running and performance intensive
-process elements and processes. The file contains detailed information of each
-executed process element since the last dump.
+information periodically into a CSV formatted file. The file contains detailed 
+information of each executed process element since the last dump.
 
 After activation, all performance related information is collected and written
 to the :file:`log` directory of your |ivy-engine| installation. The file name
-has the pattern :file:`performance_statistic_jjjj-mm-tt_hh-mm-tt.csv`
-(e.g. :file:`performance_statistic_2011-03-15_09-21-05.csv`)
+has the pattern :file:`performance_statistic_yyyy-mm-dd_hh-mm-ss.csv`
+(e.g., :file:`performance_statistic_2011-03-15_09-21-05.csv`)
 
 Process element performance statistics are not collected by default. They need to
 be enabled in the :code:`ProcessEngine` section of the :ref:`ivy-yaml` file.

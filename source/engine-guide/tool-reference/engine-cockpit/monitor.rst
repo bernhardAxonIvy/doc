@@ -42,6 +42,22 @@ can be configured in the :ref:`ivy.yaml <ivy-cache-properties>` file.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-cache.png
 
+.. _engine-cockpit-monitor-performance:
+
+Performance
+"""""""""""
+
+The **Performance** view allows you to activate and analyze the :ref:`process-element-performance` statistic. 
+
+You can start, stop, clear, refresh the statistic or export it to an Excel file. Note, that by default not all
+available columns are shown. Use the configure columns button right to the search box to show or hide the columns. 
+
+If you want to configure that the statistic is written periodically to a :ref:`process-element-performance-file`
+use the configuration icon left to the help button it will take you directly to the corresponding settings 
+in the :ref:`engine-cockpit-system-configuration`.  
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-performance.png
+
 MBeans
 """"""
 
