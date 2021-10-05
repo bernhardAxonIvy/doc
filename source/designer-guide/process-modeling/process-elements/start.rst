@@ -198,11 +198,11 @@ Responsible Role / User
 
    Use *Role* if you know the responsible role when editing the element.
 
-   The role SYSTEM means that no human intervention is required. The
-   system executes the task automatically.
+   - The role SYSTEM means that no human intervention is required. The
+     system executes the task automatically.
 
-   The role CREATOR means that the user who has started the current case
-   is responsible for the task created by the :ref:`process-element-trigger-step`.
+   - The role CREATOR means that the user who has started the current case
+     is responsible for the task created by the :ref:`process-element-trigger-step`.
 
 Delay (blocking period)
    The task can be blocked before a user can work on it. This ivyScript
