@@ -381,11 +381,15 @@ Switch. The task tab is used by
 :ref:`process-element-task-switch-gateway` and
 :ref:`process-element-user-task`.
 
-Name, description: of the task that appear in the task list of the
+**Name, description:** of the task that appear in the task list of the
 addressed role or user.
 
-Category: It is recommended practice to define and reference the text
+**Category:** It is recommended practice to define and reference the text
 from the CMS. See :ref:`here <workflow-categories>`.
+
+**Responsible:** The role or user to assign the task
+
+  .. include:: _responsible.rst
 
 .. note::
 
@@ -449,7 +453,9 @@ Task Expiry
 
    **Responsible**
 
-   Defines the Role / User to reassign the task to after it has expired.
+   Defines the role or user to reassign the task to after it has expired.
+
+   .. include:: _responsible.rst
 
    **Priority**
 
