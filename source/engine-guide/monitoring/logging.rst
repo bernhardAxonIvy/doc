@@ -99,9 +99,8 @@ X-Amzn-Trace-Id    `Amazon X-Ray <https://docs.aws.amazon.com/xray>`_
 ot-tracer-traceid  `Open Tracing <https://github.com/opentracing>`_
 =================  =============
 
-For a deeper integration with a tracing tool have a look at our ivy-tracing-jaeger 
-(`Jaeger <https://www.jaegertracing.io>`_ and  `OpenTelemetry <https://opentelemetry.io/>`_) example 
-in our :link-url:`docker-samples <docker-samples>`. 
+For a deeper integration with a tracing tool have a look at our :link-url:`Jaeger Tracing <docker-tracing-jaeger>` 
+(`Jaeger <https://www.jaegertracing.io>`_ and  `OpenTelemetry <https://opentelemetry.io/>`_) example.
 
 Log format
 ----------
