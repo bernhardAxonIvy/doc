@@ -40,6 +40,9 @@ A simple Dockerfile that bundles an |ivy-engine|, your projects and your configu
   
   # Add your projects bundled in an application zip file 
   ADD --chown=ivy:ivy application/target/application.zip /var/lib/axonivy-engine/deploy/application.zip
+  
+  # Creates a files directory that can be mounted to a docker volume to be shared between cluster nodes
+  RUN mkdir -p /var/lib/axonivy-engine/files && chown -R ivy /var/lib/axonivy-engine/files
 
 See also our example configurations on GitHub
 for :link-url:`NGINX <docker-scaling-nginx>` and :link-url:`HAProxy <docker-scaling-haproxy>`
