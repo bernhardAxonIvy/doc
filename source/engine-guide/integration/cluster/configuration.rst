@@ -3,15 +3,15 @@
 Configuration
 =============
 
-An |ivy-engine| Cluster node is setup the exact same way as stand-alone |ivy-engine|.
+An |ivy-engine| Cluster node is setup almost the same way as stand-alone |ivy-engine|.
 Note that all nodes in a cluster setup must run within the same network (the same
 broadcast domain).
 
 Files Directory
 ---------------
 
-The files directory (``Data.FilesDirectory`` in your :ref:`ivy.yaml <ivy-yaml>`)  
-where |ivy-engine| stores files that are uploaded from users must be shared between all 
+The files directory (``Data.FilesDirectory`` in your :ref:`ivy.yaml <ivy-yaml>`),  
+where |ivy-engine| stores files that are uploaded from users, must be shared between all 
 cluster nodes. This can be done by using a Docker volume that stores all the files and is 
 mounted into all cluster nodes.
 
@@ -58,7 +58,7 @@ Changes
 -------
 
 Configuration changes are only applied to the local cluster node where the change is done. 
-E.g., an administrator is using the :ref:`Engine Cockpit <engine-cockpit>` to change a 
+E.g., if an administrator is using the :ref:`Engine Cockpit <engine-cockpit>` to change a 
 configuration setting then the setting is only changed at the cluster node where the 
 current session of the administrator is executed. On all other cluster nodes, the setting 
 is still the old one! 
@@ -67,4 +67,5 @@ We recommend that you do not change the configuration at runtime.
 Instead use a :ref:`container image <cluster-container>` that contains the right configuration. 
 If you have to change the configuration create a new container image with the new configuration.
 
-Another solution is to share the configuration folder between all cluster nodes.    
+Another solution is to share the :ref:`configuration folder <configuration>` between all cluster 
+nodes using a Docker volume.  

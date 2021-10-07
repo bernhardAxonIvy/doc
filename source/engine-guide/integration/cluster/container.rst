@@ -21,7 +21,7 @@ The build server:
 2. Builds all your projects and bundles them in an application zip file.
 3. Builds your container image by using the Dockerfile. 
    The base image ``axonivy/axonivy-engine`` image will be pulled from Docker Hub.
-4. It stores your new image (``your-company/your-project``) in a Docker Registry.
+4. It stores your new image (``your-company/your-project``) in a `Docker Registry <https://hub.docker.com/_/registry>`_.
 
 Then, you can start your |ivy-engine| Cluster using your new container image (``your-company/your-project``).
 
@@ -43,6 +43,9 @@ A simple Dockerfile that bundles an |ivy-engine|, your projects and your configu
   
   # Creates a files directory that can be mounted to a docker volume to be shared between cluster nodes
   RUN mkdir -p /var/lib/axonivy-engine/files && chown -R ivy /var/lib/axonivy-engine/files
+
+Examples
+--------
 
 See also our example configurations on GitHub
 for :link-url:`NGINX <docker-scaling-nginx>` and :link-url:`HAProxy <docker-scaling-haproxy>`
