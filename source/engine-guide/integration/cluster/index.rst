@@ -25,7 +25,7 @@ higher **hardware costs** and higher **license fees** as you will need an
 
 The diagram below shows how an |ivy-engine| Cluster setup looks like. A user accesses
 the |ivy-engine| Cluster over a :ref:`load balancer <cluster-load-balancer>`
-that routes the traffic to the :ref:`nodes <cluster-node>` of the cluster.
+that routes the traffic to the :ref:`nodes <cluster-configuration>` of the cluster.
 All cluster nodes share the same system database and Elasticsearch server.
 
 .. graphviz:: overview.dot

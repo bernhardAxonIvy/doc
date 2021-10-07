@@ -7,6 +7,35 @@ An |ivy-engine| Cluster node is setup the exact same way as stand-alone |ivy-eng
 Note that all nodes in a cluster setup must run within the same network (the same
 broadcast domain).
 
+Files Directory
+---------------
+
+The files directory (``Data.FilesDirectory`` in your :ref:`ivy.yaml <ivy-yaml>`)  
+where |ivy-engine| stores files that are uploaded from users must be shared between all 
+cluster nodes. This can be done by using a Docker volume that stores all the files and is 
+mounted into all cluster nodes.
+
+Configure the files directory in your :ref:`ivy.yaml <ivy-yaml>` file:
+
+.. code-block:: yaml
+
+  Data.FilesDirectory: "/var/lib/axonivy-engine/files" 
+
+Create a Docker volume called ``ivy-files`` and mount it into ``/var/lib/axonivy-engine/files``
+directory of your |ivy-engine| Cluster node containers.
+   
+.. code-block:: bash
+
+  > docker volume create ivy-files
+  > docker run --mount source=ivy-files,target=/var/lib/axonivy-engine/files ... 
+  
+Ensure that you backup the Docker volume is periodically.  
+
+.. note::
+  In older version of |ivy-engine| Cluster also the applications directory 
+  (``Data.AppDirectory`` in your :ref:`ivy.yaml <ivy-yaml>`) has to be shared 
+  between the cluster nodes. This is no longer the case and should be avoided.  
+
 Cluster Name
 ------------
 
