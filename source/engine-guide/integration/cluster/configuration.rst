@@ -29,11 +29,11 @@ directory of your |ivy-engine| Cluster node containers.
   > docker volume create ivy-files
   > docker run --mount source=ivy-files,target=/var/lib/axonivy-engine/files ... 
   
-Ensure that you backup the Docker volume is periodically.  
+Ensure that you backup the Docker volume periodically.  
 
 .. note::
   In older version of |ivy-engine| Cluster also the applications directory 
-  (``Data.AppDirectory`` in your :ref:`ivy.yaml <ivy-yaml>`) has to be shared 
+  (``Data.AppDirectory`` in your :ref:`ivy.yaml <ivy-yaml>`) had to be shared 
   between the cluster nodes. This is no longer the case and should be avoided.  
 
 Cluster Name
