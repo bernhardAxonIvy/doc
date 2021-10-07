@@ -1,0 +1,30 @@
+
+digraph overview {
+  node [
+    shape=box, 
+    style=filled,
+    margin=0 width=2 height=0.8
+    fontcolor="white",    
+    color="#007095",
+    fixedsize=true,
+    fontsize=18
+  ];
+
+  dockerhub [ label="Docker Hub", pos = "5,7.5!", width="2"];
+
+  git [ label="Git Repository", pos = "0,7.5!" width="2" ];
+
+  build [ label="Build Server", pos = "2.5,5!" width="1.5" ];
+
+  dockerregistry [ label="Docker Registry", pos = "2.5,2.5!" width="2" ];   
+  
+  cluster [ label="Axon Ivy Cluster",pos = "8,2.5!" width=1.8 height=3.1 style="dotted" fontcolor="black" labelloc="t"];
+  engine1 [label="Node 1", pos="8,3.2!", height="0.8", width="1.5", color="#C7D426", fontcolor="black"];
+  engine2 [label="Node 2", pos="8,2.3!", height="0.8", width="1.5", color="#C7D426", fontcolor="black"];  
+  engine3 [label="Node 3", pos="8,1.4!", height="0.8", width="1.5", color="#C7D426", fontcolor="black"];
+  
+  dockerhub -> build [ label="axonivy/axonivy-engine"];
+  git -> build [ label="Projects, Configuration, Dockerfile" ];
+  build -> dockerregistry [ label="your-company/your-project" ]; 
+  dockerregistry -> cluster [ label="your-company/your-project" ];
+}

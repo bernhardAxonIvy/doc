@@ -25,44 +25,41 @@ higher **hardware costs** and higher **license fees** as you will need an
 
 The diagram below shows how an |ivy-engine| Cluster setup looks like. A user accesses
 the |ivy-engine| Cluster over a :ref:`load balancer <cluster-load-balancer>`
-that routes the traffic to the :ref:`nodes <cluster-node>` of the cluster.
+that routes the traffic to the :ref:`nodes <cluster-configuration>` of the cluster.
 All cluster nodes share the same system database and Elasticsearch server.
-
-|
 
 .. graphviz:: overview.dot
    :layout: neato
 
-|
-
 **Runtime**
 
-We recommend operating an |ivy-engine| Cluster in a containerized 
-environment like Docker or Kubernetes. See our example configurations on GitHub
+We strongly recommend operating an |ivy-engine| Cluster in a containerized 
+environment like Docker or Kubernetes. Build and run your own 
+:ref:`container image <cluster-container>` that contains all your projects and configuration.
+
+See our example configurations on GitHub
 for :link-url:`NGINX <docker-scaling-nginx>` and :link-url:`HAProxy <docker-scaling-haproxy>`
 on how to setup an |ivy-engine| Cluster with docker-compose.
-
-|
+  
 
 **Restrictions**
+
+The following restrictions have to be considered when running |ivy-engine| Cluster:
 
 1. Each node must use the same system database.
 2. Each node must use the same external :ref:`Elasticsearch <elasticsearch>` server.
 3. Each node must use the same service configurations.
-4. Configurations cannot be changed during runtime unless the configuration 
-   directory is shared among all nodes.
-5. Deployment does not work during runtime unless the application directory 
-   is shared among all nodes. If sharing is not possible use auto deployment
-   during startup instead.
-   
-Most of the restrictions can be solved by using a containerized environment.
-
-|
+4. :ref:`Configuration changes <cluster-configuration-changes>` are only applied to the local cluster node where the change is done. 
+5. :ref:`Deployment <cluster-deployment>` during runtime is not supported and does not work.
+     
+Most of the restrictions can be solved by using a containerized environment with an own :ref:`container image <cluster-container>`.
 
 .. toctree::
     :maxdepth: 1
     :hidden:
 
+    configuration
+    deployment
     license
-    node
     load-balancer
+    container
