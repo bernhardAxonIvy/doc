@@ -158,8 +158,9 @@ Type
 
 DB Field
    The name of the field in the database table of this attribute. If you
-   generate the database from this Entity Class for this attribute the
-   DB field name is used as database field.
+   generate the database from this Entity Class for this attribute the DB field
+   name is used as database field. (Only letters A-Z, digits 0-9 and the bottom
+   bar "_" are supported characters)
 
 Persistent
    Decide if the data should be saved in the database if you use the
