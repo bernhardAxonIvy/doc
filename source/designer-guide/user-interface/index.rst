@@ -15,7 +15,7 @@ to display a end page.
 .. toctree::
    :maxdepth: 1
 
-   user-dialogs
+   user-dialogs/index
    static-jsf-pages
-   web-page
+   web-page/index
    standard-processes/index

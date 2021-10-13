@@ -5,5 +5,5 @@ Data Modeling
    :maxdepth: 1
 
    data-classes
-   business-data
-   persistence
+   business-data/index
+   persistence/index

@@ -89,17 +89,3 @@ value for ``data.address.street`` then a ``data.address`` object is
 automatically created.
 
 See also Public API ``ch.ivyteam.ivy.scripting.objects.jsf.el.AutoInitializable``.
-
-
-.. include:: _html-dialog-editor.rst
-.. include:: _html-dialog-themes.rst
-.. include:: _html-dialog-view-types.rst
-.. include:: _html-dialog-preferences.rst
-.. include:: _html-dialog-multiple-views.rst
-.. include:: _html-dialog-converters.rst
-.. include:: _html-dialog-validators.rst
-.. include:: _html-dialog-managed-beans.rst
-.. include:: _html-dialog-ajax-method-call.rst
-.. include:: _html-dialog-workflow.rst
-.. include:: _html-dialog-error-handling.rst
-.. include:: _html-dialog-csrf.rst

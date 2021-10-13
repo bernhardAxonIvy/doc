@@ -157,10 +157,13 @@ of the user.
    party plugins and/or applications depending on the configuration of
    the client. Thus this behavior cannot be controlled by Ivy.
 
+.. toctree::
+  :maxdepth: 1
 
-.. include:: _html-content-in-the-cms.rst
-.. include:: _html-content-in-the-web-content-folder.rst
-.. include:: _html-best-practice.rst
+  html-content-in-the-cms
+  html-content-in-the-web-content-folder
+  html-best-practice
+
 
 .. |image0| image:: /_images/user-interface-html/create-new-page.png
 .. |image1| image:: /_images/user-interface-html/create-new-page-web-content.png

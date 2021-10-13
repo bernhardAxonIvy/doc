@@ -5,7 +5,7 @@ Process Modeling
    :maxdepth: 1
 
    projects/index
-   process-modeling
-   simulation-debugging
+   process-modeling/index
+   simulation/index
    casemap
    process-elements/index
