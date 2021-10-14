@@ -103,12 +103,12 @@ the new place in the hierarchy.
   be deleted.
 
 - :guilabel:`Import XML`
-  A ``*.roleconfig`` file from another project can be imported for
+  A ``roles.xml`` file from another project can be imported for
   convenience reasons.
 
 - :guilabel:`Export XML`
   All roles are exported in a XML file with the extension
-  ``*.roleconfig`` to easily re-use the role hierarchy.
+  ``roles.xml`` to easily re-use the role hierarchy.
 
 - :guilabel:`Sort`
   The selected roles are sorted alphabetically, if desired this is
@@ -166,12 +166,12 @@ and be reused within process steps in :ref:`ivyscript`.
   Sorts the user list in alphabetical order.
 
 - :guilabel:`Import`
-  A ``*.userconfig`` file from another project can
+  A ``users.xml`` file from another project can
   be imported for convenience reasons.
   
 - :guilabel:`Export XML`
   All users and their corresponding properties
-  are exported in a XML file with the extension ``*.userconfig``
+  are exported in a XML file with the extension ``users.xml``
   to easily re-use the users in another project.
 
 .. tip::
