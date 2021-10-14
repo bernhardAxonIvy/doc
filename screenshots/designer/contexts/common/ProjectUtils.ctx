@@ -5,8 +5,7 @@ Element-Name: ProjectUtils
 Element-Type: context
 Element-Version: 2.0
 Id: _lbFrAAbTEeqelOY6v4JKGw
-Runtime-Version: 2.5.0.201907212359
-Save-Time: 11/14/19, 12:40 PM
+Save-Time: 10/13/21, 12:54 PM
 
 ------=_.ecl.context-718f04b4-ed39-33e3-af62-0995e4561998
 Content-Type: text/ecl
@@ -50,17 +49,25 @@ proc deleteAllProjects
 	}
 }
 
-proc openDefinition [val projectName] [val definitions]
+proc openConfig [val projectName] [val config]
 {
 	with [get-view "Axon Ivy Projects" | get-tree]
 	{
-		get-item [concat $projectName "/Definitions/" $definitions] | double-click
+		get-item [concat $projectName "/Config/" $config] | double-click
+	}
+}
+
+proc openPom [val projectName]
+{
+	with [get-view "Axon Ivy Projects" | get-tree]
+	{
+		get-item [concat $projectName "/pom.xml"] | double-click
 	}
 }
 
 proc addRequiredProject [val project] [val requiredProject]
 {
-	openDefinition $project "Deployment"
+	openPom $project
 	with [get-editor $project]
 	{
 		get-tab-folder | get-tab-item "Required Projects" | click

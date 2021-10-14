@@ -6,7 +6,7 @@ Element-Type: testcase
 Element-Version: 3.0
 External-Reference: 
 Id: __m0FsAadEeiM3vZlrfoIUw
-Save-Time: 7/9/21, 8:58 AM
+Save-Time: 10/13/21, 11:25 AM
 Testcase-Type: ecl
 
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
@@ -16,7 +16,7 @@ Entry-Name: .content
 importProject -projectName "documentationExampleProject"
 
 with [get-view "Axon Ivy Projects" | get-tree] {
-	select "documentationExampleProject/Configuration/webservice-clients.yaml" | double-click
+	select "documentationExampleProject/Config/webservice-clients.yaml" | double-click
 }
 
 proc wsScreenshot [val path]
