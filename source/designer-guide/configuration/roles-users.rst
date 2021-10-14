@@ -166,12 +166,12 @@ and be reused within process steps in :ref:`ivyscript`.
   Sorts the user list in alphabetical order.
 
 - :guilabel:`Import`
-  A ``user.xml`` file from another project can
+  A ``users.xml`` file from another project can
   be imported for convenience reasons.
   
 - :guilabel:`Export XML`
   All users and their corresponding properties
-  are exported in a XML file with the extension ``user.xml``
+  are exported in a XML file with the extension ``users.xml``
   to easily re-use the users in another project.
 
 .. tip::
