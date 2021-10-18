@@ -5,6 +5,9 @@ Size
    The Business Data store is not designed for storing huge binary
    objects like PDFs.
 
+Persistence
+   To save Business Data you need at least a persistent case.
+
 Types
    The ivy scripting types ``XML``, and ``Tree`` are not serializable.
 

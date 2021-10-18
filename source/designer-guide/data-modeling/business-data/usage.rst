@@ -4,6 +4,9 @@ Business Data Usage
 The Business Data feature methods like ``get``, ``save``, ``find`` and
 ``delete`` are accessible under ``ivy.repo`` in IvyScript.
 
+.. warning::
+  You need at least a persistent case to save Business Data.
+
 Associate value with the business case (BusinessCaseData context)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
