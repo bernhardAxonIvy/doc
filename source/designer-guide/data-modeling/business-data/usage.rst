@@ -4,8 +4,6 @@ Business Data Usage
 The Business Data feature methods like ``get``, ``save``, ``find`` and
 ``delete`` are accessible under ``ivy.repo`` in IvyScript.
 
-.. warning::
-  You need at least a persistent case to save Business Data.
 
 Associate value with the business case (BusinessCaseData context)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -32,6 +30,11 @@ the current business case:
 Note, that the method ``get`` either loads the dossier if there is
 already a dossier associated with the current business case or creates a
 new dossier.
+
+.. warning::
+  If you use :ref:`business-case-data`, you need at least a persistent case to
+  save data.
+  
 
 Store (without BusinessCaseData context)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

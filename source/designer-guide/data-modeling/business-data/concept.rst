@@ -35,16 +35,15 @@ Data value before saving it for the first time.
 Business Case Data
 ~~~~~~~~~~~~~~~~~~
 
-The handling of identifiers of Business Data values is complex because
-you have to manage the identifiers in the process data manually.
-Therefore the Business Data Store can store data in the context of a
-business case. You can activate this by annotating a data class with the
-``@BusinessCaseData`` annotation. On the Data Class Editor simply check
-the *BusinessCaseData* checkbox in the *Annotations* section. Now, all
-values of the annotated data class are automatically associated with the
-current business case. You can use the ``get`` method to load the value
-associated with the current business case. If no value is associated it
-simply returns a new object.
+The handling of identifiers of Business Data values is complex because you have
+to manage the identifiers in the process data manually. Therefore the Business
+Data Store can store data in the context of a business case. You can activate
+this by annotating a data class with the ``@BusinessCaseData`` annotation. On
+the :ref:`data-class-editor` simply check the
+*BusinessCaseData* checkbox in the *Annotations* section. Now, all values of the
+annotated data class are automatically associated with the current business
+case. You can use the ``get`` method to load the value associated with the
+current business case. If no value is associated it simply returns a new object.
 
 Migrate data classes
 ~~~~~~~~~~~~~~~~~~~~
