@@ -32,8 +32,8 @@ already a dossier associated with the current business case or creates a
 new dossier.
 
 .. warning::
-  If you use :ref:`business-case-data`, you need at least a persistent case to
-  save data.
+  :ref:`business-case-data` can only be applied if the case is persistent (i.e.
+  has at least one task)
   
 
 Store (without BusinessCaseData context)

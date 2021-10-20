@@ -6,8 +6,8 @@ Size
    objects like PDFs.
 
 Persistence
-   If you use :ref:`business-case-data`, you need at least a persistent case to
-   save data.
+   :ref:`business-case-data` can only be applied if the case is persistent (i.e.
+   has at least one task).
 
 Types
    The ivy scripting types ``XML``, and ``Tree`` are not serializable.
