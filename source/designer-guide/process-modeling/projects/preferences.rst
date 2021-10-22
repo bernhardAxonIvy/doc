@@ -36,29 +36,6 @@ Number of process Elements
    Shows the number of :ref:`Process Elements <process-elements>` in this project.
 
 
-.. _project-preferences-cms:
-
-Content Management System Settings
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The languages in the CMS and the defaults for HTML dialog pages can be
-set here.
-
-|image0|
-
-In the list at the top you can add and remove languages to/from the CMS
-and you can set the default language. Just below you can define whether
-|axon-ivy| should automatically create a value for every language of the
-CMS if you create a new Content Object or not. Do not use this option if
-you do not need content in multiple languages or if you :ref:`export the CMS
-content <cms-export>` to translate it. Use the option if you know
-that you need to translate the vast majority of Content Objects within
-the |ivy-designer|
-
-Furthermore, you have the choice between different HTML page layouts and
-CSS style sheets for use as default values for HTML dialog pages.
-
-
 
 Data Class Settings
 ~~~~~~~~~~~~~~~~~~~
@@ -91,6 +68,3 @@ With these preferences you can adjust the Java settings of the project.
 Optional classpath containers
   Defines optional libraries that can be accessed in your Java or IvyScript
   code.
-
-.. |image0| image:: /_images/ivy-project/preferences-cms.png
-
