@@ -89,13 +89,6 @@ try
 		get-item oldVersionProject | click
 		select oldVersionProject | get-menu Properties | click
 	}
-	with [get-window "Properties for.*"] {
-		get-tree | select "Axon Ivy/Content Management"
-		wait 500
-		resizeWindow 620 440
-		saveWindowContentScreenshot "ivy-project/preferences-cms.png"
-		get-button Cancel | click
-	}
 }-finally{
 	deleteProject oldVersionProject
 }

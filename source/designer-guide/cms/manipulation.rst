@@ -43,14 +43,6 @@ column for the default language(s) of the project(s) in the workspace.
 Click on the menu (|image2|) in the view to configure which columns are
 visible.
 
-.. note::
-
-   The **\*** in the title of a language column indicates that the
-   language is the default CMS language for a project. Because you can
-   have multiple projects in your workspace, it may be that you have
-   multiple default languages and therefore multiple columns with a
-   *\**. You can define the default languages for every project in its
-   :ref:`project-preferences-cms`.
 
 Inline Editing
 ~~~~~~~~~~~~~~
@@ -114,11 +106,6 @@ create folder Content Objects where necessary.
 For text based types you can edit the text directly in the value column.
 For file based types you can import a file, just move your mouse over
 the cell and click on the |image3| icon.
-
-In the last column you can decide whether you want to automatically
-create one value for every CMS language or not. The default comes from
-the :ref:`corresponding project property <project-preferences-cms>`
-and is overwritten if changed.
 
 If you choose to create the Content Objects from file
 (the :guilabel:`Add from file(s)...`) command in the popup menu, then first a
