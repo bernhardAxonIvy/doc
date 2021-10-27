@@ -23,18 +23,11 @@ Service Clients based on AXIS (1+2) to CXF in the Axon Ivy Designer.
 
   .. container:: detail 
 
-    #. Convert project to latest version which will remove all AXIS 1 and AXIS 2 artifacts
-    #. Open the Web Service Client Editor
-    #. Open a Web Service Client which was based on AXIS 1 or AXIS 2
-    #. Change :guilabel:`Library` to :guilabel:`Apache CXF`
-    #. Click on the button :guilabel:`Generate WS classes`
-    #. Repeat step 4, 5 and 6 for all your web service clients
-    #. Validate your project by right-click on the project and :guilabel:`Validate`
+    The Designer comes with a QuickFix that convertes your AXIS2 clients
+    automatically to CXF.
 
-    It is quite possible that the web service calls now work with CXF without
-    further intervention, especially with AXIS 1. With AXIS 2, the data mappings
-    on the inscription masks will most likely still have to be adjusted.
-
+    The detailed steps to migrate from AXIS clients to CXF are outlined here:
+    https://community.axonivy.com/d/199-migrate-from-axis2-webservice-to-cxf
 
 .. _migrate-92-93-project-version:
 
