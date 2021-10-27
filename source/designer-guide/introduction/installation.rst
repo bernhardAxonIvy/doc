@@ -33,11 +33,12 @@ Hardware requirements may vary depending on how many projects you are working on
 
 |ivy-designer| needs Java SE 11 to run. 
 
-Note, that Java SE 11 provided by `AdoptOpenJDK <https://adoptopenjdk.net/>`_ is already included in our Windows and macOS installation.    
+Note, that Java SE 11 provided by `Adoptium <https://adoptium.net/>`_ is already included in our Windows and 
+`AdoptOpenJdk <https://adoptopenjdk.net>`_ in our macOS installation.    
 On Linux we do not include Java SE 11. You may want to use Java SE 11 provided by your operating system or 
-`AdoptOpenJDK <https://adoptopenjdk.net/>`_.
+`Adoptium <https://adoptium.net/>`_.
 
-We test |ivy-designer| with `AdoptOpenJDK <https://adoptopenjdk.net/>`_ and with `OpenJDK <https://openjdk.java.net/>`_.
+We test |ivy-designer| with `Adoptium <https://adoptium.net/>`_ and with `OpenJDK <https://openjdk.java.net/>`_.
 
 .. rubric:: Operating Systems
 

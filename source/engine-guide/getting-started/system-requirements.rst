@@ -42,13 +42,13 @@ Depending on that the hardware minimum requirements changes.
 Software Requirements
 ---------------------
 
-|ivy-engine| needs Java SE 11 to run and is tested with `AdoptOpenJDK
-<https://adoptopenjdk.net/>`_ and with `OpenJDK <https://openjdk.java.net/>`_.
+|ivy-engine| needs Java SE 11 to run and is tested with `Adoptium
+<https://adoptium.net/>`_ and with `OpenJDK <https://openjdk.java.net/>`_.
 
-Note, that Java SE 11 `AdoptOpenJDK <https://adoptopenjdk.net/>`_ is already
+Note, that Java SE 11 `Adoptium <https://adoptium.net/>`_ is already
 included in our Windows installation and Docker container.    
 On Linux we do not include Java SE 11. You may want to use Java SE 11 provided
-by your operating system or install `AdoptOpenJDK <https://adoptopenjdk.net/>`_.
+by your operating system or install `Adoptium <https://adoptium.net/>`_.
 
 
 Operating Systems
