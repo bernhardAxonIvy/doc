@@ -212,6 +212,12 @@ Process Facade
    .. |image1| image:: /_images/overrides/case-scope-1.png
    .. |image2| image:: /_images/overrides/case-scope-2.png
 
+Configuration
+   To use CaseScoped overrides on a productive |ivy-engine|, the JSF template cache must be disabled.
+   This must be done by setting the `javax.faces.PROJECT_STAGE=Development` in the :ref:`web-xml`.
+
+   .. literalinclude:: includes/stageDev-web.xml
+      :language: xml
 
 
 
