@@ -95,7 +95,12 @@ wanted component. So maybe you want to provide a third webshop
 which builds upon the *Acme web shop*. In this case the overriding
 project would be the most specialized web shop in the dependency tree.
 
+
+.. _strict_overriding_config:
+
 Configuration
+^^^^^^^^^^^^^^
+
    To strictly set the overriding project you have to configure it in
    the :ref:`app-yaml`.
 
