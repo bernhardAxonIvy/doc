@@ -99,7 +99,7 @@ project would be the most specialized web shop in the dependency tree.
 .. _strict_overriding_config:
 
 Configuration
-^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~
 
    To strictly set the overriding project you have to configure it in
    the :ref:`app-yaml`.
@@ -119,7 +119,7 @@ Configuration
 .. _case_scope:
 
 Case Scope (deprecated)
-----------
+------------------------------
 
 In the case you want to be able to execute your process with either the
 overridden components or without considering any overrides, you can
