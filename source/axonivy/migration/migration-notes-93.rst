@@ -242,3 +242,14 @@ with a lot of services. So we switched the default to :code:`BUFFERED`
 from now on. If you need chuncked processing you can change that
 in your rest client config by setting the property :code:`jersey.config.client.request.entity.processing`
 to :code:`CHUNKED`.
+
+
+Macro expansion support has been removed for RTF documents
+**********************************************************
+
+|tag-project-changed| 
+
+RTF is not a common format anymore. We have supported macro
+expansion in RTF documents from CMS. This is no longer working.
+To generate documents with placeholders use other well maintend
+components like the DocFactory.

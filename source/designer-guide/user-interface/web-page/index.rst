@@ -22,7 +22,7 @@ process reaches such an element, then the defined content is presented
 to the user.
 
 You are free to use HTML-based content (plain HTML, JSP) or other
-resources (such as images, text files, RTF and many more) as long as
+resources (such as images, text files and many more) as long as
 they can be displayed in a web browser. In addition, you are free to use
 resources from the :ref:`cms` or from the
 :ref:`web content folder <html-content-in-the-web-content-folder>` of the project.
@@ -140,7 +140,7 @@ pages within this scheme, it is recommended to keep your pages
 separated. All content objects that can be downloaded can be used,
 especially the :ref:`cms-content-object-types` and
 :ref:`JSP <cms-content-object-types>` types, but also some
-:ref:`Document <cms-content-object-types>` (e.g. RTF, HTML, PDF or
+:ref:`Document <cms-content-object-types>` (e.g. HTML, PDF or
 Plain Text) and other types are working.
 
 |image3|
