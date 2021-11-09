@@ -1,7 +1,7 @@
 .. _overrides:
 
 Overrides
-=========
+==========
 
 Applications are often implemented as a general solution for a problem
 and consist of multiple (dependent) projects. For many installations or
@@ -62,8 +62,8 @@ inside the *Acme web shop* project.
 
 There are two ways to use the *Acme web shop* project as an overriding
 project. You can either define a :ref:`strict_overriding` in
-the generic *Web shop* application or you use the :ref:`case_scope`
-which allows multi-tenancy. In both cases make sure your overriding project
+the generic *Web shop* application. 
+To start with however, make sure your overriding project
 is dependent on the base project and that each override is defined
 in your overriding project as described in :ref:`overrides-editor`.
 
@@ -95,7 +95,12 @@ wanted component. So maybe you want to provide a third webshop
 which builds upon the *Acme web shop*. In this case the overriding
 project would be the most specialized web shop in the dependency tree.
 
+
+.. _strict_overriding_config:
+
 Configuration
+~~~~~~~~~~~~~~
+
    To strictly set the overriding project you have to configure it in
    the :ref:`app-yaml`.
 
@@ -113,12 +118,20 @@ Configuration
 
 .. _case_scope:
 
-Case Scope
-----------
+Case Scope (deprecated)
+------------------------------
 
 In the case you want to be able to execute your process with either the
 overridden components or without considering any overrides, you can
 use the case scope to your advantage.
+
+  .. warning::
+
+    Case Scoped project overrides have been deprecated 
+    in favour of :ref:`strict_overriding`.
+    If your application uses Case Scoped overriding, please migrate by
+    defining the `OverrideProject` within your app.yaml.
+
 
 Imagine you have two types of customers, private ones and resellers.
 When ordering from your *Web shop* you want to distinguish between those
@@ -212,13 +225,6 @@ Process Facade
    .. |image1| image:: /_images/overrides/case-scope-1.png
    .. |image2| image:: /_images/overrides/case-scope-2.png
 
-Configuration
-   To use CaseScoped overrides on a productive |ivy-engine|, the JSF template cache must be disabled.
-   This must be done by setting the `javax.faces.PROJECT_STAGE=Development` in the :ref:`web-xml`.
-
-   .. literalinclude:: includes/stageDev-web.xml
-      :language: xml
-
 
 
 Overrides Tool Reference
@@ -234,11 +240,8 @@ overrides for a specific project. The overrides are listed in 4
 different sections: Sub Processes, Html Dialogs, Content Objects and
 Configurations.
 
-When working with :ref:`strict_overriding` you can define the overriding
-project at the top of the override editor. If you want to use the
-:ref:`case_scope` you have to leave this entry empty. Creating an override
-for an Html Dialog or Sub Process with the :ref:`override-new-wizard`
-will offer you to set the appropriate project.
+At the top of the editor, you can define the :ref:`strict_overriding` project.
+With this, you may simulate the overriding experience of the application within the Designer.
 
 Html Dialog and Sub Process overrides require - for technical reasons - the registration
 of a mapping (this is done automatically by the New Override Wizard)

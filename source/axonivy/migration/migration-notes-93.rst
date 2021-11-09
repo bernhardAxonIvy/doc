@@ -190,6 +190,33 @@ Now that most of the app configuration is defined in yaml files, the
         cleanup: DISABLED              # [DISABLED], REMOVE_UNUSED, REMOVE_ALL
 
 
+
+.. _migrate-92-93-caseScope-deprecated:
+
+Overriding
+******************
+
+|tag-ops-changed| |tag-project-changed|
+
+We deprecated :ref:`case_scope` project overrides in favour of :ref:`strict_overriding`.
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Details**
+
+  .. container:: detail 
+
+    If your application uses Overrides. You should migrate to :ref:`strict_overriding`.
+    Define the customization project as in your app.yaml :ref:`strict_overriding_config`.
+
+    .. code-block:: yaml
+    
+      OverrideProject: com.acme.solution:MyCustomerAdaption
+
+
+
 Cluster Name
 ************
 
