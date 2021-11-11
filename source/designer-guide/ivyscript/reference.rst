@@ -350,6 +350,11 @@ the objects are described in the :public-api:`Public API </>`):
 -  ``log`` - a :public-api:`Logger </ch/ivyteam/log/Logger.html>` object. You can define log outputs here that
    will be collected for each run. You can see these log entries in the
    :ref:`Runtime Log View <simulate-process-models-debugger-runtimelog-view>`.
+   
+-  ``security`` - a :public-api:`ISecurityContext </ch/ivyteam/ivy/security/ISecurityContext.html>` object giving access to all 
+   security objects (all users, roles, sessions) for the application under execution. 
+   Can be used to build a whole user and role administration UI application. 
+   There is a security context for each application and vice versa.   
 
 -  ``extensions`` - a :public-api:`IExtensions </ch/ivyteam/ivy/extension/IExtensions.html>` instance allowing access to
    |axon-ivy| ``extensions``
