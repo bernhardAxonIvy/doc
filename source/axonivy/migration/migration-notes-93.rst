@@ -271,6 +271,18 @@ in your rest client config by setting the property :code:`jersey.config.client.r
 to :code:`CHUNKED`.
 
 
+CMS Page support has been removed
+*********************************
+
+|tag-project-changed| 
+
+CMS pages are no longer supported. Both in Axon Ivy Designer and
+on Axon Ivy Engine. You will need to manually reimplement them
+to an alternative. For example as :ref:`HTML Dialog (JSF) <html-dialogs>` or
+as :ref:`static JSF page <static-jsf-pages>`. We still support :ref:`plain JSP pages <user-interface-web-page>`
+which would be a non-future alternative.
+
+
 Macro expansion support has been removed for RTF documents
 **********************************************************
 
