@@ -133,17 +133,12 @@ The page that is displayed is either stored in the :ref:`cms` or
 in the :ref:`web content folder <html-content-in-the-web-content-folder>`
 of the project.
 
-By default, CMS pages are stored in the ``ProcessPages`` hierarchy in a
-further sub folder named after the containing process (e.g.
-``ProcessPages/Main/MyPage``). Although it is not required to store the
-pages within this scheme, it is recommended to keep your pages
-separated. All content objects that can be downloaded can be used,
+All content objects that can be downloaded can be used,
 especially the :ref:`cms-content-object-types` and
 :ref:`JSP <cms-content-object-types>` types, but also some
 :ref:`Document <cms-content-object-types>` (e.g. HTML, PDF or
 Plain Text) and other types are working.
 
-|image3|
 
 Pages in the web content folder can be stored in any hierarchy below the
 project's web content folder (it is not allowed to use or reference
@@ -162,10 +157,9 @@ of the user.
 
   html-content-in-the-cms
   html-content-in-the-web-content-folder
-  html-best-practice
 
 
 .. |image0| image:: /_images/user-interface-html/create-new-page.png
 .. |image1| image:: /_images/user-interface-html/create-new-page-web-content.png
 .. |image2| image:: /_images/user-interface-html/edit-existing-page.png
-.. |image3| image:: /_images/user-interface-html/page-in-cms.png
+

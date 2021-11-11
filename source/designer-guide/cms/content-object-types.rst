@@ -45,63 +45,11 @@ manipulation of the values.
    |                 |                 | types are                                                 |                                                                                            |
    |                 |                 | supported.                                                |                                                                                            |
    +-----------------+-----------------+-----------------------------------------------------------+--------------------------------------------------------------------------------------------+
-   | |image19|       | Source          | Scripts of any                                            | :ref:`cms-source-editor`                                                                   |
-   |                 |                 | form, e.g.                                                |                                                                                            |
-   |                 |                 | *javascript* or                                           |                                                                                            |
-   |                 |                 | *jsp snippets*.                                           |                                                                                            |
-   +-----------------+-----------------+-----------------------------------------------------------+--------------------------------------------------------------------------------------------+
-   | |image20|       | Page            | Container                                                 | :ref:`cms-html-page-editor`                                                                |
-   |                 |                 | object for                                                |                                                                                            |
-   |                 |                 | *HTML Page*                                               |                                                                                            |
-   |                 |                 | content. This                                             |                                                                                            |
-   |                 |                 | is used in :ref:`process-element-web-page`                |                                                                                            |
-   |                 |                 | process elements.                                         |                                                                                            |
-   +-----------------+-----------------+-----------------------------------------------------------+--------------------------------------------------------------------------------------------+
-   | |image21|       | CSS             | Cascaded Style                                            | :ref:`cms-css-editor`                                                                      |
-   |                 |                 | Sheet                                                     |                                                                                            |
-   |                 |                 | definitions                                               |                                                                                            |
-   |                 |                 |                                                           |                                                                                            |
-   +-----------------+-----------------+-----------------------------------------------------------+--------------------------------------------------------------------------------------------+
-   | |image22|       | Layout          | JSP HTML layout                                           | :ref:`cms-layout-editor`                                                                   |
-   |                 |                 | with included                                             |                                                                                            |
-   |                 |                 | Content                                                   |                                                                                            |
-   |                 |                 | Objects.                                                  |                                                                                            |
-   |                 |                 | Typically                                                 |                                                                                            |
-   |                 |                 | created and                                               |                                                                                            |
-   |                 |                 | used as part of                                           |                                                                                            |
-   |                 |                 | a *Page*                                                  |                                                                                            |
-   |                 |                 | object.                                                   |                                                                                            |
-   +-----------------+-----------------+-----------------------------------------------------------+--------------------------------------------------------------------------------------------+
-   | |image15|       | Panel           | Panels are the                                            | :ref:`cms-html-panel-editor`                                                               |
-   |                 |                 | content parts                                             |                                                                                            |
-   |                 |                 | for *Page*                                                |                                                                                            |
-   |                 |                 | objects and are                                           |                                                                                            |
-   |                 |                 | defined with                                              |                                                                                            |
-   |                 |                 | *Layout*                                                  |                                                                                            |
-   |                 |                 | objects.                                                  |                                                                                            |
-   +-----------------+-----------------+-----------------------------------------------------------+--------------------------------------------------------------------------------------------+
    | |image24|       | JSP             | Alternative to                                            | :ref:`cms-jsp-editor`                                                                      |
    |                 |                 | the *Page*                                                |                                                                                            |
    |                 |                 | object. Uses                                              |                                                                                            |
    |                 |                 | pure JSP for                                              |                                                                                            |
    |                 |                 | layouting.                                                |                                                                                            |
-   +-----------------+-----------------+-----------------------------------------------------------+--------------------------------------------------------------------------------------------+
-   | |image25|       | Table           | Allows to place                                           | :ref:`cms-html-table-editor`                                                               |
-   |                 |                 | content and                                               |                                                                                            |
-   |                 |                 | Content Objects                                           |                                                                                            |
-   |                 |                 | into a HTML                                               |                                                                                            |
-   |                 |                 | table.                                                    |                                                                                            |
-   +-----------------+-----------------+-----------------------------------------------------------+--------------------------------------------------------------------------------------------+
-   | |image26|       | Link            | Generates a                                               | :ref:`cms-html-link-editor`                                                                |
-   |                 |                 | HTML link or                                              |                                                                                            |
-   |                 |                 | form.                                                     |                                                                                            |
-   |                 |                 |                                                           |                                                                                            |
-   +-----------------+-----------------+-----------------------------------------------------------+--------------------------------------------------------------------------------------------+
-   | |image25|       | Result Table    | Generates                                                 | :ref:`cms-result-table-editor`                                                             |
-   |                 |                 | dynamic tabular                                           |                                                                                            |
-   |                 |                 | HTML content                                              |                                                                                            |
-   |                 |                 | from process                                              |                                                                                            |
-   |                 |                 | data.                                                     |                                                                                            |   
    +-----------------+-----------------+-----------------------------------------------------------+--------------------------------------------------------------------------------------------+
    | |image29|       | Document        | Any document                                              | :ref:`cms-document-editor`                                                                 |
    |                 |                 | (the most                                                 |                                                                                            |
@@ -113,16 +61,9 @@ manipulation of the values.
    +-----------------+-----------------+-----------------------------------------------------------+--------------------------------------------------------------------------------------------+
 
 
-
 .. |image15| image:: /_images/cms/icon-folder.png
 .. |image16| image:: /_images/cms/icon-string.png
 .. |image17| image:: /_images/cms/icon-text.png
 .. |image18| image:: /_images/cms/icon-image.png
-.. |image19| image:: /_images/cms/icon-source.png
-.. |image20| image:: /_images/cms/icon-page.png
-.. |image21| image:: /_images/cms/icon-css.png
-.. |image22| image:: /_images/cms/icon-layout.png
 .. |image24| image:: /_images/cms/icon-jsp.png
-.. |image25| image:: /_images/cms/icon-result-table.png
-.. |image26| image:: /_images/cms/icon-link.png
 .. |image29| image:: /_images/cms/icon-document.png
