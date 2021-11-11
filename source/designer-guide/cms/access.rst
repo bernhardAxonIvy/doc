@@ -25,9 +25,7 @@ the CMS:
    ``ch.ivyteam.ivy.environment.Ivy.cms()``.
 
 Depending on the context, |axon-ivy| will return the content (link) in the
-correct form. If you use a document Content Object in the 
-:ref:`html-panel-editor`, then it will be rendered
-as a link to the document in the HTML page.
+correct form.
 
 
 .. _cms-access-with-browser:

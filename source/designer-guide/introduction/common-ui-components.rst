@@ -194,13 +194,6 @@ explains their function.
    |                                   | configure html tags or attributes                         |
    |                                   | of the associated UI component.                           |
    +-----------------------------------+-----------------------------------------------------------+
-   | |image24|                         | Opens a :ref:`link-browser` that shows                    |
-   |                                   | available link types. Use this                            |
-   |                                   | Smart Button if you want to                               |
-   |                                   | insert HTML references (e.g.                              |
-   |                                   | ``<a href="...">``) or URIs to                            |
-   |                                   | certain artifacts.                                        |
-   +-----------------------------------+-----------------------------------------------------------+
    | |image25|                         | Opens a Color Browser that shows                          |
    |                                   | available colors. Use this Smart                          |
    |                                   | Button if you want to insert a                            |
@@ -230,7 +223,6 @@ explains their function.
 .. |image21| image:: /_images/designer/smart-button-operator.png
 .. |image22| image:: /_images/designer/smart-button-ws-config.png
 .. |image23| image:: /_images/designer/smart-button-html.png
-.. |image24| image:: /_images/designer/smart-button-link.png
 .. |image25| image:: /_images/designer/smart-button-color.png
 .. |image26| image:: /_images/designer/smart-button-font.png
 .. |image27| image:: /_images/designer/smart-button-cancel.png

@@ -43,13 +43,7 @@ manipulation of the values.
    |                 |                 | *PNG Image*,                                              |                                                                                            |
    |                 |                 | *JPG Image*                                               |                                                                                            |
    |                 |                 | types are                                                 |                                                                                            |
-   |                 |                 | supported.                                                |                                                                                            |
-   +-----------------+-----------------+-----------------------------------------------------------+--------------------------------------------------------------------------------------------+
-   | |image24|       | JSP             | Alternative to                                            | :ref:`cms-jsp-editor`                                                                      |
-   |                 |                 | the *Page*                                                |                                                                                            |
-   |                 |                 | object. Uses                                              |                                                                                            |
-   |                 |                 | pure JSP for                                              |                                                                                            |
-   |                 |                 | layouting.                                                |                                                                                            |
+   |                 |                 | supported.                                                |                                                                                            |   
    +-----------------+-----------------+-----------------------------------------------------------+--------------------------------------------------------------------------------------------+
    | |image29|       | Document        | Any document                                              | :ref:`cms-document-editor`                                                                 |
    |                 |                 | (the most                                                 |                                                                                            |
@@ -65,5 +59,4 @@ manipulation of the values.
 .. |image16| image:: /_images/cms/icon-string.png
 .. |image17| image:: /_images/cms/icon-text.png
 .. |image18| image:: /_images/cms/icon-image.png
-.. |image24| image:: /_images/cms/icon-jsp.png
 .. |image29| image:: /_images/cms/icon-document.png
