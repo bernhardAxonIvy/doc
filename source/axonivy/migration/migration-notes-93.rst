@@ -292,3 +292,12 @@ RTF is not a common format anymore. We have supported macro
 expansion in RTF documents from CMS. This is no longer working.
 To generate documents with placeholders use other well maintend
 components like the DocFactory.
+
+
+Moving JSP pages from cms to webContent
+***************************************
+
+|tag-project-changed| 
+
+We only support plain jsp pages in the webContent folder.
+The migration is done in the project conversion automatically.

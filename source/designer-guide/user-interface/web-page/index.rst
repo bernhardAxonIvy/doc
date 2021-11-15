@@ -3,11 +3,6 @@
 Web Page
 ========
 
-This chapter shows how Web Pages and -content are used within |axon-ivy|.
-
-Using Web Pages (web content) in a Business Process
----------------------------------------------------
-
 As an alternative to User Dialogs, you can display Web Pages or other
 web resources to the user of an |axon-ivy| process application in a
 browser to let him or her interact with the executed process.
@@ -23,9 +18,7 @@ to the user.
 
 You are free to use HTML-based content (plain HTML, JSP) or other
 resources (such as images, text files and many more) as long as
-they can be displayed in a web browser. In addition, you are free to use
-resources from the :ref:`cms` or from the
-:ref:`web content folder <html-content-in-the-web-content-folder>` of the project.
+they can be displayed in a web browser.
 
 .. warning::
 
@@ -55,7 +48,7 @@ resources from the :ref:`cms` or from the
 
 .. _user-interface-web-page-creating:
 
-Creating and Editing Web Pages from within the Process
+Creating and editing Web Pages from within the Process
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A web page can be created or accessed directly from the process. Open
@@ -73,13 +66,9 @@ No page has been specified yet
 You can define the Web Page that should be displayed by using one of the
 following three methods:
 
-1. Enter the path to an existing page by hand. Specify either a CMS path
-   (e.g. ``/HtmlPages/myPage``) that points to a content object or give
-   a path to a web content file (e.g. ``commonPages/infoPage.html``)
-   instead.
-
-   Note that content object paths do not have a file extension, but web
-   content paths do. Web content paths are always specified relative to
+1. Enter the path to an existing page by hand. Specify
+   a path to a web content file (e.g. ``commonPages/infoPage.html``).
+   Web content paths are always specified relative to
    the ``webContent`` folder of the current project.
 
    If you enter a path to a non-existing web content resource, then
@@ -87,41 +76,66 @@ following three methods:
    specified location in the ``webContent`` folder and open Eclipse's
    default editor on it.
 
-   If you enter the name of a non-existing content page, then pressing
-   the *Create* button will have the same effect as described under (3).
+2. Select an existing web content file by using the *file smart button*.
 
-2. Select an existing content object by using the *content smart button*
-   or an existing web content file by using the *file smart button*.
-
-   You can select any content object and any file, but a "wrong type"
+   You can select any file, but a "wrong type"
    error will be displayed if the selected content object is not
    suitable as a page. Likewise a "invalid web content path" error will
    be shown, if you select a file outside the project's web content
    folder.
 
-3. Click *Create* to generate an entirely new page in the content
-   management system.
-
+3. Click *Create* to generate an entirely new page. 
    A dialog will appear that allows you to enter the name and type
    (normal or JSP) of the new page. The created page will be associated
    with the current element and it will be placed appropriately inside
-   the CMS *ProcessPages/<ProcessName>* folder (see :ref:`below <web-page-store>`).
+   the :ref:`web page store <web-page-store>`.
+
 
 A page is already specified
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 |image2|
 
-Click on *Edit* to open the specified page either in the content editor
-(if it is a content object) or the system's default editor (if it is a
-web content file) so that you can edit its contents. You can change the
+Click on *Edit* to open the specified page with the system's default editor
+ so that you can edit its contents. You can change the
 default editor for any file type by opening *Window/Preferences* and
 navigating there to */General/Editors/File Associations*.
 
-Alternatively you can use the *content smart button* or the *file smart
+Alternatively you can use the *file smart
 button* to select an entirely different page to be displayed.
 
 You can also edit the specified path by hand if you like.
+
+
+JSP Page
+^^^^^^^^^^
+
+Inside JSP page you can make use of the
+:ref:`Environment Variable ivy <ivyscript-reference-environmentvariable>`.
+It is imported and declared as follows:
+
+::
+
+       <%@ page import="ch.ivyteam.ivy.page.engine.jsp.IvyJSP"%>
+       <jsp:useBean id="ivy" class="ch.ivyteam.ivy.page.engine.jsp.IvyJSP" scope="session"/>
+
+You can also use the *in* object (i.e. process data) of the process
+where the associated process element is located. You can access the
+process data by using the ``ivy.html.get()`` method, e.g.:
+
+::
+
+       <%=ivy.cms.co("myUri")"%>
+       <%=ivy.html.get("in.myString")%>
+
+Furthermore you can insert references to content from the :ref:`web content
+directory <html-content-in-the-web-content-folder>` into your JSP content objects, e.g.:
+
+::
+
+       <jsp:include page="/jspToInclude/include.jsp" />
+       <img src="images/myImage.jpg" >
+
 
 
 .. _web-page-store:
@@ -129,16 +143,9 @@ You can also edit the specified path by hand if you like.
 Where Web Pages are stored
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The page that is displayed is either stored in the :ref:`cms` or
-in the :ref:`web content folder <html-content-in-the-web-content-folder>`
+The page that is displayed is stored in the 
+:ref:`web content folder <html-content-in-the-web-content-folder>`
 of the project.
-
-All content objects that can be downloaded can be used,
-especially the :ref:`cms-content-object-types` and
-:ref:`JSP <cms-content-object-types>` types, but also some
-:ref:`Document <cms-content-object-types>` (e.g. HTML, PDF or
-Plain Text) and other types are working.
-
 
 Pages in the web content folder can be stored in any hierarchy below the
 project's web content folder (it is not allowed to use or reference
@@ -152,14 +159,15 @@ of the user.
    party plugins and/or applications depending on the configuration of
    the client. Thus this behavior cannot be controlled by Ivy.
 
-.. toctree::
-  :maxdepth: 1
-
-  html-content-in-the-cms
-  html-content-in-the-web-content-folder
-
 
 .. |image0| image:: /_images/user-interface-html/create-new-page.png
 .. |image1| image:: /_images/user-interface-html/create-new-page-web-content.png
 .. |image2| image:: /_images/user-interface-html/edit-existing-page.png
 
+
+.. note::
+
+   Web Pages can be accessed without starting a process. This allows you
+   to create for example a translated start page with some process start
+   links. See also chapter :ref:`Access CMS Content with a
+   Browser <cms-access-with-browser>`.
