@@ -97,7 +97,7 @@ A page is already specified
 |image2|
 
 Click on *Edit* to open the specified page with the system's default editor
- so that you can edit its contents. You can change the
+so that you can edit its contents. You can change the
 default editor for any file type by opening *Window/Preferences* and
 navigating there to */General/Editors/File Associations*.
 
@@ -128,8 +128,8 @@ process data by using the ``ivy.html.get()`` method, e.g.:
        <%=ivy.cms.co("myUri")"%>
        <%=ivy.html.get("in.myString")%>
 
-Furthermore you can insert references to content from the :ref:`web content
-directory <html-content-in-the-web-content-folder>` into your JSP content objects, e.g.:
+Furthermore you can insert references to content from the :file:`webContent` directory
+into your JSP content objects, e.g.:
 
 ::
 
@@ -143,8 +143,7 @@ directory <html-content-in-the-web-content-folder>` into your JSP content object
 Where Web Pages are stored
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The page that is displayed is stored in the 
-:ref:`web content folder <html-content-in-the-web-content-folder>`
+The page that is displayed is stored in the :file:`webContent` folder
 of the project.
 
 Pages in the web content folder can be stored in any hierarchy below the

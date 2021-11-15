@@ -17,8 +17,6 @@ Web Content Folder
 
 Stores static web files (CSS, JavaScript, Images, JSF-Templates) used in
 HTML User Dialogs.
-More information can be found in the chapter 
-:ref:`html-content-in-the-web-content-folder`.
 
 Filesystem
 ----------

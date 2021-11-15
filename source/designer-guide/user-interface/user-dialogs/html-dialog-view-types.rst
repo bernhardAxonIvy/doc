@@ -44,7 +44,7 @@ Axon Ivy is not limited to the usage of the built-in Html Dialog
 Layouts. Custom layouts can be added with small effort.
 
 In order to add a custom layout - which is a normal .xhtml file - it
-needs to be stored into the folder :ref:`web content folder <html-content-in-the-web-content-folder>`
+needs to be stored into the folder :file:`webContent`
 of the project. In doing so, the custom layout can now be referenced as
 a layout inside an Html Dialog.
 
