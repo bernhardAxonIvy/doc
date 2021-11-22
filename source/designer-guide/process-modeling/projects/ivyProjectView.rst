@@ -16,8 +16,25 @@ overview of the project and to start the specific editors for all
 
 Some of the entries are categorized such as User Dialogs and processes,
 but in general double-clicking on the leafs opens the :ref:`corresponding editor <designer-reference-editors>`.
-Furthermore a popup menu is provided
-with the most important interactions:
+
+
+Filters
+~~~~~~~~~~~~~~~~~~~~
+
+Contents within the |axon-ivy| Project View can be reduced or enriched with additional context information.
+The menu button (with the three dots) allows you to adjust project contents filters according to your needs.
+
+The most effective way to adjust project contents is to select your role from the menu and navigating to `Role specific filters`. 
+This will switch multiple filters at once according to your preferred role. 
+
+Even so, you can customize the contents even further by clicking on menu (three dots) and navigating to `Filters and Customization`.
+
+
+
+Context menu actions
+~~~~~~~~~~~~~~~~~~~~
+
+A popup menu is provided within the tree, with the most important interactions:
 
 -  *New...* - Opens a wizard for creating new |axon-ivy| entities such as
    User Dialogs or processes.
