@@ -22,7 +22,7 @@ Filters
 ~~~~~~~~~~~~~~~~~~~~
 
 Contents within the |axon-ivy| Project View can be reduced or enriched with additional context information.
-The menu button (with the three dots) allows you to adjust project contents filters according to your needs.
+The menu button (with the three dots) allows you to adjust project content filters according to your needs.
 
 The most effective way to adjust project contents is to select your role from the menu and navigating to `Role specific filters`. 
 This will switch multiple filters at once according to your preferred role. 
