@@ -27,6 +27,8 @@ The menu button (with the three dots) allows you to adjust project contents filt
 The most effective way to adjust project contents is to select your role from the menu and navigating to `Role specific filters`. 
 This will switch multiple filters at once according to your preferred role. 
 
+.. figure:: ../../../_images/project-navigator/designerRoleFilters.png
+
 Even so, you can customize the contents even further by clicking on menu (three dots) and navigating to `Filters and Customization`.
 
 
