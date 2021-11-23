@@ -8,7 +8,7 @@ one element inscription mask.
 .. _process-element-tab-name:
 
 Name Tab
---------
+---------
 
 This tab is included in the inscription mask of all process elements and
 contains the name and a description of the element.
@@ -47,19 +47,27 @@ Means/Documents
       In generated HTML reports, a link is inserted for these document
       references.
 
+
+.. _process-element-tab-name-tags:
+
 Tags
+~~~~~~
+
    Contains a list of keywords associated with the process element. These tags
    help describe elements and allow them to be found again by searching. Any
    word can be added as tag name.
 
-   There are two tags with special meanings for some start elements,
-   ``DEPRECATED`` and ``CONNECTOR``:
+   There are tags with special meanings for some start elements:
 
-   -  ``DEPRECATED``: This tag marks a Sub Process Start, a Request Start or a
+   - ``DEPRECATED``: This tag marks a Sub Process Start, a Request Start or a
       WebService Start element as deprecated. Call elements using a deprecated
       element will be marked with a deprecation validation warning.
-   -  ``CONNECTOR``: Setting this tag allows a Sub Process Start element to be
+   - ``CONNECTOR``: Setting this tag allows a Sub Process Start element to be
       displayed in the Connector Dialog. See :ref:`process-element-connector-activity`
+   - ``DEMO``: Marks a Request Start of a process as demonstration process.
+      Such demo processes will be automatically opened, while the project that contains it 
+      is being imported to the |axon-ivy| Designer. 
+      We recommend to use it for demo processes, which are consumed from the |axon-ivy| Market.
 
 
 .. _process-element-tab-output:
