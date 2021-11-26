@@ -1,15 +1,5 @@
 
 digraph overview {
-  node [
-    shape=box, 
-    style=filled,
-    margin=0 width=2 height=0.8
-    fontcolor="white",    
-    color="#007095",
-    fixedsize=true,
-    fontsize=18
-  ];
-
   browser [ label="Browser", pos = "0,2.5!", width=1];
 
   loadbalancer [ label="Load Balancer",pos = "2.25,2.5!" width="1.5"];
@@ -22,9 +12,9 @@ digraph overview {
   systemdb [ label="System\nDatabase", pos="8,3.2!" width="1.5" height="0.8"]
   elasticsearch [ label="Elasticsearch", pos="8,1.4!" width="1.5" height="0.8"]
 
-  browser -> loadbalancer [ label="HTTPS"];
-  loadbalancer -> cluster [ label="HTTP\nHTTPS" ];
+  browser -> loadbalancer [label="HTTPS" fontsize=11];
+  loadbalancer -> cluster [label="HTTP\nHTTPS" fontsize=11];
   
-  cluster -> systemdb [ label="JDBC" ];
-  cluster -> elasticsearch [ label="HTTP\nHTTPS" ];
+  cluster -> systemdb [label="JDBC" fontsize=11];
+  cluster -> elasticsearch [label="HTTP\nHTTPS" fontsize=11];
 }

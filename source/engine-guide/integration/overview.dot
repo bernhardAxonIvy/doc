@@ -1,15 +1,5 @@
 
 digraph overview {
-  node [
-    shape=box, 
-    style=filled,
-    margin=0 width=2 height=0.8
-    fontcolor="white",    
-    color="#007095",
-    fixedsize=true,
-    fontsize=18
-  ];
-
   browser [ label="Browser", pos = "0,2.5!", width=1];
 
   frontendServers [ label="Reverse Proxy",pos = "2.25,2.5!" width=1.8 height=3.1 style="dotted" fontcolor="black" labelloc="t"];
@@ -25,13 +15,13 @@ digraph overview {
   activeDirectory [ label="Active\nDirectory", width="1.1" pos="6,0.6!"];
 
   systemdb [ label="System Database", pos="8,2.5!" width=1.7 height=3.5 style="dotted" fontcolor="black" labelloc="t"]
-  postgres [ label="PostgreSQL", pos="8,3.5!" width=1 height=0.5 fontsize=15]
+  postgres [ label="PostgreSQL", pos="8,3.5!" width=1 height=0.5]
   mysql [ label="MySQL", pos="8,2.9!" width=1 height=0.5]
   mariadb [ label="MariaDB", pos="8,2.3!" width=1 height=0.5]
   mssql [ label="Sql Server", pos="8,1.7!" width=1 height=0.5]
   oracle [ label="Oracle", pos="8,1.1!" width=1 height=0.5]
 
-  elasticsearch [ label="External\n Elasticsearch\n (optional)", pos="5.4,4.25!" width=1.5 fontsize=15]
+  elasticsearch [ label="External\n Elasticsearch\n (optional)", pos="5.4,4.25!" width=1.5]
 
   browser -> frontendServers [ label="HTTPS"];
   frontendServers -> engine [ label="HTTP\nHTTPS" ];
