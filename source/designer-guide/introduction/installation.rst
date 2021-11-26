@@ -44,6 +44,6 @@ We test |ivy-designer| with `Adoptium <https://adoptium.net/>`_ and with `OpenJD
 
 :Windows: Windows 10 x64
 
-:Linux: All Debian based Linux x64 with GTK 3 (tested on Ubuntu 18.04)
+:Linux: Debian based Linux x64 with GTK 3 and X.org window system (tested on Ubuntu 20.04)
 
 :macOS: macOS Big Sur x64 (tested on macOS Big Sur 11.2.3)
