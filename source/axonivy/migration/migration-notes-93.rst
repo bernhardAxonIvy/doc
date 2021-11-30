@@ -301,3 +301,31 @@ Moving JSP pages from cms to webContent
 
 We only support plain jsp pages in the webContent folder.
 The migration is done in the project conversion automatically.
+
+
+Non-public API Email
+********************
+
+|tag-project-changed| 
+
+If you have used some non-public emai classes
+like ``EmailSetupConfiguration``, ``EmailSetupProviderUtil``
+or ``SimpleMailSender`` then you need to touch your project,
+because they no longer exists. We are currently building a public API
+for mail mail. It is already available but non offical public yet:
+
+
+.. code-block:: java
+
+  import ch.ivyteam.ivy.mail.MailClient:
+  import ch.ivyteam.ivy.mail.MailMessage;
+
+  try (var client = MailClient.newMailClient()) {
+    var message = MailMessage.create()
+      .to("my.good.old.friend@neighborhood.com")
+      .subject("Beer!")
+      .textContent("Do you feel like having a beer on Friday?")
+      .toMailMessage();
+    client.send(message);        
+  }
+
