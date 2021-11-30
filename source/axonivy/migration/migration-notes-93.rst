@@ -308,11 +308,11 @@ Non-public API Email
 
 |tag-project-changed| 
 
-If you have used some non-public emai classes
+If you have used some non-public email classes
 like ``EmailSetupConfiguration``, ``EmailSetupProviderUtil``
 or ``SimpleMailSender`` then you need to touch your project,
-because they no longer exists. We are currently building a public API
-for mail mail. It is already available but non offical public yet:
+because they no longer exist. We are currently building a public API
+for mail. It is already available but not officially public yet:
 
 
 .. code-block:: java
