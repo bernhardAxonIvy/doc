@@ -4,31 +4,6 @@ Migrating from 9.2 to 9.3
 =========================
 
 
-Drop AXIS Technology for Web Service Client
-*******************************************
-
-|tag-project-changed|
-
-With Axon Ivy 7.1 we have introduced CXF Web Service Client as a super fast,
-secure and future driven technology to call SOAP Web Services. AXIS is
-making more and more trouble and to keep the quality of the Axon Ivy Platform
-on a high level we need to cut AXIS off. You will need now to convert all Web
-Service Clients based on AXIS (1+2) to CXF in the Axon Ivy Designer.
-
-.. container:: admonition note toggle
-
-  .. container:: admonition-title header
-
-     **Details**
-
-  .. container:: detail 
-
-    The Designer comes with a QuickFix that convertes your AXIS2 clients
-    automatically to CXF.
-
-    The detailed steps to migrate from AXIS clients to CXF are outlined here:
-    https://community.axonivy.com/d/199-migrate-from-axis2-webservice-to-cxf
-
 .. _migrate-92-93-project-version:
 
 New project version
@@ -43,7 +18,7 @@ Due to the migration of the
 :ref:`Environments <migrate-92-93-envs>`,
 :ref:`Formats <migrate-92-93-formats>`
 and projects to Eclipse Maven projects, we
-introduced a new project version :code:`93600`. If you want to deploy a project
+introduced a new project version :code:`93900`. If you want to deploy a project
 to an |ivy-engine| 9.3, this must be your project version. If you
 have a running project, it will still be able to run, but
 :ref:`we recommend migrating your projects <migration-project>`
@@ -57,11 +32,11 @@ Defining Databases
 
 |tag-ops-changed| |tag-project-changed|
 
-Databases are stored in new locations. During development, the project's
+Configurations of Databases are stored in new locations. During development, the project's
 Databases are now stored in the :ref:`databases.yaml <database-configuration>` file. On the
-|ivy-engine|, Databases have been moved from the System Database to the
-application's :ref:`app-yaml` file. Furthermore, database and project migrations do
-the conversion from the old to the new format for you automatically.
+|ivy-engine|, the configurations of Databases have been moved from the System Database to the
+application's :ref:`app-yaml` file. Furthermore, the System Database and project migration 
+converts from the old to the new format automatically.
 
 .. container:: admonition note toggle
 
@@ -71,7 +46,7 @@ the conversion from the old to the new format for you automatically.
 
   .. container:: detail 
 
-    We have dropped the system database tables :code:`IWA_ExternalDatabase` and
+    We have dropped the System Database tables :code:`IWA_ExternalDatabase` and
     :code:`IWA_ExternalDatabaseProperty` and
     migrated its data to the :ref:`app-yaml`. We recommend that you
     :ref:`migrate your projects <migration-project>` and redeploy them to your
@@ -79,7 +54,7 @@ the conversion from the old to the new format for you automatically.
 
     All APIs to load databases configuration from :code:`IApplication` and :code:`IEnvironment`
     has been removed. They were introduced to show the configuration in the legacy AdminUI.
-    They were never intended to use it in your |axon-ivy| Projects.
+    They were never intended to be used in your |axon-ivy| Projects.
 
 
 .. _migrate-92-93-rest-clients:
@@ -89,11 +64,11 @@ Defining Rest Clients
 
 |tag-ops-changed| |tag-project-changed|
 
-Rest Clients are stored in new locations. During development, the project's
+Configurations of Rest Clients are stored in new locations. During development, the project's
 Rest Clients are now stored in the :ref:`rest-clients.yaml <rest-clients-configuration>` file. On the
-|ivy-engine|, Rest Clients have been moved from the System Database to the
-application's :ref:`app-yaml` file. Furthermore, rest clients and project migrations do
-the conversion from the old to the new format for you automatically.
+|ivy-engine|, configurations of Rest Clients have been moved from the System Database to the
+application's :ref:`app-yaml` file. Furthermore, System Database and project migrations do
+converts from the old to the new format automatically.
 
 .. container:: admonition note toggle
 
@@ -103,7 +78,7 @@ the conversion from the old to the new format for you automatically.
 
   .. container:: detail 
 
-    We have dropped the system database tables :code:`IWA_RestClient`,
+    We have dropped the System Database tables :code:`IWA_RestClient`,
     :code:`IWA_RestClientFeature` and :code:`IWA_RestClientProperty` and
     migrated its data to the :ref:`app-yaml`. We recommend that you
     :ref:`migrate your projects <migration-project>` and redeploy them to your
@@ -117,11 +92,11 @@ Defining Web Service Clients
 
 |tag-ops-changed| |tag-project-changed|
 
-Web Service Clients are stored in new locations. During development, the project's
+Configurations of Web Service Clients are stored in new locations. During development, the project's
 Web Service Clients are now stored in the :ref:`webservice-clients.yaml <webservice-clients-configuration>` file. On the
-|ivy-engine|, Web Service Clients have been moved from the System Database to the
-applications's :ref:`app-yaml` file. Furthermore, web service clients and project migrations do
-the conversion from the old to the new format for you automatically.
+|ivy-engine|, configurations of Web Service Clients have been moved from the System Database to the
+application's :ref:`app-yaml` file. Furthermore, System Database and project migrations 
+converts from the old to the new format automatically.
 
 .. container:: admonition note toggle
 
@@ -131,7 +106,7 @@ the conversion from the old to the new format for you automatically.
 
   .. container:: detail 
 
-    We have dropped the system database tables :code:`IWA_WebService`,
+    We have dropped the System Database tables :code:`IWA_WebService`,
     :code:`IWA_WebServiceEndpoints`, :code:`IWA_WebServiceEnvironments`,
     :code:`IWA_WebServiceFeature`, :code:`IWA_WebServicePortType` and
     :code:`IWA_WebServiceProperty` and migrated its data to the :ref:`app-yaml`.
@@ -143,6 +118,8 @@ the conversion from the old to the new format for you automatically.
 
 Environments
 ************
+
+|tag-project-changed| |tag-project-deprecated|
 
 The environment editor and all environment aware editors like the Web Service
 Client Editor, the Rest Client Editor and the Database Editor are not
@@ -158,18 +135,20 @@ https://community.axonivy.com/d/142-environments-will-disappear-in-the-long-term
 Formats
 *******
 
-:ref:`Formats <configuration-formats>` are migrated from the so called config
-cms to the :file:`config/formats.yaml` in your project. There is no more UI
+|tag-project-changed|
+
+:ref:`Formats <configuration-formats>` are migrated from the so-called config
+CMS to the :file:`config/formats.yaml` in your project. There is no more UI
 Editor to edit those formats. If you migrate a running Axon Ivy Engine you need
-to convert your projects and redeploy them again to make the formats work.
+to convert your projects and redeploy them again to make formats work.
 
 
 Configuration deployment options removed
 ****************************************
 
-|tag-ops-changed|
+|tag-ops-changed| |tag-ops-deprecated|
 
-Now that most of the app configuration is defined in yaml files, the
+Now that most of the app configuration is defined in YAML files, the
 :code:`configuration` deployment options are disregarded and can be removed from your
 :ref:`deploy.options.yaml <deployment-options>` file.
 
@@ -190,123 +169,42 @@ Now that most of the app configuration is defined in yaml files, the
         cleanup: DISABLED              # [DISABLED], REMOVE_UNUSED, REMOVE_ALL
 
 
+Removed support for CMS Page
+****************************
 
-.. _migrate-92-93-caseScope-deprecated:
+|tag-project-removed| 
 
-Overriding
-******************
-
-|tag-ops-changed| |tag-project-changed|
-
-We deprecated :ref:`case_scope` project overrides in favour of :ref:`strict_overriding`.
-
-.. container:: admonition note toggle
-
-  .. container:: admonition-title header
-
-     **Details**
-
-  .. container:: detail 
-
-    If your application uses Overrides. You should migrate to :ref:`strict_overriding`.
-    Define the customization project as in your app.yaml :ref:`strict_overriding_config`.
-
-    .. code-block:: yaml
-    
-      OverrideProject: com.acme.solution:MyCustomerAdaption
-
-
-
-Cluster Name
-************
-
-|tag-ops-changed| |tag-ops-wizard|
-
-The name of a :ref:`cluster <cluster>` (|ivy-engine| Enterprise Edition) can now be configured 
-in the :ref:`ivy.yaml <ivy-yaml>` file. Before, it was pre-configured in the :ref:`license <license>` 
-file as :code:`server.cluster.name` property. 
-
-
-JGroups Configuration
-*********************
-
-|tag-ops-changed|
-
-By default, the :file:`jgroups.xml` file does not need to be provided in the ``configuration``
-folder any more. Please remove your existing :file:`jgroups.xml` file from the ``configuration``
-folder, if you haven't made any changes to it; otherwise replace it with a standard JGroups 5.0
-:file:`jgroups.xml` file and re-apply your changes to this file. :file:`jgroups.xml` files used
-in earlier versions of the |ivy-engine| are not compatible with JGroups 5.0.
-
-System Database Cache Configuration and MBean (JMX)
-***************************************************
-
-|tag-ops-changed|
-
-We have changed the system database cache configuration. Instead of configuring a ``UsageLimit`` 
-you can now configure a ``TimeToIdle`` (TTI) value. As an alternative, you can also configure a ``TimeToLive`` (TTL) value.
-The ``TimeToIdle`` value specifies how long after the *last* usage a cached object will be held in the cache. Whereas
-the ``TimeToLive`` value specifies how long after the *first* usage a cached object will be held in the cache.
-Have a look at ``configuration\ivy.cache.properties`` and replace all configured ``UsageLimit`` 
-values with appropriate ``TimeToIdle`` and/or ``TimeToLive`` values. By default, the ``TimeToIdle`` 
-value is 600 (10 minutes) and the ``TimeToLive`` is 0 (disabled).
-
-The ``usageLimit`` attribute on MBeans with name pattern ``ivy Engine:type=CacheClassPersistencyService,name=*,strategy=CacheAllRemoveUnused``
-has been removed. Instead, the ``timeToIdle`` and ``timeToLive`` attributes have been introduced.
-
-
-
-Default rest client entity processing changed to buffered
-*********************************************************
-
-|tag-project-changed| 
-
-Since using the *ApacheConnectorProvider* as default provider
-for rest clients also the default of entity processing
-has changed from :code:`BUFFERED` to :code:`CHUNKED`. Which means that
-the http header :code:`Content-length` is not set which makes trouble
-with a lot of services. So we switched the default to :code:`BUFFERED`
-from now on. If you need chuncked processing you can change that
-in your rest client config by setting the property :code:`jersey.config.client.request.entity.processing`
-to :code:`CHUNKED`.
-
-
-CMS Page support has been removed
-*********************************
-
-|tag-project-changed| 
-
-CMS pages are no longer supported. Both in Axon Ivy Designer and
+We no longer support CMS pages. Both in Axon Ivy Designer and
 on Axon Ivy Engine. You will need to manually reimplement them
 to an alternative. For example as :ref:`HTML Dialog (JSF) <html-dialogs>` or
 as :ref:`static JSF page <static-jsf-pages>`. We still support :ref:`plain JSP pages <user-interface-web-page>`
 which would be a non-future alternative.
 
 
-Macro expansion support has been removed for RTF documents
-**********************************************************
+Removed support for Macro expansion in RTF documents
+****************************************************
 
-|tag-project-changed| 
+|tag-project-removed| 
 
 RTF is not a common format anymore. We have supported macro
 expansion in RTF documents from CMS. This is no longer working.
-To generate documents with placeholders use other well maintend
+To generate documents with placeholders, use other well-maintained 
 components like the DocFactory.
 
 
-Moving JSP pages from cms to webContent
-***************************************
+Moved JSP pages from CMS to webContent
+**************************************
 
 |tag-project-changed| 
 
-We only support plain jsp pages in the webContent folder.
-The migration is done in the project conversion automatically.
+We now only support plain JSP pages in the webContent folder.
+The project conversion copies the JSP pages from the CMS automatically to the webContent folder.
 
 
 Non-public API Email
 ********************
 
-|tag-project-changed| 
+|tag-project-removed| 
 
 If you have used some non-public email classes
 like ``EmailSetupConfiguration``, ``EmailSetupProviderUtil``
@@ -329,3 +227,120 @@ for mail. It is already available but not officially public yet:
     client.send(message);        
   }
 
+    
+Drop AXIS Technology for Web Service Client
+*******************************************
+
+|tag-project-removed|
+
+With Axon Ivy 7.1 we have introduced CXF Web Service Client as a super-fast,
+secure and future driven technology to call SOAP Web Services. AXIS is
+making more and more trouble and to keep the quality of the Axon Ivy Platform
+on a high level we need to cut AXIS off. You have to convert all Web
+Service Clients based on AXIS (1+2) to CXF in the Axon Ivy Designer.
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Details**
+
+  .. container:: detail 
+
+    The Designer comes with a QuickFix that converts your AXIS2 clients
+    automatically to CXF.
+
+    The detailed steps to migrate from AXIS clients to CXF are outlined here:
+    https://community.axonivy.com/d/199-migrate-from-axis2-webservice-to-cxf
+    
+
+.. _migrate-92-93-caseScope-deprecated:
+
+Overriding
+******************
+
+|tag-project-deprecated|
+
+We deprecated the :ref:`case_scope` project overrides in favor of :ref:`strict_overriding`.
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Details**
+
+  .. container:: detail 
+
+    If your application uses Overrides. You should migrate to :ref:`strict_overriding`.
+    Define the customization project in your :ref:`app.yaml <strict_overriding_config>`.
+
+    .. code-block:: yaml
+    
+      OverrideProject: com.acme.solution:MyCustomerAdaption
+
+
+Default Rest Client entity processing changed to buffered
+*********************************************************
+
+|tag-ops-changed|
+
+Since we are using the *ApacheConnectorProvider* as default provider
+for Rest Clients also the default of entity processing
+has changed from :code:`BUFFERED` to :code:`CHUNKED`. Which means that
+the http header :code:`Content-length` is not set which makes trouble
+with a lot of services. You can fix this by switching to chunked processing again. 
+Change your Rest Client config and set the property :code:`jersey.config.client.request.entity.processing`
+to :code:`CHUNKED`.
+
+
+System Database Cache Configuration and MBean (JMX)
+***************************************************
+
+|tag-ops-changed|
+
+We have changed the System Database cache configuration. Instead of configuring a ``UsageLimit`` 
+you can now configure a ``TimeToIdle`` (TTI) value. As an alternative, you can also configure a ``TimeToLive`` (TTL) value.
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Details**
+
+  .. container:: detail 
+
+    The ``TimeToIdle`` value specifies how long the cache keeps an object after the *last* usage. Whereas
+    the ``TimeToLive`` value specifies how long the cache keeps an object after the *first* usage.
+    Have a look at ``configuration\ivy.cache.properties`` and replace all configured ``UsageLimit`` 
+    values with appropriate ``TimeToIdle`` and/or ``TimeToLive`` values. By default, the ``TimeToIdle`` 
+    value is 600 (10 minutes) and the ``TimeToLive`` is 0 (disabled).
+
+    The ``usageLimit`` attribute on MBeans with name pattern ``ivy Engine:type=CacheClassPersistencyService,name=*,strategy=CacheAllRemoveUnused``
+    has been removed. Instead, we introduced the ``timeToIdle`` and ``timeToLive`` attributes.
+
+
+Cluster Name
+************
+
+|tag-ops-changed| |tag-ops-wizard|
+
+The name of a :ref:`cluster <cluster>` (|ivy-engine| Enterprise Edition) can now be configured 
+in the :ref:`ivy.yaml <ivy-yaml>` file. Before, it was pre-configured in the :ref:`license <license>` 
+file as :code:`server.cluster.name` property. 
+
+
+JGroups Configuration
+*********************
+
+|tag-ops-changed|
+
+JGroups is the library we use to communicate between :ref:`cluster nodes <cluster>` (|ivy-engine| Enterprise Edition).
+By default, you do not need to provide the :file:`jgroups.xml` file in the ``configuration``
+folder anymore. Please remove your existing :file:`jgroups.xml` file from the ``configuration``
+folder, if you have not made any changes to it; otherwise replace it with a standard JGroups 5.0
+:file:`jgroups.xml` file and re-apply your changes to this file. :file:`jgroups.xml` files used
+in earlier versions of the |ivy-engine| are not compatible with JGroups 5.0.
+    
+------------
+
+.. include:: _tagLegend.rst    
