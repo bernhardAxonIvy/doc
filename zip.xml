@@ -14,14 +14,17 @@
             <outputDirectory>.</outputDirectory>
             <excludes>
                 <!-- .doctrees are python build artifacts -->
-                <exclude>_sources/.doctrees/**</exclude>
+                <exclude>.doctrees/**</exclude>
 
                 <!-- these javascripts are also provided as min version -->
                 <exclude>_static/underscore-*.js</exclude>
                 <exclude>_static/jquery-*.js</exclude>
 
                 <!-- do not include fonts -->
-                <exclude>_static/fonts</exclude>
+                <exclude>_static/fonts/**</exclude>
+
+                <!-- server side redirect implemented -->
+                <exclude>portal-guide/**</exclude>
             </excludes>
         </fileSet>
     </fileSets>
