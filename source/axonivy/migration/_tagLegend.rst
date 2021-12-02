@@ -2,8 +2,8 @@
 
 |tag-ops-wizard|
   
-  This migration is handled by the :ref:`migration-wizard`. The wizard will
-  interact with you if you are affected by this change.
+  This migration is handled either by the :ref:`migration-wizard` or by the :ref:`System Database conversion <setup-wizard-systemdb-convert>`. 
+  The wizard will interact with you if you are affected by this change.
 
 |tag-ops-changed| 
 
@@ -24,6 +24,10 @@
   engine operation. If your are responsible for the operation of an engine, check
   if this change affects you.
 
+|tag-project-auto-convert|
+
+  This migration is handled by the :ref:`Project Conversion <project-convert>` automatically.
+  
 |tag-project-changed| 
 
   This migration will change a behavior in the projects. If you are a

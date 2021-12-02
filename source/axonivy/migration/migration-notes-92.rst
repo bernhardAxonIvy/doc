@@ -9,7 +9,7 @@ Migrating from 9.1 to 9.2
 New project version
 *******************
 
-|tag-ops-changed|
+|tag-ops-changed| |tag-project-auto-convert|
 
 Due to the migration of the :ref:`Global Variables
 <migrate-91-92-globalvar-migration>`, we introducing a new project version
@@ -80,7 +80,7 @@ in the |ivy-engine|.
 Renaming Global Variables
 -------------------------
 
-|tag-project-changed| |tag-ops-changed|
+|tag-project-changed| |tag-ops-changed| |tag-ops-wizard|
 
 The :code:`GlobalVariables` in the :ref:`app-yaml` are renamed to
 :code:`Variables`. This is done automatically by the system database migration.
@@ -113,7 +113,7 @@ The :code:`GlobalVariables` in the :ref:`app-yaml` are renamed to
 Defining Global Variables
 -------------------------
 
-|tag-ops-changed| |tag-project-changed|
+|tag-ops-changed| |tag-project-changed| |tag-project-auto-convert|
 
 Global Variables are stored in new locations. During development, the project's
 Global Variables are now stored in the :ref:`variables.yaml <variables>` file. On the

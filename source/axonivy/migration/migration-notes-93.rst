@@ -9,7 +9,7 @@ Migrating from 9.2 to 9.3
 New project version
 *******************
 
-|tag-ops-changed|
+|tag-ops-changed| |tag-project-auto-convert|
 
 Due to the migration of the
 :ref:`External Databases <migrate-92-93-external-database-migration>`,
@@ -30,7 +30,7 @@ to the new version and re-deploying them to your engine.
 Defining Databases
 ******************
 
-|tag-ops-changed| |tag-project-changed|
+|tag-ops-changed| |tag-project-changed| |tag-project-auto-convert|
 
 Configurations of Databases are stored in new locations. During development, the project's
 Databases are now stored in the :ref:`databases.yaml <database-configuration>` file. On the
@@ -62,7 +62,7 @@ converts from the old to the new format automatically.
 Defining Rest Clients
 *********************
 
-|tag-ops-changed| |tag-project-changed|
+|tag-ops-changed| |tag-project-changed| |tag-project-auto-convert|
 
 Configurations of Rest Clients are stored in new locations. During development, the project's
 Rest Clients are now stored in the :ref:`rest-clients.yaml <rest-clients-configuration>` file. On the
@@ -90,7 +90,7 @@ converts from the old to the new format automatically.
 Defining Web Service Clients
 ****************************
 
-|tag-ops-changed| |tag-project-changed|
+|tag-ops-changed| |tag-project-changed| |tag-project-auto-convert|
 
 Configurations of Web Service Clients are stored in new locations. During development, the project's
 Web Service Clients are now stored in the :ref:`webservice-clients.yaml <webservice-clients-configuration>` file. On the
@@ -135,7 +135,7 @@ https://community.axonivy.com/d/142-environments-will-disappear-in-the-long-term
 Formats
 *******
 
-|tag-project-changed|
+|tag-project-changed| |tag-project-auto-convert|
 
 :ref:`Formats <configuration-formats>` are migrated from the so-called config
 CMS to the :file:`config/formats.yaml` in your project. There is no more UI
@@ -195,7 +195,7 @@ components like the DocFactory.
 Moved JSP pages from CMS to webContent
 **************************************
 
-|tag-project-changed| 
+|tag-project-changed| |tag-project-auto-convert|
 
 We now only support plain JSP pages in the webContent folder.
 The project conversion copies the JSP pages from the CMS automatically to the webContent folder.
