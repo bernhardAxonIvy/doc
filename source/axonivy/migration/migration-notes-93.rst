@@ -18,11 +18,11 @@ Due to the migration of the
 :ref:`Environments <migrate-92-93-envs>`,
 :ref:`Formats <migrate-92-93-formats>`
 and projects to Eclipse Maven projects, we
-introduced a new project version :code:`93900`. If you want to deploy a project
-to an |ivy-engine| 9.3, this must be your project version. If you
-have a running project, it will still be able to run, but
-:ref:`we recommend migrating your projects <migration-project>`
-to the new version and re-deploying them to your engine.
+introduced a new project version :code:`93900`. If you
+have an existing project in version :code:`80000`, 
+it will still run on the |ivy-engine|, 
+but :ref:`we recommend migrating your projects <migration-project>`
+to the new version and re-deploying them.
 
 
 .. _migrate-92-93-external-database-migration:
