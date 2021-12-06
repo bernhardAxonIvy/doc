@@ -21,8 +21,8 @@ and projects to Eclipse Maven projects, we
 introduced a new project version :code:`93900`. If you
 have an existing project in version :code:`80000`, 
 it will still run on the |ivy-engine|, 
-but :ref:`we recommend migrating your projects <migration-project>`
-to the new version and re-deploying them.
+but :ref:`we recommend to migrate your projects <migration-project>`
+to the new version and re-deploy them.
 
 
 .. _migrate-92-93-external-database-migration:
