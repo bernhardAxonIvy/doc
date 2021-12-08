@@ -1,5 +1,5 @@
 [Ivy]
-167C6BD0817F2889 9.3.0 #module
+167C6BD0817F2889 9.3.1 #module
 >Proto >Proto Collection #zClass
 el0 exampleWsProcess Big #zClass
 el0 WS #cInfo
@@ -46,7 +46,7 @@ el0 ws1 337 49 30 30 0 15 #rect
 el0 f0 expr out #txt
 el0 f0 111 64 337 64 #arcP
 >Proto el0 .webServiceName screenshot.project.exampleWsCall #txt
->Proto el0 .authenticationType 'None or Container' #txt
+>Proto el0 .authenticationType NONE #txt
 >Proto el0 .type screenshot.project.Order #txt
 >Proto el0 .processKind WEB_SERVICE #txt
 >Proto el0 -8 -8 16 16 16 26 #rect
