@@ -24,3 +24,4 @@ please consult the :ref:`migration-upgrade-engine-major` chapter.
    hotfix/index
    major/index
    migration-notes
+   deprecation
