@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Market Installer Reference
 Bundle-SymbolicName: ch.ivyteam.ivy.market.installer.reference
-Bundle-Version: 9.3.0.qualifier
+Bundle-Version: 9.4.0.qualifier
 Require-Bundle: ch.ivyteam.base,
  ch.ivyteam.lib.classgraph,
  ch.ivyteam.ivy.designer.project.ui,
