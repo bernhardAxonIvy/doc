@@ -9,7 +9,7 @@ Release Notes Axon Ivy ${ivy-version} (${release.name})
 Changes in ${ivy-version}, ${build-date}
 --------------------------------------------------------------------------------
 
-We suggest to install this release if you are suffering from any of these issues.
+@upgradeRecommendation@
 
 @changelog@
 
