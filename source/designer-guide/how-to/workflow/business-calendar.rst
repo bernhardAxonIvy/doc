@@ -1,0 +1,80 @@
+
+
+Business Calendar
+-----------------
+
+A business calendar defines the official business hours and business
+days of an application. Business calendars are organized in a tree
+structure, with a root calendar defining the application default values
+and child calendars inheriting all values from their ancestor, e.g.
+
+-  AxonIvyGlobal
+   
+   -  Switzerland
+   
+      -  Zurich
+      -  Zug
+   
+   -  Austria
+   -  Germany
+
+Above you see the business calendar definitions for AxonIvy. We define a
+global root with three countries. For Switzerland we also add two
+regions, Zurich and Zug, each with their local public holidays besides
+the ones they inherit from Switzerland and AxonIvyGlobal.
+
+You can use business calendars, through the :public-api:`IBusinessCalendar </ch/ivyteam/ivy/application/calendar/IBusinessCalendar.html>`
+API to make calculations related to business days or business hours.
+This is very useful for process steps that need to work with business
+days, rather than with normal days.
+
+For example:
+
+-  A Service Level Agreement (SLA) defines that a task needs to be
+   processed by the end of the next business day. This can be
+   implemented by setting the task expiry to the business day after the
+   next.
+
+   Set the desired business calendar on the case if the default calendar
+   does not apply:
+   
+   .. figure:: /_images/business-calendar/business-calendar-request-start.png
+
+   Then set the timeout duration to two business days, using the current
+   calendar.
+   
+   .. figure:: /_images/business-calendar/business-calendar-task-switch.png
+
+-  A payment application automatically corrects an entered payment date
+   to the next business day if necessary:
+
+   ::
+
+      // e.g. on the Start tab of a Request Start Inscription Mask
+      out.paymentDate = ivy.cal.getWorkDayIn(out.paymentDate, 0);
+
+You can set a calendar on tasks, cases, environments or applications.
+The variable (ivy.cal) references the calendar that is valid for the
+current context with the following priority:
+
+#. current task, if any is set
+#. current case, if any is set
+#. current environment, if any is set
+#. current application, if any is set
+#. root calendar of the current application
+
+You can use another calender by referencing it by its name:
+
+::
+
+   ivy.cal.get("Zug").getWorkDayIn(2);
+
+If you want to configure business calendars for test purposes in your
+Designer environment you can change (or create if it doesn't exist yet)
+the ``app-designer.yaml`` file in folder ``<designer_path>/configuration``. Note
+that all values in this file are valid for all projects in your
+workspace and that they don't get cleared after a restart.
+
+See chapter :ref:`configuration-business-calendar`
+in the Engine Guide on how to configure business calendars on your
+Engine instance.

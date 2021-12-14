@@ -1,0 +1,3 @@
+# ivy.yaml
+REST.Servlet:
+  MobileWorkflow.API: true
