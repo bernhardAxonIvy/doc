@@ -11,38 +11,20 @@ Task and Case queries
 The fluent workflow query API makes queries against all existing tasks
 and cases possible. The queries can be written in a SQL like manor.
 
-::
-
-   import ch.ivyteam.ivy.workflow.query.TaskQuery;
-   import ch.ivyteam.ivy.workflow.ITask;
-
-   // create a new query
-   TaskQuery query = TaskQuery.create()
-     .aggregate().avgCustomDecimalField1()
-     .where().customVarCharField1().isEqual("ivy")
-     .groupBy().state()
-     .orderBy().customVarCharField2().descending();
-   // resolve query results
-   List<ITask> tasks = ivy.wf.getTaskQueryExecutor().getResults(query);
+.. literalinclude:: code-snippets/task-query/example.java
+   :language: java
 
 To resolve all tasks that the current user can work on use the following
 code:
 
-::
 
-   TaskQuery query = TaskQuery.create()
-     .where().currentUserCanWorkOn()
-     .orderBy().priority();
-   List<ITask> userWorkTasks = ivy.wf.getTaskQueryExecutor().getResults(query);
+.. literalinclude:: code-snippets/task-query/current_user.java
+   :language: java
 
 To execute a query an instance of a IQueryExecutor is needed. It can be
 retrieved trough the :ref:`ivy environment variable <ivyscript-reference-environmentvariable>`.
 
-::
 
-   // Application specific query executors can be retrieved from the application context
-   ivy.wf.getTaskQueryExecutor().getResults(taskQuery);
-   ivy.wf.getCaseQueryExecutor().getResults(caseQuery);
 
 .. warning::
 
@@ -50,10 +32,8 @@ retrieved trough the :ref:`ivy environment variable <ivyscript-reference-environ
    context. But queries that involve the current session could deliver
    useless results as users are not shared over multiple applications.
 
-   ::
-
-      ivy.wf.getGlobalContext().getTaskQueryExecutor().getResults(taskQuery);
-      ivy.wf.getGlobalContext().getCaseQueryExecutor().getResults(caseQuery);
+.. literalinclude:: code-snippets/task-query/IQueryExecutor.java
+   :language: java
 
 
 Task and Case manipulation
