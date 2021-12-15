@@ -76,6 +76,24 @@
               </artifactItems>
             </configuration>
           </execution>
+          
+          <execution>
+            <id>unpack-dev-wf-ui-images</id>
+            <goals>
+              <goal>unpack</goal>
+            </goals>
+            <phase>generate-resources</phase>
+            <configuration>
+              <outputDirectory>${images.folder}/dev-wf-ui</outputDirectory>
+              <artifactItems>
+                <artifactItem>
+                <groupId>ch.ivyteam.workflow</groupId>
+                  <artifactId>dev-workflow-ui-screenshots</artifactId>
+                  <type>zip</type>
+                </artifactItem>
+              </artifactItems>
+            </configuration>
+          </execution>
         </executions>
 
         <configuration>
