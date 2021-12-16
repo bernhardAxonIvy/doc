@@ -37,7 +37,7 @@ Developer Section
 -----------------
 
 The Developer section in the navbar will show up if your user has the 
-IPermission.TASK_READ_ALL and IPermission.CASE_READ_ALL permissions.
+`IPermission.TASK_READ_ALL` and `IPermission.CASE_READ_ALL` permissions.
 The "Developer" user in designer has all needed premissions.
 There you will be able to find some more interesting tools like Signals,
 Intermediate Events, Cleanup and API Browser.
