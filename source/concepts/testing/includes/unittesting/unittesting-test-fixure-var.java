@@ -1,5 +1,5 @@
 @Test
-void products_globalVariable(AppFixture fixture) {
+void products_variable(AppFixture fixture) {
   /* The AppFixture can manipulate variables. */
   fixture.var("table", "799.95");
 
