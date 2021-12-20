@@ -61,14 +61,21 @@ the ``Ivy`` environment we would have to mock all those resources.
 Change application runtime
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For some test cases, you may need to change the
-:ref:`Environment <configuration-environments>` or use a different value for a
-:ref:`Variable <variables>`. In this case use ``AppFixture`` to change the value. 
-The value gets automatically reset to the original value after the test execution. 
-All you have to do is to tell the test that you want an instance of the
-:code:`AppFixure` class. Let's have a look at it:
+For some test cases, you may need to change the :ref:`Environment
+<configuration-environments>` use a different value for a :ref:`Variable
+<variables>` or change an app configuration. In this case use ``AppFixture`` to
+change the value. The value gets automatically reset to the original value after
+the test execution. All you have to do is to tell the test that you want an
+instance of the :code:`AppFixure` class. Let's have a look at it:
 
 .. literalinclude:: includes/unittesting/unittesting-test-fixure-var.java
+  :language: java
+  :emphasize-lines: 2, 4
+
+Or you can change an app configuration, e.g change the Url of a
+:ref:`RestClient <rest-clients-configuration>`:
+
+.. literalinclude:: includes/unittesting/unittesting-test-fixure-config.java
   :language: java
   :emphasize-lines: 2, 5
 
@@ -76,7 +83,7 @@ If you want to change the active environment, you can do that in a similar way:
 
 .. literalinclude:: includes/unittesting/unittesting-test-fixure-env.java
   :language: java
-  :emphasize-lines: 5
+  :emphasize-lines: 4
 
 Furthermore it is possible to use the ``AppFixture`` to login with an existing user.
 You can either login with a user name or with an ``IUser`` object. In the
@@ -84,4 +91,4 @@ example below we injected the ``IUser`` object as a method parameter.
 
 .. literalinclude:: includes/unittesting/unittesting-test-fixure-login.java
   :language: java
-  :emphasize-lines: 2, 5, 13
+  :emphasize-lines: 2, 4, 12
