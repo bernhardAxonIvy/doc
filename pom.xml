@@ -168,6 +168,7 @@
               <filterBy>project in (XIVY,IVYPORTAL) AND fixVersion = ${ivy-version}</filterBy>
               <orderBy>project,"Epic Link" ASC,fixVersion DESC,key</orderBy>
               <whitelistJiraLabels>security,performance</whitelistJiraLabels>
+              <markdownHeaderIndent>###</markdownHeaderIndent>
               <fileset>
                 <directory>${includes.target.folder}</directory>
               </fileset>

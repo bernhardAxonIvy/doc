@@ -6,13 +6,6 @@ Release Notes Axon Ivy ${ivy-version} (${release.name})
 * - Recommended: We recommend to install this release because it fixes this security or stability issue!
 + - Suggested: We suggest to install this release if you are suffering from this issue.      
 
-Changes in ${ivy-version}, ${build-date}
---------------------------------------------------------------------------------
-
-@upgradeRecommendation@
-
-@changelog@
-
 Changes in 9.3.0, 10.12.2021
 --------------------------------------------------------------------------------
 
