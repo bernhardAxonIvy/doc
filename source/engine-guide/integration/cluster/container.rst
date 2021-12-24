@@ -47,6 +47,10 @@ A simple Dockerfile that bundles an |ivy-engine|, your projects and your configu
 Examples
 --------
 
-See also our example configurations on GitHub
+See our :link-url:`project-build-examples <build-examples-docker>`. It shows
+how to use Maven to build your own container image that contains an 
+|ivy-engine| and your application zip file.
+
+Futhermore, see also our example configurations on GitHub
 for :link-url:`NGINX <docker-scaling-nginx>` and :link-url:`HAProxy <docker-scaling-haproxy>`
 on how to setup an |ivy-engine| Cluster with docker-compose.

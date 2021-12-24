@@ -13,4 +13,6 @@ this :file:`Dockerfile` as template.
 On GitHub in the :link-url:`docker-samples <docker-samples>` repository you can find many
 examples how to use the |ivy-engine| docker image.
 
-|
+Futhermore, have a look at our :link-url:`project-build-examples <build-examples-docker>`. 
+It shows how to use Maven to build your own container image that contains an 
+|ivy-engine| and your workflow application.
