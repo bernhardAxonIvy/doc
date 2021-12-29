@@ -1361,7 +1361,7 @@ Axon.ivy Engine:
 + XIVY-3398      Story          Ensure that a New Html Dialog with our default theme and Portal are looking good by default
 + XIVY-3400      Story          New Dialog Wizard should provide more View Types
 + XIVY-3408      Story          Upgrade cxf to 3.3.4
-+ XIVY-3410      Story          Support ${project.version} property for IAR dependencies
++ XIVY-3410      Story          Support 'project.version' property for IAR dependencies
 + XIVY-3417      Story          Fix caching of Html dialogs & components with multiple case scopes
 + XIVY-3419      Story          New Engine maintenance mode to configure the engine in case of a licence or system database problem
 + XIVY-3423      Story          Provide an official P2 repository for 8.0
@@ -1674,7 +1674,7 @@ Axon.ivy Engine:
 + IVYPORTAL-7738 Technical task Fix url changes when accessing menu item process, task, case list
 + IVYPORTAL-7774 Technical task Exception on PreDestroy of deviceBean
 + IVYPORTAL-7779 Technical task Analyse why only 2 + 2 favorites are shown
-+ IVYPORTAL-7782 Technical task  XHTML Changes and improvements in portal
++ IVYPORTAL-7782 Technical task XHTML Changes and improvements in portal
 + IVYPORTAL-7859 Technical task Override default style of Serenity theme to standard of Portal style
 + IVYPORTAL-7877 Technical task Growl message is displayed in p:message of advanced filter
 + IVYPORTAL-7879 Technical task IndexOutOfBoundsException when searching not found substitute
