@@ -81,6 +81,8 @@ Release Notes
 
 .. mdinclude:: ../../../target/resources/includes/_release-notes.md
 
+.. mdinclude:: ../../../target/resources/includes/_release-notes-static.md
+
 Changes before 9.4.0
 --------------------
 
