@@ -155,7 +155,7 @@
 
       <plugin>
         <groupId>ch.ivyteam.maven</groupId>
-        <artifactId>changelog-generator-plugin</artifactId>
+        <artifactId>jira-plugin</artifactId>
         <executions>
           <execution>
             <id>replace-changelog-tokens</id>
