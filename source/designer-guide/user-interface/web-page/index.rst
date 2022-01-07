@@ -168,5 +168,4 @@ of the user.
 
    Web Pages can be accessed without starting a process. This allows you
    to create for example a translated start page with some process start
-   links. See also chapter :ref:`Access CMS Content with a
-   Browser <cms-access-with-browser>`.
+   links. See also chapter :ref:`display cms content <cms-display-content>`.

@@ -169,7 +169,7 @@ The list below contains some of the provided information:
     ivy Engine:type=Thread Pool, name=Immediate Job Executor
     ivy Engine:type=Thread Pool, name=Scheduled Job Executor
 
-**System Database and CMS Cache**
+**System Database Cache**
 
 .. code-block:: properties
 

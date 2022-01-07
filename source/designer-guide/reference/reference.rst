@@ -69,8 +69,6 @@ Wizards
 -  :ref:`refactoring-wizards-delete`
 -  :ref:`Export Axon Ivy Archive wizard <designer-export-project>`
 -  :ref:`Import Axon Ivy Archive wizard <designer-import-project>`
--  :ref:`cms-import`
--  :ref:`cms-export`
 
 
 Perspectives
