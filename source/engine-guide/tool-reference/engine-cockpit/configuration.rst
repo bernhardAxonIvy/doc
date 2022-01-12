@@ -35,3 +35,9 @@ Days**. Free days can contain fixed dates, dates repeating every year and days
 relative to Easter.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-configuration-businesscalendar-detail.png
+
+
+.. _engine-cockpit-branding:
+
+Branding
+^^^^^^^^

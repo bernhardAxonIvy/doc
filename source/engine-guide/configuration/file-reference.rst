@@ -16,3 +16,4 @@ File Reference
    files/ivy-cache-properties
    files/web-xml
    files/context-xml
+   files/custom-css

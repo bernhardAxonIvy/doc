@@ -37,6 +37,8 @@ the following steps:
    ``ch.ivyteam.ivy.jsf.primefaces.IvyPrimefacesThemeResolver.setSessionTheme(String theme)`` 
 
 
+.. _serenity-themes:
+
 Serenity Themes
 ^^^^^^^^^^^^^^^
 
@@ -62,46 +64,8 @@ import an additional layout.css file:
     ...
   </h:head>
 
-
 Color Customizing
 ^^^^^^^^^^^^^^^^^
 
-In our age, customizing is important so that a customer feels at home when he
-opens a page where the company colors are used. And fortunately for everyone,
-new technologies makes customizing much easier. 
-
-With our **serenity-ivy** theme, we want to give you a theme that is very
-neutral, but also allows you to easily change the colors according to your
-wishes. For this purpose, we provide you `css-variables
-<https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties>`_
-that you can overwrite. 
-
-To do so, you have to add a new **css file** to your resources and import it
-into your template:
-
-.. code-block::
-
-   <h:outputStylesheet name="layouts/styles/color-customize.css" />
-
-Within this file you can overwrite some colors. For example, the **primary-color**:
-
-.. code-block::
-
-   :root {
-      --primary-color-h:195;
-      --primary-color-s:100%;
-      --primary-color-l:29%;
-      --primary-color:hsl(var(--primary-color-h), var(--primary-color-s), var(--primary-color-l));
-   }
-   
-.. note::
-
-   We use `hsl colors <https://www.w3schools.com/colors/colors_hsl.asp>`_, and
-   you will notice that some of them are split into the individual values. These
-   are important for some color effects (e.g when you move the mouse over a
-   button).
-
-   For all possible variables, have a look at our :ref:`HtmlDialogDemos
-   <importing-demo-projects>`. These use an additional file
-   :link-url:`color-customize.css <demos-hd-color-custom-css>`
-   to override colors.
+If you want to change the colors of the **serenity-ivy** theme, please have a
+look at the :ref:`branding` chapter.

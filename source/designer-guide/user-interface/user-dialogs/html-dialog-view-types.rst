@@ -19,6 +19,8 @@ the web browser. Therefore a page can be opened by a
 :ref:`process-element-user-dialog`.
 
 
+.. _html-dialog-layouts:
+
 Html Dialog Layouts
 ^^^^^^^^^^^^^^^^^^^
 

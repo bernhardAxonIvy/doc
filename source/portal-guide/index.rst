@@ -1,3 +1,5 @@
+.. _portal-guide:
+
 Portal Guide
 ============
 

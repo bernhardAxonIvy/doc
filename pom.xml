@@ -17,6 +17,7 @@
     <images.folder>source/_images</images.folder>
     <includes.target.folder>${project.build.directory}/resources/includes</includes.target.folder>
     <engine.guide.url>https://developer.axonivy.com/doc/${doc.version}/engine-guide</engine.guide.url>
+    <designer.guide.url>https://developer.axonivy.com/doc/${doc.version}/designer-guide</designer.guide.url>
   </properties>
 
   <build>
@@ -145,6 +146,7 @@
                   <includes>
                     <include>*.yaml</include>
                     <include>*.xml</include>
+                    <include>*.css</include>
                   </includes>
                 </resource>
               </resources>

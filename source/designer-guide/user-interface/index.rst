@@ -19,3 +19,4 @@ to display a end page.
    static-jsf-pages
    web-page/index
    standard-processes/index
+   branding/index
