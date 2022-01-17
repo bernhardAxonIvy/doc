@@ -41,3 +41,14 @@ relative to Easter.
 
 Branding
 ^^^^^^^^
+
+The **Branding** view gives you an overview of your :ref:`Branding resources
+<branding>` in your different applications with the possibility to :guilabel:`upload new`
+images or :guilabel:`reset` them to the :ref:`default <branding-system-default>`.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-branding.png
+
+There is also an edit support for your :ref:`custom-css`.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-branding-custom-css.png
+
