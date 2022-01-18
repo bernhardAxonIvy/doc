@@ -123,6 +123,8 @@ Custom Fields
       custom field. You can find a list of possible icons in the :ref:`Html
       Dialog Demos <importing-demo-projects>`.
 
+      .. include:: _embedInFrame.rst
+
 Responsible Role
    Users which want to start the process must be assigned to this role.
 

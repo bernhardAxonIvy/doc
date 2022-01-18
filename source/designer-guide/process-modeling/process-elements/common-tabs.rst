@@ -375,6 +375,8 @@ Case Custom Fields
    treated by |axon-ivy|. These custom fields can easily be queried on
    case user interfaces to allow sorting and filtering.
 
+   .. include:: _embedInFrame.rst
+
 
 .. _process-element-tab-task:
 
@@ -480,6 +482,8 @@ Task Custom Fields
    values are only informational and have no effect on how this task is
    treated by |axon-ivy|. These custom fields can easily be queried on
    task user interfaces to allow sorting and filtering.
+
+   .. include:: _embedInFrame.rst
 
 
 .. _process-element-tab-task-code:
