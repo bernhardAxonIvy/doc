@@ -376,6 +376,8 @@ Case Custom Fields
    case user interfaces to allow sorting and filtering.
 
    .. include:: _embedInFrame.rst
+   If ``embedInFrame`` is set to ``false`` on the case tab custom fields, all the
+   following tasks are gonna open on a full screen page.
 
 
 .. _process-element-tab-task:
@@ -484,6 +486,8 @@ Task Custom Fields
    task user interfaces to allow sorting and filtering.
 
    .. include:: _embedInFrame.rst
+   If ``embedInFrame`` is set to ``false`` on the task tab custom fields, the next 
+   task is gonna open on a full screen page.
 
 
 .. _process-element-tab-task-code:

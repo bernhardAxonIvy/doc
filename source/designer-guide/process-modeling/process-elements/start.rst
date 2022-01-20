@@ -124,6 +124,8 @@ Custom Fields
       Dialog Demos <importing-demo-projects>`.
 
       .. include:: _embedInFrame.rst
+      If ``embedInFrame`` is set to ``false`` on the request tab custom fields, the
+      initial dialog will be embedded in a frame.
 
 Responsible Role
    Users which want to start the process must be assigned to this role.

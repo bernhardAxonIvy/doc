@@ -76,15 +76,18 @@ Cleanup
 ~~~~~~~
 
 The cleanup page allows you to delete different type of date from the runnning engine.
-There you will see 3 checkboxes. 
+There you will see 4 checkboxes. 
 
 The first one deletes all Cases, Tasks and dependant objects of the system-db like 
 documents, or custom-fields.
 
 The second checkbox deletes business data and its Elastic Search index.
 
-And the last checkbox deletes OAuth2 identity tokens which you might have collected
+The third checkbox deletes OAuth2 identity tokens which you might have collected
 by calling third-party rest services.
+
+And the last checkbox clears data caches like cache of a Database or
+web service request.
 
 |image8|
 
