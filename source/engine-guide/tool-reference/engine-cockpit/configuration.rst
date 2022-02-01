@@ -48,7 +48,15 @@ images or :guilabel:`reset` them to the :ref:`default <branding-system-default>`
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-branding.png
 
-There is also an edit support for your :ref:`custom-css`.
+There is also an edit support for your :ref:`custom-css` and an overview of all
+colors with the possibility to easily change a specific color.
+
+.. warning::
+
+  Please note that the color editor will write into the :file:`custom.css` file
+  inside your :ref:`branding-configuration` directory. Depending on the content
+  of this file, the new color value maybe show a strange behavior. So maybe you
+  should quickly check the the result in the :file:`custom.css` editor.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-branding-custom-css.png
 
