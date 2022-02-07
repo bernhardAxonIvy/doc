@@ -13,7 +13,7 @@ The :code:`ivy.script.validation.skip` compilation parameter of our Project Buil
 This validates ivyScript code within ivy processes by default during compilation. So errors and warnings related to the ivyScript code will be reported.
 
 Read more about the compilation parameters and their default values here:
-https://axonivy.github.io/project-build-plugin/release/9.3/compileProject-mojo.html#skipScriptValidation
+https://axonivy.github.io/project-build-plugin/snapshot/9.4/compileProject-mojo.html#skipScriptValidation
     
 ------------
 
