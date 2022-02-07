@@ -13,6 +13,7 @@ working with the newest version. Go through the migration notes from version to 
    migration-notes-91
    migration-notes-92
    migration-notes-93
+   migration-notes-94
 
 
 .. _previous-migi-notes:
