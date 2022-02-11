@@ -3,9 +3,11 @@
 Content resolution
 ******************
 
-As soon as a content object is loaded, the content object is first searched for
-in the current project, if it does not exist, a content object is searched for
-in the dependent projects.
+As soon as a content object is loaded, the content object will be resolved as follows:
+
+#. Application CMS (:file:`[engineDir]/data/{app}/cms`)
+#. Current project
+#. Dependent projects
 
 Once the content object is found, the concrete content object value must be
 evaluated. For this purpose, the locale must be defined first:

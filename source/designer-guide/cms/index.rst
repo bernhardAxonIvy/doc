@@ -15,4 +15,5 @@ whole files like images and documents can be stored multilingual in the CMS.
    editors
    display
    resolution
+   writing
    overriding
