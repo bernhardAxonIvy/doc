@@ -1,5 +1,5 @@
 [Ivy]
-1675F79D89ABB65A 9.3.1 #module
+1675F79D89ABB65A 9.4.0 #module
 >Proto >Proto Collection #zClass
 sl0 signal Big #zClass
 sl0 B #cInfo
@@ -42,8 +42,6 @@ sl0 f47 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
         <name>user:created</name>
-        <nameStyle>12,7
-</nameStyle>
     </language>
 </elementInfo>
 ' #txt
@@ -107,8 +105,6 @@ sl0 f34 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
         <name>startRequest</name>
-        <nameStyle>12,5,7
-</nameStyle>
         <desc>description should not be touched as it is a raw text field
 param.in.city
 

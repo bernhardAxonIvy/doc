@@ -1,5 +1,5 @@
 [Ivy]
-160DF556A2226E66 9.3.1 #module
+160DF556A2226E66 9.4.0 #module
 >Proto >Proto Collection #zClass
 Jl0 JaxWsServiceCall Big #zClass
 Jl0 B #cInfo
@@ -40,8 +40,6 @@ Jl0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
         <name>geoIpCache.ivp</name>
-        <nameStyle>14,5,7
-</nameStyle>
     </language>
 </elementInfo>
 ' #txt
@@ -103,8 +101,6 @@ Jl0 f7 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
         <name>geoIp.ivp</name>
-        <nameStyle>9,5,7
-</nameStyle>
     </language>
 </elementInfo>
 ' #txt
