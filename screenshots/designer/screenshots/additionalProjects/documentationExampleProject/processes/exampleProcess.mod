@@ -1,5 +1,5 @@
 [Ivy]
-1562D1CBAC49CCF8 9.3.1 #module
+1562D1CBAC49CCF8 9.4.0 #module
 >Proto >Proto Collection #zClass
 es0 exampleProcess Big #zClass
 es0 B #cInfo
@@ -66,8 +66,6 @@ es0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
         <name>Call Html Dialog</name>
-        <nameStyle>16,5
-</nameStyle>
     </language>
 </elementInfo>
 ' #txt

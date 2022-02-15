@@ -1,5 +1,5 @@
 [Ivy]
-159FF3D428E42BB5 9.3.1 #module
+159FF3D428E42BB5 9.4.0 #module
 >Proto >Proto Collection #zClass
 Jl0 JaxRsServiceCall Big #zClass
 Jl0 B #cInfo
@@ -103,8 +103,6 @@ Jl0 f46 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
         <name>Call twitter</name>
-        <nameStyle>12,7
-</nameStyle>
     </language>
 </elementInfo>
 ' #txt
@@ -164,8 +162,6 @@ Jl0 f39 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
     <language>
         <name>Update
 document name</name>
-        <nameStyle>20,7
-</nameStyle>
     </language>
 </elementInfo>
 ' #txt
@@ -193,8 +189,6 @@ Jl0 f5 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
     <language>
         <name>createApproval
 viaREST.ivp</name>
-        <nameStyle>26,5,7
-</nameStyle>
     </language>
 </elementInfo>
 ' #txt
@@ -223,8 +217,6 @@ Jl0 f14 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
     <language>
         <name>create
 JAX-RS approval</name>
-        <nameStyle>22,7
-</nameStyle>
     </language>
 </elementInfo>
 ' #txt
@@ -245,10 +237,6 @@ Jl0 f9 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
         <name>form approval</name>
-        <nameStyle>1,5
-3,5
-9,5
-</nameStyle>
     </language>
 </elementInfo>
 ' #txt
@@ -272,8 +260,6 @@ Jl0 f10 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
         <name>formInput.ivp</name>
-        <nameStyle>13,5,7
-</nameStyle>
     </language>
 </elementInfo>
 ' #txt
@@ -323,10 +309,6 @@ Jl0 f16 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
         <name>entity CRM</name>
-        <nameStyle>6,5
-1,5
-3,5
-</nameStyle>
     </language>
 </elementInfo>
 ' #txt
