@@ -94,13 +94,13 @@ The following email notifications can be customized:
 
 .. table::
 
-    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
-    | Email Notification                                                                                                                                                                                                                         | Process Start Signature                                                        |
-    +============================================================================================================================================================================================================================================+================================================================================+
-    | **New Task** page with the new assigned task. This is done everytime a new task is created, an existing task expires or the creator of an existing tasks changes. These events affect the user directly, via his role or his substitution. | MailNotification_NewTask(Number notificationUserId, Number notificationTaskId) |
-    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
-    | **Daily Task Summary** page with all open tasks for the user. This notification is executed once a day for each user.                                                                                                                      | MailNotification_DailyTaskSummary(Number notificationUserId)                   |
-    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
+    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+    | Email Notification                                                                                                                                                                                                                         | Process Start Signature                                                                                    |
+    +============================================================================================================================================================================================================================================+============================================================================================================+
+    | **New Task** page with the new assigned task. This is done everytime a new task is created, an existing task expires or the creator of an existing tasks changes. These events affect the user directly, via his role or his substitution. | MailNotification_NewTask(String notificationSecurityMemberId, Number notificationTaskId)                   |
+    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+    | **Daily Task Summary** page with all open tasks for the user. This notification is executed once a day for each user.                                                                                                                      | MailNotification_DailyTaskSummary(String notificationSecurityMemberId)                                     |
+    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
 
 .. figure:: /_images/standard-process/standard-process-new-task.png
     :align: center
@@ -128,6 +128,6 @@ Implementation hints
     Some API hints to implement email notification processes:
     
     * get the user you can use
-      ``ivy.session.getSecurityContext().findUser(notificationUserId)`` 
+      ``ivy.security().members().findById(notificationSecurityMemberId)`` 
     * get the task you can use ``ivy.wf.findTask(notificationTaskId)``
     * get the current open task for a user ``ivy.wf.findWorkTasks(...)``

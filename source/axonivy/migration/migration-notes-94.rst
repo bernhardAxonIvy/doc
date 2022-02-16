@@ -3,6 +3,17 @@
 Migrating from 9.3 to 9.4
 =========================
 
+User id and role id deprecated
+******************************
+
+:code:`IUser#getId()` and :code:`IRole#getId`` are obsolete and should not be used any further.
+Always use :code:`getSecurityMemberId()`. For now, user id and role id are still fully
+supported and are also unique. But these will be completely removed in upcoming
+versions also from the database (:code:`IWA_User.UserId`` and :code:`IWA_Role.RoleId)`.
+
+Standard mail notification process still support the parameter :code:`notificationUserId`
+but you should already change to :code:`notificationSecurityMemberId``.
+
 
 ivyScript validation is enabled by default
 ******************************************
