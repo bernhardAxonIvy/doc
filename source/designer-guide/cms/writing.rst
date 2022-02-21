@@ -12,7 +12,7 @@ at runtime.
 .. code-block:: java
 
   var app = IApplication.current();
-  var cms = ContentManagementSystem.of(app);
+  var cms = ContentManagement.cms(app);
   cms.root()
     .child().string("myString")
     .value().get("en")
