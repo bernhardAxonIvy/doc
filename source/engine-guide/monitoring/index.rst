@@ -8,5 +8,6 @@ Monitoring
 
    logging
    process-element-performance
+   tracing
    jmx
    engine-cockpit

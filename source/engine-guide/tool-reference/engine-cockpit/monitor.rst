@@ -23,6 +23,7 @@ The **Engine** pages allows you to monitor some critical indicators of your |ivy
 - **JVM**: CPU load, number of threads, loaded and unloaded classes.
 - **Memory**: Heap and non heap memory, garbage collections time.
 - **Cache**: System database caches and their metrics
+- **MBeans**: :ref:`jmx` MBeans viewer
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-jvm.png
 
@@ -44,20 +45,6 @@ can be configured in the :ref:`ivy.yaml <ivy-cache-properties>` file.
 
 .. _engine-cockpit-monitor-performance:
 
-Performance
-"""""""""""
-
-The **Performance** view allows you to activate and analyze the :ref:`process-element-performance` statistic. 
-
-You can start, stop, clear, refresh the statistic or export it to an Excel file. Note, that by default not all
-available columns are shown. Use the configure columns button right to the search box to show or hide the columns. 
-
-If you want to configure that the statistic is written periodically to a :ref:`process-element-performance-file`
-use the configuration icon left to the help button it will take you directly to the corresponding settings 
-in the :ref:`engine-cockpit-system-configuration`.  
-
-.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-performance.png
-
 MBeans
 """"""
 
@@ -68,6 +55,49 @@ attributes to the chart. Click on the remove icon in the table below the chart t
 the attribute from the chart.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-mbeans.png
+
+Performance
+^^^^^^^^^^^
+
+Statistic
+"""""""""
+
+The **Statistic** view allows you to activate and analyze the :ref:`process-element-performance` statistic. 
+
+You can start, stop, clear, refresh the statistic or export it to an Excel file. Note, that by default not all
+available columns are shown. Use the configure columns button right to the search box to show or hide the columns. 
+
+If you want to configure that the statistic is written periodically to a :ref:`process-element-performance-file`
+use the configuration icon left to the help button it will take you directly to the corresponding settings 
+in the :ref:`engine-cockpit-system-configuration`.  
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-performance.png
+
+
+.. _engine-cockpit-monitor-slow-requests:
+
+Slow Requests
+"""""""""""""
+
+The **Slow Requests** view allows you to activate and analyze the :ref:`tracing`. If activated every 
+request is traced and if it is slower than the slowest 50 requests, it will be displayed in this view.
+
+You can start, stop, clear, refresh the tracing or export it to an Excel file. 
+Hover with the mouse over the name to see additional attributes of the request. 
+You can click on a request to see where the time of the request was spent 
+(e.g., on external calls to REST, SOAP service, databases etc.).   
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-slow-requests.png
+
+Logs
+^^^^
+
+The **logs** view shows the current engine log files :file:`console.log`,
+:file:`config.log`, :file:`deprecation.log`, :file:`ivy.log` and :file:`usersynch.log`.
+Click on :guilabel:`+` to show or :guilabel:`-` to hide the log file details. If you
+want to look at the logs of an different day, you can change the date at the top right.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-logs.png
 
 .. _engine-cockpit-monitor-services:
 
@@ -86,12 +116,3 @@ You can open these live stats from the detailed view of the desired service usin
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-databases.png
 
-Logs
-^^^^
-
-The **logs** view shows the current engine log files :file:`console.log`,
-:file:`config.log`, :file:`deprecation.log`, :file:`ivy.log` and :file:`usersynch.log`.
-Click on :guilabel:`+` to show or :guilabel:`-` to hide the log file details. If you
-want to look at the logs of an different day, you can change the date at the top right.
-
-.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-logs.png
