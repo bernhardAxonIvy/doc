@@ -13,7 +13,7 @@ RestClients:
     Url: http://test-webservices.ivyteam.io:8080/json-processing-webapp-2.25
   approvalService:
     UUID: e61c6d1f-106e-46ea-8327-fe18e4c1d912
-    Url: http://{ivy.engine.host}:{ivy.engine.http.port}/{ivy.engine.context}/api/{ivy.request.application}/approve
+    Url: ${ivy.app.baseurl}/api/approve
     Features:
     - ch.ivyteam.ivy.rest.client.authentication.HttpBasicAuthenticationFeature
     - ch.ivyteam.ivy.rest.client.mapper.JsonFeature
