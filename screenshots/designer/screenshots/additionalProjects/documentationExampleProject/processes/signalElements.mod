@@ -1,9 +1,11 @@
 [Ivy]
-16BBC3FED3A47640 9.4.0 #module
+16BBC3FED3A47640 9.4.1 #module
 >Proto >Proto Collection #zClass
 ss0 signalElements Big #zClass
 ss0 B #cInfo
 ss0 #process
+ss0 @TextInP .colors .colors #zField
+ss0 @TextInP color color #zField
 ss0 @TextInP .type .type #zField
 ss0 @TextInP .processKind .processKind #zField
 ss0 @AnnotationInP-0n ai ai #zField

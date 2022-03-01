@@ -1,9 +1,11 @@
 [Ivy]
-167356B1245C7158 9.4.0 #module
+167356B1245C7158 9.4.1 #module
 >Proto >Proto Collection #zClass
 es0 exampleHtmlDialogProcess Big #zClass
 es0 RD #cInfo
 es0 #process
+es0 @TextInP .colors .colors #zField
+es0 @TextInP color color #zField
 es0 @TextInP .type .type #zField
 es0 @TextInP .processKind .processKind #zField
 es0 @AnnotationInP-0n ai ai #zField

@@ -1,9 +1,11 @@
 [Ivy]
-16C70B87DCB65433 9.4.0 #module
+16C70B87DCB65433 9.4.1 #module
 >Proto >Proto Collection #zClass
 is0 intermediateEventElements Big #zClass
 is0 B #cInfo
 is0 #process
+is0 @TextInP .colors .colors #zField
+is0 @TextInP color color #zField
 is0 @TextInP .type .type #zField
 is0 @TextInP .processKind .processKind #zField
 is0 @AnnotationInP-0n ai ai #zField

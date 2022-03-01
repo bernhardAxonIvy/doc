@@ -1,9 +1,11 @@
 [Ivy]
-159FF3D428E42BB5 9.4.0 #module
+159FF3D428E42BB5 9.4.1 #module
 >Proto >Proto Collection #zClass
 Jl0 JaxRsServiceCall Big #zClass
 Jl0 B #cInfo
 Jl0 #process
+Jl0 @TextInP .colors .colors #zField
+Jl0 @TextInP color color #zField
 Jl0 @TextInP .type .type #zField
 Jl0 @TextInP .processKind .processKind #zField
 Jl0 @AnnotationInP-0n ai ai #zField

@@ -1,9 +1,11 @@
 [Ivy]
-1567F0BE1CC43932 9.4.0 #module
+1567F0BE1CC43932 9.4.1 #module
 >Proto >Proto Collection #zClass
 rs0 runtimeLogProcess Big #zClass
 rs0 B #cInfo
 rs0 #process
+rs0 @TextInP .colors .colors #zField
+rs0 @TextInP color color #zField
 rs0 @TextInP .type .type #zField
 rs0 @TextInP .processKind .processKind #zField
 rs0 @AnnotationInP-0n ai ai #zField

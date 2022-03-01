@@ -1,9 +1,11 @@
 [Ivy]
-1675F79D89ABB65A 9.4.0 #module
+1675F79D89ABB65A 9.4.1 #module
 >Proto >Proto Collection #zClass
 sl0 signal Big #zClass
 sl0 B #cInfo
 sl0 #process
+sl0 @TextInP .colors .colors #zField
+sl0 @TextInP color color #zField
 sl0 @TextInP .type .type #zField
 sl0 @TextInP .processKind .processKind #zField
 sl0 @AnnotationInP-0n ai ai #zField

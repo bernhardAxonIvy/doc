@@ -1,9 +1,11 @@
 [Ivy]
-168F0C6DF682858E 9.4.0 #module
+168F0C6DF682858E 9.4.1 #module
 >Proto >Proto Collection #zClass
 cs0 commonTabsProcess Big #zClass
 cs0 B #cInfo
 cs0 #process
+cs0 @TextInP .colors .colors #zField
+cs0 @TextInP color color #zField
 cs0 @TextInP .type .type #zField
 cs0 @TextInP .processKind .processKind #zField
 cs0 @AnnotationInP-0n ai ai #zField

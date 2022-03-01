@@ -1,9 +1,11 @@
 [Ivy]
-16B5634C8976FEF1 9.4.0 #module
+16B5634C8976FEF1 9.4.1 #module
 >Proto >Proto Collection #zClass
 Ps0 PersonEditorProcess Big #zClass
 Ps0 RD #cInfo
 Ps0 #process
+Ps0 @TextInP .colors .colors #zField
+Ps0 @TextInP color color #zField
 Ps0 @TextInP .type .type #zField
 Ps0 @TextInP .processKind .processKind #zField
 Ps0 @AnnotationInP-0n ai ai #zField

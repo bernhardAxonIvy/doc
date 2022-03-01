@@ -1,9 +1,11 @@
 [Ivy]
-167C6BD0817F2889 9.4.0 #module
+167C6BD0817F2889 9.4.1 #module
 >Proto >Proto Collection #zClass
 el0 exampleWsProcess Big #zClass
 el0 WS #cInfo
 el0 #process
+el0 @TextInP .colors .colors #zField
+el0 @TextInP color color #zField
 el0 @TextInP .webServiceName .webServiceName #zField
 el0 @TextInP .implementationClassName .implementationClassName #zField
 el0 @TextInP .authenticationType .authenticationType #zField
