@@ -21,8 +21,7 @@ contains the name and a description of the element.
 Element Name
    Name of the element in the process.
 
-   The name will be displayed in the process editor. Various font format
-   options can be chosen on the popup menu of selected text.
+   The name will be displayed in the process editor.
 
    .. tip::
 
@@ -37,15 +36,13 @@ Description
    This text appears as tool tip in the process editor whenever the
    mouse stays over the element.
 
+   You may format the descriptive text with Markdown to improve it's readability.
+   Here's a cheat-sheet with the most common keywords https://www.markdownguide.org/cheat-sheet/.
+
 Means/Documents
    A list with references to additional stuff that is related to this
    process step, i.e. documentation, templates, example forms and many
    more.
-
-   .. tip::
-
-      In generated HTML reports, a link is inserted for these document
-      references.
 
 
 .. _process-element-tab-name-tags:
