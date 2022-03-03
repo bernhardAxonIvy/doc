@@ -6,8 +6,8 @@ Element-Type: testcase
 Element-Version: 3.0
 External-Reference: 
 Id: _axKUIGBiEeaAcqEsdR5JMw
-Runtime-Version: 2.5.0.202001211718
-Save-Time: 10/20/20, 2:02 AM
+Runtime-Version: 2.5.2.202107052356
+Save-Time: 3/3/22, 4:48 PM
 Tags: skipOnLinux
 Testcase-Type: ecl
 
@@ -21,7 +21,9 @@ get-eclipse-window | maximize
 
 OpenView Debug
 with [get-view "Axon Ivy Projects" | get-tree] {
-	get-item "QuickStartTutorial/Processes/exampleProcess" | double-click
+	select "QuickStartTutorial/Processes/exampleProcess"
+	get-item "QuickStartTutorial/Processes/exampleProcess" 
+		| get-menu -path "Open With/Process Editor" | click -metaKeys ""
 }
 
 with [find-tab-folder Debug]
@@ -32,9 +34,10 @@ with [find-tab-folder Debug]
 
 importProject -projectName documentationExampleProject
 
-with [get-view "Axon Ivy Projects" | get-tree]
-{
-	get-item "documentationExampleProject/Processes/JaxRsServiceCall" | double-click
+with [get-view "Axon Ivy Projects" | get-tree] {
+	select "documentationExampleProject/Processes/JaxRsServiceCall"
+	get-item "documentationExampleProject/Processes/JaxRsServiceCall"
+		| get-menu -path "Open With/Process Model Editor.*" | click -metaKeys ""
 }
 
 get-button "Start Engine and show overview page" | click
