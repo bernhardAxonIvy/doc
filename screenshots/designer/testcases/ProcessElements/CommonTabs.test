@@ -26,7 +26,7 @@ let [val processName "commonTabsProcess"][val elementName "Add Person to Organis
 	captureInscription
 		-elementType $elementType
 		-tabName "Name"
-		-width 700 -height 600
+		-width 700 -height 680
 		-screenshot "tab-name.png"
 
 	openInscription

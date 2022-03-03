@@ -52,10 +52,14 @@ cs0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
         <name>Add Person to Organisation</name>
-        <desc>Checks if user id &lt;userid&gt; exists.
-IF true then the user id is transformed into user name, user address and user lcoation.
-If false then the flaf &lt;unknownuser&gt; is set.
-Uses the system wide user id list to find and expand users.</desc>
+        <desc>Checks if user id `userid` exists:
+- If `true` then the user id is transformed into user name, user address and user location.
+- If `false` then the flag *unknownuser* is set.
+Uses the **system wide user id** list to find and expand users.
+
+# Markdown formatting
+You may format descriptive text **bold** or *italic* or ++underlined++ or simply as `code`.
+While you hover the element, these markups will be rendered as nice HTML to the end-user.</desc>
         <tool>
             <toolName>Documentation of user ID list</toolName>
             <url>http://acme.greatproduct.com/internal/doc/useridlist.html</url>

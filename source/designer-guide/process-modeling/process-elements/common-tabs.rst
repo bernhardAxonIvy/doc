@@ -35,9 +35,11 @@ Description
 
    This text appears as tool tip in the process editor whenever the
    mouse stays over the element.
+   
+   .. tip::
 
-   You may format the descriptive text with Markdown to improve it's readability.
-   Here's a cheat-sheet with the most common keywords https://www.markdownguide.org/cheat-sheet/.
+      You may format the descriptive text with Markdown to improve it's readability.
+      Here's a cheat-sheet with the most common keywords https://www.markdownguide.org/cheat-sheet/.
 
 Means/Documents
    A list with references to additional stuff that is related to this
