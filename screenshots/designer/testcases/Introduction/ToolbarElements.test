@@ -5,8 +5,8 @@ Element-Type: testcase
 Element-Version: 3.0
 External-Reference: 
 Id: _wxwAwFTNEeaUV_J5BuL85w
-Runtime-Version: 2.5.0.202001211718
-Save-Time: 2/28/20, 10:21 AM
+Runtime-Version: 2.5.2.202107052356
+Save-Time: 3/3/22, 11:16 AM
 Testcase-Type: ecl
 
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
@@ -34,11 +34,17 @@ get-button Search | get-object | captureScreenshot "designer/button-search.png"
 
 with [get-view "Axon Ivy Projects" | get-tree] {
     select "QuickStartTutorial/Processes/exampleProcess" | double-click
+    wait -ms 2000
     select "QuickStartTutorial/Processes/MyProcess" | double-click
+    wait -ms 2000
 }
 
-get-button "Back to exampleProcess.*" | get-object | captureScreenshot "designer/button-previous-modification.png"
-get-button "Back to exampleProcess.*" | click
-get-button "Open Perspective" | get-object | captureScreenshot "designer/button-open-perspective.png"
-get-button "Select content and formatting language for design and simulation .*" | get-object | captureScreenshot "simulation-debugging/button-languages.png"
+get-eclipse-window | get-button "Back to exampleProcess.*" 
+	| get-object | captureScreenshot "designer/button-previous-modification.png"
+get-eclipse-window | get-button "Back to exampleProcess.*" | click
+get-eclipse-window | get-button "Open Perspective" 
+	| get-object | captureScreenshot "designer/button-open-perspective.png"
+get-eclipse-window | get-button "Select content and formatting language for design and simulation .*" 
+	| get-object | captureScreenshot "simulation-debugging/button-languages.png"
+
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
