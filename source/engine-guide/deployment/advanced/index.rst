@@ -77,8 +77,8 @@ With deployment options you can influence the deployment behavior:
   :language: yaml
   :linenos:
 
-See the `|axon-ivy| Project Build Plugin deploy documentation
-<https://axonivy.github.io/project-build-plugin/release/deploy-to-engine-mojo.html>`_
+See the
+:project-build-plugin-doc:`|axon-ivy| Project Build Plugin deploy documentation <deploy-to-engine-mojo.html>`
 for more information about the deployment properties.
 
 
