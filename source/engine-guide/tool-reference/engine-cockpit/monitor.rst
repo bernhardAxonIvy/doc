@@ -80,7 +80,7 @@ Slow Requests
 """""""""""""
 
 The **Slow Requests** view allows you to activate and analyze the :ref:`tracing`. If activated every 
-request is traced and if it is slower than the slowest 50 requests, it will be displayed in this view.
+request is traced. The fifty slowest requests will be displayed in this view.
 
 You can start, stop, clear, refresh the tracing or export it to an Excel file. 
 Hover with the mouse over the name to see additional attributes of the request. 

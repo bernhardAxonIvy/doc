@@ -40,9 +40,9 @@ The whole request was processed in 16 ms.
 Request Tracing Tools
 .....................
 
-If you use an external tracing tool that propagates a trace id as HTTP header then the trace id 
-is used as **requestId** instead of the internally generated identifier. This allows you to 
-aggregate log entries from different systems using the **requestId**. 
+You can use an external tracing tool that propagates a trace id HTTP header. 
+|ivy-engine| will in that case re-use the given trace Id as **requestId**.
+This allows you to aggregate log entries from different systems using the **requestId**. 
 |ivy-engine| supports the following HTTP headers:
 
 =================  =============      
