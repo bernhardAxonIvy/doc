@@ -153,6 +153,10 @@ Toolbar Menu (|image25|)
    set and set whether you want to see fully qualified names for
    breakpoints in Java code.
 
+Condition
+   If you select a process breakpoint, you can add an :ref:`expression condition
+   <process-element-breakpoints>` to the breakpoint in the input field below.
+
 
 .. _debugger-variables-view:
 

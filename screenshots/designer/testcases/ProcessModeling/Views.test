@@ -32,14 +32,6 @@ with [find-tab-folder Outline]
 	get-object | captureScreenshot "process-modeling/outline-view.png"
 }
 
-OpenView "Process Templates"
-get-view "Process Templates" | get-table | select templateExample
-with [find-tab-folder "Process Templates"]
-{
-	resizeWindow 700 200
-	find-tab-folder "Process Templates" | get-object | captureScreenshot "process-modeling/process-template-view.png"
-}
-
 importProject -projectName QuickStartTutorial
 with [get-view "Axon Ivy Projects" | get-tree]
 {
