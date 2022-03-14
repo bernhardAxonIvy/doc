@@ -5,18 +5,29 @@ Swimlanes
 
 Processes can be visually structured by using *pools* and *lanes*. Pools
 and lanes are colored background swimlanes with a label that is placed
-*behind* the process logic. Swimlanes can have a *horizontal* or
-*vertical* orientation.
+*behind* the process logic. Swimlanes have a *horizontal* orientation.
 
 Swimlanes are available for all process kinds and are typically used to
 visualize organizations, roles, responsibility assignments or systems
 for process elements or sections of process logic.
 
-A pool or lane can be widened or narrowed by dragging it's border/edge
-with the mouse. By default, the position of process elements lying
-outside the modified lane are adjusted accordingly. By pressing the
-``Shift-Key`` during the drag, you can omit the automatic adjustment of
-process elements.
+If you select a pool or lane, you can widened or narrowed it by dragging the
+handle below or move it by dragging the top handle. The position of process
+elements lying outside the modified lane are not adjusted accordingly.
+
+You will also get access to the **Lane Quick Action Menu** if you select a
+pool/lane, where you can do the following actions:
+
+Delete:
+   Delete the selected lane/pool.
+
+Edit Label:
+   Edit the label of the selected lane/pool.
+
+Create Lane:
+   *Only available on pools*
+
+   Create a new embedded lane inside the selected pool.
 
 .. note::
 

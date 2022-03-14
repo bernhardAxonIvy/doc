@@ -38,7 +38,6 @@ Views
 -  :ref:`debugger-expressions-view`
 -  :ref:`simulate-process-models-debugger-history-view`
 -  :ref:`process-performance-view`
--  :ref:`process-template-view`
 -  :ref:`problems-view`
 -  :ref:`ivy-project-view`
 -  :ref:`reference-view`

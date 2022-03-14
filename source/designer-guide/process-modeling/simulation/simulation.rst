@@ -47,9 +47,9 @@ using the actions in the toolbar or the |axon-ivy| menu.
    Engine Sub-Menu
 
 Starting the engine and show overview page
-   Select the entry |image1| in the menu or as button in the toolbar
-   toolbar to start the Simulation Engine, open the Process Development
-   Perspective and refresh the Process Start Overview page.
+   Select the entry |image1| in the menu or as button in the toolbar to start
+   the Simulation Engine, open the Process Development Perspective and refresh
+   the Process Start Overview page.
 
 Starting the engine
    Select the entry |image3| in the menu or as button  in the
@@ -138,6 +138,8 @@ resumed by the user explicitly over the functionality of the
 :ref:`Debug View <debugger-debug-view>`. You can see a list of your breakpoints and
 edit them in the :ref:`Breakpoint View <debugger-breakpoints-view>`.
 
+.. _process-element-breakpoints:
+
 Process Element Breakpoints
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -147,20 +149,28 @@ the process element is executed.
 
 **Add / Remove a breakpoint**
 
-You can add process element breakpoints in a Process editor or User
-Dialog Logic editor window by using the popup menu. Right-click on the
-process step on which you intend to set the breakpoint and go to the
-*Breakpoint* sub-menu.
+You can add process element breakpoints in a Process editor or User Dialog Logic
+editor window by using the Quick-Action menu. Select the process step on which
+you intend to set the breakpoint and click on the bug.
 
 |image10|
 
-Adding a *conditional breakpoint* allows you to define an expression in
-a input box which must evaluate to true in order to suspend the
-execution. In the expression you have access to the ``in`` variable and
-all other variables in the context of the process step. As you can see
-in the figure above, process element breakpoints are visualized in the
-Process editor as a small filled dot at the border of the process step
-|image11|.
+**Edit a breakpoint**
+
+You can add a *condition* to a breakpoint. If you do so, the breakpoint is only
+active if the expression evaluates to `true` and will then suspend the
+execution. In the expression you have access to the ``in`` variable and all
+other variables in the context of the process step. 
+
+|image11|
+
+**Disable a breakpoint**
+
+You can disable a specific breakpoint over the :ref:`debugger-breakpoints-view` or by clicking
+on a breakpoint in the Process Editor. It is also possible to disable all
+breakpoints in the :ref:`debugger-breakpoints-view`. 
+
+|image12|
 
 Data Class Attribute Value Change Breakpoints
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -191,4 +201,5 @@ field is displayed in the variable ``debug``.
 .. |image7| image:: /_images/simulation-debugging/button-engine-speed.png
 .. |image9| image:: /_images/simulation-debugging/button-engine-animation.png
 .. |image10| image:: /_images/simulation-debugging/breakpoint-add.png
-.. |image11| image:: /_images/simulation-debugging/breakpoint-marker.png
+.. |image11| image:: /_images/simulation-debugging/breakpoint-condition.png
+.. |image12| image:: /_images/simulation-debugging/breakpoint-disable.png

@@ -16,7 +16,7 @@ is everything which uses/calls the artifact or which contains it.
 .. tip::
 
    To work with references of process elements, there are also some
-   useful features on the Process Editor :ref:`process-editor-element-menu`.
+   useful features on the Process Editor :ref:`process-editor-quick-actions`.
 
 Accessibility
 ~~~~~~~~~~~~~
