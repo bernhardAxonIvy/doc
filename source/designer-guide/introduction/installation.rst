@@ -42,7 +42,8 @@ We test |ivy-designer| with `Adoptium <https://adoptium.net/>`_ and with `OpenJD
 
 .. rubric:: Operating Systems
 
-:Windows: Windows 10 x64, Windows 11 x64
+:Windows: Windows 10 / 11 x64 with `WebView2
+    <https://developer.microsoft.com/en-us/microsoft-edge/webview2/>`_ installed
 
 :Linux: Debian based Linux x64 with GTK 3 and X.org window system (tested on Ubuntu 20.04)
 
