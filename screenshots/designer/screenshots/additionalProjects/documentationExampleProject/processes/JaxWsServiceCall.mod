@@ -1,5 +1,5 @@
 [Ivy]
-160DF556A2226E66 9.4.1 #module
+160DF556A2226E66 9.4.3 #module
 >Proto >Proto Collection #zClass
 Jl0 JaxWsServiceCall Big #zClass
 Jl0 B #cInfo
@@ -37,7 +37,7 @@ TaskTriggered.PRI=2
 TaskTriggered.ROL=Everybody
 TaskTriggered.TYPE=0' #txt
 Jl0 f0 caseData businessCase.attach=true #txt
-Jl0 f0 showInStartList 1 #txt
+Jl0 f0 showInStartList true #txt
 Jl0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
@@ -98,7 +98,7 @@ TaskTriggered.PRI=2
 TaskTriggered.ROL=Everybody
 TaskTriggered.TYPE=0' #txt
 Jl0 f7 caseData businessCase.attach=true #txt
-Jl0 f7 showInStartList 1 #txt
+Jl0 f7 showInStartList true #txt
 Jl0 f7 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>

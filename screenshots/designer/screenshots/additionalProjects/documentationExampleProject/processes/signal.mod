@@ -1,5 +1,5 @@
 [Ivy]
-1675F79D89ABB65A 9.4.1 #module
+1675F79D89ABB65A 9.4.3 #module
 >Proto >Proto Collection #zClass
 sl0 signal Big #zClass
 sl0 B #cInfo
@@ -102,7 +102,7 @@ customFields.STRING.TypeName=param.in.city
 customFields.TIMESTAMP.BusinessMilestoneTimestamp=param.in.city.toDateTime()
 customFields.TIMESTAMP.BusinessStartTimestamp=param.in.city.toDateTime()' #txt
 sl0 f34 wfuser 1 #txt
-sl0 f34 showInStartList 1 #txt
+sl0 f34 showInStartList true #txt
 sl0 f34 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>

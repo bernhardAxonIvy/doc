@@ -1,5 +1,5 @@
 [Ivy]
-1562D1CBAC49CCF8 9.4.1 #module
+1562D1CBAC49CCF8 9.4.3 #module
 >Proto >Proto Collection #zClass
 es0 exampleProcess Big #zClass
 es0 B #cInfo
@@ -42,7 +42,7 @@ es0 f0 caseData 'businessCase.attach=true
 case.category=Personal
 case.name=Personal Case' #txt
 es0 f0 wfuser 1 #txt
-es0 f0 showInStartList 1 #txt
+es0 f0 showInStartList true #txt
 es0 f0 roleExceptionId '>> Ignore Exception' #txt
 es0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
