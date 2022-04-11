@@ -54,6 +54,11 @@ The name of the runtime logger has a well defined format:
   :language: xml
   :linenos:
 
+All available categories [category] are defined in the :public-api:`RuntimeLogCategory
+</ch/ivyteam/ivy/application/RuntimeLogCategory.html>`. Write them in lower case
+e.g. :code:`<Logger name="runtimelog.myapp.hrm.rest_client">`. 
+
+
 Log format
 ----------
 
