@@ -39,7 +39,7 @@ with the default configuration automatically on the fly.
 Runtime Log
 -----------
 
-The Runtime Log is a well-known `designer feature <simulate-process-models-debugger-runtimelog-view>`_ and disabled by default
+The Runtime Log is a well-known :ref:`designer feature <simulate-process-models-debugger-runtimelog-view>` and disabled by default
 in the |ivy-engine| to prevent a flood of log messages, which can decrease
 performance and filling the disk.
 But you can set the log level of a specific runtime logger and bring them even to another file to get the logs also on the |ivy-engine|.
