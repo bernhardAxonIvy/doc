@@ -1,5 +1,5 @@
 [Ivy]
-160DF556A2226E66 9.4.6 #module
+160DF556A2226E66 9.4.3 #module
 >Proto >Proto Collection #zClass
 Jl0 JaxWsServiceCall Big #zClass
 Jl0 B #cInfo
@@ -71,6 +71,7 @@ Jl0 f6 actionTable 'out=in;
 out.user.country=wsResponse.countryCode;
 ' #txt
 Jl0 f6 actionCode ivy.log.info(wsResponse.returnCode); #txt
+Jl0 f6 cache '{/cache false /invalidation false /scope 0 /groupname "\"geoip\""/invalidation_time_group ""/lifetime_group "0"/identifier "\"address\""/invalidation_time_entry ""/lifetime_entry "0"}' #txt
 Jl0 f6 clientId 160DF5320F0D7ACD #txt
 Jl0 f6 port GeoIPServiceSoap #txt
 Jl0 f6 operation GetGeoIP #txt
