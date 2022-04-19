@@ -7,7 +7,7 @@ task list and is exclusively handled by the system. The values on this
 tab are therefore only relevant for analyzing the finished tasks and not
 for the task list itself.
 
-.. figure:: /_images/process-elements/call-and-wait-tab-task.png
+.. figure:: /_images/process-elements/waitIntermediateEvent_taskTab.png
 
 Custom fields
    The values set on this table are only informational and have no
