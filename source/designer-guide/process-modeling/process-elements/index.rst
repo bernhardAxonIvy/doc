@@ -60,7 +60,6 @@ The icons on the tab indicate their state:
    task-switch-gateway
    task-switch-event
    wait-program-intermediate-event
-   call-and-wait
    process-end-page
    error-end
    process-end

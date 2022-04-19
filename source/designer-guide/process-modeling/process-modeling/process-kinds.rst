@@ -43,7 +43,6 @@ same data is available as inside the caller process).
    -  :ref:`process-element-task-switch-gateway`
    -  :ref:`process-element-task-switch-event`
    -  :ref:`process-element-wait-program-intermediate-event`
-   -  :ref:`process-element-call-and-wait`
 
 .. _process-kind-callable:
 
