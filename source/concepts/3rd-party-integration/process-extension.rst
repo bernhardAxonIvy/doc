@@ -18,9 +18,6 @@ A generic Java interface is provided in following process elements:
 :ref:`process-element-wait-program-intermediate-event`
    Interrupts process execution until an (external) event occurs.
 
-:ref:`process-element-call-and-wait`
-   A combination of the *PI* and *Wait* process elements.
-
 
 
 Custom Process Element
