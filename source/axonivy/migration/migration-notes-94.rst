@@ -36,7 +36,22 @@ This validates ivyScript code within ivy processes by default during compilation
 
 Read more about the compilation parameters and their default values here:
 https://axonivy.github.io/project-build-plugin/snapshot/9.4/compileProject-mojo.html#skipScriptValidation
-    
+
+
+Call & Wait element
+***********************
+
+|tag-project-removed|
+
+The Call&Wait intermediate process element is no longer supported. 
+
+It will be automatically removed from existing processes where it has been present.
+
+In most cases the 'call' aspect implementation can be replaced with a normal 
+:ref:`process-element-pi` which subsequently is connected 
+to a :ref:`process-element-wait-program-intermediate-event` element 
+that implements the 'wait' aspect.
+
 ------------
 
 .. include:: _tagLegend.rst    
