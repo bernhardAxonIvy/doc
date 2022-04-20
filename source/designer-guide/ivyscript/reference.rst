@@ -12,7 +12,7 @@ Operators
    | Operator              | Explanation           | Usage                                           |
    +=======================+=======================+=================================================+
    | .                     | Field and method      | ``in.customer.name``                            |
-   |                       | access of ivy objects | addresses the name                              |
+   |                       | access of Ivy objects | addresses the name                              |
    |                       |                       | attribute in the data                           |
    |                       |                       | structure                                       |
    |                       |                       |                                                 |
@@ -259,7 +259,7 @@ area (which is also the reason why absolute File paths are disallowed).
 The Environment Variable ``ivy``
 --------------------------------
 
-The ivy environment variable is provided to access the context of the
+The Ivy environment variable is provided to access the context of the
 current process. The environment information is available as fields on
 the global ``ivy`` variable, e.g. to access the CMS of the current
 project you use:
@@ -284,7 +284,7 @@ project you use:
    class and use it's static API.
 
    Please note that it is necessary that the Java code which makes use
-   of the ivy context variable must run within an Ivy request. Otherwise
+   of the Ivy context variable must run within an Ivy request. Otherwise
    context information will not be available, most likely resulting in
    an ``EnvironmentNotAvailableException``.
 
@@ -344,7 +344,7 @@ the objects are described in the :public-api:`Public API </>`):
 -  ``cms`` - a :public-api:`IContentManagmentSystem </ch/ivyteam/ivy/cm/IContentManagementSystem.html>` object representing the CMS
    used in this project.
 
--  ``html`` - a :public-api:`IHtmlDialogContext </ch/ivyteam/ivy/htmldialog/IHtmlDialogContext.html>` object specifies the |axon-ivy|
+-  ``html`` - a :public-api:`IHTMLDialogContext </ch/ivyteam/ivy/htmldialog/IHTMLDialogContext.html>` object specifies the |axon-ivy|
    HTML environment
 
 -  ``log`` - a :public-api:`Logger </ch/ivyteam/log/Logger.html>` object. You can define log outputs here that
