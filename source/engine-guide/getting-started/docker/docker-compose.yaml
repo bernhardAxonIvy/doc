@@ -9,8 +9,8 @@ services:
      # ivy configuration
      - ./ivy.yaml:/etc/axonivy-engine/ivy.yaml
 
-     # mount application directory to the host that this directory is persistend
-     # otherwise you will loos application deployments when container will be
+     # mount application directory to the host where this directory is persisted
+     # otherwise you will loose application deployments when container will be
      # destroyed
      - ./applications:/usr/lib/axonivy-engine/applications
 

@@ -3,19 +3,19 @@
 System Requirements
 ===================
 
-The following system requirements highly depends on the number of users,
-concurrent sessions and deployed applications.
+The following system requirements highly depend on the number of Named Users,
+Concurrent Users and deployed applications.
 
 
 Hardware Requirements
 ---------------------
 
-By default the |ivy-engine| is running with the bundled Elasticsearch server.
-It's possible to run the Elasticsearch server :ref:`externally <elasticsearch>`.
-Depending on that the hardware minimum requirements changes.
+By default, the |ivy-engine| is runs a bundled Elasticsearch server.
+It is possible to run the Elasticsearch server :ref:`externally <elasticsearch>`.
+This also affects the minimum hardware requirements.
 
 
-.. rubric:: With bundled Elasticsearch (default)
+.. rubric:: With bundled Elasticsearch server (default)
 
 * **Memory (RAM)**:
   Minimum is 8 GB, we recommend to use 32 GB.
@@ -23,31 +23,31 @@ Depending on that the hardware minimum requirements changes.
 * **Disk Space**:
   Minimum is 20 GB, we recommend 100 GB on a Solid State Disk (SSD).
 
-* **Processor**:
+* **Processors**:
   Minimum is 4 cores with 2 GHz, we recommend 16 cores with 2.5 GHz.
 
 
-.. rubric:: With external Elasticsearch
+.. rubric:: With external Elasticsearch server
 
 * **Memory (RAM)**:
   Minimum is 4 GB, we recommend to use 16 GB.
 
 * **Disk Space**:
-  Minimum is 1 GB, we recommend 20 GB on a Solid State Disk (SSD).
+  Minimum is 2 GB, we recommend 50 GB on a Solid State Disk (SSD).
 
-* **Processor**:
+* **Processors**:
   Minimum is 4 cores with 2 GHz, we recommend 16 cores with 2.5 GHz.
 
 
 Software Requirements
 ---------------------
 
-|ivy-engine| needs Java SE 11 to run and is tested with `Adoptium
+The |ivy-engine| needs Java SE 11 to run and is tested with `Adoptium
 <https://adoptium.net/>`_ and with `OpenJDK <https://openjdk.java.net/>`_.
 
-Note, that Java SE 11 `Adoptium <https://adoptium.net/>`_ is already
-included in our Windows installation and Docker container.    
-On Linux we do not include Java SE 11. You may want to use Java SE 11 provided
+Note: Java SE 11 `Adoptium <https://adoptium.net/>`_ is already
+included in our Windows installation and the Docker container.    
+On Linux, we do not include Java SE 11. You may want to use Java SE 11 provided
 by your operating system or install `Adoptium <https://adoptium.net/>`_.
 
 
@@ -90,5 +90,5 @@ All well known web browsers are supported:
 - Microsoft Edge
 
 For security reasons we recommend to use the latest available web browser
-versions. Most other web browser that support the latest JavaScript, Html 5 and
+versions. Most other web browsers which support the latest JavaScript, HTML 5 and
 CSS 3 specifications will work, too.
