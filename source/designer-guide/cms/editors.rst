@@ -1,7 +1,7 @@
 Editors
 =======
 
-The content management system can be viewed and edited in the Axon Ivy Designer.
+The content management system can be viewed and edited in the |ivy-designer|.
 
 .. _cms-view:
 
@@ -16,7 +16,7 @@ content objects and their values.
 .. figure:: /_images/cms/cms-tree-view.png
 
 
-Display content object values
+Display Content Object Values
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The view represent the cms structure as a tree. Furthermore the table can
@@ -34,7 +34,7 @@ displaying the columns for the languages.
 .. |imgLanguageChooser| image:: /_images/cms/action-toggle-lang-columns.png
 
 
-Inline editing
+Inline Editing
 ~~~~~~~~~~~~~~
 
 For text based types you can edit the text directly in the view, just click in
@@ -62,7 +62,7 @@ Furthermore you can use ``?`` to match any single character.
 
 
 
-Context menu
+Context Menu
 ~~~~~~~~~~~~
 
 In the context menu in the cms view there are several actions available:
@@ -132,7 +132,7 @@ Drag and Drop
 ~~~~~~~~~~~~~
 
 Content objects (e.g. *strings* and *images*) from the CMS view can be
-dragged and dropped into the :ref:`Html Dialog editor <html-dialog-editor-dragndrop>`
+dragged and dropped into the :ref:`HTML Dialog editor <html-dialog-editor-dragndrop>`
 to be used for label texts or for images.
 
 .. |imgRename| image:: /_images/cms/action-rename.png
@@ -149,7 +149,7 @@ to be used for label texts or for images.
 
 .. _cms-content-object-editor:
 
-Content object editor
+Content Object Editor
 ~~~~~~~~~~~~~~~~~~~~~
 
 Double-clicking a content object opens the content object Editor to modify
@@ -201,7 +201,7 @@ value. You find some actions on the right side:
 
 .. _cms-content-object-value-editors:
 
-Content object value editors
+Content Object Value Editors
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There are different editors for the different content object types.
@@ -209,7 +209,7 @@ There are different editors for the different content object types.
 
 .. _cms-text-editor:
 
-Text editor
+Text Editor
 ^^^^^^^^^^^
 
 This editor can handle texts. You can edit them directly in the editor.
@@ -219,7 +219,7 @@ This editor can handle texts. You can edit them directly in the editor.
 
 .. _cms-image-editor:
 
-Image editor
+Image Editor
 ^^^^^^^^^^^^
 
 This editor can handle images of type GIF, PNG and JPG. You can import and
@@ -230,7 +230,7 @@ export images.
 
 .. _cms-document-editor:
 
-Document editor
+Document Editor
 ^^^^^^^^^^^^^^^
 
 This editor can handle all document file types such as TXT, XML, DOC, PDF and
