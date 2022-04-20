@@ -3,7 +3,7 @@
 Engine Launchers
 ================
 
-This program starts an instance of an |ivy-engine|.
+These programs start an instance of an |ivy-engine|.
 
 .. tip::
     An |ivy-engine| can also be started as a service. For more information
@@ -34,11 +34,11 @@ The following options are available for the |ivy-engine|:
 +==============+=====================================================================================================================================================+===========+
 | -start       | Starts the engine. Same behavior as if no options are given. Allows to stop the engine by pressing a key in the console if a console is available.  | no        |
 +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| -startdaemon | Starts the engine. Does not allow to stop the engine by pressing a key in the console.                                                              | no        |
+| -startdaemon | Starts the engine as a background process. Does not allow to stop the engine by pressing a key in the console.                                                              | no        |
 +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
 | -stop        | Stops the engine. Only initiate the stop but will not wait until the engine has really stopped.                                                     | no        |
 +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| -stopdaemon  | Stops the engine. Will wait until the engine has really stopped.                                                                                    | no        |
+| -stopdaemon  | Stops the engine running as a background process. Will wait until the engine has really stopped.                                                                                    | no        |
 +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
 | -status      | Prints the current status of the engine.                                                                                                            | no        |
 +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-----------+

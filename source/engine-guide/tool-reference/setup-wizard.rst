@@ -3,19 +3,19 @@
 Setup Wizard
 ============
 
-The Setup Wizard is a simple user interface, for operators to apply the 
+The Setup Wizard is a simple user interface for operators to apply the 
 initial configuration that is necessary to turn a demo engine into a
-productive |ivy-engine| instance. This includes especially the installation of a
+productive |ivy-engine| instance. This includes among other steps the installation of a
 license and the creation of a system database.
 
 .. note::
     The changes that you make with the :ref:`setup-wizard` do not become active
-    unless you restart the engine. Even though, configurations are constantly written
+    unless you restart the engine. However, configurations are constantly written
     from the wizard to the :ref:`ivy-yaml` file.
 
 Advanced users might prefer to manually craft configurations in :ref:`ivy-yaml` and 
-use the :ref:`engine-config-cli` to roll out and |ivy-engine| into production.
-Configuration files make the installation process faster re-reproducible in
+use the :ref:`engine-config-cli` to roll out an |ivy-engine| into production.
+Configuration files make the installation process quickly reproducable in
 various environments such as dev, test and prod.
 
 
@@ -29,7 +29,7 @@ If the engine runs in the :ref:`demo-mode` you see a warning on
 the info page with a link to the :ref:`setup-wizard`. 
 E.g. http://myServer:myPort/system/faces/view/engine-cockpit/setup.xhtml
 
-If you are not able to start the |ivy-engine| anymore, you may remove the
+If you are not able to start the |ivy-engine| anymore, you can remove the
 installed license file from the :file:`configuration` directory. The
 |ivy-engine| should now start up in :ref:`demo-mode`.
 
@@ -44,18 +44,18 @@ installed license file from the :file:`configuration` directory. The
 License
 -------
 
-On the :guilabel:`License` step you have to upload a valid license:
+In the :guilabel:`License` step you have to upload a valid license:
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-setup-licence.png
 
 Use the :guilabel:`Choose license` button to open the file browser and select
-the license which should be used or simply drop your license inside the marked
+the license file which should be used or simply drop your license file inside the marked
 field.
 
 .. note::
     It is possible to configure the engine without a valid license, but the
     engine will always start in the :ref:`demo-mode` if you do not have a valid license
-    and therefore does not use your configuration. 
+    and therefore cannot use your configuration. 
 
 
 .. _setup-wizard-admins:
@@ -64,20 +64,21 @@ System Administrators
 ---------------------
 
 On the :guilabel:`Administrators` step you can configure users that have the
-right to administrate the |ivy-engine|:
+right to administer the |ivy-engine|:
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-setup-admins.png
 
-Defining an email address for the administrators is mandatory. Notifications
-of critical events, such as license violations, are sent to administrator email addresses.
+Defining an email address for the administrators is mandatory. Notifications of
+critical events, such as license violations, are sent to administrator email
+addresses.
 
 .. _setup-wizard-webserver:
 
 Web Server Ports
 ----------------
 
-On the :guilabel:`Web Server` step you can configure the enabled web protocols of the |ivy-engine|. 
-Furthermore, IP port bindings can be customized:
+In the :guilabel:`Web Server` step you enable and configure the web protocols of
+the |ivy-engine|. Furthermore, you can customize the IP port bindings:
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-setup-webserver.png
 
@@ -94,8 +95,8 @@ The following protocols are supported:
 +----------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. note::
-    In case you disable HTTP port, then the specified port will still opened by
-    the engine for internal purposes. Even though, the engine will refuse
+    In case you disable HTTP port, then the specified port will still be opened by
+    the engine for internal purposes. However, the engine will refuse
     connections from remote hosts. 
 
 
@@ -104,8 +105,8 @@ The following protocols are supported:
 System Database
 ---------------
 
-On the :guilabel:`System Database` step the |ivy-engine| system database can
-be configured, created and converted:
+In the :guilabel:`System Database` step the |ivy-engine|, you can configure,
+create and convert system databases:
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-setup-systemdb.png
 
@@ -118,7 +119,7 @@ moment the |ivy-engine| supports the following database systems:
 * :ref:`Microsoft SQL Server <systemdb-mssql>`
 * :ref:`Postgre SQL <systemdb-postgres>`
 
-On the second part you need to define you connection settings. Those depends on
+In the second part you need to define you connection settings. These depend on
 the chosen **database system** and **JDBC driver**. Click on the database system links above to find information about how
 to configure the connection settings. The applied db user needs the following
 privileges:
@@ -127,26 +128,26 @@ privileges:
 * ``CREATE``, ``ALTER``, ``DROP``: Tables, Views, Indexes, Triggers (to update the |ivy-engine|)
 * ``INSERT``, ``SELECT``, ``UPDATE``, ``DELETE`` data
 
-In a third step you can configure additional connection properties. When
-clicking on the :guilabel:`Add Property` button a dialog will show, where you
-can add properties. See :ref:`systemdb` to find information which
-additional connection properties are available for the database system that you
-have chosen.
+In a third step, you may configure additional connection properties. When
+clicking on the :guilabel:`Add Property` button a dialog will allow you to add
+properties. See :ref:`systemdb` to find information which additional connection
+properties are available for the database system that you have chosen.
 
 At the top of the page the state of the connection is visible. Use the button
-:guilabel:`Check Connection` to try to connect to the system database.
+:guilabel:`Check Connection` to try to connect to the system database once you
+have finished your configuration.
 
 
 .. _setup-wizard-systemdb-create:
 
-Create new System Database
+Create New System Database
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If the system database does not exist, use the :guilabel:`Create Database`
 button to create a new **system database**. During the creation of a new
-database the configured connection settings are used, but may some additional
-information is necessary. It must be defined in the **creation dialog**. See
-:ref:`systemdb` to find what additional information is necessary for the
+database the configured connection settings are used. Some additional
+information may be required. It has to be defined in the **creation dialog**.
+See :ref:`systemdb` to find what additional information is necessary for the
 chosen database system.
 
 .. note::
@@ -165,7 +166,7 @@ chosen database system.
 
 .. _setup-wizard-systemdb-convert:
 
-Convert an old System Database
+Convert a Existing System Database
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
@@ -181,5 +182,5 @@ Database` button to convert it to the latest version.
     Depending on the conversion steps and your database system it may be
     necessary to cut all connections to the system database to avoid problems.
     If you have problems with the conversion, please disconnect all other
-    database management tools, clients or other tools that has a connection to
+    database management tools, clients or other tools which have a connection to
     the system database and try again.
