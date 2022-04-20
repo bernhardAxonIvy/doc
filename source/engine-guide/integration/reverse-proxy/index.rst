@@ -5,20 +5,20 @@ Reverse Proxy
 
 The purpose of a reverse proxy (or frontend web server) is to provide a single
 point of entry for one or more services from outside the network. The reverse
-proxy receives all requests from the clients and forwards them to the |ivy-engine|
-which handles them. This allows to integrate the processes and
+proxy receives all requests from the clients and forwards them to the
+|ivy-engine| which handles them. This allows to integrate the processes and
 applications that you are running on an |ivy-engine| into a company or web
-portal. The use of a reverse proxy provides more security. The reverse proxy can
-and must be updated at any time to receive the latest security updates, because
-this is also the entry point for attackers. In addition, access to critical
-resources such as the Engine Cockpit can be blocked.
+portal. The use of a reverse proxy provides higher security. You have to keep
+the reverse proxy upo-to-date at any time with the latest security updates,
+because this is also the entry point for attackers. In addition, we recommend
+that you block access to critical resources such as the Engine Cockpit.
 
-We always recommend to run a productive |ivy-engine| behind a reverse proxy.
-You should terminate the SSL traffic (HTTPS) on the reverse proxy and let the
-reverse proxy communicate with the |ivy-engine| over plain HTTP, because the
-setup is more easy and this will also increase the performance.
+We always recommend to run a productive |ivy-engine| behind a reverse proxy. You
+should terminate the SSL traffic (HTTPS) on the reverse proxy and let the
+reverse proxy communicate with the |ivy-engine| via plain HTTP, because the
+setup is easier and performance is increased.
 
-It's still possible to use AJP as the protocol between the reverse proxy and the
+It is still possible to use AJP as the protocol between reverse proxy and the
 |ivy-engine|, but this is deprecated and will be removed in future versions
 of |ivy-engine|. Start using HTTP or HTTPS instead of AJP.
 
@@ -41,22 +41,21 @@ reverse proxy servers:
 
 Read carefully how to improve security by :ref:`restricting the access
 <reverse-proxy-secure>` to an |ivy-engine| when using a reverse proxy. Some
-reverse proxy servers provides :ref:`Single Sign-on (SSO) <single-sign-on>`
-functionality. The reverse proxy then is responsible to authenticate the user.
+reverse proxy servers provide :ref:`Single Sign-on (SSO) <single-sign-on>`
+functionality. The reverse proxy then is responsible to authenticate users.
 
-The Engine Cockpit is providing :ref:`web server view
-<engine-cockpit-web-server>` for debugging purpose while integrating a reverse
-proxy. 
+The Engine Cockpit provides the :ref:`web server view <engine-cockpit-web-server>`
+for debugging purposes while integrating a reverse proxy. 
 
 |
 
 
 .. rubric:: Base URL
 
-Beside the setup of the reverse proxy itself you always need to configure the
-base url in the :ref:`ivy.yaml <ivy-yaml>`. The |ivy-engine|
-will use this configuration to create absolute links that are accessible
-to clients (e.g. for links in :ref:`task mails <standard-process-email>`).
+Besides the setup of the reverse proxy itself, you always need to configure the
+base url in :ref:`ivy.yaml <ivy-yaml>`. The |ivy-engine| will use this
+configuration to create absolute links that are accessible to clients (e.g. for
+links in :ref:`task mails <standard-process-email>`).
 
    .. code-block:: yaml
 

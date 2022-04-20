@@ -3,12 +3,11 @@
 NGINX
 =====
 
-This is how the configuration for NGINX as reverse proxy in front of |ivy-engine|
-can look like:
+This is how to configure NGINX as a reverse proxy in front of the |ivy-engine|:
 
 * All HTTP traffic is redirected to HTTPS
-* Only the application `demo-portal` is available over the reverse proxy
-* NGINX communicates over HTTP with the |ivy-engine|
+* Only the application `demo-portal` is available via the reverse proxy
+* NGINX communicates via HTTP with the |ivy-engine|
 
 .. literalinclude:: proxy.conf
     :language: nginx

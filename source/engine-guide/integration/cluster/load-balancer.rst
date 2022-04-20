@@ -3,17 +3,19 @@
 Load Balancer
 =============
 
-|ivy-engine| Clusters work with **sticky sessions**. This
-means that the load balancer must forward all requests from a session to the
-same cluster node. Of course if a cluster node is no longer available then the
-request can be sent to another cluster node. Note that this will cause the
-user to receive a new session, therefore losing his current work.
+|ivy-engine| Clusters work with **sticky sessions**. This means that the load
+balancer has to forward all requests from a session to the same cluster node. Of
+course, if a cluster node is no longer available then the request will be sent to
+another cluster node. This will cause the user to receive a new
+session, therefore loosing his work in the replaced session.
 
-As described above, the load balancer must ensure that all requests from the same
-user session is forwarded to the same cluster node. This can be done by
-configuring the load balancer in such a way that all requests sent from one client IP address
-is always forwarded to the same cluster node (IP based stickiness). Another
-possible configuration is to use the |axon-ivy| Session Id to provide session
+As described above, the load balancer has to ensure that all requests from the
+same user session are forwarded to the same cluster node. This can be done as
+follows: 
+
+* configure the load balancer to forward all requests sent from one
+client IP addressalways to the same cluster node (IP based stickiness). 
+* use the |axon-ivy| Session Id to provide session
 stickiness. The session id is provided by |ivy-engine| Enterprise Edition as a
 HTTP session cookie with the name :code:`JSESSIONID`.
 
@@ -24,17 +26,18 @@ HAProxy
 
 HAProxy is a free, fast and reliable solution offering high availability, load
 balancing, and proxying for TCP and HTTP-based applications. It is very easy to
-setup and also offers a Docker image that only needs minimal configuration.
+set up and also offers a Docker image that needs only minimal configuration.
 
-We provide a :link-url:`sample on GitHub <docker-scaling-haproxy>` how to setup an
-|ivy-engine| Cluster using HAProxy as the load balancer within docker-compose.
+We provide a :link-url:`sample on GitHub <docker-scaling-haproxy>` how to setup
+a |ivy-engine| Cluster using HAProxy as the load balancer within docker-compose.
 
 NGINX
 -----
 
-NGINX is a free, open source HTTP and reverse proxy server, a mail proxy server,
-and a generic TCP/UDP proxy server with load balancing features. It also offers a
-Docker image with minimal configuration needs.
+NGINX is a free, open source HTTP web server, which serves as a reverse proxy
+server, a mail proxy server, and a generic TCP/UDP proxy server and offers load
+balancing features. It also offers a Docker image with minimal configuration
+needs.
 
-We provide a :link-url:`sample on GitHub <docker-scaling-nginx>` on how to setup an
-|ivy-engine| Cluster using NGINX as the load balancer within docker-compose.
+We provide a :link-url:`sample on GitHub <docker-scaling-nginx>` on how to setup
+a |ivy-engine| Cluster using NGINX as the load balancer within docker-compose.
