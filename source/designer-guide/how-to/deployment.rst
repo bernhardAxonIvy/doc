@@ -11,7 +11,14 @@ The following chapter introduces these concepts and terms.
 Application
 -----------
 
-|image0|
+::
+
+    Application "Webshop" (Roles, Users, Databases)
+    ├── ProcessModel "Shop"
+    │   └── ProcessModelVersion 1
+    │   └── ProcessModelVersion 2
+    └── ProcessModel "BackEnd"
+        └── ProcessModelVersion 1
 
 On the |ivy-engine|, applications can be configured. An application
 spans up an environment in which roles, users, databases,
@@ -24,7 +31,14 @@ work on a task of another application.
 Process Model
 -------------
 
-|image1|
+::
+
+    Application "Webshop"
+    ├── ProcessModel "Shop" (Project "Shop")
+    │   └── ProcessModelVersion 1
+    │   └── ProcessModelVersion 2
+    └── ProcessModel "BackEnd"
+        └── ProcessModelVersion 1
 
 Within an application multiple process models can be configured. A
 process model on the Engine corresponds to an |axon-ivy| project on the
@@ -39,7 +53,14 @@ was deployed on the Engine.
 Process Model Version
 ---------------------
 
-|image2|
+::
+
+    Application "Webshop"
+    ├── ProcessModel "Shop"
+    │   └── ProcessModelVersion 1 (Project "Shop", V1, 12 cases)
+    │   └── ProcessModelVersion 2 (Project "Shop", V2, 304 cases)
+    └── ProcessModel "BackEnd"
+        └── ProcessModelVersion 1
 
 A process model can have multiple versions called process model
 versions. These versions allow to change an |axon-ivy| project without
@@ -246,57 +267,6 @@ and process model versions on an |ivy-engine| can be configured.
 |axon-ivy| Project Deployment
 -----------------------------
 
-To deploy an |axon-ivy| project to the |ivy-engine| execute the
-following steps:
-
-#. Export all files of the project you want to deploy to a zip file
-   using the Export wizard of |ivy-designer| (See next section).
-
-#. Copy the zip file with your project files to the |ivy-engine|.
-
-#. Start the Engine Administrator application on the |ivy-engine|
-
-#. Choose or create an application
-
-#. Choose or create a process model
-
-#. Choose or create a process model version
-
-#. Open the detail page of the process model version and find the
-   section Deployment.
-
-#. Press the :guilabel:`Deploy` button to start the deployment wizard.
-
-#. On the first step of the deployment wizard choose the zip file with
-   your project files and follow the wizard to deploy your project.
-
-.. tip::
-
-   More information about the deployment of |axon-ivy| projects or
-   applications, process models and process model versions can be found
-   in the |ivy-engine| Guide.
-
-Export all Project Files to a ZIP-File
---------------------------------------
-
-For the deploying of a project it is useful to export all files of a
-project to a zip file. This can be done with the export wizard of
-|ivy-designer|. Start the export wizard either by using the menu
-:guilabel:`File` > :guilabel:`Export ...` or by using the context menu
-:guilabel:`Export ...` in the Ivy Project Tree on a selected project.
-
-.. figure:: /_images/deployment/deploy-export-step-1.png
-
-On the export wizard select :guilabel:`General` > :guilabel:`Archive File`.
-Then press :guilabel:`Next >`.
-
-.. figure:: /_images/deployment/deploy-export-step-2.png
-
-Choose the project you want to deploy (export). Only select one project because the
-Deployment wizard can only handle one project in a zip file. Specify the
-zip (archive) file and press :guilabel:`Finish`. The created zip file
-can now be used to deploy your project to the engine.
-
-.. |image0| image:: /_images/deployment/model-application.png
-.. |image1| image:: /_images/deployment/model-processmodel.png
-.. |image2| image:: /_images/deployment/model-processmodelversion.png
+To deploy an |axon-ivy| project to the |ivy-engine|, :ref:`export it
+<designer-export-project>` as an :file:`.iar` and :ref:`upload <deployment>` it
+to an engine.
