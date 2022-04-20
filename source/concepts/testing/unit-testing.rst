@@ -3,15 +3,15 @@
 Unit Tests
 ----------
 
-You can easily write Unit Tests in the |ivy-designer| to test your Java source code
-using JUnit 5. If your code uses the
+You can easily write Unit Tests in the |ivy-designer| to test your Java source
+code using JUnit 5. If your code uses the
 :public-api:`Ivy</ch/ivyteam/ivy/environment/Ivy.html>` environment you can
 either mock it or use the
 :public-api:`@IvyTest</ch/ivyteam/ivy/environment/IvyTest.html>` annotation that
 correctly sets up the environment.
 
 
-How to write Unit Tests
+How to Write Unit Tests
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 .. |TESTKIND| replace:: ``IvyTest``
@@ -26,10 +26,10 @@ How to write Unit Tests
    - A new **JUnit** View should be opened and the test should be green.
 
 
-This is already all you need to start writing conventional Unit Tests.
+This is all you need to start writing conventional Unit Tests.
 
 
-Set up the Ivy environment
+Set Up the Ivy Environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To gain access to the :public-api:`Ivy</ch/ivyteam/ivy/environment/Ivy.html>`
@@ -58,7 +58,7 @@ the ``Ivy`` environment we would have to mock all those resources.
   to see what else is possible.
 
 
-Change application runtime
+Change Application Runtime
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 For some test cases, you may need to change the :ref:`Environment
@@ -85,8 +85,8 @@ If you want to change the active environment, you can do that in a similar way:
   :language: java
   :emphasize-lines: 4
 
-Furthermore it is possible to use the ``AppFixture`` to login with an existing user.
-You can either login with a user name or with an ``IUser`` object. In the
+Furthermore it is possible to use the ``AppFixture`` to login with an existing
+user. You can either login with a user name or with an ``IUser`` object. In the
 example below we injected the ``IUser`` object as a method parameter.
 
 .. literalinclude:: includes/unittesting/unittesting-test-fixure-login.java

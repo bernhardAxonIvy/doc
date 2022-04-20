@@ -3,16 +3,16 @@
 Web Testing
 -----------
 
-Imagine you have just built a workflow app containing
-multiple user dialogs. Do you really want to always click through the full
-process, even if you only changed part of it? At least you should make sure that
-the functionality (happy path) of this process is still valid.
+Imagine you have just built a workflow app containing multiple user dialogs. Do
+you really want to always click through the full process, even if you only
+changed a small part of it? However, you should make sure that the functionality
+(happy path) of this process is still valid.
 
-**Web Integration tests** will always follow the same steps and can be highly
+**Web Integration Tests** will always follow the same steps and can be
 automated.
 
-Setup Test Project
-~~~~~~~~~~~~~~~~~~
+Setup a Test Project
+~~~~~~~~~~~~~~~~~~~~
 
 .. |TESTKIND| replace:: ``IvyWebTest``
 .. include:: includes/test-project-setup.txt
@@ -29,10 +29,10 @@ Setup Test Project
 Write a Web Test
 ~~~~~~~~~~~~~~~~
 
-Let's start by extending our test class generated before with a
-:link-url:`real test implementation <build-examples-web-test-base>`.
-First, we need to start a process. To do this you can use the ``EngineUrl`` utility from the
-:ref:`web-tester`. 
+Let's start by extending our test class generated before with a 
+:link-url:`real test implementation <build-examples-web-test-base>`. 
+First, we need to start a process. To do this you can use the 
+``EngineUrl`` utility from the :ref:`web-tester`. 
 
 This process opens a dialog with two input fields (``firstname`` and
 ``lastname``) and a ``submit`` button. After submitting, a second dialog with your
@@ -45,8 +45,8 @@ input values is displayed.
 
 .. tip::
 
-  The :ref:`@IvyWebTest <web-tester>` annotation can be configured (e.g to select a ``browser``
-  or to start the test ``headless``).
+  The :ref:`@IvyWebTest <web-tester>` annotation can be configured (e.g to
+  select a ``browser`` or to start the test ``headless``).
 
 
 Select, Do and Check
@@ -72,9 +72,11 @@ Usually you use the ``By.id`` selector to do this:
 
 .. tip::
 
-  To evaluate the real id of an element you can use your browser's **Developer Tools**.
+  To evaluate the real id of an element you can use your browser's **Developer
+  Tools**.
 
-  There are many more options to use selectors, e.g you can select multiple elements:
+  There are many more options to use selectors, e.g you can select multiple
+  elements:
 
   .. code-block:: java
 
@@ -84,8 +86,8 @@ Usually you use the ``By.id`` selector to do this:
   to see more options.
 
 
-Do an action
-^^^^^^^^^^^^
+Execute an Action
+^^^^^^^^^^^^^^^^^
 
 On the selected element you can perform some actions:
 
@@ -96,7 +98,7 @@ On the selected element you can perform some actions:
   $(By.id("form:lastname")).sendKeys("Test"); //set input value
 
 
-Check a condition
+Check a Condition
 ^^^^^^^^^^^^^^^^^
 
 On your selected element you can check certain conditions (e.g is the element
@@ -108,8 +110,8 @@ On your selected element you can check certain conditions (e.g is the element
 
 .. tip::
 
-  You can check multiple conditions on an item or check a condition
-  before performing an action on the item by chaining the method calls:
+  You can check multiple conditions on an item or check a condition before
+  performing an action on the item by chaining the method calls:
 
   .. code-block:: java
 
@@ -122,7 +124,7 @@ On your selected element you can check certain conditions (e.g is the element
   to see more options.
 
 
-Run automated
+Run Automated
 ^^^^^^^^^^^^^
 
 Let's have a look at how you can run your web tests fully automated
@@ -132,7 +134,7 @@ feedback on breaking changes done by a team member.
 
 .. _webtesting-maven-build:
 
-Module build
+Module Build
 ^^^^^^^^^^^^
 
 Both projects, production and test project, need to be compiled during the same
@@ -147,14 +149,14 @@ run. To do this, we need to first setup a Maven module build:
 
    - Create a :file:`pom.xml` file in the :file:`compile-test` folder.
 
-   - Add the following code to the :link-url:`pom.xml <build-examples-web-test-pom>`
-     file (ensure the correct **modules** ``crm`` and ``crmIntegrationTests`` are
-     set):
+   - Add the following code to the :link-url:`pom.xml
+     <build-examples-web-test-pom>` file (ensure the correct **modules** ``crm``
+     and ``crmIntegrationTests`` are set):
 
      .. literalinclude:: includes/webtesting/webtesting-maven-module.xml
         :language: xml
 
-   - Your :link-url:`folder structure <build-examples>` should now look like this:
+   - Your :link-url:`folder structure <build-examples>` should now look as follows:
 
      .. code-block:: none
 
@@ -181,15 +183,15 @@ run. To do this, we need to first setup a Maven module build:
      .. literalinclude:: includes/webtesting/webtesting-maven-run.log
         :language: none
 
-Congratulations, you can run your tests fully automated with Maven!
+Congratulations, you can now run your tests fully automated with Maven!
 
 
 Further Resources
 ~~~~~~~~~~~~~~~~~
 
-If you want to know more about web testing, have a look at the
-:link-url:`second test in our demo project <build-examples-web-test>`
-or at our :link-url:`other demo projects <demos>` and how they are tested.
+If you want to know more about web testing, have a look at the 
+:link-url:`second test in our demo project <build-examples-web-test>` or at 
+our :link-url:`other demo projects <demos>` and how they are tested.
 
 If you want to learn more about how to build a CI/CD pipeline, take a look at
 the **CI/CD videos** in our :dev-url:`Tutorial section </tutorial>`.
@@ -222,9 +224,9 @@ object:
 Web-Tester
 ^^^^^^^^^^
 
-With the :link-url:`web-tester <webtester>`
-project we provide the testing annotation ``@IvyWebTest``. This annotation sets up
-the browser connection for you. It can be configured with some parameters:
+With the :link-url:`web-tester <webtester>` project we provide the testing
+annotation ``@IvyWebTest``. This annotation sets up the browser connection for
+you. It can be configured with some parameters:
 
 .. code-block:: java
 
@@ -236,5 +238,5 @@ the browser connection for you. It can be configured with some parameters:
 
 - **headless**: Controls if the browser should start with a UI or not.
 
-- **reportFolder**: when a test fails the test framework automatically takes screenshots. This
-  folder defines where these screenshots are saved to.
+- **reportFolder**: when a test fails the test framework automatically takes
+  screenshots. This folder defines where these screenshots are saved to.
