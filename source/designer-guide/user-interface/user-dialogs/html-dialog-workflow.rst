@@ -1,10 +1,10 @@
 Workflow
 --------
 
-By default Html Dialogs are created with a proceed button that resume the
+By default HTML Dialogs are created with a proceed button that resume the
 workflow to the next step. In addition, also an cancel link is created. 
 
-Cancel Html Dialog
+Cancel HTML Dialog
 ^^^^^^^^^^^^^^^^^^
 
 The default cancel link resets the current task and redirects to the

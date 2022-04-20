@@ -4,7 +4,7 @@ Standard Processes
 ******************
 
 With standard processes you can change the default workflow behavior by simply
-providing a custom implementation in your ivy project.
+providing a custom implementation in your Ivy project.
 
 For example: Once a user has completed a task, he will be redirected to his
 personal task list. The default task list is workflow driven and maybe to
@@ -26,7 +26,7 @@ To customize a standard process you need to do the following:
 
 #. Implement a process with a predefined process start signature in an ivy
    project. See the following sub chapters for more information. 
-#. :ref:`Deploy <deployment>` the ivy project with the customized standard
+#. :ref:`Deploy <deployment>` the Ivy project with the customized standard
    processes in the application. 
 #. Finally, the project with the standard processes must be activated in
    :ref:`app-yaml`: 
@@ -108,7 +108,7 @@ The following email notifications can be customized:
     New Task Mail provided by BasicWorkflowUI
 
 
-Implementation hints
+Implementation Hints
 --------------------
 
 **Subject**
@@ -122,7 +122,7 @@ Implementation hints
 **Skip**
     You can avoid the standard mail sending procedure by custom conditions (e.g.
     do not send mails to technical users). To do so implement an alternative
-    process flow without displaying any User Dialog or Html Page activity.
+    process flow without displaying any User Dialog or HTML Page activity.
 
 **API**
     Some API hints to implement email notification processes:

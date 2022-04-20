@@ -1,7 +1,7 @@
-Html Dialog View Types
+HTML Dialog View Types
 ----------------------
 
-An Html Dialog is either a page or a component. Both are complete Html
+An HTML Dialog is either a page or a component. Both are complete HTML
 Dialogs and have therefore their own view, model (data class) and
 controller (logic). This concept allows to build up component oriented
 UI design.
@@ -11,27 +11,27 @@ UI design.
    The templates for page and component are configured in the
    :ref:`html-dialog-preferences`.
 
-Html Dialog Page
+HTML Dialog Page
 ^^^^^^^^^^^^^^^^
 
-An Html Dialog page represents a full page that is finally displayed in
+An HTML Dialog page represents a full page that is finally displayed in
 the web browser. Therefore a page can be opened by a
 :ref:`process-element-user-dialog`.
 
 
 .. _html-dialog-layouts:
 
-Html Dialog Layouts
+HTML Dialog Layouts
 ^^^^^^^^^^^^^^^^^^^
 
-An Html Dialog Page uses an Html Dialog Layout. An Html Dialog Layout is
+An HTML Dialog Page uses an HTML Dialog Layout. An HTML Dialog Layout is
 the concept of a master page that defines a common layout for a number
-of similar dialogs. An Html Dialog Page references a layout and
+of similar dialogs. An HTML Dialog Page references a layout and
 implements defined parts of it. For example the layout provides the
 header- and footer-area whereas the content-area is individually
 implemented on each dialog.
 
-Axon Ivy brings a set of predefined layouts. The layout (together with
+|axon-ivy| brings a set of predefined layouts. The layout (together with
 the view type) is chosen in the
 :ref:`New User Dialog Wizard <user-dialog-new-wizard-page-1>`.
 
@@ -39,16 +39,16 @@ For more information about templating have a look at the official JSF
 documentation.
 
 
-Custom Html Dialog Layouts
+Custom HTML Dialog Layouts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Axon Ivy is not limited to the usage of the built-in Html Dialog
+|axon-ivy| is not limited to the usage of the built-in HTML Dialog
 Layouts. Custom layouts can be added with small effort.
 
 In order to add a custom layout - which is a normal .xhtml file - it
 needs to be stored into the folder :file:`webContent`
 of the project. In doing so, the custom layout can now be referenced as
-a layout inside an Html Dialog.
+a layout inside an HTML Dialog.
 
 To make the custom layout show up in the 
 :ref:`New User Dialog Wizard <user-dialog-new-wizard-page-1>`
@@ -73,10 +73,10 @@ following contract:
 
 .. _html-dialog-component:
 
-Html Dialog Component
+HTML Dialog Component
 ^^^^^^^^^^^^^^^^^^^^^
 
-A component can be embedded into other Html dialog or again in another
+A component can be embedded into other HTML dialog or again in another
 component.
 
 View Definition
@@ -89,7 +89,7 @@ an optional list of component attributes. The implementation part starts
 with a ``<cc:implementation>`` tag and the component attributes can be
 accessed with the expression ``cc.attrs.attributeName``
 
-The following code fragment defines an example Html Dialog component:
+The following code fragment defines an example HTML Dialog component:
 
 ::
 
@@ -117,7 +117,7 @@ A component could be inserted with the ``<ic:``-tag. E.g.
 
 .. tip::
 
-   In the **Html Dialog Editor**\ you have pretty nice tool support for
+   In the **HTML Dialog Editor**\ you have pretty nice tool support for
    inserting components. You can drag and drop an available component
    from the palette. You can select one from the auto completion popup
    list and you can define required attributes in the properties view.
@@ -140,7 +140,7 @@ tag too.
    You can not override start methods. So do not use multiple start
    methods with the same name but different parameter lists.
 
-See the following code fragment that inserts a Html Dialog component.
+See the following code fragment that inserts a HTML Dialog component.
 The start method ``start(data.person.BillingAddress:address)`` will be
 used, the current value of the data class property ``billingAddress``
 will be used as parameter for the start method and the component
