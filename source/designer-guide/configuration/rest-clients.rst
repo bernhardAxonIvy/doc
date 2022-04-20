@@ -37,10 +37,10 @@ REST Client Editor
 The REST client Editor allows to configure REST client configurations.
 
 .. figure:: /_images/designer-configuration/rest-client-editor.png
-   :alt: Rest Client Editor
+   :alt: REST Client Editor
    :align: center
    
-   Rest Client Editor
+   REST Client Editor
 
 
 REST Clients Tree Editor
@@ -192,7 +192,7 @@ its features.
 - :guilabel:`Remove`
   Removes the selected property.
 
-**Client properties**
+**Client Properties**
 
 Well known properties of the client are documented here:
 `org.glassfish.jersey.client.ClientProperties <https://eclipse-ee4j.github.io/jersey.github.io/apidocs/latest/jersey/org/glassfish/jersey/client/ClientProperties.html>`__.
@@ -202,7 +202,7 @@ call, you need to specify the property *SSL.keyAlias*. The value of
 this alias needs to correspond with a key alias available in the
 client keystore configured under :ref:`workspace-preferences-sslclient`.
 
-**JSON properties**
+**JSON Properties**
 
 The JSON feature knows many properties that customize the
 serialization from JSON to Java objects and vice versa.
@@ -222,7 +222,7 @@ items:
 - `Jackson Serialization features <https://github.com/FasterXML/jackson-databind/wiki/Serialization-features>`__
   can be set using ``Serialization.`` as prefix. E.g. ``Serialization.WRITE_ENUMS_USING_INDEX``
 
-**Path properties**
+**Path Properties**
 
 Properties prefixed with ``PATH.`` are used in resource paths on calling activities. 
 So if your target resources contain templates like ``{api.version}`` which 
@@ -244,14 +244,14 @@ Then the path template ``{api.version}`` can be set globally on the RestClient a
 
 The resolved uri would consequently look as follows: ``https://api.twitter.com/2/status/...``
 
-**Connection properties**
+**Connection Properties**
 
 You can configure the library that is used to create and manage connections by setting a connection 
 provider ``jersey.client.connectorProvider``. By default Apache HTTP Client 
 (``org.glassfish.jersey.apache.connector.ApacheConnectorProvider``) is used. 
 This library uses a connection pool to reuse connections. The connection pool is limited to 5 connections 
 by default. You can see how many connections are currently in use by using the 
-:ref:`live stats <engine-cockpit-monitor-services>` in the :ref:`engine-cockpit`.
+:ref:`life stats <engine-cockpit-monitor-services>` in the :ref:`engine-cockpit`.
 If all connections are in use most of the time you should consider increasing the maximum connections 
 of the pool to avoid performance issues. You can configure it by setting the property ``jersey.client.pool.maxConnections``. 
 
@@ -260,7 +260,7 @@ As an alternative to Apache HTTP Client you can use ``java.net.URLConnection`` f
 but has other restrictions like no NTLM support.
 
 
-Dynamic properties
+Dynamic Properties
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 You may need to adjust property values for multiple runtime environments. 
 E.g. to call different service URIs for testing than in production, 

@@ -61,7 +61,7 @@ databases you use in your project and the extending projects.
   If your database needs more information you can use this section
   to define the additional properties.
 
-Dynamic properties
+Dynamic Properties
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 You may need to adjust property values for multiple runtime environments. 
 E.g. to call different database hosts for testing than in production, 

@@ -1,6 +1,6 @@
 .. _dynamic-config:
 
-Dynamic configuration
+Dynamic Configuration
 =======================
 
 You may use dynamic expressions in your configurations in order to
@@ -13,7 +13,7 @@ at runtime into the URI.
 
 Furthermore, we provide a set of expressions that can be used to refer to 
 the currently running |ivy-engine|+Application in oder to simplify calls
-from an ivy process to it's own backend.
+from an Ivy process to it's own backend.
 
 Expression Reference
 --------------------
