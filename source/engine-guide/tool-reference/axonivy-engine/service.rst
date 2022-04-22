@@ -3,17 +3,16 @@
 Engine Service
 ==============
 
-In productive environments it is recommended to run the |ivy-engine| as a
-service.
+In productive environments, we recommend to run the |ivy-engine| as a service.
 
 
 Windows Service
 ---------------
 
-The binary :file:`bin/AxonIvyEngineService.exe` is the |ivy-engine| implementation
-as Windows Service. It can also be used as command
-line tool to register, unregister, start and stop |ivy-engine|
-as Windows Service. The command line tool must be *run as administrator*.
+The binary :file:`bin/AxonIvyEngineService.exe` is the |ivy-engine|
+implementation as Windows Service. It can also be used as command line tool to
+register, unregister, start and stop |ivy-engine| as Windows Service. The
+command line tool must be *run as administrator*.
 
 .. rubric:: Register |ivy-engine| as Windows Service
 
