@@ -74,8 +74,8 @@ also remove him from the users table in the database.
 
 The :guilabel:`Roles` panel displays a tree with all roles the selected user is
 a member of.
- * If the role has a black tick, the user is a direct member of this role.
- * If the role has a grey tick, the user inherits the membership from a child or member role.
+- If the role has a black tick, the user is a direct member of this role.
+- If the role has a grey tick, the user inherits the membership from a child or member role.
 
 You can configure additional user properties manually (using the buttons
 :guilabel:`Add`, :guilabel:`Edit` and :guilabel:`Delete`) or in an external

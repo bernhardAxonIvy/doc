@@ -167,7 +167,7 @@ chosen database system.
 .. _setup-wizard-systemdb-convert:
 
 Convert a Existing System Database
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
     We strongly recommend to backup your database before you convert it to a
