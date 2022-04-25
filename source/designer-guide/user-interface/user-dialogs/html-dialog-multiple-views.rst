@@ -1,35 +1,35 @@
 .. _html-dialog-multiple-views:
 
-Html Dialog with Multiple Views
+HTML Dialog with Multiple Views
 -------------------------------
 
 To implement a user interaction that consists of several pages (for
-example a wizard), one Html Dialog can have multiple views (.xhtml
-files). This allows to enclose a complex user interaction in one Html
+example a wizard), one HTML Dialog can have multiple views (.xhtml
+files). This allows to enclose a complex user interaction in one HTML
 Dialog and to abstract it from the business process.
 
-How to add a view
+How to Add a View
 ^^^^^^^^^^^^^^^^^
 
-In the :guilabel:`New` menu in the Axon Ivy project tree you find the
-:guilabel:`New Html Dialog View` wizard to add a view to a Html Dialog. Just
+In the :guilabel:`New` menu in the |axon-ivy| project tree you find the
+:guilabel:`New HTML Dialog View` wizard to add a view to a HTML Dialog. Just
 enter the name of the view and the xhtml file for the view is created
-and added to the Html Dialog. In the ivy project tree all view files of
-a Html Dialog are displayed below the main node of that Html Dialog.
+and added to the HTML Dialog. In the Ivy project tree all view files of
+a HTML Dialog are displayed below the main node of that HTML Dialog.
 
 |html-dialog-new-wizard|
 
-How to switch views during runtime
+How to Switch Views During Runtime
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you have created a Html Dialog with several views you have to
+If you have created a HTML Dialog with several views you have to
 implement the navigation between the views for the user on your own. The
 basic solution is a ``commandButton`` with an ``update`` attribute to
 load the next view.
 
-You find an example of a multi view Html Dialog in the :ref:`HtmlDialogDemos
+You find an example of a multi view HTML Dialog in the :ref:`HTMLDialogDemos
 project <importing-demo-projects>` that is provided
-with the Axon Ivy Designer.
+with the |ivy-designer|.
 
 ::
 

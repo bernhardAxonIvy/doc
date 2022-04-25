@@ -3,7 +3,7 @@
 Managed Beans
 -------------
 
-In Html Dialogs it is possible to communicate with normal Java objects
+In HTML Dialogs it is possible to communicate with normal Java objects
 by using *ManagedBeans*. Use the following annotations to define the
 lifecycle scope of the managed bean:
 
@@ -21,11 +21,11 @@ lifecycle scope of the managed bean:
 
    JSF 2.0 introduced an additional scope @ViewScoped and offers the
    possibility to define custom scopes. This is basically also supported
-   in Axon Ivy, but it is recommended to use it with care since it might
+   in |axon-ivy|, but it is recommended to use it with care since it might
    not behave as expected.
 
-In the :ref:`HtmlDialogDemo Project <importing-demo-projects>` that is included in
-the Axon Ivy Designer you find an example.
+In the :ref:`HTMLDialogDemo Project <importing-demo-projects>` that is included in
+the |axon-ivy| Designer you find an example.
 
 Bean Validation (JSR 303)
 ^^^^^^^^^^^^^^^^^^^^^^^^^ 
@@ -34,10 +34,10 @@ The *JSR 303* is a specification that defines a metadata model for bean
 validation. The fields of the JavaBean classes, that are used for
 storing the data, are annotated to describe the constraints and their
 validation. Experienced programmers can use JSR 303 annotations in
-Axon Ivy projects. The validation information will then be considered by
-Html Dialogs when the field of the class is bound to a widget. There is
-no validation information given in the \*.xhtml file of the Html Dialog
-itself. However, the Html Dialog uses the annotations of the fields to
+|axon-ivy| projects. The validation information will then be considered by
+HTML Dialogs when the field of the class is bound to a widget. There is
+no validation information given in the \*.xhtml file of the HTML Dialog
+itself. However, the HTML Dialog uses the annotations of the fields to
 validate the user input.
 
 All annotations defined in the package `javax.validation.constraints` are
@@ -77,7 +77,7 @@ message content from the :ref:`cms`. For example:
 
 There will always be validation requirements for which these standard
 annotation will not suffice. For these cases it is possible to create
-your own annotation. You find an example in the :ref:`HtmlDialogDemo Project <importing-demo-projects>`.
+your own annotation. You find an example in the :ref:`HTMLDialogDemo Project <importing-demo-projects>`.
 
 ::
 

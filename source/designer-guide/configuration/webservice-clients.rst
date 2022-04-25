@@ -28,7 +28,7 @@ Client Details Editor
 ---------------------
 
 Details of currently selected web service configuration node are
-displayed on the right hand side. In this editor details of an tree
+displayed on the right hand side. In this editor details of a tree
 element can be changed.
 
 Web Service Client Section
@@ -65,7 +65,7 @@ The following attributes are available in the *Web Service* Section:
   click the Generate WS classes button to read the WSDL and generate
   client side classes. The generated files will be compiled and
   packaged into a jar file. The generated jar file will be located in
-  the *lib_ws/client* folder of ivy project and automatically added to
+  the *lib_ws/client* folder of Ivy project and automatically added to
   the project libraries.
 
 .. note::
@@ -200,7 +200,7 @@ The following attributes are available in the *Ports* section:
   continues with error handling.
 
 
-Dynamic endpoint URIs
+Dynamic Endpoint URIs
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 You may need to adapt the endpoint URI to call according to your runtime
 environment. E.g. if you have different endpoints for staging and production.

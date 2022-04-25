@@ -38,7 +38,7 @@ you can use :code:`ivy.cm.ref`.
 
 **Example** :code:`ivy.cm.ref("/documents/instruction")`
 
-The generated link then looks like this:
+The generated link then looks as follows:
   
   ``/<appName>/cm/<processModelAndVersion>/<cmsPath>.<extension>?l=<locale>&v=<version>``
 

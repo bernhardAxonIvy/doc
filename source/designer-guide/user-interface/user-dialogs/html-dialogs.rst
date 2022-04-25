@@ -1,20 +1,20 @@
 .. _html-dialogs:
 
-Html Dialogs
+HTML Dialogs
 ------------
 
-An Html Dialog (in the following abbreviated as HD) is one of two
+An HTML Dialog (in the following abbreviated as HD) is one of two
 possibilities to implement a User Dialog Component. HDs are implemented
 using the Java Server Faces technology.
 
-This means, that the view of an HD is defined with the means of an XHTML
+This means that the view of an HD is defined with the means of an XHTML
 document and that it is displayed in a web browser.
 
 
 PrimeFaces JSF Component Library
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Axon Ivy is bundled with the JSF component library
+|axon-ivy| is bundled with the JSF component library
 `PrimeFaces <http://primefaces.org/>`__, an open source JSF component
 library developed by Prime Teknoloji. It provides a collection of mostly
 visual components (widgets). These can be used by JSF programmers in
@@ -27,38 +27,38 @@ doc <http://www.primefaces.org/docs/vdl/>`__.
 
 .. tip::
 
-   The **Html Dialog Editor** supports PrimeFaces during design time.
+   The **HTML Dialog Editor** supports PrimeFaces during design time.
    This means that you can profit from code completion support, tag
    validation, structured properties in the property view and a
    graphical representation in the preview part for all PrimeFaces
    widgets.
 
 The elements of the PrimeFaces library are introduced with the ``<p:>``
-namespace on your XHTML page. In addition also the
+namespace on your XHTML page. In addition, also the
 **primefaces-extension**\ ``<pe:`` widget library is included in the
-Axon Ivy installation.
+|axon-ivy| installation.
 
 .. note::
 
    It is also possible to install and use additional JSF libraries. To
    do so you copy the concerning .jar file into the folder
-   **/webapps/ivy/WEB-INF/lib** of Axon Ivy Designer and Axon Ivy Engine
+   **/webapps/ivy/WEB-INF/lib** of |ivy-designer| and |ivy-engine|
    respectively. Then you have to add a namespace attribute **xmlns:xx**
    on your html pages to use the widgets.
 
 
-Html Dialog Data Binding and Event Mapping
+HTML Dialog Data Binding and Event Mapping
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-An Html Dialog follows the model-view-controller pattern of the Axon Ivy
+An HTML Dialog follows the model-view-controller pattern of the |axon-ivy|
 :ref:`user-dialog-concept`. So part of an
 implemented HD is a data class (the model) whose data fields can be
 bound to widget properties of the view. To define such a binding,
-Axon Ivy provides the special object **data**.
+|axon-ivy| provides the special object **data**.
 
-On the other hand, the controller part of an Html Dialog is implemented
+On the other hand, the controller part of an HTML Dialog is implemented
 by a series of UI processes that can be mapped to events on the view
-such as mouse clicks. To define such an event mapping, Axon Ivy provides
+such as mouse clicks. To define such an event mapping, |axon-ivy| provides
 the keyword **logic** to call an event process or a method process in
 the logic.
 
@@ -81,7 +81,7 @@ process:
 Data Class Auto Initialization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Data Classes are automatically initialized if an Html Dialog sets a
+Data Classes are automatically initialized if an HTML Dialog sets a
 property on it.
 
 E.g. If ``data.address`` is ``null`` and a form is submitted with a
