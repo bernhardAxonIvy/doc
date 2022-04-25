@@ -1,8 +1,7 @@
 Database
 ========
 
-A simple way to integrate |axon-ivy| is the usage of an :ref:`external
-database <database-configuration>`. From an ivy process, database
-contents can
-be read/written by :ref:`process-element-db-step` or by
-using :ref:`JPA <persistence>`.
+You can integrate |axon-ivy| by using an :ref:`external database
+<database-configuration>`. From an |axon-ivy| process, you can read and write
+database contents by using either a :ref:`process-element-db-step` or :ref:`JPA
+<persistence>`.
