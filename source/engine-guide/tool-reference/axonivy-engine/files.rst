@@ -33,7 +33,7 @@ After the installation the following files and folders are located in the
 +-+-+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | doc/                             | Engine-Guide, New and Noteworthy, Migration Notes and more                                                                                                                         |
 +----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| dropins/                         | Third party extension libraries that contribute to the |axon-ivy| runtime                                                                                                            |
+| dropins/                         | Third party extension libraries that are part of the |axon-ivy| runtime                                                                                                              |
 +----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | elasticsearch/                   | Bundled Elasticsearch server                                                                                                                                                       |
 +----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -69,7 +69,7 @@ After the installation the following files and folders are located in the
 Windows Programs
 ----------------
 
-The :file:`bin` folder of a windows installation contains the following native
+The :file:`bin` folder of a Windows installation contains the following native
 dynamic link libraries and executable files:
 
 +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

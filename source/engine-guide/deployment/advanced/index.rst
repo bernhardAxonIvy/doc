@@ -8,7 +8,7 @@ influence the :ref:`deployment behavior <deployment-options>`.
 
 .. _deployment-configure-app:
 
-Application configuration
+Application Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you are deploying a full application zip-archive you can optionally add an
@@ -30,7 +30,7 @@ application itself and serves as additional configuration for the application,
 but with a lower priority than the regular :ref:`<APPNAME>/app.yaml <app-yaml>` 
 (e.g. :file:`myApp/app.yaml`) in the :file:`configuration` directory.
 
-Overriding variables
+Overriding Variables
 +++++++++++++++++++++
 
 The :file:`app.yaml` file can override :ref:`variables` declared in projects.
@@ -93,4 +93,4 @@ There are multiple locations where you can put your options file:
     #. **Inside the file that you are deploying** - Put a :file:`deploy.options.yaml`
        file inside your project directory, :file:`\*.iar` or :file:`\*.zip` that you want to deploy.
 
-A specific deployment options file will take precedence over a packed options in the deployable file.
+A specific deployment options file will take precedence over options packed in the deployable file.

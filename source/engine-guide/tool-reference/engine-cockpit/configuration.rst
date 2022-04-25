@@ -55,7 +55,7 @@ colors with the possibility to easily change a specific color.
 
   Please note that the color editor will write into the :file:`custom.css` file
   inside your :ref:`branding-configuration` directory. Depending on the content
-  of this file, the new color value maybe show a strange behavior. So maybe you
+  of this file, the new color value may show a strange behavior. So maybe you
   should quickly check the the result in the :file:`custom.css` editor.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-branding-custom-css.png

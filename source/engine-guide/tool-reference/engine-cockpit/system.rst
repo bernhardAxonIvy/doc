@@ -10,8 +10,8 @@ Administrators
 The **Administrators** page allows you to manage users with administrator
 privileges. Any changes are stored to the :ref:`ivy-yaml` file. 
 
-You need to specify an email address for administrators as they are used to
-send notifications of critical events to, e.g. license violations.
+You need to specify an email address for administrators. The |ivy-engine| 
+send notifications of critical events to the administrators, e.g. license violations.
 
 .. note::
     Changes to administrators will only take effect after you restart the
@@ -25,7 +25,7 @@ send notifications of critical events to, e.g. license violations.
 System Database
 ^^^^^^^^^^^^^^^
 
-In the **System Database** page you to manage system database configuration.
+In the **System Database** page you to manage the system database configuration.
 Any changes are stored in the :ref:`ivy-yaml` file. 
 
 Please refer to the :ref:`Setup Wizard <setup-wizard-systemdb>` documentation
@@ -49,7 +49,7 @@ License
 
 In the **License** view you can upload or renew a license. If you have a valid
 license you see a table with all information about it. On the right side you
-have a live overview of your active sessions with the ability to kill sessions.
+have a life overview of your active sessions with the ability to kill sessions.
 
 .. tip::
     **Anonymous or System Sessions** do not appear in the session table but
@@ -63,14 +63,13 @@ have a live overview of your active sessions with the ability to kill sessions.
 Web Server
 ^^^^^^^^^^
 
-This **Web Server** view gives you the ability to quickly change your Tomcat
-Connectors or reverse proxy server settings. There is also a data panel, that
-shows you all the headers of the current request and how the engine generates
-some URLs.
+In the **Web Server** view, you can quickly change your Tomcat Connectors or
+reverse proxy server settings. There is also a data panel which shows you all
+the headers of the current request and how the engine generates some URLs.
 
 You may also get some messages here. These appear if the URL of your browser and
 the **external base URL** or the configured **base URL** do not match. If this
-is the case please have a look how to properly setup a :ref:`reverse proxy
+is the case please refer to how to properly set up a :ref:`reverse proxy
 <reverse-proxy>`.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-web-server.png
@@ -81,7 +80,7 @@ is the case please have a look how to properly setup a :ref:`reverse proxy
 System Configuration
 ^^^^^^^^^^^^^^^^^^^^
 
-The **System Configuration** page displays an overview over all your engine's
+The **System Configuration** page displays an overview of all your engine's
 configuration settings. Configurations in grey represent default values. If you
 click on the :guilabel:`New` button, you can add a new configuration setting.
 If you want to edit an existing configuration, click on the
@@ -104,9 +103,9 @@ to reset a configuration setting or view the complete configuration file.
 Cluster
 ^^^^^^^
 
-If your engine runs with an :ref:`license-edition` license, your are able to
-define :ref:`cluster`. In addition your engine cockpit will provide a
+If your engine runs with a :ref:`license-edition` license, your are able to
+define a :ref:`cluster`. In addition, the engine cockpit will provide a
 **Cluster** navigation menu item. This will give you an overview of your
-running nodes and a detail view dialog if you click on one node.
+running nodes and a detail view dialog if you click on a node.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-cluster.png

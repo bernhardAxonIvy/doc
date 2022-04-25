@@ -1,6 +1,6 @@
 Engine Modes
 ============
-|ivy-engine| runs in different modes. If you have configured your |ivy-engine|
+The |ivy-engine| runs in different modes. If you have configured your |ivy-engine|
 correctly it runs in :ref:`production-mode`. This is the standard mode.
 The :ref:`demo-mode` and the :ref:`maintenance-mode` are special modes in which
 your |ivy-engine| only runs if you have not yet configured it or there are
@@ -28,7 +28,7 @@ deploy projects, etc. The username of the administrator in demo mode is
 **admin** and password **admin**. 
 
 .. warning:: 
-    The |ivy-engine| uses a memory database as system database in demo mode.
+    The |ivy-engine| uses an in-memory database as system database in demo mode.
     This means that all your data, all cases that are created by any sessions in
     demo mode are lost when you shut down the |ivy-engine|.
 
@@ -46,13 +46,13 @@ system database configuration problems.
 
 The |ivy-engine| starts automatically in maintenance mode if there is a
 problem with the license or the system database. You can disable the
-automatically switching to maintenance mode in the :ref:`ivy-yaml` file:
+automatic switch to maintenance mode in the :ref:`ivy-yaml` file:
 
 .. code:: yaml
 
   Boot.MaintenanceMode: DISABLED
 
-If disable and there is a license or system database problem the |ivy-engine|
-fail to start and report an error. You can then start the |ivy-engine|
+If mainteance mode is disabled and there is a license or system database problem the |ivy-engine|
+will fail to start and will report an error. You can then start the |ivy-engine|
 explicitly in maintenance mode by using the :ref:`command line option
 <axonivy-engine>` :code:`-maintenance`.

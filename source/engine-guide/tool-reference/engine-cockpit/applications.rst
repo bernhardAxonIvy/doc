@@ -8,8 +8,8 @@ The **applications** page lists all workflow applications running on the engine.
 You control the state of these applications with start, stop and lock actions.
 Each application has its process models and process model versions. They can be
 started and stopped separately. You can add a new application by clicking on the
-:guilabel:`Add` button. By clicking on a application, you switch to the
-:ref:`engine-cockpit-application-detail`  click on a process model version will
+:guilabel:`Add` button. By clicking on an application, you switch to the
+:ref:`engine-cockpit-application-detail`. A click on a process model version will
 open the :ref:`engine-cockpit-pmv-detail` view.
 
 To deploy new versions of an application, you click on the :guilabel:`Deployment`
@@ -22,12 +22,12 @@ dialog.
 
 .. _engine-cockpit-application-detail:
 
-Application detail
+Application Detail
 ^^^^^^^^^^^^^^^^^^
 
-The **Application detail** page shows similar information than the Dashboard
-but specifically for the chosen application. In this page you can change the active
-environment, change the :ref:`engine-cockpit-security-system`, start or stop the
+The **Application detail** page shows information similar to the Dashboard
+but specifically for the chosen application. In this page, you can change the active
+environment, the :ref:`engine-cockpit-security-system`, start or stop the
 application and edit the application's configuration settings.
 
 If you want to deploy a project, click on the :guilabel:`Deployment` button and select
@@ -37,7 +37,7 @@ use this feature the :ref:`deployment-rest-api` feature needs to be enabled in t
 (:ref:`security-engine-optional-features`).
 
 .. note:: 
-    For CI/CD pipelines deployment reference the :ref:`deployment-deploying`
+    For CI/CD pipeline deployments refer to the :ref:`deployment-deploying`
     chapter.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-application-detail.png
@@ -45,11 +45,11 @@ use this feature the :ref:`deployment-rest-api` feature needs to be enabled in t
 
 .. _engine-cockpit-pmv-detail:
 
-Pmv detail
+Pmv Detail
 ^^^^^^^^^^
 
 The detail page of the **process model version** displays all information
-about an individual process model version. This includes basic information, 
+about a individual process model version. This includes basic information, 
 activity state and lists all dependencies from and to this process model version.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-pmv-detail.png
