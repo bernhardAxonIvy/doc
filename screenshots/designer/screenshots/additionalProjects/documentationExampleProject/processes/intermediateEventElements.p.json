@@ -1,0 +1,75 @@
+{
+  "format" : "9.4.8",
+  "id" : "16C70B87DCB65433",
+  "data" : "screenshot.project.Invoice",
+  "elements" : [ {
+      "id" : "f0",
+      "type" : "WaitEvent",
+      "name" : "read address",
+      "config" : {
+        "timeoutConfig" : {
+          "duration" : "'2H30M'",
+          "action" : "destroyTask"
+        },
+        "task" : {
+          "name" : "<%=ivy.cms.co(\"/Task/Approval\")%>",
+          "description" : "<%=ivy.cms.co(\"/Task/Approval/Desc\")%>",
+          "category" : "Finance/Invoices/<%=in.invoiceType%>"
+        },
+        "eventBeanClass" : "ch.ivyteam.ivy.process.intermediateevent.beans.FileIntermediateEventBean",
+        "eventBeanConfig" : [
+          "/shared/company/addresses",
+          "customerId"
+        ],
+        "eventIdConfig" : "in.customerId"
+      },
+      "visual" : {
+        "at" : { "x" : 192, "y" : 64 },
+        "labelOffset" : { "x" : -33, "y" : 16 }
+      },
+      "connect" : { "id" : "f3", "to" : "f2" }
+    }, {
+      "id" : "f2",
+      "type" : "TaskEnd",
+      "visual" : {
+        "at" : { "x" : 320, "y" : 64 }
+      }
+    }, {
+      "id" : "f4",
+      "type" : "RequestStart",
+      "name" : "start.ivp",
+      "config" : {
+        "callSignature" : "start",
+        "outLink" : "start.ivp"
+      },
+      "visual" : {
+        "at" : { "x" : 64, "y" : 64 }
+      },
+      "connect" : { "id" : "f5", "to" : "f0" }
+    }, {
+      "id" : "f6",
+      "type" : "RequestStart",
+      "name" : "start2.ivp",
+      "config" : {
+        "callSignature" : "start2",
+        "outLink" : "start2.ivp"
+      },
+      "visual" : {
+        "at" : { "x" : 64, "y" : 192 }
+      }
+    }, {
+      "id" : "f7",
+      "type" : "TaskEnd",
+      "visual" : {
+        "at" : { "x" : 320, "y" : 192 }
+      }
+    }, {
+      "id" : "f10",
+      "type" : "ErrorStartEvent",
+      "name" : "server not reachable",
+      "visual" : {
+        "at" : { "x" : 64, "y" : 320 },
+        "labelOffset" : { "x" : -49, "y" : 17 }
+      }
+    } ]
+}
