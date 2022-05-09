@@ -5,7 +5,7 @@ This chapters shows how easily a process or the |ivy-engine| itself
 can be customized with your own logic.
 
 
-.. _extendible-process-elements:
+.. _extensible-process-elements:
 
 Extendible Process Elements
 ---------------------------
