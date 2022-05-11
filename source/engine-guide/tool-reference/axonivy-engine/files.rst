@@ -2,7 +2,7 @@ Engine Files
 ============
 
 After the installation the following files and folders are located in the
-Axon Ivy Engine installation folder:
+|ivy-engine| installation folder:
 
 +----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Folder / File                    | Description                                                                                                                                                                        |

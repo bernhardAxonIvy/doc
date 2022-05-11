@@ -40,10 +40,10 @@ The whole request has been processed in 16 ms.
 Request Tracing Tools
 .....................
 
-You can use a external tracing tool that propagates a trace id in the HTTP header. 
-In that case, the |ivy-engine| will re-use the given trace Id as its **requestId**.
-This allows you to aggregate log entries from different systems using the **requestId**. 
-|ivy-engine| supports the following HTTP headers:
+You can use a external tracing tool that propagates a trace id in a HTTP header.
+In that case, |axon-ivy| will re-use the given trace Id as its **requestId**.
+This allows you to aggregate log entries from different systems using the
+**requestId**. |ivy-engine| supports the following HTTP headers:
 
 =================  =============      
 HTTP Header        Tool/Standard
