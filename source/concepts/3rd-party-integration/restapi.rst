@@ -9,7 +9,7 @@ resources to provide inter-system communication.
 The Java API specification for RESTful Web Services is called `JAX-RS
 <https://docs.oracle.com/javaee/7/api/javax/ws/rs/package-summary.html#package.description>`__.
 It provides portable APIs for developing, exposing and accessing web
-applications designed and implemented in compliance with principles of REST
+applications designed and implemented in compliance with principles of the REST
 architectural style.
 
 |axon-ivy| uses the reference implementation libraries of JAX-RS called `Jersey
@@ -19,10 +19,9 @@ architectural style.
 Call a Remote REST Service
 --------------------------
 
-To call a remote REST service it has to be defined in the
-:ref:`rest-clients-configuration`. After that a
-:ref:`process-element-rest-client-activity` can be used to call the REST
-service.
+To call a remote REST service, you have to define it in the
+:ref:`rest-clients-configuration`. After that, you can use a
+:ref:`process-element-rest-client-activity` to call the REST service.
 
 Find examples in the :ref:`ConnectivityDemos <importing-demo-projects>` project.
 
@@ -36,8 +35,8 @@ To provide a custom REST service in your Ivy project, `JAX-RS
 <https://docs.oracle.com/javaee/7/api/javax/ws/rs/package-summary.html#package.description>`__
 annotations can be used. A REST resource is created by adding a Java class to
 the ``src`` directory. The Java class has to use the correct annotations (as
-shown below), then it will be detected as a REST resource and published
-automatically. After publishing, the resource will be available on the base path
+shown below) so it is detected as a REST resource and published automatically.
+After publishing, the resource will be available on the base path
 */<appName>/api/*.
 
 ::
@@ -70,11 +69,11 @@ Many example REST services are available in the :ref:`ConnectivityDemos
 API Publishing
 --------------
 
-Once you have provided new REST APIs with your project you need to share the
+Once you have provided new REST APIs with your project, you need to share the
 service capabilities with your service users. This is simple, since services
 defined within Ivy projects will be published as `OpenAPI
-<https://www.openapis.org/>`__ service specification. You only need to share the
-specification as file or serve it on a public URL so that clients can start
+<https://www.openapis.org/>`__ service specifications. You only need to share the
+specification as a file or serve it on a public URL so that clients can start
 using it.
 
 The technical interface description is available under the following URL path:
@@ -93,11 +92,11 @@ capabilities without additional effort for you as a service provider.
 However, there are many service interfaces that become easier to use if they are
 enriched with explanatory documents. You may like to expose and explain
 technical implementation details, such as strictly required parameters or
-possible response statuses. All of these docs, can be provided by adding
-optional OpenAPI annotations to your REST APIs.
+possible response statuses. You can provide this information by adding optional
+OpenAPI annotations to your REST APIs.
 
-The highlighted lines in the following example show frequent 
-use cases of optional OpenAPI docs annotations.
+The highlighted lines in the following example show frequent use cases of
+these optional OpenAPI docs annotations.
 
 .. container:: admonition note toggle
 
@@ -119,12 +118,11 @@ use cases of optional OpenAPI docs annotations.
 API Browser
 -----------
 
-All `OpenAPI <https://www.openapis.org/>`__ services can be easily inspected
-with the API Browser. It gives consumers of your services not only a detailed
-service description, but a simple client to fire real calls against the services
-too.
+You can easily inspect all `OpenAPI <https://www.openapis.org/>`__ services with
+the API Browser. It gives consumers of your services not only a detailed service
+description, but a simple client to fire real calls against the services, too.
 
-The API Browser can be accessed with a web browser of your choice under the following URL paths:
+To access the API Browser, open the following URL paths with a web browser of your choice:
 
 - In the |ivy-designer|: ``/designer/api-browser`` (e.g. http://localhost:8081/designer/api-browser)
 - In the |ivy-engine|: ``/system/api-browser`` (e.g. http://localhost:8080/system/api-browser)
@@ -158,14 +156,14 @@ security annotations headers:
 - @RolesAllowed: users must be authenticated and own the defined roles
 - @DenyAll: nobody is allowed to invoke this service
 
-The security annotations can be reviewed in the 
-:link-url:`Secure Service <demos-connect-secure-service-java>` within the :ref:`ConnectivityDemos
+You can review the security annotations in the demo project :link-url:`Secure
+Service <demos-connect-secure-service-java>` within the :ref:`ConnectivityDemos
 <importing-demo-projects>`.
 
 CSRF Protection
 ^^^^^^^^^^^^^^^
-To call a modifying REST service via ``PUT``, ``POST`` or ``DELETE`` the caller
-needs to provide a HTTP header called ``X-Requested-By`` with any value e.g.
+To call a modifying REST service via ``PUT``, ``POST`` or ``DELETE``, the caller
+needs to provide a HTTP header called ``X-Requested-By`` with any value, e.g.
 ``ivy``. The `CSRF filter
 <https://github.com/jersey/jersey/blob/master/core-server/src/main/java/org/glassfish/jersey/server/filter/CsrfProtectionFilter.java>`__
 protects REST services against cross-site request forgery (CSRF). If the client
@@ -176,7 +174,7 @@ User provided REST services via ``GET``, ``HEAD`` or ``OPTIONS`` should
 therefore be implemented in a way that they don't modify data.
 
 The CSRF protection filter is enabled by default. However, it can be turned off
-in an environment where the client can be trusted (e.g. intranet). See the 
+in an environment where the clients can be trusted (e.g. intranet). See the 
 property ``REST.Servlet.CSRF.Protection`` in the :ref:`ivy-webserver-yaml`
 
 
@@ -184,5 +182,5 @@ Workflow API
 ------------
 
 |axon-ivy| provides a basic :ref:`Workflow API REST Service
-<mobile-workflow-api>`. It can be used to enable remote systems to request
+<mobile-workflow-api>`. You can use it to enable remote systems to request
 information about tasks of a user etc.
