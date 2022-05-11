@@ -1,6 +1,6 @@
 # app.yaml located in e.g. <configuration>/applications/myApp/app.yaml which actives the portal default processes 
-# To enable these custom processes, the library id of the ivy project must be specified here.
+# By default the Axon Ivy Engine auto detects the default pages. If you have multiple default pages
+# provider you may need to fix the provider here by defining the library id.
 # The library id is <group-id>:<project-id> from the ivy project deployment definition.
 StandardProcess: 
   DefaultPages: ch.ivyteam.ivy.project.portal:portalTemplate
-  MailNotification: ch.ivyteam.ivy.project.portal:portalTemplate

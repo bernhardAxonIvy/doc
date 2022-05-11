@@ -18,5 +18,6 @@ to display a end page.
    user-dialogs/index
    static-jsf-pages
    web-page/index
-   standard-processes/index
+   default-pages/index
+   email-notifications/index
    branding/index
