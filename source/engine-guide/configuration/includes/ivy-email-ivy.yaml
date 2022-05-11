@@ -1,5 +1,5 @@
 # ivy.yaml located in e.g. <configuration>/ivy.yaml
-SecuritySystem:
+SecuritySystems:
   default:
     EMailNotification:  
       DailySummaryOn: monday, tuesday, wednesday, thursday, friday
