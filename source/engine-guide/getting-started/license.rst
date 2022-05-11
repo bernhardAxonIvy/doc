@@ -45,6 +45,7 @@ follows:
   user.
    * every additional concurrent session of the same authendicated user is counted
   as one additional concurrent user.
+
 * The system session is not counted as concurrent user.
 * Sessions (non-System sessions) created to call WebService Processes or Event
   Bean Processes are created at the start of the process and are destroyed after
