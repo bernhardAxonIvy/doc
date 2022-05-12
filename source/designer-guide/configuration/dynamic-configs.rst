@@ -1,7 +1,7 @@
 .. _dynamic-config:
 
 Dynamic Configuration
-=======================
+=====================
 
 You may use dynamic expressions in your configurations in order to
 reduce post installation configurations for different runtime 
@@ -12,7 +12,7 @@ the value of the variable called `myVariable`  will be injected
 at runtime into the URI.
 
 Furthermore, we provide a set of expressions that can be used to refer to 
-the currently running |ivy-engine|+Application in oder to simplify calls
+the currently running |ivy-engine| Application in oder to simplify calls
 from an Ivy process to it's own backend.
 
 Expression Reference
