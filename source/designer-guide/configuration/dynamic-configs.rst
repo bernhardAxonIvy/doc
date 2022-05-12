@@ -3,17 +3,16 @@
 Dynamic Configuration
 =====================
 
-You may use dynamic expressions in your configurations in order to
-reduce post installation configurations for different runtime 
-environments.
-To do so, you can add dynamic references to :ref:`variables` into properties or URIs. 
-As an example, for an endpoint URI defined as :code:`${ivy.var.myVariable}/resource` 
-the value of the variable called `myVariable`  will be injected
-at runtime into the URI.
+You may use dynamic expressions in your configurations in order to reduce post
+installation configurations for different runtime environments. To do so, you
+can add dynamic references to :ref:`variables` into properties or URIs. As an
+example, for an endpoint URI defined as :code:`${ivy.var.myVariable}/resource`
+the value of the variable called `myVariable`  will be injected at runtime into
+the URI.
 
-Furthermore, we provide a set of expressions that can be used to refer to 
-the currently running |ivy-engine| Application in oder to simplify calls
-from an Ivy process to it's own backend.
+We provide a set of expressions you can use to refer to the currently running
+|ivy-engine| Application to simplify calls from an ivy process to its own
+backend.
 
 Expression Reference
 --------------------
