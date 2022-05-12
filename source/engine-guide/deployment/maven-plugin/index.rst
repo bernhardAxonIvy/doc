@@ -20,7 +20,7 @@ need the credentials of an administrator.
 
 .. _deployment-maven-plugin-command-line:
 
-Command line deployment
+Command Line Deployment
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 The :code:`deploy-to-engine` goal can be execute on the command line. The
@@ -49,7 +49,7 @@ application **portal** of the |ivy-engine|.
 
 .. _deployment-maven-plugin-build:
 
-Goal execution with POM
+Goal Execution with POM
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 The :code:`deploy-to-engine` goal can also be executed with a given :file:`pom.xml` file. 

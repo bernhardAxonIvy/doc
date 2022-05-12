@@ -69,7 +69,7 @@ After the installation the following files and folders are located in the
 Windows Programs
 ----------------
 
-The :file:`bin` folder of a windows installation contains the following native
+The :file:`bin` folder of a Windows installation contains the following native
 dynamic link libraries and executable files:
 
 +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

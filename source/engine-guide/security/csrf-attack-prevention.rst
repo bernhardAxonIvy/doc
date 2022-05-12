@@ -1,11 +1,11 @@
 CSRF Attack Prevention
 ======================
 
-In a Cross-site Request Forgery (CSRF) attack, an HTTP request gets sent from a
+In a Cross-site Request Forgery (CSRF) attack, a HTTP request gets sent from a
 victim's browser to a usually authenticated target destination in order to perform
 an action as the victim.
 
-Ivy applications are well protected from this kind of attacks under the following
+Ivy applications are well protected from this kind of attack under the following
 conditions:
 
 - You are using our standard :ref:`html-dialogs` (JSF) technology stack. See

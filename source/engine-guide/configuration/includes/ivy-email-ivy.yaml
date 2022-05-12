@@ -1,0 +1,7 @@
+# ivy.yaml located in e.g. <configuration>/ivy.yaml
+SecuritySystems:
+  default:
+    EMailNotification:  
+      DailySummaryOn: monday, tuesday, wednesday, thursday, friday
+      OnNewTasks: true
+      Language: de

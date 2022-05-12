@@ -1,0 +1,29 @@
+{
+  "format" : "9.4.8",
+  "id" : "16BADA40155E7401",
+  "data" : "screenshot.project.Data",
+  "elements" : [ {
+      "id" : "f0",
+      "type" : "RequestStart",
+      "name" : "start.ivp",
+      "config" : {
+        "callSignature" : "start",
+        "outLink" : "start.ivp"
+      },
+      "visual" : {
+        "at" : { "x" : 96, "y" : 64 }
+      },
+      "connect" : { "id" : "f2", "to" : "f1" }
+    }, {
+      "id" : "f1",
+      "type" : "TaskEndPage",
+      "name" : "end",
+      "config" : {
+        "template" : "endpage.xhtml"
+      },
+      "visual" : {
+        "at" : { "x" : 320, "y" : 64 },
+        "labelOffset" : { "x" : 0, "y" : 15 }
+      }
+    } ]
+}

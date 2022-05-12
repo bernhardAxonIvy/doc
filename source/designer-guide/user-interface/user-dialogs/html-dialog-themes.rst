@@ -1,4 +1,4 @@
-Html Dialog Themes
+HTML Dialog Themes
 ------------------
 
 With themes the visual appearance of the application such as the color scheme
@@ -113,7 +113,7 @@ allows to simply use the ability of `FlexBox
 PrimeFaces widgets (e.g. by using :code:`<p:panelGrid layout="flex">`). So its
 recommended to also reference the :file:`primeflex-2.min.css` in your template. 
 
-PrimeFlex is provided by the core in version 2 and is per default referenced
+PrimeFlex is provided by the core in version 2 and is by default referenced
 in new layouts (templates). You can also add it to your template by:
 
 ::

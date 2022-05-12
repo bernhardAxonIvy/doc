@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <breakpoints>
 <breakpoint enabled="true" persistant="true" registered="true">
-<resource path="/HtmlDialogDemos/src_hd/ch/ivyteam/htmldialog/demo/output/DataTableDemo/DataTableDemoProcess.mod" type="1"/>
+<resource path="/HtmlDialogDemos/src_hd/ch/ivyteam/htmldialog/demo/output/DataTableDemo/DataTableDemoProcess.p.json" type="1"/>
 <marker type="ch.ivyteam.ivy.designer.process.ui.processBreakpointMarker">
 <attrib name="zPath" value="153D1CC01F460F8B-f3"/>
 <attrib name="condition" value="true"/>
@@ -12,7 +12,7 @@
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
-<resource path="/HtmlDialogDemos/src_hd/ch/ivyteam/htmldialog/demo/output/DataTableDemo/DataTableDemoProcess.mod" type="1"/>
+<resource path="/HtmlDialogDemos/src_hd/ch/ivyteam/htmldialog/demo/output/DataTableDemo/DataTableDemoProcess.p.json" type="1"/>
 <marker type="ch.ivyteam.ivy.designer.process.ui.processBreakpointMarker">
 <attrib name="zPath" value="153D1CC01F460F8B-f11"/>
 <attrib name="condition" value="true"/>
@@ -23,7 +23,7 @@
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
-<resource path="/QuickStartTutorial/src_hd/quickStartTutorial/EnterProduct/EnterProductProcess.mod" type="1"/>
+<resource path="/QuickStartTutorial/src_hd/quickStartTutorial/EnterProduct/EnterProductProcess.p.json" type="1"/>
 <marker type="ch.ivyteam.ivy.designer.process.ui.processBreakpointMarker">
 <attrib name="zPath" value="148655EC6EF98127-f1"/>
 <attrib name="condition" value="true"/>
@@ -34,7 +34,7 @@
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
-<resource path="/QuickStartTutorial/processes/MyProcess.mod" type="1"/>
+<resource path="/QuickStartTutorial/processes/MyProcess.p.json" type="1"/>
 <marker type="ch.ivyteam.ivy.designer.process.ui.processBreakpointMarker">
 <attrib name="zPath" value="148655DDB7BB6588-f3"/>
 <attrib name="condition" value="true"/>
@@ -45,7 +45,7 @@
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
-<resource path="/QuickStartTutorial/processes/exampleProcess.mod" type="1"/>
+<resource path="/QuickStartTutorial/processes/exampleProcess.p.json" type="1"/>
 <marker type="ch.ivyteam.ivy.designer.process.ui.processBreakpointMarker">
 <attrib name="zPath" value="1567DC5F3418C42A-f3"/>
 <attrib name="condition" value="true"/>
@@ -56,7 +56,7 @@
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
-<resource path="/QuickStartTutorial/src_rd/quickStartTutorial/sampleRichDialog/sampleRichDialogProcess.mod" type="1"/>
+<resource path="/QuickStartTutorial/src_rd/quickStartTutorial/sampleRichDialog/sampleRichDialogProcess.p.json" type="1"/>
 <marker type="ch.ivyteam.ivy.designer.process.ui.processBreakpointMarker">
 <attrib name="zPath" value="1567ECFEC1835E97-f3"/>
 <attrib name="condition" value="true"/>

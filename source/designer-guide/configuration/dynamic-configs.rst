@@ -1,7 +1,7 @@
 .. _dynamic-config:
 
-Dynamic configuration
-=======================
+Dynamic Configuration
+=====================
 
 You may use dynamic expressions in your configurations in order to reduce post
 installation configurations for different runtime environments. To do so, you

@@ -17,12 +17,11 @@ for each application.
 Databases
 ^^^^^^^^^
 
-The **databases** view displays an overview of your configured
-databases within your projects. You can switch the application
-by clicking on the tabs at the top of the view. If you want to display a different
-environment, you can change it at the top right. To get more information about a
-database click on an entry to view its
-:ref:`engine-cockpit-database-detail` page.
+The **databases** view displays an overview of your configured databases within
+your projects. You can switch the application by clicking on the tabs at the top
+of the view. If you want to display a different environment, you can change it
+at the top right. To get more information about a database click on an entry to
+view its :ref:`engine-cockpit-database-detail` page.
 
 .. note::
     If you want to add a new database configuration, please refer
@@ -36,16 +35,16 @@ database click on an entry to view its
 Database Detail
 """""""""""""""
 
-In the **Database Detail** view you see all configurations of
-the selected database. You can test if the configuration works and a
-connection to this database can be established by clicking on the
-:guilabel:`Arrow` button. You can change most connection values in this view.
-If you click on the :guilabel:`Reset` button the database configuration will be
-reset to the original values. In this view you can also see information about the
-last 200 executed *SQL* queries and its used connections too.
+In the **Database Detail** view you see all configurations of the selected
+database. You can test if the configuration works: By clicking on the
+:guilabel:`Arrow` button, you direct the engine to try and establish a
+connection to this database. You can change most connection properties in this
+view. If you click on the :guilabel:`Reset` button the database configuration
+will be reset to the original property values. In this view you can also see information
+about the last 200 executed *SQL* queries and the connections used, too.
 
 .. note:: 
-    Not every value can be modified here yet. But you can override them in the
+    Not every property can be modified here yet. But you can override them in the
     :ref:`app-yaml` file.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-database-detail.png
@@ -55,9 +54,9 @@ Web Services
 ^^^^^^^^^^^^
 
 The **Web Services** page lists all defined web services for each application.
-You can switch the application by clicking on the tabs at the top of the view. You
-can also change environment in the drop-down box at the top of the view. To see
-detailed information about a web service click on an entry to view its
+You can switch the application by clicking on the tabs at the top of the view.
+You can also change the environment in the drop-down box at the top of the view.
+To see detailed information about a web service click on an entry to view its
 :ref:`engine-cockpit-webservice-detail` page.
 
 .. note::
@@ -78,7 +77,7 @@ the credentials or the endpoint settings. You can also reset them to their origi
 values by clicking on the :guilabel:`Reset` button.
 
 To test if an endpoint is accessible press on the :guilabel:`Arrow` button next to it.
-Please be aware that only *HttpBasic* authentication is supported and the request is an
+Please be aware that only *Http Basic* authentication is supported and the request is an
 empty *POST* message.
 
 .. note:: 
@@ -88,17 +87,17 @@ empty *POST* message.
 .. figure:: /_images/engine-cockpit/engine-cockpit-webservice-detail.png
 
 
-Rest Clients
+REST Clients
 ^^^^^^^^^^^^
 
-The **Rest Clients** view gives an overview over all rest clients  for each application.
-You can switch the application by clicking on the tabs at the top of the view. You
-can also change environment in the drop-down box at the top of the view. To see
-detailed information about a web service click on an entry to view its
-:ref:`engine-cockpit-rest-client-detail` page.
+The **REST Clients** view gives an overview of all REST clients for each
+application. You can switch the application by clicking on the tabs at the top
+of the view. You can also change the environment in the drop-down box at the top
+of the view. To see detailed information about a web service click on an entry
+to view its :ref:`engine-cockpit-rest-client-detail` page.
 
 .. note::
-    If you want to add a new rest client, please refer to
+    If you want to add a new REST client, please refer to
     :ref:`Designer Guide <rest-clients-configuration>`.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-rest-clients.png
@@ -106,10 +105,10 @@ detailed information about a web service click on an entry to view its
 
 .. _engine-cockpit-rest-client-detail:
 
-Rest Client Detail
+REST Client Detail
 """"""""""""""""""
 
-The **Rest Client Detail** page shows all configuration values of a rest service.
+The **REST Client Detail** page shows all configuration values of a REST service.
 Some of these values can be modified directly in this editor. You can reset your
 changes by clicking on the :guilabel:`Reset` button. If you want to test your
 configuration settings, click on the :guilabel:`Arrow` button. This will start a

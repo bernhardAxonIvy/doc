@@ -404,7 +404,7 @@ from the CMS. See :ref:`here <workflow-categories>`.
 
    A user can be informed by mail if a new task has been created for
    him. User mail notification can be configured on the |ivy-engine|.
-   See :ref:`standard-process-email`.
+   See :ref:`email-notifications`.
 
 .. figure:: /_images/process-elements/tab-task.png
    :alt: Task tab
