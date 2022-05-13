@@ -45,11 +45,7 @@ Line 34:
   In each test method you have to pass in a
   :public-api:`BpmClient</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html>`.
   This client is supplied by the process testing framework and represents an
-<<<<<<< HEAD
   |ivy-engine| that can run and drive your processes along.
-=======
-  |ivy-engine| that can execute your processes.
->>>>>>> master
 
 
 Write a Process Test
@@ -125,13 +121,8 @@ If you execute this test then you will face the following error:
 
   No mock installed for UserTask 'write invoice' [1720E35BB7789886-f2]
   
-<<<<<<< HEAD
 To fix this we need to introduce you to two more concepts, mocking elements and
 asserting process data.
-=======
-To fix this we need to introduce you to two more concepts, namely mocking
-elements and asserting process data.
->>>>>>> master
 
 
 Mock Dialogs and Assert Data
@@ -157,14 +148,9 @@ Line 17:
   Here you select the element whose UI you want to mock by its name.
 
 Line 18:
-<<<<<<< HEAD
   The HTML Dialog of the UserTask 'write invoice' returns a single value called
   ``total``. So let's mock the UI part to simulate that the user enters a total
   of ``935`` on the UI.
-=======
-  The HTML Dialog of the UserTask 'write invoice' returns a single value called ``total``. 
-  So let's mock the UI part to simulate that the user enters a total of ``935`` on the UI.
->>>>>>> master
 
 Line 29-30:
   With the :ref:`process-testing-data` API you can assert the process data of
@@ -178,17 +164,10 @@ at some of the APIs.
 API Reference
 ~~~~~~~~~~~~~
 
-<<<<<<< HEAD
 The following section describes some of the more common API calls you can use.
 If you want to see the full functionality of each API you can follow the links
 in each subsection to the :public-api:`Public
 API</ch/ivyteam/ivy/bpm/engine/client/package-summary.html>`.
-=======
-The following section describes some of the more common API calls. If you want
-to see the full functionality of each API, follow the links in each of the
-subsections of the 
-:public-api:`Public API</ch/ivyteam/ivy/bpm/engine/client/package-summary.html>`.
->>>>>>> master
 
 
 .. _process-testing-select:
@@ -246,19 +225,11 @@ Mock
 There are two ways of
 :public-api:`mocking</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html#mock()>`
 an element. Either you mock the entire element or the UI or call part. If you
-<<<<<<< HEAD
 mock the entire element nothing configured on the element is tested at all. On
 the other hand if you mock the UI or call part of an element its mapping code is
 executed and tested. 
 
 If your process runs through an HTML Dialog you always need to mock it.
-=======
-mock the entire element, nothing that is configured on the element is tested. On
-the other hand, if you mock the UI or call part of an element its mapping code is
-executed and tested. 
-
-If your process executes an HTML Dialog you always need to mock it.
->>>>>>> master
 
 .. literalinclude:: includes/processtesting/processtesting-mock.java
     :language: java
@@ -296,17 +267,10 @@ Data
 ^^^^
 
 With the :public-api:`Data</ch/ivyteam/ivy/bpm/engine/client/ProcessData.html>`
-<<<<<<< HEAD
 API you can assert the process data at different points in your process. You can
 get the ``data`` from the last executed element or from any element during
 execution. If an element is executed multiple times you can access the ``data``
 of each execution in an ordered list.
-=======
-API you can access the process data at different points in your process. You can
-get the ``data`` from the last executed element or from any element during execution.
-If an element is executed multiple times you can access the ``data`` of each execution
-in an ordered list.
->>>>>>> master
 
 .. literalinclude:: includes/processtesting/processtesting-data.java
     :language: java

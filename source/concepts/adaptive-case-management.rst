@@ -27,7 +27,7 @@ Invoking Optional Processes
 
 Think about a process where the purchase of an asset must be approved by a line
 manager. The line manager may want to ask the requester to provide more details
-why the asset is required. Therefore he willd add a side task to ask the requester
+why the asset is required. Therefore he will add a side task to ask the requester
 for clarification. This optional interaction should not be wired into the main
 approval process as it obfuscates the most used business path. But it could be
 available as an optional side task that the line manager can start and then gets
