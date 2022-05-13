@@ -23,7 +23,6 @@ Note a few things at this point:
 
 Line 28:
   The test class is annotated as an :public-api:`@IvyProcessTest
-<<<<<<< HEAD
   </ch/ivyteam/ivy/bpm/exec/client/IvyProcessTest.html>`, this enables you to
   run this test as a process tests.
 
@@ -32,16 +31,6 @@ Line 31:
   class defines the
   :public-api:`BpmProcess</ch/ivyteam/ivy/bpm/engine/client/element/BpmProcess.html>`
   under test in a constant called ``testee``. The passed in ``String`` argument
-=======
-  </ch/ivyteam/ivy/bpm/exec/client/IvyProcessTest.html>`. This enables you to
-  run this test as a process test.
-
-Line 31:
-  As you want to test a specific process using this test class, the generated
-  test class defines the
-  :public-api:`BpmProcess</ch/ivyteam/ivy/bpm/engine/client/element/BpmProcess.html>`
-  under test in a constant called ``testee``. The ``String`` argument passed in
->>>>>>> master
   defines the process to run the test against. Replace ``MyProcess`` with a
   process that actually exists in your project under test.
   
