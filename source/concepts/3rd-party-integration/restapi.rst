@@ -19,23 +19,15 @@ architectural style.
 Call a Remote REST Service
 --------------------------
 
-<<<<<<< HEAD
 To call a remote REST service, you have to define it in the
 :ref:`rest-clients-configuration`. After that, you can use a
 :ref:`process-element-rest-client-activity` to call the REST service.
-=======
-To call a remote REST service it has to be defined in the
-:ref:`rest-clients-configuration`. After that a
-:ref:`process-element-rest-client-activity` can be used to call the REST
-service.
->>>>>>> master
 
 Find examples in the :ref:`ConnectivityDemos <importing-demo-projects>` project.
 
 
 .. _integration-rest-provider:
 
-<<<<<<< HEAD
 Provide Your Own REST Services
 ------------------------------
 
@@ -45,17 +37,6 @@ annotations can be used. A REST resource is created by adding a Java class to
 the ``src`` directory. The Java class has to use the correct annotations (as
 shown below) so it is detected as a REST resource and published automatically.
 After publishing, the resource will be available on the base path
-=======
-Provide REST Services
----------------------
-
-To provide a custom REST service from an ivy project, `JAX-RS
-<https://docs.oracle.com/javaee/7/api/javax/ws/rs/package-summary.html#package.description>`__
-annotations can be used. A REST resource is created by adding a Java class to
-the ``src`` directory. The Java class has to use the correct annotations (as
-shown below), then it will be detected as a REST resource and published
-automatically. After publishing, the resource will be available on the base path
->>>>>>> master
 */<appName>/api/*.
 
 ::
@@ -90,17 +71,10 @@ API Publishing
 
 Once you have provided new REST APIs with your project, you need to share the
 service capabilities with your service users. This is simple, since services
-<<<<<<< HEAD
 defined within Ivy projects will be published as `OpenAPI
 <https://www.openapis.org/>`__ service specifications. You only need to share the
 specification as a file or serve it on a public URL so that clients can start
 using it.
-=======
-defined within ivy projects will be published as `OpenAPI
-<https://www.openapis.org/>`__ service specifications. You only need to share
-the specification as file or serve it on a public URL so to enable clients to
-use them.
->>>>>>> master
 
 The technical interface description is available under the following URL path:
 
@@ -112,30 +86,17 @@ e.g. http://localhost:8081/designer/openapi.json
 
 Custom OpenAPI Docs
 ^^^^^^^^^^^^^^^^^^^
-<<<<<<< HEAD
 The automatically generated OpenAPI specification exposes all strict service
 capabilities without additional effort for you as a service provider.
-=======
-The automatically generated OpenAPI specification exposes all service capabilities 
-without additional effort for you as a service provider.
->>>>>>> master
 
 However, there are many service interfaces that become easier to use if they are
 enriched with explanatory documents. You may like to expose and explain
 technical implementation details, such as strictly required parameters or
-<<<<<<< HEAD
 possible response statuses. You can provide this information by adding optional
 OpenAPI annotations to your REST APIs.
 
 The highlighted lines in the following example show frequent use cases of
 these optional OpenAPI docs annotations.
-=======
-possible response statuses. You can provide all of these docs by adding
-optional OpenAPI annotations to your REST APIs.
-
-The highlighted lines in the following example show frequent use cases of
-optional OpenAPI docs annotations.
->>>>>>> master
 
 .. container:: admonition note toggle
 
@@ -157,19 +118,11 @@ optional OpenAPI docs annotations.
 API Browser
 -----------
 
-<<<<<<< HEAD
 You can easily inspect all `OpenAPI <https://www.openapis.org/>`__ services with
 the API Browser. It gives consumers of your services not only a detailed service
 description, but a simple client to fire real calls against the services, too.
 
 To access the API Browser, open the following URL paths with a web browser of your choice:
-=======
-All `OpenAPI <https://www.openapis.org/>`__ services can be easily inspected with the API Browser. 
-It gives consumers of your services not only a detailed service description, but a simple client to fire real calls
-against the services, too.
-
-Access the API Browser with the web browser of your choice using the following URL paths:
->>>>>>> master
 
 - In the |ivy-designer|: ``/designer/api-browser`` (e.g. http://localhost:8081/designer/api-browser)
 - In the |ivy-engine|: ``/system/api-browser`` (e.g. http://localhost:8080/system/api-browser)
@@ -192,33 +145,20 @@ Basic Auth
 REST APIs are protected with Basic authentication so that only known users of
 the security system can get valid responses. Setting HTTP Basic authentication
 headers from an API client is simple and widely supported. However, since HTTP
-<<<<<<< HEAD
 Basic headers are base64 encoded and thus can easily be decoded, we strongly
 recommend to allow :ref:`only encrypted HTTPS traffic
 <reverse-proxy-secure-https>` on the REST APIs.
 
 You can customize the authentication for a specific API method by setting
 security annotations headers:
-=======
-Basic headers can be easily decoded, it is strongly recommend to allow
-:ref:`only encrypted HTTPS traffic <reverse-proxy-secure-https>` on the REST APIs.
-
-To customize the authentication for a specific API method, set security annotation headers:
->>>>>>> master
 
 - @PermitAll: allows unauthenticated access to anonymous users
 - @RolesAllowed: users must be authenticated and own the defined roles
 - @DenyAll: nobody is allowed to invoke this service
 
-<<<<<<< HEAD
 You can review the security annotations in the demo project :link-url:`Secure
 Service <demos-connect-secure-service-java>` within the :ref:`ConnectivityDemos
 <importing-demo-projects>`.
-=======
-Refer to :link-url:`Secure Service <demos-connect-secure-service-java>` within
-the :ref:`ConnectivityDemos <importing-demo-projects>` for further details on
-security annotations.
->>>>>>> master
 
 CSRF Protection
 ^^^^^^^^^^^^^^^
@@ -233,25 +173,14 @@ failure with the HTTP status code 400 (Bad Request).
 User provided REST services via ``GET``, ``HEAD`` or ``OPTIONS`` have to be
 implemented such that no data is modified.
 
-<<<<<<< HEAD
 The CSRF protection filter is enabled by default. However, it can be turned off
 in an environment where the clients can be trusted (e.g. intranet). See the 
 property ``REST.Servlet.CSRF.Protection`` in the :ref:`ivy-webserver-yaml`
-=======
-The CSRF protection filter is enabled by default. However, you can disable it in
-a trusted environment, e.g. in an intranet. See property
-``REST.Servlet.CSRF.Protection`` in the :ref:`ivy-webserver-yaml` for further
-details.
->>>>>>> master
 
 
 Workflow API
 ------------
 
 |axon-ivy| provides a basic :ref:`Workflow API REST Service
-<<<<<<< HEAD
 <mobile-workflow-api>`. You can use it to enable remote systems to request
-=======
-<mobile-workflow-api>`. You can use it to allow remote systems to request
->>>>>>> master
 information about tasks of a user etc.
