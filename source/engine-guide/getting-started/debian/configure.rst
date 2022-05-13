@@ -3,15 +3,17 @@ Configure the Engine
 
 Now, let's configure the |ivy-engine| with a license and system database.
 
-To start with that you must first request a valid |ivy-engine| license.
-Either you get a license for your productive system through one of our sales
-personal or contact our support for time limited trial licenses. If you do not
-have a license you can skip this section and continue with the next section.
+First, you have to request a valid |ivy-engine| license. You can either get a
+license for your productive system through one of our sales representatives or
+contact our support for time limited trial licenses. If you do not have a
+license you can skip this section and continue with the next section.
 
-Moreover, you need to have a supported database server up and running with a
-database user that has the rights to create new databases. The configuration and
-creation of the system database differs a little bit depending on the database
-system you use. We will use a PostgreSQL database server.
+Additionally, you need to have a supported database management system server up
+and running and a database user avilable who has the rights to create new
+databases and execute data definition language as well as data manipulation
+language statements. The configuration and creation of the system database
+differs a little bit depending on the database system you use. We will use a
+PostgreSQL database server.
 
 Shutdown the |ivy-engine| first by stopping its service
 
@@ -19,17 +21,17 @@ Shutdown the |ivy-engine| first by stopping its service
 
     systemctl stop axonivy-engine-9.service
 
-Let's install the license. You can do this by simple copy the license
-:file:`*.lic` file into the :file:`configuration` folder
+Let's install the license: Simply copy the license :file:`*.lic` file into the
+:file:`configuration` folder
 
 .. code:: bash
 
     cp ~/licence.lic /etc/axonivy-engine-9
 
 To configure the system database, use the :code:`config-db` command of the
-**EngineConfigCli** tool. Replace **yourdatabasserver** with the name of the
+**EngineConfigCli** tool. Replace **yourdatabaseserver** with the name of the
 host where your PostgreSQL server is running. Replace **dbuser** and
-**password** with the credentials of a database user that has the rights to
+**password** with the credentials of a database user who has the rights to
 create a new database on the database server.
 
 .. code:: bash
@@ -57,11 +59,11 @@ Next, define an administrator by modifying the :ref:`ivy-yaml` file of the
   :linenos:
 
 .. Note::
-  Administrators can administrate the |ivy-engine|. For example, they can add
+  Administrators can administer the |ivy-engine|. For example, they can add
   or remove users, assign user to roles, enable or disable applications, etc.
   Therefore, you need at least one administrator so that you can later
-  administrate the |ivy-engine|. The Email address of administrators are used
-  to send mail notifications if license problems occur.
+  administer the |ivy-engine|. In case of license problems, the |ivy-engine| 
+  sends mail notifications to the administrators.
 
 .. include:: ../_webserver.rst
 
@@ -71,7 +73,7 @@ Now, start the |ivy-engine| again
 
     systemctl start axonivy-engine-9.service
 
-Note, that the HTTP port of the |ivy-engine| may have changed. If you did
-change the http settings! So open again a web browser and navigate to
-http://yourservername:yourportnumber/. Note, that the header with the demo
-mode message is gone. You now have a production ready |ivy-engine|.
+Note that the HTTP port of the |ivy-engine| may have changed if you did change
+the http settings! So open again a web browser and navigate to
+http://yourservername:yourportnumber/. As you see, the header with the demo mode
+message is gone. You now have a production ready |ivy-engine|.
