@@ -1,14 +1,14 @@
 .. _reverse-proxy-apache:
 
-Apache httpd
-============
+Apache HTTP Server
+===================
 
-This is how the configuration for Apache httpd as reverse proxy in front of
-|ivy-engine| can look like:
+To configure Apache HTTP Server as reverse proxy in front of the |ivy-engine|, 
+configure it as follows:
 
-* All HTTP traffic is redirected to HTTPS
-* Only the application `demo-portal` is available over the reverse proxy
-* Apache httpd communicates over HTTP with the |ivy-engine|
+* All HTTP traffic between client and reverse proxy is redirected to HTTPS
+* Only the necessary applications (here: `demo-portal`) is available via the reverse proxy
+* Apache HTTP Server communicates over HTTP with the |ivy-engine|
 
 .. literalinclude:: vhosts.conf
     :language: apache
