@@ -1,13 +1,13 @@
 Web Services
 ============
 
-SOAP based web services are often used to integrate various systems
-together. The tooling of |axon-ivy| makes the integration of remote web
-services very easy and intuitive. There is no need to care much about
-the technical details behind the scenes.
+SOAP based web services are often used to integrate various systems. The tooling
+of |axon-ivy| makes the integration of remote web services very easy and
+intuitive. There is no need to care much about the technical details behind the
+scenes.
 
 
-Call a remote Web Service
+Call a Remote Web Service
 -------------------------
 
 To call a remote web service it has to be registered in the
@@ -21,7 +21,7 @@ process to the remote service and the integration of returned data from
 the service is easy. It works like other well known data mapping tables.
 
 
-Provide a Web Service for third parties
+Provide a Web Service for Third Parties
 ---------------------------------------
 
 If you need to expose an interface to your application for third
@@ -38,7 +38,7 @@ Once the service is implemented. Start the process engine and hit the
 link to the WSDL service definition. Share this WSDL with the third
 party that is interested in your service.
 
-Getting started
+Getting Started
 ---------------
 
 Have a look at our :dev-url:`video tutorials </tutorial>` to see web

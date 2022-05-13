@@ -16,14 +16,14 @@ Logging
 -------
 
 If you experience poor performance, you can log the individual requests
-to the |ivy-engine| by setting the level of the request performance logger in :file:`[engineDir]/configuration/log4j2.xml`:
+to the |ivy-engine| log by setting the level of the request performance logger in :file:`[engineDir]/configuration/log4j2.xml`:
 
 .. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/log4j2-performance-request.xml
   :language: xml
   :linenos:
 
-This will make a log when the request was received by the internal web server
-and when the request was processed with the time spent for processing.
+This will create a log entry when the request has been received by the internal web server
+and when the request has been processed with the time spent for processing.
 
 A unique request identifier **requestId** is assigned to every request. This can be used
 to find out what the |ivy-engine| did while processing the request.
@@ -34,16 +34,16 @@ to find out what the |ivy-engine| did while processing the request.
   :language: none
 
 The example above shows the log messages when the request with id **61** has entered
-and exited the web server. During the request a database :code:`SELECT` statement was executed.
-The whole request was processed in 16 ms.
+and exited the web server. During the request a database :code:`SELECT` statement has been executed.
+The whole request has been processed in 16 ms.
 
 Request Tracing Tools
 .....................
 
-You can use an external tracing tool that propagates a trace id HTTP header. 
-|ivy-engine| will in that case re-use the given trace Id as **requestId**.
-This allows you to aggregate log entries from different systems using the **requestId**. 
-|ivy-engine| supports the following HTTP headers:
+You can use a external tracing tool that propagates a trace id in a HTTP header.
+In that case, |axon-ivy| will re-use the given trace Id as its **requestId**.
+This allows you to aggregate log entries from different systems using the
+**requestId**. |ivy-engine| supports the following HTTP headers:
 
 =================  =============      
 HTTP Header        Tool/Standard

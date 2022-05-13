@@ -7,7 +7,7 @@ conditional-, loop- and exception handling blocks.
 
 The :ref:`ivyscript-reference-data-types` are
 defined for easy use. Especially, IvyScript bewares the programmer from
-null pointer exceptions because ivy data objects are automatically
+null pointer exceptions because Ivy data objects are automatically
 initialized to a default value. Read the section :ref:`ivyscript-nullhandling`
 for more details.
 
@@ -99,15 +99,15 @@ that happen while executing external Java code.
 
 .. _ivyscript-nullhandling:
 
-Null handling / Automatic object creation
+Null Handling / Automatic Object Creation
 -----------------------------------------
 
-IvyScript supports auto-initialization of the ivy basic types, i.e. you
+IvyScript supports auto-initialization of the Ivy basic types, i.e. you
 don't have to create/initialize fields or variables explicitly with
 ``new`` after declaration. ``Strings`` are initialized to an empty
 ``String``, ``Numbers`` to zero, ``Lists`` to an empty ``List``.
 
-Ivy composite types (ivy Data Classes) are automatically created. Due to
+Ivy composite types (Ivy Data Classes) are automatically created. Due to
 that automatic object creation, a null check expression like
 ``if(in.customer == null)`` is always false.
 

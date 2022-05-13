@@ -17,7 +17,7 @@ There are four kinds of Data Classes in |axon-ivy|.
 
 Global Data Classes
    The global Data Classes are placed in the Data Class node in your
-   project tree. They are accessible all over your project and the
+   project tree. They are accessible in your project and the
    extending projects.
 
 User Dialog Data Class
@@ -30,7 +30,7 @@ User Dialog Data Class
 Web Service (WS) Data Classes
    The Web Service Data Classes are automatically generated if you
    define a Web Service configuration. The Web Service Data Classes are,
-   as well as the global Data Classes, accessible from all over the
+   like the global Data Classes, accessible from all over the
    project and the extending projects. Use this Data Class to
    communicate with your Web Services.
 
@@ -120,7 +120,7 @@ Annotations
       (``ivy.repo``) in the context of the current business case. See
       :ref:`business-case-data` for more information.
 
-Table actions
+Table Actions
    |image0| Adds a new attribute to the table. Alternatively the new
    attributes can be added by clicking on an empty row.
 
@@ -134,7 +134,7 @@ Table actions
    an attribute. More information about value change breakpoints can be
    found in chapter :ref:`simulate-process-models-breakpoints`.
 
-Name column
+Name Column
    Enter the name of your attribute. The name should not contain any
    special characters or spaces.
 
@@ -165,11 +165,11 @@ Name column
          selection dialog because there are mutliple types matching the
          type name ``Timestamp``.
 
-Type column
+Type Column
    Enter the type of the attribute or press the |image6| to bring up the
    :ref:`data-type-browser`.
 
-Persistent column
+Persistent Column
    Decide if the data should be persistent between a task switch. If the
    data is not set to be persistent, then you loose all information if
    the execution of the process passes a task switch process element.
@@ -181,12 +181,12 @@ Persistent column
       :ref:`persistence <persistence>` or the data is only used
       temporary within a task.
 
-Attribute refactoring
+Attribute Refactoring
 ^^^^^^^^^^^^^^^^^^^^^
 
 The Data Class editor supports Data Class attributes refactoring.
 
-Combine into new Data Class refactoring
+Combine Into New Data Class Refactoring
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Over time the amount of attributes in a Data Class may become excessive.
@@ -201,7 +201,7 @@ the attributes that belong to the address part into an extra address
 Data Class.
 
 +-----------------------------------+-----------------------------------+
-| Before refactoring                | After refactoring                 |
+| Before Refactoring                | After Refactoring                 |
 +===================================+===================================+
 | |image7|                          | |image8|                          |
 +-----------------------------------+-----------------------------------+

@@ -1,9 +1,9 @@
 Run
 ---
 
-Now we are going to run the |ivy-engine| with a system database management
-which holds the system database - in this case we use PostgreSQL. Create a new
-folder somewhere in your file system and copy paste the following files to it:
+Now we are going to run the |ivy-engine| with a separate container which holds
+the system database - in this case we use PostgreSQL. Create a new folder
+somewhere in your file system and copy paste the following files to it:
 
 :file:`docker-compose.yaml`
 

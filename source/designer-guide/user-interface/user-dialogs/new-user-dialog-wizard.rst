@@ -4,7 +4,7 @@ New User Dialog Wizard
 ----------------------
 
 The New User Dialog wizard lets you create a new User Dialog. This can
-be a Html Dialog or an Offline Dialog.
+be a HTML Dialog or an Offline Dialog.
 
 The wizard creates several resources for the new User Dialog:
 
@@ -25,7 +25,7 @@ Interface
 Accessibility
 ^^^^^^^^^^^^^
 
-File -> New -> Html Dialog
+File -> New -> HTML Dialog
 
 
 .. _user-dialog-new-wizard-page-1:
@@ -55,7 +55,7 @@ Dialog Type
 
    .. tip::
 
-      Since *Html Dialog* as well as *Offline Dialog* both base on JSF
+      Since *HTML Dialog* as well as *Offline Dialog* both base on JSF
       technology, it's possible to switch between those two dialog types
       after creation.
 
@@ -63,10 +63,10 @@ View Type
    A view type defines how the User Dialog will be. It depends on the dialog
    type. You can choose if a User Dialog should be created with the *css grid*, so
    it acts responsive to the display width or not. If you want a
-   reusable Html component, select a *Component* type.
+   reusable HTML component, select a *Component* type.
 
 Layout
-   The layout can only be changed if you choose *Html Dialog* and not
+   The layout can only be changed if you choose *HTML Dialog* and not
    *Component* as view type. All your templates which are located in your
    webContent/layouts folder are listed here. 
 
@@ -93,7 +93,7 @@ Data Class fields
    Data Class of the User Dialog. The name of the created field could be
    defined in the column 'Field Name'.
 
-Form (for Html/Offline Dialogs)
+Form (for HTML/Offline Dialogs)
    For each selected UI attribute a form field is created in the view.
    E.g. for a field birthday, of type Date, a label and a datepicker
    will be generated.

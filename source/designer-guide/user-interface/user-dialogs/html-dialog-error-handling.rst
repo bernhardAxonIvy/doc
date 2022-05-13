@@ -21,7 +21,7 @@ Other IVY APIs are not intended to work in case of an error.
 
 Custom errors pages must be registered in the global :ref:`web-xml`.
 
-.. tip:: Keep in mind that error pages and its configuration do not live within the project. Therefore it is crucial to document or automate their deployment. Otherwise error page configurations might get lost during migrations to newer version of Axon Ivy.
+.. tip:: Keep in mind that error pages and its configuration do not live within the project. Therefore it is crucial to document or automate their deployment. Otherwise error page configurations might get lost during migrations to newer version of |axon-ivy|.
 
 
 AJAX Errors

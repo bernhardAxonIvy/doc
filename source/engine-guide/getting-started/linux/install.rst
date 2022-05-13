@@ -3,7 +3,7 @@ Install the Engine
 
 We suggest that you install the |ivy-engine| into a new folder called
 :file:`/opt/ivy/engine`. Create the directory and change the owner to your current
-user
+user.
 
 .. code:: bash
 
@@ -32,7 +32,7 @@ Replace **myuser** with the name of your current user.
         login ivy
         ...
 
-Download the latest engine
+Download the latest engine:
 
 .. code:: bash
 

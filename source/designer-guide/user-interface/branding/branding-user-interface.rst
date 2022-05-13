@@ -39,7 +39,7 @@ The following resources are currently used by the |ivy-engine|,
 
 - :file:`logo(.png)`: The main logo image
 - :file:`logo_light(.png)`: Same as the main logo, but e.g. in our case with white writing
-- :file:`logo_mail(.png)`: The logo which is taken by the default |ivy-engine| :ref:`standard-process-email`
+- :file:`logo_mail(.png)`: The logo which is taken by the default |ivy-engine| :ref:`email-notifications`
 - :file:`logo_small(.png)`: The logo in small (square format recommended), used by e.g. error, login pages
 - :file:`favicon(.png)`: The logo for the browser tab (square format recommended)
 - :file:`background(.png)`: A background image, e.g. used by the :ref:`Portal <portal-guide>` login screen

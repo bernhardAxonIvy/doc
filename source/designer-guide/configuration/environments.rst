@@ -12,14 +12,14 @@ an environment value in these features is always optional. For example: If you
 have multiple environments and using Variables, you don't have to specify values
 for all environments. If one is missing, it will fallback to the default value.
 
-If you want to define a configuration e.g. rest client for a specific environment
+If you want to define a configuration e.g. REST client for a specific environment
 then you need to create a new folder in your project for the given environment
 e.g: :file:`[project]/config/_[env]` > :file:`[project]/config/_dev`. After that
 you can copy the configuration file e.g. :file:`rest-clients.yaml` there. You can then
 edit this with the given editor - by double clicking on the file.
 
 
-Change environment for simulation
+Change Environment for Simulation
 ---------------------------------
 
 It is possible to change the active environment for the simulation by
@@ -32,7 +32,7 @@ setting the environment in the preferences.
    Environment Preferences
 
 
-Change environment at runtime
+Change Environment at Runtime
 -----------------------------
 
 The active environment can be specified in :ref:`app-yaml`. If no environment is

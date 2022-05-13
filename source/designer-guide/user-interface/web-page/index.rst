@@ -48,7 +48,7 @@ they can be displayed in a web browser.
 
 .. _user-interface-web-page-creating:
 
-Creating and editing Web Pages from within the Process
+Creating and Editing Web Pages From Within the Process
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A web page can be created or accessed directly from the process. Open
@@ -56,7 +56,7 @@ the inscription mask of any page-capable process element. Depending on
 whether the page is already defined or not, you will be presented with
 either of the two scenarios described in the sections below.
 
-No page has been specified yet
+No Page Has Been Specified Yet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 |image0|
@@ -91,7 +91,7 @@ following three methods:
    the :ref:`web page store <web-page-store>`.
 
 
-A page is already specified
+A Page is Already Specified
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 |image2|
@@ -111,7 +111,7 @@ JSP Page
 ^^^^^^^^^^
 
 Inside JSP page you can make use of the
-:ref:`Environment Variable ivy <ivyscript-reference-environmentvariable>`.
+:ref:`Environment Variable Ivy <ivyscript-reference-environmentvariable>`.
 It is imported and declared as follows:
 
 ::
@@ -140,7 +140,7 @@ into your JSP content objects, e.g.:
 
 .. _web-page-store:
 
-Where Web Pages are stored
+Web Pages Storage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The page that is displayed is stored in the :file:`webContent` folder
