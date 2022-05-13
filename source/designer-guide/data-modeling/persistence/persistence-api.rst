@@ -3,7 +3,7 @@
 Persistence API
 ---------------
 
-The Axon Ivy Persistence API is used to load entity objects directly
+The |axon-ivy| Persistence API is used to load entity objects directly
 from the database or save/update them on the database. The Persistence
 API can be accessed by IvyScript anywhere scripting is supported. The
 Persistence API can only deal with entity objects, means objects of type
@@ -17,7 +17,7 @@ persistence units can be configured with the :ref:`persistence-configuration-edi
 
 .. _persistence-api-persist:
 
-Persist an entity object
+Persist an Entity Object
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 To persist (save/create object on the database) you can use the
@@ -43,7 +43,7 @@ Example (Product is an Entity Class):
    Number newProductId = product.id;
 
 
-Find an entity object by id
+Find an Entity Object by ID
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To find an entity object by id (select object on the database) you can
@@ -60,7 +60,7 @@ Example (Product is an Entity Class):
 
 .. _persistence-api-merge:
 
-Merge an entity object
+Merge an Entity Object
 ^^^^^^^^^^^^^^^^^^^^^^
 
 To merge (update or save/create object on the database) you can use the
@@ -98,7 +98,7 @@ Example save/create (Product is an Entity Class):
 
 .. _persistence-api-remove:
 
-Remove an entity object
+Remove an Entity Object
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 To remove (delete object on the database) you can use the ``remove()``
@@ -114,7 +114,7 @@ Example (Product is an Entity Class):
 
 .. _persistence-api-refresh:
 
-Refresh an entity object
+Refresh an Entity Object
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 To refresh (reload object from the database) you can use the
@@ -229,7 +229,7 @@ Example update (Product is an Entity Class):
    .executeUpdate();
 
 
-Parameter binding
+Parameter Binding
 ~~~~~~~~~~~~~~~~~
 
 The JPA Queries supports named and numbered parameters and provides
@@ -257,7 +257,7 @@ Example with positional parameter:
    .setParameter(1, 10).setParameter(2, 80)
 
 
-Paging the result
+Paging the Result
 ~~~~~~~~~~~~~~~~~
 
 To specify the range of a query you have the two methods
@@ -304,7 +304,7 @@ You may order by multiple properties:
    from Product p order by p.name asc, p.description desc
 
 
-Distinct results
+Distinct Results
 ~~~~~~~~~~~~~~~~
 
 When you use a select clause, the elements of the result are no longer
@@ -318,7 +318,7 @@ descriptions.
    select distinct p.description from Product p
 
 
-Comparison expressions
+Comparison Expressions
 ~~~~~~~~~~~~~~~~~~~~~~
 
 JPA QL support the same basic comparison operators as SQL. Here are a
@@ -402,7 +402,7 @@ Expressions with collections (IS [NOT] EMPTY, [NOT] MEMBER [OF]):
    +-----------------------------------+-----------------------------------+
 
 
-Calling functions
+Calling Functions
 ~~~~~~~~~~~~~~~~~
 
 An extremely powerful feature of JPA QL is the ability to call SQL
@@ -498,7 +498,7 @@ from the amount of all products:
 Accessibility
 ^^^^^^^^^^^^^
 
-You can use the Persistence API everywhere you have the ivy variable in
+You can use the Persistence API everywhere you have the Ivy variable in
 the IvyScript. Use ``ivy.persistence.``\ *<persistence unit>*. Here you
 find all the methods for finding, persisting, updating and querying
 entity objects. Replace *<persistence unit>* with the name of a

@@ -4,22 +4,22 @@ Process Element Performance
 ===========================
 
 To optimize the performance of your processes and process elements you can 
-use the process element performance statistic to analyze the performance of 
+use process element performance statistics to analyze the performance of 
 the engine. This allows you to detect long running and performance intensive 
 process elements and processes which you then can optimize. 
  
 Engine Cockpit
 --------------
 
-You can activate and analyze the results of the performance statistic in the 
+You can activate and analyze the results of the performance statistics in the 
 :ref:`engine-cockpit-monitor-performance` view of the :ref:`engine-cockpit`.
   
 .. _process-element-performance-file:
   
-CSV Statistic File
-------------------
+CSV Statistics File
+-------------------
 
-It is possible to configure |ivy-engine| to print out performance statistic
+It is possible to configure |ivy-engine| to print out performance statistics
 information periodically into a CSV formatted file. The file contains detailed 
 information of each executed process element since the last dump.
 

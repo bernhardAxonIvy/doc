@@ -41,13 +41,13 @@ see :ref:`app-businesscalendar-yaml` for more detailed information.
   :linenos:
 
 
-Html Theme
+HTML Theme
 ----------
 
-The look and feel of Html Dialogs is defined by its theme. You can change the
+The look and feel of HTML Dialogs is defined by its theme. You can change the
 appearance of any dialog on several scopes:
 
-* Globally for all Html Dialogs via :ref:`web-xml`. 
+* Globally for all HTML Dialogs via :ref:`web-xml`. 
 * For a single application in the :ref:`app-yaml`.
 
 .. literalinclude:: includes/ivy-primefaces-app.yaml
@@ -61,8 +61,8 @@ appearance of any dialog on several scopes:
 Overriding Configuration
 ------------------------
 
-Configuration entries of YAML files can be overridden with environment variables
-of the operating system. Configuration keys in YAML are hierarchic object trees
+Configuration entries of yaml files can be overridden with environment variables
+of the operating system. Configuration keys in yaml are hierarchic object trees
 separated by :code:`:` characters. While the environment variable must be
 written uppercase and separated by :code:`_` characters. You need also to prefix
 the environment variable with :code:`IVY_`.

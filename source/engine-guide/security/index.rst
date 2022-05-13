@@ -3,22 +3,22 @@
 Security
 ********
 
-This chapter describes how to run an |ivy-engine| in a secure way. This is
-important when providing an ivy engine in a secure intranet environment and
-especially when making an engine accessible over the internet. Some parts might
-be done by the IT Operation provider:
+This chapter describes how to run an |ivy-engine| in a safe way. This is
+important whether you provide an Ivy engine in a secure intranet environment or
+you make your engine accessible via the internet. Some parts need to be
+implemented by your IT Operations provider:
 
 #. Run the |ivy-engine| behind a fully patched :ref:`reverse proxy server <reverse-proxy>` (like
-   NGINX, Apache http or IIS).
+   NGINX, Apache HTTP Server or IIS).
 #. :ref:`Disable direct access <reverse-proxy-secure-port>` to the |ivy-engine|.
 #. Only allow access to the URLs of your application and :ref:`block all other access <reverse-proxy-secure-path>`.
 #. Run the |ivy-engine| with a **dedicated system user** and **database users with limited access rights**.
 #. Run the **latest |ivy-engine|** major version with all updates marked as
    :ref:`security relevant <engine-security-issues>`.
-#. Only serve users over :ref:`HTTPS <reverse-proxy-secure-https>` (configured on the reverse proxy).
+#. Only serve users via :ref:`HTTPS <reverse-proxy-secure-https>` (configured on the reverse proxy).
 #. **Document** and **automate** the server setup.
 #. Ensure that the provider performs **daily backups** (database, relevant
-   engine folders).
+   engine folders) which can also be restored...
 
 |
 
@@ -28,7 +28,7 @@ be done by the IT Operation provider:
 |
 
 
-Read more about other security tweaks which can be applied to an |ivy-engine|:
+Read more about other security tweaks which you can apply to your |ivy-engine|:
 
 .. toctree::
    :maxdepth: 1

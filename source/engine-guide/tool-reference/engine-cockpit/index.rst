@@ -6,16 +6,16 @@ Engine Cockpit
 The **Engine Cockpit** is the application to administer your engine.
 
 
-.. rubric:: Opening the tool
+.. rubric:: Opening the Cockpit
 
-After successfully starting the |ivy-engine|, you can launch the engine cockpit tool 
+After successfully starting the |ivy-engine|, you can launch the engine cockpit 
 via the |ivy-engine| info page. 
 To do so, open the address: http://ServerName:Port/ in your browser and click the
 :guilabel:`Cockpit` tab. This will open the dashboard: 
 http://ServerName:Port/system/faces/view/engine-cockpit/dashboard.xhtml
 
 .. note::
-    To use this Engine Cockpit you will need an administrator user account. 
+    To use this Engine Cockpit you need an administrator user account. 
     If you run in :ref:`demo-mode`, the administrator user and password are
     **admin**.
 

@@ -54,7 +54,7 @@ with [find-tab-folder Problems]
 get-view "Axon Ivy Projects" | get-tree | get-item "QuickStartTutorial/Processes/MyProcess" | double-click
 get-eclipse-window | resizeWindow 1090 860
 wait 1000
-find-tab-folder "MyProcess.mod" | get-object | captureScreenshot "process-modeling/process-element-with-problem-marker.png"
+find-tab-folder "MyProcess.p.json" | get-object | captureScreenshot "process-modeling/process-element-with-problem-marker.png"
 get-eclipse-window | maximize
 
 importProject -projectName documentationExampleProject

@@ -47,7 +47,7 @@ Memory Problems
 
 .. _ivy.troubleshooting.memory.heap:
 
-OutOfMemoryException: Java heap space
+OutOfMemoryException: Java Heap Space
 -------------------------------------
 
 If this error occurs, then the Designer requests more memory than it is

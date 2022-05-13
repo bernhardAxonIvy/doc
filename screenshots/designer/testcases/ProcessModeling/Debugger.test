@@ -7,7 +7,7 @@ Element-Version: 3.0
 External-Reference: 
 Id: _axKUIGBiEeaAcqEsdR5JMw
 Runtime-Version: 2.5.2.202107052356
-Save-Time: 3/3/22, 4:50 PM
+Save-Time: 5/3/22, 11:19 AM
 Tags: skipOnLinux
 Testcase-Type: ecl
 
@@ -53,7 +53,7 @@ get-view Outline | get-tree | select "JaxRsServiceCall/create JAX-RS approval : 
 
 OpenView History
 get-view History | get-tree | select
-"HTTP GET JaxRsServiceCall.mod\\/approve.ivp\\(.*\) \\[new Engine\\]/.*/in = com.axonivy.JaxRsServiceCallData \\(documentId=null, " +
+"HTTP GET JaxRsServiceCall.p.json\\/approve.ivp\\(.*\) \\[new Engine\\]/.*/in = com.axonivy.JaxRsServiceCallData \\(documentId=null, " +
 	"generatedPassword=null, lastUpdate=null, name=null, person=null, price=null.*"
 
 with [find-tab-folder History]
@@ -83,7 +83,7 @@ with [get-view Breakpoints] {
 	get-button "Remove Selected Breakpoints (Delete)" | get-object | captureScreenshot "simulation-debugging/button-breakpoint-remove-one.png"
 	get-button "Remove All Breakpoints" | get-object | captureScreenshot "simulation-debugging/button-breakpoint-remove-all.png"
 	get-button "Show Breakpoints Supported by Selected Target" | get-object | captureScreenshot "simulation-debugging/button-breakpoint-target.png"
-	get-tree | select "exampleProcess.mod [f3]"
+	get-tree | select "exampleProcess.p.json [f3]"
 	get-button "Go to File for Breakpoint" | get-object | captureScreenshot "simulation-debugging/button-breakpoint-goto-file.png"
 	get-button "Skip All Breakpoints.*" | get-object | captureScreenshot "simulation-debugging/button-breakpoint-skip-all.png"
 	get-button "Expand All .*" | get-object | captureScreenshot "simulation-debugging/button-breakpoint-tree-expand.png"

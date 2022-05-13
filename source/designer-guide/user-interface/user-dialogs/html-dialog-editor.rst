@@ -1,10 +1,10 @@
 .. _html-dialog-editor:
 
-Html Dialog Editor
+HTML Dialog Editor
 ^^^^^^^^^^^^^^^^^^
 
-The Html Dialog editor allows to implement the view of an Html Dialog
-(i.e. the *JSF view*). The Html Dialog editor consists of two views, the
+The HTML Dialog editor allows to implement the view of an HTML Dialog
+(i.e. the *JSF view*). The HTML Dialog editor consists of two views, the
 source view and the graphical view. In the source view you can read and
 edit the JSF (or xhtml) source in a text-based editor. In the graphical
 view you can preview and edit the visual representation of the JSF page.
@@ -28,13 +28,13 @@ views.
 Accessibility
 ~~~~~~~~~~~~~
 
-Axon Ivy Project Tree -> double click on the *View* node of a Html
+|axon-ivy| Project Tree -> double click on the *View* node of a HTML
 Dialog:
 
 Graphical View
 ~~~~~~~~~~~~~~
 
-The graphical view of the Html Dialog editor allows to compose an Html
+The graphical view of the HTML Dialog editor allows to compose an HTML
 Dialog view in a *graphical* mode by selecting a UI element from the
 palette and positioning it on the view. Similarly, already positioned
 elements can be dragged to another position on the view, simply by
@@ -78,7 +78,7 @@ The graphical view displays overlay markers for some elements:
    markers to verify whether all your inputs are bound to data or a
    backing bean.
 
--  You see logic mapping markers if you call a Html Dialog logic element
+-  You see logic mapping markers if you call a HTML Dialog logic element
    in a button or link. Use these to verify if all your actions are
    properly mapped to logic elements.
 
@@ -109,7 +109,7 @@ Quick Fix (Ctrl+1)
 ~~~~~~~~~~~~~~~~~~
 
 There are Quick Fixes available to create missing events, methods and
-data attributes on the current Html Dialog. Simply press ``Ctrl+1`` on a
+data attributes on the current HTML Dialog. Simply press ``Ctrl+1`` on a
 **logic** or **data** expression respectively.
 
 |html-editor-image6|
@@ -118,7 +118,7 @@ CMS Quick Assist (Ctrl+1)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There are Quick Assists available to create or use content objects in
-the current Html Dialog. Simply press ``Ctrl+1`` on a text attribute or
+the current HTML Dialog. Simply press ``Ctrl+1`` on a text attribute or
 on text between xml tags.
 
 |html-editor-image7|
@@ -126,7 +126,7 @@ on text between xml tags.
 .. tip::
 
    If a new content object is created with the Quick Assist you can
-   directly rename the created content object in the Html Dialog Editor.
+   directly rename the created content object in the HTML Dialog Editor.
    Just type a new name and confirm with ``Enter``, to abort the
    renaming press ``Esc``.
 
@@ -136,7 +136,7 @@ on text between xml tags.
 CMS Drag & Drop support
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-CMS contents can directly be dragged from the CMS View into the Html
+CMS contents can directly be dragged from the CMS View into the HTML
 Dialog Editor. The dropped content will be automatically converted into
 a valid JSF tag or EL-expression. Currently the content types String and
 Text as well as all Images-types support drag & drop operations.
@@ -167,7 +167,7 @@ logic element. Alternatively press ``Ctrl`` and click on the link.
 Properties View
 ~~~~~~~~~~~~~~~
 
-Together with the Html Dialog Editor you will want to use the Eclipse
+Together with the HTML Dialog Editor you will want to use the Eclipse
 properties view to define attributes for the UI elements of your dialog.
 Simply switch to the **Process Development Perspective** that will
 display the properties view at the bottom left area of the workbench

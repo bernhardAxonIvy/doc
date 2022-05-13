@@ -3,7 +3,7 @@ Roles and Users
 
 Role is a widely used term in the computer industry and means a group of
 users of a certain system which share a common property. This enables an
-administrator to define configurations for this groups (roles) of users
+administrator to define configurations for these groups (roles) of users
 at once instead of defining it for each and every user individually.
 |axon-ivy| incorporates a sophisticated role and user model to support:
 
@@ -22,7 +22,7 @@ Role Concept
 The hierarchy of the roles is built upon the principle of
 specialization. Each child role specializes its parent role(s) meaning
 that a role **Team A** always implicitly contains its parent roles. The role
-**Everybody** is the root for all roles, all roles specialize this role.
+**Everybody** is the root for all other roles; all other roles are more specialized than Everybody.
 For example in the figure below, a member user of role **Team A** also has
 the roles **Development** and **Everybody**.
 

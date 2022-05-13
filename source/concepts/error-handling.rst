@@ -72,43 +72,43 @@ web service is not available)
 
 |image1|
 
-Error handling in Html Dialog
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Error Handling in HTML Dialogs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When an error happens inside of an Html Dialog the handling is slightly
+When an error happens inside of an HTML Dialog the handling is slightly
 different than the default error handling.
 
-Default Html Dialog Error Handling
+Default HTML Dialog Error Handling
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Basically any thrown error (e.g. an Java exception) is handled inside of
-the Html Dialog itself. Therefore there is no propagation to the caller
+the HTML Dialog itself. Therefore there is no propagation to the caller
 process or between Ivy/JSF composites. It is important to handle errors
 locally in the Dialog Logic to let the user work uninterrupted on the
 same dialog.
 
-Exit an Html Dialog by an Error End Element
+Exit an HTML Dialog by an Error End Element
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-It is possible to exit an Html Dialog by an Error End Element. This is
+It is possible to exit an HTML Dialog by an Error End Element. This is
 useful to leave the happy path of the calling business process. The
-throwing Error End Element must be located in the Html Dialog Logic of
-an Html Dialog Page (not an Component).
+throwing Error End Element must be located in the HTML Dialog Logic of
+an HTML Dialog Page (not in a Component).
 
 |image2|
 
 IvyScript or Java Code
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Unhandled Script exception
+Unhandled Script Exception
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If an unhandled exception occurs while executing IvyScript or Java code
 then the calling process element throws an error with the Error Code
 ``ivy:error:script``. On the error object the causing Java exception is
-available as technical cause.
+available as the technical cause.
 
-Throwing an error programmatically
+Throwing an Error Programmatically
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 An error with a certain Error Code can be thrown using the following
@@ -120,8 +120,7 @@ IvyScript code:
 
    BpmError.create("mystock:empty").throwError();
 
-An error with a certain Error Code can be thrown using the following
-Java code:
+To throw an error with a certain Error Code, use the following Java code:
 
 ::
 
@@ -129,15 +128,14 @@ Java code:
 
    throw BpmError.create("mystock:empty").build();
 
-Elements throwing System errors
+Elements Throwing System Errors
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The process elements Program Interface, Database, WebService and E-Mail
-throw system errors. If an exception or timeout occurs on these elements
-it can be caught using a matching Error Code or using a directly
-addressed Error Start Event. On the Error Start process element more
-information about the error can be accessed via the variable ``error``
-and the legacy variable ``exception``.
+The process elements Program Interface, Database, WebService and E-Mail throw
+system errors. If an exception or timeout occurs on these elements, you can
+catch it using a matching Error Code or a directly addressed Error Start Event.
+On the Error Start process element, you can access more information about the
+error via the variable ``error`` and the legacy variable ``exception``.
 
 
 Catching Errors
@@ -258,7 +256,8 @@ was caught:
 -  Process call stack
 -  User defined error attributes
 
-For more information see the Public API of :public-api:`BpmError </ch/ivyteam/ivy/bpm/error/BpmError.html>`.
+Refer to the Public API of 
+:public-api:`BpmError </ch/ivyteam/ivy/bpm/error/BpmError.html>` for detailed information.
 
 .. |image0| image:: /_images/error-handling/throwing-error-end-event-approval.png
 .. |image1| image:: /_images/error-handling/rethrow-errors-remote-factory.png

@@ -31,10 +31,10 @@ line. The tool tip of the editor will show a message with a description
 of the problem.
 
 .. figure:: /_images/ivyscript/ivyscript-editor-with-error.png
-   :alt: IvyScript Editor with error
+   :alt: IvyScript Editor with Error
    :align: center
    
-   IvyScript Editor with error
+   IvyScript Editor with Error
 
 An IvyScript Editor has a completer that shows context
 relevant information in a popup window while you are typing into the
@@ -51,10 +51,10 @@ selected information on and off. Pressing ``ESC`` will close the
 completer popup window.
 
 .. figure:: /_images/ivyscript/ivyscript-editor-with-completer.png
-   :alt: IvyScript Editor with completer
+   :alt: IvyScript Editor with Completer
    :align: center
    
-   IvyScript Editor with completer
+   IvyScript Editor with Completer
 
 
 
@@ -120,13 +120,13 @@ explains their function.
    | |image15|                         | Opens a                                                   |
    |                                   | :ref:`function-browser` that                              |
    |                                   | shows the structure of the                                |
-   |                                   | currently available ivy                                   |
+   |                                   | currently available Ivy                                   |
    |                                   | environment variable and the                              |
    |                                   | methods that they provide.                                |
    |                                   | Moreover it shows all available                           |
    |                                   | global functions. Use this Smart                          |
    |                                   | Button if you want to insert the                          |
-   |                                   | ivy environment variable or a                             |
+   |                                   | Ivy environment variable or a                             |
    |                                   | global function.                                          |
    +-----------------------------------+-----------------------------------------------------------+
    | |image16|                         | Opens a                                                   |

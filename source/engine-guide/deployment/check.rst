@@ -1,6 +1,6 @@
 .. _deployment-check-results:
 
-Check the results
+Check the Results
 -----------------
 
 Go to the server info page, which is by default http://localhost:8080. You

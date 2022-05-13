@@ -61,13 +61,13 @@ Wizards
 -  :ref:`process-new-group-wizard`
 -  :ref:`project-new-wizard`
 -  :ref:`user-dialog-new-wizard`
--  :ref:`New Html Dialog Wizard <html-dialog-multiple-views>`
+-  :ref:`New HTML Dialog Wizard <html-dialog-multiple-views>`
 -  :ref:`refactoring-wizards-rename`
 -  :ref:`refactoring-wizards-move`
 -  :ref:`refactoring-wizards-copy`
 -  :ref:`refactoring-wizards-delete`
--  :ref:`Export Axon Ivy Archive wizard <designer-export-project>`
--  :ref:`Import Axon Ivy Archive wizard <designer-import-project>`
+-  :ref:`Export |axon-ivy| Archive wizard <designer-export-project>`
+-  :ref:`Import |axon-ivy| Archive wizard <designer-import-project>`
 
 
 Perspectives

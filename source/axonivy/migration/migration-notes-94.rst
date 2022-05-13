@@ -26,6 +26,14 @@ Standard mail notification process still support the parameter :code:`notificati
 but you should already change to :code:`notificationSecurityMemberId``.
 
 
+Elasticsearch 7.17
+******************
+
+Elasticsearch has been upgraded from 7.3 to 7.17.
+If you use an external Elasticsearch server you need
+to upgrade to version 7.17.
+
+
 ivyScript validation is enabled by default
 ******************************************
 

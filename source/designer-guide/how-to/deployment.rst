@@ -175,7 +175,7 @@ and process model versions on an |ivy-engine| can be configured.
    |                 |                 |                 | Management      |
    |                 |                 |                 | process model.  |
    |                 |                 |                 | Corresponds to  |
-   |                 |                 |                 | the |axon-ivy|    |
+   |                 |                 |                 | the Axon Ivy    |
    |                 |                 |                 | project called  |
    |                 |                 |                 | "HRM".          |
    +-----------------+-----------------+-----------------+-----------------+
@@ -218,7 +218,7 @@ and process model versions on an |ivy-engine| can be configured.
    |                 | Finance         |                 | Finance process |
    |                 |                 |                 | model.          |
    |                 |                 |                 | Corresponds to  |
-   |                 |                 |                 | the |axon-ivy|    |
+   |                 |                 |                 | the Axon Ivy    |
    |                 |                 |                 | project         |
    |                 |                 |                 | Finance.        |
    +-----------------+-----------------+-----------------+-----------------+
@@ -238,14 +238,14 @@ and process model versions on an |ivy-engine| can be configured.
    |                 |                 |                 | users of the    |
    |                 |                 |                 | company are     |
    |                 |                 |                 | managed by the  |
-   |                 |                 |                 | |axon-ivy|        |
+   |                 |                 |                 | Axon Ivy        |
    |                 |                 |                 | Engine.         |
    +-----------------+-----------------+-----------------+-----------------+
    |                 | HRM             |                 | Human Resource  |
    |                 |                 |                 | Management      |
    |                 |                 |                 | process model.  |
    |                 |                 |                 | Corresponds to  |
-   |                 |                 |                 | the |axon-ivy|    |
+   |                 |                 |                 | the Axon Ivy    |
    |                 |                 |                 | project called  |
    |                 |                 |                 | "HRM".          |
    +-----------------+-----------------+-----------------+-----------------+

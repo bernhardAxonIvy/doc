@@ -4,22 +4,22 @@ Java Management Extensions (JMX)
 ================================
 
 Java Management Extensions (JMX) is a technology to read and write runtime
-information from Java processes. This allows tools to monitor the
+information of Java processes. This allows tools to monitor the
 state of an |ivy-engine|, e.g. with VisualVM, Java Mission Control,
 Nagios, Prometheus, etc. 
 
-A monitoring tool running on the same machine and with the same user
-as the |ivy-engine| can connect to |ivy-engine| without any additional
+A monitoring tool running on the same machine and with the same operating system
+level user as the |ivy-engine| can connect to |axon-ivy| without additional
 configuration.
 
 
 Activate Remote Access
 ----------------------
 
-If the |ivy-engine| is running under another user or on a remote host than
-the monitoring tool, JMX remote access has to be activated. Remote access
-is protected by a user name and password of an |ivy-engine| administrator, so
-all |ivy-engine| administrators have access.
+If the |ivy-engine| is running under another user than the monitoring tool or on
+a remote host, JMX remote access has to be activated. Remote access is protected
+by a user name and password of an |ivy-engine| administrator, so all
+|ivy-engine| administrators have access.
 
 Activate remote access by uncommenting all lines in the JMX section of :ref:`jvm-options`.
 
@@ -49,8 +49,10 @@ names of the MBeans.
 
 .. figure:: /_images/monitoring/visualvm-mbeans.png
 
-The :ref:`engine-cockpit` also contains a built-in :ref:`engine-cockpit-monitor-mbeans`
-browser. This way you do not need to install a an external monitoring tool.
+The :ref:`engine-cockpit` also contains a built-in
+:ref:`engine-cockpit-monitor-mbeans` browser. This way you do not need to
+install an external monitoring tool for a quick glance at your engine's vital
+signs.
 
 Where possible, |ivy-engine| MBeans names contain application, process 
 model, process model version, or environment name. 
@@ -63,10 +65,10 @@ model, process model version, or environment name.
     ivy Engine:type=Job Manager
     ivy Engine:type=Process Start Event Bean,application=MyApplication,pm=MyProcessModel,pmv=1,name="MyStartEventBean (3485471349/start.ivp)"
 
-The name and description of an MBean can be found in its meta information (see
+The name and description of an MBean is available in its meta information (see
 the Metadata tab in the MBeans tab of VisualVM). MBeans provide information
 through attributes and operations. The description of the attributes and
-operations can also be found in the meta information (also the tool tips in
+operations is also contained in the meta information (also in the tool tips in
 the Attributes and Operations tab of VisualVM's MBeans tab).
 
 .. warning::
@@ -75,9 +77,10 @@ the Attributes and Operations tab of VisualVM's MBeans tab).
     your running applications.
 
     If not mentioned otherwise, a manipulation only affects the currently
-    running engine. It will not survive a engine restart.
+    running engine. It is not persisted and thus will not survive an engine
+    restart.
     
-    Manipulations that survive a engine restart contain the following text in
+    Manipulations that survive an engine restart contain the following text in
     the description of the attribute or operation: ``(Persistent)``.
 
 In addition to the MBeans provided by |axon-ivy|, some third party libraries
@@ -89,7 +92,7 @@ information about the used memory (Java heap), CPU usage, uptime, etc.
 
 The list below contains some of the provided information:
 
-**External Database** (connections, transactions, errors, execution time, etc.)
+**External Database** (connections, transactions, errors, execution times, etc.)
 
 .. code-block:: properties
         
