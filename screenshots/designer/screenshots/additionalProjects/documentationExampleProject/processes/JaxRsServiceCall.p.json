@@ -1,5 +1,5 @@
 {
-  "format" : "9.4.8",
+  "format" : "9.4.9",
   "id" : "159FF3D428E42BB5",
   "data" : "com.axonivy.JaxRsServiceCallData",
   "elements" : [ {
@@ -460,7 +460,6 @@
       }, {
         "name" : "open API",
         "size" : 384
-      } ],
-    "orientation" : "VERTICAL"
+      } ]
   }
 }
