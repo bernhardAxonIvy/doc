@@ -3,7 +3,7 @@
 IvyScript-Java Integration
 ==========================
 
-Call Java methods and fields
+Call Java Methods and Fields
 ----------------------------
 
 You can easily write own Java classes and use them directly in
@@ -23,7 +23,7 @@ a call to ``user.setName(...)`` returns object ``user``).
    out.n= r*pi;
 
 
-Working with different Date, Time and DateTime implementations
+Working with Different Date, Time and DateTime Implementations
 --------------------------------------------------------------
 
 When working with Databases and Web Services in |axon-ivy|, then different
@@ -91,11 +91,11 @@ operator rather than testing against ``null``:
                    
 
 
-Auto casting rules
+Auto Casting Rules
 ------------------
 
 IvyScript supports auto casting between the most important Java types
-and IvyScript types. This means, that you no longer have to use the
+and IvyScript types. This means that you no longer have to use the
 toXyz() methods on your IvyScript values. Instead you can directly
 assign IvyScript types to Java types and vice versa. This also holds for
 lists (IvyScript) and arrays (Java).

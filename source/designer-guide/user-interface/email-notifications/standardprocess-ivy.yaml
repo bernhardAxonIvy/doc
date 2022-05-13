@@ -1,0 +1,8 @@
+# ivy.yaml located in e.g. <configuration>/ivy.yaml
+# By default the Axon Ivy Engine auto detects the mail processes. If you have multiple mail processes
+# provider you may need to fix the provider here by defining the library id.
+# The library id is <group-id>:<project-id> from the ivy project deployment definition.
+SecuritySystems:
+  default:
+    EMailNotification:
+      StandardProcess: ch.ivyteam.ivy.project.portal:portalTemplate

@@ -16,12 +16,12 @@ For this you have to configure an email server in :ref:`ivy-yaml`:
   :linenos:
 
 You can configure task email notification settings for new task assignments and
-daily task summaries at application level in :ref:`app-yaml`: 
+daily task summaries at security system level in :ref:`ivy-yaml`: 
 
-.. literalinclude:: includes/ivy-email-app.yaml
+.. literalinclude:: includes/ivy-email-ivy.yaml
   :language: yaml
   :linenos:
 
 Users are able to customize their notification settings in a workflow ui like
 the Portal. The content of the task email notifications can be customized by
-providing :ref:`standard-processes`.
+providing :ref:`custom ivy processes <email-notifications>`.

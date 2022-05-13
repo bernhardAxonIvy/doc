@@ -3,7 +3,7 @@
 CSRF Protection
 ---------------
 
-Html Dialogs using the JSF technology are well protected from Cross-site Request
+HTML Dialogs using the JSF technology are well protected from Cross-site Request
 Forgery (CSRF) attacks:
 
 - JSF is since version 2.0 quite well protected from CSRF attacks through its

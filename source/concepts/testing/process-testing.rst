@@ -23,6 +23,7 @@ Note a few things at this point:
 
 Line 28:
   The test class is annotated as an :public-api:`@IvyProcessTest
+<<<<<<< HEAD
   </ch/ivyteam/ivy/bpm/exec/client/IvyProcessTest.html>`, this enables you to
   run this test as a process tests.
 
@@ -31,6 +32,16 @@ Line 31:
   class defines the
   :public-api:`BpmProcess</ch/ivyteam/ivy/bpm/engine/client/element/BpmProcess.html>`
   under test in a constant called ``testee``. The passed in ``String`` argument
+=======
+  </ch/ivyteam/ivy/bpm/exec/client/IvyProcessTest.html>`. This enables you to
+  run this test as a process test.
+
+Line 31:
+  As you want to test a specific process using this test class, the generated
+  test class defines the
+  :public-api:`BpmProcess</ch/ivyteam/ivy/bpm/engine/client/element/BpmProcess.html>`
+  under test in a constant called ``testee``. The ``String`` argument passed in
+>>>>>>> master
   defines the process to run the test against. Replace ``MyProcess`` with a
   process that actually exists in your project under test.
   
@@ -45,7 +56,11 @@ Line 34:
   In each test method you have to pass in a
   :public-api:`BpmClient</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html>`.
   This client is supplied by the process testing framework and represents an
+<<<<<<< HEAD
   |ivy-engine| that can run and drive your processes along.
+=======
+  |ivy-engine| that can execute your processes.
+>>>>>>> master
 
 
 Write a Process Test
@@ -65,7 +80,7 @@ Execute a Process
     :emphasize-lines: 11, 12, 13, 14, 16, 17, 19
     :linenos:
 
-Now let us have a closer look at the code:
+Now let's have a closer look at the code:
 
 Line 11-14:
   Here you tell your ``BpmClient`` that you want to test and execute your start
@@ -87,14 +102,14 @@ Line 16-17:
 Line 19:
   The :ref:`process-testing-workflow` API gives you access to the ``Case``,
   ``Tasks`` as well as the ``Session`` of your executed process. Use it to fetch
-  information about the active ``Case``/``Tasks``, executed ``Tasks`` or the
+  information about active ``Cases``/``Tasks``, executed ``Tasks`` or the
   ``Session``.
 
 Continue the Process Execution
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-As noted above the ``BpmClient`` does not run through the whole process at once,
-this means we now want to continue the current process.
+As noted above the ``BpmClient`` does not run through the whole process at once.
+This means we now want to continue the current process.
 
 .. literalinclude:: includes/processtesting/processtesting-test-part2.java
     :language: java
@@ -110,8 +125,8 @@ Line 17:
   ``write invoice``.
 
 Line 18:
-  Of course, you cannot just drive a process's task along without declaring an
-  appropriate ``Session``. To declare said ``Session`` you can call the
+  Of course, you cannot just execute a task without declaring an appropriate
+  ``Session``. To declare said ``Session`` you can call the
   :ref:`process-testing-as` method and append the desired ``Session``, ``User``
   or ``Role`` that should execute the next task.
 
@@ -121,8 +136,13 @@ If you execute this test then you will face the following error:
 
   No mock installed for UserTask 'write invoice' [1720E35BB7789886-f2]
   
+<<<<<<< HEAD
 To fix this we need to introduce you to two more concepts, mocking elements and
 asserting process data.
+=======
+To fix this we need to introduce you to two more concepts, namely mocking
+elements and asserting process data.
+>>>>>>> master
 
 
 Mock Dialogs and Assert Data
@@ -130,10 +150,10 @@ Mock Dialogs and Assert Data
 
 Process tests are not meant to assert UI elements such as HTML Dialogs. Because
 dialogs are an important data input interface between users and your processes,
-you have to mock those inputs. If you want to test the dialogs themselves have a
-closer look at the :ref:`web-testing` chapter.
+you have to mock those inputs. If you want to test the dialogs themselves,refer
+to chapter  :ref:`web-testing`.
 
-Let us add a ui mock for the UI of the UserTask 'write invoice' element.
+Let us add a UI mock for the UI of the UserTask 'write invoice' element.
 
 .. literalinclude:: includes/processtesting/processtesting-test-part3.java
     :language: java
@@ -145,29 +165,41 @@ Line 16:
   :ref:`process-testing-mock` for an element.
 
 Line 17:
-  Here you select the element, you want to mock the UI of, by its name.
+  Here you select the element whose UI you want to mock by its name.
 
 Line 18:
+<<<<<<< HEAD
   The HTML Dialog of the UserTask 'write invoice' returns a single value called
   ``total``. So let's mock the UI part to simulate that the user enters a total
   of ``935`` on the UI.
+=======
+  The HTML Dialog of the UserTask 'write invoice' returns a single value called ``total``. 
+  So let's mock the UI part to simulate that the user enters a total of ``935`` on the UI.
+>>>>>>> master
 
 Line 29-30:
   With the :ref:`process-testing-data` API you can assert the process data of
   the executed elements.
 
-Congratulations, you have learned about all necessary tools and most important
-APIs to ensure your process continuation. In the next section we will have a
-closer look at some of the APIs.
+Congratulations, you have learned all about the tools and most important APIs to
+assert your process continuation. In the next section we will have a closer look
+at some of the APIs.
 
 
 API Reference
 ~~~~~~~~~~~~~
 
+<<<<<<< HEAD
 The following section describes some of the more common API calls you can use.
 If you want to see the full functionality of each API you can follow the links
 in each subsection to the :public-api:`Public
 API</ch/ivyteam/ivy/bpm/engine/client/package-summary.html>`.
+=======
+The following section describes some of the more common API calls. If you want
+to see the full functionality of each API, follow the links in each of the
+subsections of the 
+:public-api:`Public API</ch/ivyteam/ivy/bpm/engine/client/package-summary.html>`.
+>>>>>>> master
 
 
 .. _process-testing-select:
@@ -189,7 +221,7 @@ Start
 ^^^^^
 
 To :public-api:`start</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html#start()>`
-an execution, you just need to tell the ``BpmClient`` which ``BpmProcess`` or
+an execution, you need to tell the ``BpmClient`` which ``BpmProcess`` or
 ``BpmElement`` you want to run. To proceed with the execution, either tell the
 ``BpmClient`` to continue with the previous
 :public-api:`execution</ch/ivyteam/ivy/bpm/engine/client/ExecutionResult.html>`
@@ -199,7 +231,7 @@ there are multiple active ``tasks`` available.
 .. literalinclude:: includes/processtesting/processtesting-start.java
     :language: java
 
-To test callable sub processes use the ``subProcess`` method instead of the ``process`` method.
+To test callable subprocesses use the ``subProcess`` method instead of the ``process`` method.
 
 .. literalinclude:: includes/processtesting/processtesting-start-sub-process.java
     :language: java
@@ -225,11 +257,19 @@ Mock
 There are two ways of
 :public-api:`mocking</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html#mock()>`
 an element. Either you mock the entire element or the UI or call part. If you
+<<<<<<< HEAD
 mock the entire element nothing configured on the element is tested at all. On
 the other hand if you mock the UI or call part of an element its mapping code is
 executed and tested. 
 
 If your process runs through an HTML Dialog you always need to mock it.
+=======
+mock the entire element, nothing that is configured on the element is tested. On
+the other hand, if you mock the UI or call part of an element its mapping code is
+executed and tested. 
+
+If your process executes an HTML Dialog you always need to mock it.
+>>>>>>> master
 
 .. literalinclude:: includes/processtesting/processtesting-mock.java
     :language: java
@@ -240,8 +280,8 @@ If your process runs through an HTML Dialog you always need to mock it.
 History
 ^^^^^^^
 
-The :public-api:`History</ch/ivyteam/ivy/bpm/engine/client/History.html>` lets
-you assert the executed process elements. You can either assert the exact element
+Use the :public-api:`History</ch/ivyteam/ivy/bpm/engine/client/History.html>` to
+assert the executed process elements. You can either access the exact element
 objects or elements names.
 
 .. literalinclude:: includes/processtesting/processtesting-history.java
@@ -253,8 +293,8 @@ objects or elements names.
 Workflow
 ^^^^^^^^
 
-The :public-api:`Workflow</ch/ivyteam/ivy/bpm/engine/client/Workflow.html>`
-provides access to the active ``case`` or ``task``. You can filter them by
+Use the :public-api:`Workflow</ch/ivyteam/ivy/bpm/engine/client/Workflow.html>`
+to access and assert the active ``case`` or ``task``. You can filter them by
 activator.
 
 .. literalinclude:: includes/processtesting/processtesting-workflow.java
@@ -267,10 +307,17 @@ Data
 ^^^^
 
 With the :public-api:`Data</ch/ivyteam/ivy/bpm/engine/client/ProcessData.html>`
+<<<<<<< HEAD
 API you can assert the process data at different points in your process. You can
 get the ``data`` from the last executed element or from any element during
 execution. If an element is executed multiple times you can access the ``data``
 of each execution in an ordered list.
+=======
+API you can access the process data at different points in your process. You can
+get the ``data`` from the last executed element or from any element during execution.
+If an element is executed multiple times you can access the ``data`` of each execution
+in an ordered list.
+>>>>>>> master
 
 .. literalinclude:: includes/processtesting/processtesting-data.java
     :language: java

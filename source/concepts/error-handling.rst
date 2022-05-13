@@ -87,7 +87,7 @@ process or between Ivy/JSF composites. It is important to handle errors
 locally in the Dialog Logic to let the user work uninterrupted on the
 same dialog.
 
-Exit HTML Dialog Using an Error End Element
+Exit an HTML Dialog by an Error End Element
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 It is possible to exit an HTML Dialog by an Error End Element. This is
@@ -120,8 +120,7 @@ IvyScript code:
 
    BpmError.create("mystock:empty").throwError();
 
-An error with a certain Error Code can be thrown using the following
-Java code:
+To throw an error with a certain Error Code, use the following Java code:
 
 ::
 
@@ -132,12 +131,11 @@ Java code:
 Elements Throwing System Errors
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The process elements Program Interface, Database, WebService and E-Mail
-throw system errors. If an exception or timeout occurs on these elements
-it can be caught using a matching Error Code or using a directly
-addressed Error Start Event. On the Error Start process element more
-information about the error can be accessed via the variable ``error``
-and the legacy variable ``exception``.
+The process elements Program Interface, Database, WebService and E-Mail throw
+system errors. If an exception or timeout occurs on these elements, you can
+catch it using a matching Error Code or a directly addressed Error Start Event.
+On the Error Start process element, you can access more information about the
+error via the variable ``error`` and the legacy variable ``exception``.
 
 
 Catching Errors
@@ -255,7 +253,8 @@ caught:
 -  Process call stack
 -  User defined error attributes
 
-For more information see the Public API of :public-api:`BpmError </ch/ivyteam/ivy/bpm/error/BpmError.html>`.
+Refer to the Public API of 
+:public-api:`BpmError </ch/ivyteam/ivy/bpm/error/BpmError.html>` for detailed information.
 
 .. |image0| image:: /_images/error-handling/throwing-error-end-event-approval.png
 .. |image1| image:: /_images/error-handling/rethrow-errors-remote-factory.png

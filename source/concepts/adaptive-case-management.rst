@@ -33,7 +33,7 @@ approval process as it obfuscates the most used business path. But it could be
 available as an optional side task that the line manager can start and then gets
 executed within the current process context.
 
-In |axon-ivy| processes with side tasks can be invoked through Triggers or
+In |axon-ivy| processes with side steps can be invoked through Triggers or
 Signals.
 
 **Triggers**
@@ -258,22 +258,20 @@ dependency between the sender and receiver.
 Sending Signals
 ~~~~~~~~~~~~~~~
 
-A Signal can be sent programmatically and consists of a Signal Code and
+A Signal is sent programmatically and consists of a Signal Code and
 optional signal data.
 
 .. note::
 
    Signal codes are defined as strings. Only letters and numbers
-   ``[A-Za-z0-9]`` as well as the colon ``:`` as separator, are allowed
-   characters for a Signal Code.
+   ``[A-Za-z0-9]`` as well as the colon ``:`` as a separator are allowed.
 
    Valid: ``hr:employee:quit``, ``flight:cancel:no:LX1398``
 
 Send a Signal Programmatically
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A signal with a custom signal code can be sent using the following
-IvyScript code:
+Send a signal with a custom signal code using the following IvyScript code:
 
 ::
 
@@ -304,7 +302,7 @@ the :guilabel:`Signals` page of the :ref:`designer-workflow-ui`.
 Receiving Signals
 ~~~~~~~~~~~~~~~~~
 
-Signals can be received by Signal Boundary- and Signal Start-Events.
+Signals are received by Signal Boundary Events and Signal Start Events.
 Receivers can either register for an explicit signal code or a generic
 :ref:`signal-receive-patterns`.
 
@@ -336,8 +334,8 @@ Listen for signals that have a ``created`` postfix. E.g
 Signal Start Event
 ^^^^^^^^^^^^^^^^^^
 
-With a :ref:`process-element-signal-start` a new process
-is started if a matching signal code is received.
+With a :ref:`process-element-signal-start` a new process is started if a
+matching signal code is received.
 
 |image6|
 

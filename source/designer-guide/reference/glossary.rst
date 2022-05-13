@@ -45,15 +45,15 @@ Form Field
    Date). The :ref:`New User Dialog Wizard <user-dialog-new-wizard>`
    create forms with Form Fields.
 
-Html Dialog
-   A :ref:`Html Dialog <html-dialogs>` is an implementation of a
-   :ref:`User Dialog <user-dialogs>`. The Html Dialog is implemented with
+HTML Dialog
+   A :ref:`HTML Dialog <html-dialogs>` is an implementation of a
+   :ref:`User Dialog <user-dialogs>`. The HTML Dialog is implemented with
    (HTML/JSF).
 
 Layout
-   A Layout contains the main structure of a Html page (e.g. a header,
+   A Layout contains the main structure of a HTML page (e.g. a header,
    content and footer section). For :ref:`Web Pages <user-interface-web-page>` the
-   layouts are defined in the :ref:`CMS <cms>`. For :ref:`Html Dialogs <html-dialogs>`
+   layouts are defined in the :ref:`CMS <cms>`. For :ref:`HTML Dialogs <html-dialogs>`
    the layouts are defined in the
    webContent folder.
 
@@ -186,7 +186,7 @@ User
 
 User Dialog
    A :ref:`user-dialogs` is a concept of an User
-   Interface. User Dialogs can be implemented as Html Dialog (HTML/JSF).
+   Interface. User Dialogs can be implemented as HTML Dialog (HTML/JSF).
 
 View Type
    A View Type defines the default content of a :ref:`user-dialogs` View.

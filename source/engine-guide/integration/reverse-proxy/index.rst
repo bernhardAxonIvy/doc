@@ -56,7 +56,7 @@ proxy.
 Beside the setup of the reverse proxy itself you always need to configure the
 base url in the :ref:`ivy.yaml <ivy-yaml>`. The |ivy-engine|
 will use this configuration to create absolute links that are accessible
-to clients (e.g. for links in :ref:`task mails <standard-process-email>`).
+to clients (e.g. for links in :ref:`task mails <email-notifications>`).
 
    .. code-block:: yaml
 

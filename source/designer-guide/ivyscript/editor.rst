@@ -93,7 +93,7 @@ constructors to create a new date.
    on the visibility level, you get to see more or less proposals.
 
 
-Parameter hopping
+Parameter Hopping
 ~~~~~~~~~~~~~~~~~
 
 Another special feature is parameter hopping. When you insert a

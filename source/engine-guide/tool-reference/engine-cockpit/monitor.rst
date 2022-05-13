@@ -8,9 +8,9 @@ The **Engine Cockpit** allows you to :ref:`monitor <monitoring>` your |ivy-engin
 OS
 ^^
 
-The **OS** page shows an overview
-of the CPU load, memory load, network traffic and disk read-write activity. 
-Additionally, the memory monitor displays the max and current memory usage of the jvm.
+The **OS** page shows an overview of the CPU load, memory load, network traffic
+and disk read-write activity. Additionally, the memory monitor displays the max
+and current memory usage of the JVM.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-os.png
 
@@ -33,12 +33,12 @@ Cache
 """""
 
 The **Cache** view displays a table with all system database caches and their metrics.
-The caches reduce the amount of system database read access.
+The caches reduce the number of system database read accesses.
  
 Increasing the amount of data that is cached may help solve performance problems. 
 You should try to increase the cache limits if you have a lot of read misses and the number 
 of cached entities are near the limit or above. 
-If this case the number of both corresponding columns are displayed in red. The cache limits
+If this is the case, the number of both corresponding columns are displayed in red. The cache limits
 can be configured in the :ref:`ivy.yaml <ivy-cache-properties>` file.     
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-cache.png
@@ -48,23 +48,23 @@ can be configured in the :ref:`ivy.yaml <ivy-cache-properties>` file.
 MBeans
 """"""
 
-The **MBeans** view displays a tree with all engine :ref:`jmx` MBeans. 
-Click on one of the MBeans to see all its attributes. Click on an attribute with numeric
-values to display the value of the attribute over time in a chart. You can add multiple
-attributes to the chart. Click on the remove icon in the table below the chart to remove
-the attribute from the chart.
+The **MBeans** view displays a tree with all engine :ref:`jmx` MBeans. Click on
+one of the MBeans to see all of its attributes. Click on an attribute with
+numeric values to display the value of the attribute over time in a chart. You
+can add multiple attributes to the chart. Click on the remove icon in the table
+below the chart to remove the attribute from the chart.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-mbeans.png
 
 Performance
 ^^^^^^^^^^^
 
-Statistic
-"""""""""
+Statistics
+""""""""""
 
 The **Statistic** view allows you to activate and analyze the :ref:`process-element-performance` statistic. 
 
-You can start, stop, clear, refresh the statistic or export it to an Excel file. Note, that by default not all
+You can start, stop, clear or refresh the statistic, or export it to an Excel file. Note: by default not all
 available columns are shown. Use the configure columns button right to the search box to show or hide the columns. 
 
 If you want to configure that the statistic is written periodically to a :ref:`process-element-performance-file`
@@ -82,8 +82,8 @@ Slow Requests
 The **Slow Requests** view allows you to activate and analyze the :ref:`tracing`. If activated every 
 request is traced. The fifty slowest requests will be displayed in this view.
 
-You can start, stop, clear, refresh the tracing or export it to an Excel file. 
-Hover with the mouse over the name to see additional attributes of the request. 
+You can start, stop, clear or refresh the tracing or export it to an Excel file. 
+Hover with the mouse on the name to see additional attributes of the request. 
 You can click on a request to see where the time of the request was spent 
 (e.g., on external calls to REST, SOAP service, databases etc.).   
 
@@ -110,9 +110,9 @@ The **Services** pages allows you to monitor some critical indicators of externa
 - **System Database**: Number of open and used connections, number of transactions and errors, transaction processing time.
 - **Databases**: Number of open and used connections, number of queries and errors, query execution time of the selected database.
 - **Web Services**: Number of calls and errors, execution time of the selected web service.
-- **Rest Clients**: Number of open and used connections, Number of calls and errors, execution time of the selected Rest client.
+- **REST Clients**: Number of open and used connections, Number of calls and errors, execution time of the selected REST client.
 
-You can open these live stats from the detailed view of the desired service using the monitor button at the right side.
+You can open these life stats from the detailed view of the desired service using the monitor button at the right side.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-databases.png
 

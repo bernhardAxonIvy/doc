@@ -1,8 +1,9 @@
-Engine-Cockpit
+Engine Cockpit
 ==============
 
-You can use the **Engine Cockpit** to monitor your engine. 
+The **Engine Cockpit** allows you to monitor your engine. 
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-os.png
 
-Have a look at the :ref:`engine-cockpit-monitor` of the :ref:`engine-cockpit` for more information.
+Have a look at the :ref:`engine-cockpit-monitor` in the :ref:`engine-cockpit`
+for more information.

@@ -10,8 +10,8 @@ inside the :file:`webContent` directory. The concept is mostly the same as in
 those pages run on an application and process model but without a process or
 task.
 
-Because this pages are outside of a normal :ref:`user-dialogs` structure, it is
-not possible to access any ivy data or logic classes. If you want logic and data
+Because these pages are outside of a normal :ref:`user-dialogs` structure, it is
+not possible to access any Ivy data or logic classes. If you want logic and data
 you need to implement **ManagedBeans** (same way as known from
 :ref:`html-dialog-managed-beans`) which will provide this stuff for you.
 
@@ -22,12 +22,12 @@ you need to implement **ManagedBeans** (same way as known from
    possible to access the case and task context.
 
 
-Access static pages
+Access Static Pages
 -------------------
 
 **URL**
 
-To access this pages with a browser you need to call
+To access these pages with a browser you need to call
 ``http://<servername>:<port>/<application>/faces/view/<process model>/<xhtml
 file in webContent/view>``. Assumed you have a xhtml page with the name
 test.xhtml in your :file:`webContent/view` folder, an <application name> App and
@@ -45,11 +45,11 @@ JSF page.
 
 **EndPage**
 
-If you want to call this static JSF pages from a ivy process, you can
+If you want to call this static JSF pages from a Ivy process, you can
 implement a 
 :ref:`End Page <process-element-end-page>`,
 :ref:`Task Switch Gateway <process-element-task-switch-gateway>` or
 :ref:`Task Switch Event <process-element-task-switch-event>` 
 element and choose the
 xhtml file as end page. For this approach exists an example in the
-:ref:`HtmlDialogDemos <importing-demo-projects>`.
+:ref:`HTMLDialogDemos <importing-demo-projects>`.

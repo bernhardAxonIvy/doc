@@ -4,9 +4,9 @@ Engine Guide
 ************
 
 This guide covers all aspects of an |ivy-engine| lifecycle, including
-installation, configuration and production operation. If you want to get
-familiar with the |ivy-engine| for the first time, we recommend to dive
-in :ref:`getting-started`.
+installation, configuration and production operation. If you want to familiarize 
+yourself with the |ivy-engine|, we recommend to dive
+into :ref:`getting-started`.
 
 |
 

@@ -1,0 +1,125 @@
+{
+  "format" : "9.4.8",
+  "id" : "1675F79D89ABB65A",
+  "data" : "screenshot.project.Data",
+  "elements" : [ {
+      "id" : "f0",
+      "type" : "RequestStart",
+      "name" : "start.ivp",
+      "config" : {
+        "callSignature" : "start",
+        "outLink" : "start.ivp"
+      },
+      "visual" : {
+        "at" : { "x" : 96, "y" : 64 }
+      },
+      "connect" : { "id" : "f2", "to" : "f1" }
+    }, {
+      "id" : "f1",
+      "type" : "TaskEnd",
+      "visual" : {
+        "at" : { "x" : 352, "y" : 64 }
+      }
+    }, {
+      "id" : "f47",
+      "type" : "SignalStartEvent",
+      "name" : "user:created",
+      "config" : {
+        "signalCode" : "user:created",
+        "output" : {
+          "map" : {
+            "out.city" : "\"Lucerne\""
+          }
+        }
+      },
+      "visual" : {
+        "at" : { "x" : 344, "y" : 160 }
+      }
+    }, {
+      "id" : "f34",
+      "type" : "RequestStart",
+      "name" : "startRequest",
+      "config" : {
+        "callSignature" : "start2",
+        "case" : {
+          "name" : "<%=param.in.city%>",
+          "description" : "<%=param.in.city%>",
+          "customFields" : [
+            { "name" : "BusinessCorrespondentId", "type" : "Number", "value" : "param.in.zip" },
+            { "name" : "BusinessCreatorUser", "type" : "String", "value" : "param.in.city" },
+            { "name" : "BusinessMainContactDocumentDbCode", "type" : "String", "value" : "param.in.city" },
+            { "name" : "BusinessMainContactFolderId", "type" : "String", "value" : "param.in.city" },
+            { "name" : "BusinessMainContactId", "type" : "Number", "value" : "param.in.zip" },
+            { "name" : "BusinessMainContactName", "type" : "String", "value" : "param.in.city" },
+            { "name" : "BusinessMainContactType", "type" : "String", "value" : "param.in.city" },
+            { "name" : "BusinessMilestoneTimestamp", "type" : "Timestamp", "value" : "param.in.city.toDateTime()" },
+            { "name" : "BusinessObjectCode", "type" : "String", "value" : "param.in.city" },
+            { "name" : "BusinessObjectDocumentDbCode", "type" : "String", "value" : "param.in.city" },
+            { "name" : "BusinessObjectFolderId", "type" : "String", "value" : "param.in.city" },
+            { "name" : "BusinessObjectName", "type" : "String", "value" : "param.in.city" },
+            { "name" : "BusinessPriority", "type" : "String", "value" : "param.in.city" },
+            { "name" : "BusinessStartTimestamp", "type" : "Timestamp", "value" : "param.in.city.toDateTime()" },
+            { "name" : "CustomDecimalField1", "type" : "Number", "value" : "param.in.zip" },
+            { "name" : "CustomVarCharField1", "type" : "String", "value" : "param.in.city" },
+            { "name" : "ProcessCategoryCode", "type" : "String", "value" : "param.in.city" },
+            { "name" : "ProcessCategoryName", "type" : "String", "value" : "param.in.city" },
+            { "name" : "ProcessCode", "type" : "String", "value" : "param.in.city" },
+            { "name" : "ProcessName", "type" : "String", "value" : "param.in.city" },
+            { "name" : "SubTypeCode", "type" : "String", "value" : "param.in.city" },
+            { "name" : "SubTypeName", "type" : "String", "value" : "param.in.city" },
+            { "name" : "TypeCode", "type" : "String", "value" : "param.in.city" },
+            { "name" : "TypeName", "type" : "String", "value" : "param.in.city" }
+          ]
+        },
+        "outLink" : "start2.ivp",
+        "startDescription" : "bla",
+        "task" : {
+          "name" : "<%=param.in.city%>",
+          "description" : "<%=param.in.city%>",
+          "responsible" : {
+            "role" : "FacilityManager"
+          },
+          "delay" : "'300s'",
+          "expiry" : {
+            "timeout" : "param.in.zip.toDuration()",
+            "responsible" : {
+              "deleteTask" : true
+            }
+          },
+          "customFields" : [
+            { "name" : "CustomDecimalField1", "type" : "Number", "value" : "param.in.zip" },
+            { "name" : "CustomTimestampField1", "type" : "Timestamp", "value" : "param.in.zip.toDateTime()" },
+            { "name" : "CustomVarCharField1", "type" : "String", "value" : "param.in.street" },
+            { "name" : "KindCode", "type" : "String", "value" : "\"taskStageCode\"" },
+            { "name" : "KindName", "type" : "String", "value" : "\"taskNameCode\"" }
+          ]
+        },
+        "input" : {
+          "params" : [
+            { "name" : "in", "type" : "ch.ivyteam.test.Person" }
+          ],
+          "map" : {
+            "out.city" : "\"Zug\""
+          },
+          "code" : [
+            "String calendarName = param.in.city;",
+            "ivy.case.setBusinessCalendar(calendarName is initialized ? ivy.cal.get(calendarName) : null);"
+          ]
+        },
+        "triggerEnabled" : true,
+        "persist" : true,
+        "wfuser" : "1",
+        "startName" : "tara2333"
+      },
+      "visual" : {
+        "at" : { "x" : 96, "y" : 152 },
+        "labelOffset" : { "x" : -32, "y" : 17 },
+        "description" : [
+          "description should not be touched as it is a raw text field",
+          "param.in.city",
+          "",
+          "<%=param.in.city%> aaa"
+        ]
+      }
+    } ]
+}

@@ -12,7 +12,7 @@ explains the most important menus and menu items for |axon-ivy| users.
    below.
 
 
-File menu
+File Menu
 ---------
 
 .. figure:: /_images/designer/menu-file.png
@@ -54,7 +54,7 @@ File menu
    > :guilabel:`Archive File or General` > :guilabel:`File System`.
 
 
-Search menu
+Search Menu
 -----------
 
 .. figure:: /_images/designer/menu-search.png
@@ -80,7 +80,7 @@ Search menu
    Processes, CMS Objects or Data Classes can be started.
 
 
-Project menu
+Project Menu
 ------------
 
 .. figure:: /_images/designer/menu-project.png
@@ -102,7 +102,7 @@ Project menu
    changes are made in a project.
 
 
-|axon-ivy| menu
+|axon-ivy| Menu
 ---------------
 
 .. figure:: /_images/designer/menu-ivy.png
@@ -134,7 +134,7 @@ Project menu
    See also :ref:`workspace-preferences` section.
 
 
-Window menu
+Window Menu
 -----------
 
 .. figure:: /_images/designer/menu-window.png
@@ -167,7 +167,7 @@ Window menu
    See also :ref:`workspace-preferences` section.
 
 
-Help menu
+Help Menu
 ---------
 
 .. figure:: /_images/designer/menu-help.png

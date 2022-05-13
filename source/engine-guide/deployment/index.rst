@@ -7,7 +7,7 @@ Bring your processes to life by deploying them on an |ivy-engine|. Deployment
 simply means to install an |axon-ivy| project on an |ivy-engine|. Proceed as
 follows to deploy a project.
 
-#. Get a :ref:`prepared <deployment-prepare>` ivy project from your developer.
+#. Get a :ref:`prepared <deployment-prepare>` Ivy project from your developer.
 #. :ref:`Deploy <deployment-deploying>` the project by e.g. simply dropping the 
    file in the deployment directory.
 #. :ref:`Check the result <deployment-check-results>` of the deployment on the
