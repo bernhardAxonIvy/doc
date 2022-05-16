@@ -6,7 +6,7 @@ Error Handling
 Errors are used to model exceptional process paths. With an error the
 happy path of a process is left. An error is caught by an Error Boundary
 Event or Error Start Event if their Error Code pattern matches the
-thrown Error Code.
+Error Code thrown.
 
 -  Errors are divided into technical errors (e.g. database connection
    problem) or business errors (e.g. approval declined).
@@ -25,33 +25,33 @@ thrown Error Code.
 Error Codes
 -----------
 
-Error codes are defined as strings. They can be refined by inserting a
-colon (:). Multiple sub Error Codes can be caught using wildcards (*).
-Trailing wildcards are optional so the string ``custom:error`` is the
-same as ``custom:error:*``.
+Error codes are defined as strings. They can be refined by inserting a colon
+(:). Multiple sub error codes can be caught using wildcards (*). Trailing
+wildcards are optional so the string ``custom:error`` is the same as
+``custom:error:*``.
 
 Example
 ~~~~~~~
 
-If the error code ``booking:failed`` is thrown it can be caught with
-following error code patterns: ``booking:failed``, ``booking`` ,
-``*:failed`` . Additionally it can be caught by an empty Error Code that
-catches all errors.
+If the error code ``booking:failed`` is thrown it can be caught with following
+error code patterns: ``booking:failed``, ``booking`` , ``*:failed`` .
+Additionally, you can catch it by specifying an empty error code. This catches
+all errors.
 
 System Errors
 ~~~~~~~~~~~~~
 
-System errors are thrown by process elements like *Database Step* or
-*Web Service Call Step*. Their error codes are set by default and are
+System errors are thrown by process elements like a *Database Step* or
+a *Web Service Call Step*. Their error codes are set by default and are
 prefixed with ``ivy`` (e.g. ``ivy:error:database``).
 
 
 Throwing Errors
 ---------------
 
-An error can be thrown explicitly by an Error End Event, or from code
-executed in IvyScript or Java. System errors (e.g.
-``ivy:error:database``) are implicitly thrown by the system.
+An error can be thrown explicitly by an Error End Event, or from code executed
+in IvyScript or Java. System errors (e.g. ``ivy:error:database``) are implicitly
+thrown by the system.
 
 
 .. _error-handling-error-end-event:
@@ -59,29 +59,29 @@ executed in IvyScript or Java. System errors (e.g.
 Error End Event
 ~~~~~~~~~~~~~~~
 
-The happy path of a process can be left by throwing an error with an
-:ref:`process-element-error-end`. (e.g. if an approval
-was declined). The Error End Event throws the error to upper process
-level, it can't be caught on the same process level.
+The happy path of a process is left if an error is thrown with an
+:ref:`process-element-error-end` (e.g. if an approval was declined). The Error
+End Event throws the error to the upper process level, it can't be caught on the
+same process level.
 
 |image0|
 
-Error End Events can also be used to re-throw a pre-defined ivy error
-with a specific error that has a meaning to the business. (e.g. if a
-web service is not available)
+Error End Events can also be used to re-throw a pre-defined Ivy error
+with a specific error that has a meaning to the business (e.g. if a
+web service is not available).
 
 |image1|
 
-Error Handling in HTML Dialogs
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Error Handling in a HTML Dialog
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When an error happens inside of an HTML Dialog the handling is slightly
+When an error occurs inside of a HTML Dialog the handling is slightly
 different than the default error handling.
 
 Default HTML Dialog Error Handling
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Basically any thrown error (e.g. an Java exception) is handled inside of
+Basically any thrown error (e.g. a Java exception) is handled inside of
 the HTML Dialog itself. Therefore there is no propagation to the caller
 process or between Ivy/JSF composites. It is important to handle errors
 locally in the Dialog Logic to let the user work uninterrupted on the
@@ -93,7 +93,7 @@ Exit an HTML Dialog by an Error End Element
 It is possible to exit an HTML Dialog by an Error End Element. This is
 useful to leave the happy path of the calling business process. The
 throwing Error End Element must be located in the HTML Dialog Logic of
-an HTML Dialog Page (not in a Component).
+an HTML Dialog Page (not an Component).
 
 |image2|
 
@@ -141,40 +141,39 @@ error via the variable ``error`` and the legacy variable ``exception``.
 Catching Errors
 ---------------
 
-Errors can either be caught by Error Boundary Events or Error Start
-Events.
+Errors can either be caught by Error Boundary Events or Error Start Events.
 
 An error is caught in the following order:
 
-#. By an Error Start Event directly addressed in the element's
-   inscription mask. (If available on the inscription.)
+#. By an Error Start Event directly addressed in the element's inscription mask
+   (If available on the inscription).
 
-#. By an Error Boundary Event attached directly to the activity the
-   error comes from.
+#. By an Error Boundary Event attached directly to the activity the error comes
+   from.
 
-#. By an Error Start Event on the same process level if not thrown by an
-   Error End Event.
+#. By an Error Start Event on the same process level if not thrown by an Error
+   End Event.
 
-#. By an Error Handling on the next higher process level, starting there
-   with step 2 until the top level process is reached.
+#. By an Error Handling on the next higher process level, starting there with
+   step 2 until the top level process is reached.
 
 #. By a Project Error Process in the top-level project.
 
-#. If the error is not caught it is displayed to the user on the
-   standard :ref:`user-dialogs-error-pages`.
+#. If the error is not caught it is displayed to the user on the standard
+   :ref:`user-dialogs-error-pages`.
 
 .. note::
 
-   Each process - including the embedded subprocess - is a separate
-   process level.
+   Each process - including the embedded subprocess - is a separate process
+   level.
 
 
 Error Boundary Event
 ~~~~~~~~~~~~~~~~~~~~
 
-An :ref:`process-element-error-boundary-event` catches errors
-which were thrown from the attaching activity or subprocess if the
-configured Error Code matches the thrown error.
+An :ref:`process-element-error-boundary-event` catches errors which were thrown
+from the attaching activity or subprocess if the configured Error Code matches
+the error thrown.
 
 |image3|
 
@@ -184,58 +183,56 @@ configured Error Code matches the thrown error.
 Error Start Event
 ~~~~~~~~~~~~~~~~~
 
-An :ref:`process-element-error-start` catches unhandled
-errors which were thrown in the same process or inside a subprocess if
-the configured Error Code matches the thrown error.
+An :ref:`process-element-error-start` catches unhandled errors which were thrown
+in the same process or inside a subprocess if the configured Error Code matches
+the thrown error.
 
 |image4|
 
 Loop Prevention
 ~~~~~~~~~~~~~~~
 
-To prevent endless process execution trough an inappropriate error
-handling, the ivy process engine detects loops during the error
-handling. If the engine detects a loop the error handling will be
-continued on the next higher process level with the new error code
-``ivy:error:loop``, to interrupt the cycle.
+To prevent endless process execution trough an inappropriate error handling, the
+Ivy process engine detects loops during the error handling. If the engine
+detects a loop the error handling will be continued on the next higher process
+level with the new error code ``ivy:error:loop``, to interrupt the cycle.
 
-Loop detection is done on error catching elements (Error Start Event and
-Error Boundary Event). The engine checks if there was already an
-identical execution of the catcher at this process level. Identical
-means: Same process request, same throwing element (including its
-process callstack) and same catching element (including its process
-callstack).
+Loop detection is done on error catching elements (Error Start Event and Error
+Boundary Event). The engine checks if there was already an identical execution
+of the catcher at this process level. Identical means: Same process request,
+same throwing element (including its process callstack) and same catching
+element (including its process callstack).
 
-Lets illustrate this with two use cases:
+Let's illustrate this with two use cases:
 
 Use Case 1
 ^^^^^^^^^^
 
-The process element throws an BpmError. The Error Boundary Event will
-catch the error and call the process element again. In this case, the
-loop detection will interrupt the process when the Boundary Error Event
-was reached the second time. This would also be the case, when the
-throwing error element is located in a composite or callable process.
+The process element throws a BpmError. The Error Boundary Event catches the
+error and call the process element again. In this case, the loop detection will
+interrupt the process when the Boundary Error Event was reached the second time.
+This would also be the case, when the throwing error element is located in a
+composite or callable process.
 
 |image5|
 
 Use Case 2
 ^^^^^^^^^^
 
-In this case, the loop detection will interrupt the process
-'callInCall1' after the second error handling. The process will be
-continue by the error handling on the caller process with the error code
-``ivy:error:loop``. The process will end on the End Element named 'done'.
+In this case, the loop detection will interrupt the process 'callInCall1' after
+the second error handling. The process will be continued by the error handling
+on the caller process with the error code ``ivy:error:loop``. The process will
+end on the End Element named 'done'.
 
 |image6|
 
 Project Error Process
 ~~~~~~~~~~~~~~~~~~~~~
 
-A Project Error Process catches uncaught errors from the whole project.
-The name of a Project Error Process must start with ``Error`` and has to
-reside in the top-level process group *Processes*. It can contain one or
-more Error Start Events.
+A Project Error Process catches uncaught errors from the whole project. The name
+of a Project Error Process must start with ``Error`` and has to reside in the
+top-level process group *Processes*. It can contain one or more Error Start
+Events.
 
 .. note::
 
@@ -246,8 +243,8 @@ more Error Start Events.
 Error Object
 ~~~~~~~~~~~~
 
-The error object provides the following information about the error that
-was caught:
+The error object provides the following information about the error that was
+caught:
 
 -  Unique Error ID
 -  Error Code
