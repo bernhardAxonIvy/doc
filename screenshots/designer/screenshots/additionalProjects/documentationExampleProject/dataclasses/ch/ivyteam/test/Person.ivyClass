@@ -12,3 +12,5 @@ city String #field
 city PERSISTENT #fieldModifier
 country String #field
 country PERSISTENT #fieldModifier
+mail String #field
+mail PERSISTENT #fieldModifier
