@@ -41,6 +41,7 @@ follows:
 
 * Every Session with no authenticated user is counted as one concurrent user.
 * Multiple Sessions with the same authenticated user, are handled as follows:
+
    * the first 10 sessions are counted as one concurrent
   user.
    * every additional concurrent session of the same authendicated user is counted
