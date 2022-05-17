@@ -5,8 +5,8 @@ Element-Name: Process
 Element-Type: context
 Element-Version: 2.0
 Id: _PRrTwNcsEeaidO8WBzHpig
-Runtime-Version: 2.5.0.202001211718
-Save-Time: 2/27/20, 11:15 AM
+Runtime-Version: 2.5.2.202107052356
+Save-Time: 5/17/22, 2:57 PM
 
 ------=_.ecl.context-718f04b4-ed39-33e3-af62-0995e4561998
 Content-Type: text/ecl
@@ -46,22 +46,20 @@ proc openHtmlDialogInscription[val dialogName] [val elementName] [val elementTyp
 	}
 }
 
-proc captureInscription [val elementType][val tabName][val screenshot][val width][val height]
+proc captureInscription [val elementType][val tabName][val screenshot][val width][val height][val -name close -value "true"]
 {
-	let [val inscriptionEditor [format "Inscribe %s" $elementType]]
-	{
-		let [val targetPath [format "process-elements/%s" $screenshot]]
-		{
-			with [get-window $inscriptionEditor]
-			{
+	let [val inscriptionEditor [format "Inscribe %s" $elementType]]{
+		let [val targetPath [format "process-elements/%s" $screenshot]]{
+			with [get-window $inscriptionEditor]{
 				resizeWindow -width $width -height $height
-			    with [get-tab-folder]
-			    {
-			        get-tab-item $tabName | click
-				    wait -ms 2000 // wait for UI animation (radio switches, button highlight, etc.)
+				with [get-tab-folder] {
+					get-tab-item $tabName | click
+					wait -ms 2000 // wait for UI animation (radio switches, button highlight, etc.)
 					get-object | captureScreenshot $targetPath
-			    }
-				get-button Cancel | click
+				}
+				if [$close] {
+					get-button Cancel | click
+				}
 			}
 		}
 	}
