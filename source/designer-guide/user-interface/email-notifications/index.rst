@@ -28,7 +28,6 @@ To customize a email notification you need to do the following:
   :language: yaml
   :linenos:
 
-.. _standard-process-email:
 
 Notifications
 -------------
