@@ -1,9 +1,9 @@
-.. _process-element-email-step:
+.. _process-element-email-activity:
 
-E-Mail Step
-===========
+E-Mail Activity
+================
 
-|image0| The *E-Mail Step* element is located in the *Activity* drawer
+|image0| The *E-Mail Activity* element is located in the *Activity* drawer
 of the process editor palette.
 
 Element Details

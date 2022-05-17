@@ -70,7 +70,7 @@ The icons on the tab indicate their state:
    db-step
    web-service-call-activity
    rest-client-activity
-   email-step
+   email-activity
    rule-activity
    embedded-subprocess
    call-sub
