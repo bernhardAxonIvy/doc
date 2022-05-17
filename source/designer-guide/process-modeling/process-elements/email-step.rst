@@ -37,7 +37,7 @@ In this tab the e-mail header is defined. You can use the :ref:`cms`
 and the process data (the ``in`` variable) to compose
 the header fields.
 
-.. figure:: /_images/process-elements/email-step-tab-header.png
+.. figure:: /_images/process-elements/mail-tab-header.png
    :alt: Header Tab
 
    Header Tab
@@ -76,7 +76,7 @@ Tab Content
 
 In this tab the e-mail content is defined.
 
-.. figure:: /_images/process-elements/email-step-tab-content.png
+.. figure:: /_images/process-elements/mail-tab-content.png
    :alt: Content Tab
 
    Content Tab
@@ -87,27 +87,20 @@ Message
 
    .. tip::
 
-      Start your message with an ``<HTML>`` tag to let you define your
-      whole message in HTML format. (of course at the end of message an
-      ``</HTML>`` is expected)
+      You can send HTML formatted mails by setting the ``contentType=text/html``.
+      Consequently you can use html tags, such as ``<h1>`` or ``<b>`` in your message content.
 
 Tab Attachments
 ~~~~~~~~~~~~~~~
 
-In this tab you can attach files to your e-mail. Each attachment line
-below on the screenshot represents one file. You can choose a file
-directly, take a process attribute with the type *File*, select a CMS
-entry or even build up the filename using script(s). The provided
-reference will be searched as CMS entry first, if no CMS entries found
-then the system will search the name as file in your :ref:`|axon-ivy| file
-area <ivyscript-reference-file>`.
+In this tab you can attach files to your e-mail. 
+Attachments can be provided as single ``File`` process data reference 
+or with a ``List<File>`` reference to supply multiple files at once.
+Alternatively files can be selected from the CMS.
+Finally, files can be added by stating a ``String`` path. It will by resolved by
+searching the name as file in your :ref:`file area <ivyscript-reference-file>`.
 
-.. note::
-
-   CMS entry names do not have an extension (meanwhile filenames used to
-   have one) so that the lookup order should cause no file overlapping.
-
-.. figure:: /_images/process-elements/email-step-tab-attachment.png
+.. figure:: /_images/process-elements/mail-tab-attachments.png
    :alt: Attachment Tab
 
    Attachment Tab
