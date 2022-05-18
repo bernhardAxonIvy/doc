@@ -14,10 +14,10 @@ same user session are forwarded to the same cluster node. This can be done as
 follows: 
 
 * configure the load balancer to forward all requests sent from one
-client IP addressalways to the same cluster node (IP based stickiness). 
-* use the |axon-ivy| Session Id to provide session
-stickiness. The session id is provided by |ivy-engine| Enterprise Edition as a
-HTTP session cookie with the name :code:`JSESSIONID`.
+  client IP address always to the same cluster node (IP based stickiness). 
+* use the |axon-ivy| Session Id to provide session stickiness. The session id is
+  provided by |ivy-engine| Enterprise Edition as a HTTP session cookie with the
+  name :code:`JSESSIONID`.
 
 Often :ref:`Reverse Proxies <reverse-proxy>` can be configured as load balancers.
 

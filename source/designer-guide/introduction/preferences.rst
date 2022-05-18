@@ -14,7 +14,7 @@ overwrite in the :ref:`project-preferences`.
 Email Settings
 --------------
 
-These settings define the configuration for the :ref:`process-element-email-step`
+These settings define the configuration for the :ref:`process-element-email-activity`
 on the designer.
 
 
@@ -66,7 +66,7 @@ SSL client key alias
 
 Test mail address (from)
    In the designer, this email address overwrites the sender setting in
-   the inscription mask of the :ref:`process-element-email-step`.
+   the inscription mask of the :ref:`process-element-email-activity`.
    Mails are not sent to
    the address that is configured in the inscription mask but to this
    address. Therefore you can test the functioning of your processes

@@ -41,10 +41,11 @@ follows:
 
 * Every Session with no authenticated user is counted as one concurrent user.
 * Multiple Sessions with the same authenticated user, are handled as follows:
+
    * the first 10 sessions are counted as one concurrent
-  user.
+     user.
    * every additional concurrent session of the same authendicated user is counted
-  as one additional concurrent user.
+     as one additional concurrent user.
 
 * The system session is not counted as concurrent user.
 * Sessions (non-System sessions) created to call WebService Processes or Event
