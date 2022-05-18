@@ -419,7 +419,7 @@ Maven dependencies automatically packed into Ivy archives
 |tag-project-changed|
 
 With 9.2, it is no longer necessary to copy maven dependencies to a specific
-folder manually or with the Maven dependency plugin. However, the `old way <https://answers.axonivy.com/questions/2089/add-library-with-pom-xml>`__
+folder manually or with the Maven dependency plugin. However, the `old way <https://community.axonivy.com/d/321-how-to-add-a-library-with-pomxml>`__
 still works.
 
 .. container:: admonition note toggle
