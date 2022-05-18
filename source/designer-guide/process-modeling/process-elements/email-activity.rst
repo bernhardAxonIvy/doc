@@ -87,7 +87,7 @@ Message
 
    .. tip::
 
-      You can send HTML formatted mails by setting the ``contentType=text/html``.
+      You can send HTML formatted mails by setting the content-type ``type=text/html``.
       Consequently you can use html tags, such as ``<h1>`` or ``<b>`` in your message content.
 
 Tab Attachments
@@ -104,9 +104,5 @@ searching the name as file in your :ref:`file area <ivyscript-reference-file>`.
    :alt: Attachment Tab
 
    Attachment Tab
-
-.. tip::
-
-   Right click on a file input line to access further commands.
 
 .. |image0| image:: /_images/process-elements/email-step.png
