@@ -419,8 +419,8 @@ Maven dependencies automatically packed into Ivy archives
 |tag-project-changed|
 
 With 9.2, it is no longer necessary to copy maven dependencies to a specific
-folder manually or with the Maven dependency plugin. However, the `old way <https://community.axonivy.com/d/321-how-to-add-a-library-with-pomxml>`__
-still works.
+folder manually or with the Maven dependency plugin. However, the old way still
+works.
 
 .. container:: admonition note toggle
 
@@ -429,15 +429,15 @@ still works.
      **Details**
 
   There is a new project-build-plugin version 9.2.1 with new execution
-  goals, which are active per default:
+  goals, which are active by default:
   
     * :project-build-plugin-doc:`maven-dependency <9.2/maven-dependency-mojo.html>`: 
       Copy maven dependencies to :file:`lib/mvn-deps`
     * :project-build-plugin-doc:`maven-dependency-cleanup <9.2/maven-dependency-cleanup-mojo.html>`: 
       Remove :file:`lib/mvn-deps` folder.
   
-  When you use the functions to **pack or export projects** in the
-  |ivy-designer|, the same happens as with the Maven plugin:
+  If you use the functions to **pack or export projects** in |ivy-designer|,
+  the same happens as with the Maven plugin:
     
     * Your Maven dependencies are copied to the :file:`lib/mvn-deps` folder.
 
