@@ -13,9 +13,12 @@ The following additional security headers are recommended.
   having an exploitable Cross-site scripting (XSS) vulnerability. With a
   Content-Security-Policy you can define from which locations external resources
   can be loaded and if scripts embedded in HTML can be executed. For more
-  information, see: `Content Security Policy (CSP) <https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP>`_. Check
-  https://answers.axonivy.com/questions/2982 to see a CSP example with the
-  embedded Tomcat.
+  information, see: `Content Security Policy (CSP) <https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP>`_.
+
+  We generally recommend to implement these headers on a reverse proxy securing 
+  your |ivy-engine|. In case you have no reverse proxy, check
+  `How do I integrate Ivy Workflow Frontend in my Web App? <https://community.axonivy.com/d/319-how-do-i-integrate-ivy-workflow-frontend-in-my-web-app>`
+  for a CSP example using the embedded Tomcat.
 
 * **Referrer-Policy**: Set this header if you want to control how or if the
   referrer is disclosed to other sites. For more information, see:
