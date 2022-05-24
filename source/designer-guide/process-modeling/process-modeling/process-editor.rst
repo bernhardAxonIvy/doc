@@ -13,6 +13,9 @@ consists of two parts:
 -  the :ref:`process-editor-tool-bar`, where some tools are located and also all
    elements, which can be added to the process
 
+-  the :ref:`process-editor-viewport-tool-bar`, where some tools for the
+   viewport are located
+
 |image2|
 
 Accessibility
@@ -35,14 +38,11 @@ Selection Tool:
 Marquee Tool:
    Grabbing tool to select multiple elements (you can also select multiple elements by press *Ctrl*).
 
-Origin View:
-   Reset process editor to the origin viewport.
+Inscribe process:
+   Opens the configuration editor of the process.
 
-Fit to Screen:
-   Fit the whole diagram (or your current selection) to the process editor screen.
-
-Center:
-   Center the whole diagram (or your current selection) in the process editor screen.
+Open data class:
+   Opens the :ref:`data-class-editor` of the process.
 
 Toggle custom icons:
    Toggle between custom and default icons.
@@ -71,7 +71,16 @@ Auto align:
 Select color:
    *Only active if at least one element is selected*
 
-   Change color of an element.
+   Change color of an element. 
+
+.. tip::
+
+   You can also define new colors or edit existing ones. For this press the
+   :guilabel:`plus` or the :guilabel:`edit` buttons in the color palette. Valid
+   colors are every possible `css color <https://developer.mozilla.org/en-US/docs/Web/CSS/color>`__.
+
+Insert connector:
+   Insert a :ref:`process-element-connector-activity`
 
 Element Palette:
    The element palette on the right is split into the different types of nodes
@@ -79,14 +88,24 @@ Element Palette:
    diagram, open the corresponding section, select the element and add it to the
    diagram at the wished position.
 
-Connector Tool:
-   Use this tool to connect two elements with each other. Do so by select the
-   tool, mark the source element and afterwards the target element.
 
-.. tip::
+.. _process-editor-viewport-tool-bar:
 
-   The purpose and configuration of all available process elements are
-   described in detail in the :ref:`process-elements`.
+Viewport Tool Bar
+~~~~~~~~~~~~~~~~~
+
+
+Origin View:
+   Reset process editor to the origin viewport.
+
+Fit to Screen:
+   Fit the whole diagram (or your current selection) to the process editor screen.
+
+Center:
+   Center the whole diagram (or your current selection) in the process editor screen.
+
+Zoom level:
+   Displays the current zoom level of the process editor.
 
 
 .. _process-editor-area:
