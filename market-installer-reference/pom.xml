@@ -9,10 +9,6 @@
   <artifactId>ch.ivyteam.ivy.market.installer.reference</artifactId>
   <packaging>eclipse-test-plugin</packaging>
 
-  <properties>
-    <SKIP_UNIT_TESTS>false</SKIP_UNIT_TESTS>
-  </properties>
-
   <dependencies>
     <dependency>
       <groupId>com.fasterxml.jackson.module</groupId>
