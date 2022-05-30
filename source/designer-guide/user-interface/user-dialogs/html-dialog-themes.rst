@@ -89,6 +89,7 @@ import an additional layout.css file:
   <h:head>
     <f:attribute name="primefaces.THEME" value="serenity-lime" />
     <h:outputStylesheet name="css/layout-lime.css" library="serenity-layout" />
+    <h:outputScript name="js/layout.js" library="serenity-layout" />
     ...
   </h:head>
 
@@ -97,6 +98,7 @@ import an additional layout.css file:
   <h:head>
     <f:attribute name="primefaces.THEME" value="serenity-ivy" />
     <h:outputStylesheet name="css/layout-ivy.css" library="serenity-layout" />
+    <h:outputScript name="js/layout.js" library="serenity-layout" />
     ...
   </h:head>
 
