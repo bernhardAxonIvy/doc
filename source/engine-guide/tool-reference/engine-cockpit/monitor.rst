@@ -89,6 +89,19 @@ You can click on a request to see where the time of the request was spent
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-slow-requests.png
 
+System Overview
+"""""""""""""""
+
+The **System Overview** view gives you a quick overview of inbound  and outbound 
+communication channels to and from the |ivy-engine|. The more request a certain 
+communication channel has the wider it is displayed. The color reflects the response times. 
+Green means fast response times. Red means slow request times relative to the other communication channels. 
+The color of the source or target of a communication link indicates if there are errors. 
+Hover over source or target of a communication channel to get more detailed information.
+Like :ref:`engine-cockpit-monitor-slow-requests` you have to activate :ref:`tracing` to get useful data.
+ 
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-system-overview.png
+
 Logs
 ^^^^
 
