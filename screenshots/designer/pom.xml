@@ -14,8 +14,7 @@
 
   <properties>
     <savedScreenshotsFolderPath>${project.build.directory}/aut/screenshots</savedScreenshotsFolderPath>
-    <additionalProjects>${project.basedir}/screenshots/additionalProjects</additionalProjects>
-    <additionalFiles>${project.basedir}/screenshots/additionalFiles</additionalFiles>
+    <screenshots>${project.basedir}/screenshots</screenshots>
     <maven.test.failure.ignore>true</maven.test.failure.ignore>
   </properties>
 
@@ -60,8 +59,7 @@
               </suites>
               <aut>
                 <vmArgs>
-                  <vmArg>-DadditionalProjects=${additionalProjects}</vmArg>
-                  <vmArg>-DadditionalFiles=${additionalFiles}</vmArg>
+                  <vmArg>-Dscreenshots=${screenshots}</vmArg>
                   <vmArg>-noverify</vmArg>
                 </vmArgs>
               </aut>

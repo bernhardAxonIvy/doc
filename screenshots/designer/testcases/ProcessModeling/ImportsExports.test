@@ -6,7 +6,8 @@ Element-Type: testcase
 Element-Version: 3.0
 External-Reference: 
 Id: _Tiq00F78Eea4DszzhZF9qA
-Save-Time: 10/13/21, 11:28 AM
+Runtime-Version: 2.5.3.202205021448
+Save-Time: 6/1/22, 1:31 PM
 Testcase-Type: ecl
 
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
@@ -68,7 +69,7 @@ try{
 
 	get-view "Axon Ivy Projects" | get-tree | get-menu "Import..." | click
 	get-window Import | get-tree | select "General/Existing Projects into Workspace" | double-click
-	set-dialog-result Folder [format "%s/%s" [substitute-variables "${system_property:additionalProjects}"] "QuickStartTutorial" | str]
+	set-dialog-result Folder [format "%s/additionalProjects/%s" [substitute-variables "${system_property:screenshots}"] "QuickStartTutorial" | str]
 	with [get-window Import] {
 		resizeWindow 520 560
 		get-window Import | get-button "Select root directory:" | click
@@ -82,7 +83,7 @@ try{
 
 	get-view "Axon Ivy Projects" | get-tree | get-menu "Import..." | click
 	get-window Import | get-tree | select "Axon Ivy/Ivy Archive \\(\\*.iar\\)" | double-click
-	set-dialog-result Folder [substitute-variables "${system_property:additionalProjects}"]
+	set-dialog-result Folder [format %s/additionalProjects [substitute-variables "${system_property:screenshots}"]]
 	with [get-window "Import ivy Archives.*"] {
 		get-button "Browse ..." | click
 		get-button "Select All" | click
