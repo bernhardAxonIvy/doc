@@ -5,8 +5,8 @@ Element-Name: ImportProject
 Element-Type: context
 Element-Version: 2.0
 Id: _XwUfgFQQEeaUV_J5BuL85w
-Runtime-Version: 2.2.0.201706152316
-Save-Time: 1/10/18 1:12 PM
+Runtime-Version: 2.5.3.202205021448
+Save-Time: 6/1/22, 1:29 PM
 
 ------=_.ecl.context-718f04b4-ed39-33e3-af62-0995e4561998
 Content-Type: text/ecl
@@ -18,7 +18,7 @@ proc importProject [val projectName] {
 	{
 		openQuickAccess "Import (Existing Projects into"
 		get-window Import | get-button "Select root directory:" | click
-		set-dialog-result Folder [format "%s/%s" [substitute-variables "${system_property:additionalProjects}"] $projectName | str]
+		set-dialog-result Folder [format "%s/additionalProjects/%s" [substitute-variables "${system_property:screenshots}"] $projectName | str]
 		with [get-window Import] {
 			get-button "Browse..." | click
 			get-group Options | get-button "Copy projects into workspace" | check
