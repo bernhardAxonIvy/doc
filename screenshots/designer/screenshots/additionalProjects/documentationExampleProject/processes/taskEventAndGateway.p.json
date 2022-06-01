@@ -26,7 +26,7 @@
       "type" : "TaskSwitchGateway",
       "name" : "Renew Licence",
       "config" : {
-        "template" : "/Layouts/1Axonivy.ivc",
+        "template" : "endpage.xhtml",
         "outLinks" : [ "TaskA.ivp" ],
         "case" : {
           "name" : "Stay updated",
