@@ -6,8 +6,8 @@ Element-Type: testcase
 Element-Version: 3.0
 External-Reference: 
 Id: _ubEzoJv9EemwDs9-JglgHg
-Runtime-Version: 2.5.0.201908212005
-Save-Time: 9/9/19, 5:51 PM
+Runtime-Version: 2.5.2.202107052356
+Save-Time: 6/1/22, 9:33 AM
 Testcase-Type: ecl
 
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
@@ -16,17 +16,28 @@ Entry-Name: .content
 
 importProject "documentationExampleProject"
 
-let [val processName "endPage"][val elementName "end"][val elementType "End Page"]
-{
+let [val processName "endPage"][val elementName "end"][val elementType "End Page"]{
 	openInscription
 		-processName $processName
 		-elementName $elementName
 		-elementType $elementType
-		
 	captureInscription
 		-elementType $elementType
 		-tabName "End Page"
 		-width 650 -height 300
 		-screenshot "process-end-page-tab-end-page.png"
 }
+
+let [val processName "endPage"][val elementName "page"][val elementType "Web Page"]{
+	openInscription
+		-processName $processName
+		-elementName $elementName
+		-elementType $elementType
+	captureInscription
+		-elementType $elementType
+		-tabName "Dialog"
+		-width 650 -height 500
+		-screenshot "web-page-tab-dialog.png"
+}
+
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
