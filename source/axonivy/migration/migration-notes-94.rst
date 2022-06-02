@@ -9,10 +9,10 @@ Primefaces 11
 |tag-project-changed| |tag-project-removed| |tag-project-deprecated|
 
 We upgraded the Primefaces library from version 7 to version 11. 
-Some UI components from version 7 have been removed in version 11. Some attributes of UI components have been removed, moved, renamed or has a different behavior. 
-And also some Java API have been removed or changed.
-
-For a complete list of all changes see `Primefaces Migration Guide <https://primefaces.github.io/primefaces/11_0_0/#/../migrationguide/migrationguide>`_
+Unfortunately, Primefaces made some breaking changes in its latest versions. 
+This means that your user interfaces are most likely broken. 
+To mitigate the migration pain we have build a migration wizard that fixes most of the breaking changes. 
+See :ref:`primefaces-11-migration` for more information.
    
 User id and role id deprecated
 ******************************
