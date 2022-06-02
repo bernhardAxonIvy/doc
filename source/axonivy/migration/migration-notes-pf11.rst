@@ -20,10 +20,9 @@ For a complete list of all changes see `Primefaces 11 Migration Guide <https://p
 How to avoid migration pain
 ---------------------------
  
-* Use the provided standard themes ivy-freya and ivy-serenity. 
+* Use the provided standard themes :ref:`freya-ivy <freya-themes>` or :ref:`serenity-ivy <serenity-themes>`. 
 * Use as less own CSS rules as possible. 
 * Use as less different Primefaces components as possible. 
-* Avoid using Primefaces components that are newly added in recent versions because those might change more likely in upcoming releases. 
 
 Migration Wizard
 ----------------
@@ -34,11 +33,12 @@ To start the migration wizard select a project in your Designer and press the co
 Then select ``Primefaces 11`` and press the ``Finish`` button. 
 Review the applied changes in the conversion log or the ``Git Staging`` view.
 
-The migration wizard will fix all broken Java API in your Java, Process (IvyScript) and Data Class files. 
+The migration wizard will fix most common broken Java API in your Java, Process (IvyScript) and Data Class files. 
 It also fixes renamed UI components and attributes. 
 
 However, some attributes are move from one UI component to a child component or has a different behavior. 
-Those changes can not be fixed automatically. You have to test your UI component and fix them manually.
+Those changes can not be fixed automatically. 
+Check your :ref:`WebTests <web-testing>` or manually test your UI component to find problems and then fix them manually.
 
 Common Manual Migration Tasks
 -----------------------------
@@ -119,17 +119,11 @@ Copy the source code from the original
 `TreeUtils class <https://github.com/primefaces/primefaces/blob/10.0.0/src/main/java/org/primefaces/util/TreeUtils.java>`_ 
 into your project. 
 
-Old Themes removed
-""""""""""""""""""
- 
-Instead of modena, primefaces-ivy, all-themes themes use freya-ivy or serenity-ivy. 
-You may need to adjust your hand crafted CSS rules to the new theme.
-
 Components have different CSS classes
 """""""""""""""""""""""""""""""""""""
 
 Some components have new CSS classes. 
-You may need to adjust your CSS rules and WebTests if they select a component by its css classes.
+You may need to adjust your CSS rules and :ref:`WebTests <web-testing>` if they select a component by its CSS classes.
 
 Font-Awesome updated to 6.1.0
 """""""""""""""""""""""""""""
@@ -158,7 +152,7 @@ Rendering time changed
 """"""""""""""""""""""
 
 Some components now need more time to render.
-You may need to adjust the timeout settings of your WebTests. 
+You may need to adjust the timeout settings of your :ref:`WebTests <web-testing>`. 
 
 ChartJS library upgraded
 """"""""""""""""""""""""

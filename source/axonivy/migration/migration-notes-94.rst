@@ -14,6 +14,12 @@ This means that your user interfaces are most likely broken.
 To mitigate the migration pain we have build a migration wizard that fixes most of the breaking changes. 
 See :ref:`primefaces-11-migration` for more information.
    
+Old Themes removed
+******************
+ 
+Instead of modena, primefaces-ivy, all-themes themes use :ref:`freya-ivy <freya-themes>` or :ref:`serenity-ivy <serenity-themes>`. 
+You may need to adjust your hand crafted CSS rules to the new theme.
+   
 User id and role id deprecated
 ******************************
 
