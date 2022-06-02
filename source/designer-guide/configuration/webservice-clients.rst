@@ -53,7 +53,7 @@ The following attributes are available in the *Web Service* Section:
 - :guilabel:`WSDL URL`
   Service details and classes will be generated using the WSDL
   specified here. Please **use protocol prefix** like:
-  http://myserver.ch/hello.wsdl or file://c:\temp\myWis.wsdl
+  http://myserver.ch/hello.wsdl or file:/c:/temp/myWis.wsdl
 
 - :guilabel:`Library`
   The library that is used to generate the web service client classes.
