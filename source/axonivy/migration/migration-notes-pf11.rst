@@ -148,6 +148,16 @@ Font-Awesome 6.1
 
 However, because we provide a compatibility library the old ``fa`` class should still work.
 
+JQuery icons removed
+""""""""""""""""""""
+
+The JQuery icons (CSS classes ``ui-icon-*``) are no longer supported. 
+Instead use icons of the supported icon libraries:
+
+* `Primefaces Icon library <https://www.primefaces.org/showcase/icons.xhtml>`_
+* `Fontawesome <https://fontawesome.com/>`_
+* `Streamline <https://www.streamlinehq.com/>`_
+
 Rendering time changed
 """"""""""""""""""""""
 
