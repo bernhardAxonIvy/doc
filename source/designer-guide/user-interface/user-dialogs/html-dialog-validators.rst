@@ -47,7 +47,7 @@ Example code fragment from an input form:
                </p:inputText>     
                <p:message for="ZipCode" display="text" showDetail="true" />
                
-               <p:commandButton actionListener="#{logic.close}" value="Proceed" validateClient="true" icon="ui-icon-check"  />
+               <p:commandButton actionListener="#{logic.close}" value="Proceed" validateClient="true" icon="pi pi-check"  />
            
 
 .. tip::
