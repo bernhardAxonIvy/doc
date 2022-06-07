@@ -21,8 +21,8 @@ How to avoid migration pain
 ---------------------------
  
 * Use the provided standard themes :ref:`freya-ivy <freya-themes>` or :ref:`serenity-ivy <serenity-themes>`. 
-* Use as less own CSS rules as possible. 
-* Use as less different Primefaces components as possible. 
+* Use as few own CSS rules as possible. 
+* Use as few different Primefaces components as possible. 
 
 Migration Wizard
 ----------------
@@ -33,12 +33,12 @@ To start the migration wizard select a project in your Designer and press the co
 Then select ``Primefaces 11`` and press the ``Finish`` button. 
 Review the applied changes in the conversion log or the ``Git Staging`` view.
 
-The migration wizard will fix most common broken Java API in your Java, Process (IvyScript) and Data Class files. 
+The migration wizard will fix most common broken Java APIs in your Java, Process (IvyScript) and Data Class files. 
 It also fixes renamed UI components and attributes. 
 
-However, some attributes are move from one UI component to a child component or has a different behavior. 
-Those changes can not be fixed automatically. 
-Check your :ref:`WebTests <web-testing>` or manually test your UI component to find problems and then fix them manually.
+However, some attributes have been moved from one UI component to a child component or have a different behavior. 
+Those changes cannot be fixed automatically. 
+Check your :ref:`WebTests <web-testing>` or manually test your UI components to find problems and then fix them manually.
 
 Common Manual Migration Tasks
 -----------------------------
