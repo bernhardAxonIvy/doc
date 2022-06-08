@@ -1,9 +1,9 @@
-.. _process-element-db-step:
+.. _process-element-db-activity:
 
-DB Step
-=======
+Database Activity
+===================
 
-|image0| The *Database Step* (DB Step) element is located in the
+|image0| The *Database Activity* element is located in the
 *Activity* drawer of the process editor palette.
 
 Element Details
@@ -17,27 +17,26 @@ Inscription
 
 .. include:: _tab-name.rst
 
-DB Tab
-~~~~~~
+Query Tab
+~~~~~~~~~~~
 
 Here you define which SQL command you want to execute on which database.
 Depending on the kind of SQL command you are supported during the
 construction of your command.
 
-.. figure:: /_images/process-elements/db-step-tab-db.png
-   :alt: DB Tab
+.. figure:: /_images/process-elements/database-activity-tab-query.png
+   :alt: Query Tab
 
-   DB Tab
+   Query Tab
 
 Kind of Query
    Choose the kind of query you like to perform. |axon-ivy| offers
    dedicated UI support for the most common query types such as
-   ``Select`` (Read Query), ``Insert`` (Write Query), ``Update`` (Update
-   Query) and ``Delete`` (Delete Query).
+   ``Select`` (Read), ``Insert`` (Write), ``Update`` (Update) and ``Delete`` (Delete).
 
    If you require some non-standard SQL or if you want to issue a
    complex SQL statement that is not covered by the *Query Definition*
-   mask then you may also select ``Any Query`` and write pure SQL instead.
+   mask then you may also select ``Any`` and write pure SQL instead.
    Expanding of process attributes will also work in the *Any Query*
    mode.
 

@@ -167,7 +167,7 @@ explains their function.
    |                                   | you want to insert a database                             |
    |                                   | field into the associated UI                              |
    |                                   | component                                                 |
-   |                                   | (:ref:`process-element-db-step`).                         |
+   |                                   | (:ref:`process-element-db-activity`).                         |
    +-----------------------------------+-----------------------------------------------------------+
    | |image21|                         | Opens an Operator Browser that                            |
    |                                   | shows all available operators.                            |
@@ -175,7 +175,7 @@ explains their function.
    |                                   | to insert an operator (e.g. a SQL                         |
    |                                   | operator) into the associated UI                          |
    |                                   | components                                                |
-   |                                   | (:ref:`process-element-db-step`).                         |
+   |                                   | (:ref:`process-element-db-activity`).                         |
    +-----------------------------------+-----------------------------------------------------------+
    | |image22|                         | Opens an Web Service                                      |
    |                                   | Configuration Browser that shows                          |
