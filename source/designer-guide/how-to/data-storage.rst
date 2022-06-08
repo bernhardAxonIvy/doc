@@ -36,7 +36,7 @@ Database
 Stores and access data in a database systems. An own database
 server is necessary and the database schema must be managed outside of
 |axon-ivy|.
-More information can be found in the chapter :ref:`process-element-db-step`.
+More information can be found in the chapter :ref:`process-element-db-activity`.
 
 Persistency (Java Persistence API)
 ----------------------------------

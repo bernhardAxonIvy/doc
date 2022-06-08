@@ -67,7 +67,7 @@ The icons on the tab indicate their state:
    web-page
    user-dialog
    script-step
-   db-step
+   database-activity
    web-service-call-activity
    rest-client-activity
    email-activity

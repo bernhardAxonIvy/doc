@@ -15,7 +15,7 @@ in the engine's memory. If you want to read data that stays unchanged
 for some time, you do not need to re-read the data every time you need
 to access it. If this data is read by long-running queries from a
 database or by calling a slow web service, you can gain a lot of
-performance by caching this data. The :ref:`process-element-db-step` and the
+performance by caching this data. The :ref:`process-element-db-activity` and the
 :ref:`process-element-web-service-call-activity` natively support Data
 Caching (see the :ref:`process-element-tab-data-cache` for more information),
 for other data you can access the Data Cache API by IvyScript.
@@ -26,7 +26,7 @@ Caches
 Data that is cached is always stored in a data cache entry. This can be
 the result of a database query or of a web service call if you use the
 :ref:`process-element-tab-data-cache` on the
-:ref:`process-element-db-step` or on the
+:ref:`process-element-db-activity` or on the
 :ref:`process-element-web-service-call-activity`. But you can
 also store any arbitrary object into a data cache entry by using the
 Public API. Entries are identified by a textual entry identifier.

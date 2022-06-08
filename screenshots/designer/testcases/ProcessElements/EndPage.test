@@ -16,28 +16,31 @@ Entry-Name: .content
 
 importProject "documentationExampleProject"
 
-let [val processName "endPage"][val elementName "end"][val elementType "End Page"]{
+let [val processName "endPage"]{
+
+	let[val elementType "End Page"]{
 	openInscription
 		-processName $processName
-		-elementName $elementName
+		-elementName "end"
 		-elementType $elementType
 	captureInscription
 		-elementType $elementType
 		-tabName "End Page"
 		-width 650 -height 300
 		-screenshot "process-end-page-tab-end-page.png"
-}
+	}
 
-let [val processName "endPage"][val elementName "page"][val elementType "Web Page"]{
+	let [val elementType "Web Page"]{
 	openInscription
 		-processName $processName
-		-elementName $elementName
+		-elementName "page"
 		-elementType $elementType
 	captureInscription
 		-elementType $elementType
 		-tabName "Dialog"
 		-width 650 -height 500
 		-screenshot "web-page-tab-dialog.png"
+	}
 }
 
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
