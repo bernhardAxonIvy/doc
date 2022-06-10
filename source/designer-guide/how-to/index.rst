@@ -10,6 +10,5 @@ How to
    overrides
    rule-engine
    extensions
-   deployment
    continuous-integration
    miscellaneous

@@ -1,0 +1,25 @@
+digraph engine {
+  kubernets [ label="Kubernetes", pos="0,0!" width=7 height=4.7 style="dotted" fontcolor="black" labelloc="t"];
+
+  engine1 [ label="Axon Ivy Engine\nContainer Tenant 1", pos="-2,0.0!" width=2 height=4 style="dotted" fontcolor="black" labelloc="t"];
+  engine2 [ label="Axon Ivy Engine\nContainer Tenant 2", pos="0,0.0!" width=2 height=4 style="dotted" fontcolor="black" labelloc="t"];
+  engineX [ label="Axon Ivy Engine\nContainer Tenant X", pos="2,0.0!" width=2 height=4 style="dotted" fontcolor="black" labelloc="t"];
+
+  users1 [ label="Users", pos="-2,1.2!" width=1.7 height=0.5 style="dotted" fontcolor="black"];
+  roles1 [ label="Roles", pos="-2,0.5!" width=1.7 height=0.5 style="dotted" fontcolor="black"];
+  processes1 [ label="Processes", pos="-2,-0.2!" width=1.7 height=0.5 ];
+  tasklist1 [ label="Task list", pos="-2,-0.9!" width=1.7 height=0.5 ];
+  applications1 [ label="Applications", pos="-2,-1.6!" width=1.7 height=0.5 ];
+
+  users2 [ label="Users", pos="0,1.2!" width=1.7 height=0.5 style="dotted" fontcolor="black"];
+  roles2 [ label="Roles", pos="0,0.5!" width=1.7 height=0.5 style="dotted" fontcolor="black"];
+  processes2 [ label="Processes", pos="0,-0.2!" width=1.7 height=0.5 ];
+  tasklist2 [ label="Task list", pos="0,-0.9!" width=1.7 height=0.5 ];
+  applications2 [ label="Applications", pos="0,-1.6!" width=1.7 height=0.5 ];
+
+  usersX [ label="Users", pos="2,1.2!" width=1.7 height=0.5 style="dotted" fontcolor="black"];
+  rolesX [ label="Roles", pos="2,0.5!" width=1.7 height=0.5 style="dotted" fontcolor="black"];
+  processesX [ label="Processes", pos="2,-0.2!" width=1.7 height=0.5 ];
+  tasklistX [ label="Task list", pos="2,-0.9!" width=1.7 height=0.5 ];
+  applicationsX [ label="Applications", pos="2,-1.6!" width=1.7 height=0.5 ];
+}

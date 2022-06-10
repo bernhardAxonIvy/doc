@@ -23,3 +23,4 @@ follows to deploy a project.
    advanced/index
    rest-api/index
    maven-plugin/index
+   terms

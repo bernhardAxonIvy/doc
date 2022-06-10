@@ -1,5 +1,5 @@
-Deployment
-==========
+Terms
+=====
 
 This chapter explains how an |ivy-designer| Project can be deployed
 to an |ivy-engine|. Before deploying an |axon-ivy| project it is
@@ -21,10 +21,7 @@ Application
         └── ProcessModelVersion 1
 
 On the |ivy-engine|, applications can be configured. An application
-spans up an environment in which roles, users, databases,
-tasks, cases and process models exist. Applications are completely
-independent of each other. E.g. a user of one application can **not**
-work on a task of another application.
+spans up an environment in which process models exist.
 
 .. _process-model:
 
@@ -263,10 +260,3 @@ and process model versions on an |ivy-engine| can be configured.
    |                 |                 |                 | in this         |
    |                 |                 |                 | version.        |
    +-----------------+-----------------+-----------------+-----------------+
-
-|axon-ivy| Project Deployment
------------------------------
-
-To deploy an |axon-ivy| project to the |ivy-engine|, :ref:`export it
-<designer-export-project>` as an :file:`.iar` and :ref:`upload <deployment>` it
-to an engine.

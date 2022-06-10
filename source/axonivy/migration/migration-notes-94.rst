@@ -19,9 +19,51 @@ Old Themes removed
  
 Instead of modena, primefaces-ivy, all-themes themes use :ref:`freya-ivy <freya-themes>` or :ref:`serenity-ivy <serenity-themes>`. 
 You may need to adjust your hand crafted CSS rules to the new theme.
-   
+
+
+
+Multi Application Security System
+*********************************
+
+|tag-ops-wizard|
+
+The big barriers were broken in. Users and roles are no longer attached to a
+single application, but can be shared across multiple applications in a security
+system. Now, different applications can be developed and installed with their
+own release cycles, and the end user only ever receives one task list for all
+applications. This enables independent feature-driven development.
+
+Most engine installations will only have the predefined security context
+`default`. By default, new applications end up in this context. The use of
+multiple security contexts is basically only if you want to completely isolate
+certain applications from other applications, but then we recommend installing a
+second engine. The second use case would be for multi-tenancy - one security
+system per tenant.
+
+During migration, however, the status quo is maintained. The migrated
+applications are placed in an isolated security system with the name of the
+application. It is no longer possible to change the security system at runtime,
+this must always be done when the application is created.
+
+More information about the concept can be found :ref:`here <application-realm>`.
+
+- **Users** are no longer attached to the application, but to the Security
+  System. The user is so unique over several apppliactions.
+- **Roles** are still defined in projects. The roles are deployed in a
+  security system. Now the roles must not only be unique over the application, but
+  over the security system.
+- **Business Data** was not scoped. These are now scoped to the security system.
+- **Standard process** default pages are now automatically
+  determined at runtime. You don't have to define them anymore. If there are
+  multiple implementations of a default process, one is simply selected. But you
+  can fix this by setting this setting anyway.
+- **EmailNotification Settings** are no longer part of
+  the appliatkon configuration. They are part of the security system and can be
+  found there.
+
+
 User id and role id deprecated
-******************************
+------------------------------
 
 :code:`IUser#getId()` and :code:`IRole#getId`` are obsolete and should not be used any further.
 Always use :code:`getSecurityMemberId()`. For now, user id and role id are still fully

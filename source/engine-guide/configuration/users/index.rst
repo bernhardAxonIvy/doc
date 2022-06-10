@@ -4,8 +4,9 @@ Workflow Users
 ==============
 
 Workflow Users are kept in a so-called security system which can be defined in
-:ref:`ivy-yaml`. Each application defines in :ref:`app-yaml` which security
-system is used. There are two types of security systems: 
+:ref:`ivy-yaml`. Each application is bound to one security system. There are two
+types of security systems. You need to define at application creation time in
+which security system the application must live: 
 
 * **Internal Security System**:
   Used to manage the users directly on the |ivy-engine|. There is only one
