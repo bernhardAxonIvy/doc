@@ -1,5 +1,5 @@
 {
-  "format" : "9.4.10",
+  "format" : "9.4.11",
   "id" : "18141E75C9CEDD35",
   "data" : "screenshot.project.Data",
   "elements" : [ {
@@ -25,7 +25,11 @@
       "type" : "Database",
       "name" : "read user",
       "config" : {
-        "dbWizard" : "in.user.userKey = USERID",
+        "query" : {
+          "kind" : "read",
+          "condition" : "in.user.userKey = USERID",
+          "xml" : "<SELECT><Column name='NAME'/><Column name='FULLNAME'/><Column name='EMAILADDRESS'/><Table name='IWA_USER'/><Condition><Relation kind='='><AnyExpression>in.user.userKey</AnyExpression><Column name='USERID'/></Relation></Condition></SELECT>"
+        },
         "output" : {
           "map" : {
             "out" : "in",
@@ -33,12 +37,7 @@
           },
           "code" : "ivy.log.info(\"read userinfo from \"+record.getField(\"EMAILADDRESS\") as String);"
         },
-        "dbUrl" : "IvySystemDatabase",
-        "dbSql" : [
-          "<?xml version=\"\"1.0\"\" standalone=\"\"no\"\"?>",
-          "<!DOCTYPE SELECT SYSTEM  \"\"sqlStatements.dtd\"\">",
-          "<SELECT><Column name='NAME'/><Column name='FULLNAME'/><Column name='EMAILADDRESS'/><Table name='IWA_USER'/><Condition><Relation kind='='><AnyExpression>in.user.userKey</AnyExpression><Column name='USERID'/></Relation></Condition></SELECT>"
-        ]
+        "dbUrl" : "IvySystemDatabase"
       },
       "visual" : {
         "at" : { "x" : 224, "y" : 64 }
