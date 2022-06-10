@@ -45,7 +45,7 @@ applications are placed in an isolated security system with the name of the
 application. It is no longer possible to change the security system at runtime,
 this must always be done when the application is created.
 
-More information about the concept can be found :ref:`here <application-realm>`.
+More information about the concept can be found :ref:`here <application-lifecycle>`.
 
 - **Users** are no longer attached to the application, but to the Security
   System. The user is so unique over several apppliactions.
