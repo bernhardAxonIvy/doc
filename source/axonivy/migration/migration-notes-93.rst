@@ -139,7 +139,7 @@ Formats
 
 :ref:`Formats <configuration-formats>` are migrated from the so-called config
 CMS to the :file:`config/formats.yaml` in your project. There is no more UI
-Editor to edit those formats. If you migrate a running Axon Ivy Engine you need
+Editor to edit those formats. If you migrate a running |ivy-engine| you need
 to convert your projects and redeploy them again to make formats work.
 
 
@@ -174,8 +174,8 @@ Removed support for CMS Page
 
 |tag-project-removed| 
 
-We no longer support CMS pages. Both in Axon Ivy Designer and
-on Axon Ivy Engine. You will need to manually reimplement them
+We no longer support CMS pages. Both in |ivy-designer| and
+on |ivy-engine|. You will need to manually reimplement them
 to an alternative. For example as :ref:`HTML Dialog (JSF) <html-dialogs>` or
 as :ref:`static JSF page <static-jsf-pages>`. We still support :ref:`plain JSP pages <user-interface-web-page>`
 which would be a non-future alternative.
@@ -237,7 +237,7 @@ With Axon Ivy 7.1 we have introduced CXF Web Service Client as a super-fast,
 secure and future driven technology to call SOAP Web Services. AXIS is
 making more and more trouble and to keep the quality of the Axon Ivy Platform
 on a high level we need to cut AXIS off. You have to convert all Web
-Service Clients based on AXIS (1+2) to CXF in the Axon Ivy Designer.
+Service Clients based on AXIS (1+2) to CXF in the |ivy-designer|.
 
 .. container:: admonition note toggle
 

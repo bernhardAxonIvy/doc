@@ -6,7 +6,7 @@ Concepts
 .. toctree::
    :maxdepth: 2
 
-   application-realm/index
+   application-lifecycle/index
    multi-tenancy/index
    adaptive-case-management
    3rd-party-integration/index
