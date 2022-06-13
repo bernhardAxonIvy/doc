@@ -5,7 +5,8 @@ Element-Type: testcase
 Element-Version: 3.0
 External-Reference: 
 Id: _xSFEAF78Eea4DszzhZF9qA
-Save-Time: 10/22/21, 1:37 PM
+Runtime-Version: 2.5.3.202205021448
+Save-Time: 6/13/22, 5:54 PM
 Testcase-Type: ecl
 
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
@@ -52,8 +53,16 @@ try
 	with [get-view "Axon Ivy Projects" | get-tree] {
 		get-item oldVersionProject | click
 		select oldVersionProject | get-menu "Convert Project" | click
+	}	
+	with [get-window "Convert Project oldVersionProject"] {
+		saveWindowContentScreenshot "ivy-project/convert-project-1.png"
+		get-button "Next >" | click
+		saveWindowContentScreenshot "ivy-project/convert-project-2.png"		
+		get-button Convert | click
+		saveWindowContentScreenshot "ivy-project/convert-project-3.png"
+		get-button Finish | click
 	}
-	get-window "ivy Project Converter" | get-button Close | click
+	
 	with [get-view "Axon Ivy Projects" | get-tree] {
 		get-item oldVersionProject | click
 		select oldVersionProject | get-menu Properties | click
@@ -92,6 +101,7 @@ try
 	get-window "Properties for oldVersionProject" | get-button "Apply and Close" | click
 }-finally{
 	deleteProject oldVersionProject
+	deleteProject QuickStartTutorial
 }
 
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
