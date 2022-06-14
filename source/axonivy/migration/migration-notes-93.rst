@@ -249,7 +249,7 @@ Service Clients based on AXIS (1+2) to CXF in the |ivy-designer|.
   .. container:: detail 
 
     The Designer comes with a :ref:`project converter <project-convert-wizard>`
-    to convert your Axis2 clients automatically to CXF. Also a quick fix is available 
+    to convert your Axis2 clients automatically to CXF. Additionally, a quick fix is available 
     on the Axis error marker.
 
     The detailed steps to migrate from AXIS clients to CXF are outlined here:

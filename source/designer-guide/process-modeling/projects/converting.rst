@@ -62,7 +62,7 @@ Choose *Convert project to latest version* and press *Next >*.
    
    Convert Project Wizard - Choose Converter Page
    
-On the next page of the wizard press the *Convert* button to start the converter.
+On the next page of the wizard, press the *Convert* button to start the converter.
 The executed tasks and actions of the converter are logged into the text area above 
 the *Convert* button. That documents the conversion process and will inform you about
 whether the conversion was successful or not.
@@ -73,7 +73,7 @@ whether the conversion was successful or not.
    
    Convert Project Wizard - Convert Page
    
-Once the converter has finished use the *Copy Log* or *Open Log* buttons to copy the 
+Once the converter has finished, use the *Copy Log* or *Open Log* buttons to copy the 
 log or open the log file (that is stored in the logs folder of your project) in an editor. 
 Press *Finish* to close the wizard, or *< Back* to execute another converter. 
 
@@ -94,7 +94,7 @@ Press *Finish* to close the wizard, or *< Back* to execute another converter.
 More project converters:
 ========================
 
-For more information about the other project converters have a look at:
+For more information about the other project converters, have a look at:
 
 * :ref:`primefaces-11-migration`
 * :ref:`migrate-93_axis`

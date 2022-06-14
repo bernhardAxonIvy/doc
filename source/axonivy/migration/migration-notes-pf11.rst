@@ -27,7 +27,7 @@ How to avoid migration pain
 Project Converter |tag-project-auto-convert|
 --------------------------------------------
 
-To mitigate the migration pain we have build a :ref:`project converter <project-convert-wizard>` 
+To mitigate the migration pain, we have build a :ref:`project converter <project-convert-wizard>` 
 that fixes the most important of the breaking changes.
 
 To start the :ref:`converter <project-convert-wizard>` select a project in your Designer and press the context menu *Convert*. 
