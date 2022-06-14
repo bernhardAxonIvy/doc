@@ -24,16 +24,17 @@ How to avoid migration pain
 * Use as few own CSS rules as possible. 
 * Use as few different Primefaces components as possible. 
 
-Migration Wizard
-----------------
+Project Converter
+-----------------
 
-To mitigate the migration pain we have build a migration wizard that fixes the most important of the breaking changes.
+To mitigate the migration pain we have build a :ref:`project converter <project-convert-wizard>` 
+that fixes the most important of the breaking changes.
 
-To start the migration wizard select a project in your Designer and press the context menu ``Convert``. 
-Then select ``Primefaces 11`` and press the ``Finish`` button. 
-Review the applied changes in the conversion log or the ``Git Staging`` view.
+To start the :ref:`converter <project-convert-wizard>` select a project in your Designer and press the context menu *Convert*. 
+Then select *Convert project to use latest Primefaces version* and press the *Next >* and then the *Convert* button. 
+Review the applied changes in the conversion log or the *Git Staging* view.
 
-The migration wizard will fix most common broken Java APIs in your Java, Process (IvyScript) and Data Class files. 
+The :ref:`project converter <project-convert-wizard>` will fix most common broken Java APIs in your Java, Process (IvyScript) and Data Class files. 
 It also fixes renamed UI components and attributes. 
 
 However, some attributes have been moved from one UI component to a child component or have a different behavior. 

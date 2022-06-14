@@ -3,7 +3,10 @@
 .. _project-convert:
 
 Converting Projects
---------------------
+-------------------
+
+Converting Project Version
+==========================
 
 If the project format version changes with a new |axon-ivy| release, then
 old projects will show an error marker, describing them as *out of date*
@@ -36,17 +39,48 @@ project format for you. During this process, all existing artifacts will
 be converted (if necessary) so as to work with the new |axon-ivy| version,
 and any missing but required artifacts will be added.
 
-To run the project conversion, select the project's node in the |axon-ivy|
+.. _project-convert-wizard:
+ 
+Convert Project Wizard
+======================
+
+To run the project conversion, either run the quick fix on the error marker
+or select the project's node in the |axon-ivy|
 project view and right click to bring up the context menu. Select
-*Convert Project* to initiate the conversion. A log screen will appear
-that documents the conversion process (this log is also saved in the
-``logs/`` folder inside your project), and which will inform you about
-whether the conversion was successful or not.
+*Convert Project* to open the *Convert Project* wizard. 
 
 .. figure:: /_images/ivy-project/convert-invoking-conversion.png
    :alt: Invoking the project conversion
 
    Invoking the project conversion
+
+This wizard provides different converters. 
+Choose *Convert project to latest version* and press *Next >*.
+
+.. figure:: /_images/ivy-project/convert-project-1.png
+   :alt: Convert Project Wizard - Choose Converter Page
+   
+   Convert Project Wizard - Choose Converter Page
+   
+On the next page of the wizard press the *Convert* button to start the converter.
+The executed tasks and actions of the converter are logged into the text area above 
+the *Convert* button. That documents the conversion process and will inform you about
+whether the conversion was successful or not.
+
+
+.. figure:: /_images/ivy-project/convert-project-2.png
+   :alt: Convert Project Wizard - Convert Page
+   
+   Convert Project Wizard - Convert Page
+   
+Once the converter has finished use the *Copy Log* or *Open Log* buttons to copy the 
+log or open the log file (that is stored in the logs folder of your project) in an editor. 
+Press *Finish* to close the wizard, or *< Back* to execute another converter. 
+
+.. figure:: /_images/ivy-project/convert-project-3.png
+   :alt: Convert Project Wizard - Log
+   
+   Convert Project Wizard - Log 
 
 .. warning::   
 
@@ -56,4 +90,12 @@ whether the conversion was successful or not.
    projects are checked in, before you invoke the conversion, so that
    you can easily roll back (revert) to the old version, if conversion
    should fail for some reason.
+
+More project converters:
+========================
+
+For more information about the other project converters have a look at:
+
+* :ref:`primefaces-11-migration`
+* :ref:`migrate-93_axis`
 

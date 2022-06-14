@@ -227,6 +227,7 @@ for mail. It is already available but not officially public yet:
     client.send(message);        
   }
 
+.. _migrate-93_axis:
     
 Drop AXIS Technology for Web Service Client
 *******************************************
@@ -247,12 +248,12 @@ Service Clients based on AXIS (1+2) to CXF in the |ivy-designer|.
 
   .. container:: detail 
 
-    The Designer comes with a QuickFix that converts your AXIS2 clients
-    automatically to CXF.
+    The Designer comes with a :ref:`project converter <project-convert-wizard>`
+    to convert your Axis2 clients automatically to CXF. Also a quick fix is available 
+    on the Axis error marker.
 
     The detailed steps to migrate from AXIS clients to CXF are outlined here:
-    https://community.axonivy.com/d/199-migrate-from-axis2-webservice-to-cxf
-    
+    https://community.axonivy.com/d/199-migrate-from-axis2-webservice-to-cxf    
 
 .. _migrate-92-93-caseScope-deprecated:
 
