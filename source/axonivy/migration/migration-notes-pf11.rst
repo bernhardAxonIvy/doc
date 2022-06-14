@@ -24,8 +24,8 @@ How to avoid migration pain
 * Use as few own CSS rules as possible. 
 * Use as few different Primefaces components as possible. 
 
-Project Converter
------------------
+Project Converter |tag-project-auto-convert|
+--------------------------------------------
 
 To mitigate the migration pain we have build a :ref:`project converter <project-convert-wizard>` 
 that fixes the most important of the breaking changes.

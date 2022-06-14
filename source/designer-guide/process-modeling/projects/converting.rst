@@ -99,3 +99,6 @@ For more information about the other project converters have a look at:
 * :ref:`primefaces-11-migration`
 * :ref:`migrate-93_axis`
 
+In the :ref:`migration-notes` migration tasks, for witch the  
+*Convert Project* wizard provides a project converter, are marked with |tag-project-auto-convert|.
+

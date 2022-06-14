@@ -232,7 +232,7 @@ for mail. It is already available but not officially public yet:
 Drop AXIS Technology for Web Service Client
 *******************************************
 
-|tag-project-removed|
+|tag-project-removed| |tag-project-auto-convert|
 
 With Axon Ivy 7.1 we have introduced CXF Web Service Client as a super-fast,
 secure and future driven technology to call SOAP Web Services. AXIS is
