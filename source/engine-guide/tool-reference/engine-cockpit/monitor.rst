@@ -71,7 +71,7 @@ If you want to configure that the statistic is written periodically to a :ref:`p
 use the configuration icon left to the help button it will take you directly to the corresponding settings 
 in the :ref:`engine-cockpit-system-configuration`.  
 
-.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-performance.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-process-execution.png
 
 
 .. _engine-cockpit-monitor-slow-requests:
@@ -102,7 +102,7 @@ The color of the source or target of a communication link indicates if there are
 Hover over source or target of a communication channel to get more detailed information.
 Like :ref:`engine-cockpit-monitor-slow-requests` you have to activate :ref:`tracing` to get useful data.
  
-.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-system-overview.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-traffic-graph.png
 
 Logs
 ^^^^
