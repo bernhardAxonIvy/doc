@@ -59,10 +59,10 @@ below the chart to remove the attribute from the chart.
 Performance
 ^^^^^^^^^^^
 
-Statistics
-""""""""""
+Process Execution
+"""""""""""""""""
 
-The **Statistic** view allows you to activate and analyze the :ref:`process-element-performance` statistic. 
+The **Process Execution** view allows you to activate and analyze the :ref:`process-element-performance` statistic. 
 
 You can start, stop, clear or refresh the statistic, or export it to an Excel file. Note: by default not all
 available columns are shown. Use the configure columns button right to the search box to show or hide the columns. 
@@ -89,10 +89,12 @@ You can click on a request to see where the time of the request was spent
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-slow-requests.png
 
-System Overview
-"""""""""""""""
+.. _engine-cockpit-monitor-traffic-graph:
 
-The **System Overview** view gives you a quick overview of inbound  and outbound 
+Traffic Graph
+"""""""""""""
+
+The **Traffic Graph** view gives you a quick overview of inbound  and outbound 
 communication channels to and from the |ivy-engine|. The more request a certain 
 communication channel has the wider it is displayed. The color reflects the response times. 
 Green means fast response times. Red means slow request times relative to the other communication channels. 
