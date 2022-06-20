@@ -35,6 +35,7 @@ And let's run the container with this configuration
 For further docker examples have a look at our
 :link-url:`docker-samples <docker-samples>` GitHub repository. 
 
+If you plan to run |ivy-engine| in Kubernetes have a look at our :link-url:`kubernetes-samples <kubernetes-samples>` GitHub repository.
 
 .. _configuration_containers_license:
 
