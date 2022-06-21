@@ -54,12 +54,14 @@ try
 		get-item oldVersionProject | click
 		select oldVersionProject | get-menu "Convert Project" | click
 	}	
-	with [get-window "Convert Project oldVersionProject"] {
+	with [get-window "Convert Projects"] {
 		saveWindowContentScreenshot "ivy-project/convert-project-1.png"
 		get-button "Next >" | click
 		saveWindowContentScreenshot "ivy-project/convert-project-2.png"		
+    get-button "Next >" | click
+    saveWindowContentScreenshot "ivy-project/convert-project-3.png"   
 		get-button Convert | click
-		saveWindowContentScreenshot "ivy-project/convert-project-3.png"
+		saveWindowContentScreenshot "ivy-project/convert-project-4.png"
 		get-button Finish | click
 	}
 	
