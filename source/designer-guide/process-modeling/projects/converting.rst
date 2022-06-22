@@ -54,10 +54,17 @@ project view and right click to bring up the context menu. Select
 
    Invoking the project conversion
 
+Choose the projects you want to convert and press *Next >*.
+
+.. figure:: /_images/ivy-project/convert-project-1.png
+   :alt: Convert Project Wizard - Choose Projects Page
+   
+   Convert Project Wizard - Choose Converter Page
+
 This wizard provides different converters. 
 Choose *Convert project to latest version* and press *Next >*.
 
-.. figure:: /_images/ivy-project/convert-project-1.png
+.. figure:: /_images/ivy-project/convert-project-2.png
    :alt: Convert Project Wizard - Choose Converter Page
    
    Convert Project Wizard - Choose Converter Page
@@ -68,16 +75,18 @@ the *Convert* button. That documents the conversion process and will inform you 
 whether the conversion was successful or not.
 
 
-.. figure:: /_images/ivy-project/convert-project-2.png
+.. figure:: /_images/ivy-project/convert-project-3.png
    :alt: Convert Project Wizard - Convert Page
    
    Convert Project Wizard - Convert Page
    
-Once the converter has finished, use the *Copy Log* or *Open Log* buttons to copy the 
-log or open the log file (that is stored in the logs folder of your project) in an editor. 
-Press *Finish* to close the wizard, or *< Back* to execute another converter. 
+Once the converter has finished, use the *Copy Log* or *Open Logs* buttons to copy the 
+log or open the log files (that are stored in the logs folder of your projects) in editors. 
+Press *Next >* to execute the next available converter or if no more converters are available *Finish* to close the wizard. 
+You can also press *Cancel* if you want to commit the changes of the last converter. 
+Simply start the *Convert Project* wizard again to resume with the next converter.  
 
-.. figure:: /_images/ivy-project/convert-project-3.png
+.. figure:: /_images/ivy-project/convert-project-4.png
    :alt: Convert Project Wizard - Log
    
    Convert Project Wizard - Log 
