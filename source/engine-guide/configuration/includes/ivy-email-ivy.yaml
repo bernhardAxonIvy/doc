@@ -4,4 +4,5 @@ SecuritySystems:
     EMailNotification:  
       DailySummaryOn: monday, tuesday, wednesday, thursday, friday
       OnNewTasks: true
-      Language: de
+    Language:
+      Content: de
