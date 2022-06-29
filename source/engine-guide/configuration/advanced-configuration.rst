@@ -17,6 +17,25 @@ follows:
 There is a smooth :ref:`configuration_containers_secrets` integration, which is very useful in container
 environments such as Docker. Be aware that :ref:`passwords of administrators <engine-administrators>` always should be hashed.
 
+
+.. _configuration-language:
+
+Language
+--------
+
+In each security system a default content language and a default formatting
+language can be defined. The content language is used to display the content in
+HTML dialog when loading content from the cms. The formatting language can be
+set additionally and is used to format values, for example the decimal point is
+displayed differently in different regions of the world. 
+
+.. literalinclude:: includes/ivy-language.yaml
+    :language: yaml
+    :linenos:
+
+Users can customize the content language and formatting language in their
+profile independently.
+
 .. _configuration-business-calendar:
 
 Business Calendar

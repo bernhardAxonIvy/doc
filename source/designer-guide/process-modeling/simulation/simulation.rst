@@ -82,8 +82,8 @@ Content and Formatting Language Settings
 
 This dialog allows to edit the content language and the formatting
 language. The language settings are used at design time for displaying
-the User Dialogs. If option *Use settings while simulating* is checked
-the settings are also used while simulating.
+the User Dialogs. If option *Enable simulation* is checked
+the settings are also used at runtime.
 
 .. figure:: /_images/simulation-debugging/content-formatting-language-settings.png
 
@@ -97,6 +97,11 @@ Settings
 
 The following language settings can be configured:
 
+Enable simulation
+   If checked then the content and the formatting language settings will
+   be used while simulating. If **not** checked then the settings of the
+   browser will be used.
+
 Content Language
    The content language is used to select the values of content objects.
 
@@ -104,10 +109,6 @@ Formatting Language
    The formatting language is used when objects are formatted using the
    ``format()`` method.
 
-Use settings while simulating
-   If checked then the content and the formatting language settings will
-   be used while simulating. If **not** checked then the settings of the
-   browser will be used.
 
 How to use in IvyScript
 ^^^^^^^^^^^^^^^^^^^^^^^

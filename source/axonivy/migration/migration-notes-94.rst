@@ -80,6 +80,22 @@ Standard mail notification process still support the parameter :code:`notificati
 but you should already change to :code:`notificationSecurityMemberId``.
 
 
+Language
+********
+
+|tag-ops-wizard|
+
+New there is global language concept. The contet language as well as the formatting language can be
+defined per security system in :ref:`ivy-securitysystem-yaml`, which are considered as default
+languages. Users can overwrite these two languages in their user profiles.
+
+The existing :code:`EMailNotification.Language` is automatically migrated to :code:`Language.Content`
+in :ref:`ivy-securitysystem-yaml`.
+
+Read more here: :ref:`configuration-language` and :ref:`cms-content-resolution`.
+
+
+
 Elasticsearch 7.17
 ******************
 
