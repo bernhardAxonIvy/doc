@@ -25,9 +25,10 @@ Language
 
 In each security system a default content language and a default formatting
 language can be defined. The content language is used to display the content in
-HTML dialog when loading content from the cms. The formatting language can be
-set additionally and is used to format values, for example the decimal point is
-displayed differently in different regions of the world. 
+HTML dialog when loading content from the cms. This setting is also used to
+generate notification mails. The formatting language can be set additionally and
+is used to format values, for example the decimal point is displayed differently
+in different regions of the world. 
 
 .. literalinclude:: includes/ivy-language.yaml
     :language: yaml
