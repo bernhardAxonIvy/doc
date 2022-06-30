@@ -1,5 +1,5 @@
 {
-  "format" : "9.4.11",
+  "format" : "9.4.14",
   "id" : "18141E75C9CEDD35",
   "data" : "screenshot.project.Data",
   "elements" : [ {
@@ -27,8 +27,13 @@
       "config" : {
         "query" : {
           "kind" : "read",
-          "condition" : "in.user.userKey = USERID",
-          "xml" : "<SELECT><Column name='NAME'/><Column name='FULLNAME'/><Column name='EMAILADDRESS'/><Table name='IWA_USER'/><Condition><Relation kind='='><AnyExpression>in.user.userKey</AnyExpression><Column name='USERID'/></Relation></Condition></SELECT>"
+          "table" : "IWA_USER",
+          "select" : [
+            "NAME",
+            "FULLNAME",
+            "EMAILADDRESS"
+          ],
+          "condition" : "in.user.userKey = USERID"
         },
         "output" : {
           "map" : {

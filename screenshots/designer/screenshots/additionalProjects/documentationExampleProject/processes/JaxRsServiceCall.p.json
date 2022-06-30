@@ -1,5 +1,5 @@
 {
-  "format" : "9.4.11",
+  "format" : "9.4.14",
   "id" : "159FF3D428E42BB5",
   "data" : "com.axonivy.JaxRsServiceCallData",
   "elements" : [ {
@@ -403,18 +403,11 @@
       "type" : "RestClientCall",
       "name" : "RPA: screenshot",
       "config" : {
-        "bodyForm" : {
-          "file" : "new java.io.File(\"/tmp/screen.png\")",
-          "robotKey" : "in.name",
-          "jobKey" : "in.documentId.toString()"
-        },
-        "path" : "/api/RobotsService/UploadScreenshot",
         "bodyObjectMapping" : {
           "param.startInfo.inputArguments" : "in.name",
           "param.startInfo.robotIds" : "[in.robots.get(0).getId()]"
         },
         "clientId" : "dd8023aa-c07a-456b-8b00-192a4ce9684f",
-        "clientErrorCode" : "ivy:error:rest:client",
         "method" : "POST",
         "queryParams" : {
           "$expand" : "",
@@ -426,6 +419,13 @@
         "statusErrorCode" : "ivy:error:rest:client",
         "bodyObjectType" : "com.uipath.orchestrator.client.Body",
         "bodyInputType" : "FORM",
+        "bodyForm" : {
+          "file" : "new java.io.File(\"/tmp/screen.png\")",
+          "robotKey" : "in.name",
+          "jobKey" : "in.documentId.toString()"
+        },
+        "path" : "/api/RobotsService/UploadScreenshot",
+        "clientErrorCode" : "ivy:error:rest:client",
         "bodyMediaType" : "multipart/form-data"
       },
       "visual" : {
