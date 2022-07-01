@@ -35,7 +35,8 @@ in different regions of the world.
     :linenos:
 
 Users can customize the content language and formatting language in their
-profile independently.
+profile independently. You can add new translations for the bultin task
+mail notifications in :file:`[engineDir]/system/cms`.
 
 .. _configuration-business-calendar:
 
