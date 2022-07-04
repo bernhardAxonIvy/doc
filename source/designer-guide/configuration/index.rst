@@ -13,3 +13,4 @@ Configuration
    dynamic-configs
    environments
    formats
+   custom-fields

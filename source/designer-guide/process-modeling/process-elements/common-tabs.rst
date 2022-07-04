@@ -363,15 +363,17 @@ corresponding case.
 
    Case Tab
 
+.. _process-element-tab-case-custom-fields:
+
 Case Custom Fields
    .. figure:: /_images/process-elements/tab-task-custom-fields.png
       :alt: Task Custom Fields
 
-      Task Custom Fields
+      Case Custom Fields
 
    Here you can set additional information for the created case. The set
    values are only informational and have no effect on how this case is
-   treated by |axon-ivy|. These custom fields can easily be queried on
+   treated by |axon-ivy|. These :ref:`custom fields <custom-fields>` can easily be queried on
    case user interfaces to allow sorting and filtering.
 
    .. include:: _embedInFrame.rst
@@ -481,7 +483,7 @@ Task Custom Fields
 
    Here you can set additional information for the created task. The set
    values are only informational and have no effect on how this task is
-   treated by |axon-ivy|. These custom fields can easily be queried on
+   treated by |axon-ivy|. These :ref:`custom fields <custom-fields>` can easily be queried on
    task user interfaces to allow sorting and filtering.
 
    .. include:: _embedInFrame.rst

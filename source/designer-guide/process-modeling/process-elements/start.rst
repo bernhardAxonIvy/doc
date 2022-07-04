@@ -110,12 +110,14 @@ Category
      Look at the :ref:`workflow concept <workflow-categories>` for some more
      information about categorization.
      
+.. _process-element-tab-start-custom-fields:
+     
 Custom Fields 
    Here you can set additional information for the start. The set
    values are only informational and have no effect on how this start is
-   treated by |axon-ivy|. These custom fields can easily be queried on
+   treated by |axon-ivy|. These :ref:`custom fields <custom-fields>` can easily be queried on
    the :public-api:`IWebStartable </ch/ivyteam/ivy/workflow/start/IWebStartable.html>` interface to allow sorting, filtering or 
-   displaying additional information in start lists
+   displaying additional information in start lists.
    
    .. tip::
 
