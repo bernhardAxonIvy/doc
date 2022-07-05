@@ -1,3 +1,5 @@
+.. _dev-workflow-ui:
+
 Developer Workflow UI
 *********************
 

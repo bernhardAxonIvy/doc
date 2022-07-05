@@ -6,6 +6,7 @@ Workflow
 
    cases-and-tasks
    categories
+   custom-fields
    api
    states
    business-calendar
