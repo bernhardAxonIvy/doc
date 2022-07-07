@@ -12,6 +12,7 @@ in the table.
 
 |image1|
 
+.. _dev-workflow-ui-case-details:
 
 Case Details
 ------------
@@ -23,6 +24,9 @@ Case Map panel.
 
 |image2|
 
+Also the :ref:`custom fields <custom-fields>` defined for a case are displayed here.
+
+.. _dev-workflow-ui-task-details:
 
 Task Details
 ------------
@@ -33,6 +37,8 @@ There you can execute some actions on the task like changing state or
 delegating the task to a different role or user.
 
 |image3|
+
+Also the :ref:`custom fields <custom-fields>` defined for a task are displayed here.
 
 
 Developer Section

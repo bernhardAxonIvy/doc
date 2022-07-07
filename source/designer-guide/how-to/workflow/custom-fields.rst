@@ -15,7 +15,7 @@ Examples of custom fields are:
 
 The :ref:`developer workflow UI <dev-workflow-ui>` and the :ref:`Portal application <portal-guide>` will display custom fields on their
 task and case detail pages. In the :ref:`Portal application <portal-guide>` custom fields can also be added as additional columns 
-in task and case lists and to filter task and case lists in dashboards. You can also use custom fields to search for task and cases.
+in :ref:`task <dev-workflow-ui-task-details>` and :ref:`case <dev-workflow-ui-case-details>` lists and to filter task and case lists in dashboards. You can also use custom fields to search for task and cases.
 
 Meta Information
 ----------------
