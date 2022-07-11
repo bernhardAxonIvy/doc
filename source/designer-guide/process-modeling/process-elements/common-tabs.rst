@@ -63,8 +63,8 @@ There are pre-defined tags with special functionality for some start elements:
 - ``CONNECTOR``: Setting this tag allows a Sub Process Start element to be displayed in the Connector Dialog. 
   See :ref:`process-element-connector-activity`
 - ``DEMO``: Marks a Request Start of a process as demonstration process. Such demo processes will be automatically opened, 
-  while the project that contains it is being imported to the |axon-ivy| Designer. 
-  We recommend to use it for demo processes, which are consumed from the |axon-ivy| Market.
+  while the project that contains it is being imported to the Axon Ivy Designer. 
+  We recommend to use it for demo processes, which are consumed from the Axon Ivy Market.
 
 
 .. _process-element-tab-output:
@@ -79,7 +79,7 @@ or only of single member of it.
 
 .. note::
 
-   In |axon-ivy| input and output of process are always set to the
+   In Axon Ivy input and output of process are always set to the
    corresponding data class, i.e. in a User Dialog logic element it is
    the User Dialog Data Class and in a process element it is the project
    Data Class (or the one which was assigned to the process).
@@ -346,7 +346,7 @@ Case Tab
 Every time a :ref:`process <glossar-process>` is started a
 :ref:`case <glossar-case>` is created. This tab allows you to define
 additional information for the cases. The information defined on this
-tab has no effect how |axon-ivy| treats the cases. But they can be
+tab has no effect how Axon Ivy treats the cases. But they can be
 accessed through the :public-api:`Public API </>`, which allows you
 to use them for example to filter the task list.
 
@@ -373,7 +373,7 @@ Case Custom Fields
 
    Here you can set additional information for the created case. The set
    values are only informational and have no effect on how this case is
-   treated by |axon-ivy|. These :ref:`custom fields <custom-fields>` can easily be queried on
+   treated by Axon Ivy. These :ref:`custom fields <custom-fields>` can easily be queried on
    case user interfaces to allow sorting and filtering.
 
    .. include:: _embedInFrame.rst
@@ -405,7 +405,7 @@ from the CMS. See :ref:`here <workflow-categories>`.
 .. note::
 
    A user can be informed by mail if a new task has been created for
-   him. User mail notification can be configured on the |ivy-engine|.
+   him. User mail notification can be configured on the Axon Ivy Engine.
    See :ref:`email-notifications`.
 
 .. figure:: /_images/process-elements/tab-task.png
@@ -447,7 +447,7 @@ Task Expiry
 
    **Timeout**
 
-   An ivyScript expression defines the
+   An IvyScript expression defines the
    :ref:`ivyscript-datatype-duration` until the task
    will expire. If that happens the escalation procedure defined by the
    following parameters is executed.
@@ -483,7 +483,7 @@ Task Custom Fields
 
    Here you can set additional information for the created task. The set
    values are only informational and have no effect on how this task is
-   treated by |axon-ivy|. These :ref:`custom fields <custom-fields>` can easily be queried on
+   treated by Axon Ivy. These :ref:`custom fields <custom-fields>` can easily be queried on
    task user interfaces to allow sorting and filtering.
 
    .. include:: _embedInFrame.rst

@@ -3,19 +3,20 @@
 Branding
 ========
 
-In today's world, its essential that the interface of a software fits the
-general image of a company and enforces it's corporate identity. 
-This means that the interface should:
+In today's world, a software GUI is expected to fit the corporate image of the
+company using it. In other words, it has to be adaptable to the Corporate Design
+of the company. This means that the interface should:
 
-- Appear in the **same colors** as the company
+- Appear in the **colors** defined by the Corporate Design
 
 - Has the **correct logo**.
 
-- **Don't need readjustments** after a software update
+- **Doesn't need readjustments** after a software update
 
 
-|axon-ivy| workflow applications are predestined to be branded 
-towards your CI guidelines with a few clicks:
+The Axon Ivy Platform offers a branding approach that should fit your needs
+enabling you to adapt your workflow applications to your Corporate Design
+guidelines with a few clicks:
 
 .. toctree::
    :maxdepth: 1

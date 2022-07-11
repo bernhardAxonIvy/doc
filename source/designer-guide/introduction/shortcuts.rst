@@ -19,7 +19,7 @@ Open Ivy User Dialog
 Open Type
    :guilabel:`Ctrl` + :guilabel:`Shift` + :guilabel:`T`
    
-   Opens a dialog which allows you to browse for a java type to open in
+   Opens a dialog which allows you to browse for a Java type to open in
    an editor.
 
 Open Resource

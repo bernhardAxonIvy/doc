@@ -6,7 +6,7 @@ HTML Dialog Editor
 The HTML Dialog editor allows to implement the view of an HTML Dialog
 (i.e. the *JSF view*). The HTML Dialog editor consists of two views, the
 source view and the graphical view. In the source view you can read and
-edit the JSF (or xhtml) source in a text-based editor. In the graphical
+edit the JSF (or XHTML) source in a text-based editor. In the graphical
 view you can preview and edit the visual representation of the JSF page.
 Both views are linked to each other and every change is synchronized to
 the other view. So a change in one view is automatically reflected in
@@ -28,7 +28,7 @@ views.
 Accessibility
 ~~~~~~~~~~~~~
 
-|axon-ivy| Project Tree -> double click on the *View* node of a HTML
+Axon Ivyroject Tree -> double click on the *View* node of an HTML
 Dialog:
 
 Graphical View
@@ -78,7 +78,7 @@ The graphical view displays overlay markers for some elements:
    markers to verify whether all your inputs are bound to data or a
    backing bean.
 
--  You see logic mapping markers if you call a HTML Dialog logic element
+-  You see logic mapping markers if you call an HTML Dialog logic element
    in a button or link. Use these to verify if all your actions are
    properly mapped to logic elements.
 

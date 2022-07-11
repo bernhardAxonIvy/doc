@@ -243,7 +243,7 @@ Call from Java
 Rest Client calls can also be executed via Public API without using the
 Rest Client Activity.
 
-The entry point to access Rest Clients is ``Ivy.rest()``. The returned
+The entry point to access REST Clients is ``Ivy.rest()``. The returned
 object is an instance of a
 `javax.ws.rs.client.WebTarget <http://docs.oracle.com/javaee/7/api/javax/ws/rs/client/WebTarget.html>`__
 which is pre-configured as defined in the :ref:`rest-clients-configuration`. It
@@ -253,7 +253,7 @@ provides fluent API to call the remote REST service.
 
 ::
 
-   // retrieve pre-configured rest service client
+   // retrieve pre-configured REST service client
    WebTarget client = Ivy.rest().client("myServiceName"):
 
    // GET request to receive a simple string
@@ -263,14 +263,14 @@ provides fluent API to call the remote REST service.
    Ivy.rest().client("crmService").request().post(javax.ws.rs.client.Entity.json(myPerson));
 
 
-Re-use configuration
-~~~~~~~~~~~~~~~~~~~~
+Re-use Configurations
+~~~~~~~~~~~~~~~~~~~~~
 
 If you notice that you configure precisely the same thing on multiple
-Rest Client Activities you can reduce this duplication.
+Rest Client Activities you can reduce this duplication of effort.
 
-Instead of applying the configuration multiple times, it can be set
-globally on the :ref:`rest-clients-configuration`. Almost any aspect of a Rest
+Instead of applying the configuration multiple times, you can set it
+globally in the :ref:`rest-clients-configuration`. Almost any aspect of a REST 
 Client call can be configured by implementing a custom feature
 (``javax.ws.rs.core.Feature``). Our authorization feature can be taken
 as an example:

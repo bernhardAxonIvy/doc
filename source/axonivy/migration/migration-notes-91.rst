@@ -11,7 +11,7 @@ License
 
 |tag-ops-changed|
 
-You need to request a new license for |ivy-engine| 9.1.
+You need to request a new license for Axon Ivy Engine 9.1.
 
 .. container:: admonition note toggle
 
@@ -22,7 +22,7 @@ You need to request a new license for |ivy-engine| 9.1.
   We have simplified the license check for :ref:`public urls <license>` compared to 8.0
   and do not check for ports and paths (context) anymore. When requesting a
   new 9.1 license, you only need to specify the DNS names/Hostnames or IP
-  addresses through which the |ivy-engine| can be accessed.
+  addresses through which the Axon Ivy Engine can be accessed.
 
 
 Engine default base path changed
@@ -94,11 +94,11 @@ Existing ``pom.xml`` files for test projects must be manually simplified.
   #. change the packaging from type ``iar`` to ``iar-integration-test``
   #. remove manually bound executions of the goals ``start-test-engine`` and ``stop-test-engine``
   #. consider removing bound deployment executions (goal ``deploy-to-engine`` or ``deploy-iar``). The new plugin lifecycle automatically takes all your IAR dependencies and deploys them.
-  #. remove unittest jvm argLine configurations that propagate the start engine url (``test.engine.url``) and test application hint (``test.engine.app``).
+  #. remove unittest jvm argLine configurations that propagate the start engine URL (``test.engine.url``) and test application hint (``test.engine.app``).
   #. verify that your web tests stick to a naming pattern which complies with the `maven-failsafe-plugin includes <https://maven.apache.org/surefire/maven-failsafe-plugin/integration-test-mojo.html#includes>`_. If not, rename the unit tests to end with ``IT`` (e.g. WebTestCustomerOnboardingIT.java)
   #. run the maven build to verify your changes.
 
-  A `sample conversion <https://github.com/axonivy/project-build-examples/commit/f8c66777cdcbb469c0b6830b485b0427931963d5>`_ can be reviewed on Github. Another way to get a valid example is to use the new ``|axon-ivy| Test Project`` wizard of the |ivy-designer|, select ``IvyWebTest`` as testing flavour and examine the created ``pom.xml`` in the newly created test project.
+  A `sample conversion <https://github.com/axonivy/project-build-examples/commit/f8c66777cdcbb469c0b6830b485b0427931963d5>`_ can be reviewed on Github. Another way to get a valid example is to use the new ``Axon Ivy Test Project`` wizard of the Axon Ivy Designer, select ``IvyWebTest`` as testing flavour and examine the created ``pom.xml`` in the newly created test project.
   
 
 Global deploy.options.yaml removed
@@ -115,7 +115,7 @@ The :file:`deploy.options.yaml` in the deployment directory can no longer be use
      **Details**
   
   We think that it made deployments unnecessary hard to track and that administrators are better off with 
-  the :ref:`deployment options <deployment-options>` packed as part of the application ZIP or specific yaml per artifact.
+  the :ref:`deployment options <deployment-options>` packed as part of the application ZIP or specific  YAML per artifact.
 
 
 Static JSF pages moved to webContent/view
@@ -123,7 +123,7 @@ Static JSF pages moved to webContent/view
 
 |tag-project-changed|
 
-The location of static JSF pages in your |axon-ivy| Project have been changed to :file:`webContent/view`
+The location of static JSF pages in your Axon Ivy Project have been changed to :file:`webContent/view`
 in order to improve security. 
 
 .. container:: admonition note toggle
@@ -134,7 +134,7 @@ in order to improve security.
 
   In 8.0 (pre 8.0.4) the static pages were located directly inside the
   :file:`webContent` folder. From 9.1 (8.0.4) on these pages are no longer accessible.
-  You need to move the static JSF pages to the new folder in your |axon-ivy| Project.
+  You need to move the static JSF pages to the new folder in your Axon Ivy Project.
   Please refer to the chapter :ref:`static-jsf-pages` for more information.
 
 
@@ -173,21 +173,21 @@ Good to know
 ------------
 
 
-VisualVM Plugin in the |axon-ivy| Market
+VisualVM Plugin in the Axon Ivy Market
 ****************************************
 
 |tag-ops-changed|
 
-The |axon-ivy| Visual VM plugin to monitor your |ivy-engine| is now available in the :dev-url:`|axon-ivy| Market </market/visualvm-plugin>`.
-It is not bundled with the |ivy-engine| in the directory :file:`[engineDir]/misc/visualvm/` anymore.
+The Axon Ivy Visual VM plugin to monitor your Axon Ivy Engine is now available in the :dev-url:`Axon Ivy Market </market/visualvm-plugin>`.
+It is not bundled with the Axon Ivy Engine in the directory :file:`[engineDir]/misc/visualvm/` anymore.
 
 
-Subversion Client unplugged from |ivy-designer|
+Subversion Client unplugged from Axon Ivy Designer
 ***************************************************
 
 |tag-project-changed|
 
-We removed the Subversion client Subclipse from the |ivy-designer|. It can still
+We removed the Subversion client Subclipse from the Axon Ivy Designer. It can still
 be easily installed through the Eclipse Marketplace in the  Designer.
 Go to :menuselection:`Help --> Eclipse Marketplace`, search for **Subclipse** and install it.
 
@@ -198,7 +198,7 @@ Daily Jobs are only executed at configured time
 |tag-ops-changed|
 
 Daily jobs are now executed only at the configured time, even
-if the |ivy-engine| was not running at the last execution time.
+if the Axon Ivy Engine was not running at the last execution time.
 
 .. container:: admonition note toggle
 
@@ -207,12 +207,12 @@ if the |ivy-engine| was not running at the last execution time.
      **Details**
 
   Daily jobs like sending **task summary emails** or **synchronizing users**
-  are executed once a day. Prior to 9.1, if the |ivy-engine| was not running
+  are executed once a day. Prior to 9.1, if the Axon Ivy Engine was not running
   at the configured time, the daily jobs were executed on the next start of
-  the |ivy-engine|. This lead sometimes to a heavy workload on start-up,
-  making the |ivy-engine| unusable for other tasks.
+  the Axon Ivy Engine. This lead sometimes to a heavy workload on start-up,
+  making the Axon Ivy Engine unusable for other tasks.
 
-  We changed this behavior in order to make the |ivy-engine| responsive straight after start-up.
+  We changed this behavior in order to make the Axon Ivy Engine responsive straight after start-up.
 
 
 Special handling for Informix as external third-party database
@@ -220,7 +220,7 @@ Special handling for Informix as external third-party database
 
 |tag-project-removed|
 
-Informix is a database management system and can be integrated with |axon-ivy| like any other database system.
+Informix is a database management system and can be integrated with Axon Ivy like any other database system.
 We have removed any special handling for Informix as this is no longer necessary.
 If you are using Informix and have any problems, please contact us.
 
@@ -232,7 +232,7 @@ More changes
 ------------
 
 
-Changes to the |axon-ivy| System Database
+Changes to the Axon Ivy System Database
 *****************************************
 
 |tag-ops-changed|

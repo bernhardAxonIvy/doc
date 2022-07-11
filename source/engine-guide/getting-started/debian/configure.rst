@@ -1,9 +1,9 @@
 Configure the Engine
 --------------------
 
-Now, let's configure the |ivy-engine| with a license and system database.
+Now, let's configure the Axon Ivy Engine with a license and system database.
 
-First, you have to request a valid |ivy-engine| license. You can either get a
+First, you have to request a valid Axon Ivy Engine license. You can either get a
 license for your productive system through one of our sales representatives or
 contact our support for time limited trial licenses. If you do not have a
 license you can skip this section and continue with the next section.
@@ -15,7 +15,7 @@ language statements. The configuration and creation of the system database
 differs a little bit depending on the database system you use. We will use a
 PostgreSQL database server.
 
-Shutdown the |ivy-engine| first by stopping its service
+Shutdown the Axon Ivy Engine first by stopping its service
 
 .. code:: bash
 
@@ -48,7 +48,7 @@ Now, let's create the system database with the :code:`create-db` command
     ./EngineConfigCli create-db
 
 .. Note::
-  The system database is used by |ivy-engine| to store configurations, users,
+  The system database is used by Axon Ivy Engine to store configurations, users,
   roles, process instances, tasks and process data.
 
 Next, define an administrator by modifying the :ref:`ivy-yaml` file of the
@@ -59,21 +59,21 @@ Next, define an administrator by modifying the :ref:`ivy-yaml` file of the
   :linenos:
 
 .. Note::
-  Administrators can administer the |ivy-engine|. For example, they can add
+  Administrators can administer the Axon Ivy Engine. For example, they can add
   or remove users, assign user to roles, enable or disable applications, etc.
   Therefore, you need at least one administrator so that you can later
-  administer the |ivy-engine|. In case of license problems, the |ivy-engine| 
+  administer the Axon Ivy Engine. In case of license problems, the Axon Ivy Engine 
   sends mail notifications to the administrators.
 
 .. include:: ../_webserver.rst
 
-Now, start the |ivy-engine| again
+Now, start the Axon Ivy Engine again
 
 .. code:: bash
 
     systemctl start axonivy-engine-9.service
 
-Note that the HTTP port of the |ivy-engine| may have changed if you did change
+Note that the HTTP port of the Axon Ivy Engine may have changed if you did change
 the http settings! So open again a web browser and navigate to
 http://yourservername:yourportnumber/. As you see, the header with the demo mode
-message is gone. You now have a production ready |ivy-engine|.
+message is gone. You now have a production ready Axon Ivy Engine.

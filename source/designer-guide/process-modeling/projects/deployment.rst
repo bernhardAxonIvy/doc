@@ -5,7 +5,7 @@
 Project Deployment Descriptor
 ------------------------------
 
-Each |axon-ivy| project has a *deployment descriptor*. The deployment
+Each Axon Ivy project has a *deployment descriptor*. The deployment
 descriptor defines various properties of a project that are important
 with respect to deployment on the engine. Specifically the descriptor
 defines:
@@ -91,7 +91,7 @@ Projects to be built on a continuous integration server. See
 Accessibility
 ~~~~~~~~~~~~~
 
-|axon-ivy| Project Tree -> double click on the *Deployment* node inside
+Axon Ivy Project Tree -> double click on the *Deployment* node inside
 the project tree (|imagef0|)
 
 Deployment Tab
@@ -109,7 +109,7 @@ Project ID
    You can choose any name you want in lowercase letters and without
    special symbols, e.g. ``users`` or ``user-manager``.
 
-   On deployment to the |ivy-engine| the concatenated Group ID + Project
+   On deployment to the Axon Ivy Engine the concatenated Group ID + Project
    ID will act as unique identifier of the project.
 
 Project Version
@@ -249,7 +249,7 @@ Accessibility
 Adding additional dependencies
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To add Java libraries to your projects that are not included in the |axon-ivy|
+To add Java libraries to your projects that are not included in the Axon Ivy
 platform, you can include them as Maven dependencies.
  
 To add a new dependency, open the Deployment Descriptor with the Maven POM
@@ -258,5 +258,5 @@ Editor by right clicking on the Deployment Descriptor file and choosing
 
 Then go to the *Dependencies* tab and click **Add...** to add a new dependency.
 All libraries included in the dependencies will be added to the classpath
-and are also included in the packaged |axon-ivy| project.
+and are also included in the packaged Axon Ivy project.
 

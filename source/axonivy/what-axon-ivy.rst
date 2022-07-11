@@ -1,9 +1,9 @@
 .. _axonivy-what:
 
-What is |axon-ivy|?
-===================
+What is Axon Ivy?
+=================
 
-|axon-ivy| is a Digital Process Automation Platform that simplifies and automates the
+Axon Ivy is a Process Automation Platform that simplifies and automates the
 interaction of humans with their digital systems. The platform is typically in
 charge of the most precious business cases where companies produce value. Here
 is how we do it:
@@ -22,7 +22,7 @@ is how we do it:
     feeding this data into other technical systems. Even tough value is produced
     in a well-known business case, there is a lack of a clear interface which
     guides the involved users through the process. Highly valuable data is often
-    divided and stored in various dedicated technical systems. With |axon-ivy|
+    divided and stored in various dedicated technical systems. With Axon Ivy
     you can drive your process automatically. People, data and technical systems
     can easily be orchestrated by our platform. An initial application that
     leads users through the process can be generated without the need to hire a
@@ -31,7 +31,7 @@ is how we do it:
 
 **Improve**
     The digitalization of your company can **evolve over time**, we favor small
-    predictable improvements over big bang solutions. The |ivy-platform| allows
+    predictable improvements over big bang solutions. The Axon Ivy Platform allows
     you to start simple and fast with your existing environment. You may start
     with just task notifications that are sent to users that should contribute
     to a running process. And eventually the platform becomes your single
@@ -41,9 +41,9 @@ is how we do it:
     business constantly and effectively. The cost of business transformations
     become reasonable and predictable.
 
-The |ivy-platform| consists on the one hand of the
-:ref:`|ivy-designer| <designer-guide>` which
+The Axon Ivy Platform consists on the one hand of the
+:ref:`Axon Ivy Designer <designer-guide>` which
 enables the drawing, simulation and implementation of automated business
 processes. The other part is the application server
-:ref:`|ivy-engine| <engine-guide>` that
+:ref:`Axon Ivy Engine <engine-guide>` that
 executes your business cases and provides a shared interface for process users.

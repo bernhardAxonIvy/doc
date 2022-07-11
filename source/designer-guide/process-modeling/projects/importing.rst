@@ -4,7 +4,7 @@
 Importing a Project
 --------------------
 
-You can import existing |axon-ivy| projects into your workspace using the
+You can import existing Axon Ivy projects into your workspace using the
 *Import Wizard*. Projects can be exported from the workspace using the
 *Export Wizard* (See section :ref:`designer-export-project`.
 This allows you to exchange or share your projects with other people.
@@ -19,7 +19,7 @@ You can access the Import Wizard over the menu:
 Features
 ~~~~~~~~
 
-For |axon-ivy| users the following import sources and formats are useful:
+For Axon Ivy users the following import sources and formats are useful:
 
 General > Existing Projects into Workspace
    Imports a project from a project directory located somewhere in the
@@ -30,7 +30,7 @@ General > Existing Projects into Workspace
 
    In the wizard page seen above you can select either the directory
    where your project(s) resides or a archive file (zip, jar, tar-gz)
-   that contains the project(s). If |axon-ivy| finds valid projects in the
+   that contains the project(s). If Axon Ivy finds valid projects in the
    given directory or archive file, they can be (de-)selected for the
    import and you can decide whether the projects should be copied into
    your workspace directory or not (which has no effect if a project
@@ -38,19 +38,19 @@ General > Existing Projects into Workspace
    *Finish* the import is performed and you will find the imported
    projects in the :ref:`ivy-project-view`.
 
-|axon-ivy| > |axon-ivy| Archive (\*.iar)
-   Imports |axon-ivy| Archives (\*.iar) into the workspace.
+Axon Ivy > Axon Ivy Archive (\*.iar)
+   Imports Axon Ivy Archives (\*.iar) into the workspace.
 
    .. figure:: /_images/ivy-project/project-import-wizard.png
 
    In the wizard page seen above you can select the directory where your
-   |axon-ivy| Archives resides. If |axon-ivy| finds valid |axon-ivy| Archives
+   Axon Ivy Archives resides. If Axon Ivy finds valid Axon Ivy Archives
    in the given directory, they can be (de-)selected for the import and
-   you can decide whether the |axon-ivy| Archives should be copied into
-   your workspace directory or not (which has no effect if an |axon-ivy|
+   you can decide whether the Axon Ivy Archives should be copied into
+   your workspace directory or not (which has no effect if an Axon Ivy
    Archive already is in the workspace directory). After clicking on the
    button *Finish* the import is performed and you will find the
-   imported |axon-ivy| Archives in the :ref:`ivy-project-view`.
+   imported Axon Ivy Archives in the :ref:`ivy-project-view`.
 
 
 .. _importing-demo-projects:
@@ -58,7 +58,7 @@ General > Existing Projects into Workspace
 Importing demo projects
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-The |ivy-designer| can import several demo projects, which are
+The Axon Ivy Designer can import several demo projects, which are
 provided from our maven repository (internet connection needed). Those
 demo projects are in the Ivy Archive (\*.iar) format and can be imported
 with the help of the *Sample* icon on the welcome page.
@@ -74,7 +74,7 @@ Following projects are available for the Designer:
    +--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | ErrorHandlingDemos | Samples that demonstrate the :ref:`error-handling`.                                                                                                               |
    +--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | HtmlDialogDemos    | Demonstrates several JSF components that can be used in :ref:`html-dialogs`.                                                                                      |
+   | HTMLDialogDemos    | Demonstrates several JSF components that can be used in :ref:`html-dialogs`.                                                                                      |
    +--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | QuickStartTutorial | The same project that is built in the :ref:`QuickStart Tutorial <axonivy-workbench>`.                                                                             |
    +--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+

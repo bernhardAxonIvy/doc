@@ -9,35 +9,40 @@ the request type the customization differs.
 Error Pages
 ^^^^^^^^^^^^
 
-Error pages inform the user on unexpected errors that occurred during the execution of 
+Error pages inform the user about unexpected errors that occurred during the execution of 
 process activities or HTML dialog interactions.
 
-The default error pages can be examined in the product (see ``webapps/ivy/ivy-error-page.xhtml``).
-These pages can be customized to met the look of your workflow application and your 
-companies identity. 
-Moreover, you can adjust the displayed information. The :public-api:`ErrorPageMBean </ch/ivyteam/ivy/webserver/ErrorPageMBean.html>` is 
-accessible within error pages to provide context information on the error and its engine state.
-Other IVY APIs are not intended to work in case of an error.
+The default error pages are located at ``webapps/ivy/ivy-error-page.xhtml``. You
+can inspect them. These pages can be customized to meet the look of your
+workflow application and your company's identity. Moreover, you can adjust the
+information displayed. The :public-api:`ErrorPageMBean
+</ch/ivyteam/ivy/webserver/ErrorPageMBean.html>` is accessible within error
+pages to provide context information on the error and its engine state. Other
+Ivy APIs are not intended to work in case of an error.
 
-Custom errors pages must be registered in the global :ref:`web-xml`.
+Custom error pages have to be registered in the global :ref:`web-xml`.
 
-.. tip:: Keep in mind that error pages and its configuration do not live within the project. Therefore it is crucial to document or automate their deployment. Otherwise error page configurations might get lost during migrations to newer version of |axon-ivy|.
+.. tip:: Keep in mind that error pages and their configuration do not live 
+   within the project. Therefore, it is crucial to document and automate 
+   their deployment. Otherwise, error page configurations might get lost 
+   during migrations to newer versions of Axon Ivy.
 
 
-AJAX Errors
-^^^^^^^^^^^^
+Ajax Errors
+^^^^^^^^^^^
 
-If an exception occurs in an ajax-based HTTP request, the configured
-Primefaces ajax exception handlers comes into play. The handler must be
-defined as part of the *\*.xhtml* file. In the provided standard
-layouts, handlers are already configured. See ``webContent/layouts/includes/exception.xhtml`` for details.
+If an exception occurs in an Ajax-based HTTP request, the configured Primefaces
+Ajax exception handlers come into play. The handlers have to be defined
+as part of the *\*.xhtml* file. In the standard layouts provided, handlers are
+already configured. See ``webContent/layouts/includes/exception.xhtml`` for
+details.
 
 ::
 
    <p:ajaxExceptionHandler update="ajaxExceptionDialog" onexception="PF('ajaxExceptionDialog').show();"/>
 
-The above ajax exception handler will catch every exception of every
-type. If an exception occurs the action in ``onexception`` will be
+The above Ajax exception handler will catch every exception of every
+type. If an exception occurs, the action in ``onexception`` will be
 executed. In this example, a Primefaces dialog will be shown.
 
 ::
@@ -48,17 +53,16 @@ executed. In this example, a Primefaces dialog will be shown.
        ...
    <p:/p:dialog> 
 
-The ``errorPage`` bean is available within the ajax exception handling.
+The ``errorPage`` bean is available within the Ajax exception handling.
 Properties like ``exceptionId`` or ``message`` can be used to provide
 specific error information to the user.
 
 View Expired Exception
 ^^^^^^^^^^^^^^^^^^^^^^
 
-If the view or the session of a user expires then there is a possibility
-to catch that exception with a specialized ajax exception handler.
-Instead of catching all exceptions you can specify the type of the
-exception to catch.
+If the view or the session of a user expires then there is a possibility to
+catch that exception with a specialized ajax exception handler. Instead of
+catching all exceptions, you can specify the type of exception to catch.
 
 ::
 

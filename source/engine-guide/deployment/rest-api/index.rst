@@ -3,7 +3,7 @@
 REST API
 ========
 
-The |ivy-engine| comes with :api-browser-url:`REST deployment API <system>`
+The Axon Ivy Engine comes with :api-browser-url:`REST deployment API <system>`
 which can be used to deploy new applications or projects. It can be inspected
 with the :ref:`integration-rest-api-browser`.
 

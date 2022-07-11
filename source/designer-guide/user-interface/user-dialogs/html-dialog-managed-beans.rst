@@ -21,11 +21,11 @@ lifecycle scope of the managed bean:
 
    JSF 2.0 introduced an additional scope @ViewScoped and offers the
    possibility to define custom scopes. This is basically also supported
-   in |axon-ivy|, but it is recommended to use it with care since it might
+   in Axon Ivy, but it is recommended to use it with care since it might
    not behave as expected.
 
 In the :ref:`HTMLDialogDemo Project <importing-demo-projects>` that is included in
-the |axon-ivy| Designer you find an example.
+the Axon Ivy Designer you find an example.
 
 Bean Validation (JSR 303)
 ^^^^^^^^^^^^^^^^^^^^^^^^^ 
@@ -34,7 +34,7 @@ The *JSR 303* is a specification that defines a metadata model for bean
 validation. The fields of the JavaBean classes, that are used for
 storing the data, are annotated to describe the constraints and their
 validation. Experienced programmers can use JSR 303 annotations in
-|axon-ivy| projects. The validation information will then be considered by
+Axon Ivy projects. The validation information will then be considered by
 HTML Dialogs when the field of the class is bound to a widget. There is
 no validation information given in the \*.xhtml file of the HTML Dialog
 itself. However, the HTML Dialog uses the annotations of the fields to

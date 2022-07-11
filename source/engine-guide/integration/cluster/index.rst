@@ -4,18 +4,18 @@ Cluster
 =======
 
 If you have a lot of load on your system or need increased resilience, then you
-should consider running the |ivy-engine| in a Cluster (|ivy-engine| Enterprise
+should consider running the Axon Ivy Engine in a Cluster (Axon Ivy Engine Enterprise
 Edition). A Cluster setup has two major advantages:
 
 * **Performance and scalability**:
-  An |ivy-engine| Enterprise Edition can serve
-  more clients than |ivy-engine| Standard Edition. If the number of your clients
-  increases, you can add another Engine node to your |ivy-engine| Cluster.
+  An Axon Ivy Engine Enterprise Edition can serve
+  more clients than Axon Ivy Engine Standard Edition. If the number of your clients
+  increases, you can add another Engine node to your Axon Ivy Engine Cluster.
 
 * **High availability**: 
-  In an |ivy-engine| Enterprise Edition installation, a
+  In an Axon Ivy Engine Enterprise Edition installation, a
   single node may crash without affecting the other nodes that are still serving
-  clients. However, if you require high availability of your |ivy-engine| you
+  clients. However, if you require high availability of your Axon Ivy Engine you
   also need to ensure that all other components the engine depends on (Load
   Balancer, Database Server, File Share, Elasticsearch server) provide high
   availability.
@@ -24,8 +24,8 @@ Compared to a single node setup you will be confronted with a more **complex** s
 higher **hardware costs** and higher **license fees** as you will need an
 :ref:`enterprise-license`.
 
-The diagram below shows how an |ivy-engine| Cluster setup looks like. A user accesses
-the |ivy-engine| Cluster via a :ref:`load balancer <cluster-load-balancer>`
+The diagram below shows how an Axon Ivy Engine Cluster setup looks like. A user accesses
+the Axon Ivy Engine Cluster via a :ref:`load balancer <cluster-load-balancer>`
 that routes the traffic to the :ref:`nodes <cluster-configuration>` of the cluster.
 All cluster nodes share the same system database and Elasticsearch server.
 
@@ -34,18 +34,18 @@ All cluster nodes share the same system database and Elasticsearch server.
 
 **Runtime**
 
-We strongly recommend operating an |ivy-engine| Cluster in a containerized 
+We strongly recommend operating an Axon Ivy Engine Cluster in a containerized 
 environment like Docker or Kubernetes. Build and run your own 
 :ref:`container image <cluster-container>` that contains all your projects and configurations.
 
 See our example configurations on GitHub
 for :link-url:`NGINX <docker-scaling-nginx>` and :link-url:`HAProxy <docker-scaling-haproxy>`
-on how to setup an |ivy-engine| Cluster with docker-compose.
+on how to setup an Axon Ivy Engine Cluster with docker-compose.
   
 
 **Restrictions**
 
-The following restrictions have to be considered when running |ivy-engine| Cluster:
+The following restrictions have to be considered when running Axon Ivy Engine Cluster:
 
 1. Each node has to use the same system database.
 2. Each node has to use the same external :ref:`Elasticsearch <elasticsearch>`

@@ -6,7 +6,7 @@ Passwords
 
 You may want to encrypt sensitive data like a password in your configuration
 files. To do this you can enclose any value with ``"${encrypt:}"``. The
-|ivy-engine| will automatically encrypt and replace that value in file, when the
+Axon Ivy Engineine will automatically encrypt and replace that value in file, when the
 configuration will be loaded. The system database password can be encrypted as
 follows:
 
@@ -82,8 +82,8 @@ appearance of any dialog on several scopes:
 Overriding Configuration
 ------------------------
 
-Configuration entries of yaml files can be overridden with environment variables
-of the operating system. Configuration keys in yaml are hierarchic object trees
+Configuration entries of  YAML files can be overridden with environment variables
+of the operating system. Configuration keys in  YAML are hierarchic object trees
 separated by :code:`:` characters. While the environment variable must be
 written uppercase and separated by :code:`_` characters. You need also to prefix
 the environment variable with :code:`IVY_`.

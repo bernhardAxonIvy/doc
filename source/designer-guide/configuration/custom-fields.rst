@@ -12,7 +12,7 @@ in the :ref:`Portal application <portal-guide>` or via the Public API.
 Editor
 ------
 
-The |ivy-designer| delivers a **Yaml-Editor** to edit the
+The Axon Ivy Designer delivers a **Yaml-Editor** to edit the
 :file:`<project>/config/custom-fields.yaml` file, where you can maintain additional 
 information about your custom fields.
 

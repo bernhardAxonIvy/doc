@@ -7,8 +7,8 @@ MySQL
   :language: yaml
   :linenos:
 
-We only support **InnoDB** as storage engine. If database will be created by the
-|ivy-engine| the charset is set to ``utf8`` and collation is set to
+We only support storage engine **InnoDB**. If database will be created by the
+Axon Ivy Engine the charset is set to ``utf8`` and collation is set to
 ``utf8_unicode_ci``.
 
 .. warning::

@@ -57,5 +57,5 @@ database.
 Accessibility
 ^^^^^^^^^^^^^
 
-*|axon-ivy| Project Tree > double click on the Persistence label > Select
+*Axon Ivy Project Tree > double click on the Persistence label > Select
 a persistence unit > Generate Schema.*

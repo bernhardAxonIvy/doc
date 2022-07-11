@@ -3,9 +3,9 @@
 Secure Setup
 ============
 
-We strongly recommend to consider the following informations for a productive
-|ivy-engine| deployment. These are important whether or not you use a reverse
-proxy. However, a reverse proxy allows you to implement them very easily.
+We strongly recommend considering the following advice for a productive
+Axon Ivy Engine deployment. It is important whether or not you use a reverse
+proxy. However, a reverse proxy allows you to implement it easily.
 
 .. toctree::
     :maxdepth: 1

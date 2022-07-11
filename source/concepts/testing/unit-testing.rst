@@ -3,7 +3,7 @@
 Unit Tests
 ----------
 
-You can easily write Unit Tests in the |ivy-designer| to test your Java source
+You can easily write Unit Tests in the Axon Ivy Designer to test your Java source
 code using JUnit 5. If your code uses the
 :public-api:`Ivy</ch/ivyteam/ivy/environment/Ivy.html>` environment you can
 either mock it or use the
@@ -19,7 +19,7 @@ How to Write Unit Tests
 
 #. Run test
 
-   - Make sure the |ivy-engine| is started with your projects
+   - Make sure the Axon Ivy Engine is started with your projects
 
    - To run this test right-click inside this class -> Run As -> JUnit Test
 
@@ -72,7 +72,7 @@ instance of the :code:`AppFixure` class. Let's have a look at it:
   :language: java
   :emphasize-lines: 2, 4
 
-Or you can change an app configuration, e.g change the Url of a
+Or you can change an app configuration, e.g change the URL of a
 :ref:`RestClient <rest-clients-configuration>`:
 
 .. literalinclude:: includes/unittesting/unittesting-test-fixure-config.java

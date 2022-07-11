@@ -1,14 +1,14 @@
 Editors
 =======
 
-The content management system can be viewed and edited in the |ivy-designer|.
+The content management system can be viewed and edited in the Axon Ivy Designer.
 
 .. _cms-view:
 
 CMS view
 ~~~~~~~~
 
-The cms view shows the cms of all open projects in the workspace including all
+The CMS view shows the CMS of all open projects in the workspace including all
 content objects and their values.
 
 :guilabel:`Window` > :guilabel:`Show View` > :guilabel:`CMS`
@@ -19,13 +19,13 @@ content objects and their values.
 Display Content Object Values
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The view represent the cms structure as a tree. Furthermore the table can
+The view represents the CMS structure as a tree. Furthermore the table can
 display one column for every language that is available. In those columns the
 value of the corresponding content object in the corresponding language is
 shown. You can configure for which languages the table should display a column
 by clicking on |imgViewMenu|.
 
-If you want to focus on the cms structure then you can hide all the language
+If you want to focus on the CMS structure then you can hide all the language
 columns so that only the first column is displayed. Just click on
 |imgLanguageChooser| in the toolbar of the view to toggle between hiding and
 displaying the columns for the languages.
@@ -65,13 +65,13 @@ Furthermore you can use ``?`` to match any single character.
 Context Menu
 ~~~~~~~~~~~~
 
-In the context menu in the cms view there are several actions available:
+In the context menu in the CMS view there are several actions available:
 
 :guilabel:`Add...`
 
   Creates new content objects with the given type, name and value.
 
-  As name you can use a simple name, an absolute or relative path cms path. All
+  As name you can use a simple name, an absolute or relative path CMS path. All
   necessary will be created automatically.
 
   The value for text based types can be edited directly in the value column whereas

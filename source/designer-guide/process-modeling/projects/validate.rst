@@ -1,7 +1,7 @@
-Validating |axon-ivy| projects and resources
+Validating Axon Ivy projects and resources
 -----------------------------------------------
 
-|axon-ivy| comes with various validators which verify that projects and
+Axon Ivy comes with various validators which verify that projects and
 its resources do not have any errors. After a resource has changed the
 responsible validator will run automatically and report errors or
 warnings.

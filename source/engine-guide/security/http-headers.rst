@@ -16,7 +16,7 @@ The following additional security headers are recommended.
   information, see: `Content Security Policy (CSP) <https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP>`_.
 
   We generally recommend to implement these headers on a reverse proxy securing 
-  your |ivy-engine|. In case you have no reverse proxy, check
+  your Axon Ivy Engineine. In case you have no reverse proxy, check
   `How do I integrate Ivy Workflow Frontend in my Web App? <https://community.axonivy.com/d/319-how-do-i-integrate-ivy-workflow-frontend-in-my-web-app>`
   for a CSP example using the embedded Tomcat.
 

@@ -4,7 +4,7 @@ Control Center
 ==============
 
 The Control Center integrates all tools to configure an engine, register it as a
-Windows service and to start & stop the installed |ivy-engine|.
+Windows service and to start & stop the installed Axon Ivy Engine.
 
 
 Launchers
@@ -26,11 +26,11 @@ Use one of the following launchers to start the Control Center.
 Start / Stop
 ------------
 
-To start the |ivy-engine|, simply choose the **|ivy-engine|** in the list on the
+To start the Axon Ivy Engine, simply choose the **Axon Ivy Engine** in the list on the
 left side and then press the green :guilabel:`start` button. Alternatively, you
-can choose the **|ivy-engine| [Console]** from the list to start the engine
+can choose the **Axon Ivy Engine [Console]** from the list to start the engine
 within a console. Some information about the engine is logged to this console.
-Please note that closing this console window will terminate the |ivy-engine|
+Please note that closing this console window will terminate the Axon Ivy Engine
 without shutting it down properly. To stop the engine, click the red
 :guilabel:`stop` button.
 
@@ -40,8 +40,8 @@ without shutting it down properly. To stop the engine, click the red
 Register Windows Service
 ------------------------
 
-If you've installed the **|ivy-engine|** under a Windows operating system, you
-can register it as a Windows service. To do so, select the entry **|ivy-engine|
+If you've installed the **Axon Ivy Engine** under a Windows operating system, you
+can register it as a Windows service. To do so, select the entry **Axon Ivy Engine
 [Windows Service]** from the list on the left and press the button
 :guilabel:`Windows Service` on the right. A dialog will open, prompting you for
 additional configuration data:
@@ -60,18 +60,18 @@ enable the remainder of the configuration sections.
     should work.
 
 Now you may configure the user under which the service (and therefore the
-|ivy-engine|) will be executed. This can either be the system user or any
-other user with sufficient rights to start services and access the |ivy-engine|
+Axon Ivy Engine) will be executed. This can either be the system user or any
+other user with sufficient rights to start services and access the Axon Ivy Engine
 installation directory (read and write).
 
 By default, the service start kind is :guilabel:`Manually`. To start the engine
 each time Windows is booted, choose the setting :guilabel:`Automatically`.
 
-The last thing that can be configured are the services that the |ivy-engine|
+The last thing that can be configured are the services that the Axon Ivy Engine
 depends on. This might be the database management system which hosts the system
-database or the reverse proxy web server used by the |ivy-engine| (IIS or
+database or the reverse proxy web server used by the Axon Ivy Engine (IIS or
 Apache). All the services you add in this list will have to be started before
-the |ivy-engine|, and if any of these services fail to start, the |ivy-engine|
+the Axon Ivy Engine, and if any of these services fail to start, the Axon Ivy Engine
 won't start, either.
 
 After you have finished the configuration, click :guilabel:`Ok`. Now you will be
@@ -82,27 +82,27 @@ Service Management Console.
 Testing the Engine
 ------------------
 
-Once you've started the |ivy-engine|, try to open the following address in your
+Once you've started the Axon Ivy Engine, try to open the following address in your
 preferred web browser: http://ServerName:Port/. If a web page with the
-|axon-ivy| logo appears, the installation and configuration of the |ivy-engine|
+Axon Ivy logo appears, the installation and configuration of the Axon Ivy Engine
 has been successful - continue with the next chapter.
 
 
 Service List Configuration
 --------------------------
 
-The Control Center also allows you to configure the |ivy-engine|.
+The Control Center also allows you to configure the Axon Ivy Engine.
 
 .. Note::
     The indication whether the program behind an entry in the server list is
-    running or not is only shown for the |ivy-engine| binaries of the
+    running or not is only shown for the Axon Ivy Engine binaries of the
     installation the Control Center belongs to and for any Windows services
-    (including the |ivy-engine| services). This applies too for the *show
-    console* setting because only |ivy-engine| binaries can be started in a
+    (including the Axon Ivy Engine services). This applies too for the *show
+    console* setting because only Axon Ivy Engine binaries can be started in a
     console (third party applications cannot).
 
 :guilabel:`Add` first opens a dialog to choose the type for the new entry. You can choose
-between a normal |ivy-engine| setup or to setup an |ivy-engine| as a
+between a normal Axon Ivy Engine setup or to setup an Axon Ivy Engine as a
 Windows Service. :guilabel:`Remove` removes the selected entry from the list and
 :guilabel:`Edit` allows to edit the configuration for the selected entry in the
 server list.

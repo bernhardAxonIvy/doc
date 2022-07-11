@@ -1,12 +1,14 @@
 # Axon Ivy Product Documentation
 
 Based on [sphinx](http://www.sphinx-doc.org).
-Using reStructredText as markup language.
+Uses reStructredText as markup language.
 
-**Note:** All Ivy documentation must be written in English with *American spelling*!
+**Note:** All Axon Ivy documentation must be written in English with *American spelling*!
 
 
 ## Build
+
+    Connect via VPN if working at home
 
     # download images
     mvn clean package
@@ -97,7 +99,7 @@ Use Eclipse or Visual Studio Code.
 
 	:ref:`web-xml`
 
-- Interanl Link (custom title)
+- Internal Link (custom title)
 
 	:ref:`prepared <deployment-prepare>`
 

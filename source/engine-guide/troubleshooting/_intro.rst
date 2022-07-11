@@ -4,7 +4,7 @@ If you encounter any problems, check the following sources:
 
 The `Axon Ivy Community <https://community.axonivy.com/>`_ (or the old 
 `Axon Ivy Q&A <https://answers.axonivy.com/>`_) contains a considerable
-amount of knowledge and tips related to |axon-ivy| Designer and Engine.
+amount of knowledge and tips related to Axon Ivy Designer and Engine.
 
 .. rubric:: Stack Overflow
 

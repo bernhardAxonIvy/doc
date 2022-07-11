@@ -5,21 +5,21 @@ Java Management Extensions (JMX)
 
 Java Management Extensions (JMX) is a technology to read and write runtime
 information of Java processes. This allows tools to monitor the
-state of an |ivy-engine|, e.g. with VisualVM, Java Mission Control,
+state of an Axon Ivy Engine, e.g. with VisualVM, Java Mission Control,
 Nagios, Prometheus, etc. 
 
 A monitoring tool running on the same machine and with the same operating system
-level user as the |ivy-engine| can connect to |axon-ivy| without additional
+level user as the Axon Ivy Engine can connect to Axon Ivy without additional
 configuration.
 
 
 Activate Remote Access
 ----------------------
 
-If the |ivy-engine| is running under another user than the monitoring tool or on
+If the Axon Ivy Engine is running under another user than the monitoring tool or on
 a remote host, JMX remote access has to be activated. Remote access is protected
-by a user name and password of an |ivy-engine| administrator, so all
-|ivy-engine| administrators have access.
+by a user name and password of an Axon Ivy Engine administrator, so all
+Axon Ivy Engine administrators have access.
 
 Activate remote access by uncommenting all lines in the JMX section of :ref:`jvm-options`.
 
@@ -41,8 +41,8 @@ by setting the JMX autodiscovery property to false:
 Provided MBeans
 ---------------
 
-The |ivy-engine| provides performance and management information by a set of
-MBeans. They allow tools to monitor internals of the |ivy-engine|. Most
+The Axon Ivy Engine provides performance and management information by a set of
+MBeans. They allow tools to monitor internals of the Axon Ivy Engine. Most
 monitoring tools provide a user interface to browse the available MBeans. 
 MBeans are mostly shown in a tree built with the information provided in the
 names of the MBeans. 
@@ -54,10 +54,10 @@ The :ref:`engine-cockpit` also contains a built-in
 install an external monitoring tool for a quick glance at your engine's vital
 signs.
 
-Where possible, |ivy-engine| MBeans names contain application, process 
+Where possible, Axon Ivy Engine MBeans names contain application, process 
 model, process model version, or environment name. 
 
-**Examples of typical |axon-ivy| MBean names:**
+**Examples of typical Axon Ivy MBean names:**
 
 .. code-block:: properties
 
@@ -83,8 +83,8 @@ the Attributes and Operations tab of VisualVM's MBeans tab).
     Manipulations that survive an engine restart contain the following text in
     the description of the attribute or operation: ``(Persistent)``.
 
-In addition to the MBeans provided by |axon-ivy|, some third party libraries
-included in |axon-ivy| provide their own MBeans. One of them is Apache Tomcat, which
+In addition to the MBeans provided by Axon Ivy, some third party libraries
+included in Axon Ivy provide their own MBeans. One of them is Apache Tomcat, which
 is used as internal web server. Its MBeans provide information about the
 handling of HTTP requests like request count, errors, execution time, sessions,
 etc. Moreover, the Java Virtual Machine also provides some MBeans that contain
@@ -122,7 +122,7 @@ The list below contains some of the provided information:
 
     *:type=GlobalRequestProcessor,name=*
 
-**Number of Sessions** (HTTP sessions, |axon-ivy| sessions, license relevant sessions, etc.)
+**Number of Sessions** (HTTP sessions, Axon Ivy sessions, license relevant sessions, etc.)
 
 .. code-block:: properties
 

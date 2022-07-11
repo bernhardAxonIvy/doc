@@ -16,19 +16,19 @@ some project specific properties, that do not have a global default
 value. Those are described in the sections below.
 
 
-|axon-ivy| - Project Information
+Axon Ivy - Project Information
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The main project properties page shows information about the project.
 
 .. figure:: /_images/ivy-project/preferences-convert-project.png
-   :alt: Project Properties |axon-ivy| information
+   :alt: Project Properties Axon Ivy information
 
-   Project Properties |axon-ivy| information
+   Project Properties Axon Ivy information
 
 Project format version
    Shows the version of the project format. If the project was created
-   with an old version of |axon-ivy|, this is indicated with an warning
+   with an old version of Axon Ivy, this is indicated with an warning
    message. Consult the Chapter :ref:`project-convert` to learn how to convert your
    project to a new version of the project format.
 

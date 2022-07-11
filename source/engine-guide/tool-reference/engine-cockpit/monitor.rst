@@ -3,7 +3,7 @@
 Monitor
 -------
 
-The **Engine Cockpit** allows you to :ref:`monitor <monitoring>` your |ivy-engine|.
+The **Engine Cockpit** allows you to :ref:`monitor <monitoring>` your Axon Ivy Engine.
 
 OS
 ^^
@@ -18,7 +18,7 @@ and current memory usage of the JVM.
 Engine
 ^^^^^^
 
-The **Engine** pages allows you to monitor some critical indicators of your |ivy-engine|:
+The **Engine** pages allows you to monitor some critical indicators of your Axon Ivy Engine:
 
 - **JVM**: CPU load, number of threads, loaded and unloaded classes.
 - **Memory**: Heap and non heap memory, garbage collections time.
@@ -95,7 +95,7 @@ Traffic Graph
 """""""""""""
 
 The **Traffic Graph** view gives you a quick overview of inbound  and outbound 
-communication channels to and from the |ivy-engine|. The more request a certain 
+communication channels to and from the Axon Ivy Engine. The more request a certain 
 communication channel has the wider it is displayed. The color reflects the response times. 
 Green means fast response times. Red means slow request times relative to the other communication channels. 
 The color of the source or target of a communication link indicates if there are errors. 
@@ -119,7 +119,7 @@ want to look at the logs of an different day, you can change the date at the top
 Services
 ^^^^^^^^
 
-The **Services** pages allows you to monitor some critical indicators of external services your |ivy-engine| communicates with:
+The **Services** pages allows you to monitor some critical indicators of external services your Axon Ivy Engine communicates with:
 
 - **Email**: Number of mails sent, execution time to send mails. 
 - **System Database**: Number of open and used connections, number of transactions and errors, transaction processing time.

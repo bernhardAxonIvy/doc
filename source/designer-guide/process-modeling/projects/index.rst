@@ -1,8 +1,8 @@
 Projects
 ========
 
-|axon-ivy| Projects can be seen as development modules that encapsulate
-the processes and other artifacts that form an application. An |axon-ivy|
+Axon Ivy Projects can be seen as development modules that encapsulate
+the processes and other artifacts that form an application. An Axon Ivy
 project roughly comprises of processes, User Dialogs, Data Classes, a
 Content Management System and various configurations. All of those
 aspects are explained in separate chapters of this document.
@@ -15,7 +15,7 @@ is in turn called the **dependent project*** with respect to its required
 projects.
 
 Once you have finished your development you will usually want to install
-the implemented application or workflow on an |ivy-engine|. Projects
+the implemented application or workflow on an Axon Ivy Engine. Projects
 form the single unit of deployment for this purpose, i.e. you deploy
 each project into a container on the engine which is called *process model version*.
 A project may be deployed in multiple versions on the

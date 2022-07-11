@@ -3,8 +3,8 @@
 Prepare
 -------
 
-Before deployment, the |axon-ivy| project must be available as ivy-archive (IAR)
-or packed as a zip-archive (ZIP). It is also possible to pack multiple |axon-ivy|
+Before deployment, the Axon Ivy project must be available as ivy-archive (IAR)
+or packed as a zip-archive (ZIP). It is also possible to pack multiple Axon Ivy
 projects in one single zip-archive. All project dependencies must be resolved,
 either already installed in the application or part of the deployment. 
 

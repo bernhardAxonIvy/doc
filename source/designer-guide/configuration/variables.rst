@@ -12,7 +12,7 @@ So, by using Variables, rather than static texts, you can master the following s
 -  Simple Rule Values (e.g. credit account)
 
 To see and configure Variables at runtime, use the :ref:`Engine
-Cockpit Variables View <engine-cockpit-variables>` on the |ivy-engine|. 
+Cockpit Variables View <engine-cockpit-variables>` on the Axon Ivy Engine. 
 
 
 .. _variables-yaml:
@@ -20,7 +20,7 @@ Cockpit Variables View <engine-cockpit-variables>` on the |ivy-engine|.
 Editor
 ------
 
-The |ivy-designer| delivers a **Yaml-Editor** to edit the
+The Axon Ivy Designer delivers a **Yaml-Editor** to edit the
 :file:`<project>/config/variables.yaml` file, where you can maintain you
 variables.
 
@@ -44,7 +44,7 @@ variables.
   can define:
 
   * **password:** This tells the engine that the value of this Variable
-    should be written encrypted to the yaml files.
+    should be written encrypted to the  YAML files.
   * **daytime:** This value will be interpreted as daytime 
   * **enum:** The enum annotation will give you the possibility to define possible 
     values for this Variable. 

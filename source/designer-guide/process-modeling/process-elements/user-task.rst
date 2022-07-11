@@ -12,7 +12,7 @@ Element Details
 The *User Task* element calls a User Dialog in a new Task. Thus, it
 combines the behavior of a :ref:`process-element-task-switch-event`
 and a :ref:`process-element-user-dialog`. You can either call
-a normal Html Dialog or an Offline Dialog - they both are based on JSF
+a normal HTML Dialog or an Offline Dialog - they both are based on JSF
 technology and can run in a Web Browser as well as on a mobile client.
 
 Inscription
@@ -47,7 +47,7 @@ Dialog
    .. note::
 
       The behavior of the task will be noticeable different either if
-      you select an Html Dialog or an Offline Dialog. By selecting an
+      you select an HTML Dialog or an Offline Dialog. By selecting an
       Offline Dialog, an :ref:`offline-tasks` -
       designed for processing without continuous connection to the
       workflow server - will be generated.

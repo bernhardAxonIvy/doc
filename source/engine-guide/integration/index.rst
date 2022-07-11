@@ -3,8 +3,8 @@
 Integration
 ************
 
-A minimal setup of a productive |ivy-engine| environment only requires the
-|ivy-engine| itself and a database management system to hold the system
+A minimal setup of a productive Axon Ivy Engine environment only requires the
+Axon Ivy Engine itself and a database management system to hold the system
 database. But to increase security, performance and reliability, other services
 have to be installed and integrated additionally.
 
@@ -17,20 +17,20 @@ have to be installed and integrated additionally.
 
 
 * :ref:`reverse-proxy`:
-  To increase security, users should always access the |ivy-engine| via a
+  To increase security, users should always access the Axon Ivy Engine via a
   reverse proxy like NGINX, Apache HTTP Server or Microsoft IIS.
 * :ref:`User Management <configuration-security-system>`:
   Users can be imported from an external user management system like Microsoft
   Active Directory or Novell eDirectory.
 * :ref:`Cluster <cluster>`:
   For scalability, to increase performance and provide high availability it is
-  possible to cluster the |ivy-engine|.
+  possible to cluster the Axon Ivy Engine.
 * :ref:`Elasticsearch <elasticsearch>`:
-  An Elasticsearch server is bundled with the |ivy-engine|. For systems with
+  An Elasticsearch server is bundled with the Axon Ivy Engine. For systems with
   high loads, it may make sense to install the Elasticsearch Server on a
   dedicated node, or even to run an Elasticsearch cluster.
 * :ref:`systemdb`:
-  The |ivy-engine| needs a relational database management system to store its
+  The Axon Ivy Engine needs a relational database management system to store its
   workflow data. The database in which the engine stores the data is called
   system database.
 

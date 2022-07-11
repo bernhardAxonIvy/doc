@@ -78,7 +78,7 @@ With deployment options you can influence the deployment behavior:
   :linenos:
 
 See the
-:project-build-plugin-doc:`|axon-ivy| Project Build Plugin deploy documentation <deploy-to-engine-mojo.html>`
+:project-build-plugin-doc:`Axon Ivy Project Build Plugin deploy documentation <deploy-to-engine-mojo.html>`
 for more information about the deployment properties.
 
 

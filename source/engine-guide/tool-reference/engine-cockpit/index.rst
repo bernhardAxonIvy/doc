@@ -8,8 +8,8 @@ The **Engine Cockpit** is the application to administer your engine.
 
 .. rubric:: Opening the Cockpit
 
-After successfully starting the |ivy-engine|, you can launch the engine cockpit 
-via the |ivy-engine| info page. 
+After successfully starting the Axon Ivy Engine, you can launch the engine cockpit 
+via the Axon Ivy Engine info page. 
 To do so, open the address: http://ServerName:Port/ in your browser and click the
 :guilabel:`Cockpit` tab. This will open the dashboard: 
 http://ServerName:Port/system/faces/view/engine-cockpit/dashboard.xhtml

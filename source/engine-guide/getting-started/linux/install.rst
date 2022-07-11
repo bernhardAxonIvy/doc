@@ -1,7 +1,7 @@
 Install the Engine
 ------------------
 
-We suggest that you install the |ivy-engine| into a new folder called
+We suggest that you install the Axon Ivy Engine into a new folder called
 :file:`/opt/ivy/engine`. Create the directory and change the owner to your current
 user.
 
@@ -43,7 +43,7 @@ Download the latest engine:
 
 .. include:: ../_packages.rst
 
-To install |ivy-engine| simply unzip the downloaded file
+To install Axon Ivy Engine simply unzip the downloaded file
 :file:`AxonIvyEngine*.zip` into a new :file:`AxonIvyEngine*` folder
 
 .. code:: bash
@@ -53,8 +53,8 @@ To install |ivy-engine| simply unzip the downloaded file
     cd latest
 
 .. Note::
-  The most important folders of the |ivy-engine| are:
+  The most important folders of the Axon Ivy Engine are:
 
   * :file:`bin` folder which contains all the executables.
   * :file:`configuration` folder which contains the configuration files.
-  * :file:`deploy` folder which is used to deploy |axon-ivy| projects.
+  * :file:`deploy` folder which is used to deploy Axon Ivy projects.

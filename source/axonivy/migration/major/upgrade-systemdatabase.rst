@@ -11,7 +11,7 @@ Setup Wizard / Engine Cockpit
 
 **Step 1**
 
-Start the |ivy-engine| and open the :ref:`setup-wizard`. Switch to the
+Start the Axon Ivy Engine and open the :ref:`setup-wizard`. Switch to the
 **System Database** page. A message will be shown that the current database is outdated.
 
 **Step 2**

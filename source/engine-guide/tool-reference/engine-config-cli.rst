@@ -3,7 +3,7 @@
 EngineConfigCli
 ===============
 
-The console program is used to configure the |ivy-engine|, i.e. to configure,
+The console program is used to configure the Axon Ivy Engine, i.e. to configure,
 create or convert the system database.
 
 .. rubric:: Options

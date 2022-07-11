@@ -3,8 +3,8 @@
 License
 =======
 
-To run the |ivy-engine| in :ref:`production mode <production-mode>` you need a
-license, which you can apply for via your |axon-ivy| Partner, |axon-ivy| Sales
+To run the Axon Ivy Engine in :ref:`production mode <production-mode>` you need a
+license, which you can apply for via your Axon Ivy Partner, Axon Ivy Sales
 Representative or directly via support@axonivy.com. A time-limited trial license
 is provided for free upon request. You need to provide the edition, the number
 of named users and concurrent users as well as the public URLs for each license.
@@ -17,16 +17,16 @@ Edition
 
 There is a choice between **Standard Edition** and **Enterprise Edition**. If
 you expect high loads or need increased reliability, then you should look into
-the Enterprise Edition, which allows to run the |ivy-engine| in a
+the Enterprise Edition, which allows to run the Axon Ivy Engine in a
 :ref:`cluster <cluster>`.
 
 
 Named Users
 -----------
 
-The registered users within |ivy-engine| are called **named users**. These users
-have an account in the |ivy-engine| and therefore can log in to the
-|ivy-engine|. Because accounts are managed per application one user can have
+The registered users within Axon Ivy Engine are called **named users**. These users
+have an account in the Axon Ivy Engine and therefore can log in to the
+Axon Ivy Engine. Because accounts are managed per application one user can have
 multiple accounts on a single engine, one per application. Accounts in different
 applications on the same engine or cluster that have the same user name are
 counted as one named user.
@@ -35,8 +35,8 @@ counted as one named user.
 Concurrent Users
 ----------------
 
-The number of users that are concurrently working on the |ivy-engine| are known
-as **concurrent users**. The |ivy-engine| controls the number of concurrent users as
+The number of users that are concurrently working on the Axon Ivy Engine are known
+as **concurrent users**. The Axon Ivy Engine controls the number of concurrent users as
 follows:
 
 * Every Session with no authenticated user is counted as one concurrent user.
@@ -71,17 +71,17 @@ The following table illustrates this:
 Public URLs
 -----------
 
-Public URLs are the links that end users will use to access your |ivy-engine|.
+Public URLs are the links that end users will use to access your Axon Ivy Engine.
 
 .. admonition:: Example
   
-  Let's assume your |ivy-engine| is installed on a machine with the DNS name
-  ``axonivyprod``. Users access the |ivy-engine| in two different ways:
+  Let's assume your Axon Ivy Engine is installed on a machine with the DNS name
+  ``axonivyprod``. Users access the Axon Ivy Engine in two different ways:
   
   * Intranet users use ``http://axonivyprod:8080`` to access it. 
   * Internet users use ``https://www.customer.com`` to access it through a reverse proxy.
 
-  An administrator accesses the |ivy-engine| with an IP Address
+  An administrator accesses the Axon Ivy Engine with an IP Address
   ``http://192.168.1.19``.
   
   In this case the license has to contain three public URLs:

@@ -3,7 +3,7 @@
 Enterprise License
 ==================
 
-You need an enterprise license to run |ivy-engine| as a Cluster (|ivy-engine|
+You need an enterprise license to run Axon Ivy Engine as a Cluster (Axon Ivy Engine
 Enterprise Edition). 
 
 The information needed to request an enterprise license is the same as for a
@@ -13,7 +13,7 @@ nodes.
 Cluster Nodes
 -------------
 
-Each node that you add to |ivy-engine| Cluster costs an additional license fee.
+Each node that you add to Axon Ivy Engine Cluster costs an additional license fee.
 Therefore, the number of nodes in your Cluster is limited by the license.
 
 .. warning:: 

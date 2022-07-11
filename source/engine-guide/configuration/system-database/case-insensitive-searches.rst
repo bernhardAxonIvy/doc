@@ -1,19 +1,18 @@
 .. _systemdb-case-insensitive-searches:
 
-Case insensitive searches
+Case Insensitive Searches
 =========================
 
-If a case insensitive search is required, it must be guaranteed that the
-affected column has a case insensitive collation.
+If a case insensitive search is required, the affected column has to have a case
+insensitive collation.
 
 #. Check character set & collation of the column
 #. Change character set & collation if necessary
 
 .. rubric:: Character set and collation
 
-All characters in databases are encoded with a specific charset (e.g. utf8,
-latin1, cp1257). Lastly it defines which kind of characters can be stored at
-all.
+All characters in databases are encoded with a specific character set (e.g.
+utf8, latin1, cp1257). This defines which characters can be stored.
 
 The collation is a set of rules that defines how the database management system
 compares and orders the data (e.g. utf8_unicode_ci, latin2_general_ci). Common
@@ -24,6 +23,7 @@ abbreviations in the name of the collations are the following:
 * ai = accent insensitive
 * as = accent sensitive
 
-As well as the character set the collation can be defined mostly on several
-levels: server, database, table or column. Everything about this subject is very
-dependent on the actual database management system.
+Character set as well as collation can be defined on several levels in the
+database system: server, database, table, or column. Everything about this
+subject is specific to the database management system used; please refer to its
+documentation for details.

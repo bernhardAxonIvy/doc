@@ -1,6 +1,6 @@
 
 API
-------------
+---
 
 There are several APIs to manipulate and query workflow tasks and cases.
 
@@ -9,26 +9,26 @@ Task and Case queries
 ~~~~~~~~~~~~~~~~~~~~~
 
 The fluent workflow query API makes queries against all existing tasks
-and cases possible. The queries can be written in a SQL like manor.
+and cases possible. The queries can be written in a SQL-like manner.
 
 .. literalinclude:: code-snippets/task-query/example.java
    :language: java
 
-To resolve all tasks that the current user can work on use the following
+To resolve all tasks that the current user can work on using the following
 code:
 
 
 .. literalinclude:: code-snippets/task-query/current_user.java
    :language: java
 
-To execute a query an instance of a IQueryExecutor is needed. It can be
+To execute a query an instance of an IQueryExecutor is needed. It can be
 retrieved trough the :ref:`ivy environment variable <ivyscript-reference-environmentvariable>`.
 
 
 
 .. warning::
 
-   Queries over all applications can be executed on the global workflow
+   Queries over all applications can be executed in the global workflow
    context. But queries that involve the current session could deliver
    useless results as users are not shared over multiple applications.
 
@@ -59,13 +59,12 @@ the :ref:`ivy environment variable <ivyscript-reference-environmentvariable>`.
 REST API
 ~~~~~~~~
 
-There is a :api-browser-url:`REST workflow API <workflow>`
-available that allows third party services to interact with workflow Tasks,
-Cases and the like. The API was designed to allow mobile devices to use the
-workflow. 
+There is an :api-browser-url:`REST workflow API <workflow>` available that
+allows third-party services to interact with workflow Tasks, Cases, and the like.
+The API was designed to allow mobile devices to use the workflow. 
 
-The so called mobile workflow API is disabled by default. You can enabled it by
-setting the configuration ``REST.Servlet.MobileWorkflow.API: true``.
+The so-called mobile workflow API is disabled by default. Enable it by setting
+the configuration ``REST.Servlet.MobileWorkflow.API: true``.
 
 .. literalinclude:: includes/mobile.wf.enable.ivy.yaml
   :language: yaml
@@ -74,7 +73,7 @@ setting the configuration ``REST.Servlet.MobileWorkflow.API: true``.
 Once the mobile workflow API is enabled, you may browse it's
 services by using the :ref:`integration-rest-api-browser`.
 
-If any REST workflow API is missing for your specific use-case, 
+If any REST workflow API is missing for your specific use case, 
 keep in mind that you can provide additional APIs very easily 
 by creating REST API service classes in your project. See 
 :ref:`integration-rest-provider`

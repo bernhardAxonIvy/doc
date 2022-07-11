@@ -57,7 +57,7 @@ one of the following available authentication methods:
 None/Container
    Authentication is not handled by the web service element. However, if
    the web container (Tomcat) or a web server (Microsoft IIS/Apache)
-   handles user authentication, the user is passed through to |axon-ivy|
+   handles user authentication, the user is passed through to Axon Ivy
    (e.g. Single Sign-on).
 
 WS Security
@@ -70,7 +70,7 @@ WS Security
       connection (e.g. HTTPS).
 
 HTTP Basic
-   Username and Password will be sent in clear-text to the ivy engine
+   Username and Password will be sent in clear-text to the Ivy engine
    using standard HTTP Basic authentication mechanism.
 
    .. note::
@@ -87,7 +87,7 @@ HTTP Basic
 
    If the web container (Tomcat) or a web server (Microsoft IIS/Apache)
    already handles user authentication, the user is passed through to
-   |axon-ivy| without doing an additional HTTP Basic authentication.
+   Axon Ivy without doing an additional HTTP Basic authentication.
 
 .. |image0| image:: /_images/process-modeling/process-data-tab.png
 .. |image1| image:: /_images/process-modeling/ws-process-tab.png

@@ -22,7 +22,7 @@ Configuration
 
 Like the :ref:`app-yaml`, you can change Branding resources at runtime in the
 :file:`configuration/applications/<APPNAME>/branding` directory. This is also
-the directory which is manipulated by the :ref:`Engine Cockpit
+the directory that is used by the :ref:`Engine Cockpit
 <engine-cockpit-branding>`.
 
 ::
@@ -41,9 +41,9 @@ the directory which is manipulated by the :ref:`Engine Cockpit
 Deployment
 ~~~~~~~~~~
 
-As known from the general application :ref:`deployment`, you have the
-possibility to also deploy Branding resources within an :ref:`app.zip
-<deployment-prepare>` under :file:`config/branding`.
+As detailed in the general application :ref:`deployment`, you may deploy
+Branding resources within an :ref:`app.zip <deployment-prepare>` in
+:file:`config/branding`.
 
 ::
 
@@ -65,5 +65,5 @@ Default Branding
 ~~~~~~~~~~~~~~~~
 
 If your app has no Branding resources :ref:`deployed <branding-app-deploy>` or
-:ref:`configured <branding-configuration>`, the default |axon-ivy| Branding
-resources are taken for you interfaces. 
+:ref:`configured <branding-configuration>`, the default Axon Ivy Branding
+resources are used to generate your interfaces. 

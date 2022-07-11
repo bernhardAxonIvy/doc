@@ -21,7 +21,7 @@ consists of two parts:
 Accessibility
 ~~~~~~~~~~~~~
 
-|axon-ivy| Project Tree > double click on a *process* node inside the
+Axon Ivy Project Tree > double click on a *process* node inside the
 project tree (|image3|)
 
 .. _process-editor-tool-bar:

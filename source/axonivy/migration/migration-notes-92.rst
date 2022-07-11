@@ -13,7 +13,7 @@ New project version
 
 Due to the migration of the :ref:`Global Variables
 <migrate-91-92-globalvar-migration>`, we introducing a new project version
-:code:`92000`. If you want to deploy a project to a |ivy-engine| 9.2, your
+:code:`92000`. If you want to deploy a project to a Axon Ivy Engine 9.2, your
 project must be in this version. If you have a running project, it will still
 be able to run, but :ref:`we recommend migrating your projects
 <migration-project>` to the new version and redeploying them to your engine.
@@ -49,8 +49,8 @@ New file locations
 
 |tag-ops-changed|
 
-Shifting towards highly configurable ivy projects we needed to move the :file:`app.yaml` to a new location
-in the |ivy-engine|.
+Shifting towards highly configurable Ivy projects we needed to move the :file:`app.yaml` to a new location
+in the Axon Ivy Engine.
 
 .. container:: admonition note toggle
 
@@ -117,7 +117,7 @@ Defining Global Variables
 
 Global Variables are stored in new locations. During development, the project's
 Global Variables are now stored in the :ref:`variables.yaml <variables>` file. On the
-|ivy-engine|, Global Variables have been moved from the System Database to the
+Axon Ivy Engine, Global Variables have been moved from the System Database to the
 application's :ref:`app-yaml` file. Furthermore, database and project migrations do
 the conversion from the old to the new format for you automatically.
 
@@ -206,9 +206,9 @@ HTTPS port disabled by default
 
 |tag-ops-changed|
 
-HTTPS port is now disabled by default on the |ivy-engine|, because you should
+HTTPS port is now disabled by default on the Axon Ivy Engine, because you should
 always terminate SSL on the reverse proxy (frontend webserver). If you need
-HTTPS directly on the |ivy-engine| then you need to set the property
+HTTPS directly on the Axon Ivy Engine then you need to set the property
 :code:`WebServer.HTTPS.Enabled` to :code:`true` in :ref:`ivy-webserver-yaml`.
 
 
@@ -218,7 +218,7 @@ Frontend config combined into BaseUrl
 
 |tag-ops-changed| |tag-ops-wizard|
 
-The configuration of the frontend url in :ref:`ivy.yaml <ivy-yaml>` has been
+The configuration of the frontend URL in :ref:`ivy.yaml <ivy-yaml>` has been
 simplified. You need to define now the :code:`BaseUrl` in your :file:`ivy.yaml`.
 This property is a combination of the old frontend properties :code:`Frontend.Host`,
 :code:`Frontend.Protocol` and :code:`Frontend.Port`.
@@ -230,7 +230,7 @@ AJP support is deprecated
 
 |tag-ops-deprecated|
 
-AJP is used to integrate the |ivy-engine| with Microsoft IIS  or Apache http
+AJP is used to integrate the Axon Ivy Engine with Microsoft IIS  or Apache http
 as :ref:`reverse proxy <reverse-proxy>`. We still support AJP but you should
 migrate to a more modern URL rewrite approach based on HTTP/HTTPS.
 
@@ -243,7 +243,7 @@ migrate to a more modern URL rewrite approach based on HTTP/HTTPS.
   AJP's days are numbered. It is not getting developed any further and prevents
   the use of new web features such as websockets. We highly recommend to migrate
   to a modern URL rewrite approach based on HTTP/HTTPS, in future versions
-  of |ivy-engine| you won't be able to use AJP.
+  of Axon Ivy Engine you won't be able to use AJP.
 
   If you are using Microsoft IIS as your reverse proxy proceed as follows:
 
@@ -262,7 +262,7 @@ SSL Client Configuration
 
 |tag-ops-changed|
 
-We made the life of |ivy-engine| administrators easier
+We made the life of Axon Ivy Engine administrators easier
 with some simplifications in the SSL configuration.
 
 .. container:: admonition note toggle
@@ -283,7 +283,7 @@ Workflow Event Log API removed
 
 |tag-project-removed|
 
-The Workflow Event Log API has been deprecated in |axon-ivy| 8.0
+The Workflow Event Log API has been deprecated in Axon Ivy 8.0
 and has been removed now. As it was never Public API, most projects will
 not be affected.
 
@@ -330,7 +330,7 @@ still have used the jTDS driver.
   #. Choose :guilabel:`Driver` **Microsoft SQL Server**
   #. Click :guilabel:`Check Connection`
   #. Click :guilabel:`Save`
-  #. Restart |ivy-engine|
+  #. Restart Axon Ivy Engine
 
   **External Databases**
   
@@ -361,12 +361,12 @@ MySQL 5.5. We recommend to upgrade to MySQL 8.
 
 
 
-Enabled JavaTime module for Rest Clients by default
+Enabled JavaTime module for REST Clients by default
 ***************************************************
 
 |tag-project-changed|
 
-The standard JSON serialization feature for Rest Clients is now aware of JavaTime objects,
+The standard JSON serialization feature for REST Clients is now aware of JavaTime objects,
 such as ZonedDateTime, and will therefore optimize their JSON representation.
   
 .. container:: admonition note toggle
@@ -379,10 +379,10 @@ such as ZonedDateTime, and will therefore optimize their JSON representation.
 
   This change should not have any side-effects on existing clients since java.time objects,
   which did not have any special serializer features enabled, could not be serialized in a
-  way that provides any value outside of the java world.
+  way that provides any value outside of the Java world.
   
   However, if you face any issues with the changed java.time object serialization, you may disable
-  the JavaTime module by setting the RestClient property ``JSON.Module.JavaTime=false``
+  the JavaTime module by setting the REST Client property ``JSON.Module.JavaTime=false``
 
 
 
@@ -436,7 +436,7 @@ works.
     * :project-build-plugin-doc:`maven-dependency-cleanup <9.2/maven-dependency-cleanup-mojo.html>`: 
       Remove :file:`lib/mvn-deps` folder.
   
-  If you use the functions to **pack or export projects** in |ivy-designer|,
+  If you use the functions to **pack or export projects** in Axon Ivy Designer,
   the same happens as with the Maven plugin:
     
     * Your Maven dependencies are copied to the :file:`lib/mvn-deps` folder.
@@ -446,7 +446,7 @@ works.
   now and use the normal `Maven dependencies
   <https://maven.apache.org/pom.html#Dependencies>`__ descriptor. To remove
   those entries you can edit the :file:`.classpath` file directly or use the
-  |ivy-designer|.
+  Axon Ivy Designer.
 
   **Before:**
 
@@ -461,7 +461,7 @@ works.
     Make sure that your project is converted to a Maven project!
 
     Only dependencies with the scope :code:`compile`, :code:`system` and
-    :code:`runtime` are copied. To reduce the size of your ivy archive, make sure
+    :code:`runtime` are copied. To reduce the size of your Ivy archive, make sure
     that your dependencies are configured correctly:
 
       * Mark test dependencies with the scope :code:`test`

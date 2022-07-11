@@ -9,7 +9,7 @@ types of security systems. You need to define at application creation time in
 which security system the application must live: 
 
 * **Internal Security System**:
-  Used to manage the users directly on the |ivy-engine|. There is only one
+  Used to manage the users directly on the Axon Ivy Engine. There is only one
   Internal Security System, which is called Ivy Security System. No further
   settings are available for this Security System. This is also the default
   Security System for application which has no security system defined.

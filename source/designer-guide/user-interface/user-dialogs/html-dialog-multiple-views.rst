@@ -3,33 +3,33 @@
 HTML Dialog with Multiple Views
 -------------------------------
 
-To implement a user interaction that consists of several pages (for
-example a wizard), one HTML Dialog can have multiple views (.xhtml
-files). This allows to enclose a complex user interaction in one HTML
-Dialog and to abstract it from the business process.
+To implement a user interaction that consists of several pages (for example a
+wizard), one HTML Dialog can have multiple views (.xhtml files). This allows you
+to enclose a complex user interaction in one HTML Dialog and abstract it from
+the business process.
 
 How to Add a View
 ^^^^^^^^^^^^^^^^^
 
-In the :guilabel:`New` menu in the |axon-ivy| project tree you find the
-:guilabel:`New HTML Dialog View` wizard to add a view to a HTML Dialog. Just
-enter the name of the view and the xhtml file for the view is created
-and added to the HTML Dialog. In the Ivy project tree all view files of
-a HTML Dialog are displayed below the main node of that HTML Dialog.
+In the :guilabel:`New` menu in the Axon Ivy project tree you find the wizard 
+:guilabel:`New HTML Dialog View` to add a view to an HTML Dialog. Just
+enter the name of the view and the XHTML file for the view is created
+and added to the HTML Dialog. In the Ivy project tree, all view files of
+an HTML Dialog are displayed below the main node of that HTML Dialog.
 
 |html-dialog-new-wizard|
 
 How to Switch Views During Runtime
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you have created a HTML Dialog with several views you have to
+If you have created an HTML Dialog with several views you have to
 implement the navigation between the views for the user on your own. The
 basic solution is a ``commandButton`` with an ``update`` attribute to
 load the next view.
 
-You find an example of a multi view HTML Dialog in the :ref:`HTMLDialogDemos
+You find an example of a multi-view HTML Dialog in the :ref:`HTMLDialogDemos
 project <importing-demo-projects>` that is provided
-with the |ivy-designer|.
+with the Axon Ivy Designer.
 
 ::
 

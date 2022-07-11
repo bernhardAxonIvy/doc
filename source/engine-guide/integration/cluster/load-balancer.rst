@@ -3,7 +3,7 @@
 Load Balancer
 =============
 
-|ivy-engine| Clusters work with **sticky sessions**. This means that the load
+Axon Ivy Engine Clusters work with **sticky sessions**. This means that the load
 balancer has to forward all requests from a session to the same cluster node. Of
 course, if a cluster node is no longer available then the request will be sent to
 another cluster node. This will cause the user to receive a new
@@ -15,8 +15,8 @@ follows:
 
 * configure the load balancer to forward all requests sent from one
   client IP address always to the same cluster node (IP based stickiness). 
-* use the |axon-ivy| Session Id to provide session stickiness. The session id is
-  provided by |ivy-engine| Enterprise Edition as a HTTP session cookie with the
+* use the Axon Ivy Session Id to provide session stickiness. The session id is
+  provided by Axon Ivy Engine Enterprise Edition as a HTTP session cookie with the
   name :code:`JSESSIONID`.
 
 Often :ref:`Reverse Proxies <reverse-proxy>` can be configured as load balancers.
@@ -29,7 +29,7 @@ balancing, and proxying for TCP and HTTP-based applications. It is very easy to
 set up and also offers a Docker image that needs only minimal configuration.
 
 We provide a :link-url:`sample on GitHub <docker-scaling-haproxy>` how to setup
-a |ivy-engine| Cluster using HAProxy as the load balancer within docker-compose.
+a Axon Ivy Engine Cluster using HAProxy as the load balancer within docker-compose.
 
 NGINX
 -----
@@ -40,4 +40,4 @@ balancing features. It also offers a Docker image with minimal configuration
 needs.
 
 We provide a :link-url:`sample on GitHub <docker-scaling-nginx>` on how to setup
-a |ivy-engine| Cluster using NGINX as the load balancer within docker-compose.
+a Axon Ivy Engine Cluster using NGINX as the load balancer within docker-compose.

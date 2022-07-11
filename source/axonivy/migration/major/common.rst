@@ -5,7 +5,7 @@ Common Migration Steps
 
 After running Operating System specific migration steps:
 
-#. Restart the |ivy-engine| .
+#. Restart the Axon Ivy Engine .
 #. Very likely you will need a new license after a major version change.
 
    #. Request a new license as described in the :ref:`license` chapter.
@@ -13,7 +13,7 @@ After running Operating System specific migration steps:
 #. Migrate the Database to the latest version: :ref:`upgrade-system-db`
 
    a. Either :ref:`convert the system database <upgrade-system-db>` with the :ref:`Engine Cockpit <engine-cockpit-systemdb>`
-   b. or set the ``autoConvert`` property in the :ref:`ivy-yaml` to ``true`` and it will be done with the next |ivy-engine| restart.
+   b. or set the ``autoConvert`` property in the :ref:`ivy-yaml` to ``true`` and it will be done with the next Axon Ivy Engine restart.
 #. Test your workflow app for braking changes and identify them using the :ref:`Migration Notes document <migration-notes>`.
 #. Examine the logs for errors while an automated test or a business user clicks through important workflows.
 
@@ -23,16 +23,16 @@ After running Operating System specific migration steps:
 Project-Migration
 ++++++++++++++++++
 
-If you face incompatibilities in the UI or see errors in the logs while using the new |ivy-engine|, here's how you make your projects compatible with the new |ivy-engine| version. 
+If you face incompatibilities in the UI or see errors in the logs while using the new Axon Ivy Engine, here's how you make your projects compatible with the new Axon Ivy Engine version. 
 
-#. Download the latest |ivy-designer| which is available for the release you are migrating to.
-#. Import the version that is deployed on your |ivy-engine| from your source repository
-   into your |ivy-designer| workspace.
-#. Migrate the project according the description in section :ref:`project-convert` of the
-   |ivy-designer| Guide. Usually this is achieved by invoking the project conversion action
+#. Download the latest Axon Ivy Designer which is available for the release you are migrating to.
+#. Import the version that is deployed on your Axon Ivy Engine from your source repository
+   into your Axon Ivy Designer workspace.
+#. Migrate the project according to the description in section :ref:`project-convert` of the
+   Axon Ivy Designer Guide. Usually, this is achieved by invoking the project conversion action
    on each project. Some manual adaptations may be necessary.
-#. Test the migrated project in the |ivy-designer|.
-#. All migrated projects must be re-deployed to the new, upgraded |ivy-engine| version. 
+#. Test the migrated project in the Axon Ivy Designer.
+#. All migrated projects must be re-deployed to the new, upgraded Axon Ivy Engine version. 
 
    #. Not only the ``RELEASE`` process model version (PMVs) must be updated and re-deployed, but all ``DEPRECATED`` projects too.
-   #. Other versions in state ``PREPARED`` or ``ARCHIVED`` may be easier to delete, rather than updating and re-deploying them.
+   #. Other versions in the states ``PREPARED`` or ``ARCHIVED`` may be easier to delete, rather than updating and redeploying.

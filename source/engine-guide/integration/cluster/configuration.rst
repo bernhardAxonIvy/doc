@@ -3,7 +3,7 @@
 Configuration
 =============
 
-An |ivy-engine| Cluster node is setup almost the same way as a stand-alone |ivy-engine|.
+An Axon Ivy Engine Cluster node is setup almost the same way as a stand-alone Axon Ivy Engine.
 Note: All nodes in a cluster setup have to run within the same network (the same
 broadcast domain).
 
@@ -11,7 +11,7 @@ Files Directory
 ---------------
 
 The files directory (``Data.FilesDirectory`` in your :ref:`ivy.yaml <ivy-yaml>`),  
-where |ivy-engine| stores files that are uploaded from users, must be shared between all 
+where Axon Ivy Engine stores files that are uploaded from users, must be shared between all 
 cluster nodes. You can use a Docker volume that stores all the files and is 
 mounted on all cluster nodes.
 
@@ -22,7 +22,7 @@ Configure the files directory in your :ref:`ivy.yaml <ivy-yaml>` file:
   Data.FilesDirectory: "/var/lib/axonivy-engine/files" 
 
 Create a Docker volume called ``ivy-files`` and mount it at ``/var/lib/axonivy-engine/files``
-in your |ivy-engine| Cluster node containers.
+in your Axon Ivy Engine Cluster node containers.
    
 .. code-block:: bash
 
@@ -32,7 +32,7 @@ in your |ivy-engine| Cluster node containers.
 Ensure that you backup the Docker volume periodically.  
 
 .. note::
-  In older version of the |ivy-engine| Cluster, the applications directory 
+  In older version of the Axon Ivy Engine Cluster, the applications directory 
   (``Data.AppDirectory`` in your :ref:`ivy.yaml <ivy-yaml>`) had to be shared 
   between the cluster nodes, too. This is no longer required and should be avoided.  
 

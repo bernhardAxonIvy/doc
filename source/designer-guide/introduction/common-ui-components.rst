@@ -2,7 +2,7 @@ Common UI Components
 ====================
 
 
-|axon-ivy| uses some UI components that are widely used in the UI panels
+Axon Ivy uses some UI components that are widely used in the UI panels
 of the product. This chapter introduces these components.
 
 
@@ -187,11 +187,11 @@ explains their function.
    |                                   | UI components                                             |
    |                                   | (:ref:`process-element-web-service-call-activity`).       |
    +-----------------------------------+-----------------------------------------------------------+
-   | |image23|                         | Opens a HTML Tag/Attribute                                |
-   |                                   | Browser that shows available html                         |
+   | |image23|                         | Opens an HTML Tag/Attribute                                |
+   |                                   | Browser that shows available HTML                         |
    |                                   | tags and attributes. Use this                             |
    |                                   | Smart Button if you want to                               |
-   |                                   | configure html tags or attributes                         |
+   |                                   | configure HTML tags or attributes                         |
    |                                   | of the associated UI component.                           |
    +-----------------------------------+-----------------------------------------------------------+
    | |image25|                         | Opens a Color Browser that shows                          |
@@ -253,7 +253,7 @@ Refactoring Wizards
 -------------------
 
 Refactoring wizards appear when you *rename*, *move*, *delete* or
-*copy/paste* |axon-ivy| artifacts.
+*copy/paste* Axon Ivy artifacts.
 
 The wizards allow you to specify the new name/namespace/location of the
 artifacts that should be refactored and will give you an overview of the
@@ -371,10 +371,10 @@ Delete Wizard
    
    Delete Wizard
 
-If the selected resources are not |axon-ivy| artifacts, then you will be
+If the selected resources are not Axon Ivy artifacts, then you will be
 presented with a confirmation dialog for the delete operation.
 
-If you select an |axon-ivy| artifact (|axon-ivy| projects, User Dialog,
+If you select an Axon Ivy artifact (Axon Ivy projects, User Dialog,
 Process, Data Class) for deletion, then you might be presented with a
 list of references that will break, if the operation is executed.
 

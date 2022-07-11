@@ -20,7 +20,7 @@ and child calendars inheriting all values from their ancestor, e.g.
    -  Germany
 
 Above you see the business calendar definitions for AxonIvy. We define a
-global root with three countries. For Switzerland we also add two
+global root with three countries. For Switzerland, we also add two
 regions, Zurich and Zug, each with their local public holidays besides
 the ones they inherit from Switzerland and AxonIvyGlobal.
 
@@ -36,7 +36,7 @@ For example:
    implemented by setting the task expiry to the business day after the
    next.
 
-   Set the desired business calendar on the case if the default calendar
+   Set the desired business calendar on the case, if the default calendar
    does not apply:
    
    .. figure:: /_images/business-calendar/business-calendar-request-start.png
@@ -54,28 +54,28 @@ For example:
       // e.g. on the Start tab of a Request Start Inscription Mask
       out.paymentDate = ivy.cal.getWorkDayIn(out.paymentDate, 0);
 
-You can set a calendar on tasks, cases, environments or applications.
+You can set a calendar on tasks, cases, environments, or applications.
 The variable (ivy.cal) references the calendar that is valid for the
-current context with the following priority:
+current context. It determines the valid calendar by checking:
 
-#. current task, if any is set
-#. current case, if any is set
-#. current environment, if any is set
-#. current application, if any is set
-#. root calendar of the current application
+#. the current task
+#. the current case
+#. the current environment
+#. the current application
+#. the root calendar of the current application, if none of the above have been
+   set explicitly.
 
-You can use another calender by referencing it by its name:
+You can use another calendar by referencing it by its name:
 
 ::
 
    ivy.cal.get("Zug").getWorkDayIn(2);
 
-If you want to configure business calendars for test purposes in your
-Designer environment you can change (or create if it doesn't exist yet)
-the ``app-designer.yaml`` file in folder ``<designer_path>/configuration``. Note
-that all values in this file are valid for all projects in your
-workspace and that they don't get cleared after a restart.
+If you want to configure business calendars for test purposes in your Axon Ivy
+Designer environment, you can change (or create if it doesn't exist yet) the
+``app-designer.yaml`` file in folder ``<designer_path>/configuration``. Note
+that all values in this file are valid for all projects in your workspace and
+that they don't get cleared after a restart.
 
-See chapter :ref:`configuration-business-calendar`
-in the Engine Guide on how to configure business calendars on your
-Engine instance.
+See chapter :ref:`configuration-business-calendar` in the Engine Guide on how to
+configure business calendars on your Engine instance.

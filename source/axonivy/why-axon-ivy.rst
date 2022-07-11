@@ -1,16 +1,16 @@
 .. _axonivy-why:
 
-Why |axon-ivy|?
-===============
+Why Axon Ivy?
+=============
 
-|axon-ivy| is exciting for everyone that partakes on your digital transformation
+Axon Ivy is exciting for everyone who participates in your digital transformation
 journey.
 
-* **Business**:
-  We enable you to start your personal digital transformation journey and make
-  new business opportunities possible. You are still the captain of your ship,
-  start with simple automations and transform essential parts of your business
-  when you gain trust and confidence.
+* **Business**: 
+  We enable you to start your digital transformation journey and
+  make new business opportunities possible. You are still the captain of your
+  ship, start with simple automations and transform essential parts of your
+  business when you gain trust and confidence.
 
 * **Business Analysts**:
   It has never been easier to document processes fast and intuitive. The process

@@ -11,18 +11,15 @@ New project version
 
 |tag-ops-changed| |tag-project-auto-convert|
 
-Due to the migration of the
-:ref:`External Databases <migrate-92-93-external-database-migration>`,
-:ref:`Rest Clients <migrate-92-93-rest-clients>`,
-:ref:`Web Service Clients <migrate-92-93-webservice-clients>`,
-:ref:`Environments <migrate-92-93-envs>`,
-:ref:`Formats <migrate-92-93-formats>`
-and projects to Eclipse Maven projects, we
-introduced a new project version :code:`93900`. If you
-have an existing project in version :code:`80000`, 
-it will still run on the |ivy-engine|, 
-but :ref:`we recommend to migrate your projects <migration-project>`
-to the new version and re-deploy them.
+Due to the migration of the :ref:`External Databases
+<migrate-92-93-external-database-migration>`, :ref:`Rest Clients
+<migrate-92-93-rest-clients>`, :ref:`Web Service Clients
+<migrate-92-93-webservice-clients>`, :ref:`Environments <migrate-92-93-envs>`,
+:ref:`Formats <migrate-92-93-formats>`, and Projects to Eclipse Maven projects,
+we introduced a new project version :code:`93900`. If you have an existing
+project in version:code:`80000`, it will still run on the Axon Ivy Engine, but
+:ref:`we recommend migrating your projects <migration-project>` to the new
+version and re-deploy them.
 
 
 .. _migrate-92-93-external-database-migration:
@@ -34,7 +31,7 @@ Defining Databases
 
 Configurations of Databases are stored in new locations. During development, the project's
 Databases are now stored in the :ref:`databases.yaml <database-configuration>` file. On the
-|ivy-engine|, the configurations of Databases have been moved from the System Database to the
+Axon Ivy Engine, the configurations of Databases have been moved from the System Database to the
 application's :ref:`app-yaml` file. Furthermore, the System Database and project migration 
 converts from the old to the new format automatically.
 
@@ -54,19 +51,19 @@ converts from the old to the new format automatically.
 
     All APIs to load databases configuration from :code:`IApplication` and :code:`IEnvironment`
     has been removed. They were introduced to show the configuration in the legacy AdminUI.
-    They were never intended to be used in your |axon-ivy| Projects.
+    They were never intended to be used in your Axon Ivy Projects.
 
 
 .. _migrate-92-93-rest-clients:
 
-Defining Rest Clients
+Defining REST Clients
 *********************
 
 |tag-ops-changed| |tag-project-changed| |tag-project-auto-convert|
 
-Configurations of Rest Clients are stored in new locations. During development, the project's
+Configurations of REST Clients are stored in new locations. During development, the project's
 Rest Clients are now stored in the :ref:`rest-clients.yaml <rest-clients-configuration>` file. On the
-|ivy-engine|, configurations of Rest Clients have been moved from the System Database to the
+Axon Ivy Engine, configurations of REST Clients have been moved from the System Database to the
 application's :ref:`app-yaml` file. Furthermore, System Database and project migrations do
 converts from the old to the new format automatically.
 
@@ -94,7 +91,7 @@ Defining Web Service Clients
 
 Configurations of Web Service Clients are stored in new locations. During development, the project's
 Web Service Clients are now stored in the :ref:`webservice-clients.yaml <webservice-clients-configuration>` file. On the
-|ivy-engine|, configurations of Web Service Clients have been moved from the System Database to the
+Axon Ivy Engine, configurations of Web Service Clients have been moved from the System Database to the
 application's :ref:`app-yaml` file. Furthermore, System Database and project migrations 
 converts from the old to the new format automatically.
 
@@ -122,7 +119,7 @@ Environments
 |tag-project-changed| |tag-project-deprecated|
 
 The environment editor and all environment aware editors like the Web Service
-Client Editor, the Rest Client Editor and the Database Editor are not
+Client Editor, the REST Client Editor, and the Database Editor are not
 environment aware anymore. Learn how you can define :ref:`environment aware
 configurations <configuration-environments>`.
 
@@ -139,7 +136,7 @@ Formats
 
 :ref:`Formats <configuration-formats>` are migrated from the so-called config
 CMS to the :file:`config/formats.yaml` in your project. There is no more UI
-Editor to edit those formats. If you migrate a running |ivy-engine| you need
+Editor to edit those formats. If you migrate a running Axon Ivy Engine you need
 to convert your projects and redeploy them again to make formats work.
 
 
@@ -148,7 +145,7 @@ Configuration deployment options removed
 
 |tag-ops-changed| |tag-ops-deprecated|
 
-Now that most of the app configuration is defined in YAML files, the
+Now that most of the app configuration is defined in  YAML files, the
 :code:`configuration` deployment options are disregarded and can be removed from your
 :ref:`deploy.options.yaml <deployment-options>` file.
 
@@ -174,8 +171,8 @@ Removed support for CMS Page
 
 |tag-project-removed| 
 
-We no longer support CMS pages. Both in |ivy-designer| and
-on |ivy-engine|. You will need to manually reimplement them
+We no longer support CMS pages. Both in Axon Ivy Designer and
+on Axon Ivy Engine. You will need to manually re-implement them
 to an alternative. For example as :ref:`HTML Dialog (JSF) <html-dialogs>` or
 as :ref:`static JSF page <static-jsf-pages>`. We still support :ref:`plain JSP pages <user-interface-web-page>`
 which would be a non-future alternative.
@@ -206,11 +203,10 @@ Non-public API Email
 
 |tag-project-removed| 
 
-If you have used some non-public email classes
-like ``EmailSetupConfiguration``, ``EmailSetupProviderUtil``
-or ``SimpleMailSender`` then you need to touch your project,
-because they no longer exist. We are currently building a public API
-for mail. It is already available but not officially public yet:
+If you have used some non-public email classes like ``EmailSetupConfiguration``,
+``EmailSetupProviderUtil`` or ``SimpleMailSender`` then you need to touch your
+project because they no longer exist. We are currently building a public API for
+mail. It is already available but not officially public yet:
 
 
 .. code-block:: java
@@ -234,11 +230,11 @@ Drop AXIS Technology for Web Service Client
 
 |tag-project-removed| |tag-project-auto-convert|
 
-With Axon Ivy 7.1 we have introduced CXF Web Service Client as a super-fast,
-secure and future driven technology to call SOAP Web Services. AXIS is
-making more and more trouble and to keep the quality of the Axon Ivy Platform
-on a high level we need to cut AXIS off. You have to convert all Web
-Service Clients based on AXIS (1+2) to CXF in the |ivy-designer|.
+With Axon Ivy 7.1 we have introduced the CXF Web Service Client as a super-fast,
+secure, and future-proof technology to call SOAP Web Services. AXIS has been
+making more and more trouble. To keep the quality of Axon Ivy on a high level we
+need to remove AXIS. You have to convert all Web Service Clients based on AXIS
+(1+2) to CXF in the Axon Ivy Designer.
 
 .. container:: admonition note toggle
 
@@ -280,18 +276,17 @@ We deprecated the :ref:`case_scope` project overrides in favor of :ref:`strict_o
       OverrideProject: com.acme.solution:MyCustomerAdaption
 
 
-Default Rest Client entity processing changed to buffered
+Default REST Client entity processing changed to buffered
 *********************************************************
 
 |tag-ops-changed|
 
-Since we are using the *ApacheConnectorProvider* as default provider
-for Rest Clients also the default of entity processing
-has changed from :code:`BUFFERED` to :code:`CHUNKED`. Which means that
-the http header :code:`Content-length` is not set which makes trouble
-with a lot of services. You can fix this by switching to chunked processing again. 
-Change your Rest Client config and set the property :code:`jersey.config.client.request.entity.processing`
-to :code:`CHUNKED`.
+Since we are using the *ApacheConnectorProvider* as the default provider for
+Rest Clients, the default entity processing has changed from :code:`BUFFERED` to
+:code:`CHUNKED`. This means that the HTTP header :code:`Content-length` is not
+set which makes trouble with a lot of services. You can fix this by switching to
+chunked processing again. Change your REST Client config and set the property
+:code:`jersey.config.client.request.entity.processing` to :code:`CHUNKED`.
 
 
 System Database Cache Configuration and MBean (JMX)
@@ -325,7 +320,7 @@ Cluster Name
 
 |tag-ops-changed| |tag-ops-wizard|
 
-The name of a :ref:`cluster <cluster>` (|ivy-engine| Enterprise Edition) can now be configured 
+The name of a :ref:`cluster <cluster>` (Axon Ivy Engine Enterprise Edition) can now be configured 
 in the :ref:`ivy.yaml <ivy-yaml>` file. Before, it was pre-configured in the :ref:`license <license>` 
 file as :code:`server.cluster.name` property. 
 
@@ -335,12 +330,12 @@ JGroups Configuration
 
 |tag-ops-changed|
 
-JGroups is the library we use to communicate between :ref:`cluster nodes <cluster>` (|ivy-engine| Enterprise Edition).
+JGroups is the library we use to communicate between :ref:`cluster nodes <cluster>` (Axon Ivy Engine Enterprise Edition).
 By default, you do not need to provide the :file:`jgroups.xml` file in the ``configuration``
 folder anymore. Please remove your existing :file:`jgroups.xml` file from the ``configuration``
 folder, if you have not made any changes to it; otherwise replace it with a standard JGroups 5.0
 :file:`jgroups.xml` file and re-apply your changes to this file. :file:`jgroups.xml` files used
-in earlier versions of the |ivy-engine| are not compatible with JGroups 5.0.
+in earlier versions of the Axon Ivy Engine are not compatible with JGroups 5.0.
     
 ------------
 

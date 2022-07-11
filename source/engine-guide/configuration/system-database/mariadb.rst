@@ -7,13 +7,13 @@ MariaDB
   :language: yaml
   :linenos:
 
-We only support **InnoDB** as storage engine. If database will be created by the
-|ivy-engine| the charset is set to ``utf8`` and collation is set to
+We only support the storage engine **InnoDB**. If database is created by the
+Axon Ivy Engine, the character set ``utf8`` is used and the collation is set to
 ``utf8_unicode_ci``.
 
 .. warning::
   The newer charset ``utf8mb4`` is not supported. 
-  The creation of the system database tables will fail if you use ``utf8mb4`` charset.
+  The creation of the system database tables will fail if you use the ``utf8mb4`` charset.
 
 .. tip::
   If you experience bad query performance in Portal, then try to increase the

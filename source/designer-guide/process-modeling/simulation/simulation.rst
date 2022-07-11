@@ -39,7 +39,7 @@ Engine Actions
 ~~~~~~~~~~~~~~
 
 You are able to control the simulation and to influence the animation
-using the actions in the toolbar or the |axon-ivy| menu.
+using the actions in the toolbar or the Axon Ivy menu.
 
 .. figure:: /_images/simulation-debugging/menu-engine.png
    :alt: Engine Sub-Menu
@@ -117,7 +117,7 @@ To get or set the content or formatting language in IvyScript use
 ``ivy.session.contentLocale`` respectively
 ``ivy.session.formattingLocale``.
 
-Find out more about |axon-ivy|'s scripting language :ref:`ivyscript`.
+Find out more about Axon Ivy's scripting language :ref:`ivyscript`.
 
 .. |image20d| image:: /_images/simulation-debugging/button-languages.png
 

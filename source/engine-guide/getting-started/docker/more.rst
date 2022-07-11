@@ -1,9 +1,9 @@
 More
 ----
 
-The |ivy-engine| docker image is provided here: `Docker Hub
+The Axon Ivy Engine docker image is provided here: `Docker Hub
 <https://hub.docker.com/r/axonivy/axonivy-engine/>`_. The :file:`Dockerfile`
-of the |ivy-engine| image is open source and can be inspected on
+of the Axon Ivy Engine image is open source and can be inspected on
 :link-url:`GitHub <docker-image>`. In case you want
 to build your own image maybe with another base image then you can use
 this :file:`Dockerfile` as a template.
@@ -11,8 +11,8 @@ this :file:`Dockerfile` as a template.
 **Examples**
 
 On GitHub in the :link-url:`docker-samples <docker-samples>` repository you can find many
-examples regarding how to use the |ivy-engine| docker image.
+examples regarding how to use the Axon Ivy Engine docker image.
 
 Have a look at our :link-url:`project-build-examples <build-examples-docker>`. 
 It shows how to use Maven to build your own container image that contains an 
-|ivy-engine| and your workflow application.
+Axon Ivy Engine and your workflow application.

@@ -3,7 +3,7 @@ Converters
 
 Converters are used to convert number or date/time values for string
 representation and vice versa. If you want to display a ``Number`` or
-``Date``/``DateTime`` process data attribute well formatted in an input
+``Date``/``DateTime`` process data attribute well-formatted in an input
 widget then use the basic converters provided by the JSF core framework:
 **convertNumber** and **convertDateTime**.
 
@@ -21,7 +21,7 @@ Custom Faces Converters
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 Custom Faces Converters can be implemented as a Java class with a
-specific ``FacesConverter`` annotation and then be used in your |axon-ivy|
+specific ``FacesConverter`` annotation and then be used in your Axon Ivy
 project.
 
 Example:

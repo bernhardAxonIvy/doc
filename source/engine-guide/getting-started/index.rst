@@ -3,12 +3,12 @@
 Getting Started
 ***************
 
-Here you will learn how to install and configure an |ivy-engine| and
-ultimately how to bring your process to life by deploying your |axon-ivy|
-projects. As you will see, a minimal setup of an |ivy-engine| is
-straightforward. Next to the |ivy-engine| itself you only need a browser of
+Here you will learn how to install and configure an Axon Ivy Engine and
+ultimately how to bring your process to life by deploying your Axon Ivy
+projects. As you will see, a minimal setup of an Axon Ivy Engine is
+straightforward. Next to the Axon Ivy Engine itself you only need a browser of
 your choice (e.g. Firefox) and a database management system (e.g. Postgres) for
-storing the data of the |ivy-engine|.
+storing the data of the Axon Ivy Engine.
 
 |
 
@@ -17,16 +17,16 @@ storing the data of the |ivy-engine|.
 
 |
 
-But first you have to choose a platform. The |ivy-engine| runs on all modern
+But first you have to choose a platform. The Axon Ivy Engine runs on all modern
 runtime environments:
 
 * :ref:`Debian <getting-started-debian>` We provide a debian package for
   debian based Linux systems like Ubuntu or Linux Mint. Besider the install 
   capabilities, this package offers great support for later upgrades of the
-  |ivy-engine|.
+  Axon Ivy Engine.
 
-* :ref:`Docker <getting-started-docker>` The |ivy-engine| is provided as a
-  docker image. This allows you to run the |ivy-engine| in a simple
+* :ref:`Docker <getting-started-docker>` The Axon Ivy Engine is provided as a
+  docker image. This allows you to run the Axon Ivy Engine in a simple
   docker-compose setup or in container orchestration platforms like Kubernetes
   or Openshift. This package provides maximum installation, configuration and
   upgrade support.
@@ -42,11 +42,11 @@ runtime environments:
 
 .. rubric:: Non-Demo Setup
 
-Out of the box, the |ivy-engine| runs in Demo mode without a license. 
+Out of the box, the Axon Ivy Engine runs in Demo mode without a license. 
 In this mode, it uses an in-memory, non-persistent database.
 
-To run an |ivy-engine| in non-Demo mode, you have to order a :ref:`license
-<license>` for the |ivy-engine| and install the |ivy-engine| on a system
+To run an Axon Ivy Engine in non-Demo mode, you have to order a :ref:`license
+<license>` for the Axon Ivy Engine and install the Axon Ivy Engine on a system
 that fulfills the :ref:`system requirements <engine-system-requirements>`.
 
 Please be aware of the :ref:`integration <integration>` possibilities.
@@ -55,7 +55,7 @@ For example:
 * For security reasons, we highly recommend the use of a reverse proxy server.
 * You can synchronize your users from an external user management system to minimize the
   administration effort.
-* For high availability, performance and scalability, you can cluster the |ivy-engine|.
+* For high availability, performance and scalability, you can cluster the Axon Ivy Engine.
 
 .. toctree::
    :maxdepth: 1

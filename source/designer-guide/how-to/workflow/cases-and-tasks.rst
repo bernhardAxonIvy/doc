@@ -1,17 +1,17 @@
 
-Case and Task
--------------
+Cases and Tasks
+---------------
 
-The ivy workflow manages the execution of process instances. A process
-instance is represented trough one Case and one or multiple Tasks. The
-Case exists from the first process step until the last process step and
-holds information of a process instance. When the Case gets finished
-even the process gets finished and backwards. A Case is processed though
-Tasks. Each Task defines an unit of work, which has to be done as one
-working step. Therefore a Task is assigned to a user or role which
-executes Task. A Task starts by a process-start element or a task-switch
-element and ends by the next task-switch element or an process-end
-element.
+The Ivy workflow manages the execution of **process instances**. A **process
+instance** is represented by one **Case** and one or more **Tasks**. The
+**Case** exists from the first process step until the last process step and
+holds information about its **process instance**. The **Case** is finished when
+the process is completed. A **Case** is composed of one or more connected
+**Tasks**. Each **Task** defines a unit of work, which has to be done as one
+working step. Therefore, a **Task** is to be executed by a user or role - the
+**Task** is assigned to a user or a task. A **Task** is started by a process-start
+or a task-switch element and ends at the next task-switch element or at a
+process-end element.
 
 |image0|
 
@@ -20,29 +20,28 @@ element.
 Business Case
 -------------
 
-Modern processes are loosely coupled and highly
-:ref:`adaptive <adaptive-case-management>`. Business processes can break out of
-the standard process flow and trigger asynchronous processes or send a
-:ref:`signal <signal-reference>` that starts various other processes.
-As every running process creates a new Case instance it can get
-difficult for the workflow users to track the history and context of a
-task.
+Modern processes are loosely coupled and highly :ref:`adaptive
+<adaptive-case-management>`. Business processes can break out of the standard
+process flow and trigger asynchronous processes or send a :ref:`signal
+<signal-reference>` that starts various other processes. As every running
+process creates a new **Case**, it can get difficult for the workflow users
+to track the history and context of a **Task**.
 
-To clarify the workflow view, multiple Cases can be attached to a single
-Business Case.
+To clarify the workflow view, multiple **Cases** can be attached to a single
+**Business Case**.
 :ref:`Triggered <process-element-start-request-trigger-tab>` or
 :ref:`signaled <process-element-signal-start-tab-signal>`
-process-starts define in their inscription whether the started Case
-should be attached to the Business Case of the calling Case. Moreover,
-any Case can be attached to a Business Case by API. If a case map is
-started a business case is automatically created. See :ref:`casemap-execution`.
+process-starts define in their inscription whether the started **Case**
+should be attached to the **Business Case** of the calling **Case**. Moreover,
+any **Case** can be attached to a **Business Case** by API. If a case map is
+started, a **Business Case** is automatically created. See :ref:`casemap-execution`.
 
 
 Lifecycle
 ~~~~~~~~~
 
-The first case of a process always acts as Business Case (see image 'First Case').
-All later attached cases are sub cases of the Business Case (see image 'Multiple Cases').
+The first **Case** of a process always acts as **Business Case** (see image 'First Case').
+All **Cases** attached later to the **Business Case** are subcases of the **Business Case** (see image 'Multiple Cases').
 
 .. figure:: /_images/workflow/business-case-first-case.png
    :alt: First Case

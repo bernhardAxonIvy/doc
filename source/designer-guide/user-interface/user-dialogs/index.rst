@@ -4,10 +4,10 @@ User Dialogs
 ============
 
 A User Dialog is one of the two possibilities to interact with the user
-in a process. The other possibility are simple :ref:`user-interface-web-page`.
+in a process. The other is a simple :ref:`user-interface-web-page`.
 User Dialogs are based on Java Server Faces (JSF) technology.
 
-In |axon-ivy| we use :ref:`html-dialogs` - or HD for short
+In Axon Ivy, we use :ref:`html-dialogs` - or HD for short
 - as the name for a User Dialog Component built with JSF.
 
 .. toctree::

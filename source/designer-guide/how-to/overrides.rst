@@ -9,7 +9,7 @@ customer projects it is desirable that certain parts of such a generic
 solution may be redefined in the context of a specific installation or
 customer.
 
-To permit this, |axon-ivy| knows various concepts of context-sensitive
+To permit this, Axon Ivy knows various concepts of context-sensitive
 re-definitions:
 
 -  Regular redefinition (e.g. for Content Objects and/or
@@ -20,7 +20,7 @@ re-definitions:
    values and properties of global artifacts
    depending on the execution context.
 
--  Redefinition with overrides (e.g. for Html Dialogs, Html Dialog components
+-  Redefinition with overrides (e.g. for HTML Dialogs, HTML Dialog components
    and/or Sub Processes): Define a replacement component for an already
    existing component.
 
@@ -235,9 +235,9 @@ Overrides Tool Reference
 Override editor
 ~~~~~~~~~~~~~~~
 
-The |axon-ivy| *Overrides Editor* shows the registered and active
+The Axon Ivy *Overrides Editor* shows the registered and active
 overrides for a specific project. The overrides are listed in 4
-different sections: Sub Processes, Html Dialogs, Content Objects and
+different sections: Sub Processes, HTML Dialogs, Content Objects and
 Configurations.
 
 At the top of the editor, you can define the :ref:`strict_overriding` project.
@@ -274,7 +274,7 @@ Accessibility
 
 |override-tree-node|
 
-|axon-ivy| Project Tree > double click on the Overrides node.
+Axon Ivy Project Tree > double click on the Overrides node.
 
 
 Features
@@ -290,7 +290,7 @@ Sub Process Overrides
    used to "restore" a previously deleted mapping).
 
 Html Dialog Overrides
-   This section shows all Html Dialog (HD) overrides that are registered for
+   This section shows all HTML Dialog (HD) overrides that are registered for
    the selected project.
 
    Overrides can be defined for full HDs as well as for HD components.
@@ -383,7 +383,7 @@ Original Type
 Original Identifier
    Specify the identifier of the original component that should be
    overridden at runtime. Use the button next to the text field to
-   select from the available Html Dialogs or Sub Processes. Please note that
+   select from the available HTML Dialogs or Sub Processes. Please note that
    only components from required projects can be overridden, there is no
    point in defining an override for a component in the same project
    (see :ref:`overrides`).

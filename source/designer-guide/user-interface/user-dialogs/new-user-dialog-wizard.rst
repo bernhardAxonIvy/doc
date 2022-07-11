@@ -4,7 +4,7 @@ New User Dialog Wizard
 ----------------------
 
 The New User Dialog wizard lets you create a new User Dialog. This can
-be a HTML Dialog or an Offline Dialog.
+be an HTML Dialog or an Offline Dialog.
 
 The wizard creates several resources for the new User Dialog:
 
@@ -13,10 +13,10 @@ View
    possible).
 
 Process
-   The Process that contains the logic of the User Dialog.
+   The Process contains the logic of the User Dialog.
 
 Data Class
-   The Data Class that holds the data of the User Dialog.
+   The Data Class holds the data of the User Dialog.
 
 Interface
    The Interface list the ways of interaction with other User Dialogs
@@ -44,30 +44,30 @@ Project name
 Namespace
    Enter a namespace for your User Dialog. Use namespaces to group your
    User Dialogs. The grouping hierarchy is separated by the dot
-   character. This is a similar concept as *packages* in the Java
+   character. This is a similar concept to *packages* in the Java
    programming language.
 
 Name
    Enter the name of the User Dialog that you want to create.
 
 Dialog Type
-   Select the type of the User Dialog that you want to create.
+   Select the type of User Dialog that you want to create.
 
    .. tip::
 
-      Since *HTML Dialog* as well as *Offline Dialog* both base on JSF
+      Since *HTML Dialog* as well as *Offline Dialog* are based on JSF
       technology, it's possible to switch between those two dialog types
       after creation.
 
 View Type
-   A view type defines how the User Dialog will be. It depends on the dialog
-   type. You can choose if a User Dialog should be created with the *css grid*, so
-   it acts responsive to the display width or not. If you want a
-   reusable HTML component, select a *Component* type.
+   A view type defines how the User Dialog will be constructed. This depends on
+   the dialog type. You can choose if a User Dialog should be created with a
+   *css grid*, so it acts responsively to the display width or not. If you want to create a
+   reusable HTML component, select type *Component*.
 
 Layout
-   The layout can only be changed if you choose *HTML Dialog* and not
-   *Component* as view type. All your templates which are located in your
+   The layout can only be changed if you choose *HTML Dialog* but not
+   *Component* as the view type. All your templates which are located in your
    webContent/layouts folder are listed here. 
 
 Page 2: Dialog Data
@@ -78,25 +78,24 @@ Page 2: Dialog Data
 
    The New User Dialog Wizard Page 2
 
-This page provides the functionality to create necessary configuration
-of a User Dialog simple and quickly. The starting point is a data class.
-e.g. the data class of the process that calls the User dialog. Based on
-this data class the following configuration could be created:
+This page provides the functionality to create required configurations for a
+User Dialog simply and quickly. The starting point is a data class, e.g. the
+data class of the process that calls the User dialog. Based on this data class,
+you can create the following configurations:
 
 Start-Method
-   A start method is created based on the selected In and Out
-   attributes. The necessary parameter mapping will be automatically
-   generated.
+   A start method is created based on the selected In and Out attributes. The
+   necessary parameter mapping will be generated automatically.
 
 Data Class fields
-   For each selected In/Out attribute a field will be created in the
-   Data Class of the User Dialog. The name of the created field could be
-   defined in the column 'Field Name'.
+   For each selected In/Out attribute a field is created in the Data Class of
+   the User Dialog. The name of the created field is defined in the column
+   'Field Name'.
 
 Form (for HTML/Offline Dialogs)
-   For each selected UI attribute a form field is created in the view.
-   E.g. for a field birthday, of type Date, a label and a datepicker
-   will be generated.
+   For each selected UI attribute, a form field is created in the view,
+   e.g. for a field birthday of type Date, a label and a date picker
+   is generated.
 
 
 .. tip::

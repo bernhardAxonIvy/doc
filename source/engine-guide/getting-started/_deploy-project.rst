@@ -1,7 +1,7 @@
-Deploy an |axon-ivy| project
+Deploy an Axon Ivy project
 ------------------------------
 
-Let's deploy an |axon-ivy| project to the |ivy-engine|. First, navigate to the 
+Let's deploy an Axon Ivy project to the Axon Ivy Engine. First, navigate to the 
 :file:`deploy` directory and download the demo application.
 
 .. code:: bash
@@ -24,13 +24,13 @@ As soon as the deployment is finished the zip file will be postfixed with
 
 .. Note::
 
-    An |ivy-engine| can run multiple applications at the same time. Each
+    An Axon Ivy Engine can run multiple applications at the same time. Each
     application has its own user and task management. A user of one application
     can only work in that application and not in another application. A task of
     one application will never be visible in another application. Therefore,
     applications can be used to build multitenancy or stages (DEV, Q&A, PROD)
-    without installing one |ivy-engine| per tenant and/or stage.
+    without installing one Axon Ivy Engine per tenant and/or stage.
 
-Refresh the main page of the |ivy-engine|. You see a new application.
-Congratulations - you have installed and configured your first |ivy-engine|
-and also deployed your first |axon-ivy| processes!
+Refresh the main page of the Axon Ivy Engine. You see a new application.
+Congratulations - you have installed and configured your first Axon Ivy Engine
+and also deployed your first Axon Ivy processes!

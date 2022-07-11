@@ -5,7 +5,7 @@ Setup Wizard
 
 The Setup Wizard is a simple user interface for operators to apply the 
 initial configuration that is necessary to turn a demo engine into a
-productive |ivy-engine| instance. This includes among other steps the installation of a
+productive Axon Ivy Engine instance. This includes among other steps the installation of a
 license and the creation of a system database.
 
 .. note::
@@ -14,7 +14,7 @@ license and the creation of a system database.
     from the wizard to the :ref:`ivy-yaml` file.
 
 Advanced users might prefer to manually craft configurations in :ref:`ivy-yaml` and 
-use the :ref:`engine-config-cli` to roll out an |ivy-engine| into production.
+use the :ref:`engine-config-cli` to roll out an Axon Ivy Engine into production.
 Configuration files make the installation process quickly reproducable in
 various environments such as dev, test and prod.
 
@@ -29,9 +29,9 @@ If the engine runs in the :ref:`demo-mode` you see a warning on
 the info page with a link to the :ref:`setup-wizard`. 
 E.g. http://myServer:myPort/system/faces/view/engine-cockpit/setup.xhtml
 
-If you are not able to start the |ivy-engine| anymore, you can remove the
+If you are not able to start the Axon Ivy Engine anymore, you can remove the
 installed license file from the :file:`configuration` directory. The
-|ivy-engine| should now start up in :ref:`demo-mode`.
+Axon Ivy Engine should now start up in :ref:`demo-mode`.
 
 .. note::
     For the usage of this tool, you will need an administrator user account. 
@@ -64,7 +64,7 @@ System Administrators
 ---------------------
 
 On the :guilabel:`Administrators` step you can configure users that have the
-right to administer the |ivy-engine|:
+right to administer the Axon Ivy Engine:
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-setup-admins.png
 
@@ -78,7 +78,7 @@ Web Server Ports
 ----------------
 
 In the :guilabel:`Web Server` step you enable and configure the web protocols of
-the |ivy-engine|. Furthermore, you can customize the IP port bindings:
+the Axon Ivy Engine. Furthermore, you can customize the IP port bindings:
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-setup-webserver.png
 
@@ -105,13 +105,13 @@ The following protocols are supported:
 System Database
 ---------------
 
-In the :guilabel:`System Database` step the |ivy-engine|, you can configure,
+In the :guilabel:`System Database` step the Axon Ivy Engine, you can configure,
 create and convert system databases:
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-setup-systemdb.png
 
 First choose the database system and the JDBC driver you want to use. At the
-moment the |ivy-engine| supports the following database systems:
+moment the Axon Ivy Engine supports the following database systems:
 
 * :ref:`MySQL <systemdb-mysql>`
 * :ref:`MariaDB <systemdb-mariadb>`
@@ -125,7 +125,7 @@ to configure the connection settings. The applied db user needs the following
 privileges:
 
 * ``CREATE DATABASE`` (to create the system database out of the Engine Configuration)
-* ``CREATE``, ``ALTER``, ``DROP``: Tables, Views, Indexes, Triggers (to update the |ivy-engine|)
+* ``CREATE``, ``ALTER``, ``DROP``: Tables, Views, Indexes, Triggers (to update the Axon Ivy Engine)
 * ``INSERT``, ``SELECT``, ``UPDATE``, ``DELETE`` data
 
 In a third step, you may configure additional connection properties. When
@@ -158,7 +158,7 @@ chosen database system.
     case the applied db user needs the following privileges:
     
     * ``CREATE``, ``ALTER``, ``DROP``: Tables, Views, Indexes, Triggers (to update the
-      |ivy-engine|)
+      Axon Ivy Engine)
     * ``INSERT``, ``SELECT``, ``UPDATE``, ``DELETE`` data
  
     The best practice configurations are documented in chapter :ref:`System

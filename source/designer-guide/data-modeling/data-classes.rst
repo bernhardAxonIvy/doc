@@ -3,7 +3,7 @@
 Data Classes
 ============
 
-This chapter deals with the |axon-ivy| Data Classes. In general, a Data
+This chapter deals with the Axon Ivy Data Classes. In general, a Data
 Class holds the data that flows through your business or User Dialog
 process. You can build complex data structures out of your Data Classes.
 Use composition to split up your data if the amount of your data is
@@ -13,7 +13,7 @@ getting bigger.
 Types of Data Classes
 ---------------------
 
-There are four kinds of Data Classes in |axon-ivy|.
+There are four kinds of Data Classes in Axon Ivy.
 
 Global Data Classes
    The global Data Classes are placed in the Data Class node in your
@@ -67,7 +67,7 @@ Namespace
    Choose a namespace for your Data Class. The name space lets you
    create a structure to organize your data. Use the dot character '.'
    to separate the folders from each other. The namespace will be
-   visible in the |axon-ivy| project tree.
+   visible in the Axon Ivy project tree.
 
 Data Class Name
    Enter the name of your Data Class. Do not use the same name twice in
@@ -80,8 +80,8 @@ Data Class Name
 Data Class Editor
 -----------------
 
-The |axon-ivy| Data Class editor lets you configure the process data
-objects of |axon-ivy|. The process data is the data that **flows** through
+The Axon Ivy Data Class editor lets you configure the process data
+objects of Axon Ivy. The process data is the data that **flows** through
 your processes. It represents the state of the respective process.
 
 Use this editor to add new data fields to your process data class, to
@@ -97,7 +97,7 @@ Field.
 Accessibility
 ^^^^^^^^^^^^^
 
-#. |axon-ivy| Project Tree > double click on a Data Class entry in the
+#. Axon Ivy Project Tree > double click on a Data Class entry in the
    tree.
 
 #. New > Data Class > then the editor opens if the class was created
@@ -147,7 +147,7 @@ Name Column
       |image5|
 
       The entered type is used as a search filter. The following
-      examples using a data or java class with the name
+      examples using a data or Java class with the name
       ``ch.ivyteam.demo.Person``:
 
       -  ``person:Person`` results in ``person``,
@@ -162,7 +162,7 @@ Name Column
          full qualified name ``java.util``).
 
       -  ``timestamp:Timestamp`` results in displaying the type
-         selection dialog because there are mutliple types matching the
+         selection dialog because there are multiple types matching the
          type name ``Timestamp``.
 
 Type Column
@@ -170,16 +170,15 @@ Type Column
    :ref:`data-type-browser`.
 
 Persistent Column
-   Decide if the data should be persistent between a task switch. If the
-   data is not set to be persistent, then you loose all information if
-   the execution of the process passes a task switch process element.
+   Decide if the data should be persistent between a task switch. If the data is
+   not set to be persistent, then you lose all information if the execution of
+   the process passes a task switch process element.
 
    .. note::
 
-      This flag can be removed on attributes if the value is stored in
-      the :ref:`business data repository <business-data>` or using
-      :ref:`persistence <persistence>` or the data is only used
-      temporary within a task.
+      This flag can be removed on attributes if the value is stored in the
+      :ref:`business data repository <business-data>` or using :ref:`persistence
+      <persistence>`, or if the data is only used temporarily within a task.
 
 Attribute Refactoring
 ^^^^^^^^^^^^^^^^^^^^^
@@ -189,7 +188,7 @@ The Data Class editor supports Data Class attributes refactoring.
 Combine Into New Data Class Refactoring
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Over time the amount of attributes in a Data Class may become excessive.
+Over time, the number of attributes in a Data Class may become excessive.
 This decreases the maintainability and re-usability of your process
 logic. Therefore the editor allows you to extract multiple attributes
 from an existing Data Class into a new Data Class. The extracted
@@ -220,7 +219,7 @@ The first refactoring wizard page lets you define the location and name
 of the Data Class. |image10| The checkbox '*Include non type safe
 refactorings within Web Pages (CMS)*' enables the refactoring of JSP
 (macro) expressions within Web Pages. But Web Page modifications are not
-type safe. This means that attributes that are collected as change
+type-safe. This means that attributes that are collected as change
 candidates may be wrong. So these changes should be inspected in detail
 in the refactoring preview (page 2) and tested manually.
 

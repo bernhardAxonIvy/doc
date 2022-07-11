@@ -1,7 +1,7 @@
 Data Storage
 ============
 
-|axon-ivy| provides multiple possibilities to manage and store project
+Axon Ivy provides multiple possibilities to manage and store project
 specific data. This chapter provides an overview of all the
 possibilities with their advantages and disadvantages. Which one should
 be used depends from case to case.
@@ -35,7 +35,7 @@ Database
 
 Stores and access data in a database systems. An own database
 server is necessary and the database schema must be managed outside of
-|axon-ivy|.
+Axon Ivy.
 More information can be found in the chapter :ref:`process-element-db-activity`.
 
 Persistency (Java Persistence API)
@@ -56,7 +56,7 @@ Variables
 ---------
 
 Stores simple name/value configuration pairs. A Variable can have a different
-value per environment. On the |ivy-engine| there is a :ref:`UI
+value per environment. On the Axon Ivy Engine there is a :ref:`UI
 <engine-cockpit-variables>` to change the values of a Variable. More information
 can be found in the chapter :ref:`variables`.
 
@@ -81,7 +81,7 @@ Summary
 +-------------------------------+------------+----------------------+--------------+------------+----------------+-------------+-----------+-----------+
 | Filesystem                    | no         | no                   | no           | no         | no             | no          | no        | Advanced  |
 +-------------------------------+------------+----------------------+--------------+------------+----------------+-------------+-----------+-----------+
-| Html User Dialog Resources    | no         | no                   | no           | no         | yes            | yes         | no        | Novice    |
+| HTML User Dialog Resources    | no         | no                   | no           | no         | yes            | yes         | no        | Novice    |
 +-------------------------------+------------+----------------------+--------------+------------+----------------+-------------+-----------+-----------+
 | Database                      | no         | yes                  | yes          | no         | no             | yes         | no        | Advanced  |
 +-------------------------------+------------+----------------------+--------------+------------+----------------+-------------+-----------+-----------+

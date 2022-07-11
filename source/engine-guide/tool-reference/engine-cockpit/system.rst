@@ -10,7 +10,7 @@ Administrators
 The **Administrators** page allows you to manage users with administrator
 privileges. Any changes are stored to the :ref:`ivy-yaml` file. 
 
-You need to specify an email address for administrators. The |ivy-engine| 
+You need to specify an email address for administrators. The Axon Ivy Engine 
 send notifications of critical events to the administrators, e.g. license violations.
 
 .. note::

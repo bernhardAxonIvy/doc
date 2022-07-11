@@ -3,13 +3,14 @@
 Email
 =====
 
-The |ivy-engine| sends emails for different purposes:
+The Axon Ivy Engine sends emails for different purposes:
 
-* Emails that are sent within a process via the mail step.
-* New task assignment and daily task summaries to users.
+* In-process mails. Sent within a process via the mail step.
+* New task assignments and daily task summaries to users.
 * License expiration reminders to the administrators.
 
-For this you have to configure an email server in :ref:`ivy-yaml`: 
+For the Axon Ivy Engine to be able to send emails, you have to configure an
+email server in :ref:`ivy-yaml`: 
 
 .. literalinclude:: includes/ivy-email.yaml
   :language: yaml
@@ -22,6 +23,6 @@ daily task summaries at security system level in :ref:`ivy-yaml`:
   :language: yaml
   :linenos:
 
-Users are able to customize their notification settings in a workflow ui like
+Users can customize their notification settings in a workflow UI like
 the Portal. The content of the task email notifications can be customized by
-providing :ref:`custom ivy processes <email-notifications>`.
+providing :ref:`custom Ivy email processes <email-notifications>`.

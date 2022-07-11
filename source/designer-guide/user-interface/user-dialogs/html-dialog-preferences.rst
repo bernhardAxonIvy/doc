@@ -3,7 +3,7 @@
 HTML Dialog Preferences
 -----------------------
 
-In the |ivy-designer| preferences you can configure the templates
+In the Axon Ivy Designer preferences you can configure the templates
 used for the creation of HTML Dialogs and Offline Dialogs.
 
 .. note::
@@ -18,7 +18,7 @@ used for the creation of HTML Dialogs and Offline Dialogs.
 Accessibility
 ^^^^^^^^^^^^^
 
-|ivy-designer| *Menu -> Windows -> Preferences -> Web -> HTML Files -> Editor -> Templates*
+Axon Ivy Designer *Menu -> Windows -> Preferences -> Web -> HTML Files -> Editor -> Templates*
 
 HTML Dialog View Type Templates
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -44,7 +44,7 @@ Form Field Templates
 Every template with a name pattern 'form field [Type]' (for HTML Dialogs)
 respectively 'offline form field [Type]' (for Offline Dialogs)
 is considered as a form field template of the specified type. The form
-field templates are used during the creation of a HTML Dialog by the
+field templates are used during the creation of an HTML Dialog by the
 :ref:`user-dialog-new-wizard`.
 
 .. tip::

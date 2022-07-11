@@ -3,21 +3,19 @@
 Entity Class Editor
 -------------------
 
-The |axon-ivy| Entity Class editor lets you configure the process data
-objects of |axon-ivy| similar to the :ref:`data-class-editor`.
-The process data is the data that
-"flows" through your processes. Additionally an Entity Class has
-information where and how to store the data of a class and its
-attributes to a relational database.
+The Axon Ivy Entity Class editor lets you configure the process data objects of
+Axon Ivy similar to the :ref:`data-class-editor`. The process data is the data
+that "flows" through your processes. An Entity Class has additional 
+information about where and how to store the data of a class and its attributes in a
+relational database.
 
-Use this editor to add new data fields to your Entity Class, to change
-the type of a field or to document your Entity Class or Entity Class
-Fields.
+Use this editor to add new data fields to your Entity Class, to change the type
+of a field or to document your Entity Class or Entity Class Fields.
 
 Accessibility
 ^^^^^^^^^^^^^
 
-|axon-ivy| Project Tree > double click on a Entity Class entry in the tree
+Axon Ivy Project Tree > double click on an Entity Class entry in the tree
 
 New > Entity Class > then the editor opens if the class was created
 successfully
@@ -40,12 +38,12 @@ column of the table.
 
 If you want to reorder your entries in the table, then you can use the
 |image1| icons to do so. The order influences just the presentation and
-has no logic implication.
+has no logical implication.
 
-Use the |image2| icon to toggle the value change breakpoint for the
-currently selected attribute. The attribute icon |image3| shows that a
-breakpoint is installed on a attribute. More information about value
-change breakpoints can be found in chapter :ref:`Breakpoints <simulate-process-models-breakpoints>`.
+Use the |image2| icon to toggle the value change breakpoint for the currently
+selected attribute. The attribute icon |image3| shows that a breakpoint is
+installed on an attribute. More information about value change breakpoints can
+be found in the chapter :ref:`Breakpoints <simulate-process-models-breakpoints>`.
 
 Name
    Enter the name of your attribute. The name should not contain any
@@ -67,22 +65,21 @@ Type
 DB Field
    The name of the field in the database table of this attribute. If you
    generate the database from this Entity Class for this attribute the DB field
-   name is used as database field. (Only letters A-Z, digits 0-9 and the bottom
-   bar "_" are supported characters)
+   name is used as a database table column. (Only letters A-Z, digits 0-9 and the bottom
+   bar "_" are supported characters).
 
 Persistent
-   Decide if the data should be saved in the database if you use the
-   persistence API and if the data should be persistent between a task
-   switch. If the data is not set to be persistent, then you loose all
-   information if the execution of the process passes a task switch
-   process element.
+   Decide if the data should be saved in the database if you use the persistence
+   API as well as if the data should be persistent between a task switch. If the
+   data is not set to be persistent, then you lose all information if the
+   execution of the process passes a task switch process element.
 
 Length
    You can specify the length of the field in the database. This can
-   only be specified if the type is a String, BigDecimal or BigInteger.
+   only be specified if the type is a String, BigDecimal, or BigInteger.
    The default length for string fields is 255 and for decimal fields
-   19,2 on the database. Changes of the length has only an effect if the
-   database schema is created new.
+   19,2 on the database. Changing the length has only an effect if the
+   database schema is recreated.
 
 Properties
    id
@@ -132,22 +129,22 @@ Association
 ^^^^^^^^^^^
 
 ONE_TO_ONE
-   Defines a one to one (1:1 on the database) association to another
+   Defines a one-to-one (1:1 on the database) association with another
    Entity Class. Can only be used if the type of the attribute is an
    Entity Class.
 
 MANY_TO_ONE
-   Defines a many to one (n:1 on the database) association to another
+   Defines a many-to-one (n:1 on the database) association to another
    Entity Class. Can only be used if the type of the attribute is a List
    or Set of an Entity Class. The inverse association of a MANY_TO_ONE
-   is a ONE_TO_MANY association.
+   is an ONE_TO_MANY association.
 
 ONE_TO_MANY
-   Defines a one to many (1:n on the database) association to another
+   Defines a one-to-many (1:n on the database) association to another
    Entity Class. Can only be used if the type of the attribute is a List
-   or Set of an Entity Class. This type of association needs always a
-   mapped by specification, because this is always the inverse side of
-   an MANY_TO_ONE association.
+   or Set of an Entity Class. This type of association always needs a
+   mapped-by specification, because this is always the inverse side of
+   a MANY_TO_ONE association.
 
 Cascade
 ^^^^^^^
@@ -189,16 +186,15 @@ ONE_TO_ONE, ONE_TO_MANY inverse MANY_TO_ONE)
 Orphans
 ^^^^^^^
 
-If orphans remove is enabled and an entity that is the target of the
-relationship is removed from the relationship (either by removal from
-the collection or by setting the relationship to null), the remove
-operation will be applied to the entity being orphaned. If the entity
-being orphaned is a detached, new,or removed entity, the semantics do
-not apply.
+If orphans removal is enabled and an entity that is the target of a relationship
+is removed from the relationship (either by removal from the collection or by
+setting the relationship to null), the entity being orphaned will be removed. If
+the entity being orphaned is a detached, new, or removed entity, the semantics
+do not apply.
 
-If orphan remove is enabled and the remove operation is applied to the
-source entity, the remove operation will be propagated as defined in the
-cascade section.
+If orphan removal is enabled and the remove operation is applied to the source
+entity, the remove operation will be propagated as defined in the cascade
+section.
 
 The remove operation is applied at the time of the flush operation. The
 orphans removal functionality is intended for entities that are
@@ -209,10 +205,10 @@ privately "owned" by their parent entity.
 A 'Basket' entity holds a list of 'Product' entities. What happens if
 ``basket.getProducts().remove(..)`` is called?
 
--  orphan remove enabled: the product is removed from the list of
+-  orphan removal enabled: the product is removed from the list of
    referenced products even if the entity is reloaded or refreshed.
 
--  orphan remove disabled: the product stays in the list of referenced
+-  orphan removal disabled: the product stays in the list of referenced
    products if the entity is reloaded or refreshed.
 
 .. |image0| image:: /_images/persistence/button-add.png

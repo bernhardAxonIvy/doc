@@ -9,8 +9,8 @@ services, which can be consumed from a BPM process.
 
 .. tip::
 
-   Before you create a new REST Client you should have a look at the
-   :ref:`|axon-ivy| Market <market>`. You may find there already a connector.
+   Before you create a new REST Client, you should have a look at the :ref:`Axon
+   Ivy Market <market>`. There, you may find a suitable connector already.
 
 
 REST Client
@@ -26,15 +26,15 @@ not break the reference.
 Further information about how to use the REST clients can be found in
 the chapter :ref:`integration-rest`.
 
-Like other configurations a REST client can be configured differently
-per environment.
+Like other configurations, a REST client can be configured differently
+for each environment.
 
 .. _rest-client-configuration-editor:
 
 REST Client Editor
 ------------------
 
-The REST client Editor allows to configure REST client configurations.
+The REST client Editor allows configuring REST client configurations.
 
 .. figure:: /_images/designer-configuration/rest-client-editor.png
    :alt: REST Client Editor
@@ -74,8 +74,8 @@ REST Client Section
   
 - :guilabel:`Icon`
   Choose an icon that represents the system that this REST client
-  communicates with. The icon will also be used as decorator icon on 
-  REST client call process elements that references this REST client.  
+  communicates with. The icon will also be used as a decorator icon on 
+  REST client call process elements that reference this REST client.  
 
 - :guilabel:`Description`
   Description of the REST client.
@@ -96,7 +96,7 @@ REST Client Section
 .. _rest-clients-generator-wizard:
 
 OpenAPI Client Generator
-^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^
 The OpenAPI client generator wizard enables validation and inscription editor simplification features 
 around concrete calls with a :ref:`process-element-rest-client-activity`. 
 Click the *Generate REST classes* button to start the wizard. 
@@ -107,7 +107,7 @@ Click the *Generate REST classes* button to start the wizard.
 
 - expose valid resource+method combos and their documentation
 - display and validate typed query and path parameters
-- are aware of the payload being to and fro and generates java objects for them
+- are aware of the payloads being sent to and fro and generate Java objects for them
 
 **Pre-Requisites**
 
@@ -126,7 +126,7 @@ OpenAPI isn't the only popular format to describe REST service capabilities.
 You may need to integrate an `OData service <https://www.odata.org/>`__ then you
 can convert your OData service description with our `OData converter
 <http://odata-converter.axonivy.com>`__. The service description is usually
-available under the given service url ending with :code:`$metadata` e.g.
+available under the given service URL ending with :code:`$metadata` e.g.
 :code:`https://myService/cars/$metadata`
 
 If you have other types of service description then you may have a look at
@@ -226,15 +226,15 @@ items:
 
 Properties prefixed with ``PATH.`` are used in resource paths on calling activities. 
 So if your target resources contain templates like ``{api.version}`` which 
-re-occur on each and every instance of a calling activity, you should set it as global 
-path property on the RestClient, rather than re-declaring it on every instance 
+re-occur on every instance of a calling activity, you should set it as global 
+path property on the REST Client, rather than re-declaring it on every instance 
 of the calling element.
 
 Example:
 
 Given a valid resource of your remote service looks like this: ``https://api.twitter.com/{api.version}/status/...``
 
-Then the path template ``{api.version}`` can be set globally on the RestClient as property
+Then the path template ``{api.version}`` can be set globally on the REST Client as a property:
 
 +------------------+----------+
 | Property         | Value    |
@@ -242,7 +242,7 @@ Then the path template ``{api.version}`` can be set globally on the RestClient a
 | PATH.api.version |    2     |
 +------------------+----------+
 
-The resolved uri would consequently look as follows: ``https://api.twitter.com/2/status/...``
+The resolved URI would consequently look as follows: ``https://api.twitter.com/2/status/...``
 
 **Connection Properties**
 
@@ -261,12 +261,12 @@ but has other restrictions like no NTLM support.
 
 
 Dynamic Properties
-^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^
 You may need to adjust property values for multiple runtime environments. 
 E.g. to call different service URIs for testing than in production, 
 consequently with other credentials or OAUTH2 application identifiers.
 
-You can forsee and simplify these configuration adjustments for operations
+You can foresee and simplify these configuration adjustments for operations
 by using :ref:`dynamic-config` expressions in properties or any other configuration value.
 E.g. the property ``appId=${ivy.var.cloudAppId}`` will at runtime
 have the value of the variable called ``cloudAppId``.

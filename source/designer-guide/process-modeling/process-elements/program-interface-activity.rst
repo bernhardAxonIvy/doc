@@ -11,7 +11,7 @@ PI (Programming Interface) Activity
 Element Details
 ---------------
 
-This element allows |axon-ivy| to integrate custom-made software, legacy
+This element allows Axon Ivy to integrate custom-made software, legacy
 systems, proprietary applications or any other external system through a
 Java interface. The Program Interface element will instantiate a Java
 class that implements the interface
@@ -23,11 +23,11 @@ extend the abstract base class
 :public-api:`AbstractUserProcessExtension </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html>`.
 The interface also includes an inner editor class to parametrize the bean.
 The documentation of the interface and the abstract class can be found
-in the Java Doc of the |axon-ivy| Public API.
+in the Java Doc of the Axon Ivy Public API.
 
 .. note::
 
-   Since |axon-ivy| version 3.x this element has become somewhat obsolete
+   Since Axon Ivy version 3.x this element has become somewhat obsolete
    since it has become very easy to create and call your own Java
    classes from IvyScript. However, the PI element still provides a
    standardized interface to a third party Java class and can provide a

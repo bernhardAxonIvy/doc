@@ -16,7 +16,7 @@ Logging
 -------
 
 If you experience poor performance, you can log the individual requests
-to the |ivy-engine| log by setting the level of the request performance logger in :file:`[engineDir]/configuration/log4j2.xml`:
+to the Axon Ivy Engine log by setting the level of the request performance logger in :file:`[engineDir]/configuration/log4j2.xml`:
 
 .. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/log4j2-performance-request.xml
   :language: xml
@@ -26,7 +26,7 @@ This will create a log entry when the request has been received by the internal 
 and when the request has been processed with the time spent for processing.
 
 A unique request identifier **requestId** is assigned to every request. This can be used
-to find out what the |ivy-engine| did while processing the request.
+to find out what the Axon Ivy Engine did while processing the request.
 
 **Example:**
 
@@ -41,9 +41,9 @@ Request Tracing Tools
 .....................
 
 You can use a external tracing tool that propagates a trace id in a HTTP header.
-In that case, |axon-ivy| will re-use the given trace Id as its **requestId**.
+In that case, Axon Ivy will re-use the given trace Id as its **requestId**.
 This allows you to aggregate log entries from different systems using the
-**requestId**. |ivy-engine| supports the following HTTP headers:
+**requestId**. Axon Ivy Engine supports the following HTTP headers:
 
 =================  =============      
 HTTP Header        Tool/Standard

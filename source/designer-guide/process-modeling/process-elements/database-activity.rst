@@ -30,7 +30,7 @@ construction of your command.
    Query Tab
 
 Kind of Query
-   Choose the kind of query you like to perform. |axon-ivy| offers
+   Choose the kind of query you like to perform. Axon Ivy offers
    dedicated UI support for the most common query types such as
    ``Select`` (Read), ``Insert`` (Write), ``Update`` (Update) and ``Delete`` (Delete).
 

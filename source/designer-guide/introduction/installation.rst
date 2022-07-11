@@ -3,48 +3,48 @@
 Installation
 ============
 
-To successfully install |ivy-designer| follow these steps:
+To successfully install Axon Ivy Designer follow these steps:
  
-* :dev-url:`Download </download>` the **latest** |ivy-designer| version.
+* :dev-url:`Download </download>` the **latest** Axon Ivy Designer version.
 * Check if your system meets the :ref:`system requirements <designer-system-requirements>`.
 * Unzip the downloaded file in any folder where you have full access.
-* Run ``|ivy-designer|``.
+* Run ``Axon Ivy Designer``.
 
 .. _designer-system-requirements:
 
 System Requirements
 -------------------
 
-We recommend the following system setup for the |ivy-designer|:
+We recommend the following system setup for the Axon Ivy Designer:
 
 
 .. rubric:: Hardware Requirements
 
 Hardware requirements may vary depending on how many projects you are working on in your workspace.
 
-:Memory (RAM): Minimum is 3 GB, we recommend to use 8 GB.
+:Memory (RAM): Minimum is 3 GB, we recommend using at least 8 GB.
 
-:Disk Space: Minimum is 2 GB, we recommend 100 GB on a Solid State Disk (SSD).
+:Disk Space: Minimum is 2 GB, we recommend at least 100 GB on a Solid State Disk (SSD).
 
 :Processor: Minimum is 2 cores with 2 GHz, we recommend 8 cores with 2.5 GHz.
 
 
 .. rubric:: Software Requirements
 
-|ivy-designer| needs Java SE 11 to run. 
+Axon Ivy Designer needs Java SE 11 to run. 
 
-Note, that Java SE 11 provided by `Adoptium <https://adoptium.net/>`_ is already included in our Windows and 
+Note that Java SE 11 provided by `Adoptium <https://adoptium.net/>`_ is already included in our Windows and 
 `AdoptOpenJdk <https://adoptopenjdk.net>`_ in our macOS installation.    
-On Linux we do not include Java SE 11. You may want to use Java SE 11 provided by your operating system or 
+On Linux, we do not include Java SE 11. You may want to use Java SE 11 provided by your operating system or 
 `Adoptium <https://adoptium.net/>`_.
 
-We test |ivy-designer| with `Adoptium <https://adoptium.net/>`_ and with `OpenJDK <https://openjdk.java.net/>`_.
+We test Axon Ivy Designer with `Adoptium <https://adoptium.net/>`_ and with `OpenJDK <https://openjdk.java.net/>`_.
 
 .. rubric:: Operating Systems
 
 :Windows: Windows 10 / 11 x64 with `WebView2
     <https://developer.microsoft.com/en-us/microsoft-edge/webview2/>`_ installed
 
-:Linux: Debian based Linux x64 with GTK 3 and X.org window system (tested on Ubuntu 20.04)
+:Linux: Debian-based Linux x64 with GTK 3 and X.org window system (tested on Ubuntu 20.04)
 
 :macOS: macOS Big Sur x64 (tested on macOS Big Sur 11.2.3)

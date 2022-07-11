@@ -9,9 +9,9 @@ Wait Program Intermediate Event
 Element Details
 ---------------
 
-This element is one of |axon-ivy| facilities to integrate custom-made
+This element is one of Axon Ivy facilities to integrate custom-made
 software, legacy systems, proprietary applications or any other external
-system through an |axon-ivy| Java interface. At an Intermediate Event
+system through an Axon Ivy Java interface. At an Intermediate Event
 element the process execution is interrupted and waits for an external
 event to occur. Technically spoken the current task will be ended and a
 new system task is created that waits for the intermediate event. If the
@@ -24,7 +24,7 @@ class that implements the
 interface.
 The Wait Program Intermediate Event Element instantiates the Java class
 and can then trigger the intermediate event by calling the method
-``fireProcessIntermediateEventEx`` on the |axon-ivy| runtime engine
+``fireProcessIntermediateEventEx`` on the Axon Ivy runtime engine
 :public-api:`IProcessIntermediateEventBeanRuntime </ch/ivyteam/ivy/process/intermediateevent/IProcessIntermediateEventBeanRuntime.html>`.
 The common way to implement an
 Intermediate Event bean is to extend the abstract base class
@@ -32,11 +32,11 @@ Intermediate Event bean is to extend the abstract base class
 The interface also includes an
 inner editor class to parametrize the bean. You will find the
 documentation of the interface and the abstract class in the Java Doc of
-the |axon-ivy| Public API.
+the Axon Ivy Public API.
 
 .. note::
 
-   An |ivy-engine| Enterprise Edition consists of multiple engine
+   An Axon Ivy Engine Enterprise Edition consists of multiple engine
    instances (nodes) that are running on different machines.
    
    Normally process intermediate event beans are instantiated on every node

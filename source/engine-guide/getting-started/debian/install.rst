@@ -1,7 +1,7 @@
 Install the Engine
 ------------------
 
-There is a convenient DEB package available to install the |ivy-engine|. Use
+There is a convenient DEB package available to install the Axon Ivy Engine. Use
 the following bash script to download and install it:
 
 .. code:: bash
@@ -12,11 +12,11 @@ the following bash script to download and install it:
     rm -f /tmp/axonivy-engine.deb
 
 .. Note::
-  The most important folders of the |ivy-engine| are:
+  The most important folders of the Axon Ivy Engine are:
 
   * :file:`/usr/lib/axonivy-engine-*/` is the root installation folder with
     symlinks to all locations which are relevant to the engine.
   * :file:`/etc/axonivy-engine-*/` contains the configuration
     files.
   * :file:`/var/lib/axonivy-engine-*/deploy` used to deploy
-    |axon-ivy| projects.
+    Axon Ivy projects.

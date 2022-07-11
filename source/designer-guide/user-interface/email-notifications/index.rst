@@ -4,7 +4,7 @@ Email Notifications
 ===================
 
 To customize the content of the email notifications like the new task email or
-the daily task Summary, you must implement processes with a predefined process
+the daily task summary, you have to implement processes with a predefined process
 start signature.
 
 Mail notifications require a configured mail server and enabled notification
@@ -14,14 +14,14 @@ settings as described in :ref:`config-email`.
 Implementation
 --------------
 
-To customize a email notification you need to do the following: 
+To customize an email notification you need to do the following: 
 
-#. Implement a process with a predefined process start signature in an ivy
-   project. See the following sub chapters for more information.
+#. Implement a process with a predefined process start signature in an Ivy
+   project. See the following subchapters for more information.
 #. :ref:`Deploy <deployment>` the Ivy project with the customized standard
    processes in the application. 
-#. Optional: If you have multiple projects which provides the default pages
-   you may need to fix the provider in :ref:`ivy-yaml`.
+#. Optional: If you have multiple projects which provide the default pages
+   you may need to fix the provider in file :ref:`ivy-yaml`.
 
 
 .. literalinclude:: standardprocess-ivy.yaml
@@ -54,22 +54,22 @@ Hints
 -----
 
 **Subject**
-    The ``<title>`` html tag is re-used as email subject
+    The ``<title>`` HTML tag is re-used as the email subject
 
 **Images**
-    Can be referred in the html either from CMS or the file system. These
-    resources will be embedded as mime parts. External images will not be
-    embedded and the links will not be modified at all.
+    In the HTML, images can be referred to either from the CMS or the file
+    system. These resources will be embedded as MIME parts. External images will
+    not be embedded and the links will not be modified at all.
 
 **Skip**
-    You can avoid the standard mail sending procedure by custom conditions (e.g.
-    do not send mails to technical users). To do so implement an alternative
+    You can modify the standard mail sending behavior using custom conditions (e.g.
+    do not send emails to technical users). To do so, implement an alternative
     process flow without displaying any User Dialog or HTML Page activity.
 
 **API**
-    Some API hints to implement email notification processes:
+    Some hints on APIs to implement email notification processes:
     
-    * get the user you can use
+    * get the user with
       ``ivy.security().members().findById(notificationSecurityMemberId)`` 
-    * get the task you can use ``ivy.wf.findTask(notificationTaskId)``
-    * get the current open task for a user ``ivy.wf.findWorkTasks(...)``
+    * get the task with ``ivy.wf.findTask(notificationTaskId)``
+    * get the list of tasks that a user can work on with ``ivy.wf.findWorkTasks(...)``

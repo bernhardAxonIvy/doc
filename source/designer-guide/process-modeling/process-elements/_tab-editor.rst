@@ -1,25 +1,24 @@
 Editor Tab
 ~~~~~~~~~~
 
-This tab displays the editor that can be integrated in the external Java
-bean of the process element. The editor is implemented as an inner
-public static class of the Java bean class and must have the name
-``Editor``. Additionally the editor class must implement the
-:public-api:`IProcessExtensionConfigurationEditorEx </ch/ivyteam/ivy/process/extension/IProcessExtensionConfigurationEditorEx.html>`
-interface. The common way to
-implement the editor class is to extend the abstract base class
-:public-api:`AbstractProcessExtensionConfigurationEditor </ch/ivyteam/ivy/process/extension/impl/AbstractProcessExtensionConfigurationEditor.html>`
-and to override the
-methods ``createEditorPanelContent``, ``loadUiDataFromConfiguration``
-and ``saveUiDataToConfiguration``. The method
-``createEditorPanelContent`` can be used to build the UI components of
-the editor. You can add any AWT/Swing component to the given
-``editorPanel`` parameter. With the given ``editorEnvironment``
-parameter, which is of the type
-:public-api:`IProcessExtensionConfigurationEditorEnvironment </ch/ivyteam/ivy/process/extension/IProcessExtensionConfigurationEditorEnvironment.html>`,
-you can create text
-fields that support ivyScript and have smart buttons that provide access
-to the process data, environment functions and Java classes.
+This tab displays the editor that can be integrated in the external Java bean of
+the process element. The editor is implemented as an inner public static class
+of the Java bean class and has to have the name ``Editor``. Additionally, the
+editor class has to implement the
+:public-api:`IProcessExtensionConfigurationEditorEx
+</ch/ivyteam/ivy/process/extension/IProcessExtensionConfigurationEditorEx.html>`
+interface. The common way to implement the editor class is to extend the
+abstract base class :public-api:`AbstractProcessExtensionConfigurationEditor
+</ch/ivyteam/ivy/process/extension/impl/AbstractProcessExtensionConfigurationEditor.html>`
+and to override the methods ``createEditorPanelContent``,
+``loadUiDataFromConfiguration`` and ``saveUiDataToConfiguration``. The method
+``createEditorPanelContent`` can be used to build the UI components of the
+editor. You can add any Swing component to the given ``editorPanel``
+parameter. With the ``editorEnvironment`` parameter, which is of the type
+:public-api:`IProcessExtensionConfigurationEditorEnvironment
+</ch/ivyteam/ivy/process/extension/IProcessExtensionConfigurationEditorEnvironment.html>`,
+you can create text fields that support IvyScript and have smart buttons that
+provide access to the process data, environment functions and Java classes.
 
 Here is an example on how an editor could look like:
 
@@ -32,7 +31,7 @@ easily transfer process data to your legacy system.
 The following part shows the implementation of the above editor. As
 mentioned earlier Axon Ivy provides the
 :public-api:`IIvyScriptEditor </ch/ivyteam/ivy/process/extension/IIvyScriptEditor.html>` that
-represents a text field with ivyScript support and smart buttons. Inside
+represents a text field with IvyScript support and smart buttons. Inside
 ``createEditorPanelContent`` use the method ``createIvyScriptEditor``
 from the ``editorEnvironment`` parameter to create an instance of such
 an editor. Use the ``loadUiDataFromConfiguration`` method to read the
@@ -93,16 +92,19 @@ save the bean configuration.
      }
    }
 
-At runtime you have to evaluate the IvyScript the user have entered into
-the ivy script editors. If you implement for example the
-:public-api:`AbstractUserProcessExtension </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html>`
-class there is a perform method which
-is executed at runtime. At this point you want to access the configured
-data in the editor. The following code snippet show how you can evaluate
-the value of an :public-api:`IIvyScriptEditor </ch/ivyteam/ivy/process/extension/IIvyScriptEditor.html>`.
-If you use the
-:public-api:`IIvyScriptEditor </ch/ivyteam/ivy/process/extension/IIvyScriptEditor.html>` you only get the value by calling the
-``executeIvyScript`` method of the :public-api:`AbstractUserProcessExtension </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html>`.
+At runtime, you have to evaluate the IvyScript the user has entered into the
+IvyScript editors. If you implement for example the class
+:public-api:`AbstractUserProcessExtension
+</ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html>`
+there is a perform method that is executed at runtime. At this point, you want to
+access the configured data in the editor. The following code snippet shows how
+you can evaluate the value of a :public-api:`IIvyScriptEditor
+</ch/ivyteam/ivy/process/extension/IIvyScriptEditor.html>`. If you use the
+:public-api:`IIvyScriptEditor
+</ch/ivyteam/ivy/process/extension/IIvyScriptEditor.html>` you only get the
+value by calling the ``executeIvyScript`` method of the
+:public-api:`AbstractUserProcessExtension
+</ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html>`.
 
 ::
 

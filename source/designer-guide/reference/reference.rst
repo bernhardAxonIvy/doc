@@ -1,7 +1,7 @@
 Reference
 =========
 
-This chapter provides a linked reference of the |axon-ivy| application
+This chapter provides a linked reference of the Axon Ivy application
 parts.
 
 .. _designer-reference-editors:
@@ -66,8 +66,8 @@ Wizards
 -  :ref:`refactoring-wizards-move`
 -  :ref:`refactoring-wizards-copy`
 -  :ref:`refactoring-wizards-delete`
--  :ref:`Export |axon-ivy| Archive wizard <designer-export-project>`
--  :ref:`Import |axon-ivy| Archive wizard <designer-import-project>`
+-  :ref:`Export Axon Ivy Archive wizard <designer-export-project>`
+-  :ref:`Import Axon Ivy Archive wizard <designer-import-project>`
 
 
 Perspectives

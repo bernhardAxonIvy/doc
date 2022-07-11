@@ -140,7 +140,7 @@ User Task
 |image4|
 
 A User Task is the combination of a Task Switch Event and a User Dialog.
-When the user start working on a normal Html User Dialog the task
+When the user start working on a normal HTML User Dialog the task
 changes its state to RESUMED. In case of an 'Offline Dialog' the task
 state is not changed before the user submits the task form. Then the
 state changes from SUSPENDED to RESUMED. Subsequent steps are executed

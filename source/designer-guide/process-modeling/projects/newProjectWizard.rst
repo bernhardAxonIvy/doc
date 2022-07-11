@@ -5,7 +5,7 @@
 New Project Wizard
 -------------------
 
-The *New |axon-ivy| Project wizard* lets you create a new |axon-ivy|
+The *New Axon Ivy Project wizard* lets you create a new Axon Ivy
 project.
 
 On the first page you must specify the settings that are required for
@@ -52,7 +52,7 @@ Project ID
 
 Default namespace
    Define the default namespace for your project. This namespace will be
-   used as standard namespace for new |axon-ivy| artifacts. It is also the
+   used as standard namespace for new Axon Ivy artifacts. It is also the
    namespace into which the project's default data class (``Data``) will
    be generated.
 

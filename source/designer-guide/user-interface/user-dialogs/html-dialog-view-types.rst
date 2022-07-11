@@ -1,10 +1,9 @@
 HTML Dialog View Types
 ----------------------
 
-An HTML Dialog is either a page or a component. Both are complete HTML
-Dialogs and have therefore their own view, model (data class) and
-controller (logic). This concept allows to build up component oriented
-UI design.
+An HTML Dialog is either a page or a component. Both are complete HTML Dialogs.
+Both have their own model (data class), view, and controller (logic). This
+concept allows to build component-oriented UI design.
 
 .. note::
 
@@ -14,9 +13,8 @@ UI design.
 HTML Dialog Page
 ^^^^^^^^^^^^^^^^
 
-An HTML Dialog page represents a full page that is finally displayed in
-the web browser. Therefore a page can be opened by a
-:ref:`process-element-user-dialog`.
+An HTML Dialog page represents a full page that is displayed in the web browser.
+Therefore a page can be opened by a :ref:`process-element-user-dialog`.
 
 
 .. _html-dialog-layouts:
@@ -24,36 +22,33 @@ the web browser. Therefore a page can be opened by a
 HTML Dialog Layouts
 ^^^^^^^^^^^^^^^^^^^
 
-An HTML Dialog Page uses an HTML Dialog Layout. An HTML Dialog Layout is
-the concept of a master page that defines a common layout for a number
-of similar dialogs. An HTML Dialog Page references a layout and
-implements defined parts of it. For example the layout provides the
-header- and footer-area whereas the content-area is individually
-implemented on each dialog.
+An HTML Dialog Page uses an HTML Dialog Layout. An HTML Dialog Layout is the
+concept of a master page that defines a common layout for several similar
+dialogs. An HTML Dialog Page references a layout and implements defined parts of
+it. For example, the layout provides the header- and footer-area whereas the
+content area is individually implemented on each dialog.
 
-|axon-ivy| brings a set of predefined layouts. The layout (together with
-the view type) is chosen in the
-:ref:`New User Dialog Wizard <user-dialog-new-wizard-page-1>`.
+Axon Ivy is delivered with a set of predefined layouts. The layout (together
+with the view type) is chosen in the :ref:`New User Dialog Wizard
+<user-dialog-new-wizard-page-1>`.
 
-For more information about templating have a look at the official JSF
+For more information about templating, have a look at the official JSF
 documentation.
 
 
 Custom HTML Dialog Layouts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|axon-ivy| is not limited to the usage of the built-in HTML Dialog
-Layouts. Custom layouts can be added with small effort.
+Axon Ivy is not limited to the usage of the built-in HTML Dialog Layouts. Custom
+layouts can be added with little effort.
 
-In order to add a custom layout - which is a normal .xhtml file - it
-needs to be stored into the folder :file:`webContent`
-of the project. In doing so, the custom layout can now be referenced as
-a layout inside an HTML Dialog.
+To add a custom layout - which is a normal XHTML file - it needs to be stored in
+the :file:`webContent` folder of the project. In doing so, the custom layout can
+now be referenced as a layout inside an HTML Dialog.
 
-To make the custom layout show up in the 
-:ref:`New User Dialog Wizard <user-dialog-new-wizard-page-1>`
-(for selection of the view type),
-it must be stored in the folder ``webContent/layouts`` of the project.
+To make the custom layout show up in the :ref:`New User Dialog Wizard
+<user-dialog-new-wizard-page-1>` (for selection of the view type), it has to be
+stored in the folder ``webContent/layouts`` of the project.
 
 The folder structure of ``webContent/layouts`` should follow the
 following contract:
@@ -63,12 +58,12 @@ following contract:
 
 .. note::
 
-    A layout can be anywhere in the :file:`webContent` folder, but as mentioned
-    before we recommend to store it in the :file:`webContent/layouts` folder. 
+    A layout can be located anywhere in the :file:`webContent` folder, but as
+    mentioned before we recommend storing it in the :file:`webContent/layouts`
+    folder. 
     
     Please don't store it into the :file:`webContent/view` folder. This location
-    is intended for :ref:`static-jsf-pages`, which would mean that you could
-    call the layout directly.
+    is intended for :ref:`static-jsf-pages` - pages that can be called directly.
 
 
 .. _html-dialog-component:
@@ -76,18 +71,16 @@ following contract:
 HTML Dialog Component
 ^^^^^^^^^^^^^^^^^^^^^
 
-A component can be embedded into other HTML dialog or again in another
-component.
+A component can be embedded into other HTML dialogs or in another component.
 
 View Definition
 ~~~~~~~~~~~~~~~
 
-The view consists of two parts, an interface and the implementation. The
-interface is constituted by a
-``<cc:interface componentType="IvyComponent">`` tag and is followed by
-an optional list of component attributes. The implementation part starts
-with a ``<cc:implementation>`` tag and the component attributes can be
-accessed with the expression ``cc.attrs.attributeName``
+The view consists of two parts: an interface, and the implementation. The
+interface is constituted by a ``<cc:interface componentType="IvyComponent">``
+tag and is followed by an optional list of component attributes. The
+implementation part starts with a ``<cc:implementation>`` tag and the component
+attributes can be accessed with the expression ``cc.attrs.attributeName``
 
 The following code fragment defines an example HTML Dialog component:
 
@@ -112,7 +105,7 @@ The following code fragment defines an example HTML Dialog component:
 Usage
 ~~~~~
 
-A component could be inserted with the ``<ic:``-tag. E.g.
+A component is inserted with the ``<ic:``-tag. E.g.
 ``<ic:my.namespace.ComponentName ... />``.
 
 .. tip::
@@ -125,25 +118,22 @@ A component could be inserted with the ``<ic:``-tag. E.g.
 Start Method
 ~~~~~~~~~~~~
 
-Optionally you can define the start method that should be used to start
-the embedded component with the attribute ``startMethod``. If you do not
-define the start method, then a default start method will be used.
-Parameters of the start method can be defined by adding them as named
-attributes. Parameters are mapped by name, i.e. an attribute of the tag
-will be mapped to the start method parameter with the same name.
-Furthermore you can set the component attributes that you defined in the
-interface of the component by simply adding them as attributes of the
-tag too.
+Optionally, you can define the start method that is used to start the embedded
+component with the attribute ``startMethod``. If you do not define the start
+method, then a default start method will be used. Parameters of the start method
+can be defined by adding them as named attributes. Parameters are mapped by
+name, i.e. an attribute of the tag will be mapped to the start method parameter
+with the same name. You can set the component attributes that you defined in the
+interface of the component by simply adding them as attributes of the tag, too.
 
 .. note::
 
-   You can not override start methods. So do not use multiple start
+   You cannot override start methods. So do not use multiple start
    methods with the same name but different parameter lists.
 
-See the following code fragment that inserts a HTML Dialog component.
-The start method ``start(data.person.BillingAddress:address)`` will be
-used, the current value of the data class property ``billingAddress``
-will be used as parameter for the start method and the component
+See the following code fragment that inserts an HTML Dialog component.
+We use start method ``start(data.person.BillingAddress:address)``. The current value of the data class property ``billingAddress``
+is used as a parameter for the start method and the component
 attribute ``caption`` will be set to the value "Billing Address"
 
 ::

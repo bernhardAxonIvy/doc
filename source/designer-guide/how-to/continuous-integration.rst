@@ -24,7 +24,7 @@ main features:
 
 -  **Installation** of IAR artifacts into the local Maven repository
 
--  **Deployment** of IAR artifacts to an |ivy-engine|
+-  **Deployment** of IAR artifacts to an Axon Ivy Engine
 
 
 Runtime
@@ -48,7 +48,7 @@ Configuration
 
 Ivy Projects declare its ids and dependencies in the
 :ref:`project-deployment-descriptor`. This deployment descriptor
-can be easily edited with the corresponding ivy editor and is stored as
+can be easily edited with the corresponding Ivy editor and is stored as
 Maven Project Object Model (``pom.xml``). Therefore each Ivy Project has by
 default the ``pom.xml`` which is needed by maven to build it.
 
@@ -85,7 +85,7 @@ Technical documentation
 -  The detailed plugin goal and parameter documentation is on
    `Github.io <https://axonivy.github.io/project-build-plugin>`__
 
--  The source code of the ivy project build plugin is available on
+-  The source code of the Ivy project build plugin is available on
    :link-url:`Github.com <build-plugin>`.
 
 

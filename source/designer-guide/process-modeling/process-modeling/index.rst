@@ -3,7 +3,7 @@
 Process Modeling
 ================
 
-This chapter introduces |axon-ivy| processes and how to work with them.
+This chapter introduces Axon Ivy processes and how to work with them.
 The creation and logical organization of processes is explained as well
 as the functionality of the :ref:`process-editor` and the different kinds of processes.
 

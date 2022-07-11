@@ -324,7 +324,7 @@ Runtime Log View
 ~~~~~~~~~~~~~~~~
 
 The Runtime Log view displays a list of events. This events occur during
-the simulation. When you start the |axon-ivy| process engine, this log
+the simulation. When you start the Axon Ivy process engine, this log
 view is opened by default and all entries are cleared.
 
 .. figure:: /_images/simulation-debugging/runtimelog-view.png
@@ -356,7 +356,7 @@ Element
    The identifier of the process element which logged the event.
 
 Category
-   The log category refers to the |axon-ivy| part which has logged the
+   The log category refers to the Axon Ivy part which has logged the
    event (e.g. user_code: ivyScript by user; process: log from/during
    process model execution).
 
@@ -391,7 +391,7 @@ Project
    The name of the project the log event was logged.
 
 Category
-   The log category refers to the |axon-ivy| part which has logged the
+   The log category refers to the Axon Ivy part which has logged the
    event (e.g. user_code: ivyScript by user; process: log from/during
    process model execution).
 
@@ -431,7 +431,7 @@ On the right hand side the following buttons are located:
 |dimage5| Save Error Report
    If you click on this button an error report that contains information
    about the error, the designer machine and the current state of the
-   |ivy-designer|.
+   Axon Ivy Designer.
 
 How to log
 ^^^^^^^^^^
@@ -447,7 +447,7 @@ below:
 
    IvyScript to log into Runtime Log
 
-Find out more about |axon-ivy| scripting language :ref:`ivyscript`.
+Find out more about Axon Ivy scripting language :ref:`ivyscript`.
 
 .. |dimage0| image:: /_images/simulation-debugging/runtimelog-view-details-button-previous-event.png
 .. |dimage1| image:: /_images/simulation-debugging/runtimelog-view-details-button-next-event.png
@@ -477,7 +477,7 @@ detailed information of each executed process element.
 
 .. note::
 
-   On the |ivy-engine| there is the possibility to dump out
+   On the Axon Ivy Engine there is the possibility to dump out
    performance statistics to a comma separated value file (*.csv). Check
    the Engine Guide for more information: *Monitoring > Process Element
    Performance Statistic and Analysis*
@@ -507,9 +507,9 @@ External Category
       +-----------------------+---------------------------------------------------------------------+------------------------------------------------------------+
       | Process Element       | Internal Category                                                   | External Category                                          |
       +=======================+=====================================================================+============================================================+
-      | Database Step         | Parameter-mapping, caching, output-mapping and ivyScript execution. | The execution of the SQL statement on the database server. |
+      | Database Step         | Parameter-mapping, caching, output-mapping and IvyScript execution. | The execution of the SQL statement on the database server. |
       +-----------------------+---------------------------------------------------------------------+------------------------------------------------------------+
-      | Web Service Call Step | Parameter-mapping, caching, output-mapping and ivyScript execution. | The execution of the Web Service on the web server.        |
+      | Web Service Call Step | Parameter-mapping, caching, output-mapping and IvyScript execution. | The execution of the Web Service on the web server.        |
       +-----------------------+---------------------------------------------------------------------+------------------------------------------------------------+
       | E-Mail Step           | Parameter-mapping                                                   | The interaction with the Mail-Server.                      |
       +-----------------------+---------------------------------------------------------------------+------------------------------------------------------------+

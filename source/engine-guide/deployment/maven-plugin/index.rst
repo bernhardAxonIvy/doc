@@ -5,7 +5,7 @@ Maven Plugin
 
 The Maven `project-build-plugin
 <http://axonivy.github.io/project-build-plugin/>`_ makes automated continuous
-deployment to an |ivy-engine| possible. The Maven plugin can deploy projects
+deployment to an Axon Ivy Engine possible. The Maven plugin can deploy projects
 file based or via HTTP. The file based mechanism is the default.
 
 For the :ref:`file based deployment <deployment-deploying>` the deployment 
@@ -13,7 +13,7 @@ folder must be available on the same machine on which the build is
 executed. You may use Windows-Shares or SMB-Configurations.
 
 On the other hand the HTTP deployment is based on the :ref:`REST API<deployment-rest-api>` 
-service of the |ivy-engine|. For the deployment you
+service of the Axon Ivy Engine. For the deployment you
 need the credentials of an administrator.
 
 
@@ -25,7 +25,7 @@ Command Line Deployment
 
 The :code:`deploy-to-engine` goal can be execute on the command line. The
 following two examples deploys the project :file:`myProject.iar` to the
-application **portal** of the |ivy-engine|.
+application **portal** of the Axon Ivy Engine.
 
 .. code-block:: bash
 
@@ -56,7 +56,7 @@ The :code:`deploy-to-engine` goal can also be executed with a given :file:`pom.x
 The configuration where to deploy the project can then be configured in the :file:`pom.xml`.
 
 The following :file:`pom.xml` snippet deploys the current project to the
-application **portal** of the |ivy-engine| at :file:`c:/axonivy/engine`.
+application **portal** of the Axon Ivy Engine at :file:`c:/axonivy/engine`.
 
 .. literalinclude:: deployment-maven-build.xml
   :language: xml
@@ -71,7 +71,7 @@ Execute the :code:`deploy-to-engine` goal in the directory where the :file:`pom.
 
 
 The next example deploys the current project to the application **portal** to an
-|ivy-engine| which is accessible at http://localhost:8080. You
+Axon Ivy Engine which is accessible at http://localhost:8080. You
 need to configure the credentials of an administrator user in the maven
 :file:`settings.xml` file. Your custom defined :file:`serverId` must match with
 :code:`deployServerId`.

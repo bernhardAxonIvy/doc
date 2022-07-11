@@ -7,12 +7,12 @@ Ivy Project View
 Here all the projects (including their content) in a given workspace are
 displayed in a tree view. This is the central component to obtain an
 overview of the project and to start the specific editors for all
-|axon-ivy| entities.
+Axon Ivy entities.
 
 .. figure:: /_images/ivy-project/project-tree-full.png
-   :alt: |axon-ivy| Project View with some content
+   :alt: Axon Ivy Project View with some content
 
-   |axon-ivy| Project View with some content
+   Axon Ivy Project View with some content
 
 Some of the entries are categorized such as User Dialogs and processes,
 but in general double-clicking on the leafs opens the :ref:`corresponding editor <designer-reference-editors>`.
@@ -21,7 +21,7 @@ but in general double-clicking on the leafs opens the :ref:`corresponding editor
 Filters
 ~~~~~~~~~~~~~~~~~~~~
 
-Contents within the |axon-ivy| Project View can be reduced or enriched with additional context information.
+Contents within the Axon Ivy Project View can be reduced or enriched with additional context information.
 The menu button (with the three dots) allows you to adjust project content filters according to your needs.
 
 The most effective way to adjust project contents is to select your role from the menu and navigating to `Role specific filters`. 
@@ -38,7 +38,7 @@ Context menu actions
 
 A popup menu is provided within the tree, with the most important interactions:
 
--  *New...* - Opens a wizard for creating new |axon-ivy| entities such as
+-  *New...* - Opens a wizard for creating new Axon Ivy entities such as
    User Dialogs or processes.
 
 -  *Refresh* - Use this to inform and refresh the project tree whenever
@@ -53,8 +53,8 @@ A popup menu is provided within the tree, with the most important interactions:
 -  *Convert Project* - :ref:`Converts a project <project-convert>` so
    that it has the newest format.
 
--  *Export |axon-ivy| Archive (.iar)* - Starts the :ref:`Export Wizard <designer-export-project>` 
-   to export normal |axon-ivy| projects to |axon-ivy| Archives.
+-  *Export Axon Ivy Archive (.iar)* - Starts the :ref:`Export Wizard <designer-export-project>` 
+   to export normal Axon Ivy projects to Axon Ivy Archives.
 
 -  *Import* - Opens the Import Wizard. Very useful to :ref:`import new projects <designer-import-project>`
    from the file system or from a source repository such as Subversion or CVS
@@ -70,8 +70,8 @@ A popup menu is provided within the tree, with the most important interactions:
 
    .. warning::
 
-      Please rename your resources only in |axon-ivy| and not in *Java* or
-      *Resource* perspectives. Trying to do renaming of |axon-ivy|
+      Please rename your resources only in Axon Ivy and not in *Java* or
+      *Resource* perspectives. Trying to do renaming of Axon Ivy
       artifacts in other perspectives may result in an unusable project.
 
 -  *Move* - Moves the selected resources to another project. The `move
@@ -80,7 +80,7 @@ A popup menu is provided within the tree, with the most important interactions:
 
    .. note::
 
-      If |axon-ivy| artifacts (such as User Dialogs, Processes or Data
+      If Axon Ivy artifacts (such as User Dialogs, Processes or Data
       Classes) are moved, then the wizard will show an overview of the
       references (e.g. calls to sub processes) that might be broken by
       the operation.
@@ -104,7 +104,7 @@ A popup menu is provided within the tree, with the most important interactions:
 
    .. note::
 
-      If |axon-ivy| artifacts (such as |axon-ivy| projects, User Dialogs,
+      If Axon Ivy artifacts (such as Axon Ivy projects, User Dialogs,
       Processes or Data Classes) should be deleted, then the
       :ref:`refactoring-wizards-delete` opens and shows an
       overview of the references that might be broken by the operation.

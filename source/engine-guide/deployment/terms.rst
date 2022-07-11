@@ -1,9 +1,9 @@
 Terms
 =====
 
-This chapter explains how an |ivy-designer| Project can be deployed
-to an |ivy-engine|. Before deploying an |axon-ivy| project it is
-important to understand some major concepts and terms of the |ivy-engine|.
+This chapter explains how an Axon Ivy Designer Project can be deployed
+to an Axon Ivy Engine. Before deploying an Axon Ivy project it is
+important to understand some major concepts and terms of the Axon Ivy Engine.
 The following chapter introduces these concepts and terms.
 
 .. _application:
@@ -20,7 +20,7 @@ Application
     └── ProcessModel "BackEnd"
         └── ProcessModelVersion 1
 
-On the |ivy-engine|, applications can be configured. An application
+On the Axon Ivy Engine, applications can be configured. An application
 spans up an environment in which process models exist.
 
 .. _process-model:
@@ -38,11 +38,11 @@ Process Model
         └── ProcessModelVersion 1
 
 Within an application multiple process models can be configured. A
-process model on the Engine corresponds to an |axon-ivy| project on the
+process model on the Engine corresponds to an Axon Ivy project on the
 Designer. The difference is that a process model may hold multiple
-different versions of the same |axon-ivy| project. A process model version
-- as its name suggests - is a version of an |axon-ivy| project. In fact
-this version represents the state of an |axon-ivy| project at the time it
+different versions of the same Axon Ivy project. A process model version
+- as its name suggests - is a version of an Axon Ivy project. In fact
+this version represents the state of an Axon Ivy project at the time it
 was deployed on the Engine.
 
 .. _process-model-version:
@@ -60,9 +60,9 @@ Process Model Version
         └── ProcessModelVersion 1
 
 A process model can have multiple versions called process model
-versions. These versions allow to change an |axon-ivy| project without
+versions. These versions allow to change an Axon Ivy project without
 worrying about the compatibility of currently running cases on the
-Engine. How does this work? When an |axon-ivy| project has been finished
+Engine. How does this work? When an Axon Ivy project has been finished
 or reached a milestone, it is going to be deployed as the first process
 model version. Users can use this project, they start processes. Some of
 the processes may last long time (weeks, months, or even years). While
@@ -81,7 +81,7 @@ processes that are started in a process model are started in the
 released process model version! A complete list of release state can be
 found in the following list:
 
-.. table:: Release states of process model versions on |ivy-engine|
+.. table:: Release states of process model versions on Axon Ivy Engine
    :widths: 20 80
 
    +-----------------------------------+------------------------------------------+
@@ -145,7 +145,7 @@ Configuration Example
 ---------------------
 
 The following table shows an example of how applications, process models
-and process model versions on an |ivy-engine| can be configured.
+and process model versions on an Axon Ivy Engine can be configured.
 
 .. table:: Configuration Example
    :widths: 15 15 15 55

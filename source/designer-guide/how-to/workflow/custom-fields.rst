@@ -3,33 +3,42 @@
 Custom Fields
 =============
 
-Use custom fields to dynamically add additional business relevant information as key/value pairs on 
-:ref:`Starts<process-element-tab-start-custom-fields>`, :ref:`Cases<process-element-tab-case-custom-fields>` 
-and :ref:`Tasks <process-element-tab-task-custom-fields>`. 
+Use custom fields to dynamically add additional business relevant information as
+key/value pairs on :ref:`Starts<process-element-tab-start-custom-fields>`,
+:ref:`Cases<process-element-tab-case-custom-fields>` and :ref:`Tasks
+<process-element-tab-task-custom-fields>`. 
 
 Examples of custom fields are:
 
 * branchLocation - The location of the branch that is responsible for a task
 * customerId - The id of the customer a case is working on 
-* orderAmount - The number of pieces or the amount of money of the order associated with a case 
+* orderAmount - The number of pieces or the amount of money of the order
+  associated with a case 
 
-The :ref:`developer workflow UI <dev-workflow-ui>` and the :ref:`Portal application <portal-guide>` will display custom fields on their
-task and case detail pages. In the :ref:`Portal application <portal-guide>` custom fields can also be added as additional columns 
-in :ref:`task <dev-workflow-ui-task-details>` and :ref:`case <dev-workflow-ui-case-details>` lists and to filter task and case lists in dashboards. You can also use custom fields to search for task and cases.
+The :ref:`developer workflow UI <dev-workflow-ui>` and the :ref:`Portal
+application <portal-guide>` will display custom fields on their task and case
+detail pages. In the :ref:`Portal application <portal-guide>`, custom fields can
+also be added as additional columns in :ref:`task
+<dev-workflow-ui-task-details>` and :ref:`case <dev-workflow-ui-case-details>`
+lists, as well as for filtering task- and case lists in dashboards. You can also use custom
+fields to search for task and cases.
 
 Meta Information
 ----------------
  
-You can use custom fields directly on the process elements without any additional configuration.
-However, we suggest that you provide additional information (meta information) 
-for often used custom fields or custom fields that are visible to end users in the :ref:`Portal application <portal-guide>`. 
-Meta information for :ref:`custom fields <custom-fields-config>` can be provided in the :file:`<project>/config/custom-fields.yaml` file.
-You can provide some attributes of the meta information in :ref:`multiple languages <custom-fields-locale>` using the :ref:`CMS <cms>`.
+You can use custom fields directly on the process elements without any
+additional configuration. However, we suggest that you provide additional
+information (meta information) for often used custom fields or custom fields
+that are visible to end-users in the :ref:`Portal application <portal-guide>`.
+Meta information for :ref:`custom fields <custom-fields-config>` can be provided
+in the file :file:`<project>/config/custom-fields.yaml`. Additionally, you can
+provide some attributes of the meta information in :ref:`multiple languages
+<custom-fields-locale>` using the :ref:`CMS <cms>`.
 
 Custom Fields API
 -----------------
 
-You can access custom fields over the following API:
+You can access custom fields using the following API:
 
 * :public-api:`ITask.customFields() </ch/ivyteam/ivy/workflow/ITask.html#customFields()>`
 * :public-api:`ICase.customFields() </ch/ivyteam/ivy/workflow/ICase.html#customFields()>`
@@ -39,7 +48,7 @@ You can access custom fields over the following API:
   
   String branchOffice = ivy.task.customFields().stringField("branchOffice").getOrDefault("Luzern")
 
-You can search for tasks and cases by custom fields with the following API:
+To search for tasks and cases by custom fields, use the following API:
 
 * :public-api:`TaskQuery.IFilterableColumns.customField() </ch/ivyteam/ivy/workflow/query/TaskQuery.IFilterableColumns.html#customField()>`
 * :public-api:`CaseQuery.IFilterableColumns.customField() </ch/ivyteam/ivy/workflow/query/CaseQuery.IFilterableColumns.html#customField()>`
@@ -62,7 +71,7 @@ You can access the meta information of custom fields with the following API:
 
   String label = ivy.task.customFields().stringField("branchOffice").meta().label();
   
-You can access additional attributes with:   
+To access additional attributes, use this API:   
 
 .. code-block:: java
 

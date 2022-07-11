@@ -3,10 +3,10 @@
 Container Image
 ===============
 
-We strongly recommend operating an |ivy-engine| Cluster in a containerized 
+We strongly recommend operating an Axon Ivy Engine Cluster in a containerized 
 environment like Docker or Kubernetes.
 
-We recommend that you build your own container image that contains the |ivy-engine| 
+We recommend that you build your own container image that contains the Axon Ivy Engine 
 and includes your projects and configuration.
 
 You can build the container image automatically by using a build server.
@@ -24,10 +24,10 @@ The build server:
 4. It stores your new image (``your-company/your-project``) in a `Docker
    Registry <https://hub.docker.com/_/registry>`_.
 
-Then, you can start your |ivy-engine| Cluster using your new container image
+Then, you can start your Axon Ivy Engine Cluster using your new container image
 (``your-company/your-project``).
 
-A simple Dockerfile that bundles the |ivy-engine|, your projects and your
+A simple Dockerfile that bundles the Axon Ivy Engine, your projects and your
 configuration files in its own container image looks as follows:
 
 .. code-block:: Dockerfile
@@ -53,8 +53,8 @@ Examples
 
 Please refer to our :link-url:`project-build-examples <build-examples-docker>`.
 It shows you how to use Maven to build your own container image that contains your
-|ivy-engine| and your application zip file.
+Axon Ivy Engine and your application zip file.
 
 Additionally, refer to our example configurations on GitHub for 
 :link-url:`NGINX <docker-scaling-nginx>` and :link-url:`HAProxy <docker-scaling-haproxy>` to
-learn how to setup a |ivy-engine| Cluster with docker-compose.
+learn how to setup a Axon Ivy Engine Cluster with docker-compose.

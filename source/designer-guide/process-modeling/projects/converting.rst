@@ -8,10 +8,10 @@ Converting Projects
 Converting Project Version
 ==========================
 
-If the project format version changes with a new |axon-ivy| release, then
+If the project format version changes with a new Axon Ivy release, then
 old projects will show an error marker, describing them as *out of date*
 or having an invalid version. This can happen, when the technical format
-for |axon-ivy| projects changes with a new |axon-ivy| release (e.g. the way
+for Axon Ivy projects changes with a new Axon Ivy release (e.g. the way
 how some artifacts are stored may be changed, new artifacts may be
 introduced, etc.). :
 
@@ -34,9 +34,9 @@ not (see :ref:`project-preferences` below):
 
    Project version after conversion
 
-|axon-ivy| can convert your old projects automatically to the newest
+Axon Ivy can convert your old projects automatically to the newest
 project format for you. During this process, all existing artifacts will
-be converted (if necessary) so as to work with the new |axon-ivy| version,
+be converted (if necessary) so as to work with the new Axon Ivy version,
 and any missing but required artifacts will be added.
 
 .. _project-convert-wizard:
@@ -45,7 +45,7 @@ Convert Project Wizard
 ======================
 
 To run the project conversion, either run the quick fix on the error marker
-or select the project's node in the |axon-ivy|
+or select the project's node in the Axon Ivy
 project view and right click to bring up the context menu. Select
 *Convert Project* to open the *Convert Project* wizard. 
 

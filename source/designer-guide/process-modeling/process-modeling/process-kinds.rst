@@ -35,7 +35,7 @@ same data is available as inside the caller process).
    Wrapping process elements into an embedded subprocess does not
    influence the functionality of most process elements. But the
    wrapping influences the way process elements are addressed by
-   |axon-ivy|. This may cause incompatibilities with older versions of the
+   Axon Ivy. This may cause incompatibilities with older versions of the
    process and will hinder you to deploy such a process over an already
    deployed older version of the process. The process elements that may
    cause such incompatibilities are:

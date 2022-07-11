@@ -3,24 +3,24 @@
 Engine Service
 ==============
 
-In productive environments, we recommend to run the |ivy-engine| as a service.
+In productive environments, we recommend to run the Axon Ivy Engine as a service.
 
 
 Windows Service
 ---------------
 
-The binary :file:`bin/AxonIvyEngineService.exe` is the |ivy-engine|
+The binary :file:`bin/AxonIvyEngineService.exe` is the Axon Ivy Engine
 implementation as Windows Service. It can also be used as command line tool to
-register, unregister, start and stop |ivy-engine| as Windows Service. The
+register, unregister, start and stop Axon Ivy Engine as Windows Service. The
 command line tool must be *run as administrator*.
 
-.. rubric:: Register |ivy-engine| as Windows Service
+.. rubric:: Register Axon Ivy Engine as Windows Service
 
 .. code-block:: powershell
 
    AxonIvyEngineService.exe -register [windowsServiceName] [username] [password]
 
-.. rubric:: Unregister |ivy-engine| as Windows Service
+.. rubric:: Unregister Axon Ivy Engine as Windows Service
 
 .. code-block:: powershell
 
@@ -39,20 +39,20 @@ command line tool must be *run as administrator*.
    AxonIvyEngineService.exe -stop [windowsServiceName]
 
 Parameters:
-  - ``windowsServiceName`` is optional and set by default to **|ivy-engine|**.
+  - ``windowsServiceName`` is optional and set by default to **Axon Ivy Engine**.
   - ``username`` is optional and defines under which user the windows service should run.
   - ``password`` is mandatory if ``username`` is set and defines the password for the given user.
 
 .. Note::
     You can also use the :ref:`control-center` to register, unregister, start
-    and stop the |ivy-engine| Windows Service.
+    and stop the Axon Ivy Engine Windows Service.
 
 
 Linux Service
 -------------
 
 The install service program :file:`InstallService.sh` helps you to install the
-|ivy-engine| as a systemd Linux daemon. To install the service:
+Axon Ivy Engine as a systemd Linux daemon. To install the service:
 
 #. Run following command as root: ``[engineDir]/bin/InstallService.sh``
 #. Accept the directory of your engine installation.

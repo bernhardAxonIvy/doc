@@ -3,25 +3,25 @@
 Default Pages
 *************
 
-With default pages you can change the default workflow behavior by simply
-providing a custom implementation in your Ivy project.
+With default pages, you can change the default workflow behavior by simply
+providing a custom implementation in your Axon Ivy project.
 
 For example: Once a user has completed a task, he will be redirected to his
-personal task list. The default task list is workflow driven and maybe to
-technical for your end user. With a standard process you could easily provide a
+personal task list. The default task list is workflow-driven and may be too
+technical for your end-users. With a standard process, you can easily provide a
 branded and use case driven task list that fits perfectly into your domain.
 
 
 Implementation
 --------------
 
-To customize a default pages you need to do the following: 
+To customize a default page, you need to do the following: 
 
 #. Implement a process with a predefined process start signature in an ivy
-   project. See the following sub chapters for more information.
+   project. See the following subchapters for more information.
 #. :ref:`Deploy <deployment>` the Ivy project with the customized standard
    processes in the application. 
-#. Optional: If you have multiple projects which provides the default pages
+#. Optional: If you have multiple projects which provide the default pages
    you may need to fix the provider in :ref:`app-yaml`.
 
 .. literalinclude:: standardprocess-app.yaml
@@ -34,7 +34,7 @@ To customize a default pages you need to do the following:
 Pages
 -----
 
-To customize default pages, you must implement processes with a predefined
+To customize default pages, you have to implement processes with a predefined
 process start signature. The following default pages can be customized: 
 
 .. table::
@@ -54,7 +54,7 @@ process start signature. The following default pages can be customized:
     +----------------------------------------------------------------------------------------+----------------------------------------------------+
     | **Error Page** which visualizes error on the front end                                 | no signature: globally defined in :ref:`web-xml`   |
     +----------------------------------------------------------------------------------------+----------------------------------------------------+
-    | **Frame Page** as the entry page to embed a given url in a frame.                      | DefaultFramePage(String relativeUrl,               |
+    | **Frame Page** as the entry page to embed a given URL in a frame.                      | DefaultFramePage(String relativeUrl,               |
     |                                                                                        | Number runningTaskId)                              |
     +----------------------------------------------------------------------------------------+----------------------------------------------------+
 

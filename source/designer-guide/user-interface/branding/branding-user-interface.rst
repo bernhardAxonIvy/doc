@@ -3,30 +3,29 @@
 User Interface Branding
 -----------------------
 
-To make the branding work in your :ref:`html-dialogs`, be sure that they are
-using the latest :ref:`default templates <html-dialog-layouts>` or your
-templates are migrated to the :ref:`branding concept
-<branding-apply-to-templates>`. 
+To make the branding work in your :ref:`html-dialogs`, be sure to use the latest
+:ref:`default templates <html-dialog-layouts>` or your pre-existing templates
+have been migrated to the :ref:`branding concept <branding-apply-to-templates>`. 
 
 
 .. _branding-apply-to-templates:
 
-Apply custom styles and branding
+Apply Custom Styles and Branding
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In :ref:`html-dialogs` all branding resources are loaded over the
-**ivy-branding** library. This is already used by default in all
-:ref:`default templates <html-dialog-layouts>`, but if you want to use it to in
-your dialogs or own templates, you can do so by e.g:
+In :ref:`html-dialogs`, all branding resources are loaded css-variables the
+**ivy-branding** library. This is used by default in all :ref:`default templates
+<html-dialog-layouts>`. If you want to use it in your dialogs or own
+templates, too, you can do so as follows:
 
 .. literalinclude:: includes/ivy-branding.xhtml
     :language: html
     :linenos:
 
-Of course, it's also possible to define your own images or css files which you
-then can load over the **ivy-branding** resource loader. e.g. if you have a
-custom error dialog whose image you want to brand differently depending on the
-current application.
+Of course, you can also define your own images or CSS files. Subsequently, you
+can load these using the **ivy-branding** resource loader. For example, you can
+change the image of your custom error dialog depending on the current
+application.
 
 
 .. _branding-resources:
@@ -34,33 +33,33 @@ current application.
 Resources
 ~~~~~~~~~
 
-The following resources are currently used by the |ivy-engine|,
-:ref:`html-dialogs` and :ref:`Portal <portal-guide>`:
+The following resources are currently used by the Axon Ivy Engine, the
+:ref:`html-dialogs` and the :ref:`Portal <portal-guide>`:
 
 - :file:`logo(.png)`: The main logo image
 - :file:`logo_light(.png)`: Same as the main logo, but e.g. in our case with white writing
-- :file:`logo_mail(.png)`: The logo which is taken by the default |ivy-engine| :ref:`email-notifications`
+- :file:`logo_mail(.png)`: The logo which is taken by the default Axon Ivy Engine :ref:`email-notifications`
 - :file:`logo_small(.png)`: The logo in small (square format recommended), used by e.g. error, login pages
 - :file:`favicon(.png)`: The logo for the browser tab (square format recommended)
 - :file:`background(.png)`: A background image, e.g. used by the :ref:`Portal <portal-guide>` login screen
 - :file:`custom.css`: A :ref:`general CSS file <custom-css>` with variables to customize colors, etc.
 
-The :file:`custom.css` can be used to override `css-variables
+Use :file:`custom.css` to override `css-variables
 <https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties>`_.
 If you're interested in more customization, there are more variables provided by
 the :ref:`Portal <portal-guide>`.
 
 .. warning::
 
-   CSS variables are only supported in the :ref:`serenity-ivy
-   <serenity-themes>` or the :ref:`freya-ivy <freya-themes>` themes.
+   CSS variables are only supported in the themes :ref:`serenity-ivy
+   <serenity-themes>` and :ref:`freya-ivy <freya-themes>`.
 
 .. tip::
 
-  Images are supported with every known extension, e.g. :file:`.jpg`,
+  We support all image file formats known to browsers, e.g. :file:`.jpg`,
   :file:`.png`, :file:`.svg`. However, if there are multiple files with different
-  extensions (e.g. a :file:`logo.png` and a :file:`logo.svg`) in the same
-  directory, the first found will be chosen.
+  extensions (e.g. :file:`logo.png` and :file:`logo.svg`) in the same
+  directory, the first found by the OS will be used.
 
 
 Example

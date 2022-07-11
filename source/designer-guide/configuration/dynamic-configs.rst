@@ -11,7 +11,7 @@ the value of the variable called `myVariable`  will be injected at runtime into
 the URI.
 
 We provide a set of expressions you can use to refer to the currently running
-|ivy-engine| Application to simplify calls from an ivy process to its own
+Axon Ivy Engine Application to simplify calls from an Ivy process to its own
 backend.
 
 Expression Reference

@@ -1,11 +1,11 @@
 Ivy Archives
 -------------
 
-There are two different types of |axon-ivy| projects available. Normal
-|axon-ivy| projects are used to develop artifacts. Artifacts in those
+There are two different types of Axon Ivy projects available. Normal
+Axon Ivy projects are used to develop artifacts. Artifacts in those
 projects are changed frequently. Once the artifacts of a project are
 developed and stable you can export the normal Ivy project to an
-|axon-ivy| Archive. Archives are pre-built Ivy projects that are stored in
+Axon Ivy Archive. Archives are pre-built Ivy projects that are stored in
 one single ``*.iar`` file.
 
 Ivy Archives can be imported to a workspace like normal Ivy projects.
@@ -14,12 +14,12 @@ already contain all built artifacts. Therefore, they do not have to be
 built or validated again in the workspace. As a consequence Ivy Archives
 will improve your workspace build, refresh and update time.
 
-There are multiple ways to create or import |axon-ivy| Archives:
+There are multiple ways to create or import Axon Ivy Archives:
 
--  |axon-ivy| Archives can be :ref:`exported <designer-export-project>`
+-  Axon Ivy Archives can be :ref:`exported <designer-export-project>`
    and :ref:`imported <designer-import-project>`.
 
--  |axon-ivy| Projects can be packed (archived) or unpacked (unarchived)
+-  Axon Ivy Projects can be packed (archived) or unpacked (unarchived)
    inside the workspace.
    
    .. figure:: /_images/ivy-project/ivy-archive-pack.png

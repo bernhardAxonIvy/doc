@@ -131,7 +131,7 @@ Font-Awesome updated to 6.1.0
 
 See `Fontawesome 4 Migration Notes <https://fontawesome.com/docs/web/setup/upgrade/upgrade-from-v4>`_
 
-You should use the new css class ``fa-solid`` instead of ``fa``.
+You should use the new CSS class ``fa-solid`` instead of ``fa``.
 
 Example:
 

@@ -63,7 +63,7 @@ non-developers to define or configure the rules (a little bit of tool
 support helps too).
 
 In short, a rule engine helps you to decouple your production rules from
-the rest of the code and makes it much more maintainable for both
+the REST of the code and makes it much more maintainable for both
 developers and domain experts. But remember that everything has its flip
 side. Adding a rule engine means adding another level of complexity into
 your architecture (you replace plain code with a new system). And as the
@@ -73,7 +73,7 @@ one of the many available resources in the Internet.
 
 .. tip::
 
-   In |axon-ivy|, we integrate the open source rule engine
+   In Axon Ivy, we integrate the open source rule engine
    `Drools <https://www.drools.org>`__ to give you the flexibility to use
    a rule engine if you want. We wrapped some of the most basic features
    of Drools into our own UI and API. If you need more than that, then

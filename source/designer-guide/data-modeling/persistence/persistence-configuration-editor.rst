@@ -58,7 +58,7 @@ then define an explicit list of managed entity classes for each unit.
 Accessibility
 ^^^^^^^^^^^^^
 
-*|axon-ivy| Project Tree > double click on the Persistence label.*
+*Axon Ivy Project Tree > double click on the Persistence label.*
 
 Features
 ^^^^^^^^
