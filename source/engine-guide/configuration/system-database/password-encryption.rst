@@ -27,6 +27,6 @@ is possible to provide your own secret key as follows:
 
 .. Warning::
     If you configure your own AES secret key after you have already stored
-    technical passwords for external systems then those passwords can no longer
-    be decrypted and are useless. You have to recreate all those passwords
-    again!
+    technical passwords for external systems, then those passwords can no longer
+    be decrypted and are useless. You have to reconfigure (enter in encryptable form) all those passwords
+    again - see :ref:`advanced-configuration-passwords`!

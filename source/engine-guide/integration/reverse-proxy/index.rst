@@ -19,8 +19,8 @@ the reverse proxy communicate with the Axon Ivy Engine via plain HTTP. This
 makes the setup easier and increases performance.
 
 If you still use the AJP protocol between reverse proxy and the Axon Ivy Engine,
-start using HTTP or HTTPS instead of AJP. AJP development has ceased and its
-use with Ivy is deprecated. 
+start using HTTP or HTTPS instead of AJP. AJP development has ceased, and its
+use with Axon Ivy is deprecated. 
 
 |
 

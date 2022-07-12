@@ -1,13 +1,15 @@
 Advanced Configuration
 ======================
 
+.. _advanced-configuration-passwords:
+
 Passwords
 ---------
 
-You may want to encrypt sensitive data like a password in your configuration
-files. To do this you can enclose any value with ``"${encrypt:}"``. The
-Axon Ivy Engineine will automatically encrypt and replace that value in file, when the
-configuration will be loaded. The system database password can be encrypted as
+You may want to encrypt sensitive data like passwords in your configuration
+files. To do this, you can enclose any value with ``"${encrypt:}"``. The
+Axon Ivy Engine will automatically encrypt and replace that value in the file when the
+configuration is loaded. The system database password can be encrypted as
 follows:
 
 .. literalinclude:: includes/ivy-password.yaml
@@ -82,8 +84,8 @@ appearance of any dialog on several scopes:
 Overriding Configuration
 ------------------------
 
-Configuration entries of  YAML files can be overridden with environment variables
-of the operating system. Configuration keys in  YAML are hierarchic object trees
+Configuration entries of YAML files can be overridden with environment variables
+of the operating system. Configuration keys in YAML are hierarchic object trees
 separated by :code:`:` characters. While the environment variable must be
 written uppercase and separated by :code:`_` characters. You need also to prefix
 the environment variable with :code:`IVY_`.

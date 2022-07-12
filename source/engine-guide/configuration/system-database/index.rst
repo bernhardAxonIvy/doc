@@ -5,11 +5,13 @@ System Database
 
 After initial installation, the Axon Ivy Engine runs in :ref:`demo mode
 <demo-mode>`. This implies that workflow data is kept in memory and not
-persisted (stored).To run a productive engine, an external system database has
-to be connected, where data will be stored.
+persisted (stored).
 
-To define the database of the Axon Ivy Engine, the :code:`SystemDb` entries must be
-set.
+To run a productive engine, an external system database has to be connected,
+where data will be stored.
+
+To define the database of the Axon Ivy Engine, the :code:`SystemDb` entries have to
+be set.
 
 .. literalinclude:: ivy-systemdb.yaml
   :language: yaml
