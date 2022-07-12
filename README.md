@@ -1,14 +1,14 @@
 # Axon Ivy Product Documentation
 
 Based on [sphinx](http://www.sphinx-doc.org).
-Uses reStructredText as markup language.
+Uses reStructuredText as markup language.
 
 **Note:** All Axon Ivy documentation must be written in English with *American spelling*!
 
 
 ## Build
 
-    Connect via VPN if working at home
+    Connect via VPN if working at home!
 
     # download images
     mvn clean package
@@ -44,7 +44,7 @@ Use Eclipse or Visual Studio Code.
 
 ## Guidelines
 
-1. **Prevent big files**. If you use includes the included file should start with underscore.
+1. **Prevent big files**. If you use includes, the name of the included file should start with underscore.
 2. **No binary files**. Use another repository for binary files.
 
 
@@ -112,7 +112,7 @@ Use Eclipse or Visual Studio Code.
 	# with overline, for parts
     * with overline, for chapters
     =, for sections (h1)
-    -, for subsections (h2)
+    -, for sub-sections (h2)
     ~, for sub-sub-sections (h3)
     ^, for sub-sub-sub-sections (h4)
     ", for paragraphs
