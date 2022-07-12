@@ -60,7 +60,7 @@ Importing demo projects
 
 The Axon Ivy Designer can import several demo projects, which are
 provided from our maven repository (internet connection needed). Those
-demo projects are in the Ivy Archive (\*.iar) format and can be imported
+demo projects are in the Axon Ivy Archive (\*.iar) format and can be imported
 with the help of the *Sample* icon on the welcome page.
 
 Following projects are available for the Designer:

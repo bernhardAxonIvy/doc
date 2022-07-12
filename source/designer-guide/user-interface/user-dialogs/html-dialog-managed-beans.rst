@@ -41,7 +41,7 @@ itself. However, the HTML Dialog uses the annotations of the fields to
 validate the user input.
 
 All annotations defined in the package `javax.validation.constraints` are
-supported. For the validation messages you can use Ivy macros to get the
+supported. For the validation messages you can use Axon Ivy macros to get the
 message content from the :ref:`cms`. For example:
 
 -  ``@NotNull`` means that a value is required

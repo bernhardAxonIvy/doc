@@ -29,7 +29,7 @@ How to Write Unit Tests
 This is all you need to start writing conventional Unit Tests.
 
 
-Set Up the Ivy Environment
+Set Up the Axon Ivy Environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To gain access to the :public-api:`Ivy</ch/ivyteam/ivy/environment/Ivy.html>`

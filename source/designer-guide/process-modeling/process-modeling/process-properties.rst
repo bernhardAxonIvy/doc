@@ -70,7 +70,7 @@ WS Security
       connection (e.g. HTTPS).
 
 HTTP Basic
-   Username and Password will be sent in clear-text to the Ivy engine
+   Username and Password will be sent in clear-text to the Axon Ivy engine
    using standard HTTP Basic authentication mechanism.
 
    .. note::

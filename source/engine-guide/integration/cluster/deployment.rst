@@ -9,7 +9,7 @@ to deploy your projects during Axon Ivy Engine Cluster node startup.
 
 .. note::
    Only during the startup of the master cluster node, information 
-   from the Ivy projects is deployed to the system database. 
+   from the Axon Ivy projects is deployed to the system database. 
    On slave cluster nodes startup projects files are only copied to the 
    correct location without updating the system database.
    E.g., new roles that are added in an Ivy project are only created in the 

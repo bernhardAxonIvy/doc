@@ -83,7 +83,7 @@ the corresponding session (the one that resumed the task) expires.
    An offline aware application must manage the loading of the form data
    for required tasks, the presentation of the forms to the user during
    offline stages and the submission of the form data when the
-   connection to the engine is established again. The Ivy mobile app has
+   connection to the engine is established again. The Axon Ivy mobile app has
    full support for offline tasks.
 
 

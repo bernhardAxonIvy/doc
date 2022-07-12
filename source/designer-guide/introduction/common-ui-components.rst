@@ -120,13 +120,13 @@ explains their function.
    | |image15|                         | Opens a                                                   |
    |                                   | :ref:`function-browser` that                              |
    |                                   | shows the structure of the                                |
-   |                                   | currently available Ivy                                   |
+   |                                   | currently available Axon Ivy                              |
    |                                   | environment variable and the                              |
    |                                   | methods that they provide.                                |
    |                                   | Moreover it shows all available                           |
    |                                   | global functions. Use this Smart                          |
    |                                   | Button if you want to insert the                          |
-   |                                   | Ivy environment variable or a                             |
+   |                                   | Axon Ivy environment variable or a                        |
    |                                   | global function.                                          |
    +-----------------------------------+-----------------------------------------------------------+
    | |image16|                         | Opens a                                                   |
@@ -187,7 +187,7 @@ explains their function.
    |                                   | UI components                                             |
    |                                   | (:ref:`process-element-web-service-call-activity`).       |
    +-----------------------------------+-----------------------------------------------------------+
-   | |image23|                         | Opens an HTML Tag/Attribute                                |
+   | |image23|                         | Opens an HTML Tag/Attribute                               |
    |                                   | Browser that shows available HTML                         |
    |                                   | tags and attributes. Use this                             |
    |                                   | Smart Button if you want to                               |

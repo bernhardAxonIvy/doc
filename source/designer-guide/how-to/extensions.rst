@@ -213,7 +213,7 @@ Axon Ivy supports the following extension points:
 
 
 :public-api:`IIvyProjectClassPathExtension </ch/ivyteam/ivy/java/IIvyProjectClassPathExtension.html>`
-  Adds libraries or classes from bundles to the Ivy project class path. This extension point allows to
+  Adds libraries or classes from bundles to the Axon Ivy project class path. This extension point allows to
   add libraries or classes to the compile and the runtime class path. This is useful if you want to
   provide your own classes in a eclipse bundle and want to access these classes from IvyScript or
   use them as Program Interface (PI), Start Event, Intermediate Event and Call&Wait bean.

@@ -65,7 +65,7 @@ The following attributes are available in the *Web Service* Section:
   click the Generate WS classes button to read the WSDL and generate
   client side classes. The generated files will be compiled and
   packaged into a jar file. The generated jar file will be located in
-  the *lib_ws/client* folder of Ivy project and automatically added to
+  the *lib_ws/client* folder of Axon Ivy project and automatically added to
   the project libraries.
 
 .. note::

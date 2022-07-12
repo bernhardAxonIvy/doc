@@ -8,12 +8,11 @@ Primefaces 11
 
 |tag-project-changed| |tag-project-removed| |tag-project-deprecated| |tag-project-auto-convert|
 
-We upgraded the Primefaces library from version 7 to version 11. 
-Unfortunately, Primefaces made some breaking changes in its latest versions. 
-This means that your user interfaces are most likely broken. 
-To mitigate the migration pain, we have built a :ref:`project converter <project-convert-wizard>`
-that fixes most of the breaking changes. 
-See :ref:`primefaces-11-migration` for more information.
+We upgraded the Primefaces library from version 7 to version 11. Unfortunately,
+Primefaces made some breaking changes in its latest versions. Therefore, your
+user interfaces are most likely broken. To mitigate the migration pain, we have
+built a :ref:`project converter <project-convert-wizard>` that fixes most
+breaking changes. See :ref:`primefaces-11-migration` for more information.
 
 .. toctree::
    :maxdepth: 1
@@ -23,8 +22,9 @@ See :ref:`primefaces-11-migration` for more information.
 Old Themes removed
 ******************
  
-Instead of modena, primefaces-ivy, all-themes themes use :ref:`freya-ivy <freya-themes>` or :ref:`serenity-ivy <serenity-themes>`. 
-You may need to adjust your hand crafted CSS rules to the new theme.
+Instead of modena, primefaces-ivy, or all-themes, use :ref:`freya-ivy
+<freya-themes>` or :ref:`serenity-ivy <serenity-themes>`. You may need to adjust
+your hand-crafted CSS rules to the new theme.
 
 
 
@@ -104,7 +104,7 @@ If you use an external Elasticsearch server you need
 to upgrade to version 7.17.
 
 
-ivyScript validation is enabled by default
+IvyScript Validation is Enabled by Default
 ******************************************
 
 |tag-project-changed| 

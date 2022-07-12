@@ -10,7 +10,7 @@ Persistence
    has at least one task).
 
 Types
-   The Ivy scripting types ``XML``, and ``Tree`` are not serializable.
+   The Axon Ivy scripting types ``XML``, and ``Tree`` are not serializable.
 
    Collection types like an ``ArrayList`` can be stored in a field, but
    not as root object. Always use a simple DataClass or plain old Java
