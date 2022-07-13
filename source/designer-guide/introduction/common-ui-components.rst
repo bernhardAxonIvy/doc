@@ -187,7 +187,7 @@ explains their function.
    |                                   | UI components                                             |
    |                                   | (:ref:`process-element-web-service-call-activity`).       |
    +-----------------------------------+-----------------------------------------------------------+
-   | |image23|                         | Opens an HTML Tag/Attribute                                |
+   | |image23|                         | Opens an HTML Tag/Attribute                               |
    |                                   | Browser that shows available HTML                         |
    |                                   | tags and attributes. Use this                             |
    |                                   | Smart Button if you want to                               |
