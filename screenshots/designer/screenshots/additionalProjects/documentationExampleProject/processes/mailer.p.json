@@ -1,5 +1,5 @@
 {
-  "format" : "9.4.15",
+  "format" : "9.4.16",
   "id" : "180D20366E0D3C6D",
   "data" : "screenshot.project.Mailer",
   "elements" : [ {
@@ -29,9 +29,9 @@
       ],
       "config" : {
         "headers" : {
-          "emailTo" : "<%=in.user.mail%>",
+          "emailSubject" : "Registration failed for <%=in.user.name%>",
           "emailFrom" : "no-reply@axonivy.com",
-          "emailSubject" : "Registration failed for <%=in.user.name%>"
+          "emailTo" : "<%=in.user.mail%>"
         },
         "message" : [
           "<html>",
