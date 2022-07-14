@@ -6,8 +6,14 @@ License
 To run the Axon Ivy Engine in :ref:`production mode <production-mode>` you need a
 license, which you can apply for via your Axon Ivy Partner, Axon Ivy Sales
 Representative or directly via support@axonivy.com. A time-limited trial license
-is provided for free upon request. You need to provide the edition, the number
-of named users and concurrent users as well as the public URLs for each license.
+is provided for free upon request. You need to provide 
+
+- the edition
+- the number of named users 
+- the number of concurrent users
+- the public URLs 
+
+for each license. Details for these inputs are detailed below.
 
 
 .. _license-edition:
@@ -15,7 +21,7 @@ of named users and concurrent users as well as the public URLs for each license.
 Edition
 -------
 
-Chose between **Standard Edition** and **Enterprise Edition**. If you expect
+You can choose between **Standard Edition** and **Enterprise Edition**. If you expect
 high loads or need increased reliability, you should look into the Enterprise
 Edition. It allows running the Axon Ivy Engine in a :ref:`cluster <cluster>`.
 
@@ -23,20 +29,22 @@ Edition. It allows running the Axon Ivy Engine in a :ref:`cluster <cluster>`.
 Named Users
 -----------
 
-The registered users within Axon Ivy Engine are called **named users**. These
-users have an account in the Axon Ivy Engine and thus can log in to the Axon Ivy
-Engine. Because accounts are managed per application, one user can have multiple
-accounts on a single engine, one per application. Accounts in different
-applications on the same engine or cluster that have the same user name are
-counted as one named user.
+Registered users within Axon Ivy Engine are called **named users**. These users
+have an account in the Axon Ivy Engine and thus can log in to the Axon Ivy
+Engine. User accounts are managed per security system. One user can have
+multiple accounts on a single Axon Ivy Engine, at most one per security system.
+Accounts in different security systems on the Axon Ivy Engine with the
+same user name count as one named user.
+
+For users on a cluster, the above is valid, too.
 
 
 Concurrent Users
 ----------------
 
-The number of users that are concurrently working on the Axon Ivy Engine are known
-as **concurrent users**. The Axon Ivy Engine controls the number of concurrent users as
-follows:
+The number of users concurrently working on the Axon Ivy Engine is known as
+**concurrent users**. The Axon Ivy Engine controls the number of concurrent
+users as follows:
 
 * Every Session with no authenticated user is counted as one concurrent user.
 * Multiple Sessions with the same authenticated user are handled as follows:

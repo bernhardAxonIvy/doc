@@ -16,4 +16,4 @@ to deploy your projects during Axon Ivy Engine Cluster node startup.
    system database only upon startup of the master cluster node.    
 
 We recommend that you add your projects directly into the deployment directory
-of a :ref:`container image <cluster-container>`.  
+``deploy`` of a :ref:`container image <cluster-container>`.  

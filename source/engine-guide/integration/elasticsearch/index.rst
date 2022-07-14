@@ -21,7 +21,7 @@ Note: Only use the Elasticseach release delivered with your Axon Ivy Engine as
 there have been several breaking changes in Elasticsearch releases.
 
 Now you need to tell the Axon Ivy Engine in :ref:`ivy-yaml` that an external
-Elasticsearch server is to be used:
+Elasticsearch server has to be used:
 
 .. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/ivy-external-elasticsearch.yaml
   :language: yaml

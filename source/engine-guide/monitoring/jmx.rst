@@ -4,9 +4,9 @@ Java Management Extensions (JMX)
 ================================
 
 Java Management Extensions (JMX) is a technology to read and write runtime
-information of Java processes. It allows to monitor the
-state of an Axon Ivy Engine with external tools, e.g. VisualVM, Java Mission Control,
-Nagios, Prometheus, etc. 
+information of Java processes. It allows to monitor the state of an Axon Ivy
+Engine with external tools, e.g. VisualVM, Java Mission Control, Nagios,
+Prometheus, etc. 
 
 A monitoring tool running on the same machine and with the same operating system
 level user as the Axon Ivy Engine can connect to Axon Ivy without additional
@@ -77,7 +77,7 @@ the Attributes and Operations tab of VisualVM's MBeans tab).
     your running applications.
 
     If not mentioned otherwise, a manipulation only affects the currently
-    running engine. These manipulations are not persistent. technology won't survive
+    running engine. These manipulations are not persistent. They won't survive
     an engine restart.
     
     Manipulations that survive an engine restart contain the following text in
