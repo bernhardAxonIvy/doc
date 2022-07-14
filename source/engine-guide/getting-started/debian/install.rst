@@ -8,7 +8,7 @@ the following bash script to download and install it:
 
     cd /tmp
     wget https://developer.axonivy.com/permalink/|<version>|/axonivy-engine.deb -O axonivy-engine.deb
-    sudo dpkg -i axonivy-engine.deb
+    sudo apt install ./axonivy-engine.deb
     rm -f /tmp/axonivy-engine.deb
 
 .. Note::
