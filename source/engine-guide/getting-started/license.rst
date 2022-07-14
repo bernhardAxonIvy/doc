@@ -78,8 +78,7 @@ Public URLs are the links that end users will use to access your Axon Ivy Engine
   
   * Intranet users use ``http://axonivyprod:8080`` to access it. 
   * Internet users use ``https://www.customer.com`` to access it through a reverse proxy.
-  * Administrators access the Axon Ivy Engine with an IP Address
-  ``http://192.168.1.19``.
+  * Administrators access the Axon Ivy Engine with an IP Address ``http://192.168.1.19``.
   
   In this case, the license has to contain three public URLs:
   
