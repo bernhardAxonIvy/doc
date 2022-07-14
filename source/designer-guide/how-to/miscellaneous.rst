@@ -18,7 +18,7 @@ database or by calling a slow web service, you can gain a lot of
 performance by caching this data. The :ref:`process-element-db-activity` and the
 :ref:`process-element-web-service-call-activity` natively support Data
 Caching (see the :ref:`process-element-tab-data-cache` for more information),
-for other data you can access the Data Cache API by IvyScript.
+for other data, you can access the Data Cache API by IvyScript.
 
 Caches
 ~~~~~~
@@ -31,17 +31,17 @@ the result of a database query or of a web service call if you use the
 also store any arbitrary object into a data cache entry by using the
 Public API. Entries are identified by a textual entry identifier.
 
-Entries are organized into groups. An entry always belongs to exactly
-one group, you cannot store the same entry in more than one group. In
-other words, the identifier of an entry must be unique in its group. If
-two entries in the same group have the same identifiers, then they are
-identical. Like entries, groups are as well identified by a textual
-group identifier. Use groups to store cache entries with similar data.
-This simplifies the invalidation of related data, see chapter
-:ref:`invalidation <data-cache-invalidation>` below.
+Entries are organized into groups. An entry always belongs to exactly one group.
+You cannot store the same entry in more than one group. In other words, the
+identifier of an entry must be unique in its group. If two entries in the same
+group have identical identifiers, they are identical. 
+
+Like entries, groups are identified by a textual group identifier. Use groups to
+store cache entries with similar data. This simplifies the invalidation of
+related data, see chapter :ref:`invalidation <data-cache-invalidation>` below.
 
 A *Data Cache* is a container for multiple groups. The identifier of a
-group must be unique in its data cache. If two groups in the same Data
+group has to be unique in its data cache. If two groups in the same Data
 Cache have the same identifiers, then they are identical.
 
 .. figure:: /_images/data-cache/data-cache.png
@@ -108,13 +108,12 @@ thereafter.
 Invalidation
 ~~~~~~~~~~~~
 
-In order to take into consideration changes in the data that is handled
-by the cache entries, it is possible to invalidate cache entries and as
-well whole groups either on request or after a configurable period of
-time. Thereby, invalidation means that only the value of the data cache
-entry is deleted, but not the entry itself. The next time a step
-referring to this data cache entry is executed, the value of the data
-cache is loaded again.
+To take into consideration changes in the data handled by the cache entries, it
+is possible to invalidate cache entries and whole groups either on request or
+after a configurable period of time. Thereby, invalidation means that only the
+value of the data cache entry is deleted, but not the entry itself. The next
+time a step referring to this data cache entry is executed, the value of the
+data cache is loaded again.
 
 You can invalidate an entry, a group and even the whole cache explicitly
 in the :ref:`process-element-tab-data-cache` of
@@ -144,21 +143,17 @@ does invalidate all groups and therefore as well all entries.
    cluster.
 
 
-
-
-
 System Events
 -------------
 
-Axon Ivy offers the concept of system events, which can be understood as
-messages that are broadcasted across the Axon Ivy installation. While
-Axon Ivy itself (e.g. the workflow subsystem) generates events that
-interested participants may subscribe to (e.g. to be informed when a
-case is created or finished), it is also possible for implementors to
-define their own events and to broadcast them to any component that
-might be interested. Since this mechanism is session- and workflow
-independent, it can also be used to implement *inter-session
-communication* (within the same Application).
+Axon Ivy offers the concept of system events. These are messages broadcasted
+across the Axon Ivy installation. While Axon Ivy itself (e.g. the workflow
+subsystem) generates events that interested participants may subscribe to (e.g.
+to be informed when a case is created or finished), it is also possible for
+implementors to define their own events and broadcast them to any component
+that is interested. Since this mechanism is session- and workflow
+independent, you can use it to implement *inter-session communication*
+(within the same Application).
 
 
 Concept and general usage
@@ -286,16 +281,15 @@ to the following:
    Since ``THIRD_PARTY`` events are distributed as messages in a Cluster,
    all custom event parameter objects *must be serializable*.
 
-   Please be aware of the fact that having multiple running instances of a
-   system event sender may lead to race conditions. If you use system
-   events for message exchange between e.g. processes and/or User Dialogs
-   and third party systems that are integrated via the Server Extension
-   mechanism, you should ensure that a certain event is only sent once.
-   This may require that the third party system (e.g. an ESB) is only
-   started on one node in the cluster. Otherwise a received message from
-   the external system may be injected into the Axon Ivy Engine Enterprise
-   Edition system n times (once for each node) instead of being sent only
-   once.
+   Please be aware that running multiple instances of a system event sender may
+   lead to race conditions. If you use system events for message exchange
+   between Axon Ivy processes and/or User Dialogs and third party systems
+   integrated via the Server Extension mechanism, you have to ensure that a
+   certain event is only sent once. One way to solve this is that the third party system
+   (e.g. an ESB) is attached to only one node in the cluster. Otherwise a
+   received message from the external system may be injected into the Axon Ivy
+   Engine Enterprise Edition system n times (once for each node) instead of
+   being sent only once.
 
 
 

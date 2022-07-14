@@ -23,16 +23,17 @@ have to be installed and integrated additionally.
   Users can be imported from an external user management system like Microsoft
   Active Directory or Novell eDirectory.
 * :ref:`Cluster <cluster>`:
-  For scalability, to increase performance and provide high availability it is
-  possible to cluster the Axon Ivy Engine.
+  For scalability, to increase performance and provide high availability, you
+  can cluster the Axon Ivy Engine. 
 * :ref:`Elasticsearch <elasticsearch>`:
   An Elasticsearch server is bundled with the Axon Ivy Engine. For systems with
-  high loads, it may make sense to install the Elasticsearch Server on a
-  dedicated node, or even to run an Elasticsearch cluster.
+  high loads, consider to install the Elasticsearch Server on a dedicated node,
+  or even to run an Elasticsearch cluster.
 * :ref:`systemdb`:
   The Axon Ivy Engine needs a relational database management system to store its
-  workflow data. The database in which the engine stores the data is called
-  system database.
+  workflow data. The Axon Ivy engine stores its data in the **system database**.
+  It is a SQL database hosted on one of the supported Database Management
+  Systems.
 
 
 .. toctree::

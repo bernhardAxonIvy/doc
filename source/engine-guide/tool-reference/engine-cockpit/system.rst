@@ -80,16 +80,16 @@ is the case please refer to how to properly set up a :ref:`reverse proxy
 System Configuration
 ^^^^^^^^^^^^^^^^^^^^
 
-The **System Configuration** page displays an overview of all your engine's
+The **System Configuration** page displays an overview of all your engine
 configuration settings. Configurations in grey represent default values. If you
-click on the :guilabel:`New` button, you can add a new configuration setting.
-If you want to edit an existing configuration, click on the
-:guilabel:`Pencil` button. Clicking the button :guilabel:`More` button allows you
-to reset a configuration setting or view the complete configuration file.
+click on the :guilabel:`New` button, you can add a new configuration setting. If
+you want to edit an existing configuration, click on the :guilabel:`Pencil`
+button. Clicking :guilabel:`More` allows you to reset a configuration setting or
+view the complete configuration file.
 
 .. warning::
-    Application configurations are not shown on this view. You can see application
-    configuration settings in the :ref:`engine-cockpit-application-detail` page.
+    Application configurations are not shown in this view. You can see application
+    configuration settings on page :ref:`engine-cockpit-application-detail`.
 
 .. note::
     For more information about the configuration, please refer to the
@@ -104,8 +104,8 @@ Cluster
 ^^^^^^^
 
 If your engine runs with a :ref:`license-edition` license, your are able to
-define a :ref:`cluster`. In addition, the engine cockpit will provide a
-**Cluster** navigation menu item. This will give you an overview of your
-running nodes and a detail view dialog if you click on a node.
+define a :ref:`cluster`. The engine cockpit will provide a **Cluster**
+navigation menu item. It shows you an overview page of your running nodes and a
+detail view dialog if you click on one of these node.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-cluster.png

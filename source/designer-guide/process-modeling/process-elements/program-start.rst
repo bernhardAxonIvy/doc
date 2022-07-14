@@ -32,22 +32,19 @@ API.
    An Axon Ivy Engine Enterprise Edition consists of multiple engine
    instances (nodes) that are running on different machines.
    
-   Normally
-   process start event beans are instantiated on every node but only
-   started on the master node. This guarantees that for each *Program
-   Start* process element only one bean is running, no matter what the
-   total number of nodes in the Engine Enterprise Edition is.
+   Usually, process start event beans are instantiated on every node but only
+   started on the master node. This guarantees that for each *Program Start*
+   process element only one bean is running, no matter what the total number of
+   nodes is in the Axon Ivy Engine Enterprise Edition cluster.
    
-   However, if
-   you need your process start event bean to be started on all cluster
-   nodes, you may instruct the engine to do so. Just have your bean class
-   implement the (empty) marker interface 
-   :public-api:`IMultiNodeCapable </ch/ivyteam/ivy/process/beans/IMultiNodeCapable.html>` and the
-   above restriction will no longer apply.
+   However, if you need your process start event bean to be started on all
+   cluster nodes, you may instruct the engine to do so. Just have your bean
+   class implement the (empty) marker interface :public-api:`IMultiNodeCapable
+   </ch/ivyteam/ivy/process/beans/IMultiNodeCapable.html>` and the above
+   restriction will no longer apply.
    
-   Please be aware of the fact that
-   having multiple running instances of the same bean may lead to race
-   conditions.
+   Please be aware that having multiple running instances of the same bean may
+   lead to race conditions.
 
 
 Inscription

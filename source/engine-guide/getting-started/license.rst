@@ -15,19 +15,18 @@ of named users and concurrent users as well as the public URLs for each license.
 Edition
 -------
 
-There is a choice between **Standard Edition** and **Enterprise Edition**. If
-you expect high loads or need increased reliability, then you should look into
-the Enterprise Edition, which allows to run the Axon Ivy Engine in a
-:ref:`cluster <cluster>`.
+Chose between **Standard Edition** and **Enterprise Edition**. If you expect
+high loads or need increased reliability, you should look into the Enterprise
+Edition. It allows running the Axon Ivy Engine in a :ref:`cluster <cluster>`.
 
 
 Named Users
 -----------
 
-The registered users within Axon Ivy Engine are called **named users**. These users
-have an account in the Axon Ivy Engine and therefore can log in to the
-Axon Ivy Engine. Because accounts are managed per application one user can have
-multiple accounts on a single engine, one per application. Accounts in different
+The registered users within Axon Ivy Engine are called **named users**. These
+users have an account in the Axon Ivy Engine and thus can log in to the Axon Ivy
+Engine. Because accounts are managed per application, one user can have multiple
+accounts on a single engine, one per application. Accounts in different
 applications on the same engine or cluster that have the same user name are
 counted as one named user.
 
@@ -40,18 +39,17 @@ as **concurrent users**. The Axon Ivy Engine controls the number of concurrent u
 follows:
 
 * Every Session with no authenticated user is counted as one concurrent user.
-* Multiple Sessions with the same authenticated user, are handled as follows:
+* Multiple Sessions with the same authenticated user are handled as follows:
 
-   * the first 10 sessions are counted as one concurrent
-     user.
-   * every additional concurrent session of the same authendicated user is counted
+   * the first 10 sessions are counted as one concurrent user.
+   * every additional concurrent session of the same authenticated user is counted
      as one additional concurrent user.
 
-* The system session is not counted as concurrent user.
+* The system session is not counted as a concurrent user.
 * Sessions (non-System sessions) created to call WebService Processes or Event
   Bean Processes are created at the start of the process and are destroyed after
   the execution of the process. These sessions are counted as described above while
-  existing (during the execution of the process).
+  they exist, i.e. during process execution.
 
 The following table illustrates this:
 
@@ -80,11 +78,10 @@ Public URLs are the links that end users will use to access your Axon Ivy Engine
   
   * Intranet users use ``http://axonivyprod:8080`` to access it. 
   * Internet users use ``https://www.customer.com`` to access it through a reverse proxy.
-
-  An administrator accesses the Axon Ivy Engine with an IP Address
+  * Administrators access the Axon Ivy Engine with an IP Address
   ``http://192.168.1.19``.
   
-  In this case the license has to contain three public URLs:
+  In this case, the license has to contain three public URLs:
   
   * ``axonivyprod``
   * ``www.customer.com``
