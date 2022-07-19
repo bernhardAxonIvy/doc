@@ -253,7 +253,7 @@ migrate to a more modern URL rewrite approach based on HTTP/HTTPS.
   #. Follow the :ref:`instructions here <reverse-proxy-iis>` on how to integrate
      Microsoft IIS with a modern URL rewrite.
 
-  If you are using Apache HTTP as your reverse proxy you need to
+  If you are using Apache HTTP Server as your reverse proxy you need to
   :ref:`reconfigure Apache HTTP <reverse-proxy-apache>`.
 
 

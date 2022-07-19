@@ -282,7 +282,7 @@ project you use:
    </ch/ivyteam/ivy/environment/Ivy.html>` class and use it's static API.
 
    Please note that it is necessary that the Java code which makes use of the
-   ``ivy`` context variable must run within an ``ivy`` request. Otherwise,
+   ``ivy`` context variable must run within an Axon Ivy request. Otherwise,
    context information will not be available, most likely resulting in an
    ``EnvironmentNotAvailableException``.
 
