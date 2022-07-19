@@ -14,7 +14,7 @@ How to Add a View
 In the :guilabel:`New` menu in the Axon Ivy project tree you find the wizard 
 :guilabel:`New HTML Dialog View` to add a view to an HTML Dialog. Just
 enter the name of the view and the XHTML file for the view is created
-and added to the HTML Dialog. In the Ivy project tree, all view files of
+and added to the HTML Dialog. In the Axon Ivy project tree, all view files of
 an HTML Dialog are displayed below the main node of that HTML Dialog.
 
 |html-dialog-new-wizard|

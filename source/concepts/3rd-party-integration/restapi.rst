@@ -31,7 +31,7 @@ Find examples in the :ref:`ConnectivityDemos <importing-demo-projects>` project.
 Provide Your Own REST Services
 ------------------------------
 
-To provide a custom REST service in your Ivy project, `JAX-RS
+To provide a custom REST service in your Axon Ivy project, `JAX-RS
 <https://docs.oracle.com/javaee/7/api/javax/ws/rs/package-summary.html#package.description>`__
 annotations can be used. A REST resource is created by adding a Java class to
 the ``src`` directory. The Java class has to use the correct annotations (as

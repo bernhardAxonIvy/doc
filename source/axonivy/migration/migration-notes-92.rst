@@ -13,7 +13,7 @@ New project version
 
 Due to the migration of the :ref:`Global Variables
 <migrate-91-92-globalvar-migration>`, we introducing a new project version
-:code:`92000`. If you want to deploy a project to a Axon Ivy Engine 9.2, your
+:code:`92000`. If you want to deploy a project to an Axon Ivy Engine 9.2, your
 project must be in this version. If you have a running project, it will still
 be able to run, but :ref:`we recommend migrating your projects
 <migration-project>` to the new version and redeploying them to your engine.
@@ -25,8 +25,8 @@ Business Case Lifecycle
 |tag-project-changed|
 
 The lifecycle of the :ref:`business-case` has been simplified.
-The first case is the business case and will stay the business case forever.
-Additional cases will be sub cases of the business case.
+The first case is the business case and will always be the business case.
+Additional cases will be sub-cases of the business case.
 
 .. container:: admonition note toggle
 
@@ -34,11 +34,11 @@ Additional cases will be sub cases of the business case.
 
      **Details**
 
-  Previously the first case (formerly initial case) was copied as soon
-  as new cases were attached. The copy was then the business case.
+  Previously, the first case (formerly, the initial case) has been copied as soon
+  as new cases have been attached. The copy has then become the business case.
 
   This change also means that the business case can now have tasks as direct
-  children and not only sub cases as children.
+  children and not only sub-cases.
 
 Changes in app.yaml
 *******************
@@ -49,7 +49,7 @@ New file locations
 
 |tag-ops-changed|
 
-Shifting towards highly configurable Ivy projects we needed to move the :file:`app.yaml` to a new location
+Shifting towards highly configurable Axon Ivy projects, we needed to move the :file:`app.yaml` to a new location
 in the Axon Ivy Engine.
 
 .. container:: admonition note toggle
@@ -61,7 +61,7 @@ in the Axon Ivy Engine.
   .. container:: detail 
 
     If the new engine is aware of the existing applications, the :file:`app.yaml`
-    files should be migrated automatically. The new locations look like the following:
+    files will be migrated automatically. The new locations are the following:
 
     +-------------------------------------------------------+--------------------------------------------------------------------------+
     | Old Location                                          | New Location                                                             |
@@ -71,9 +71,9 @@ in the Axon Ivy Engine.
     | /[engineDir]/configuration/app-**myApplication**.yaml | /[engineDir]/configuration/applications/**myApplication**/app.yaml       |
     +-------------------------------------------------------+--------------------------------------------------------------------------+
 
-    If you deploy an :file:`app.yaml` in an application zip file, it must be placed
-    now in the sub-folder :file:`config`. For compatibility reasons the old
-    legacy place in the root of the full application deployment zip is still
+    If you deploy an :file:`app.yaml` in an application zip file, it has to be placed
+    now in the sub-folder :file:`config`. For compatibility reasons, the old
+    legacy location in the root of the application deployment zip is still
     supported for the time being.
 
 
@@ -83,7 +83,7 @@ Renaming Global Variables
 |tag-project-changed| |tag-ops-changed| |tag-ops-wizard|
 
 The :code:`GlobalVariables` in the :ref:`app-yaml` are renamed to
-:code:`Variables`. This is done automatically by the system database migration.
+:code:`Variables`. System database migration does this automatically.
 
 .. container:: admonition note toggle
 
@@ -230,8 +230,8 @@ AJP support is deprecated
 
 |tag-ops-deprecated|
 
-AJP is used to integrate the Axon Ivy Engine with Microsoft IIS  or Apache http
-as :ref:`reverse proxy <reverse-proxy>`. We still support AJP but you should
+AJP is used to integrate the Axon Ivy Engine with Microsoft IIS  or Apache HTTP
+as :ref:`reverse proxy <reverse-proxy>`. We still support AJP, but you should
 migrate to a more modern URL rewrite approach based on HTTP/HTTPS.
 
 .. container:: admonition note toggle
@@ -241,20 +241,20 @@ migrate to a more modern URL rewrite approach based on HTTP/HTTPS.
      **Details**
 
   AJP's days are numbered. It is not getting developed any further and prevents
-  the use of new web features such as websockets. We highly recommend to migrate
-  to a modern URL rewrite approach based on HTTP/HTTPS, in future versions
-  of Axon Ivy Engine you won't be able to use AJP.
+  the use of new web features such as websockets. We highly recommend migrating
+  to a modern URL rewrite approach based on HTTP/HTTPS. In future versions
+  of the Axon Ivy Engine, you won't be able to use AJP.
 
-  If you are using Microsoft IIS as your reverse proxy proceed as follows:
+  If you are using Microsoft IIS as your reverse proxy, proceed as follows:
 
   #. Open the IIS administration interface.
-  #. Delete the virtual directory named :guilabel:`ivy` which you can find
-     under :guilabel:`Default Website`.
-  #. Follow the :ref:`instructions here <reverse-proxy-iis>` on how to integrate Microsoft
-     IIS with a modern URL rewrite.
+  #. Delete the virtual directory named :guilabel:`ivy`. It is located under
+     :guilabel:`Default Website`.
+  #. Follow the :ref:`instructions here <reverse-proxy-iis>` on how to integrate
+     Microsoft IIS with a modern URL rewrite.
 
-  If you are using Apache http as your reverse proxy you need to
-  :ref:`reconfigure Apache http <reverse-proxy-apache>`.
+  If you are using Apache HTTP as your reverse proxy you need to
+  :ref:`reconfigure Apache HTTP <reverse-proxy-apache>`.
 
 
 SSL Client Configuration
@@ -273,7 +273,7 @@ with some simplifications in the SSL configuration.
 
   We removed :code:`SSL.Client.UseSystemTruststore` and :code:`SSL.Client.UseCustomTruststore` in the :ref:`ivy-yaml`.
   It's not possible to configure them anymore. The system truststore of the JVM and the custom
-  truststore of Ivy are always active now. If you don't trust a certificate, simply
+  truststore of Axon Ivy are always active now. If you don't trust a certificate, simply
   remove it from the truststore.
 
 
@@ -413,8 +413,8 @@ please change to the simpler methods *all()*, *matches(pattern)* or *contains(pa
 
 
 
-Maven dependencies automatically packed into Ivy archives
-*********************************************************
+Maven dependencies automatically packed into Axon Ivy archives
+****************************************************************
 
 |tag-project-changed|
 
@@ -461,11 +461,11 @@ works.
     Make sure that your project is converted to a Maven project!
 
     Only dependencies with the scope :code:`compile`, :code:`system` and
-    :code:`runtime` are copied. To reduce the size of your Ivy archive, make sure
+    :code:`runtime` are copied. To reduce the size of your Axon Ivy archive, make sure
     that your dependencies are configured correctly:
 
       * Mark test dependencies with the scope :code:`test`
-      * `Exclude transient dependencies <https://maven.apache.org/pom.html#exclusions>`__ that are already delivered by the Ivy core
+      * `Exclude transient dependencies <https://maven.apache.org/pom.html#exclusions>`__ that are already delivered by the Axon Ivy core
 
 
 .. include:: _tagLegend.rst

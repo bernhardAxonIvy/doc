@@ -18,7 +18,7 @@ To customize an email notification you need to do the following:
 
 #. Implement a process with a predefined process start signature in an Ivy
    project. See the following subchapters for more information.
-#. :ref:`Deploy <deployment>` the Ivy project with the customized standard
+#. :ref:`Deploy <deployment>` the Axon Ivy project with the customized standard
    processes in the application. 
 #. Optional: If you have multiple projects which provide the default pages
    you may need to fix the provider in file :ref:`ivy-yaml`.

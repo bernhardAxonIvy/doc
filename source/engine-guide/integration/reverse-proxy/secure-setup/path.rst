@@ -3,7 +3,7 @@
 Path
 ====
 
-We recommend providing only the Ivy application(s) that your users need to access
+We recommend providing only the Axon Ivy application(s) that your users need to access
 via the reverse proxy. The Axon Ivy Engine makes it easy to do that because all
 URLs of an application share the left-hand side of their URL. For example: If
 your application is named :code:`demo-app`, then you only need to allow access

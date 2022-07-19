@@ -10,7 +10,7 @@ which security system the application must live:
 
 * **Internal Security System**:
   Used to manage the users directly on the Axon Ivy Engine. There is only one
-  Internal Security System, which is called Ivy Security System. No further
+  Internal Security System, which is called Axon Ivy Security System. No further
   settings are available for this Security System. This is also the default
   Security System for application which has no security system defined.
 * **External Security System**:

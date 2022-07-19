@@ -1,7 +1,7 @@
 IvyScript Language
 ==================
 
-The Ivy scripting language IvyScript provides elements to write simple
+The Axon Ivy scripting language IvyScript provides elements to write simple
 computational expressions but also more complex elements to program
 conditional-, loop- and exception handling blocks.
 
@@ -102,7 +102,7 @@ that happen while executing external Java code.
 Null Handling / Automatic Object Creation
 -----------------------------------------
 
-IvyScript supports auto-initialization of the Ivy basic types, i.e. you
+IvyScript supports auto-initialization of the Axon Ivy basic types, i.e. you
 don't have to create/initialize fields or variables explicitly with
 ``new`` after declaration. ``Strings`` are initialized to an empty
 ``String``, ``Numbers`` to zero, ``Lists`` to an empty ``List``.

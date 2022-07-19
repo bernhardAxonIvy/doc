@@ -16,7 +16,7 @@ After the sync process is finished you will see what has been done in the log.
     Only external security systems (Microsoft Active Directory and Novell
     eDirectory) can be synchronized.
 
-You can edit a configured external security system (not the Ivy Security System)
+You can edit a configured external security system (not the Axon Ivy Security System)
 directly in your configuration files (see :ref:`configuration-security-system`)
 or you can click on the name of the security system to open the
 :ref:`engine-cockpit-security-system-detail` view.
@@ -64,7 +64,7 @@ User Detail
 """""""""""
 
 In the **User Detail** view you can view information about a user. If you are
-using the Ivy Security System, you can also change his settings.
+using the Axon Ivy Security System, you can also change his settings.
 
 The :guilabel:`Information` panel displays the attributes of the user. You can
 change all of them except the name. It is also possible to enable, disable or delete

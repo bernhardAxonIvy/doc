@@ -498,7 +498,7 @@ from the amount of all products:
 Accessibility
 ^^^^^^^^^^^^^
 
-You can use the Persistence API everywhere you have the Ivy variable in
+You can use the Persistence API everywhere you have the Axon Ivy variable in
 the IvyScript. Use ``ivy.persistence.``\ *<persistence unit>*. Here you
 find all the methods for finding, persisting, updating and querying
 entity objects. Replace *<persistence unit>* with the name of a

@@ -259,7 +259,7 @@ area (which is also the reason why absolute File paths are disallowed).
 The Environment Variable ``ivy``
 --------------------------------
 
-The Ivy environment variable is provided to access the context of the
+The ``ivy`` environment variable is provided to access the context of the
 current process. The environment information is available as fields on
 the global ``ivy`` variable, e.g. to access the CMS of the current
 project you use:
@@ -272,21 +272,19 @@ project you use:
 
    **Access from IvyScript:**
 
-   The variable ``ivy`` is available everywhere, where *IvyScript* can
-   be used, e.g. on *Step* elements or in *output tables* of other
-   elements.
+   The variable ``ivy`` is available wherever you can use *IvyScript*,
+   e.g. on *Step* elements or in *output tables* of other elements.
 
    **Access from Java:**
 
-   You can also access ``ivy`` from a Java context, e.g. from helper
-   classes. To do so, simply import the
-   :public-api:`ch.ivyteam.ivy.environment.Ivy </ch/ivyteam/ivy/environment/Ivy.html>`
-   class and use it's static API.
+   You can also access ``ivy`` from a Java context, e.g. from helper classes. To
+   do so, simply import the :public-api:`ch.ivyteam.ivy.environment.Ivy
+   </ch/ivyteam/ivy/environment/Ivy.html>` class and use it's static API.
 
-   Please note that it is necessary that the Java code which makes use
-   of the Ivy context variable must run within an Ivy request. Otherwise
-   context information will not be available, most likely resulting in
-   an ``EnvironmentNotAvailableException``.
+   Please note that it is necessary that the Java code which makes use of the
+   ``ivy`` context variable must run within an ``ivy`` request. Otherwise,
+   context information will not be available, most likely resulting in an
+   ``EnvironmentNotAvailableException``.
 
    **Access from JSP:**
 

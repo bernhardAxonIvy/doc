@@ -304,7 +304,7 @@ Axon Ivy Search
 -----------------
 
 In a workspace with many large projects it is sometimes hard to find
-specific Ivy elements. Then a powerful search mechanism can save the
+specific Axon Ivy elements. Then a powerful search mechanism can save the
 day. To use the Axon Ivy search, just click on the |image1| symbol in
 the toolbar to open the search dialog. In the dialog that opens navigate
 to the Axon Ivy tab. At present, searching for 

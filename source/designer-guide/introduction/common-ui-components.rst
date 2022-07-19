@@ -120,13 +120,13 @@ explains their function.
    | |image15|                         | Opens a                                                   |
    |                                   | :ref:`function-browser` that                              |
    |                                   | shows the structure of the                                |
-   |                                   | currently available Ivy                                   |
+   |                                   | currently available Axon Ivy                              |
    |                                   | environment variable and the                              |
    |                                   | methods that they provide.                                |
    |                                   | Moreover it shows all available                           |
    |                                   | global functions. Use this Smart                          |
    |                                   | Button if you want to insert the                          |
-   |                                   | Ivy environment variable or a                             |
+   |                                   | Axon Ivy environment variable or a                        |
    |                                   | global function.                                          |
    +-----------------------------------+-----------------------------------------------------------+
    | |image16|                         | Opens a                                                   |

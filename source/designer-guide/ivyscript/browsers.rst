@@ -82,9 +82,9 @@ The data type browser is used to choose a data type in the:
 Data types are divided into two categories:
 
 .. figure:: /_images/ivyscript/data-type-browser-ivy-base-types.png
-   :alt: Data Type Browser for Ivy base types
+   :alt: Data Type Browser for Axon Ivy base types
 
-   Data Type Browser for Ivy base types
+   Data Type Browser for Axon Ivy base types
 
 This category contains the Axon Ivy base types. These types may be used
 within IvyScript without any restriction. Note that for convenience
