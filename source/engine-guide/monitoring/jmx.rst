@@ -4,9 +4,9 @@ Java Management Extensions (JMX)
 ================================
 
 Java Management Extensions (JMX) is a technology to read and write runtime
-information of Java processes. This allows tools to monitor the
-state of an Axon Ivy Engine, e.g. with VisualVM, Java Mission Control,
-Nagios, Prometheus, etc. 
+information of Java processes. It allows to monitor the state of an Axon Ivy
+Engine with external tools, e.g. VisualVM, Java Mission Control, Nagios,
+Prometheus, etc. 
 
 A monitoring tool running on the same machine and with the same operating system
 level user as the Axon Ivy Engine can connect to Axon Ivy without additional
@@ -16,22 +16,23 @@ configuration.
 Activate Remote Access
 ----------------------
 
-If the Axon Ivy Engine is running under another user than the monitoring tool or on
-a remote host, JMX remote access has to be activated. Remote access is protected
-by a user name and password of an Axon Ivy Engine administrator, so all
-Axon Ivy Engine administrators have access.
+You have to activate remote JMX access if the Axon Ivy Engine is running under
+another user than the monitoring tool or on a remote host. Remote access is
+protected by a user name and password of an Axon Ivy Engine administrator, so
+all Axon Ivy Engine administrators have access.
 
-Activate remote access by uncommenting all lines in the JMX section of :ref:`jvm-options`.
+Activate remote access by uncommenting all lines in the JMX section of
+:ref:`jvm-options`.
 
 
 Auto Discovery (JDP)
 --------------------
 
-Some monitoring tools can auto discover running JMX servers in the network. This way,
-a user does not have to know the JMX ip and port.
+Some monitoring tools can auto-discover running JMX servers in the network. This
+way, a user does not have to know the JMX address and port.
 
-You can disable this behavior in :ref:`jvm-options`
-by setting the JMX autodiscovery property to false:
+You can disable this behavior in :ref:`jvm-options` by setting the JMX
+autodiscovery property to false:
 
 .. code-block:: properties
 
@@ -41,18 +42,17 @@ by setting the JMX autodiscovery property to false:
 Provided MBeans
 ---------------
 
-The Axon Ivy Engine provides performance and management information by a set of
+The Axon Ivy Engine provides performance and management information in a set of
 MBeans. They allow tools to monitor internals of the Axon Ivy Engine. Most
-monitoring tools provide a user interface to browse the available MBeans. 
-MBeans are mostly shown in a tree built with the information provided in the
-names of the MBeans. 
+monitoring tools provide a user interface to browse the available MBeans.
+Commonly, these MBeans are displayed in a tree built with the information
+provided in the names of the MBeans. 
 
 .. figure:: /_images/monitoring/visualvm-mbeans.png
 
 The :ref:`engine-cockpit` also contains a built-in
-:ref:`engine-cockpit-monitor-mbeans` browser. This way you do not need to
-install an external monitoring tool for a quick glance at your engine's vital
-signs.
+:ref:`engine-cockpit-monitor-mbeans` browser. Therefore, you do not need to
+install an external monitoring tool for a glance at your engine's vital signs.
 
 Where possible, Axon Ivy Engine MBeans names contain application, process 
 model, process model version, or environment name. 
@@ -65,7 +65,7 @@ model, process model version, or environment name.
     ivy Engine:type=Job Manager
     ivy Engine:type=Process Start Event Bean,application=MyApplication,pm=MyProcessModel,pmv=1,name="MyStartEventBean (3485471349/start.ivp)"
 
-The name and description of an MBean is available in its meta information (see
+The name and description of an MBean are available in its meta information (see
 the Metadata tab in the MBeans tab of VisualVM). MBeans provide information
 through attributes and operations. The description of the attributes and
 operations is also contained in the meta information (also in the tool tips in
@@ -77,18 +77,18 @@ the Attributes and Operations tab of VisualVM's MBeans tab).
     your running applications.
 
     If not mentioned otherwise, a manipulation only affects the currently
-    running engine. It is not persisted and thus will not survive an engine
-    restart.
+    running engine. These manipulations are not persistent. They won't survive
+    an engine restart.
     
     Manipulations that survive an engine restart contain the following text in
     the description of the attribute or operation: ``(Persistent)``.
 
-In addition to the MBeans provided by Axon Ivy, some third party libraries
-included in Axon Ivy provide their own MBeans. One of them is Apache Tomcat, which
-is used as internal web server. Its MBeans provide information about the
-handling of HTTP requests like request count, errors, execution time, sessions,
-etc. Moreover, the Java Virtual Machine also provides some MBeans that contain
-information about the used memory (Java heap), CPU usage, uptime, etc.
+In addition to the MBeans provided by Axon Ivy, some third-party libraries
+included in Axon Ivy provide their own MBeans. One of them is Apache Tomcat,
+which serves as the internal web server. Its MBeans provide information about
+the handling of HTTP requests like request count, errors, execution time,
+sessions, and more. The Java Virtual Machine also provides some MBeans that
+contain information about memory used (Java heap), CPU load, uptime, etc.
 
 The list below contains some of the provided information:
 
@@ -157,7 +157,7 @@ The list below contains some of the provided information:
     ivy Engine:type=Process Model,application=*,name=*
     ivy Engine:type=Process Model Version,application=*,pm=*,name=*
 
-**Cluster, Cluster Nodes and Cluster Communication information** (received and sent message, errors, execution time, etc.)
+**Cluster, Cluster Nodes, and Cluster Communication information** (received and sent message, errors, execution time, etc.)
 
 .. code-block:: properties
 

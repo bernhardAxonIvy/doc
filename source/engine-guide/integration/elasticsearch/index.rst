@@ -13,7 +13,7 @@ Elasticsearch itself is bundled with Axon Ivy Engine and will be started on dema
 
 |
 
-For systems with high load,  you may run an external Elasticsearch server or
+For systems with high load, you may run an external Elasticsearch server or
 cluster. To do so, download and install Elasticsearch according to the docs of
 `Elasticsearch <https://www.elastic.co>`__. 
 

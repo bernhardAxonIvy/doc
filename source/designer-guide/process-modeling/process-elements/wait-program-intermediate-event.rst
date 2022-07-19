@@ -39,10 +39,10 @@ the Axon Ivy Public API.
    An Axon Ivy Engine Enterprise Edition consists of multiple engine
    instances (nodes) that are running on different machines.
    
-   Normally process intermediate event beans are instantiated on every node
+   Usually, process intermediate event beans are instantiated on every node
    but only started on the master node. This guarantees that for each
-   *Intermediate Event* process element only one bean is running, no matter
-   what the total number of nodes in the Engine Enterprise Edition is.
+   *Intermediate Event* process element, only one bean is running, no matter
+   what the total number of nodes is in the Axon Ivy cluster.
    
    However, if you need your intermediate event bean to be started on all
    cluster nodes, you may instruct the server to do so. Just have your bean
@@ -50,7 +50,7 @@ the Axon Ivy Public API.
    :public-api:`IMultiNodeCapable </ch/ivyteam/ivy/process/beans/IMultiNodeCapable.html>` and
    the above restriction will no longer apply.
    
-   Please be aware of the fact that having multiple running instances of
+   Please be aware that having multiple running instances of
    the same bean may lead to race conditions.
 
 Inscription
