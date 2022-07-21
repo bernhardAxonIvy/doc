@@ -48,31 +48,33 @@ applications. This enables independent feature-driven development.
   .. container:: detail 
 
     Most engine installations will only have the predefined security context
-    `default`. By default, new applications end up in this context. The use of
-    multiple security contexts is basically only if you want to completely isolate
-    certain applications from other applications, but then we recommend installing a
-    second engine. The second use case would be for multi-tenancy - one security
-    system per tenant.
+    `default`. By default, new applications end up in this context. 
+    There are two use cases for multiple security contexts on one engine:
+
+    - you want to isolate applications against each other - each application has its own security context.
+    - you implement multi-tenancy by having one security system per tenant.
+
+    For both use cases, we suggest using multiple engines in order to make accidental security breaches impossible.
 
     During migration, however, the status quo is maintained. The migrated
     applications are placed in an isolated security system with the name of the
     application. It is no longer possible to change the security system at runtime,
     this must always be done when the application is created.
 
-    More information about the concept can be found :ref:`here <application-lifecycle>`.
+    Refer to :ref:`Application Lifecycle <application-lifecycle>` for further details.
 
     - **Users** are no longer attached to the application, but to the Security
-      System. The user is so unique over several apppliactions.
-    - **Roles** are still defined in projects. The roles are deployed in a
-      security system. Now the roles must not only be unique over the application, but
-      over the security system.
-    - **Business Data** was not scoped. These are now scoped to the security system.
+      System. This means that the user is unique over several applications.
+    - **Roles** are still defined in projects. The roles are deployed over a
+      security system. Now the roles must not only be unique in the application, 
+      but in the security system.
+    - **Business Data** has not been scoped. Now, it is scoped to the security system.
     - **Standard process** default pages are now automatically
       determined at runtime. You don't have to define them anymore. If there are
       multiple implementations of a default process, one is simply selected. But you
       can fix this by setting this setting anyway.
     - **EmailNotification Settings** are no longer part of
-      the appliatkon configuration. They are part of the security system and can be
+      the application configuration. They are part of the security system and can be
       found there.
 
 
@@ -130,8 +132,8 @@ Programmable element Editor
 
 |tag-project-changed|
 
-The UI technology to build custom inscription editors has changed. Therefore existing programmable elements,  
-built with AWT, will show deprecation warnings. 
+We changed the UI technology to build custom inscription editors. Therefore, existing programmable elements,
+built with AWT, show deprecation warnings.
 
 Affected elements are: :ref:`Program Start Event <process-element-program-start>`, 
 :ref:`Program Interface (PI) Activity <process-element-pi>` and 
