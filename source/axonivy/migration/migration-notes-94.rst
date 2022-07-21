@@ -39,33 +39,41 @@ system. Now, different applications can be developed and installed with their
 own release cycles, and the end user only ever receives one task list for all
 applications. This enables independent feature-driven development.
 
-Most engine installations will only have the predefined security context
-`default`. By default, new applications end up in this context. The use of
-multiple security contexts is basically only if you want to completely isolate
-certain applications from other applications, but then we recommend installing a
-second engine. The second use case would be for multi-tenancy - one security
-system per tenant.
+.. container:: admonition note toggle
 
-During migration, however, the status quo is maintained. The migrated
-applications are placed in an isolated security system with the name of the
-application. It is no longer possible to change the security system at runtime,
-this must always be done when the application is created.
+  .. container:: admonition-title header
 
-More information about the concept can be found :ref:`here <application-lifecycle>`.
+     **Details**
 
-- **Users** are no longer attached to the application, but to the Security
-  System. The user is so unique over several apppliactions.
-- **Roles** are still defined in projects. The roles are deployed in a
-  security system. Now the roles must not only be unique over the application, but
-  over the security system.
-- **Business Data** was not scoped. These are now scoped to the security system.
-- **Standard process** default pages are now automatically
-  determined at runtime. You don't have to define them anymore. If there are
-  multiple implementations of a default process, one is simply selected. But you
-  can fix this by setting this setting anyway.
-- **EmailNotification Settings** are no longer part of
-  the appliatkon configuration. They are part of the security system and can be
-  found there.
+  .. container:: detail 
+
+    Most engine installations will only have the predefined security context
+    `default`. By default, new applications end up in this context. The use of
+    multiple security contexts is basically only if you want to completely isolate
+    certain applications from other applications, but then we recommend installing a
+    second engine. The second use case would be for multi-tenancy - one security
+    system per tenant.
+
+    During migration, however, the status quo is maintained. The migrated
+    applications are placed in an isolated security system with the name of the
+    application. It is no longer possible to change the security system at runtime,
+    this must always be done when the application is created.
+
+    More information about the concept can be found :ref:`here <application-lifecycle>`.
+
+    - **Users** are no longer attached to the application, but to the Security
+      System. The user is so unique over several apppliactions.
+    - **Roles** are still defined in projects. The roles are deployed in a
+      security system. Now the roles must not only be unique over the application, but
+      over the security system.
+    - **Business Data** was not scoped. These are now scoped to the security system.
+    - **Standard process** default pages are now automatically
+      determined at runtime. You don't have to define them anymore. If there are
+      multiple implementations of a default process, one is simply selected. But you
+      can fix this by setting this setting anyway.
+    - **EmailNotification Settings** are no longer part of
+      the appliatkon configuration. They are part of the security system and can be
+      found there.
 
 
 User id and role id deprecated
@@ -114,6 +122,44 @@ This validates IvyScript code within Ivy processes by default during compilation
 
 Read more about the compilation parameters and their default values here:
 https://axonivy.github.io/project-build-plugin/snapshot/9.4/compileProject-mojo.html#skipScriptValidation
+
+
+
+Programmable element Editor
+*****************************
+
+|tag-project-changed|
+
+The UI technology to build custom inscription editors has changed. Therefore existing programmable elements,  
+built with AWT, will show deprecation warnings. 
+
+Affected elements are: :ref:`Program Start Event <process-element-program-start>`, 
+:ref:`Program Interface (PI) Activity <process-element-pi>` and 
+:ref:`Wait Intermediate Event <process-element-wait-program-intermediate-event>`
+
+.. container:: admonition note toggle
+
+  .. container:: admonition-title header
+
+     **Details**
+
+  .. container:: detail 
+
+    To make your custom editors compliant, change your internal Editor implementation to extend from 
+    :public-api:`UiEditorExtension
+    </ch/ivyteam/ivy/process/extension/ui/UiEditorExtension.html>`. And create widgets using the new 
+    :public-api:`ExtensionUiBuilder
+    </ch/ivyteam/ivy/process/extension/ui/ExtensionUiBuilder.html>`.
+
+    Here are some valid examples:
+
+      .. code-block:: java
+
+        ui.label("seconds to wait").create()
+        scriptEditor = ui.scriptField().requiredType(Integer.class).create();
+        textArea = ui.textField().multiline().create();
+
+
 
 
 Call & Wait element
