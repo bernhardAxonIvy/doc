@@ -9,73 +9,110 @@ drawer of the process editor palette.
 Element Details
 ---------------
 
-The program start element allows to start a process by a trigger from
-embedded external Java code. This opens a possibility to integrate an
-Axon Ivy application into other applications and systems. The program
-start element will instantiate a Java class that must implement the
-:public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>`
-interface. The Java class can then start the
-process by calling the method ``fireProcessStartEventRequest`` on the
-Axon Ivy runtime engine
-:public-api:`IProcessStartEventBeanRuntime </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBeanRuntime.html>`.
-The common
-way to implement a Start Event Bean is to extend the abstract base class
-:public-api:`AbstractProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/AbstractProcessStartEventBean.html>`.
-The interface also includes an inner
-editor class to parameterize the bean. You will find the documentation of
-the interfaces and abstract class in the Java Doc of the Axon Ivy Public
-API.
-
-
-.. note::
-
-   An Axon Ivy Engine Enterprise Edition consists of multiple engine
-   instances (nodes) that are running on different machines.
-   
-   Usually, process start event beans are instantiated on every node but only
-   started on the master node. This guarantees that for each *Program Start*
-   process element only one bean is running, no matter what the total number of
-   nodes is in the Axon Ivy Engine Enterprise Edition cluster.
-   
-   However, if you need your process start event bean to be started on all
-   cluster nodes, you may instruct the engine to do so. Just have your bean
-   class implement the (empty) marker interface :public-api:`IMultiNodeCapable
-   </ch/ivyteam/ivy/process/beans/IMultiNodeCapable.html>` and the above
-   restriction will no longer apply.
-   
-   Please be aware that having multiple running instances of the same bean may
-   lead to race conditions.
-
+The Program Start element allows you to start a process by a custom trigger.
+Therefore, it is perfect to integrate legacy-systems or any java-implementation
+you can think of being useful in starting workflow-cases. 
 
 Inscription
 -----------
 
 .. include:: _tab-name.rst
 
-Tab Start
+
+Start Tab
 ~~~~~~~~~
 
-On this tab you define the Java class to execute.
+On this tab you define the Java class to be executed.
 
-.. figure:: /_images/process-elements/program-start-tab-start.png
+.. figure:: /_images/process-elements/programStart_startTab.png
    :alt: Start tab
 
    Start tab
 
-Java Class to execute
+Java Class
    Full qualified name of the Java class that implements the
    :public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>`
-   interface. Use the :ref:`new-bean-class-wizard` (|image2|)
-   to create a new Java
+   interface. 
+   Use the :ref:`new-bean-class-wizard` |image2| to create a new Java
    source file with an example implementation of the bean class.
 
-Responsible role
+Permission
    Defines the role that is required to be able to start a process. The
    bean will set up an authorized session that calls the
    ``fireProcessStartEventRequest()`` from the ``eventRuntime`` to
    trigger a process.
-   
-.. include:: _tab-editor.rst
+
+
+Editor Tab
+~~~~~~~~~~
+
+The custom editor UI, that the used :public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>`
+implementation provides to configure its execution.
+
+.. figure:: /_images/process-elements/programStart_editorTab.png
+   :alt: Editor Tab
+
+   A custom editor example
+
+
+Implementation
+---------------
+
+To initiate a custom bean implementation for your third-party, you start most
+conveniently by using the :ref:`New Class <new-bean-class-wizard>` |image2| button on the Start Tab.
+The upcoming wizard will create a simple sample implementation, that works already
+and you can adjust it for your needs. 
+
+API reference
+~~~~~~~~~~~~~~~~~~~~
+
+The Program Start consumes a Java class that implements the
+:public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>`
+interface. 
+This implementation is responsible to initiate a new process by calling 
+the method ``fireProcessStartEventRequest`` on the Axon Ivy runtime engine
+:public-api:`IProcessStartEventBeanRuntime </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBeanRuntime.html>`.
+The common way to implement a Start Event Bean is to extend from 
+:public-api:`AbstractProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/AbstractProcessStartEventBean.html>`.
+
+If you use a clustered Enterprise Engine, you may mark your implementation with the
+:public-api:`IMultiNodeCapable </ch/ivyteam/ivy/process/beans/IMultiNodeCapable.html>` interface. 
+This will enable your Program Start not only on the master node, but on all available nodes.
+
+
+Custom configuration
+~~~~~~~~~~~~~~~~~~~~
+
+Very likely your Program Start implementation will accept configuration parameters
+to define the local environment. For instance a system specific file path to look for files
+being produced by a legacy system. 
+
+We help you with these configs by providing an accessor to statically configured
+element configuration via :public-api:`getConfiguration() </ch/ivyteam/ivy/process/eventstart/AbstractProcessStartEventBean.html#getConfiguration()>`.
+
+Custom editor
+~~~~~~~~~~~~~~~~~~~~
+
+To define your custom configuration on the process inscription mask, you must supply
+an inner ``Editor`` class implementation. We recommend to extend your implementation
+from :public-api:`UiEditorExtension </ch/ivyteam/ivy/process/extension/ui/UiEditorExtension.html>`.
+
+This editor class is resonsible to create UI widgets, which display configuration values. 
+And secondly, to map configuration data onto these widgets:
+
+  1. The :public-api:`initUiFields </ch/ivyteam/ivy/process/extension/ui/UiEditorExtension.html>` method
+  supports you in creating widgets for the editor. Currently labels, scriptEditors and textEditors are supported.
+
+  2. The  :public-api:`ConfigurableExtensionEditor </ch/ivyteam/ivy/process/extension/impl/ConfigurableExtensionEditor.html>`
+  provides methods to read and write configurations, in order to bind them unto previously created ui widgets.
+
+Example implementation
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. literalinclude:: includes/ErpInvoice.java
+      :language: java
+      :linenos:
+
 
 .. |image0| image:: /_images/process-elements/program-start.png
 .. |image2| image:: /_images/process-elements/button-new-bean-class.png
