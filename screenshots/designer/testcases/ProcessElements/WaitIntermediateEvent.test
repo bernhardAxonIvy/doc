@@ -7,7 +7,7 @@ Element-Version: 3.0
 External-Reference: 
 Id: _8CUhcLnCEemVCq71bEJnEg
 Runtime-Version: 2.5.3.202205021448
-Save-Time: 7/25/22, 1:56 PM
+Save-Time: 7/25/22, 2:12 PM
 Testcase-Type: ecl
 
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
@@ -50,7 +50,7 @@ let [val elementName "erpUpdate"] [val elementType "Program Start"] {
 	captureInscription -elementType $elementType -tabName "Editor" -screenshot "programStart_editorTab.png" -width 650 -height 400
 }
 
-let [val elementName "load ERP"] [val elementType "Program Interface Step"] {
+let [val elementName "load ERP"] [val elementType "Program Interface Activity"] {
 	openInscription -processName "intermediateEventElements"
 		-elementName $elementName
 		-elementType $elementType
