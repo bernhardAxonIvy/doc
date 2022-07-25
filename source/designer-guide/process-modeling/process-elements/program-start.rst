@@ -62,8 +62,9 @@ Implementation
 To initiate a custom bean implementation for your third party system, 
 you start most conveniently by using the :ref:`New Class <new-bean-class-wizard>` |image2| 
 button on the Start Tab.
-The upcoming wizard will create a simple sample implementation, that works already
-and you can adjust it for your needs. 
+The wizard will create a minimal sample implementation that works already. 
+You can then adjust it to your needs.
+
 
 API reference
 ~~~~~~~~~~~~~~~~~~~~
@@ -72,7 +73,7 @@ The Program Start consumes a Java class that implements the
 :public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>`
 interface. 
 This implementation is responsible to initiate a new process by calling 
-the method ``fireProcessStartEventRequest`` on the Axon Ivy runtime engine
+the method ``fireProcessStartEventRequest`` of 
 :public-api:`IProcessStartEventBeanRuntime </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBeanRuntime.html>`.
 The common way to implement a Start Event Bean is to extend from 
 :public-api:`AbstractProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/AbstractProcessStartEventBean.html>`.
@@ -92,6 +93,7 @@ being produced by a legacy system.
 We help you with these configs by providing an accessor to statically configured
 element configuration via :public-api:`getConfiguration() </ch/ivyteam/ivy/process/eventstart/AbstractProcessStartEventBean.html#getConfiguration()>`.
 
+
 Custom editor
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -108,6 +110,7 @@ And secondly, to map configuration data onto these widgets:
 
   2. The  :public-api:`ConfigurableExtensionEditor </ch/ivyteam/ivy/process/extension/impl/ConfigurableExtensionEditor.html>`
   provides methods to read and write configurations, in order to bind them to previously created ui widgets.
+
 
 Example implementation
 ~~~~~~~~~~~~~~~~~~~~~~~~~
