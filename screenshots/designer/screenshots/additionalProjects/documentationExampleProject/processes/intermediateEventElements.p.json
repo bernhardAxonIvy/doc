@@ -27,12 +27,12 @@
         "at" : { "x" : 192, "y" : 64 },
         "labelOffset" : { "x" : -33, "y" : 16 }
       },
-      "connect" : { "id" : "f3", "to" : "f2" }
+      "connect" : { "id" : "f9", "to" : "f8" }
     }, {
       "id" : "f2",
       "type" : "TaskEnd",
       "visual" : {
-        "at" : { "x" : 320, "y" : 64 }
+        "at" : { "x" : 448, "y" : 64 }
       }
     }, {
       "id" : "f4",
@@ -77,5 +77,18 @@
         "description" : "file driven start to apply ERP updates"
       },
       "connect" : { "id" : "f6", "to" : "f7" }
+    }, {
+      "id" : "f8",
+      "type" : "ProgramInterface",
+      "name" : "load ERP",
+      "config" : {
+        "beanConfig" : "path=in.creditStats",
+        "outerBean" : "com.axonivy.wf.custom.ErpLoader",
+        "timeout" : "10"
+      },
+      "visual" : {
+        "at" : { "x" : 320, "y" : 64 }
+      },
+      "connect" : { "id" : "f3", "to" : "f2" }
     } ]
 }

@@ -7,7 +7,7 @@ Element-Version: 3.0
 External-Reference: 
 Id: _8CUhcLnCEemVCq71bEJnEg
 Runtime-Version: 2.5.3.202205021448
-Save-Time: 7/22/22, 4:02 PM
+Save-Time: 7/25/22, 1:56 PM
 Testcase-Type: ecl
 
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
@@ -42,12 +42,20 @@ let [val elementName "erpUpdate"] [val elementType "Program Start"] {
 	openInscription -processName "intermediateEventElements"
 		-elementName $elementName
 		-elementType $elementType
-	with [get-window "Inscribe Program Start"] {
+	with [get-window [format "Inscribe %s" $elementType]] {
 		get-tab-folder | get-tab-item Start | click
 		get-section Permission | click // expand
 	}
 	captureInscription -elementType $elementType -tabName "Start" -screenshot "programStart_startTab.png" -width 650 -height 400 -close false
 	captureInscription -elementType $elementType -tabName "Editor" -screenshot "programStart_editorTab.png" -width 650 -height 400
+}
+
+let [val elementName "load ERP"] [val elementType "Program Interface Step"] {
+	openInscription -processName "intermediateEventElements"
+		-elementName $elementName
+		-elementType $elementType
+	captureInscription -elementType $elementType -tabName "Start" -screenshot "programInterface_startTab.png" -width 650 -height 400 -close false
+	captureInscription -elementType $elementType -tabName "Editor" -screenshot "programInterface_editorTab.png" -width 650 -height 400
 }
 
 

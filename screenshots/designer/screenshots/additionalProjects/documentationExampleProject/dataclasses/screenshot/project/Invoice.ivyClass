@@ -4,3 +4,5 @@ customerId String #field
 customerId PERSISTENT #fieldModifier
 invoiceType String #field
 invoiceType PERSISTENT #fieldModifier
+creditStats File #field
+creditStats PERSISTENT #fieldModifier
