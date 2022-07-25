@@ -6,3 +6,5 @@ invoiceType String #field
 invoiceType PERSISTENT #fieldModifier
 creditStats File #field
 creditStats PERSISTENT #fieldModifier
+report File #field
+report PERSISTENT #fieldModifier

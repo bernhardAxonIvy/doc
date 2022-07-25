@@ -90,5 +90,47 @@
         "at" : { "x" : 320, "y" : 64 }
       },
       "connect" : { "id" : "f3", "to" : "f2" }
+    }, {
+      "id" : "f11",
+      "type" : "WaitEvent",
+      "name" : "ERP print",
+      "config" : {
+        "eventBeanClass" : "com.axonivy.wf.custom.ErpPrintJob",
+        "output" : {
+          "map" : {
+            "out" : "in",
+            "out.report" : "result as File"
+          }
+        },
+        "eventBeanConfig" : [
+          "interval=5",
+          "path=/tmp/spooler/userReports"
+        ],
+        "eventIdConfig" : "\"erp-print\"+ivy.case.getId()"
+      },
+      "visual" : {
+        "at" : { "x" : 192, "y" : 256 },
+        "labelOffset" : { "x" : -27, "y" : 18 }
+      },
+      "connect" : { "id" : "f14", "to" : "f13" }
+    }, {
+      "id" : "f12",
+      "type" : "RequestStart",
+      "name" : "printERP.ivp",
+      "config" : {
+        "callSignature" : "printERP",
+        "outLink" : "printERP.ivp"
+      },
+      "visual" : {
+        "at" : { "x" : 64, "y" : 256 },
+        "labelOffset" : { "x" : -29, "y" : 17 }
+      },
+      "connect" : { "id" : "f15", "to" : "f11" }
+    }, {
+      "id" : "f13",
+      "type" : "TaskEnd",
+      "visual" : {
+        "at" : { "x" : 320, "y" : 256 }
+      }
     } ]
 }

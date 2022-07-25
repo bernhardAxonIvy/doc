@@ -122,7 +122,7 @@ element configuration via :public-api:`getConfiguration() </ch/ivyteam/ivy/proce
 Example implementation
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. literalinclude:: includes/ErpInvoice.java
+.. literalinclude:: includes/ErpPrintJob.java
       :language: java
       :linenos:
 
