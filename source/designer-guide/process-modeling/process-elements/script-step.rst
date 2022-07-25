@@ -1,3 +1,5 @@
+.. _process-element-script-activity:
+
 Script Step
 ===========
 

@@ -11,194 +11,115 @@ PI (Programming Interface) Activity
 Element Details
 ---------------
 
-This element allows Axon Ivy to integrate custom-made software, legacy
-systems, proprietary applications or any other external system through a
-Java interface. The Program Interface element will instantiate a Java
-class that implements the interface
-:public-api:`IUserProcessExtension </ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>`
-and will
-call the method ``perform`` each time a process arrives at the Program
-Interface. The common way to implement a Program Interface bean is to
-extend the abstract base class 
-:public-api:`AbstractUserProcessExtension </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html>`.
-The interface also includes an inner editor class to parametrize the bean.
-The documentation of the interface and the abstract class can be found
-in the Java Doc of the Axon Ivy Public API.
+The Program Interface Activity integrates custom-made software, 
+legacy systems, proprietary applications or any other external system through a
+Java interface into the process workflow.
 
-.. note::
+Scope
+~~~~~~~~~
+If you just need to call some java-code within your workflow, 
+it's normally preferrable to do this simpliy via the :ref:`process-element-script-activity`.
 
-   Since Axon Ivy version 3.x this element has become somewhat obsolete
-   since it has become very easy to create and call your own Java
-   classes from IvyScript. However, the PI element still provides a
-   standardized interface to a third party Java class and can provide a
-   custom made editor for parameterization.
+If not only java-code must be called, but process logic too, 
+you are better of with calling a re-usable :ref:`Callable SubProcesses <process-kind-callable>`
+that wraps your complex logic.
+
+Furthermore, :ref:`Callable SubProcess Start <process-element-tab-start>` elements
+contain an expressive input/output parameter descriptor. This infrastructure,
+often makes the need for a hand-crafted configuration Editor obsolete.
+In addition, these starts can be enriched with an illustrative logo and 
+will appear prominently as connector in the palette if tagged as such.
+
+Still, there might be corner cases where you prefer the programmable element infrastructure.
+For instance as you like the style, and already built up knowledge on it while
+implementing a :ref:`process-element-program-start` or a :ref:`process-element-wait-program-intermediate-event` bean.
+
 
 
 Inscription
------------
+---------------
 
-.. include:: _tab-name.rst
+Start Tab
+~~~~~~~~~
 
-PI Tab
-~~~~~~
+On this tab you define the Java class to be executed.
 
-On this tab you define the Java class that implements the interface
-:public-api:`IUserProcessExtension </ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>`
-and is called when the PI step gets executed.
-Furthermore, you can specify exception handlers for errors such as
-unreachable systems, insufficient privileges and more.
+.. figure:: /_images/process-elements/programInterface_startTab.png
+   :alt: Start tab
 
-.. figure:: /_images/process-elements/program-interface-activity-tab-pi.png
-   :alt: PI tab
+   Start tab
 
-   PI tab
+Java Class
+   Fully qualified name of the Java class that implements the
+   :public-api:`IUserProcessExtension </ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>`
+   interface. 
+   Use the :ref:`new-bean-class-wizard` |image2| to create a new Java
+   source file with an example implementation of the bean class.
 
-Java Class to Execute
-   The fully qualified name of the PI Java class implementing
-   :public-api:`IUserProcessExtension </ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>`.
-   You can use default ``copy & paste``
-   commands, open a Java Type Browser to search for the class or you use
-   the predefined ``Wait`` class which just waits for a given period of
-   time. Use the :ref:`new-bean-class-wizard`
-   (|image2|) to create a new Java source file with an example
-   implementation of the bean class.
-
-   .. tip:::
-
-      You can add a graphical configuration editor for the Java call
-      (i.e. setting the parameter values) on the PI inscription mask.
-      See section Tab Editor for more details.
-
-Program error
-   Occurs whenever an exception is thrown during the execution of the
-   class. The error can be handled by a catching
-   :ref:`process-element-error-start`.
+Program
+   Defines the :ref:`process-element-error-start` element which can handle execution errors.
 
 Timeout
-   Sets a timeout for the return call to the Java PI class.
+   Defins a timeout for the return call to the Java PI class.
+   A timout error can be handled by a catching :ref:`process-element-error-start`.
 
-Timeout error
-   Occurs when the timeout is reached. The error can be handled by a
-   catching :ref:`process-element-error-start`.
 
-.. include:: _tab-editor.rst
+Editor Tab
+~~~~~~~~~~
 
-Complete Code sample
---------------------
+The custom editor UI provided by the implementation of 
+:public-api:`IUserProcessExtension </ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>`
+to configure its execution.
 
-::
+.. figure:: /_images/process-elements/programInterface_editorTab.png
+   :alt: Editor Tab
 
-   public class MyOwnPiBean extends AbstractUserProcessExtension
-   {
-     /**
-      * @see ch.ivyteam.ivy.process.extension.IUserProcessExtension#perform(ch.ivyteam.ivy.process.engine.IRequestId,
-      *      ch.ivyteam.ivy.scripting.objects.CompositeObject,
-      *      ch.ivyteam.ivy.scripting.language.IIvyScriptContext)
-      */
-     public CompositeObject perform(IRequestId requestId, CompositeObject in,
-             IIvyScriptContext context) throws Exception
-     {
+   A custom editor example
 
-       IIvyScriptContext ownContext;
-       CompositeObject out;
-       out = in.clone();
-       ownContext = createOwnContext(context);
 
-       String eventtyp = "";
-       String linkId = "";
-       String fieldValue = "";
-       String user = "";
+Implementation
+---------------
 
-       StringTokenizer st = new StringTokenizer(getConfiguration(), "|");
-       if (st.hasMoreElements())
-         user = (String) executeIvyScript(context, st.nextElement().toString());
-       if (st.hasMoreElements())
-         eventtyp = (String) executeIvyScript(context, st.nextElement().toString());
-       if (st.hasMoreElements())
-         linkId = (String) executeIvyScript(context, st.nextElement().toString());
-       if (st.hasMoreElements())
-         fieldValue = (String) executeIvyScript(context, st.nextElement().toString());
+To initiate a custom bean implementation for your third party system, 
+you start most conveniently by using the :ref:`New Class <new-bean-class-wizard>` |image2| 
+button on the Start Tab.
+The wizard will create a minimal sample implementation that works already. 
+You can then adjust it to your needs.
 
-       // do something with the values
-       return out;
-     }
 
-     public static class Editor extends JPanel implements IProcessExtensionConfigurationEditorEx
-     {
-       private IProcessExtensionConfigurationEditorEnvironment env;
-       private IIvyScriptEditor editorUser;
-       private IIvyScriptEditor editorEventTyp;
-       private IIvyScriptEditor editorLinkId;
-       private IIvyScriptEditor editorFieldValue;
+API reference
+~~~~~~~~~~~~~~~~~~~~
 
-       public Editor()
-       {
-         super(new GridLayout(4, 2));
-       }
+The Program Interface consumes a Java class that implements the
+:public-api:`IUserProcessExtension </ch/i`process-element-tab-start`vyteam/ivy/process/extension/IUserProcessExtension.html>`
+interface. 
+This implementation is responsible to define the element execution behavior in 
+the method ``perform`` of 
+:public-api:`IUserProcessExtension </ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>`.
+The common way to implement a Program Interface Bean is to extend from 
+:public-api:`AbstractProcessStartEventBean </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html>`.
 
-       /**
-        * Sets the configuration
-        * @param config the configuration as an String
-        */
-       public void setConfiguration(String config)
-       {
-         StringTokenizer st = new StringTokenizer(config, "|");
-         if (st.hasMoreElements())
-           editorUser.setText(st.nextElement().toString());
-         if (st.hasMoreElements())
-           editorEventTyp.setText(st.nextElement().toString());
-         if (st.hasMoreElements())
-           editorLinkId.setText(st.nextElement().toString());
-         if (st.hasMoreElements())
-           editorFieldValue.setText(st.nextElement().toString());
-       }
 
-       /**
-        * Gets the component attribute of the Editor object
-        * @return this
-        */
-       public Component getComponent()
-       {
-         return this;
-       }
+Custom configuration
+~~~~~~~~~~~~~~~~~~~~
 
-       /**
-        * Gets the configuration
-        * @return The configuration as an String
-        */
-       public String getConfiguration()
-       {
-         return editorUser.getText() + "|" + editorEventTyp.getText() + "|" +
-                 editorLinkId.getText() + "|" + editorFieldValue.getText() + "|";
-       }
+Very likely your Program Interface Activity implementation will accept configuration parameters
+to define the local environment. For instance a system specific file 
+to send to a legacy system. 
 
-       /**
-        * @return boolean
-        */
-       public boolean acceptInput()
-       {
-         return true;
-       }
+We help you with these configs by providing an accessor to statically configured
+element configuration via :public-api:`getConfigurationProperty() </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html#getConfigurationProperty()>`.
 
-       public void setEnvironment(IProcessExtensionConfigurationEditorEnvironment env)
-       {
-         this.env = env;
-         editorUser = env.createIvyScriptEditor(null, null, "String");
-         editorEventTyp = env.createIvyScriptEditor(null, null, "String");
-         editorLinkId = env.createIvyScriptEditor(null, null, "String");
-         editorFieldValue = env.createIvyScriptEditor(null, null);
 
-         add(new JLabel("User"));
-         add(editorUser.getComponent());
-         add(new JLabel("Event Typ"));
-         add(editorEventTyp.getComponent());
-         add(new JLabel("Link-Id"));
-         add(editorLinkId.getComponent());
-         add(new JLabel("Feldwert"));
-         add(editorFieldValue.getComponent());
-       }
-     }
-   }
+.. include:: _programEditor.rst
+ 
+Example implementation
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. literalinclude:: includes/ErpLoader.java
+      :language: java
+      :linenos:
+
 
 .. |image0| image:: /_images/process-elements/program-interface-activity.png
 .. |image2| image:: /_images/process-elements/button-new-bean-class.png
