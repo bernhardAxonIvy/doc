@@ -30,7 +30,7 @@ On this tab you define the Java class to be executed.
    Start tab
 
 Java Class
-   Full qualified name of the Java class that implements the
+   Fully qualified name of the Java class that implements the
    :public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>`
    interface. 
    Use the :ref:`new-bean-class-wizard` |image2| to create a new Java
@@ -46,8 +46,9 @@ Permission
 Editor Tab
 ~~~~~~~~~~
 
-The custom editor UI, that the used :public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>`
-implementation provides to configure its execution.
+The custom editor UI provided by the implementation of 
+:public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>`
+to configure its execution.
 
 .. figure:: /_images/process-elements/programStart_editorTab.png
    :alt: Editor Tab
@@ -58,8 +59,9 @@ implementation provides to configure its execution.
 Implementation
 ---------------
 
-To initiate a custom bean implementation for your third-party, you start most
-conveniently by using the :ref:`New Class <new-bean-class-wizard>` |image2| button on the Start Tab.
+To initiate a custom bean implementation for your third party system, 
+you start most conveniently by using the :ref:`New Class <new-bean-class-wizard>` |image2| 
+button on the Start Tab.
 The upcoming wizard will create a simple sample implementation, that works already
 and you can adjust it for your needs. 
 
@@ -75,7 +77,7 @@ the method ``fireProcessStartEventRequest`` on the Axon Ivy runtime engine
 The common way to implement a Start Event Bean is to extend from 
 :public-api:`AbstractProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/AbstractProcessStartEventBean.html>`.
 
-If you use a clustered Enterprise Engine, you may mark your implementation with the
+If you use an Axon Ivy Cluster, you may mark your implementation with the
 :public-api:`IMultiNodeCapable </ch/ivyteam/ivy/process/beans/IMultiNodeCapable.html>` interface. 
 This will enable your Program Start not only on the master node, but on all available nodes.
 
@@ -97,14 +99,15 @@ To define your custom configuration on the process inscription mask, you must su
 an inner ``Editor`` class implementation. We recommend to extend your implementation
 from :public-api:`UiEditorExtension </ch/ivyteam/ivy/process/extension/ui/UiEditorExtension.html>`.
 
-This editor class is resonsible to create UI widgets, which display configuration values. 
+This editor class is resonsible for two things: 
+Firstly, to create UI widgets, which display configuration values. 
 And secondly, to map configuration data onto these widgets:
 
   1. The :public-api:`initUiFields </ch/ivyteam/ivy/process/extension/ui/UiEditorExtension.html>` method
   supports you in creating widgets for the editor. Currently labels, scriptEditors and textEditors are supported.
 
   2. The  :public-api:`ConfigurableExtensionEditor </ch/ivyteam/ivy/process/extension/impl/ConfigurableExtensionEditor.html>`
-  provides methods to read and write configurations, in order to bind them unto previously created ui widgets.
+  provides methods to read and write configurations, in order to bind them to previously created ui widgets.
 
 Example implementation
 ~~~~~~~~~~~~~~~~~~~~~~~~~

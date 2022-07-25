@@ -42,7 +42,7 @@ public class ErpInvoice extends AbstractProcessStartEventBean {
     try {
       getEventBeanRuntime().fireProcessStartEventRequest(null, firingReason, parameters);
     } catch (RequestException ex) {
-      getEventBeanRuntime().getRuntimeLogLogger().error("Failed to init ERP driven proces", ex);
+      getEventBeanRuntime().getRuntimeLogLogger().error("Failed to init ERP driven process", ex);
     }
   }
 
