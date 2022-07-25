@@ -34,8 +34,8 @@ proc capture [val elementName] [val elementType] [val tabName] [val screenshotNa
 
 let [val elementName "read address"] [val elementType "Program Intermediate Event"] {
 	capture $elementName $elementType "Task" "waitIntermediateEvent_taskTab.png" 650 400
-//	capture $elementName $elementType "Event" "wait-program-intermediate-event-tab-event.png" 650 600
-//	capture $elementName $elementType "Editor" "waitIntermediateEvent_editorTab.png" 650 600
+	capture $elementName $elementType "Event" "waitIntermediateEvent_eventTab.png" 650 600
+	capture $elementName $elementType "Editor" "waitIntermediateEvent_editorTab.png" 650 600
 }
 
 let [val elementName "erpUpdate"] [val elementType "Program Start"] {

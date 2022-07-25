@@ -6,6 +6,7 @@ Wait Program Intermediate Event
 |image0| The *Wait Program Intermediate Event* element is located in the
 *Event & Gateway* drawer of the process editor palette.
 
+
 Element Details
 ---------------
 
@@ -18,40 +19,6 @@ new system task is created that waits for the intermediate event. If the
 intermediate event is fired the new task and therefore the process after
 the intermediate event will be executed.
 
-You provide a listener for the external event by implementing a Java
-class that implements the
-:public-api:`IProcessIntermediateEventBean </ch/ivyteam/ivy/process/intermediateevent/IProcessIntermediateEventBean.html>`
-interface.
-The Wait Program Intermediate Event Element instantiates the Java class
-and can then trigger the intermediate event by calling the method
-``fireProcessIntermediateEventEx`` on the Axon Ivy runtime engine
-:public-api:`IProcessIntermediateEventBeanRuntime </ch/ivyteam/ivy/process/intermediateevent/IProcessIntermediateEventBeanRuntime.html>`.
-The common way to implement an
-Intermediate Event bean is to extend the abstract base class
-:public-api:`AbstractProcessIntermediateEventBean </ch/ivyteam/ivy/process/intermediateevent/AbstractProcessIntermediateEventBean.html>`.
-The interface also includes an
-inner editor class to parametrize the bean. You will find the
-documentation of the interface and the abstract class in the Java Doc of
-the Axon Ivy Public API.
-
-.. note::
-
-   An Axon Ivy Engine Enterprise Edition consists of multiple engine
-   instances (nodes) that are running on different machines.
-   
-   Usually, process intermediate event beans are instantiated on every node
-   but only started on the master node. This guarantees that for each
-   *Intermediate Event* process element, only one bean is running, no matter
-   what the total number of nodes is in the Axon Ivy cluster.
-   
-   However, if you need your intermediate event bean to be started on all
-   cluster nodes, you may instruct the server to do so. Just have your bean
-   class implement the (empty) marker interface
-   :public-api:`IMultiNodeCapable </ch/ivyteam/ivy/process/beans/IMultiNodeCapable.html>` and
-   the above restriction will no longer apply.
-   
-   Please be aware that having multiple running instances of
-   the same bean may lead to race conditions.
 
 Inscription
 -----------
@@ -62,15 +29,14 @@ Event Tab
 ~~~~~~~~~
 
 On this tab you define the Java class that the IntermediateEvent should
-instantiate, the identifier of the event to wait for and the timeout
-behavior.
+instantiate, the identifier of the event and the timeout behavior.
 
 |image2|
 
-Java Class to execute
+Java Class
    Fully qualified name of the Java class that implements the
    :public-api:`IProcessIntermediateEventBean </ch/ivyteam/ivy/process/intermediateevent/IProcessIntermediateEventBean.html>`
-   interface. Use the :ref:`new-bean-class-wizard` (|image3|) to create a new Java
+   interface. Use the :ref:`new-bean-class-wizard` |image3| to create a new Java
    source file with an example implementation of the bean class.
 
 Event ID
@@ -92,19 +58,76 @@ Timeout
    exception process, delete the waiting task or continue the waiting
    task without receiving an intermediate event.
 
-.. include:: _tab-editor.rst
+
+Editor Tab
+~~~~~~~~~~
+
+The custom editor UI provided by the implementation of 
+:public-api:`IProcessIntermediateEventBean </ch/ivyteam/ivy/process/extension/IProcessIntermediateEventBean.html>`
+to configure its execution.
+
+.. figure:: /_images/process-elements/waitIntermediateEvent_editorTab.png
+   :alt: Editor Tab
+
+   A custom editor example
+
 
 .. include:: _tab-task-call-wait.rst
 
 .. include:: _tab-output.rst
 
-.. note::
 
-   For each incoming connection you have a separate ``inX`` object
-   available which carries the data of the Xth input. Hover with the
-   mouse over the incoming connections of the element to learn which
-   input connection corresponds to which variable.
+
+Implementation
+---------------
+
+To initiate a custom bean implementation for your third party system, 
+you start most conveniently by using the :ref:`New Class <new-bean-class-wizard>` |image3| 
+button on the Event Tab.
+The wizard will create a minimal sample implementation that works already. 
+You can then adjust it to your needs.
+
+
+API reference
+~~~~~~~~~~~~~~~~~~~~
+
+The Intermediate Event consumes a Java class that implements the
+:public-api:`IProcessIntermediateEventBean </ch/ivyteam/ivy/process/intermediateevent/IProcessIntermediateEventBean.html>`
+interface. 
+This implementation is responsible to continue the process by calling 
+the method ``fireProcessIntermediateEventEx`` of 
+:public-api:`IProcessIntermediateEventBeanRuntime </ch/ivyteam/ivy/process/intermediateevent/IProcessIntermediateEventBeanRuntime.html>`.
+The common way to implement an Intermediate Event Bean is to extend from 
+:public-api:`AbstractProcessIntermediateEventBean </ch/ivyteam/ivy/process/intermediateevent/AbstractProcessIntermediateEventBean.html>`.
+
+If you use an Axon Ivy Cluster, you may mark your implementation with the
+:public-api:`IMultiNodeCapable </ch/ivyteam/ivy/process/beans/IMultiNodeCapable.html>` interface. 
+This will enable your Intermediate Event not only on the master node, but on all available nodes.
+
+
+Custom configuration
+~~~~~~~~~~~~~~~~~~~~
+
+Very likely your Intermediate Event implementation will accept configuration parameters
+to define the local environment. For instance a system specific file path to look for files
+being produced by a legacy system. 
+
+We help you with these configs by providing an accessor to statically configured
+element configuration via :public-api:`getConfiguration() </ch/ivyteam/ivy/process/intermediateevent/AbstractProcessIntermediateEventBean.html#getConfiguration()>`.
+
+
+.. include:: _programEditor.rst
+
+
+Example implementation
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. literalinclude:: includes/ErpInvoice.java
+      :language: java
+      :linenos:
+
+
 
 .. |image0| image:: /_images/process-elements/wait-program-intermediate-event.png
-.. |image2| image:: /_images/process-elements/wait-program-intermediate-event-tab-event.png
+.. |image2| image:: /_images/process-elements/waitIntermediateEvent_eventTab.png
 .. |image3| image:: /_images/process-elements/button-new-bean-class.png
