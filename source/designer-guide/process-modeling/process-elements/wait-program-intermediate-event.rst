@@ -49,7 +49,7 @@ Event ID
 
       The event identifier as a String must be unique. Do not use a
       static string like ``"myID"``. A good practice is to integrate the
-      case identifier (``ivy.case.getIdentifier()``) into the event id.
+      case identifier (``ivy.case.getId()``) into the event id.
 
 Timeout
    Here you can specify a time (Duration) how long the current case

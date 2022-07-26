@@ -60,7 +60,7 @@ Program
    Defines the :ref:`process-element-error-start` element which can handle execution errors.
 
 Timeout
-   Defins a timeout for the return call to the Java PI class.
+   Defines a timeout for the return call to the Java PI class.
    A timout error can be handled by a catching :ref:`process-element-error-start`.
 
 
@@ -97,7 +97,7 @@ This implementation is responsible to define the element execution behavior in
 the method ``perform`` of 
 :public-api:`IUserProcessExtension </ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>`.
 The common way to implement a Program Interface Bean is to extend from 
-:public-api:`AbstractProcessStartEventBean </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html>`.
+:public-api:`AbstractUserProcessExtension </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html>`.
 
 
 Custom configuration
@@ -107,8 +107,8 @@ Very likely your Program Interface Activity implementation will accept configura
 to define the local environment. For instance a system specific file 
 to send to a legacy system. 
 
-We help you with these configs by providing an accessor to statically configured
-element configuration via :public-api:`getConfigurationProperty() </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html#getConfigurationProperty()>`.
+We help you with these configurations by providing an accessor to statically configured
+element configurations via :public-api:`getConfigurationProperty() </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html#getConfigurationProperty()>`.
 
 
 .. include:: _programEditor.rst
