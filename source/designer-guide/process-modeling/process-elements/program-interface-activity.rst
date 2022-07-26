@@ -104,7 +104,7 @@ Custom configuration
 ~~~~~~~~~~~~~~~~~~~~
 
 Very likely, your Program Interface Activity implementation will accept configuration parameters
-to define the local environment. For instance a system specific file 
+defining the local environment. For instance, a system specific file 
 to send to a legacy system. 
 
 We help you with these configurations by providing an accessor for static
