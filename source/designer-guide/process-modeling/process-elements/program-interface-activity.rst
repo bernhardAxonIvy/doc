@@ -17,20 +17,20 @@ Java interface into the process workflow.
 
 Scope
 ~~~~~~~~~
-If you just need to call some java-code within your workflow, 
-it's normally preferrable to do this simpliy via the :ref:`process-element-script-activity`.
+If you just need to call some Java code within your workflow, 
+it's normally preferrable to do this via the :ref:`process-element-script-activity`.
 
-If not only java-code must be called, but process logic too, 
-you are better of with calling a re-usable :ref:`Callable SubProcesses <process-kind-callable>`
+If not only Java code must be called, but process logic, too, 
+you are better off with calling a re-usable :ref:`Callable SubProcesses <process-kind-callable>`
 that wraps your complex logic.
 
 Furthermore, :ref:`Callable SubProcess Start <process-element-tab-start>` elements
-contain an expressive input/output parameter descriptor. This infrastructure,
+contain an expressive input/output parameter descriptor. This infrastructure
 often makes the need for a hand-crafted configuration Editor obsolete.
 In addition, these starts can be enriched with an illustrative logo and 
-will appear prominently as connector in the palette if tagged as such.
+will appear prominently as connectors in the palette if tagged as such.
 
-Still, there might be corner cases where you prefer the programmable element infrastructure.
+Still, there might be edge cases where you prefer the programmable element infrastructure.
 For instance as you like the style, and already built up knowledge on it while
 implementing a :ref:`process-element-program-start` or a :ref:`process-element-wait-program-intermediate-event` bean.
 
@@ -69,7 +69,7 @@ Editor Tab
 
 The custom editor UI provided by the implementation of 
 :public-api:`IUserProcessExtension </ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>`
-to configure its execution.
+allows to configure its execution.
 
 .. figure:: /_images/process-elements/programInterface_editorTab.png
    :alt: Editor Tab
@@ -93,7 +93,7 @@ API reference
 The Program Interface consumes a Java class that implements the
 :public-api:`IUserProcessExtension </ch/i`process-element-tab-start`vyteam/ivy/process/extension/IUserProcessExtension.html>`
 interface. 
-This implementation is responsible to define the element execution behavior in 
+This implementation is responsible for defining the element execution behavior in 
 the method ``perform`` of 
 :public-api:`IUserProcessExtension </ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>`.
 The common way to implement a Program Interface Bean is to extend from 
@@ -103,11 +103,11 @@ The common way to implement a Program Interface Bean is to extend from
 Custom configuration
 ~~~~~~~~~~~~~~~~~~~~
 
-Very likely your Program Interface Activity implementation will accept configuration parameters
+Very likely, your Program Interface Activity implementation will accept configuration parameters
 to define the local environment. For instance a system specific file 
 to send to a legacy system. 
 
-We help you with these configurations by providing an accessor to statically configured
+We help you with these configurations by providing an accessor for static
 element configurations via :public-api:`getConfigurationProperty() </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html#getConfigurationProperty()>`.
 
 
