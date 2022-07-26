@@ -5,7 +5,7 @@ To define your custom configuration on the process inscription mask, you must su
 an inner ``Editor`` class implementation. We recommend to extend your implementation
 from :public-api:`UiEditorExtension </ch/ivyteam/ivy/process/extension/ui/UiEditorExtension.html>`.
 
-This editor class is resonsible for two things: 
+This editor class is responsible for two things: 
 Firstly, to create UI widgets, which display configuration values. 
 And secondly, to map configuration data onto these widgets:
 
