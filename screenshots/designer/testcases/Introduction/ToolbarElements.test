@@ -29,7 +29,7 @@ get-button "Engine Speed" | get-object | captureScreenshot "designer/button-anim
 get-button "Engine Speed" | get-object | captureScreenshot "simulation-debugging/button-engine-speed.png"
 get-button "Suppress simulation and animation in general." | get-object | captureScreenshot "designer/button-animation-toggler.png"
 get-button "Suppress simulation and animation in general." | get-object | captureScreenshot "simulation-debugging/button-engine-animation.png"
-get-button "Select content and formatting language for design and simulation .*" | get-object | captureScreenshot "designer/button-content-formatting-language.png"
+get-button "Configure languages .*" | get-object | captureScreenshot "designer/button-content-formatting-language.png"
 get-button Search | get-object | captureScreenshot "designer/button-search.png"
 
 with [get-view "Axon Ivy Projects" | get-tree] {
@@ -44,7 +44,7 @@ get-eclipse-window | get-button "Back to exampleProcess.*"
 get-eclipse-window | get-button "Back to exampleProcess.*" | click
 get-eclipse-window | get-button "Open Perspective" 
 	| get-object | captureScreenshot "designer/button-open-perspective.png"
-get-eclipse-window | get-button "Select content and formatting language for design and simulation .*" 
+get-eclipse-window | get-button "Configure languages .*" 
 	| get-object | captureScreenshot "simulation-debugging/button-languages.png"
 
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

@@ -21,8 +21,8 @@ get-eclipse-window | resizeWindow 1500 790
 get-button "Start Engine and show overview page" | click
 find-tab-folder "Web Browser" | get-object | captureScreenshot "simulation-debugging/process-start-overview.png"
 
-get-button "Select content and formatting language for design and simulation .*" | click
-with [get-window "Content and Formatting Language Settings"] {
+get-button "Configure languages .*" | click
+with [get-window "Language Settings"] {
 	get-group "Formatting Language" | get-list | select "English (United States)"
 	wait 500
 	saveWindowContentScreenshot "simulation-debugging/content-formatting-language-settings.png"
