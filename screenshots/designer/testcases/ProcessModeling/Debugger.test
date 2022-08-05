@@ -7,7 +7,7 @@ Element-Version: 3.0
 External-Reference: 
 Id: _axKUIGBiEeaAcqEsdR5JMw
 Runtime-Version: 2.5.3.202205021448
-Save-Time: 6/1/22, 1:30 PM
+Save-Time: 8/5/22, 8:25 AM
 Tags: skipOnLinux
 Testcase-Type: ecl
 
@@ -37,7 +37,7 @@ importProject -projectName documentationExampleProject
 with [get-view "Axon Ivy Projects" | get-tree] {
 	select "documentationExampleProject/Processes/JaxRsServiceCall"
 	get-item "documentationExampleProject/Processes/JaxRsServiceCall"
-		| get-menu -path "Open With/Process Model Editor.*" | click -metaKeys ""
+		| get-menu -path "Open With/Process Editor" | click -metaKeys ""
 }
 
 OpenView History
