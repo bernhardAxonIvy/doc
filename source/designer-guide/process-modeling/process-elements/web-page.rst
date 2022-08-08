@@ -1,7 +1,7 @@
 .. _process-element-web-page:
 
-Web Page
-========
+Web Page (Deprecated)
+=====================
 
 |image0| The *Web Page* element is located in the *Activity* drawer of
 the process editor palette.

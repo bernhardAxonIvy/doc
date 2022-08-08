@@ -16,6 +16,7 @@ consists of two parts:
 -  the :ref:`process-editor-viewport-tool-bar`, where some tools for the
    viewport are located
 
+
 |image2|
 
 Accessibility
@@ -29,14 +30,46 @@ project tree (|image3|)
 Tool Bar
 ~~~~~~~~
 
-The **Tool Bar** collects all tools which can be helpful for working with the
+The **Tool Bar** collects all tools that can be helpful for working with the
 process editor:
+
+Left
+^^^^
 
 Selection Tool: 
    The default selection tool.
 
 Marquee Tool:
-   Grabbing tool to select multiple elements (you can also select multiple elements by press *Ctrl*).
+   Grabbing tool to select multiple elements.
+
+   .. tip::
+
+      The Marquee Tool can also be started if you hold *Shift* or you can select multiple elements by hold *Ctrl*.
+
+Undo:
+   Undo your last changes.
+
+Redo:
+   Redo your last changes.
+
+Center
+^^^^^^
+
+Create Element:
+   You can create many different elements, by select the wished element and add
+   it to a position in the diagram. To keep the overview they are divided into
+   different categories: 
+   
+   - All Elements
+   - Events
+   - Gateways
+   - Activities
+   - Artifacts
+   - :ref:`Connectors <process-element-connector-activity>`
+
+
+Right
+^^^^^
 
 Inscribe process:
    Opens the configuration editor of the process.
@@ -44,49 +77,10 @@ Inscribe process:
 Open data class:
    Opens the :ref:`data-class-editor` of the process.
 
-Toggle custom icons:
-   Toggle between custom and default icons.
-
-Jump out
-   *Only active if you're in a embedded subprocess*
-
-   Jump out of an *embedded subprocess* to the process that
-   contains the *Embedded Sub* element.
-
-Delete:
-   *Only active if at least one element is selected*
-
-   Delete your current selection.
-
-Wrap to embedded process:
-   *Only active if at least one element is selected*
-
-   Wrap your current selection into an embedded process.
-   
-Auto align:
-   *Only active if at least two elements are selected*
-
-   Aligns the selected elements *horizontally* and *vertically*.
-
-Select color:
-   *Only active if at least one element is selected*
-
-   Change color of an element. 
-
-.. tip::
-
-   You can also define new colors or edit existing ones. For this press the
-   :guilabel:`plus` or the :guilabel:`edit` buttons in the color palette. Valid
-   colors are every possible `css color <https://developer.mozilla.org/en-US/docs/Web/CSS/color>`__.
-
-Insert connector:
-   Insert a :ref:`process-element-connector-activity`
-
-Element Palette:
-   The element palette on the right is split into the different types of nodes
-   (Events, Gateways, Activities and Swimlanes). To add an element to the
-   diagram, open the corresponding section, select the element and add it to the
-   diagram at the wished position.
+Options:
+   - Darkmode: Toggle between dark and light theme.
+   - Grid: Toggle the grid mode. (You can also set the grid mode in the :ref:`process-editor-preferences`)
+   - Custom Icon: Toggle between custom and default icons.
 
 
 .. _process-editor-viewport-tool-bar:
@@ -125,9 +119,10 @@ and drag the handles. To reconnect a existing connector select the connector and
 move the target handle to another element.
 
 On each element you have a :ref:`process-editor-quick-actions`, which provides
-useful actions to edit the element. If you select multiple elements you have
-access to the :ref:`process-editor-quick-actions-multi`. And also on connectors
-you will get a :ref:`process-editor-quick-actions-connector`.
+useful actions to edit the element. If you select multiple elements, you have
+access to the :ref:`process-editor-quick-actions-multi`. And also on
+:ref:`connectors <process-editor-quick-actions-connector>` and :ref:`swimlanes
+<process-editor-quick-actions-lanes>` you will get a Quick Action Menu.
 
 To scroll in the process editor simply drag the diagram. If you want to Zoom,
 use your mouse wheel. To undo/redo or copy/paste you can use the **Edit** menu
@@ -143,43 +138,78 @@ Quick Action Menu
 To open the **Quick Action Menu** simply select an element in the editor. The
 available actions can be different based on the element type:
 
-Delete:
-   Delete the current selection.
- 
-Edit Label:
-   Opens an inline editor for the label of the current selected element.
+.. include:: _delete-quick-action.rst
+
+.. _process-editor-quick-actions-start-process:
+
+Start Process:
+   Only available on the :ref:`Start Element <process-element-start-request>`
+
+   Run the selected process.
+
+.. include:: _info-quick-action.rst
 
 Edit:
    Opens the inscription mask for the current selected element.
 
-Attach Comment:
-   Attach a :ref:`process-element-note` block to the current selection, where
-   additional information can be added to a process element.
+Search callers of this process:
+   *Only available on some start events*
 
-Custom Icon:
-   Change the icon of the process element. If the icon is already a custom icon
-   the click will reset it to the default icon. Any image of the project can be
-   used as decorator icon.  
+   Search for all usages of this start event.
+
+.. _process-editor-quick-actions-toggle-breakpoint:
 
 Toggle Breakpoint:
    To suspend the execution, :ref:`process-element-breakpoints` can be added to
    process elements.
+ 
+Jump:
+   *Only available on elements with an reference to another process*
 
-Connect:
-   The **Connection Tool** can connect the current element with another.
+   Enters the embedded or referenced process and shows the encapsulated process.
 
-Jump
-   Enters the embedded subprocess and shows the encapsulated process.
+Unwrap embedded subprocess:
+   Only available on :ref:`process-element-embedded-sub` or
+   :ref:`process-element-bpmn-activity`
 
-Unwrap embedded subprocess
    The elements encapsulated by the embedded subprocess are placed into
    the current process.
 
-Attach Error Boundary:
-   Attaches an error boundary event to the currently selected activity.
+.. include:: _edit-label-quick-action.rst
 
-Attach Signal Boundary:
-   Attaches an error boundary event to the currently selected activity.
+Edit Source:
+   *Only available on elements with a referenced view or java class*
+
+   Jump to the referenced view or java class.
+
+Custom Icon:
+   Change the icon of the process element. If the icon is already a custom icon
+   the click will reset it to the default icon. Any image of the project can be
+   used as decorator icons.  
+
+.. include:: _select-color-quick-action.rst
+
+Add Element:
+   Directly insert an element to the process workflow. There are three
+   categories of elements:
+
+   - Events: All possible event elements (also for
+     :ref:`process-element-error-boundary-event` and
+     :ref:`process-element-signal-boundary-event`)
+   - Gateways
+   - Activities
+
+   .. tip::
+     
+     Press the key :guilabel:`A` to get a list of all elements. 
+     You can also navigate through the list with the :guilabel:`Arrow` keys and 
+     add an element with the :guilabel:`Enter` key.
+
+Connect:
+   *Only available if the element has no outgoing connector or supports multiple
+   outgoing connectors*
+
+   The **Connection Tool** can connect the current element with another.
 
 
 .. _process-editor-quick-actions-multi:
@@ -191,14 +221,15 @@ If you select multiple elements, e.g with the **Marquee Tool** of the
 :ref:`process-editor-tool-bar`, you get access to a **Multi-Selection Quick
 Action Menu**. The following actions are available:
 
-Delete:
-   Delete the current selection.
+.. include:: _delete-quick-action.rst
 
 Wrap to embedded process:
    Wrap the current selection into an embedded process.
 
 Auto align:
    Aligns the selected elements *horizontally* and *vertically*.
+
+.. include:: _select-color-quick-action.rst
 
 
 .. _process-editor-quick-actions-connector:
@@ -209,25 +240,65 @@ Connector Quick Action Menu
 To open the **Connector Quick Action Menu** select a connector. The following
 actions are available:
 
-Delete:
-   Delete the current selection.
+.. include:: _delete-quick-action.rst
 
-Edit Label:
-   Opens an inline editor for the label of the current selected connector.
+.. include:: _info-quick-action.rst
 
-Straighten
-   Relayouts the arrow's path into a direct line without any angles.
+Straighten:
+   Change layout of the arrow path to a straight line.
 
-Bend
-   Relayouts the arrow's path on the editor's grid (use only rectangular
-   angles).
+Bend:
+   Change layout of the arrow path to horizontal and vertical lines with 90° angles.
+
+.. include:: _edit-label-quick-action.rst
+
+.. include:: _select-color-quick-action.rst
+
+Reconnect:
+   Trigger a reconnection of the selected connector, by selecting a new target
+   element.
+
+   .. tip::
+
+     You can also trigger a reconnection by pressing the target handle on the selected connector
+
+
+.. _process-editor-quick-actions-lanes:
+
+Swimlane Quick Action Menu
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To open the **Swimlane Quick Action Menu** select a pool or a lane. The following
+actions are available:
+
+.. include:: _delete-quick-action.rst
+
+.. include:: _edit-label-quick-action.rst
+
+.. include:: _select-color-quick-action.rst
+
+Add Lane
+   *Only available on pools*
+
+   Add a lane to the current pool.
 
 
 Shortcut Keys
 ^^^^^^^^^^^^^
 
 Some of the *tools* and *quick actions* are available with shortcut keys. To use
-them, select the element press the according key.
+them, select the element, then press the associated key.
+
+
+Jump out
+^^^^^^^^
+   *Only active if you're in an embedded subprocess*
+
+   Visible in the top left of the :ref:`process-editor-area` to jump out of an
+   *embedded subprocess* to the process that contains the *Embedded Sub*
+   element.
+
+
 
 .. |image2| image:: /_images/process-modeling/process-editor.png
 .. |image3| image:: /_images/process-modeling/process-node.png

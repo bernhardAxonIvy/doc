@@ -1,3 +1,5 @@
+.. _process-element-embedded-sub:
+
 Embedded Subprocess
 ===================
 

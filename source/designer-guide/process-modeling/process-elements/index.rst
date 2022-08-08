@@ -43,47 +43,128 @@ The icons on the tab indicate their state:
 .. |image2| image:: /_images/process-elements/bullet-red.png
 
 
+Common Tabs
+-----------
+
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    common-tabs
 
+
+Start Events
+------------
+
+.. toctree::
+   :maxdepth: 1
+
    start
-   program-start
-   error-boundary-event
-   error-start
-   signal-boundary-event
    signal-start
+   program-start
+   error-start
+   sub-process-start
+   web-service-process-start
+   user-dialog-start
+   user-dialog-method-start
+   user-dialog-event-start
+
+
+Intermediate Events
+-------------------
+
+.. toctree::
+   :maxdepth: 1
+
+   task-switch-event
+   wait-program-intermediate-event
+
+
+End Events
+----------
+
+.. toctree::
+   :maxdepth: 1
+
+   process-end
+   process-end-page
+   error-end
+   user-dialog-process-end
+   user-dialog-exit-end
+
+
+Boundary Events
+---------------
+
+.. toctree::
+   :maxdepth: 1
+
+   error-boundary-event
+   signal-boundary-event
+
+
+Gateways
+--------
+
+.. toctree::
+   :maxdepth: 1
+
    alternative
    split
    join
    task-switch-gateway
-   task-switch-event
-   wait-program-intermediate-event
-   process-end-page
-   error-end
-   process-end
+
+
+Workflow Activities
+-------------------
+
+.. toctree::
+   :maxdepth: 1
+
    user-task
-   web-page
    user-dialog
    script-step
+   embedded-subprocess
+   call-sub
+   trigger-step
+   web-page
+
+
+Interface Activities
+--------------------
+
+.. toctree::
+   :maxdepth: 1
+
    database-activity
    web-service-call-activity
    rest-client-activity
    email-activity
    rule-activity
-   embedded-subprocess
-   call-sub
-   trigger-step
    program-interface-activity
-   connector-browser
-   note
-   web-service-process-start
-   sub-process-start
-   user-dialog-start
-   user-dialog-method-start
-   user-dialog-event-start
-   user-dialog-process-end
-   user-dialog-exit-end
+
+
+BPMN Activities
+---------------
+
+.. toctree::
+   :maxdepth: 1
 
    bpmn-activity-elements
+
+
+Annotations
+-----------
+
+.. toctree::
+   :maxdepth: 1
+
+   note
+
+
+Connectors
+----------
+
+.. toctree::
+   :maxdepth: 1
+
+   connector-browser

@@ -102,10 +102,6 @@ SMTP. You can inspect the mail inbox by opening the view 'Email Messages'.
    Mail Snag View
 
 
-
-
-
-
 .. _workspace-preferences-ivyscript:
 
 IvyScript Settings
@@ -134,10 +130,7 @@ Visibility Level
    *function browser* can be configured here.
 
 
-
-
-
-
+.. _process-editor-preferences:
 
 Process Editor Settings
 -----------------------
@@ -153,21 +146,8 @@ use of processes.
    Process Editor Preferences
 
 
-Default element style
-   The style for newly added process elements.
-
-Background color
-   Specify the background color of the process editor area.
-
-Gridline color
-   Specify the color of the grid lines in the process editor.
-
 Show grid lines in the editor
    Specify whether the grid lines in the process editor are shown.
-
-
-
-
 
 
 .. _workspace-preferences-process-engine:

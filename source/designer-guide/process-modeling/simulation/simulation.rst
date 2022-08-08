@@ -3,22 +3,18 @@
 Simulation
 ----------
 
-A simulation can be started directly on the :ref:`process-element-start-request`
-or on the Designer Workflow UI Overview page displayed either in the browser view of the
-:ref:`Process Development Perspective <perspectives-axonivy>` or in a
-separate browser window, depending on the setting in the
-:ref:`corresponding preference <workspace-preferences-process-engine>`.
-This Process Start Overview web page shows all processes that can be started
-by clicking on the link.
+A simulation can be started directly on the :ref:`Start Element
+<process-editor-quick-actions-start-process>` or on the Designer Workflow UI
+Overview page displayed either in the browser view of the :ref:`Process
+Development Perspective <perspectives-axonivy>` or in a separate browser window,
+depending on the setting in the :ref:`corresponding preference
+<workspace-preferences-process-engine>`. This Process Start Overview web page
+shows all processes that can be started by clicking on the link.
 
-Also the Web Services are displayed on the Process Start Overview page.
+The Web Services are displayed on the Process Start Overview page, too.
 By clicking a Web Service Process link, the corresponding WSDL is
 displayed.
 
-.. figure:: /_images/simulation-debugging/start-process-on-start-request-element.png
-   :alt: Start process on the Request Start element
-
-   Start process on the Request Start element
 
 .. _designer-workflow-ui:
 
@@ -123,9 +119,6 @@ Find out more about Axon Ivy's scripting language :ref:`ivyscript`.
 
 
 
-
-
-
 .. _simulate-process-models-breakpoints:
 
 Breakpoints
@@ -150,28 +143,25 @@ the process element is executed.
 
 **Add / Remove a breakpoint**
 
-You can add process element breakpoints in a Process editor or User Dialog Logic
-editor window by using the Quick-Action menu. Select the process step on which
-you intend to set the breakpoint and click on the bug.
-
-|image10|
+You can add process element breakpoints in a :ref:`process-editor` or User Dialog Logic
+editor window by using the :ref:`Quick Action Menu
+<process-editor-quick-actions-toggle-breakpoint>`. Select the process step on
+which you intend to set the breakpoint and click on the bug.
 
 **Edit a breakpoint**
 
-You can add a *condition* to a breakpoint. If you do so, the breakpoint is only
-active if the expression evaluates to `true` and will then suspend the
-execution. In the expression you have access to the ``in`` variable and all
-other variables in the context of the process step. 
-
-|image11|
+You can add a *condition* to a breakpoint in the
+:ref:`debugger-breakpoints-view`. If you do so, the breakpoint is only active if
+the expression evaluates to `true` and will then suspend the execution. In the
+expression, you have access to the ``in`` variable and all other variables in the
+context of the process step. 
 
 **Disable a breakpoint**
 
 You can disable a specific breakpoint over the :ref:`debugger-breakpoints-view` or by clicking
-on a breakpoint in the Process Editor. It is also possible to disable all
+on the breakpoint in the :ref:`process-editor`. It is also possible to disable all
 breakpoints in the :ref:`debugger-breakpoints-view`. 
 
-|image12|
 
 Data Class Attribute Value Change Breakpoints
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -201,6 +191,3 @@ field is displayed in the variable ``debug``.
 .. |image5| image:: /_images/simulation-debugging/button-engine-stop.png
 .. |image7| image:: /_images/simulation-debugging/button-engine-speed.png
 .. |image9| image:: /_images/simulation-debugging/button-engine-animation.png
-.. |image10| image:: /_images/simulation-debugging/breakpoint-add.png
-.. |image11| image:: /_images/simulation-debugging/breakpoint-condition.png
-.. |image12| image:: /_images/simulation-debugging/breakpoint-disable.png

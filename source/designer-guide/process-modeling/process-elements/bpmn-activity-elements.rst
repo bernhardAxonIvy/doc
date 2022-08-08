@@ -1,3 +1,5 @@
+.. _process-element-bpmn-activity:
+
 BPMN Activity Elements
 ======================
 
