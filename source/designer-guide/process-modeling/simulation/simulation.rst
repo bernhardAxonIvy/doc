@@ -27,7 +27,7 @@ displayed.
 
    You can switch off the simulation of Process Start Events and
    Intermediate Process Events when you want to simulate or test other
-   parts of a projects. Just set the corresponding options in the
+   parts of a project. Just set the corresponding options in the
    :ref:`preferences <workspace-preferences-process-engine>`.
 
 
@@ -50,36 +50,37 @@ Starting the engine and show overview page
 Starting the engine
    Select the entry |image3| in the menu or as button  in the
    toolbar to start the Simulation Engine and refresh the Process Start
-   Overview page but without opening the Process Development
-   Perspective.
+   Overview page but without opening the Process Development Perspective.
 
 Stopping the engine
-   Select the entry |image5| in the menu or as button in the
+   Select the entry |image5| in the menu or the corresponding button in the
    toolbar to stop the Simulation Engine.
 
 Adjust the engine animation speed
-   Select the entry |image7|\ in the menu or as button in the
+   Select the entry |image7|\ in the menu or the corresponding button in the
    toolbar to show the slider to adjust the speed of the animation. This
    overwrites the :ref:`corresponding setting <workspace-preferences-process-engine>` in the
    preferences.
 
 Suppressing the engine animation
-   Select the entry |image9| in the menu or as button in the
+   Select the entry |image9| in the menu or the corresponding button in the
    toolbar to switch the engine animation on and off. This overwrites
    the :ref:`corresponding setting <workspace-preferences-process-engine>` in the
    preferences.
 
 
 
-.. _content-formatting-language-settings:
+.. _language-settings:
 
-Content and Formatting Language Settings
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Language Settings
+~~~~~~~~~~~~~~~~~
 
-This dialog allows to edit the content language and the formatting
-language. The language settings are used at design time for displaying
-the User Dialogs. If option *Enable simulation* is checked
-the settings are also used at runtime.
+This dialog allows to edit the content, formatting and workflow
+languages. The :guilabel:`Simulation Languages` settings are used at design time for displaying
+the User Dialogs. If option ::guilabel:`Enable language simulation` is checked,
+the settings are also used at runtime. 
+
+:ref:`Workflow languages <workflow-languages>` controls for which languages case and task name and description are stored. 
 
 .. figure:: /_images/simulation-debugging/content-formatting-language-settings.png
 
@@ -91,10 +92,10 @@ Press |image20d| in the toolbar.
 Settings
 ^^^^^^^^^^^^^
 
-The following language settings can be configured:
+You can confîgure the following language settings:
 
-Enable simulation
-   If checked then the content and the formatting language settings will
+Enable language simulation
+   If checked, then the content and the formatting language settings will
    be used while simulating. If **not** checked then the settings of the
    browser will be used.
 
@@ -104,6 +105,9 @@ Content Language
 Formatting Language
    The formatting language is used when objects are formatted using the
    ``format()`` method.
+   
+Workflow Languages
+   The :ref:`languages <workflow-languages>` names and descriptions of cases or tasks are stored.
 
 
 How to use in IvyScript
@@ -127,8 +131,8 @@ Breakpoints
 A breakpoint is a marker that tells the simulation engine to pause the
 execution. It is then possible to inspect the execution history, to view
 the values of internal variables and evaluate user defined expressions
-without being interfered by the running execution. The execution must be
-resumed by the user explicitly over the functionality of the
+without being interfered by the running execution. The execution has to be
+resumed by the user explicitly using the functionality of the
 :ref:`Debug View <debugger-debug-view>`. You can see a list of your breakpoints and
 edit them in the :ref:`Breakpoint View <debugger-breakpoints-view>`.
 
@@ -153,12 +157,12 @@ which you intend to set the breakpoint and click on the bug.
 You can add a *condition* to a breakpoint in the
 :ref:`debugger-breakpoints-view`. If you do so, the breakpoint is only active if
 the expression evaluates to `true` and will then suspend the execution. In the
-expression, you have access to the ``in`` variable and all other variables in the
-context of the process step. 
+expression, you have access to all variables in the context of the process 
+step, including ``in``. 
 
 **Disable a breakpoint**
 
-You can disable a specific breakpoint over the :ref:`debugger-breakpoints-view` or by clicking
+You can disable a specific breakpoint in the :ref:`debugger-breakpoints-view` or by clicking
 on the breakpoint in the :ref:`process-editor`. It is also possible to disable all
 breakpoints in the :ref:`debugger-breakpoints-view`. 
 
@@ -168,21 +172,19 @@ Data Class Attribute Value Change Breakpoints
 
 A data class attribute value change breakpoint is a breakpoint that can
 be set on a data class attribute. The execution of the process will be
-interrupted before the value of the process data attribute is changed.
+interrupted before the value of the process data attribute will be changed.
 Data class attribute value change breakpoints can be added or removed in
 the :ref:`data-class-editor` or the :ref:`persistence-entity-class-editor`.
-The current available variables
-and the current debug context is available in the
-:ref:`debugger-variables-view`.
-The old and new value of the debugging
-field is displayed in the variable ``debug``.
+The currently available variables and the current debug context are available 
+in the :ref:`debugger-variables-view`.
+The old and new value of the debugging field is displayed in the variable ``debug``.
 
 .. note::
 
    The breakpoint only breaks if the value of an attribute is changed by
    an IvyScript write attribute operation (e.g.
    ``in.data.myField="Hello"``). If the attribute is changed by a setter
-   method then the breakpoint will not break (e.g.
+   method, then the breakpoint will not break (e.g.
    ``in.data.setMyField("Hello")``).
 
 

@@ -77,10 +77,10 @@ Enable / Disable Animation
    Settings <workspace-preferences-process-engine>`.
 
 
-Select Content and Formatting Language
+Language Settings
    .. image:: /_images/designer/button-content-formatting-language.png
 
-   See :ref:`content-formatting-language-settings` for more
+   See :ref:`language-settings` for more
    details.
 
 

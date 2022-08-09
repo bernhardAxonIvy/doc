@@ -15,6 +15,38 @@ process-end element.
 
 |image0|
 
+.. _workflow-languages:
+
+Multilingual Name and Description of Cases and Tasks
+====================================================
+
+The name and description of a :ref:`case <process-element-tab-case>` or
+:ref:`task <process-element-tab-task>` can be defined by using multilingual texts from the CMS. 
+Because of performance and system database space reasons, the name and description are only stored 
+in the configured workflow languages and not for every language available in the current CMS.
+Workflow languages can be configured using :ref:`Security System <engine-cockpit-security-system-detail>` 
+in the :ref:`Engine Cockpit <engine-cockpit>` or, for the Designer, in the :ref:`Language Settings <language-settings>`.
+
+An end users sees the name and description of a case or task in his preferred language if that language is 
+a supported workflow language. If not, the default workflow language is used. Searching for and sorting of 
+cases and tasks uses the same language the end user sees the names and descriptions.
+
+As a process developer, you should configure the main language of your process application as its default workflow language. 
+Add additional workflow languages only if you use mutlilingual texts from the CMS in your case and task inscriptions and 
+if you have configured those texts differently for multiple languages. If your projects support different sets of languages, consider 
+to configure only the common set of languages that all your projects support as workflow languages.
+
+If you add a new workflow language and there are already cases and tasks in your system database, then the name and description 
+in the default workflow language of all your existing cases and tasks are copied to the new language. 
+Therefore, adding a new workflow language can last several minutes and increases the size of your system database. 
+An end user will still see names and descriptions of old cases and tasks in the default workflow language as it is a simple copy. 
+Cases and tasks created after you added a new workflow language will support the new language correctly.
+
+.. warning::
+
+  If you delete a workflow language then all names and descriptions of all existing cases and tasks in that language will be 
+  deleted permanently from the system database. Adding the language again later on will not bring the data back!
+
 .. _business-case:
 
 Business Case

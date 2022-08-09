@@ -35,13 +35,17 @@ make and save is immediately written to the :ref:`ivy-yaml` file. The
 placeholders in the empty fields are the system default values. If your settings
 are the same as the default ones, you do not need to define them.
 
+You can configure the default language, the formatting language and the 
+:ref:`workflow languages<workflow-languages>` for the security system. 
+
 .. note::
     If you had something configured and you delete this entry, the entry will be
     removed from the :ref:`ivy-yaml` file. 
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-security-system-detail.png
 
-Depending on the chosen identity provider more settings are available with the :guilabel:`Edit` button.
+Depending on the chosen identity provider, more settings are available with the 
+:guilabel:`Edit` button.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-security-system-ldap.png
 
@@ -51,7 +55,7 @@ For all configuration options on a security system, refer to the
 Users
 ^^^^^
 
-On this page you see all users per application. You can switch the application
+On this page, you see all users per application. You can switch the application
 by clicking on the tabs at the top of the view. The table displays basic information
 about the users and if they have an open session. You can add a new users, too. To
 do so, click on the :guilabel:`New` button and fill in the dialog. A user name is
