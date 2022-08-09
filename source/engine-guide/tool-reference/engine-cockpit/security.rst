@@ -31,7 +31,7 @@ Security System Detail
 
 In the security system detail view you can change a configured security system.
 The settings are read directly from the :ref:`ivy-yaml` file. Every change you
-make and save is meediately written to the :ref:`ivy-yaml` file. The
+make and save is immediately written to the :ref:`ivy-yaml` file. The
 placeholders in the empty fields are the system default values. If your settings
 are the same as the default ones, you do not need to define them.
 
@@ -40,6 +40,10 @@ are the same as the default ones, you do not need to define them.
     removed from the :ref:`ivy-yaml` file. 
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-security-system-detail.png
+
+Depending on the chosen identity provider more settings are available with the :guilabel:`Edit` button.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-security-system-ldap.png
 
 For all configuration options on a security system, refer to the
 :ref:`ivy-securitysystem-yaml` file.
