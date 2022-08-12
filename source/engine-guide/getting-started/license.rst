@@ -11,42 +11,44 @@ is provided for free upon request. You need to provide
 - the edition
 - the number of named users 
 - the number of concurrent users
-- the public URLs 
+- the public URLs
+- for clusters only, the number of nodes 
 
-for each license. Details for these inputs are detailed below.
-
+for each license. These inputs are detailed below.
 
 .. _license-edition:
 
-Edition
--------
+Editions
+------------
 
-You can choose between **Standard Edition** and **Enterprise Edition**. If you expect
+Choose between **Standard Edition** and **Enterprise Edition**. If you expect
 high loads or need increased reliability, you should look into the Enterprise
 Edition. It allows running the Axon Ivy Engine in a :ref:`cluster <cluster>`.
+The maximum number of nodes in the clusters is part of the license.
 
 
 Named Users
------------
+---------------
 
-Registered users within Axon Ivy Engine are called **named users**. These users
+Registered users within an Axon Ivy Engine are called **named users (NU)**. These users
 have an account in the Axon Ivy Engine and thus can log in to the Axon Ivy
 Engine. User accounts are managed per security system. One user can have
 multiple accounts on a single Axon Ivy Engine, at most one per security system.
 Accounts in different security systems on the Axon Ivy Engine with the
 same user name count as one named user.
 
-For users on a cluster, the above is valid, too.
+All of this also applies to users on a cluster.
 
 
 Concurrent Users
 ----------------
 
 The number of users concurrently working on the Axon Ivy Engine is known as
-**concurrent users**. The Axon Ivy Engine controls the number of concurrent
+**concurrent users (CU)**. The Axon Ivy Engine counts the number of concurrent
 users as follows:
 
 * Every Session with no authenticated user is counted as one concurrent user.
+
 * Multiple Sessions with the same authenticated user are handled as follows:
 
    * the first 10 sessions are counted as one concurrent user.
@@ -54,6 +56,7 @@ users as follows:
      as one additional concurrent user.
 
 * The system session is not counted as a concurrent user.
+
 * Sessions (non-System sessions) created to call WebService Processes or Event
   Bean Processes are created at the start of the process and are destroyed after
   the execution of the process. These sessions are counted as described above while
@@ -73,11 +76,13 @@ The following table illustrates this:
 | 27                 | 18                |
 +--------------------+-------------------+
 
+This also applies to clusters.
+
 
 Public URLs
 -----------
 
-Public URLs are the links that end users will use to access your Axon Ivy Engine.
+Public URLs are the links that end users will use to access your Axon Ivy Engine or Cluster.
 
 .. admonition:: Example
   
@@ -96,3 +101,8 @@ Public URLs are the links that end users will use to access your Axon Ivy Engine
 
   Note: Access via ``localhost``, ``127.0.0.1`` and ``::1`` is always possible
   and is not included in the license.
+
+  For clusters, the Public URLs of each node should be included in the license
+  to allow administrative access to each node separately.
+
+

@@ -1,11 +1,21 @@
 
 digraph overview {  
+
+  /* nodes */
   browser [label="Browser" pos="0,2.5!" width=1];
-  reverseproxy [label="Reverse Proxy" pos="2.25,2.5!" width="1.5"];  
+  reverseproxy [label="Reverse Proxy" pos="2.25,2.5!" width=1.5];  
   engine [label="Axon Ivy\nEngine" pos="5.4,2.5!" height=0.8 width=1.5 color="#C7D426" fontcolor="black"];   
   systemdb [label="System\nDatabase" pos="8,2.5!" width=1.5 height=0.8]
 
-  browser -> reverseproxy [label="HTTPS"];
-  reverseproxy -> engine [label="HTTP\nHTTPS"];
-  engine -> systemdb [label="JDBC"];
+  /* edges */
+  browser -> reverseproxy;
+  reverseproxy -> engine;
+  engine -> systemdb;
+
+  /* edge labels */
+  browserreverseproxy [label="HTTPS", pos="0.95,2.6!",shape=none,fillcolor=none,fontcolor=black];
+  reverseproxyengine [label="HTTP\nHTTPS", pos="3.75,2.45!",shape=none,fillcolor=none,fontcolor=black];
+  enginesystemdb [label="JDBC", pos="6.6,2.6!",shape=none,fillcolor=none,fontcolor=black];
+
+
 }

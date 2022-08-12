@@ -16,7 +16,7 @@ the wizard on your operating system.
 
 #. :ref:`Start <control-center>` a new, untouched Axon Ivy Engine.
 #. Browse to the URI where the engine runs: e.g. http://localhost:8080 .
-#. Choose ``Setup Wizard`` -> ``Migration Engine`` in your Browser.
+#. Choose ``Setup Wizard`` -> ``Migrate Engine`` in your Browser.
    
 **Usage**
 
@@ -26,4 +26,5 @@ the wizard on your operating system.
 #. Run the MigrationTasks.
 #. The wizard will select the best migration scenario for you, and then ask for
    your consent.
+#. Wait until the Migration Wizard has completed.
 #. Restart the Axon Ivy Engine.

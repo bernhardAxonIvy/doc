@@ -1,16 +1,17 @@
 .. note::
 
-  Axon Ivy Engine is provided in different packages:
+  We provide Axon Ivy Engine in different packages:
 
-  * **Windows** Preferable package for Windows which comes with
-    a bundled Java Runtime.
+  * **Windows** The preferable package for Windows. It comes with a bundled Java
+    Runtime.
 
-  * **All** For all platforms. Contains launchers for Windows
-    and Linux systems, but no bundled JRE. Therefore you need to install
-    a Java Runtime by yourself. Axon Ivy will pick the JRE configured via
-    ``IVY_JAVA_HOME`` operating system environment variable. If that is not set, it will fall back to ``JAVA_HOME``.
+  * **All** For all platforms. It contains launchers for Windows and Linux. You
+    need to install a Java Runtime by yourself as none is bundled. Axon Ivy will
+    use the JRE pointed to by the operating system environment variable
+    ``IVY_JAVA_HOME``. If not set, Axon Ivy falls back to the JRE pointed to by
+    ``JAVA_HOME``.
 
   * **Slim All** Same as *All* but without the demo application.
 
-  * **Docker** Docker Image for all platforms which can run Linux containers.
+  * **Docker** Docker Image for all platforms that can run Linux containers.
 
