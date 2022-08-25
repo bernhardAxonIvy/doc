@@ -19,7 +19,6 @@ If the reverse proxy and the Axon Ivy Engine run on the same host
 |
 
 .. graphviz:: same-host.dot
-   :layout: neato
 
 |
 
@@ -44,7 +43,6 @@ If the reverse proxy and the Axon Ivy Engine run on two different hosts:
 |
 
 .. graphviz:: different-host.dot
-   :layout: neato
 
 |
 

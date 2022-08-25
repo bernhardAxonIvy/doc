@@ -11,7 +11,6 @@ have to be installed and integrated additionally.
 |
 
 .. graphviz:: overview.dot
-   :layout: neato
 
 |
 

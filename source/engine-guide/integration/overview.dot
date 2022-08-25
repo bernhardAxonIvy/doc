@@ -1,31 +1,43 @@
-
 digraph overview {
-  browser [ label="Browser", pos = "0,2.5!", width=1];
-
-  frontendServers [ label="Reverse Proxy",pos = "2.25,2.5!" width=1.8 height=3.1 style="dotted" fontcolor="black" labelloc="t"];
-  frontendNginx [ label="NGINX",pos = "2.25,3.4!" width=1.25 height=0.5];
-  frontendApache [ label="Apache",pos = "2.25,2.8!" width=1.25 height=0.5];
-  frontendIIS [ label="IIS",pos = "2.25,2.2!" width=1.25 height=0.5];
-  frontendWAF [ label="WAF",pos = "2.25,1.6!" width=1.25 height=0.5];
- 
-  engine [label="Axon Ivy\nEngine", pos="5.4,2.5!", height="1", width="1.5", color="#C7D426", fontcolor="black"];
+  layout=neato;
+  node [shape=box, fontname="Roboto,Helvetica Neue,Arial,sans-serif", fixedsize="true", margin=0]; 
   
-  userManagement [ label="User Management (optional)",pos = "5.4,0.7!" width=3 height=1.4 style="dotted" fontcolor="black" labelloc="t"];
-  eDirectory [ label="eDirectory", width="1.1" pos="4.75,0.6!"];
-  activeDirectory [ label="Active\nDirectory", width="1.1" pos="6,0.6!"];
+  /* nodes */
+  browser [ label="Browser",                          pos="0,2.5!", width="1"];
 
-  systemdb [ label="System Database", pos="8,2.5!" width=1.7 height=3.5 style="dotted" fontcolor="black" labelloc="t"]
-  postgres [ label="PostgreSQL", pos="8,3.5!" width=1 height=0.5]
-  mysql [ label="MySQL", pos="8,2.9!" width=1 height=0.5]
-  mariadb [ label="MariaDB", pos="8,2.3!" width=1 height=0.5]
-  mssql [ label="Sql Server", pos="8,1.7!" width=1 height=0.5]
-  oracle [ label="Oracle", pos="8,1.1!" width=1 height=0.5]
+  frontendServers [label="Reverse Proxy",             pos="2.25,2.5!", height="3.1", width="1.8", style="dashed", fontcolor="black", labelloc="t"];
+  frontendNginx [label="NGINX",                       pos="2.25,3.4!", height="0.5", width="1.0", fontsize=11];
+  frontendApache [label="Apache",                     pos="2.25,2.8!", height="0.5", width="1.0", fontsize=11];
+  frontendIIS [label="IIS",                           pos="2.25,2.2!", height="0.5", width="1.0", fontsize=11];
+  frontendWAF [label="WAF",                           pos="2.25,1.6!", height="0.5", width="1.0", fontsize=11];
+ 
+  engine [label="Axon Ivy\nEngine",                   pos="5.40,2.5!", height="1.0", width="1.5", color="#C7D426", fontcolor="black"];
+  
+  userManagement [label="User Management (optional)", pos="5.40,0.7!", height="1.4", width="3.0" style="dashed" fontcolor="black" labelloc="t"];
+  eDirectory [label="eDirectory",                     pos="4.75,0.6!", height="0.5", width="1.1", fontsize=11];
+  activeDirectory [label="Active\nDirectory",         pos="6.00,0.6!", height="0.5", width="1.1", fontsize=11];
 
-  elasticsearch [ label="External\n Elasticsearch\n (optional)", pos="5.4,4.25!" width=1.5]
+  systemdb [label="System Database",                  pos="8.00,2.5!", height="3.5", width="1.7", style="dashed" fontcolor="black" labelloc="t"]
+  postgres [label="PostgreSQL",                       pos="8.00,3.5!", height="0.5", width="1.0", fontsize=11]
+  mysql [label="MySQL",                               pos="8.00,2.9!", height="0.5", width="1.0", fontsize=11]
+  mariadb [label="MariaDB",                           pos="8.00,2.3!", height="0.5", width="1.0", fontsize=11]
+  mssql [label="Sql Server",                          pos="8.00,1.7!", height="0.5", width="1.0", fontsize=11]
+  oracle [label="Oracle",                             pos="8.00,1.1!", height="0.5", width="1.0", fontsize=11]
 
-  browser -> frontendServers [ label="HTTPS"];
-  frontendServers -> engine [ label="HTTP\nHTTPS" ];
-  engine -> userManagement [ label="LDAP" ];
-  engine -> systemdb [ label="JDBC" ];
-  engine -> elasticsearch [label="HTTP\nHTTPS"];
+  elasticsearch [ label="External\nElasticsearch\n(optional)", pos="5.4,4.25!", height="0.8" width="1.5"]
+
+  /* edges */
+  browser -> frontendServers;
+  frontendServers -> engine;
+  engine -> userManagement;
+  engine -> systemdb;
+  engine -> elasticsearch;
+
+   /* edge labels */  
+  browser_frontendServers [ label="HTTPS\n \n ",   pos = "0.9,2.5!", shape=none, fillcolor=none, fontcolor=black, fontsize=11];
+  frontendServers_engine [ label="HTTP\n\nHTTPS" , pos = "3.9,2.5!", shape=none, fillcolor=none, fontcolor=black, fontsize=11];
+  engine_userManagement [ label="LDAP",            pos = "5.8,1.7!", shape=none, fillcolor=none, fontcolor=black, fontsize=11];
+  engine_systemdb [ label="JDBC\n \n ",            pos = "6.6,2.5!", shape=none, fillcolor=none, fontcolor=black, fontsize=11];
+  engine_elasticsearch [label="HTTP\nHTTPS",       pos = "5.7,3.4!", shape=none, fillcolor=none, fontcolor=black, fontsize=11];
+  
 }

@@ -1,20 +1,33 @@
 
 digraph overview {
-  browser [ label="Browser", pos = "0,2.5!", width=1];
-
-  loadbalancer [ label="Load Balancer",pos = "2.25,2.5!" width="1.5"];
+  layout=neato;
+  node [shape=box, fontname="Roboto,Helvetica Neue,Arial,sans-serif", fixedsize="true", margin=0]; 
+  
+  /* nodes */
+  browser [ label="Browser",            pos = "0.00,0!", width="1",height="0.8",fixedsize="true"];
+  loadbalancer [ label="Load Balancer", pos = "2.25,0!",width="1.5",height="0.8",fixedsize="true"];
  
-  cluster [ label="Axon Ivy Cluster",pos = "5.4,2.5!" width=1.8 height=3.1 style="dotted" fontcolor="black" labelloc="t"];
-  engine1 [label="Node 1", pos="5.4,3.2!", height="0.8", width="1.5", color="#C7D426", fontcolor="black"];
-  engine2 [label="Node 2", pos="5.4,2.3!", height="0.8", width="1.5", color="#C7D426", fontcolor="black"];
-  engine3 [label="Node 3", pos="5.4,1.4!", height="0.8", width="1.5", color="#C7D426", fontcolor="black"];
+    /* this is a kludge, should be a subgraph but won't display as we'd like, so create the "subgraph" ourselves by positioning the elements */
+  cluster [ label="Axon Ivy Cluster",   pos="5.4, 0.0!", height="3.5", width="1.8", style="dashed", fontcolor="black", labelloc="t", fontsize=17];
+  engine1 [ label="Node 1",             pos="5.4, 1.0!", height="0.8", width="1.5", color="#C7D426", fontcolor="black"];
+  engine2 [ label="Node 2",             pos="5.4, 0.0!", height="0.8", width="1.5", color="#C7D426", fontcolor="black"];
+  enginespacer [label="...",            pos="5.4,-0.6!", height="0.8", width="1.5", shape=none, fillcolor=none, fontcolor=black, fontsize=11];
+  enginen [ label="Node n",             pos="5.4,-1.2!", height="0.8", width="1.5", color="#C7D426", fontcolor="black"];
   
-  systemdb [ label="System\nDatabase", pos="8,3.2!" width="1.5" height="0.8"]
-  elasticsearch [ label="Elasticsearch", pos="8,1.4!" width="1.5" height="0.8"]
+  systemdb [ label="System\nDatabase", pos="8,0.8!", height="0.8", width="1.5"]
+  elasticsearch [ label="Elasticsearch", pos="8,-1.0!", height="0.8", width="1.5"]
 
-  browser -> loadbalancer [label="HTTPS" fontsize=11];
-  loadbalancer -> cluster [label="HTTP\nHTTPS" fontsize=11];
+  /* edges */
+  browser -> loadbalancer;
+  loadbalancer -> cluster;
   
-  cluster -> systemdb [label="JDBC" fontsize=11];
-  cluster -> elasticsearch [label="HTTP\nHTTPS" fontsize=11];
+  cluster -> systemdb;
+  cluster -> elasticsearch;
+
+  /* edge labels */
+  browserloadbalancer [ label="HTTPS\n \n ", pos = "1,0!", height="0.8", width="1.5", shape=none, fillcolor=none, fontcolor=black, fontsize=11];
+  loadbalancercluster [ label="HTTP\n \nHTTPS", pos = "3.7,0!", height="0.8", width="1.5", shape=none, fillcolor=none, fontcolor=black, fontsize=11];
+  
+  clustersystemdb [ label="JDBC" pos = "6.8,0.55!", height="0.8", width="1.5", shape=none, fillcolor=none, fontcolor=black, fontsize=11];
+  clusterelasticsearch [ label="HTTP\n \nHTTPS", pos = "6.8,-0.58!", height="0.8", width="1.5", shape=none, fillcolor=none,fontcolor=black, fontsize=11];  
 }

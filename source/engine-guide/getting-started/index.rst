@@ -13,7 +13,6 @@ storing the data of the Axon Ivy Engine.
 |
 
 .. graphviz:: overview.dot
-   :layout: neato
 
 |
 

@@ -1,5 +1,5 @@
-
 digraph overview {  
+<<<<<<< HEAD
   browser [label="Browser" pos="0,2.5!" width=1];
   reverseproxy [label="Reverse Proxy" pos="2.25,2.5!" width="1.5"];  
   engine [label="Axon Ivy\nEngine" pos="5.4,2.5!" height=0.8 width=1.5 color="#C7D426" fontcolor="black"];   
@@ -8,4 +8,24 @@ digraph overview {
   browser -> reverseproxy [label="HTTPS"];
   reverseproxy -> engine [label="HTTP\nHTTPS"];
   engine -> systemdb [label="JDBC"];
+=======
+  layout=neato;
+  node [shape=box, fontname="Roboto,Helvetica Neue,Arial,sans-serif", margin=0, fixedsize="true"]; 
+  
+  /* nodes */
+  browser [label="Browser"             pos="0,2.5!", height="0.8", width="1.5"];
+  reverseproxy [label="Reverse Proxy", pos="3,2.5!", height="0.8", width="1.5"];  
+  engine [label="Axon Ivy\nEngine",    pos="6,2.5!", height="0.8", width="1.5", color="#C7D426", fontcolor="black"];   
+  systemdb [label="System\nDatabase"   pos="9,2.5!", height="0.8", width="1.5"]
+
+  /* edges */
+  browser -> reverseproxy;
+  reverseproxy -> engine;
+  engine -> systemdb;
+
+  /* edge labels */
+  browser_reverseproxy [label="HTTPS\n \n ",   pos="1.4,2.5!", shape=none, fillcolor=none, fontsize=11];
+  reverseproxy_engine [label="HTTP\n \nHTTPS", pos="4.4,2.5!", shape=none, fillcolor=none, fontsize=11];
+  engine_systemdb [label="JDBC\n \n ",         pos="7.4,2.5!", shape=none, fillcolor=none, fontsize=11];
+>>>>>>> da11cc56bc (XIVY-9206 updated all dot images and containing rsts for Sketchviz.com compatibility)
 }

@@ -25,7 +25,6 @@ use with Axon Ivy is deprecated.
 |
 
 .. graphviz:: overview.dot
-   :layout: neato
 
 |
 

@@ -12,7 +12,6 @@ and includes your projects and configuration.
 You can build the container image automatically by using a build server.
 
 .. graphviz:: container.dot
-   :layout: neato
    
 The build server:   
 

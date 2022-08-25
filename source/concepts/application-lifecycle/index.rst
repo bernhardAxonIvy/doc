@@ -25,7 +25,6 @@ project and is packaging this project into an application called HR.*
 |
 
 .. graphviz:: hr-app.dot
-  :layout: neato
   :align: center
 
 |
@@ -38,7 +37,6 @@ Ivy Projects and packages them into the finance application.*
 |
 
 .. graphviz:: finance-app.dot
-  :layout: neato
   :align: center
 
 |
@@ -71,7 +69,6 @@ covering all applications.*
 |
 
 .. graphviz:: engine.dot
-  :layout: neato
   :align: center
 
 Applications are used by developers to package related processes together and
