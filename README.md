@@ -38,14 +38,6 @@ Use Eclipse or Visual Studio Code.
     * To work on Graphviz dot images, use https://sketchviz.com
 
 
-## Links
-
-* [Sphinx](https://www.sphinx-doc.org/)
-* [reStructuredtext Reference](http://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html)
-* [sphinx-rtd-theme demo](https://sphinx-rtd-theme.readthedocs.io/en/latest/demo/demo.html) and its [raw sources](https://raw.githubusercontent.com/rtfd/sphinx_rtd_theme/master/docs/demo/demo.rst)
-* [reStructuredtext tables](https://rest-sphinx-memo.readthedocs.io/en/latest/ReST.html#tables)
-
-
 ## Guidelines
 
 1. **Prevent big files**. If you use includes, the name of the included file should start with underscore.
@@ -79,6 +71,18 @@ When developing artifacts in Sketchviz,
   - keep number formats consistent
   - always use the same sequence of attributes
   - try to align attributes where useful - see existing dot files.
+
+
+## Links
+
+* [Sphinx](https://www.sphinx-doc.org/)
+* [reStructuredtext Reference](http://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html)
+* [sphinx-rtd-theme demo](https://sphinx-rtd-theme.readthedocs.io/en/latest/demo/demo.html) and its [raw sources](https://raw.githubusercontent.com/rtfd/sphinx_rtd_theme/master/docs/demo/demo.rst)
+* [reStructuredtext tables](https://rest-sphinx-memo.readthedocs.io/en/latest/ReST.html#tables)
+* [GraphViz](http://graphviz.org)
+* [Graphviz Object Attributes](http://graphviz.org/doc/info/attrs.html)
+* [Graphviz DOT Language](http://graphviz.org/doc/info/lang.html)
+* [SketchViz](https://sketchviz.com)
 
 
 ## Samples
