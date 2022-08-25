@@ -15,7 +15,6 @@ typical system landscape will look as follows:
 |
 
 .. graphviz:: overview.dot
-   :layout: neato
 
 |
 

@@ -40,7 +40,6 @@ Get started with our Axon Ivy Engine Docker container :ref:`here
 |
 
 .. graphviz:: multiple-engines.dot
-  :layout: neato
   :align: center
 
 |

@@ -1,4 +1,8 @@
 digraph hrapp {
-  hrapp [ label="HR Application", pos="0,0!" width=2.5 height=1.5 style="dotted" fontcolor="black" labelloc="t"];
-  newemployee [label="Report Expense\nProject" pos="0,-0.05!" width=1.8 height=0.8];
+  layout=neato;
+  node [shape=box, fontname="Roboto,Helvetica Neue,Arial,sans-serif", fixedsize="true", margin=0.1]; 
+  
+  /* nodes */
+  hrapp [ label="HR Application",               pos="0.0,0.0!",   width="2.5" height="1.5" style="dashed" fontcolor="black" labelloc="t"];
+  newemployee [label="Expense Report\nProject", pos="0.0,-0.05!", width="1.8" height="0.8"];
 }

@@ -12,7 +12,6 @@ storing the data of the Axon Ivy Engine.
 
 
 .. graphviz:: overview.dot
-   :layout: neato
 
 
 At this point, you need to choose a platform. The Axon Ivy Engine runs on all modern

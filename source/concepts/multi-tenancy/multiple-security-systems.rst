@@ -22,7 +22,6 @@ solution.
 |
 
 .. graphviz:: multiple-security-systems.dot
-  :layout: neato
   :align: center
 
 |

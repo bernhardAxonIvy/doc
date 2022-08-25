@@ -23,7 +23,6 @@ implemented by your IT Operations provider:
 |
 
 .. graphviz:: overview.dot
-   :layout: neato
 
 |
 

@@ -21,7 +21,6 @@ the :ref:`security system <configuration-security-system>` of the Axon Ivy Engin
 |
 
 .. graphviz:: overview.dot
-   :layout: neato
 
 |
 

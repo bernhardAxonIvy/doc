@@ -9,7 +9,6 @@ Elasticsearch itself is bundled with Axon Ivy Engine and will be started on dema
 |
 
 .. graphviz:: overview.dot
-   :layout: neato
 
 |
 

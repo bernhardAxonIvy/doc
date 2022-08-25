@@ -30,7 +30,6 @@ that routes the traffic to the :ref:`nodes <cluster-configuration>` of the clust
 All cluster nodes share the same system database and Elasticsearch server.
 
 .. graphviz:: overview.dot
-   :layout: neato
 
 **Runtime**
 
