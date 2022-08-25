@@ -1,5 +1,5 @@
 {
-  "format" : "9.4.17",
+  "format" : "9.4.19",
   "id" : "175083477C6BF05D",
   "data" : "screenshot.project.RuleData",
   "elements" : [ {
@@ -30,8 +30,7 @@
         "beanConfig" : "{\"namespace\":\"rule.demo\",\"dataObject\":\"in.member\"}"
       },
       "visual" : {
-        "at" : { "x" : 224, "y" : 64 },
-        "labelOffset" : { "x" : -29, "y" : -8 }
+        "at" : { "x" : 224, "y" : 64 }
       },
       "connect" : { "id" : "f2", "to" : "f1" }
     } ]
