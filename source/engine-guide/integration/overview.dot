@@ -3,26 +3,26 @@ digraph overview {
   node [shape=box, fontname="Roboto,Helvetica Neue,Arial,sans-serif", fixedsize="true", margin=0]; 
   
   /* nodes */
-  browser [ label="Browser",                          pos="0,2.5!", width="1"];
+  browser         [ label="Browser",                   pos="0,2.5!", width="1"];
 
-  frontendServers [label="Reverse Proxy",             pos="2.25,2.5!", height="3.1", width="1.8", style="dashed", fontcolor="black", labelloc="t"];
-  frontendNginx [label="NGINX",                       pos="2.25,3.4!", height="0.5", width="1.0", fontsize=11];
-  frontendApache [label="Apache",                     pos="2.25,2.8!", height="0.5", width="1.0", fontsize=11];
-  frontendIIS [label="IIS",                           pos="2.25,2.2!", height="0.5", width="1.0", fontsize=11];
-  frontendWAF [label="WAF",                           pos="2.25,1.6!", height="0.5", width="1.0", fontsize=11];
+  frontendServers [label="Reverse Proxy",              pos="2.5,2.5!", height="3.1", width="1.8", style="dashed", fontcolor="black", labelloc="t"];
+  frontendNginx   [label="NGINX",                      pos="2.5,3.4!", height="0.5", width="1.0", fontsize=11];
+  frontendApache  [label="Apache",                     pos="2.5,2.8!", height="0.5", width="1.0", fontsize=11];
+  frontendIIS     [label="IIS",                        pos="2.5,2.2!", height="0.5", width="1.0", fontsize=11];
+  frontendWAF     [label="WAF",                        pos="2.5,1.6!", height="0.5", width="1.0", fontsize=11];
  
-  engine [label="Axon Ivy\nEngine",                   pos="5.40,2.5!", height="1.0", width="1.5", color="#C7D426", fontcolor="black"];
+  engine          [label="Axon Ivy\nEngine",           pos="5.40,2.5!", height="1.0", width="1.5", color="#C7D426", fontcolor="black"];
   
-  userManagement [label="User Management (optional)", pos="5.40,0.7!", height="1.4", width="3.0" style="dashed" fontcolor="black" labelloc="t"];
-  eDirectory [label="eDirectory",                     pos="4.75,0.6!", height="0.5", width="1.1", fontsize=11];
-  activeDirectory [label="Active\nDirectory",         pos="6.00,0.6!", height="0.5", width="1.1", fontsize=11];
+  userManagement  [label="User Management (optional)", pos="5.40,0.8!", height="1.2", width="3.0" style="dashed" fontcolor="black" labelloc="t"];
+  eDirectory      [label="eDirectory",                 pos="4.75,0.8!", height="0.5", width="1.1", fontsize=11];
+  activeDirectory [label="Active\nDirectory",          pos="6.00,0.8!", height="0.5", width="1.1", fontsize=11];
 
-  systemdb [label="System Database",                  pos="8.00,2.5!", height="3.5", width="1.7", style="dashed" fontcolor="black" labelloc="t"]
-  postgres [label="PostgreSQL",                       pos="8.00,3.5!", height="0.5", width="1.0", fontsize=11]
-  mysql [label="MySQL",                               pos="8.00,2.9!", height="0.5", width="1.0", fontsize=11]
-  mariadb [label="MariaDB",                           pos="8.00,2.3!", height="0.5", width="1.0", fontsize=11]
-  mssql [label="Sql Server",                          pos="8.00,1.7!", height="0.5", width="1.0", fontsize=11]
-  oracle [label="Oracle",                             pos="8.00,1.1!", height="0.5", width="1.0", fontsize=11]
+  systemdb        [label="System Database",            pos="8.00,2.5!", height="3.6", width="1.7", style="dashed" fontcolor="black" labelloc="t"]
+  postgres        [label="PostgreSQL",                 pos="8.00,3.7!", height="0.5", width="1.0", fontsize=11]
+  mysql           [label="MySQL",                      pos="8.00,3.1!", height="0.5", width="1.0", fontsize=11]
+  mariadb         [label="MariaDB",                    pos="8.00,2.5!", height="0.5", width="1.0", fontsize=11]
+  mssql           [label="Sql Server",                 pos="8.00,1.9!", height="0.5", width="1.0", fontsize=11]
+  oracle          [label="Oracle",                     pos="8.00,1.3!", height="0.5", width="1.0", fontsize=11]
 
   elasticsearch [ label="External\nElasticsearch\n(optional)", pos="5.4,4.25!", height="0.8" width="1.5"]
 
