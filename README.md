@@ -8,7 +8,7 @@ Uses reStructuredText as markup language.
 
 ## Build
 
-    Connect via VPN if working at home!
+Connect via VPN if working outside the office!
 
     # download images
     mvn clean package
@@ -33,6 +33,10 @@ Use Eclipse or Visual Studio Code.
     * Plugin *lextudio.restructuredtext* for syntax highlighting and code completion.
     * Plugin *rewrap* to wrap lines to 80 characters with ALT+Q
 
+* **Other Tools**
+    * Use Grammarly plugins for online spell checking 
+    * To work on Graphviz dot images, use https://sketchviz.com
+
 
 ## Links
 
@@ -46,6 +50,35 @@ Use Eclipse or Visual Studio Code.
 
 1. **Prevent big files**. If you use includes, the name of the included file should start with underscore.
 2. **No binary files**. Use another repository for binary files.
+
+
+## Drawings, Schematics and Images
+
+Use [Graphviz](https://www.graphviz.org) to create this kind of artifact.
+Use the following template to create new artifacts compatible with [Sketchviz](https://sketchviz.org):
+
+    digraph your-name-here {
+      layout=neato;
+      node [shape=box, fontname="Roboto,Helvetica Neue,Arial,sans-serif", fixedsize="true", margin=0.1]; 
+      
+      /* nodes */
+      
+      /* edges */
+
+      /* edge labels */
+
+    }
+
+When developing artifacts in Sketchviz,
+
+- Uncheck the **Sketchy** checkbox to avoid the pencil-like drawing style
+- Copy and paste your content between your editor and Sketchviz
+- Refer to the dot images in the engine documentation for reference
+- standardize formats 
+  - always quote numbers
+  - keep number formats consistent
+  - always use the same sequence of attributes
+  - try to align attributes where useful - see existing dot files.
 
 
 ## Samples
