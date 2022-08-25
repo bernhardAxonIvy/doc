@@ -8,8 +8,8 @@ digraph overview {
   engine       [label="Axon Ivy\nEngine",       pos="6.0,2.5!", height="0.8", width="1.5", color="#C7D426", fontcolor="black"];
 
 
-  hostProxy [label="Host Reverse Proxy",        pos="3.0,2.6!", height="1.4", width="1.9", style="dashed" fontcolor="black" labelloc="t"];
-  hostEngine [label="Host Axon Ivy Engine",     pos="6.0,2.6!", height="1.4", width="1.9", style="dashed" fontcolor="black" labelloc="t"];
+  hostProxy [label="Host Reverse Proxy",        pos="3.0,2.6!", height="1.4", width="2.0", style="dashed" fontcolor="black" labelloc="t"];
+  hostEngine [label="Host Axon Ivy Engine",     pos="6.0,2.6!", height="1.4", width="2.0", style="dashed" fontcolor="black" labelloc="t"];
  
   /* edges */
   browser -> reverseproxy;
