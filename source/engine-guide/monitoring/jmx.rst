@@ -34,7 +34,7 @@ way, a user does not have to know the JMX address and port.
 You can disable this behavior in :ref:`jvm-options` by setting the JMX
 autodiscovery property to false:
 
-.. code-block:: properties
+.. code:: properties
 
     -Dcom.sun.management.jmxremote.autodiscovery=false
 
@@ -59,7 +59,7 @@ model, process model version, or environment name.
 
 **Examples of typical Axon Ivy MBean names:**
 
-.. code-block:: properties
+.. code:: properties
 
     ivy Engine:type=External Web Service,application=MyApplication,environment=Default,name=Echo (43838347ABCD)
     ivy Engine:type=Job Manager
@@ -94,44 +94,44 @@ The list below contains some of the provided information:
 
 **External Database** (connections, transactions, errors, execution times, etc.)
 
-.. code-block:: properties
+.. code:: properties
         
     ivy Engine:type=External Database,application=*,environment=*,name=*
 
 **Web Service** (calls, errors, execution time, etc.)
 
-.. code-block:: properties
+.. code:: properties
         
     ivy Engine:type=External Web Service,application=*,environment=*,name=*
 
 **REST Web Service** (calls, errors, execution time, slow calls, etc.)
 
-.. code-block:: properties
+.. code:: properties
         
     ivy Engine:type=External REST Web Service,application=*,environment=*,name=*
 
 **System Database** (connections, transactions, errors, execution time, etc.)
 
-.. code-block:: properties
+.. code:: properties
         
     ivy Engine:type=Database Persistency Service
 
 **HTTP Requests** (count, errors, execution time, etc.)
 
-.. code-block:: properties
+.. code:: properties
 
     *:type=GlobalRequestProcessor,name=*
 
 **Number of Sessions** (HTTP sessions, Axon Ivy sessions, license relevant sessions, etc.)
 
-.. code-block:: properties
+.. code:: properties
 
     ivy Engine:type=Security Manager
     *:type=Manager,context=*,host=*
 
 **Background jobs** (name, next execution time, etc.)
 
-.. code-block:: properties
+.. code:: properties
    
     ivy Engine:type=Job Manager
     ivy Engine:type=Daily Job,name=*
@@ -139,19 +139,19 @@ The list below contains some of the provided information:
 
 **Process Start Event Beans** (polls, executions, errors, execution time, etc.)
 
-.. code-block:: properties
+.. code:: properties
    
     ivy Engine:type=Process Start Event Bean,,application=*,pm=*,pmv=*,name=*
 
 **Process Intermediate Event Beans** (polls, firings, errors, execution time, etc.)
 
-.. code-block:: properties
+.. code:: properties
 
     ivy Engine:type=Process Intermediate Event Bean,application=*,pm=*,pmv=*,name=*
 
 **Application, Process Model and Process Model Version, Library information** (activity state, release state, name, description, etc.)
 
-.. code-block:: properties
+.. code:: properties
 
     ivy Engine:type=Application,name=*
     ivy Engine:type=Process Model,application=*,name=*
@@ -159,14 +159,14 @@ The list below contains some of the provided information:
 
 **Cluster, Cluster Nodes, and Cluster Communication information** (received and sent message, errors, execution time, etc.)
 
-.. code-block:: properties
+.. code:: properties
 
     ivy Engine:type=Cluster Manager
     ivy Engine:type=Cluster Channel
 
 **Thread Pool information** (core, maximum and current pool size, active threads, queue size)
 
-.. code-block:: properties
+.. code:: properties
 
     ivy Engine:type=Thread Pool, name=Background Operation Executor
     ivy Engine:type=Thread Pool, name=Immediate Job Executor
@@ -174,7 +174,7 @@ The list below contains some of the provided information:
 
 **System Database Cache**
 
-.. code-block:: properties
+.. code:: properties
 
     ivy Engine type=CacheClassPersistencyService,name=* [clearCache()]
     ivy Engine type=CacheClassPersistencyService,name=*,strategy=CacheAll [maxBytesToCache, maxCharactersToCache]
@@ -185,13 +185,13 @@ The list below contains some of the provided information:
 
 **Memory (Java Heap, Perm Gen)**
 
-.. code-block:: properties
+.. code:: properties
 
     java.lang:type=Memory
 
 **CPU Usage, Uptime**
 
-.. code-block:: properties
+.. code:: properties
         
     java.lang:type=Runtime
     java.lang.type=OperatingSystem

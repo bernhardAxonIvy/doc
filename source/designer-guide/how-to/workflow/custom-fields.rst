@@ -44,7 +44,7 @@ You can access custom fields using the following API:
 * :public-api:`ICase.customFields() </ch/ivyteam/ivy/workflow/ICase.html#customFields()>`
 * :public-api:`IWebStartable.customFields() </ch/ivyteam/ivy/workflow/start/IWebStartable.html#customFields()>`
 
-.. code-block:: java
+.. code:: java
   
   String branchOffice = ivy.task.customFields().stringField("branchOffice").getOrDefault("Luzern")
 
@@ -53,7 +53,7 @@ To search for tasks and cases by custom fields, use the following API:
 * :public-api:`TaskQuery.IFilterableColumns.customField() </ch/ivyteam/ivy/workflow/query/TaskQuery.IFilterableColumns.html#customField()>`
 * :public-api:`CaseQuery.IFilterableColumns.customField() </ch/ivyteam/ivy/workflow/query/CaseQuery.IFilterableColumns.html#customField()>`
 
-.. code-block:: java
+.. code:: java
   
   TaskQuery taskQuery = TaskQuery.create();
   List<ITask> tasks = taskQuery.where()
@@ -67,13 +67,13 @@ You can access the meta information of custom fields with the following API:
 * :public-api:`ICustomField.meta() </ch/ivyteam/ivy/workflow/custom/field/ICustomField.html#meta()>`
 * :public-api:`IStartCustomField.meta(String) </ch/ivyteam/ivy/workflow/start/IStartCustomFields.html#meta(java.lang.String)>`
 
-.. code-block:: java
+.. code:: java
 
   String label = ivy.task.customFields().stringField("branchOffice").meta().label();
   
 To access additional attributes, use this API:   
 
-.. code-block:: java
+.. code:: java
 
   String icon = ivy.task.customFields().stringField("branchOffice").meta().attribute("Icon");
 

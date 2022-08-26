@@ -27,7 +27,7 @@ The :code:`deploy-to-engine` goal can be execute on the command line. The
 following two examples deploys the project :file:`myProject.iar` to the
 application **portal** of the Axon Ivy Engine.
 
-.. code-block:: bash
+.. code:: bash
 
     #  file based deployment to c:/axonivy/engine
     mvn com.axonivy.ivy.ci:project-build-plugin:7.4.0-SNAPSHOT:deploy-to-engine \
@@ -36,7 +36,7 @@ application **portal** of the Axon Ivy Engine.
       -Divy.deploy.engine.app=portal
 
 
-.. code-block:: bash
+.. code:: bash
 
     # http based deployment to http://localhost:8080/
     # default credentials admin/admin used for demo engine
@@ -65,7 +65,7 @@ application **portal** of the Axon Ivy Engine at :file:`c:/axonivy/engine`.
 
 Execute the :code:`deploy-to-engine` goal in the directory where the :file:`pom.xml` file is located:
 
-.. code-block:: bash
+.. code:: bash
 
     mvn ivy:deploy-to-engine
 
@@ -97,7 +97,7 @@ configure an :code:`execution` which binds the :code:`deploy-to-engine` goal to 
   
 Execute the maven lifecycle in the directory where the :file:`pom.xml` file is located:
 
-.. code-block:: bash
+.. code:: bash
 
     mvn site-deploy 
 

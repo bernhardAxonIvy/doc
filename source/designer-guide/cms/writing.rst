@@ -9,7 +9,7 @@ cms of the application has the highest importance
 of the application is always writeable
 at runtime. 
 
-.. code-block:: java
+.. code:: java
 
   var app = IApplication.current();
   var cms = ContentManagement.cms(app);

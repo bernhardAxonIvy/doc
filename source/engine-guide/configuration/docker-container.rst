@@ -12,7 +12,7 @@ environment variables or by providing configuration files like the
 The following example will override the URL of the system database configuration
 using environment variables:
 
-.. code-block:: bash
+.. code:: bash
 
   docker run -e "IVY_SYSTEMDB_URL=jdbc:mysql://db:3306/AxonIvySystemDatabase" ...
 
@@ -25,7 +25,7 @@ Instead of using environment variables, you can simply provide an
 
 And let's run the container with this configuration
 
-.. code-block:: bash
+.. code:: bash
 
   docker run -v $(pwd)/ivy.yaml:/etc/axonivy-engine/ivy.yaml ... 
   
@@ -46,13 +46,13 @@ You can provide the license either by:
 
 * Packaging it as part of your docker image in the :file:`configuration` folder:
 
-  .. code-block:: dockerfile
+  .. code:: dockerfile
   
      ADD licence.lic /etc/axonivy-engine/licence.lic
 
 * Mapping it into the :file:`configuration` folder:
    
-  .. code-block:: bash
+  .. code:: bash
 
      docker run -v $(pwd)/licence.lic:/etc/axonivy-engine/licence.lic ... 
 
@@ -60,14 +60,14 @@ You can provide the license either by:
 
   Linux:
 
-  .. code-block:: bash
+  .. code:: bash
 
      export IVY_LICENCE=$(<licence.lic>)
      docker run -e IVY_LICENCE=$IVY_LICENCE ... 
 
   Windows Powershell:
 
-  .. code-block:: bash
+  .. code:: bash
 
      set IVY_LICENCE=[string](Get-Content -Path <licence.lic> -raw)
      docker run -e IVY_LICENCE=$IVY_LICENCE ... 

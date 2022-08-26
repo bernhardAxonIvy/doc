@@ -95,14 +95,14 @@ The :code:`GlobalVariables` in the :ref:`app-yaml` are renamed to
 
     Old :file:`app.yaml`:
     
-    .. code-block:: yaml
+    .. code:: yaml
     
       GlobalVariables:
         myVariable: value
 
     New :file:`app.yaml`:
 
-    .. code-block:: yaml
+    .. code:: yaml
 
       Variables:
         myVariable: value

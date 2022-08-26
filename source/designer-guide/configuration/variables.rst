@@ -83,7 +83,7 @@ can use it with the name of the Variable to get a convenient access to your
 defined Variables. In addition, this approach has the advantage that you have
 validation notifications when a Variable is removed by a developer. 
 
-.. code-block:: java
+.. code:: java
   
   ivy.var.myVariable;
 
@@ -93,6 +93,6 @@ This will deliver an :public-api:`interface
 :public-api:`Variable object </ch/ivyteam/ivy/vars/Variable.html>`. This
 contains additional metadata for that Variable.
 
-.. code-block:: java
+.. code:: java
 
   ivy.var.variable("myVariable").description();

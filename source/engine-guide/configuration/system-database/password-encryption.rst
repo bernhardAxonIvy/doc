@@ -15,7 +15,7 @@ is possible to provide your own secret key as follows:
 #. Create your own AES secret key and store it in a key store file by using the
    Java keytool:
 
-    .. code-block:: bash
+    .. code:: bash
 
         keytool -genseckey -alias aes -keyalg AES -keysize 128 -storepass changeit -storetype JCEKS -keystore keystore.jceks
 

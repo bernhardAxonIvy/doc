@@ -27,7 +27,7 @@ and the Axon Ivy Engine - to localhost. For example when using HTTP then you
 need to bind the HTTP connector to localhost (same for HTTPS). This ensures that
 the Axon Ivy Engine can only be accessed via localhost.
 
-.. code-block:: yaml
+.. code:: yaml
 
     # bind the HTTP connector to localhost exclusively
     Connector:

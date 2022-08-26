@@ -155,7 +155,7 @@ Affected elements are: :ref:`Program Start Event <process-element-program-start>
 
     Here are some valid examples:
 
-      .. code-block:: java
+      .. code:: java
 
         ui.label("seconds to wait").create()
         scriptEditor = ui.scriptField().requiredType(Integer.class).create();

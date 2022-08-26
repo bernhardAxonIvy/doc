@@ -17,14 +17,14 @@ Mount it on all cluster nodes.
 
 Configure the files directory in your :ref:`ivy.yaml <ivy-yaml>` file:
 
-.. code-block:: yaml
+.. code:: yaml
 
   Data.FilesDirectory: "/var/lib/axonivy-engine/files" 
 
 Create a Docker volume called ``ivy-files`` and mount it at ``/var/lib/axonivy-engine/files``
 in your Axon Ivy Engine Cluster node containers.
    
-.. code-block:: bash
+.. code:: bash
 
   > docker volume create ivy-files
   > docker run --mount source=ivy-files,target=/var/lib/axonivy-engine/files ... 

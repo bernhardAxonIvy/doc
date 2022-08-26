@@ -79,7 +79,7 @@ Example:
 
 Primefaces 7:
 
-  .. code-block:: xml
+  .. code:: xml
   
     <p:dataTable var="person" value="#{data.persons}" sortField="#{person.name}" sortOrder="ASCENDING" filteredBy="#{person.surname}">
       <p:column><h:outputText value="#{person.name}"/></p:column>
@@ -88,7 +88,7 @@ Primefaces 7:
 
 Primefaces 11:
 
-  .. code-block:: xml
+  .. code:: xml
     
     <p:dataTable var="person" value="#{data.persons}">
       <p:column field="#{person.name}" sortOrder="ASCENDING"><h:outputText value="#{person.name}"/></p:column>
@@ -137,13 +137,13 @@ Example:
 
 Font-Awasome 4.7
 
-  .. code-block :: xml
+  .. code:: xml
     
     <i class="fa fa-camera-retro"> 
 
 Font-Awesome 6.1
 
-  .. code-block :: xml
+  .. code:: xml
     
     <i class="fa-solid fa-camera-retro"> 
 

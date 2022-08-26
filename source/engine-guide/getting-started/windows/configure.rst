@@ -16,7 +16,7 @@ well-suited for scripting.
 
 * to stop an engine running as a console process, execute
 
-.. code:: 
+.. code:: bat
 
     AxonIvyEngine stop
 
@@ -27,7 +27,7 @@ If you started the engine already as a service, you can also stop it in the
 Install the license: Copy the license file (:file:`*.lic`) into the
 :file:`configuration` folder
 
-.. code:: 
+.. code:: bat
 
     copy licence.lic <engineroot>\configuration\
 
@@ -40,7 +40,7 @@ a new database and its structures (i.e. DDL permissions) on the database server.
 
 Now, let's configure the database connection and create the system database:
 
-.. code:: 
+.. code:: bat
 
     cd <engineroot>\bin\
     EngineConfigCli config-db org.postgresql.Driver jdbc:postgresql://<yourdatabaseserver>:5432/AxonIvySystemDatabase <dbuser> "<password>"
@@ -58,7 +58,7 @@ Replace <yourdatabaseserver> with the DNS name of the database server, <dbuser> 
 
 Now, start the Axon Ivy Engine again.
 
-.. code:: 
+.. code:: bat
 
     AxonIvyEngine start 
    
@@ -78,7 +78,7 @@ In Windows, you can register your Axon Ivy Engine as a service to execute it in 
 You can do this either graphically by using the Control Center, or in a scriptable way using the command line.
 Windows provides the service configuration utility sc.exe for this purpose.
 
-.. code:: 
+.. code:: bat
 
     sc create <instanceName> start= auto binpath= "<engineroot>\bin\AxonIvyEngineService.exe"
 

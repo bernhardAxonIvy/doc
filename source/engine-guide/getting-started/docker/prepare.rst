@@ -5,7 +5,7 @@ Download and install **docker** and **docker-compose** from https://www.docker.c
 
 To test your docker installation execute the following command in a terminal:
 
-.. code-block:: bash
+.. code:: bash
 
    docker run -p 8080:8080 axonivy/axonivy-engine:|version|
 

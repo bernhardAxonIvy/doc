@@ -176,7 +176,7 @@ that have been worked on the mobile app.
 
 Get latest position of a task:
 
-.. code-block::
+.. code:: java
 
    import ch.ivyteam.ivy.location.GeoPosition;
    
@@ -184,7 +184,7 @@ Get latest position of a task:
 
 Get latest position of a user:
 
-.. code-block::
+.. code:: java 
 
    import ch.ivyteam.ivy.location.GeoPosition;
    
@@ -192,7 +192,7 @@ Get latest position of a user:
 
 The location service can also be used to store additional locations:
 
-.. code-block::
+.. code:: java 
 
    import ch.ivyteam.ivy.location.GeoPosition;
    import ch.ivyteam.ivy.location.ILocation;

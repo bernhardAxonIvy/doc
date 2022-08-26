@@ -159,7 +159,7 @@ Now that most of the app configuration is defined in  YAML files, the
 
     The following options are deprecated and can be removed:
 
-    .. code-block:: yaml
+    .. code:: yaml
     
       configuration:
         overwrite: false               # [false], true
@@ -209,7 +209,7 @@ project because they no longer exist. We are currently building a public API for
 mail. It is already available but not officially public yet:
 
 
-.. code-block:: java
+.. code:: java
 
   import ch.ivyteam.ivy.mail.MailClient:
   import ch.ivyteam.ivy.mail.MailMessage;
@@ -271,7 +271,7 @@ We deprecated the :ref:`case_scope` project overrides in favor of :ref:`strict_o
     If your application uses Overrides. You should migrate to :ref:`strict_overriding`.
     Define the customization project in your :ref:`app.yaml <strict_overriding_config>`.
 
-    .. code-block:: yaml
+    .. code:: yaml
     
       OverrideProject: com.acme.solution:MyCustomerAdaption
 

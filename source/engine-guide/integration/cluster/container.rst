@@ -33,7 +33,7 @@ Then, you can start your Axon Ivy Engine Cluster using your new container image
 A simple Dockerfile that bundles the Axon Ivy Engine, your projects, and your
 configuration files in a container image looks as follows:
 
-.. code-block:: Dockerfile
+.. code:: Dockerfile
 
   # The base docker image 
   FROM axonivy/axonivy-engine:|version|

@@ -214,7 +214,7 @@ modified event object.
 In Java, the handling of system events generally results in code similar
 to the following:
 
-.. code-block:: java
+.. code:: java
 
    /** 
     * Registers this participant for workflow system events.

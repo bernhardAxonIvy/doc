@@ -117,7 +117,7 @@ Line 18:
 
 If you execute this test then you will face the following error:
 
-.. code-block:: none
+.. code:: none
 
   No mock installed for UserTask 'write invoice' [1720E35BB7789886-f2]
   

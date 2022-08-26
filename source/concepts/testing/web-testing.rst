@@ -66,7 +66,7 @@ Select
 To work with a **single element** you need to first select the correct one.
 Usually you use the ``By.id`` selector to do this:
 
-.. code-block:: java
+.. code:: java
 
   $(By.id("form:submit")); //Find element by id selector
 
@@ -78,7 +78,7 @@ Usually you use the ``By.id`` selector to do this:
   There are many more options to use selectors, e.g you can select multiple
   elements:
 
-  .. code-block:: java
+  .. code:: java
 
     $$(By.cssClass("ui-outputlabel")); //Find all <p:outputLabel> elements
   
@@ -91,7 +91,7 @@ Execute an Action
 
 On the selected element you can perform some actions:
 
-.. code-block:: java
+.. code:: java
 
   $(By.id("form:submit")).click();            //click on button
   $(By.id("form:lastname")).clear();          //clear input field
@@ -104,7 +104,7 @@ Check a Condition
 On your selected element you can check certain conditions (e.g is the element
 *visible* or contains a specific *value*):
 
-.. code-block:: java
+.. code:: java
 
   $(By.id("form:lastname")).shouldHave(value("Test")); //input field should have value "Test"
 
@@ -113,7 +113,7 @@ On your selected element you can check certain conditions (e.g is the element
   You can check multiple conditions on an item or check a condition before
   performing an action on the item by chaining the method calls:
 
-  .. code-block:: java
+  .. code:: java
 
     //button should be enabled before click on it
     $(By.id("form:submit")).shouldBe(enabled).click();
@@ -158,7 +158,7 @@ run. To do this, we need to first setup a Maven module build:
 
    - Your :link-url:`folder structure <build-examples>` should now look as follows:
 
-     .. code-block:: none
+     .. code:: none
 
         workspace/
           compile-test/
@@ -214,7 +214,7 @@ about the differences and benefits: `Selenide vs Selenium
 simply write your tests with the normal Selenium API by accessing the driver
 object:
 
-.. code-block:: java
+.. code:: java
 
   WebDriver driver = WebDriverRunner.getWebDriver();
 
@@ -228,7 +228,7 @@ With the :link-url:`web-tester <webtester>` project we provide the testing
 annotation ``@IvyWebTest``. This annotation sets up the browser connection for
 you. It can be configured with some parameters:
 
-.. code-block:: java
+.. code:: java
 
   //Default (same as simple @IvyWebTest)
   @IvyWebTest(browser = "firefox", headless = true, reportFolder = "target/selenide/reports")

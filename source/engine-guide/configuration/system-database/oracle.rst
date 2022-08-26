@@ -20,7 +20,7 @@ If database will be created by the Axon Ivy Engine the collate is set to ``Latin
   It may turn out that the number of open cursors is exceeded, which is
   indicated by an error message similar to the following:
 
-  .. code-block:: bash
+  .. code:: bash
   
     ch.ivyteam.ivy.persistence.PersistencyException: java.sql.SQLException: 
     ORA-00604: error occurred at recursive SQL level 1

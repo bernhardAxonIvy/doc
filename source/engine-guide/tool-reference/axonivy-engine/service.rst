@@ -16,25 +16,25 @@ command line tool must be *run as administrator*.
 
 .. rubric:: Register Axon Ivy Engine as Windows Service
 
-.. code-block:: powershell
+.. code:: powershell
 
    AxonIvyEngineService.exe -register [windowsServiceName] [username] [password]
 
 .. rubric:: Unregister Axon Ivy Engine as Windows Service
 
-.. code-block:: powershell
+.. code:: powershell
 
    AxonIvyEngineService.exe -unregister [windowsServiceName]
 
 .. rubric:: Start the Windows Service
 
-.. code-block:: powershell
+.. code:: powershell
 
    AxonIvyEngineService.exe -start [windowsServiceName]
 
 .. rubric:: Stop the Windows Service
 
-.. code-block:: powershell
+.. code:: powershell
 
    AxonIvyEngineService.exe -stop [windowsServiceName]
 
