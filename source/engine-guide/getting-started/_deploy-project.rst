@@ -24,12 +24,16 @@ As soon as the deployment is finished the zip file will be postfixed with
 
 .. Note::
 
-    An Axon Ivy Engine can run multiple applications at the same time. Each
-    application has its own user and task management. A user of one application
-    can only work in that application and not in another application. A task of
-    one application will never be visible in another application. Therefore,
-    applications can be used to build multitenancy or stages (DEV, Q&A, PROD)
-    without installing one Axon Ivy Engine per tenant and/or stage.
+    An Axon Ivy Engine can run multiple applications at the same time. 
+    
+    Security Systems manage their users, tasks and cases. One or more
+    applications can use a security system. Therefore, cases and tasks of all
+    applications in a security system are visible in all applications within
+    that security system.
+    
+    Therefore, you can use separate security systems to build multitenancy or
+    stages (DEV, Q&A, PROD) without installing one Axon Ivy Engine per tenant
+    and/or stage.
 
 Refresh the main page of the Axon Ivy Engine. You see a new application.
 Congratulations - you have installed and configured your first Axon Ivy Engine

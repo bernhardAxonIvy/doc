@@ -48,11 +48,21 @@ Now, let's create the system database with the :code:`create-db` command
     ./EngineConfigCli create-db
 
 .. Note::
+<<<<<<< HEAD
   The system database is used by Axon Ivy Engine to store configurations, users,
   roles, process instances, tasks and process data.
 
 Next, define an Axon Ivy Engine administrator by modifying :ref:`ivy-yaml` 
 in directory :file:`/etc/axonivy-engine-|majorVersion|` as detailed below:
+=======
+  The Axon Ivy Engine uses the system database to store **master data** like
+  users, user attributes, roles, etc. as well as **runtime data** like
+  applications, process models, process model versions, cases, tasks, and
+  **process data**.
+
+Next, define an Axon Ivy Engine administrator by modifying :ref:`ivy-yaml`
+in directory :file:`/etc/axonivy-engine-|majorVersion| ` as detailed below:
+>>>>>>> 1a336cfbc6 (XIVY-9206 updated text as requested by rwei)
 
 .. literalinclude:: ../linux/sample-ivy.yaml
   :language: yaml

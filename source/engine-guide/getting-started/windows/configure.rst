@@ -74,10 +74,14 @@ Press the :guilabel:`Finish` button.
 A dialog appears (you may see configuration warnings that should be resolved
 first) and you can click :guilabel:`OK` to go back to the *main page*. 
 
-.. figure:: /_images/engine-cockpit/engine-cockpit-dialog-setup-finish.png
+    AxonIvyEngineService -register [windowsServiceName] [username] [password]
 
-Switch back to the **Control Center** and restart the Axon Ivy Engine by
-stopping and starting it again. 
+replace [windowsServiceName] with the name you want to use for the service, e.g.
+ivy_prod. The user specified by [username] and [password] is used to run the
+service. 
+
+Refer to :ref:`Engine Service <engine-service>` for more details on running Axon
+Ivy as a service.
 
 Note, that the HTTP port of the Axon Ivy Engine may have changed. If you did
 change the HTTP settings. So open again a web browser and navigate to
