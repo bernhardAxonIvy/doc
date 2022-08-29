@@ -39,10 +39,10 @@ different types of tasks.
 
 .. Note::
   In Axon Ivy a task is a piece of work (a part of a process) assigned to a user
-  or a role. A user can work on the task if this task is assigned to him or he has
-  the role that the task is assigned to. When a user works on a task, the task
-  disappears from the task list of other users who would be able to work on
-  the task, too. Only one user can work on a task at a time.
-  In a process, it is possible to define parallel tasks. Therefore, it is
-  possible that two or more users work in parallel on different tasks of the
-  same process instance. In Axon Ivy, a process instance is called a **case**.
+  or a role. A user can work on the task if this task is assigned to him or if
+  he has the role that the task is assigned to. When a user works on a task, the
+  task disappears from the task list of other users who would be able to work on
+  the task, too. Only one user can work on a task at a time. In a process, it is
+  possible to define parallel tasks. Therefore, it is possible that two or more
+  users work in parallel on different tasks of the same process instance. In
+  Axon Ivy, a process instance is called a **case**.
