@@ -44,8 +44,8 @@ Now, let's create the system database with the :code:`create-db` command.
   applications, process models, process model versions, cases, tasks, and
   **process data**.
 
-Next, define an Axon Ivy Engine administrator by modifying :ref:`ivy-yaml`
-in directory :file:`/etc/axonivy-engine-|majorVersion| ` as detailed below:
+Next, define an Axon Ivy Engine administrator by modifying :ref:`ivy-yaml` 
+in directory :file:`/etc/axonivy-engine-|majorVersion|` as detailed below:
 
 .. literalinclude:: ../linux/sample-ivy.yaml
   :language: yaml
