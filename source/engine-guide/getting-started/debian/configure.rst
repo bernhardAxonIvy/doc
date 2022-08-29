@@ -10,14 +10,14 @@ Shutdown the Axon Ivy Engine first by stopping its service
 
 .. code:: bash
 
-    systemctl stop axonivy-engine-9.service
+    systemctl stop axonivy-engine-|majorVersion|.service
 
 Install the license: Copy the license file (:file:`*.lic`) into the
 :file:`configuration` folder
 
 .. code:: bash
 
-    cp ~/licence.lic /etc/axonivy-engine-9
+    cp ~/licence.lic /etc/axonivy-engine-|majorVersion|
 
 To configure the system database, use the :code:`config-db` command of the
 **EngineConfigCli** tool. Replace **yourdatabaseserver** with the hostname of
@@ -27,7 +27,7 @@ database and its structures (i.e. DDL permissions) on the database server.
 
 .. code:: bash
 
-    cd /usr/lib/axonivy-engine-9/bin
+    cd /usr/lib/axonivy-engine-|majorVersion|/bin
     ./EngineConfigCli config-db org.postgresql.Driver \
     jdbc:postgresql://yourdatabaseserver:5432/AxonIvySystemDatabase \
     dbuser password
@@ -39,13 +39,13 @@ Now, let's create the system database with the :code:`create-db` command.
     ./EngineConfigCli create-db
 
 .. Note::
-  The Axon Ivy Engine uses the system database to **store master data** like
+  The Axon Ivy Engine uses the system database to store **master data** like
   users, user attributes, roles, etc. as well as **runtime data** like
   applications, process models, process model versions, cases, tasks, and
   **process data**.
 
-Next, define an Axon Ivy Engine administrator by modifying :ref:`ivy-yaml`
-in directory :file:`/etc/axonivy-engine-9` as detailed below:
+Next, define an Axon Ivy Engine administrator by modifying :ref:`ivy-yaml` 
+in directory :file:`/etc/axonivy-engine-|majorVersion|` as detailed below:
 
 .. literalinclude:: ../linux/sample-ivy.yaml
   :language: yaml
@@ -63,7 +63,7 @@ Now, start the Axon Ivy Engine again
 
 .. code:: bash
 
-    systemctl start axonivy-engine-9.service
+    systemctl start axonivy-engine-|majorVersion|.service
 
 .. Note:: 
   If you have changed the HTTP Settings, the HTTP port of the Axon Ivy Engine may have changed! 

@@ -80,11 +80,14 @@ Windows provides the service configuration utility sc.exe for this purpose.
 
 .. code:: bat
 
-    sc create <instanceName> start= auto binpath= "<engineroot>\bin\AxonIvyEngineService.exe"
+    AxonIvyEngineService -register [windowsServiceName] [username] [password]
 
-replace <instancename> with the name you want to use for the service, e.g.
-ivy_prod, and <engineroot> with the path to the Axon Ivy Engine installation
-root directory.
+replace [windowsServiceName] with the name you want to use for the service, e.g.
+ivy_prod. The user specified by [username] and [password] is used to run the
+service. 
+
+Refer to :ref:`Engine Service <engine-service>` for more details on running Axon
+Ivy as a service.
 
 .. hint:: 
   You can add dependencies to this service for instance to wait for a DBMS or an

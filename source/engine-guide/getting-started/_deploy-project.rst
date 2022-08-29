@@ -32,15 +32,16 @@ In case of an error, the postfix :file:`.notDeployed` is added, e.g. :file:`demo
 
 .. Note::
 
-    An Axon Ivy Engine can run multiple applications at the same time. Each
-    application manages its tasks. A task of one application will never be
-    visible in another application. 
+    An Axon Ivy Engine can run multiple applications at the same time. 
     
-    Security Systems manage their users. One or more applications can use a
-    security system. 
+    Security Systems manage their users, tasks and cases. One or more
+    applications can use a security system. Therefore, cases and tasks of all
+    applications in a security system are visible in all applications within
+    that security system.
     
-    Therefore, you can use applications to build multitenancy or stages (DEV,
-    Q&A, PROD) without installing one Axon Ivy Engine per tenant and/or stage.
+    Therefore, you can use separate security systems to build multitenancy or
+    stages (DEV, Q&A, PROD) without installing one Axon Ivy Engine per tenant
+    and/or stage.
 
 Refresh the main page of the Axon Ivy Engine. You see a new application.
 Congratulations - you have installed and configured your first Axon Ivy Engine

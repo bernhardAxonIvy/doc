@@ -102,7 +102,9 @@ Public URLs are the links that end users will use to access your Axon Ivy Engine
   Note: Access via ``localhost``, ``127.0.0.1`` and ``::1`` is always possible
   and is not included in the license.
 
-  For clusters, the Public URLs of each node should be included in the license
-  to allow administrative access to each node separately.
+  For clusters, the Public URL of the load balancer in front of the cluster has
+  to be in the license. If you need to access the cluster nodes separately
+  (internally), have their IP addresses or DNS names added to the cluster
+  license.
 
 
