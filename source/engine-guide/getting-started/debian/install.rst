@@ -14,9 +14,9 @@ the following bash script to download and install it:
 .. Note::
   The most important folders of the Axon Ivy Engine are:
 
-  * :file:`/usr/lib/axonivy-engine-*/` is the root installation folder with
+  * :file:`/usr/lib/axonivy-engine-|major-version|/` is the root installation folder with
     symlinks to all locations which are relevant to the engine.
-  * :file:`/etc/axonivy-engine-*/` contains the configuration
+  * :file:`/etc/axonivy-engine-|major-version|/` contains the configuration
     files.
-  * :file:`/var/lib/axonivy-engine-*/deploy` used to deploy
+  * :file:`/var/lib/axonivy-engine-|major-version|/deploy` used to deploy
     Axon Ivy projects.
