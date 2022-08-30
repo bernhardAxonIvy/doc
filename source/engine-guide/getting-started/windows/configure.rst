@@ -1,78 +1,84 @@
 Configure the Engine
 --------------------
 
-Now, let's configure the Axon Ivy Engine with a license and system database. 
+.. include:: ../_prepare-configuration.rst
 
-To start with that you must first request a valid Axon Ivy Engine license.
-Either you get a license for your productive system through one of our sales
-personal or contact our support for time limited trial licenses. If you do not
-have a license you can skip this section and continue with the next section.
 
-Moreover, you need to have a supported database server up and running with a
-database user that has the rights to create new databases. The configuration and
-creation of the system database differs a little bit depending on the database
-system you use. We will use a PostgreSQL database server.
+Manual Setup
+^^^^^^^^^^^^
 
-You can start the :ref:`setup-wizard` on the main page of the Axon Ivy Engine
-(e.g. http://localhost:8080) by clicking on the link of the demo mode
-warning message.
+Shutdown the Axon Ivy Engine first by stopping it. Use **ControlCenter.exe** or
+**ControlCenterC.exe**. 
 
-On the first page use the :guilabel:`Choose license` button to install your
-license file or drop it inside the field.
+Alternatively, you can use one of the engine executables with command line
+parameters as detailed in :ref:`Engine Launchers <engine-launchers>`. These are
+well-suited for scripting.
 
-.. figure:: /_images/engine-cockpit/engine-cockpit-setup-licence.png
+* to stop an engine running as a console process, execute
 
-Your installed license can be viewed if you click on the link at the top right.
-Press the :guilabel:`Next` button to continue.
+.. code:: 
 
-On the next page, you can configure system administrators. 
+    AxonIvyEngine stop
 
-.. figure:: /_images/engine-cockpit/engine-cockpit-dialog-new-admin.png
 
-Click :guilabel:`Add Administrator`, fill in the form and press the
-:guilabel:`Add Administrator` button. 
+If you started the engine already as a service, you can also stop it in the
+**services.msc** console.
+
+Install the license: Copy the license file (:file:`*.lic`) into the
+:file:`configuration` folder
+
+.. code:: 
+
+    copy licence.lic <engineroot>\configuration\
+
+
+To configure the system database, use the:code:`config-db` command of the
+**EngineConfigCli** tool. Replace **yourdatabaseserver** with the hostname of
+the server running your DBMS system. Replace **dbuser** and **password** with
+the credentials of a technical database user with the permissions to create 
+a new database and its structures (i.e. DDL permissions) on the database server.
+
+Now, let's configure the database connection and create the system database:
+
+.. code:: 
+
+    cd <engineroot>\bin\
+    EngineConfigCli config-db org.postgresql.Driver jdbc:postgresql://<yourdatabaseserver>:5432/AxonIvySystemDatabase <dbuser> "<password>"
+    EngineConfigCli create-db
+
+Replace <yourdatabaseserver> with the DNS name of the database server, <dbuser> with the username and <password> with the password of the technical user.
 
 .. Note::
-  Administrators can administrate the Axon Ivy Engine. For example, they can add
-  or remove users, assign user to roles, deploy projects, etc. Therefore, you
-  need at least one administrator to administrate the Axon Ivy Engine. The Email
-  addresses of administrators are used to send mail notifications if license
-  problems occur.
-
-On the next page configure which protocol connectors and ports the Axon Ivy
-Engine internal web server should provide. 
-
-.. figure:: /_images/engine-cockpit/engine-cockpit-setup-webserver.png
+  Administrators manage the Axon Ivy Engine. For example, they add or remove
+  users, assign users to roles, enable, disable and deploy applications, etc. You need at
+  least one administrator to manage the Axon Ivy Engine. In case of license
+  problems, the Axon Ivy Engine sends mail notifications to the administrators.
 
 .. include:: ../_webserver.rst
 
-Press the :guilabel:`Next` button.
+Now, start the Axon Ivy Engine again.
 
-On the next screen choose the correct **Database** and **Driver** (in our case
-PostgreSQL). Configure the **Host** and **Port** where your database server is
-running and listening. Configure the **Username** and **Password** of a database
-user that has the right to create a new database on the database server. Press
-the :guilabel:`Create Database` button.
+.. code:: 
 
-.. figure:: /_images/engine-cockpit/engine-cockpit-setup-systemdb.png
+    AxonIvyEngine start 
+   
 
-On the appearing dialog configure the name of the Axon Ivy system database.
-Press the :guilabel:`Save and create` button to save and create the system
-database.
+.. Note:: 
+  If you have changed the HTTP Settings, the HTTP port of the Axon Ivy Engine may have changed! 
 
-.. figure:: /_images/engine-cockpit/engine-cockpit-dialog-setup-systemdb-create.png
+Open a web browser and navigate to http://<yourservername>:<yourportnumber>/. As
+you see, the header with the demo mode message is gone. You now have a
+production-ready Axon Ivy Engine.
 
-As soon as the database creation is finished you can click on the
-:guilabel:`Connect` button to connect to the new system database. 
 
-.. Note::
-  The system database is used by the Axon Ivy Engine to store configurations,
-  users, roles, process instances, tasks and process data
+Register the Axon Ivy Engine as a Windows Service
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Press the :guilabel:`Finish` button.
+In Windows, you can register your Axon Ivy Engine as a service to execute it in the background.
+You can do this either graphically by using the Control Center, or in a scriptable way using the command line.
+Windows provides the service configuration utility sc.exe for this purpose.
 
-A dialog appears (you may see configuration warnings that should be resolved
-first) and you can click :guilabel:`OK` to go back to the *main page*. 
+.. code:: 
 
     AxonIvyEngineService -register [windowsServiceName] [username] [password]
 
@@ -83,7 +89,7 @@ service.
 Refer to :ref:`Engine Service <engine-service>` for more details on running Axon
 Ivy as a service.
 
-Note, that the HTTP port of the Axon Ivy Engine may have changed. If you did
-change the HTTP settings. So open again a web browser and navigate to
-http://localhost:8080. Have you seen that the header with the :ref:`demo-mode`
-message is gone? You now have a production ready Axon Ivy Engine.
+.. hint:: 
+  You can add dependencies to this service for instance to wait for a DBMS or an
+  external ElasticSearch to start before Windows starts the Axon Ivy Engine. Please
+  consult the Windows documentation for further details.

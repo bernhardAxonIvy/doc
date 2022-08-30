@@ -1,26 +1,34 @@
-Deploy an Axon Ivy project
-------------------------------
+Deploy an Axon Ivy Project
+--------------------------
 
-Let's deploy an Axon Ivy project to the Axon Ivy Engine. First, navigate to the 
-:file:`deploy` directory and download the demo application.
+.. hint:: In this chapter, we use just one of the deployment methods available. 
+    For details, refer to :ref:`Chapter Deployment <deployment>`.
+
+Let's deploy an Axon Ivy project to the Axon Ivy Engine. 
+
+
+First, navigate to the :file:`deploy` directory and download the demo
+application to that directory.
 
 .. code:: bash
 
-    cd /var/lib/axonivy-engine-9/deploy
-    sudo -u ivy wget https://developer.axonivy.com/permalink/lib/9/demos.zip
+    cd /var/lib/axonivy-engine-|majorVersion|/deploy
+    sudo -u ivy wget https://developer.axonivy.com/permalink/lib/|majorVersion|/demos.zip
 
 .. Note::
 
-    Here we deploy a new application by dropping a ZIP into it. However, it is
-    also possible to deploy single packed projects (IAR) or unpacked projects.
+    Here we deploy a new application by dropping a ZIP into the deploy folder. However, it is
+    also possible to deploy packed projects (i.e. ``.iar`` archives) or unpacked projects.
 
-You can monitor the deployment with::
+You can monitor the deployment with:
+
+.. code:: bash
 
     tail -f demos.zip.deploymentLog
 
-As soon as the deployment is finished the zip file will be postfixed with
-:file:`.deployed`. In case of an error the postfix is :file:`.notDeployed`. E.g.
-:file:`demos.zip.deployed`.
+As soon as the deployment has finished successfully, the zip file is postfixed with
+:file:`.deployed`, e.g. :file:`demos.zip.deployed`. 
+In case of an error, the postfix :file:`.notDeployed` is added, e.g. :file:`demos.zip.notDeployed`.
 
 .. Note::
 

@@ -1,17 +1,10 @@
 Configure the Engine
 --------------------
 
-Now, let's configure the Axon Ivy Engine with a license and a system database. 
+.. include:: ../_prepare-configuration.rst
 
-First, request a valid Axon Ivy Engine license. Either you get a license for your
-productive system through one of our sales representatives or contact our support for
-a time limited trial license. If you do not have a license you can skip this
-section and continue with the next section.
-
-You need to have a supported database server up and running with a database user
-that has the rights to create new databases. The configuration and creation of
-the system database differs a little bit depending on the database system you
-use. We will use a PostgreSQL database server.
+Manual Setup
+^^^^^^^^^^^^
 
 Shutdown the Axon Ivy Engine first by typing **shutdown** and **Y**::
 
@@ -19,24 +12,28 @@ Shutdown the Axon Ivy Engine first by typing **shutdown** and **Y**::
     Go to http://ivy1:8080/ to see the info page of Axon Ivy Engine.
     Axon Ivy Engine is running and ready to serve. [11596ms]
     Type 'shutdown' and confirm with ENTER to stop the running engine instance
+    ...
+    
     shutdown
+    
+    ...
     Should 'Axon Ivy Engine' be stopped? ([Y]es / [N]o): Y
     Stopping Axon Ivy Engine ...
     [  0%] Stopping Server
     ...
 
-Let's install the license. You can do this by simply copying the license
-:file:`*.lic` file into the :file:`configuration` folder
+Let's install the license. Copy the license file :file:`*.lic` into folder
+:file:`configuration`.
 
 .. code:: bash
 
     cp ~/licence.lic /opt/ivy/engine/latest/configuration
 
 To configure the system database, use the :code:`config-db` command of the
-**EngineConfigCli** tool. Replace **yourdatabaseserver** with the name of the
-host which runs your PostgreSQL server. Replace **dbuser** and **password** with
-the credentials of a database user that has the rights to create a new database
-on the database server.
+**EngineConfigCli** tool. Replace **yourdatabaseserver** with the hostname of
+the server running your DBMS system. Replace **dbuser** and **password** with
+the credentials of a database user with the permissions to create a new
+database and its structures (i.e. DDL permissions) on the database server.
 
 .. code:: bash
 
@@ -44,47 +41,41 @@ on the database server.
     jdbc:postgresql://yourdatabaseserver:5432/AxonIvySystemDatabase \
     dbuser password
 
-Now, let's create the system database with the :code:`create-db` command:
+Now, let's create the system database with the :code:`create-db` command.
 
 .. code:: bash
 
     ./EngineConfigCli create-db
 
 .. Note::
-<<<<<<< HEAD
-    The system database is used by Axon Ivy Engine to store configurations,
-    users, roles, process instances, tasks and process data.
-
-Next, define an Axon Ivy Engine administrator by modifying :ref:`ivy-yaml` 
-in directory :file:`/etc/axonivy-engine-|majorVersion|` as detailed below:
-=======
   The Axon Ivy Engine uses the system database to store **master data** like
   users, user attributes, roles, etc. as well as **runtime data** like
   applications, process models, process model versions, cases, tasks, and
   **process data**.
 
-Next, define an Axon Ivy Engine administrator by modifying :ref:`ivy-yaml`
-in directory :file:`/etc/axonivy-engine-|majorVersion| ` as detailed below:
->>>>>>> 1a336cfbc6 (XIVY-9206 updated text as requested by rwei)
+Next, define an Axon Ivy Engine administrator by modifying :ref:`ivy-yaml` 
+in directory :file:`/etc/axonivy-engine-|majorVersion|` as detailed below:
 
 .. literalinclude:: sample-ivy.yaml
   :language: yaml
   :linenos:
 
-.. Note::
-    Administrators can administer the Axon Ivy Engine. For example, they can
-    add or remove users, assign user to roles, enable or disable applications,
-    etc. Therefore, you need at least one administrator so that you can later
-    administer the Axon Ivy Engine. If license problems occur, these are mailed 
-    to all administrators.
+.. Note::  
+  Administrators manage the Axon Ivy Engine. For example, they add or remove
+  users, assign users to roles, enable, disable and deploy applications, etc. You need at
+  least one administrator to manage the Axon Ivy Engine. In case of license
+  problems, the Axon Ivy Engine sends mail notifications to the administrators.
 
 .. include:: ../_webserver.rst
 
-Now, start the Axon Ivy Engine again as a background process.::
-    
+Now, start the Axon Ivy Engine again as a background process.
+.. code:: bash
+
     nohup ./AxonIvyEngine &
 
-The HTTP port of the Axon Ivy Engine may have changed if you did change the HTTP
-settings! So open again a web browser and navigate to
-http://yourservername:yourportnumber/. Note that the header with the demo mode
-message is gone. You now have a production ready Axon Ivy Engine.
+.. Note:: 
+  If you have changed the HTTP Settings, the HTTP port of the Axon Ivy Engine may have changed! 
+
+Open a web browser and navigate to http://yourservername:yourportnumber/. As you
+see, the header with the demo mode message is gone. You now have a
+production-ready Axon Ivy Engine.

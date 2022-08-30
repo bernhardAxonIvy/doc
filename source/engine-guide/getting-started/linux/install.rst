@@ -14,10 +14,10 @@ user.
 Replace **myuser** with the name of your current user.
 
 .. Tip::
-    Instead of using your current user we suggest that on a productive system
-    you use a special user called **ivy**. First, create a new user and group
-    called ivy. Then, change the owner of the folder :file:`ivy` to the user
-    **ivy**. After that, login as user **ivy** and work with the new user.
+    Instead of using your current user, we suggest to use a special Linux user called
+    **ivy**. First, create a new user and a group called ivy. Then, change the
+    owner of the folder :file:`ivy` to the user **ivy**. After that, login as
+    user **ivy** and work with this new user.
 
     .. code:: bash
 
@@ -43,7 +43,7 @@ Download the latest engine:
 
 .. include:: ../_packages.rst
 
-To install Axon Ivy Engine simply unzip the downloaded file
+To install Axon Ivy Engine, unzip the downloaded file
 :file:`AxonIvyEngine*.zip` into a new :file:`AxonIvyEngine*` folder
 
 .. code:: bash
