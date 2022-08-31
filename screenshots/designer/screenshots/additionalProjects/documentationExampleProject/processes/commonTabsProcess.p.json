@@ -1,5 +1,5 @@
 {
-  "format" : "9.4.19",
+  "format" : "9.4.20",
   "id" : "168F0C6DF682858E",
   "data" : "ch.ivyteam.documentation.project.AddContactData",
   "elements" : [ {
@@ -47,7 +47,7 @@
       },
       "visual" : {
         "at" : { "x" : 224, "y" : 64 },
-        "size" : { "width" : 192, "height" : 44 },
+        "size" : { "width" : 192, "height" : 60 },
         "description" : [
           "Checks if user id `userid` exists:",
           "- If `true` then the user id is transformed into user name, user address and user location.",

@@ -178,6 +178,16 @@ In most cases the 'call' aspect implementation can be replaced with a normal
 to a :ref:`process-element-wait-program-intermediate-event` element 
 that implements the 'wait' aspect.
 
+TLS 1.0 and TLS 1.1 disabled
+****************************
+
+|tag-ops-changed|
+
+We disabled TLS 1.0 and 1.1 by default because they are out-dated and should no longer be used.
+This can break communication links with legacy databases or other external services that still use the old TLS protocol.
+Have a look at our `community blog post <https://community.axonivy.com/d/140-tls-10-and-tls-11-disabled-by-default-with-java-11011>`_
+if you experience such problems to find out how to enable those protocols again.
+
 ------------
 
 .. include:: _tagLegend.rst    

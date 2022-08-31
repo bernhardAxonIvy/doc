@@ -1,5 +1,5 @@
 {
-  "format" : "9.4.19",
+  "format" : "9.4.20",
   "id" : "16BBC1007C5F8F69",
   "data" : "screenshot.project.Data",
   "elements" : [ {
@@ -11,7 +11,7 @@
       },
       "visual" : {
         "at" : { "x" : 80, "y" : 72 },
-        "labelOffset" : { "x" : -55, "y" : 23 }
+        "labelOffset" : { "x" : 27, "y" : 43 }
       }
     }, {
       "id" : "f0",
@@ -42,7 +42,7 @@
       },
       "visual" : {
         "at" : { "x" : 160, "y" : 208 },
-        "labelOffset" : { "x" : -73, "y" : 23 }
+        "labelOffset" : { "x" : 31, "y" : 43 }
       }
     } ]
 }

@@ -27,7 +27,7 @@ How to avoid migration pain
 Project Converter |tag-project-auto-convert|
 --------------------------------------------
 
-To mitigate the migration pain, we have build a :ref:`project converter <project-convert-wizard>` 
+To mitigate the migration pain, we have built a :ref:`project converter <project-convert-wizard>` 
 that fixes the most important of the breaking changes.
 
 To start the :ref:`converter <project-convert-wizard>` select a project in your Designer and press the context menu *Convert*. 
@@ -95,6 +95,36 @@ Primefaces 11:
       <p:column sortBy="#{person.surname}" filterBy="#{person.surname}"><h:outputText value="#{person.surname}"/></p:column>
     </p:dataTable>
     
+In rare situations, it is not possible to set the filter and sort attributes on the ``p:column`` component. 
+In this case you can use the attributes ``sortBy`` and ``filterBy`` on the ``p:dataTable`` component. 
+However, these attributes need to be bound to objects of type ``SortMeta`` and ``FilterMeta``. 
+The following example shows how to use them:
+
+  .. code-block:: xml
+  
+    <p:dataTable sortBy="#{bean.sortById}" id="table" value="#{bean.dataModel}" var="table" >
+
+    ...
+  
+    <p:dataTable />       
+    
+  .. code-block:: java
+  
+    @ManagedBean
+    @ViewScoped
+    public class Bean {
+      private SortMeta buildSortMeta(String field, boolean isSortDescending) {
+        return SortMeta.builder()
+          .field(field)
+          .order(isSortDescending ? SortOrder.DESCENDING : SortOrder.ASCENDING)
+          .build();
+      }
+  
+      public SortMeta getSortById() {
+        return buildSortMeta("ID", false);
+      }
+    }
+      
 Similar for ``p:treeTable``.
 
 Attribute columns of p:panelGrid
@@ -107,7 +137,7 @@ Component Carousel and Galeria
 
 See `Primefaces 11 Migration Notes - Carousel and Galeria <https://primefaces.github.io/primefaces/10_0_0/#/../migrationguide/11_0_0?id=carousel-and-galleria>`_
 
-Most of the attributes were removed or renamed. 
+Most of the attributes have been removed or renamed. 
 See `Carousel <https://primefaces.github.io/primefaces/10_0_0/#/components/carousel?id=carousel>`_ or
 `Galeria <https://primefaces.github.io/primefaces/10_0_0/#/components/galleria?id=galleria>`_ documentation for details.
 
@@ -126,8 +156,8 @@ Components have different CSS classes
 Some components have new CSS classes. 
 You may need to adjust your CSS rules and :ref:`WebTests <web-testing>` if they select a component by its CSS classes.
 
-Font-Awesome updated to 6.1.0
-"""""""""""""""""""""""""""""
+Font-Awesome upgraded to 6.1.0
+""""""""""""""""""""""""""""""
 
 See `Fontawesome 4 Migration Notes <https://fontawesome.com/docs/web/setup/upgrade/upgrade-from-v4>`_
 
@@ -153,7 +183,7 @@ JQuery icons removed
 """"""""""""""""""""
 
 The JQuery icons (CSS classes ``ui-icon-*``) are no longer supported. 
-Instead use icons of the supported icon libraries:
+Instead, use icons of the supported icon libraries:
 
 * `Primefaces Icon library <https://www.primefaces.org/showcase/icons.xhtml>`_
 * `Fontawesome <https://fontawesome.com/>`_
@@ -168,6 +198,6 @@ You may need to adjust the timeout settings of your :ref:`WebTests <web-testing>
 ChartJS library upgraded
 """"""""""""""""""""""""
 
-The integrated ChartJS library was updated. 
-If you have used additional ChartJS plugins you may need to update them as well.
+The integrated ChartJS library has been upgraded. 
+If you have used additional ChartJS plugins you may need to upgrade them as well.
   

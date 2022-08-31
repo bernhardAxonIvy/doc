@@ -1,5 +1,5 @@
 {
-  "format" : "9.4.19",
+  "format" : "9.4.20",
   "id" : "16C70B87DCB65433",
   "data" : "screenshot.project.Invoice",
   "elements" : [ {
@@ -25,7 +25,7 @@
       },
       "visual" : {
         "at" : { "x" : 192, "y" : 64 },
-        "labelOffset" : { "x" : -33, "y" : 16 }
+        "labelOffset" : { "x" : 17, "y" : 36 }
       },
       "connect" : { "id" : "f9", "to" : "f8" }
     }, {
@@ -58,7 +58,7 @@
       "name" : "server not reachable",
       "visual" : {
         "at" : { "x" : 64, "y" : 320 },
-        "labelOffset" : { "x" : -49, "y" : 17 }
+        "labelOffset" : { "x" : 24, "y" : 37 }
       }
     }, {
       "id" : "f1",
@@ -73,7 +73,7 @@
       },
       "visual" : {
         "at" : { "x" : 64, "y" : 192 },
-        "labelOffset" : { "x" : -32, "y" : 18 },
+        "labelOffset" : { "x" : 9, "y" : 38 },
         "description" : "file driven start to apply ERP updates"
       },
       "connect" : { "id" : "f6", "to" : "f7" }
@@ -110,7 +110,7 @@
       },
       "visual" : {
         "at" : { "x" : 192, "y" : 256 },
-        "labelOffset" : { "x" : -27, "y" : 18 }
+        "labelOffset" : { "x" : 9, "y" : 38 }
       },
       "connect" : { "id" : "f14", "to" : "f13" }
     }, {
@@ -123,7 +123,7 @@
       },
       "visual" : {
         "at" : { "x" : 64, "y" : 256 },
-        "labelOffset" : { "x" : -29, "y" : 17 }
+        "labelOffset" : { "x" : 16, "y" : 37 }
       },
       "connect" : { "id" : "f15", "to" : "f11" }
     }, {

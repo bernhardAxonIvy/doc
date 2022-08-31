@@ -1,5 +1,5 @@
 {
-  "format" : "9.4.19",
+  "format" : "9.4.20",
   "id" : "180D20366E0D3C6D",
   "data" : "screenshot.project.Mailer",
   "elements" : [ {
@@ -50,7 +50,7 @@
         "contentType" : "text/html",
         "attachments" : [
           "in.documents",
-          "ivy.cm.find(\"/images/404\")"
+          "ivy.cm.findObject(\"/images/404\")"
         ]
       },
       "visual" : {

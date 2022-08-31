@@ -1,5 +1,5 @@
 {
-  "format" : "9.4.19",
+  "format" : "9.4.20",
   "id" : "16A7DD0A1D330578",
   "data" : "screenshot.project.subProcessData",
   "kind" : "CALLABLE_SUB",
@@ -35,7 +35,7 @@
       },
       "visual" : {
         "at" : { "x" : 96, "y" : 64 },
-        "labelOffset" : { "x" : 0, "y" : 15 }
+        "labelOffset" : { "x" : 59, "y" : 35 }
       },
       "connect" : { "id" : "f2", "to" : "f1" }
     }, {
