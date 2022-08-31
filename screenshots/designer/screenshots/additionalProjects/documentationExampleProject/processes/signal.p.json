@@ -1,5 +1,5 @@
 {
-  "format" : "9.4.19",
+  "format" : "9.4.20",
   "id" : "1675F79D89ABB65A",
   "data" : "screenshot.project.Data",
   "elements" : [ {
@@ -113,7 +113,7 @@
       },
       "visual" : {
         "at" : { "x" : 96, "y" : 152 },
-        "labelOffset" : { "x" : -32, "y" : 17 },
+        "labelOffset" : { "x" : 17, "y" : 37 },
         "description" : [
           "description should not be touched as it is a raw text field",
           "param.in.city",
