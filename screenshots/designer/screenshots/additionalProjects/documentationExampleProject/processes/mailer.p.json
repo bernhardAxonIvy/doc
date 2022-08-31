@@ -50,7 +50,7 @@
         "contentType" : "text/html",
         "attachments" : [
           "in.documents",
-          "ivy.cm.find(\"/images/404\")"
+          "ivy.cm.findObject(\"/images/404\")"
         ]
       },
       "visual" : {
