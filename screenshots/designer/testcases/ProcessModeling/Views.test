@@ -84,8 +84,10 @@ proc jsonInscription{
 	
 	get-view "JSON Inscription" | click
 	with [find-tab-folder "JSON Inscription"]{
+		maximize
 		resizeWindow 500 400
 		get-object | captureScreenshot "process-modeling/json-inscription-view.png"
+		restore
 	}
 }
 
