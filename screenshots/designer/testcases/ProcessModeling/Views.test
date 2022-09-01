@@ -7,7 +7,7 @@ Element-Version: 3.0
 External-Reference: 
 Id: _Hh07QF_PEeaAcqEsdR5JMw
 Runtime-Version: 2.5.3.202205021448
-Save-Time: 9/1/22, 3:08 PM
+Save-Time: 9/1/22, 3:41 PM
 Testcase-Type: ecl
 
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
@@ -74,6 +74,20 @@ proc referenceView{
 	}
 }
 
+proc jsonInscription{
+	OpenView "JSON Inscription"
+	
+	openInscription -processName "JaxRsServiceCall" 
+		-elementName "Call twitter" 
+		-elementType "Rest Service Call Activity"
+	get-window "Inscribe Rest Service Call Activity" | get-button Cancel | click -metaKeys ""
+	
+	get-view "JSON Inscription" | click
+	with [find-tab-folder "JSON Inscription"]{
+		resizeWindow 500 400
+		get-object | captureScreenshot "process-modeling/json-inscription-view.png"
+	}
+}
 
 try{
 	importProject -projectName QuickStartTutorial
@@ -83,6 +97,7 @@ try{
 	
 	importProject -projectName documentationExampleProject
 	referenceView
+	jsonInscription
 } -finally {
 	deleteProject QuickStartTutorial
 }
