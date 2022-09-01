@@ -17,5 +17,6 @@ as the functionality of the :ref:`process-editor` and the different kinds of pro
   process-editor
   swimlanes
   process-outline-view
+  process-inscription-view
   problems-view
   reference-view
