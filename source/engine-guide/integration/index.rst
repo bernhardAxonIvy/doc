@@ -39,6 +39,7 @@ have to be installed and integrated additionally.
     :maxdepth: 1
     :hidden:
 
+    identity-provider/index
     reverse-proxy/index
     single-sign-on/index
     cluster/index

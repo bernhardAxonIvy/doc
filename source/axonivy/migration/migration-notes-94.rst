@@ -96,11 +96,11 @@ Language
 |tag-ops-wizard|
 
 New there is global language concept. The content language as well as the formatting language can be
-defined per security system in :ref:`ivy-securitysystem-yaml`, which are considered as default
+defined per security system in :ref:`ivy-yaml`, which are considered as default
 languages. Users can overwrite these two language settings in their user profiles.
 
 The existing :code:`EMailNotification.Language` is automatically migrated to :code:`Language.Content`
-in :ref:`ivy-securitysystem-yaml`.
+in :ref:`ivy-yaml`.
 
 Read more here: :ref:`configuration-language` and :ref:`cms-content-resolution`.
 
