@@ -63,8 +63,19 @@ links in :ref:`task mails <email-notifications>`).
       BaseUrl: https://acme.com
 
 
+.. rubric:: Host Header
+
+To successfully integrate a reverse proxy with the |ivy-engine| you need to pass the host
+which the client itself initally has requested, so that the |ivy-engine| can
+generate correct URLs based on the request. All documented examples
+preserving this host header, but if you integrate the |ivy-engine| with any other
+reverse proxy you need to pass the host header to the |ivy-engine|.
+
+
 .. toctree::
     :maxdepth: 1
     :hidden:
 
     secure-setup/index
+
+
