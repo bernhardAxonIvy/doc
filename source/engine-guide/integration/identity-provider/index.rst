@@ -19,6 +19,8 @@ to automatically create, maintain, and deactivate your workflow users.
 If an IDP supports daily user synchronization (which all standard
 IDPs do), you can make the following settings for all of your IDPs:
 
+.. _ivy-identity-provider-yaml:
+
 .. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.security/src/ch/ivyteam/ivy/security/identity/core/identity-provider-reference.yaml
   :language: yaml
   :linenos:

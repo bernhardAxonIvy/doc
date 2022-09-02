@@ -105,6 +105,15 @@ in :ref:`ivy-yaml`.
 Read more here: :ref:`configuration-language` and :ref:`cms-content-resolution`.
 
 
+Role mapping moved to :ref:`ivy.yaml <ivy-identity-provider-yaml>`
+******************************************************************
+
+|tag-ops-wizard|
+
+The external name of a role that can be set in the :ref:`Engine Cockpit <engine-cockpit-role-detail>` is no longer stored in the System Database.
+It has been moved from :code:`IWA_Role.ExternalSecurityName` to :ref:`ivy.yaml <ivy-identity-provider-yaml>`.
+This change allows you to easily automate the role mapping configuration, which is now located in :ref:`ivy.yaml <ivy-identity-provider-yaml>`.
+
 
 Elasticsearch 7.17
 ******************
