@@ -8,7 +8,6 @@ File Reference
 
    files/ivy-yaml
    files/ivy-webserver-yaml
-   files/ivy-securitysystem-yaml
    files/app-yaml
    files/app-businesscalendar-yaml
    files/jvm-options

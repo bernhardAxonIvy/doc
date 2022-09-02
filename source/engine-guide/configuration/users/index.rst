@@ -3,25 +3,40 @@
 Workflow Users
 ==============
 
-Workflow Users are kept in a so-called security system which can be defined in
-:ref:`ivy-yaml`. Each application is bound to one security system. There are two
-types of security systems. You need to define at application creation time in
-which security system the application must live: 
+Workflow Users are managed in so-called security systems that you can define in
+:ref:`ivy-yaml`.
+
+Security Systems
+================
+
+On every |ivy-engine|, at least one security system is defined.
+
+Each application is bound to one security system. Each security 
+system is bound to one or more applications. 
+
+You need to define at application creation time which security system 
+the application will be bound to. 
+
+There are two classes of security systems:
 
 * **Internal Security System**:
-  Used to manage the users directly on the Axon Ivy Engine. There is only one
-  Internal Security System, which is called Axon Ivy Security System. No further
-  settings are available for this Security System. This is also the default
-  Security System for application which has no security system defined.
+  Used to manage its workflow users directly on the |ivy-engine|. 
+  There is only one type of Internal Security System, which is called the 
+  Ivy Security System. The only setting available is its name.
+  
+  By default, the Ivy Security System :code:`default` is running on every engine.
+  You cannot change this security system in any way.
+
+  You can add other Ivy Security Systems if so desired. 
+  You can define only the name of an Ivy Security System.
+
 * **External Security System**:
-  Used to synchronize users from a name and directory service such as Active
-  Directory. In addition to the users in the External Security System,
-  new users can also be manually added and managed as with an Ivy Security System.
-  The following external users management systems are supported:
+  Used to synchronize users from an Identity Provider such as Active
+  Directory. In addition to the users from the Identity Provider,
+  users can also be added and managed manually like in the Ivy Security System.
 
-  .. toctree::
-    :maxdepth: 1
+  We support the following Identity Providers by default:
 
-    microsoft-active-directory
-    novell-edirectory
- 
+  - :ref:`azure-ad`
+  - :ref:`microsoft-ad`
+  - :ref:`novell-edirectory`
