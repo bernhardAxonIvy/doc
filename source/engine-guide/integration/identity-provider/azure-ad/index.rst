@@ -17,7 +17,7 @@ configuration page to connect to Azure Active Directory.
 
 **Template**
 
-.. literalinclude:: ../../../../../../workspace/ch.ivyteam.ivy.security.identity.azure/src/ch/ivyteam/ivy/security/identity/azure/config/azure-template.yaml
+.. literalinclude:: ../../../../../../workspace/ch.ivyteam.ivy.security.identity.azure/src/ch/ivyteam/ivy/security/identity/azure/config/ivy-identity-provider-azure-ad.yaml
   :language: yaml
   :linenos:
 

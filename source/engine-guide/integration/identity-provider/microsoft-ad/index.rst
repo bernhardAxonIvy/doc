@@ -12,7 +12,7 @@ offers a detailed configuration page to connect Microsoft Active Directory.
 
 **Template**
 
-.. literalinclude:: ../../../../../../workspace/ch.ivyteam.ivy.security.identity.jndi/src/ch/ivyteam/ivy/security/identity/jndi/ads/microsoft-ad-template.yaml
+.. literalinclude:: ../../../../../../workspace/ch.ivyteam.ivy.security.identity.jndi/src/ch/ivyteam/ivy/security/identity/jndi/ads/ivy-identity-provider-microsoft-ad.yaml
   :language: yaml
   :linenos:
 
