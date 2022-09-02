@@ -13,7 +13,7 @@ It is divided into several parts:
 * **IIS Setup** will install all required features including IIS itself, URL
   Rewrite and Application Request Routing (ARR) modules. Furthermore, it will
   enable the reverse proxy capabilities and set :guilabel:`preserveHostHeader`
-  to :code:`true`. The most important configuration entries in the IIS are the
+  to :code:`true`. The most important configuration entries in IIS are the
   :guilabel:`Authentication` and :guilabel:`URL Rewrite` modules.
 
   .. figure:: /_images/iis/iis-overview.png
