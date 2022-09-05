@@ -1,7 +1,10 @@
 digraph overview {
   layout=neato;
-  node [shape=box, fontname="Roboto,Helvetica Neue,Arial,sans-serif", fixedsize="true", margin=0]; 
-  
+
+  node [shape=box, height="0.8", width="2", color="#007095", style=filled, fixedsize="true", margin=0, 
+        fontname="Roboto,Helvetica Neue,Arial,sans-serif", fontcolor="white", fontsize=15
+       ]; 
+       
   /* nodes */
   engine [label="Axon Ivy\nEngine",      pos="0.0,2.5!", height="0.8", width="1.5", color="#C7D426", fontcolor="black"];
   elasticsearch [ label="Elasticsearch", pos="3.0,2.5!", height="0.8", width="1.5",]

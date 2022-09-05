@@ -32,6 +32,7 @@ Use Eclipse or Visual Studio Code.
 * **Visual Studio Code**
     * Plugin *lextudio.restructuredtext* for syntax highlighting and code completion.
     * Plugin *rewrap* to wrap lines to 80 characters with ALT+Q
+    * Plugin *Graphviz Interactive Preview* (by tintinweb) for interactive preview of our dot images.
 
 * **Other Tools**
     * Use Grammarly plugins for online spell checking 
@@ -51,7 +52,10 @@ Use the following template to create new artifacts compatible with [Sketchviz](h
 
     digraph your-name-here {
       layout=neato;
-      node [shape=box, fontname="Roboto,Helvetica Neue,Arial,sans-serif", fixedsize="true", margin=0.1]; 
+
+      node [shape=box, height="0.8", width="2", color="#007095", style=filled, fixedsize="true", margin=0, 
+        fontname="Roboto,Helvetica Neue,Arial,sans-serif", fontcolor="white", fontsize=15
+      ]; 
       
       /* nodes */
       
@@ -65,7 +69,7 @@ When developing artifacts in Sketchviz,
 
 - Uncheck the **Sketchy** checkbox to avoid the pencil-like drawing style
 - Copy and paste your content between your editor and Sketchviz
-- Refer to the dot images in the engine documentation for reference
+- Refer to the dot images in the Axon Ivy documentation for reference
 - standardize formats 
   - always quote numbers
   - keep number formats consistent

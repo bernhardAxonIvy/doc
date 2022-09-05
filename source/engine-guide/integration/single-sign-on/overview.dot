@@ -1,7 +1,10 @@
 digraph overview {
   layout=neato;
-  node [shape=box, fontname="Roboto,Helvetica Neue,Arial,sans-serif",margin=0, fixedsize="true"]; 
-  
+
+  node [shape=box, height="0.8", width="2", color="#007095", style=filled, fixedsize="true", margin=0, 
+        fontname="Roboto,Helvetica Neue,Arial,sans-serif", fontcolor="white", fontsize=15
+       ]; 
+    
   /* nodes */
   browser [label="Browser",            pos="0.0,0.0!", height="0.8", width="1.5"];
   reverseproxy [label="Reverse Proxy", pos="2.5,0.0!", height="0.8", width="1.5"]; 
