@@ -1,6 +1,6 @@
 digraph overview {
   layout=neato;
-  node [shape=box, fontname="Roboto,Helvetica Neue,Arial,sans-serif", fixedsize="true", margin=0]; 
+  node [shape=box, fontname="Roboto,Helvetica Neue,Arial,sans-serif", fontcolor="#FFFFFF", color="#007095", style=filled, fixedsize="true", margin=0]; 
   
   /* nodes */
   browser         [ label="Browser",                    pos="0.4,2.5!", width="1"];
