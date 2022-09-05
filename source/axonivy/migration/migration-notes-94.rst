@@ -33,11 +33,11 @@ Multi Application Security System
 
 |tag-ops-wizard|
 
-The big barriers were broken in. Users and roles are no longer attached to a
-single application, but can be shared across multiple applications in a security
-system. Now, different applications can be developed and installed with their
-own release cycles, and the end user only ever receives one task list for all
-applications. This enables independent feature-driven development.
+Users and roles are no longer attached to a single application, but can be 
+shared across multiple applications in a security system. Now, different applications 
+can be developed and installed with their own release cycles, and the end user 
+only ever receives one task list for all applications. 
+This enables independent feature-driven development.
 
 .. container:: admonition note toggle
 
@@ -95,7 +95,7 @@ Language
 
 |tag-ops-wizard|
 
-New there is global language concept. The content language as well as the formatting language can be
+There is a new global language concept. The content language as well as the formatting language can be
 defined per security system in :ref:`ivy-yaml`, which are considered as default
 languages. Users can overwrite these two language settings in their user profiles.
 
@@ -136,13 +136,13 @@ https://axonivy.github.io/project-build-plugin/snapshot/9.4/compileProject-mojo.
 
 
 
-Programmable element Editor
+Programmable process elements
 *****************************
 
 |tag-project-changed|
 
-We changed the UI technology to build custom inscription editors. Therefore, existing programmable elements,
-built with AWT, show deprecation warnings.
+We changed the UI technology to build custom inscription editors for prograammable process elements. Therefore, existing programmable elements,
+built with AWT, will show deprecation warnings.
 
 Affected elements are: :ref:`Program Start Event <process-element-program-start>`, 
 :ref:`Program Interface (PI) Activity <process-element-pi>` and 
@@ -173,8 +173,8 @@ Affected elements are: :ref:`Program Start Event <process-element-program-start>
 
 
 
-Call & Wait element
-***********************
+Call & Wait intermediate event
+******************************
 
 |tag-project-removed|
 
@@ -192,7 +192,7 @@ TLS 1.0 and TLS 1.1 disabled
 
 |tag-ops-changed|
 
-We disabled TLS 1.0 and 1.1 by default because they are out-dated and should no longer be used.
+We disabled TLS 1.0 and 1.1 by default because they are outdated and should no longer be used.
 This can break communication links with legacy databases or other external services that still use the old TLS protocol.
 Have a look at our `community blog post <https://community.axonivy.com/d/140-tls-10-and-tls-11-disabled-by-default-with-java-11011>`_
 if you experience such problems to find out how to enable those protocols again.
