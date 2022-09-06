@@ -43,11 +43,11 @@ Multi Application Security System
 
 |tag-ops-wizard|
 
-The big barriers were broken in. Users and roles are no longer attached to a
-single application, but can be shared across multiple applications in a security
-system. Now, different applications can be developed and installed with their
-own release cycles, and the end user only ever receives one task list for all
-applications. This enables independent feature-driven development.
+Users and roles are no longer attached to a single application, but can be 
+shared across multiple applications in a security system. Now, different applications 
+can be developed and installed with their own release cycles, and the end user 
+receives one single task list for all applications. 
+This enables independent feature-driven development.
 
 .. container:: admonition note toggle
 
@@ -75,14 +75,14 @@ applications. This enables independent feature-driven development.
 
     - **Users** are no longer attached to the application, but to the Security
       System. This means that the user is unique over several applications.
-    - **Roles** are still defined in projects. The roles are deployed over a
-      security system. Now the roles must not only be unique in the application, 
+    - **Roles** are still defined in projects. The roles are deployed into a
+      security system. Now, the roles must not only be unique in the application, 
       but in the security system.
     - **Business Data** has not been scoped. Now, it is scoped to the security system.
     - **Standard process** default pages are now automatically
       determined at runtime. You don't have to define them anymore. If there are
       multiple implementations of a default process, one is simply selected. But you
-      can fix this by setting this setting anyway.
+      can fix this using settings.
     - **EmailNotification Settings** are no longer part of
       the application configuration. They are part of the security system and can be
       found there.
@@ -105,7 +105,7 @@ Language
 
 |tag-ops-wizard|
 
-New there is global language concept. The content language as well as the formatting language can be
+There is a new global language concept. The content language as well as the formatting language can be
 defined per security system in :ref:`ivy-yaml`, which are considered as default
 languages. Users can overwrite these two language settings in their user profiles.
 
@@ -115,7 +115,7 @@ in :ref:`ivy-yaml`.
 Read more here: :ref:`configuration-language` and :ref:`cms-content-resolution`.
 
 
-Role mapping moved to :ref:`ivy.yaml <ivy-identity-provider-yaml>`
+Role Mapping moved to :ref:`ivy.yaml <ivy-identity-provider-yaml>`
 ******************************************************************
 
 |tag-ops-wizard|
@@ -129,8 +129,7 @@ Elasticsearch 7.17
 ******************
 
 Elasticsearch has been upgraded from 7.3 to 7.17.
-If you use an external Elasticsearch server you need
-to upgrade to version 7.17.
+If you use an external Elasticsearch server you need to upgrade to version 7.17.
 
 
 IvyScript Validation is Enabled by Default
@@ -139,20 +138,21 @@ IvyScript Validation is Enabled by Default
 |tag-project-changed| 
 
 The :code:`ivy.script.validation.skip` compilation parameter of our Project Build Plugin is now set to :code:`false`.
-This validates IvyScript code within Ivy processes by default during compilation. So errors and warnings related to the IvyScript code will be reported.
+This validates IvyScript code within Ivy processes by default during compilation. 
+Therefore, errors and warnings related to the IvyScript code will be reported.
 
 Read more about the compilation parameters and their default values here:
 https://axonivy.github.io/project-build-plugin/snapshot/9.4/compileProject-mojo.html#skipScriptValidation
 
 
 
-Programmable element Editor
+Programmable Process Elements
 *****************************
 
 |tag-project-changed|
 
-We changed the UI technology to build custom inscription editors. Therefore, existing programmable elements,
-built with AWT, show deprecation warnings.
+We changed the UI technology to build custom inscription editors for programmable process elements. Therefore, existing programmable elements,
+built with AWT, will show deprecation warnings.
 
 Affected elements are: :ref:`Program Start Event <process-element-program-start>`, 
 :ref:`Program Interface (PI) Activity <process-element-pi>` and 
@@ -168,7 +168,7 @@ Affected elements are: :ref:`Program Start Event <process-element-program-start>
 
     To make your custom editors compliant, change your internal Editor implementation to extend from 
     :public-api:`UiEditorExtension
-    </ch/ivyteam/ivy/process/extension/ui/UiEditorExtension.html>`. And create widgets using the new 
+    </ch/ivyteam/ivy/process/extension/ui/UiEditorExtension.html>`, and create widgets using the new 
     :public-api:`ExtensionUiBuilder
     </ch/ivyteam/ivy/process/extension/ui/ExtensionUiBuilder.html>`.
 
@@ -183,8 +183,8 @@ Affected elements are: :ref:`Program Start Event <process-element-program-start>
 
 
 
-Call & Wait element
-***********************
+Call & Wait intermediate event
+******************************
 
 |tag-project-removed|
 
@@ -202,8 +202,8 @@ TLS 1.0 and TLS 1.1 disabled
 
 |tag-ops-changed|
 
-We disabled TLS 1.0 and 1.1 by default because they are out-dated and should no longer be used.
-This can break communication links with legacy databases or other external services that still use the old TLS protocol.
+We disabled TLS 1.0 and 1.1 by default because they are outdated and should no longer be used.
+This can break communication links with legacy databases or other external services that still use the old TLS protocols.
 Have a look at our `community blog post <https://community.axonivy.com/d/140-tls-10-and-tls-11-disabled-by-default-with-java-11011>`_
 if you experience such problems to find out how to enable those protocols again.
 
