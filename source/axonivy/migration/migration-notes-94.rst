@@ -26,7 +26,17 @@ Instead of modena, primefaces-ivy, or all-themes, use :ref:`freya-ivy
 <freya-themes>` or :ref:`serenity-ivy <serenity-themes>`. You may need to adjust
 your hand-crafted CSS rules to the new theme.
 
+Java 17
+*******
 
+|tag-project-changed| |tag-project-auto-convert|
+
+We updated Java to version 17:
+
+- Convert your Axon Ivy projects to the latest version to use the new Java 17 features. 
+- You may have to update third-party libraries that do not yet support Java 17 to newer versions.
+- Use Java 17 to run your Maven project builds.
+- Use an `Adoptium / Eclipse Temurin JDK or JRE <https://adoptium.net/temurin/releases?version=17>`_ to run Axon Ivy on Linux or macOS.   
 
 Multi Application Security System
 *********************************
