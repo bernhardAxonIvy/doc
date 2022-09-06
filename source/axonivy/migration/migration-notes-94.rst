@@ -105,7 +105,7 @@ in :ref:`ivy-yaml`.
 Read more here: :ref:`configuration-language` and :ref:`cms-content-resolution`.
 
 
-Role mapping moved to :ref:`ivy.yaml <ivy-identity-provider-yaml>`
+Role Mapping moved to :ref:`ivy.yaml <ivy-identity-provider-yaml>`
 ******************************************************************
 
 |tag-ops-wizard|
@@ -119,8 +119,7 @@ Elasticsearch 7.17
 ******************
 
 Elasticsearch has been upgraded from 7.3 to 7.17.
-If you use an external Elasticsearch server you need
-to upgrade to version 7.17.
+If you use an external Elasticsearch server you need to upgrade to version 7.17.
 
 
 IvyScript Validation is Enabled by Default
@@ -129,19 +128,20 @@ IvyScript Validation is Enabled by Default
 |tag-project-changed| 
 
 The :code:`ivy.script.validation.skip` compilation parameter of our Project Build Plugin is now set to :code:`false`.
-This validates IvyScript code within Ivy processes by default during compilation. So errors and warnings related to the IvyScript code will be reported.
+This validates IvyScript code within Ivy processes by default during compilation. 
+Therefore, errors and warnings related to the IvyScript code will be reported.
 
 Read more about the compilation parameters and their default values here:
 https://axonivy.github.io/project-build-plugin/snapshot/9.4/compileProject-mojo.html#skipScriptValidation
 
 
 
-Programmable process elements
+Programmable Process Elements
 *****************************
 
 |tag-project-changed|
 
-We changed the UI technology to build custom inscription editors for prograammable process elements. Therefore, existing programmable elements,
+We changed the UI technology to build custom inscription editors for programmable process elements. Therefore, existing programmable elements,
 built with AWT, will show deprecation warnings.
 
 Affected elements are: :ref:`Program Start Event <process-element-program-start>`, 
@@ -158,7 +158,7 @@ Affected elements are: :ref:`Program Start Event <process-element-program-start>
 
     To make your custom editors compliant, change your internal Editor implementation to extend from 
     :public-api:`UiEditorExtension
-    </ch/ivyteam/ivy/process/extension/ui/UiEditorExtension.html>`. And create widgets using the new 
+    </ch/ivyteam/ivy/process/extension/ui/UiEditorExtension.html>`, and create widgets using the new 
     :public-api:`ExtensionUiBuilder
     </ch/ivyteam/ivy/process/extension/ui/ExtensionUiBuilder.html>`.
 
@@ -193,7 +193,7 @@ TLS 1.0 and TLS 1.1 disabled
 |tag-ops-changed|
 
 We disabled TLS 1.0 and 1.1 by default because they are outdated and should no longer be used.
-This can break communication links with legacy databases or other external services that still use the old TLS protocol.
+This can break communication links with legacy databases or other external services that still use the old TLS protocols.
 Have a look at our `community blog post <https://community.axonivy.com/d/140-tls-10-and-tls-11-disabled-by-default-with-java-11011>`_
 if you experience such problems to find out how to enable those protocols again.
 
