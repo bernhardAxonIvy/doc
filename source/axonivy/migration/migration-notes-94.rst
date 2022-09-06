@@ -36,7 +36,7 @@ Multi Application Security System
 Users and roles are no longer attached to a single application, but can be 
 shared across multiple applications in a security system. Now, different applications 
 can be developed and installed with their own release cycles, and the end user 
-only ever receives one task list for all applications. 
+receives one single task list for all applications. 
 This enables independent feature-driven development.
 
 .. container:: admonition note toggle
@@ -65,14 +65,14 @@ This enables independent feature-driven development.
 
     - **Users** are no longer attached to the application, but to the Security
       System. This means that the user is unique over several applications.
-    - **Roles** are still defined in projects. The roles are deployed over a
-      security system. Now the roles must not only be unique in the application, 
+    - **Roles** are still defined in projects. The roles are deployed into a
+      security system. Now, the roles must not only be unique in the application, 
       but in the security system.
     - **Business Data** has not been scoped. Now, it is scoped to the security system.
     - **Standard process** default pages are now automatically
       determined at runtime. You don't have to define them anymore. If there are
       multiple implementations of a default process, one is simply selected. But you
-      can fix this by setting this setting anyway.
+      can fix this using settings.
     - **EmailNotification Settings** are no longer part of
       the application configuration. They are part of the security system and can be
       found there.
