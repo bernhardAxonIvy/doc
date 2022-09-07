@@ -42,13 +42,13 @@ This also affects the minimum hardware requirements.
 Software Requirements
 ---------------------
 
-The Axon Ivy Engine needs Java SE 11 to run and is tested with `Adoptium
-<https://adoptium.net/>`_ and with `OpenJDK <https://openjdk.java.net/>`_.
+The Axon Ivy Engine needs Java SE 17 to run and is tested with `Eclipse Temurin
+<https://adoptium.net/>`_.
 
-Note: Java SE 11 `Adoptium <https://adoptium.net/>`_ is already
+Note: Java SE 17 `Eclipse Temurin <https://adoptium.net/>`_ is already
 included in our Windows installation and the Docker container.    
-On Linux, we do not include Java SE 11. You may want to use Java SE 11 provided
-by your operating system or install `Adoptium <https://adoptium.net/>`_.
+On Linux, we do not include Java SE 17. You may want to use Java SE 17 provided
+by your operating system or install `Eclipse Temurin <https://adoptium.net/>`_.
 
 
 Operating Systems
@@ -58,7 +58,7 @@ Operating Systems
   Windows Server 2022, 2019, 2012 and 2008 R2 x64
 
 * **Linux**:
-  Linux x64 (tested on Ubuntu 20.04)
+  Linux x64 (tested on Ubuntu 22.04)
 
 
 System Database
