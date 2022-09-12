@@ -6,5 +6,6 @@ Axon Ivy
 
    what-axon-ivy
    why-axon-ivy
+   try-axon-ivy
    migration/index
    release-notes/index
