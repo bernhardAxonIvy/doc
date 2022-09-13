@@ -14,7 +14,7 @@ working with the newest version. Go through the migration notes from version to 
    migration-notes-92
    migration-notes-93
    migration-notes-94
-
+   migration-notes-100
 
 .. _previous-migi-notes:
 
