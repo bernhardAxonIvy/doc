@@ -17,7 +17,7 @@ Security System Configuration
 
 We renamed configuration keys to be more clear.
 
-- `ImportOnDemand` -> `UserSynch.OnSchedule.ImportNewUsers`
+- `ImportOnDemand` -> `UserSynch.OnSchedule.ImportUsers`
 - `UpdateEnabled` -> `UserSynch.OnSchedule.Enabled`
 - `UpdateTime` -> `UserSynch.OnSchedule.Time`
 
