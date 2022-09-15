@@ -1,5 +1,5 @@
-Configure the Engine
---------------------
+Configure the Engine (Debian)
+-----------------------------
 
 .. include:: ../_prepare-configuration.rst
 
@@ -10,14 +10,14 @@ Shutdown the Axon Ivy Engine first by stopping its service
 
 .. code:: bash
 
-    systemctl stop axonivy-engine-|majorVersion|.service
+    systemctl stop axonivy-engine-|major-version|.service
 
 Install the license: Copy the license file (:file:`*.lic`) into the
 :file:`configuration` folder
 
 .. code:: bash
 
-    cp ~/licence.lic /etc/axonivy-engine-|majorVersion|
+    cp ~/licence.lic /etc/axonivy-engine-|major-version|
 
 To configure the system database, use the :code:`config-db` command of the
 **EngineConfigCli** tool. Replace **yourdatabaseserver** with the hostname of
@@ -27,7 +27,7 @@ database and its structures (i.e. DDL permissions) on the database server.
 
 .. code:: bash
 
-    cd /usr/lib/axonivy-engine-|majorVersion|/bin
+    cd /usr/lib/axonivy-engine-|major-version|/bin
     ./EngineConfigCli config-db org.postgresql.Driver \
     jdbc:postgresql://yourdatabaseserver:5432/AxonIvySystemDatabase \
     dbuser password
@@ -45,7 +45,7 @@ Now, let's create the system database with the :code:`create-db` command.
   **process data**.
 
 Next, define an Axon Ivy Engine administrator by modifying :ref:`ivy-yaml`
-in directory :file:`/etc/axonivy-engine-|majorVersion|` as detailed below:
+in directory :file:`/etc/axonivy-engine-|major-version|` as detailed below:
 
 .. literalinclude:: ../linux/sample-ivy.yaml
   :language: yaml
@@ -53,9 +53,10 @@ in directory :file:`/etc/axonivy-engine-|majorVersion|` as detailed below:
 
 .. Note::
   Administrators manage the Axon Ivy Engine. For example, they add or remove
-  users, assign users to roles, enable, disable and deploy applications, etc. You need at
-  least one administrator to manage the Axon Ivy Engine. In case of license
-  problems, the Axon Ivy Engine sends mail notifications to the administrators.
+  users, assign users to roles, enable, disable and deploy applications, etc. 
+  You need at least one administrator to manage the Axon Ivy Engine. In case 
+  of license problems, the Axon Ivy Engine sends mail notifications to 
+  the administrators.
 
 .. include:: ../_webserver.rst
 
@@ -63,7 +64,7 @@ Now, start the Axon Ivy Engine again
 
 .. code:: bash
 
-    systemctl start axonivy-engine-|majorVersion|.service
+    systemctl start axonivy-engine-|major-version|.service
 
 .. Note:: 
   If you have changed the HTTP Settings, the HTTP port of the Axon Ivy Engine may have changed! 

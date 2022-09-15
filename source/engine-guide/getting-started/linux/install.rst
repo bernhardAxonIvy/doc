@@ -1,9 +1,9 @@
-Install the Engine
-------------------
+Install the Engine (Linux)
+--------------------------
 
-We suggest that you install the Axon Ivy Engine into a new folder called
-:file:`/opt/ivy/engine`. Create the directory and change the owner to your current
-user.
+We suggest you install the Axon Ivy Engine into a new folder called
+:file:`/opt/ivy/engine`. Create the directory and change the owner to your
+current user.
 
 .. code:: bash
 

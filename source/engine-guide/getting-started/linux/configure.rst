@@ -1,5 +1,5 @@
-Configure the Engine
---------------------
+Configure the Engine (Linux)
+----------------------------
 
 .. include:: ../_prepare-configuration.rst
 
@@ -54,7 +54,7 @@ Now, let's create the system database with the :code:`create-db` command.
   **process data**.
 
 Next, define an Axon Ivy Engine administrator by modifying :ref:`ivy-yaml` 
-in directory :file:`/etc/axonivy-engine-|majorVersion|` as detailed below:
+in directory :file:`/etc/axonivy-engine-|major-version|` as detailed below:
 
 .. literalinclude:: sample-ivy.yaml
   :language: yaml
@@ -69,6 +69,7 @@ in directory :file:`/etc/axonivy-engine-|majorVersion|` as detailed below:
 .. include:: ../_webserver.rst
 
 Now, start the Axon Ivy Engine again as a background process.
+
 .. code:: bash
 
     nohup ./AxonIvyEngine &

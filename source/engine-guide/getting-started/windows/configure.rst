@@ -1,5 +1,5 @@
-Configure the Engine
---------------------
+Configure the Engine (Windows)
+------------------------------
 
 .. include:: ../_prepare-configuration.rst
 

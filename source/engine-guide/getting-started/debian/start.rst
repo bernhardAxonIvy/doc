@@ -1,10 +1,13 @@
-Examine the Engine
-------------------
+Start the Engine (Debian)
+-------------------------
 
 After the installation has completed, the engine is automatically started as a systemd
-service. You can check the operative state with :code:`systemctl status
-axonivy-engine-*`. The output of the service status contains the URL of 
-the Axon Ivy Engine main page.
+service. You can check its status with 
+
+:code:`systemctl status axonivy-engine-|major-version|`
+
+The output of the service status contains the URL of the Axon Ivy Engine main
+page.
 
 .. figure:: /_images/engine-getting-started/systemctl-status-axonivy-engine.png
 

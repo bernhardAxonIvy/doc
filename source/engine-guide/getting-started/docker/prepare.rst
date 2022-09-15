@@ -1,9 +1,9 @@
-Prepare
--------
+Prepare the Docker Image
+------------------------
 
 Download and install **docker** and **docker-compose** from https://www.docker.com/.
 
-To test your docker installation execute the following command in a terminal:
+To test your docker installation, execute the following command in a terminal:
 
 .. code:: bash
 

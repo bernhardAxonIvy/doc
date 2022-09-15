@@ -1,17 +1,21 @@
+.. _licensing:
 .. _license:
 
-License
-=======
+Licensing your Engine
+=====================
+
+Getting a License
+-----------------
 
 To run the Axon Ivy Engine in :ref:`production mode <production-mode>` you need a
 license, which you can apply for via your Axon Ivy Partner, Axon Ivy Sales
 Representative or directly via support@axonivy.com. A time-limited trial license
 is provided for free upon request. You need to provide 
 
-- the edition
+- the Axon Ivy Engine edition
 - the number of named users 
 - the number of concurrent users
-- the public URLs
+- the public URLs of your trial engine
 - for clusters only, the number of nodes 
 
 for each license. These inputs are detailed below.
@@ -19,16 +23,16 @@ for each license. These inputs are detailed below.
 .. _license-edition:
 
 Editions
-------------
+~~~~~~~~
 
 Choose between **Standard Edition** and **Enterprise Edition**. If you expect
 high loads or need increased reliability, you should look into the Enterprise
 Edition. It allows running the Axon Ivy Engine in a :ref:`cluster <cluster>`.
-The maximum number of nodes in the clusters is part of the license.
+The maximum number of nodes in the cluster is part of the license.
 
 
 Named Users
----------------
+~~~~~~~~~~~~~~~~
 
 Registered users within an Axon Ivy Engine are called **named users (NU)**. These users
 have an account in the Axon Ivy Engine and thus can log in to the Axon Ivy
@@ -41,7 +45,7 @@ All of this also applies to users on a cluster.
 
 
 Concurrent Users
-----------------
+~~~~~~~~~~~~~~~~
 
 The number of users concurrently working on the Axon Ivy Engine is known as
 **concurrent users (CU)**. The Axon Ivy Engine counts the number of concurrent
@@ -80,7 +84,7 @@ This also applies to clusters.
 
 
 Public URLs
------------
+~~~~~~~~~~~~~~~~
 
 Public URLs are the links that end users will use to access your Axon Ivy Engine or Cluster.
 
@@ -107,4 +111,34 @@ Public URLs are the links that end users will use to access your Axon Ivy Engine
   (internally), have their IP addresses or DNS names added to the cluster
   license.
 
+Installing your License
+-----------------------
+
+There are several ways to install your license.
+
+Docker
+~~~~~~
+
+For Containers, all your options for providing the license to the container are
+described in :ref:`configuration_containers_license`.
+
+.. _configuration_servers_license:
+
+Debian, Linux, and Windows
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For "traditional" server installations, your options to install a license are:
+
+* copy the license to the :file:`configuration` directory of the engine. The
+  demo license :file:`demo.lic` is in this directory, but the engine skips this
+  file when searching for a license. Put only one non-demo license into this
+  directory to ensure proper operation.
+
+* upload the license using the engine cockpit. 
+
+  .. figure:: /_images/engine-cockpit/engine-cockpit-licence.png
+
+  
+  You can either drag and drop the license, or select its location using the button
+  :guilabel:`+ Choose License`. 
 

@@ -6,9 +6,9 @@
     server. This protocol is not secure since the communication is not
     encrypted. Axon Ivy Engine uses port 8080 for HTTP by default.
 
-  * **HTTPS** Like HTTP, but secure. It uses TLS to encrypt the communication
+  * **HTTPS** is like HTTP, but secure. It uses TLS to encrypt all communication
     between the web browser and server. Axon Ivy Engine uses port 8443 for HTTPS
     by default.
 
-  Have a look at the :ref:`ivy.yaml <ivy-webserver-yaml>` to see what other
-  parts of the webserver and its connectors can be adjusted to your needs.
+  Have a look at the :ref:`ivy.yaml <ivy-webserver-yaml>` to see how you can
+  adjust parts of the web server and its connectors to your needs.

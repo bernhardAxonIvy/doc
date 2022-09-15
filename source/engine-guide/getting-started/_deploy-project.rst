@@ -12,8 +12,8 @@ application to that directory.
 
 .. code:: bash
 
-    cd /var/lib/axonivy-engine-|majorVersion|/deploy
-    sudo -u ivy wget https://developer.axonivy.com/permalink/lib/|majorVersion|/demos.zip
+    cd /var/lib/axonivy-engine-|major-version|/deploy
+    sudo -u ivy wget https://developer.axonivy.com/permalink/lib/|major-version|/demos.zip
 
 .. Note::
 

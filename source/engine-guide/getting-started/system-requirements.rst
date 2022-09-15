@@ -30,13 +30,13 @@ This also affects the minimum hardware requirements.
 .. rubric:: With external Elasticsearch server
 
 * **Memory (RAM)**:
-  Minimum is 4 GB, we recommend to use 16 GB.
+  Minimum is 4 GB. We recommend to use at least 16 GB.
 
 * **Disk Space**:
-  Minimum is 2 GB, we recommend 50 GB on a Solid State Disk (SSD).
+  Minimum is 2 GB. We recommend 50 GB on a Solid State Disk (SSD).
 
 * **Processors**:
-  Minimum is 4 cores with 2 GHz, we recommend 16 cores with 2.5 GHz.
+  Minimum is 4 cores with 2 GHz. We recommend 16 cores with 2.5 GHz.
 
 
 Software Requirements
@@ -81,14 +81,14 @@ System Database
 
 Browsers
 --------
-All well known web browsers are supported:
+All popular web browsers are supported:
 
 - Firefox
 - Chrome
 - Opera
 - Safari
-- Microsoft Edge
+- Edge
 
-For security reasons we recommend to use the latest available web browser
-versions. Most other web browsers which support the latest JavaScript, HTML 5 and
+For security reasons, we recommend using the latest available web browser
+versions. Most other web browsers that support the latest JavaScript, HTML 5 and
 CSS 3 specifications will work, too.

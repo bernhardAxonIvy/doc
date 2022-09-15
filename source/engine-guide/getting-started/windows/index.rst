@@ -10,7 +10,7 @@ on a Windows machine:
    :maxdepth: 1
    :numbered:
 
-   download
+   prepare
    install
    start
    use

@@ -1,5 +1,5 @@
-More
-----
+More Information (Docker Image)
+-------------------------------
 
 The Axon Ivy Engine docker image is provided here: `Docker Hub
 <https://hub.docker.com/r/axonivy/axonivy-engine/>`_. The :file:`Dockerfile`
@@ -10,8 +10,8 @@ this :file:`Dockerfile` as a template.
 
 **Examples**
 
-On GitHub in the :link-url:`docker-samples <docker-samples>` repository you can find many
-examples regarding how to use the Axon Ivy Engine docker image.
+On GitHub in the :link-url:`docker-samples <docker-samples>` repository, you find many
+examples detailing how to use the Axon Ivy Engine docker image.
 
 Have a look at our :link-url:`project-build-examples <build-examples-docker>`. 
 It shows how to use Maven to build your own container image that contains an 
