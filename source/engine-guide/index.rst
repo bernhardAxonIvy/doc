@@ -19,5 +19,5 @@ into :ref:`getting-started`.
    deployment/index
    security/index
    monitoring/index
-   tool-reference/index
+   reference/index
    troubleshooting/index

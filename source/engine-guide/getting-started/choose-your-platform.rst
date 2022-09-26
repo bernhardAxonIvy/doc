@@ -1,25 +1,7 @@
-.. _getting-started:
+.. _choose-your-platform:
 
-Getting Started
-***************
-
-In this chapter, we help you to get up to speed with the |ivy-engine| with
-minimal effort. For productive use, the resulting configuration has to be
-updated later on; see :ref:`Non-Demo Setup <non-demo-setup>` below.
-
-You will learn how to install and configure an Axon Ivy Engine and, ultimately,
-how to bring your processes to life by deploying your Axon Ivy projects. As you
-will see, a minimal setup of an Axon Ivy Engine is straightforward. Next to the
-Axon Ivy Engine, you only need a browser of your choice (e.g., Firefox) and a
-database management system (e.g., PostgreSQL) for storing the data of the Axon
-Ivy Engine.
-
-An Axon Ivy Engine ready to serve your applications includes these components:
-
-.. graphviz:: overview.dot
-
-
-.. rubric:: Choose your Platform
+Choose your Platform
+====================
 
 At this point, you need to choose a server platform. The Axon Ivy Engine runs on
 all modern runtime environments. If you already know what you want, simply click
@@ -35,39 +17,44 @@ select thereafter.
    windows/index
 
 
-.. rubric:: Docker Image
+Docker Image
+-------------
 
 We provide the Axon Ivy Engine as a Docker image. You can run the Axon Ivy
 Engine in a simple docker-compose setup or in orchestration platforms like
 Kubernetes or Openshift. This package provides optimal installation,
 configuration, and upgrade support.
 
-For details, refer to :ref:`getting-started-docker`.
+For details, refer to :ref:`getting-started-docker`
 
-.. rubric:: Debian 
+
+Debian 
+-------
 
 We provide a Debian package for Debian-based Linux systems like Ubuntu or
 Linux Mint. Besides the install capabilities, this package offers excellent
 support for later upgrades of the Axon Ivy Engine.
 
-For details, refer to  :ref:`getting-started-debian`.
+For details, refer to  :ref:`getting-started-debian` 
 
-.. rubric:: Linux
+Linux
+------
 
 If you use a non-Debian-based Linux system, choose this option. Compared to
 the Debian package, you will miss the install and upgrade capabilities.
 Compared to Debian and Docker, more effort is required to install and
 subsequently, upgrade the Axon Ivy Engine.
 
-For details, refer to :ref:`getting-started-linux`.
+For details, refer to :ref:`getting-started-linux` 
 
-.. rubric:: Windows
+Windows
+-------
 
 Windows is the operating system of choice in many places. Compared to Debian
 and Docker, more effort is required to install and later on upgrade the
 Axon Ivy Engine.
 
-For details, refer to :ref:`getting-started-windows`.
+For details, refer to :ref:`getting-started-windows` 
 
 
 .. _non-demo-setup:
@@ -91,6 +78,5 @@ For example:
   <identity-provider>` like Active Directory or Azure AD to minimize and
   centralize the administration effort.
 
-* For high availability, performance and scalability, you can :ref:`cluster
-  <cluster>` the |ivy-engine| and use a separate :ref:`Elasticsearch server or
-  cluster <elasticsearch>`.
+* For high availability, performance and scalability, you can :ref:`cluster <cluster>` the Axon
+  Ivy Engine and use a separate :ref:`Elasticsearch server or cluster <elasticsearch>`.

@@ -1,11 +1,11 @@
-Start the Engine
-----------------
+Start the Engine (Windows)
+--------------------------
 
-Navigate to the :file:`bin` folder and double click on the
-:file:`ControlCenter.exe` file to start the Control Center. You can use this
-tool to start and stop the Axon Ivy Engine in different ways (as Windows Service,
-as normal user process, with a console window). Select the Axon Ivy Engine and
-press the green play button to start the Axon Ivy Engine as a normal user process:
+Navigate to folder :file:`bin` and double click on :file:`ControlCenter.exe`  to
+start the Control Center. You can use this tool to start and stop the Axon Ivy
+Engine in different ways (as a Windows Service, as a normal user process, with a
+console window). Select the Axon Ivy Engine and press the green play button to
+start the Axon Ivy Engine as a normal user process:
 
 .. figure:: /_images/engine-getting-started/controlcenter.png
 
@@ -13,9 +13,9 @@ press the green play button to start the Axon Ivy Engine as a normal user proces
   You can use the Control Center also to register Axon Ivy Engine as Windows
   Service. Moreover, you can add other existing Windows Services to the list of
   Engines to start and stop them with the Control Center. For example, if you
-  have installed your database server on the same machine you can add the
+  have installed your database server on the same machine, you can add the
   Windows Service of the database server. To register Axon Ivy Engine as
-  Windows Service you need to **run the Control Center as Administrator**.
+  Windows Service, you need to **run the Control Center as Administrator**.
 
-After the Axon Ivy Engine has beend started a web browser is opened and the main
-page of the Axon Ivy Engine is displayed.
+After the Axon Ivy Engine has been started it opens a web browser displaying the
+main page of the |ivy-engine|.
