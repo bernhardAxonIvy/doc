@@ -161,10 +161,10 @@ Annotations
    note
 
 
-Connectors
+Extensions
 ----------
 
 .. toctree::
    :maxdepth: 1
 
-   connector-browser
+   extension-browser
