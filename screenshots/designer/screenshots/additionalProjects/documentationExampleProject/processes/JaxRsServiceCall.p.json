@@ -1,7 +1,9 @@
 {
-  "format" : "9.4.20",
+  "format" : "9.4.21",
   "id" : "159FF3D428E42BB5",
-  "data" : "com.axonivy.JaxRsServiceCallData",
+  "config" : {
+    "data" : "com.axonivy.JaxRsServiceCallData"
+  },
   "elements" : [ {
       "id" : "f0",
       "type" : "RequestStart",

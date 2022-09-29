@@ -1,7 +1,9 @@
 {
-  "format" : "9.4.20",
+  "format" : "9.4.21",
   "id" : "16BBC1007C5F8F69",
-  "data" : "screenshot.project.Data",
+  "config" : {
+    "data" : "screenshot.project.Data"
+  },
   "elements" : [ {
       "id" : "f3",
       "type" : "ErrorStartEvent",

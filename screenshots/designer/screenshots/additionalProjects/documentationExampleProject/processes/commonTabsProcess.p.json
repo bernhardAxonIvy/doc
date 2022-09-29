@@ -1,7 +1,9 @@
 {
-  "format" : "9.4.20",
+  "format" : "9.4.21",
   "id" : "168F0C6DF682858E",
-  "data" : "ch.ivyteam.documentation.project.AddContactData",
+  "config" : {
+    "data" : "ch.ivyteam.documentation.project.AddContactData"
+  },
   "elements" : [ {
       "id" : "f0",
       "type" : "RequestStart",

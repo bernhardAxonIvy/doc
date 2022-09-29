@@ -1,7 +1,9 @@
 {
-  "format" : "9.4.20",
+  "format" : "9.4.21",
   "id" : "16C70B87DCB65433",
-  "data" : "screenshot.project.Invoice",
+  "config" : {
+    "data" : "screenshot.project.Invoice"
+  },
   "elements" : [ {
       "id" : "f0",
       "type" : "WaitEvent",

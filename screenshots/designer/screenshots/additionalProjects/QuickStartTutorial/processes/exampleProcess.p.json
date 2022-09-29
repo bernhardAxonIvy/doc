@@ -1,7 +1,9 @@
 {
-  "format" : "9.4.20",
+  "format" : "9.4.21",
   "id" : "1567DC5F3418C42A",
-  "data" : "quickStartTutorial.Data",
+  "config" : {
+    "data" : "quickStartTutorial.Data"
+  },
   "elements" : [ {
       "id" : "f0",
       "type" : "RequestStart",

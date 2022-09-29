@@ -1,8 +1,10 @@
 {
-  "format" : "9.4.20",
+  "format" : "9.4.21",
   "id" : "16A7DD0A1D330578",
-  "data" : "screenshot.project.subProcessData",
   "kind" : "CALLABLE_SUB",
+  "config" : {
+    "data" : "screenshot.project.subProcessData"
+  },
   "elements" : [ {
       "id" : "f0",
       "type" : "CallSubStart",

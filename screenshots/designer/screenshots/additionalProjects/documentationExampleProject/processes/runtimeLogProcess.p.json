@@ -1,7 +1,9 @@
 {
-  "format" : "9.4.20",
+  "format" : "9.4.21",
   "id" : "1567F0BE1CC43932",
-  "data" : "screenshot.project.Data",
+  "config" : {
+    "data" : "screenshot.project.Data"
+  },
   "elements" : [ {
       "id" : "f0",
       "type" : "RequestStart",

@@ -1,8 +1,10 @@
 {
-  "format" : "9.4.20",
+  "format" : "9.4.21",
   "id" : "16B5634C8976FEF1",
-  "data" : "com.acme.PersonEditor.PersonEditorData",
   "kind" : "HTML_DIALOG",
+  "config" : {
+    "data" : "com.acme.PersonEditor.PersonEditorData"
+  },
   "elements" : [ {
       "id" : "f0",
       "type" : "HtmlDialogStart",

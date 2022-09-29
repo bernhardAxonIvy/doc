@@ -1,9 +1,11 @@
 {
-  "format" : "9.4.20",
+  "format" : "9.4.21",
   "id" : "167C6BD0817F2889",
-  "data" : "screenshot.project.Order",
   "kind" : "WEB_SERVICE",
-  "wsTypeName" : "screenshot.project.exampleWsCall",
+  "config" : {
+    "data" : "screenshot.project.Order",
+    "wsTypeName" : "screenshot.project.exampleWsCall"
+  },
   "elements" : [ {
       "id" : "ws0",
       "type" : "WebserviceStart",

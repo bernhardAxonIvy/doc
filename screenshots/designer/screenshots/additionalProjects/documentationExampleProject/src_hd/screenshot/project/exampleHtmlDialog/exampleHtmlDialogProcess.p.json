@@ -1,8 +1,10 @@
 {
-  "format" : "9.4.20",
+  "format" : "9.4.21",
   "id" : "167356B1245C7158",
-  "data" : "screenshot.project.exampleHtmlDialog.exampleHtmlDialogData",
   "kind" : "HTML_DIALOG",
+  "config" : {
+    "data" : "screenshot.project.exampleHtmlDialog.exampleHtmlDialogData"
+  },
   "elements" : [ {
       "id" : "f0",
       "type" : "HtmlDialogStart",
