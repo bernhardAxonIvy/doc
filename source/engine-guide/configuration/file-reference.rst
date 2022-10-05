@@ -11,6 +11,7 @@ File Reference
    files/app-yaml
    files/app-businesscalendar-yaml
    files/jvm-options
+   files/jvm-module-options
    files/log4j2-xml
    files/ivy-cache-properties
    files/web-xml
