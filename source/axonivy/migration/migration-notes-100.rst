@@ -35,6 +35,15 @@ The support for Oracle Database 12c, 18c is removed as Oracle support has ended 
 If using Oracle Database we recommend using version 19c as this is the long term support version.
 
 
+Windows Server
+***************
+
+|tag-ops-changed| |tag-ops-deprecated|
+
+The support for Windows Server 2008 R2 is removed as Microsoft support has ended for this version.
+If using Windows Server we recommend using version 2022 as this is the long term support version.
+
+
 ------------
 
 .. include:: _tagLegend.rst    
