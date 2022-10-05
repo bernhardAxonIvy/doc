@@ -43,6 +43,15 @@ The support for Postgres Database 9 and 10 is removed as Postgres support has en
 We recommend using Postgres 14 as this is the latest and longest supported version.
 
 
+MariaDB Database
+****************
+
+|tag-ops-changed| |tag-ops-deprecated|
+
+The support for MariaDB 10.0 - 10.2 is removed as they are not supported anymore.
+We recommend upgrading to MariaDB 10.6 as this is the long term support version.
+
+
 Windows Server
 ***************
 
