@@ -43,6 +43,15 @@ The support for Postgres Database 9 and 10 is removed as Postgres support has en
 We recommend using Postgres 14 as this is the latest and longest supported version.
 
 
+MySQL Database
+**************
+
+|tag-ops-changed| |tag-ops-deprecated|
+
+The support for MySQL 5.6 is removed as MySQL support has ended for this version.
+We recommend upgrading to MySQL 8.0 as this is the latest and longest supported version.
+
+
 MariaDB Database
 ****************
 
