@@ -34,6 +34,14 @@ Oracle Database
 The support for Oracle Database 12c, 18c is removed as Oracle support has ended for these versions.
 If using Oracle Database we recommend using version 19c as this is the long term support version.
 
+Postgres Database
+*****************
+
+|tag-ops-changed| |tag-ops-deprecated|
+
+The support for Postgres Database 9 and 10 is removed as Postgres support has ended for this version.
+We recommend using Postgres 14 as this is the latest and longest supported version.
+
 
 Windows Server
 ***************
