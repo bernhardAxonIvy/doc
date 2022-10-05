@@ -141,7 +141,7 @@
               <useDefaultDelimiters>false</useDefaultDelimiters>
               <resources>
                 <resource>
-                  <directory>../workspace/ch.ivyteam.base/src/ch/ivyteam/ivy/configuration/internal/defaults</directory>
+                  <directory>../workspace/ch.ivyteam.ivy.configuration/src/ch/ivyteam/ivy/configuration/internal/defaults</directory>
                   <filtering>true</filtering>
                   <includes>
                     <include>*.yaml</include>
