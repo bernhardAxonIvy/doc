@@ -10,6 +10,8 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.Selenide.open;
 
+import java.time.Duration;
+
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -54,7 +56,7 @@ public class TestEngineScreenshots {
   void portalExpress() {
     open(EngineUrl.create().path("starts").toUrl());
     loginToPortal("demo");
-    $(By.id("process-widget:create-express-workflow")).waitUntil(visible, 60000);
+    $(By.id("process-widget:create-express-workflow")).should(visible, Duration.ofSeconds(60));
     takeScreenshot("engine-portal-starts", 300);
 
     defineProcessProperties();
@@ -123,7 +125,7 @@ public class TestEngineScreenshots {
   }
 
   private void defineGroupAssingeeForProcessStep() {
-    PrimeUi.selectOneRadio(By.id("assignee-selection-form:assignee-type")).selectItemByValue("Group");
+    PrimeUi.selectOneRadio(By.id("assignee-selection-form:assignee-type")).selectItemByLabel("Group");
     $(By.id("assignee-selection-form:role-selection-component:role-selection")).find(".ui-icon-triangle-1-s").shouldBe(visible).click();
     $(By.id("assignee-selection-form:role-selection-component:role-selection_panel")).shouldBe(visible)
             .findAll(".name-after-avatar").findBy(text("Everybody")).click();
