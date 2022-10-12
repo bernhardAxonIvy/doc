@@ -1,4 +1,4 @@
-.. _migrate-94-10:
+.. _migrate-94-100:
 
 Migrating from 9.4 to 10.0
 ==========================
@@ -9,6 +9,7 @@ License
 |tag-ops-changed|
 
 You need to request a new license for Axon Ivy Engine 10.0.
+
 
 Security System Configuration
 *****************************
@@ -33,6 +34,7 @@ Oracle Database
 
 The support for Oracle Database 12c, 18c is removed as Oracle support has ended for these versions.
 If using Oracle Database we recommend using version 19c as this is the long term support version.
+
 
 Postgres Database
 *****************
