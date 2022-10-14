@@ -72,7 +72,7 @@ Right
 ^^^^^
 
 Inscribe process:
-   Opens the configuration editor of the process.
+   Opens the :ref:`process-properties` editor of the process.
 
 Open data class:
    Opens the :ref:`data-class-editor` of the process.
