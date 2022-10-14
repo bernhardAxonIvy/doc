@@ -34,33 +34,6 @@
           </execution>
         </executions>
       </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-enforcer-plugin</artifactId>
-        <version>3.0.0-M2</version>
-        <executions>
-          <execution>
-            <id>enforce-file-size</id>
-            <phase>package</phase>
-            <goals>
-              <goal>enforce</goal>
-            </goals>
-            <configuration>
-              <rules>
-                <requireFilesSize>
-                  <maxsize>10000000</maxsize>
-                  <minsize>500000</minsize>
-                  <files>
-                    <file>${project.build.directory}/doc-screenshots-engine-${project.version}.zip</file>
-                  </files>
-                  <message>Artifact seems to have only white screenshots. Artifact size is too small.</message>
-                </requireFilesSize>
-              </rules>
-              <fail>true</fail>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
     </plugins>
   </build>
 </project>
