@@ -1,5 +1,141 @@
 
 
+## 10.0.0
+
+We suggest to install this update release if you are suffering from any of these issues.
+
+### Improvements
+
+* [XIVY-9183](https://axonivy.atlassian.net/browse/XIVY-9183) Filtering users in azure AD 
+
+### New Features
+
+* [XIVY-6684](https://axonivy.atlassian.net/browse/XIVY-6684) Group user synchronisation properties in external security system <span class="badge badge-pill badge-success badge-security">security</span>
+* [XIVY-8449](https://axonivy.atlassian.net/browse/XIVY-8449) One single way to migrate an engine 
+* [XIVY-8727](https://axonivy.atlassian.net/browse/XIVY-8727) View Permission property on processes <span class="badge badge-pill badge-success badge-security">security</span>
+* [XIVY-8821](https://axonivy.atlassian.net/browse/XIVY-8821) Release 10 
+* [XIVY-8825](https://axonivy.atlassian.net/browse/XIVY-8825) Better document all ways how a Licence can be installed / changed 
+* [XIVY-8902](https://axonivy.atlassian.net/browse/XIVY-8902) Project dependency: strict version rather than range 
+* [XIVY-9031](https://axonivy.atlassian.net/browse/XIVY-9031) Bump license version to 10 
+* [XIVY-9214](https://axonivy.atlassian.net/browse/XIVY-9214) Testing and fix some small 9.4 Bugs 
+* [XIVY-9298](https://axonivy.atlassian.net/browse/XIVY-9298) Remove support for Oracle12c and test with Oracle21c as system database 
+* [XIVY-9332](https://axonivy.atlassian.net/browse/XIVY-9332) New Process Editor: Back to BPMN compatible icons 
+* [XIVY-9338](https://axonivy.atlassian.net/browse/XIVY-9338) Implement paging when query all transitive groups of an user 
+* [XIVY-9373](https://axonivy.atlassian.net/browse/XIVY-9373) New frame-10 template which uses full width on big screens 
+* [XIVY-9394](https://axonivy.atlassian.net/browse/XIVY-9394) Stabilize Mavenizer Workflow 
+* [XIVY-9433](https://axonivy.atlassian.net/browse/XIVY-9433) Doc: Change Getting Started so TOC feels more like in other areas 
+* [XIVY-9444](https://axonivy.atlassian.net/browse/XIVY-9444) Adapt portal-performance tests <span class="badge badge-pill badge-success badge-performance">performance</span>
+* [XIVY-9466](https://axonivy.atlassian.net/browse/XIVY-9466) No javadoc/source in Designer for LazyDataModel7 
+* [XIVY-9530](https://axonivy.atlassian.net/browse/XIVY-9530) Warn if the project to convert Primefaces 11 has build path problems 
+* [XIVY-9573](https://axonivy.atlassian.net/browse/XIVY-9573) Doc: Fix TOC in Getting Started 
+* [XIVY-9591](https://axonivy.atlassian.net/browse/XIVY-9591) Upgrade libraries 
+* [XIVY-9596](https://axonivy.atlassian.net/browse/XIVY-9596) Support CLOB, BLOB and byte[] values in Sql Query Dialog 
+* [XIVY-9609](https://axonivy.atlassian.net/browse/XIVY-9609) Doc: Update concepts and engine guide entries for application lifecycle and multi-tenancy 
+* [XIVY-9615](https://axonivy.atlassian.net/browse/XIVY-9615) Remove support for Microsoft Server 2008 
+* [XIVY-9616](https://axonivy.atlassian.net/browse/XIVY-9616) Remove support for postgres 9 and 10 
+* [XIVY-9617](https://axonivy.atlassian.net/browse/XIVY-9617) Remove support for mysql 5.6  
+* [XIVY-9618](https://axonivy.atlassian.net/browse/XIVY-9618) Remove support for mariadb 10.2  
+* [XIVY-9631](https://axonivy.atlassian.net/browse/XIVY-9631) New process editor: visualize negative area on element move/resize 
+* [XIVY-9632](https://axonivy.atlassian.net/browse/XIVY-9632) Dev-WF-UI: gray labels for detail pages 
+* [XIVY-9644](https://axonivy.atlassian.net/browse/XIVY-9644) Java options for add-opens/exports in own config file 
+* [XIVY-9655](https://axonivy.atlassian.net/browse/XIVY-9655) Migrate project-build-plugin to Maven 3.6.3 
+* [XIVY-9656](https://axonivy.atlassian.net/browse/XIVY-9656) Remove deprecated DeployIarMojo from project-build-plugin 
+* [XIVY-9712](https://axonivy.atlassian.net/browse/XIVY-9712) Support iGrafx Flowcharter as BPMN2 import 
+* [XIVY-9734](https://axonivy.atlassian.net/browse/XIVY-9734) Release 10.0 Market Artifacts 
+* [IVYPORTAL-13819](https://axonivy.atlassian.net/browse/IVYPORTAL-13819) Control access to process and case map viewer based on permission 
+* [IVYPORTAL-13932](https://axonivy.atlassian.net/browse/IVYPORTAL-13932) Adapt multi applications  
+* [IVYPORTAL-14130](https://axonivy.atlassian.net/browse/IVYPORTAL-14130) Dashboard Custom Widget - Hide Header and Overflow 
+* [IVYPORTAL-14145](https://axonivy.atlassian.net/browse/IVYPORTAL-14145) Application name into page title for password managers 
+* [IVYPORTAL-14170](https://axonivy.atlassian.net/browse/IVYPORTAL-14170) Portal Dashboard Header Widget  
+* [IVYPORTAL-14176](https://axonivy.atlassian.net/browse/IVYPORTAL-14176) Portal Login - Changes to Support Azure AD  
+* [IVYPORTAL-14177](https://axonivy.atlassian.net/browse/IVYPORTAL-14177) Change Edit Task and Case Name to new API 
+* [IVYPORTAL-14293](https://axonivy.atlassian.net/browse/IVYPORTAL-14293) Move Portal Components to the same level as Developer Guide in Documentation 
+* [IVYPORTAL-14305](https://axonivy.atlassian.net/browse/IVYPORTAL-14305) Process widget in Full mode takes lots of spaces 
+* [IVYPORTAL-14335](https://axonivy.atlassian.net/browse/IVYPORTAL-14335) Update Portal Documentation to include manual ways to hide tasks and cases 
+* [IVYPORTAL-14343](https://axonivy.atlassian.net/browse/IVYPORTAL-14343) Change Standard Dashboard 
+* [IVYPORTAL-14344](https://axonivy.atlassian.net/browse/IVYPORTAL-14344) Change label "Deputy" to "Substitute" 
+* [IVYPORTAL-14347](https://axonivy.atlassian.net/browse/IVYPORTAL-14347) Replace CMS references in JSON Config files 
+* [IVYPORTAL-14392](https://axonivy.atlassian.net/browse/IVYPORTAL-14392) Chart widget title problem umlaute/special character 
+
+### Bugs
+
+* [XIVY-3394](https://axonivy.atlassian.net/browse/XIVY-3394) Deadlock in Java Editor with Content Assist 
+* [XIVY-9195](https://axonivy.atlassian.net/browse/XIVY-9195) Sometimes 404 for different pages in engine cockpit 
+* [XIVY-9208](https://axonivy.atlassian.net/browse/XIVY-9208) SubProcessCall via REST does not allow Overrides 
+* [XIVY-9241](https://axonivy.atlassian.net/browse/XIVY-9241) Engine Cockpit Yaml Editor Ctrl+Space sometimes not show up 
+* [XIVY-9271](https://axonivy.atlassian.net/browse/XIVY-9271) Creating a security system with illegal names in engine cockpit is possible (e.g. ?) 
+* [XIVY-9320](https://axonivy.atlassian.net/browse/XIVY-9320) Embedded Sub start and end should display the connected element 
+* [XIVY-9348](https://axonivy.atlassian.net/browse/XIVY-9348) Sometimes save does not work in new process editor 
+* [XIVY-9392](https://axonivy.atlassian.net/browse/XIVY-9392) Browser caches Engine process viewer too hard 
+* [XIVY-9398](https://axonivy.atlassian.net/browse/XIVY-9398) project-build-plugin validation fails to use m2 deps 
+* [XIVY-9401](https://axonivy.atlassian.net/browse/XIVY-9401) Update Designer quick start tutorial (some texts still refers to old process editor) 
+* [XIVY-9402](https://axonivy.atlassian.net/browse/XIVY-9402) Fix Designer help button (F1) issues 
+* [XIVY-9403](https://axonivy.atlassian.net/browse/XIVY-9403) Rename HtmlDialog: references are not updated 
+* [XIVY-9406](https://axonivy.atlassian.net/browse/XIVY-9406) SSL Client Preferences: Enable insecure SSL requires designer restart 
+* [XIVY-9407](https://axonivy.atlassian.net/browse/XIVY-9407) Designer Overrides open replacement causes editor error 
+* [XIVY-9408](https://axonivy.atlassian.net/browse/XIVY-9408) Overrides Editor does not show overridden content objects 
+* [XIVY-9437](https://axonivy.atlassian.net/browse/XIVY-9437) Opening the Html Dialog Editor fails with a NPE when building palette entries 
+* [XIVY-9438](https://axonivy.atlassian.net/browse/XIVY-9438) PMV cache cleaner job fails with a NullPointerException 
+* [XIVY-9453](https://axonivy.atlassian.net/browse/XIVY-9453) Eclipse workspace blocked after changing files manually 
+* [XIVY-9459](https://axonivy.atlassian.net/browse/XIVY-9459) Workflow-Demos: Procurement flow - request log is always empty 
+* [XIVY-9460](https://axonivy.atlassian.net/browse/XIVY-9460) EndPage can not handle backward slashes when xhtml view is selected 
+* [XIVY-9462](https://axonivy.atlassian.net/browse/XIVY-9462) After login via Azure AD: the session in the portal application seems not to be authenticated 
+* [XIVY-9467](https://axonivy.atlassian.net/browse/XIVY-9467) Primefaces widgets calendar and datePicker do not work under Linux sometimes 
+* [XIVY-9471](https://axonivy.atlassian.net/browse/XIVY-9471) Don't migrate non existing role mappings from db to ivy.yaml 
+* [XIVY-9508](https://axonivy.atlassian.net/browse/XIVY-9508) Market installer fails: as mavenizer already supplied dependency 
+* [XIVY-9512](https://axonivy.atlassian.net/browse/XIVY-9512) Project Conversion is offered and runnable for IvyArchive projects 
+* [XIVY-9515](https://axonivy.atlassian.net/browse/XIVY-9515) Security System Detail page in engine cockpit shows Azure Active Directory instead of ivy Security System when no provider is configured in ivy.yaml 
+* [XIVY-9516](https://axonivy.atlassian.net/browse/XIVY-9516) When changing identity provider in engine cockpit it removes all settings according to the security system 
+* [XIVY-9518](https://axonivy.atlassian.net/browse/XIVY-9518) Font Awesome Icons are not working in dev workflow-ui if the root is blocked 
+* [XIVY-9520](https://axonivy.atlassian.net/browse/XIVY-9520) Rename "Connectors" in process editor palette to "Extensions" 
+* [XIVY-9521](https://axonivy.atlassian.net/browse/XIVY-9521) Users synchronized from Azure Active Directory won't get disabled if they do not exist anymore 
+* [XIVY-9522](https://axonivy.atlassian.net/browse/XIVY-9522) Engine Cockpit can not handle usernames with # 
+* [XIVY-9523](https://axonivy.atlassian.net/browse/XIVY-9523) Migration of an App with an external Security System goes wrong 
+* [XIVY-9534](https://axonivy.atlassian.net/browse/XIVY-9534) IRole#createChildRole creates new role always at top level 
+* [XIVY-9544](https://axonivy.atlassian.net/browse/XIVY-9544) Execution in designer is slowed down by invisible animation in the background 
+* [XIVY-9545](https://axonivy.atlassian.net/browse/XIVY-9545) NPE: Cannot invoke "WorkflowProcessModelVersion.getName()" because "pmv" is null 
+* [XIVY-9546](https://axonivy.atlassian.net/browse/XIVY-9546) Create new ProjectConversion for updating project-build-plugin using EngineConfigCLI 
+* [XIVY-9547](https://axonivy.atlassian.net/browse/XIVY-9547) Design-Time Classpath duplicates libraries from dependent IAR projects 
+* [XIVY-9548](https://axonivy.atlassian.net/browse/XIVY-9548) New Process Editor: Wrap into subprocess not possible for single activity 
+* [XIVY-9549](https://axonivy.atlassian.net/browse/XIVY-9549) New Process Editor: Wrap into subprocess error 
+* [XIVY-9550](https://axonivy.atlassian.net/browse/XIVY-9550) ELException: Error reading caseMap on type CasesDetailsIvyDevWfBean 
+* [XIVY-9556](https://axonivy.atlassian.net/browse/XIVY-9556) Process editor command "Fit to screen" truncates head of model 
+* [XIVY-9558](https://axonivy.atlassian.net/browse/XIVY-9558) Can create role in security context A with parent in security context B (by API) 
+* [XIVY-9561](https://axonivy.atlassian.net/browse/XIVY-9561) DocFactory subprocess is not converted correctly 
+* [XIVY-9562](https://axonivy.atlassian.net/browse/XIVY-9562) Designer workspace is locked through concurrent refresh operations 
+* [XIVY-9563](https://axonivy.atlassian.net/browse/XIVY-9563) New Process Group Wizard broken in empty GIT project 
+* [XIVY-9578](https://axonivy.atlassian.net/browse/XIVY-9578) (Mac) SSL Client Preferences: default key/truststore files do not exist 
+* [XIVY-9585](https://axonivy.atlassian.net/browse/XIVY-9585) Mail steps do not properly migrate html mails when content comes from cms 
+* [XIVY-9587](https://axonivy.atlassian.net/browse/XIVY-9587) ivy.cms.getContentObjectValue() no longer fallbacks to default value 
+* [XIVY-9589](https://axonivy.atlassian.net/browse/XIVY-9589) New process editor: color menu edit out of button if color name is big 
+* [XIVY-9590](https://axonivy.atlassian.net/browse/XIVY-9590) Dev-Wf-Ui theme switch causes browser console log 
+* [XIVY-9594](https://axonivy.atlassian.net/browse/XIVY-9594) WebEditor missing freya style 
+* [XIVY-9595](https://axonivy.atlassian.net/browse/XIVY-9595) Doc: Fix links to tools-reference (renamed to reference) 
+* [XIVY-9599](https://axonivy.atlassian.net/browse/XIVY-9599) Streamline Theme mode of WF-UI with Process Viewer 
+* [XIVY-9600](https://axonivy.atlassian.net/browse/XIVY-9600) Designer at times not able to start due to Plugin-Activation failures 
+* [XIVY-9602](https://axonivy.atlassian.net/browse/XIVY-9602) Deletion of Security System in the Engine Cockpit causes error 
+* [XIVY-9608](https://axonivy.atlassian.net/browse/XIVY-9608) Stop Threads of the process editor on closing 
+* [XIVY-9610](https://axonivy.atlassian.net/browse/XIVY-9610) Wrap to subprocess: Ugly gate/waypoint positions 
+* [XIVY-9612](https://axonivy.atlassian.net/browse/XIVY-9612) Primefaces attribute renaming during project conversion may not work if tag contains spaces before > 
+* [XIVY-9624](https://axonivy.atlassian.net/browse/XIVY-9624) Engine Cockpit: Show running spinner while deployment 
+* [XIVY-9626](https://axonivy.atlassian.net/browse/XIVY-9626) project-build-plugin must not automatically migrate projects during build 
+* [XIVY-9627](https://axonivy.atlassian.net/browse/XIVY-9627) Freya Theme: Scrollbars in Chrome/Edge are always light 
+* [XIVY-9628](https://axonivy.atlassian.net/browse/XIVY-9628) New process editor: copy to negative area is possible 
+* [XIVY-9662](https://axonivy.atlassian.net/browse/XIVY-9662) cms.getSupportedLanguages() returns empty locale 
+* [XIVY-9713](https://axonivy.atlassian.net/browse/XIVY-9713) Labels are positioned somewhere after a BPMN import 
+* [XIVY-9716](https://axonivy.atlassian.net/browse/XIVY-9716) Process Editor is not always showing up the Quick-Action Bar 
+* [XIVY-9738](https://axonivy.atlassian.net/browse/XIVY-9738) Can not convert some process mod files to json 
+* [XIVY-9739](https://axonivy.atlassian.net/browse/XIVY-9739) Don't associated mod and json files with new process editor 
+* [XIVY-9740](https://axonivy.atlassian.net/browse/XIVY-9740) No error in conversion log when a process could not be converted to json 
+* [XIVY-9751](https://axonivy.atlassian.net/browse/XIVY-9751) Dialog Editor can not handle dialog components 
+* [XIVY-9756](https://axonivy.atlassian.net/browse/XIVY-9756) Warning in ivy.log when Process Editor in External Browser is closed 
+* [XIVY-9770](https://axonivy.atlassian.net/browse/XIVY-9770) Superfluous log warnings in designer "no validator for label-edit" 
+* [XIVY-9772](https://axonivy.atlassian.net/browse/XIVY-9772) Import in cms from URL does not work 
+* [XIVY-9791](https://axonivy.atlassian.net/browse/XIVY-9791) New projects should have java17 per default 
+* [IVYPORTAL-14328](https://axonivy.atlassian.net/browse/IVYPORTAL-14328) Error when adding a welcome widget to private dashboard 
+* [IVYPORTAL-14349](https://axonivy.atlassian.net/browse/IVYPORTAL-14349) DateUtils throw exception when using MySQL as System-DB 
+
+
 ## 9.4.0
 
 We strongly recommend to install this update release because it fixes security issues!
