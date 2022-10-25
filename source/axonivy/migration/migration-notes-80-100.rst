@@ -111,7 +111,7 @@ Portal 10.0
 
 |tag-project-changed|
 
-Portal version 8 and earlier are no longer compatible with |axon-ivy| 10.0. If
+Portal version 8 and earlier are no longer compatible with |ivy| 10.0. If
 you have used the Portal in your projects, you have to migrate your projects
 also to Portal 10.0. Please have a look at the :ref:`Portal Migration Notes
 <portal-guide>`.
