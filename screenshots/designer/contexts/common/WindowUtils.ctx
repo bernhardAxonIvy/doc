@@ -5,8 +5,8 @@ Element-Name: WindowUtils
 Element-Type: context
 Element-Version: 2.0
 Id: _MHuYEFIjEemi0ZP8qibuzA
-Runtime-Version: 2.3.0.201806262310
-Save-Time: 3/29/19 2:12 PM
+Runtime-Version: 2.5.4.202209262356
+Save-Time: 10/25/22, 1:31 PM
 
 ------=_.ecl.context-718f04b4-ed39-33e3-af62-0995e4561998
 Content-Type: text/ecl
@@ -116,5 +116,18 @@ proc openQuickAccess [val search]
 {
     get-eclipse-window | get-button "Access commands and other items.*" | click
     get-window "Find Actions" | get-editbox | set-text $search | key-type Enter
+}
+
+proc closeAllOpenEditors
+{
+    try
+    {
+        get-menu -path "File/Close All Editors" | click
+        get-window "Save Resource" | get-button "Don't Save" | click
+    }
+    -catch
+    {
+        //do nothing
+    }
 }
 ------=_.ecl.context-718f04b4-ed39-33e3-af62-0995e4561998--
