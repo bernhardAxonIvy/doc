@@ -3,9 +3,9 @@ Swimlanes
 
 .. figure:: /_images/process-modeling/swimlanes.png
 
-Processes can be visually structured by using *pools* and *lanes*. Pools
-and lanes are colored background swimlanes with a label that is placed
-*behind* the process logic. Swimlanes have a *horizontal* orientation.
+Processes can be visually structured by using *pools* and *lanes*. Pools and
+lanes are swimlanes with a label that is placed *behind* the process logic.
+Swimlanes have a *horizontal* orientation and can have a colored border.
 
 Swimlanes are available for all process kinds and are typically used to
 visualize organizations, roles, responsibility assignments or systems
