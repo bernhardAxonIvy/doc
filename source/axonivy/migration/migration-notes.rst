@@ -10,6 +10,7 @@ working with the newest version. Go through the migration notes from version to 
 .. toctree::
    :maxdepth: 1
 
+   migration-notes-100-111
    migration-notes-80-100
    migration-notes-94-100
    migration-notes-93-94
