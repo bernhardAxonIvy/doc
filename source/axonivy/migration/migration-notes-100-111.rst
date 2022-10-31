@@ -7,7 +7,7 @@ Upgrade to 11.1 is only supported from an Axon Ivy Engine 8.0 and higher.
 If you have an Axon Ivy Engine 8.0 and younger you need first migrate to 10.0.
 
 MsSQL Server Database
-****************
+*********************
 
 |tag-ops-changed|
 
