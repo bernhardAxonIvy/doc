@@ -4,7 +4,7 @@ Migrating from 10.0 to 11.1
 ===========================
 
 MsSQL Server Database
-****************
+*********************
 
 |tag-ops-changed|
 
