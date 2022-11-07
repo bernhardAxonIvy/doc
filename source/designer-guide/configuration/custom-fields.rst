@@ -38,6 +38,10 @@ information about your custom fields.
 
 You can add as many other attributes as you like. E.g., :guilabel:`Icon`.
 
+.. warning::
+  The `indentation spaces <https://yaml.org/spec/1.2.2/#61-indentation-spaces>`__ needs to be the same in the whole yaml file.
+
+
 .. _custom-fields-locale:
 
 Localize Label, Description and Category
