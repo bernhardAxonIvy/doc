@@ -4,7 +4,15 @@ Migrating from 10.0 to 11.1
 ===========================
 
 Upgrade to 11.1 is only supported from an Axon Ivy Engine 8.0 and higher.
-If you have an Axon Ivy Engine 8.0 and younger you need first migrate to 10.0.
+If you have an Axon Ivy Engine older than version 8.0 you need first to migrate to a newer version.
+
+License
+*******
+
+|tag-ops-changed|
+
+You need to request a new license for Axon Ivy Engine 11.1.
+
 
 MsSQL Server Database
 *********************
