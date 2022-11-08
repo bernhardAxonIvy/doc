@@ -58,6 +58,9 @@ variables.
     So, the file :file:`<project>/config/variables.myFile.json` could also serve 
     the value for the variable called :code:`myFile`.
 
+.. warning::
+  The `indentation spaces <https://yaml.org/spec/1.2.2/#61-indentation-spaces>`__ needs to be the same in the whole yaml file.
+
 
 Environments for Variables
 --------------------------
