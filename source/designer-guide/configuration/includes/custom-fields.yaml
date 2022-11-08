@@ -1,20 +1,16 @@
-# == Custom Fields Information ==
-# 
-# You can define here your project custom fields.
-#
 CustomFields:
   Tasks:
     branchOffice:
       Label: Branch Office
       Description: The location (city) of the branch office
-      Type: STRING   
-      Icon: gear     
+      Type: STRING
+      Icon: gear
   Cases:
-#   MyCaseCustomField:
-#      Label: My case custom field
-#      Description: This new case custom field can be used to ...
-#      Type: STRING        
+    MyCaseCustomField:
+      Label: My case custom field
+      Description: This new case custom field can be used to ...
+      Type: STRING
   Starts:
-#   MyStartCustomField:
-#      Label: My start custom field
-#      Description: This new start custom field can be used to ...
+    MyStartCustomField:
+      Label: My start custom field
+      Description: This new start custom field can be used to ...
