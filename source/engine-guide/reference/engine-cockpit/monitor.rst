@@ -20,14 +20,22 @@ Engine
 
 The **Engine** pages allows you to monitor some critical indicators of your Axon Ivy Engine:
 
-- **JVM**: CPU load, number of threads, loaded and unloaded classes.
-- **Memory**: Heap and non heap memory, garbage collections time.
+- **JVM**: CPU load, number of threads, loaded and unloaded classes
+- **Memory**: Heap and non heap memory, garbage collections time
+- **Sessions**: Overview of open user sessions
 - **Cache**: System database caches and their metrics
 - **MBeans**: :ref:`jmx` MBeans viewer
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-jvm.png
 
-.. _engine-cockpit-monitor-mbeans:
+Sessions
+""""""""
+
+The **Sessions** view gives you an overview over all open user sessions.
+Sessions can be destroyed and you can also see the reason for open sessions,
+especially in the case of a session leak.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-sessions.png
 
 Cache
 """""
@@ -43,7 +51,7 @@ can be configured in the :ref:`ivy.yaml <ivy-cache-properties>` file.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-cache.png
 
-.. _engine-cockpit-monitor-performance:
+.. _engine-cockpit-monitor-mbeans:
 
 MBeans
 """"""
@@ -55,6 +63,9 @@ can add multiple attributes to the chart. Click on the remove icon in the table
 below the chart to remove the attribute from the chart.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-mbeans.png
+
+
+.. _engine-cockpit-monitor-performance:
 
 Performance
 ^^^^^^^^^^^
