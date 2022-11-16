@@ -18,10 +18,10 @@ following steps:
 -  The `PrimeFaces Built-In Themes
    <https://primefaces.github.io/primefaces/11_0_0/#/core/themes?id=built-in-themes>`__
    and `Serenity Themes <https://www.primefaces.org/layouts/serenity>`__ are
-   already included in the product. In addition, the core offers a :ref:`serenity-ivy
-   <serenity-themes>` and a `freya-ivy <freya-themes>` theme. To use your own theme,
-   copy your themeXY.jar file into the folder **/webapps/ivy/WEB-INF/lib** of
-   Designer and Engine respectively.
+   already included in the product. In addition, the core offers a
+   :ref:`serenity-ivy <serenity-themes>` and a :ref:`freya-ivy <freya-themes>`
+   theme. To use your own theme, copy your themeXY.jar file into the folder
+   **/webapps/ivy/WEB-INF/lib** of Designer and Engine respectively.
 
 -  The parameter ``primefaces.THEME`` can be set as a head
    attribute in your **template.xhtml** file.
@@ -73,6 +73,15 @@ You can do so by setting the cookie :code:`primefaces-theme-mode` to **light** o
     <h:outputScript name="js/layout.js" library="#{ivyFreyaTheme.library}" />
     ...
   </h:head>
+
+.. warning::
+  If you change an existing template to the **freya-ivy** theme, you may need to set 
+  the :code:`body-hd` class on the :code:`<h:body>` tag, or simply start from a new 
+  generated frame template:
+
+  :: 
+
+    <h:body class="body-hd">
 
 
 .. _serenity-themes:
