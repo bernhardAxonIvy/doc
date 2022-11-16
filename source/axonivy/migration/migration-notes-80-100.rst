@@ -109,7 +109,7 @@ to the new logging configuration.
 Portal 10.0
 -----------
 
-|tag-project-changed|
+|tag-project-changed| |tag-project-auto-convert|
 
 Portal version 8 and earlier are no longer compatible with |ivy| 10.0. If
 you have used the Portal in your projects, you have to migrate your projects
