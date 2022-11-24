@@ -254,9 +254,23 @@ platform, you can include them as Maven dependencies.
  
 To add a new dependency, open the Deployment Descriptor with the Maven POM
 Editor by right clicking on the Deployment Descriptor file and choosing
-**Open With -> Maven POM Editor**
+**Open With -> Maven POM Editor** or click on the **Open with Maven POM Editor** 
+action in the toolbar of the :ref:`deployment-descriptor-editor`.
 
 Then go to the *Dependencies* tab and click **Add...** to add a new dependency.
 All libraries included in the dependencies will be added to the classpath
 and are also included in the packaged Axon Ivy project.
 
+Automatic import of required Axon ivy Projects
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+By default, Axon Ivy Designer automatically imports other required Axon ivy projects from available Maven repositories. 
+E.g., if your project has a dependency on the Axon ivy project ``com.axonivy.portal:portal-components`` and has configured 
+the Maven repository of the Axon Ivy market ``https://maven.axonivy.com/`` then Axon Ivy Designer downloads the 
+project from the repository and automatically imports it to the workspace. 
+
+In some use cases, this automatic import is not desirable (E.g., project migration, etc.). 
+For these cases, you can turn off the automatic import in the preferences.
+On the toolbar of the :ref:`deployment-descriptor-editor`, you can see if the **Auto Import** is on or off.
+There is also an action to trigger the execution of the automatic import. This action works even if **Auto Import** is turned off. 
+A log with the executed tasks is shown to better understands what the automatic import is doing.   
