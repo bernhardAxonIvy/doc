@@ -51,6 +51,14 @@ images or :guilabel:`reset` them to the :ref:`default <branding-system-default>`
 There is also an edit support for your :ref:`custom-css` and an overview of all
 colors with the possibility to easily change a specific color.
 
+If you define your own color, consider to use `HSL Colors
+<https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl>`_ for the
+:code:`ivy-primary-*-color` colors. This is neseccary, because some of them (at
+least :code:`ivy-primary-color` and :code:`ivy-primary-light-color`) are spliced
+to create new color accents. There are many `online color
+converter <https://www.w3schools.com/colors/colors_converter.asp>`_ to get a
+:code:`HSL Color`.
+
 .. warning::
 
   Please note that the color editor will write into the :file:`custom.css` file
