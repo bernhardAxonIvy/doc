@@ -11,17 +11,12 @@ working with the newest version. Go through the migration notes from version to 
    :maxdepth: 1
 
    migration-notes-100-111
-   migration-notes-80-100
-   migration-notes-94-100
-   migration-notes-93-94
-   migration-notes-92-93
-   migration-notes-91-92
-   migration-notes-80-91
 
 .. _previous-migi-notes:
 
 .. rubric:: Previous Migration Notes
 
+* :dev-url:`Migrating from 8.0 to 10.0 </doc/10.0/migration-notes>`
 * :dev-url:`Migrating from 7.0 to 8.0 </doc/8.0.0/migration-notes>`
 * :dev-url:`Migrating from 6.0 to 7.0 </doc/7.0.0/migration-notes>`
 * :dev-url:`Migrating from 5.1 to 6.0 </doc/6.0.0/migration-notes>`
