@@ -11,10 +11,12 @@ Create Azure Active Directory App
   .. figure:: /_images/identity-provider/azure-1.png
     :alt: New registration
 
-  - Choose a name of your choice e.g. :code:`ivy`
-  - Define a Redirect URI of type :code:`Web` which points to your |ivy-engine|: https://ivy.ivyteam.io/default-workflow/oauth2/azure-active-directory/callback
-    *You need to change the host in this URL. And if you run another security system than the default, you also need to change the first part after the host.*
-  - Click on :guilabel:`Register`
+  i. Choose a name of your choice e.g. :code:`ivy`
+  ii. Define a Redirect URI of type :code:`Web` which points to your |ivy-engine|: https://ivy.ivyteam.io/default-workflow/oauth2/callback
+    The pattern of this URI is `https://{host}/{security-system}-workflow/oauth2/callback` . 
+    Therefore, you need to adjust the host in this URL. 
+    If you run another security system than the default, you also need to change the security-system name after the host.
+  iii. Click on :guilabel:`Register`
 
 5. Click on :guilabel:`API permissions`
 6. Click on :guilabel:`Add a permission`
