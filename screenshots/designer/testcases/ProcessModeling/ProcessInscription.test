@@ -31,5 +31,14 @@ captureInscription
 	-width 650 -height 350
 	-screenshot "../process-modeling/process-data-tab.png"
 
+with [get-view "Outline" | get-tree]{
+	select "MyProcess" | double-click
+}
+
+captureInscription
+	-elementType "Business Process"
+	-tabName "Permissions"
+	-width 650 -height 300
+	-screenshot "../process-modeling/process-permissions-tab.png"
 
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

@@ -1,3 +1,5 @@
+.. _process-properties:
+
 Process Properties
 ------------------
 
@@ -19,7 +21,7 @@ Process Data
 The *Process Data tab* allows to specify the data class that will be
 used to define the process's data structure.
 
-|image0|
+|process-data-tab|
 
 Each process must be associated with a data class, otherwise the tab
 will show an error. The used data class is initially specified with the
@@ -36,13 +38,26 @@ It is legal for two processes to specify the same data class. This can
 be desired if the processes operate on the same set of data (e.g. sub
 processes) and it may facilitate the mapping in some cases.
 
+Permissions
+~~~~~~~~~~~
+
+The *Permissions tab* allows to specify if the process can be viewed by
+the end user on the engine or not.
+
+|process-permissions-tab|
+
+   .. note::
+
+      Per default this is allowed for all business processes but not for
+      the User Dialog Logic processes.
+
 Web Service Process
 ~~~~~~~~~~~~~~~~~~~
 
 The *Web Service Process* tab is only available on web service processes
 and allows to specify the web service configuration.
 
-|image1|
+|ws-process-tab|
 
 The *Fully qualified Web Service name* will be used to generate the web
 service class and the WSDL. The namespace part will be used as
@@ -89,5 +104,6 @@ HTTP Basic
    already handles user authentication, the user is passed through to
    Axon Ivy without doing an additional HTTP Basic authentication.
 
-.. |image0| image:: /_images/process-modeling/process-data-tab.png
-.. |image1| image:: /_images/process-modeling/ws-process-tab.png
+.. |process-data-tab| image:: /_images/process-modeling/process-data-tab.png
+.. |process-permissions-tab| image:: /_images/process-modeling/process-permissions-tab.png
+.. |ws-process-tab| image:: /_images/process-modeling/ws-process-tab.png

@@ -105,10 +105,9 @@ More project converters:
 
 For more information about the other project converters, have a look at:
 
-* :ref:`primefaces-11-migration`
-* :ref:`migrate-93_axis`
+* :dev-url:`Primefaces 11 </doc/10.0/axonivy/migration/migration-notes-pf11.html>`
+* :dev-url:`Migrate from AXIS to CXF </doc/10.0/axonivy/migration/migration-notes-92-93.html#drop-axis-technology-for-web-service-client>`
 * :ref:`Portal Converter <portal-guide>`
 
 In the :ref:`migration-notes` migration tasks, for witch the  
 *Convert Project* wizard provides a project converter, are marked with |tag-project-auto-convert|.
-

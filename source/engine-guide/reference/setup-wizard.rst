@@ -91,8 +91,6 @@ The following protocols are supported:
 +----------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 | HTTPS    | HTTP protocol over secure socket layer (SSL).                                                                                                    |
 +----------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-| AJP      | Apache Jakarta Protocol. This protocol is used to integrate a reverse proxy like IIS or Apache. Deprecated - use HTTP or HTTPS!                  |
-+----------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. note::
     In case you disable HTTP port, then the specified port will still be opened by

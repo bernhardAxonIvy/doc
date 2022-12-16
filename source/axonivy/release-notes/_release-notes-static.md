@@ -1,3 +1,141 @@
+
+
+## 10.0.0
+
+We suggest to install this update release if you are suffering from any of these issues.
+
+### Improvements
+
+* [XIVY-9183](https://axonivy.atlassian.net/browse/XIVY-9183) Filtering users in azure AD 
+
+### New Features
+
+* [XIVY-6684](https://axonivy.atlassian.net/browse/XIVY-6684) Group user synchronisation properties in external security system <span class="badge badge-pill badge-success badge-security">security</span>
+* [XIVY-8449](https://axonivy.atlassian.net/browse/XIVY-8449) One single way to migrate an engine 
+* [XIVY-8727](https://axonivy.atlassian.net/browse/XIVY-8727) View Permission property on processes <span class="badge badge-pill badge-success badge-security">security</span>
+* [XIVY-8821](https://axonivy.atlassian.net/browse/XIVY-8821) Release 10 
+* [XIVY-8825](https://axonivy.atlassian.net/browse/XIVY-8825) Better document all ways how a Licence can be installed / changed 
+* [XIVY-8902](https://axonivy.atlassian.net/browse/XIVY-8902) Project dependency: strict version rather than range 
+* [XIVY-9031](https://axonivy.atlassian.net/browse/XIVY-9031) Bump license version to 10 
+* [XIVY-9214](https://axonivy.atlassian.net/browse/XIVY-9214) Testing and fix some small 9.4 Bugs 
+* [XIVY-9298](https://axonivy.atlassian.net/browse/XIVY-9298) Remove support for Oracle12c and test with Oracle21c as system database 
+* [XIVY-9332](https://axonivy.atlassian.net/browse/XIVY-9332) New Process Editor: Back to BPMN compatible icons 
+* [XIVY-9338](https://axonivy.atlassian.net/browse/XIVY-9338) Implement paging when query all transitive groups of an user 
+* [XIVY-9373](https://axonivy.atlassian.net/browse/XIVY-9373) New frame-10 template which uses full width on big screens 
+* [XIVY-9394](https://axonivy.atlassian.net/browse/XIVY-9394) Stabilize Mavenizer Workflow 
+* [XIVY-9433](https://axonivy.atlassian.net/browse/XIVY-9433) Doc: Change Getting Started so TOC feels more like in other areas 
+* [XIVY-9444](https://axonivy.atlassian.net/browse/XIVY-9444) Adapt portal-performance tests <span class="badge badge-pill badge-success badge-performance">performance</span>
+* [XIVY-9466](https://axonivy.atlassian.net/browse/XIVY-9466) No javadoc/source in Designer for LazyDataModel7 
+* [XIVY-9530](https://axonivy.atlassian.net/browse/XIVY-9530) Warn if the project to convert Primefaces 11 has build path problems 
+* [XIVY-9573](https://axonivy.atlassian.net/browse/XIVY-9573) Doc: Fix TOC in Getting Started 
+* [XIVY-9591](https://axonivy.atlassian.net/browse/XIVY-9591) Upgrade libraries 
+* [XIVY-9596](https://axonivy.atlassian.net/browse/XIVY-9596) Support CLOB, BLOB and byte[] values in Sql Query Dialog 
+* [XIVY-9609](https://axonivy.atlassian.net/browse/XIVY-9609) Doc: Update concepts and engine guide entries for application lifecycle and multi-tenancy 
+* [XIVY-9615](https://axonivy.atlassian.net/browse/XIVY-9615) Remove support for Microsoft Server 2008 
+* [XIVY-9616](https://axonivy.atlassian.net/browse/XIVY-9616) Remove support for postgres 9 and 10 
+* [XIVY-9617](https://axonivy.atlassian.net/browse/XIVY-9617) Remove support for mysql 5.6  
+* [XIVY-9618](https://axonivy.atlassian.net/browse/XIVY-9618) Remove support for mariadb 10.2  
+* [XIVY-9631](https://axonivy.atlassian.net/browse/XIVY-9631) New process editor: visualize negative area on element move/resize 
+* [XIVY-9632](https://axonivy.atlassian.net/browse/XIVY-9632) Dev-WF-UI: gray labels for detail pages 
+* [XIVY-9644](https://axonivy.atlassian.net/browse/XIVY-9644) Java options for add-opens/exports in own config file 
+* [XIVY-9655](https://axonivy.atlassian.net/browse/XIVY-9655) Migrate project-build-plugin to Maven 3.6.3 
+* [XIVY-9656](https://axonivy.atlassian.net/browse/XIVY-9656) Remove deprecated DeployIarMojo from project-build-plugin 
+* [XIVY-9712](https://axonivy.atlassian.net/browse/XIVY-9712) Support iGrafx Flowcharter as BPMN2 import 
+* [XIVY-9734](https://axonivy.atlassian.net/browse/XIVY-9734) Release 10.0 Market Artifacts 
+* [IVYPORTAL-13819](https://axonivy.atlassian.net/browse/IVYPORTAL-13819) Control access to process and case map viewer based on permission 
+* [IVYPORTAL-13932](https://axonivy.atlassian.net/browse/IVYPORTAL-13932) Adapt multi applications  
+* [IVYPORTAL-14130](https://axonivy.atlassian.net/browse/IVYPORTAL-14130) Dashboard Custom Widget - Hide Header and Overflow 
+* [IVYPORTAL-14145](https://axonivy.atlassian.net/browse/IVYPORTAL-14145) Application name into page title for password managers 
+* [IVYPORTAL-14170](https://axonivy.atlassian.net/browse/IVYPORTAL-14170) Portal Dashboard Header Widget  
+* [IVYPORTAL-14176](https://axonivy.atlassian.net/browse/IVYPORTAL-14176) Portal Login - Changes to Support Azure AD  
+* [IVYPORTAL-14177](https://axonivy.atlassian.net/browse/IVYPORTAL-14177) Change Edit Task and Case Name to new API 
+* [IVYPORTAL-14293](https://axonivy.atlassian.net/browse/IVYPORTAL-14293) Move Portal Components to the same level as Developer Guide in Documentation 
+* [IVYPORTAL-14305](https://axonivy.atlassian.net/browse/IVYPORTAL-14305) Process widget in Full mode takes lots of spaces 
+* [IVYPORTAL-14335](https://axonivy.atlassian.net/browse/IVYPORTAL-14335) Update Portal Documentation to include manual ways to hide tasks and cases 
+* [IVYPORTAL-14343](https://axonivy.atlassian.net/browse/IVYPORTAL-14343) Change Standard Dashboard 
+* [IVYPORTAL-14344](https://axonivy.atlassian.net/browse/IVYPORTAL-14344) Change label "Deputy" to "Substitute" 
+* [IVYPORTAL-14347](https://axonivy.atlassian.net/browse/IVYPORTAL-14347) Replace CMS references in JSON Config files 
+* [IVYPORTAL-14392](https://axonivy.atlassian.net/browse/IVYPORTAL-14392) Chart widget title problem umlaute/special character 
+
+### Bugs
+
+* [XIVY-3394](https://axonivy.atlassian.net/browse/XIVY-3394) Deadlock in Java Editor with Content Assist 
+* [XIVY-9195](https://axonivy.atlassian.net/browse/XIVY-9195) Sometimes 404 for different pages in engine cockpit 
+* [XIVY-9208](https://axonivy.atlassian.net/browse/XIVY-9208) SubProcessCall via REST does not allow Overrides 
+* [XIVY-9241](https://axonivy.atlassian.net/browse/XIVY-9241) Engine Cockpit Yaml Editor Ctrl+Space sometimes not show up 
+* [XIVY-9271](https://axonivy.atlassian.net/browse/XIVY-9271) Creating a security system with illegal names in engine cockpit is possible (e.g. ?) 
+* [XIVY-9320](https://axonivy.atlassian.net/browse/XIVY-9320) Embedded Sub start and end should display the connected element 
+* [XIVY-9348](https://axonivy.atlassian.net/browse/XIVY-9348) Sometimes save does not work in new process editor 
+* [XIVY-9392](https://axonivy.atlassian.net/browse/XIVY-9392) Browser caches Engine process viewer too hard 
+* [XIVY-9398](https://axonivy.atlassian.net/browse/XIVY-9398) project-build-plugin validation fails to use m2 deps 
+* [XIVY-9401](https://axonivy.atlassian.net/browse/XIVY-9401) Update Designer quick start tutorial (some texts still refers to old process editor) 
+* [XIVY-9402](https://axonivy.atlassian.net/browse/XIVY-9402) Fix Designer help button (F1) issues 
+* [XIVY-9403](https://axonivy.atlassian.net/browse/XIVY-9403) Rename HtmlDialog: references are not updated 
+* [XIVY-9406](https://axonivy.atlassian.net/browse/XIVY-9406) SSL Client Preferences: Enable insecure SSL requires designer restart 
+* [XIVY-9407](https://axonivy.atlassian.net/browse/XIVY-9407) Designer Overrides open replacement causes editor error 
+* [XIVY-9408](https://axonivy.atlassian.net/browse/XIVY-9408) Overrides Editor does not show overridden content objects 
+* [XIVY-9437](https://axonivy.atlassian.net/browse/XIVY-9437) Opening the Html Dialog Editor fails with a NPE when building palette entries 
+* [XIVY-9438](https://axonivy.atlassian.net/browse/XIVY-9438) PMV cache cleaner job fails with a NullPointerException 
+* [XIVY-9453](https://axonivy.atlassian.net/browse/XIVY-9453) Eclipse workspace blocked after changing files manually 
+* [XIVY-9459](https://axonivy.atlassian.net/browse/XIVY-9459) Workflow-Demos: Procurement flow - request log is always empty 
+* [XIVY-9460](https://axonivy.atlassian.net/browse/XIVY-9460) EndPage can not handle backward slashes when xhtml view is selected 
+* [XIVY-9462](https://axonivy.atlassian.net/browse/XIVY-9462) After login via Azure AD: the session in the portal application seems not to be authenticated 
+* [XIVY-9467](https://axonivy.atlassian.net/browse/XIVY-9467) Primefaces widgets calendar and datePicker do not work under Linux sometimes 
+* [XIVY-9471](https://axonivy.atlassian.net/browse/XIVY-9471) Don't migrate non existing role mappings from db to ivy.yaml 
+* [XIVY-9508](https://axonivy.atlassian.net/browse/XIVY-9508) Market installer fails: as mavenizer already supplied dependency 
+* [XIVY-9512](https://axonivy.atlassian.net/browse/XIVY-9512) Project Conversion is offered and runnable for IvyArchive projects 
+* [XIVY-9515](https://axonivy.atlassian.net/browse/XIVY-9515) Security System Detail page in engine cockpit shows Azure Active Directory instead of ivy Security System when no provider is configured in ivy.yaml 
+* [XIVY-9516](https://axonivy.atlassian.net/browse/XIVY-9516) When changing identity provider in engine cockpit it removes all settings according to the security system 
+* [XIVY-9518](https://axonivy.atlassian.net/browse/XIVY-9518) Font Awesome Icons are not working in dev workflow-ui if the root is blocked 
+* [XIVY-9520](https://axonivy.atlassian.net/browse/XIVY-9520) Rename "Connectors" in process editor palette to "Extensions" 
+* [XIVY-9521](https://axonivy.atlassian.net/browse/XIVY-9521) Users synchronized from Azure Active Directory won't get disabled if they do not exist anymore 
+* [XIVY-9522](https://axonivy.atlassian.net/browse/XIVY-9522) Engine Cockpit can not handle usernames with # 
+* [XIVY-9523](https://axonivy.atlassian.net/browse/XIVY-9523) Migration of an App with an external Security System goes wrong 
+* [XIVY-9534](https://axonivy.atlassian.net/browse/XIVY-9534) IRole#createChildRole creates new role always at top level 
+* [XIVY-9544](https://axonivy.atlassian.net/browse/XIVY-9544) Execution in designer is slowed down by invisible animation in the background 
+* [XIVY-9545](https://axonivy.atlassian.net/browse/XIVY-9545) NPE: Cannot invoke "WorkflowProcessModelVersion.getName()" because "pmv" is null 
+* [XIVY-9546](https://axonivy.atlassian.net/browse/XIVY-9546) Create new ProjectConversion for updating project-build-plugin using EngineConfigCLI 
+* [XIVY-9547](https://axonivy.atlassian.net/browse/XIVY-9547) Design-Time Classpath duplicates libraries from dependent IAR projects 
+* [XIVY-9548](https://axonivy.atlassian.net/browse/XIVY-9548) New Process Editor: Wrap into subprocess not possible for single activity 
+* [XIVY-9549](https://axonivy.atlassian.net/browse/XIVY-9549) New Process Editor: Wrap into subprocess error 
+* [XIVY-9550](https://axonivy.atlassian.net/browse/XIVY-9550) ELException: Error reading caseMap on type CasesDetailsIvyDevWfBean 
+* [XIVY-9556](https://axonivy.atlassian.net/browse/XIVY-9556) Process editor command "Fit to screen" truncates head of model 
+* [XIVY-9558](https://axonivy.atlassian.net/browse/XIVY-9558) Can create role in security context A with parent in security context B (by API) 
+* [XIVY-9561](https://axonivy.atlassian.net/browse/XIVY-9561) DocFactory subprocess is not converted correctly 
+* [XIVY-9562](https://axonivy.atlassian.net/browse/XIVY-9562) Designer workspace is locked through concurrent refresh operations 
+* [XIVY-9563](https://axonivy.atlassian.net/browse/XIVY-9563) New Process Group Wizard broken in empty GIT project 
+* [XIVY-9578](https://axonivy.atlassian.net/browse/XIVY-9578) (Mac) SSL Client Preferences: default key/truststore files do not exist 
+* [XIVY-9585](https://axonivy.atlassian.net/browse/XIVY-9585) Mail steps do not properly migrate html mails when content comes from cms 
+* [XIVY-9587](https://axonivy.atlassian.net/browse/XIVY-9587) ivy.cms.getContentObjectValue() no longer fallbacks to default value 
+* [XIVY-9589](https://axonivy.atlassian.net/browse/XIVY-9589) New process editor: color menu edit out of button if color name is big 
+* [XIVY-9590](https://axonivy.atlassian.net/browse/XIVY-9590) Dev-Wf-Ui theme switch causes browser console log 
+* [XIVY-9594](https://axonivy.atlassian.net/browse/XIVY-9594) WebEditor missing freya style 
+* [XIVY-9595](https://axonivy.atlassian.net/browse/XIVY-9595) Doc: Fix links to tools-reference (renamed to reference) 
+* [XIVY-9599](https://axonivy.atlassian.net/browse/XIVY-9599) Streamline Theme mode of WF-UI with Process Viewer 
+* [XIVY-9600](https://axonivy.atlassian.net/browse/XIVY-9600) Designer at times not able to start due to Plugin-Activation failures 
+* [XIVY-9602](https://axonivy.atlassian.net/browse/XIVY-9602) Deletion of Security System in the Engine Cockpit causes error 
+* [XIVY-9608](https://axonivy.atlassian.net/browse/XIVY-9608) Stop Threads of the process editor on closing 
+* [XIVY-9610](https://axonivy.atlassian.net/browse/XIVY-9610) Wrap to subprocess: Ugly gate/waypoint positions 
+* [XIVY-9612](https://axonivy.atlassian.net/browse/XIVY-9612) Primefaces attribute renaming during project conversion may not work if tag contains spaces before > 
+* [XIVY-9624](https://axonivy.atlassian.net/browse/XIVY-9624) Engine Cockpit: Show running spinner while deployment 
+* [XIVY-9626](https://axonivy.atlassian.net/browse/XIVY-9626) project-build-plugin must not automatically migrate projects during build 
+* [XIVY-9627](https://axonivy.atlassian.net/browse/XIVY-9627) Freya Theme: Scrollbars in Chrome/Edge are always light 
+* [XIVY-9628](https://axonivy.atlassian.net/browse/XIVY-9628) New process editor: copy to negative area is possible 
+* [XIVY-9662](https://axonivy.atlassian.net/browse/XIVY-9662) cms.getSupportedLanguages() returns empty locale 
+* [XIVY-9713](https://axonivy.atlassian.net/browse/XIVY-9713) Labels are positioned somewhere after a BPMN import 
+* [XIVY-9716](https://axonivy.atlassian.net/browse/XIVY-9716) Process Editor is not always showing up the Quick-Action Bar 
+* [XIVY-9738](https://axonivy.atlassian.net/browse/XIVY-9738) Can not convert some process mod files to json 
+* [XIVY-9739](https://axonivy.atlassian.net/browse/XIVY-9739) Don't associated mod and json files with new process editor 
+* [XIVY-9740](https://axonivy.atlassian.net/browse/XIVY-9740) No error in conversion log when a process could not be converted to json 
+* [XIVY-9751](https://axonivy.atlassian.net/browse/XIVY-9751) Dialog Editor can not handle dialog components 
+* [XIVY-9756](https://axonivy.atlassian.net/browse/XIVY-9756) Warning in ivy.log when Process Editor in External Browser is closed 
+* [XIVY-9770](https://axonivy.atlassian.net/browse/XIVY-9770) Superfluous log warnings in designer "no validator for label-edit" 
+* [XIVY-9772](https://axonivy.atlassian.net/browse/XIVY-9772) Import in cms from URL does not work 
+* [XIVY-9791](https://axonivy.atlassian.net/browse/XIVY-9791) New projects should have java17 per default 
+* [IVYPORTAL-14328](https://axonivy.atlassian.net/browse/IVYPORTAL-14328) Error when adding a welcome widget to private dashboard 
+* [IVYPORTAL-14349](https://axonivy.atlassian.net/browse/IVYPORTAL-14349) DateUtils throw exception when using MySQL as System-DB 
+
+
 ## 9.4.0
 
 We strongly recommend to install this update release because it fixes security issues!
@@ -71,7 +209,6 @@ We strongly recommend to install this update release because it fixes security i
 * [XIVY-5991](https://axonivy.atlassian.net/browse/XIVY-5991) Next Generation Process Editor 
 * [XIVY-6241](https://axonivy.atlassian.net/browse/XIVY-6241) Beautify toolbar and quick action bar 
 * [XIVY-6392](https://axonivy.atlassian.net/browse/XIVY-6392) Update SnakeYaml to 1.31 official release 
-* [XIVY-6593](https://axonivy.atlassian.net/browse/XIVY-6593) Allow to import test projects when importing demo projects 
 * [XIVY-6627](https://axonivy.atlassian.net/browse/XIVY-6627) Modern CMS structure 
 * [XIVY-6638](https://axonivy.atlassian.net/browse/XIVY-6638) Prepare for SCM ready ivy process serialization 
 * [XIVY-6668](https://axonivy.atlassian.net/browse/XIVY-6668) Monitor slow requests in Engine Cockpit  
@@ -187,7 +324,6 @@ We strongly recommend to install this update release because it fixes security i
 * [XIVY-8623](https://axonivy.atlassian.net/browse/XIVY-8623) Multilingual name and description for task and case 
 * [XIVY-8624](https://axonivy.atlassian.net/browse/XIVY-8624) Prototype multi language fields in system database 
 * [XIVY-8681](https://axonivy.atlassian.net/browse/XIVY-8681) Improve Maven workspace experience 
-* [XIVY-8683](https://axonivy.atlassian.net/browse/XIVY-8683) Delete 'eclipse-workspace' file; that prevents an import action 
 * [XIVY-8707](https://axonivy.atlassian.net/browse/XIVY-8707) Update to PrimeFaces 11.0.5 
 * [XIVY-8754](https://axonivy.atlassian.net/browse/XIVY-8754) Show all signal and error boundary icons in new process editor 
 * [XIVY-8768](https://axonivy.atlassian.net/browse/XIVY-8768) Add clear delay function on a delayed task 
@@ -215,95 +351,94 @@ We strongly recommend to install this update release because it fixes security i
 * [XIVY-9337](https://axonivy.atlassian.net/browse/XIVY-9337) Doc: include all node presets in graphics for WYSIWYG 
 * [XIVY-9397](https://axonivy.atlassian.net/browse/XIVY-9397) Redirect to originalUrl after successful login with Microsoft 
 * [XIVY-9399](https://axonivy.atlassian.net/browse/XIVY-9399) Raise Execution Environment to JavaSE-17 in designer.targetplatform 
-* [XIVY-9432](https://axonivy.atlassian.net/browse/XIVY-9432) Add a try Axon Ivy into the Axon Ivy doc section 
-* [IVYPORTAL-6250](https://axonivy.atlassian.net/browse/IVYPORTAL-6250) Statistics - New Charts - Cases by Category - Bar Chart
-* [IVYPORTAL-6463](https://axonivy.atlassian.net/browse/IVYPORTAL-6463) Password validation in Portal
-* [IVYPORTAL-10050](https://axonivy.atlassian.net/browse/IVYPORTAL-10050) Improve BusinessCase History in portal
-* [IVYPORTAL-10238](https://axonivy.atlassian.net/browse/IVYPORTAL-10238) Avatar/Picture for users and roles
-* [IVYPORTAL-11427](https://axonivy.atlassian.net/browse/IVYPORTAL-11427) Dynamic scaling for Charts
-* [IVYPORTAL-12038](https://axonivy.atlassian.net/browse/IVYPORTAL-12038) Support application favorite process and default charts customization by Variables
-* [IVYPORTAL-12241](https://axonivy.atlassian.net/browse/IVYPORTAL-12241) Support Opera as browser
-* [IVYPORTAL-12346](https://axonivy.atlassian.net/browse/IVYPORTAL-12346) Provide the possibility to add own menu items to User Menu
-* [IVYPORTAL-12394](https://axonivy.atlassian.net/browse/IVYPORTAL-12394) Behaviour when clicking on a task in task list
-* [IVYPORTAL-12576](https://axonivy.atlassian.net/browse/IVYPORTAL-12576) Create user guide document for new dashboard
-* [IVYPORTAL-12638](https://axonivy.atlassian.net/browse/IVYPORTAL-12638) GUI tests for task widget of new Dashboard
-* [IVYPORTAL-12650](https://axonivy.atlassian.net/browse/IVYPORTAL-12650) Improve handling of params with iframes
-* [IVYPORTAL-12666](https://axonivy.atlassian.net/browse/IVYPORTAL-12666) Create additional dashboards at runtime
-* [IVYPORTAL-12747](https://axonivy.atlassian.net/browse/IVYPORTAL-12747) Unify visibility rule for new dashboard vs full task/case/process list
-* [IVYPORTAL-12849](https://axonivy.atlassian.net/browse/IVYPORTAL-12849) Improve absence management
-* [IVYPORTAL-12902](https://axonivy.atlassian.net/browse/IVYPORTAL-12902) Process starts for Teams
-* [IVYPORTAL-12943](https://axonivy.atlassian.net/browse/IVYPORTAL-12943) Portal in Axon Ivy Market
-* [IVYPORTAL-12963](https://axonivy.atlassian.net/browse/IVYPORTAL-12963) Portal Login-Background using branding
-* [IVYPORTAL-12985](https://axonivy.atlassian.net/browse/IVYPORTAL-12985) Mention all Portal settings in document
-* [IVYPORTAL-12998](https://axonivy.atlassian.net/browse/IVYPORTAL-12998) Process Widget does not work correctly when user switches view/edit mode
-* [IVYPORTAL-13015](https://axonivy.atlassian.net/browse/IVYPORTAL-13015) Search in Cases and Tasks list in Portal - Space characters are not filtered
-* [IVYPORTAL-13017](https://axonivy.atlassian.net/browse/IVYPORTAL-13017) Findings and improvements dashboard
-* [IVYPORTAL-13060](https://axonivy.atlassian.net/browse/IVYPORTAL-13060) Expand icon is displayed when preview Combined Process
-* [IVYPORTAL-13069](https://axonivy.atlassian.net/browse/IVYPORTAL-13069) Category is not displayed if changing process type from full mode to compact mode
-* [IVYPORTAL-13070](https://axonivy.atlassian.net/browse/IVYPORTAL-13070) Filter options of process widget are invisible in edit mode
-* [IVYPORTAL-13071](https://axonivy.atlassian.net/browse/IVYPORTAL-13071) Reorder dashboards
-* [IVYPORTAL-13080](https://axonivy.atlassian.net/browse/IVYPORTAL-13080) Filter panel of widgets not disappear when open Manage Filter while widget is expanded
-* [IVYPORTAL-13081](https://axonivy.atlassian.net/browse/IVYPORTAL-13081) Saved filters not updated when add/remove filter while widget is expanded
-* [IVYPORTAL-13087](https://axonivy.atlassian.net/browse/IVYPORTAL-13087) Preview of Process widget not change to new selected process
-* [IVYPORTAL-13111](https://axonivy.atlassian.net/browse/IVYPORTAL-13111) Primefaces 7.0.25 - p:fileUpload ajax status issues
-* [IVYPORTAL-13171](https://axonivy.atlassian.net/browse/IVYPORTAL-13171) Log out AJAX error to console
-* [IVYPORTAL-13178](https://axonivy.atlassian.net/browse/IVYPORTAL-13178) Edit Wizard UI
-* [IVYPORTAL-13179](https://axonivy.atlassian.net/browse/IVYPORTAL-13179) Create new Dashboard Wizard
-* [IVYPORTAL-13180](https://axonivy.atlassian.net/browse/IVYPORTAL-13180) Edit Private / public dashboards
-* [IVYPORTAL-13187](https://axonivy.atlassian.net/browse/IVYPORTAL-13187) Portal Admin setting displays config with different language
-* [IVYPORTAL-13190](https://axonivy.atlassian.net/browse/IVYPORTAL-13190) JS error when open case details on Portal LE
-* [IVYPORTAL-13194](https://axonivy.atlassian.net/browse/IVYPORTAL-13194) New Process visualization for process start
-* [IVYPORTAL-13197](https://axonivy.atlassian.net/browse/IVYPORTAL-13197) Add default column Actions to the task and case widgets
-* [IVYPORTAL-13198](https://axonivy.atlassian.net/browse/IVYPORTAL-13198) Optimize Task Details page size
-* [IVYPORTAL-13199](https://axonivy.atlassian.net/browse/IVYPORTAL-13199) Edit widgets and reset UI and behaviour
-* [IVYPORTAL-13249](https://axonivy.atlassian.net/browse/IVYPORTAL-13249) Remove warnings in Portal doc related to absolute URL
-* [IVYPORTAL-13250](https://axonivy.atlassian.net/browse/IVYPORTAL-13250) Improve filters in full task and case list
-* [IVYPORTAL-13283](https://axonivy.atlassian.net/browse/IVYPORTAL-13283) Migrate to Primefaces 11 in Portal
-* [IVYPORTAL-13290](https://axonivy.atlassian.net/browse/IVYPORTAL-13290) Fix reorder mange column of configuring case list dashboard
-* [IVYPORTAL-13293](https://axonivy.atlassian.net/browse/IVYPORTAL-13293) Split dashboard process widget to separated modes
-* [IVYPORTAL-13317](https://axonivy.atlassian.net/browse/IVYPORTAL-13317) Bring the statistic widget from old dashboard to new dashboard
-* [IVYPORTAL-13318](https://axonivy.atlassian.net/browse/IVYPORTAL-13318) Support “Expiry task” feature from basic wf ui in portal
-* [IVYPORTAL-13375](https://axonivy.atlassian.net/browse/IVYPORTAL-13375) Change default sorting of new dashboard (task/case widget) to “Creation date DESC”
-* [IVYPORTAL-13399](https://axonivy.atlassian.net/browse/IVYPORTAL-13399) Apply new FREYA Theme to Portal
-* [IVYPORTAL-13402](https://axonivy.atlassian.net/browse/IVYPORTAL-13402) Enhance style of the tab view to switch between dashboards
-* [IVYPORTAL-13406](https://axonivy.atlassian.net/browse/IVYPORTAL-13406) Portal inside Portal when open related task in Case Information dialog
-* [IVYPORTAL-13408](https://axonivy.atlassian.net/browse/IVYPORTAL-13408) DataTable Showcase not work as expected
-* [IVYPORTAL-13415](https://axonivy.atlassian.net/browse/IVYPORTAL-13415) Add checkbox on the business case to enable/disable history from subcases
-* [IVYPORTAL-13416](https://axonivy.atlassian.net/browse/IVYPORTAL-13416) Add link to show more documents on 1 page
-* [IVYPORTAL-13452](https://axonivy.atlassian.net/browse/IVYPORTAL-13452) Support call original case information when using iframe
-* [IVYPORTAL-13478](https://axonivy.atlassian.net/browse/IVYPORTAL-13478) Role Assignment module in Portal
-* [IVYPORTAL-13491](https://axonivy.atlassian.net/browse/IVYPORTAL-13491) Support portal styles for portal components in IFrame for v10
-* [IVYPORTAL-13561](https://axonivy.atlassian.net/browse/IVYPORTAL-13561) Change repo for Portal artifacts to nexus.axonivy.com
-* [IVYPORTAL-13607](https://axonivy.atlassian.net/browse/IVYPORTAL-13607) LE Performance problem related statistic
-* [IVYPORTAL-13615](https://axonivy.atlassian.net/browse/IVYPORTAL-13615) Convert p:dataGrid/dataList to p:dataView due to it is deprecated on PF 11
-* [IVYPORTAL-13621](https://axonivy.atlassian.net/browse/IVYPORTAL-13621) Changed parameter “case” to “caseId” for task templates
-* [IVYPORTAL-13635](https://axonivy.atlassian.net/browse/IVYPORTAL-13635) Problem Engine Installation 9.3.4 with SQL Server
-* [IVYPORTAL-13641](https://axonivy.atlassian.net/browse/IVYPORTAL-13641) Remove custom varchar in document
-* [IVYPORTAL-13645](https://axonivy.atlassian.net/browse/IVYPORTAL-13645) File customization.css is removed on Portal master but without migration notes
-* [IVYPORTAL-13658](https://axonivy.atlassian.net/browse/IVYPORTAL-13658) UI improvement on devices
-* [IVYPORTAL-13698](https://axonivy.atlassian.net/browse/IVYPORTAL-13698) Sticky Dashboard navigation
-* [IVYPORTAL-13745](https://axonivy.atlassian.net/browse/IVYPORTAL-13745) Avoid overlapping starts of a job with the CronByGlobalVAriableTriggerStartEventBean
-* [IVYPORTAL-13771](https://axonivy.atlassian.net/browse/IVYPORTAL-13771) Performance issue with TaskUtils.findTaskUserHasPermissionToSee
-* [IVYPORTAL-13778](https://axonivy.atlassian.net/browse/IVYPORTAL-13778) Remove portalStyle project
-* [IVYPORTAL-13788](https://axonivy.atlassian.net/browse/IVYPORTAL-13788) Related cases can not be destroyed on case detail page
-* [IVYPORTAL-13805](https://axonivy.atlassian.net/browse/IVYPORTAL-13805) Remove usages of IApplication#current
-* [IVYPORTAL-13814](https://axonivy.atlassian.net/browse/IVYPORTAL-13814) Admin role cannot see destroyed related cases
-* [IVYPORTAL-13815](https://axonivy.atlassian.net/browse/IVYPORTAL-13815) Some tables on Case details page are displayed not good
-* [IVYPORTAL-13840](https://axonivy.atlassian.net/browse/IVYPORTAL-13840) Can not change number of items/page if select value greater than total items
-* [IVYPORTAL-13845](https://axonivy.atlassian.net/browse/IVYPORTAL-13845) Use Frame Mode for Case Map example
-* [IVYPORTAL-13849](https://axonivy.atlassian.net/browse/IVYPORTAL-13849) Apply language concept
-* [IVYPORTAL-13850](https://axonivy.atlassian.net/browse/IVYPORTAL-13850) Consider only custom fields with meta data in portal dashboard
-* [IVYPORTAL-13857](https://axonivy.atlassian.net/browse/IVYPORTAL-13857) Move dashboard configuration user menu to own page
-* [IVYPORTAL-13858](https://axonivy.atlassian.net/browse/IVYPORTAL-13858) Combine PortalKit and PortalTemplate to one project
-* [IVYPORTAL-13910](https://axonivy.atlassian.net/browse/IVYPORTAL-13910) Component for process and case map viewer in portalcomponents
-* [IVYPORTAL-14017](https://axonivy.atlassian.net/browse/IVYPORTAL-14017) Adapt Serenity theme for portal-component
-* [IVYPORTAL-14039](https://axonivy.atlassian.net/browse/IVYPORTAL-14039) Statistic Chart improvement
-* [IVYPORTAL-14073](https://axonivy.atlassian.net/browse/IVYPORTAL-14073) Update user document for case/task filter permissions
-* [IVYPORTAL-14129](https://axonivy.atlassian.net/browse/IVYPORTAL-14129) Adapt securityMemberNameAndAvatar component for project portal-component
-* [IVYPORTAL-14145](https://axonivy.atlassian.net/browse/IVYPORTAL-14145) Application name into page title for password managers
-* [IVYPORTAL-14161](https://axonivy.atlassian.net/browse/IVYPORTAL-14161) Enhance portal components examples and documentation
-* [IVYPORTAL-14170](https://axonivy.atlassian.net/browse/IVYPORTAL-14170) Portal Dashboard Header Widget
-* [IVYPORTAL-14308](https://axonivy.atlassian.net/browse/IVYPORTAL-14308) NPE with Statistic widget after session timeout
+* [IVYPORTAL-6250](https://axonivy.atlassian.net/browse/IVYPORTAL-6250) Statistics - New Charts - Cases by Category - Bar Chart 
+* [IVYPORTAL-6463](https://axonivy.atlassian.net/browse/IVYPORTAL-6463) Password validation in Portal 
+* [IVYPORTAL-10050](https://axonivy.atlassian.net/browse/IVYPORTAL-10050) Improve BusinessCase History in portal 
+* [IVYPORTAL-10238](https://axonivy.atlassian.net/browse/IVYPORTAL-10238) Avatar/Picture for users and roles 
+* [IVYPORTAL-11427](https://axonivy.atlassian.net/browse/IVYPORTAL-11427) Dynamic scaling for Charts  
+* [IVYPORTAL-12038](https://axonivy.atlassian.net/browse/IVYPORTAL-12038) Support application favorite process and default charts customization by Variables 
+* [IVYPORTAL-12241](https://axonivy.atlassian.net/browse/IVYPORTAL-12241) Support Opera as browser  
+* [IVYPORTAL-12346](https://axonivy.atlassian.net/browse/IVYPORTAL-12346) Provide the possibility to add own menu items to User Menu 
+* [IVYPORTAL-12394](https://axonivy.atlassian.net/browse/IVYPORTAL-12394) Behaviour when clicking on a task in task list 
+* [IVYPORTAL-12576](https://axonivy.atlassian.net/browse/IVYPORTAL-12576) Create user guide document for new dashboard 
+* [IVYPORTAL-12638](https://axonivy.atlassian.net/browse/IVYPORTAL-12638) GUI tests for task widget of new Dashboard 
+* [IVYPORTAL-12650](https://axonivy.atlassian.net/browse/IVYPORTAL-12650) Improve handling of params with iframes 
+* [IVYPORTAL-12666](https://axonivy.atlassian.net/browse/IVYPORTAL-12666) Create additional dashboards at runtime 
+* [IVYPORTAL-12747](https://axonivy.atlassian.net/browse/IVYPORTAL-12747) Unify visibility rule for new dashboard vs full task/case/process list 
+* [IVYPORTAL-12849](https://axonivy.atlassian.net/browse/IVYPORTAL-12849) Improve absence management  
+* [IVYPORTAL-12902](https://axonivy.atlassian.net/browse/IVYPORTAL-12902) Process starts for Teams 
+* [IVYPORTAL-12943](https://axonivy.atlassian.net/browse/IVYPORTAL-12943) Portal in Axon Ivy Market 
+* [IVYPORTAL-12963](https://axonivy.atlassian.net/browse/IVYPORTAL-12963) Portal Login-Background using branding 
+* [IVYPORTAL-12985](https://axonivy.atlassian.net/browse/IVYPORTAL-12985) Mention all Portal settings in document 
+* [IVYPORTAL-12998](https://axonivy.atlassian.net/browse/IVYPORTAL-12998) Process Widget does not work correctly when user switches view/edit mode 
+* [IVYPORTAL-13015](https://axonivy.atlassian.net/browse/IVYPORTAL-13015) Search in Cases and Tasks list in Portal - Space characters are not filtered 
+* [IVYPORTAL-13017](https://axonivy.atlassian.net/browse/IVYPORTAL-13017) Findings and improvements dashboard 
+* [IVYPORTAL-13060](https://axonivy.atlassian.net/browse/IVYPORTAL-13060) Expand icon is displayed when preview Combined Process 
+* [IVYPORTAL-13069](https://axonivy.atlassian.net/browse/IVYPORTAL-13069) Category is not displayed if changing process type from full mode to compact mode 
+* [IVYPORTAL-13070](https://axonivy.atlassian.net/browse/IVYPORTAL-13070) Filter options of process widget are invisible in edit mode 
+* [IVYPORTAL-13071](https://axonivy.atlassian.net/browse/IVYPORTAL-13071) Reorder dashboards 
+* [IVYPORTAL-13080](https://axonivy.atlassian.net/browse/IVYPORTAL-13080) Filter panel of widgets not disappear when open Manage Filter while widget is expanded 
+* [IVYPORTAL-13081](https://axonivy.atlassian.net/browse/IVYPORTAL-13081) Saved filters not updated when add/remove filter while widget is expanded 
+* [IVYPORTAL-13087](https://axonivy.atlassian.net/browse/IVYPORTAL-13087) Preview of Process widget not change to new selected process 
+* [IVYPORTAL-13111](https://axonivy.atlassian.net/browse/IVYPORTAL-13111) Primefaces 7.0.25 - p:fileUpload ajax status issues 
+* [IVYPORTAL-13171](https://axonivy.atlassian.net/browse/IVYPORTAL-13171) Log out AJAX error to console 
+* [IVYPORTAL-13178](https://axonivy.atlassian.net/browse/IVYPORTAL-13178) Edit Wizard UI  
+* [IVYPORTAL-13179](https://axonivy.atlassian.net/browse/IVYPORTAL-13179) Create new Dashboard Wizard 
+* [IVYPORTAL-13180](https://axonivy.atlassian.net/browse/IVYPORTAL-13180) Edit Private / public dashboards 
+* [IVYPORTAL-13187](https://axonivy.atlassian.net/browse/IVYPORTAL-13187) Portal Admin setting displays config with different language 
+* [IVYPORTAL-13190](https://axonivy.atlassian.net/browse/IVYPORTAL-13190) JS error when open case details on Portal LE 
+* [IVYPORTAL-13194](https://axonivy.atlassian.net/browse/IVYPORTAL-13194) New Process visualization for process start 
+* [IVYPORTAL-13197](https://axonivy.atlassian.net/browse/IVYPORTAL-13197) Add default column Actions to the task and case widgets 
+* [IVYPORTAL-13198](https://axonivy.atlassian.net/browse/IVYPORTAL-13198) Optimize Task Details page size 
+* [IVYPORTAL-13199](https://axonivy.atlassian.net/browse/IVYPORTAL-13199) Edit widgets and reset UI and behaviour  
+* [IVYPORTAL-13249](https://axonivy.atlassian.net/browse/IVYPORTAL-13249) Remove warnings in Portal doc related to absolute URL 
+* [IVYPORTAL-13250](https://axonivy.atlassian.net/browse/IVYPORTAL-13250) Improve filters in full task and case list  
+* [IVYPORTAL-13283](https://axonivy.atlassian.net/browse/IVYPORTAL-13283) Migrate to Primefaces 11 in Portal  
+* [IVYPORTAL-13290](https://axonivy.atlassian.net/browse/IVYPORTAL-13290) Fix reorder mange column of configuring case list dashboard 
+* [IVYPORTAL-13293](https://axonivy.atlassian.net/browse/IVYPORTAL-13293) Split dashboard process widget to separated modes 
+* [IVYPORTAL-13317](https://axonivy.atlassian.net/browse/IVYPORTAL-13317) Bring the statistic widget from old dashboard to new dashboard 
+* [IVYPORTAL-13318](https://axonivy.atlassian.net/browse/IVYPORTAL-13318) Support "Expiry task" feature from basic wf ui in portal 
+* [IVYPORTAL-13375](https://axonivy.atlassian.net/browse/IVYPORTAL-13375) Change default sorting of new dashboard (task/case widget) to "Creation date DESC" 
+* [IVYPORTAL-13399](https://axonivy.atlassian.net/browse/IVYPORTAL-13399) Apply new FREYA Theme to Portal  
+* [IVYPORTAL-13402](https://axonivy.atlassian.net/browse/IVYPORTAL-13402) Enhance style of the tab view to switch between dashboards 
+* [IVYPORTAL-13406](https://axonivy.atlassian.net/browse/IVYPORTAL-13406) Portal inside Portal when open related task in Case Information dialog 
+* [IVYPORTAL-13408](https://axonivy.atlassian.net/browse/IVYPORTAL-13408) DataTable Showcase not work as expected 
+* [IVYPORTAL-13415](https://axonivy.atlassian.net/browse/IVYPORTAL-13415) Add checkbox on the business case to enable/disable history from subcases 
+* [IVYPORTAL-13416](https://axonivy.atlassian.net/browse/IVYPORTAL-13416) Add link to show more documents on 1 page 
+* [IVYPORTAL-13452](https://axonivy.atlassian.net/browse/IVYPORTAL-13452) Support call original case information when using iframe 
+* [IVYPORTAL-13478](https://axonivy.atlassian.net/browse/IVYPORTAL-13478) Role Assignment module in Portal 
+* [IVYPORTAL-13491](https://axonivy.atlassian.net/browse/IVYPORTAL-13491) Support portal styles for portal components in IFrame for v10 
+* [IVYPORTAL-13561](https://axonivy.atlassian.net/browse/IVYPORTAL-13561) Change repo for Portal artifacts to nexus.axonivy.com 
+* [IVYPORTAL-13607](https://axonivy.atlassian.net/browse/IVYPORTAL-13607) LE Performance problem related statistic 
+* [IVYPORTAL-13615](https://axonivy.atlassian.net/browse/IVYPORTAL-13615) Convert p:dataGrid/dataList to p:dataView due to it is deprecated on PF 11  
+* [IVYPORTAL-13621](https://axonivy.atlassian.net/browse/IVYPORTAL-13621) Changed parameter "case" to "caseId" for task templates 
+* [IVYPORTAL-13635](https://axonivy.atlassian.net/browse/IVYPORTAL-13635) Problem Engine Installation 9.3.4 with SQL Server 
+* [IVYPORTAL-13641](https://axonivy.atlassian.net/browse/IVYPORTAL-13641) Remove custom varchar in document 
+* [IVYPORTAL-13645](https://axonivy.atlassian.net/browse/IVYPORTAL-13645) File customization.css is removed on Portal master but without migration notes 
+* [IVYPORTAL-13658](https://axonivy.atlassian.net/browse/IVYPORTAL-13658) UI improvement on devices 
+* [IVYPORTAL-13698](https://axonivy.atlassian.net/browse/IVYPORTAL-13698) Sticky Dashboard navigation 
+* [IVYPORTAL-13745](https://axonivy.atlassian.net/browse/IVYPORTAL-13745) Avoid overlapping starts of a job with the CronByGlobalVAriableTriggerStartEventBean 
+* [IVYPORTAL-13771](https://axonivy.atlassian.net/browse/IVYPORTAL-13771) Performance issue with TaskUtils.findTaskUserHasPermissionToSee 
+* [IVYPORTAL-13778](https://axonivy.atlassian.net/browse/IVYPORTAL-13778) Remove portalStyle project 
+* [IVYPORTAL-13788](https://axonivy.atlassian.net/browse/IVYPORTAL-13788) Related cases can not be destroyed on case detail page 
+* [IVYPORTAL-13805](https://axonivy.atlassian.net/browse/IVYPORTAL-13805) Remove usages of IApplication#current 
+* [IVYPORTAL-13814](https://axonivy.atlassian.net/browse/IVYPORTAL-13814) Admin role cannot see destroyed related cases 
+* [IVYPORTAL-13815](https://axonivy.atlassian.net/browse/IVYPORTAL-13815) Some tables on Case details page are displayed not good 
+* [IVYPORTAL-13840](https://axonivy.atlassian.net/browse/IVYPORTAL-13840) Can not change number of items/page if select value greater than total items 
+* [IVYPORTAL-13845](https://axonivy.atlassian.net/browse/IVYPORTAL-13845) Use Frame Mode for Case Map example 
+* [IVYPORTAL-13849](https://axonivy.atlassian.net/browse/IVYPORTAL-13849) Apply language concept 
+* [IVYPORTAL-13850](https://axonivy.atlassian.net/browse/IVYPORTAL-13850) Consider only custom fields with meta data in portal dashboard 
+* [IVYPORTAL-13857](https://axonivy.atlassian.net/browse/IVYPORTAL-13857) Move dashboard configuration user menu to own page 
+* [IVYPORTAL-13858](https://axonivy.atlassian.net/browse/IVYPORTAL-13858) Combine PortalKit and PortalTemplate to one project 
+* [IVYPORTAL-13910](https://axonivy.atlassian.net/browse/IVYPORTAL-13910) Component for process and case map viewer in portalcomponents 
+* [IVYPORTAL-14017](https://axonivy.atlassian.net/browse/IVYPORTAL-14017) Adapt Serenity theme for portal-component 
+* [IVYPORTAL-14039](https://axonivy.atlassian.net/browse/IVYPORTAL-14039) Statistic Chart improvement 
+* [IVYPORTAL-14073](https://axonivy.atlassian.net/browse/IVYPORTAL-14073) Update user document for case/task filter permissions 
+* [IVYPORTAL-14129](https://axonivy.atlassian.net/browse/IVYPORTAL-14129) Adapt securityMemberNameAndAvatar component for project portal-component 
+* [IVYPORTAL-14145](https://axonivy.atlassian.net/browse/IVYPORTAL-14145) Application name into page title for password managers 
+* [IVYPORTAL-14161](https://axonivy.atlassian.net/browse/IVYPORTAL-14161) Enhance portal components examples and documentation 
+* [IVYPORTAL-14170](https://axonivy.atlassian.net/browse/IVYPORTAL-14170) Portal Dashboard Header Widget  
+* [IVYPORTAL-14308](https://axonivy.atlassian.net/browse/IVYPORTAL-14308) NPE with Statistic widget after session timeout 
 
 ### Bugs
 
@@ -438,13 +573,14 @@ We strongly recommend to install this update release because it fixes security i
 * [XIVY-9342](https://axonivy.atlassian.net/browse/XIVY-9342) User and Role count in the title is not updated if security system is switched 
 * [XIVY-9388](https://axonivy.atlassian.net/browse/XIVY-9388) Can not cleanup JSF view scope when HTTP session expires 
 * [XIVY-9395](https://axonivy.atlassian.net/browse/XIVY-9395) Error Log "Error automatically configuring OpenTelemetry SDK" when executing IvyTest or IvyProcessTest 
-* [IVYPORTAL-13134](https://axonivy.atlassian.net/browse/IVYPORTAL-13134) The left menu marks the wrong item selected
-* [IVYPORTAL-13140](https://axonivy.atlassian.net/browse/IVYPORTAL-13140) My Profile on Ivy Portal 9.3
-* [IVYPORTAL-13165](https://axonivy.atlassian.net/browse/IVYPORTAL-13165) Admin user cannot edit/delete absences of normal users in the current or future
-* [IVYPORTAL-13450](https://axonivy.atlassian.net/browse/IVYPORTAL-13450) Rounding position when scrolling task list
-* [IVYPORTAL-13539](https://axonivy.atlassian.net/browse/IVYPORTAL-13539) Delegation task disables user selection if previously entered incorrectly
-* [IVYPORTAL-13544](https://axonivy.atlassian.net/browse/IVYPORTAL-13544) Absences configuration did not work on the same day
-* [IVYPORTAL-13804](https://axonivy.atlassian.net/browse/IVYPORTAL-13804) Language support is not handled correctly
-* [IVYPORTAL-14018](https://axonivy.atlassian.net/browse/IVYPORTAL-14018) State not loaded when apply saved filter in full task list
-* [IVYPORTAL-14147](https://axonivy.atlassian.net/browse/IVYPORTAL-14147) Back link of custom Case Details, Task Details pages does not work on Firefox
+* [IVYPORTAL-13134](https://axonivy.atlassian.net/browse/IVYPORTAL-13134) The left menu marks the wrong item selected 
+* [IVYPORTAL-13140](https://axonivy.atlassian.net/browse/IVYPORTAL-13140) My Profile on Ivy Portal 9.3 
+* [IVYPORTAL-13165](https://axonivy.atlassian.net/browse/IVYPORTAL-13165) Admin user cannot edit/delete absences of normal users in the current or future  
+* [IVYPORTAL-13450](https://axonivy.atlassian.net/browse/IVYPORTAL-13450) Rounding position when scrolling task list 
+* [IVYPORTAL-13539](https://axonivy.atlassian.net/browse/IVYPORTAL-13539) Delegation task disables user selection if previously entered incorrectly 
+* [IVYPORTAL-13544](https://axonivy.atlassian.net/browse/IVYPORTAL-13544) Absences configuration did not work on the same day 
+* [IVYPORTAL-13804](https://axonivy.atlassian.net/browse/IVYPORTAL-13804) Language support is not handled correctly 
+* [IVYPORTAL-14018](https://axonivy.atlassian.net/browse/IVYPORTAL-14018) State not loaded when apply saved filter in full task list 
+* [IVYPORTAL-14147](https://axonivy.atlassian.net/browse/IVYPORTAL-14147) Back link of custom Case Details, Task Details pages does not work on Firefox 
+* [IVYPORTAL-14152](https://axonivy.atlassian.net/browse/IVYPORTAL-14152) Portal Widget Resize 
 * [IVYPORTAL-14152](https://axonivy.atlassian.net/browse/IVYPORTAL-14152) Portal Widget Resize
