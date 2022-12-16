@@ -51,34 +51,15 @@ The number of users concurrently working on the Axon Ivy Engine is known as
 **concurrent users (CU)**. The Axon Ivy Engine counts the number of concurrent
 users as follows:
 
-* Every Session with no authenticated user is counted as one concurrent user.
+* Every session of every user counts as one licensed sessions.
 
-* Multiple Sessions with the same authenticated user are handled as follows:
-
-   * the first 10 sessions are counted as one concurrent user.
-   * every additional concurrent session of the same authenticated user is counted
-     as one additional concurrent user.
-
-* The system session is not counted as a concurrent user.
+* The system session is not counted as a concurrent user, as all sessions 
+  in the system context for all administrator users.
 
 * Sessions (non-System sessions) created to call WebService Processes or Event
   Bean Processes are created at the start of the process and are destroyed after
   the execution of the process. These sessions are counted as described above while
   they exist, i.e. during process execution.
-
-The following table illustrates this:
-
-+--------------------+-------------------+
-| Sessions per user  | Concurrent Users  |
-+====================+===================+
-| 0..10              | 1                 |
-+--------------------+-------------------+
-| 11                 | 2                 |
-+--------------------+-------------------+
-| 12                 | 3                 |
-+--------------------+-------------------+
-| 27                 | 18                |
-+--------------------+-------------------+
 
 This also applies to clusters.
 
