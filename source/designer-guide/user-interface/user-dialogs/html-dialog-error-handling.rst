@@ -16,7 +16,7 @@ The default error pages are located at ``webapps/ivy/ivy-error-page.xhtml``. You
 can inspect them. These pages can be customized to meet the look of your
 workflow application and your company's identity. Moreover, you can adjust the
 information displayed. The :public-api:`ErrorPageMBean
-</ch/ivyteam/ivy/webserver/ErrorPageMBean.html>` is accessible within error
+</ch/ivyteam/ivy/jsf/bean/error/ErrorPageMBean.html>` is accessible within error
 pages to provide context information on the error and its engine state. Other
 Ivy APIs are not intended to work in case of an error.
 
