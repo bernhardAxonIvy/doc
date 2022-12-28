@@ -19,8 +19,7 @@ Databases
 
 The **databases** view displays an overview of your configured databases within
 your projects. You can switch the application by clicking on the tabs at the top
-of the view. If you want to display a different environment, you can change it
-at the top right. To get more information about a database click on an entry to
+of the view. To get more information about a database click on an entry to
 view its :ref:`engine-cockpit-database-detail` page.
 
 .. note::
@@ -55,7 +54,6 @@ Web Services
 
 The **Web Services** page lists all defined web services for each application.
 You can switch the application by clicking on the tabs at the top of the view.
-You can also change the environment in the drop-down box at the top of the view.
 To see detailed information about a web service click on an entry to view its
 :ref:`engine-cockpit-webservice-detail` page.
 
@@ -92,7 +90,6 @@ REST Clients
 
 The **REST Clients** view gives an overview of all REST clients for each
 application. You can switch the application by clicking on the tabs at the top
-of the view. You can also change the environment in the drop-down box at the top
 of the view. To see detailed information about a web service click on an entry
 to view its :ref:`engine-cockpit-rest-client-detail` page.
 

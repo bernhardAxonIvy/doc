@@ -62,21 +62,6 @@ variables.
   The `indentation spaces <https://yaml.org/spec/1.2.2/#61-indentation-spaces>`__ needs to be the same in the whole yaml file.
 
 
-Environments for Variables
---------------------------
-
-You can override the default value of a Variable for a particular
-:ref:`Environment <configuration-environments>`, by adding a
-:file:`<project>/config/_<environment>/variables.yaml` file and defining your
-Variables in there. This can be useful if you need different values for the same
-Variable, if this is used in different software development stages ("testing",
-"productive"). You don't have to provide the metadata (e.g description) again:
-
-.. literalinclude:: includes/variables_env.yaml
-   :language: yaml
-   :linenos: 
-
-
 Access Variables
 ----------------
 

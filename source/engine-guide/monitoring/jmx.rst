@@ -61,7 +61,7 @@ model, process model version, or environment name.
 
 .. code:: properties
 
-    ivy Engine:type=External Web Service,application=MyApplication,environment=Default,name=Echo (43838347ABCD)
+    ivy Engine:type=External Web Service,application=MyApplication,name=Echo (43838347ABCD)
     ivy Engine:type=Job Manager
     ivy Engine:type=Process Start Event Bean,application=MyApplication,pm=MyProcessModel,pmv=1,name="MyStartEventBean (3485471349/start.ivp)"
 
@@ -96,19 +96,19 @@ The list below contains some of the provided information:
 
 .. code:: properties
         
-    ivy Engine:type=External Database,application=*,environment=*,name=*
+    ivy Engine:type=External Database,application=*,name=*
 
 **Web Service** (calls, errors, execution time, etc.)
 
 .. code:: properties
         
-    ivy Engine:type=External Web Service,application=*,environment=*,name=*
+    ivy Engine:type=External Web Service,application=*,name=*
 
 **REST Web Service** (calls, errors, execution time, slow calls, etc.)
 
 .. code:: properties
         
-    ivy Engine:type=External REST Web Service,application=*,environment=*,name=*
+    ivy Engine:type=External REST Web Service,application=*,name=*
 
 **System Database** (connections, transactions, errors, execution time, etc.)
 

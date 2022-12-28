@@ -6,8 +6,7 @@ Generate database schema from persistence unit
 Generation options (Step 1)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-On the first wizard page you can specify the environment and the type of
-the schema generation.
+On the first wizard page you can specify the type of the schema generation.
 
 .. figure:: /_images/persistence/generate-database-schema-options.png
    :alt: Database schema generation option
@@ -17,10 +16,6 @@ the schema generation.
 **Data source**
    For the schema generation the data source of the persistence unit is
    used.
-
-**Environment**
-   Specify the environment on which you like to generate the database
-   schema.
 
 **Type**
    Specify the type of the schema generation. You can choose between

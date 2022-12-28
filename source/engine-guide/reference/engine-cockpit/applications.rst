@@ -26,8 +26,8 @@ Application Detail
 ^^^^^^^^^^^^^^^^^^
 
 The **Application detail** page shows information similar to the Dashboard
-but specifically for the chosen application. In this page, you can change the active
-environment, the :ref:`engine-cockpit-security-system`, start or stop the
+but specifically for the chosen application. In this page, you can change the 
+:ref:`engine-cockpit-security-system`, start or stop the
 application and edit the application's configuration settings.
 
 If you want to deploy a project, click on the :guilabel:`Deployment` button and select

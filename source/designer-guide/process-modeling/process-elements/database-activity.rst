@@ -64,9 +64,7 @@ Kind of Query
 
 Database
    Choose the database on which the command is executed. The database
-   must be configured in the :ref:`database-configuration`. Depending on the active
-   environment the right connection properties of the database will be
-   used.
+   must be configured in the :ref:`database-configuration`.
 
    .. warning::
 

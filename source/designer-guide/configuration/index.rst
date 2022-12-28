@@ -11,6 +11,5 @@ Configuration
    webservice-clients
    roles-users
    dynamic-configs
-   environments
    formats
    custom-fields

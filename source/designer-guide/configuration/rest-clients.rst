@@ -26,9 +26,6 @@ not break the reference.
 Further information about how to use the REST clients can be found in
 the chapter :ref:`integration-rest`.
 
-Like other configurations, a REST client can be configured differently
-for each environment.
-
 .. _rest-client-configuration-editor:
 
 REST Client Editor

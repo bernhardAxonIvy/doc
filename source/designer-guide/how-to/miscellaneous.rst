@@ -61,20 +61,9 @@ on its scope:
 |            | the           |               |               |               |
 |            | application   |               |               |               |
 +------------+---------------+---------------+---------------+---------------+
-| Envi       | Global data   | One per       | Environment   | Environment   |
-| ronm       | that can vary | application   | creation or   | deletion,     |
-| ent        | for different | and           | engine start  | application   |
-|            | environments, | environment   |               | deletion or   |
-|            | e.g. if you   |               |               | engine stop   |
-|            | are using     |               |               |               |
-|            | tenants or    |               |               |               |
-|            | different     |               |               |               |
-|            | configuration |               |               |               |
-|            | s             |               |               |               |
-+------------+---------------+---------------+---------------+---------------+
 | Sess       | Data that is  | One per       | Session start | Session end   |
-| ion        | related to    | session and   |               |               |
-|            | interactions  | environment   |               |               |
+| ion        | related to    | session       |               |               |
+|            | interactions  |               |               |               |
 |            | within the    |               |               |               |
 |            | actual        |               |               |               |
 |            | session       |               |               |               |
@@ -90,9 +79,8 @@ Cache entries and groups are created the first time they are accessed -
 the first time the process step with the data cache entry is executed -
 and they are destroyed when the scope of cache entries or groups reach
 the end of their life cycle. For the scope *Session* this is the logout
-of the user of the session or the session timeout, for the scopes
-*Application* and *Environment* this is when the application is
-terminated or inactivated.
+of the user of the session or the session timeout, for the scope
+*Application* this is when the application is terminated or inactivated.
 
 Cache entries and groups are resolved by their identifiers. You can put
 different cache entries into one group by using the same group
@@ -132,8 +120,8 @@ does invalidate all groups and therefore as well all entries.
    An Axon Ivy Engine Enterprise Edition consists of multiple engine
    instances (nodes) that are running on different machines.
 
-   In an Axon Ivy Engine Enterprise Edition the *Application* and
-   *Environment* data caches will be created on each node independently.
+   In an Axon Ivy Engine Enterprise Edition the *Application* data cache
+   will be created on each node independently.
    However, if a data cache is invalidated on one cluster node either by
    timeout or explicitly, then it will be automatically invalidated on all
    other cluster nodes as well.

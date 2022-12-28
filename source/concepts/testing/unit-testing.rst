@@ -61,8 +61,7 @@ the ``Ivy`` environment we would have to mock all those resources.
 Change Application Runtime
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For some test cases, you may need to change the :ref:`Environment
-<configuration-environments>` use a different value for a :ref:`Variable
+For some test cases, you may need to use a different value for a :ref:`Variable
 <variables>` or change an app configuration. In this case use ``AppFixture`` to
 change the value. The value gets automatically reset to the original value after
 the test execution. All you have to do is to tell the test that you want an
@@ -78,12 +77,6 @@ Or you can change an app configuration, e.g change the URL of a
 .. literalinclude:: includes/unittesting/unittesting-test-fixure-config.java
   :language: java
   :emphasize-lines: 2, 5
-
-If you want to change the active environment, you can do that in a similar way:
-
-.. literalinclude:: includes/unittesting/unittesting-test-fixure-env.java
-  :language: java
-  :emphasize-lines: 4
 
 Furthermore it is possible to use the ``AppFixture`` to login with an existing
 user. You can either login with a user name or with an ``IUser`` object. In the

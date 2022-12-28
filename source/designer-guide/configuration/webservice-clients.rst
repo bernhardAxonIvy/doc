@@ -182,9 +182,7 @@ The following attributes are available in the *Ports* section:
 - :guilabel:`Default URI`
   The URI where the current web service is located. The initial URI is
   derived from the WSDL. But one can override this setting if the
-  address has changed. It can also be overridden per environment. For
-  instance to route calls during development to test instance of the
-  service.
+  address has changed.
 
 - :guilabel:`Fallback URIs`
   An optional list of URIs. They are used as fallback URI if any error

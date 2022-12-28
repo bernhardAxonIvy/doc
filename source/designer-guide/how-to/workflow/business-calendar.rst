@@ -54,13 +54,12 @@ For example:
       // e.g. on the Start tab of a Request Start Inscription Mask
       out.paymentDate = ivy.cal.getWorkDayIn(out.paymentDate, 0);
 
-You can set a calendar on tasks, cases, environments, or applications.
+You can set a calendar on tasks, cases, or applications.
 The variable (ivy.cal) references the calendar that is valid for the
 current context. It determines the valid calendar by checking:
 
 #. the current task
 #. the current case
-#. the current environment
 #. the current application
 #. the root calendar of the current application, if none of the above have been
    set explicitly.
