@@ -43,8 +43,9 @@ For :ref:`unit-testing`, you have been able to set the current environment on th
 This has been removed, too. Now, use the :code:`AppFixuter#config`` API to define the exact configuration which you 
 like to override in your test case.
 
-Ivy Files has all of the existing environments in its path. The existing environment definitions all stay at their location. 
-All new files will be saved in the :code:`Default` environment. Later on, we intend to redesign the path of a single file completely.
+Ivy Files have the environment name in their path. The existing files all stay at their current path. 
+All new files will be saved in the :code:`Default` environment. 
+Later on, we intend to redesign the path of files completely to remove the environment dependency.
 
 
 MsSQL Server Database
