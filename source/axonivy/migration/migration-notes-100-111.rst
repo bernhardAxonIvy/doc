@@ -14,6 +14,40 @@ License
 You need to request a new license for Axon Ivy Engine 11.1.
 
 
+Ivy Environments
+****************
+
+Ivy Environments have been removed, finally. We detailed the reason for this in our 
+`blog post <https://community.axonivy.com/d/142-environments-will-disappear-in-the-long-term>`_.
+
+Ivy environments have been used for **staging** and in some rare cases for **multi-tenancy**. If you have
+used them for staging, the initial use case, then you shouldn't face any issues.
+Make sure that the :code:`Default` configuration is correct for each of your staging environments.
+If you have used it for multi-tenancy, then you need to manually migrate each tenant to either its own
+Axon Ivy Engine or its own Axon Ivy Application. Read more about this topic in :ref:`multi-tenancy`.
+
+It has been possible to set the environment on application, session, and case level. All
+of these APIs and configurations have been removed completely. Using Environments, you have been able to define
+specific configuration sets for:
+
+- :ref:`variables`
+- :ref:`rest-clients-configuration`
+- :ref:`webservice-clients-configuration`
+- :ref:`database-configuration`
+- :ref:`business-calendar`
+
+You have been able to define the cache on the environment level using the :ref:`process-element-tab-data-cache`.
+This will be migrated automatically to the application level.
+
+For :ref:`unit-testing`, you have been able to set the current environment on the :code:`AppFixture`. 
+This has been removed, too. Now, use the :code:`AppFixture#config`` API to define the exact configuration which you 
+like to override in your test case.
+
+Ivy Files have the environment name in their path. The existing files all stay at their current path. 
+All new files will be saved in the :code:`Default` environment. 
+Later on, we intend to redesign the path of files completely to remove the environment dependency.
+
+
 MsSQL Server Database
 *********************
 
