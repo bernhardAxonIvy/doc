@@ -21,7 +21,7 @@ Ivy Environments have been removed, finally. We detailed the reason for this in 
 `blog post <https://community.axonivy.com/d/142-environments-will-disappear-in-the-long-term>`_.
 
 Ivy environments have been used for **staging** and in some rare cases for **multi-tenancy**. If you have
-used it for staging, the initial use case, then you should not face any issues.
+used them for staging, the initial use case, then you shouldn't face any issues.
 Make sure that the :code:`Default` configuration is correct for each of your staging environments.
 If you have used it for multi-tenancy, then you need to manually migrate each tenant to either its own
 Axon Ivy Engine or its own Axon Ivy Application. Read more about this topic in :ref:`multi-tenancy`.
@@ -40,7 +40,7 @@ You have been able to define the cache on the environment level using the :ref:`
 This will be migrated automatically to the application level.
 
 For :ref:`unit-testing`, you have been able to set the current environment on the :code:`AppFixture`. 
-This has been removed, too. Now, use the :code:`AppFixuter#config`` API to define the exact configuration which you 
+This has been removed, too. Now, use the :code:`AppFixture#config`` API to define the exact configuration which you 
 like to override in your test case.
 
 Ivy Files have the environment name in their path. The existing files all stay at their current path. 
