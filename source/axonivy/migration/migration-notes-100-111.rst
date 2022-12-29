@@ -17,18 +17,18 @@ You need to request a new license for Axon Ivy Engine 11.1.
 Ivy Environments
 ****************
 
-Ivy Environments has been removed, finally. You can read more about the reason in our 
+Ivy Environments have been removed, finally. We detailed the reason for this in our 
 `blog post <https://community.axonivy.com/d/142-environments-will-disappear-in-the-long-term>`_.
 
-Ivy environments were used for **staging** and in some rare cases for **multi-tenancy**. If you have
-used it for staging, which was the initial use case, then you should not face any issues,
-just make sure that :code:`Default` configuration is correct for each of your staging environment.
-If you have used it for multi-tenancy, then you need to manually migrate each tenant to an own
-Axon Ivy Engine or an own Axon Ivy Application, read more about this topic in :ref:`multi-tenancy`.
+Ivy environments have been used for **staging** and in some rare cases for **multi-tenancy**. If you have
+used it for staging, the initial use case, then you should not face any issues.
+Make sure that the :code:`Default` configuration is correct for each of your staging environments.
+If you have used it for multi-tenancy, then you need to manually migrate each tenant to either its own
+Axon Ivy Engine or its own Axon Ivy Application. Read more about this topic in :ref:`multi-tenancy`.
 
-It was possible to set the environment on application level, session level and case level, all
-thos APIs and configurations were completely removed. With Environments you was able to define
-own configurations for:
+It has been possible to set the environment on application, session, and case level. All
+of these APIs and configurations have been removed completely. Using Environments, you have been able to define
+specific configuration sets for:
 
 - :ref:`variables`
 - :ref:`rest-clients-configuration`
@@ -36,15 +36,15 @@ own configurations for:
 - :ref:`database-configuration`
 - :ref:`business-calendar`
 
-There was the possibilty on the :ref:`process-element-tab-data-cache` to define the ca on environment level.
-This will be automatically migrated to application level.
+You have been able to define the cache on the environment level using the :ref:`process-element-tab-data-cache`.
+This will be migrated automatically to the application level.
 
-For :ref:`unit-testing` you were able to set the current environment on the :code:`AppFixture`. This has been removed
-you can now use the :code:`AppFixuter#config`` API to define exactly the configruation which you like to override
-in your test case.
+For :ref:`unit-testing`, you have been able to set the current environment on the :code:`AppFixture`. 
+This has been removed, too. Now, use the :code:`AppFixuter#config`` API to define the exact configuration which you 
+like to override in your test case.
 
-Ivy Files has the environment in it's path. They all stay at the place as they are. All new files will
-be saved in the :code:`Default` environment. We plan to completely redesign the path of an single file, later.
+Ivy Files has all of the existing environments in its path. The existing environment definitions all stay at their location. 
+All new files will be saved in the :code:`Default` environment. Later on, we intend to redesign the path of a single file completely.
 
 
 MsSQL Server Database
