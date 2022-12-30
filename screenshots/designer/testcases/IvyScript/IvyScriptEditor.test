@@ -16,7 +16,7 @@ Entry-Name: .content
 
 proc takeIvyscriptScreenshot [val label] [val image] {
 	get-editbox -after [get-label $label] | key-type END
-	get-control Any -after [get-label Icon] -index 10 | get-object | captureScreenshot [format "ivyscript/%s.png" $image]
+	get-control Any -after [get-label "Inscribe.*"] -index 10 | get-object | captureScreenshot [format "ivyscript/%s.png" $image]
 }
 
 importProject documentationExampleProject

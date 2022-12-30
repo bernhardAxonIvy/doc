@@ -46,7 +46,7 @@ let [val processName "JaxWsServiceCall"][val type "Web Service Call Activity"]
 	{
 		resizeWindow -width 551 -height 580
     	get-tab-folder | get-tab-item "Data Cache" | click
-    	with [get-control Any -after [get-label Icon] -index 9] {
+    	with [get-control Any -after [get-label "Inscribe.*"] -index 9] {
             captureInscriptionPart -screenshot "tab-data-cache.png"
     	}
 	    get-button Cancel | click
