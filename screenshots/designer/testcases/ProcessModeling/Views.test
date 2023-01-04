@@ -6,8 +6,8 @@ Element-Type: testcase
 Element-Version: 3.0
 External-Reference: 
 Id: _Hh07QF_PEeaAcqEsdR5JMw
-Runtime-Version: 2.5.3.202205021448
-Save-Time: 9/1/22, 3:41 PM
+Runtime-Version: 2.5.4.202209262356
+Save-Time: 1/4/23, 1:31 PM
 Testcase-Type: ecl
 
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
@@ -91,6 +91,23 @@ proc jsonInscription{
 	}
 }
 
+proc inscriptionEditor{
+    OpenView "Inscription Editor"
+    
+    openInscription -processName "alternativeGateway" 
+        -elementName "Large order" 
+        -elementType "User Dialog"
+    get-window "Inscribe User Dialog" | get-button Cancel | click -metaKeys ""
+    
+    get-view "Inscription Editor" | click
+    with [find-tab-folder "Inscription Editor"]{
+        maximize
+        resizeWindow 500 400
+        get-object | captureScreenshot "process-modeling/inscription-editor-view.png"
+        restore
+    }
+}
+
 try{
 	importProject -projectName QuickStartTutorial
 	togglePresentation -flat true
@@ -100,6 +117,7 @@ try{
 	importProject -projectName documentationExampleProject
 	referenceView
 	jsonInscription
+	inscriptionEditor
 } -finally {
 	deleteProject QuickStartTutorial
 }

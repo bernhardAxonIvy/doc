@@ -1,5 +1,5 @@
-Process Inscription View
---------------------------
+JSON Inscription View
+---------------------
 
 The JSON Inscription view displays the JSON representation of the currently selected process elements.
 
