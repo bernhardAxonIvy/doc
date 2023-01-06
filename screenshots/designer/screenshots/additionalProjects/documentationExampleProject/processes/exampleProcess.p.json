@@ -1,5 +1,5 @@
 {
-  "format" : "10.0.0",
+  "format" : "11.1.2",
   "id" : "1562D1CBAC49CCF8",
   "config" : {
     "data" : "com.axonivy.CreditDossier"
@@ -57,8 +57,7 @@
       "type" : "DialogCall",
       "name" : "Call Html Dialog",
       "config" : {
-        "dialogId" : "com.acme.PersonEditor",
-        "startMethod" : "start(ch.ivyteam.test.Person)",
+        "dialog" : "com.acme.PersonEditor:start(ch.ivyteam.test.Person)",
         "call" : {
           "params" : [
             { "name" : "person", "type" : "ch.ivyteam.test.Person" }

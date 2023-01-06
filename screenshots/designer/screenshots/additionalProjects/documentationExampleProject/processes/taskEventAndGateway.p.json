@@ -1,5 +1,5 @@
 {
-  "format" : "10.0.0",
+  "format" : "11.1.2",
   "id" : "167C7307A5664620",
   "config" : {
     "data" : "screenshot.project.Data"
@@ -87,8 +87,7 @@
       "type" : "UserTask",
       "name" : "Verify Request",
       "config" : {
-        "dialogId" : "com.acme.PersonEditor",
-        "startMethod" : "start(ch.ivyteam.test.Person)",
+        "dialog" : "com.acme.PersonEditor:start(ch.ivyteam.test.Person)",
         "call" : {
           "params" : [
             { "name" : "person", "type" : "ch.ivyteam.test.Person" }
@@ -164,8 +163,7 @@
       "type" : "UserTask",
       "name" : "Escalate to manager",
       "config" : {
-        "dialogId" : "screenshot.project.exampleHtmlDialog",
-        "startMethod" : "start(screenshot.project.Data)",
+        "dialog" : "screenshot.project.exampleHtmlDialog:start(screenshot.project.Data)",
         "task" : {
           "expiry" : {
             "timeout" : "ivy.cal.getWorkDayIn(5).toDuration()",
@@ -215,8 +213,7 @@
       "type" : "UserTask",
       "name" : "Reset password",
       "config" : {
-        "dialogId" : "screenshot.project.exampleHtmlDialog",
-        "startMethod" : "start(screenshot.project.Data)",
+        "dialog" : "screenshot.project.exampleHtmlDialog:start(screenshot.project.Data)",
         "task" : {
           "delay" : "ivy.cal.getFirstWorkDayOfMonth(3).toDuration()"
         },

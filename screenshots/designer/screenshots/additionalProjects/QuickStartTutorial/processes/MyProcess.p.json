@@ -1,5 +1,5 @@
 {
-  "format" : "10.0.0",
+  "format" : "11.1.2",
   "id" : "148655DDB7BB6588",
   "config" : {
     "data" : "quickStartTutorial.Data"
@@ -28,8 +28,7 @@
       "type" : "DialogCall",
       "name" : "Enter Product",
       "config" : {
-        "dialogId" : "quickStartTutorial.EnterProduct",
-        "startMethod" : "start(quickStartTutorial.Data)",
+        "dialog" : "quickStartTutorial.EnterProduct:start(quickStartTutorial.Data)",
         "output" : {
           "map" : {
             "out" : "result.data"

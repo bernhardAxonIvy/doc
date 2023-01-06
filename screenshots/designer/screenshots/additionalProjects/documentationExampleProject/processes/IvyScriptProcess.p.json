@@ -1,5 +1,5 @@
 {
-  "format" : "10.0.0",
+  "format" : "11.1.2",
   "id" : "1690A66F13A54F43",
   "config" : {
     "data" : "com.axonivy.CreditDossier"
@@ -27,8 +27,7 @@
       "type" : "UserTask",
       "name" : "Notify Customer",
       "config" : {
-        "dialogId" : "screenshot.project.exampleHtmlDialog",
-        "startMethod" : "start(screenshot.project.Data)",
+        "dialog" : "screenshot.project.exampleHtmlDialog:start(screenshot.project.Data)",
         "task" : {
           "name" : "Notify <%=in.customer.name%> <%=in.customer.lastname%>",
           "description" : "Need to notify customer about new changes.",

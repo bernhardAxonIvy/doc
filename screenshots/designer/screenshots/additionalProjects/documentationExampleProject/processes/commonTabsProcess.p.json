@@ -1,5 +1,5 @@
 {
-  "format" : "10.0.0",
+  "format" : "11.1.2",
   "id" : "168F0C6DF682858E",
   "config" : {
     "data" : "ch.ivyteam.documentation.project.AddContactData"
@@ -41,12 +41,15 @@
             "  ivy.log.debug(\"About to add '\" + in.addPerson + \"' to \" + in.organisation);",
             "}"
           ]
-        },
-        "tags" : "PERSON,COMMON"
+        }
       },
       "docs" : {
         "Documentation of user ID list" : "http://acme.greatproduct.com/internal/doc/useridlist.html"
       },
+      "tags" : [
+        "PERSON",
+        "COMMON"
+      ],
       "visual" : {
         "at" : { "x" : 224, "y" : 64 },
         "size" : { "width" : 192, "height" : 60 },
