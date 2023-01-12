@@ -16,7 +16,6 @@ Create Azure Active Directory App
     
     The pattern of this URI is `https://{host}/oauth2/callback` . 
     Therefore, you need to adjust the host in this URL. 
-    If you run another security system than the default, you also need to change the security-system name after the host.
   
   iii. Click on :guilabel:`Register`
 
