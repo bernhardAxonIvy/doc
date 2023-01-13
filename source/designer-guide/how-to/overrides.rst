@@ -111,6 +111,11 @@ Configuration
       the :ref:`app-yaml` for the Designer under
       *designerDir/configuration/app-designer.yaml*.
 
+   .. warning::
+
+      Overrides cannot be "stacked" - you can only override a component that is
+      not itself an override. |ivy-designer| will warn you about this.
+
 
 .. _case_scope:
 
