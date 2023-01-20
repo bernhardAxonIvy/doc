@@ -1,5 +1,5 @@
 {
-  "format" : "11.1.2",
+  "format" : "11.1.6",
   "id" : "1567DC5F3418C42A",
   "config" : {
     "data" : "quickStartTutorial.Data"
@@ -35,9 +35,6 @@
           }
         },
         "call" : {
-          "params" : [
-            { "name" : "data", "type" : "quickStartTutorial.Data" }
-          ],
           "map" : {
             "param.data" : "in"
           }

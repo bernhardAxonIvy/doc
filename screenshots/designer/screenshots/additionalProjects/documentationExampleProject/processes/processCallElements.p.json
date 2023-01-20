@@ -1,5 +1,5 @@
 {
-  "format" : "11.1.2",
+  "format" : "11.1.6",
   "id" : "16BD5F7B1D71F926",
   "config" : {
     "data" : "screenshot.project.Data"
@@ -56,9 +56,6 @@
       "config" : {
         "processCall" : "processCallElements:start(String)",
         "call" : {
-          "params" : [
-            { "name" : "city", "type" : "String" }
-          ],
           "map" : {
             "param.city" : "\"Zug\""
           }
@@ -76,10 +73,6 @@
       "config" : {
         "processCall" : "subProcess:call(screenshot.project.Data,String)",
         "call" : {
-          "params" : [
-            { "name" : "data", "type" : "screenshot.project.Data" },
-            { "name" : "newCity", "type" : "String" }
-          ],
           "map" : {
             "param.data.city" : "\"Luzern\"",
             "param.newCity" : "\"Zug\""
