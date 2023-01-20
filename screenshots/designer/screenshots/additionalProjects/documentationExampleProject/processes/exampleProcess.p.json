@@ -1,5 +1,5 @@
 {
-  "format" : "11.1.2",
+  "format" : "11.1.6",
   "id" : "1562D1CBAC49CCF8",
   "config" : {
     "data" : "com.axonivy.CreditDossier"
@@ -20,11 +20,14 @@
         "task" : {
           "name" : "Call Manager",
           "category" : "Personal/Tasks",
-          "priority" : "HIGH",
+          "priority" : {
+            "level" : "HIGH"
+          },
           "expiry" : {
             "timeout" : "ivy.cal.getWorkDayIn(3).getDurationFromNow()",
             "responsible" : {
-              "userFromAttribute" : "\"Supervisor\""
+              "type" : "USER_FROM_ATTRIBUTE",
+              "activator" : "\"Supervisor\""
             }
           },
           "customFields" : [
@@ -59,9 +62,6 @@
       "config" : {
         "dialog" : "com.acme.PersonEditor:start(ch.ivyteam.test.Person)",
         "call" : {
-          "params" : [
-            { "name" : "person", "type" : "ch.ivyteam.test.Person" }
-          ],
           "map" : {
             "param.person" : "in.customer"
           },

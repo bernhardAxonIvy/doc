@@ -1,5 +1,5 @@
 {
-  "format" : "11.1.2",
+  "format" : "11.1.6",
   "id" : "1690A66F13A54F43",
   "config" : {
     "data" : "com.axonivy.CreditDossier"
@@ -32,13 +32,9 @@
           "name" : "Notify <%=in.customer.name%> <%=in.customer.lastname%>",
           "description" : "Need to notify customer about new changes.",
           "responsible" : {
-            "userFromAttribute" : "in.needsApproval ? \"Supervisor\" : \"Secretary\""
+            "type" : "USER_FROM_ATTRIBUTE",
+            "activator" : "in.needsApproval ? \"Supervisor\" : \"Secretary\""
           }
-        },
-        "call" : {
-          "params" : [
-            { "name" : "data", "type" : "screenshot.project.Data" }
-          ]
         }
       },
       "visual" : {

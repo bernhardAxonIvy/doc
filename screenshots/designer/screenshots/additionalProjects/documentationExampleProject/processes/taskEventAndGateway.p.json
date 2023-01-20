@@ -1,5 +1,5 @@
 {
-  "format" : "11.1.2",
+  "format" : "11.1.6",
   "id" : "167C7307A5664620",
   "config" : {
     "data" : "screenshot.project.Data"
@@ -44,14 +44,18 @@
             "description" : "We need to renew our licence.",
             "category" : "Dossier",
             "responsible" : {
-              "role" : "Secretary"
+              "type" : "ROLE",
+              "activator" : "Secretary"
             },
             "expiry" : {
               "timeout" : "ivy.cal.getWorkDayIn(5).getDurationFromNow()",
               "responsible" : {
-                "role" : "IT-Manager"
+                "type" : "ROLE",
+                "activator" : "IT-Manager"
               },
-              "priority" : "HIGH"
+              "priority" : {
+                "level" : "HIGH"
+              }
             }
           }
         }
@@ -89,9 +93,6 @@
       "config" : {
         "dialog" : "com.acme.PersonEditor:start(ch.ivyteam.test.Person)",
         "call" : {
-          "params" : [
-            { "name" : "person", "type" : "ch.ivyteam.test.Person" }
-          ],
           "map" : {
             "param.person.city" : "in.city"
           },
@@ -168,20 +169,18 @@
           "expiry" : {
             "timeout" : "ivy.cal.getWorkDayIn(5).toDuration()",
             "responsible" : {
-              "role" : "IT-Manager"
+              "type" : "ROLE",
+              "activator" : "IT-Manager"
             },
-            "priority" : "HIGH"
+            "priority" : {
+              "level" : "HIGH"
+            }
           },
           "customFields" : [
             { "name" : "carBrand", "type" : "String", "value" : "in.get(\"brand\").toString()" },
             { "name" : "leasingSum", "type" : "Number", "value" : "in.get(\"sum\").toNumber()" }
           ],
           "code" : "task.setBusinessCalendar(ivy.cal.get(in.city));"
-        },
-        "call" : {
-          "params" : [
-            { "name" : "data", "type" : "screenshot.project.Data" }
-          ]
         }
       },
       "visual" : {
@@ -216,11 +215,6 @@
         "dialog" : "screenshot.project.exampleHtmlDialog:start(screenshot.project.Data)",
         "task" : {
           "delay" : "ivy.cal.getFirstWorkDayOfMonth(3).toDuration()"
-        },
-        "call" : {
-          "params" : [
-            { "name" : "data", "type" : "screenshot.project.Data" }
-          ]
         }
       },
       "visual" : {

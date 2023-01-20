@@ -1,5 +1,5 @@
 {
-  "format" : "11.1.2",
+  "format" : "11.1.6",
   "id" : "1675F79D89ABB65A",
   "config" : {
     "data" : "screenshot.project.Data"
@@ -79,13 +79,14 @@
           "name" : "<%=param.in.city%>",
           "description" : "<%=param.in.city%>",
           "responsible" : {
-            "role" : "FacilityManager"
+            "type" : "ROLE",
+            "activator" : "FacilityManager"
           },
           "delay" : "'300s'",
           "expiry" : {
             "timeout" : "param.in.zip.toDuration()",
             "responsible" : {
-              "deleteTask" : true
+              "type" : "DELETE_TASK"
             }
           },
           "customFields" : [
