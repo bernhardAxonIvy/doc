@@ -107,8 +107,7 @@ SMTP. You can inspect the mail inbox by opening the view 'Email Messages'.
 IvyScript Settings
 ------------------
 
-With these preferences, you can choose the default inscription on the
-action table and the visibility level of the autocompletion.
+With these preferences, you can choose the visibility level of the autocompletion.
 
 
 .. figure:: /_images/designer/preferences-ivyscript.png
@@ -116,14 +115,6 @@ action table and the visibility level of the autocompletion.
    :align: center
    
    IvyScript Preferences
-
-Default Inscription on the Action Table
-   Before the action table (or any other output code) is executed on an
-   element, the input process data is copied from the ``in`` object and
-   is assigned to the ``out`` object. Use this combo box to specify the
-   copy behavior. The default behavior is to copy by reference (i.e. the
-   ``out`` variable will point to the same object as the ``in``
-   variable).
 
 Visibility Level
    The visibility level of the *IvyScript completer* and the
