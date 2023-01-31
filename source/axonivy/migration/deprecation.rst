@@ -3,9 +3,12 @@
 Deprecation and Removal
 -----------------------
 
-You should avoid using deprecated Public API and features. 
-When migrating to a new version check for deprecated Public API and features and replace them with the successor API or feature. 
-This will help you later when you migrate to a version in which the previously Public API or features are removed. 
+You should avoid using deprecated Public APIs and features. When migrating to a
+new version, check for deprecated Public APIs and features and replace them with
+the successor API or feature. 
+
+This will help you later when you migrate to a version in which the previously
+Public APIs or features are no longer available. 
 
 Deprecated Features
 ...................

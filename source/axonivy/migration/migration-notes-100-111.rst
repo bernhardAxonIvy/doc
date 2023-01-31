@@ -3,15 +3,15 @@
 Migrating from 10.0 to 11.1
 ===========================
 
-Upgrade to 11.1 is only supported from an Axon Ivy Engine 8.0 and higher.
-If you have an Axon Ivy Engine older than version 8.0 you need first to migrate to a newer version.
+Upgrade to 11.1 is only supported from an |ivy-engine| 8.0 and higher.
+If you have an |ivy-engine| older than version 8.0 you need first to migrate to a newer version.
 
 License
 *******
 
 |tag-ops-changed|
 
-You need to request a new license for Axon Ivy Engine 11.1.
+You need to request a new license for |ivy-engine| 11.1.
 
 
 Ivy Environments
@@ -24,7 +24,7 @@ Ivy environments have been used for **staging** and in some rare cases for **mul
 used them for staging, the initial use case, then you shouldn't face any issues.
 Make sure that the :code:`Default` configuration is correct for each of your staging environments.
 If you have used it for multi-tenancy, then you need to manually migrate each tenant to either its own
-Axon Ivy Engine or its own Axon Ivy Application. Read more about this topic in :ref:`multi-tenancy`.
+|ivy-engine| or its own Axon Ivy Application. Read more about this topic in :ref:`multi-tenancy`.
 
 It has been possible to set the environment on application, session, and case level. All
 of these APIs and configurations have been removed completely. Using Environments, you have been able to define
