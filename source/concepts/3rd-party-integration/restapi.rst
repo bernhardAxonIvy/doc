@@ -12,7 +12,7 @@ It provides portable APIs for developing, exposing and accessing web
 applications designed and implemented in compliance with principles of the REST
 architectural style.
 
-Axon Ivy uses the reference implementation libraries of JAX-RS called `Jersey
+|ivy| uses the reference implementation libraries of JAX-RS called `Jersey
 <https://jersey.github.io/>`__.
 
 
@@ -31,7 +31,7 @@ Find examples in the :ref:`ConnectivityDemos <importing-demo-projects>` project.
 Provide Your Own REST Services
 ------------------------------
 
-To provide a custom REST service in your Axon Ivy project, `JAX-RS
+To provide a custom REST service in your |ivy| project, `JAX-RS
 <https://docs.oracle.com/javaee/7/api/javax/ws/rs/package-summary.html#package.description>`__
 annotations can be used. A REST resource is created by adding a Java class to
 the ``src`` directory. The Java class has to use the correct annotations (as
@@ -124,8 +124,8 @@ description, but a simple client to fire real calls against the services, too.
 
 To access the API Browser, open the following URL paths with a web browser of your choice:
 
-- In the Axon Ivy Designer: ``/designer/api-browser`` (e.g. http://localhost:8081/designer/api-browser)
-- In the Axon Ivy Engine: ``/system/api-browser`` (e.g. http://localhost:8080/system/api-browser)
+- In the |ivy-designer|: ``/designer/api-browser`` (e.g. http://localhost:8081/designer/api-browser)
+- In the |ivy-engine|: ``/system/api-browser`` (e.g. http://localhost:8080/system/api-browser)
 
 .. figure:: /_images/concepts-integration/api-browse-app.png
     :align: center
@@ -136,7 +136,7 @@ To access the API Browser, open the following URL paths with a web browser of yo
 Secure APIs
 -----------
 
-REST APIs served by the Axon Ivy Engine are protected by default to provide safe
+REST APIs served by the |ivy-engine| are protected by default to provide safe
 interactions with your API clients.
 
 
@@ -181,6 +181,6 @@ property ``REST.Servlet.CSRF.Protection`` in the :ref:`ivy-webserver-yaml`
 Workflow API
 ------------
 
-Axon Ivy provides a basic :ref:`Workflow API REST Service
+|ivy| provides a basic :ref:`Workflow API REST Service
 <mobile-workflow-api>`. You can use it to enable remote systems to request
 information about tasks of a user etc.

@@ -1,12 +1,12 @@
 Process Extensions
 ==================
 
-Axon Ivy contains :ref:`extensible-process-elements` that can be used to
+|ivy| contains :ref:`extensible-process-elements` that help you to
 address particular execution behavior requirements not offered by any of the
 standard process elements. By implementing one of these Java interfaces, any 3rd
-party logic can be weaved into the process during execution time.
+party logic can be weaved into the process at execution time.
 
-A generic Java interface is provided in the following process elements:
+We provide a generic Java interface in the following process elements:
 
 :ref:`process-element-program-start`
    Triggers the start of a new process upon an (external) event.
@@ -22,7 +22,7 @@ A generic Java interface is provided in the following process elements:
 Custom Process Element
 ----------------------
 
-Process extension developers can also :ref:`provide their custom process
-<provide-your-own-process-elements>` element with its specific icon, name and
+Process extension developers can also :ref:`provide their custom process elements
+<provide-your-own-process-elements>` with their specific icons, name, and
 logic. This is the best way to share a connector to your 3rd party system with a
 larger community.

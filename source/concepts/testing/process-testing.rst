@@ -15,7 +15,7 @@ Setup Test Project
 ~~~~~~~~~~~~~~~~~~
 
 .. |TESTKIND| replace:: ``IvyProcessTest``
-.. include:: includes/test-project-setup.txt
+.. include:: includes/_test-project-setup.rst
 
 You now have a simple test called ``SampleIvyProcessTest``.
 
@@ -45,7 +45,7 @@ Line 34:
   In each test method you have to pass in a
   :public-api:`BpmClient</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html>`.
   This client is supplied by the process testing framework and represents an
-  Axon Ivy Engine that can run and drive your processes along.
+  |ivy-engine| that can run and drive your processes along.
 
 
 Write a Process Test

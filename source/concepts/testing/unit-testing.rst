@@ -3,7 +3,7 @@
 Unit Tests
 ----------
 
-You can easily write Unit Tests in the Axon Ivy Designer to test your Java source
+You can easily write Unit Tests in the |ivy-designer| to test your Java source
 code using JUnit 5. If your code uses the
 :public-api:`Ivy</ch/ivyteam/ivy/environment/Ivy.html>` environment you can
 either mock it or use the
@@ -15,11 +15,11 @@ How to Write Unit Tests
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 .. |TESTKIND| replace:: ``IvyTest``
-.. include:: includes/test-project-setup.txt
+.. include:: includes/_test-project-setup.rst
 
 #. Run test
 
-   - Make sure the Axon Ivy Engine is started with your projects
+   - Make sure the |ivy-engine| is started with your projects
 
    - To run this test right-click inside this class -> Run As -> JUnit Test
 
@@ -29,7 +29,7 @@ How to Write Unit Tests
 This is all you need to start writing conventional Unit Tests.
 
 
-Set Up the Axon Ivy Environment
+Set Up the |ivy| Environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To gain access to the :public-api:`Ivy</ch/ivyteam/ivy/environment/Ivy.html>`

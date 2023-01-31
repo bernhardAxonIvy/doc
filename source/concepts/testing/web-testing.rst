@@ -15,11 +15,11 @@ Setup a Test Project
 ~~~~~~~~~~~~~~~~~~~~
 
 .. |TESTKIND| replace:: ``IvyWebTest``
-.. include:: includes/test-project-setup.txt
+.. include:: includes/_test-project-setup.rst
 
 #. Run test
 
-   - Make sure the Axon Ivy Engine is started with your projects
+   - Make sure the |ivy-engine| is started with your projects
 
    - To run this test right-click inside this class -> Run As -> JUnit Test
 
@@ -142,7 +142,7 @@ run. To do this, we need to first setup a Maven module build:
 
 #. Create Maven module
 
-   - Delete projects ``crm`` and ``crmIntegrationTests`` from your Axon Ivy Designer
+   - Delete projects ``crm`` and ``crmIntegrationTests`` from your |ivy-designer|
      workspace.
    - Open your workspace folder and move both projects into an new folder, e.g
      :file:`compile-test`
@@ -166,9 +166,9 @@ run. To do this, we need to first setup a Maven module build:
             crmIntegrationTests/
             pom.xml
 
-#. Run module build in Axon Ivy Designer
+#. Run module build in |ivy-designer|
 
-   - In your Axon Ivy Designer open the **Import** Wizard, then **Existing Maven
+   - In your |ivy-designer| open the **Import** Wizard, then **Existing Maven
      Projects**
 
    - Select :file:`compile-test/pom.xml` with sub projects (``crm`` and
