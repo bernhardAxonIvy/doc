@@ -25,12 +25,6 @@ constructed expression can be previewed in the *insert* text box at the
 bottom and be inserted into the inscription mask by clicking on the
 button *insert*.
 
-.. tip::
-
-   By default only the most common attributes/methods are displayed.
-   With the *visibility_level* button you can relax this filter in two
-   steps.
-   The same may be configured permanently in the `workspace-preferences-ivyscript`.
 
 .. _function-browser:
 
@@ -58,13 +52,6 @@ environment variables <ivyscript-reference-environmentvariable>`
 The constructed expression can be previewed in the *insert* text box at
 the bottom and be inserted into the inscription mask by clicking on the
 button *insert*.
-
-.. tip::
-
-   By default only the most common attributes/methods are displayed.
-   With the *visibility_level* button you can relax this filter in two
-   steps.
-   The same may be configured permanently in the :ref:`workspace-preferences-ivyscript`.
 
 
 .. _data-type-browser:

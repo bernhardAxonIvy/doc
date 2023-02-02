@@ -102,25 +102,6 @@ SMTP. You can inspect the mail inbox by opening the view 'Email Messages'.
    Mail Snag View
 
 
-.. _workspace-preferences-ivyscript:
-
-IvyScript Settings
-------------------
-
-With these preferences, you can choose the visibility level of the autocompletion.
-
-
-.. figure:: /_images/designer/preferences-ivyscript.png
-   :alt: IvyScript Preferences
-   :align: center
-   
-   IvyScript Preferences
-
-Visibility Level
-   The visibility level of the *IvyScript completer* and the
-   *function browser* can be configured here.
-
-
 .. _process-editor-preferences:
 
 Process Editor Settings
