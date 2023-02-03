@@ -85,14 +85,6 @@ constructors to create a new date.
    Package proposals
 
 
-.. tip::
-
-   When the content assistant is opened and you press :guilabel:`CTRL` + :guilabel:`SPACE`
-   again, the visibility level of the proposals is cycled. There are
-   three different levels: *Novice*, *Advanced* and *Expert*. Depending
-   on the visibility level, you get to see more or less proposals.
-
-
 Parameter Hopping
 ~~~~~~~~~~~~~~~~~
 
@@ -120,9 +112,7 @@ Shortcuts
    +-----------------------------------+-----------------------------------+
    | Shortcut                          | Action                            |
    +===================================+===================================+
-   | CTRL+SPACE                        | Opens content assistant, when     |
-   |                                   | pressing again, the visibility of |
-   |                                   | the content assistant is cycled.  |
+   | CTRL+SPACE                        | Opens content assistant           |
    +-----------------------------------+-----------------------------------+
    | F2                                | When pressing F2 in an editor, a  |
    |                                   | bigger editor is opened in an own |

@@ -43,10 +43,7 @@ editor. If you don't want to select a proposal simply continue typing.
 The provided information will be filtered by your input. The popup
 window will disappear if no proposal exists for the current input. You
 can enforce the appearance of the popup window by pressing
-``CTRL`` + ``SPACE``. Pressing ``CTRL`` + ``SPACE`` on a open
-completer popup window will cycle the visibility level. The visibility
-level controls how much information is displayed in the completer popup
-window. Pressing ``ALT`` + ``h`` will switch the help text of the
+``CTRL`` + ``SPACE``. Pressing ``ALT`` + ``h`` will switch the help text of the
 selected information on and off. Pressing ``ESC`` will close the
 completer popup window.
 

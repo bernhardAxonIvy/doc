@@ -24,9 +24,6 @@ with [get-window "Preferences (Filtered)"] {
 	get-tree | select "Axon Ivy/Process Engine"
 	saveWindowContentScreenshot "designer/preferences-processengine.png"
 	
-	get-tree | select "Axon Ivy/IvyScript"
-	saveWindowContentScreenshot "designer/preferences-ivyscript.png"
-	
 	get-tree | select "Axon Ivy/SSL Client"
 	saveWindowContentScreenshot "designer/preferences-sslclient.png"
 	
