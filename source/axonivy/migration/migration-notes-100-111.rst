@@ -14,13 +14,13 @@ License
 You need to request a new license for |ivy-engine| 11.1.
 
 
-Ivy Environments
-****************
+|ivy| Environments
+*****************************
 
-Ivy Environments have been removed, finally. We detailed the reason for this in our 
+|ivy| Environments have been removed, finally. We detailed the reason for this in our 
 `blog post <https://community.axonivy.com/d/142-environments-will-disappear-in-the-long-term>`_.
 
-Ivy environments have been used for **staging** and in some rare cases for **multi-tenancy**. If you have
+|ivy| environments have been used for **staging** and in some rare cases for **multi-tenancy**. If you have
 used them for staging, the initial use case, then you shouldn't face any issues.
 Make sure that the :code:`Default` configuration is correct for each of your staging environments.
 If you have used it for multi-tenancy, then you need to manually migrate each tenant to either its own
@@ -43,7 +43,7 @@ For :ref:`unit-testing`, you have been able to set the current environment on th
 This has been removed, too. Now, use the :code:`AppFixture#config`` API to define the exact configuration which you 
 like to override in your test case.
 
-Ivy Files have the environment name in their path. The existing files all stay at their current path. 
+|ivy| Files have the environment name in their path. The existing files all stay at their current path. 
 All new files will be saved in the :code:`Default` environment. 
 Later on, we intend to redesign the path of files completely to remove the environment dependency.
 
@@ -63,5 +63,5 @@ AJP Reverse Proxy Integration
 
 |tag-ops-changed|
 
-The AJP integration for :ref:`reverse-proxy` has been finally removed. You need to migrate
+The AJP integration for :ref:`reverse-proxy` has finally been removed. You need to migrate
 to URL Rewrite if you still have used AJP.
