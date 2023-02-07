@@ -45,7 +45,7 @@ class TestApiBrowserScreenshot {
   @Test
   void app() {
     open(apiBrowser()+"/index.html?urls.primaryName="+TestEngineScreenshots.DEMO_PORTAL);
-    $(By.id("operations-tag-mobile")).shouldBe(visible).click(); // Hide
+    $(By.id("operations-tag-workflow")).shouldBe(visible).click(); // Hide
     $$(".swagger-ui section.models h4 span").find(text("Schemas")).shouldBe(visible);
     takeScreenshot("api-browse-app", 500);
   }
