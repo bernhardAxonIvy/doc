@@ -3,11 +3,12 @@
 Databases
 =========
 
-To use databases in your business or User Dialog processes you need to define
-some database configurations first. After you have configured the databases
-(data sources) you can use them in your process steps. The process steps
-references only the database configuration ids. So you can use different
-database configuration settings on your productive server.
+To use databases in your business or User Dialog processes, start with defining
+database configurations for each database you want to use. After you have
+configured the databases (data sources) you can use them in your process steps.
+The process steps reference only the database configuration ids. Therefore, you
+can use different database configuration settings for each environment,
+i.e., development, test, and production servers.
 
 
 .. _database-configuration-editor:
@@ -15,18 +16,17 @@ database configuration settings on your productive server.
 Database Configuration Editor
 -----------------------------
 
-The database configuration editor lets you configure the
-databases you use in your project and the extending projects.
+The database configuration editor lets you configure the databases you use in
+your project.
 
 .. figure:: /_images/designer-configuration/database-editor.png
    :alt: Database Configuration Editor
 
    Database Configuration Editor
 
-- :guilabel:`All Database Configurations`
-  A list of all database configurations defined in this project. A red
-  or green icon indicates the result of the automatically executed
-  connection test.
+- :guilabel:`All Database Configurations` A list of all database configurations
+  defined in this project. A red or green icon indicates the result of the
+  connection test automatically executed upon saving a database configuration.
 
 - :guilabel:`New`
   Add a new database configuration
@@ -34,40 +34,41 @@ databases you use in your project and the extending projects.
 - :guilabel:`Remove`
   Remove the selected database configuration
 
-- :guilabel:`Test Connection`
-  Test database connection. A dialog shows the result status if the
-  database can be connected or not. In the case of a failure the reason
-  will be displayed
+- :guilabel:`Test Connection` Test database connection. A dialog shows the
+  result status. In case of failure, the reason is displayed
 
 - :guilabel:`SQL`
-  Opens a SQL editor in order to set up SQL Statements. The SQL Editor
-  displays the result in a result table
+  Opens a SQL editor to set up SQL Statements. The SQL Editor
+  displays the query result in a result table
 
 - :guilabel:`Database`
-  Select the type and driver of the database you use. Some often
-  used and tested drivers are shipped with the Designer.
+  Select the type and driver of the database you use. We ship some often
+  used and well-tested drivers with the |ivy-designer|.
 
-  The field :guilabel:`Max Connections` lets you specify the number of
-  concurrent connections to your database.
+  The field :guilabel:`Max Connections` lets you specify the maximum number of
+  concurrent connections to this database.
   
-  Choose an :guilabel:`Icon` that represents the database. 
-  The icon will also be used as decorator icon on 
-  Database process elements that references this database.  
+  Choose an :guilabel:`Icon` that represents the database. The icon will also be
+  used as decorator icon on Database process elements that reference this
+  database.  
 
 - :guilabel:`Connection Properties`
-  Specify the properties for the connection to your database.
+  Specify the properties for the database connection.
 
 - :guilabel:`Additional Connection Properties`
-  If your database needs more information you can use this section
-  to define the additional properties.
+  If your database needs additional settings, you can use this section
+  to define these properties.
 
 Dynamic Properties
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 You may need to adjust property values for multiple runtime environments. 
-E.g. to call different database hosts for testing than in production, 
-consequently with other credentials.
+E.g., use different database hosts for testing and production, 
+consequently with other credentials and connection URIs.
 
-You can forsee and simplify these configuration adjustments for operations
-by using :ref:`dynamic-config` expressions in properties or any other configuration value.
-E.g. the property ``databaseName=${ivy.var.cloudDb}`` will at runtime
-have the value of the variable called ``cloudDb``.
+If you anticipate this need, then you can simplify these configuration
+adjustments for operations by using :ref:`dynamic-config` expressions in both
+properties and other configuration values. E.g., the property
+``databaseName=${ivy.var.cloudDb}`` is evaluated at runtime and has the value of
+the variable called ``cloudDb``. Thus, your database name is now configurable
+using variable ``cloudDb``. Operations need to set this variable correctly; they
+do not need to dive into the configuration of this external database.

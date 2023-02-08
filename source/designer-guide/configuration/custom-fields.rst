@@ -12,7 +12,7 @@ in the :ref:`Portal application <portal-guide>` or via the Public API.
 Editor
 ------
 
-The Axon Ivy Designer delivers a **Yaml-Editor** to edit the
+The |ivy-designer| delivers a **Yaml-Editor** to edit the
 :file:`<project>/config/custom-fields.yaml` file, where you can maintain additional 
 information about your custom fields.
 
@@ -39,7 +39,7 @@ information about your custom fields.
 You can add as many other attributes as you like. E.g., :guilabel:`Icon`.
 
 .. warning::
-  The `indentation spaces <https://yaml.org/spec/1.2.2/#61-indentation-spaces>`__ needs to be the same in the whole yaml file.
+  The number of `indentation spaces <https://yaml.org/spec/1.2.2/#61-indentation-spaces>`__ needs to be the same in the whole yaml file.
 
 
 .. _custom-fields-locale:
@@ -47,9 +47,9 @@ You can add as many other attributes as you like. E.g., :guilabel:`Icon`.
 Localize Label, Description and Category
 ----------------------------------------
 
-For processes that support multiple languages the Label, Description and Category can be provided in multiple languages by using the :ref:`CMS<cms>`.
+For processes that support multiple languages, the Label, Description and Category can be provided in multiple languages by using the :ref:`CMS<cms>`.
 
-Simply add a content object with the path ``/CustomFields/{kind}/{name}/Label``, 
+Simply add content objects with paths ``/CustomFields/{kind}/{name}/Label``, 
 ``/CustomFields/{kind}/{name}/Description`` or ``/CustomFields/Categories/{category}`` to the :ref:`CMS<cms>`. 
 E.g., ``/CustomFields/Tasks/branchOffice/Label``, ``/CustomFields/Categories/hrm``
 
