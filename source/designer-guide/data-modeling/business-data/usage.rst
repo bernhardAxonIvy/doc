@@ -5,11 +5,11 @@ The Business Data feature methods like ``get``, ``save``, ``find`` and
 ``delete`` are accessible under ``ivy.repo`` in IvyScript.
 
 
-Associate value with the business case (BusinessCaseData context)
+Associate data with the business case (BusinessCaseData context)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Annotate the main data class of the business case with the
-``@BusinessCaseData`` annotation:
+Annotate the main data class of the business case with
+``@BusinessCaseData``:
 
 ::
 
@@ -18,7 +18,7 @@ Annotate the main data class of the business case with the
    {
    ...
 
-Get (load or create), modify and save a dossier value in the context of
+Get (load or create), modify, and save a business data value in the context of
 the current business case:
 
 ::
@@ -27,12 +27,13 @@ the current business case:
    dossier.getPerson().setLastName("Polo");
    ivy.repo.save(dossier);
 
-Note, that the method ``get`` either loads the dossier if there is
-already a dossier associated with the current business case or creates a
-new dossier.
+.. note::
+   The method ``get`` works as follows: If a BusinessData object is already 
+   associated with the current business case, this object is loaded. If not, 
+   a new BusinessData object is created instead.
 
 .. warning::
-  :ref:`business-case-data` can only be applied if the case is persistent (i.e.
+  :ref:`business-case-data` can only be applied if the case is persistent (i.e.,
   has at least one task)
   
 
@@ -50,16 +51,15 @@ Create and save:
 
 .. tip::
 
-   It is recommended to only store the id of the business value in the
-   process data. After a task switch you must load the business data
-   value from the repo with the stored id. This is required, because the
-   business data repo does not keep the reference to the instance on the
-   task switch.
+   It is recommended to only store the id of the business value in the process
+   data. After a task switch, you must load the business data value from the
+   repo with the stored id, because the business data repo does not keep the
+   reference to the instance on the task switch.
 
 Load (without BusinessCaseData context)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Load, modify and save:
+Load, modify, and save:
 
 ::
 
@@ -75,7 +75,7 @@ The search capabilities of the Business Data Store are based on
 therefore fast and powerful.
 
 There is a fluent API to search stored business data. The API supports
-filtering, ordering and limiting of the results:
+filtering, ordering, and limiting of the results:
 
 ::
 
@@ -103,8 +103,8 @@ are supported:
 
 .. warning::
 
-   By default the search result is limited to 10 entries. Use the method
-   ``limit`` if you want to get more than 10 entries.
+   By default, the search result is limited to 10 entries. Use the method
+   ``limit`` if you want to get more results.
 
 Store with own Id
 ~~~~~~~~~~~~~~~~~
@@ -124,13 +124,13 @@ Create and save with own Id:
 
 .. warning::
 
-   Be aware that the id can not be changed later and the maximum length
-   of the identifier is 100 characters.
+   Be aware that the id cannot be changed later. The maximum length of the
+   identifier is 100 characters.
 
 Samples
 ~~~~~~~
 
 The :ref:`WorkflowDemos sample project <importing-demo-projects>`
-of the Axon Ivy Designer contains examples on how to use the Business Data Store.
+of the |ivy-designer| contains examples of the Business Data Store usage.
 
-See Public API of ``BusinessDataRepository`` for more code samples.
+Refer to the Public API ``BusinessDataRepository`` for more code samples.

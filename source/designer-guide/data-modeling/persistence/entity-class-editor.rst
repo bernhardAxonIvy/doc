@@ -3,8 +3,8 @@
 Entity Class Editor
 -------------------
 
-The Axon Ivy Entity Class editor lets you configure the process data objects of
-Axon Ivy similar to the :ref:`data-class-editor`. The process data is the data
+The |ivy| Entity Class editor lets you configure the process data objects of
+|ivy| similar to the :ref:`data-class-editor`. The process data is the data
 that "flows" through your processes. An Entity Class has additional 
 information about where and how to store the data of a class and its attributes in a
 relational database.
@@ -15,7 +15,7 @@ of a field or to document your Entity Class or Entity Class Fields.
 Accessibility
 ^^^^^^^^^^^^^
 
-Axon Ivy Project Tree > double click on an Entity Class entry in the tree
+|ivy| Project Tree > double click on an Entity Class entry in the tree
 
 New > Entity Class > then the editor opens if the class was created
 successfully
@@ -129,54 +129,52 @@ Association
 ^^^^^^^^^^^
 
 ONE_TO_ONE
-   Defines a one-to-one (1:1 on the database) association with another
-   Entity Class. Can only be used if the type of the attribute is an
-   Entity Class.
+   Defines a one-to-one (1:1 on the database) association with another Entity
+   Class. Use only if the type of the attribute is an Entity Class.
 
 MANY_TO_ONE
-   Defines a many-to-one (n:1 on the database) association to another
-   Entity Class. Can only be used if the type of the attribute is a List
-   or Set of an Entity Class. The inverse association of a MANY_TO_ONE
-   is an ONE_TO_MANY association.
+   Defines a many-to-one (n:1 on the database) association to another Entity
+   Class. Use only if the type of the attribute is a List or Set of an Entity
+   Class. The inverse association of a MANY_TO_ONE is an ONE_TO_MANY
+   association.
 
 ONE_TO_MANY
-   Defines a one-to-many (1:n on the database) association to another
-   Entity Class. Can only be used if the type of the attribute is a List
-   or Set of an Entity Class. This type of association always needs a
-   mapped-by specification, because this is always the inverse side of
-   a MANY_TO_ONE association.
+   Defines a one-to-many (1:n on the database) association to another Entity
+   Class. Use only if the type of the attribute is a List or Set of an Entity
+   Class. This type of association always needs a mapped-by specification
+   because this is always the inverse side of a MANY_TO_ONE association.
 
 Cascade
 ^^^^^^^
 
 Defines the cascadable operations which are propagated to the associated
-Entity. E.g. if persist is enabled then the associated object will be
+Entity. E.g., if persist is enabled, the associated object will be
 persisted automatically if an instance of this class is persisted.
 
 persist
-   If enabled the associated object is persisted automatically if an
+   If enabled, the associated object is persisted automatically if an
    instance of the class is persisted. See :ref:`persist
    operation <persistence-api-persist>`.
 
 merge
-   If enabled the associated object is merged automatically if an
+   If enabled, the associated object is merged automatically if an
    instance of the class is merged. See :ref:`merge
    operation <persistence-api-merge>`.
 
 remove
-   If enabled the associated object is removed automatically if an
+   If enabled, the associated object is removed automatically if an
    instance of the class is removed. See :ref:`remove
    operation <persistence-api-remove>`.
 
 refresh
-   If enabled the associated object is refreshed automatically if an
+   If enabled, the associated object is refreshed automatically if an
    instance of the class is refreshed. See :ref:`refresh
    operation <persistence-api-refresh>`.
 
 Mapped by
 ^^^^^^^^^
 
-The field that owns the relationship on the specified type which must be
+The field that owns the relationship on the specified type that must be
 an Entity Class. This element is only specified on the inverse
 (non-owning) side of the association. Mapped by can only be used for
 ONE_TO_ONE and ONE_TO_MANY associations. The inverse side of the
@@ -188,12 +186,12 @@ Orphans
 
 If orphans removal is enabled and an entity that is the target of a relationship
 is removed from the relationship (either by removal from the collection or by
-setting the relationship to null), the entity being orphaned will be removed. If
-the entity being orphaned is a detached, new, or removed entity, the semantics
+setting the relationship to null), the orphaned entity will be removed. If
+the orphaned entity is a detached, new, or removed entity, the semantics
 do not apply.
 
 If orphan removal is enabled and the remove operation is applied to the source
-entity, the remove operation will be propagated as defined in the cascade
+entity the remove operation will be propagated as defined in the cascade
 section.
 
 The remove operation is applied at the time of the flush operation. The

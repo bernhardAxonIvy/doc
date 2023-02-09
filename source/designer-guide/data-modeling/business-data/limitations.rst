@@ -2,52 +2,51 @@ Business Data Limitations
 -------------------------
 
 Size
-   The Business Data store is not designed for storing huge binary
+   The Business Data store is not designed to store huge binary
    objects like PDFs.
 
 Persistence
-   :ref:`business-case-data` can only be applied if the case is persistent (i.e.
-   has at least one task).
+   :ref:`business-case-data` can only be applied if the case is persistent (i.e.,
+   it has at least one task).
 
 Types
-   The Axon Ivy scripting types ``XML``, and ``Tree`` are not serializable.
+   The |ivy| scripting types ``XML``, and ``Tree`` are not serializable.
 
-   Collection types like an ``ArrayList`` can be stored in a field, but
-   not as root object. Always use a simple DataClass or plain old Java
-   objects as root object to store and load in the repository.
+   You can store Collection types like an ``ArrayList`` in a field, but
+   not as the root object. Always use a simple DataClass or plain old Java
+   objects as the root object to store and load in the repository.
 
-   Public API objects like ``IUser``, ``ITask`` or similar should not be
-   stored into the Business Data repository. As workaround it's better
-   to store the id of a Task or User and reload it via this identifier.
+   Public API objects like ``IUser``, ``ITask`` should not be stored into the
+   Business Data repository. Store the **Id** of a User or Task instead, and reload
+   the object using this Id.
 
-   The type of a stored field should never be changed (E.g. from
-   ``Number`` to ``String``). The already stored data deserialization
-   could fail and more likely Business Data with the new type can no
-   longer be found via the search API as the search index is `strongly
-   typed <https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html>`__.
+   Do not change the type of a stored field (e.g., from ``Number`` to
+   ``String``)! The serialization of data you stored previously will fail, and
+   |ivy| cannot find Business Data with the new type via the search API as the
+   search index is `strongly typed
+   <https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html>`__.
 
 Project Dependencies
-   When using the same Business Data value type in multiple projects 'a'
-   and 'b' it is best to define the data classes for the business data
-   in an own project 'base'. Then define a dependency from projects 'a'
+   When using the same Business Data value type in the projects 'a'
+   and 'b', it is best to define the data classes for the business data
+   in a separate project 'base'. Then define a dependency from projects 'a'
    and 'b' to project 'base'.
 
    .. warning::
 
-      If you use an object of a type that is defined in project 'a'
-      inside the business data value (e.g. add it to a list) then the
-      business data value cannot be loaded in project 'b'. This is
-      because project 'b' is not dependent to project 'a' and therefore
-      cannot load objects of classes that are defined in project 'a'.
+      If you use an object of a type defined in project 'a' inside the business
+      data value (e.g., add it to a list), then the business data value cannot
+      be loaded in project 'b'. This is because project 'b' is not depending on
+      project 'a' and therefore cannot load objects of classes that are defined
+      in project 'a'.
 
 Elasticsearch
-   The business data will be duplicated to Elasticsearch. This offers us
-   powerful search capabilities but we also have to deal with their
-   limitations.
+   The business data is duplicated into Elasticsearch. This offers powerful
+   search capabilities. However, there are limitations to be dealt with.
 
-   Do not use ``Map``\ s with random or generated keys in your data
-   structure. This will lead in a explosion of Elasticsearch mappings.
+   Do not use a ``Map`` with random or generated keys in your data
+   structure, as this forces the creation of an Elasticsearch mapping for every data item.
 
    Prevent cyclic references and back references from lists to the
-   parent object. This can lead to huge json while expanding these data
+   parent object, as this can lead to huge json structures while expanding these data
    structures.
