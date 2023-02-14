@@ -54,24 +54,22 @@ the :ref:`ivy environment variable <ivyscript-reference-environmentvariable>`.
    and cases of the current user.
 
 
-.. _mobile-workflow-api:
+.. _workflow-api:
 
 REST API
 ~~~~~~~~
 
 There is an :api-browser-url:`REST workflow API <workflow>` available that
 allows third-party services to interact with workflow Tasks, Cases, and the like.
-The API was designed to allow mobile devices to use the workflow. 
 
-The so-called mobile workflow API is disabled by default. Enable it by setting
-the configuration ``REST.Servlet.MobileWorkflow.API: true``.
+The workflow API is enabled by default. Disable it by setting
+the configuration to ``REST.Servlet.API: false``.
 
-.. literalinclude:: includes/mobile.wf.enable.ivy.yaml
+.. literalinclude:: includes/disable-rest-api.ivy.yaml
   :language: yaml
   :linenos:
 
-Once the mobile workflow API is enabled, you may browse it's
-services by using the :ref:`integration-rest-api-browser`.
+You can browse this API by using the :ref:`integration-rest-api-browser`.
 
 If any REST workflow API is missing for your specific use case, 
 keep in mind that you can provide additional APIs very easily 

@@ -65,3 +65,13 @@ AJP Reverse Proxy Integration
 
 The AJP integration for :ref:`reverse-proxy` has finally been removed. You need to migrate
 to URL Rewrite if you still have used AJP.
+
+
+Mobile Workflow REST API
+************************
+
+|tag-ops-changed|
+
+We no longer use the term *mobile* for the :ref:`Workflow REST API <workflow-api>`. Therefore we renamed the configuration property
+in :ref:`ivy.yaml <ivy-webserver-yaml>` from :code:`REST.Servlet.MobileWorkflow.API` to :code:`REST.Servlet.API` and this REST API is now
+by default enabled.
