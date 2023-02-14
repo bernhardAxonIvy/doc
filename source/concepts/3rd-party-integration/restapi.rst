@@ -182,5 +182,5 @@ Workflow API
 ------------
 
 |ivy| provides a basic :ref:`Workflow API REST Service
-<mobile-workflow-api>`. You can use it to enable remote systems to request
+<workflow-api>`. You can use it to enable remote systems to request
 information about tasks of a user etc.
