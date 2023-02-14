@@ -65,7 +65,7 @@ allows third-party services to interact with workflow Tasks, Cases, and the like
 The workflow API is enabled by default. Disable it by setting
 the configuration to ``REST.Servlet.API: false``.
 
-.. literalinclude:: includes/disable-rest-api.ivy.yaml
+.. literalinclude:: includes/disable-rest-api.yaml
   :language: yaml
   :linenos:
 
