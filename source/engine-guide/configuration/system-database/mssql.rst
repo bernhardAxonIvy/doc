@@ -63,4 +63,4 @@ connection URL.
   default, only Windows Authentication is enabled.
 
 If the database is created by the Axon Ivy Engine the collation is set to
-``Latin1_General_CI_AI``.
+``Latin1_General_CI_AI`` for SQL Server older than 2019 and ``Latin1_General_100_CI_AI_SC_UTF8`` for SQL Server 2019 and newer.
