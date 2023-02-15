@@ -8,9 +8,8 @@ Getting a License
 -----------------
 
 To run the Axon Ivy Engine in :ref:`production mode <production-mode>` you need a
-license, which you can apply for via your Axon Ivy Partner, Axon Ivy Sales
-Representative or directly via support@axonivy.com. A time-limited trial license
-is provided for free upon request. You need to provide 
+license, which you can apply for via your Axon Ivy Partner or Axon Ivy Sales
+Representative. You need to provide 
 
 - the Axon Ivy Engine edition
 - the number of named users 
