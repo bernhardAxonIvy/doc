@@ -51,8 +51,7 @@
         <extensions>true</extensions>
         <configuration>
           <ivyVersion>${ivy-version}</ivyVersion>
-          <osArchitecture>All_x64</osArchitecture>
-          <additionalVmOptions>-Divy.REST.Servlet.MobileWorkflow.API=true</additionalVmOptions>
+          <osArchitecture>All_x64</osArchitecture>          
         </configuration>
         <executions>
           <execution>
