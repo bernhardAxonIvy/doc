@@ -7,5 +7,5 @@ TaskQuery query = TaskQuery.create()
   .where().customVarCharField1().isEqual("ivy")
   .groupBy().state()
   .orderBy().customVarCharField2().descending();
-// resolve query results
+// retrieve query results
 List<ITask> tasks = ivy.wf.getTaskQueryExecutor().getResults(query);

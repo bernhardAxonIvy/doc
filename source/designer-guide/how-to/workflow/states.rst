@@ -4,12 +4,12 @@
 States
 ---------------
 
-During a process execution the corresponding case and tasks have various
-states. Normally, a case is started non persistent. This means it is
-stored in memory only. As soon as the process hits a task switch the
-case and its tasks will be made persistent by storing them to the system
-database. Only persistent cases and tasks can be resolved with the query
-API's above.
+During process execution, the corresponding case and tasks have various states.
+Typically, cases start non-persistently, i.e., they are stored in memory only. At
+this time, their state is CREATED. As soon as a case hits a task switch,
+|ivy| persists the case and its tasks by storing them in the system database.
+You can retrieve persisted cases and tasks only with the query APIs.
+Non-persisted cases and tasks are not retrievable by API.
 
 
 
@@ -42,9 +42,9 @@ Process with session timeout
    +-----------------------+-----------------------+-----------------------+
    |                       | Process start         | User Dialog           |
    +=======================+=======================+=======================+
-   | Case state            | CREATED               | ZOMBIE                |
+   | Case state            | CREATED               | DESTROYED             |
    +-----------------------+-----------------------+-----------------------+
-   | Task state            | CREATED               | ZOMBIE                |
+   | Task state            | CREATED               | DESTROYED             |
    +-----------------------+-----------------------+-----------------------+
    | Persistent            | NO                    | NO                    |
    +-----------------------+-----------------------+-----------------------+
@@ -79,13 +79,13 @@ Task switch states in detail
 
 |image20|
 
-In detail the tasks are going to more technical task states inside of a
-task switch element. After a task reaches a task switch it is in state
-READY_FOR_JOIN. As soon as all input tasks have arrived at the task
-switch the state of all input tasks are switched to JOINING and the
-process data of the tasks are joined to one process data that is used as
-start data for the output tasks. After joining the input tasks are in
-state DONE and the output tasks are created in state SUSPENDED.
+In detail, the tasks are going to more technical task states inside a task
+switch element. After a task reaches a task switch, its state is
+READY_FOR_JOIN. As soon as all input tasks have arrived at the task switch,
+|ivy| sets the states of these input tasks to JOINING and joins their process data
+sets into one process data set forwarded to all output tasks. Then, |ivy|
+marks input tasks as DONE. It then creates the output tasks in state
+SUSPENDED.
 
 .. table:: Process with Task switch
 
@@ -95,11 +95,11 @@ state DONE and the output tasks are created in state SUSPENDED.
    |           | switch    | (reached) | (entry)   | (done/out | switch    |
    |           |           |           |           | put)      |           |
    +===========+===========+===========+===========+===========+===========+
-   | Case      | CREATED/R | RUNNING   |           |           |           |
-   | state     | UNNING    |           |           |           |           |
+   | Case      | CREATED/  | RUNNING   |           |           |           |
+   | state     | RUNNING   |           |           |           |           |
    +-----------+-----------+-----------+-----------+-----------+-----------+
-   | Task      | CREATED/R | READY_FOR | JOINING   | DONE      | -         |
-   | state     | ESUMED    | _JOIN     |           |           |           |
+   | Task      | CREATED/  | READY_FOR | JOINING   | DONE      | -         |
+   | state     | RESUMED   | _JOIN     |           |           |           |
    | (Task 1)  |           |           |           |           |           |
    +-----------+-----------+-----------+-----------+-----------+-----------+
    | Task      | -         | -         | -         | SUSPENDED | RESUMED   |
@@ -115,9 +115,9 @@ Task with session timeout
 
 |image3|
 
-If a user resumes a task with an user dialog and then the session of the
-user timeouts then the task state is set back to state SUSPENDED and the
-process of the task is set back to the task switch element.
+If a user resumes a task with a user dialog and the session of the user times
+out, |ivy| sets the task state back to SUSPENDED and resets the associated case
+to the task switch element.
 
 .. table:: Task with session timeout
 
@@ -139,12 +139,12 @@ User Task
 
 |image4|
 
-A User Task is the combination of a Task Switch Event and a User Dialog.
-When the user start working on a normal HTML User Dialog the task
-changes its state to RESUMED. In case of an 'Offline Dialog' the task
-state is not changed before the user submits the task form. Then the
-state changes from SUSPENDED to RESUMED. Subsequent steps are executed
-until the task is finally DONE. See also :ref:`offline-tasks`.
+A User Task combines a Task Switch Event and a User Dialog. If the user starts
+to work on an ordinary HTML User Dialog, |ivy| changes the task state to
+RESUMED. If this is an 'Offline Dialog', |ivy| does not change the task state
+before the user submits the task form. Once submitted, |ivy| changes the state
+from SUSPENDED to RESUMED. |ivy| then executes subsequent steps until the task
+is finally DONE. See also :ref:`offline-tasks`.
 
 
 .. _signal-boundary-event:
@@ -154,10 +154,9 @@ Signal Boundary Event
 
 |image5|
 
-A User Task with an attached Signal Boundary Event is listening to a
-signal while its task is in SUSPENDED state. If the signal has been
-received the task is destroyed and the execution continues with a newly
-created follow-up task.
+A User Task with an attached Signal Boundary Event listens for a signal while
+its task is in SUSPENDED state. After receiving the signal, |ivy| destroys the
+task. Execution continues with a newly created follow-up task.
 
 
 
@@ -166,32 +165,31 @@ Case Map with session timeout
 
 |image22|
 
-When a task is created by :ref:`casemap`, its initial state is
-CREATED and it is immediatly persisted to the database. If the session
-of the user expires while working on this initial task, its state is
-being reset to ZOMBIE. The same goes for the Case and Business Case.
+When a task is created by :ref:`casemap`, its initial state is SUSPENDED. |ivy|
+immediately persists the task in the database. If the user session expires while
+working on this initial task, |ivy| will delete it, along with the associated
+Case and Business Case.
 
 .. table:: Case Map with User Dialog that reaches a session timeout
 
    +-----------------------+-----------------------+-----------------------+
    |                       | Process start         | User Dialog           |
    +=======================+=======================+=======================+
-   | Case state            | CREATED               | ZOMBIE                |
+   | Case state            | CREATED               | - (deleted)           |
    +-----------------------+-----------------------+-----------------------+
-   | Task state            | CREATED               | ZOMBIE                |
+   | Task state            | CREATED               | - (deleted)           |
    +-----------------------+-----------------------+-----------------------+
-   | Business Case state   | CREATED               | ZOMBIE                |
+   | Business Case state   | CREATED               | - (deleted)           |
    +-----------------------+-----------------------+-----------------------+
-   | Persistent            | YES                   | YES                   |
+   | Persistent            | YES                   | -                     |
    +-----------------------+-----------------------+-----------------------+
 
 Other task states
 ~~~~~~~~~~~~~~~~~
 
-There are more task states mainly for task synchronisation, error
-handing, intermediate events, or user aborts. To learn more about task
-states see enumeration ``ch.ivyteam.ivy.workflow.TaskState`` in public
-API.
+There are more task states, mainly for task synchronisation, error handing,
+intermediate events, or user aborts. To learn more about task states, refer to
+the enumeration ``ch.ivyteam.ivy.workflow.TaskState`` in public API.
 
 .. |image1| image:: /_images/workflow/workflow-states-simple-start-end.png
 .. |image2| image:: /_images/workflow/workflow-states-simple-start-task-switch-end.png

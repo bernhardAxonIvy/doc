@@ -73,7 +73,7 @@ one of the many available resources in the Internet.
 
 .. tip::
 
-   In Axon Ivy, we integrate the open source rule engine
+   In |ivy|, we integrate the open source rule engine
    `Drools <https://www.drools.org>`__ to give you the flexibility to use
    a rule engine if you want. We wrapped some of the most basic features
    of Drools into our own UI and API. If you need more than that, then
@@ -145,7 +145,7 @@ you simply tell the rule engine to execute and it does find out itself
 which rules apply and which rules to fire.
 
 To run the rule engine you have to use the Public API of the rule
-engine, e.g. in a script step or in a Java class. Use
+engine, e.g., in a script step or in a Java class. Use
 ``ivy.rules`` to build and execute rules on data objects.
 First you will need to create a :public-api:`RuleExecutor </ch/ivyteam/ivy/rule/engine/api/IRuleExecutor.html>` with all rules.
 

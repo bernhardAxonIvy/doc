@@ -1,7 +1,7 @@
 Extensions
 ==========
 
-This chapters shows how easily a process or the Axon Ivy Engine itself
+This chapters shows how easily a process or the |ivy-engine| itself
 can be customized with your own logic.
 
 
@@ -10,13 +10,13 @@ can be customized with your own logic.
 Extendible Process Elements
 ---------------------------
 
-Axon Ivy comes with four generic process elements that can be used to
+|ivy| comes with four generic process elements that can be used to
 address particular execution behavior requirements none of the standard
 process elements can fulfill.
 
 All generic process elements contain a tab in which a Java class can be
 selected. The Java class implements the actual execution behavior. Some
-standard implementations are shipped with the Axon Ivy core, and with
+standard implementations are shipped with the |ivy| core, and with
 these elements developers are able to specify their own implementation
 as part of the project.
 
@@ -34,7 +34,7 @@ These generic elements are:
 .. tip::
 
    Sample implementations of custom process elements can be found on
-   GitHub in our open source `repository <https://github.com/axonivy>`__, e.g. https://github.com/axonivy/bpm-beans
+   GitHub in our open source `repository <https://github.com/axonivy>`__, e.g., https://github.com/axonivy/bpm-beans
 
 
 .. _new-bean-class-wizard:
@@ -78,7 +78,7 @@ for the user interface (Designer):
 
 :public-api:`IBpmnProcessElementUi </ch/ivyteam/ivy/designer/process/ui/info/IBpmnProcessElementUi.html>`
   This extension point allows you to define a visual representation of your custom process
-  element in the Axon Ivy Designer. By adding custom tabs to the Inscription mask you can also
+  element in the |ivy-designer|. By adding custom tabs to the Inscription mask you can also
   make your process element configurable. The configuration can be stored in a `String`.
   The name must be specified and match the name defined in your IBpmnProcessElement
   implementation. It is recommended to add an icon.
@@ -88,24 +88,24 @@ You need to implement both process element extension points in order to have a w
 .. tip::
 
    Sample implementations of custom process elements can be found on
-   GitHub in our open source `repository <https://github.com/axonivy>`__, e.g. https://github.com/axonivy/bpm-beans
+   GitHub in our open source `repository <https://github.com/axonivy>`__, e.g., https://github.com/axonivy/bpm-beans
 
 
 .. _extensions-bundles:
 
-Axon Ivy extensions bundles (Eclipse plugin)
+|ivy| extensions bundles (Eclipse plugin)
 ----------------------------------------------
 
-In order to provide an Axon Ivy extension for the Designer or Engine you
+In order to provide an |ivy| extension for the Designer or Engine you
 need to provide it as an Eclipse plugin.
 
 Development
 ~~~~~~~~~~~
 
-You can create your own Eclipse plugin in the Axon Ivy Designer by
+You can create your own Eclipse plugin in the |ivy-designer| by
 following these steps:
 
-#. Start Axon Ivy Designer
+#. Start |ivy-designer|
 
 #. Switch to the :guilabel:`Plug-in Development Perspective`. Menu: :guilabel:`Window` >
    :guilabel:`Open Perspective` > :guilabel:`Other...` > :guilabel:`Plug-in Development`
@@ -141,7 +141,7 @@ following these steps:
          |                       | used for              |                                      |
          |                       | documentation only.   |                                      |
          +-----------------------+-----------------------+--------------------------------------+
-         | Plug-In Provider      | The provider of the   | Axon Ivy AG                          |
+         | Plug-In Provider      | The provider of the   | Muster AG                            |
          |                       | plugin. The provider  |                                      |
          |                       | is used for           |                                      |
          |                       | documentation only.   |                                      |
@@ -174,23 +174,23 @@ following these steps:
 #. Switch back to the **META-INF/MANIFEST.MF** file editor. Choose the
    **Overview** tab and click on the link **Export Wizard**. As
    **Destination Directory** choose the ``dropins`` directory of your
-   Axon Ivy Designer or Engine installation. Press the **Finish**
+   |ivy-designer| or Engine installation. Press the **Finish**
    button. Your plugin is created in the ``dropins/plugins``
    directory.
 
 Installation
 ~~~~~~~~~~~~
 
-Follow these steps to install your extensions in an Axon Ivy Designer or
+Follow these steps to install your extensions in an |ivy-designer| or
 Engine:
 
 #. Stop the running instance (if applicable).
 
 #. Copy your plugin (bundle) that contains your extension classes to the
-   ``dropins`` directory inside the Axon Ivy Designer or Engine
+   ``dropins`` directory inside the |ivy-designer| or Engine
    installation directory.
 
-#. Start the Axon Ivy Designer or Engine.
+#. Start the |ivy-designer| or Engine.
 
 .. tip::
 
@@ -202,18 +202,18 @@ Engine:
 Extension Point Reference
 -------------------------
 
-Axon Ivy supports the following extension points:
+|ivy| supports the following extension points:
 
 
 :public-api:`IServerExtension </ch/ivyteam/ivy/server/IServerExtension.html>`
-  A Server extension can be used to start and stop your code when the Axon Ivy Engine
+  A Server extension can be used to start and stop your code when the |ivy-engine|
   is started or stopped. Server extensions can be accessed from Process
   Start Event and Process Intermediate Event Beans and also from every process
   element using the ivy.extensions environment variable.
 
 
 :public-api:`IIvyProjectClassPathExtension </ch/ivyteam/ivy/java/IIvyProjectClassPathExtension.html>`
-  Adds libraries or classes from bundles to the Axon Ivy project class path. This extension point allows to
+  Adds libraries or classes from bundles to the |ivy| project class path. This extension point allows to
   add libraries or classes to the compile and the runtime class path. This is useful if you want to
   provide your own classes in a eclipse bundle and want to access these classes from IvyScript or
   use them as Program Interface (PI), Start Event, Intermediate Event and Call&Wait bean.
@@ -221,10 +221,10 @@ Axon Ivy supports the following extension points:
 
 :public-api:`IBpmnProcessElement </ch/ivyteam/ivy/bpm/exec/IBpmnProcessElement.html>`
   Extension point to define the execution part of your custom process element. The code
-  provided in the executor class will be run on the Axon Ivy Engine during process execution.
+  provided in the executor class will be run on the |ivy-engine| during process execution.
   The user interface part to configure your element can be implemented with extension
   point IBpmnProcessElementUi. An optional validator class can be specified that will be
-  run during execution as well as project validation in the Axon Ivy Designer.
+  run during execution as well as project validation in the |ivy-designer|.
 
 
 :public-api:`IBpmnProcessElementUi </ch/ivyteam/ivy/designer/process/ui/info/IBpmnProcessElementUi.html>`

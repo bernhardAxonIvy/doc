@@ -3,7 +3,7 @@
 Custom Fields
 =============
 
-Use custom fields to dynamically add additional business relevant information as
+Use custom fields to add additional business relevant information dynamically as
 key/value pairs on :ref:`Starts<process-element-tab-start-custom-fields>`,
 :ref:`Cases<process-element-tab-case-custom-fields>` and :ref:`Tasks
 <process-element-tab-task-custom-fields>`. 
@@ -12,8 +12,7 @@ Examples of custom fields are:
 
 * branchLocation - The location of the branch that is responsible for a task
 * customerId - The id of the customer a case is working on 
-* orderAmount - The number of pieces or the amount of money of the order
-  associated with a case 
+* orderAmount - The amount of money of the order associated with a case 
 
 The :ref:`developer workflow UI <dev-workflow-ui>` and the :ref:`Portal
 application <portal-guide>` will display custom fields on their task and case
@@ -28,10 +27,10 @@ Meta Information
  
 You can use custom fields directly on the process elements without any
 additional configuration. However, we suggest that you provide additional
-information (meta information) for often used custom fields or custom fields
-that are visible to end-users in the :ref:`Portal application <portal-guide>`.
-Meta information for :ref:`custom fields <custom-fields-config>` can be provided
-in the file :file:`<project>/config/custom-fields.yaml`. Additionally, you can
+information (meta information) for custom fields that are used often or are
+visible to end-users in the :ref:`Portal application <portal-guide>`. Meta
+information for :ref:`custom fields <custom-fields-config>` can be provided in
+the file :file:`<project>/config/custom-fields.yaml`. Additionally, you can
 provide some attributes of the meta information in :ref:`multiple languages
 <custom-fields-locale>` using the :ref:`CMS <cms>`.
 
@@ -46,7 +45,7 @@ You can access custom fields using the following API:
 
 .. code:: java
   
-  String branchOffice = ivy.task.customFields().stringField("branchOffice").getOrDefault("Luzern")
+  String branchOffice = ivy.task.customFields().stringField("branchOffice").getOrDefault("Zug")
 
 To search for tasks and cases by custom fields, use the following API:
 

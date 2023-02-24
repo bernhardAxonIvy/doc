@@ -9,21 +9,21 @@ customer projects it is desirable that certain parts of such a generic
 solution may be redefined in the context of a specific installation or
 customer.
 
-To permit this, Axon Ivy knows various concepts of context-sensitive
+To permit this, |ivy| knows various concepts of context-sensitive
 re-definitions:
 
--  Regular redefinition (e.g. for Content Objects and/or
+-  Regular redefinition (e.g., for Content Objects and/or
    Configurations): Simply define an already existing artifact with the
    same name again in a different project.
 
--  Redefinition with overrides (e.g. for HTML Dialogs, HTML Dialog components
+-  Redefinition with overrides (e.g., for HTML Dialogs, HTML Dialog components
    and/or Sub Processes): Define a replacement component for an already
    existing component.
 
 By defining overrides on project level, the lookup of a certain
 component can be redirected to a replacement component. When a component
 is referenced in a process model of that project then the lookup for
-this component will yield a different component (i.e. the replacement)
+this component will yield a different component (i.e., the replacement)
 at runtime instead of the originally referenced component.
 
 Example: The Acme Web shop
@@ -143,10 +143,10 @@ resellers and the *Web shop* to your private customers.
 
 How is a component looked up? For the lookup of components at runtime,
 the so-called case scope is crucial. The case scope is determined by
-the project, in which the current case was started, e.g. where the start
+the project, in which the current case was started, e.g., where the start
 of the running business process was invoked. All component look-ups as
 well as configuration and content management references are processed
-within the case scope, i.e. the lookup of such artifacts always starts
+within the case scope, i.e., the lookup of such artifacts always starts
 at the project that defines the case scope.
 
 To make use of the case scope the main business process has to be copied
@@ -197,7 +197,7 @@ Process Facade
    file, it is recommended to employ the *process facade* design pattern.
 
    Inside the main project of the generic application create a single
-   process (e.g. Main) that holds the start elements of all the elementary
+   process (e.g., Main) that holds the start elements of all the elementary
    business processes of the application. Factor the logic of those
    processes out into sub processes and call them from the facade process
    stubs, as illustrated below. With this approach, only one process (the
@@ -236,7 +236,7 @@ Overrides Tool Reference
 Override editor
 ~~~~~~~~~~~~~~~
 
-The Axon Ivy *Overrides Editor* shows the registered and active
+The |ivy| *Overrides Editor* shows the registered and active
 overrides for a specific project. The overrides are listed in 4
 different sections: Sub Processes, HTML Dialogs, Content Objects and
 Configurations.
@@ -275,7 +275,7 @@ Accessibility
 
 |override-tree-node|
 
-Axon Ivy Project Tree > double click on the Overrides node.
+|ivy| Project Tree > double click on the Overrides node.
 
 
 Features
@@ -308,7 +308,7 @@ Html Dialog Overrides
 
 Content Object Overrides
    This section shows all Content Objects that are redefined in the
-   selected project, i.e. the Content Objects for which there is an
+   selected project, i.e.,the Content Objects for which there is an
    entry with the same URI in a required project. At execution time the
    redefined Content Object will be used.
 
@@ -318,7 +318,7 @@ Content Object Overrides
 
 Configuration Overrides
    This section shows all Configurations that are redefined in the
-   selected project, i.e. all Configurations for which there is an entry
+   selected project, i.e.,all Configurations for which there is an entry
    with the same name in a required project. At execution time the
    redefined Configuration will be used.
 
