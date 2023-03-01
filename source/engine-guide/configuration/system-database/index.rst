@@ -34,8 +34,7 @@ database. To run the Axon Ivy Engine with a system database, a :ref:`license
 
 .. rubric:: Advanced Configuration
 
-* User passwords are stored in encrypted form in the system database. It is possible to
-  configure the :ref:`encryption algorithm <systemdb-encryption>`.
+* User passwords are stored in encrypted form (hash) in the system database.
 
 * In some cases, you may want to perform :ref:`case-insensitive searches
   <systemdb-case-insensitive-searches>` for tasks or cases, for example. For
