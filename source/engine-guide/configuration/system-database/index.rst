@@ -47,5 +47,4 @@ database. To run the Axon Ivy Engine with a system database, a :ref:`license
    :maxdepth: 1
    :hidden:
 
-   password-encryption
    case-insensitive-searches
