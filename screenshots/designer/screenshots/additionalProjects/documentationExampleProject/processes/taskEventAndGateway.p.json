@@ -1,5 +1,5 @@
 {
-  "format" : "11.1.10",
+  "format" : "11.1.11",
   "id" : "167C7307A5664620",
   "config" : {
     "data" : "screenshot.project.Data"
@@ -16,7 +16,9 @@
         "at" : { "x" : 96, "y" : 64 },
         "labelOffset" : { "x" : 9, "y" : 39 }
       },
-      "connect" : { "id" : "f7", "to" : "f9", "var" : "in1" }
+      "connect" : [
+        { "id" : "f7", "to" : "f9", "var" : "in1" }
+      ]
     }, {
       "id" : "f6",
       "type" : "TaskEnd",
@@ -83,7 +85,9 @@
         "at" : { "x" : 96, "y" : 160 },
         "labelOffset" : { "x" : 44, "y" : 39 }
       },
-      "connect" : { "id" : "f1", "to" : "f10", "var" : "in1" }
+      "connect" : [
+        { "id" : "f1", "to" : "f10", "var" : "in1" }
+      ]
     }, {
       "id" : "f10",
       "type" : "UserTask",
@@ -104,7 +108,9 @@
       "visual" : {
         "at" : { "x" : 224, "y" : 160 }
       },
-      "connect" : { "id" : "f15", "to" : "f9", "condition" : "ivp==\"TaskA.ivp\"", "var" : "in2" }
+      "connect" : [
+        { "id" : "f15", "to" : "f9", "condition" : "ivp==\"TaskA.ivp\"", "var" : "in2" }
+      ]
     }, {
       "id" : "f4",
       "type" : "TaskSwitchEvent",
@@ -118,7 +124,9 @@
       "visual" : {
         "at" : { "x" : 224, "y" : 256 }
       },
-      "connect" : { "id" : "f14", "to" : "f11", "condition" : "ivp==\"TaskA.ivp\"" }
+      "connect" : [
+        { "id" : "f14", "to" : "f11", "condition" : "ivp==\"TaskA.ivp\"" }
+      ]
     }, {
       "id" : "f11",
       "type" : "TaskEnd",
@@ -137,7 +145,9 @@
         "at" : { "x" : 96, "y" : 256 },
         "labelOffset" : { "x" : 58, "y" : 39 }
       },
-      "connect" : { "id" : "f13", "to" : "f4", "var" : "in1" }
+      "connect" : [
+        { "id" : "f13", "to" : "f4", "var" : "in1" }
+      ]
     }, {
       "id" : "f3",
       "type" : "RequestStart",
@@ -150,7 +160,9 @@
         "at" : { "x" : 96, "y" : 448 },
         "labelOffset" : { "x" : 41, "y" : 37 }
       },
-      "connect" : { "id" : "f18", "to" : "f17", "var" : "in1" }
+      "connect" : [
+        { "id" : "f18", "to" : "f17", "var" : "in1" }
+      ]
     }, {
       "id" : "f16",
       "type" : "TaskEnd",
@@ -184,7 +196,9 @@
         "at" : { "x" : 224, "y" : 448 },
         "size" : { "width" : 144, "height" : 60 }
       },
-      "connect" : { "id" : "f19", "to" : "f16", "condition" : "ivp==\"TaskA.ivp\"" }
+      "connect" : [
+        { "id" : "f19", "to" : "f16", "condition" : "ivp==\"TaskA.ivp\"" }
+      ]
     }, {
       "id" : "f20",
       "type" : "RequestStart",
@@ -197,7 +211,9 @@
         "at" : { "x" : 96, "y" : 352 },
         "labelOffset" : { "x" : 30, "y" : 37 }
       },
-      "connect" : { "id" : "f23", "to" : "f22", "var" : "in1" }
+      "connect" : [
+        { "id" : "f23", "to" : "f22", "var" : "in1" }
+      ]
     }, {
       "id" : "f21",
       "type" : "TaskEnd",
@@ -217,6 +233,8 @@
       "visual" : {
         "at" : { "x" : 224, "y" : 352 }
       },
-      "connect" : { "id" : "f24", "to" : "f21", "condition" : "ivp==\"TaskA.ivp\"" }
+      "connect" : [
+        { "id" : "f24", "to" : "f21", "condition" : "ivp==\"TaskA.ivp\"" }
+      ]
     } ]
 }

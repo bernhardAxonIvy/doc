@@ -1,5 +1,5 @@
 {
-  "format" : "11.1.10",
+  "format" : "11.1.11",
   "id" : "168F0C6DF682858E",
   "config" : {
     "data" : "ch.ivyteam.documentation.project.AddContactData"
@@ -15,7 +15,9 @@
       "visual" : {
         "at" : { "x" : 96, "y" : 64 }
       },
-      "connect" : { "id" : "f4", "to" : "f3" }
+      "connect" : [
+        { "id" : "f4", "to" : "f3" }
+      ]
     }, {
       "id" : "f1",
       "type" : "TaskEnd",
@@ -64,7 +66,9 @@
           "While you hover the element, these markups will be rendered as nice HTML to the end-user."
         ]
       },
-      "connect" : { "id" : "f6", "to" : "f5" }
+      "connect" : [
+        { "id" : "f6", "to" : "f5" }
+      ]
     }, {
       "id" : "f5",
       "type" : "UserTask",
@@ -82,6 +86,8 @@
       "visual" : {
         "at" : { "x" : 416, "y" : 64 }
       },
-      "connect" : { "id" : "f2", "to" : "f1", "condition" : "ivp==\"TaskA.ivp\"" }
+      "connect" : [
+        { "id" : "f2", "to" : "f1", "condition" : "ivp==\"TaskA.ivp\"" }
+      ]
     } ]
 }
