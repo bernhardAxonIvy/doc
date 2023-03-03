@@ -1,5 +1,5 @@
 {
-  "format" : "11.1.6",
+  "format" : "11.1.10",
   "id" : "167C7307A5664620",
   "config" : {
     "data" : "screenshot.project.Data"
@@ -35,7 +35,7 @@
           "description" : "Make sure all is up-to-date.",
           "category" : "Dossier/Create",
           "customFields" : [
-            { "name" : "CustomVarCharField1", "type" : "String", "value" : "\"aCreDhbGFFGZ53Fg\"" }
+            { "name" : "CustomVarCharField1", "type" : "STRING", "value" : "\"aCreDhbGFFGZ53Fg\"" }
           ]
         },
         "tasks" : {
@@ -44,13 +44,11 @@
             "description" : "We need to renew our licence.",
             "category" : "Dossier",
             "responsible" : {
-              "type" : "ROLE",
               "activator" : "Secretary"
             },
             "expiry" : {
               "timeout" : "ivy.cal.getWorkDayIn(5).getDurationFromNow()",
               "responsible" : {
-                "type" : "ROLE",
                 "activator" : "IT-Manager"
               },
               "priority" : {
@@ -169,7 +167,6 @@
           "expiry" : {
             "timeout" : "ivy.cal.getWorkDayIn(5).toDuration()",
             "responsible" : {
-              "type" : "ROLE",
               "activator" : "IT-Manager"
             },
             "priority" : {
@@ -177,8 +174,8 @@
             }
           },
           "customFields" : [
-            { "name" : "carBrand", "type" : "String", "value" : "in.get(\"brand\").toString()" },
-            { "name" : "leasingSum", "type" : "Number", "value" : "in.get(\"sum\").toNumber()" }
+            { "name" : "carBrand", "type" : "STRING", "value" : "in.get(\"brand\").toString()" },
+            { "name" : "leasingSum", "type" : "NUMBER", "value" : "in.get(\"sum\").toNumber()" }
           ],
           "code" : "task.setBusinessCalendar(ivy.cal.get(in.city));"
         }
