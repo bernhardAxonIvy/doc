@@ -1,5 +1,5 @@
 {
-  "format" : "11.1.6",
+  "format" : "11.1.10",
   "id" : "180D20366E0D3C6D",
   "config" : {
     "data" : "screenshot.project.Mailer"
@@ -31,25 +31,27 @@
       ],
       "config" : {
         "headers" : {
-          "emailSubject" : "Registration failed for <%=in.user.name%>",
-          "emailFrom" : "no-reply@axonivy.com",
-          "emailTo" : "<%=in.user.mail%>"
+          "subject" : "Registration failed for <%=in.user.name%>",
+          "from" : "no-reply@axonivy.com",
+          "to" : "<%=in.user.mail%>"
         },
-        "message" : [
-          "<html>",
-          "Hi <%=in.user.name%>",
-          "",
-          "Unfortunately your registration failed. ",
-          "The system responded with <%=in.error%>.",
-          "",
-          "Best regards,",
-          "ivyTeam",
-          "",
-          "<%=ivy.cms.co(\"/images/axon_ivy_logo\")%>",
-          "",
-          "</html>"
-        ],
-        "contentType" : "text/html",
+        "message" : {
+          "body" : [
+            "<html>",
+            "Hi <%=in.user.name%>",
+            "",
+            "Unfortunately your registration failed. ",
+            "The system responded with <%=in.error%>.",
+            "",
+            "Best regards,",
+            "ivyTeam",
+            "",
+            "<%=ivy.cms.co(\"/images/axon_ivy_logo\")%>",
+            "",
+            "</html>"
+          ],
+          "contentType" : "text/html"
+        },
         "attachments" : [
           "in.documents",
           "ivy.cm.findObject(\"/images/404\")"
