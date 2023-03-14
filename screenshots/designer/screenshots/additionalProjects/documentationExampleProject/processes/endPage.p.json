@@ -1,5 +1,5 @@
 {
-  "format" : "11.1.11",
+  "format" : "11.1.14",
   "id" : "16BADA40155E7401",
   "config" : {
     "data" : "screenshot.project.Data"
@@ -23,7 +23,7 @@
       "type" : "TaskEndPage",
       "name" : "end",
       "config" : {
-        "template" : "endpage.xhtml"
+        "page" : "endpage.xhtml"
       },
       "visual" : {
         "at" : { "x" : 352, "y" : 64 },

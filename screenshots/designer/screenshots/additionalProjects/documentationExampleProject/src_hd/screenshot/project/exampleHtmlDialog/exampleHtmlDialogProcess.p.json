@@ -1,5 +1,5 @@
 {
-  "format" : "11.1.11",
+  "format" : "11.1.14",
   "id" : "167356B1245C7158",
   "kind" : "HTML_DIALOG",
   "config" : {
@@ -10,21 +10,21 @@
       "type" : "HtmlDialogStart",
       "name" : "start(Data)",
       "config" : {
-        "callSignature" : "start",
-        "result" : {
-          "params" : [
-            { "name" : "data", "type" : "screenshot.project.Data" }
-          ],
-          "map" : {
-            "result.data.city" : "in.data.city"
-          }
-        },
+        "signature" : "start",
         "input" : {
           "params" : [
-            { "name" : "data", "type" : "screenshot.project.Data" }
+            { "name" : "data", "type" : "screenshot.project.Data", "desc" : "" }
           ],
           "map" : {
             "out.data" : "param.data"
+          }
+        },
+        "result" : {
+          "params" : [
+            { "name" : "data", "type" : "screenshot.project.Data", "desc" : "" }
+          ],
+          "map" : {
+            "result.data.city" : "in.data.city"
           }
         },
         "guid" : "167356B126437C3D"
@@ -66,18 +66,20 @@
       "type" : "HtmlDialogMethodStart",
       "name" : "addNumber(Number)",
       "config" : {
-        "callSignature" : "addNumber",
-        "result" : {
-          "params" : [
-            { "name" : "summary", "type" : "Number" }
-          ]
-        },
-        "guid" : "16B2C446B197B00C",
+        "signature" : "addNumber",
         "input" : {
           "params" : [
-            { "name" : "additionalNumber", "type" : "Number" }
-          ]
-        }
+            { "name" : "additionalNumber", "type" : "Number", "desc" : "" }
+          ],
+          "map" : { }
+        },
+        "result" : {
+          "params" : [
+            { "name" : "summary", "type" : "Number", "desc" : "" }
+          ],
+          "map" : { }
+        },
+        "guid" : "16B2C446B197B00C"
       },
       "visual" : {
         "at" : { "x" : 96, "y" : 224 }

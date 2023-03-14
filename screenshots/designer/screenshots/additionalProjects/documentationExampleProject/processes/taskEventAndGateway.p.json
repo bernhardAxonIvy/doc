@@ -1,5 +1,5 @@
 {
-  "format" : "11.1.11",
+  "format" : "11.1.14",
   "id" : "167C7307A5664620",
   "config" : {
     "data" : "screenshot.project.Data"
@@ -30,18 +30,8 @@
       "type" : "TaskSwitchGateway",
       "name" : "Renew Licence",
       "config" : {
-        "template" : "endpage.xhtml",
-        "outLinks" : [ "TaskA.ivp" ],
-        "case" : {
-          "name" : "Stay updated",
-          "description" : "Make sure all is up-to-date.",
-          "category" : "Dossier/Create",
-          "customFields" : [
-            { "name" : "CustomVarCharField1", "type" : "STRING", "value" : "\"aCreDhbGFFGZ53Fg\"" }
-          ]
-        },
-        "tasks" : {
-          "TaskA" : {
+        "tasks" : [ {
+            "id" : "TaskA",
             "name" : "Renew Licence",
             "description" : "We need to renew our licence.",
             "category" : "Dossier",
@@ -57,8 +47,16 @@
                 "level" : "HIGH"
               }
             }
-          }
-        }
+          } ],
+        "case" : {
+          "name" : "Stay updated",
+          "description" : "Make sure all is up-to-date.",
+          "category" : "Dossier/Create",
+          "customFields" : [
+            { "name" : "CustomVarCharField1", "type" : "STRING", "value" : "\"aCreDhbGFFGZ53Fg\"" }
+          ]
+        },
+        "page" : "endpage.xhtml"
       },
       "visual" : {
         "at" : { "x" : 224, "y" : 64 },
@@ -115,7 +113,6 @@
       "id" : "f4",
       "type" : "TaskSwitchEvent",
       "config" : {
-        "outLinks" : [ "TaskA.ivp" ],
         "task" : {
           "name" : "Implement Method",
           "category" : "Implementation"

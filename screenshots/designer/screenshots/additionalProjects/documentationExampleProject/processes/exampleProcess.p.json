@@ -1,5 +1,5 @@
 {
-  "format" : "11.1.11",
+  "format" : "11.1.14",
   "id" : "1562D1CBAC49CCF8",
   "config" : {
     "data" : "com.axonivy.CreditDossier"
@@ -31,7 +31,7 @@
             }
           },
           "customFields" : [
-            { "name" : "CustomDecimalField1", "type" : "NUMBER", "value" : "0416666666" }
+            { "name" : "CustomDecimalField1", "type" : "Number", "value" : "0416666666" }
           ]
         },
         "outLink" : "start.ivp",
