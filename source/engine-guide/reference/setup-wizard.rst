@@ -27,7 +27,7 @@ Launchers
 Start the :ref:`axonivy-engine` using its launcher. 
 If the engine runs in the :ref:`demo-mode` you see a warning on
 the info page with a link to the :ref:`setup-wizard`. 
-E.g. http://myServer:myPort/system/faces/view/engine-cockpit/setup.xhtml
+E.g. http://myServer:myPort/system/engine-cockpit/faces/setup.xhtml
 
 If you are not able to start the Axon Ivy Engine anymore, you can remove the
 installed license file from the :file:`configuration` directory. The
