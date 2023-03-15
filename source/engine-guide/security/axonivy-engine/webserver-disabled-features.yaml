@@ -3,9 +3,9 @@ REST.Servlet:
   # If none of the deployed projects provide REST APIs it is also possible to disable the whole REST servlet 
   Enabled: false
      
-  # REST resources for the mobile app under '/{application}/api/workflow'
-  # If the Mobile Workflow REST API is not used on your engine (e.g. by the Axon Ivy Mobile App) you can disable it
-  MobileWorkflow.API: false
+  # REST resources provided by the Axon Ivy Engine under '/{securityContext}/api/workflow'
+  # If no thirdparties need to access the Axon Ivy Engine via the REST API you can disable it.
+  API: false
 
   # REST resource for remote deployment under '/system/api/apps/{application}' 
   # If remote deployment is not used on your engine you can disable it

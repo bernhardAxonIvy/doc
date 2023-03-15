@@ -12,7 +12,7 @@ After successfully starting the Axon Ivy Engine, you can launch the engine cockp
 via the Axon Ivy Engine info page. 
 To do so, open the address: http://ServerName:Port/ in your browser and click the
 :guilabel:`Cockpit` tab. This will open the dashboard: 
-http://ServerName:Port/system/faces/view/engine-cockpit/dashboard.xhtml
+http://ServerName:Port/system/engine-cockpit
 
 .. note::
     To use this Engine Cockpit you need an administrator user account. 

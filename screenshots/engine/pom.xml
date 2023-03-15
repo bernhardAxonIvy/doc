@@ -85,9 +85,6 @@
             <goals>
               <goal>start-test-engine</goal>
             </goals>
-            <configuration>
-              <additionalVmOptions>-Divy.REST.Servlet.MobileWorkflow.API=true</additionalVmOptions>
-            </configuration>
           </execution>
           <execution>
             <id>test.webserver.stopper</id>
