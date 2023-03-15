@@ -75,3 +75,19 @@ Mobile Workflow REST API
 We no longer use the term *mobile* for the :ref:`Workflow REST API <workflow-api>`. Therefore we renamed the configuration property
 in :ref:`ivy.yaml <ivy-webserver-yaml>` from :code:`REST.Servlet.MobileWorkflow.API` to :code:`REST.Servlet.API` and this REST API is now
 by default enabled.
+
+
+URL changes
+***********
+
+We now emphasize the security context and manage all resources under the security context.
+We add the name of the security context as a prefix to all URLs, e.g., `/{securityContext}/{myApp}/*`.
+
+By default, the `default` security context is made available under root: `/{myApp}/*`
+
+The core REST endpoints now run directly under the security context and no longer under the application,
+for example `/{myApp}/workflow/tasks` has been changed to `/{securityContext}/workflow/tasks`.
+
+You need to check your routing settings in the reverse proxy configuration if you only allow certain paths.
+
+
