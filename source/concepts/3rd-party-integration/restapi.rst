@@ -128,7 +128,7 @@ You can easily inspect all `OpenAPI <https://www.openapis.org/>`__ services with
 the API Browser. It gives consumers of your services not only a detailed service
 description, but a simple client to fire real calls against the services, too.
 
-To access the API Browser, open the following URL ``/system/api-browser``  with a web browser of your choice
+To access the API Browser, open the URL ``/system/api-browser``  with a web browser of your choice
 e.g. http://localhost:8080/system/api-browser
 
 .. figure:: /_images/concepts-integration/api-browse-app.png
