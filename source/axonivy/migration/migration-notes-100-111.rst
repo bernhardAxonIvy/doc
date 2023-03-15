@@ -80,8 +80,8 @@ by default enabled.
 URL changes
 ***********
 
-We now give more weight to the security context and manage all resources under the security context.
-All URLs receive the name of the security context as a prefix, e.g. `/{securityContext}/{myApp}/*`.
+We now emphasize the security context and manage all resources under the security context.
+We add the name of the security context as a prefix to all URLs, e.g., `/{securityContext}/{myApp}/*`.
 
 By default, the `default` security context is made available under root: `/{myApp}/*`
 
