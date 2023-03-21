@@ -7,16 +7,16 @@ The purpose of a reverse proxy (or frontend web server) is to provide a single
 point of entry for one or more services from outside the network. The reverse
 proxy receives all requests from the clients and forwards them to the Axon Ivy
 Engine which handles them. This allows integrating the processes and
-applications that you are running on an Axon Ivy Engine into a company or web
+applications that you are running on an |ivy-engine| into a company or web
 portal. The use of a reverse proxy provides higher security. You have to keep
 the reverse proxy up-to-date at any time with the latest security updates
 because this is also the entry point for attackers. In addition, we recommend
 that you block access to critical resources such as the Engine Cockpit.
 
-We strongly recommend running a productive Axon Ivy Engine behind a reverse
-proxy. You should terminate the SSL traffic (HTTPS) on the reverse proxy and let
-the reverse proxy communicate with the Axon Ivy Engine via plain HTTP. This
-makes the setup easier and increases performance.
+We strongly recommend running a productive |ivy-engine| behind a reverse
+proxy. You should :ref:`terminate the SSL traffic (HTTPS) <reverse-proxy-terminate-ssl>`
+on the reverse proxy and let the reverse proxy communicate with the |ivy-engine|
+via plain HTTP.
 
 |
 
@@ -73,5 +73,3 @@ reverse proxy you need to pass the host header to the |ivy-engine|.
     :hidden:
 
     secure-setup/index
-
-
