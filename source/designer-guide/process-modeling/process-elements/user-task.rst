@@ -42,8 +42,6 @@ Dialog
    
    |image3| Creates a new User Dialog and uses it
    
-   |image4| Uses a *dynamically* defined ID from a data class attribute
-
    .. note::
 
       The behavior of the task will be noticeable different either if
@@ -99,4 +97,3 @@ Start Parameters Definition
 .. |image0| image:: /_images/process-elements/user-dialog.png
 .. |image2| image:: /_images/process-elements/button-select-user-dialog.png
 .. |image3| image:: /_images/process-elements/button-new-user-dialog.png
-.. |image4| image:: /_images/process-elements/button-attribute.png

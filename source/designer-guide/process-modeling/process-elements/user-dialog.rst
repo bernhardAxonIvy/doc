@@ -39,8 +39,6 @@ Dialog
    
    |image3| Creates a new User Dialog and uses it
    
-   |image4| Uses a *dynamically* defined ID from a data class attribute
-
 Start
    Defines the *start method* that should be called on the selected User
    Dialog.
@@ -84,4 +82,3 @@ Start Parameters Mapping
 .. |image0| image:: /_images/process-elements/user-dialog.png
 .. |image2| image:: /_images/process-elements/button-select-user-dialog.png
 .. |image3| image:: /_images/process-elements/button-new-user-dialog.png
-.. |image4| image:: /_images/process-elements/button-attribute.png
