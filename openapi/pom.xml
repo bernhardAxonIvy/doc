@@ -13,7 +13,6 @@
   <packaging>pom</packaging>
 
   <properties>
-    <ivy.engine.download.url>file://${project.build.directory}/AxonIvyEngine_All_x64.zip</ivy.engine.download.url>
     <ivy.engine.directory>${project.build.directory}/ivyEngine</ivy.engine.directory>
     <openapi.output>${project.build.directory}/openapi/</openapi.output>
   </properties>
@@ -32,13 +31,12 @@
             </goals>
             <configuration>
               <target>
-                <copy toDir="${project.build.directory}">
+                <unzip dest="${ivy.engine.directory}">
                   <fileset dir="${project.basedir}/../../workspace/ch.ivyteam.ivy.server.product/target/products/">
                     <include name="AxonIvyEngine*_All_x64.zip" />
                     <exclude name="AxonIvyEngine*_Slim_All_x64.zip" />
                   </fileset>
-                  <globmapper from="AxonIvyEngine*_All_x64.zip" to="AxonIvyEngine_All_x64.zip" />
-                </copy>
+                </unzip>
               </target>
             </configuration>
           </execution>
