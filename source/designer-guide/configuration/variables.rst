@@ -44,7 +44,14 @@ variables.
   can define:
 
   * **password:** This tells the |ivy-engine| to write this Variable value in
-    encrypted form to the YAML files.
+    encrypted form to the YAML files. 
+    
+    .. tip::
+      If you add a password variable in the |ivy-designer|, 
+      you get an validation warning, that the variable is not
+      encrypted. You can fix this via a :ref:`problems-view` > *QuickFix* or right
+      click in the **Yaml-Editor** > *Encrypt passwords*
+      
   * **daytime:** This value is interpreted as a time consisting of HH:mm[:ss]. 
   * **enum:** You can use this annotation to enumerate all possible values for
     this Variable. 
