@@ -4,6 +4,19 @@ Miscellaneous
 This chapter deals with several concepts and features that are
 integrated into |ivy| to leverage user convenience and experience.
 
+.. _debug-java:
+
+Debug Java Classes
+------------------
+
+You can debug java classes in the |ivy-designer|, by uncomment the line
+:code:`-agentlib:jdwp=transport=dt_socket,server=y,address=8001,suspend=n` in
+the :file:`AxonIvyDesigner.ini` file. After a restart you're able to start a
+*Debug session* by add a new :code:`Remote Java Application debug
+configuration`. For more information, check out `How can I debug my Java class
+in an Axon Ivy Designer?
+<https://community.axonivy.com/d/429-how-can-i-debug-my-java-class-in-an-axon-ivy-designer>`_
+
 
 .. _data-cache:
 
