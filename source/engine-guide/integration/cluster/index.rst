@@ -48,8 +48,8 @@ to set up an Axon Ivy Engine Cluster with docker-compose.
 The following restrictions have to be considered when running Axon Ivy Engine Cluster:
 
 1. Each node has to use the same system database.
-2. Each node has to use the same external :ref:`Elasticsearch <elasticsearch>`
-   server (or cluster).
+2. Each node has to use the same external :ref:`Elasticsearch <elasticsearch-external>`
+   instance.
 3. Each node has to use the same service configurations.
 4. :ref:`Configuration changes <cluster-configuration-changes>` are only applied
    to the local cluster node where the change is done. 

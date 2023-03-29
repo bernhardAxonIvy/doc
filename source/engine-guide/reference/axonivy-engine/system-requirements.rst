@@ -10,9 +10,9 @@ Concurrent Users and deployed applications.
 Hardware Requirements
 ---------------------
 
-By default, the Axon Ivy Engine is runs a bundled Elasticsearch server.
-It is possible to run the Elasticsearch server :ref:`externally <elasticsearch>`.
-This also affects the minimum hardware requirements.
+By default, the |ivy-engine| runs a bundled Elasticsearch server. It is possible
+to integarte with an :ref:`external <elasticsearch-external>` Elasticsearch
+instance. This also affects the minimum hardware requirements.
 
 
 .. rubric:: With bundled Elasticsearch server (default)
@@ -77,6 +77,13 @@ System Database
 +---------------------+-----------------------------+-----------+
 |Oracle Database      |19c                          |19c, 21c   |
 +---------------------+-----------------------------+-----------+
+
+
+Elasticsearch
+-------------
+
+Version 7.17. Only required if you run an :ref:`own <elasticsearch-external>`
+Elasticsearch instance!
 
 
 Browsers

@@ -3,25 +3,20 @@
 Elasticsearch
 =============
 
-Axon Ivy Engine is using Elasticsearch for full-text searches in business data.
-Elasticsearch itself is bundled with Axon Ivy Engine and will be started on demand.
+|ivy-engine| is using Elasticsearch for providing full-text searches and
+statistics. Elasticsearch itself is :ref:`bundled <elasticsearch-bundled>` with
+|ivy-engine|. For systems with high load or using |ivy| :ref:`cluster`, you may
+need to run an :ref:`external <elasticsearch-external>` Elasticsearch instance.
+
+.. toctree::
+    :maxdepth: 1
+    :hidden:
+
+    bundled
+    external
 
 |
 
 .. graphviz:: overview.dot
 
 |
-
-For systems with high load, you may run an external Elasticsearch server or
-cluster. To do so, download and install Elasticsearch according to the docs of
-`Elasticsearch <https://www.elastic.co>`__. 
-
-Note: Only use the Elasticseach release delivered with your Axon Ivy Engine as
-there have been several breaking changes in Elasticsearch releases.
-
-Now you need to tell the Axon Ivy Engine in :ref:`ivy-yaml` that an external
-Elasticsearch server has to be used:
-
-.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/ivy-external-elasticsearch.yaml
-  :language: yaml
-  :linenos:
