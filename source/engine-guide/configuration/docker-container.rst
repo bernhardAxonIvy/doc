@@ -62,7 +62,7 @@ You can provide the license either by:
 
   .. code:: bash
 
-     export IVY_LICENCE=$(<licence.lic>)
+     export IVY_LICENCE=$(cat <licence.lic>)
      docker run -e IVY_LICENCE=$IVY_LICENCE ... 
 
   Windows Powershell:
