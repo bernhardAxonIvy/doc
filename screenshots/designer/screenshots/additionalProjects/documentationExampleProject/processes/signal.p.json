@@ -1,5 +1,5 @@
 {
-  "$schema" : "https://json-schema.axonivy.com/process/11.1.15/schema.json",
+  "$schema" : "https://json-schema.axonivy.com/process/11.1.19/schema.json",
   "id" : "1675F79D89ABB65A",
   "config" : {
     "data" : "screenshot.project.Data"
@@ -9,8 +9,7 @@
       "type" : "RequestStart",
       "name" : "start.ivp",
       "config" : {
-        "callSignature" : "start",
-        "outLink" : "start.ivp"
+        "signature" : "start"
       },
       "visual" : {
         "at" : { "x" : 96, "y" : 64 }
@@ -44,44 +43,32 @@
       "type" : "RequestStart",
       "name" : "startRequest",
       "config" : {
-        "callSignature" : "start2",
-        "case" : {
-          "name" : "<%=param.in.city%>",
-          "description" : "<%=param.in.city%>",
-          "customFields" : [
-            { "name" : "BusinessCorrespondentId", "type" : "Number", "value" : "param.in.zip" },
-            { "name" : "BusinessCreatorUser", "type" : "String", "value" : "param.in.city" },
-            { "name" : "BusinessMainContactDocumentDbCode", "type" : "String", "value" : "param.in.city" },
-            { "name" : "BusinessMainContactFolderId", "type" : "String", "value" : "param.in.city" },
-            { "name" : "BusinessMainContactId", "type" : "Number", "value" : "param.in.zip" },
-            { "name" : "BusinessMainContactName", "type" : "String", "value" : "param.in.city" },
-            { "name" : "BusinessMainContactType", "type" : "String", "value" : "param.in.city" },
-            { "name" : "BusinessMilestoneTimestamp", "type" : "Timestamp", "value" : "param.in.city.toDateTime()" },
-            { "name" : "BusinessObjectCode", "type" : "String", "value" : "param.in.city" },
-            { "name" : "BusinessObjectDocumentDbCode", "type" : "String", "value" : "param.in.city" },
-            { "name" : "BusinessObjectFolderId", "type" : "String", "value" : "param.in.city" },
-            { "name" : "BusinessObjectName", "type" : "String", "value" : "param.in.city" },
-            { "name" : "BusinessPriority", "type" : "String", "value" : "param.in.city" },
-            { "name" : "BusinessStartTimestamp", "type" : "Timestamp", "value" : "param.in.city.toDateTime()" },
-            { "name" : "CustomDecimalField1", "type" : "Number", "value" : "param.in.zip" },
-            { "name" : "CustomVarCharField1", "type" : "String", "value" : "param.in.city" },
-            { "name" : "ProcessCategoryCode", "type" : "String", "value" : "param.in.city" },
-            { "name" : "ProcessCategoryName", "type" : "String", "value" : "param.in.city" },
-            { "name" : "ProcessCode", "type" : "String", "value" : "param.in.city" },
-            { "name" : "ProcessName", "type" : "String", "value" : "param.in.city" },
-            { "name" : "SubTypeCode", "type" : "String", "value" : "param.in.city" },
-            { "name" : "SubTypeName", "type" : "String", "value" : "param.in.city" },
-            { "name" : "TypeCode", "type" : "String", "value" : "param.in.city" },
-            { "name" : "TypeName", "type" : "String", "value" : "param.in.city" }
+        "signature" : "start2",
+        "input" : {
+          "params" : [
+            { "name" : "in", "type" : "ch.ivyteam.test.Person", "desc" : "" }
+          ],
+          "map" : {
+            "out.city" : "\"Zug\""
+          },
+          "code" : [
+            "String calendarName = param.in.city;",
+            "ivy.case.setBusinessCalendar(calendarName is initialized ? ivy.cal.get(calendarName) : null);"
           ]
         },
-        "outLink" : "start2.ivp",
-        "startDescription" : "bla",
+        "request" : {
+          "name" : "tara2333",
+          "description" : "bla"
+        },
+        "permission" : {
+          "anonymous" : false
+        },
+        "triggerable" : true,
+        "persistOnStart" : true,
         "task" : {
           "name" : "<%=param.in.city%>",
           "description" : "<%=param.in.city%>",
           "responsible" : {
-            "type" : "ROLE",
             "activator" : "FacilityManager"
           },
           "delay" : "'300s'",
@@ -92,29 +79,43 @@
             }
           },
           "customFields" : [
-            { "name" : "CustomDecimalField1", "type" : "Number", "value" : "param.in.zip" },
-            { "name" : "CustomTimestampField1", "type" : "Timestamp", "value" : "param.in.zip.toDateTime()" },
-            { "name" : "CustomVarCharField1", "type" : "String", "value" : "param.in.street" },
-            { "name" : "KindCode", "type" : "String", "value" : "\"taskStageCode\"" },
-            { "name" : "KindName", "type" : "String", "value" : "\"taskNameCode\"" }
+            { "name" : "CustomDecimalField1", "type" : "NUMBER", "value" : "param.in.zip" },
+            { "name" : "CustomTimestampField1", "type" : "TIMESTAMP", "value" : "param.in.zip.toDateTime()" },
+            { "name" : "CustomVarCharField1", "type" : "STRING", "value" : "param.in.street" },
+            { "name" : "KindCode", "type" : "STRING", "value" : "\"taskStageCode\"" },
+            { "name" : "KindName", "type" : "STRING", "value" : "\"taskNameCode\"" }
           ]
         },
-        "input" : {
-          "params" : [
-            { "name" : "in", "type" : "ch.ivyteam.test.Person" }
-          ],
-          "map" : {
-            "out.city" : "\"Zug\""
-          },
-          "code" : [
-            "String calendarName = param.in.city;",
-            "ivy.case.setBusinessCalendar(calendarName is initialized ? ivy.cal.get(calendarName) : null);"
+        "case" : {
+          "name" : "<%=param.in.city%>",
+          "description" : "<%=param.in.city%>",
+          "customFields" : [
+            { "name" : "BusinessCorrespondentId", "type" : "NUMBER", "value" : "param.in.zip" },
+            { "name" : "BusinessCreatorUser", "type" : "STRING", "value" : "param.in.city" },
+            { "name" : "BusinessMainContactDocumentDbCode", "type" : "STRING", "value" : "param.in.city" },
+            { "name" : "BusinessMainContactFolderId", "type" : "STRING", "value" : "param.in.city" },
+            { "name" : "BusinessMainContactId", "type" : "NUMBER", "value" : "param.in.zip" },
+            { "name" : "BusinessMainContactName", "type" : "STRING", "value" : "param.in.city" },
+            { "name" : "BusinessMainContactType", "type" : "STRING", "value" : "param.in.city" },
+            { "name" : "BusinessMilestoneTimestamp", "type" : "TIMESTAMP", "value" : "param.in.city.toDateTime()" },
+            { "name" : "BusinessObjectCode", "type" : "STRING", "value" : "param.in.city" },
+            { "name" : "BusinessObjectDocumentDbCode", "type" : "STRING", "value" : "param.in.city" },
+            { "name" : "BusinessObjectFolderId", "type" : "STRING", "value" : "param.in.city" },
+            { "name" : "BusinessObjectName", "type" : "STRING", "value" : "param.in.city" },
+            { "name" : "BusinessPriority", "type" : "STRING", "value" : "param.in.city" },
+            { "name" : "BusinessStartTimestamp", "type" : "TIMESTAMP", "value" : "param.in.city.toDateTime()" },
+            { "name" : "CustomDecimalField1", "type" : "NUMBER", "value" : "param.in.zip" },
+            { "name" : "CustomVarCharField1", "type" : "STRING", "value" : "param.in.city" },
+            { "name" : "ProcessCategoryCode", "type" : "STRING", "value" : "param.in.city" },
+            { "name" : "ProcessCategoryName", "type" : "STRING", "value" : "param.in.city" },
+            { "name" : "ProcessCode", "type" : "STRING", "value" : "param.in.city" },
+            { "name" : "ProcessName", "type" : "STRING", "value" : "param.in.city" },
+            { "name" : "SubTypeCode", "type" : "STRING", "value" : "param.in.city" },
+            { "name" : "SubTypeName", "type" : "STRING", "value" : "param.in.city" },
+            { "name" : "TypeCode", "type" : "STRING", "value" : "param.in.city" },
+            { "name" : "TypeName", "type" : "STRING", "value" : "param.in.city" }
           ]
-        },
-        "triggerEnabled" : true,
-        "persist" : true,
-        "wfuser" : "1",
-        "startName" : "tara2333"
+        }
       },
       "visual" : {
         "at" : { "x" : 96, "y" : 152 },
