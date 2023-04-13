@@ -115,6 +115,17 @@ Like :ref:`engine-cockpit-monitor-slow-requests` you have to activate :ref:`trac
  
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-traffic-graph.png
 
+Threads
+"""""""
+
+The **Threads** view shows you an overview of all threads. For each thread, you see how much CPU and user time it consumes, 
+in which states they are, and their priorities. 
+If two threads are deadlocked the **State** of the threads is red and there is a warning icon nearby with more information about the deadlock.
+You can click on a thread to get more information about it like the current stack trace.
+Press on the **Save Thread Dump** icon on the top right to create a thread dump and download it to a file.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-threads.png
+
 Logs
 ^^^^
 
