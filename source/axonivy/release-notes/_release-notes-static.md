@@ -1,6 +1,6 @@
 
 
-## 10.0.0
+## 10.0.0 (2022-10-17)
 
 We suggest to install this update release if you are suffering from any of these issues.
 
@@ -136,7 +136,7 @@ We suggest to install this update release if you are suffering from any of these
 * [IVYPORTAL-14349](https://1ivy.atlassian.net/browse/IVYPORTAL-14349) DateUtils throw exception when using MySQL as System-DB 
 
 
-## 9.4.0
+## 9.4.0 (2022-09-13)
 
 We strongly recommend to install this update release because it fixes security issues!
 
