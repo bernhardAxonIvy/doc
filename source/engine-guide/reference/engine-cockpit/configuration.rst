@@ -12,10 +12,9 @@ for each application. The variables can be configured in the project or
 set in the :ref:`app-yaml` file. You can switch the environment in the drop-down
 box at the top.
 
-You can add a new variable by clicking :guilabel:`New` or edit an existing one by
-clicking the :guilabel:`Pencil` button. Any changes will be written directly to the
-:ref:`app-yaml` file. You can reset a variable to its default value by
-clicking the :guilabel:`Reset` button. 
+You can edit an existing one by clicking the :guilabel:`Pencil` button. Any
+changes will be written directly to the :ref:`app-yaml` file. You can reset a
+variable to its default value by clicking the :guilabel:`Reset` button. 
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-configuration-variables.png
 

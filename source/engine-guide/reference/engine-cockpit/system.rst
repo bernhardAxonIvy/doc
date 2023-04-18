@@ -81,8 +81,7 @@ System Configuration
 ^^^^^^^^^^^^^^^^^^^^
 
 The **System Configuration** page displays an overview of all your engine
-configuration settings. Configurations in grey represent default values. If you
-click on the :guilabel:`New` button, you can add a new configuration setting. If
+configuration settings. Configurations in grey represent default values. If
 you want to edit an existing configuration, click on the :guilabel:`Pencil`
 button. Clicking :guilabel:`More` allows you to reset a configuration setting or
 view the complete configuration file.
