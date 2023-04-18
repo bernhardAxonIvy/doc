@@ -11,7 +11,7 @@ The view **Variables** displays all variables that are defined
 for each application. The variables can be configured in the project or
 set in the :ref:`app-yaml` file.
 
-You can edit an existing one by clicking the :guilabel:`Pencil` button. Any
+You can edit an existing variable by clicking the :guilabel:`Pencil` button. Any
 changes will be written directly to the :ref:`app-yaml` file. You can reset a
 variable to its default value by clicking the :guilabel:`Reset` button. 
 
