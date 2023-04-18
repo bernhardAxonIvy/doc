@@ -144,6 +144,16 @@ Press on the **Save Thread Dump** icon on the top right to create a thread dump 
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-threads.png
 
+Flight Recorder
+"""""""""""""""
+
+You can use the **Flight Recorder** view to start, stop, download, and delete `Java Flight Recorder <https://docs.oracle.com/en/java/java-components/jdk-mission-control/>`_ recordings. 
+When starting a recording you can choose between predefined configurations that are provided by the Java Virtual Machine or you can add your own
+configuration by uploading a :file:`\*.jfc` file. You can create a :file:`\*.jfc` file with Flight Recorder Template Manager that is part of the `JDK Mission Control tool <https://docs.oracle.com/en/java/java-components/jdk-mission-control/>`_.
+You can download a recording to a :file:`\*.jfr` file once it is stopped. Then, use the `JDK Mission Control <https://docs.oracle.com/en/java/java-components/jdk-mission-control/>`_ tool to analyze the :file:`\*.jfr` file.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-jfr.png     
+
 Logs
 ^^^^
 
