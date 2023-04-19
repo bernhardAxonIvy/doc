@@ -87,6 +87,8 @@ URL changes
 We now emphasize the security context and manage all resources under the security context.
 We add the name of the security context as a prefix to all URLs, e.g., `/{securityContext}/{myApp}/*`.
 
+As standard, the `default` security context is made available under root: `/{myApp}/*`
+
 The core REST endpoints now run directly under the security context and no longer under the application,
 for example `/{myApp}/workflow/tasks` has been changed to `/{securityContext}/workflow/tasks`.
 
