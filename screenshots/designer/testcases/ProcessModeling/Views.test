@@ -92,15 +92,15 @@ proc jsonInscription{
 }
 
 proc inscriptionView{
-    OpenView "Inscription View"
+    OpenView "Inscription View (Beta)"
     
     openInscription -processName "alternativeGateway" 
         -elementName "Large order" 
         -elementType "User Dialog"
     get-window "Inscribe User Dialog" | get-button Cancel | click -metaKeys ""
     
-    get-view "Inscription View" | click
-    with [find-tab-folder "Inscription View"]{
+    get-view "Inscription View (Beta)" | click
+    with [find-tab-folder "Inscription View (Beta)"]{
         maximize
         resizeWindow 500 400
         get-object | captureScreenshot "process-modeling/inscription-view.png"
