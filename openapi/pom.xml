@@ -17,6 +17,19 @@
     <openapi.output>${project.build.directory}/openapi/</openapi.output>
   </properties>
 
+  <pluginRepositories>
+    <pluginRepository>
+      <id>central.snapshots</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <updatePolicy>always</updatePolicy>
+      </snapshots>
+    </pluginRepository>
+  </pluginRepositories>
+
   <build>    
     <plugins>
       <plugin>
@@ -46,6 +59,7 @@
       <plugin>
         <groupId>com.axonivy.ivy.ci</groupId>
         <artifactId>project-build-plugin</artifactId>
+        <version>${project.build.plugin.version}</version>
         <extensions>true</extensions>
         <configuration>
           <ivyVersion>${ivy-version}</ivyVersion>
