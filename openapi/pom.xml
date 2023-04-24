@@ -83,7 +83,7 @@
               <target>
                 <mkdir dir="${openapi.output}"></mkdir>
                 <get dest="${openapi.output}system.json" src="${test.engine.url}system/api/openapi.json"></get>
-                <get dest="${openapi.output}default.json" src="${test.engine.url}/api/openapi.json"></get>
+                <get dest="${openapi.output}default.json" src="${test.engine.url}api/openapi.json"></get>
               </target>
             </configuration>
           </execution>
