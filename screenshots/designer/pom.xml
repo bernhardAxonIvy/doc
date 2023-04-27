@@ -4,7 +4,7 @@
   <parent>
     <groupId>ch.ivyteam.ivy</groupId>
     <artifactId>maven-config-rcptt</artifactId>
-    <version>11.1.0-SNAPSHOT</version>
+    <version>11.2.0-SNAPSHOT</version>
     <relativePath>../../../maven/config/rcptt</relativePath>
   </parent>
 
