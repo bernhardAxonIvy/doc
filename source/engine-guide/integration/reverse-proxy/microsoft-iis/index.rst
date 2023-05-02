@@ -7,6 +7,10 @@ To use Microsoft IIS as reverse proxy in front of |ivy-engine| download and
 execute the powershell script :download:`iis-proxy-setup.ps1`. Right click
 on the file and click :guilabel:`Run with PowerShell`.
 
+The first time, when you execute this script, you may be asked for a
+:guilabel:`Execution Policy Change` so that this script can be executed. You
+need to answer this question with :guilabel:`[A] Yes to All`.
+
 This script will guide you to set up IIS as reverse proxy for the |ivy-engine|.
 It is divided into several parts:
 
@@ -63,9 +67,9 @@ It is divided into several parts:
 
   .. figure:: /_images/iis/iis-https-certificate.png
 
-  After this step go to :guilabel:`Default Website`, open :guilabel:`Handle Mappings`
+  After this step go to :guilabel:`Default Website`, open :guilabel:`Handler Mappings`
   and add :code:`https` as a new binding. There you can choose now your SSL certificate.
-  I highly recommend to remove the :code:`http` binding. So that you |ivy-engine|
+  I highly recommend to remove the :code:`http` binding. So that your |ivy-engine|
   only can be served over HTTPS via IIS.
 
   .. figure:: /_images/iis/iis-https-binding.png
