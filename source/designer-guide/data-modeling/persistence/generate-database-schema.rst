@@ -1,10 +1,12 @@
 .. _persistence-generate-database-schema:
 
-Generate database schema from persistence unit
-----------------------------------------------
+Generate database schema
+------------------------
 
-Generation options (Step 1)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Click on :guilabel:`Generate Schema` in the persistence unit.
+
+Generation options
+^^^^^^^^^^^^^^^^^^
 
 On the first wizard page you can specify the type of the schema generation.
 
@@ -38,8 +40,8 @@ On the first wizard page you can specify the type of the schema generation.
          This option does delete all data which is stored in the
          database.
 
-Generation preview (Step 2)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Generation preview
+^^^^^^^^^^^^^^^^^^
 
 The second wizard page shows a preview what will be executed on the
 database.
@@ -49,8 +51,12 @@ database.
 
    Database schema generation preview
 
-Accessibility
-^^^^^^^^^^^^^
 
-*|ivy| Project Tree > double click on the Persistence label > Select
-a persistence unit > Generate Schema.*
+Primary Key Columns
+^^^^^^^^^^^^^^^^^^^
+
+Hibernate works by default with sequences for primary key columns.
+This means it will create a table called :code:`hibernate_sequence` which is used
+to generate the primary keys. If you want to use the auto increment approach
+of your database management system you can set the property
+:code:`hibernate.id.new_generator_mappings` to :code:`false` in your persistence unit.
