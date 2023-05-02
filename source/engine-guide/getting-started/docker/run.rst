@@ -5,9 +5,9 @@ Now, we will run the Axon Ivy Engine with a separate container that holds the
 system database - in this case, we use PostgreSQL. Create a new folder somewhere
 in your file system and copy-paste the following files to it:
 
-:file:`docker-compose.yaml`
+:file:`compose.yaml`
 
-.. literalinclude:: docker-compose.yaml
+.. literalinclude:: compose.yaml
    :language: yaml
 
 :file:`ivy.yaml`
@@ -20,5 +20,5 @@ Provide a valid license file in the same folder with the name
 work, but the Axon Ivy Engine will run in :ref:`demo mode <demo-mode>`.
 
 Open a terminal and execute :code:`docker-compose up` in the folder where you
-saved :file:`docker-compose.yaml`. After startup, the engine is available at
+saved :file:`compose.yaml`. After startup, the engine is available at
 http://localhost:8080.
