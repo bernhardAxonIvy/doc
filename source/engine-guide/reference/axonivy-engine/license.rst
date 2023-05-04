@@ -109,10 +109,7 @@ Debian, Linux, and Windows
 
 For "traditional" server installations, your options to install a license are:
 
-* copy the license to the :file:`configuration` directory of the engine. The
-  demo license :file:`demo.lic` is in this directory, but the engine skips this
-  file when searching for a license. Put only one non-demo license into this
-  directory to ensure proper operation.
+* copy the license to the :file:`configuration` directory of the engine.
 
 * upload the license using the engine cockpit. 
 
