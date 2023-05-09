@@ -11,6 +11,7 @@ working with the newest version. Go through the migration notes from version to 
    :maxdepth: 1
 
    migration-notes-100-111
+   migration-notes-111-112
 
 .. _previous-migi-notes:
 
