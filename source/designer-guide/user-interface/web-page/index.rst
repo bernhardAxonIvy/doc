@@ -7,9 +7,8 @@ As an alternative to User Dialogs, you can display Web Pages or other
 web resources to the user of an Axon Ivy process application in a
 browser to let him or her interact with the executed process.
 
-Such content is embedded within a business process by using the
-:ref:`process-element-web-page` element or by using end pages for various
-elements in a process (:ref:`process-element-end-page`, a
+Such content is embedded within a business process by using end pages for
+various elements in a process (:ref:`process-element-end-page`, a
 :ref:`process-element-task-switch-event`, or a
 :ref:`process-element-task-switch-gateway` element). When the process reaches
 such an element, then the defined content is presented to the user.

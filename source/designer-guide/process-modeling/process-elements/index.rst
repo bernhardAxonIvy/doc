@@ -126,7 +126,6 @@ Workflow Activities
    embedded-subprocess
    call-sub
    trigger-step
-   web-page
 
 
 Interface Activities
