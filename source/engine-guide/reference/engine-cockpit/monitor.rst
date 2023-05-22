@@ -51,6 +51,24 @@ can be configured in the :ref:`ivy.yaml <ivy-cache-properties>` file.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-cache.png
 
+.. _engine-cockpit-monitor-jobs:
+
+Jobs
+""""
+
+The **Jobs** view displays a table with all jobs that are periodically executed by |ivy|.
+The :guilabel:`Configuration` column shows how often or when (`CRON <https://en.wikipedia.org/wiki/Cron>`_ expression) a job is executed. 
+There are columns that show the time when the job will execute the next time and the time remaining until it is executed. 
+Finally, columns show the number of times the job was already executed and how often it has failed.
+Press the :guilabel:`Schedule` button at the end of each row to execute the job immediately. 
+
+.. note::
+
+  The |ivy| `CRON <https://en.wikipedia.org/wiki/Cron>`_ expression format is compatible with the `QUARZ <http://www.quartz-scheduler.org/>`_ library. 
+  It contains, compared to standard UNIX CRON expressions, a seconds field, and an optional years field.   
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-jobs.png
+
 .. _engine-cockpit-monitor-mbeans:
 
 MBeans
