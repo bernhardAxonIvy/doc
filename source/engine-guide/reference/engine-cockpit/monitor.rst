@@ -58,8 +58,10 @@ Jobs
 
 The **Jobs** view displays a table with all jobs that are periodically executed by |ivy|.
 The :guilabel:`Configuration` column shows how often or when (`CRON <https://en.wikipedia.org/wiki/Cron>`_ expression) a job is executed. 
-There are columns that show the time when the job will execute the next time and the time remaining until it is executed. 
+The :guilabel:`Next execution` column shows when the job is executed the next time. 
 Finally, columns show the number of times the job was already executed and how often it has failed.
+You can click on a job to get more information about it like the last time it was successfully executed, the last time it failed, 
+the reason it failed, and the execution duration.
 Press the :guilabel:`Schedule` button at the end of each row to execute the job immediately. 
 
 .. note::
