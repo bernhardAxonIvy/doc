@@ -34,6 +34,13 @@ It is divided into several parts:
 
   .. figure:: /_images/iis/iis-url-rewrite.png
 
+  There are features of Axon Ivy which requires WebSocket. Therefore we automatically
+  install the WebSocket feature. IIS-ARR is not able to negotiate WebSocket compression,
+  therefore we need to always set the HTTP Header :code:`SEC_WEBSOCKET_EXTENSIONS` to empty.
+  By adding :code:`HTTP_SEC_WEBSOCKET_EXTENSIONS` to :guilabel:`IIS Server Variable` and
+  setting :code:`HTTP_SEC_WEBSOCKET_EXTENSIONS` on the :code:`ivy-route-all` rewrite rule to empty.
+
+
 * **Terminate SSL on IIS** is that IIS serves the |ivy-engine| over HTTPS
   but the connection between IIS and |ivy-engine| is HTTP. We highly recommend
   to :ref:`setup your IIS this way <reverse-proxy-terminate-ssl>`. This will
