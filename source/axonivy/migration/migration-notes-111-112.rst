@@ -18,6 +18,14 @@ It will be automatically removed from existing processes where it has been prese
 
 In most cases it can be replaced with normal :ref:`html-dialogs`.
 
+AutoProcessStarterEventBean
+---------------------------
+
+|tag-project-deprecated|
+
+The process start event bean :code:`ch.ivyteam.ivy.process.eventstart.beans.AutoProcessStarterEventBean` has been deprecated. Instead use the 
+new :code:`ch.ivyteam.ivy.process.eventstart.beans.TimerBean`.  
+
 ------------
 
 .. include:: _tagLegend.rst
