@@ -19,9 +19,9 @@ displayed.
 .. _designer-workflow-ui:
 
 .. figure:: /_images/simulation-debugging/process-start-overview.png
-   :alt: Designer Workflow UI Overview Page
+   :alt: Designer Workflow UI
 
-   Designer Workflow UI Overview Page
+   Designer Workflow UI
 
 .. tip::
 

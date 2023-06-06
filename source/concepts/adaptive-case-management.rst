@@ -382,9 +382,8 @@ prefixes do not have to be shared necessarily.
 Tracing Signals
 ~~~~~~~~~~~~~~~
 
-Signals can be traced by either using the Designer Workflow UI or the JSF
-Workflow UI both Workflow UIs make use of the Public API for Signals
-(``ivy.wf.signals()``).
+Signals can be traced by using the :ref:`designer-workflow-ui`. It makes use of
+the Public API for Signals (``ivy.wf.signals()``).
 
 .. tip::
 
