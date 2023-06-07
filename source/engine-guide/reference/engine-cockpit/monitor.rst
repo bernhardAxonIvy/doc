@@ -62,12 +62,7 @@ The :guilabel:`Next execution` column shows when the job is executed the next ti
 Finally, columns show the number of times the job was already executed and how often it has failed.
 You can click on a job to get more information about it like the last time it was successfully executed, the last time it failed, 
 the reason it failed, and the execution duration.
-Press the :guilabel:`Schedule` button at the end of each row to execute the job immediately. 
-
-.. note::
-
-  The |ivy| `CRON <https://en.wikipedia.org/wiki/Cron>`_ expression format is compatible with the `QUARZ <http://www.quartz-scheduler.org/>`_ library. 
-  It contains, compared to standard UNIX CRON expressions, a seconds field, and an optional years field.   
+Press the :guilabel:`Schedule` button at the end of each row to execute the job immediately.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-jobs.png
 
