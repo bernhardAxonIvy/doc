@@ -15,16 +15,42 @@ and current memory usage of the JVM.
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-os.png
 
 
-Engine
-^^^^^^
+JVM
+^^^
 
-The **Engine** pages allows you to monitor some critical indicators of your Axon Ivy Engine:
+The **JVM** pages allow you to monitor some critical indicators of the JVM (Java virtual machine) in your Axon Ivy Engine:
 
 - **JVM**: CPU load, number of threads, loaded and unloaded classes
 - **Memory**: Heap and non heap memory, garbage collections time
-- **Sessions**: Overview of open user sessions
-- **Cache**: System database caches and their metrics
 - **MBeans**: :ref:`jmx` MBeans viewer
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-jvm.png
+
+
+MBeans
+""""""
+
+The **MBeans** view displays a tree with all engine :ref:`jmx` MBeans. Click on
+one of the MBeans to see all of its attributes. Click on an attribute with
+numeric values to display the value of the attribute over time in a chart. You
+can add multiple attributes to the chart. Click on the remove icon in the table
+below the chart to remove the attribute from the chart.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-mbeans.png
+
+
+.. _engine-cockpit-monitor-performance:
+
+Engine
+^^^^^^
+
+The **Engine** pages allow you to monitor some critical indicators of your Axon Ivy Engine:
+
+- **Sessions**: Overview of open user sessions
+- **Start Events**: Process start events and their metrics 
+- **Intermediate Events**: Process intermediate events and their metrics
+- **Jobs**: Jobs that are periodically executed and their metrics
+- **Cache**: System database caches and their metrics
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-jvm.png
 
@@ -51,27 +77,48 @@ especially in the case of a session leak.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-sessions.png
 
-Cache
-"""""
+.. _engine-cockpit-monitor-start-events:
 
-The **Cache** view displays a table with all system database caches and their metrics.
-The caches reduce the number of system database read accesses.
+Start Events
+""""""""""""
+
+The **Start Events** view displays a table with all process start events.
+The table shows the name, description, and request path of the start event. 
+It also shows when the poll method will be called the next time. 
+How often the start event has started a process (:guilabel:`Executions`) and 
+how many of those attempts have failed (:guilabel:`Errors`).   
+You can start and stop or schedule the execution of the poll method of a start event.
  
-Increasing the amount of data that is cached may help solve performance problems. 
-You should try to increase the cache limits if you have a lot of read misses and the number 
-of cached entities are near the limit or above. 
-If this is the case, the number of both corresponding columns are displayed in red. The cache limits
-can be configured in the :ref:`ivy.yaml <ivy-cache-properties>` file.     
+Press on the name of a start event to see even more detail information of the start event like configuration, errors, 
+poll and execution information.
 
-.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-cache.png
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-start-events.png
+
+.. _engine-cockpit-monitor-intermediate-events:
+
+Intermediate Events
+"""""""""""""""""""
+
+The **Intermediate Events** view displays a table with all process intermediate events.
+The table shows the name, description, and request path of the intermediate event. 
+It also shows when the poll method will be called the next time. 
+How often the intermediate event has fired (:guilabel:`Executions`) and 
+how many of those attempts have failed (:guilabel:`Errors`).   
+You can start and stop or schedule the execution of the poll method of a intermediate event.
+ 
+Press on the name of an intermediate event to see even more detail information of the intermediate event like configuration, errors, 
+poll and execution information.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-intermediate-events.png
 
 .. _engine-cockpit-monitor-jobs:
+
 
 Jobs
 """"
 
 The **Jobs** view displays a table with all jobs that are periodically executed by |ivy|.
-The :guilabel:`Configuration` column shows how often or when (`CRON <https://en.wikipedia.org/wiki/Cron>`_ expression) a job is executed. 
+The :guilabel:`Configuration` column shows how often or when (:ref:`configuration-cron`) a job is executed. 
 The :guilabel:`Next execution` column shows when the job is executed the next time. 
 Finally, columns show the number of times the job was already executed and how often it has failed.
 You can click on a job to get more information about it like the last time it was successfully executed, the last time it failed, 
@@ -80,21 +127,22 @@ Press the :guilabel:`Schedule` button at the end of each row to execute the job 
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-jobs.png
 
+Cache
+"""""
+
+The **Cache** view displays a table with all system database caches and their metrics.
+The caches reduce the number of system database read accesses.
+ 
+Increasing the amount of data that is cached may help solve performance problems. 
+You should try to increase the cache limits if you have a lot of read misses and the number 
+of cached entities are near or above the limit. 
+If this is the case, the number of both corresponding columns are displayed in red. 
+You can configure the cache limits in the :ref:`ivy.yaml <ivy-cache-properties>` file.     
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-cache.png
+
 .. _engine-cockpit-monitor-mbeans:
 
-MBeans
-""""""
-
-The **MBeans** view displays a tree with all engine :ref:`jmx` MBeans. Click on
-one of the MBeans to see all of its attributes. Click on an attribute with
-numeric values to display the value of the attribute over time in a chart. You
-can add multiple attributes to the chart. Click on the remove icon in the table
-below the chart to remove the attribute from the chart.
-
-.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-mbeans.png
-
-
-.. _engine-cockpit-monitor-performance:
 
 Performance
 ^^^^^^^^^^^

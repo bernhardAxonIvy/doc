@@ -79,7 +79,80 @@ appearance of any dialog on several scopes:
 
 * Or at session level via the :public-api:`IvyPrimefacesThemeResolver </ch/ivyteam/ivy/jsf/primefaces/theme/IvyPrimefacesThemeResolver.html>`.
 
+.. _configuration-cron:
 
+CRON Expression
+---------------
+
+You can use a `CRON <https://en.wikipedia.org/wiki/Cron>`_ expression in configurations that specify when a certain job should be executed. 
+A `CRON <https://en.wikipedia.org/wiki/Cron>`_ expression contains 5 fields:
+
+.. code-block:: 
+
+    ┌───────────── Minute (0 - 59)
+    │ ┌───────────── Hour (0 - 23)
+    │ │ ┌───────────── Day of the month (1 - 31)
+    │ │ │ ┌───────────── Month (1 - 12)
+    │ │ │ │ ┌───────────── Day of the week (0 - 6) (Sunday to Saturday)
+    │ │ │ │ │
+    │ │ │ │ │
+    * * * * *
+    
+Example:
+
+.. code-block::
+
+    45 23 * * 6
+    
+This expression will trigger a job every Saturday at 23:45.
+
+The following values are allowed per field:
+
++------------------+-----------------+----------------------------+
+| Field            | Allowed values  | Allowed special characters |
++==================+=================+============================+
+| Minute           | 0-59            | * , -                      |
++------------------+-----------------+----------------------------+
+| Hour             | 0-23            | * , -                      |
++------------------+-----------------+----------------------------+
+| Day of the month | 1-31            | * , - L W                  |
++------------------+-----------------+----------------------------+
+| Month            | 1–12 or JAN–DEC | * , -                      |
++------------------+-----------------+----------------------------+
+| Day of the week  | 0–6 or SUN–SAT  | * , - L                    |
++------------------+-----------------+----------------------------+
+
+Asterisk ( :code:`*` )
+""""""""""""""""""""""
+ 
+Asterisks (also known as wildcard) represents "all". For example, using :code:`* * * * *` will run every minute. Using :code:`* * * * 1` 
+will run every minute only on Monday.
+
+Comma ( :code:`,` )
+"""""""""""""""""""
+
+Commas are used to separate items of a list. For example, using :code:`MON,WED,FRI` in the 5th field (day of week) means Mondays, Wednesdays and Fridays.
+
+Dash ( :code:`-` )
+""""""""""""""""""
+
+Dash defines ranges. For example, :code:`TUE-FRI` indicates every day from Tuesday to Friday, inclusive.
+
+Last ( :code:`L` )
+""""""""""""""""""
+
+:code:`L` stands for "last". When used in the day-of-week field, it allows specifying constructs such as "the last Friday" (:code:`5L`) of a given month. 
+In the day-of-month field, it specifies the last day of the month.
+
+Weekday (:code:`W` )
+""""""""""""""""""""
+    
+The :code:`W` character is allowed for the day-of-month field. This character is used to specify the weekday (Monday-Friday) nearest the given day.
+As an example, if :code:`15W` is specified as the value for the day-of-month field, the meaning is: "the nearest weekday to the 15th of the month." 
+So, if the 15th is a Saturday, the trigger fires on Friday the 14th. If the 15th is a Sunday, the trigger fires on Monday the 16th. 
+If the 15th is a Tuesday, then it fires on Tuesday the 15th. However, if :code:`1W` is specified as the value for day-of-month, and the 1st 
+is a Saturday, the trigger fires on Monday the 3rd, as it does not 'jump' over the boundary of a month's days. 
+The :code:`W` character can be specified only when the day-of-month is a single day, not a range or list of days.        
 
 Overriding Configuration
 ------------------------
