@@ -5,7 +5,8 @@ Microsoft IIS
 
 To use Microsoft IIS as reverse proxy in front of |ivy-engine| download and
 execute the powershell script :download:`iis-proxy-setup.ps1`. Right click
-on the file and click :guilabel:`Run with PowerShell`.
+on the file and click :guilabel:`Run with PowerShell`. You need to run this
+script as :guilabel:`Administrator`.
 
 The first time, when you execute this script, you may be asked for a
 :guilabel:`Execution Policy Change` so that this script can be executed. You
