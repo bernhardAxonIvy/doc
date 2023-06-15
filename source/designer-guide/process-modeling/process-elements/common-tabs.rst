@@ -450,7 +450,9 @@ Task Expiry
    An IvyScript expression defines the
    :ref:`ivyscript-datatype-duration` until the task
    will expire. If that happens the escalation procedure defined by the
-   following parameters is executed.
+   following parameters is executed. You can also use a simple
+   :public-api:`Duration </ch/ivyteam/ivy/scripting/objects/Duration.html>` 
+   syntax like :code:`2D`. 
 
    .. note::
 
