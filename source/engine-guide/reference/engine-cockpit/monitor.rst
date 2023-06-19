@@ -28,6 +28,20 @@ The **Engine** pages allows you to monitor some critical indicators of your Axon
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-jvm.png
 
+.. _engine-cockpit-monitor-class-histogram:
+
+Class Histogram
+"""""""""""""""
+
+The **Class Histogram** view displays all classes that have currently object instances allocated on the heap. 
+The view shows a filterable list of all classes, the number of allocated instances, and the allocated memory in bytes those instances consume.
+If you refresh the view the deltas to the minimum and maximum number of instances are displayed. This allows you to find memory leaks. If the 
+number of instances of a class has always an increasing Δ Min and the Δ Max is always zero, then you have a memory leak. 
+If you need further details to analyze a memory leak you can press the :guilabel:`Dump Heap Memory` button to take and download a dump of the heap memory.
+We recommend that you use `Eclipse Memory Analyzer <https://www.eclipse.org/mat>`_ to further analyze the produced heap dump file.  
+ 
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-class-histogram.png
+
 Sessions
 """"""""
 
