@@ -14,18 +14,56 @@ and current memory usage of the JVM.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-os.png
 
+Java
+^^^^
 
-JVM
-^^^
-
-The **JVM** pages allow you to monitor some critical indicators of the JVM (Java virtual machine) in your Axon Ivy Engine:
+The **Java** pages allow you to monitor some critical indicators of Java (Java virtual machine) in your Axon Ivy Engine:
 
 - **JVM**: CPU load, number of threads, loaded and unloaded classes
-- **Memory**: Heap and non heap memory, garbage collections time
+- **Memory**: Heap and non-heap memory, garbage collection times
+- **Class Histogram**: Classes and their instances allocated on the heap
+- **Threads**: Threads and their CPU and user times 
+- **Flight Recorder**: Start, stop and download `Java flight Recordings <https://docs.oracle.com/en/java/java-components/jdk-mission-control/>`_
 - **MBeans**: :ref:`jmx` MBeans viewer
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-jvm.png
 
+.. _engine-cockpit-monitor-class-histogram:
+
+Class Histogram
+"""""""""""""""
+
+The **Class Histogram** view displays all classes that have currently object instances allocated on the heap. 
+The view shows a filterable list of all classes, the number of allocated instances, and the allocated memory those instances consume, in bytes.
+If you refresh the view, the deltas to the minimum and maximum number of instances are displayed. This allows you to find memory leaks. If the 
+number of instances of a class has always an increasing Δ Min and the Δ Max is always zero, then you have a memory leak. 
+If you need further details to analyze a memory leak you can press the :guilabel:`Dump Heap Memory` button to create and download a dump of the heap memory.
+We recommend that you use `Eclipse Memory Analyzer <https://www.eclipse.org/mat>`_ to further analyze the produced heap dump file.  
+ 
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-class-histogram.png
+
+Threads
+"""""""
+
+The **Threads** view shows you an overview of all threads. For each thread, you see how much CPU and user time it consumes, 
+in which states they are, and their priorities. 
+If two threads are deadlocked the **State** of the threads is red and there is a warning icon nearby with more information about the deadlock.
+You can click on a thread to get more information about it like the current stack trace.
+Press on the **Save Thread Dump** icon on the top right to create a thread dump and download it to a file.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-threads.png
+
+Java Flight Recorder
+""""""""""""""""""""
+
+You can use the **Flight Recorder** view to start, stop, download, and delete `Java Flight Recorder <https://docs.oracle.com/en/java/java-components/jdk-mission-control/>`_ recordings. 
+When starting a recording, you can choose between predefined configurations that are provided by the Java Virtual Machine or you can add your own
+configuration by uploading a :file:`\*.jfc` file. You can create a :file:`\*.jfc` file with Flight Recorder Template Manager that is part of the `JDK Mission Control tool <https://docs.oracle.com/en/java/java-components/jdk-mission-control/>`_.
+You can download a recording to a :file:`\*.jfr` file once it is stopped. Then, use the `JDK Mission Control <https://docs.oracle.com/en/java/java-components/jdk-mission-control/>`_ tool to analyze the :file:`\*.jfr` file.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-jfr.png     
+
+.. _engine-cockpit-monitor-mbeans:
 
 MBeans
 """"""
@@ -38,9 +76,6 @@ below the chart to remove the attribute from the chart.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-mbeans.png
 
-
-.. _engine-cockpit-monitor-performance:
-
 Engine
 ^^^^^^
 
@@ -51,22 +86,6 @@ The **Engine** pages allow you to monitor some critical indicators of your Axon 
 - **Intermediate Events**: Process intermediate events and their metrics
 - **Jobs**: Jobs that are periodically executed and their metrics
 - **Cache**: System database caches and their metrics
-
-.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-jvm.png
-
-.. _engine-cockpit-monitor-class-histogram:
-
-Class Histogram
-"""""""""""""""
-
-The **Class Histogram** view displays all classes that have currently object instances allocated on the heap. 
-The view shows a filterable list of all classes, the number of allocated instances, and the allocated memory in bytes those instances consume.
-If you refresh the view the deltas to the minimum and maximum number of instances are displayed. This allows you to find memory leaks. If the 
-number of instances of a class has always an increasing Δ Min and the Δ Max is always zero, then you have a memory leak. 
-If you need further details to analyze a memory leak you can press the :guilabel:`Dump Heap Memory` button to take and download a dump of the heap memory.
-We recommend that you use `Eclipse Memory Analyzer <https://www.eclipse.org/mat>`_ to further analyze the produced heap dump file.  
- 
-.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-class-histogram.png
 
 Sessions
 """"""""
@@ -113,7 +132,6 @@ poll and execution information.
 
 .. _engine-cockpit-monitor-jobs:
 
-
 Jobs
 """"
 
@@ -141,11 +159,16 @@ You can configure the cache limits in the :ref:`ivy.yaml <ivy-cache-properties>`
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-cache.png
 
-.. _engine-cockpit-monitor-mbeans:
-
+.. _engine-cockpit-monitor-performance:
 
 Performance
 ^^^^^^^^^^^
+
+The **Performance** pages allow you to monitor performance indicators of your Axon Ivy Engine:
+
+- **Process Execution**: Execution times of process elements
+- **Slow Requests**: Analyze slow requests and their causes 
+- **Traffic Graph**: Overview of the inbound and outbound traffic
 
 Process Execution
 """""""""""""""""
@@ -191,27 +214,6 @@ Hover over source or target of a communication channel to get more detailed info
 Like :ref:`engine-cockpit-monitor-slow-requests` you have to activate :ref:`tracing` to get useful data.
  
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-traffic-graph.png
-
-Threads
-"""""""
-
-The **Threads** view shows you an overview of all threads. For each thread, you see how much CPU and user time it consumes, 
-in which states they are, and their priorities. 
-If two threads are deadlocked the **State** of the threads is red and there is a warning icon nearby with more information about the deadlock.
-You can click on a thread to get more information about it like the current stack trace.
-Press on the **Save Thread Dump** icon on the top right to create a thread dump and download it to a file.
-
-.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-threads.png
-
-Flight Recorder
-"""""""""""""""
-
-You can use the **Flight Recorder** view to start, stop, download, and delete `Java Flight Recorder <https://docs.oracle.com/en/java/java-components/jdk-mission-control/>`_ recordings. 
-When starting a recording you can choose between predefined configurations that are provided by the Java Virtual Machine or you can add your own
-configuration by uploading a :file:`\*.jfc` file. You can create a :file:`\*.jfc` file with Flight Recorder Template Manager that is part of the `JDK Mission Control tool <https://docs.oracle.com/en/java/java-components/jdk-mission-control/>`_.
-You can download a recording to a :file:`\*.jfr` file once it is stopped. Then, use the `JDK Mission Control <https://docs.oracle.com/en/java/java-components/jdk-mission-control/>`_ tool to analyze the :file:`\*.jfr` file.
-
-.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-jfr.png     
 
 Logs
 ^^^^
