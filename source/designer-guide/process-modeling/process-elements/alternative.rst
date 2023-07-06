@@ -31,7 +31,7 @@ Conditions
    Each row in this table is assigned to an exit of this element. In the
    column ``Condition`` boolean expressions must be entered. The
    conditions are evaluated from the top to the bottom and the exit of
-   the first one that evaluates to *true* is chosen, i.e. the process
+   the first one that evaluates to *true* is chosen, i.e., the process
    will proceed by the path connected to this exit.
 
 .. |image0| image:: /_images/process-elements/alternative.png

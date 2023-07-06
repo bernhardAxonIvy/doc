@@ -79,7 +79,7 @@ Page 2: Dialog Data
    The New User Dialog Wizard Page 2
 
 This page provides the functionality to create required configurations for a
-User Dialog simply and quickly. The starting point is a data class, e.g. the
+User Dialog simply and quickly. The starting point is a data class, e.g., the
 data class of the process that calls the User dialog. Based on this data class,
 you can create the following configurations:
 
@@ -94,7 +94,7 @@ Data Class fields
 
 Form (for HTML/Offline Dialogs)
    For each selected UI attribute, a form field is created in the view,
-   e.g. for a field birthday of type Date, a label and a date picker
+   e.g., for a field birthday of type Date, a label and a date picker
    is generated.
 
 

@@ -169,7 +169,7 @@ Violation error
       it's possible to distinguish tasks which have a :ref:`process-element-task-switch-gateway` in their process and
       others without one. This helps to separate tasks in the task
       overview from workflow starts (with different steps) and simple
-      process starts (which e.g. only outputs some information).
+      process starts (which e.g., only outputs some information).
 
 
 .. _process-element-start-request-trigger-tab:

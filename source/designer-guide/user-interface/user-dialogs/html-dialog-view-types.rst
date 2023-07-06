@@ -122,7 +122,7 @@ Optionally, you can define the start method that is used to start the embedded
 component with the attribute ``startMethod``. If you do not define the start
 method, then a default start method will be used. Parameters of the start method
 can be defined by adding them as named attributes. Parameters are mapped by
-name, i.e. an attribute of the tag will be mapped to the start method parameter
+name, i.e., an attribute of the tag will be mapped to the start method parameter
 with the same name. You can set the component attributes that you defined in the
 interface of the component by simply adding them as attributes of the tag, too.
 

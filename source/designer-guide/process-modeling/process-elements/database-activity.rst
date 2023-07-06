@@ -46,7 +46,7 @@ Kind of Query
       injection <https://en.wikipedia.org/wiki/SQL_injection>`__
       vulnerabilities if not used carefully.
 
-      E.g. if a ``String`` variable is passed into a query then an
+      E.g., if a ``String`` variable is passed into a query then an
       attacker could provide a valid partial SQL statement which is then
       executed in the context of the query.
 
@@ -72,7 +72,7 @@ Database
       supported by the DB Step. The only query kind that is suitable for
       DB2 connections is ``Any Query``. For all other query kinds
       the *Query Definition* mask is currently not working correctly
-      (e.g. query fields can not be edited / defined).
+      (e.g., query fields can not be edited / defined).
 
    There is also an ``IvySystemDatabase`` datasource which points to the
    current System Database. Normally you would prefer your own database
@@ -115,7 +115,7 @@ Query Definition
    Quote IvyScript variables
       IvyScript variables in the SQL query are quoted depending on the
       data type of the value of the variable. For example string values
-      are quoted with single quotes (e.g. hello -> 'hello'). Sometime
+      are quoted with single quotes (e.g., hello -> 'hello'). Sometime
       you do not want that the values are quoted because the variable do
       not contain a single value but a part of an SQL query (e.g.
       "id=123 AND name=ivy"). Therefore you can disable the quoting with

@@ -46,7 +46,7 @@ Business Calendar
 -----------------
 
 A business calendar defines the official business hours and business days.
-These settings are used for business calendar calculations, e.g. what date will
+These settings are used for business calendar calculations, e.g., what date will
 it be in three business days.
 See at :ref:`Designer Guide <business-calendar>`
 and :public-api:`IBusinessCalendar </ch/ivyteam/ivy/application/calendar/IBusinessCalendar.html>`

@@ -15,7 +15,7 @@ All characters in databases are encoded with a specific character set (e.g.
 utf8, latin1, cp1257). This defines which characters can be stored.
 
 The collation is a set of rules that defines how the database management system
-compares and orders the data (e.g. utf8_unicode_ci, latin2_general_ci). Common
+compares and orders the data (e.g., utf8_unicode_ci, latin2_general_ci). Common
 abbreviations in the name of the collations are the following:
 
 * ci = case insensitive

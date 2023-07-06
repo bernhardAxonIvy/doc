@@ -84,7 +84,7 @@ Data Class Auto Initialization
 Data Classes are automatically initialized if an HTML Dialog sets a
 property on it.
 
-E.g. If ``data.address`` is ``null`` and a form is submitted with a
+E.g., If ``data.address`` is ``null`` and a form is submitted with a
 value for ``data.address.street`` then a ``data.address`` object is
 automatically created.
 

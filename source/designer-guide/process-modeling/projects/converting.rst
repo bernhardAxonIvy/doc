@@ -11,7 +11,7 @@ Converting Project Version
 If the project format version changes with a new Axon Ivy release, then
 old projects will show an error marker, describing them as *out of date*
 or having an invalid version. This can happen, when the technical format
-for Axon Ivy projects changes with a new Axon Ivy release (e.g. the way
+for Axon Ivy projects changes with a new Axon Ivy release (e.g., the way
 how some artifacts are stored may be changed, new artifacts may be
 introduced, etc.). :
 

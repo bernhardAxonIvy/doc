@@ -20,7 +20,7 @@ Role Concept
 ------------
 
 The hierarchy of the roles is built upon the principle of specialization. Each
-child role specializes on its ancestor role(s), i.e. a role **Team A** always
+child role specializes on its ancestor role(s), i.e., a role **Team A** always
 implicitly contains its ancestor role(s). The role **Everybody** is the root for
 all other roles; all other roles are more specialized than Everybody. In the
 figure below, a member user of role **Team A** also has the roles

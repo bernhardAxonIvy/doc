@@ -31,7 +31,7 @@ It is divided into several parts:
   port. We recommend to :ref:`limit the access <reverse-proxy-secure-path>` to
   specific applications by only routing the application which is used by your
   users. You can do that by changing the pattern of the rule to
-  :code:`YOUR-APP.*` e.g. :code:`demo-portal.*`.
+  :code:`YOUR-APP.*` e.g., :code:`demo-portal.*`.
 
   .. figure:: /_images/iis/iis-url-rewrite.png
 

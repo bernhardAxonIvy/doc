@@ -169,7 +169,7 @@ explains their function.
    | |image21|                         | Opens an Operator Browser that                            |
    |                                   | shows all available operators.                            |
    |                                   | Use this Smart Button if you want                         |
-   |                                   | to insert an operator (e.g. a SQL                         |
+   |                                   | to insert an operator (e.g., a SQL                        |
    |                                   | operator) into the associated UI                          |
    |                                   | components                                                |
    |                                   | (:ref:`process-element-db-activity`).                     |
@@ -260,9 +260,9 @@ estimate the consequences.
 All refactoring wizards have the same structure:
 
 -  On the *first page* you enter the **parameters** of the operation
-   (e.g. new name and/or namespace, target project, etc.) if any are
+   (e.g., new name and/or namespace, target project, etc.) if any are
    required. Also you may chose whether any existing references to the
-   refactored artifact should be updated automatically (e.g. if you
+   refactored artifact should be updated automatically (e.g., if you
    rename a sub process then all callers to that sub process will be
    updated, so that they point to the renamed instance). This is the
    default behavior.
@@ -331,9 +331,9 @@ updated, which will possibly result in broken references.
 .. note::
 
    Please note, that the namespace for processes is written with forward
-   slashes '/' as separators (e.g. 'MyProcesses/Customer/Invoice') while
+   slashes '/' as separators (e.g., 'MyProcesses/Customer/Invoice') while
    the namespace for Data Classes and User Dialogs is written with a dot
-   '.' as separator (e.g. 'customerportal.users.Employee').
+   '.' as separator (e.g., 'customerportal.users.Employee').
 
 Click on :guilabel:`Finish` to actually rename the selected resource(s) or on
 :guilabel:`Cancel` to abort the operation.
@@ -393,13 +393,13 @@ Copy Wizard
 
 The copy wizard appears when you execute the *Paste* operation (either
 through the menu action *Paste* or with *Ctrl-V*) after having copied
-something to the clipboard (e.g. through the menu action *Copy* or with
+something to the clipboard (e.g., through the menu action *Copy* or with
 *Ctrl-C*).
 
 The copy wizard lets you change the project, name and namespace of the
 copy that will be created. All of the parameters are already filled in,
 the system tries to make educated guesses, if the selected target
-location is not valid or does not supply sufficient information (e.g. if
+location is not valid or does not supply sufficient information (e.g., if
 a resource with the same name already exists at the paste location, then
 the name of the copy will be automatically have a "CopyOf" prefix).
 

@@ -8,7 +8,7 @@ Call Java Methods and Fields
 
 You can easily write own Java classes and use them directly in
 IvyScript. You can call static methods and fields from Java classes
-(e.g. ``java.lang.Math``). You have to address the class with the
+(e.g., ``java.lang.Math``). You have to address the class with the
 qualified name or use import statements. If a Java method has no return
 parameter (void) then the called object of the method is returned (e.g.
 a call to ``user.setName(...)`` returns object ``user``).
@@ -28,9 +28,9 @@ Working with Different Date, Time and DateTime Implementations
 
 When working with Databases and Web Services in Axon Ivy, then different
 implementations of Date, Time and combined Date-Time information are
-encountered (e.g. ``java.util.Date``, ``java.sql.Date``,
+encountered (e.g., ``java.util.Date``, ``java.sql.Date``,
 etc). To further complicate matters, some of those implementations are -
-for historical reasons - mutable (e.g. ``java.util.Date``) which is from
+for historical reasons - mutable (e.g., ``java.util.Date``) which is from
 today's perspective an unwelcome behavior. This has been remedied by
 some other implementations.
 
@@ -61,7 +61,7 @@ neither when reading nor when writing those types.
 .. warning::
 
    As a general rule, *do not create any variables or objects of foreign
-   (i.e. Java) Date / Time types inside IvyScript* . Although a
+   (i.e., Java) Date / Time types inside IvyScript* . Although a
    statement such as
 
    ::

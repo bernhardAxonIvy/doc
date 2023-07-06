@@ -95,7 +95,7 @@ layout.css file:
 
 ::
 
-  e.g. serenity-lime theme
+  e.g., serenity-lime theme
 
   <h:head>
     <f:attribute name="primefaces.THEME" value="serenity-lime" />
@@ -123,7 +123,7 @@ PrimeFaces has an additional library `PrimeFlex
 <https://www.primefaces.org/showcase/primeflex/setup.xhtml>`__, which allows to
 use `FlexBox
 <https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox>`__ with
-PrimeFaces widgets (e.g. by using :code:`<p:panelGrid layout="flex">`).
+PrimeFaces widgets (e.g., by using :code:`<p:panelGrid layout="flex">`).
 Additionally, we recommend to reference :file:`primeflex-2.min.css` in your
 template. 
 

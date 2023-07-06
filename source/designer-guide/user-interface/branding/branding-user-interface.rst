@@ -37,11 +37,11 @@ The following resources are currently used by the Axon Ivy Engine, the
 :ref:`html-dialogs` and the :ref:`Portal <portal-guide>`:
 
 - :file:`logo(.png)`: The main logo image
-- :file:`logo_light(.png)`: Same as the main logo, but e.g. in our case with white writing
+- :file:`logo_light(.png)`: Same as the main logo, but e.g., in our case with white writing
 - :file:`logo_mail(.png)`: The logo which is taken by the default Axon Ivy Engine :ref:`email-notifications`
-- :file:`logo_small(.png)`: The logo in small (square format recommended), used by e.g. error, login pages
+- :file:`logo_small(.png)`: The logo in small (square format recommended), used by e.g., error, login pages
 - :file:`favicon(.png)`: The logo for the browser tab (square format recommended)
-- :file:`background(.png)`: A background image, e.g. used by the :ref:`Portal <portal-guide>` login screen
+- :file:`background(.png)`: A background image, e.g., used by the :ref:`Portal <portal-guide>` login screen
 - :file:`custom.css`: A :ref:`general CSS file <custom-css>` with variables to customize colors, etc.
 
 Use :file:`custom.css` to override `css-variables
@@ -56,9 +56,9 @@ the :ref:`Portal <portal-guide>`.
 
 .. tip::
 
-  We support all image file formats known to browsers, e.g. :file:`.jpg`,
+  We support all image file formats known to browsers, e.g., :file:`.jpg`,
   :file:`.png`, :file:`.svg`. However, if there are multiple files with different
-  extensions (e.g. :file:`logo.png` and :file:`logo.svg`) in the same
+  extensions (e.g., :file:`logo.png` and :file:`logo.svg`) in the same
   directory, the first found by the OS will be used.
 
 

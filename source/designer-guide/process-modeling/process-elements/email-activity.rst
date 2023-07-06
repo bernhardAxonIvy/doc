@@ -9,7 +9,7 @@ of the process editor palette.
 Element Details
 ---------------
 
-This element allows to send e-mails out of processes (e.g. for
+This element allows to send e-mails out of processes (e.g., for
 information or alert purposes). The general configuration must be set in
 the :ref:`workspace-preferences-email` for the
 Axon Ivy Designer and in the :ref:`ivy.yaml <config-email>` for the Axon Ivy Engine.

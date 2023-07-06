@@ -150,7 +150,7 @@ Within Case Map scripts the running Business Case is always accessible
 through the variable ``businessCase``.
 
 Any class that is annotated with ``@BusinessCaseData`` is accessible by
-its simple name (e.g. if the full-qualified name of the class is
+its simple name (e.g., if the full-qualified name of the class is
 ``com.axonivy.CreditDossier`` the simple name is: ``creditDossier``).
 The variable value will be loaded from the :ref:`Business Data
 Repository <business-data>`.
@@ -246,5 +246,5 @@ When a stage change happens the Case Map does not cancel tasks thats
 were started in the stage before the switching happened. This is mainly
 important if the stage switch was performed programmatically using the
 ``ivy.casemap`` API. The process developer should consider to change the
-state (e.g. destroy) of existing tasks manually before switching to
+state (e.g., destroy) of existing tasks manually before switching to
 another stage change.

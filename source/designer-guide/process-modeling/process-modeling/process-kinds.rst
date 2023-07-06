@@ -22,12 +22,12 @@ Embedded Subprocess
 An embedded subprocess is essentially a syntactical collapse of elements
 into a single element to hide details from process design. They are
 available in all other process kinds. The hierarchy of embedded
-subprocesses is potentially indefinite, i.e. you can create further
+subprocesses is potentially indefinite, i.e., you can create further
 embedded subs inside an already existing subprocess.
 
 Since *embedded subprocesses* are simply a structural means for process
 diagram simplification, no mapping of data is required when entering or
-leaving this kind of subprocess (i.e. inside an embedded subprocess the
+leaving this kind of subprocess (i.e., inside an embedded subprocess the
 same data is available as inside the caller process).
 
 .. warning::
@@ -70,7 +70,7 @@ Web Service Process
 ~~~~~~~~~~~~~~~~~~~
 
 Web Service processes are a special case of *independent subprocesses*.
-A Web Service process can be started (i.e. called) from any other
+A Web Service process can be started (i.e., called) from any other
 application (or from another process) by using the *Web Service call
 element* or any other SOAP web service compatible client..
 

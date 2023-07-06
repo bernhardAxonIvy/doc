@@ -33,7 +33,7 @@ To configure the system database, use the :code:`config-db` command of the
 **EngineConfigCli** tool. Replace **yourdatabaseserver** with the hostname of
 the server running your DBMS system. Replace **dbuser** and **password** with
 the credentials of a database user with the permissions to create a new
-database and its structures (i.e. DDL permissions) on the database server.
+database and its structures (i.e., DDL permissions) on the database server.
 
 .. code:: bash
 

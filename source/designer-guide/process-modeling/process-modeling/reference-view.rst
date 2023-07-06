@@ -5,8 +5,8 @@ Reference View
 
 The Reference view shows the references between the various Axon Ivy
 project artifacts. A reference of an artifact is everything which is
-used/called from the artifact (e.g. call to a callable process or User
-Dialog) or which is embedded in the artifact (e.g. embedded sub element
+used/called from the artifact (e.g., call to a callable process or User
+Dialog) or which is embedded in the artifact (e.g., embedded sub element
 in a process or processes inside a project). Inverse references are the
 opposite of references. This means an inverse reference of an artifact
 is everything which uses/calls the artifact or which contains it.

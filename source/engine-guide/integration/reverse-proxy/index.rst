@@ -49,7 +49,7 @@ for debugging purposes while integrating a reverse proxy.
 
 Besides the setup of the reverse proxy itself, you always need to configure the
 base URL in :ref:`ivy.yaml <ivy-yaml>`. The Axon Ivy Engine will use this
-configuration to create absolute links that are accessible to clients (e.g. for
+configuration to create absolute links that are accessible to clients (e.g., for
 links in :ref:`task mails <email-notifications>`).
 
    .. code:: yaml

@@ -7,7 +7,7 @@ project roughly comprises of processes, User Dialogs, Data Classes, a
 Content Management System and various configurations. All of those
 aspects are explained in separate chapters of this document.
 
-Projects can be reused, i.e. any project can depend on functionality
+Projects can be reused, i.e., any project can depend on functionality
 which is implemented by another project. Projects that implement reused
 functionality and/or artifacts are called **required projects** with
 respect to the project that makes use of that functionality. The latter
@@ -16,7 +16,7 @@ projects.
 
 Once you have finished your development you will usually want to install
 the implemented application or workflow on an Axon Ivy Engine. Projects
-form the single unit of deployment for this purpose, i.e. you deploy
+form the single unit of deployment for this purpose, i.e., you deploy
 each project into a container on the engine which is called *process model version*.
 A project may be deployed in multiple versions on the
 engine; each process model version therefore contains a snapshot of a

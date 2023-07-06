@@ -208,10 +208,10 @@ current Business Case is.
 
 .. figure:: /_images/adaptive-case-management/acm-casemap-portal.png 
 
-Besides processes a stage of a Case Map can contain Sidesteps (e.g. "External
+Besides processes a stage of a Case Map can contain Sidesteps (e.g., "External
 solvency service" in the Case Map above). Sidesteps can be started manually by
 the workflow user during the ongoing Business Case. A typical Sidestep could be
-a process which aborts the business process (e.g. abort request). The use of
+a process which aborts the business process (e.g., abort request). The use of
 Sidesteps can reduce the time spent on technical round trips, for modeling rare
 and costly edge cases.
 
@@ -291,7 +291,7 @@ Send a signal with a custom signal code using the following IvyScript code:
    It is not recommended to use data classes as signal data as not all receiving
    projects might have access to these data classes. Better send an id which
    references an object in a database or send payload data that is encoded as
-   string (e.g. JSON).
+   string (e.g., JSON).
 
 Send a Signal Manually in the Designer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

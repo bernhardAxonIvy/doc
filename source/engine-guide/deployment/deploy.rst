@@ -18,7 +18,7 @@ is executed after the engine has started.
 We strongly recommend to **automate the deployment** in a CI/CD pipeline. For
 this purpose, we offer a :ref:`REST API<deployment-rest-api>` which is
 accessible via HTTP/HTTPS. If you can't connect to the Axon Ivy Engine that way,
-use the file based deployment mechanism (e.g. via SSH) as described above. For
+use the file based deployment mechanism (e.g., via SSH) as described above. For
 both scenarios, you can use command-line tools like :code:`curl` or :code:`scp`
 to build such an automated pipeline. If you have Maven available in your
 environment, use our :ref:`deployment-maven-plugin`, which supports both

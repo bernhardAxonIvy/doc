@@ -96,7 +96,7 @@ Project Menu
    workspace and rebuilds them. This may help to resolve building problems.
 
 2 - Build Automatically
-   Enables / disables automatic building (i.e. compiling) of project
+   Enables / disables automatic building (i.e., compiling) of project
    resources such as Java classes or Data classes. This means that all
    the necessary resources are automatically built and updated if
    changes are made in a project.
@@ -186,4 +186,4 @@ Help Menu
 
 3 - About Axon Ivy Designer
    Shows system information about the used Axon Ivy Designer application
-   (e.g. version and build number).
+   (e.g., version and build number).

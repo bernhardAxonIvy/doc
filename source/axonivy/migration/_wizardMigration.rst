@@ -2,9 +2,9 @@ Migration:
 
 #. Use the :ref:`migration-wizard` to migrate crucial configuration files to the
    new |ivy-engine|. You can start using the wizard by starting the new
-   |ivy-engine|. Browse to the |ivy-engine| URI (e.g http://localhost:8080) and
+   |ivy-engine|. Browse to the |ivy-engine| URI (e.g., http://localhost:8080) and
    click on ``Setup Wizard`` > ``Migration Wizard``.
-#. You may have customized files from in the old installation directory. Those
+#. You may have customized files in the old installation directory. Those
    have to be copied manually to the new installation directory. The files to
    copy depend on your setup:
 

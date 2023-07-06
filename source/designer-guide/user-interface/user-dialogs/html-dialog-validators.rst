@@ -26,7 +26,7 @@ Client Side Validation
 ^^^^^^^^^^^^^^^^^^^^^^
 
 In some cases, it makes sense to perform the validation of the entered values
-before they are sent to the server (e.g. in an :ref:`offline-dialogs`). For this
+before they are sent to the server (e.g., in an :ref:`offline-dialogs`). For this
 reason, Primefaces provides a `client side validation
 <http://www.primefaces.org/showcase/ui/csv/basic.xhtml>`__ framework.
 Client-side validation is an addition to the JSF validators. It can give instant

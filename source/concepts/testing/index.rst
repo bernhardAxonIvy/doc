@@ -12,7 +12,7 @@ long run these tests make your life a lot easier. Think about the following poin
 
 - **Repetitive tasks** can be reduced to a minimum. Let the computer do it!
 
-- Ensure that your software **does what it supposed to do** (e.g after a code
+- Ensure that your software **does what it supposed to do** (e.g., after a code
   change or even a platform update).
 
 Writing good software without tests is nearly impossible, and we want to make it

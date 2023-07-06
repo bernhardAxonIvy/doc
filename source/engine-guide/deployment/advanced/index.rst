@@ -28,7 +28,7 @@ the :code:`StandardProcess`.
 The :file:`app.yaml` will be deployed into the :file:`config` folder of the
 application itself and serves as additional configuration for the application,
 but with a lower priority than the regular :ref:`<APPNAME>/app.yaml <app-yaml>` 
-(e.g. :file:`myApp/app.yaml`) in the :file:`configuration` directory.
+(e.g., :file:`myApp/app.yaml`) in the :file:`configuration` directory.
 
 Overriding Variables
 +++++++++++++++++++++
@@ -86,7 +86,7 @@ There are multiple locations where you can put your options file:
 
     #. **Deployment specific options file** - If you want to provide options for a single
        deployment simply create a file that has the same prefix as the file you want to
-       deploy with a suffix of :file:`.options.yaml`. E.g. if the file you want to deploy
+       deploy with a suffix of :file:`.options.yaml`. E.g., if the file you want to deploy
        is :file:`myProject.iar` then create an options file that is called
        :file:`myProject.iar.options.yaml`. Note, that after the deployment the
        :file:`myProject.iar.options.yaml` file will be removed automatically.

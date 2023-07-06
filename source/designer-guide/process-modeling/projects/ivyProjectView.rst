@@ -82,7 +82,7 @@ A popup menu is provided within the tree, with the most important interactions:
 
       If Axon Ivy artifacts (such as User Dialogs, Processes or Data
       Classes) are moved, then the wizard will show an overview of the
-      references (e.g. calls to sub processes) that might be broken by
+      references (e.g., calls to sub processes) that might be broken by
       the operation.
 
 -  *Copy* - Copies the selected resource(s) to the clipboard
@@ -94,7 +94,7 @@ A popup menu is provided within the tree, with the most important interactions:
       The copy operation is intelligent: it tries to guess the correct
       location from the contents inside the clipboard, if the selected
       target node is not suitable for pasting. If there is a conflict
-      upon paste (e.g. because the result would be two resources with
+      upon paste (e.g., because the result would be two resources with
       the same name) then the :ref:`refactoring-wizards-copy` is presented with a new
       name suggestion, where you may modify the name and/or namespace of
       the pasted resource(s) before the operation is executed.

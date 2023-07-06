@@ -11,7 +11,7 @@ Create Azure Active Directory App
   .. figure:: /_images/identity-provider/azure-1.png
     :alt: New registration
 
-  i. Choose a name of your choice e.g. :code:`ivy`
+  i. Choose a name of your choice e.g., :code:`ivy`
   ii. Define a Redirect URI of type :code:`Web` which points to your |ivy-engine|: https://ivy.ivyteam.io/oauth2/callback
     
     The pattern of this URI is `https://{host}/oauth2/callback` . 
@@ -35,7 +35,7 @@ Create Azure Active Directory App
 
 12. Click on :guilabel:`Certificates & secrets`
 13. Click on :guilabel:`New Client Secret`
-14. Enter a description, e.g. :code:`ivy`
+14. Enter a description, e.g., :code:`ivy`
 15. Click on :guilabel:`Add`
 16. Copy the :code:`value` of this secret. This is needed later to configure the |ivy-engine|.
 

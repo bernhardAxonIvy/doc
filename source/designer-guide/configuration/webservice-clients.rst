@@ -67,7 +67,7 @@ The following attributes are available in the *Web Service* Section:
 
 .. note::
 
-   If you change the :guilabel:`WSDL URL`, the :guilabel:`WSDL` (i.e. the
+   If you change the :guilabel:`WSDL URL`, the :guilabel:`WSDL` (i.e., the
    functionality or data structure of the Service) or the :guilabel:`Library`
    setting, you **must** re-generate the service classes.
 

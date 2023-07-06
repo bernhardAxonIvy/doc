@@ -43,7 +43,7 @@ Description
 
 Means/Documents
    A list with references to additional stuff that is related to this
-   process step, i.e. documentation, templates, example forms and many
+   process step, i.e., documentation, templates, example forms and many
    more.
 
 
@@ -80,7 +80,7 @@ or only of single member of it.
 .. note::
 
    In Axon Ivy input and output of process are always set to the
-   corresponding data class, i.e. in a User Dialog logic element it is
+   corresponding data class, i.e., in a User Dialog logic element it is
    the User Dialog Data Class and in a process element it is the project
    Data Class (or the one which was assigned to the process).
 
@@ -235,7 +235,7 @@ Result Tab
 
 This tab is used to define the values that will be returned to the
 caller when the process ends. All logic in this tab will be executed
-when the end element is reached. E.g. when the :ref:`process-element-user-dialog-exit-end` is reached.
+when the end element is reached. E.g., when the :ref:`process-element-user-dialog-exit-end` is reached.
 
 .. figure:: /_images/process-elements/tab-result.png
    :alt: Result Tab
@@ -298,7 +298,7 @@ Scope
    to their scope.
 
    -  **Session**: the cache entry is linked to the currently logged in
-      user (i.e. is specific for each user and is invalidated when the
+      user (i.e., is specific for each user and is invalidated when the
       user logs out).
 
    -  **Environment**: the cache entry is linked to current environment.
@@ -311,7 +311,7 @@ Scope
       from process steps with huge results (in terms of memory usage),
       your memory can fill up very fast. This can even get worse if you
       frequently use the session scope and the result is cached multiple
-      times (once for each session i.e. user)
+      times (once for each session i.e., user)
 
 Group
    -  **Name**: Cache entries need a group name. Several entries can
@@ -320,8 +320,8 @@ Group
 
    -  **Lifetime**: Groups can be invalidated either on request (see
       Caching Mode: Invalidate Cache), at a specific time of the day 
-      (String with time format :code:`"HH:mms:ss"`. E.g :code:`"23:50:00"`) or
-      after a configurable period of time (In seconds. E.g. 
+      (String with time format :code:`"HH:mms:ss"`, e.g., :code:`"23:50:00"`) or
+      after a configurable period of time (In seconds, e.g., 
       :code:`3600` for one hour). Invalidating a group always means to 
       remove all its entries from the cache.
 
@@ -333,8 +333,8 @@ Entry
 
    -  **Lifetime**: Single cache entries can be invalidated either on
       request (see Caching Mode: Invalidate Cache), at a specific time
-      of the day (String with time format :code:`"HH:mm:ss"`. E.g :code:`"23:50:00"`) 
-      or after a configurable period of time (In seconds. E.g. 
+      of the day (String with time format :code:`"HH:mm:ss"`, e.g., :code:`"23:50:00"`) 
+      or after a configurable period of time (In seconds, e.g., 
       :code:`3600` for one hour).
 
 
@@ -505,7 +505,7 @@ Task Code
    this tab. The created Task is provided as variable called ``task``.
    Classically you can use is to call custom API that relates to the
    task, but there is no feasible UI element available to configure it.
-   E.g. the :public-api:`BusinessCalendar </ch/ivyteam/ivy/application/calendar/IDefaultBusinessCalendar.html>`
+   E.g., the :public-api:`BusinessCalendar </ch/ivyteam/ivy/application/calendar/IDefaultBusinessCalendar.html>`
    of the created Task could be defined in this place. Or if you need to
    define Custom Fields with dynamic keys out of a third party source
    you'd rather do this in this code block than with the ui table above

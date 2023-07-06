@@ -200,7 +200,7 @@ You can handle this complex JSON object with one of these solutions:
    service into a Java object source generator like
    http://www.jsonschema2pojo.org/. Generate the Java sources for the
    JSON structure. Download the sources and add them to a special source
-   folder (E.g. ``src_generated``). Now you can read the response body
+   folder (E.g., ``src_generated``). Now you can read the response body
    to an object of this generated class.
 
    This option should be used if you want to represent a complex JSON

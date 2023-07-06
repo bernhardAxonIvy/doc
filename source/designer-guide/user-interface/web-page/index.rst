@@ -21,12 +21,12 @@ they can be displayed in a web browser.
 
    When you re-use resources like JSP pages in different process
    elements, you need to carefully consider how to integrate the content
-   with the process. When you access members of the data class (e.g. in
+   with the process. When you access members of the data class (e.g., in
    the JSP) you must ensure that this member is accessible in all
    processes that use the resource. Furthermore, in Web Page elements
    you need to ensure that
    
-   * there is a way to continue with the process, e.g. an out-link, and 
+   * there is a way to continue with the process, e.g., an out-link, and 
    * this continuation is valid in all use cases of the resource.
 
 .. warning::
@@ -35,12 +35,12 @@ they can be displayed in a web browser.
    request is available from the client. This means that you *cannot*
    use web pages if at least one of the following conditions apply:
 
-   -  The current request was not triggered by HTTP (e.g. started by an
+   -  The current request was not triggered by HTTP (e.g., started by an
       Event Bean).
 
    -  The current task is executed by SYSTEM.
 
-   -  The process is running in a parallel execution section, e.g. after
+   -  The process is running in a parallel execution section, e.g., after
       a *Split* element.
 
 
@@ -65,7 +65,7 @@ You can define the Web Page that should be displayed by using one of the
 following three methods:
 
 1. Enter the path to an existing page manually. Specify a path to a web content
-   file (e.g. ``commonPages/infoPage.html``). Web content paths are always
+   file (e.g., ``commonPages/infoPage.html``). Web content paths are always
    specified relative to the ``webContent`` folder of the current project.
 
    If you enter a path to a non-existing web content resource, then pressing the
@@ -113,9 +113,9 @@ It is imported and declared as follows:
        <%@ page import="ch.ivyteam.ivy.page.engine.jsp.IvyJSP"%>
        <jsp:useBean id="ivy" class="ch.ivyteam.ivy.page.engine.jsp.IvyJSP" scope="session"/>
 
-You can also use the *in* object (i.e. process data) of the process where the
+You can also use the *in* object (i.e., process data) of the process where the
 associated process element is located. You can access the process data by using
-the ``ivy.html.get()`` method, e.g.:
+the ``ivy.html.get()`` method, e.g., 
 
 ::
 
@@ -123,7 +123,7 @@ the ``ivy.html.get()`` method, e.g.:
        <%=ivy.html.get("in.myString")%>
 
 Furthermore, you can insert references to content from the :file:`webContent` directory
-into your JSP content objects, e.g.:
+into your JSP content objects, e.g., 
 
 ::
 

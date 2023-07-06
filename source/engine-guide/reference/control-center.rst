@@ -115,7 +115,7 @@ printed in brackets after the name). Add the server binary (or your third party
 tool) in the :guilabel:`Engine start executable`. 
 
 If you select the console based binaries (the ones with *C* at the end of the
-file name, e.g. :file:`AxonIvyEngineC.exe`) you may tick the check box
+file name, e.g., :file:`AxonIvyEngineC.exe`) you may tick the check box
 :guilabel:`Show console`. It has no effect for all other binaries.
 
 .. figure:: /_images/control-center/control-center-create-new-service.png

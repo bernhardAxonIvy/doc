@@ -42,7 +42,7 @@ Use the tooltip of a parameter to get the parameter description.
 The variable ``result`` contains the output parameters that are returned
 by the called sub process (according to its interface definition).
 
-E.g. if the called process returns a ``String errorMessage`` and an
+E.g., if the called process returns a ``String errorMessage`` and an
 ``Employee`` object ``employee`` then the variable ``result`` will have
 two fields: ``errorMessage`` and ``employee``, respectively. You can map
 those fields to the attributes of the outgoing process data:

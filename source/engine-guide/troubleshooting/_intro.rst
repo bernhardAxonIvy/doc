@@ -9,7 +9,7 @@ amount of knowledge and tips related to Axon Ivy Designer and Engine.
 .. rubric:: Stack Overflow
 
 Problems related to common technologies like Java, JSF, Primefaces are usually
-already answered on the web, e.g. on `Stack Overflow
+already answered on the web, e.g., on `Stack Overflow
 <https://stackoverflow.com/>`_.
 
 .. rubric:: Support

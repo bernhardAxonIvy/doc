@@ -15,7 +15,7 @@ Debug View
 ~~~~~~~~~~
 
 The Debug view shows in a tree per open project all the currently
-handled requests i.e. all processes under execution in the simulation
+handled requests i.e., all processes under execution in the simulation
 engine.
 
 .. figure:: /_images/simulation-debugging/debug-view.png
@@ -23,7 +23,7 @@ engine.
 
    Debug view in action
 
-For each request to the engine the current state (i.e. the currently
+For each request to the engine the current state (i.e., the currently
 executed process step) are shown and can be manipulated individually
 with the following buttons on the toolbar:
 
@@ -191,7 +191,7 @@ Toolbar Menu (|image27|)
 
    Detail pane
       Setting for the size of the buffer for the detail pane, the higher
-      the longer values you can examine (e.g. very long strings) but the
+      the longer values you can examine (e.g., very long strings) but the
       more memory you use.
 
    Wrap Text in Details Pane
@@ -206,7 +206,7 @@ Popup Menu
       Selects all elements in the list.
 
    Copy Variables
-      Copies all selected variables into the clipboard (e.g. for use in
+      Copies all selected variables into the clipboard (e.g., for use in
       the :ref:`debugger-expressions-view`).
 
    Find ...
@@ -260,7 +260,7 @@ Toolbar Menu (|image31|)
 
    Detail pane
       Setting for the size of the buffer for the detail pane, the higher
-      the longer values you can examine (e.g. very long strings) but the
+      the longer values you can examine (e.g., very long strings) but the
       more memory you use.
 
    Wrap Text in Details Pane
@@ -285,7 +285,7 @@ Popup Menu
       Adds a watch expression into the expression view.
 
    Reevaluate Watch Expression
-      Computes the current value of the expression (e.g. if expression
+      Computes the current value of the expression (e.g., if expression
       reads data which was manipulated by concurrent threads).
 
    Disable / Enable
@@ -357,7 +357,7 @@ Element
 
 Category
    The log category refers to the Axon Ivy part which has logged the
-   event (e.g. user_code: ivyScript by user; process: log from/during
+   event (e.g., user_code: ivyScript by user; process: log from/during
    process model execution).
 
 Message
@@ -392,7 +392,7 @@ Project
 
 Category
    The log category refers to the Axon Ivy part which has logged the
-   event (e.g. user_code: ivyScript by user; process: log from/during
+   event (e.g., user_code: ivyScript by user; process: log from/during
    process model execution).
 
 Element

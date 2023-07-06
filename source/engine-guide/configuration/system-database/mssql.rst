@@ -50,7 +50,7 @@ Instance Name
 Microsoft recommends not to use the ``instanceName`` and prefers specifying
 the port in the connection URL, as for each connection, there is a round trip
 to determine the port. Therefore you will need to configure a static
-TCP port (e.g. 1433) in the **SQL Server Configuration Manager**.
+TCP port (e.g., 1433) in the **SQL Server Configuration Manager**.
 
 If you need to work with the ``instanceName``, you have to define it as an
 additional connection property and remove the port specification in the

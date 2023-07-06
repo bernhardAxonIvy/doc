@@ -65,7 +65,7 @@ Start Parameters Definition
    .. tip::
 
       Alternatively you can define the call parameters in the scripting
-      field below the attribute table, e.g. if you need to perform some
+      field below the attribute table, e.g., if you need to perform some
       calculation in order to define a call parameter. You can also mix
       the two forms, in which case the table's definitions will be
       executed before the scripting block.
@@ -92,7 +92,7 @@ Start Parameters Definition
       be available as fields of the ``result`` variable.
 
       The variable is *not* available if the start method does not
-      return any values (i.e. *void*).
+      return any values (i.e., *void*).
 
 .. |image0| image:: /_images/process-elements/user-dialog.png
 .. |image2| image:: /_images/process-elements/button-select-user-dialog.png

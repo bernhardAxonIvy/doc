@@ -41,7 +41,7 @@ Connector
 
 Form Field
    A Form Field is a JSF code snippet which serves content for a
-   specific data class field type (e.g. a Label and a Datepicker for a
+   specific data class field type (e.g., a Label and a Datepicker for a
    Date). The :ref:`New User Dialog Wizard <user-dialog-new-wizard>`
    create forms with Form Fields.
 
@@ -51,7 +51,7 @@ HTML Dialog
    (HTML/JSF).
 
 Layout
-   A Layout contains the main structure of an HTML page (e.g. a header,
+   A Layout contains the main structure of an HTML page (e.g., a header,
    content and footer section). For :ref:`Web Pages <user-interface-web-page>` the
    layouts are defined in the :ref:`CMS <cms>`. For :ref:`HTML Dialogs <html-dialogs>`
    the layouts are defined in the
@@ -138,7 +138,7 @@ Signature
    method.
 
    Within *Axon Ivy*, signatures act as unique identifiers for specific
-   start elements (e.g. method starts, request starts, trigger starts,
+   start elements (e.g., method starts, request starts, trigger starts,
    call sub starts), within the same process, only one element with the
    same signature may exist. The same holds true for signatures of start
    methods and events on a User Dialog interface.
@@ -190,4 +190,4 @@ User Dialog
 
 View Type
    A View Type defines the default content of a :ref:`user-dialogs` View.
-   Axon Ivy has predefined View Types, i.e. Page and Component.
+   Axon Ivy has predefined View Types, i.e., Page and Component.

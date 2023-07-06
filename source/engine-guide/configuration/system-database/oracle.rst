@@ -38,14 +38,14 @@ If database will be created by the Axon Ivy Engine the collate is set to ``Latin
     #. You may want to create a new Oracle database where the Axon Ivy Engine
        System Database is located. This is optional you can use an already existing
        Oracle database.
-    #. Create a new user (e.g. AxonIvy) or let the Axon Ivy Engine create one
+    #. Create a new user (e.g., AxonIvy) or let the Axon Ivy Engine create one
        for you with the Setup Wizard. You can use the following script to
        create a new user with sufficient permissions:
 
        .. literalinclude:: ../../../../../workspace/ch.ivyteam.db/src/ch/ivyteam/db/jdbc/sql/oracle-create-user.sql
          :language: sql
 
-    #. You may want to create a new tablespace (e.g. AxonIvy) where the Axon Ivy Engine
+    #. You may want to create a new tablespace (e.g., AxonIvy) where the Axon Ivy Engine
        System Database can store the table data. This is optional you can
        use an already existing tablespace.
 

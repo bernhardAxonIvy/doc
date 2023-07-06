@@ -241,8 +241,8 @@ running application. Temporary files are created in a session-specific
 file area and are automatically deleted if a session ends. Temporary
 Files can be made persistent.
 
-IvyScript Files are always addressed relatively, i.e. absolute
-addressing will lead to errors. You can create folders and files, i.e. a
+IvyScript Files are always addressed relatively, i.e., absolute
+addressing will lead to errors. You can create folders and files, i.e., a
 hierarchical structure, but you can not navigate outside the confined
 area (which is also the reason why absolute File paths are disallowed).
 
@@ -250,8 +250,8 @@ area (which is also the reason why absolute File paths are disallowed).
 
    You can always use ``java.io.File`` as an alternative to the
    IvyScript File object. However, in this case you must always use the
-   Java File fully qualified, i.e. you can not import the class. Any
-   IvyScript File can be transformed into a Java File (e.g. if needed to
+   Java File fully qualified, i.e., you can not import the class. Any
+   IvyScript File can be transformed into a Java File (e.g., if needed to
    pass as parameter to a Java method).
 
 .. _ivyscript-reference-environmentvariable:
@@ -261,7 +261,7 @@ The Environment Variable ``ivy``
 
 The ``ivy`` environment variable is provided to access the context of the
 current process. The environment information is available as fields on
-the global ``ivy`` variable, e.g. to access the CMS of the current
+the global ``ivy`` variable, e.g., to access the CMS of the current
 project you use:
 
 ::
@@ -273,11 +273,11 @@ project you use:
    **Access from IvyScript:**
 
    The variable ``ivy`` is available wherever you can use *IvyScript*,
-   e.g. on *Step* elements or in *output tables* of other elements.
+   e.g., on *Step* elements or in *output tables* of other elements.
 
    **Access from Java:**
 
-   You can also access ``ivy`` from a Java context, e.g. from helper classes. To
+   You can also access ``ivy`` from a Java context, e.g., from helper classes. To
    do so, simply import the :public-api:`ch.ivyteam.ivy.environment.Ivy
    </ch/ivyteam/ivy/environment/Ivy.html>` class and use it's static API.
 

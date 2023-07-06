@@ -8,8 +8,8 @@ happy path of a process is left. An error is caught by an Error Boundary
 Event or Error Start Event if their Error Code pattern matches the
 Error Code.
 
--  Errors are divided into technical errors (e.g. database connection
-   problem) or business errors (e.g. approval declined).
+-  Errors are divided into technical errors (e.g., database connection
+   problem) or business errors (e.g., approval declined).
 
 -  An error is defined by an Error Code.
 
@@ -43,14 +43,14 @@ System Errors
 
 System errors are thrown by process elements like a *Database Step* or
 a *Web Service Call Step*. Their error codes are set by default and are
-prefixed with ``ivy`` (e.g. ``ivy:error:database``).
+prefixed with ``ivy`` (e.g., ``ivy:error:database``).
 
 
 Throwing Errors
 ---------------
 
 An error can be thrown explicitly by an Error End Event, or from code executed
-in IvyScript or Java. System errors (e.g. ``ivy:error:database``) are implicitly
+in IvyScript or Java. System errors (e.g., ``ivy:error:database``) are implicitly
 thrown by the system.
 
 
@@ -60,14 +60,14 @@ Error End Event
 ~~~~~~~~~~~~~~~
 
 The happy path of a process is left if an error is thrown with a
-:ref:`process-element-error-end` (e.g. if approval has been declined). The Error
+:ref:`process-element-error-end` (e.g., if approval has been declined). The Error
 End Event throws the error to the upper process level, it can't be caught on the
 same process level.
 
 |image0|
 
 Error End Events can also be used to re-throw a pre-defined |ivy| error
-with a specific error that has a meaning to the business (e.g. if a
+with a specific error that has a meaning to the business (e.g., if a
 web service is not available).
 
 |image1|
@@ -81,7 +81,7 @@ different than the default error handling.
 Default HTML Dialog Error Handling
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Any error thrown (e.g. a Java exception) is handled inside of the HTML Dialog.
+Any error thrown (e.g., a Java exception) is handled inside of the HTML Dialog.
 Therefore, there is no propagation to the caller process or between Ivy/JSF
 composites. It is important to handle errors locally in the Dialog Logic to let
 the user work uninterrupted on the same dialog.
@@ -235,7 +235,7 @@ Events.
 
 .. note::
 
-   The process data of the throwing process (i.e. the value of the
+   The process data of the throwing process (i.e., the value of the
    ``in`` variable) is not available in the Error Start of a Project
    Error Process.
 

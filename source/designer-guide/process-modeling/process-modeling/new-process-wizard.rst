@@ -27,7 +27,7 @@ Namespace
    Select a group where the new process will be inserted (this is
    roughly equivalent to a namespace). Select the ``<default>`` process
    group to create a process directly below the project's processes
-   folder (i.e. equal to "no group"). You can click on the group folder
+   folder (i.e., equal to "no group"). You can click on the group folder
    button to open the *New Process Group Wizard*, if you want to create
    a new group "on the fly". The process groups are listed relative to
    the project's *process* folder.

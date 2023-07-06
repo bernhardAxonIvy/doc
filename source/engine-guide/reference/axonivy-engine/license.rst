@@ -58,7 +58,7 @@ users as follows:
 * Sessions (non-System sessions) created to call WebService Processes or Event
   Bean Processes are created at the start of the process and are destroyed after
   the execution of the process. These sessions are counted as described above while
-  they exist, i.e. during process execution.
+  they exist, i.e., during process execution.
 
 This also applies to clusters.
 

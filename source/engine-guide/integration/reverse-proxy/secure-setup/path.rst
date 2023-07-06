@@ -14,7 +14,7 @@ for the URL :code:`https://ivyengine/demo-app`.
 .. rubric:: Restrict system access
 
 The Axon Ivy Engine itself provides administration functionality under the base
-url :code:`system` e.g. :code:`https://ivyengine/system`. Do not allow or
+url :code:`system` e.g., :code:`https://ivyengine/system`. Do not allow or
 explicitly restrict the access to this URL in your reverse proxy configuration.
 
 |
@@ -22,7 +22,7 @@ explicitly restrict the access to this URL in your reverse proxy configuration.
 .. rubric:: Well appreciated redirect
 
 A redirect from the root URL :code:`/` to your application home URL will be much
-appreciated by your end users. E.g. when a user is accessing
+appreciated by your end users. E.g., when a user is accessing
 :code:`https://ivyengine/` then they should be redirected to
 :code:`https://ivyengine/demo-app`.
 

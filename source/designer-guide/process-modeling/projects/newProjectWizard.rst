@@ -41,11 +41,11 @@ Group ID
    Identifies your project uniquely across all projects. It has to
    follow the package name rules, what means that has to be at least as
    a domain name you control, and you can create as many subgroups as
-   you want. e.g. ``com.acme.ria``.
+   you want. e.g., ``com.acme.ria``.
 
 Project ID
    You can choose whatever name you want with lowercase letters and no
-   strange symbols, e.g. ``users`` or ``user-manager``.
+   strange symbols, e.g., ``users`` or ``user-manager``.
 
    During deployment to the engine the concatenated Group ID + Project
    ID will act as unique identifier of the project, once it is deployed.

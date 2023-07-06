@@ -10,7 +10,7 @@ descriptor defines various properties of a project that are important
 with respect to deployment on the engine. Specifically the descriptor
 defines:
 
-1. A *unique project ID* (i.e. a fully qualified symbolic name) for the
+1. A *unique project ID* (i.e., a fully qualified symbolic name) for the
    project, by which it can be identified and referenced. Also a current
    *development version* of the project is defined (please note that
    this version may, but does not necessarily have to be, identical with
@@ -36,7 +36,7 @@ The following figure illustrates the above:
 
 Since referenced projects may in turn reference other projects, a whole
 (acyclic) dependency graph may be constructed this way. All artifacts of
-projects that are reachable from some project in this way (i.e. by
+projects that are reachable from some project in this way (i.e., by
 following the arrows) can be used.
 
 The following figure illustrates this feature. For example, a User
@@ -61,7 +61,7 @@ version range. This is also illustrated in the above figure.
 When deploying projects on the engine, the availability of the required
 projects (and their versions) is checked. If the required project
 versions cannot be resolved, then a project cannot be deployed.
-Therefore projects must be deployed *bottom up*, i.e. one must start by
+Therefore projects must be deployed *bottom up*, i.e., one must start by
 deploying first the required projects that are lowest in the dependency
 hierarchy.
 
@@ -103,11 +103,11 @@ Group ID
    Identifies your project uniquely across all projects. It has to
    follow the package name rules, which means that it has to contain at
    least the domain name you control, and you can create as many
-   subgroups as you want. e.g. ``com.acme.ria``.
+   subgroups as you want. e.g., ``com.acme.ria``.
 
 Project ID
    You can choose any name you want in lowercase letters and without
-   special symbols, e.g. ``users`` or ``user-manager``.
+   special symbols, e.g., ``users`` or ``user-manager``.
 
    On deployment to the Axon Ivy Engine the concatenated Group ID + Project
    ID will act as unique identifier of the project.

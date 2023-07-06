@@ -19,7 +19,7 @@ IvyScript Editor
    IvyScript Editor
 
 The normal editors expect you to enter either a script with multiple
-statements (e.g. a script, that contains semicolons) which performs a
+statements (e.g., a script, that contains semicolons) which performs a
 certain task, or just an expression that evaluates to a certain value.
 
 
@@ -156,7 +156,7 @@ Smart Buttons
 Next to the editors you usually find buttons (which ones, depends on the
 context), that hold certain actions. The exact actions that those
 buttons realize are described in the section :ref:`smart-buttons`.
-There are e.g. actions to
+There are e.g., actions to
 select an attribute from the current process data, to select content or
 to insert a link.
 

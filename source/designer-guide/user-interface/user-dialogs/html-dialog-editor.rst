@@ -4,13 +4,13 @@ HTML Dialog Editor
 ^^^^^^^^^^^^^^^^^^
 
 The HTML Dialog editor allows to implement the view of an HTML Dialog
-(i.e. the *JSF view*). The HTML Dialog editor consists of two views, the
+(i.e., the *JSF view*). The HTML Dialog editor consists of two views, the
 source view and the graphical view. In the source view you can read and
 edit the JSF (or XHTML) source in a text-based editor. In the graphical
 view you can preview and edit the visual representation of the JSF page.
 Both views are linked to each other and every change is synchronized to
 the other view. So a change in one view is automatically reflected in
-the other one, e.g. if I change the text of a h1 HTML element in the
+the other one, e.g., if I change the text of a h1 HTML element in the
 source view then the design view is immediately updated and shows the
 new text. There are options to arrange the two views in horizontal or
 vertical panes or to show only one of them.

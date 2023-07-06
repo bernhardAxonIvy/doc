@@ -67,7 +67,7 @@ Many example REST services are available in the :ref:`ConnectivityDemos
 .. tip:: Pretty printing
 
 If you add the query param `pretty` to the URL to any REST Service provided by the |ivy-engine|
-which produce JSON, then you get a pretty formatted JSON e.g. http://localhost:8081/designer/api/engine/info?pretty
+which produce JSON, then you get a pretty formatted JSON e.g., http://localhost:8081/designer/api/engine/info?pretty
 
 
 .. _integration-rest-api-spec:
@@ -85,7 +85,7 @@ using it.
 The technical interface description is available under the following URL path:
 
 ``/<appName>/api/openapi.json``
-e.g. http://localhost:8081/designer/openapi.json
+e.g., http://localhost:8081/designer/openapi.json
 
 
 .. _integration-rest-api-spec-annotate:
@@ -129,7 +129,7 @@ the API Browser. It gives consumers of your services not only a detailed service
 description, but a simple client to fire real calls against the services, too.
 
 To access the API Browser, open the URL ``/system/api-browser``  with a web browser of your choice
-e.g. http://localhost:8080/system/api-browser
+e.g., http://localhost:8080/system/api-browser
 
 .. figure:: /_images/concepts-integration/api-browse-app.png
     :align: center
@@ -178,7 +178,7 @@ User provided REST services via ``GET``, ``HEAD`` or ``OPTIONS`` have to be
 implemented such that no data is modified.
 
 The CSRF protection filter is enabled by default. However, it can be turned off
-in an environment where the clients can be trusted (e.g. intranet). See the 
+in an environment where the clients can be trusted (e.g., intranet). See the 
 property ``REST.Servlet.CSRF.Protection`` in the :ref:`ivy-webserver-yaml`
 
 

@@ -285,7 +285,7 @@ Key Store Settings
       password is used instead.
 
    Key store type
-      The type of the key store (e.g. JKS or PKCS12). If empty the
+      The type of the key store (e.g., JKS or PKCS12). If empty the
       system default type is used.
 
    Key store provider
@@ -306,7 +306,7 @@ Trust Store Settings
       Password used to read the trust store file.
 
    Trust store type
-      The type of the trust store (e.g. JKS or PKCS12). If empty the
+      The type of the trust store (e.g., JKS or PKCS12). If empty the
       system default type is used.
 
    Trust store provider

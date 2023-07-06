@@ -6,7 +6,7 @@ User Dialog Interface Editor
 The User Dialog Interface editor is used to define the *API (Application
 Programming Interface*) of a User Dialog. Since User Dialogs are components that
 are intended to be reused, they have to define a stable interface
-that clients (i.e. processes or User Dialogs) can rely upon. An interface
+that clients (i.e., processes or User Dialogs) can rely upon. An interface
 is defined independently from the implementation of the User Dialog and
 therefore separates the way *how* a User Dialog performs its work from the
 declaration of *what* it is capable to do.
@@ -54,7 +54,7 @@ the respective process. You must provide a *name* as well as *input* and
    defined so far is identical to the signature of another Start method, then a
    validation error will be displayed. The warning disappears when either
    arguments are added or removed, argument types are changed, or the method
-   name is altered, i.e. the signatures are no more identical.
+   name is altered, i.e., the signatures are no more identical.
 
 .. note::
 

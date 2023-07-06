@@ -66,7 +66,7 @@ Engine. How does this work? When an Axon Ivy project has been finished
 or reached a milestone, it is going to be deployed as the first process
 model version. Users can use this project, they start processes. Some of
 the processes may last long time (weeks, months, or even years). While
-these processes (e.g. cases) are running, the project may be enhanced
+these processes (e.g., cases) are running, the project may be enhanced
 and might have now incompatible changes to the first version. Now the
 changed project can not be deployed to the first version but to a new
 configured version. Consequently old cases must not be stopped, they

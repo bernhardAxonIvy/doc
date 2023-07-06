@@ -45,7 +45,7 @@ Input parameters
       ``Double``.
 
       **Do not use** complex types that contain a ``List`` attribute as
-      input parameter (e.g. ``Employee`` with an attribute ``projects``
+      input parameter (e.g., ``Employee`` with an attribute ``projects``
       of type ``List<Project>``). Use a ``java.util.List`` (e.g.
       ``java.util.List<Project>``) as type for such attributes instead.
 
@@ -91,7 +91,7 @@ Web service
 
       Since these settings are defined per web service and not per web
       service operation, any changes here will have an impact on all the
-      operations within the same process, i.e. web service.
+      operations within the same process, i.e., web service.
 
    .. tip::
 

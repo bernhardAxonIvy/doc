@@ -18,7 +18,7 @@ application to that directory.
 .. Note::
 
     Here we deploy a new application by dropping a ZIP into the deploy folder. However, it is
-    also possible to deploy packed projects (i.e. ``.iar`` archives) or unpacked projects.
+    also possible to deploy packed projects (i.e., ``.iar`` archives) or unpacked projects.
 
 You can monitor the deployment with:
 
@@ -27,8 +27,8 @@ You can monitor the deployment with:
     tail -f demos.zip.deploymentLog
 
 As soon as the deployment has finished successfully, the zip file is postfixed with
-:file:`.deployed`, e.g. :file:`demos.zip.deployed`. 
-In case of an error, the postfix :file:`.notDeployed` is added, e.g. :file:`demos.zip.notDeployed`.
+:file:`.deployed`, e.g., :file:`demos.zip.deployed`. 
+In case of an error, the postfix :file:`.notDeployed` is added, e.g., :file:`demos.zip.notDeployed`.
 
 .. Note::
 

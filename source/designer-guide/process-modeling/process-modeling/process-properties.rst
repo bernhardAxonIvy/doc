@@ -35,7 +35,7 @@ are defined in the same project as the process** in order to avoid
 dependencies on the specific implementation of another project.
 
 It is legal for two processes to specify the same data class. This can
-be desired if the processes operate on the same set of data (e.g. sub
+be desired if the processes operate on the same set of data (e.g., sub
 processes) and it may facilitate the mapping in some cases.
 
 Permissions
@@ -73,7 +73,7 @@ None/Container
    Authentication is not handled by the web service element. However, if
    the web container (Tomcat) or a web server (Microsoft IIS/Apache)
    handles user authentication, the user is passed through to Axon Ivy
-   (e.g. Single Sign-on).
+   (e.g., Single Sign-on).
 
 WS Security
    UsernameToken with Password will be sent in clear-text to the ivy
@@ -82,7 +82,7 @@ WS Security
    .. warning::
 
       Only use this option in a trusted network or over a secure
-      connection (e.g. HTTPS).
+      connection (e.g., HTTPS).
 
 HTTP Basic
    Username and Password will be sent in clear-text to the Axon Ivy engine
@@ -98,7 +98,7 @@ HTTP Basic
    .. warning::
 
       Only use this option in a trusted network or over a secure
-      connection (e.g. HTTPS).
+      connection (e.g., HTTPS).
 
    If the web container (Tomcat) or a web server (Microsoft IIS/Apache)
    already handles user authentication, the user is passed through to

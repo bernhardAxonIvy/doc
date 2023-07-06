@@ -28,7 +28,7 @@ Client
 
 Port
    Selects the Port of the Web Service. The Port mainly defines the
-   protocol that is used (e.g. SOAP, SOAP 1.2, HTTP).
+   protocol that is used (e.g., SOAP, SOAP 1.2, HTTP).
 
 Operation
    Selects the Operation of the Web Service. Calls to this operation

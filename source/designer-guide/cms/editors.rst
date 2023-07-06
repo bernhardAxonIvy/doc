@@ -131,7 +131,7 @@ In the context menu in the CMS view there are several actions available:
 Drag and Drop
 ~~~~~~~~~~~~~
 
-Content objects (e.g. *strings* and *images*) from the CMS view can be
+Content objects (e.g., *strings* and *images*) from the CMS view can be
 dragged and dropped into the :ref:`HTML Dialog editor <html-dialog-editor-dragndrop>`
 to be used for label texts or for images.
 
