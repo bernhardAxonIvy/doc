@@ -65,6 +65,12 @@ variables.
     :file:`<project>/config/variables.myFile.json` can contain the value for the
     variable called :code:`myFile`.
 
+.. tip::
+  If your variable has :code:`password` or :code:`secret` in its name (e.g., :code:`hidePasswordMenu`) and no type is explicitly set, 
+  the |ivy-engine| will automatically treat this variable as a password to increase the security of it.
+  If this behavior does not suit your needs, you can override it by explicit setting the type 
+  (e.g., with :code:`# [boolean]`, :code:`# [string]` or :code:`# [number]`).
+
 .. warning::
   The number of `indentation spaces <https://yaml.org/spec/1.2.2/#61-indentation-spaces>`__ 
   needs to be the same in the whole yaml file.
@@ -75,8 +81,8 @@ How to Access Variables
 
 To access the Variables in your code, you can use the :public-api:`var
 </ch/ivyteam/ivy/environment/Ivy.html#var>` method. In :ref:`ivyscript`, you can
-use name of the Variable to get access to your defined Variables. In addition,
-this approach has the advantage that you have validation notifications when a
+use the name of the Variable to get access to your defined Variables. In addition,
+this approach has the advantage that you receive validation notifications when a
 Variable is removed by a developer. 
 
 .. code:: java
