@@ -301,8 +301,6 @@ Scope
       user (i.e., is specific for each user and is invalidated when the
       user logs out).
 
-   -  **Environment**: the cache entry is linked to current environment.
-
    -  **Application**: the cache entry is linked to the Application
 
    .. warning::
