@@ -3,7 +3,7 @@ SecuritySystem:
   default:
     Notification:
       Channels:
-        # each channel has it's own identfier
+        # each channel has it's own identifier
         web:
           # each channel can be enabled/disabled
           Enabled: true

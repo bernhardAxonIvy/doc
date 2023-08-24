@@ -1,10 +1,10 @@
 Mail Notifications
 ------------------
 
-This channels provides the notifications via mail. If you enable this channel, you need also to:
+This channel provides notifications via mail. If you enable this channel, you need also to:
 
 - :ref:`Configure the mail server <config-email>`.
-- Users who needs to be notified needs a mail address.
+- Users who shall be notified need a mail address.
 
 **Template**
 

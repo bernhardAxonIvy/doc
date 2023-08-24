@@ -1,8 +1,8 @@
 Web Notifications
 -----------------
 
-Web Notifications are turned on by default for all events and
-will be shown in Axon Ivy Portal.
+Web Notifications are turned on by default for all events. They
+are shown in Axon Ivy Portal.
 
 **Template**
 
