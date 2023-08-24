@@ -32,6 +32,7 @@ Of course, most settings can also be adjusted in our :ref:`engine-cockpit`.
    administrators
    users/index
    email
+   notification/index
    advanced-configuration
    docker-container
    file-reference

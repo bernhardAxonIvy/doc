@@ -1,0 +1,13 @@
+# sample ivy.yaml that configures the web channel
+SecuritySystem:
+  default:
+    Notification:
+      Channels:
+        # each channel has it's own identfier
+        web:
+          # each channel can be enabled/disabled
+          Enabled: true
+          # each channel can define which events are subscribed
+          # if no event is defined then all events are subscribed by default
+          Events:
+            - new-task

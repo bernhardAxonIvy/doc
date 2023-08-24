@@ -1,0 +1,19 @@
+Mail Notifications
+------------------
+
+This channels provides the notifications via mail. If you enable this channel, you need also to:
+
+- :ref:`Configure the mail server <config-email>`.
+- Users who needs to be notified needs a mail address.
+
+**Template**
+
+.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.notification.mail/src/ch/ivyteam/ivy/notification/mail/impl/mail-channel-template.yaml
+  :language: yaml
+  :linenos:
+
+**Reference**
+
+.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.notification.mail/src/ch/ivyteam/ivy/notification/mail/impl/mail-channel-reference.yaml
+  :language: yaml
+  :linenos:
