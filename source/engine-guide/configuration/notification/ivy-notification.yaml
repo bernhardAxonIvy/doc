@@ -1,5 +1,5 @@
 # sample ivy.yaml that configures the web channel
-SecuritySystem:
+SecuritySystems:
   default:
     Notification:
       Channels:
