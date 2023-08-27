@@ -16,10 +16,7 @@ Entry-Name: .content
 get-menu "Axon Ivy/Preferences..." | click
 with [get-window "Preferences (Filtered)"] {
 	get-tree | select "Axon Ivy/Process Editor"	
-	saveWindowContentScreenshot "designer/preferences-processeditor.png"
-	
-	get-tree | select "Axon Ivy/Email"
-	saveWindowContentScreenshot "designer/preferences-email.png"
+	saveWindowContentScreenshot "designer/preferences-processeditor.png"	
 	
 	get-tree | select "Axon Ivy/Process Engine"
 	saveWindowContentScreenshot "designer/preferences-processengine.png"
