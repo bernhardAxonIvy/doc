@@ -3,7 +3,7 @@
 S3
 --
 
-S3 is a highly reliable and scalable cloud object storage. S3 comes with a lot of different features like encryption, rentetion
+S3 is a highly reliable and scalable cloud object storage. S3 comes with a lot of different features like encryption, retention
 management or versioning to only mention some of them.
 
 
