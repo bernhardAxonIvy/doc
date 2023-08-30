@@ -3,8 +3,7 @@
 Local
 -----
 
-The local blob storage stores the files in the local file system. The root path will be calculated out of `Data.FilesDirectory` from :ref:`ivy-yaml`
-and you can override this settings per application in :ref:`app-yaml`.
+The local blob storage stores the files in the local file system. The root path will be calculated out of `Data.Directory` from :ref:`ivy-yaml`.
 
 **Template**
 
