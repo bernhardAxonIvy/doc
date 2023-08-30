@@ -7,12 +7,14 @@ An Axon Ivy Engine Cluster node is set up almost the same way as a stand-alone A
 Note: All nodes in a cluster setup have to run within the same network (the same
 broadcast domain).
 
-Files Directory
----------------
+Files
+-----
 
-The files directory (``Data.FilesDirectory`` in your :ref:`ivy.yaml
-<ivy-yaml>`), where the Axon Ivy Engine stores files uploaded by users, has to
-shared between all cluster nodes. Use a Docker volume that stores all the files.
+We recommend to configure :ref:`blob-s3` as distributed blob storage so that every
+cluster node can access all the files.
+
+Otherwise you need to share the files directory for all cluster nodes
+(``Data.FilesDirectory`` from :ref:`ivy.yaml <ivy-yaml>`). Use a Docker volume that stores all the files.
 Mount it on all cluster nodes.
 
 Configure the files directory in your :ref:`ivy.yaml <ivy-yaml>` file:
