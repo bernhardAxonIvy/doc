@@ -16,7 +16,7 @@ services:
      - ./licence.lic:/etc/axonivy-engine/licence.lic
 
   postgres:
-    image: postgres:15
+    image: postgres:16
     environment:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: 1234
