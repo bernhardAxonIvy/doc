@@ -21,10 +21,10 @@ Each channel can be configured individually.
 
 .. rubric:: Events
 
-You can configure which events are sent over which channels. If nothing
-is configured all Events are distributed over the given channel. If you
-specifcy `Events` of a channel only those events are sent. All available
-events are:  However, users can individually set the notification settings
-in Axon Ivy Portal.
+You can configure which events are sent over which channels. If nothing is
+configured all Events are distributed over the given channel. If you disable
+`Events:AllKinds` and specify `Events:Kinds` for a channel only those events are
+sent. However, users can individually set the notification settings in Axon Ivy
+Portal. All available events are:
 
 - **new-task**: If a user has a new task assignment (also on delegation)
