@@ -106,7 +106,24 @@
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>buildnumber-maven-plugin</artifactId>
       </plugin>
-
+      
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>properties-maven-plugin</artifactId>
+        <version>1.2.0</version>
+        <executions>
+          <execution>
+            <id>read.yaml.version.properties</id>
+            <phase>initialize</phase>
+            <goals><goal>read-project-properties</goal></goals>
+            <configuration>
+              <files>
+                <file>../workspace/ch.ivyteam.ivy.configuration/src/ch/ivyteam/ivy/configuration/yaml/historic/latestYaml.properties</file>
+              </files>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-resources-plugin</artifactId>
@@ -141,7 +158,7 @@
               <useDefaultDelimiters>false</useDefaultDelimiters>
               <resources>
                 <resource>
-                  <directory>../workspace/ch.ivyteam.ivy.configuration/src/ch/ivyteam/ivy/configuration/internal/defaults</directory>
+                  <directory>../workspace/ch.ivyteam.ivy.configuration/resources/ch/ivyteam/ivy/configuration/internal/defaults</directory>
                   <filtering>true</filtering>
                   <includes>
                     <include>*.yaml</include>
