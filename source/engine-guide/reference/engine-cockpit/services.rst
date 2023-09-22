@@ -3,17 +3,6 @@ Services
 
 
 
-Email
-^^^^^
-
-In the **Email** section you can change the default email notification settings
-for each application. 
-
-.. figure:: /_images/engine-cockpit/engine-cockpit-email.png
-
-
-.. _engine-cockpit-database:
-
 Databases
 ^^^^^^^^^
 
