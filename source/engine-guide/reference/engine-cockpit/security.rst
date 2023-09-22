@@ -121,9 +121,6 @@ Identity Provider - see :ref:`engine-cockpit-security-system`.
 Attributes mapped from the Identity Provider like phone number, and department are 
 displayed in the :ref:`Additional LDAP Attributes<engine-cockpit-security-system-detail>`.
 
-The :guilabel:`Email Notification Settings` panel displays the user's notification
-settings.
-
 In the :guilabel:`Permissions` panel, you can see what permissions a user has and change
 them. A tick is shown if the user has a permission or permissions within a group. 
 
