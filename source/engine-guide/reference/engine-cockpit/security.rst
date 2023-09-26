@@ -65,8 +65,8 @@ Users
 On this page, you see all users per security system. You can switch the security 
 system by clicking on the tabs at the top of the view. 
 
-The user table displays basic information about the users and if they currently 
-have an open session. 
+The user table displays basic information about the users, whether they have an
+ongoing absence and if they currently have an open session.
 
 To add a user, click on the :guilabel:`New` button and fill in the dialog. A user name is
 required and needs to be unique within the security system.
@@ -120,6 +120,14 @@ You can configure additional user properties manually (using the buttons
 Identity Provider - see :ref:`engine-cockpit-security-system`. 
 Attributes mapped from the Identity Provider like phone number, and department are 
 displayed in the :ref:`Additional LDAP Attributes<engine-cockpit-security-system-detail>`.
+
+The :guilabel:`Substitutes` panel displays all the substitutes the user has
+defined. This includes information about whether the substitute is used
+permanently or only during absences, if it is a substitute for personal tasks or
+tasks of a specific role and the corresponding role if applicable.
+
+The :guilabel:`Absences` panel displays all the registered absences of the user
+including a flag, whether they are currently on an absence or not.
 
 In the :guilabel:`Permissions` panel, you can see what permissions a user has and change
 them. A tick is shown if the user has a permission or permissions within a group. 
