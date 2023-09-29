@@ -96,6 +96,16 @@ especially in the case of a session leak.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-sessions.png
 
+
+Documents
+"""""""""
+
+The **Documents** view gives you an overview over documents attached to a case
+or workflow documents.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-documents.png
+
+
 .. _engine-cockpit-monitor-start-events:
 
 Start Events

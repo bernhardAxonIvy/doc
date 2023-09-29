@@ -10,7 +10,7 @@ broadcast domain).
 Files
 -----
 
-We recommend to configure :ref:`blob-s3` as distributed blob storage so that every
+We recommend to configure :ref:`documents-s3` as distributed blob storage so that every
 cluster node can access all the files.
 
 Otherwise you need to share the files directory for all cluster nodes

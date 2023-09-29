@@ -21,6 +21,29 @@ We now have removed the legacy support for `IWA_Application.FilePath`. If some a
 or earlier, you need to move them manually at that place.
 
 
+Documents Path
+--------------
+
+|tag-ops-deprecated| 
+
+Documents will be stored now relative to the path `Data.Directory` configured in :ref:`ivy.yaml <ivy-yaml>`.
+If you migrate from an older system, the Axon Ivy Engine will automatically configure the local document
+storage and using the legacy path `UseLegacyPath`. In this case the documents will be read and write from the
+same place:
+
+.. code-block:: yaml
+       
+       SecuritySystems:
+         default:
+           DocumentStorage:
+             Name: local
+             Config:
+               UseLegacyPath: false
+
+
+This is just a note, after the migration there is nothing todo. Read more in chapter :ref:`Document Storage <document-storage>`.
+
+
 WebPage activity
 ----------------
 

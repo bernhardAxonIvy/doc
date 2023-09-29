@@ -1,7 +1,0 @@
-# sample ivy.yaml that configures the local file storage
-SecuritySystems:
-  default:
-    BlobStorage:
-      Name: local
-      Config:
-        UseLegacyPath: true

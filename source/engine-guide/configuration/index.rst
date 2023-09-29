@@ -33,7 +33,7 @@ Of course, most settings can also be adjusted in our :ref:`engine-cockpit`.
    users/index
    email
    notification/index
-   blob/index
+   document/index
    advanced-configuration
    docker-container
    file-reference
