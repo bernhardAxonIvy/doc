@@ -100,7 +100,7 @@ especially in the case of a session leak.
 Documents
 """""""""
 
-The **Documents** view gives you an overview over documents attached to a case
+The **Documents** view gives you an overview of documents attached to a case
 or workflow documents.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-documents.png

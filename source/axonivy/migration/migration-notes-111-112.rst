@@ -26,10 +26,11 @@ Documents Path
 
 |tag-ops-deprecated| 
 
-Documents will be stored now relative to the path `Data.Directory` configured in :ref:`ivy.yaml <ivy-yaml>`.
-If you migrate from an older system, the Axon Ivy Engine will automatically configure the local document
-storage and using the legacy path `UseLegacyPath`. In this case the documents will be read and write from the
-same place:
+Documents will be stored now relative to the path of the `Data.Directory` configured in :ref:`ivy.yaml <ivy-yaml>` by default.
+
+
+If you migrate from an older version, then the local document storage will be automatically configured to use the legacy path
+`UseLegacyPath`. In this case, the documents are read and written from the old legacy location.
 
 .. code-block:: yaml
        
@@ -38,7 +39,7 @@ same place:
            DocumentStorage:
              Name: local
              Config:
-               UseLegacyPath: false
+               UseLegacyPath: true
 
 
 This is just a note, after the migration there is nothing todo. Read more in chapter :ref:`Document Storage <document-storage>`.

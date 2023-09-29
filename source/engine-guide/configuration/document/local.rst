@@ -19,4 +19,4 @@ The local document storage stores the files in the local file system. The root p
 
 .. note::
    Working with local files only works with :ref:`cluster` if you share the same
-   root directory for all cluster nodes. In the case of a cluster you should go with :ref:`documents-s3`.
+   root directory for all cluster nodes. In the case of a cluster, you should go with :ref:`documents-s3`.
