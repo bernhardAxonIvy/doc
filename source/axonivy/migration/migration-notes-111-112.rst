@@ -21,29 +21,6 @@ We now have removed the legacy support for `IWA_Application.FilePath`. If some a
 or earlier, you need to move them manually at that place.
 
 
-Documents Path
---------------
-
-|tag-ops-deprecated| 
-
-Documents will be stored now relative to the path of the `Data.Directory` configured in :ref:`ivy.yaml <ivy-yaml>` by default.
-
-
-If you migrate from an older version, then the local document storage will be automatically configured to use the legacy path
-`UseLegacyPath`. In this case, the documents are read and written from the old legacy location.
-
-.. code-block:: yaml
-       
-       SecuritySystems:
-         default:
-           DocumentStorage:
-             Name: local
-             Config:
-               UseLegacyPath: true
-
-
-This is just a note, after the migration there is nothing todo. Read more in chapter :ref:`Document Storage <document-storage>`.
-
 
 WebPage activity
 ----------------

@@ -3,5 +3,4 @@ SecuritySystems:
   default:
     DocumentStorage:
       Name: local
-      Config:
-        UseLegacyPath: false
+
