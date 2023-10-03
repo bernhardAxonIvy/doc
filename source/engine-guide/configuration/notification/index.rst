@@ -28,3 +28,9 @@ sent. However, users can individually set the notification settings in Axon Ivy
 Portal. All available events are:
 
 - **new-task**: If a user has a new task assignment (also on delegation)
+
+.. rubric:: Cleanup
+
+By default, notifications are deleted from the database if they are older than
+90 days. This duration can be adjusted using the `Notification:DaysUntilDeletion`
+property.
