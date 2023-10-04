@@ -2,8 +2,9 @@
 SecuritySystems:
   default:
     Notification:
-      # notifications older than this will be deleted on a daily basis
-      DaysUntilDeletion: 90
+      Cleanup:
+        # notifications older than this will be deleted on a daily basis
+        DaysUntilDeletion: 90
       Channels:
         # each channel has it's own identifier
         web:
