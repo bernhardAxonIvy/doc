@@ -37,6 +37,12 @@ command line tool must be *run as administrator*.
 .. code:: powershell
 
    AxonIvyEngineService.exe -stop [windowsServiceName]
+   
+.. rubric:: Restart the Windows Service
+
+.. code:: powershell
+
+   AxonIvyEngineService.exe -restart [windowsServiceName]   
 
 Parameters:
   - ``windowsServiceName`` is optional and set by default to **Axon Ivy Engine**.
