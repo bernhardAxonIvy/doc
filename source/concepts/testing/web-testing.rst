@@ -124,8 +124,36 @@ On your selected element you can check certain conditions (e.g is the element
   to see more options.
 
 
+Change Application Runtime
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For some test cases, you may need to run your web tests with a different user or you need another value for a variable or app configuration. 
+In this case the `WebAppFixture` util can help you to achieve this.
+Unlike the :ref:`AppFixture <unit-testing-app-fixture>` of :ref:`unit-testing`, the changed values are **not** automatically reset after the test run.
+Let's have a look at it:
+
+You can change the current user or log out to an anonymous session:
+
+.. literalinclude:: includes/webtesting/webtesting-test-fixure-login.java
+  :language: java
+  :emphasize-lines: 2, 4, 8
+
+If you want to change the value of a variable, you can proceed as follows:
+
+.. literalinclude:: includes/webtesting/webtesting-test-fixure-var.java
+  :language: java
+  :emphasize-lines: 2, 4, 9
+
+Or you can change an app configuration, e.g the URL of a
+:ref:`RestClient <rest-clients-configuration>`:
+
+.. literalinclude:: includes/webtesting/webtesting-test-fixure-config.java
+  :language: java
+  :emphasize-lines: 2, 4, 9
+
+
 Run Automated
-^^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 Let's have a look at how you can run your web tests fully automated
 (:ref:`continuous-integration`). This is especially important if you want fast

@@ -58,6 +58,8 @@ the ``Ivy`` environment we would have to mock all those resources.
   to see what else is possible.
 
 
+.. _unit-testing-app-fixture:
+
 Change Application Runtime
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
