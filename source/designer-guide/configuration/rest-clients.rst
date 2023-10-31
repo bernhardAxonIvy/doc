@@ -197,7 +197,7 @@ Well known properties of REST clients are documented here:
 To configure SSL client authentication for a REST client call, specify the
 property *SSL.keyAlias*. The value of this alias needs to correspond with a key
 alias available in the client keystore configured under
-:ref:`workspace-preferences-sslclient`.
+:ref:`engine-cockpit-ssl`.
 
 **JSON Properties**
 

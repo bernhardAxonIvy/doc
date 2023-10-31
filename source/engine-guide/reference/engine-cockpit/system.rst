@@ -96,6 +96,108 @@ view the complete configuration file.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-system-config.png
 
+.. _engine-cockpit-ssl:
+
+SSL Client Settings
+^^^^^^^^^^^^^^^^^^^^
+
+These settings define the key and trust stores to be used for SSL/TLS
+client connections.
+
+
+A key store is used to read client keys (certificates). This is only
+required if a server requests a client certificate in order to
+authenticate the client.
+
+A trust store is used to specify trusted server certificates or
+certificates of certification authorities. An SSL client authenticates a
+server by using the certificates in a trust store. If the server
+provides a certificate that is signed by a certification authority known
+by Java then the system trust store can be used. If the server uses a
+certificate that is self signed or signed by a unknown certification
+authority then a custom trust store can be used. The custom trust store
+must contain the server certificate or the certificate of the unknown
+certification authority.
+
+Key and trust stores can be created and modified (generation and import
+of certificates and keys) with a graphical keytool like the `KeyStore
+Explorer <http://keystore-explorer.org/>`__ or by the
+`keytool <http://docs.oracle.com/javase/6/docs/technotes/tools/solaris/keytool.html>`__
+included in the Java Development Kit (JDK). More information can be
+found in the documentation of the JDK.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-SSL-client.png
+   :alt: SSL Client
+   :align: center
+   
+
+Key Store Settings
+   Use custom key store
+      If selected the key store configured below is used to read the
+      client's key. A client key is only necessary if the server
+      requests SSL client authentication. If not selected the system
+      keystore is used. The system keystore can be configured by setting
+      the Java system property ``javax.net.ssl.keyStore``.
+
+   Key store file
+      The file containing the client keys.
+
+   Key store password
+      Password used to read the key store file.
+
+   Key password
+      Password needed to decrypt the key. If empty the key store
+      password is used instead.
+
+   Key store type
+      The type of the key store (e.g., JKS or PKCS12). If empty the
+      system default type is used.
+
+   Key store provider
+      The security provider used to read the key store. If empty the
+      system default provider is used.
+
+   Key store algorithm
+      The algorithm used to read the key store. If empty the system
+      default algorithm is used.
+
+Trust Store Settings
+   Trust store file
+      The file containing the trusted server certificates and/or
+      certificates of certification authorities. Press Add... to add a
+      certificate from a file to the trust store.
+
+   Trust store password
+      Password used to read the trust store file.
+
+   Trust store type
+      The type of the trust store (e.g., JKS or PKCS12). If empty the
+      system default type is used.
+
+   Trust store provider
+      The security provider used to read the trust store. If empty the
+      system default provider is used.
+
+   Trust store algorithm
+      The algorithm used to read the trust store. If emtpy the system
+      default algorithm is used.
+
+Other SSL Settings
+   Enable insecure SSL and HTTPS connections
+      Manipulates the JVMs default SSLSocketFactory, so that untrusted
+      (self signed or outdated) certificates are silently accepted. This
+      could for instance be useful to generate a Webservice stub from an
+      insecure WSDL location.
+
+   Test custom Keystore/Truststore
+      Tests if the specified Keystore/Truststore can be opened and read
+      with the given configuration.
+
+.. note::
+
+   The SSL Client trust- and key store settings are currently only
+   considered when sending mails, for REST client calls, CXF Web Service
+   client calls and when loading web service definition (WSDL) files.
 
 .. _engine-cockpit-cluster:
 

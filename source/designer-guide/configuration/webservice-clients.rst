@@ -158,7 +158,7 @@ known properties are documented here:
    In order to configure SSL client authentication for a web service,
    you need to specify the property *SSL.keyAlias*. The value of this
    alias needs to correspond with a key alias available in the client
-   keystore configured in :ref:`workspace-preferences-sslclient`.
+   keystore configured in :ref:`engine-cockpit-ssl`.
 
 
 Endpoint URIs Section
