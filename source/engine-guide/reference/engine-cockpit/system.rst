@@ -119,12 +119,6 @@ authority then a custom trust store can be used. The custom trust store
 must contain the server certificate or the certificate of the unknown
 certification authority.
 
-Key and trust stores can be created and modified (generation and import
-of certificates and keys) with a graphical keytool like the `KeyStore
-Explorer <http://keystore-explorer.org/>`__ or by the
-`keytool <http://docs.oracle.com/javase/6/docs/technotes/tools/solaris/keytool.html>`__
-included in the Java Development Kit (JDK). More information can be
-found in the documentation of the JDK.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-SSL-client.png
    :alt: SSL Client
@@ -164,8 +158,7 @@ Key Store Settings
 Trust Store Settings
    Trust store file
       The file containing the trusted server certificates and/or
-      certificates of certification authorities. Press Add... to add a
-      certificate from a file to the trust store.
+      certificates of certification authorities.
 
    Trust store password
       Password used to read the trust store file.
@@ -182,6 +175,15 @@ Trust Store Settings
       The algorithm used to read the trust store. If emtpy the system
       default algorithm is used.
 
+Key & Trust Store Certificates Table
+      In the certificate table you can view all the certificates of the store. 
+      You can see whether the certificate is valid or not. If you move the
+      mouse cursor over the icon, a message is displayed explaining why the
+      certificate is no longer valid. You will also see information about
+      the alias, subject, algorithm and expiry date. It is possible to add
+      or delete certificates as needed.
+
+
 Other SSL Settings
    Enable insecure SSL and HTTPS connections
       Manipulates the JVMs default SSLSocketFactory, so that untrusted
@@ -189,9 +191,12 @@ Other SSL Settings
       could for instance be useful to generate a Webservice stub from an
       insecure WSDL location.
 
-   Test custom Keystore/Truststore
-      Tests if the specified Keystore/Truststore can be opened and read
-      with the given configuration.
+   Modification of certificates
+      Key and trust stores can also be created and modified (generating and
+      importing certificates and keys) using a graphical key tool such as 
+      KeyStore Explorer or the key tool included in the Java Development Kit
+      (JDK). More information can be found in the JDK documentation.
+   
 
 .. note::
 
