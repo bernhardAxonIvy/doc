@@ -33,10 +33,35 @@ It will be automatically removed from existing processes where it has been prese
 
 In most cases it can be replaced with normal :ref:`html-dialogs`.
 
-AutoProcessStarterEventBean
+
+Programed elements
 ---------------------------
 
 |tag-project-deprecated|
+
+**Streamlined config access**
+
+Editable Program Start, Intermediate Wait and Program Activity bean implementors have to adjust code in order to keep the Editor inscription functional.
+
+Namely we have deprecated the methods to read and write configuration within the Editor implementation.
+It is no longer the Editor implementors responsibility, to maintain the element configuration values.
+Therefore implementors can remove overwritten methods to read and write configurations, 
+but must instead link their UI widgets, to the configuration field by passing its name as input.
+You can adapt this change from our `Example Migration <https://github.com/axonivy-market/kafka-connector/pull/11/files#diff-593779ded8c9bd4c468c5bb873996d599871d68797d228a1d42709421ec0c6cdR230>`_ .
+
+Furthermore, the bean runtime should be adapted, to use the new 
+:public-api:`initialize(IProcessStartEventBeanRuntime runtime, ProgramConfig config) </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html#initialize(ch.ivyteam.ivy.process.eventstart.IProcessStartEventBeanRuntime,ch.ivyteam.ivy.process.extension.ProgramConfig)>` method.
+Configuration parameter values can then be consumed at runtime from the new `getConfig(String)` APIs.
+
+- :public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>`
+- :public-api:`IProcessIntermediateEventBean </ch/ivyteam/ivy/process/intermediateevent/IProcessIntermediateEventBean.html>`
+- :public-api:`IProcessExtension </ch/ivyteam/ivy/process/extension/IProcessExtension.html>`
+
+Until your editable beans are migrated, the old configurations are still functional at runtime. 
+Note though, that Inscription Editors won't work correctly, until you migrated your API calls to 
+the latest :public-api:`ExtensionUiBuilder </ch/ivyteam/ivy/process/extension/ui/ExtensionUiBuilder.html>`.
+
+**AutoProcessStarterEventBean**
 
 The process start event bean :code:`ch.ivyteam.ivy.process.eventstart.beans.AutoProcessStarterEventBean` has been deprecated. Instead use the 
 new :code:`ch.ivyteam.ivy.process.eventstart.beans.TimerBean`.  
