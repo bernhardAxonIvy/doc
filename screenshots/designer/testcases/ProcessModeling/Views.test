@@ -91,23 +91,6 @@ proc jsonInscription{
 	}
 }
 
-proc inscriptionView{
-    OpenView "Inscription View (Alpha)"
-    
-    openInscription -processName "alternativeGateway" 
-        -elementName "Large order" 
-        -elementType "User Dialog"
-    get-window "Inscribe User Dialog" | get-button Cancel | click -metaKeys ""
-    
-    get-view "Inscription View (Alpha)" | click
-    with [find-tab-folder "Inscription View (Alpha)"]{
-        maximize
-        resizeWindow 500 400
-        get-object | captureScreenshot "process-modeling/inscription-view.png"
-        restore
-    }
-}
-
 try{
 	importProject -projectName QuickStartTutorial
 	togglePresentation -flat true
@@ -117,7 +100,6 @@ try{
 	importProject -projectName documentationExampleProject
 	referenceView
 	jsonInscription
-	inscriptionView
 } -finally {
 	deleteProject QuickStartTutorial
 }
