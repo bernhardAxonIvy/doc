@@ -21,9 +21,6 @@ with [get-window "Preferences (Filtered)"] {
 	get-tree | select "Axon Ivy/Process Engine"
 	saveWindowContentScreenshot "designer/preferences-processengine.png"
 	
-	get-tree | select "Axon Ivy/SSL Client"
-	saveWindowContentScreenshot "designer/preferences-sslclient.png"
-	
 	get-button Cancel | click
 }
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
