@@ -403,8 +403,7 @@ from the CMS. See :ref:`here <workflow-categories>`.
 .. note::
 
    A user can be informed by mail if a new task has been created for
-   him. User mail notification can be configured on the Axon Ivy Engine.
-   See :ref:`email-notifications`.
+   him.
 
 .. figure:: /_images/process-elements/tab-task.png
    :alt: Task tab
