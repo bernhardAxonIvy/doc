@@ -427,6 +427,11 @@ Task Options
    finish.
    
    Onle one task of a Task Switch element can activate *Skip tasklist*.
+   
+   **Suppress Notification**
+
+   Usually, a notification is generated when a task is created or assigned.
+   If *Suppress Notification* is enabled, no notifications will be generated for this task.
 
    **Delay**
 
