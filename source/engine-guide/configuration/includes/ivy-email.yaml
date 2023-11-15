@@ -6,7 +6,3 @@ EMail:
     MailAddress: noreply@axonivy.com
     User: someuser
     Password: somepassword
-
-  DailyTaskSummary:
-    # Time of day when the task summary mails will be sent.
-    TriggerTime: "02:00"

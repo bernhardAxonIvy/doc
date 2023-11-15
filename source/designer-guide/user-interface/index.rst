@@ -20,5 +20,4 @@ end page.
    static-jsf-pages
    web-page/index
    default-pages/index
-   email-notifications/index
    branding/index
