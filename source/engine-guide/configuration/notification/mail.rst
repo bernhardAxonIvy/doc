@@ -1,3 +1,5 @@
+.. _notification-mail:
+
 Mail Notifications
 ------------------
 

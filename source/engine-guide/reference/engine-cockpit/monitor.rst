@@ -81,11 +81,38 @@ Engine
 
 The **Engine** pages allow you to monitor some critical indicators of your Axon Ivy Engine:
 
+- **Notifications**: Overview of all user notifications
 - **Sessions**: Overview of open user sessions
 - **Start Events**: Process start events and their metrics 
 - **Intermediate Events**: Process intermediate events and their metrics
 - **Jobs**: Jobs that are periodically executed and their metrics
 - **Cache**: System database caches and their metrics
+
+
+Notifications
+"""""""""""""
+
+The **Notifications** view gives you an overview over all user notifications.
+Based on the notification subscription settings, the Axon Ivy Engine sends
+different notification over the configured notification channels. By 
+:ref:`clicking <engine-cockpit-notification-detail>` on a notification you can
+see more details.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-notifications.png
+
+
+.. _engine-cockpit-notification-detail:
+
+Notification Detail
+"""""""""""""""""""
+
+A notification can be sent to multiple users over different channels. You can inspect
+the state of a notification, whether the notification was successfully
+delivered or not. And many more details, when it has been delivered or the error message
+if the delivery was not successful.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-notification-deliveries.png
+
 
 Sessions
 """"""""

@@ -430,7 +430,7 @@ Task Options
    
    **Suppress Notification**
 
-   Usually, a notification is generated when a task is created or assigned.
+   A notification is generated when a task is created or assigned.
    If *Suppress Notification* is enabled, no notifications will be generated for this task.
 
    **Delay**

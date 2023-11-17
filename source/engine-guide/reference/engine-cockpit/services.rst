@@ -1,6 +1,28 @@
 Services
 --------
 
+Notification Channels
+^^^^^^^^^^^^^^^^^^^^^
+
+The **notification channels** view shows all available channels where user
+notifications can be sent to. Each channel has its own configuration and
+has an own state which indicates if the channel is properly working. You can configure
+a channel by  :ref:`clicking <engine-cockpit-notification-channel-detail>` on it.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-notification-channels.png
+
+
+.. _engine-cockpit-notification-channel-detail:
+
+Notification Channel Detail
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Each channel has its own configuration. A channel can be enabled/disabled and you
+can configure the default subscription settings. Users can override the subscriptions
+in their own profiles.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-notification-channel-mail.png
+
 
 
 Databases
