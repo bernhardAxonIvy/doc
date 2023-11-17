@@ -76,30 +76,15 @@ Web Service Tab
 This tab is used to change the web service specific settings of the
 operation.
 
-.. figure:: /_images/process-elements/web-service-process-start-tab-webservice.png
+.. figure:: /_images/process-inscription/web-service-process-start-tab-webservice.png
    :alt: Web Service Tab
 
    Web Service Tab
 
 Web service
-   The web service section shows the web service's name and
-   authentication options. Click the *Configure...* button to open the
-   configuration dialog. See `inscription mask of the web service
-   process <#ivy.processmodels.elements.tabs.wsprocess>`__ for details.
-
-   .. note::
-
-      Since these settings are defined per web service and not per web
-      service operation, any changes here will have an impact on all the
-      operations within the same process, i.e., web service.
-
-   .. tip::
-
-      Use fully qualified class names to generate specific target
-      namespaces in the WSDL of your web service (e.g.
-      ``ch.ivyteam.svn.CustomerService`` as demonstrated on the
-      screenshot above will result
-      ``targetNamespace="http://srv.ivyteam.ch/"`` in your WSDL)
+   As the web service's name and authentication options are defined for the 
+   whole web service and not per web service operation, you can change these 
+   settings on the :ref:`process-properties-ws` itself.
 
 Responsible role
    You may specify a role that is required to call this start. If the
@@ -124,7 +109,7 @@ a web service call will normally not appear in a task list of a user.
 The values on this tab are therefore only relevant for analyzing the
 finished tasks and not for the task list itself.
 
-.. figure:: /_images/process-elements/web-service-process-start-tab-task.png
+.. figure:: /_images/process-inscription/web-service-process-start-tab-task.png
    :alt: Task Tab
 
    Task Tab
@@ -150,10 +135,6 @@ Case Tab
 On this tab you can configure the Case created by this Web Service
 Process Start. See :ref:`process-element-tab-case`.
 
-.. figure:: /_images/process-elements/web-service-process-start-tab-case.png
-   :alt: Case Tab
-
-   Case Tab
 
 Customization
 -------------

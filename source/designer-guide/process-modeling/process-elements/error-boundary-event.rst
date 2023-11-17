@@ -43,4 +43,4 @@ will catch.
 
 
 .. |image0| image:: /_images/process-elements/error-boundary-event.png
-.. |image2| image:: /_images/process-elements/error-boundary-event-tab-error.png
+.. |image2| image:: /_images/process-inscription/error-boundary-event-tab-error.png

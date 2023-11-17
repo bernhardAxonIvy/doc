@@ -44,7 +44,7 @@ Start Tab
 
 On this tab you define the Java class to be executed.
 
-.. figure:: /_images/process-elements/programInterface_startTab.png
+.. figure:: /_images/process-inscription/program-interface-tab-start.png
    :alt: Start tab
 
    Start tab
@@ -64,14 +64,14 @@ Timeout
    A timout error can be handled by a catching :ref:`process-element-error-start`.
 
 
-Editor Tab
-~~~~~~~~~~
+Configuration Tab
+~~~~~~~~~~~~~~~~~
 
 The custom editor UI provided by the implementation of 
 :public-api:`IUserProcessExtension </ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>`
 allows to configure its execution.
 
-.. figure:: /_images/process-elements/programInterface_editorTab.png
+.. figure:: /_images/process-inscription/program-interface-tab-configuration.png
    :alt: Editor Tab
 
    A custom editor example

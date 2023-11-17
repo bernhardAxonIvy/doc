@@ -22,7 +22,7 @@ Inscription
 Tab Condition
 ~~~~~~~~~~~~~
 
-.. figure:: /_images/process-elements/alternative-tab-condition.png
+.. figure:: /_images/process-inscription/alternative-tab-condition.png
    :alt: Condition tab
 
    Condition tab

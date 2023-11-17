@@ -19,7 +19,7 @@ Inscription
 Request Tab
 ~~~~~~~~~~~
 
-.. figure:: /_images/process-elements/web-service-call-activity-tab-request.png
+.. figure:: /_images/process-inscription/web-service-call-tab-request.png
 
 Client
    Selects the Web Service Client to use. If no client is yet accessible
@@ -52,7 +52,7 @@ Parameters
 Response Tab
 ~~~~~~~~~~~~
 
-.. figure:: /_images/process-elements/web-service-call-activity-tab-response.png
+.. figure:: /_images/process-inscription/web-service-call-tab-response.png
 
 Body
    Maps the result returned by the Web Service Call back to any process

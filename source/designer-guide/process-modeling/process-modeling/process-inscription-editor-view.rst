@@ -1,3 +1,5 @@
+.. _process-inscription-view:
+
 Inscription View
 ----------------
 

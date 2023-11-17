@@ -71,7 +71,7 @@ description. The only difference in comparison to the referenced Task
 tab is, that the Task Switch Gateway can have multiple configurable
 tasks.
 
-.. figure:: /_images/process-elements/task-switch-gateway-tab-task.png
+.. figure:: /_images/process-inscription/task-switch-gateway-tab-task.png
    :alt: Tasks tab
 
    Tasks tab

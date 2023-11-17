@@ -42,4 +42,4 @@ The variable ``result`` contains the created task that are returned by
 the triggered :ref:`process-element-start-request`.
 
 .. |image0| image:: /_images/process-elements/trigger-step.png
-.. |image2| image:: /_images/process-elements/trigger-step-tab-trigger.png
+.. |image2| image:: /_images/process-inscription/trigger-tab-trigger.png

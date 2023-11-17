@@ -24,7 +24,7 @@ Here you define which SQL command you want to execute on which database.
 Depending on the kind of SQL command you are supported during the
 construction of your command.
 
-.. figure:: /_images/process-elements/database-activity-tab-query.png
+.. figure:: /_images/process-inscription/database-tab-query.png
    :alt: Query Tab
 
    Query Tab

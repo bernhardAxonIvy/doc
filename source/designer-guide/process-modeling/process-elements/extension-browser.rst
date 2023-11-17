@@ -18,7 +18,7 @@ Extension Browser
 
 Lists insertable connectors: either OpenAPI RestService Clients or
 :ref:`process-element-sub-process-start` instances which are tagged as connector
-on the :ref:`process-element-tab-name`. Furthermore, it's an easy starting point
+on the :ref:`process-element-tab-general`. Furthermore, it's an easy starting point
 to install additional connectors from the Market.
 
 |image2|

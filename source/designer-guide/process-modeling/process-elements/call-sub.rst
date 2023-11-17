@@ -57,4 +57,4 @@ those fields to the attributes of the outgoing process data:
                
 
 .. |image0| image:: /_images/process-elements/call-sub.png
-.. |image2| image:: /_images/process-elements/call-sub-tab-process-call.png
+.. |image2| image:: /_images/process-inscription/call-sub-tab-process-call.png

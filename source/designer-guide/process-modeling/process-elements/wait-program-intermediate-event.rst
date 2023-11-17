@@ -58,14 +58,14 @@ Timeout
    or continue the waiting task without receiving an intermediate event.
 
 
-Editor Tab
-~~~~~~~~~~
+Configuration Tab
+~~~~~~~~~~~~~~~~~
 
 The custom editor UI provided by the implementation of 
 :public-api:`IProcessIntermediateEventBean </ch/ivyteam/ivy/process/extension/IProcessIntermediateEventBean.html>`
 allows to configure its execution.
 
-.. figure:: /_images/process-elements/waitIntermediateEvent_editorTab.png
+.. figure:: /_images/process-inscription/wait-intermediate-event-tab-configuration.png
    :alt: Editor Tab
 
    A custom editor example
@@ -129,5 +129,5 @@ Example implementation
 
 
 .. |image0| image:: /_images/process-elements/wait-program-intermediate-event.png
-.. |image2| image:: /_images/process-elements/waitIntermediateEvent_eventTab.png
+.. |image2| image:: /_images/process-inscription/wait-intermediate-event-tab-event.png
 .. |image3| image:: /_images/process-elements/button-new-bean-class.png
