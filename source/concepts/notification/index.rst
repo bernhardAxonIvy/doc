@@ -60,7 +60,7 @@ There are also dedicated views in :ref:`engine cockpit <engine-cockpit-notificat
 
 .. note::
 
-    You can suppress a notification for a task assignment :ref:`in the process <process-element-tab-task:>`
+    You can suppress a notification for a task assignment :ref:`in the process <process-element-tab-task>`
     itself. No matter how the subscription management is configured, there is no notification for this given
     task.
 
