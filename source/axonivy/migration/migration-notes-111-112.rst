@@ -7,6 +7,20 @@ Upgrade to 11.2 is only supported from an |ivy-engine| 8.0 and higher.
 If you have an |ivy-engine| older than version 8.0 you need first to migrate to a newer version.
 
 
+Mail Notifications
+------------------
+
+|tag-ops-changed| 
+
+The notification concept has been completely revised and standardized so that notifications can be sent via different channels.
+:ref:`Read more about this here <notification>`. Here are the most important changes:
+
+- Mail notifications can no longer be customized via custom mail standard processes. There is a templating concept for this.
+- There is still a notification for a new task assignment. There is no longer a daily task summary mail.
+- In addition to the mail channel, there is also a web and Microsoft Teams channel.
+- If a user has manually enabled new task notification mails, this setting will be automatically migrated.
+
+
 Application Path
 ----------------
 
