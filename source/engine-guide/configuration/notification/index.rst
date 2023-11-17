@@ -1,3 +1,5 @@
+.. _engine-notification:
+
 Notification
 ============
 

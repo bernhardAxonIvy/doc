@@ -1,6 +1,8 @@
 Services
 --------
 
+.. _engine-cockpit-notification-channels:
+
 Notification Channels
 ^^^^^^^^^^^^^^^^^^^^^
 

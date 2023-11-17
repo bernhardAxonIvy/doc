@@ -89,6 +89,8 @@ The **Engine** pages allow you to monitor some critical indicators of your |ivy-
 - **Cache**: System database caches and their metrics
 
 
+.. _engine-cockpit-notifications:
+
 Notifications
 """""""""""""
 
