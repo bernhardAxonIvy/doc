@@ -79,7 +79,7 @@ below the chart to remove the attribute from the chart.
 Engine
 ^^^^^^
 
-The **Engine** pages allow you to monitor some critical indicators of your Axon Ivy Engine:
+The **Engine** pages allow you to monitor some critical indicators of your |ivy-engine|:
 
 - **Notifications**: Overview of all user notifications
 - **Sessions**: Overview of open user sessions
@@ -92,8 +92,8 @@ The **Engine** pages allow you to monitor some critical indicators of your Axon 
 Notifications
 """""""""""""
 
-The **Notifications** view gives you an overview over all user notifications.
-Based on the notification subscription settings, the Axon Ivy Engine sends
+The **Notifications** view gives you an overview of all user notifications.
+Based on the notification subscription settings, the |ivy-engine| sends
 different notification over the configured notification channels. By 
 :ref:`clicking <engine-cockpit-notification-detail>` on a notification you can
 see more details.
@@ -117,7 +117,7 @@ if the delivery was not successful.
 Sessions
 """"""""
 
-The **Sessions** view gives you an overview over all open user sessions.
+The **Sessions** view gives you an overview of all open user sessions.
 Sessions can be destroyed and you can also see the reason for open sessions,
 especially in the case of a session leak.
 
