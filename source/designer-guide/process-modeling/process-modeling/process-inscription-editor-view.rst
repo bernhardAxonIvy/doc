@@ -3,9 +3,8 @@
 Inscription View
 ----------------
 
-The Inscription View displays the inscription of the currently selected element. 
-This will be the replacement of the current
-:ref:`inscription masks<process-elements>` of each element.
+The Inscription View displays the :ref:`inscription<process-elements>` of the currently selected element. 
+This will be the replacement of the old SWT based inscription masks of each element.
 Note that this is an beta version and the features are not complete yet.
 
 
