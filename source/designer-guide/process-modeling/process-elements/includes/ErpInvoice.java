@@ -3,12 +3,16 @@ package com.axonivy.wf.custom;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.time.Duration;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
+import com.axonivy.wf.custom.ErpPrintJob.Config;
 
 import ch.ivyteam.ivy.process.eventstart.AbstractProcessStartEventBean;
 import ch.ivyteam.ivy.process.extension.ui.ExtensionUiBuilder;
@@ -25,11 +29,11 @@ public class ErpInvoice extends AbstractProcessStartEventBean {
 
   @Override
   public void poll() {
-    Properties configs = PropertiesUtil.createProperties(getConfiguration());
-    int seconds = Integer.parseInt(configs.getProperty(Config.INTERVAL, "60"));
-    getEventBeanRuntime().setPollTimeInterval(TimeUnit.SECONDS.toMillis(seconds));
+    int seconds = Optional.ofNullable(getConfig().get(Config.INTERVAL))
+      .map(Integer::parseInt).orElse(60);
+    getEventBeanRuntime().poll().every(Duration.ofSeconds(seconds));
 
-    String path = configs.getProperty(Config.PATH, "");
+    String path = getConfig().get(Config.PATH);
     try (Stream<Path> csv = Files.list(Path.of(path))) {
       List<Path> updates = csv.collect(Collectors.toList());
       startProcess("new stock items", Map.of("sheets", updates));
@@ -40,7 +44,10 @@ public class ErpInvoice extends AbstractProcessStartEventBean {
 
   private void startProcess(String firingReason, Map<String, Object> parameters) {
     try {
-      getEventBeanRuntime().fireProcessStartEventRequest(null, firingReason, parameters);
+      getEventBeanRuntime().processStarter()
+        .withReason(firingReason)
+        .withParameters(parameters)
+        .start();
     } catch (RequestException ex) {
       getEventBeanRuntime().getRuntimeLogLogger().error("Failed to init ERP driven process", ex);
     }
@@ -48,31 +55,15 @@ public class ErpInvoice extends AbstractProcessStartEventBean {
 
   public static class Editor extends UiEditorExtension {
 
-    private IUiFieldEditor path;
-    private IUiFieldEditor interval;
-
     @Override
     public void initUiFields(ExtensionUiBuilder ui) {
       ui.label("Path to read .CSV stock-item changes:").create();
-      path = ui.textField().create();
+      ui.textField(Config.PATH).create();
 
       ui.label("Interval in seconds to check for changes:").create();
-      interval = ui.scriptField().requireType(Integer.class).create();
+      ui.scriptField(Config.INTERVAL).requireType(Integer.class).create();
     }
 
-    @Override
-    protected void loadUiDataFromConfiguration() {
-      path.setText(getBeanConfigurationProperty(Config.PATH));
-      interval.setText(getBeanConfigurationProperty(Config.INTERVAL));
-    }
-
-    @Override
-    protected boolean saveUiDataToConfiguration() {
-      clearBeanConfiguration();
-      setBeanConfigurationProperty(Config.PATH, path.getText());
-      setBeanConfigurationProperty(Config.INTERVAL, interval.getText());
-      return true;
-    }
   }
 
   private interface Config {
