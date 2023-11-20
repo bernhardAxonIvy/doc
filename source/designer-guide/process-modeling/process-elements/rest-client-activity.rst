@@ -21,7 +21,7 @@ Request Tab
 
 On this tab you can configure the call to the REST service.
 
-.. figure:: /_images/process-elements/rest-client-activity-tab-request-get.png
+.. figure:: /_images/process-inscription/rest-client-tab-request-get.png
    :alt: REST Client Request tab
 
    REST Client Request tab
@@ -48,8 +48,6 @@ Target
 
       If this browser is not displaying any method: Use the :ref:`rest-clients-generator-wizard`
       and generate the Open API client in advance.
-
-      |image16|
 
    -  **Parameters**: Use this table to define query parameters that
       should be added to the URI. Or switch the type to 'template' in
@@ -111,7 +109,7 @@ Response Tab
 
 On this tab you can consume response from the REST service.
 
-.. figure:: /_images/process-elements/rest-client-activity-tab-response.png
+.. figure:: /_images/process-inscription/rest-client-tab-response.png
    :alt: REST Client Response tab
 
    REST Client Response tab
@@ -277,17 +275,16 @@ as an example:
 ``ch.ivyteam.ivy.rest.client.authentication.HttpBasicAuthenticationFeature``.
 
 .. |image0| image:: /_images/process-elements/rest-client-activity.png
-.. |image1| image:: /_images/process-elements/rest-client-activity-request-parameters.png
-.. |image2| image:: /_images/process-elements/rest-client-activity-request-headers.png
-.. |image3| image:: /_images/process-elements/rest-client-activity-request-properties.png
-.. |image4| image:: /_images/process-elements/rest-client-activity-input-raw-json.png
-.. |image5| image:: /_images/process-elements/rest-client-activity-input-form-string.png
-.. |image6| image:: /_images/process-elements/rest-client-activity-input-entity-json.png
+.. |image1| image:: /_images/process-inscription/rest-client-tab-request-parameters.png
+.. |image2| image:: /_images/process-inscription/rest-client-tab-request-headers.png
+.. |image3| image:: /_images/process-inscription/rest-client-tab-request-properties.png
+.. |image4| image:: /_images/process-inscription/rest-client-tab-request-body-raw.png
+.. |image5| image:: /_images/process-inscription/rest-client-tab-request-body-form.png
+.. |image6| image:: /_images/process-inscription/rest-client-tab-request-body-entity.png
 .. |image9| image:: /_images/process-elements/rest-client-activity-consume-data-class-structure.png
 .. |image10| image:: /_images/process-elements/rest-client-activity-consume-data-class.png
 .. |image11| image:: /_images/process-elements/rest-client-activity-consume-class-generator-site.png
 .. |image12| image:: /_images/process-elements/rest-client-activity-consume-generated-sources.png
 .. |image13| image:: /_images/process-elements/rest-client-activity-consume-generated-class.png
 .. |image14| image:: /_images/process-elements/rest-client-activity-consume-nodes-manually.png
-.. |image15| image:: /_images/process-elements/rest-client-activity-tab-request-jax-rs.png
-.. |image16| image:: /_images/process-elements/rest-client-activity-oas3-browser.png
+.. |image15| image:: /_images/process-inscription/rest-client-tab-request-jaxrs.png

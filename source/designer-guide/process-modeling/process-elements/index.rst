@@ -16,31 +16,26 @@ pressed down, move the mouse cursor to the target element and finally
 release the mouse button. Reconnecting or removal is only possible by
 using the corresponding entries in the popup menu.
 
-Every process element can be configured with its inscription mask. Open
-this mask by double-clicking on the element, use the popup-menu or press
-the ``i``-key whenever the element is selected. The inscription mask is
-divided into multiple tabs and the order of the tabs indicates the
+Every process element can be configured with its inscription view. Open
+this view by double-clicking on the element, use the popup-menu or press
+the ``i``-key whenever the element is selected. The inscription view is
+divided into multiple sections and the order of the sections indicates the
 sequence of processing. For example in the figure below, the Output
-mapping (the second tab in the middle) is performed before the code in
-the third tab is executed.
+mapping is performed before the code in the third section is executed.
 
-.. figure:: /_images/process-elements/example-inscription-mask.png
+.. figure:: /_images/process-inscription/example-inscription-view.png
    :alt: An exemplary inscription mask
 
    An exemplary inscription mask
 
-The icons on the tab indicate their state:
+The dots on the accordions indicate their state:
 
--  |image0| the tab is empty
-
--  |image1| the tab has been changed by the user (default assignments
+-  (grey) the section has been changed by the user (default assignments
    are not considered as user entries)
 
--  |image2| the tab contains errors
+-  (yellow) the tab contains warnings
 
-.. |image0| image:: /_images/process-elements/bullet-grey.png
-.. |image1| image:: /_images/process-elements/bullet-black.png
-.. |image2| image:: /_images/process-elements/bullet-red.png
+-  (red) the tab contains errors
 
 
 Common Tabs

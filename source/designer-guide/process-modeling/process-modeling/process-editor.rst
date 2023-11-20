@@ -71,8 +71,8 @@ Create Element:
 Right
 ^^^^^
 
-Inscribe process:
-   Opens the :ref:`process-properties` editor of the process.
+Inscribe:
+   Opens or closes the :ref:`process-inscription-view` of the process.
 
 Open data class:
    Opens the :ref:`data-class-editor` of the process.
@@ -150,7 +150,7 @@ Start Process:
 .. include:: _info-quick-action.rst
 
 Edit:
-   Opens the inscription mask for the current selected element.
+   Opens the legacy inscription mask for the current selected element.
 
 Search callers of this process:
    *Only available on some start events*

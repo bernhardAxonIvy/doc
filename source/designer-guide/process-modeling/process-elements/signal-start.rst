@@ -44,5 +44,5 @@ Case
       Gives access to the signal event.
 
 .. |image0| image:: /_images/process-elements/signal-start-event.png
-.. |image2| image:: /_images/process-elements/signal-start-event-tab-signal.png
+.. |image2| image:: /_images/process-inscription/signal-start-event-tab-signal.png
 

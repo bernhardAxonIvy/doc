@@ -42,4 +42,4 @@ will catch.
       Error Code, Cause and CallStack.
 
 .. |image0| image:: /_images/process-elements/error-start-event.png
-.. |image2| image:: /_images/process-elements/error-start-event-tab-error.png
+.. |image2| image:: /_images/process-inscription/error-start-event-tab-error.png

@@ -28,7 +28,7 @@ In this tab the e-mail header is defined. You can use the :ref:`cms`
 and the process data (the ``in`` variable) to compose
 the header fields.
 
-.. figure:: /_images/process-elements/mail-tab-header.png
+.. figure:: /_images/process-inscription/mail-tab-header.png
    :alt: Header Tab
 
    Header Tab
@@ -67,7 +67,7 @@ Tab Content
 
 In this tab the e-mail content is defined.
 
-.. figure:: /_images/process-elements/mail-tab-content.png
+.. figure:: /_images/process-inscription/mail-tab-content.png
    :alt: Content Tab
 
    Content Tab
@@ -91,7 +91,7 @@ Alternatively files can be selected from the CMS.
 Finally, files can be added by stating a ``String`` path. It will by resolved by
 searching the name as file in your :ref:`file area <ivyscript-reference-file>`.
 
-.. figure:: /_images/process-elements/mail-tab-attachments.png
+.. figure:: /_images/process-inscription/mail-tab-attachments.png
    :alt: Attachment Tab
 
    Attachment Tab

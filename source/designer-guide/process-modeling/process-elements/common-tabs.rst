@@ -5,15 +5,15 @@ This section describes the most common tabs that are used on more than
 one element inscription mask.
 
 
-.. _process-element-tab-name:
+.. _process-element-tab-general:
 
-Name Tab
----------
+General Tab
+-----------
 
 This tab is included in the inscription mask of all process elements and
 contains the name and a description of the element.
 
-.. figure:: /_images/process-elements/tab-name.png
+.. figure:: /_images/process-inscription/common-tab-general.png
    :alt: Name tab
 
    Name tab
@@ -47,7 +47,7 @@ Means/Documents
    more.
 
 
-.. _process-element-tab-name-tags:
+.. _process-element-tab-general-tags:
 
 Tags
 ~~~~~~
@@ -84,7 +84,7 @@ or only of single member of it.
    the User Dialog Data Class and in a process element it is the project
    Data Class (or the one which was assigned to the process).
 
-.. figure:: /_images/process-elements/tab-output.png
+.. figure:: /_images/process-inscription/common-tab-output.png
    :alt: Output tab
 
    Output tab
@@ -123,7 +123,7 @@ The code tab is part of almost all inscription masks and allows the user
 to define the semantics (behavior) of the corresponding process element
 with the built-in :ref:`ivyscript`.
 
-.. figure:: /_images/process-elements/tab-code.png
+.. figure:: /_images/process-inscription/common-tab-code.png
    :alt: Code Tab
 
    Code Tab
@@ -166,7 +166,7 @@ process. The signature is a definition of the name with the parameter
 types and its order. Elements like :ref:`process-element-call-sub` or :ref:`process-element-trigger-step` 
 are referenced to this signature.
 
-.. figure:: /_images/process-elements/tab-start.png
+.. figure:: /_images/process-inscription/common-tab-start.png
    :alt: Start Tab
 
    Start Tab
@@ -237,7 +237,7 @@ This tab is used to define the values that will be returned to the
 caller when the process ends. All logic in this tab will be executed
 when the end element is reached. E.g., when the :ref:`process-element-user-dialog-exit-end` is reached.
 
-.. figure:: /_images/process-elements/tab-result.png
+.. figure:: /_images/process-inscription/common-tab-result.png
    :alt: Result Tab
 
    Result Tab
@@ -270,7 +270,7 @@ expensive operations or have slow response times.
 
 For more information about this topic, please refer to the :ref:`data-cache` section.
 
-.. figure:: /_images/process-elements/tab-data-cache.png
+.. figure:: /_images/process-inscription/common-tab-data-cache.png
    :alt: Data Cache tab
 
    Data Cache tab
@@ -356,7 +356,7 @@ corresponding case.
    Look at the :ref:`workflow concept <workflow-categories>` for some more
    information about categorization.
 
-.. figure:: /_images/process-elements/request-start-tab-case.png
+.. figure:: /_images/process-inscription/common-tab-case.png
    :alt: Case Tab
 
    Case Tab
@@ -364,7 +364,7 @@ corresponding case.
 .. _process-element-tab-case-custom-fields:
 
 Case Custom Fields
-   .. figure:: /_images/process-elements/tab-task-custom-fields.png
+   .. figure:: /_images/process-inscription/common-section-task-custom-fields.png
       :alt: Task Custom Fields
 
       Case Custom Fields
@@ -405,13 +405,13 @@ from the CMS. See :ref:`here <workflow-categories>`.
    A user can be informed by mail if a new task has been created for
    him.
 
-.. figure:: /_images/process-elements/tab-task.png
+.. figure:: /_images/process-inscription/common-tab-task.png
    :alt: Task tab
 
    Task tab
 
 Task Options
-   .. figure:: /_images/process-elements/tab-task-options.png
+   .. figure:: /_images/process-inscription/common-section-task-options.png
       :alt: Task Options
 
       Task Options
@@ -442,7 +442,7 @@ Task Options
    blocked.
 
 Task Expiry
-   .. figure:: /_images/process-elements/tab-task-expiry.png
+   .. figure:: /_images/process-inscription/common-section-task-expiry.png
       :alt: Task Expiry
 
       Task Expiry
@@ -480,7 +480,7 @@ Task Expiry
 .. _process-element-tab-task-custom-fields:
 
 Task Custom Fields
-   .. figure:: /_images/process-elements/tab-task-custom-fields.png
+   .. figure:: /_images/process-inscription/common-section-task-custom-fields.png
       :alt: Task Custom Fields
 
       Task Custom Fields
@@ -498,7 +498,7 @@ Task Custom Fields
 .. _process-element-tab-task-code:
 
 Task Code
-   .. figure:: /_images/process-elements/tab-task-code.png
+   .. figure:: /_images/process-inscription/common-section-task-code.png
       :alt: Task Code
 
       Task Code

@@ -12,7 +12,7 @@ right-click and select *inscription* from the pop-up menu.
 Name and Description
 ~~~~~~~~~~~~~~~~~~~~
 
-The common :ref:`process-element-tab-name` allows
+The common :ref:`process-element-tab-general` allows
 to specify name, description and associated documents for each process.
 
 Process Data
@@ -50,6 +50,9 @@ the end user on the engine or not.
 
       Per default this is allowed for all business processes but not for
       the User Dialog Logic processes.
+
+
+.. _process-properties-ws:
 
 Web Service Process
 ~~~~~~~~~~~~~~~~~~~
@@ -104,6 +107,6 @@ HTTP Basic
    already handles user authentication, the user is passed through to
    Axon Ivy without doing an additional HTTP Basic authentication.
 
-.. |process-data-tab| image:: /_images/process-modeling/process-data-tab.png
-.. |process-permissions-tab| image:: /_images/process-modeling/process-permissions-tab.png
-.. |ws-process-tab| image:: /_images/process-modeling/ws-process-tab.png
+.. |process-data-tab| image:: /_images/process-inscription/process-tab-process-data.png
+.. |process-permissions-tab| image:: /_images/process-inscription/process-tab-permissions.png
+.. |ws-process-tab| image:: /_images/process-inscription/ws-process-tab-ws-process.png

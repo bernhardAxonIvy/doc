@@ -24,7 +24,7 @@ Start Tab
 
 On this tab you define the Java class to be executed.
 
-.. figure:: /_images/process-elements/programStart_startTab.png
+.. figure:: /_images/process-inscription/program-start-tab-start.png
    :alt: Start tab
 
    Start tab
@@ -43,15 +43,15 @@ Permission
    trigger a process.
 
 
-Editor Tab
-~~~~~~~~~~
+Configuration Tab
+~~~~~~~~~~~~~~~~~
 
 The custom editor UI provided by the implementation of 
 :public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>`
 to configure its execution.
 
-.. figure:: /_images/process-elements/programStart_editorTab.png
-   :alt: Editor Tab
+.. figure:: /_images/process-inscription/program-start-tab-configuration.png
+   :alt: Configuration Tab
 
    A custom editor example
 

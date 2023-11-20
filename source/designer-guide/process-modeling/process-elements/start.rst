@@ -76,7 +76,7 @@ Name, description and category
 will be used as :ref:`case <glossar-case>` name, description and category if not otherwise configured on the 
 :ref:`process-element-tab-case`. 
 
-.. figure:: /_images/process-elements/request-start-tab-request.png
+.. figure:: /_images/process-inscription/request-start-tab-request.png
 
 Enablement
    If *Yes, this start can be started with a HTTP-request/ -Link* is
@@ -284,5 +284,5 @@ See :ref:`process-element-tab-case` in the Common Tabs
 section.
 
 .. |image0| image:: /_images/process-elements/request-start.png
-.. |image4| image:: /_images/process-elements/request-start-tab-trigger.png
-.. |image6| image:: /_images/process-elements/request-start-tab-task.png
+.. |image4| image:: /_images/process-inscription/request-start-tab-trigger.png
+.. |image6| image:: /_images/process-inscription/request-start-tab-task.png
