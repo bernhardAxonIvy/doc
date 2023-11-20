@@ -1,10 +1,10 @@
 Microsoft Teams Notifications
------------------
+-----------------------------
 
 This channel provides notifications via Microsoft Teams. If you enable this channel, you also need to:
 
 - :ref:`Create a technical user in the Azure AD which serves as the sender of notifications<technical-user>`.
-- :ref:`Create an application in the Azure AD where the technical user is able to log in and send messages through<application>`.
+- :ref:`Create an application in the Azure AD where the technical user is able to log in and send messages through<microsoft-teams-notification-application`.
 - Users who shall be notified need to be synced with Azure AD.
 
 **Template**
@@ -40,7 +40,7 @@ Add the mail address (**TechnicalUser.Mail**) and password
 (**TechnicalUser.Password**) of the technical user to the configuration of the
 Microsoft Teams Notification Channel.
 
-.. _application:
+.. _microsoft-teams-notification-application:
 .. rubric:: Application
 
 Visit the `Microsoft Entra admin center <https://entra.microsoft.com/>`_ and
