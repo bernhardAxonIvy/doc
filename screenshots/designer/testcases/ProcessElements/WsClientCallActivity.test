@@ -18,40 +18,6 @@ importProject -projectName "documentationExampleProject"
 
 let [val processName "JaxWsServiceCall"][val type "Web Service Call Activity"]
 {
-	openInscription
-		-processName $processName
-		-elementName "get GEO IP"
-		-elementType $type
-	captureInscription
-		-elementType $type
-		-tabName "Request"
-		-width 500 -height 430
-		-screenshot "web-service-call-activity-tab-request.png"
-
-	openInscription
-		-processName $processName
-		-elementName "get GEO IP"
-		-elementType $type
-	captureInscription
-		-elementType $type
-		-tabName "Response"
-		-width 650 -height 700
-		-screenshot "web-service-call-activity-tab-response.png"
-
-
-	with [openInscription
-		-processName $processName
-		-elementName "get GEO IP cached"
-		-elementType $type]
-	{
-		resizeWindow -width 551 -height 580
-    	get-tab-folder | get-tab-item "Data Cache" | click
-    	with [get-control Any -after [get-label "Inscribe.*"] -index 9] {
-            captureInscriptionPart -screenshot "tab-data-cache.png"
-    	}
-	    get-button Cancel | click
-	}
-
 	with [openInscription
 		-processName $processName
 		-elementName "get GEO IP"
