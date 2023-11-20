@@ -12,6 +12,7 @@ Built-in channels are the following:
 
    web
    mail
+   microsoft-teams
 
 By default, only the web channel is active, which displays all notifications.
 Each channel can be configured individually.
