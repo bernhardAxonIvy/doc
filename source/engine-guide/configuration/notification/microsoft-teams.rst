@@ -70,7 +70,8 @@ newly registered application. Navigate to **Properties** in the section
 
 Navigate to **Users and Groups** in the section **Manage**. Click on **Add
 user/group** > **Users and groups** and search for, select, and assign the
-technical user you created before. (See :ref:`Technical User<technical-user>`)
+technical user you created before. (See :ref:`Technical
+User<microsoft-teams-notifications-technical-user>`)
 
 .. figure:: /_images/notifications/application-3.png
   :alt: Application - Users and groups
