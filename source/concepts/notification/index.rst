@@ -94,9 +94,9 @@ can be modified there directly. The CMS structure is as follows:
             Subject: New Task '<%= ivy.html.escape(ivy.task.name) %>' for <%= ivy.html.escape(ivy.task.activator().displayName()) %>
 
             # mail channel needs a content
-            # big templates can be placed in their own file
-            # e.g. [engineDir]/system/cms/Notification/new-task/Templates/mail/Content.html
-            Content: 
+            Content: Hello <%= ivy.session.getSessionUser().getFullName() %><br/>You have this new task: <%= ivy.html.escape(ivy.task.name) %> that has been assigned to: <%= ivy.html.escape(ivy.task.activator().displayName())%>
+            # A big template can be placed in an own file 
+            # here: [engineDir]/system/cms/Notification/new-task/Templates/mail/Content.html
 
 
 You can use ivy macros and the following variables in templates:
