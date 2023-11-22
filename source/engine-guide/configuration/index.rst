@@ -20,7 +20,9 @@ To craft your own configuration you would typically copy values from our
 see te :ref:`configuration-file-reference` and adjust them according to your needs. 
 Alternative, you can also copy and modify whole **templates**,
 which are provided under :file:`[enginDir]/configuration/templates`.
-Of course, most settings can also be adjusted in our :ref:`engine-cockpit`.
+
+As an Editor for the files, we recommend VS-Code or the engine-cockpit :ref:`engine-cockpit-config-editor`.
+Note that, most settings can also be adjusted with a UI in our :ref:`engine-cockpit`.
 
 
 .. rubric:: Configure your engine
