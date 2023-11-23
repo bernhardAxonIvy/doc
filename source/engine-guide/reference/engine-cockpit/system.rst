@@ -210,21 +210,21 @@ Other SSL Settings
 Config File Editor
 ^^^^^^^^^^^^^^^^^^^^^
 
-Configuration applied in the engine-cockpit are stored in files.
+Configurations applied in the Engine Cockpit are stored in files.
 The Config File Editor lets you review and modify these configurations.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-config-file-editor.png
 
-On the right upper corner you can select the configuration file to be shown.
+In the right upper corner, you can select the configuration file to be shown.
 
 While editing our prominent YAML files, you have a rich set of authoring features at hand:
 
 - **Validation**: keys used within the YAML files are validated against the official schema. So invalid values are being blamed with a warning marker.
-- **Completion**: by pressing CTRL+Space the context completor helps you to identify and select valid configuration values or keys.
+- **Completion**: by pressing `CTRL+Space` the context completor helps you to identify and select valid configuration values or keys.
 - **Help**: by hovering over keys you get context-specific documentation right where you are editing.
 - **Formatting:** YAML content has strict formatting rules, and the editor takes care that whitespace indents are correct and in effect.
 
-Note that all our text based configuration files are editable, though the authoring featureset may be limited on some.
+Note that all our text-based configuration files are editable, though the authoring features may be limited on some.
 
 .. _engine-cockpit-cluster:
 
