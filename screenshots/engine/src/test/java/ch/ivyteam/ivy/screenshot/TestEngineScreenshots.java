@@ -71,21 +71,13 @@ public class TestEngineScreenshots {
     $$(".js-process-start-list-item > form > .process-item").find(text("Setup Axon Ivy Engine")).shouldBe(visible).click();
     $(By.id("form:user-task-dyna-form")).find("textarea").shouldBe(visible).sendKeys("Hi");
     $(By.id("form:ok-btn")).shouldBe(visible).click();
+    $(".dashboard__body").shouldBe(visible);
 
     open(EngineUrl.create().path("logout").toUrl());
     loginToPortal("guest");
 
     $(By.className("dashboard-tasks--table")).findAll("td.dashboard-tasks__name").shouldHave(itemWithText("Hi"));
-    removeWelcomeGuide();
     takeScreenshot("engine-portal-home", 500);
-  }
-
-  private void removeWelcomeGuide() {
-    if ($(By.id("welcome-portal-guide-component:welcome-portal-guide")).is(visible)) {
-      PrimeUi.selectBooleanCheckbox(By.id("welcome-portal-guide-component:dont-show-again-chbox")).setChecked();
-      $(By.id("welcome-portal-guide-component:finish")).shouldBe(visible).click();
-      $(By.id("welcome-portal-guide-component:welcome-portal-guide")).shouldNotBe(visible);
-    }
   }
 
   private void loginToPortal(String user) {
