@@ -98,7 +98,7 @@ view the complete configuration file.
 
 .. _engine-cockpit-ssl:
 
-SSL Client Settings
+SSL Settings
 ^^^^^^^^^^^^^^^^^^^^
 
 These settings define the key and trust stores to be used for SSL/TLS
