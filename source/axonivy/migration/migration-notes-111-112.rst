@@ -26,13 +26,14 @@ Application Path
 
 |tag-ops-changed| 
 
-In Axon Ivy 7.0 and earlier you were able to define the installation path of an application over
-the Admin UI when creating an application. This path was stored in Axon Ivy System Database (`IWA_Application.FileDirectory`).
-Since Axon Ivy 8.0 new applications will be stored under the configurable path `Data.AppDirectory` in :ref:`ivy.yaml <ivy-yaml>`
+With Axon Ivy 7.0 and earlier you were able to define the installation path of an application. 
+The Admin UI allowed this input on the wizard to create a new application. 
+This path was stored in the Axon Ivy System Database (`IWA_Application.FileDirectory`).
+Since Axon Ivy 8.0, new applications will be stored under the configurable path `Data.AppDirectory` in :ref:`ivy.yaml <ivy-yaml>`
 which points by default to `applications`.
 
-We now have removed the legacy support for `IWA_Application.FilePath`. If some applications was created with Axon 7.0
-or earlier, you need to move them manually at that place.
+We now have removed the legacy support for `IWA_Application.FilePath`. If some applications were created with Axon 7.0
+or earlier, you need to move them manually to the `Data.AppDirectory` location.
 
 
 
