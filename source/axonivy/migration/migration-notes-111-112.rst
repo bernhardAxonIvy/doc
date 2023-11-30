@@ -49,6 +49,23 @@ It will be automatically removed from existing processes where it has been prese
 In most cases it can be replaced with normal :ref:`html-dialogs`.
 
 
+
+Preference pages
+---------------------------
+
+|tag-project-changed|
+
+The Email and SSL preference pages to set engine settings during development have been removed from the Designer.
+In older version they were accessible under the menu: `Ẁindow` > `Preferences` > `Axon Ivy`.
+
+As a replacement, the Engine-Cockpit is now shipped with the Designer. 
+The Engine-Cockpit can be reached by clicking on the 'gear wheel' icon on top of the included Web-Browser.
+
+Within you can open the :ref:`engine-cockpit-system-configuration` and filter for `Mail` to inspect and set configurable values.
+Furthermore, there is a new view to define your :ref:`engine-cockpit-ssl`.
+
+
+
 Programed elements
 ---------------------------
 
