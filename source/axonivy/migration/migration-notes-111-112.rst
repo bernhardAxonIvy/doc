@@ -16,9 +16,11 @@ The notification concept has been completely revised and standardized so that no
 :ref:`Read more about this here <notification>`. Here are the most important changes:
 
 - Mail notifications can no longer be customized via custom mail standard processes. There is a templating concept for this.
+  You may have used a custom mail process to suppress notifications. This can now be done directly in the :ref:`process <process-element-tab-task>` with :code:`Suppress Notification`.
 - There is still a notification for a new task assignment. There is no longer a daily task summary mail.
 - In addition to the mail channel, there is also a web and Microsoft Teams channel.
-- If a user has manually enabled new task notification mails, this setting will be automatically migrated.
+- If a user has manually enabled new task notification mails, this setting will be automatically migrated. 
+  However, the mail channel is disabled by default and needs to be enabled so that users get new task notification mails in the :ref:`engine cockpit <engine-cockpit-notification-channels>`.
 
 
 Application Path
