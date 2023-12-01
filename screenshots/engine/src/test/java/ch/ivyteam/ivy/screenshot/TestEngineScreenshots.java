@@ -3,24 +3,22 @@ package ch.ivyteam.ivy.screenshot;
 import static com.codeborne.selenide.CollectionCondition.itemWithText;
 import static com.codeborne.selenide.CollectionCondition.size;
 import static com.codeborne.selenide.CollectionCondition.texts;
-import static com.codeborne.selenide.Condition.enabled;
-import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.Selenide.open;
-
-import java.time.Duration;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Keys;
 
 import com.axonivy.ivy.webtest.IvyWebTest;
 import com.axonivy.ivy.webtest.engine.EngineUrl;
 import com.axonivy.ivy.webtest.primeui.PrimeUi;
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.WebDriverRunner;
@@ -53,81 +51,44 @@ public class TestEngineScreenshots {
   }
 
   @Test
-  void portalExpress() {
-    open(EngineUrl.create().path("starts").toUrl());
+  void portal() {
+    open(EngineUrl.create().app(DEMO_PORTAL).path("starts").toUrl());
     loginToPortal("demo");
-    $(By.id("process-widget:create-express-workflow")).should(visible, Duration.ofSeconds(60));
-    takeScreenshot("engine-portal-starts", 300);
+    $(By.id("process-widget:image-process-container")).shouldBe(visible);
+    takeScreenshot("engine-portal-starts", 700);
+    open(EngineUrl.create().app(DEMO_PORTAL).process("/portal-user-examples/170321BD7F5539D6/start.ivp")
+            .queryParam("embedInFrame", "true").toUrl());
+    $(".task-title").shouldHave(Condition.text("Create leave request"));
+    Selenide.switchTo().frame("iFrame");
+    PrimeUi.selectOne(By.id("leave-request:leave-type")).selectItemByLabel("Annual Leave");
+    $(By.id("leave-request:from_input")).shouldBe(visible).sendKeys("23/12/2023 16:00");
+    //Hack to close strange datepicker
+    $(By.id("leave-request:from_panel")).shouldBe(visible);
+    $(By.id("leave-request:from_input")).sendKeys(Keys.ESCAPE);
 
-    defineProcessProperties();
-    defineProcessStep();
-    defineSecondProcessStep();
-    takeScreenshot("engine-portal-express", 900);
-    $(By.id("form:save")).shouldBe(visible).click();
-    $(".dashboard__body").shouldBe(visible);
+    $(By.id("leave-request:to_input")).shouldBe(visible).sendKeys("03/01/2024 8:00");
+    //Hack to close strange datepicker
+    $(By.id("leave-request:to_panel")).shouldBe(visible);
+    $(By.id("leave-request:to_input")).sendKeys(Keys.ESCAPE);
 
-    open(EngineUrl.create().path("starts").toUrl());
-    $(By.id("process-widget:process-view-mode:view-mode-selection:2")).parent().click(); // Select compact mode
-    $$(".js-process-start-list-item > form > .process-item").find(text("Setup Axon Ivy Engine")).shouldBe(visible).click();
-    $(By.id("form:user-task-dyna-form")).find("textarea").shouldBe(visible).sendKeys("Hi");
-    $(By.id("form:ok-btn")).shouldBe(visible).click();
-    $(".dashboard__body").shouldBe(visible);
+    PrimeUi.selectOne(By.id("leave-request:approver")).selectItemByLabel("Portal Guest User");
+    $(By.id("leave-request:requester-comment")).shouldBe(visible).sendKeys("Christmas Holiday");
+    takeScreenshot("engine-portal-form", 900);
 
-    open(EngineUrl.create().path("logout").toUrl());
+    $(By.id("leave-request:button-submit")).should(visible).click();
+
+    open(EngineUrl.create().app(DEMO_PORTAL).path("logout").toUrl());
     loginToPortal("guest");
 
-    $(By.className("dashboard-tasks--table")).findAll("td.dashboard-tasks__name").shouldHave(itemWithText("Hi"));
-    takeScreenshot("engine-portal-home", 500);
+    $(By.className("dashboard-tasks--table")).findAll("td.dashboard-tasks__name").shouldHave(
+            itemWithText("Approval for leave request of Portal Demo User"));
+    takeScreenshot("engine-portal-tasks", 600);
   }
 
   private void loginToPortal(String user) {
     $(By.id("login:login-form:username")).shouldBe(visible).sendKeys(user);
     $(By.id("login:login-form:password")).shouldBe(visible).sendKeys(user);
     $(By.id("login:login-form:login-command")).shouldBe(visible).click();
-  }
-
-  private void defineProcessProperties() {
-    $(By.id("process-widget:create-express-workflow")).click();
-    $(By.id("form:process-name")).shouldBe(visible).sendKeys("Setup Axon Ivy Engine");
-    $(By.id("form:process-description")).shouldBe(visible).sendKeys("Please setup a new Axon Ivy Engine on your prod server!");
-    $(By.id("form:user-interface-type")).shouldBe(visible).click();
-    $(By.id("delete-all-defined-tasks-warning-ok")).shouldBe(visible).click();
-  }
-
-  private void defineProcessStep() {
-    $(By.id("form:defined-tasks-list:0:default-task-name")).shouldBe(visible).sendKeys("Hello world!");
-    $(By.id("form:defined-tasks-list:0:default-task-responsible-link")).shouldBe(visible).click();
-    defineGroupAssingeeForProcessStep();
-    $(By.id("form:defined-tasks-list:0:default-task-responsible-link")).shouldHave(text("Everybody"));
-  }
-
-  private void defineSecondProcessStep() {
-    $(By.id("form:defined-tasks-list:0:add-step-button")).shouldBe(visible).click();
-    $(By.id("form:defined-tasks-list:1:default-task-name")).shouldBe(visible).sendKeys("Hi");
-    $(By.id("form:defined-tasks-list:1:default-task-responsible-link")).shouldBe(visible).click();
-    defineUserAssingeeForProcessStep();
-    $(By.id("form:defined-tasks-list:1:default-task-responsible-link")).shouldHave(text("Portal Guest User"));
-  }
-
-  private void defineUserAssingeeForProcessStep() {
-    $(By.id("assignee-selection-form:user-selection-component:user-selection_input")).shouldBe(visible).sendKeys("guest");
-    $(By.id("assignee-selection-form:user-selection-component:user-selection_panel")).shouldBe(visible)
-            .find("tr[data-item-label='Portal Guest User']").click();
-    addAssignee("Portal Guest User");
-  }
-
-  private void defineGroupAssingeeForProcessStep() {
-    PrimeUi.selectOneRadio(By.id("assignee-selection-form:assignee-type")).selectItemByLabel("Group");
-    $(By.id("assignee-selection-form:role-selection-component:role-selection")).find(".ui-icon-triangle-1-s").shouldBe(visible).click();
-    $(By.id("assignee-selection-form:role-selection-component:role-selection_panel")).shouldBe(visible)
-            .findAll(".name-after-avatar").findBy(text("Everybody")).click();
-    addAssignee("Everybody");
-  }
-
-  private void addAssignee(String expectedAssignee) {
-    $(By.id("assignee-selection-form:add-assignee-button")).shouldBe(visible, enabled).click();
-    $(By.id("assignee-selection-form:selected-assignee-fieldset")).shouldHave(text(expectedAssignee));
-    $(By.id("assignee-selection-form:save-assignee-button")).shouldBe(visible).click();
   }
 
   public void takeScreenshot(String fileName, int height) {
