@@ -1,4 +1,725 @@
+## 11.2.0 (2023-12-04)
 
+We strongly recommend to install this update release because it fixes security issues!
+
+### Improvements
+
+* [XIVY-12876](https://1ivy.atlassian.net/browse/XIVY-12876) Upgrade library Guava to the latest version 32.1.3  
+* [XIVY-12875](https://1ivy.atlassian.net/browse/XIVY-12875) Upgrade library Log4j to the latest version 2.21.1  
+* [XIVY-12874](https://1ivy.atlassian.net/browse/XIVY-12874) Upgrade library Apache Tomcat to the latest version 9.0.83 
+* [XIVY-12873](https://1ivy.atlassian.net/browse/XIVY-12873) Upgrade library CXF to the latest version 3.5.7 
+* [XIVY-12872](https://1ivy.atlassian.net/browse/XIVY-12872) Upgrade library OpenTelemetry to the latest version 1.32.0 
+* [XIVY-12871](https://1ivy.atlassian.net/browse/XIVY-12871) Upgrade library MariaDB JDBC driver to the latest version 3.3.0 
+* [XIVY-12870](https://1ivy.atlassian.net/browse/XIVY-12870) Upgrade library Swagger core to the latest version 2.2.19 
+* [XIVY-12869](https://1ivy.atlassian.net/browse/XIVY-12869) Upgrade library classgraph to the latest version 4.8.164 
+* [XIVY-12749](https://1ivy.atlassian.net/browse/XIVY-12749) Support Azure onPremisesExtensionAttributes in user property synchronization 
+* [XIVY-12665](https://1ivy.atlassian.net/browse/XIVY-12665) Make total fields limit of business data configurable in ivy.yaml 
+* [XIVY-12663](https://1ivy.atlassian.net/browse/XIVY-12663) Upgrade to Primefaces 11.0.12 
+* [XIVY-12575](https://1ivy.atlassian.net/browse/XIVY-12575) New option on engine launchers (AxonIvyEngine.exe, AxonIvyEngineService.exe, AxonIvyEngine, etc) to restart the engine 
+* [XIVY-12543](https://1ivy.atlassian.net/browse/XIVY-12543) Update JVMs to the latest October 2023 PSU releases <span class="badge badge-pill badge-success badge-security">security</span>
+* [XIVY-12501](https://1ivy.atlassian.net/browse/XIVY-12501) Allow to deploy application zip file that only contains configuration (e.g. app.yaml) without any project 
+* [XIVY-12396](https://1ivy.atlassian.net/browse/XIVY-12396) Store packed projects as .iar files instead of .zip files on the engine 
+* [XIVY-12359](https://1ivy.atlassian.net/browse/XIVY-12359) Cover more task cancel scenarios with IvyWorkflowBean 
+* [XIVY-12353](https://1ivy.atlassian.net/browse/XIVY-12353) Support Postgres 16 for the system database 
+* [XIVY-12244](https://1ivy.atlassian.net/browse/XIVY-12244) Allow to add a role to an unmanaged user, even if the role is managed by an identity provider 
+* [XIVY-12219](https://1ivy.atlassian.net/browse/XIVY-12219) Trace mail communication 
+* [XIVY-12053](https://1ivy.atlassian.net/browse/XIVY-12053) ControlCenter and AxonIvyEngineService should run as Administrator by default 
+* [XIVY-11671](https://1ivy.atlassian.net/browse/XIVY-11671) Move session files to the work directory 
+* [XIVY-11669](https://1ivy.atlassian.net/browse/XIVY-11669) Tool to migrate applications to another security context 
+* [XIVY-11597](https://1ivy.atlassian.net/browse/XIVY-11597) Add HEALTCHECK to axonivy/axonivy-engine docker image 
+* [XIVY-11531](https://1ivy.atlassian.net/browse/XIVY-11531) Support MariaDB 10.11 LTS and drop support for MariaDB 10.3 
+* [XIVY-11515](https://1ivy.atlassian.net/browse/XIVY-11515) Web-Tester Login API to streamline authentication of a user 
+* [XIVY-11493](https://1ivy.atlassian.net/browse/XIVY-11493) Support JAVA_OPTS_IVY_SYSTEM as VM option on Windows 
+* [XIVY-11368](https://1ivy.atlassian.net/browse/XIVY-11368) Improve user synchronization logs 
+* [XIVY-9347](https://1ivy.atlassian.net/browse/XIVY-9347) UUID for task and case 
+* [XIVY-9197](https://1ivy.atlassian.net/browse/XIVY-9197) Axon Ivy Engine Docker image for linux/arm64/v8 OS architecture (MAC) 
+* [XIVY-6929](https://1ivy.atlassian.net/browse/XIVY-6929) ViewExpiredException if a user clicks on a close link and afterward on another link on the same dialog 
+* [IVYPORTAL-15848](https://1ivy.atlassian.net/browse/IVYPORTAL-15848) Dashboard - Cover Loading... by Skeleton for Task-List & Case-List Widget 
+* [IVYPORTAL-15702](https://1ivy.atlassian.net/browse/IVYPORTAL-15702) Improve "deployment of dashboards"-Documentation 
+* [IVYPORTAL-15294](https://1ivy.atlassian.net/browse/IVYPORTAL-15294) API to create a link to the task and case details page 
+* [IVYPORTAL-15289](https://1ivy.atlassian.net/browse/IVYPORTAL-15289) Support process order in process start widget on dashboard  
+* [IVYPORTAL-15215](https://1ivy.atlassian.net/browse/IVYPORTAL-15215) Support Translation of News in the News Widget with DeepL 
+* [IVYPORTAL-15126](https://1ivy.atlassian.net/browse/IVYPORTAL-15126) Improve pagination for case list on the dashboard 
+* [IVYPORTAL-15124](https://1ivy.atlassian.net/browse/IVYPORTAL-15124) Dashboard Tasklist  - Export To Excel Function 
+* [IVYPORTAL-15121](https://1ivy.atlassian.net/browse/IVYPORTAL-15121) DeepL Portal-Dashboard Translation Support 
+* [IVYPORTAL-15023](https://1ivy.atlassian.net/browse/IVYPORTAL-15023) Adapt mutiple languages for full task and case list, excel file 
+* [IVYPORTAL-15004](https://1ivy.atlassian.net/browse/IVYPORTAL-15004) Improve Business Case Details Function 
+* [IVYPORTAL-14897](https://1ivy.atlassian.net/browse/IVYPORTAL-14897) Improve Dashboard Widget Order and Spacing / Responsiveness 
+* [IVYPORTAL-14469](https://1ivy.atlassian.net/browse/IVYPORTAL-14469) Dashboard Import-Option on the UI 
+* [IVYPORTAL-14468](https://1ivy.atlassian.net/browse/IVYPORTAL-14468) Dashboard Export-Option on the UI 
+* [IVYPORTAL-14138](https://1ivy.atlassian.net/browse/IVYPORTAL-14138) Dashboard Multi Language Support 
+
+### New Features
+
+* [XIVY-2938](https://1ivy.atlassian.net/browse/XIVY-2938) Timer start event with CRON job like configuration 
+* [XIVY-4071](https://1ivy.atlassian.net/browse/XIVY-4071) List Jobs in Engine Cockpit 
+* [XIVY-4422](https://1ivy.atlassian.net/browse/XIVY-4422) Suppress task notification for certain tasks 
+* [XIVY-5352](https://1ivy.atlassian.net/browse/XIVY-5352) Remove the application file directory column from the System DB 
+* [XIVY-7646](https://1ivy.atlassian.net/browse/XIVY-7646) Add cron jobs to our job framework 
+* [XIVY-8147](https://1ivy.atlassian.net/browse/XIVY-8147) Polish serialization of rarely used elements 
+* [XIVY-8868](https://1ivy.atlassian.net/browse/XIVY-8868) Migrate to Apple's new notary tool to keep the signing chain functional 
+* [XIVY-9173](https://1ivy.atlassian.net/browse/XIVY-9173) Migrate security system config to identity provider config 
+* [XIVY-9182](https://1ivy.atlassian.net/browse/XIVY-9182) Provide LDAP/JNDI default configurations with the new config approach 
+* [XIVY-9850](https://1ivy.atlassian.net/browse/XIVY-9850) Remove outdated DataWrapper bundle 
+* [XIVY-9860](https://1ivy.atlassian.net/browse/XIVY-9860) Remove Z-Centric code outside of the 'components' bundle 
+* [XIVY-10514](https://1ivy.atlassian.net/browse/XIVY-10514) Add an extension point for Managers 
+* [XIVY-10526](https://1ivy.atlassian.net/browse/XIVY-10526) Support debugging Elasticsearch problems in Engine Cockpit 
+* [XIVY-10544](https://1ivy.atlassian.net/browse/XIVY-10544) Add App and PMV to inscription view protocol context 
+* [XIVY-10713](https://1ivy.atlassian.net/browse/XIVY-10713) Add S3 as blob storage provider 
+* [XIVY-10757](https://1ivy.atlassian.net/browse/XIVY-10757) The first entry in CMS should be created with the language of the local system/user instead of English 
+* [XIVY-10761](https://1ivy.atlassian.net/browse/XIVY-10761) Upgrade to tycho 3.0 
+* [XIVY-10816](https://1ivy.atlassian.net/browse/XIVY-10816) Wait a certain time on the availabilty on external Elasticsearch by startup to install the templates 
+* [XIVY-10873](https://1ivy.atlassian.net/browse/XIVY-10873) Add Callable Start element in the new inscription view 
+* [XIVY-10875](https://1ivy.atlassian.net/browse/XIVY-10875) Add E-Mail element in the new inscription view 
+* [XIVY-10937](https://1ivy.atlassian.net/browse/XIVY-10937) Document networking requirements for cluster environment 
+* [XIVY-11194](https://1ivy.atlassian.net/browse/XIVY-11194) Replace all daily jobs with CRON jobs 
+* [XIVY-11200](https://1ivy.atlassian.net/browse/XIVY-11200) LSP backend for Alternative-Gateway 
+* [XIVY-11201](https://1ivy.atlassian.net/browse/XIVY-11201) Browser for Azure Active Directory security system 
+* [XIVY-11213](https://1ivy.atlassian.net/browse/XIVY-11213) Java Flight Recorder view in Engine Cockpit 
+* [XIVY-11276](https://1ivy.atlassian.net/browse/XIVY-11276) Remove support for WebPage activity 
+* [XIVY-11279](https://1ivy.atlassian.net/browse/XIVY-11279) Adapt  UI-Mockups for inscription view 
+* [XIVY-11282](https://1ivy.atlassian.net/browse/XIVY-11282) Improve configuration file migration by adding a file version  
+* [XIVY-11350](https://1ivy.atlassian.net/browse/XIVY-11350) The Market shows the wrong versions for the current Designer 
+* [XIVY-11369](https://1ivy.atlassian.net/browse/XIVY-11369) OpenRPC specification for our inscription LSP 
+* [XIVY-11441](https://1ivy.atlassian.net/browse/XIVY-11441) Add validation and content-assist to the Engine Cockpit Configuration File Editor 
+* [XIVY-11447](https://1ivy.atlassian.net/browse/XIVY-11447) Add Alternative gateway element to new inscription view 
+* [XIVY-11460](https://1ivy.atlassian.net/browse/XIVY-11460) Undo support for new inscription view 
+* [XIVY-11461](https://1ivy.atlassian.net/browse/XIVY-11461) Evaluate an HTML/Text template technology/library 
+* [XIVY-11462](https://1ivy.atlassian.net/browse/XIVY-11462) Design and prototype notification service 
+* [XIVY-11470](https://1ivy.atlassian.net/browse/XIVY-11470) Improve validation message if a process identifier exists multiple times 
+* [XIVY-11485](https://1ivy.atlassian.net/browse/XIVY-11485) Provide an additional path to identify the affected widget in validation messages 
+* [XIVY-11491](https://1ivy.atlassian.net/browse/XIVY-11491) Java workflow statistic API 
+* [XIVY-11494](https://1ivy.atlassian.net/browse/XIVY-11494) Add boundary elements to the new inscription view 
+* [XIVY-11495](https://1ivy.atlassian.net/browse/XIVY-11495) Add Signal and Error Catcher start elements to the new Inscription View 
+* [XIVY-11519](https://1ivy.atlassian.net/browse/XIVY-11519) Add more statistics and debug information for jobs in Engine Cockpit 
+* [XIVY-11521](https://1ivy.atlassian.net/browse/XIVY-11521) Add generic actions to the inscription LSP protocol 
+* [XIVY-11557](https://1ivy.atlassian.net/browse/XIVY-11557) Upgrade Build-Infrastructure to maven 3.9 
+* [XIVY-11583](https://1ivy.atlassian.net/browse/XIVY-11583) Streamline Start-Event names 
+* [XIVY-11598](https://1ivy.atlassian.net/browse/XIVY-11598) Prototype attribute browser for the new inscription view 
+* [XIVY-11599](https://1ivy.atlassian.net/browse/XIVY-11599) Add start event and intermediate event views to Engine Cockpit 
+* [XIVY-11623](https://1ivy.atlassian.net/browse/XIVY-11623) Support own reader thread for poll and asynchronous process execution in start event beans 
+* [XIVY-11638](https://1ivy.atlassian.net/browse/XIVY-11638) Add a notification framework with Web notifications 
+* [XIVY-11639](https://1ivy.atlassian.net/browse/XIVY-11639) Send New-Task Notification via Notification Service 
+* [XIVY-11668](https://1ivy.atlassian.net/browse/XIVY-11668) View to analyze memory leak problems (class histogram) in Engine Cockpit 
+* [XIVY-11675](https://1ivy.atlassian.net/browse/XIVY-11675) Macro editor for new inscription view 
+* [XIVY-11703](https://1ivy.atlassian.net/browse/XIVY-11703) Add StartRequest element to the new Inscription View (Request, Trigger sections) 
+* [XIVY-11704](https://1ivy.atlassian.net/browse/XIVY-11704) Add WebService start element to the new Inscription View (Task, WebService) 
+* [XIVY-11705](https://1ivy.atlassian.net/browse/XIVY-11705) Add Program (Start, Intermediate, Activity) elements to the new Inscription View (Start / Event, Editor) 
+* [XIVY-11707](https://1ivy.atlassian.net/browse/XIVY-11707) Add process inscription to the new Inscription View 
+* [XIVY-11710](https://1ivy.atlassian.net/browse/XIVY-11710) Add Error End element to the new inscription view 
+* [XIVY-11711](https://1ivy.atlassian.net/browse/XIVY-11711) Add database activity element to the new Inscription view 
+* [XIVY-11712](https://1ivy.atlassian.net/browse/XIVY-11712) Add Web Service activity element to the new inscription view 
+* [XIVY-11713](https://1ivy.atlassian.net/browse/XIVY-11713) Add Rest Client Call activity element to the new Inscription View 
+* [XIVY-11719](https://1ivy.atlassian.net/browse/XIVY-11719) Add Spanish and complete German and French translation for Primefaces components 
+* [XIVY-11767](https://1ivy.atlassian.net/browse/XIVY-11767) API to call Call Subs with a certain signature in all released PMVs of a security context 
+* [XIVY-11798](https://1ivy.atlassian.net/browse/XIVY-11798) Add CMS browser to the inscription view (as blueprint/preparation for the integration of other browsers) 
+* [XIVY-11848](https://1ivy.atlassian.net/browse/XIVY-11848) Build engine launcher for Windows with MSBuild Visual Studio 2022 
+* [XIVY-11945](https://1ivy.atlassian.net/browse/XIVY-11945) Rollout validation messages for every inscription view 
+* [XIVY-11946](https://1ivy.atlassian.net/browse/XIVY-11946) Add a mail notification channel 
+* [XIVY-11947](https://1ivy.atlassian.net/browse/XIVY-11947) Add notification subscription management to the Engine Cockpit 
+* [XIVY-12007](https://1ivy.atlassian.net/browse/XIVY-12007) Reliable Delivery Queue for Notifications 
+* [XIVY-12024](https://1ivy.atlassian.net/browse/XIVY-12024) Pimp Macro read mode inputs by replacing macro expressions with badges in new Inscription View 
+* [XIVY-12042](https://1ivy.atlassian.net/browse/XIVY-12042) Improve documentation about variable password type evaluation 
+* [XIVY-12117](https://1ivy.atlassian.net/browse/XIVY-12117) Allow to delete roles in Engine Cockpit 
+* [XIVY-12207](https://1ivy.atlassian.net/browse/XIVY-12207) Add a concept chapter about Notifications to the documentation  
+* [XIVY-12212](https://1ivy.atlassian.net/browse/XIVY-12212) View for User Substitutes and Absences in Engine Cockpit 
+* [XIVY-12217](https://1ivy.atlassian.net/browse/XIVY-12217) Drop Mail Settings Preferences in Axon Ivy Designer 
+* [XIVY-12242](https://1ivy.atlassian.net/browse/XIVY-12242) Cache default configuration of Identity Provider in-memory to boost performance <span class="badge badge-pill badge-success badge-performance">performance</span>
+* [XIVY-12245](https://1ivy.atlassian.net/browse/XIVY-12245) Prototype a MS Teams notification channel 
+* [XIVY-12253](https://1ivy.atlassian.net/browse/XIVY-12253) IvyScript LSP completion hints for known types (Duration, BpmError, etc) 
+* [XIVY-12261](https://1ivy.atlassian.net/browse/XIVY-12261) Add SSL view in Engine-Cockpit to configure SSL settings 
+* [XIVY-12290](https://1ivy.atlassian.net/browse/XIVY-12290) Improve Content Management System (CMS) performance <span class="badge badge-pill badge-success badge-performance">performance</span>
+* [XIVY-12355](https://1ivy.atlassian.net/browse/XIVY-12355) Reduce the size of OpenAPI-browser (swagger-ui web jar) 
+* [XIVY-12367](https://1ivy.atlassian.net/browse/XIVY-12367) Cleanup stored notifications in system database periodically 
+* [XIVY-12390](https://1ivy.atlassian.net/browse/XIVY-12390) Remove existing mail notification infrastructure 
+* [XIVY-12409](https://1ivy.atlassian.net/browse/XIVY-12409) Add a user state filter to the roles panel in the Engine Cockpit 
+* [XIVY-12423](https://1ivy.atlassian.net/browse/XIVY-12423) Improve custom fields meta documentation 
+* [XIVY-12490](https://1ivy.atlassian.net/browse/XIVY-12490) Update third-party libraries (like CXF, SnakeYaml) 
+* [XIVY-12493](https://1ivy.atlassian.net/browse/XIVY-12493) Update HTML Dialog chapter in Designer guide 
+* [XIVY-12538](https://1ivy.atlassian.net/browse/XIVY-12538) Custom Editor for Program elements with new Inscription 
+* [XIVY-12541](https://1ivy.atlassian.net/browse/XIVY-12541) Notification templates for simple notification messages 
+* [XIVY-12548](https://1ivy.atlassian.net/browse/XIVY-12548) Add data type browser to the new Inscription View 
+* [XIVY-12552](https://1ivy.atlassian.net/browse/XIVY-12552) Discuss inscription view UI design 
+* [XIVY-12557](https://1ivy.atlassian.net/browse/XIVY-12557) Simple MS Teams Notification Channel (with a technical user) 
+* [XIVY-12574](https://1ivy.atlassian.net/browse/XIVY-12574) Restart the engine from the Engine Cockpit 
+* [XIVY-12602](https://1ivy.atlassian.net/browse/XIVY-12602) Move inscription view into the process editor as Master/Detail 
+* [XIVY-12667](https://1ivy.atlassian.net/browse/XIVY-12667) Threema connector to send secure messages 
+* [XIVY-12684](https://1ivy.atlassian.net/browse/XIVY-12684) Release 11.2 
+* [XIVY-12741](https://1ivy.atlassian.net/browse/XIVY-12741) News Page, Migration Notes for 11.2 
+* [XIVY-12800](https://1ivy.atlassian.net/browse/XIVY-12800) Ensure consistent UI/UX for Inscription View 
+* [XIVY-12807](https://1ivy.atlassian.net/browse/XIVY-12807) Rest client trace should also display request data if an entity is used 
+* [XIVY-12844](https://1ivy.atlassian.net/browse/XIVY-12844) Boost deployment by no longer loading workflow resources into the memory of the system app while deploying 
+* [XIVY-12861](https://1ivy.atlassian.net/browse/XIVY-12861) Improve the user synchronization log with the reason why a user is synchronized 
+* [XIVY-12866](https://1ivy.atlassian.net/browse/XIVY-12866) Upgrade library victools to the latest version 1.32.0 
+* [XIVY-12867](https://1ivy.atlassian.net/browse/XIVY-12867) Upgrade library maven-model to the latest version 3.9.5 
+* [XIVY-12868](https://1ivy.atlassian.net/browse/XIVY-12868) Upgrade library networknt.validator to the latest version 1.0.87 
+* [IVYPORTAL-14234](https://1ivy.atlassian.net/browse/IVYPORTAL-14234) Enhance external Link Widget by Image 
+* [IVYPORTAL-14348](https://1ivy.atlassian.net/browse/IVYPORTAL-14348) Move the public APIs of portal to portal-components 
+* [IVYPORTAL-14382](https://1ivy.atlassian.net/browse/IVYPORTAL-14382) Simplify dashboard configuration journey 
+* [IVYPORTAL-14450](https://1ivy.atlassian.net/browse/IVYPORTAL-14450) Remove library of example process start images from portal 
+* [IVYPORTAL-14457](https://1ivy.atlassian.net/browse/IVYPORTAL-14457) Configuration of Global Search Scope <span class="badge badge-pill badge-success badge-performance">performance</span>
+* [IVYPORTAL-14459](https://1ivy.atlassian.net/browse/IVYPORTAL-14459) Prevent embedded pages to grab focus on dashboard 
+* [IVYPORTAL-14577](https://1ivy.atlassian.net/browse/IVYPORTAL-14577) Make express an independent marketplace item 
+* [IVYPORTAL-14594](https://1ivy.atlassian.net/browse/IVYPORTAL-14594) Remove old non-iframe support 
+* [IVYPORTAL-14663](https://1ivy.atlassian.net/browse/IVYPORTAL-14663) Introduce CaseBusinessState 
+* [IVYPORTAL-14667](https://1ivy.atlassian.net/browse/IVYPORTAL-14667) UI updates for the News Widget 
+* [IVYPORTAL-14813](https://1ivy.atlassian.net/browse/IVYPORTAL-14813) Forgotten Password - Change Password Message <span class="badge badge-pill badge-success badge-security">security</span>
+* [IVYPORTAL-14837](https://1ivy.atlassian.net/browse/IVYPORTAL-14837) Document Custom Fields used by the Portal 
+* [IVYPORTAL-14903](https://1ivy.atlassian.net/browse/IVYPORTAL-14903) Introduce TaskBusinessState 
+* [IVYPORTAL-14962](https://1ivy.atlassian.net/browse/IVYPORTAL-14962) Update documentation about creating/displaying notes in Portal 
+* [IVYPORTAL-14981](https://1ivy.atlassian.net/browse/IVYPORTAL-14981) Text of Task and Case widget on dashboard edit mode is disappear 
+* [IVYPORTAL-15010](https://1ivy.atlassian.net/browse/IVYPORTAL-15010) Dashboard Case list widget: Export To Excel Function 
+* [IVYPORTAL-15014](https://1ivy.atlassian.net/browse/IVYPORTAL-15014) Consolidate status names of the Dashboard Task widget and its export file 
+* [IVYPORTAL-15019](https://1ivy.atlassian.net/browse/IVYPORTAL-15019) Improve ExternalLink process on Dashboard 
+* [IVYPORTAL-15025](https://1ivy.atlassian.net/browse/IVYPORTAL-15025) Improve pagination for Dashboard Task list widget 
+* [IVYPORTAL-15027](https://1ivy.atlassian.net/browse/IVYPORTAL-15027) Improve alignment for the Dashboard Process widget 
+* [IVYPORTAL-15047](https://1ivy.atlassian.net/browse/IVYPORTAL-15047) TaskTemplate-8 using Freya theme instead of Serenity 
+* [IVYPORTAL-15053](https://1ivy.atlassian.net/browse/IVYPORTAL-15053) Process start in dashboard not align correctly 
+* [IVYPORTAL-15058](https://1ivy.atlassian.net/browse/IVYPORTAL-15058) Some issues on Task Analysis page 
+* [IVYPORTAL-15065](https://1ivy.atlassian.net/browse/IVYPORTAL-15065) Trivial UI bugs 
+* [IVYPORTAL-15091](https://1ivy.atlassian.net/browse/IVYPORTAL-15091) Add attribute "emptyMessage" for UserSelection, RoleSelection components 
+* [IVYPORTAL-15098](https://1ivy.atlassian.net/browse/IVYPORTAL-15098) Error when open statistic info of Case widget on dashboard 
+* [IVYPORTAL-15102](https://1ivy.atlassian.net/browse/IVYPORTAL-15102) Use UUID for task and case process parameters <span class="badge badge-pill badge-success badge-security">security</span>
+* [IVYPORTAL-15120](https://1ivy.atlassian.net/browse/IVYPORTAL-15120) Calendar in create absence dialog not consistent 
+* [IVYPORTAL-15132](https://1ivy.atlassian.net/browse/IVYPORTAL-15132) Allow SVG as a picture format within the portal (External Link, Welcome Widget, etc)  
+* [IVYPORTAL-15163](https://1ivy.atlassian.net/browse/IVYPORTAL-15163) Migrate old portal customization - Step 1 Removal 
+* [IVYPORTAL-15171](https://1ivy.atlassian.net/browse/IVYPORTAL-15171) Disable "Clear Expiry" function when task is destroyed 
+* [IVYPORTAL-15173](https://1ivy.atlassian.net/browse/IVYPORTAL-15173) Remove obsolete date format from My Profile 
+* [IVYPORTAL-15175](https://1ivy.atlassian.net/browse/IVYPORTAL-15175) Remove primefaces-calendar-en-us.js 
+* [IVYPORTAL-15180](https://1ivy.atlassian.net/browse/IVYPORTAL-15180) Improve absences UI 
+* [IVYPORTAL-15195](https://1ivy.atlassian.net/browse/IVYPORTAL-15195) Case name is not nice 
+* [IVYPORTAL-15198](https://1ivy.atlassian.net/browse/IVYPORTAL-15198) Improve text when cannot find the process for Custom widget 
+* [IVYPORTAL-15209](https://1ivy.atlassian.net/browse/IVYPORTAL-15209) Update Portal Cronjob Trigger document 
+* [IVYPORTAL-15211](https://1ivy.atlassian.net/browse/IVYPORTAL-15211) Migrate old portal customization - Step 2 Callable Approach Implementation 
+* [IVYPORTAL-15212](https://1ivy.atlassian.net/browse/IVYPORTAL-15212) Adapt External Link import image base64 data format 
+* [IVYPORTAL-15272](https://1ivy.atlassian.net/browse/IVYPORTAL-15272) Adapt dashboard migration 
+* [IVYPORTAL-15295](https://1ivy.atlassian.net/browse/IVYPORTAL-15295) Process start widget, Custom widget, Process Viewer - Rework "error" screen 
+* [IVYPORTAL-15296](https://1ivy.atlassian.net/browse/IVYPORTAL-15296) Small typo in the documentation 
+* [IVYPORTAL-15305](https://1ivy.atlassian.net/browse/IVYPORTAL-15305) Task details page alignment is not nice 
+* [IVYPORTAL-15306](https://1ivy.atlassian.net/browse/IVYPORTAL-15306) Text color of task/case state different in dashboard dark mode 
+* [IVYPORTAL-15308](https://1ivy.atlassian.net/browse/IVYPORTAL-15308) Portal Customization Rework - load submenu items 
+* [IVYPORTAL-15309](https://1ivy.atlassian.net/browse/IVYPORTAL-15309) Process Order in Process start Widget on Dashboard - Part 2 Custom Order 
+* [IVYPORTAL-15318](https://1ivy.atlassian.net/browse/IVYPORTAL-15318) Update UI for ProcessViewer widget when cannot find process 
+* [IVYPORTAL-15321](https://1ivy.atlassian.net/browse/IVYPORTAL-15321) Adapt multi language and translation for Import dashboard 
+* [IVYPORTAL-15323](https://1ivy.atlassian.net/browse/IVYPORTAL-15323) List available Custom Dashboard Widget 
+* [IVYPORTAL-15326](https://1ivy.atlassian.net/browse/IVYPORTAL-15326) Migrate old portal customization - Step 2 - Update Developer Examples 
+* [IVYPORTAL-15360](https://1ivy.atlassian.net/browse/IVYPORTAL-15360) Integration of Dashboards by URL (PRES Support) 
+* [IVYPORTAL-15379](https://1ivy.atlassian.net/browse/IVYPORTAL-15379) Boolean Value hidden in Portal Admin Config 
+* [IVYPORTAL-15386](https://1ivy.atlassian.net/browse/IVYPORTAL-15386) Documentation lacks new Portal Deployment Approach for version 10 
+* [IVYPORTAL-15417](https://1ivy.atlassian.net/browse/IVYPORTAL-15417) Migrate Task Business State 
+* [IVYPORTAL-15428](https://1ivy.atlassian.net/browse/IVYPORTAL-15428) Hide more Information Link when not additonal Information is shown 
+* [IVYPORTAL-15445](https://1ivy.atlassian.net/browse/IVYPORTAL-15445) Performance: Portal load dashboard even when opening task list, task details 
+* [IVYPORTAL-15446](https://1ivy.atlassian.net/browse/IVYPORTAL-15446) Improve absences in Portal  
+* [IVYPORTAL-15452](https://1ivy.atlassian.net/browse/IVYPORTAL-15452) Share-Button in Case and Task Details 
+* [IVYPORTAL-15453](https://1ivy.atlassian.net/browse/IVYPORTAL-15453) Dashboard direct link support 
+* [IVYPORTAL-15485](https://1ivy.atlassian.net/browse/IVYPORTAL-15485) Multilanguage title cannot apply to the user language title 
+* [IVYPORTAL-15487](https://1ivy.atlassian.net/browse/IVYPORTAL-15487) Overwrite HTML Dialog Customization Support  
+* [IVYPORTAL-15489](https://1ivy.atlassian.net/browse/IVYPORTAL-15489) Custom Task Delegate & Document processes Customization Support 
+* [IVYPORTAL-15490](https://1ivy.atlassian.net/browse/IVYPORTAL-15490) Autofocus on Dashboard Widget Filter Pop-up 
+* [IVYPORTAL-15518](https://1ivy.atlassian.net/browse/IVYPORTAL-15518) Unify PojoConverter 
+* [IVYPORTAL-15551](https://1ivy.atlassian.net/browse/IVYPORTAL-15551) Notifications Basic UI & Lazy Loading 
+* [IVYPORTAL-15552](https://1ivy.atlassian.net/browse/IVYPORTAL-15552) Notifications Part 3 - (Channel subspriptions etc) 
+* [IVYPORTAL-15561](https://1ivy.atlassian.net/browse/IVYPORTAL-15561) Refactor portal-test (gui-tests) to selenide 1/2 
+* [IVYPORTAL-15568](https://1ivy.atlassian.net/browse/IVYPORTAL-15568) Notifications Part 2 - Mobile, Filters & Bulk-Read 
+* [IVYPORTAL-15611](https://1ivy.atlassian.net/browse/IVYPORTAL-15611) Remove Express related code out of Portal-component 
+* [IVYPORTAL-15620](https://1ivy.atlassian.net/browse/IVYPORTAL-15620) External URL stealing autofocus 
+* [IVYPORTAL-15647](https://1ivy.atlassian.net/browse/IVYPORTAL-15647)  Filter item line is broken  
+* [IVYPORTAL-15680](https://1ivy.atlassian.net/browse/IVYPORTAL-15680) Remove legacy dashboard support and documentation 
+* [IVYPORTAL-15703](https://1ivy.atlassian.net/browse/IVYPORTAL-15703) Change export/import of dashboards on the ui to be an array 
+* [IVYPORTAL-15816](https://1ivy.atlassian.net/browse/IVYPORTAL-15816) Remove dashboard JSON "styleClass": "new-widget" 
+* [IVYPORTAL-15826](https://1ivy.atlassian.net/browse/IVYPORTAL-15826) Remove legacy feature "add language" from Portal 8 
+* [IVYPORTAL-15829](https://1ivy.atlassian.net/browse/IVYPORTAL-15829) Remove legacy dashboard examples from portal developer examples 
+* [IVYPORTAL-15830](https://1ivy.atlassian.net/browse/IVYPORTAL-15830) More complex filters on case widget view mode 
+* [IVYPORTAL-15839](https://1ivy.atlassian.net/browse/IVYPORTAL-15839) Clean up duplicated code related to ProcessStartAPI, ProcessStartCollector, ProcessStartUtils 
+* [IVYPORTAL-15841](https://1ivy.atlassian.net/browse/IVYPORTAL-15841) Update documentation related to Portal single and multi applications 
+* [IVYPORTAL-15940](https://1ivy.atlassian.net/browse/IVYPORTAL-15940) Remove polyfill in Portal 
+* [IVYPORTAL-15943](https://1ivy.atlassian.net/browse/IVYPORTAL-15943) Correct documentation related to reorder dashboard 
+* [IVYPORTAL-15957](https://1ivy.atlassian.net/browse/IVYPORTAL-15957) Add new widget dialog not good when statistic chart has long name 
+* [IVYPORTAL-15959](https://1ivy.atlassian.net/browse/IVYPORTAL-15959) Replace portal quartz by provided core functions 
+* [IVYPORTAL-15970](https://1ivy.atlassian.net/browse/IVYPORTAL-15970) UI overlapped when scaling Process Viewer 
+* [IVYPORTAL-15972](https://1ivy.atlassian.net/browse/IVYPORTAL-15972) Update External Link document relate imageContent 
+* [IVYPORTAL-15984](https://1ivy.atlassian.net/browse/IVYPORTAL-15984) Dashboard - Cover Loading... by Skeleton for News Feed, Welcome Widget, Process Viewer 
+* [IVYPORTAL-15991](https://1ivy.atlassian.net/browse/IVYPORTAL-15991) Notification "Only unread" button does not working as expected 
+* [IVYPORTAL-15992](https://1ivy.atlassian.net/browse/IVYPORTAL-15992) Migration for image type 
+* [IVYPORTAL-16024](https://1ivy.atlassian.net/browse/IVYPORTAL-16024) Process chain with custom icons 
+* [IVYPORTAL-16053](https://1ivy.atlassian.net/browse/IVYPORTAL-16053) Adapt new 11.2 APIs for ProgrammedStarts 
+* [IVYPORTAL-16112](https://1ivy.atlassian.net/browse/IVYPORTAL-16112) Text on process widget not clear 
+* [IVYPORTAL-16117](https://1ivy.atlassian.net/browse/IVYPORTAL-16117) Error in Case widget information 
+* [IVYPORTAL-16127](https://1ivy.atlassian.net/browse/IVYPORTAL-16127) Remove usages of email notification settings 
+* [IVYPORTAL-16150](https://1ivy.atlassian.net/browse/IVYPORTAL-16150) Check notification render 
+* [IVYPORTAL-16160](https://1ivy.atlassian.net/browse/IVYPORTAL-16160) Hide Notification Buttons without function 
+* [IVYPORTAL-16161](https://1ivy.atlassian.net/browse/IVYPORTAL-16161) Rework notifications UI 
+
+### Bugs
+
+* [XIVY-3858](https://1ivy.atlassian.net/browse/XIVY-3858) Managed Beans not working after deleting 'processes' folder 
+* [XIVY-3885](https://1ivy.atlassian.net/browse/XIVY-3885) Mail Notification does not work with a disabled HTTP port 
+* [XIVY-4481](https://1ivy.atlassian.net/browse/XIVY-4481) Uploaded Files does not recognize when the username has changed  
+* [XIVY-4535](https://1ivy.atlassian.net/browse/XIVY-4535) If I reconfigure the log file location in log4j2.xml cockpit will not show any log files 
+* [XIVY-5095](https://1ivy.atlassian.net/browse/XIVY-5095) MySQL can not be migrated if the database name contains "-" 
+* [XIVY-7745](https://1ivy.atlassian.net/browse/XIVY-7745) ActiveDirectory configuration of user properties to AD attribute is not case-insensitive 
+* [XIVY-8666](https://1ivy.atlassian.net/browse/XIVY-8666) CXF web service NTLM authentication failure <span class="badge badge-pill badge-success badge-security">security</span>
+* [XIVY-9210](https://1ivy.atlassian.net/browse/XIVY-9210) Strange exception javax/servlet/jsp/jstl/core/Config when calling non-existing xhtml page e.g. /dev-workflow-ui/faces/home.XHTMLblabla 
+* [XIVY-9844](https://1ivy.atlassian.net/browse/XIVY-9844) Long start-up time in @IvyTest <span class="badge badge-pill badge-success badge-performance">performance</span>
+* [XIVY-10142](https://1ivy.atlassian.net/browse/XIVY-10142) User and role detail view in the Engine Cockpit makes thousands of database queries to load permissions 
+* [XIVY-10189](https://1ivy.atlassian.net/browse/XIVY-10189) Certificate import not working in Designer SSL preferences  
+* [XIVY-10530](https://1ivy.atlassian.net/browse/XIVY-10530) SQLServerException in user details view in Engine Cockpit with a lot of roles and SQL Server system database 
+* [XIVY-10604](https://1ivy.atlassian.net/browse/XIVY-10604) Project Graph view fails to load because of an NPE 
+* [XIVY-10837](https://1ivy.atlassian.net/browse/XIVY-10837) Update Maven Project sometimes causes process data class related validation errors 
+* [XIVY-11174](https://1ivy.atlassian.net/browse/XIVY-11174) Cannot generate OpenAPI client from huge YAML file 
+* [XIVY-11242](https://1ivy.atlassian.net/browse/XIVY-11242) Engine cannot start because of NoClassDefFoundError 
+* [XIVY-11318](https://1ivy.atlassian.net/browse/XIVY-11318) Elasticsearch is calling Axon Ivy Engine in the Traffic Graph view instead of vice versa 
+* [XIVY-11342](https://1ivy.atlassian.net/browse/XIVY-11342) No error is reported on UI if I try to log in but am not able to because the session limit has been reached 
+* [XIVY-11343](https://1ivy.atlassian.net/browse/XIVY-11343) Error in the log after license upload in the setup wizard 
+* [XIVY-11346](https://1ivy.atlassian.net/browse/XIVY-11346) Do not log "triggering indexing because of outdated template" if no objects exist to index 
+* [XIVY-11352](https://1ivy.atlassian.net/browse/XIVY-11352) Resource leak in Engine Cockpit when downloading logs and generating support report 
+* [XIVY-11358](https://1ivy.atlassian.net/browse/XIVY-11358) Two dependent projects that both contain web service clients cause Ivy validation problem warnings  
+* [XIVY-11363](https://1ivy.atlassian.net/browse/XIVY-11363) IvyTest AppFixture API should allow setting config lists 
+* [XIVY-11367](https://1ivy.atlassian.net/browse/XIVY-11367) If the filename of the license is named 'demo.lic' the Axon Ivy Engine does not recognise it 
+* [XIVY-11370](https://1ivy.atlassian.net/browse/XIVY-11370) Default values of IdentityProvider user synchronization properties are not respected 
+* [XIVY-11409](https://1ivy.atlassian.net/browse/XIVY-11409) Freya theme switch does not apply to newly started processes 
+* [XIVY-11411](https://1ivy.atlassian.net/browse/XIVY-11411) NPE problem marker on all Rest Client configuration files in the workspace if one has a corrupt UUID 
+* [XIVY-11445](https://1ivy.atlassian.net/browse/XIVY-11445) Improve and correct documentation regarding Duration type 
+* [XIVY-11471](https://1ivy.atlassian.net/browse/XIVY-11471) Relax the process start path format validation 
+* [XIVY-11484](https://1ivy.atlassian.net/browse/XIVY-11484) Improve mod to p.json process conversion from 8.0 to 10.0 
+* [XIVY-11525](https://1ivy.atlassian.net/browse/XIVY-11525) Maven project build plugin fails to validate ivyScript on Windows if the .m2 directory is located on another drive than the project 
+* [XIVY-11577](https://1ivy.atlassian.net/browse/XIVY-11577) Reconnect of an output arc of an alternative gateway is broken 
+* [XIVY-11578](https://1ivy.atlassian.net/browse/XIVY-11578) WebSocket protocol not supported for Apache httpd and IIS proxy configuration 
+* [XIVY-11579](https://1ivy.atlassian.net/browse/XIVY-11579) Problems adding languages to CMS with script/encryption specified 
+* [XIVY-11589](https://1ivy.atlassian.net/browse/XIVY-11589) Duration.clone() only clones the seconds instead of all fields 
+* [XIVY-11600](https://1ivy.atlassian.net/browse/XIVY-11600) JUnit IvyTest not working if a project is packaged 
+* [XIVY-11652](https://1ivy.atlassian.net/browse/XIVY-11652) Improve new ivy project wizard Default Namespace generation 
+* [XIVY-11657](https://1ivy.atlassian.net/browse/XIVY-11657) Can not compile a project with the maven build plugin if there are special chars in the path 
+* [XIVY-11667](https://1ivy.atlassian.net/browse/XIVY-11667) Project conversion does not work in Dev-Designer if the portal version cannot be evaluated 
+* [XIVY-11727](https://1ivy.atlassian.net/browse/XIVY-11727) Exception when Axon Ivy Engine will be stopped directly after starting 
+* [XIVY-11740](https://1ivy.atlassian.net/browse/XIVY-11740) Function Browser in SWT Inscription mask does not open 
+* [XIVY-11758](https://1ivy.atlassian.net/browse/XIVY-11758) Project conversion fails if one HTML Dialog View file can not be converted 
+* [XIVY-11766](https://1ivy.atlassian.net/browse/XIVY-11766) Could not remove User Dialog because Dialog was already deleted 
+* [XIVY-11799](https://1ivy.atlassian.net/browse/XIVY-11799) Correctly spell e.g., and i.e., in the documentation 
+* [XIVY-11801](https://1ivy.atlassian.net/browse/XIVY-11801) Improve Signavio BPMN2 compatibility 
+* [XIVY-11995](https://1ivy.atlassian.net/browse/XIVY-11995) Don't allow the creation of a new security system with the same name as an existing security system in the Engine Cockpit 
+* [XIVY-12052](https://1ivy.atlassian.net/browse/XIVY-12052) Empty Locale not supported as user language 
+* [XIVY-12077](https://1ivy.atlassian.net/browse/XIVY-12077) IllegalStateException Project was closed or deleted. Class loader is no longer accessable after deployment. 
+* [XIVY-12125](https://1ivy.atlassian.net/browse/XIVY-12125) OpenAPI code generation fails to create date-time instances 
+* [XIVY-12129](https://1ivy.atlassian.net/browse/XIVY-12129) Project conversion 8->10 of org.primefaces.model.DefaultStreamedContent does not work 
+* [XIVY-12130](https://1ivy.atlassian.net/browse/XIVY-12130) After project conversion 8->10 an IvyScript macro that expands in.anyNumber introduces a breaking change   
+* [XIVY-12131](https://1ivy.atlassian.net/browse/XIVY-12131) Data attribute names in IvyScript are case-insensitive which leads to confusing results   
+* [XIVY-12134](https://1ivy.atlassian.net/browse/XIVY-12134) IvyTest fails to work with custom Valve installed as drop-in bundle 
+* [XIVY-12240](https://1ivy.atlassian.net/browse/XIVY-12240) Engine Cockpit Logs view does not show content on Debian-based installation 
+* [XIVY-12256](https://1ivy.atlassian.net/browse/XIVY-12256) Windows Service Registration - Quote path, work with quoted path 
+* [XIVY-12325](https://1ivy.atlassian.net/browse/XIVY-12325) NPE in ServiceManager during startup of enterprise engine 
+* [XIVY-12329](https://1ivy.atlassian.net/browse/XIVY-12329) IvyScript content assist shows a lot of attributes for ivy.case. 
+* [XIVY-12330](https://1ivy.atlassian.net/browse/XIVY-12330) IvyScript content assist broken for ivy.case. 
+* [XIVY-12366](https://1ivy.atlassian.net/browse/XIVY-12366) Custom application property migration to YAML file fails 
+* [XIVY-12397](https://1ivy.atlassian.net/browse/XIVY-12397) Engine fails to boot after migration due to SecuritySystem with the name 'System' from an older version 
+* [XIVY-12398](https://1ivy.atlassian.net/browse/XIVY-12398)  Migration of an Engine to LTS 10, creates an unneeded 'demo-portal' SecuritySystem 
+* [XIVY-12502](https://1ivy.atlassian.net/browse/XIVY-12502) Engine Cockpit needs refresh when changing the configuration of a Web Service Client 
+* [XIVY-12503](https://1ivy.atlassian.net/browse/XIVY-12503) Engine Cockpit  re-creates deleted database property on browser refresh 
+* [XIVY-12520](https://1ivy.atlassian.net/browse/XIVY-12520) The language of the user will be set to empty after every user synchronization 
+* [XIVY-12525](https://1ivy.atlassian.net/browse/XIVY-12525) Axon Ivy Engine must be restarted when IvyComposites interfaces (XHTML) will be changed in a deployment 
+* [XIVY-12528](https://1ivy.atlassian.net/browse/XIVY-12528) Executing a database step in a loop is slow <span class="badge badge-pill badge-success badge-performance">performance</span>
+* [XIVY-12558](https://1ivy.atlassian.net/browse/XIVY-12558) New task and daily task summary emails are sent to disabled users 
+* [XIVY-12560](https://1ivy.atlassian.net/browse/XIVY-12560) Role selector shows invalid entries (CREATOR, etc) on start elements 
+* [XIVY-12583](https://1ivy.atlassian.net/browse/XIVY-12583) ivy.var.XXX does not work at all if a variable is defined in variables.yaml without a default value and overridden with a value in app.yaml 
+* [XIVY-12584](https://1ivy.atlassian.net/browse/XIVY-12584) Remove dialog element from dialog logic's process palette 
+* [XIVY-12664](https://1ivy.atlassian.net/browse/XIVY-12664) Application start fails if app.yaml's can not be written 
+* [XIVY-12678](https://1ivy.atlassian.net/browse/XIVY-12678) IvyTest runtime error because of non-breakable circular DI of IvyValidatorFactory 
+* [XIVY-12743](https://1ivy.atlassian.net/browse/XIVY-12743) Weird behaviors when clicking Enter in different Engine Cockpit views. E.g., role gets deleted when you press enter in an input field 
+* [XIVY-12766](https://1ivy.atlassian.net/browse/XIVY-12766) RestClient can not make OAuth2 authentication if OAuth2 provider returns expires_in as String instead of Integer 
+* [XIVY-12769](https://1ivy.atlassian.net/browse/XIVY-12769) The Sessions view in Engine Cockpit does not work if an HTTP session has been invalidated 
+* [XIVY-12773](https://1ivy.atlassian.net/browse/XIVY-12773) NPE in Engine Cockpit when using custom authentication feature for web service client or rest client which does not follow a naming concept 
+* [XIVY-12798](https://1ivy.atlassian.net/browse/XIVY-12798) Thread context logging is broken 
+* [XIVY-12827](https://1ivy.atlassian.net/browse/XIVY-12827) ClassCastException if one tries to grant or deny certain Portal permission in Engine Cockpit 
+* [XIVY-12845](https://1ivy.atlassian.net/browse/XIVY-12845) ViewExpiredException if one refreshes the process viewer in Portal 
+* [XIVY-12887](https://1ivy.atlassian.net/browse/XIVY-12887) JSON Inscription view and History view do not show initial selection 
+* [XIVY-12929](https://1ivy.atlassian.net/browse/XIVY-12929) Designer can freeze while adding a new Data Class 
+* [XIVY-12941](https://1ivy.atlassian.net/browse/XIVY-12941) Inserting EmbeddSub creates multiple outputs on previous element 
+* [XIVY-12964](https://1ivy.atlassian.net/browse/XIVY-12964) Deployment of all REST services of all applications on an Engine fails if there is a problem with class scanning in one single project 
+* [XIVY-12965](https://1ivy.atlassian.net/browse/XIVY-12965) Sometimes a ResourceException is thrown during the Export of a project into an IAR file from the Designer 
+* [XIVY-12970](https://1ivy.atlassian.net/browse/XIVY-12970) REST Client connection tester in Engine Cockpit should not report error on error code 400 (BAD REQUEST) 
+* [XIVY-12987](https://1ivy.atlassian.net/browse/XIVY-12987) Can not log in to a second security system if there are multiple security systems with same Entra ID (Azure AD) configuration <span class="badge badge-pill badge-success badge-security">security</span>
+* [IVYPORTAL-14989](https://1ivy.atlassian.net/browse/IVYPORTAL-14989) Security vulnerability in portal functional processes <span class="badge badge-pill badge-success badge-security">security</span>
+* [IVYPORTAL-15011](https://1ivy.atlassian.net/browse/IVYPORTAL-15011) Exception when load filter set has filter condition of custom column 
+* [IVYPORTAL-15046](https://1ivy.atlassian.net/browse/IVYPORTAL-15046) Browser refresh starts again a new process instead of refreshing the current user dialog 
+* [IVYPORTAL-15104](https://1ivy.atlassian.net/browse/IVYPORTAL-15104) Display wrong default language in iFrame and language setting 
+* [IVYPORTAL-15114](https://1ivy.atlassian.net/browse/IVYPORTAL-15114) Process is not populated when editing Dashboard Process Widget 
+* [IVYPORTAL-15165](https://1ivy.atlassian.net/browse/IVYPORTAL-15165) "More Information" link not show on dashboard 
+* [IVYPORTAL-15299](https://1ivy.atlassian.net/browse/IVYPORTAL-15299) Dashboard Process widget: cannot select External Link 
+* [IVYPORTAL-15307](https://1ivy.atlassian.net/browse/IVYPORTAL-15307) Process chain causes error when setting step with JavaScript from IFrame 
+* [IVYPORTAL-15327](https://1ivy.atlassian.net/browse/IVYPORTAL-15327) Permissions not updated 
+* [IVYPORTAL-15357](https://1ivy.atlassian.net/browse/IVYPORTAL-15357) Case category in case list displayed incorrectly 
+* [IVYPORTAL-15364](https://1ivy.atlassian.net/browse/IVYPORTAL-15364) Express end page not work properly 
+* [IVYPORTAL-15418](https://1ivy.atlassian.net/browse/IVYPORTAL-15418) Reset password email has wrong format 
+* [IVYPORTAL-15434](https://1ivy.atlassian.net/browse/IVYPORTAL-15434) Iframe height in TaskTemplate calculated after Primefaces load UI inside 
+* [IVYPORTAL-15553](https://1ivy.atlassian.net/browse/IVYPORTAL-15553) Fix statistics expired chart not filter correctly 
+* [IVYPORTAL-15618](https://1ivy.atlassian.net/browse/IVYPORTAL-15618) Fix process item not display correctly on dashboard 
+* [IVYPORTAL-15619](https://1ivy.atlassian.net/browse/IVYPORTAL-15619) Portal without menu frame not align correctly 
+* [IVYPORTAL-15639](https://1ivy.atlassian.net/browse/IVYPORTAL-15639) Cannot find callable subprocess from override HTML dialog 
+* [IVYPORTAL-15799](https://1ivy.atlassian.net/browse/IVYPORTAL-15799) Fix Process Viewer doesn't work on Portal 
+* [IVYPORTAL-15815](https://1ivy.atlassian.net/browse/IVYPORTAL-15815) Exception with UUID on Case note history 
+* [IVYPORTAL-15920](https://1ivy.atlassian.net/browse/IVYPORTAL-15920) NPE when load filter set of a dashboard widget 
+* [IVYPORTAL-15963](https://1ivy.atlassian.net/browse/IVYPORTAL-15963) SQLServerException error in Statistic page 
+* [IVYPORTAL-15994](https://1ivy.atlassian.net/browse/IVYPORTAL-15994) Wrong number of task and case in dashboard widget information 
+* [IVYPORTAL-15997](https://1ivy.atlassian.net/browse/IVYPORTAL-15997) Process Widget Sort By Index Bug 
+* [IVYPORTAL-16114](https://1ivy.atlassian.net/browse/IVYPORTAL-16114) Exception in compact process 
+* [IVYPORTAL-16170](https://1ivy.atlassian.net/browse/IVYPORTAL-16170) NPE when load Portal configuration page with old JSON 
+
+## 11.1.0 (2023-05-03)
+
+We strongly recommend to install this update release because it fixes security issues!
+
+### Improvements
+
+* [XIVY-11241](https://1ivy.atlassian.net/browse/XIVY-11241) Update DocFactory to Aspose version 23.3 
+* [XIVY-11187](https://1ivy.atlassian.net/browse/XIVY-11187) Provide a validation warning for empty variables in variables.yaml as they are ignored at runtime 
+* [XIVY-11171](https://1ivy.atlassian.net/browse/XIVY-11171) Add filter method isIn(...) to case, task, user, ... queries 
+* [XIVY-11088](https://1ivy.atlassian.net/browse/XIVY-11088) Show Elasticsearch watermark configuration in Engine Cockpit 
+* [XIVY-11074](https://1ivy.atlassian.net/browse/XIVY-11074) Upgrade bundled Elasticsearch to 7.17.9 
+* [XIVY-10909](https://1ivy.atlassian.net/browse/XIVY-10909) Proxy support for project-build-plugin 
+* [XIVY-10863](https://1ivy.atlassian.net/browse/XIVY-10863) Preconfigure (comment) the designer for debugging in Designer.ini file 
+* [XIVY-10861](https://1ivy.atlassian.net/browse/XIVY-10861) Html Dialog editor should auto insert curly brackets 
+* [XIVY-10804](https://1ivy.atlassian.net/browse/XIVY-10804) Configure watermark of bundled Elasticsearch server 
+* [XIVY-10797](https://1ivy.atlassian.net/browse/XIVY-10797) Make docker images OpenShift compatible 
+* [XIVY-10794](https://1ivy.atlassian.net/browse/XIVY-10794) REST endpoints should not be chunked by default 
+* [XIVY-10790](https://1ivy.atlassian.net/browse/XIVY-10790) Pretty print JSON response in REST service if query parameter 'pretty' is added 
+* [XIVY-10747](https://1ivy.atlassian.net/browse/XIVY-10747) Designer should work without a connection to the internet (offline) 
+* [XIVY-10710](https://1ivy.atlassian.net/browse/XIVY-10710) Move workflow REST API end points from application to security context  
+* [XIVY-10632](https://1ivy.atlassian.net/browse/XIVY-10632) Demonstrate Database Activity in a demo available at the Market 
+* [XIVY-10610](https://1ivy.atlassian.net/browse/XIVY-10610) Trace request and response for REST services 
+* [XIVY-10525](https://1ivy.atlassian.net/browse/XIVY-10525) Improve Elasticsearch documentation 
+* [XIVY-10524](https://1ivy.atlassian.net/browse/XIVY-10524) Display Elasticsearch documents in Engine Cockpit 
+* [XIVY-10451](https://1ivy.atlassian.net/browse/XIVY-10451) Provide JMX attribute lastUsedByThread and lastUsedByCallStack for database connections 
+* [XIVY-10312](https://1ivy.atlassian.net/browse/XIVY-10312) Use business states of task and case in dev workflow ui 
+* [XIVY-10268](https://1ivy.atlassian.net/browse/XIVY-10268) Show error timestamp on error dialog 
+* [XIVY-10229](https://1ivy.atlassian.net/browse/XIVY-10229) Trace cluster communication in Slow Requests view on Engine Cockpit 
+* [XIVY-10183](https://1ivy.atlassian.net/browse/XIVY-10183) Health checks should not count as licensed sessions 
+* [XIVY-10174](https://1ivy.atlassian.net/browse/XIVY-10174) Pre-configure a Temurin JVM on Linux Designer 
+* [XIVY-10170](https://1ivy.atlassian.net/browse/XIVY-10170) Add download button in Engine Cockpit to download Branding files for re-use 
+* [XIVY-10131](https://1ivy.atlassian.net/browse/XIVY-10131) Show URL in Slow Requests view in Engine Cockpit 
+* [XIVY-10130](https://1ivy.atlassian.net/browse/XIVY-10130) API to iterate over all business data of a certain type 
+* [XIVY-10123](https://1ivy.atlassian.net/browse/XIVY-10123) Common redirect URI for all Azure-AD calls 
+* [XIVY-10090](https://1ivy.atlassian.net/browse/XIVY-10090) Trace Elasticsearch queries 
+* [XIVY-10079](https://1ivy.atlassian.net/browse/XIVY-10079) Enable/disable auto import of Axon Ivy project dependencies. Provide explicit action to run it. 
+* [XIVY-10071](https://1ivy.atlassian.net/browse/XIVY-10071) Improve session monitor in Engine Cockpit 
+* [XIVY-10014](https://1ivy.atlassian.net/browse/XIVY-10014) Support LDAP-based Oracle JDBC connection URLs 
+* [XIVY-10000](https://1ivy.atlassian.net/browse/XIVY-10000) Update swagger libraries to codegen version 3.0.36, core version 2.2.6, parser version 2.1.8 
+* [XIVY-9962](https://1ivy.atlassian.net/browse/XIVY-9962) Update YAML editor to version 1.9.0 
+* [XIVY-9852](https://1ivy.atlassian.net/browse/XIVY-9852) Streamline L&F of project HTML Dialogs in Portal and dev-wf-ui 
+* [XIVY-9830](https://1ivy.atlassian.net/browse/XIVY-9830) Show server messages in new process editor as notifications 
+* [XIVY-9801](https://1ivy.atlassian.net/browse/XIVY-9801) Support PostgreSQL 15 
+* [XIVY-9789](https://1ivy.atlassian.net/browse/XIVY-9789) Add orai18n.jar to support any Oracle collation (e.g. Japanese charsets/collations) 
+* [XIVY-9744](https://1ivy.atlassian.net/browse/XIVY-9744) Support UTF-8 for MS SQL Server 2019+ and replace deprecated data types TEXT and IMAGE 
+* [XIVY-9380](https://1ivy.atlassian.net/browse/XIVY-9380) Upgrade Microsoft SQL Server JDBC driver to Java 17 baseline 
+* [XIVY-8994](https://1ivy.atlassian.net/browse/XIVY-8994) Project converter to migrate from Portal 8 to Portal 10 
+* [XIVY-8453](https://1ivy.atlassian.net/browse/XIVY-8453) Context menu and quick fix to encrypt password variables in variables.yaml 
+* [XIVY-8289](https://1ivy.atlassian.net/browse/XIVY-8289) Support Microsoft SQL Server 2022 
+* [XIVY-3529](https://1ivy.atlassian.net/browse/XIVY-3529) Introduce business-relevant states for tasks and cases that are understood by end users 
+* [XIVY-3166](https://1ivy.atlassian.net/browse/XIVY-3166) Delete tasks and case instead of setting them to ZOMBIE state 
+* [XIVY-2923](https://1ivy.atlassian.net/browse/XIVY-2923) Support In-Queries in Business Repository Query API 
+* [XIVY-2813](https://1ivy.atlassian.net/browse/XIVY-2813) Use utf8mb4 instead of utf8 for MySQL Database as charset 
+* [IVYPORTAL-14897](https://1ivy.atlassian.net/browse/IVYPORTAL-14897) Improve Dashboard Widget Order and Spacing / Responsiveness 
+* [IVYPORTAL-14874](https://1ivy.atlassian.net/browse/IVYPORTAL-14874) HTML in Task & Case Description 
+* [IVYPORTAL-14783](https://1ivy.atlassian.net/browse/IVYPORTAL-14783) Process start in Dashboard, Name and Icon clickable 
+* [IVYPORTAL-14705](https://1ivy.atlassian.net/browse/IVYPORTAL-14705) Add Portal modules to install in Designer 
+* [IVYPORTAL-14700](https://1ivy.atlassian.net/browse/IVYPORTAL-14700) Optimize performance of Processes Page and "Processes Widget" 
+* [IVYPORTAL-14599](https://1ivy.atlassian.net/browse/IVYPORTAL-14599) Support TaskName Overwrite in IFrame Task Template 
+* [IVYPORTAL-14587](https://1ivy.atlassian.net/browse/IVYPORTAL-14587) Introduce a Version Number into the Portal JSONS 
+* [IVYPORTAL-14579](https://1ivy.atlassian.net/browse/IVYPORTAL-14579) Add Portal Converter to Documentation  
+* [IVYPORTAL-14572](https://1ivy.atlassian.net/browse/IVYPORTAL-14572) Introduce new Cardframe option to Portal iFrame Dialog Templates 
+* [IVYPORTAL-14388](https://1ivy.atlassian.net/browse/IVYPORTAL-14388) Welcome Widget: Allow html code in the text, enhance positioning of image 
+
+### New Features
+
+* [XIVY-3142](https://1ivy.atlassian.net/browse/XIVY-3142) Show and manage active sessions in Engine Cockpit 
+* [XIVY-3415](https://1ivy.atlassian.net/browse/XIVY-3415) Optimize business data getAll() / getAllInfos() on search result to execute less system database queries <span class="badge badge-pill badge-success badge-performance">performance</span>
+* [XIVY-7545](https://1ivy.atlassian.net/browse/XIVY-7545) Remove JNA library from Engine Cockpit 
+* [XIVY-7819](https://1ivy.atlassian.net/browse/XIVY-7819) Remove UIInfo from InscriptionEditor Factory 
+* [XIVY-8346](https://1ivy.atlassian.net/browse/XIVY-8346) Resurrect DataClass attribute combine refactoring 
+* [XIVY-8445](https://1ivy.atlassian.net/browse/XIVY-8445) Improve manual download of market artefacts 
+* [XIVY-9172](https://1ivy.atlassian.net/browse/XIVY-9172) Synchronize user properties from Azure AD 
+* [XIVY-9217](https://1ivy.atlassian.net/browse/XIVY-9217) Make sure replacements are replaced everywhere in documentation 
+* [XIVY-9776](https://1ivy.atlassian.net/browse/XIVY-9776) Introduce new licence for Axon Ivy 11 
+* [XIVY-9811](https://1ivy.atlassian.net/browse/XIVY-9811) Export workflow data to Elasticsearch to provide performant statistics API 
+* [XIVY-9891](https://1ivy.atlassian.net/browse/XIVY-9891) No longer convert legacy serverconfig.xml to ivy.yaml 
+* [XIVY-9898](https://1ivy.atlassian.net/browse/XIVY-9898) Ease session leak detection by providing more information why a session is created 
+* [XIVY-9912](https://1ivy.atlassian.net/browse/XIVY-9912) Improve system database query performance by no longer using complex database views <span class="badge badge-pill badge-success badge-performance">performance</span>
+* [XIVY-9913](https://1ivy.atlassian.net/browse/XIVY-9913) Process editor toolbar should be white in light mode 
+* [XIVY-9920](https://1ivy.atlassian.net/browse/XIVY-9920) Remove views from system database 
+* [XIVY-9921](https://1ivy.atlassian.net/browse/XIVY-9921) No longer list all columns in select clause for system database queries 
+* [XIVY-9955](https://1ivy.atlassian.net/browse/XIVY-9955) Prototype technologies for web based process element inscription views 
+* [XIVY-9957](https://1ivy.atlassian.net/browse/XIVY-9957) No longer full qualify columns in where, order and group clause if not needed for system db queries 
+* [XIVY-9988](https://1ivy.atlassian.net/browse/XIVY-9988) Add missing indices on foreign key columns in the system database to boost deployment performance <span class="badge badge-pill badge-success badge-performance">performance</span>
+* [XIVY-10017](https://1ivy.atlassian.net/browse/XIVY-10017) Improve IvyScript parse performance 
+* [XIVY-10018](https://1ivy.atlassian.net/browse/XIVY-10018) Improve performance of Portal Processes page <span class="badge badge-pill badge-success badge-performance">performance</span>
+* [XIVY-10022](https://1ivy.atlassian.net/browse/XIVY-10022) Invalidate HTTP sessions when destroying ivy session <span class="badge badge-pill badge-success badge-security">security</span>
+* [XIVY-10032](https://1ivy.atlassian.net/browse/XIVY-10032) Refactor process data cache from a global to a session cache 
+* [XIVY-10042](https://1ivy.atlassian.net/browse/XIVY-10042) API to get all web startables (also invisible ones) 
+* [XIVY-10050](https://1ivy.atlassian.net/browse/XIVY-10050) Refactor Elasticsearch tests to JUnit5 
+* [XIVY-10072](https://1ivy.atlassian.net/browse/XIVY-10072) Add a Business Data performance test to the performance test suite 
+* [XIVY-10084](https://1ivy.atlassian.net/browse/XIVY-10084) Prototype integration of our web views into Theia + VS-Code 
+* [XIVY-10085](https://1ivy.atlassian.net/browse/XIVY-10085) Prototype Ivy-Script integration with Monaco editor 
+* [XIVY-10102](https://1ivy.atlassian.net/browse/XIVY-10102) Add an installer for Designer plugins into the drop-ins folder. E.g., dmn-table or express-importer 
+* [XIVY-10132](https://1ivy.atlassian.net/browse/XIVY-10132) Improve performance of CMS resolution by caching file store <span class="badge badge-pill badge-success badge-performance">performance</span>
+* [XIVY-10139](https://1ivy.atlassian.net/browse/XIVY-10139) Read locale of CMS resource form URL parameter and not from the session 
+* [XIVY-10154](https://1ivy.atlassian.net/browse/XIVY-10154) Index workflow task in Elasticsearch 
+* [XIVY-10156](https://1ivy.atlassian.net/browse/XIVY-10156) Optimize TaskQuery for canWorkOn and isInvolved <span class="badge badge-pill badge-success badge-performance">performance</span>
+* [XIVY-10164](https://1ivy.atlassian.net/browse/XIVY-10164) Improve performance when invalidating an HTTP session <span class="badge badge-pill badge-success badge-performance">performance</span>
+* [XIVY-10171](https://1ivy.atlassian.net/browse/XIVY-10171) Write log entry if a configured default pages project does not exists 
+* [XIVY-10181](https://1ivy.atlassian.net/browse/XIVY-10181) Build in communication between frontend and backend process element inscription view prototypes 
+* [XIVY-10182](https://1ivy.atlassian.net/browse/XIVY-10182) Integrate the process element inscription view backend prototype into our Engine 
+* [XIVY-10184](https://1ivy.atlassian.net/browse/XIVY-10184) Transparent concurent user session count 
+* [XIVY-10188](https://1ivy.atlassian.net/browse/XIVY-10188) Prototype tree table mapping component for process element inscription view 
+* [XIVY-10190](https://1ivy.atlassian.net/browse/XIVY-10190) Don't handle user in different contexts as same user 
+* [XIVY-10191](https://1ivy.atlassian.net/browse/XIVY-10191) No longer support AJP for reverse proxy (Apache, IIS) integration 
+* [XIVY-10196](https://1ivy.atlassian.net/browse/XIVY-10196) Improve starts page performance in dev-workflow-ui <span class="badge badge-pill badge-success badge-performance">performance</span>
+* [XIVY-10255](https://1ivy.atlassian.net/browse/XIVY-10255) No longer require the availability of an external Elasticsearch server while starting Axon Ivy Engine 
+* [XIVY-10277](https://1ivy.atlassian.net/browse/XIVY-10277) Provide API to query statistic data for tasks 
+* [XIVY-10278](https://1ivy.atlassian.net/browse/XIVY-10278) Reindex of task data in Elasticsearch 
+* [XIVY-10279](https://1ivy.atlassian.net/browse/XIVY-10279) Allow to query statistic data about task custom fields 
+* [XIVY-10293](https://1ivy.atlassian.net/browse/XIVY-10293) Provide start parameters on IWebStartable 
+* [XIVY-10307](https://1ivy.atlassian.net/browse/XIVY-10307) Do not call getStartables() if filter changes on the dev-wf-ui starts page to improve performance <span class="badge badge-pill badge-success badge-performance">performance</span>
+* [XIVY-10317](https://1ivy.atlassian.net/browse/XIVY-10317) Remove support for Axon Ivy environments 
+* [XIVY-10329](https://1ivy.atlassian.net/browse/XIVY-10329) Remove dependency to Java AWT UI technology 
+* [XIVY-10338](https://1ivy.atlassian.net/browse/XIVY-10338) Remove system database migration before 8.0 
+* [XIVY-10339](https://1ivy.atlassian.net/browse/XIVY-10339) Integrate new inscription prototype into Designer as view 
+* [XIVY-10340](https://1ivy.atlassian.net/browse/XIVY-10340) Integrate new inscription prototype into Eclipse Theia 
+* [XIVY-10343](https://1ivy.atlassian.net/browse/XIVY-10343) Provide context to IvyScript LSP 
+* [XIVY-10344](https://1ivy.atlassian.net/browse/XIVY-10344) Refactor inscription server 
+* [XIVY-10351](https://1ivy.atlassian.net/browse/XIVY-10351) Show common tabs in new inscription view for every process elements 
+* [XIVY-10393](https://1ivy.atlassian.net/browse/XIVY-10393) Replace JEST client library with a plain Jersey client to talk to Elasticsearch 
+* [XIVY-10410](https://1ivy.atlassian.net/browse/XIVY-10410) Remove dynamic scriptDialogID from HTML Dialog process element 
+* [XIVY-10427](https://1ivy.atlassian.net/browse/XIVY-10427) Handle default states in new inscription view 
+* [XIVY-10445](https://1ivy.atlassian.net/browse/XIVY-10445) Prototype workflow statistic REST API 
+* [XIVY-10464](https://1ivy.atlassian.net/browse/XIVY-10464) Document that you cannot override an already overridden thing 
+* [XIVY-10490](https://1ivy.atlassian.net/browse/XIVY-10490) Split process model domain to multiple bundles 
+* [XIVY-10506](https://1ivy.atlassian.net/browse/XIVY-10506) Define serialization format for process element configuration by using POJOs 
+* [XIVY-10507](https://1ivy.atlassian.net/browse/XIVY-10507) Performance tests for Elasticsearch task index 
+* [XIVY-10508](https://1ivy.atlassian.net/browse/XIVY-10508) Workflow statistic API next step 
+* [XIVY-10509](https://1ivy.atlassian.net/browse/XIVY-10509) Finalize mapping tree table UI for inscription view and backend 
+* [XIVY-10527](https://1ivy.atlassian.net/browse/XIVY-10527) Only provide documentation for latest minor release 
+* [XIVY-10547](https://1ivy.atlassian.net/browse/XIVY-10547) Remove IvyScript visibility support 
+* [XIVY-10577](https://1ivy.atlassian.net/browse/XIVY-10577) JSON schema for process models 
+* [XIVY-10591](https://1ivy.atlassian.net/browse/XIVY-10591) Move java class  IvyDefaultJaxRsTemplates to 'ch.ivyteam.ivy.rest.client.config' bundle 
+* [XIVY-10634](https://1ivy.atlassian.net/browse/XIVY-10634) Introduce a builder for WaitUtil 
+* [XIVY-10646](https://1ivy.atlassian.net/browse/XIVY-10646) Enable standard substitutions in .dot files in the documentation 
+* [XIVY-10648](https://1ivy.atlassian.net/browse/XIVY-10648) Distribute all third-party licenses with our products that require redistributing  
+* [XIVY-10669](https://1ivy.atlassian.net/browse/XIVY-10669) Do not trace sensitive payload of REST request and responses <span class="badge badge-pill badge-success badge-security">security</span>
+* [XIVY-10705](https://1ivy.atlassian.net/browse/XIVY-10705) Replace the issue list in debian changelog with a link to the official release notes 
+* [XIVY-10706](https://1ivy.atlassian.net/browse/XIVY-10706) Improve DataClass combine attribute feature 
+* [XIVY-10707](https://1ivy.atlassian.net/browse/XIVY-10707) Index workflow cases and provide statistic API  
+* [XIVY-10709](https://1ivy.atlassian.net/browse/XIVY-10709) Add filter to workflow statistic API 
+* [XIVY-10712](https://1ivy.atlassian.net/browse/XIVY-10712) Stabilize inscription view backend 
+* [XIVY-10769](https://1ivy.atlassian.net/browse/XIVY-10769) Add static method 'of(...)' to create a PID and deprecate PID constructor 
+* [XIVY-10796](https://1ivy.atlassian.net/browse/XIVY-10796) Remove HTTP header "Server" completely 
+* [XIVY-10826](https://1ivy.atlassian.net/browse/XIVY-10826) More schema POJOs to replace aspect-driven process element serialization 
+* [XIVY-10836](https://1ivy.atlassian.net/browse/XIVY-10836) Read process inscription without parsing XML <span class="badge badge-pill badge-success badge-performance">performance</span>
+* [XIVY-10864](https://1ivy.atlassian.net/browse/XIVY-10864) Remove the logo link in mail templates 
+* [XIVY-10870](https://1ivy.atlassian.net/browse/XIVY-10870) Improve reindexing performance of Task and Case indices 
+* [XIVY-10872](https://1ivy.atlassian.net/browse/XIVY-10872) Add process caller tab to inscription view 
+* [XIVY-10874](https://1ivy.atlassian.net/browse/XIVY-10874) Add Task Switch Gateway to inscription view 
+* [XIVY-10876](https://1ivy.atlassian.net/browse/XIVY-10876) Eclipse Theia IDE based Designer with process editor, inscription view 
+* [XIVY-10936](https://1ivy.atlassian.net/browse/XIVY-10936) Provide a UI in engine cockpit to view and modify all role mappings of Azure AD 
+* [XIVY-10967](https://1ivy.atlassian.net/browse/XIVY-10967) Enable Engine Cockpit in Designer 
+* [XIVY-10969](https://1ivy.atlassian.net/browse/XIVY-10969) Improve start-up time of Axon Ivy  <span class="badge badge-pill badge-success badge-performance">performance</span>
+* [XIVY-11005](https://1ivy.atlassian.net/browse/XIVY-11005) Inscription view LSP backend for Request Start Start/Trigger tab 
+* [XIVY-11006](https://1ivy.atlassian.net/browse/XIVY-11006) Inscription view LSP backend for REST service  
+* [XIVY-11007](https://1ivy.atlassian.net/browse/XIVY-11007) Inscription view LSP backend for Web Service Call 
+* [XIVY-11008](https://1ivy.atlassian.net/browse/XIVY-11008) Eclipse Theia IDE based Designer for Windows and Mac 
+* [XIVY-11012](https://1ivy.atlassian.net/browse/XIVY-11012) Log warnings in ivy.log for invalid app.yaml configs 
+* [XIVY-11089](https://1ivy.atlassian.net/browse/XIVY-11089) ReleaseNotes must be generated using new JIRA installation 
+* [XIVY-11103](https://1ivy.atlassian.net/browse/XIVY-11103) Create system db on Engine startup 
+* [XIVY-11104](https://1ivy.atlassian.net/browse/XIVY-11104) Elasticsearch index won't be updated if a referenced object will be deleted 
+* [XIVY-11120](https://1ivy.atlassian.net/browse/XIVY-11120) Release 11.1 
+* [XIVY-11143](https://1ivy.atlassian.net/browse/XIVY-11143) Inscription view LSP backend for Start & Boundary Events 
+* [XIVY-11168](https://1ivy.atlassian.net/browse/XIVY-11168) Inscription view LSP backend for all missing element types 
+* [XIVY-11178](https://1ivy.atlassian.net/browse/XIVY-11178) Auto generate inscription view protocol stack for TypeScript 
+* [XIVY-11183](https://1ivy.atlassian.net/browse/XIVY-11183) Threads view in engine cockpit that shows thread information and allows to create thread dumps 
+* [XIVY-11184](https://1ivy.atlassian.net/browse/XIVY-11184) Remove "add variable/configuration" feature from Engine Cockpit 
+* [XIVY-11185](https://1ivy.atlassian.net/browse/XIVY-11185) Improve release notes in documentation with release date 
+* [XIVY-11299](https://1ivy.atlassian.net/browse/XIVY-11299) OpenAI ChatGPT connector for the Market 
+* [XIVY-11317](https://1ivy.atlassian.net/browse/XIVY-11317) Hide "Model loading in progress" info messages in Error Log view 
+* [XIVY-11330](https://1ivy.atlassian.net/browse/XIVY-11330) Hide ClientAbortExceptions about webjars resources in ivy.log 
+* [IVYPORTAL-13254](https://1ivy.atlassian.net/browse/IVYPORTAL-13254) "News" Dashboard Widget 
+* [IVYPORTAL-14351](https://1ivy.atlassian.net/browse/IVYPORTAL-14351) Reorder Dashboard Widgets in the selection Dialog 
+* [IVYPORTAL-14519](https://1ivy.atlassian.net/browse/IVYPORTAL-14519) Adapt Ivy URLs in the documentation to the correct format 
+* [IVYPORTAL-14562](https://1ivy.atlassian.net/browse/IVYPORTAL-14562) Move process images from portal to portal-components 
+* [IVYPORTAL-14573](https://1ivy.atlassian.net/browse/IVYPORTAL-14573) Clean up big files, move jar files to dependency 
+* [IVYPORTAL-14576](https://1ivy.atlassian.net/browse/IVYPORTAL-14576) Hide "Show Welcome Guide" Checkbox in "my Profile" 
+* [IVYPORTAL-14586](https://1ivy.atlassian.net/browse/IVYPORTAL-14586) Update vulnerable dependencies 
+* [IVYPORTAL-14602](https://1ivy.atlassian.net/browse/IVYPORTAL-14602) Error case list widget item click 
+* [IVYPORTAL-14604](https://1ivy.atlassian.net/browse/IVYPORTAL-14604) The Preview button of ProcessWidget configuration does not work 
+* [IVYPORTAL-14658](https://1ivy.atlassian.net/browse/IVYPORTAL-14658) Remove Zombie state and related logic 
+* [IVYPORTAL-14660](https://1ivy.atlassian.net/browse/IVYPORTAL-14660) Unify processPath, processStart in dashboard/task list/case list configuration 
+* [IVYPORTAL-14661](https://1ivy.atlassian.net/browse/IVYPORTAL-14661) Correct/Unify custom widget configuration 
+* [IVYPORTAL-14662](https://1ivy.atlassian.net/browse/IVYPORTAL-14662) Remove outdated section form portal documentation 
+* [IVYPORTAL-14669](https://1ivy.atlassian.net/browse/IVYPORTAL-14669) Not display the reservation option if task is not persisted 
+* [IVYPORTAL-14728](https://1ivy.atlassian.net/browse/IVYPORTAL-14728) Adapt Portal after ivy remove IEnvironment 
+* [IVYPORTAL-14813](https://1ivy.atlassian.net/browse/IVYPORTAL-14813) Forgotten Password - Change Password Message 
+* [IVYPORTAL-14816](https://1ivy.atlassian.net/browse/IVYPORTAL-14816) Custom widget supports hidden Ivy processes 
+* [IVYPORTAL-14826](https://1ivy.atlassian.net/browse/IVYPORTAL-14826) Add X button to close context menu 
+* [IVYPORTAL-14831](https://1ivy.atlassian.net/browse/IVYPORTAL-14831) Streamline all the groupIds to com.axonivy.portal 
+* [IVYPORTAL-14847](https://1ivy.atlassian.net/browse/IVYPORTAL-14847) Dashboard Process Category Filter doesn't show categories correctly 
+* [IVYPORTAL-14871](https://1ivy.atlassian.net/browse/IVYPORTAL-14871) PortalNavigatorInFrameAPI of portal-components cause frame in frame issue 
+* [IVYPORTAL-14886](https://1ivy.atlassian.net/browse/IVYPORTAL-14886) Portal logo in dark mode 
+* [IVYPORTAL-14968](https://1ivy.atlassian.net/browse/IVYPORTAL-14968) Update Welcome Widget Header Image for 11.1 
+
+### Bugs
+
+* [XIVY-2985](https://1ivy.atlassian.net/browse/XIVY-2985) EL content assist in Html Dialog editor does not work most of the time 
+* [XIVY-3113](https://1ivy.atlassian.net/browse/XIVY-3113) Business data search API is restricted to read maximum 10000 results 
+* [XIVY-3312](https://1ivy.atlassian.net/browse/XIVY-3312) IBusinessCase API not visible in designer 
+* [XIVY-7770](https://1ivy.atlassian.net/browse/XIVY-7770) Wrong JSF validation warning in HTML Dialog editor with fluent API methods 
+* [XIVY-8621](https://1ivy.atlassian.net/browse/XIVY-8621) Bad performance of user detail view in Engine Cockpit if user has 1000+ roles (permission tree lazy loading) <span class="badge badge-pill badge-success badge-performance">performance</span>
+* [XIVY-8698](https://1ivy.atlassian.net/browse/XIVY-8698) Bad performance of Applications Page in Engine Cockpit  <span class="badge badge-pill badge-success badge-performance">performance</span>
+* [XIVY-9205](https://1ivy.atlassian.net/browse/XIVY-9205) Maven (M2E) workspace resolution for JAR attachments in IAR is broken 
+* [XIVY-9365](https://1ivy.atlassian.net/browse/XIVY-9365) Can not create PDF_A documents with DocFactory 
+* [XIVY-9435](https://1ivy.atlassian.net/browse/XIVY-9435) Log Log4J configuration problems to ivy.log 
+* [XIVY-9543](https://1ivy.atlassian.net/browse/XIVY-9543) ClassLoading error on HD with primefaces objects on method-signature 
+* [XIVY-9566](https://1ivy.atlassian.net/browse/XIVY-9566) CMS resources cached from browser in previous language 
+* [XIVY-9625](https://1ivy.atlassian.net/browse/XIVY-9625) Improve empty custom-fields.yaml file and documentation 
+* [XIVY-9658](https://1ivy.atlassian.net/browse/XIVY-9658) CMS tree refresh not working for external changes 
+* [XIVY-9714](https://1ivy.atlassian.net/browse/XIVY-9714) Process history view is not in sync with process editor selection on Windows 
+* [XIVY-9719](https://1ivy.atlassian.net/browse/XIVY-9719) Designer email simulation should use correct mail address 
+* [XIVY-9721](https://1ivy.atlassian.net/browse/XIVY-9721) Missing information on process elements on the info menu (e.g. code of script step) in the process editor 
+* [XIVY-9722](https://1ivy.atlassian.net/browse/XIVY-9722) Browser refresh starts again a new process instead of refreshing the current user dialog 
+* [XIVY-9724](https://1ivy.atlassian.net/browse/XIVY-9724) Process element can be move to negative coordinates if pools or lanes are present in the process editor  
+* [XIVY-9741](https://1ivy.atlassian.net/browse/XIVY-9741) Running multiple IvyTest which uses the same EntityManger fails 
+* [XIVY-9745](https://1ivy.atlassian.net/browse/XIVY-9745) Importing an old project with dependency to old Portal projects is a big pain 
+* [XIVY-9763](https://1ivy.atlassian.net/browse/XIVY-9763) ClassLoader error in maven project build plugin when validating ivy-processes 
+* [XIVY-9777](https://1ivy.atlassian.net/browse/XIVY-9777) Select Breakpoint in Breakpoint View causes IvyScript validation error 
+* [XIVY-9822](https://1ivy.atlassian.net/browse/XIVY-9822) Browsing public API classes in external browser fails 
+* [XIVY-9824](https://1ivy.atlassian.net/browse/XIVY-9824) Drools DRL editor does not work with Java 17. Document to use Java 11.  
+* [XIVY-9825](https://1ivy.atlassian.net/browse/XIVY-9825) Screenshot of new process editor (e.g. swimlane) are outdated in documentation 
+* [XIVY-9826](https://1ivy.atlassian.net/browse/XIVY-9826) No sources provided for javax.* bundles 
+* [XIVY-9828](https://1ivy.atlassian.net/browse/XIVY-9828) Delete or hide default security system if not used in Engine Cockpit <span class="badge badge-pill badge-success badge-security">security</span>
+* [XIVY-9832](https://1ivy.atlassian.net/browse/XIVY-9832) Install button in Axon Ivy Market sometimes disappear 
+* [XIVY-9833](https://1ivy.atlassian.net/browse/XIVY-9833) Make links shown in Designer or Engine to the documentation version aware 
+* [XIVY-9847](https://1ivy.atlassian.net/browse/XIVY-9847) Improve styling of Primefaces Freya DataTable paginator 
+* [XIVY-9861](https://1ivy.atlassian.net/browse/XIVY-9861) White flickering in Dev-wf-ui with iFrame and dark mode 
+* [XIVY-9862](https://1ivy.atlassian.net/browse/XIVY-9862) Different Pools and Lanes in same diagram are loaded in wrong order 
+* [XIVY-9887](https://1ivy.atlassian.net/browse/XIVY-9887) Open content object browser in IvyScriptEditor causes IllegalStateException 
+* [XIVY-9925](https://1ivy.atlassian.net/browse/XIVY-9925) External variable files in project configuration are not correctly encoded on Windows 
+* [XIVY-9930](https://1ivy.atlassian.net/browse/XIVY-9930) Conditional breakpoints not supported on some process elements (Alternative gateway, End event, Embedded Sub, ...) 
+* [XIVY-9948](https://1ivy.atlassian.net/browse/XIVY-9948) Bad Performance of StandardProcessStartFinder with many Apps and PMVs <span class="badge badge-pill badge-success badge-performance">performance</span>
+* [XIVY-9975](https://1ivy.atlassian.net/browse/XIVY-9975) Delete packed project (iar) in Designer does not remove it from the CMS view 
+* [XIVY-9979](https://1ivy.atlassian.net/browse/XIVY-9979) CMS view doesn't show when project is packed (iar) 
+* [XIVY-9980](https://1ivy.atlassian.net/browse/XIVY-9980) CMS delete API does not work correctly 
+* [XIVY-9982](https://1ivy.atlassian.net/browse/XIVY-9982) The string truncating mechanism for Microsoft SQL Server with UTF-8 characters does not work properly 
+* [XIVY-9987](https://1ivy.atlassian.net/browse/XIVY-9987) Export a process to an SVG image does not work in Designer 
+* [XIVY-9989](https://1ivy.atlassian.net/browse/XIVY-9989) Start deployment is not thread-save and leads to flaky tests 
+* [XIVY-10008](https://1ivy.atlassian.net/browse/XIVY-10008) OpenAPI3 request body types in ms-graph are not resolved 
+* [XIVY-10021](https://1ivy.atlassian.net/browse/XIVY-10021) Maven libraries are not filtered in the AxonIvy project tree 
+* [XIVY-10028](https://1ivy.atlassian.net/browse/XIVY-10028) Designer start is slow in development environment 
+* [XIVY-10031](https://1ivy.atlassian.net/browse/XIVY-10031) REST Form-Payload field order must respect field order from inscription mask 
+* [XIVY-10051](https://1ivy.atlassian.net/browse/XIVY-10051) Generic third-party elements not usable with new Process Editor 
+* [XIVY-10057](https://1ivy.atlassian.net/browse/XIVY-10057) Improve Update Version, Release Notes, and Changelog builds 
+* [XIVY-10101](https://1ivy.atlassian.net/browse/XIVY-10101) Security-relevant information is shown in the Slow Requests view of Engine Cockpit <span class="badge badge-pill badge-success badge-security">security</span>
+* [XIVY-10105](https://1ivy.atlassian.net/browse/XIVY-10105) Session leak with async rest service over SSO or Basic Auth on timeout <span class="badge badge-pill badge-success badge-security">security</span>
+* [XIVY-10107](https://1ivy.atlassian.net/browse/XIVY-10107) ClassCastException in UserDialog attribute browser 
+* [XIVY-10110](https://1ivy.atlassian.net/browse/XIVY-10110) Rest Call element is sending list query parameters with brackets 
+* [XIVY-10111](https://1ivy.atlassian.net/browse/XIVY-10111) Workflow cleanup does not delete document files of cases 
+* [XIVY-10112](https://1ivy.atlassian.net/browse/XIVY-10112) After restart of Designer or Demo Engine workflow files are still there 
+* [XIVY-10117](https://1ivy.atlassian.net/browse/XIVY-10117) Navigating in Engine Cockpit generates a lot of system db queries to count users <span class="badge badge-pill badge-success badge-performance">performance</span>
+* [XIVY-10122](https://1ivy.atlassian.net/browse/XIVY-10122) Hide sensitive RestClient properties on detail view in Engine Cockpit <span class="badge badge-pill badge-success badge-security">security</span>
+* [XIVY-10126](https://1ivy.atlassian.net/browse/XIVY-10126) Database configuration are not shared along dependent projects 
+* [XIVY-10146](https://1ivy.atlassian.net/browse/XIVY-10146) Task notification mails can't be sent when session limit is reached 
+* [XIVY-10153](https://1ivy.atlassian.net/browse/XIVY-10153) NPE in portal start time cleaner when tracing is enabled 
+* [XIVY-10160](https://1ivy.atlassian.net/browse/XIVY-10160) Stream API throws InaccessibleObjectException in IvyScript 
+* [XIVY-10162](https://1ivy.atlassian.net/browse/XIVY-10162) The REST service view in the Engine Cockpit shows/tests not expanded URIs if URI templates are used 
+* [XIVY-10165](https://1ivy.atlassian.net/browse/XIVY-10165) Log Viewer in Engine Cockpit cannot handle compressed log files 
+* [XIVY-10173](https://1ivy.atlassian.net/browse/XIVY-10173) Key shortcuts for debugging (F5..F8) do not work if process editor has focus on Windows 
+* [XIVY-10176](https://1ivy.atlassian.net/browse/XIVY-10176) Isolated OAUTH Token store to avoid services unexpectedly share common authentication <span class="badge badge-pill badge-success badge-security">security</span>
+* [XIVY-10192](https://1ivy.atlassian.net/browse/XIVY-10192) NPE during project validation leads to false positive problem markers 
+* [XIVY-10193](https://1ivy.atlassian.net/browse/XIVY-10193) Property dialog in Rest Client config shows wrong description default value for some Jersey properties 
+* [XIVY-10195](https://1ivy.atlassian.net/browse/XIVY-10195) Use webpack production mode for integrated process editor 
+* [XIVY-10209](https://1ivy.atlassian.net/browse/XIVY-10209) Could not register MBean in Designer because of InstanceAlreadyExistsException 
+* [XIVY-10218](https://1ivy.atlassian.net/browse/XIVY-10218) Parameter filters of LazyDataModel7 load method contains FilterMeta objects instead of filter values 
+* [XIVY-10230](https://1ivy.atlassian.net/browse/XIVY-10230) TextFieldsOperation.containsAllWords(java.lang.String) is no longer byte-code compatible 
+* [XIVY-10243](https://1ivy.atlassian.net/browse/XIVY-10243) Small UI issues with the right aligned template and Freya theme 
+* [XIVY-10251](https://1ivy.atlassian.net/browse/XIVY-10251) Sometimes an IlegalStateException is thrown when parallel web service calls are made 
+* [XIVY-10265](https://1ivy.atlassian.net/browse/XIVY-10265) Setting the original or expiry activator has no effect if it is parked and the parking user is no longer a member of the new activator 
+* [XIVY-10266](https://1ivy.atlassian.net/browse/XIVY-10266) Setting the activator does not reset the task if it is parked and the parking user is no longer a member of the new activator 
+* [XIVY-10294](https://1ivy.atlassian.net/browse/XIVY-10294) Fix Snake YAML unsafe deserialization vulnerability (CVE-2022-1471) <span class="badge badge-pill badge-success badge-security">security</span>
+* [XIVY-10299](https://1ivy.atlassian.net/browse/XIVY-10299) Writing a content object value with the method bytes of ContentObjectWriter does not invalidate file cache 
+* [XIVY-10308](https://1ivy.atlassian.net/browse/XIVY-10308) Zombie Designer instances are making WebTests hard to run 
+* [XIVY-10314](https://1ivy.atlassian.net/browse/XIVY-10314) Deleting a SecurityContext causes a PersistencyException 
+* [XIVY-10315](https://1ivy.atlassian.net/browse/XIVY-10315) User Detail and Role Detail Views in Engine Cockpit shows wrong "Selected Application" link  
+* [XIVY-10316](https://1ivy.atlassian.net/browse/XIVY-10316) SecurityContext mismatch between WorkflowContext and HTTP session if a new context is created 
+* [XIVY-10396](https://1ivy.atlassian.net/browse/XIVY-10396) Boundary event disappears if wrapping it into an embedded process 
+* [XIVY-10419](https://1ivy.atlassian.net/browse/XIVY-10419)  Save does not work after performing a refresh (F5 or CTRL+R) in the process editor 
+* [XIVY-10435](https://1ivy.atlassian.net/browse/XIVY-10435) Elasticsearch traces do not appear in Traffic Graph in Engine Cockpit 
+* [XIVY-10440](https://1ivy.atlassian.net/browse/XIVY-10440) NPE in ValidationPreferences leads to a lot of false problem markers 
+* [XIVY-10447](https://1ivy.atlassian.net/browse/XIVY-10447) REST config editor is blocked because of Jersey properties documentation evaluation takes too much time 
+* [XIVY-10448](https://1ivy.atlassian.net/browse/XIVY-10448) User from Azure AD gets disabled when group filter is set but not role mapping is defined 
+* [XIVY-10449](https://1ivy.atlassian.net/browse/XIVY-10449) Can not synchronize users from Azure AD if locale can not be parsed 
+* [XIVY-10463](https://1ivy.atlassian.net/browse/XIVY-10463) Configuration of thread pools (CorePoolSize, MaximumPoolSize) are not considered during Engine startup 
+* [XIVY-10495](https://1ivy.atlassian.net/browse/XIVY-10495) Conversion from restClients.restConfig to rest-clients.yaml fails if first contains special Unicode characters 
+* [XIVY-10500](https://1ivy.atlassian.net/browse/XIVY-10500) Roles from dependent project can not be selected in inscription editor Task tab 
+* [XIVY-10510](https://1ivy.atlassian.net/browse/XIVY-10510) Could not start embedded Axon Ivy Engine if required Java Maven artifact was imported to workspace 
+* [XIVY-10515](https://1ivy.atlassian.net/browse/XIVY-10515) OAuth2 callback-URI broken when using OAauth2 REST client 
+* [XIVY-10529](https://1ivy.atlassian.net/browse/XIVY-10529) ivy.log on Designer does not contain log messages of ch.ivyteam.** and runtimelog.** loggers 
+* [XIVY-10555](https://1ivy.atlassian.net/browse/XIVY-10555) Remove third party library information from ReadMe 
+* [XIVY-10593](https://1ivy.atlassian.net/browse/XIVY-10593) Potential resource leaks with Azure AD integration 
+* [XIVY-10659](https://1ivy.atlassian.net/browse/XIVY-10659) IvyScript type interference for Lists broken 
+* [XIVY-10664](https://1ivy.atlassian.net/browse/XIVY-10664) Prevent XSS attacks with escaping data in Slow Request and MBeans view of Engine Cockpit <span class="badge badge-pill badge-success badge-security">security</span>
+* [XIVY-10674](https://1ivy.atlassian.net/browse/XIVY-10674) Session cookie should have secure flag set if X-Forwarded-Proto is set to https <span class="badge badge-pill badge-success badge-security">security</span>
+* [XIVY-10675](https://1ivy.atlassian.net/browse/XIVY-10675) IVYSESSIONID-* cookie should set the secure flag if request is secure or secure cookies are configured in web.xml <span class="badge badge-pill badge-success badge-security">security</span>
+* [XIVY-10676](https://1ivy.atlassian.net/browse/XIVY-10676) Reduced size of Embedded Process results in errors when inserting new elements 
+* [XIVY-10690](https://1ivy.atlassian.net/browse/XIVY-10690) NPE when hovering over a variable in IvyScript editor that is not declared 
+* [XIVY-10694](https://1ivy.atlassian.net/browse/XIVY-10694) After Excel import in CMS there are some entries which has a different new line format 
+* [XIVY-10708](https://1ivy.atlassian.net/browse/XIVY-10708) Exception on getStartables() if the responsible role on a process start is deleted 
+* [XIVY-10748](https://1ivy.atlassian.net/browse/XIVY-10748) Problems in offline Designer if a market product has dependencies to other market artifacts 
+* [XIVY-10788](https://1ivy.atlassian.net/browse/XIVY-10788) Multiline labels on process arcs (edges) are not saved properly 
+* [XIVY-10803](https://1ivy.atlassian.net/browse/XIVY-10803) Strange validation errors because process model cannot be read 
+* [XIVY-10808](https://1ivy.atlassian.net/browse/XIVY-10808) OutOfMemoryError due to process data class that cannot be found during process data deserialisation 
+* [XIVY-10813](https://1ivy.atlassian.net/browse/XIVY-10813) Exception during system database cache invalidation if entity is read from cache while invalidating 
+* [XIVY-10831](https://1ivy.atlassian.net/browse/XIVY-10831) Bad performance of system database association cache invalidation <span class="badge badge-pill badge-success badge-performance">performance</span>
+* [XIVY-10845](https://1ivy.atlassian.net/browse/XIVY-10845) 'any' sql statements are only validated on UI but not by process validation 
+* [XIVY-10855](https://1ivy.atlassian.net/browse/XIVY-10855) Windows standby (hibernation) disconnects the process editor 
+* [XIVY-10857](https://1ivy.atlassian.net/browse/XIVY-10857) Bad default namespace in the New Axon Ivy Project wizard  
+* [XIVY-10859](https://1ivy.atlassian.net/browse/XIVY-10859) Do not allow same qualified name for Data Class and User Dialog 
+* [XIVY-10860](https://1ivy.atlassian.net/browse/XIVY-10860) The Designer should enforce to use lower case data attribute names 
+* [XIVY-10868](https://1ivy.atlassian.net/browse/XIVY-10868) Branding logo is not considered in notification mails 
+* [XIVY-10918](https://1ivy.atlassian.net/browse/XIVY-10918) Cannot create new admin users if named user license exceeded 
+* [XIVY-10923](https://1ivy.atlassian.net/browse/XIVY-10923) Field value of p:selectOneMenu should appear left-aligned when using frame right template 
+* [XIVY-10934](https://1ivy.atlassian.net/browse/XIVY-10934) Ivy behind IIS (not AJP) - configuration seems not to set up X-Forwarded-Proto and other proxy headers. <span class="badge badge-pill badge-success badge-security">security</span>
+* [XIVY-10947](https://1ivy.atlassian.net/browse/XIVY-10947) Index case or task data not up to date in case multiple changes are done in a short period of time 
+* [XIVY-10963](https://1ivy.atlassian.net/browse/XIVY-10963) In HTML Dialog views only the first EL expression in a attribute value is validated 
+* [XIVY-10982](https://1ivy.atlassian.net/browse/XIVY-10982) ClassCastException during validation of EL expression with enum type == or != null 
+* [XIVY-11029](https://1ivy.atlassian.net/browse/XIVY-11029) Engine Cockpit does sometimes not display the name of a role 
+* [XIVY-11036](https://1ivy.atlassian.net/browse/XIVY-11036) HTML Dialog editor preview can not handle flex grids used in our html-dialog-demos 
+* [XIVY-11037](https://1ivy.atlassian.net/browse/XIVY-11037) Task modifications can cause multiple new task emails 
+* [XIVY-11068](https://1ivy.atlassian.net/browse/XIVY-11068) Enforce REST application/url-encoded params serialization as String 
+* [XIVY-11091](https://1ivy.atlassian.net/browse/XIVY-11091) Deployment should fail if a project with an unregistered thirdparty element is deployed 
+* [XIVY-11109](https://1ivy.atlassian.net/browse/XIVY-11109) HTML dialog logic methods not validated as bean properties in EL  
+* [XIVY-11110](https://1ivy.atlassian.net/browse/XIVY-11110) Favicon.ico in Engine Cockpit is not available 
+* [XIVY-11140](https://1ivy.atlassian.net/browse/XIVY-11140) Hide normal sidebar logo in collapsed Freya side menu 
+* [XIVY-11161](https://1ivy.atlassian.net/browse/XIVY-11161) EndPage from file selector should always use '/' instead of '\' as file seperator 
+* [XIVY-11163](https://1ivy.atlassian.net/browse/XIVY-11163) CMS entries are shown with the wrong icon and can not be opened from the Search view 
+* [XIVY-11172](https://1ivy.atlassian.net/browse/XIVY-11172) NPE in Designer annotation processing when project has dependency to packed iar 
+* [XIVY-11173](https://1ivy.atlassian.net/browse/XIVY-11173) Menu 'Maven'>'Update Project' opens demo processes 
+* [XIVY-11197](https://1ivy.atlassian.net/browse/XIVY-11197) REST form params/multipart enforce Object as String 
+* [XIVY-11208](https://1ivy.atlassian.net/browse/XIVY-11208) Dev-Wf-UI tasks search is showing data which shouldn't be visible 
+* [XIVY-11209](https://1ivy.atlassian.net/browse/XIVY-11209) Dev-Wf-UI task responsible shows user abbreviation instead of display name 
+* [XIVY-11246](https://1ivy.atlassian.net/browse/XIVY-11246) NPE in dev-wf-ui when switching user on task or case detail 
+* [XIVY-11254](https://1ivy.atlassian.net/browse/XIVY-11254) Project-build-plugin does deploy dependent packages in wrong order for IvyTest and IvyProcessTest 
+* [XIVY-11259](https://1ivy.atlassian.net/browse/XIVY-11259) Custom mail processes don't work if the web.xml session cookie secure flag is true 
+* [XIVY-11266](https://1ivy.atlassian.net/browse/XIVY-11266) User and role workflow counts are always 0 in Engine Cockpit  
+* [XIVY-11309](https://1ivy.atlassian.net/browse/XIVY-11309) Import of test-project from the Market throws exception 
+* [XIVY-11310](https://1ivy.atlassian.net/browse/XIVY-11310) User synchronisation with Azure Active Directory fails if userPrincipal has special characters like # in it 
+* [XIVY-11319](https://1ivy.atlassian.net/browse/XIVY-11319) Ivy persistence can not persist new objects if database table already exists 
+* [XIVY-11325](https://1ivy.atlassian.net/browse/XIVY-11325) Debugging 'jump into' action does not work for embedded sub process element 
+* [XIVY-11332](https://1ivy.atlassian.net/browse/XIVY-11332) Engine migration-wizard broken with Debian package 
+* [XIVY-11334](https://1ivy.atlassian.net/browse/XIVY-11334) Engine fails to update symlinked configuration directory 
+* [XIVY-11340](https://1ivy.atlassian.net/browse/XIVY-11340) IndexOutOfBoundsException on Engine Cockpit users/roles view if no app is defined 
+* [XIVY-11344](https://1ivy.atlassian.net/browse/XIVY-11344) IIS installation scripts fails when configuring the termination of HTTPS 
+* [IVYPORTAL-14497](https://1ivy.atlassian.net/browse/IVYPORTAL-14497) Cannot change language in My Profile (like de_AT, de_CH) 
+* [IVYPORTAL-14509](https://1ivy.atlassian.net/browse/IVYPORTAL-14509) Dashboard permissions autocomplete works incorrectly after unselecting all permissions 
+* [IVYPORTAL-14637](https://1ivy.atlassian.net/browse/IVYPORTAL-14637) Fix broken links in documentation 
+* [IVYPORTAL-14645](https://1ivy.atlassian.net/browse/IVYPORTAL-14645) Portal Permissions are granted automatically after restarting engine 
+* [IVYPORTAL-14655](https://1ivy.atlassian.net/browse/IVYPORTAL-14655) Fix Process Image cannot load image when separated Portal app 
+* [IVYPORTAL-14712](https://1ivy.atlassian.net/browse/IVYPORTAL-14712) Changing language to Japanese causes NPE in Portal 10.0.1 
+* [IVYPORTAL-14851](https://1ivy.atlassian.net/browse/IVYPORTAL-14851) Login does not work https://axonivyengine/{myapp}/login 
 
 ## 10.0.0 (2022-10-17)
 
