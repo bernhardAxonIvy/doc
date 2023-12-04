@@ -7,6 +7,8 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.webdriver;
+import static com.codeborne.selenide.WebDriverConditions.currentFrameUrlContaining;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -63,11 +65,13 @@ public class TestEngineScreenshots {
     PrimeUi.selectOne(By.id("leave-request:leave-type")).selectItemByLabel("Annual Leave");
     $(By.id("leave-request:from_input")).shouldBe(visible).sendKeys("23/12/2023 16:00");
     //Hack to close strange datepicker
+    Selenide.sleep(300);
     $(By.id("leave-request:from_panel")).shouldBe(visible);
     $(By.id("leave-request:from_input")).sendKeys(Keys.ESCAPE);
 
     $(By.id("leave-request:to_input")).shouldBe(visible).sendKeys("03/01/2024 8:00");
     //Hack to close strange datepicker
+    Selenide.sleep(300);
     $(By.id("leave-request:to_panel")).shouldBe(visible);
     $(By.id("leave-request:to_input")).sendKeys(Keys.ESCAPE);
 
@@ -76,6 +80,8 @@ public class TestEngineScreenshots {
     takeScreenshot("engine-portal-form", 900);
 
     $(By.id("leave-request:button-submit")).should(visible).click();
+    Selenide.switchTo().defaultContent();
+    webdriver().shouldHave(currentFrameUrlContaining("PortalDashboard.xhtml"));
 
     open(EngineUrl.create().app(DEMO_PORTAL).path("logout").toUrl());
     loginToPortal("guest");
