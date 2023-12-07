@@ -234,6 +234,39 @@ will be applied to this client variable.
 
 |image15|
 
+**JAX-RS Example**:
+
+::
+
+  import javax.ws.rs.client.Entity;
+  import com.fasterxml.jackson.databind.JsonNode;
+  import javax.ws.rs.core.MultivaluedHashMap;
+  import javax.ws.rs.core.MultivaluedMap;
+
+  MultivaluedMap map = new MultivaluedHashMap();
+  map.add("title","I need a new car");
+  map.add("description", "really, I'm sick of my old Fiat Punto");
+  map.add("cost", in.price.toString());
+
+  JsonNode result = client.request()
+    .put(Entity.form(map))
+    .readEntity(JsonNode.class) as JsonNode;
+  
+  ivy.log.info(result);
+
+.. warning::
+
+  REST Response objects must be closed to avoid blocked connection pools.
+  You must do it by calling close() or readEntity() on a Response, that was created by calling 
+  any method on the ``Invocation.Builder`` class (e.g. ``client.request().put(...)``) 
+  that returns a ``Response`` object 
+
+  The best practice is to use a ``try {} finally {}`` block and close the response in the ``finally`` block. 
+  See the POST request example in the next chapter.
+
+  If you forget to close the response, then the connection used to call the REST service will not be returned 
+  to the connection pool. Over time all connections in the pool are consumed and all new requests 
+  will be blocked forever. 
 
 Call from Java
 ~~~~~~~~~~~~~~
@@ -247,7 +280,7 @@ object is an instance of a
 which is pre-configured as defined in the :ref:`rest-clients-configuration`. It
 provides fluent API to call the remote REST service.
 
-**Sample**
+**Java Example**
 
 ::
 
@@ -257,8 +290,16 @@ provides fluent API to call the remote REST service.
    // GET request to receive a simple string
    String token = Ivy.rest().client(UUID.fromString("e00c9735-7733-4da8-85c8-6413c6fb2cd3")).request().get(String.class);
 
-   // POST request to send a complex object
-   Ivy.rest().client("crmService").request().post(javax.ws.rs.client.Entity.json(myPerson));
+   // POST request to send a complex object. Don't forget to close the response to prevent connection leaks
+   Response response = Ivy.rest().client("crmService").request().post(javax.ws.rs.client.Entity.json(myPerson));
+   try {
+     if (response.getStatus() != 200) {
+       throw new RuntimeException("Error failed to update person");
+     }
+   } finally {
+     response.close();
+   }
+
 
 
 Re-use Configurations
