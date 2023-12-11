@@ -46,6 +46,10 @@ process start signature. The following default pages can be customized:
     +----------------------------------------------------------------------------------------+----------------------------------------------------+
     | **Task List** with all tasks the current user can work on.                             | DefaultTaskListPage()                              |
     +----------------------------------------------------------------------------------------+----------------------------------------------------+
+    | **Task Detail Page** with detailed information about a task.                           | DefaultTaskDetailPage(String id)                   |
+    +----------------------------------------------------------------------------------------+----------------------------------------------------+
+    | **Case Detail Page** with detailed information about a case.                           | DefaultCaseDetailPage(String id)                   |
+    +----------------------------------------------------------------------------------------+----------------------------------------------------+
     | **Process Start List** with all processes which the current user can start.            | DefaultProcessStartListPage()                      |
     +----------------------------------------------------------------------------------------+----------------------------------------------------+
     | **End Page** which will be displayed to the user after a task or process is completed. | DefaultEndPage(Number endedTaskId)                 |
