@@ -37,17 +37,14 @@
           <execution>
             <id>generateSqlSchemaDocumentation</id>
             <goals>
-              <goal>generate-meta-output</goal>
+              <goal>generate-html</goal>
             </goals>
             <configuration>
-              <generatorClass>ch.ivyteam.db.meta.generator.internal.HtmlDocGenerator</generatorClass>
+              <inputDirectory>../../workspace/ch.ivyteam.ivy.persistence/meta</inputDirectory>
+              <outputDirectory>${schema.folder}</outputDirectory>
             </configuration>
           </execution>
         </executions>
-        <configuration>
-          <inputDirectory>../../workspace/ch.ivyteam.ivy.persistence/meta</inputDirectory>
-          <outputDirectory>${schema.folder}</outputDirectory>
-        </configuration>
       </plugin>
     </plugins>
   </build>
