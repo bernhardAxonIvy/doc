@@ -1,7 +1,11 @@
 Microsoft Teams Notifications
 -----------------------------
 
-This channel provides notifications via Microsoft Teams. If you enable this channel, you also need to:
+This channel provides notifications via Microsoft Teams. 
+If this channel is active in a security system with Azure Active Directory,
+the messages are sent using the user's External ID, which is linked via :ref:`Azure Active Directory <azure-ad>`.
+If the External ID is not set (e.g. for local users) or if the Azure Active Directory is not configured,
+the user's email address is used. If you enable this channel, you also need to:
 
 - :ref:`Create a technical user in the Azure AD which serves as the sender of notifications<microsoft-teams-notifications-technical-user>`.
 - :ref:`Create an application in the Azure AD where the technical user can log in and send messages through<microsoft-teams-notifications-application>`.
