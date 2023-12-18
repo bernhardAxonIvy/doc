@@ -259,14 +259,27 @@ will be applied to this client variable.
   REST Response objects must be closed to avoid blocked connection pools.
   You must do it by calling close() or readEntity() on a Response, that was created by calling 
   any method on the ``Invocation.Builder`` class (e.g. ``client.request().put(...)``) 
-  that returns a ``Response`` object 
-
-  The best practice is to use a ``try {} finally {}`` block and close the response in the ``finally`` block. 
-  See the POST request example in the next chapter.
-
+  that returns a ``Response`` object.
+  
+  The best practice in Java is to use a try-with-resources statement. See the POST request example in the next chapter.
+  However, in IvyScript try-with-resources is not supported, instead you should use a try {} finally {} statement and close 
+  the response in the finally block. See example below.
+  
   If you forget to close the response, then the connection used to call the REST service will not be returned 
   to the connection pool. Over time all connections in the pool are consumed and all new requests 
   will be blocked forever. 
+
+:: 
+
+  Response response = client.request().put(Entity.form(map));
+  try {
+    if (response.getStatus() != 200) {
+      BpmError.create("ivy:error:rest").withMessage("Cannot create person").throwError();
+    }
+  } finally {
+    response.close();
+  }
+
 
 Call from Java
 ~~~~~~~~~~~~~~
@@ -285,21 +298,17 @@ provides fluent API to call the remote REST service.
 ::
 
    // retrieve pre-configured REST service client
-   WebTarget client = Ivy.rest().client("myServiceName"):
+   WebTarget client = Ivy.rest().client("myServiceName");
 
    // GET request to receive a simple string
    String token = Ivy.rest().client(UUID.fromString("e00c9735-7733-4da8-85c8-6413c6fb2cd3")).request().get(String.class);
 
    // POST request to send a complex object. Don't forget to close the response to prevent connection leaks
-   Response response = Ivy.rest().client("crmService").request().post(javax.ws.rs.client.Entity.json(myPerson));
-   try {
+   try (Response response = Ivy.rest().client("crmService").request().post(javax.ws.rs.client.Entity.json(myPerson))) {
      if (response.getStatus() != 200) {
        throw new RuntimeException("Error failed to update person");
      }
-   } finally {
-     response.close();
    }
-
 
 
 Re-use Configurations
