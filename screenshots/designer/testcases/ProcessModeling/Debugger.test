@@ -94,15 +94,4 @@ with [get-view Variables] {
 	get-button "Collapse All .*" | get-object | captureScreenshot "simulation-debugging/button-variable-collapse.png"
 }
 
-importProject documentationExampleProject
-
-openInscription -processName runtimeLogProcess -elementName ivyLog -elementType "Script Step"
-
-with [get-window "Inscribe Script Step"] {
-	resizeWindow 550 400
-	get-tab-folder | get-tab-item Code | click
-	wait 500
-	saveWindowContentScreenshot "simulation-debugging/runtimelog-script.png"
-	get-button "Cancel" | click
-}
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

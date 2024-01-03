@@ -442,10 +442,8 @@ Open any process elements that contain IvyScript (like: Step, Web
 Service, etc.) and type a script like the one you find in the figure
 below:
 
-.. figure:: /_images/simulation-debugging/runtimelog-script.png
-   :alt: IvyScript to log into Runtime Log
-
-   IvyScript to log into Runtime Log
+.. literalinclude:: includes/log.txt
+    :language: java
 
 Find out more about Axon Ivy scripting language :ref:`ivyscript`.
 
