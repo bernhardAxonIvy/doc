@@ -300,5 +300,5 @@ Jump out
 
 
 
-.. |image2| image:: /_images/process-modeling/process-editor.png
+.. |image2| image:: /_images/process-editor/process-editor.png
 .. |image3| image:: /_images/process-modeling/process-node.png

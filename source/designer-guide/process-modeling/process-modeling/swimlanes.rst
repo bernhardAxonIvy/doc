@@ -1,7 +1,7 @@
 Swimlanes
 ---------
 
-.. figure:: /_images/process-modeling/swimlanes.png
+.. figure:: /_images/process-editor/swimlanes.png
 
 Processes can be visually structured by using *pools* and *lanes*. Pools and
 lanes are swimlanes with a label that is placed *behind* the process logic.
