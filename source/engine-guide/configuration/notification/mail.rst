@@ -13,9 +13,3 @@ This channel provides notifications via mail. If you enable this channel, you al
 .. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.notification.mail/src/ch/ivyteam/ivy/notification/mail/impl/mail-channel-template.yaml
   :language: yaml
   :linenos:
-
-**Reference**
-
-.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.notification.mail/src/ch/ivyteam/ivy/notification/mail/impl/mail-channel-reference.yaml
-  :language: yaml
-  :linenos:

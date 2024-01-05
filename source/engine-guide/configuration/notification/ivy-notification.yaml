@@ -8,6 +8,8 @@ SecuritySystems:
       Channels:
         # each channel has it's own identifier
         web:
+          # name of the channel to identify which channel it is
+          Name: web
           # each channel can be enabled/disabled
           Enabled: true
           # each channel can define which events are subscribed by default

@@ -9,9 +9,3 @@ are shown in Axon Ivy Portal.
 .. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.notification.web/src/ch/ivyteam/ivy/notification/web/impl/web-channel-template.yaml
   :language: yaml
   :linenos:
-
-**Reference**
-
-.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.notification.web/src/ch/ivyteam/ivy/notification/web/impl/web-channel-reference.yaml
-  :language: yaml
-  :linenos:
