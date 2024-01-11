@@ -427,11 +427,6 @@ Task Options
    finish.
    
    Onle one task of a Task Switch element can activate *Skip tasklist*.
-   
-   **Suppress Notification**
-
-   A notification is generated when a task is created or assigned.
-   If *Suppress Notification* is enabled, no notifications will be generated for this task.
 
    **Delay**
 
@@ -493,6 +488,25 @@ Task Custom Fields
    .. include:: _embedInFrame.rst
    If ``embedInFrame`` is set to ``false`` on the task tab custom fields, the next 
    task is gonna open on a full screen page.
+
+
+.. _process-element-tab-task-notification:
+Task Notification
+   .. figure:: /_images/process-inscription/common-section-task-notification.png
+      :alt: Task Notification
+
+      Task Notification
+
+   **Suppress Notification**
+
+   A notification is generated when a task is created or assigned.
+   If *Suppress Notification* is enabled, no notifications will be generated for this task.
+
+   **Template**
+
+   A template which is located in the cms :file:`/Notification/new-task/Templates/${template}/${channel}/Subject|Content`
+   e.g. the *Subject* template *my-custom-template* for the *mail* channel: 
+   :file:`/Notification/new-task/Templates/my-custom-template/mail/Subject`. See als :ref:`Templating <notification-templating>`.
 
 
 .. _process-element-tab-task-code:

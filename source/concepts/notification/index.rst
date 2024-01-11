@@ -57,9 +57,11 @@ in the Axon Ivy Portal.
 
 .. note::
 
-    You can suppress a notification for a task assignment :ref:`in the process <process-element-tab-task>`
+    You can suppress a notification for a task assignment :ref:`in the process <process-element-tab-task-notification>`
     itself. No matter how the subscription is configured, no notification will be created for this given task.
 
+
+.. _notification-templating:
 
 Templating
 ^^^^^^^^^^
@@ -74,8 +76,33 @@ It is the same for all channels either :code:`Subject` or :code:`Content` or bot
 - Mail Channel: :code:`Subject`, :code:`Content`
 - Microsoft Teams Channel: :code:`Content`
 
-The templates are currently in the system CMS (:file:`[engineDir]/system/cms`) and
-can be modified there directly. The CMS structure is as follows:
+
+Templates are resolved at runtime as follows:
+
+#. Defined template on the :ref:`task element <process-element-tab-task-notification>` from the project cms:
+
+   :file:`/Notification/${event}/Templates/${template}/${channel}/Subject|Content`
+
+   e.g. :file:`/Notification/new-task/Templates/my-template/mail/Subject`
+#. Default template from the project cms:
+
+   :file:`/Notification/${event}/Templates/Default/${channel}/Subject|Content`
+
+   e.g. :file:`/Notification/new-task/Templates/Default/mail/Subject`
+#. Defined template on the :ref:`task element <process-element-tab-task-notification>` from the system cms:
+
+   :file:`/Notification/${event}/Templates/${template}/${channel}/Subject|Content`
+
+   e.g. :file:`/Notification/new-task/Templates/my-template/mail/Subject`
+#. Default template from the system cms:
+
+   :file:`/Notification/${event}/Templates/Default/${channel}/Subject|Content`
+
+   e.g. :file:`/Notification/new-task/Templates/Default/mail/Subject`
+#. Axon Ivy Engine Fallback
+
+The system cms is located in (:file:`[engineDir]/system/cms`). Here is an example cms
+with a :code:`Default` template for the `mail` channel.
 
 .. code:: yaml
 
@@ -87,16 +114,19 @@ can be modified there directly. The CMS structure is as follows:
         
         Templates:
           
-          # channel
-          mail:
+          # template name
+          Default:
 
-            # mail channel needs a subject
-            Subject: New Task '<%= ivy.html.escape(ivy.task.name) %>' for <%= ivy.html.escape(ivy.task.activator().displayName()) %>
+            # channel
+            mail:
 
-            # mail channel needs a content
-            Content: Hello <%= ivy.session.getSessionUser().getFullName() %><br/>You have this new task: <%= ivy.html.escape(ivy.task.name) %> that has been assigned to: <%= ivy.html.escape(ivy.task.activator().displayName())%>
-            # A big template can be placed in an own file 
-            # here: [engineDir]/system/cms/Notification/new-task/Templates/mail/Content.html
+              # mail channel needs a subject
+              Subject: New Task '<%= ivy.html.escape(ivy.task.name) %>' for <%= ivy.html.escape(ivy.task.activator().displayName()) %>
+
+              # mail channel needs a content
+              Content: Hello <%= ivy.session.getSessionUser().getFullName() %><br/>You have this new task: <%= ivy.html.escape(ivy.task.name) %> that has been assigned to: <%= ivy.html.escape(ivy.task.activator().displayName())%>
+              # A big template can be placed in an own file 
+              # here: [engineDir]/system/cms/Notification/new-task/Templates/Default/mail/Content.html
 
 
 You can use ivy macros and the following variables in templates:
