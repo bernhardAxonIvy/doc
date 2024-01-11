@@ -81,22 +81,22 @@ Templates are resolved at runtime as follows:
 
 #. Defined template on the :ref:`task element <process-element-tab-task-notification>` from the project CMS:
 
-   :file:`/Notification/${event}/Templates/${template}/${channel}/Subject|Content`
+   :file:`/Notification/[event]/Templates/[template]/[channel]/Subject|Content`
 
    e.g. :file:`/Notification/new-task/Templates/my-template/mail/Subject`
 #. Defined template on the :ref:`task element <process-element-tab-task-notification>` from the system CMS:
 
-   :file:`/Notification/${event}/Templates/${template}/${channel}/Subject|Content`
+   :file:`/Notification/[event]/Templates/[template]/[channel]/Subject|Content`
 
    e.g. :file:`/Notification/new-task/Templates/my-template/mail/Subject`
 #. Default template from the project CMS:
 
-   :file:`/Notification/${event}/Templates/Default/${channel}/Subject|Content`
+   :file:`/Notification/[event]/Templates/Default/[channel]/Subject|Content`
 
    e.g. :file:`/Notification/new-task/Templates/Default/mail/Subject`
 #. Default template from the system CMS:
 
-   :file:`/Notification/${event}/Templates/Default/${channel}/Subject|Content`
+   :file:`/Notification/[event]/Templates/Default/[channel]/Subject|Content`
 
    e.g. :file:`/Notification/new-task/Templates/Default/mail/Subject`
 #. Axon Ivy Engine Fallback
