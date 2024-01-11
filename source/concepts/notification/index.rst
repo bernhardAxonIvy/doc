@@ -79,29 +79,29 @@ It is the same for all channels either :code:`Subject` or :code:`Content` or bot
 
 Templates are resolved at runtime as follows:
 
-#. Defined template on the :ref:`task element <process-element-tab-task-notification>` from the project cms:
+#. Defined template on the :ref:`task element <process-element-tab-task-notification>` from the project CMS:
 
    :file:`/Notification/${event}/Templates/${template}/${channel}/Subject|Content`
 
    e.g. :file:`/Notification/new-task/Templates/my-template/mail/Subject`
-#. Default template from the project cms:
+#. Defined template on the :ref:`task element <process-element-tab-task-notification>` from the system CMS:
+
+   :file:`/Notification/${event}/Templates/${template}/${channel}/Subject|Content`
+
+   e.g. :file:`/Notification/new-task/Templates/my-template/mail/Subject`
+#. Default template from the project CMS:
 
    :file:`/Notification/${event}/Templates/Default/${channel}/Subject|Content`
 
    e.g. :file:`/Notification/new-task/Templates/Default/mail/Subject`
-#. Defined template on the :ref:`task element <process-element-tab-task-notification>` from the system cms:
-
-   :file:`/Notification/${event}/Templates/${template}/${channel}/Subject|Content`
-
-   e.g. :file:`/Notification/new-task/Templates/my-template/mail/Subject`
-#. Default template from the system cms:
+#. Default template from the system CMS:
 
    :file:`/Notification/${event}/Templates/Default/${channel}/Subject|Content`
 
    e.g. :file:`/Notification/new-task/Templates/Default/mail/Subject`
 #. Axon Ivy Engine Fallback
 
-The system cms is located in (:file:`[engineDir]/system/cms`). Here is an example cms
+The system CMS is in (:file:`[engineDir]/system/cms`). Here is an example CMS
 with a :code:`Default` template for the `mail` channel.
 
 .. code:: yaml

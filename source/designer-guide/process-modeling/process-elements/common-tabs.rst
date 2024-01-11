@@ -506,7 +506,7 @@ Task Notification
    **Template**
 
    A template which is located in the cms :file:`/Notification/new-task/Templates/${template}/${channel}/Subject|Content`
-   e.g. the *Subject* template *my-custom-template* for the *mail* channel: 
+   e.g. the :code:`Subject` template :code:`my-custom-template` for the :code:`mail`` channel: 
    :file:`/Notification/new-task/Templates/my-custom-template/mail/Subject`. See als :ref:`Templating <notification-templating>`.
 
 
