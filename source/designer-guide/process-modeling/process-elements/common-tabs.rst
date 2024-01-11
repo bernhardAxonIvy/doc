@@ -491,6 +491,7 @@ Task Custom Fields
 
 
 .. _process-element-tab-task-notification:
+
 Task Notification
    .. figure:: /_images/process-inscription/common-section-task-notification.png
       :alt: Task Notification
