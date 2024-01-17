@@ -88,7 +88,7 @@ For example:
 * For security reasons, we highly recommend employing a :ref:`reverse proxy <reverse-proxy>`.
 
 * You can synchronize your users from an :ref:`external Identity Provider
-  <identity-provider>` like Active Directory or Azure AD to minimize and
+  <identity-provider>` like Active Directory or Microsoft Entra ID to minimize and
   centralize the administration effort.
 
 * For high availability, performance and scalability, you can :ref:`cluster

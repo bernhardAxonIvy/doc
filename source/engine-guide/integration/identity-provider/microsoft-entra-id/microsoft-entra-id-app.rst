@@ -1,10 +1,10 @@
-.. _azure-ad-app:
+.. _microsoft-entra-id-app:
 
-Create Azure Active Directory App
----------------------------------
+Create Microsoft Entra ID App
+-----------------------------
 
 1. Goto `Azure Portal <https://portal.azure.com>`_
-2. Open :guilabel:`Azure Active Directory` by searching it
+2. Open :guilabel:`Microsoft Entra ID` by searching it
 3. Click on :guilabel:`App-Registration` on the left-side
 4. Click on :guilabel:`New registration`
 
