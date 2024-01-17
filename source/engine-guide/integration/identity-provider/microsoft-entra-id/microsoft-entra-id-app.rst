@@ -1,4 +1,4 @@
-.. microsoft-entra-id-app:
+.. _microsoft-entra-id-app:
 
 Create Microsoft Entra ID App
 -----------------------------
