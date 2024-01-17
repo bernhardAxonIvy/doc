@@ -21,7 +21,7 @@ distinguish between the following Identity Providers:
 
   We support the following Identity Providers by default:
 
-  - :ref:`azure-ad`
+  - :ref:`microsoft-entra-id`
   - :ref:`microsoft-ad`
   - :ref:`novell-edirectory`
 
