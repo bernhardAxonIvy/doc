@@ -1,4 +1,4 @@
-.. _azure-ad-app:
+.. microsoft-entra-id-app:
 
 Create Microsoft Entra ID App
 -----------------------------
