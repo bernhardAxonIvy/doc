@@ -76,12 +76,12 @@ You can do so by setting the cookie :code:`primefaces-theme-mode` to **light** o
 
 .. warning::
   If you change an existing template to the **freya-ivy** theme, you may need to set 
-  the :code:`body-hd` class on the :code:`<h:body>` tag, or simply start from a new 
-  generated frame template:
+  the :code:`body-hd` and the theme mode :code:`#{ivyFreyaTheme.mode}` class on the :code:`<h:body>` tag, 
+  or simply start from a new generated frame template:
 
   :: 
 
-    <h:body class="body-hd">
+    <h:body class="body-hd #{ivyFreyaTheme.mode}">
 
 
 .. _serenity-themes:
