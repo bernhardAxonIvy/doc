@@ -51,10 +51,6 @@ In the **License** view you can upload or renew a license. If you have a valid
 license you see a table with all information about it. On the right side you
 have a life overview of your active sessions with the ability to kill sessions.
 
-.. tip::
-    **Anonymous or System Sessions** do not appear in the session table but
-    they are counted as normal **Sessions or Licensed Sessions**.
-
 .. figure:: /_images/engine-cockpit/engine-cockpit-licence.png
 
 

@@ -11,6 +11,7 @@ To run the Axon Ivy Engine in :ref:`production mode <production-mode>` you need 
 license, which you can apply for via your Axon Ivy Partner or Axon Ivy Sales
 Representative. You need to provide 
 
+- the Axon Ivy Engine major version (e.g 8, 10, 11)
 - the Axon Ivy Engine edition
 - the number of named users 
 - the number of concurrent users
@@ -35,13 +36,9 @@ Named Users
 
 Registered users within an Axon Ivy Engine are called **named users (NU)**. These users
 have an account in the Axon Ivy Engine and thus can log in to the Axon Ivy
-Engine. User accounts are managed per security system. One user can have
-multiple accounts on a single Axon Ivy Engine, at most one per security system.
-Accounts in different security systems on the Axon Ivy Engine with the
-same user name count as one named user.
-
+Engine. Every user in the Axon Ivy Engine is considered a Named User. Deactivated users,
+administrators and the system user do not count as named users.
 All of this also applies to users on a cluster.
-
 
 Concurrent Users
 ~~~~~~~~~~~~~~~~
@@ -50,15 +47,12 @@ The number of users concurrently working on the Axon Ivy Engine is known as
 **concurrent users (CU)**. The Axon Ivy Engine counts the number of concurrent
 users as follows:
 
-* Every session of every user counts as one licensed sessions.
+* Every session of every user counts as one concurrent user.
 
 * The system session is not counted as a concurrent user, as all sessions 
-  in the system context for all administrator users.
+  for all administrator users.
 
-* Sessions (non-System sessions) created to call WebService Processes or Event
-  Bean Processes are created at the start of the process and are destroyed after
-  the execution of the process. These sessions are counted as described above while
-  they exist, i.e., during process execution.
+* Anonymous sessions do not count as concurrent user.
 
 This also applies to clusters.
 
