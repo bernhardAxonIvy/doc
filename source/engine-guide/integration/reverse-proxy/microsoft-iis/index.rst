@@ -3,52 +3,87 @@
 Microsoft IIS
 =============
 
-To use Microsoft IIS as reverse proxy in front of |ivy-engine| download and
-execute the powershell script :download:`iis-proxy-setup.ps1`. Right click
-on the file and click :guilabel:`Run with PowerShell`. You need to run this
-script as :guilabel:`Administrator`.
+We provide a Windows Powershell script to set up Microsoft IIS as a reverse
+proxy. We assumed the following when preparing this script:
 
-The first time, when you execute this script, you may be asked for a
+Hard requirements:
+
+- You have at least Windows Powershell (v5.1) installed and available.
+- The Server Manager PowerShell interface is available.
+
+Configurable requirements:
+
+- IIS is on the same host as the |ivy-engine|.
+- The |ivy-engine| is accessed via the :code:`Default Web Site` of IIS.
+- There are no other applications served by this IIS. Otherwise, you need to
+  adapt the IIS server level URL rewrite rules.
+- The script shall download the additional IIS modules required.
+
+To use Microsoft IIS as a reverse proxy in front of your |ivy-engine|, download
+and execute the powershell script :download:`iis-proxy-setup.ps1`. Right click
+on the file and click :guilabel:`Run with PowerShell`. You need to run this
+script :guilabel:`as Administrator`.
+
+The first time when you execute this script, you may be asked for a
 :guilabel:`Execution Policy Change` so that this script can be executed. You
 need to answer this question with :guilabel:`[A] Yes to All`.
 
-This script will guide you to set up IIS as reverse proxy for the |ivy-engine|.
-It is divided into several parts:
+This script will guide you to set up IIS as a reverse proxy for the |ivy-engine|.
 
-* **IIS Setup** will install all required features including IIS itself, URL
-  Rewrite and Application Request Routing (ARR) modules. Furthermore, it will
-  enable the reverse proxy capabilities and set :guilabel:`preserveHostHeader`
-  to :code:`true`. The most important configuration entries in IIS are the
-  :guilabel:`Authentication` and :guilabel:`URL Rewrite` modules.
+If your IIS server cannot access external links, you need to download the
+modules externally and upload them to your IIS server. Please check the download
+links for the modules in our script by searching for :guilabel:`downloadModule`.
+Once you have downloaded them, upload them onto the IIS server in a directory of
+your choice. Using the directory where you store our script is the most simple
+solution. Then, start the script and select `No` to the question titled
+:guilabel:`IIS Module Source`, and enter the path where you stored the modules
+in question :guilabel:`IIS Modules Source Path`. 
+
+The script is divided into several parts:
+
+* **IIS Setup** will install all required features including IIS itself, as well
+  as the URL Rewrite and Application Request Routing (ARR) modules. Furthermore,
+  it will enable the reverse proxy capabilities and set
+  :guilabel:`preserveHostHeader` to :code:`true`. The most important
+  configuration entries in IIS are the :guilabel:`Authentication` and
+  :guilabel:`URL Rewrite` modules. The script will sense if IIS including all
+  required features is already installed and will skip the IIS installation in
+  that case. 
 
   .. figure:: /_images/iis/iis-overview.png
 
-* **Rewrite Rule** configures the rule for URL rewriting. It will add a new rule
-  :code:`ivy-route-all` to the :guilabel:`Default Website`. This will route all
-  traffic to the |ivy-engine| which runs on the same host at
+* **URL Rewrite Rules** configures the rules for URL rewriting. It will add a
+  new rule :code:`ivy-route-all` to the :guilabel:`Default Website`. This will
+  route all traffic to the |ivy-engine| which runs on the same host at
   :code:`http://localhost:8080`. You may adjust this rule according to your
   needs when your |ivy-engine| runs on a different host, and/or on a different
   port. We recommend to :ref:`limit the access <reverse-proxy-secure-path>` to
-  specific applications by only routing the application which is used by your
-  users. You can do that by changing the pattern of the rule to
-  :code:`YOUR-APP.*` e.g., :code:`demo-portal.*`.
+  specific applications by only routing the applications that are available to
+  your users. You can do that by changing the standard pattern :code:`.*` of the
+  rule to :code:`YOUR-APP.*` e.g., :code:`demo-portal.*`. e.g.,
+  :code:`system.*`. If you have multiple apps being served by this IIS site, use
+  a rule like :code:`(demo-portal|myApp1|myOtherApp)\/.*`. We suggest that you
+  define a separate, internal-only website for access to the engine cockpit.
+  
+   .. figure:: /_images/iis/iis-url-rewrite.png
 
-  .. figure:: /_images/iis/iis-url-rewrite.png
+  There are features in |ivy| that require WebSocket communication. Therefore,
+  we automatically install the WebSocket feature. IIS-ARR is not able to
+  negotiate WebSocket compression, therefore we need to always set the HTTP
+  header :code:`SEC_WEBSOCKET_EXTENSIONS` to empty. We implement that adding
+  :code:`HTTP_SEC_WEBSOCKET_EXTENSIONS` to :guilabel:`IIS Server Variables` and
+  setting :code:`HTTP_SEC_WEBSOCKET_EXTENSIONS` on the :code:`ivy-route-all`
+  rewrite rule to empty.
 
-  There are features of Axon Ivy which requires WebSocket. Therefore we automatically
-  install the WebSocket feature. IIS-ARR is not able to negotiate WebSocket compression,
-  therefore we need to always set the HTTP Header :code:`SEC_WEBSOCKET_EXTENSIONS` to empty.
-  By adding :code:`HTTP_SEC_WEBSOCKET_EXTENSIONS` to :guilabel:`IIS Server Variable` and
-  setting :code:`HTTP_SEC_WEBSOCKET_EXTENSIONS` on the :code:`ivy-route-all` rewrite rule to empty.
 
-
-* **Terminate SSL on IIS** is that IIS serves the |ivy-engine| over HTTPS
-  but the connection between IIS and |ivy-engine| is HTTP. We highly recommend
-  to :ref:`setup your IIS this way <reverse-proxy-terminate-ssl>`. This will
-  create a new :guilabel:`IIS Server Variable` called :code:`HTTP_X-Forwarded-Proto` and
-  will be set to :code:`https` on the :code:`ivy-route-all` rewrite rule.
-  This will send the HTTP Header :code:`X-Forwarded-Proto` from IIS to the |ivy-engine|
-  which is needed, that the |ivy-engine| can generate correct URLs.
+* **Terminate SSL on IIS** ensures that IIS serves the |ivy-engine| over HTTPS
+  but the connection between IIS and |ivy-engine| is HTTP only. We highly
+  recommend to :ref:`setup your IIS this way <reverse-proxy-terminate-ssl>`.
+  This will create a new :guilabel:`IIS Server Variable` called
+  :code:`HTTP_X-Forwarded-Proto` that will be set to :code:`https` on the
+  :code:`ivy-route-all` rewrite rule. This will send the HTTP header
+  :code:`X-Forwarded-Proto` from IIS to the |ivy-engine|. The |ivy-engine| needs
+  this information to generate correct URLs.
 
   .. figure:: /_images/iis/iis-terminate-ssl-server-variable.png
 
@@ -56,28 +91,33 @@ It is divided into several parts:
 
 * **Setup SSO** will configure :ref:`Single Sign-on <single-sign-on>`. This will
   enable Windows Authentication and will add a HTTP request header
-  :code:`X-Forwarded-User` with the current user to the request which will be
+  :code:`X-Forwarded-User` with the current user to the request that will be
   forwarded to the |ivy-engine|. You will also need to :ref:`activate Single
-  Sign-on <single-sign-on>` on the |ivy-engine|. Furthermore this will also
+  Sign-on <single-sign-on>` on the |ivy-engine| in :code:`ivy.yaml`. The script will also
   enable Basic Authentication which is required for REST clients like the
-  Axon Ivy Mobile App to call the protected REST Services provided by the
+  |ivy| Mobile App to call the protected REST Services provided by the
   |ivy-engine|. If you don't need this you can manually disable it.
 
-  **Attention:** If you enable SSO, you need to ensure :ref:`exclusive access <single-sign-on>`
-  to the |ivy-engine| only over the IIS.
+  .. warning::
+
+    If you enable SSO, you need to make sure that your users can access the
+    |ivy-engine| :ref:`exclusively via IIS <single-sign-on>`.
 
   .. figure:: /_images/iis/iis-authentication.png
 
-* **Serve with HTTPS** is not covered by this script. This needs to be done manually.
-  First of all you need to install a SSL certificate. This can be done on server level
-  in section :guilabel:`Server Certificate`. Import your SSL certificate there or you
-  can generate a self-signed certificate to try out HTTPS.
+
+
+* **Serve with HTTPS** is not covered by this script. You need to set this up
+  manually. You need to install an SSL certificate. You can do this on the server
+  level in section :guilabel:`Server Certificate`. Import your SSL certificate
+  there. Alternatively, you can generate a self-signed certificate to try out
+  HTTPS.  
 
   .. figure:: /_images/iis/iis-https-certificate.png
 
-  After this step go to :guilabel:`Default Website`, open :guilabel:`Handler Mappings`
-  and add :code:`https` as a new binding. There you can choose now your SSL certificate.
-  I highly recommend to remove the :code:`http` binding. So that your |ivy-engine|
-  only can be served over HTTPS via IIS.
+  Then, go to :guilabel:`Default Website`, open :guilabel:`Handler Mappings` and
+  add :code:`https` as a new binding. Choose the SSL certificate you supplied
+  earlier. We strongly recommend to remove the :code:`http` binding. This prevents your
+  |ivy-engine| being accessible via HTTP through IIS.
 
   .. figure:: /_images/iis/iis-https-binding.png
