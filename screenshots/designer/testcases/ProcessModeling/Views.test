@@ -46,12 +46,6 @@ proc problemsView{
 		resizeWindow 800 300
 		get-object | captureScreenshot "process-modeling/problem-view.png"
 	}
-	
-	get-view "Axon Ivy Projects" | get-tree | get-item "QuickStartTutorial/Processes/MyProcess" | double-click
-	get-eclipse-window | resizeWindow 1090 860
-	wait 1000
-	find-tab-folder "MyProcess.p.json" | get-object | captureScreenshot "process-modeling/process-element-with-problem-marker.png"
-	get-eclipse-window | maximize
 }
 
 
