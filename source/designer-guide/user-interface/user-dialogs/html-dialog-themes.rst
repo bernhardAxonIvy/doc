@@ -46,7 +46,7 @@ following steps:
 Freya Themes
 ^^^^^^^^^^^^
 
-If you choose a **freya** theme, you do also need to import an additional layout
+If you choose a **freya** theme, you also need to import an additional layout
 stylesheet and script file. 
 
 You can fix the theme to a specific mode :code:`light` or :code:`dark`:
@@ -90,7 +90,7 @@ Serenity Themes
 ^^^^^^^^^^^^^^^
 
 If you choose a **serenity** theme, you can choose all the default serenity themes
-or the **serentiy-ivy** theme. If you do so, you have to import an additional
+or the **serenity-ivy** theme. If you do so, you have to import an additional
 layout.css file:
 
 ::
@@ -104,7 +104,7 @@ layout.css file:
     ...
   </h:head>
 
-  or the serentiy-ivy theme
+  or the serenity-ivy theme
 
   <h:head>
     <f:attribute name="primefaces.THEME" value="serenity-ivy" />
@@ -143,5 +143,5 @@ Color Customizing
 ^^^^^^^^^^^^^^^^^
 
 If you want to change the colors of the :ref:`serenity-ivy <serenity-themes>` or
-:ref:`freya-ivy <freya-themes>` theme, please have a look at the :ref:`branding`
+:ref:`freya-ivy <freya-themes>` themes, please have a look at the :ref:`branding`
 chapter.
