@@ -10,5 +10,5 @@
     between the web browser and server. Axon Ivy Engine uses port 8443 for HTTPS
     by default.
 
-  Have a look at the :ref:`ivy.yaml <ivy-webserver-yaml>` to see how you can
+  Have a look at the :ref:`ivy.yaml <ivy-yaml>` to see how you can
   adjust parts of the web server and its connectors to your needs.

@@ -23,7 +23,7 @@ Security Features
 
 The following features impact the security and have a good default (depending on
 what's better for security) and should not be changed. These feature flags are
-set in the :ref:`ivy-yaml` and :ref:`ivy-webserver-yaml`.
+set in the :ref:`ivy-yaml`.
 
 * ``Errors.ShowDetailsToEndUsers`` should always be set to ``false``, so that no
   exception details are shown to end users.

@@ -57,7 +57,7 @@ at least one business calendar; if none is defined, a default calendar is
 automatically generated.
 
 Here is an example of a business calendar definition;
-see :ref:`app-businesscalendar-yaml` for more detailed information.
+see :ref:`app-yaml` for more detailed information.
 
 .. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/app-businesscalendar.yaml
   :language: yaml

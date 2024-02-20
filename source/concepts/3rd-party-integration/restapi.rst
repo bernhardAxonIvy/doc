@@ -179,7 +179,7 @@ implemented such that no data is modified.
 
 The CSRF protection filter is enabled by default. However, it can be turned off
 in an environment where the clients can be trusted (e.g., intranet). See the 
-property ``REST.Servlet.CSRF.Protection`` in the :ref:`ivy-webserver-yaml`
+property ``REST.Servlet.CSRF.Protection`` in the :ref:`ivy-yaml`
 
 
 Workflow API

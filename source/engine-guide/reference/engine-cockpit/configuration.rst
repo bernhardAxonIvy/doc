@@ -23,7 +23,7 @@ Business Calendar
 
 The **Business Calendar** view shows all configured business calendars for each
 application. Business calendars are displayed in hierarchical order and can be
-created in the :ref:`app.yaml<app-businesscalendar-yaml>`.
+created in the :ref:`app.yaml<app-yaml>`.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-configuration-businesscalendar.png
 

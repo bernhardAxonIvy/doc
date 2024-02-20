@@ -7,9 +7,7 @@ File Reference
    :maxdepth: 1
 
    files/ivy-yaml
-   files/ivy-webserver-yaml
    files/app-yaml
-   files/app-businesscalendar-yaml
    files/jvm-options
    files/log4j2-xml
    files/ivy-cache-properties
