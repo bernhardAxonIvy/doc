@@ -27,6 +27,7 @@ with three built-in channels:
 Each of these channels can be :ref:`configured <engine-notification>` in :ref:`ivy.yaml <ivy-yaml>`. There are also
 dedicated views in the :ref:`engine cockpit <engine-cockpit-notification-channels>`.
 
+.. _notification-subscription:
 
 Subscription Management
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -76,6 +77,8 @@ It is the same for all channels either :code:`Subject` or :code:`Content` or bot
 - Mail Channel: :code:`Subject`, :code:`Content`
 - Microsoft Teams Channel: :code:`Content`
 
+Resolution
+""""""""""
 
 Templates are resolved at runtime as follows:
 
@@ -100,6 +103,9 @@ Templates are resolved at runtime as follows:
 
    e.g. :file:`/Notification/new-task/Templates/Default/mail/Subject`
 #. Axon Ivy Engine Fallback
+
+CMS Structure
+"""""""""""""
 
 The system CMS is in (:file:`[engineDir]/system/cms`). Here is an example CMS
 with a :code:`Default` template for the `mail` channel.
@@ -128,19 +134,38 @@ with a :code:`Default` template for the `mail` channel.
               # A big template can be placed in an own file 
               # here: [engineDir]/system/cms/Notification/new-task/Templates/Default/mail/Content.html
 
+Dynamic Macros
+""""""""""""""
 
 You can use ivy macros and the following variables in templates:
 
-- :code:`ivy.session`: :code:`ch.ivyteam.ivy.workflow.IWorkflowSession`
-- :code:`ivy.cm`: :code:`ch.ivyteam.ivy.cm.exec.ContentManagement`
+- :code:`receiver`: The :public-api:`receiver</ch/ivyteam/ivy/security/ISecurityMember.html>` of the notification.
+- :code:`payload`: The object that was provided as a payload of the notification.
+- :code:`ivy.session`: :public-api:`IWorkflowSession</ch/ivyteam/ivy/workflow/IWorkflowSession.html>` with the receiver as session user.
+- :code:`ivy.cm`: :public-api:`ContentManagement</ch/ivyteam/ivy/cm/exec/ContentManagement.html>`
 - :code:`ivy.html`: only one method :code:`ivy.html.escape(..)` is available
 - :code:`ivy.branding`: only one method :code:`ivy.branding.ref(..)` is available
 
 .. note::
 
-    You need to manually escape untrusted input. For example, a task name can consist of user input. The user
+    You need to escape untrusted input manually. For example, a task name can consist of user input. The user
     input must be properly escaped so that nobody can make XSS or phishing attacks. Use :code:`ivy.html.escape()`
     for this.
 
-Resource attachments like images or documents can be used too. Place them in the system CMS and use them in the template
+Resource attachments like images or documents can be used too. Please place them in the system CMS and use them in the template
 via :code:`ivy.cm.ref(..)`.
+
+Business Notifications
+^^^^^^^^^^^^^^^^^^^^^^
+
+Business notifications can be sent programmatically from a process using the public :public-api:`BusinessNotification</ch/ivyteam/ivy/notification/business/BusinessNotification.html>` API.
+You can provide the notification receivers and the message programmatically. 
+The message can be a simple String or a multi-lingual message resolved from the CMS.
+
+For more complex use cases a template and payload can be specified. 
+In the template you can use the variable described in the :ref:`templating<notification-templating>` chapter 
+and additionally the following variables: 
+
+- :code:`message`: :code:`String` with the provided message in the current language if provided by the CMS.
+- :code:`ivy.task`: The current :public-api:`ITask</ch/ivyteam/ivy/workflow/ITask.html>` that was active when the notification was sent. 
+

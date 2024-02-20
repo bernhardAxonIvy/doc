@@ -121,6 +121,10 @@ Identity Provider - see :ref:`engine-cockpit-security-system`.
 Attributes mapped from the Identity Provider like phone number, and department are 
 displayed in the :ref:`Additional LDAP Attributes<engine-cockpit-security-system-detail>`.
 
+The :guilabel:`Notification Channels` panel displays the :ref:`notification subscription<notification-subscription>` of the user. 
+E.g., on which notification channels the user currently receives which notification events. 
+The subscription can be enabled/disabled per notification channel and event. 
+
 The :guilabel:`Substitutes` panel displays all the substitutes the user has
 defined. This includes information about whether the substitute is used
 permanently or only during absences, if it is a substitute for personal tasks or

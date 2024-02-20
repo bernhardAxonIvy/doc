@@ -3,7 +3,7 @@
 Notification
 ============
 
-The |ivy-engine| sends notifications to users such as when a
+The |ivy-engine| sends :ref:`notifications<notification>` to users such as when a
 new task is assigned to a user. Different channels can be operated.
 Built-in channels are the following:
 
@@ -31,6 +31,7 @@ sent. However, users can individually set the notification settings in Axon Ivy
 Portal. All available events are:
 
 - **new-task**: If a user has a new task assignment (also on delegation)
+- **business**: If new business relevant event happens or new business information is available 
 
 .. rubric:: Cleanup
 
