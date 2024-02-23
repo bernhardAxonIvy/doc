@@ -200,6 +200,20 @@ Other SSL Settings
    considered when sending mails, for REST client calls, CXF Web Service
    client calls and when loading web service definition (WSDL) files.
 
+.. _engine-cockpit-tls:
+
+TLS Connenction Tester
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+With the TLS Connection Tester you can test secure connections to WebServices 
+(SOAP/REST) or active directories (LDAPS). This can be tested directly in 
+the Engine-Cockpit next to the connection tester. Supported TLS standards
+are detected and reported. Currently trusted certificates are printed and 
+untrusted certificates are reported.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-tls-tester.png
+   :alt: TLS Tester
+   :align: center
 
 .. _engine-cockpit-config-editor:
 
