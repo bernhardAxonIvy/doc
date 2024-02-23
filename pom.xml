@@ -18,6 +18,8 @@
     <includes.target.folder>${project.build.directory}/resources/includes</includes.target.folder>
     <engine.guide.url>https://developer.axonivy.com/doc/${doc.version}/engine-guide</engine.guide.url>
     <designer.guide.url>https://developer.axonivy.com/doc/${doc.version}/designer-guide</designer.guide.url>
+    <configuration.root>../workspace/ch.ivyteam.ivy.configuration/</configuration.root>
+    <configuration.defaults>ch/ivyteam/ivy/configuration/internal/defaults</configuration.defaults>
   </properties>
 
   <build>
@@ -170,12 +172,18 @@
               <useDefaultDelimiters>false</useDefaultDelimiters>
               <resources>
                 <resource>
-                  <directory>../workspace/ch.ivyteam.ivy.configuration/resources/ch/ivyteam/ivy/configuration/internal/defaults</directory>
+                  <directory>${configuration.root}/resources/${configuration.defaults}</directory>
+                  <filtering>true</filtering>
+                  <includes>
+                    <include>*.xml</include>
+                    <include>*.css</include>
+                  </includes>
+                </resource>
+                <resource>
+                  <directory>${configuration.root}/resources-generated/${configuration.defaults}</directory>
                   <filtering>true</filtering>
                   <includes>
                     <include>*.yaml</include>
-                    <include>*.xml</include>
-                    <include>*.css</include>
                   </includes>
                 </resource>
               </resources>
