@@ -167,5 +167,6 @@ In the template you can use the variable described in the :ref:`templating<notif
 and additionally the following variables: 
 
 - :code:`message`: :code:`String` with the provided message in the current language if provided by the CMS.
-- :code:`ivy.task`: The current :public-api:`ITask</ch/ivyteam/ivy/workflow/ITask.html>` that was active when the notification was sent. 
+- :code:`ivy.task`: The current :public-api:`ITask</ch/ivyteam/ivy/workflow/ITask.html>` that was active when the notification was sent.
+- :code:`ivy.case`: The current :public-api:`ICase</ch/ivyteam/ivy/workflow/ICase.html>` that was active when the notification was sent. 
 
