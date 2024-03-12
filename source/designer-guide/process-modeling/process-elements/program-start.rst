@@ -91,7 +91,7 @@ to define the local environment. For instance a system specific file path to loo
 being produced by a legacy system. 
 
 We help you with these configs by providing an accessor to statically configured
-element configuration via :public-api:`getConfiguration() </ch/ivyteam/ivy/process/eventstart/AbstractProcessStartEventBean.html#getConfiguration()>`.
+element configuration via :public-api:`getConfig() </ch/ivyteam/ivy/process/eventstart/AbstractProcessStartEventBean.html#getConfig()>`.
 
 
 .. include:: _programEditor.rst

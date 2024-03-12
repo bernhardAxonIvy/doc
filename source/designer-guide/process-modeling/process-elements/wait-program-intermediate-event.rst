@@ -113,7 +113,7 @@ defining the local environment. For instance, a system specific file path to loo
 being produced by a legacy system. 
 
 We help you with these configurations by providing an accessor for static 
-element configuration via :public-api:`getConfiguration() </ch/ivyteam/ivy/process/intermediateevent/AbstractProcessIntermediateEventBean.html#getConfiguration()>`.
+element configuration via :public-api:`getConfig() </ch/ivyteam/ivy/process/intermediateevent/AbstractProcessIntermediateEventBean.html#getConfig()>`.
 
 
 .. include:: _programEditor.rst

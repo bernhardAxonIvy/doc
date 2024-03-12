@@ -15,7 +15,7 @@ import ch.ivyteam.ivy.process.extension.ui.ExtensionUiBuilder;
 import ch.ivyteam.ivy.process.extension.ui.IUiFieldEditor;
 import ch.ivyteam.ivy.process.extension.ui.UiEditorExtension;
 import ch.ivyteam.ivy.request.RequestException;
-import ch.ivyteam.util.PropertiesUtil;
+import ch.ivyteam.ivy.process.extension.ProgramConfig;
 
 public class ErpInvoice extends AbstractProcessStartEventBean {
 
@@ -25,11 +25,11 @@ public class ErpInvoice extends AbstractProcessStartEventBean {
 
   @Override
   public void poll() {
-    Properties configs = PropertiesUtil.createProperties(getConfiguration());
-    int seconds = Integer.parseInt(configs.getProperty(Config.INTERVAL, "60"));
+    ProgramConfig configs = getConfig();
+    int seconds = Integer.parseInt(Optional.ofNullable(configs.get(Config.INTERVAL)).orElse("60"));
     getEventBeanRuntime().setPollTimeInterval(TimeUnit.SECONDS.toMillis(seconds));
 
-    String path = configs.getProperty(Config.PATH, "");
+    String path = configs.get(Config.PATH, "");
     try (Stream<Path> csv = Files.list(Path.of(path))) {
       List<Path> updates = csv.collect(Collectors.toList());
       startProcess("new stock items", Map.of("sheets", updates));
@@ -54,24 +54,10 @@ public class ErpInvoice extends AbstractProcessStartEventBean {
     @Override
     public void initUiFields(ExtensionUiBuilder ui) {
       ui.label("Path to read .CSV stock-item changes:").create();
-      path = ui.textField().create();
+      path = ui.textField(Config.PATH).create();
 
       ui.label("Interval in seconds to check for changes:").create();
-      interval = ui.scriptField().requireType(Integer.class).create();
-    }
-
-    @Override
-    protected void loadUiDataFromConfiguration() {
-      path.setText(getBeanConfigurationProperty(Config.PATH));
-      interval.setText(getBeanConfigurationProperty(Config.INTERVAL));
-    }
-
-    @Override
-    protected boolean saveUiDataToConfiguration() {
-      clearBeanConfiguration();
-      setBeanConfigurationProperty(Config.PATH, path.getText());
-      setBeanConfigurationProperty(Config.INTERVAL, interval.getText());
-      return true;
+      interval = ui.scriptField(Config.INTERVAL).requireType(Integer.class).create();
     }
   }
 

@@ -108,7 +108,7 @@ defining the local environment. For instance, a system specific file
 to send to a legacy system. 
 
 We help you with these configurations by providing an accessor for static
-element configurations via :public-api:`getConfigurationProperty() </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html#getConfigurationProperty()>`.
+element configurations via :public-api:`getConfig() </ch/ivyteam/ivy/process/extension/impl/AbstractUserProcessExtension.html#getConfig()>`.
 
 
 .. include:: _programEditor.rst

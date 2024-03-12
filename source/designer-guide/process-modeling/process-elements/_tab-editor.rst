@@ -121,10 +121,10 @@ value by calling the ``executeIvyScript`` method of the
      String fieldValue = "";
      String user= "";
 
-     user = (String)executeIvyScript(ownContext, getConfigurationProperty("User"));
-     eventtyp = (String)executeIvyScript(ownContext, getConfigurationProperty("Event Typ"));
-     linkId = (String)executeIvyScript(ownContext, getConfigurationProperty("Link-Id"));
-     fieldValue = (String)executeIvyScript(ownContext, getConfigurationProperty("Feldwert"));
+     user = (String)executeIvyScript(ownContext, getConfig().get("User"));
+     eventtyp = (String)executeIvyScript(ownContext, getConfig().get("Event Typ"));
+     linkId = (String)executeIvyScript(ownContext, getConfig().get("Link-Id"));
+     fieldValue = (String)executeIvyScript(ownContext, getConfig().get("Feldwert"));
      
      // add your call here
      

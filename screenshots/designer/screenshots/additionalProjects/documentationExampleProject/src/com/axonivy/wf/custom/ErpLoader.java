@@ -15,15 +15,13 @@ public class ErpLoader extends AbstractUserProcessExtension {
 
   @Override
   public CompositeObject perform(IRequestId requestId, CompositeObject in, IIvyScriptContext context) throws Exception {
-
-    String pathScript = getConfigurationProperty(Config.PATH);
+    String pathScript = getConfig().get(Config.PATH);
     File statistics = (File) executeIvyScript(context, pathScript);
     if (statistics.exists()) {
       ErpFileService.instance().reportStats(statistics);
     } else {
       getLog(context).warn("Failed to resolve statistics file from "+pathScript);
     }
-
     return in;
   }
 
@@ -34,19 +32,7 @@ public class ErpLoader extends AbstractUserProcessExtension {
     @Override
     public void initUiFields(ExtensionUiBuilder ui) {
       ui.label("The CSV statistic to report to Acme.ERP:").create();
-      filePath = ui.scriptField().requireType(File.class).create();
-    }
-
-    @Override
-    protected void loadUiDataFromConfiguration() {
-      filePath.setText(getBeanConfigurationProperty(Config.PATH));
-    }
-
-    @Override
-    protected boolean saveUiDataToConfiguration() {
-      clearBeanConfiguration();
-      setBeanConfigurationProperty(Config.PATH, filePath.getText());
-      return true;
+      filePath = ui.scriptField(Config.PATH).requireType(File.class).create();
     }
   }
 

@@ -17,7 +17,7 @@ import ch.ivyteam.ivy.process.extension.ui.ExtensionUiBuilder;
 import ch.ivyteam.ivy.process.extension.ui.IUiFieldEditor;
 import ch.ivyteam.ivy.process.extension.ui.UiEditorExtension;
 import ch.ivyteam.ivy.process.intermediateevent.AbstractProcessIntermediateEventBean;
-import ch.ivyteam.util.PropertiesUtil;
+import ch.ivyteam.ivy.process.extension.ProgramConfig;
 
 public class ErpPrintJob extends AbstractProcessIntermediateEventBean {
 
@@ -27,11 +27,11 @@ public class ErpPrintJob extends AbstractProcessIntermediateEventBean {
 
   @Override
   public void poll() {
-    Properties configs = PropertiesUtil.createProperties(getConfiguration());
-    int seconds = Integer.parseInt(configs.getProperty(Config.INTERVAL, "60"));
+    ProgramConfig config = getConfig();
+    int seconds = Integer.parseInt(Optional.ofNullable(config.get(Config.INTERVAL)).orElse("60"));
     getEventBeanRuntime().setPollTimeInterval(TimeUnit.SECONDS.toMillis(seconds));
 
-    String path = configs.getProperty(Config.PATH, "");
+    String path = config.get(Config.PATH);
     try (Stream<Path> csv = Files.list(Path.of(path)).filter(f -> f.startsWith("erp-print"))) {
       List<Path> reports = csv.collect(Collectors.toList());
       for(Path report : reports) {
