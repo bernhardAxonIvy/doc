@@ -143,6 +143,7 @@ You can use ivy macros and the following variables in templates:
 - :code:`payload`: The object that was provided as a payload of the notification.
 - :code:`ivy.session`: :public-api:`IWorkflowSession</ch/ivyteam/ivy/workflow/IWorkflowSession.html>` with the receiver as session user.
 - :code:`ivy.cm`: :public-api:`ContentManagement</ch/ivyteam/ivy/cm/exec/ContentManagement.html>`
+- :code:`ivy.application`: :public-api:`IApplication</ch/ivyteam/ivy/application/IApplication.html>`
 - :code:`ivy.html`: only one method :code:`ivy.html.escape(..)` is available
 - :code:`ivy.branding`: only one method :code:`ivy.branding.ref(..)` is available
 
