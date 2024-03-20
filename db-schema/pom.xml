@@ -16,7 +16,7 @@
     <schema.folder>../build/html/engine-guide/reference/systemdb-schema</schema.folder>
   </properties>
 
-  <build>    
+  <build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
