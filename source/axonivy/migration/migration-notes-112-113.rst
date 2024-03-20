@@ -22,7 +22,10 @@ There is a new :ref:`Project Conversion<project-convert-wizard>` available that 
 The following is automatically converted:
 
 - Rename ``p:repeat`` to ``ui:repeat`` because ``p:repeat`` was removed
-- Style classes from `PrimeFlex <https://primeflex.org/>`_ 2 to `PrimeFlex <https://primeflex.org/>`_ 3  
+- Style classes from `PrimeFlex <https://primeflex.org/>`_ 2 to `PrimeFlex <https://primeflex.org/>`_ 3
+- Stylesheet primeflex-2.min.css to primeflex-3.min.css
+- Add missing attributes ``layout="tabular"`` and ``columns="0"`` for component ``p:panelGrid``
+- Method ``contentLength`` of class ``DefaultStreamedContent.Builder`` takes a Long argument instead of an Integer argument   
 
 Chart
 *****
