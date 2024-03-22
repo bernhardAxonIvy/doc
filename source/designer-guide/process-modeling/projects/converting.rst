@@ -105,6 +105,7 @@ More project converters:
 
 For more information about the other project converters, have a look at:
 
+* :ref:`Primefaces 13 <primefaces13>`
 * :dev-url:`Primefaces 11 </doc/10.0/axonivy/migration/migration-notes-pf11.html>`
 * :dev-url:`Migrate from AXIS to CXF </doc/10.0/axonivy/migration/migration-notes-92-93.html#drop-axis-technology-for-web-service-client>`
 * :ref:`Portal Converter <portal-guide>`
