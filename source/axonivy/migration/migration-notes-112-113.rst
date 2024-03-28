@@ -25,10 +25,10 @@ Data.WorkDirectory no longer configurable in ivy.yaml
 
 |tag-ops-changed| 
 
-The `Data.WorkDirectory` is the temporary directory which Axon Ivy will create
+The `Data.WorkDirectory` is the temporary directory which Axon Ivy will use to create
 files. :code:`Data.WorkDirectory` can no longer be configured in
 :file:`ivy.yaml`. You need to configure it in :file:`jvm.options` as
-:code:`ivy.Data.WorkDirectory`. Or as operation system environment
+:code:`ivy.Data.WorkDirectory`. Or as operation system environment variable
 :code:`IVY_DATA_WORKDIRECTORY`.
 
 ------------
