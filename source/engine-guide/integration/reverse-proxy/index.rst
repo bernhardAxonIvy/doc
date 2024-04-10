@@ -59,14 +59,29 @@ links in mails).
       BaseUrl: https://acme.com
 
 
-.. rubric:: Host Header
+.. rubric:: HTTP Headers
 
 To successfully integrate a reverse proxy with the |ivy-engine| you need to pass the host
 which the client itself initally has requested, so that the |ivy-engine| can
 generate correct URLs based on the request. All documented examples
-preserving this host header, but if you integrate the |ivy-engine| with any other
-reverse proxy you need to pass the host header to the |ivy-engine|.
+preserve this :code:`Host` header, but if you integrate the |ivy-engine| with any other
+reverse proxy you need to pass the :code:`Host` header to the |ivy-engine|.
 
+Check out also the following headers in the example which need to be set correctly:
+
+- :code:`X-Forwarded-For`
+  for identifying the originating IP address of a
+  client connecting to the reverse proxy server. It should not affect
+  functionality, but you may be glad to have the correct IP address of your
+  client in the logs.
+- :code:`X-Forwarded-Proto`
+  for identifying the protocol (HTTP or HTTPS) that
+  a client used to connect to your reverse proxy server. This is important
+  otherwise the generated links or redirects are wrong. Mostly only needed to
+  terminate SSL on the reverse proxy server.
+
+You can change the name of the :code:`X-Forwarded` headers in the :ref:`ivy-yaml`
+, see section :code:`ReverseProxy`.
 
 .. toctree::
     :maxdepth: 1
