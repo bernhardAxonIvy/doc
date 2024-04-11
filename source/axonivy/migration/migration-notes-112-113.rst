@@ -32,6 +32,20 @@ Chart
 
 The component ``p:chart`` was removed. You have to manually migrate to `Chart.js <https://primefaces.github.io/primefaces/13_0_0/#/components/charts>`_.
 
+Miscellaneous
+*************
+
+Beyond what is documented in the Primefaces Migration Notes we faced the following additional problems when we migrated projects:
+
+- ``p:selectItems`` with a ``value`` attribute of type ``List<SelectItem>`` and attributes ``var="filter"`` and ``itemLabel=#{filter}`` displays wrong labels. 
+  You can remove the attributes ``itemLabels`` and also ``itemValue`` as the ``SelectItem`` object already defines the label and value of the items.
+- ``p:commandButton`` with an ``ajax="false"`` attribute sometimes does not work in ``p:confirmDialog``. 
+  You can remove the ``ajax`` attribute since AJAX should work now in ``p:confirmDialog``.  
+- ``p:inputNumber`` with an ``value`` attribute of type ``java.lang.Number`` no longer accepts fraction digits per default. 
+  You have to explicitly  specify the attribute ``decimalPlaces`` to make the field accept it.
+- ``actionListener`` attributes are ignored inside a ``p:tab`` inside a ``p:tabView`` that has a ``value`` attribute with a data model.
+  You have to explicitly specify the attribute ``process`` on the widget with the ``actionListener`` attribute. 
+
 Legacy app.yaml in application zip
 ----------------------------------
 
