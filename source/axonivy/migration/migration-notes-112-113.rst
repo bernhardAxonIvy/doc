@@ -25,7 +25,8 @@ The following is automatically converted:
 - Style classes from `PrimeFlex <https://primeflex.org/>`_ 2 to `PrimeFlex <https://primeflex.org/>`_ 3
 - Stylesheet primeflex-2.min.css to primeflex-3.min.css
 - Add missing attributes ``layout="tabular"`` and ``columns="0"`` for component ``p:panelGrid``
-- Method ``contentLength`` of class ``DefaultStreamedContent.Builder`` takes a Long argument instead of an Integer argument   
+- Method ``contentLength`` of class ``DefaultStreamedContent.Builder`` takes a Long argument instead of an Integer argument
+- Convert value of attribute ``height`` of tag ``p:textEditor`` from type Integer to String (e.g., ``200`` to ``200px``)    
 
 Chart
 *****
