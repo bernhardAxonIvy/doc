@@ -19,7 +19,7 @@ following steps:
    <https://primefaces.github.io/primefaces/11_0_0/#/core/themes?id=built-in-themes>`__
    and `Serenity Themes <https://www.primefaces.org/layouts/serenity>`__ are
    already included in the product. In addition, the core offers a
-   :ref:`serenity-ivy <serenity-themes>` and a :ref:`freya-ivy <freya-themes>`
+   :ref:`freya-ivy <freya-themes>` and a :ref:`serenity-ivy (deprecated) <serenity-themes>` 
    theme. To use your own theme, copy your themeXY.jar file into the folder
    **/webapps/ivy/WEB-INF/lib** of Designer and Engine respectively.
 
@@ -30,16 +30,9 @@ following steps:
 
       <h:head>
           ...
-          <f:attribute name="primefaces.THEME" value="serenity-ivy"/>
+          <f:attribute name="primefaces.THEME" value="freya-ivy-light"/>
           ...
       </h:head>
-
--  If not defined as a head attribute, the theme can be configured per
-   application - see :ref:`app-yaml`
--  The application configuration can also be overridden per session by using
-   ``ch.ivyteam.ivy.jsf.primefaces.IvyPrimefacesThemeResolver.setSessionTheme(String
-   theme)`` 
-
 
 .. _freya-themes:
 
@@ -86,8 +79,8 @@ You can do so by setting the cookie :code:`primefaces-theme-mode` to **light** o
 
 .. _serenity-themes:
 
-Serenity Themes
-^^^^^^^^^^^^^^^
+Serenity Themes (Deprecated)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you choose a **serenity** theme, you can choose all the default serenity themes
 or the **serenity-ivy** theme. If you do so, you have to import an additional
@@ -142,6 +135,6 @@ in new layouts (templates). You can also add it to your template as follows:
 Color Customizing
 ^^^^^^^^^^^^^^^^^
 
-If you want to change the colors of the :ref:`serenity-ivy <serenity-themes>` or
-:ref:`freya-ivy <freya-themes>` themes, please have a look at the :ref:`branding`
+If you want to change the colors of the :ref:`freya-ivy <freya-themes>` or
+:ref:`serenity-ivy (deprecated) <serenity-themes>` themes, please have a look at the :ref:`branding`
 chapter.

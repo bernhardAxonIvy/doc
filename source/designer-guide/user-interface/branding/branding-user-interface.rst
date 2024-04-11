@@ -51,8 +51,8 @@ the :ref:`Portal <portal-guide>`.
 
 .. warning::
 
-   CSS variables are only supported in the themes :ref:`serenity-ivy
-   <serenity-themes>` and :ref:`freya-ivy <freya-themes>`.
+   CSS variables are only supported in the themes :ref:`freya-ivy <freya-themes>`
+   and :ref:`serenity-ivy (deprecated) <serenity-themes>`.
 
 .. tip::
 
