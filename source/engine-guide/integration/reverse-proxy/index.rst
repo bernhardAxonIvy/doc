@@ -65,7 +65,7 @@ To successfully integrate a reverse proxy with the |ivy-engine| you need to pass
 which the client itself initally has requested, so that the |ivy-engine| can
 generate correct URLs based on the request. All documented examples
 preserve this :code:`Host` header, but if you integrate the |ivy-engine| with any other
-reverse proxy you need to pass the :code:`Host` header to the |ivy-engine|. As alternative
+reverse proxy you need to pass the :code:`Host` header to the |ivy-engine|. As an alternative
 you can provide :code:`X-Forwarded-Host` for identifying the original host requested by the client. 
 
 Check out also the following headers in the example which need to be set correctly:
