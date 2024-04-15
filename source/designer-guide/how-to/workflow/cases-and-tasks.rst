@@ -62,6 +62,13 @@ tasks, then
    language of all existing cases and tasks are copied to all new workflow language
    entries for their names and descriptions.
 
+.. note:: 
+
+   You can use CMS entries and workflow data in task names, as shown below:
+   :code:`<%=ivy.cms.co("/TaskDescriptions/verifyRequest")%>: <%=in1.amount%> <%=ivy.cms.co("/Dialogs/procurementRequest/piecesOf")%>  '<%=in1.description%>' <%=ivy.cms.co("/Dialogs/procurementRequest/forTotal")%> <%=in1.totalPrice%><%=ivy.cms.co("/TaskDescriptions/currencySymbol")%>`
+   to create the name :code:`Verify Request: 10 pieces of 'Apple' for a total of 10$`.
+   Find more examples in the :ref:`Workflow Demo <importing-demo-projects>` project.
+
 .. warning::
 
   If you delete a workflow language, then all names and descriptions of all

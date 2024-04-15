@@ -355,6 +355,8 @@ corresponding case.
 
    Look at the :ref:`workflow concept <workflow-categories>` for some more
    information about categorization.
+   Look at the :ref:`multilingual concept <workflow-languages>` for multilingual case names and descriptions.
+
 
 .. figure:: /_images/process-inscription/common-tab-case.png
    :alt: Case Tab
@@ -391,7 +393,11 @@ Switch. The task tab is used by
 :ref:`process-element-user-task`.
 
 **Name, description:** of the task that appear in the task list of the
-addressed role or user.
+addressed role or user. 
+
+.. note::
+
+   Look at the :ref:`multilingual concept <workflow-languages>` for multilingual task names and descriptions.
 
 **Category:** It is recommended practice to define and reference the text
 from the CMS. See :ref:`here <workflow-categories>`.
