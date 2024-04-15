@@ -65,7 +65,8 @@ To successfully integrate a reverse proxy with the |ivy-engine| you need to pass
 which the client itself initally has requested, so that the |ivy-engine| can
 generate correct URLs based on the request. All documented examples
 preserve this :code:`Host` header, but if you integrate the |ivy-engine| with any other
-reverse proxy you need to pass the :code:`Host` header to the |ivy-engine|.
+reverse proxy you need to pass the :code:`Host` header to the |ivy-engine|. As an alternative
+you can provide :code:`X-Forwarded-Host` for identifying the original host requested by the client. 
 
 Check out also the following headers in the example which need to be set correctly:
 
@@ -79,6 +80,10 @@ Check out also the following headers in the example which need to be set correct
   a client used to connect to your reverse proxy server. This is important
   otherwise the generated links or redirects are wrong. Mostly only needed to
   terminate SSL on the reverse proxy server.
+- :code:`X-Forwarded-Port`
+  for identifying the port that a client used to connect your reverse proxy server.
+  This is only in charge if :code:`X-Forwarded-Proto` is set and only needed if you
+  don't serve your site via non-standard ports (80 and 443).
 
 You can change the name of the :code:`X-Forwarded` headers in the :ref:`ivy-yaml`
 , see section :code:`ReverseProxy`.
