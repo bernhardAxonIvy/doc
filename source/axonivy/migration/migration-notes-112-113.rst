@@ -47,6 +47,27 @@ Beyond what is documented in the Primefaces Migration Notes we faced the followi
 - ``actionListener`` attributes are ignored inside a ``p:tab`` inside a ``p:tabView`` that has a ``value`` attribute with a data model.
   You have to explicitly specify the attribute ``process`` on the widget with the ``actionListener`` attribute. 
 
+
+Removal of system database Conversion
+-------------------------------------
+
+|tag-ops-changed| 
+
+It is no longer possible to convert only the system database. Engine migrations
+must now always be carried out via the Engine :ref:`Migration Wizard
+<migration-wizard>`.
+
+Therefore, the button to convert the system database from the Engine Cockpit was
+removed. Furthermore, the :ref:`Engine Config CLI <engine-config-cli>` command
+to convert the system database is gone. As a replacement, you can trigger the
+Engine Migration command :code:`migrate-engine`.
+
+In addition, the :code:`autoConvert` configuration from :ref:`ivy-yaml`` no
+longer works. An engine migration must be carried out manually via the
+:ref:`Migration Wizard <migration-wizard>` or :ref:`Engine Config CLI
+<engine-config-cli>` tool.
+
+
 Legacy app.yaml in application zip
 ----------------------------------
 
