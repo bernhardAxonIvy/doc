@@ -55,15 +55,17 @@ Removal of system database Conversion
 
 It is no longer possible to convert only the system database. Engine migrations
 must now always be carried out via the Engine :ref:`Migration Wizard
-<migration-wizard>`. This means that there is no longer a button in the Engine
-Cockpit to convert the system database. Use the :ref:`Migration Wizard
-<migration-wizard>` for this. The:ref:`Engine Config CLI <engine-config-cli>`
-also no longer supports converting the system database, but it does have an
+<migration-wizard>`.
+
+Therefore, the button to convert the system database from the Engine Cockpit was
+removed. Furthermore, the :ref:`Engine Config CLI <engine-config-cli>` command
+to convert the system database is gone. As a replacement, you can trigger the
 Engine Migration command :code:`migrate-engine`.
 
 In addition, the :code:`autoConvert` configuration from :ref:`ivy-yaml`` no
-longer works. An engine migration must be carried out manually via the Engine
-Cockpit or :ref:`Engine Config CLI <engine-config-cli>` tool.
+longer works. An engine migration must be carried out manually via the
+:ref:`Migration Wizard <migration-wizard>` or :ref:`Engine Config CLI
+<engine-config-cli>` tool.
 
 
 Legacy app.yaml in application zip
