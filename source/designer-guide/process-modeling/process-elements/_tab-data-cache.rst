@@ -1,4 +1,4 @@
-Data Cache Tab
+Cache Tab
 ~~~~~~~~~~~~~~
 
 On this tab you can configure the settings for data cache access or

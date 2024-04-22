@@ -104,7 +104,13 @@ Body
 
       |image6|
 
-Response Tab
+Error Tab
+~~~~~~~~~
+-  **On Error**: Choose the Error Code to throw if the REST client fails with an exception. This is typically the case if a connection or timeout problem exists. Pick '*>> Ignore Error*' to continue the process execution even though the REST service call failed with an exception.
+
+-  **On Status Code not successful**: Fail automatically with an Error Code if the HTTP response status code is not in the 200 family. Pick '*>> Ignore Error*' if other status codes are valid and expected.
+
+Output Data Tab
 ~~~~~~~~~~~~
 
 On this tab you can consume response from the REST service.
@@ -132,19 +138,6 @@ Body
       variable to your process data. However, in this editor the JAX-RS
       'response' variable is also available which lets you access the
       HTTP-status-code and other details of the HTTP response.
-
-Error handling
-   -  **On Error**: Choose the Error Code to throw if the REST client
-      fails with an exception. This is typically the case if a
-      connection or timeout problem exists. Pick '*>> Ignore Error*' to
-      continue the process execution even though the REST service call
-      failed with an exception.
-
-   -  **On Status Code not successful**: Fail automatically with an
-      Error Code if the HTTP response status code is not in the 200
-      family. Pick '*>> Ignore Error*' if other status codes are valid
-      and expected.
-
 
 
 .. _process-element-rest-client-activity-json-to-java:

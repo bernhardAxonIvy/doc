@@ -27,7 +27,7 @@ Inscription
 
 .. include:: _tab-name.rst
 
-Process Call Tab
+Process Tab
 ~~~~~~~~~~~~~~~~
 
 |image2|

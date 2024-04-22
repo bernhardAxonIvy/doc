@@ -121,18 +121,19 @@ Query Definition
       "id=123 AND name=ivy"). Therefore you can disable the quoting with
       this check box.
 
-Error
-   Is thrown whenever errors during the execution of the database
-   command occur. The error can be handled by a catching
-   :ref:`process-element-error-start` or by an :ref:`process-element-error-boundary-event`.
-
-   .. tip::
-
-      SQL experts can review the generated SQL command by clicking on
-      the *Show generated SQL* or by choosing *Any other query* in the
-      query combo box.
-
 .. include:: _tab-data-cache.rst
+
+Error Tab
+~~~~~~~~~
+On this tab you can configure the Error Code that is thrown whenever errors during the execution of the database command occur. The error can be handled by a catching :ref:`process-element-error-start` or by an :ref:`process-element-error-boundary-event`.
+
+.. tip::
+
+  SQL experts can review the generated SQL command by clicking on
+  the *Show generated SQL* or by choosing *Any other query* in the
+  query combo box.
+
+
 
 .. include:: _tab-output.rst
 

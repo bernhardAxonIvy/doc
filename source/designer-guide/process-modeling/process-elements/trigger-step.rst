@@ -27,7 +27,7 @@ Inscription
 
 .. include:: _tab-name.rst
 
-Trigger Tab
+Process Tab
 ~~~~~~~~~~~
 
 On this tab you can configure the Start Signature and the mapping of

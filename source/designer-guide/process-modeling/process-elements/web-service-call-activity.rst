@@ -49,7 +49,13 @@ Parameters
    Defines the input parameters to send to the remote Web Service
    operation. Values can be scripted.
 
-Response Tab
+.. include:: _tab-data-cache.rst
+  
+Error Tab
+~~~~~~~~~
+On this tab you can configure the Error Code to throw if the web service call fails with an exception. Pick '*>> Ignore Exception*' to continue the process execution even though the web service call failed with an exception.
+
+Output Data Tab
 ~~~~~~~~~~~~
 
 .. figure:: /_images/process-inscription/web-service-call-tab-response.png
@@ -58,16 +64,6 @@ Body
    Maps the result returned by the Web Service Call back to any process
    data or executes code on it. The result is provided as ``wsResponse``
    variable.
-
-Error handling
-   -  **On Error**: Choose the Error Code to throw if the web service
-      call fails with an exception. Pick '*>> Ignore Exception*' to
-      continue the process execution even though the web service call
-      failed with an exception.
-
-
-.. include:: _tab-data-cache.rst
-
 
 .. _process-element-web-service-call-activity-tester:
 

@@ -69,7 +69,7 @@ There are pre-defined tags with special functionality for some start elements:
 
 .. _process-element-tab-output:
 
-Output Tab
+Output Data Tab
 ----------
 
 On this tab you can set all values in the output Data Class. By default
@@ -260,7 +260,7 @@ Using the defined return parameters
 
 .. _process-element-tab-data-cache:
 
-Data Cache Tab
+Cache Tab
 --------------
 
 Process activities that read data from an external system can cache

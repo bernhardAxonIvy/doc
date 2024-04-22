@@ -21,7 +21,7 @@ this view by double-clicking on the element, use the popup-menu or press
 the ``i``-key whenever the element is selected. The inscription view is
 divided into multiple sections and the order of the sections indicates the
 sequence of processing. For example in the figure below, the Output
-mapping is performed before the code in the third section is executed.
+mapping is performed before the code in the second section is executed.
 
 .. figure:: /_images/process-inscription/example-inscription-view.png
    :alt: An exemplary inscription mask

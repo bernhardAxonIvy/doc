@@ -39,7 +39,7 @@ implementing a :ref:`process-element-program-start` or a :ref:`process-element-w
 Inscription
 ---------------
 
-Start Tab
+Java Bean Tab
 ~~~~~~~~~
 
 On this tab you define the Java class to be executed.

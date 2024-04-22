@@ -1,14 +1,14 @@
-Call Tab
+Dialog Tab
 ~~~~~~~~
 
-The *Call tab* defines the User Dialog to call and how it should be
+The *Dialog tab* defines the User Dialog to call and how it should be
 started. The input parameters for the selected start method can be
 mapped here.
 
 .. figure:: /_images/process-inscription/common-tab-call.png
-   :alt: Call tab
+   :alt: Dialog tab
 
-   Call tab
+   Dialog tab
 
 Dialog
    Defines the User Dialog component to be started by its ID.
