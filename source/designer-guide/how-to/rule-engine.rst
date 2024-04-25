@@ -145,12 +145,13 @@ you simply tell the rule engine to execute and it does find out itself
 which rules apply and which rules to fire.
 
 To run the rule engine you have to use the Public API of the rule
-engine, e.g., in a script step or in a Java class. Use
-``ivy.rules`` to build and execute rules on data objects.
+engine to build and execute rules on data objects. 
+In a script step you can use ``ivy.rules`` and in a Java class use :public-api:`Rules </ch/ivyteam/ivy/rule/engine/api/Rules.html>`.
 First you will need to create a :public-api:`RuleExecutor </ch/ivyteam/ivy/rule/engine/api/IRuleExecutor.html>` with all rules.
 
-::
+.. code-block:: java
 
+   // In Java use Rules.create() instead of ivy.rules
    IRuleExecutor ruleExecutor = ivy.rules.create()
       .namespace("my.rule.name.space")
       .executor();
