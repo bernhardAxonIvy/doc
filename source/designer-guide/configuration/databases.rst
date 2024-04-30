@@ -6,10 +6,7 @@ Databases
 To use databases in your business or User Dialog processes, start with defining
 database configurations for each database you want to use. After you have
 configured the databases (data sources) you can use them in your process steps.
-The process steps reference only the database configuration ids. Therefore, you
-can use different database configuration settings for each environment,
-i.e., development, test, and production servers.
-
+The process steps reference only the database configuration ids.
 
 .. _database-configuration-editor:
 

@@ -294,8 +294,7 @@ Caching Mode
       cache entry is invalidated.
 
 Scope
-   Cache entries depend from the active environment and are always bound
-   to their scope.
+   Cache entries are always bound to their scope.
 
    -  **Session**: the cache entry is linked to the currently logged in
       user (i.e., is specific for each user and is invalidated when the
