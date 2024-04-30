@@ -92,12 +92,6 @@ The following protocols are supported:
 | HTTPS    | HTTP protocol over secure socket layer (SSL).                                                                                                    |
 +----------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. note::
-    In case you disable HTTP port, then the specified port will still be opened by
-    the engine for internal purposes. However, the engine will refuse
-    connections from remote hosts. 
-
-
 .. _setup-wizard-systemdb:
 
 System Database
@@ -161,24 +155,3 @@ chosen database system.
  
     The best practice configurations are documented in chapter :ref:`System
     Database <systemdb>`.
-
-.. _setup-wizard-systemdb-convert:
-
-Convert a Existing System Database
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-    We strongly recommend to backup your database before you convert it to a
-    newer version. Be sure that you have enough disk/table space on your
-    database server. Most conversions add new fields to existing database tables
-    which will enlarge the used database space.
-
-If the system database has an older version, use the :guilabel:`Migrate
-Database` button to convert it to the latest version. 
-
-.. warning::
-    Depending on the conversion steps and your database system it may be
-    necessary to cut all connections to the system database to avoid problems.
-    If you have problems with the conversion, please disconnect all other
-    database management tools, clients or other tools which have a connection to
-    the system database and try again.
