@@ -1,6 +1,6 @@
 Migration:
 
-#. Do a backup of all the system database and all your data of your Axon ivy Engine.
+#. Do a backup of the system database and all your data of your Axon ivy Engine.
 #. Use the :ref:`migration-wizard` to migrate crucial configuration files to the
    new |ivy-engine|. You can start using the wizard by starting the new
    |ivy-engine|. Browse to the |ivy-engine| URI (e.g., http://localhost:8080) and
