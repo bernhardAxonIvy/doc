@@ -10,13 +10,9 @@ After running Operating System specific migration steps:
 
    #. Request a new license as described in the :ref:`license` chapter.
    #. Copy the new license to the ``configuration`` directory or upload it using the :ref:`Engine Cockpit <setup-wizard>`
-#. Migrate the Database to the latest version: :ref:`upgrade-system-db`
 
-   a. Either :ref:`convert the system database <upgrade-system-db>` with the :ref:`Engine Cockpit <engine-cockpit-systemdb>`
-   b. or set the ``autoConvert`` property in the :ref:`ivy-yaml` to ``true`` and it will be done with the next |ivy-engine| restart.
-#. Test your workflow app for braking changes and identify them using the :ref:`Migration Notes document <migration-notes>`.
+#. Test your workflow app for breaking changes and identify them using the :ref:`Migration Notes document <migration-notes>`.
 #. Examine the logs for errors while an automated test or a business user clicks through important workflows.
-
 
 .. _migration-project:
 

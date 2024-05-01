@@ -12,10 +12,11 @@ If you are looking for the steps update to keep your |ivy-engine| on the
 latest patch level (e.g., ``8.0.6`` > ``8.0.13``), 
 please consult the :ref:`migration-upgrade-engine-hotfix` chapter.
 
-**Major Upgrade**
+**Major / Minor Upgrade**
 
-When you aim for a migration to another major version (e.g., ``8.0.30`` > ``10.0.2``),
-please consult the :ref:`migration-upgrade-engine-major` chapter.
+When you aim for a migration to another major version (e.g., ``8.0.30`` > ``10.0.2``)
+or minor version (e.g., ``11.1.0`` > ``11.2.0``) please consult the :ref:`migration-upgrade-engine-major`
+chapter.
 
 .. toctree::
    :hidden:

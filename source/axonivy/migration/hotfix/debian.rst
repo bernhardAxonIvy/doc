@@ -9,7 +9,7 @@ This can be done manually or even automated with the snippet below:
 
 .. code:: bash
 
-    release=8.0
+    release=10.0
     wget https://dev.axonivy.com/permalink/${release}/axonivy-engine.deb
     sudo apt install ./axonivy-engine.deb
 

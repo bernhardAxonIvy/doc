@@ -62,7 +62,7 @@ removed. Furthermore, the :ref:`Engine Config CLI <engine-config-cli>` command
 to convert the system database is gone. As a replacement, you can trigger the
 Engine Migration command :code:`migrate-engine`.
 
-In addition, the :code:`autoConvert` configuration from :ref:`ivy-yaml`` no
+In addition, the :code:`autoConvert` configuration from :ref:`ivy-yaml` no
 longer works. An engine migration must be carried out manually via the
 :ref:`Migration Wizard <migration-wizard>` or :ref:`Engine Config CLI
 <engine-config-cli>` tool.

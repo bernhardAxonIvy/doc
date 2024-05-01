@@ -1,10 +1,6 @@
 Migration:
 
-#. Do a backup of all the system database and all your data of your Axon ivy Engine.
-#. Use the :ref:`migration-wizard` to migrate crucial configuration files to the
-   new |ivy-engine|. You can start using the wizard by starting the new
-   |ivy-engine|. Browse to the |ivy-engine| URI (e.g., http://localhost:8080) and
-   click on ``Setup Wizard`` > ``Migration Wizard``.
+#. Copy all configuration files from the old intallation to the new installation.
 #. You may have customized files in the old installation directory. Those
    have to be copied manually to the new installation directory. The files to
    copy depend on your setup:
