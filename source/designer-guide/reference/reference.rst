@@ -19,6 +19,7 @@ Editors
 -  :ref:`overrides-editor`
 -  :ref:`process-editor`
 -  :ref:`rest-client-configuration-editor`
+-  :ref:`form-editor`
 -  :ref:`html-dialog-editor`
 -  :ref:`user-dialog-interface-editor`
 -  :ref:`role-editor`
