@@ -5,6 +5,9 @@ Form Editor (Alpha)
 
 The Form Editor allows you to build User Interfaces fast with minimal technical knowledge.
 
+|form-editor-image0|
+
+
 Accessibility
 ~~~~~~~~~~~~~
 
@@ -32,3 +35,5 @@ The editors toolbar on top offers the following actions:
 - **download**: the `Download` button shows the technical form json contents. This enables you to copy and paste changes manually from existing forms.
 - **grid**: toggles margins between the components, wide margins are for a simple drag and drop experience, while minimal margins are close to the real rendering look.
 - **theme**: toggle between dark and white mode to comply with your current dailight environment.
+
+.. |form-editor-image0| image:: /_images/form-editor/form-editor.png

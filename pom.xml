@@ -70,6 +70,13 @@
                   <artifactId>process-editor-screenshots</artifactId>
                   <type>zip</type>
                 </artifactItem>
+
+                <artifactItem>
+                  <groupId>ch.ivyteam.dialog</groupId>
+                  <artifactId>form-editor-screenshots</artifactId>
+                  <type>zip</type>
+                </artifactItem>
+
               </artifactItems>
             </configuration>
           </execution>
