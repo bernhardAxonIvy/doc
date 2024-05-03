@@ -2,8 +2,7 @@
 
 |tag-ops-wizard|
   
-  This migration is handled either by the :ref:`migration-wizard` or by the
-  :ref:`System Database conversion <setup-wizard-systemdb-convert>`. The wizard
+  This migration is handled either by the :ref:`migration-wizard`. The wizard
   will interact with you if you are affected by this change.
 
 |tag-ops-changed| 

@@ -70,7 +70,7 @@ There are pre-defined tags with special functionality for some start elements:
 .. _process-element-tab-output:
 
 Output Data Tab
-----------
+---------------
 
 On this tab you can set all values in the output Data Class. By default
 the output variable is mapped directly to the input variable, but the

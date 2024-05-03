@@ -20,7 +20,7 @@ Inscription
 
 
 Java Bean Tab
-~~~~~~~~~
+~~~~~~~~~~~~~
 
 On this tab you define the Java class to be executed.
 
