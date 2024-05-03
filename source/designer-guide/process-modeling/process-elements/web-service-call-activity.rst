@@ -56,7 +56,7 @@ Error Tab
 On this tab you can configure the Error Code to throw if the web service call fails with an exception. Pick '*>> Ignore Exception*' to continue the process execution even though the web service call failed with an exception.
 
 Output Data Tab
-~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
 
 .. figure:: /_images/process-inscription/web-service-call-tab-response.png
 

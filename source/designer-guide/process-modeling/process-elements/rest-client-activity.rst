@@ -111,7 +111,7 @@ Error Tab
 -  **On Status Code not successful**: Fail automatically with an Error Code if the HTTP response status code is not in the 200 family. Pick '*>> Ignore Error*' if other status codes are valid and expected.
 
 Output Data Tab
-~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
 
 On this tab you can consume response from the REST service.
 

@@ -1,5 +1,5 @@
 Dialog Tab
-~~~~~~~~
+~~~~~~~~~~
 
 The *Dialog tab* defines the User Dialog to call and how it should be
 started. The input parameters for the selected start method can be

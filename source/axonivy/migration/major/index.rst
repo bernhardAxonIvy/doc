@@ -50,4 +50,3 @@ environment, so please jump right to the execution environment you are using:
    windows
    linux
    common
-   upgrade-systemdatabase
