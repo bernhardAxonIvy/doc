@@ -3,24 +3,22 @@
 Deployment
 ==========
 
-Bring your processes to life by deploying them on an Axon Ivy Engine. Deployment
-simply means to install an Axon Ivy project on an Axon Ivy Engine. Proceed as
-follows to deploy a project.
+Deployment means to bring your processes to life by installing them on an Axon
+Ivy Engine. Proceed as follows to deploy a project.
 
-#. Get a :ref:`prepared <deployment-prepare>` Axon Ivy project from your developer.
-#. :ref:`Deploy <deployment-deploying>` the project by e.g., simply dropping the 
-   file in the deployment directory.
-#. :ref:`Check the result <deployment-check-results>` of the deployment on the
-   server info page.
+#. Axon Ivy projects needs to be a :ref:`prepared <deployment-prepare>` for
+   the deployment.
+#. :ref:`Deploy <deployment-deploying>` the Axon Ivy project by using one of
+   the various deployment mechanism provided by the Axon Ivy Engine.
+
+Learn more about specific :ref:`terms <deployment-terms>` in context of
+deployment.
 
 
 .. toctree::
+   :hidden:
    :maxdepth: 1
    
-   prepare
-   deploy
-   check
-   advanced/index
-   rest-api/index
-   maven-plugin/index
-   terms
+   prepare/index
+   deploy/index
+   terms/index

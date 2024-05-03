@@ -1,3 +1,0 @@
-# sample app.yaml which can be part of the full application zip-archive
-StandardProcess: 
-  DefaultPages: ch.ivyteam.ivy.project.portal:portalTemplate

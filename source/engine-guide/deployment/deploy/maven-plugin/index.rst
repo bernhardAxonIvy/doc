@@ -3,6 +3,10 @@
 Maven Plugin
 ------------
 
+If you have Maven available in your
+environment, use our :ref:`deployment-maven-plugin`, which supports both
+deployment types.
+
 The Maven `project-build-plugin
 <http://axonivy.github.io/project-build-plugin/>`_ makes automated continuous
 deployment to an Axon Ivy Engine possible. The Maven plugin can deploy projects
