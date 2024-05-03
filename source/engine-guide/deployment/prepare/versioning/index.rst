@@ -3,12 +3,11 @@
 Versioning
 ^^^^^^^^^^
 
-We recommend creating as few different versions (process model versions) of an
-Axon Ivy Project (process model) as possible on an Axon Ivy Engine.  This is
-because with each new version, another Axon Ivy project must be maintained on
-the Axon Ivy Engine. If, for example, a bug needs to be fixed, this may also
-need to be fixed for all old versions. This massively increases the maintenance
-effort. Whenever possible, overwrite the old projects instead of introducing new
+We recommend to operate a minimal set of project versions on an Axon Ivy Engine.
+With each new process model version introduced, you'll add a version that must
+be maintained. Therefore, bugs that must be fixed, will need to be fixed in each
+of the operated versions, which massively increases your maintenance efforts.
+Whenever possible, overwrite the old projects instead of introducing new
 versions. However, new versions must be introduced if incompatible changes are
 made, for example:
 

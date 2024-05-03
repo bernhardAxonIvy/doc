@@ -6,7 +6,10 @@ Prepare
 Before deployment, the Axon Ivy project must be available as ivy-archive (IAR)
 or packed as a zip-archive (ZIP). Therefore, we recommend building the Axon Ivy
 projects with the help of Maven and the `project-build-plugin
-<http://axonivy.github.io/project-build-plugin/>`_. In this build process, an
+<http://axonivy.github.io/project-build-plugin/>`_ which is crafting the
+ivy-archives (IAR) in reproducible manor.
+
+In this build process, an
 executable :file:`*.iar`` file is generated from the sources of the Axon Ivy
 project. Alternatively, the :ref:`export functionality
 <designer-export-project>` of the Axon Ivy Designer can also be used.

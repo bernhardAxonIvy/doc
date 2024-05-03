@@ -19,7 +19,7 @@ Example how to deploy via curl:
 
     sh "curl -X POST http://localhost/system/api/apps/myApp -u admin:admin -H 'X-Requested-By: curl' -F fileToDeploy=@/tmp/app.zip"
 
-Expalantion:
+Explanation:
 
 * :code:`-X POST`: You need to send a HTTP POST request.
 * :code:`http://localhost/system/api/apps/myApp`: URL targeting your

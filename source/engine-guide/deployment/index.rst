@@ -3,7 +3,7 @@
 Deployment
 ==========
 
-Deplyoment means to bring your processes to life by installing them on an Axon
+Deployment means to bring your processes to life by installing them on an Axon
 Ivy Engine. Proceed as follows to deploy a project.
 
 #. Axon Ivy projects needs to be a :ref:`prepared <deployment-prepare>` for

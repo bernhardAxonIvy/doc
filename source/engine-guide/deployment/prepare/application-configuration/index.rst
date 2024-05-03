@@ -3,13 +3,11 @@
 Application Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you are deploying an application zip you can optionally add an
-:ref:`app-yaml` in a dedicated :file:`config` folder of your zip-archive, 
-which contains the configuration of the application.
-
-.. literalinclude:: sample-app.yaml
-  :language: yaml
-  :linenos:
+You can deploy the configuration of your application with the application zip.
+Do so by adding a :file:`config` folder, that contains the :file:`.yaml`
+configuration files like the :ref:`app-yaml`. This means that the application
+configuration can be fully managed in a CI/CD pipeline instead of depending on
+manual clicks in the engine cockpit.
 
 ::
 
@@ -19,6 +17,9 @@ which contains the configuration of the application.
     ├── hr.iar
     └── finance.iar
 
+.. literalinclude:: sample-app.yaml
+  :language: yaml
+  :linenos:
 
 .. rubric:: Priority
 
