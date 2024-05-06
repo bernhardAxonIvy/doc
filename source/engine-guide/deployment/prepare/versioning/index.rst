@@ -17,7 +17,8 @@ made:
 * Changing types of fields that are persistent in business data
 
 
-.. rubric:: Process Model
+.. rubric:: Processes
 
-* Adding new ins/out of Task Switch and Task Switch Gateway
-* Embedded Subs if they are on the callsack on a running task.
+* Adding new ins/out of Task Switch and Task Switch Gateway.
+* Embedded subs if they are on the call stack of a running task.
+* Changing the name or params of call subs if they are used in dependent projects.
