@@ -14,14 +14,9 @@ first time, it is important to understand the :ref:`application lifecycle
 #. :ref:`Deploy <deployment-deploying>` the Axon Ivy project by using one of
    the various deployment mechanism provided by the Axon Ivy Engine.
 
-Learn more about specific :ref:`terms <deployment-terms>` in context of
-deployment.
-
-
 .. toctree::
    :hidden:
    :maxdepth: 1
    
    prepare/index
    deploy/index
-   terms/index
