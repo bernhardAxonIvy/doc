@@ -41,7 +41,7 @@ Shows the Variables of the current project.
   value matches the search text, all of its parents and children are shown.
 
 Variables Detail View
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
 
 Shows the details of the selected Variable.
 
