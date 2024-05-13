@@ -20,42 +20,55 @@ Cockpit Variables View <engine-cockpit-variables>` on the |ivy-engine|.
 Editor
 ------
 
-The |ivy-designer| delivers a **Yaml-Editor** to edit the
-:file:`<project>/config/variables.yaml` file, where you can maintain your
-variables.
+Use the Variables Editor to create, delete, and edit Variables.
 
+.. figure:: /_images/designer-configuration/variables-editor.png
+   :alt: Variables Editor
+   :align: center
+   
+   Variables Editor
 
-.. literalinclude:: includes/variables.yaml
-   :language: yaml
-   :linenos: 
+Variables Tree View
+~~~~~~~~~~~~~~~~~~~
+
+Shows the Variables of the current project.
+
+- Click the plus icon to add a new child Variable to the currently selected
+  Variable. If no Variable is selected, a Variable is added at the topmost
+  level.
+- Click the trash icon to delete the currently selected Variable.
+- Use the search bar to filter the Variables. If part of a Variables name or
+  value matches the search text, all of its parents and children are shown.
+
+Variables Detail View
+~~~~~~~~~~~~~~~~~~~
+
+Shows the details of the selected Variable.
 
 - :guilabel:`Name`
-  The name is the identifier of the Variable (e.g., *myTextVar*)
+  The name is the identifier of the Variable (e.g. *user*).
 
-- :guilabel:`Default value`
-  The default value is the value (e.g., *value* for the *myTextVar*)
+- :guilabel:`Value`
+  The value is the default value of the Variable (e.g. *username* for the
+  *user* Variable).
 
 - :guilabel:`Description`
-  You can add a description before the Variable itself, starting it by a :code:`#`
+  You can add a description to explain the purpose of the Variable.
 
 - :guilabel:`Metadata`
-  You can specify additional meta data for a Variable. Strings, Boolean values
-  and numbers are recognized by the default value, but there are other types you
-  can define:
+  If applicable, you can specify additional metadata for a Variable:
 
-  * **password:** This tells the |ivy-engine| to write this Variable value in
-    encrypted form to the YAML files. 
+  * **Password:** This tells the |ivy-engine| to encrypt the value of this Variable.
     
     .. tip::
-      If you add a password variable in the |ivy-designer|, 
-      you get an validation warning, that the variable is not
-      encrypted. You can fix this via a :ref:`problems-view` > *QuickFix* or right
-      click in the **Yaml-Editor** > *Encrypt passwords*
+      If you add a password Variable in the |ivy-designer|, 
+      you get a validation warning that the Variable is not
+      encrypted. You can fix this via a :ref:`problems-view` > *QuickFix*.
       
-  * **daytime:** This value is interpreted as a time consisting of HH:mm[:ss]. 
-  * **enum:** You can use this annotation to enumerate all possible values for
-    this Variable. 
-  * **file:** The file annotation configures the value of this Variable to be
+  * **Daytime:** The value of this Variable is interpreted as a time of day.
+  * **Enum:** You can use this option to define a list of possible values which
+    this Variable is allowed to take on.
+  * **File:** This option configures the value of this Variable to be
     read from an external file. This file can be a :file:`.json` or a
     :file:`.txt` file. If your Variable is called :code:`myFile` and it should
     be a :code:`json` file, then your file must be located at
@@ -63,18 +76,12 @@ variables.
     :code:`variables` prefix can also be part of the filename rather than a
     parent directory. So, the file
     :file:`<project>/config/variables.myFile.json` can contain the value for the
-    variable called :code:`myFile`.
+    Variable called :code:`myFile`.
 
 .. tip::
-  If your variable has :code:`password` or :code:`secret` in its name (e.g., :code:`hidePasswordMenu`) and no type is explicitly set, 
-  the |ivy-engine| will automatically treat this variable as a password to increase the security of it.
-  If this behavior does not suit your needs, you can override it by explicit setting the type 
-  (e.g., with :code:`# [boolean]`, :code:`# [string]` or :code:`# [number]`).
-
-.. warning::
-  The number of `indentation spaces <https://yaml.org/spec/1.2.2/#61-indentation-spaces>`__ 
-  needs to be the same in the whole yaml file.
-
+  If your Variable has :code:`password` or :code:`secret` in its name (e.g.,
+  :code:`hidePasswordMenu`) and no metadata option is chosen, the |ivy-engine|
+  will automatically treat this Variable as a password for increased security.
 
 How to Access Variables
 -----------------------
