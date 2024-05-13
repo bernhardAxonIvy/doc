@@ -15,10 +15,10 @@ To see and configure Variables at runtime, use the :ref:`Engine
 Cockpit Variables View <engine-cockpit-variables>` on the |ivy-engine|. 
 
 
-.. _variables-yaml:
+.. _variables-editor:
 
-Editor
-------
+Variables Editor
+----------------
 
 Use the Variables Editor to create, delete, and edit Variables.
 

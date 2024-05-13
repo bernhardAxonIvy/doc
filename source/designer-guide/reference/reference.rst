@@ -11,6 +11,7 @@ Editors
 
 -  :ref:`casemap-editor`
 -  :ref:`cms-content-object-editor`
+-  :ref:`variables-editor`
 -  :ref:`database-configuration-editor`
 -  :ref:`data-class-editor`
 -  :ref:`persistence-entity-class-editor`
