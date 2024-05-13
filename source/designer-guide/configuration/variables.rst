@@ -37,7 +37,7 @@ Shows the Variables of the current project.
   Variable. If no Variable is selected, a Variable is added at the topmost
   level.
 - Click the trash icon to delete the currently selected Variable.
-- Use the search bar to filter the Variables. If part of a Variables name or
+- Use the search bar to filter the Variables. If part of a Variable's name or
   value matches the search text, all of its parents and children are shown.
 
 Variables Detail View
@@ -66,12 +66,12 @@ Shows the details of the selected Variable.
       encrypted. You can fix this via a :ref:`problems-view` > *QuickFix*.
       
   * **Daytime:** The value of this Variable is interpreted as a time of day.
-  * **Enum:** You can use this option to define a list of possible values which
+  * **Enum:** You can use this option to define a list of possible values that
     this Variable is allowed to take on.
   * **File:** This option configures the value of this Variable to be
     read from an external file. This file can be a :file:`.json` or a
     :file:`.txt` file. If your Variable is called :code:`myFile` and it should
-    be a :code:`json` file, then your file must be located at
+    be a :code:`JSON` file, then your file must be located at
     :file:`<project>/config/variables/myFile.json`. Alternatively, the
     :code:`variables` prefix can also be part of the filename rather than a
     parent directory. So, the file
