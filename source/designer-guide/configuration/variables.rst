@@ -28,6 +28,17 @@ Use the Variables Editor to create, delete, and edit Variables.
    
    Variables Editor
 
+.. warning::
+
+  The Variables Editor interprets and formats the content of
+  :file:`variables.yaml`. If you make manual changes to :file:`variables.yaml`,
+  pay attention to the following points to prevent the loss of data:
+
+  - Make sure the content is valid YAML.
+  - Make sure :file:`variables.yaml` contains exactly one top-level key with
+    the name :code:`Variables`.
+  - Only put comments at the start or end of the file or before a Variable.
+
 Variables Tree View
 ~~~~~~~~~~~~~~~~~~~
 
