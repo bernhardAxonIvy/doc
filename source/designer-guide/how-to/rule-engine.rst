@@ -144,10 +144,13 @@ the right things in the right order. In a rule engine this is different,
 you simply tell the rule engine to execute and it does find out itself
 which rules apply and which rules to fire.
 
-To run the rule engine you have to use the Public API of the rule
-engine to build and execute rules on data objects. 
-In a script step you can use ``ivy.rules`` and in a Java class use :public-api:`Rules </ch/ivyteam/ivy/rule/engine/api/Rules.html>`.
-First you will need to create a :public-api:`RuleExecutor </ch/ivyteam/ivy/rule/engine/api/IRuleExecutor.html>` with all rules.
+To run the rule engine you have to use the :public-api:`Public API of the rule
+engine </ch/ivyteam/ivy/rule/engine/api/package-summary.html>` to build and
+execute rules on data objects. In a script step you can use ``ivy.rules`` and in
+a Java class use :public-api:`Rules
+</ch/ivyteam/ivy/rule/engine/api/Rules.html>`. First you will need to create a
+:public-api:`RuleExecutor </ch/ivyteam/ivy/rule/engine/api/IRuleExecutor.html>`
+with all rules.
 
 .. code-block:: java
 
@@ -176,6 +179,12 @@ the root object of your data or a list of objects.
 You should now see the result of the actions applied in the data that
 you passed into the rule engine before.
 
+.. note::
+
+  To use the rule engine `Drools <https://www.drools.org>`__ directly, you must
+  add the *Rule Engine Libraries* to the project's classpath. To do this,
+  right-click on the project and select *Properties*. Navigate to *Axon Ivy* >
+  *Java* and check *Rule Engine Libraries*.
 
 Demo project
 ------------
