@@ -85,7 +85,7 @@ using it.
 The technical interface description is available under the following URL path:
 
 ``/<appName>/api/openapi.json``
-e.g., http://localhost:8081/designer/openapi.json
+e.g., http://localhost:8081/designer/api/openapi.json (this one is from Designer)
 
 
 .. _integration-rest-api-spec-annotate:
