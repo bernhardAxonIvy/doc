@@ -6,11 +6,6 @@ Common Migration Steps
 After running Operating System specific migration steps:
 
 #. Restart the |ivy-engine|.
-#. Very likely you will need a new license after a major version change.
-
-   #. Request a new license as described in the :ref:`license` chapter.
-   #. Copy the new license to the ``configuration`` directory or upload it using the :ref:`Engine Cockpit <setup-wizard>`
-
 #. Test your workflow app for breaking changes and identify them using the :ref:`Migration Notes document <migration-notes>`.
 #. Examine the logs for errors while an automated test or a business user clicks through important workflows.
 

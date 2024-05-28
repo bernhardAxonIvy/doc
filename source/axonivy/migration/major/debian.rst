@@ -19,6 +19,7 @@ proceed with your major version migration as follows:
 
    #. Provide the location of your previous installation as input (e.g.,
       ``/usr/lib/axonivy-engine-8x/``.
+   #. Provide the new licence in case of a major upgrade.
    #. Run the migration tasks and answer the manual migration steps.
 
 #. Apply the :ref:`migration-upgrade-engine-common` 

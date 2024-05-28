@@ -15,6 +15,7 @@ version.
 #. Migrate using the :ref:`migration-wizard`: 
 
    #. Provide the location of the Axon Ivy Engine installation :code:`/usr/lib/axonivy-engine`
+   #. Provide the new licence in case of a major upgrade.
    #. Run the migration tasks and answer the manual migration steps.
 
 #. Apply the :ref:`migration-upgrade-engine-common`
