@@ -198,6 +198,33 @@ You can configure the cache limits in the :ref:`ivy.yaml <ivy-cache-properties>`
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-cache.png
 
+.. _engine-cockpit-monitor-health:
+
+Health
+""""""
+
+The **Health** view displays a table with the current :ref:`health messages <health>`.
+
+The :guilabel:`Severity` column tells you how urgent the message is. 
+`CRITICAL` messages should be addressed immediately.
+The :guilabel:`Message` and :guilabel:`Description` columns describe the problem and gives you hints about what needs to be done.
+Some health messages provide a link to another Engine Cockpit or setup page where you can either analyze or fix the problem.
+
+Use the :guilabel:`Run Health Check` button to execute all health checks.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-health.png
+
+To see all health checks that are available click on the :guilabel:`Health Checks` button. 
+
+
+On the **Health Checks** view a list of all health checks is displayed. 
+You see when a check will be executed next.
+Use the :guilabel:`Disable` and :guilabel:`Enable` buttons to disable or enable a check.
+With the :guilabel:`Run check now` button you can immediately execute a check.  
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-health-checks.png
+
+
 .. _engine-cockpit-monitor-performance:
 
 Performance

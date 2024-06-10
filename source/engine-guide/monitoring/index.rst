@@ -10,4 +10,5 @@ Monitoring
    process-element-performance
    tracing
    jmx
+   health
    engine-cockpit
