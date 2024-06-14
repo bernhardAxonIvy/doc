@@ -17,14 +17,14 @@ You need to request a new license for |ivy-engine| 11.1.
 |ivy| Environments
 *****************************
 
-|tag-project-changed| |tag-project-removed| 
+|tag-project-changed| |tag-project-removed| |tag-ops-wizard|
 
 |ivy| Environments have been removed, finally. We detailed the reason for this in our 
 `blog post <https://community.axonivy.com/d/142-environments-will-disappear-in-the-long-term>`_.
 
 |ivy| Environments have been used for **staging** and in some rare cases for **multi-tenancy**. If you have
 used them for staging, the initial use case, then you shouldn't face any issues.
-Make sure that the :code:`Default` configuration is correct for each of your staging Environments.
+The migration wizard will merge the configuration from the active environment to the main :ref:`app-yaml`
 If you have used it for multi-tenancy, then you need to manually migrate each tenant to either its own
 |ivy-engine| or its own |ivy| Application. Read more about this topic in :ref:`multi-tenancy`.
 

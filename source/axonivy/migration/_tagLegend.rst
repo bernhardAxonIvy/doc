@@ -2,8 +2,7 @@
 
 |tag-ops-wizard|
   
-  This migration is handled either by the :ref:`migration-wizard`. The wizard
-  will interact with you if you are affected by this change.
+  This migration is handled by the :ref:`migration-wizard`.
 
 |tag-ops-changed| 
 
