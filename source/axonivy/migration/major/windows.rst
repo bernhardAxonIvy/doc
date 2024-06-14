@@ -6,9 +6,10 @@ Windows
 On Windows the migration is very similar to a hotfix migration. However, some
 additional steps are required at the end.
 
-.. include:: ../_prepareWin.rst
-.. include:: ../_wizardMigration.rst
+.. rubric:: Preparation
 
-Major-Migration:
+#. Download the latest |ivy-engine| hotfix version that matches your release
+   train :dev-url:`/download` and unpack at your prefered place.
+#. :ref:`Stop <control-center>` the running |ivy-engine| instance.
 
-#. Apply the :ref:`migration-upgrade-engine-common` 
+.. include:: _wizardMigration.rst

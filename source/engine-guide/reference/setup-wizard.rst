@@ -35,8 +35,8 @@ Axon Ivy Engine should now start up in :ref:`demo-mode`.
 
 .. note::
     For the usage of this tool, you will need an administrator user account. 
-    If you run in :ref:`demo-mode` the administrator user and password is
-    **admin**.
+    If you run in :ref:`demo-mode` the name of the default administrator user
+    is **admin** and the password is **admin** too.
 
 
 .. _setup-wizard-license:

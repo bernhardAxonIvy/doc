@@ -44,7 +44,7 @@ Beyond what is documented in the Primefaces Migration Notes we faced the followi
 - ``p:commandButton`` with an ``ajax="false"`` attribute sometimes does not work in ``p:confirmDialog``. 
   You can remove the ``ajax`` attribute since AJAX should work now in ``p:confirmDialog``.  
 
-Removal of system database Conversion
+Removal of system database conversion
 -------------------------------------
 
 |tag-ops-changed| 

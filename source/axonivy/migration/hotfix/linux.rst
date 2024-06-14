@@ -3,7 +3,11 @@
 Linux
 ====================
 
-This section describes the hotfix procedure for all Linux distributions that are not built upon Debian and it's apt package mechanism.
+This section describes the hotfix procedure for all Linux distributions that are
+not built upon Debian and it's apt package mechanism.
 
-.. include:: ../_prepareLin.rst
-.. include:: _hotfix-migration.rst
+#. Download the latest |ivy-engine| hotfix version that matches your release
+   train :dev-url:`/download` and unpack at your prefered place.
+#. Stop the running |ivy-engine| instance.
+#. Start the :ref:`migration-wizard`. The Migration Wizard will copy all
+   relevant files from the old engine to the new engine during a hotfix upgrade.

@@ -25,8 +25,8 @@ the wizard on your operating system.
 #. Provide the old Axon Ivy Engine installation directory to the Migration Wizard.
 #. Click :guilabel:`Load location`
 #. The Migration Wizard will make up front checks if the engine can be migrated.
+#. If you upgrade to a new major version, you will need to provide a new licence file.
+   Otherwise you won't be able to start the Axon Ivy Engine after migration.
 #. You can inspect all the tasks which will be done and click on :guilabel:`Start`.
-#. The wizard will select the best migration scenario for you, and then ask for
-   your consent.
 #. Wait until the Migration Wizard has completed.
 #. Restart the Axon Ivy Engine.
