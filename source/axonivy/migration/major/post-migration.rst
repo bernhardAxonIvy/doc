@@ -5,9 +5,9 @@ Post Migration Steps
 
 After the Axon Ivy Engine has been updated, the existing Axon Ivy projects on
 the Axon Ivy Engine must also be converted. To do this, go to the
-:ref:`application overview <engine-cockpit-application>` overview in the Engine
+:ref:`application overview <engine-cockpit-application>` in the Engine
 Cockpit. Axon Ivy projects that do not correspond to the current project version
-are not started and must first be converted using the :guilabel:`Convert``
+are not started and must first be converted using the :guilabel:`Convert`
 button.
 
 Once all the required Axon Ivy projects have been converted, the processes can
