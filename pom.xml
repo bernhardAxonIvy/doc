@@ -77,6 +77,12 @@
                   <type>zip</type>
                 </artifactItem>
 
+                <artifactItem>
+                  <groupId>ch.ivyteam.variable</groupId>
+                  <artifactId>variable-editor-screenshots</artifactId>
+                  <type>zip</type>
+                </artifactItem>
+
               </artifactItems>
             </configuration>
           </execution>

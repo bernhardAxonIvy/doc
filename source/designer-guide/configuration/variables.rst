@@ -22,7 +22,7 @@ Variables Editor
 
 Use the Variables Editor to create, delete, and edit Variables.
 
-.. figure:: /_images/designer-configuration/variables-editor.png
+.. figure:: /_images/variables-editor/variables-editor.png
    :alt: Variables Editor
    :align: center
    
