@@ -14,7 +14,7 @@ Connect via VPN if working outside the office!
     mvn clean package
 
     # build and serve doc
-    docker-compose up
+    docker compose up
 
 You can browse the documentation at http://127.0.0.1:8000
 

@@ -33,6 +33,27 @@ will be migrated to:
       user: user
       password: password
 
+In rare cases, conflicts can occur during migration. In that case, a comment is
+added to the :file:`variables.yaml` with the lines that would result in such a
+conflict. These need to be fixed manually.
+
+For example:
+
+.. code-block:: yaml
+      
+  Variables:
+    connector.user: user
+    connector.user.password: password
+
+will be migrated to:
+
+.. code-block:: yaml
+      
+  Variables:
+    connector:
+      user: user
+      # FIXME: user.password: password
+
 ------------
 
 .. include:: _tagLegend.rst
