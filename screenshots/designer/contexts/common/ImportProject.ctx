@@ -24,9 +24,6 @@ proc importProject [val projectName] {
 			get-group Options | get-button "Copy projects into workspace" | check
 			get-button Finish | click
 		}
-		with [get-window Question] {
-			get-button "Yes" | click
-		}
 		wait 1000
 	}
 }

@@ -57,7 +57,7 @@ proc assertJunitOk[val testUnit][val -name waitSeconds -value 20]{
   with [get-view JUnit | get-tree] {
     waitItemExists -seconds $waitSeconds -itemName [format "%s \\[Runner: JUnit 5\\].*" $testUnit ]
         | get-property "image.path"
-        | equals "org.eclipse.jdt.junit/icons/full/obj16/tsuiteok.png" | verify-true
+        | equals "org.eclipse.jdt.junit/icons/full/obj16/tsuite.png" | verify-true
   }
 }
 
