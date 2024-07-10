@@ -40,6 +40,9 @@ Engine. Every user in the Axon Ivy Engine is considered a Named User. Deactivate
 administrators and the system user do not count as named users.
 All of this also applies to users on a cluster.
 
+Users with the same name, email address and external id over multiple security contexts are
+only counted as one Named User.
+
 Concurrent Users
 ~~~~~~~~~~~~~~~~
 
