@@ -31,11 +31,11 @@ Hardware requirements may vary depending on how many projects you are working on
 
 .. rubric:: Software Requirements
 
-Axon Ivy Designer needs Java SE 17 to run. 
+Axon Ivy Designer needs Java SE 21 to run. 
 
-Note that Java SE 17 provided by `Eclipse Temurin <https://adoptium.net/>`_ is
+Note that Java SE 21 provided by `Eclipse Temurin <https://adoptium.net/>`_ is
 already included in our Windows and in our macOS installation. On Linux, we do
-not include Java SE 17. You may want to use Java SE 17 provided by your
+not include Java SE 21. You may want to use Java SE 21 provided by your
 operating system or `Eclipse Temurin <https://adoptium.net/>`_.
 
 We test Axon Ivy Designer with `Eclipse Temurin <https://adoptium.net/>`_.
