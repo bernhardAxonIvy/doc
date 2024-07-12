@@ -6,6 +6,20 @@ Migrating from 11.3 to 11.4
 Upgrade to 11.4 is only supported from an |ivy-engine| 8.0 and higher.
 If you have an |ivy-engine| older than version 8.0 you need first to migrate to a newer version.
 
+.. _java21-migration:
+
+Java 21
+-------
+
+|tag-project-changed| |tag-project-auto-convert| |tag-ops-changed|
+
+We updated Java to version 21:
+
+- Convert your Axon Ivy projects to the latest version to use the new Java 21 features. 
+- You may have to update third-party libraries that do not yet support Java 21 to newer versions.
+- Use Java 21 to run your Maven project builds.
+- Use an `Adoptium / Eclipse Temurin JDK or JRE <https://adoptium.net/temurin/releases?version=17>`_ to run Axon Ivy on Linux or macOS.
+
 .. _variables-migration:
 
 Variables

@@ -42,12 +42,12 @@ instance. This also affects the minimum hardware requirements.
 Software Requirements
 ---------------------
 
-The Axon Ivy Engine needs Java SE 17 to run and is tested with `Eclipse Temurin
+The Axon Ivy Engine needs Java SE 21 to run and is tested with `Eclipse Temurin
 <https://adoptium.net/>`_.
 
-Note: Java SE 17 `Eclipse Temurin <https://adoptium.net/>`_ is already
+Note: Java SE 21 `Eclipse Temurin <https://adoptium.net/>`_ is already
 included in our Windows installation and the Docker container.    
-On Linux, we do not include Java SE 17. You may want to use Java SE 17 provided
+On Linux, we do not include Java SE 21. You may want to use Java SE 21 provided
 by your operating system or install `Eclipse Temurin <https://adoptium.net/>`_.
 
 
