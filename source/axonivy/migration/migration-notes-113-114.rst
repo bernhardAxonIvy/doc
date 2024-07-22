@@ -20,6 +20,19 @@ We updated Java to version 21:
 - Use Java 21 to run your Maven project builds.
 - Use an `Adoptium / Eclipse Temurin JDK or JRE <https://adoptium.net/temurin/releases?version=17>`_ to run Axon Ivy on Linux or macOS.
 
+
+Maven 3.9
+---------
+
+|tag-project-changed| 
+
+The `project-build-plugin <https://axonivy.github.io/project-build-plugin>`__
+now requires Maven 3.9 to build Axon Ivy Projects. You need to install Maven 3.9
+on your :ref:`CI/CD environment <continuous-integration>` and also on your
+machine, if you execute Maven builds locally. Maven can be installed according
+to these `instructions <https://maven.apache.org/install.html>`__.
+
+
 .. _variables-migration:
 
 Variables
