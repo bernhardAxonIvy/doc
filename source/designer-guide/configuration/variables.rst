@@ -20,7 +20,9 @@ Cockpit Variables View <engine-cockpit-variables>` on the |ivy-engine|.
 Variables Editor
 ----------------
 
-Use the Variables Editor to create, delete, and edit Variables.
+Use the Variables Editor to create, delete, and edit Variables. 
+You can import Variables from required projects to overwrite them 
+such as hosts, user names and passwords of connector projects.
 
 .. figure:: /_images/variables-editor/variables-editor.png
    :alt: Variables Editor
