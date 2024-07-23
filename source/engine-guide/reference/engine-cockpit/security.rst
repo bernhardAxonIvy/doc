@@ -51,6 +51,20 @@ time, number, and currency formatting definitions), and the
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-security-system-detail.png
 
+Generate Security Report
+''''''''''''''''''''''''
+
+If you want a complete overview of your security system (e.g., for a security audit),
+you can download an Excel sheet with all the necessary information. To download the
+Excel, click on the :guilabel:`Download Security Report` button in the Security Systems tab. A dialog 
+box will appear, click the :guilabel:`Generate` button, and the Excel file will be prepared. 
+The Excel file contains detailed information on users, roles, user roles, role members, 
+user permissions, and role permissions. It may take a few minutes to generate. 
+When the Excel file is ready you can click :guilabel:`Download`.
+
+Identity Provider
+'''''''''''''''''
+
 Depending on the chosen Identity Provider, additional settings are available with the 
 :guilabel:`Edit` button.
 
@@ -58,6 +72,7 @@ Depending on the chosen Identity Provider, additional settings are available wit
 
 For all configuration options of an Identity Provider, refer to the chapter
 :ref:`identity-provider`.
+
 
 Users
 ^^^^^
