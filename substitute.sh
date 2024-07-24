@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version="$1"            # e.g. 10.0.0
+version="$1"            # e.g. 10.0
 major="${version%%.*}"  # e.g. 10
 
 placeholderstarts="\|(ivy|version|major)" # start of placeholder strings
@@ -12,7 +12,8 @@ replace_placeholders() {
             s/\|ivy-engine\|/Axon Ivy Engine/g; \
             s/\|ivy\|/Axon Ivy/g; \
             s/\|version\|/$version/g; \
-            s/\|major-version\|/$major/g;" $name
+            s/\|major-version\|/$major/g;" \
+            $name
     cat $name | grep -E $placeholderstarts
 }
 
@@ -32,6 +33,7 @@ cd source/
 
 find_and_replace_placeholders "*.rst"
 find_and_replace_placeholders "*.dot"
+find_and_replace_placeholders "*.yaml"
 
 popd 2>&1 1> /dev/null
 
