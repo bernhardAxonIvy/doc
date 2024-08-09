@@ -14,6 +14,9 @@ Engine Cockpit view that provides more information about the problem or where yo
 Engine Cockpit
 --------------
 
-Health messages are displayed in the 
-:ref:`engine-cockpit-monitor-health` view of the :ref:`engine-cockpit`.
+Health messages are displayed in the :ref:`engine-cockpit` on:
+
+* The :guilabel:`Health` panel in the :ref:`engine-cockpit-dashboard`
+* The :ref:`engine-cockpit-top-menu` 
+* The :ref:`engine-cockpit-monitor-health` view
 
