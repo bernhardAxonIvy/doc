@@ -83,10 +83,9 @@ The **Engine** pages allow you to monitor some critical indicators of your |ivy-
 
 - **Notifications**: Overview of all user notifications
 - **Sessions**: Overview of open user sessions
-- **Start Events**: Process start events and their metrics 
-- **Intermediate Events**: Process intermediate events and their metrics
 - **Jobs**: Jobs that are periodically executed and their metrics
 - **Cache**: System database caches and their metrics
+- **Health**: Health messages and checks
 
 
 .. _engine-cockpit-notifications:
@@ -125,49 +124,6 @@ especially in the case of a session leak.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-sessions.png
 
-
-Documents
-"""""""""
-
-The **Documents** view gives you an overview of documents attached to a case
-or workflow documents.
-
-.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-documents.png
-
-
-.. _engine-cockpit-monitor-start-events:
-
-Start Events
-""""""""""""
-
-The **Start Events** view displays a table with all process start events.
-The table shows the name, description, and request path of the start event. 
-It also shows when the poll method will be called the next time. 
-How often the start event has started a process (:guilabel:`Executions`) and 
-how many of those attempts have failed (:guilabel:`Errors`).   
-You can start and stop or schedule the execution of the poll method of a start event.
- 
-Press on the name of a start event to see even more detail information of the start event like configuration, errors, 
-poll and execution information.
-
-.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-start-events.png
-
-.. _engine-cockpit-monitor-intermediate-events:
-
-Intermediate Events
-"""""""""""""""""""
-
-The **Intermediate Events** view displays a table with all process intermediate events.
-The table shows the name, description, and request path of the intermediate event. 
-It also shows when the poll method will be called the next time. 
-How often the intermediate event has fired (:guilabel:`Executions`) and 
-how many of those attempts have failed (:guilabel:`Errors`).   
-You can start and stop or schedule the execution of the poll method of a intermediate event.
- 
-Press on the name of an intermediate event to see even more detail information of the intermediate event like configuration, errors, 
-poll and execution information.
-
-.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-intermediate-events.png
 
 .. _engine-cockpit-monitor-jobs:
 
@@ -223,6 +179,58 @@ Use the :guilabel:`Disable` and :guilabel:`Enable` buttons to disable or enable 
 With the :guilabel:`Run check now` button you can immediately execute a check.  
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-monitor-health-checks.png
+
+.. _engine-cockpit-monitor-workflow:
+
+Workflow
+^^^^^^^^
+
+- **Documents**: Workflow and case documents
+- **Start Events**: Process start events and their metrics 
+- **Intermediate Events**: Process intermediate events and their metrics
+
+Documents
+"""""""""
+
+The **Documents** view gives you an overview of documents attached to a case
+or workflow documents.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-documents.png
+
+
+.. _engine-cockpit-monitor-start-events:
+
+Start Events
+""""""""""""
+
+The **Start Events** view displays a table with all process start events.
+The table shows the name, description, and request path of the start event. 
+It also shows when the poll method will be called the next time. 
+How often the start event has started a process (:guilabel:`Executions`) and 
+how many of those attempts have failed (:guilabel:`Errors`).   
+You can start and stop or schedule the execution of the poll method of a start event.
+ 
+Press on the name of a start event to see even more detail information of the start event like configuration, errors, 
+poll and execution information.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-start-events.png
+
+.. _engine-cockpit-monitor-intermediate-events:
+
+Intermediate Events
+"""""""""""""""""""
+
+The **Intermediate Events** view displays a table with all process intermediate events.
+The table shows the name, description, and request path of the intermediate event. 
+It also shows when the poll method will be called the next time. 
+How often the intermediate event has fired (:guilabel:`Executions`) and 
+how many of those attempts have failed (:guilabel:`Errors`).   
+You can start and stop or schedule the execution of the poll method of a intermediate event.
+ 
+Press on the name of an intermediate event to see even more detail information of the intermediate event like configuration, errors, 
+poll and execution information.
+
+.. figure:: /_images/engine-cockpit/engine-cockpit-monitor-intermediate-events.png
 
 
 .. _engine-cockpit-monitor-performance:
