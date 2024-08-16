@@ -5,14 +5,15 @@ Element-Name: Process
 Element-Type: context
 Element-Version: 2.0
 Id: _PRrTwNcsEeaidO8WBzHpig
-Runtime-Version: 2.5.2.202107052356
-Save-Time: 5/17/22, 2:57 PM
+Runtime-Version: 2.5.5.202408111356
+Save-Time: 8/16/24, 9:51 AM
 
 ------=_.ecl.context-718f04b4-ed39-33e3-af62-0995e4561998
 Content-Type: text/ecl
 Entry-Name: .ecl.context
 
-proc openInscription[val processName] [val elementName] [val elementType]
+
+proc selectElement[val processName] [val elementName] [val elementType]
 {
 	with [get-view "Axon Ivy Projects" | get-tree] {
 		let [val processPath [format "documentationExampleProject/Processes/%s" $processName ]]
@@ -24,53 +25,8 @@ proc openInscription[val processName] [val elementName] [val elementType]
 	OpenView -viewName Outline
 	let [val outlineElementName [format "%s/%s : %s" $processName $elementName $elementType]]
 	{
-		get-view Outline | get-tree | select $outlineElementName | double-click
-		waitWindowExists [format "Inscribe %s" $elementType]
+		get-view Outline | get-tree | select $outlineElementName | click
 	}
 }
 
-proc openHtmlDialogInscription[val dialogName] [val elementName] [val elementType]
-{
-	with [get-view "Axon Ivy Projects" | get-tree] {
-		let [val processPath [format "documentationExampleProject/Html Dialogs/screenshot.project.%s/%s Logic" $dialogName $dialogName]]
-		{
-    		get-item $processPath | double-click
-		}
-	}
-
-	OpenView -viewName Outline
-	let [val outlineElementName [format "%sProcess/%s : %s" $dialogName $elementName $elementType]]
-	{
-		get-view Outline | get-tree | select $outlineElementName | double-click
-		waitWindowExists [format "Inscribe %s" $elementType]
-	}
-}
-
-proc captureInscription [val elementType][val tabName][val screenshot][val width][val height][val -name close -value "true"]
-{
-	let [val inscriptionEditor [format "Inscribe %s" $elementType]]{
-		let [val targetPath [format "process-elements/%s" $screenshot]]{
-			with [get-window $inscriptionEditor]{
-				resizeWindow -width $width -height $height
-				with [get-tab-folder] {
-					get-tab-item $tabName | click
-					wait -ms 2000 // wait for UI animation (radio switches, button highlight, etc.)
-					get-object | captureScreenshot $targetPath
-				}
-				if [$close] {
-					get-button Cancel | click
-				}
-			}
-		}
-	}
-}
-
-proc captureInscriptionPart [val screenshot]
-{
-	let [val targetPath [format "process-elements/%s" $screenshot]]
-	{
-	    wait -ms 1000 // wait for UI animation (radio switches, button highlight, etc.)
-		get-object | captureScreenshot $targetPath
-	}
-}
 ------=_.ecl.context-718f04b4-ed39-33e3-af62-0995e4561998--

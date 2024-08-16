@@ -71,10 +71,9 @@ proc referenceView{
 proc jsonInscription{
 	OpenView "JSON Inscription"
 	
-	openInscription -processName "JaxRsServiceCall" 
+	selectElement -processName "JaxRsServiceCall" 
 		-elementName "Call twitter" 
 		-elementType "Rest Service Call Activity"
-	get-window "Inscribe Rest Service Call Activity" | get-button Cancel | click -metaKeys ""
 	
 	get-view "JSON Inscription" | click
 	with [find-tab-folder "JSON Inscription"]{
