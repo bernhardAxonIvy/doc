@@ -23,15 +23,14 @@ environment, so please jump right to the execution environment you are using:
    :maxdepth: 2
 
    docker
-   debian
    windows
    linux
 
 
 Migration comparison:
 
-+----------+---------+------------+------------------+---------+
-|          | Windows | Any Linux  | Debian / Ubuntu  | Docker  |
-+----------+---------+------------+------------------+---------+
-| Effort   | Medium  | Medium     | Minimal          | Minimal |
-+----------+---------+------------+------------------+---------+
++----------+---------+------------+---------+
+|          | Windows | Any Linux  | Docker  |
++----------+---------+------------+---------+
+| Effort   | Medium  | Medium     | Minimal |
++----------+---------+------------+---------+

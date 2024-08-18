@@ -3,8 +3,7 @@
 Linux
 ====================
 
-This section describes the hotfix procedure for all Linux distributions that are
-not built upon Debian and it's apt package mechanism.
+This section describes the hotfix procedure for all Linux distributions.
 
 #. Download the latest |ivy-engine| hotfix version that matches your release
    train :dev-url:`/download` and unpack at your prefered place.
