@@ -45,7 +45,6 @@ environment, so please jump right to the execution environment you are using:
 .. toctree::
    :maxdepth: 1
 
-   debian
    docker
    windows
    linux

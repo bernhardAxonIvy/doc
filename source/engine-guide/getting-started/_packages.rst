@@ -4,10 +4,6 @@
 
   * **Docker** Docker Image for all platforms that can run Linux containers.
 
-  * **Debian** for Debian-based Linux systems. This is a :file:`.deb` package
-    which will install the Axon Ivy Engine into the Debian standard paths,
-    define the engine as a service, and start that service.
-  
   * **Linux** For all platforms (including Windows). It contains launchers for
     both Windows and Linux. No Java Runtime (JRE) is bundled, thus, you need to
     install one yourself. Axon Ivy Engine will use the JRE pointed to by the

@@ -101,8 +101,8 @@ described in :ref:`configuration_containers_license`.
 
 .. _configuration_servers_license:
 
-Debian, Linux, and Windows
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Linux, and Windows
+~~~~~~~~~~~~~~~~~~
 
 For "traditional" server installations, your options to install a license are:
 

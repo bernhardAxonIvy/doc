@@ -21,6 +21,12 @@ We updated Java to version 21:
 - Use an `Adoptium / Eclipse Temurin JDK or JRE <https://adoptium.net/temurin/releases?version=17>`_ to run Axon Ivy on Linux or macOS.
 
 
+Debian Package
+--------------
+
+A debian package for the Axon Ivy Engine will no longer be provided.
+We recommend to use the Axon Ivy Docker Image.
+
 Maven 3.9
 ---------
 

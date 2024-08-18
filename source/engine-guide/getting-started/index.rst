@@ -30,7 +30,6 @@ select thereafter.
    :maxdepth: 1
 
    docker/index
-   debian/index
    linux/index
    windows/index
 
@@ -44,27 +43,18 @@ configuration, and upgrade support.
 
 For details, refer to :ref:`getting-started-docker`.
 
-.. rubric:: Debian 
-
-We provide a Debian package for Debian-based Linux systems like Ubuntu or
-Linux Mint. Besides the install capabilities, this package offers excellent
-support for later upgrades of the Axon Ivy Engine.
-
-For details, refer to  :ref:`getting-started-debian`.
-
 .. rubric:: Linux
 
-If you use a non-Debian-based Linux system, choose this option. Compared to
-the Debian package, you will miss the install and upgrade capabilities.
-Compared to Debian and Docker, more effort is required to install and
+If you use a Linux system, choose this option.
+Compared to  Docker, more effort is required to install and
 subsequently, upgrade the Axon Ivy Engine.
 
 For details, refer to :ref:`getting-started-linux`.
 
 .. rubric:: Windows
 
-Windows is the operating system of choice in many places. Compared to Debian
-and Docker, more effort is required to install and later on upgrade the
+Windows is the operating system of choice in many places. Compared Docker,
+more effort is required to install and later on upgrade the
 Axon Ivy Engine.
 
 For details, refer to :ref:`getting-started-windows`.
