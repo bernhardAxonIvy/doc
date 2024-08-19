@@ -13,11 +13,6 @@ places.
 IvyScript Editor
 ~~~~~~~~~~~~~~~~
 
-.. figure:: /_images/ivyscript/ivy-script-editor.png
-   :alt: IvyScript Editor
-
-   IvyScript Editor
-
 The normal editors expect you to enter either a script with multiple
 statements (e.g., a script, that contains semicolons) which performs a
 certain task, or just an expression that evaluates to a certain value.
@@ -27,11 +22,6 @@ certain task, or just an expression that evaluates to a certain value.
 
 Macro Editor
 ~~~~~~~~~~~~
-
-.. figure:: /_images/ivyscript/macro-editor.png
-   :alt: Macro Editor
-
-   Macro Editor
 
 The macro editor allows you to mix IvyScript with normal text. For
 example you could name a task dynamically by including the case number

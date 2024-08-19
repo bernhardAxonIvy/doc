@@ -35,4 +35,4 @@ Data Object
    in the rule set.
 
 .. |image0| image:: /_images/process-elements/rule-activity.png
-.. |image1| image:: /_images/process-elements/call-tab-rule.png
+.. |image1| image:: /_images/process-inscription/rule-tab-configuration.png
