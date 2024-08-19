@@ -73,11 +73,6 @@ Web Service Tester
 The Web Service Tester dialog can be opened by clicking on the ``Test``
 button next to the Web Service operation selector on the Request Tab.
 
-.. figure:: /_images/process-elements/web-service-call-activity-tab-test-dialog.png
-   :alt: Web Service Tester Dialog
-
-   Web Service Tester Dialog
-
 The Web Service Tester allows to send Test Data to a remote Web Service
 and simple examination of the returned SOAP XML envelope. This makes
 prototyping and testing of Web Services fast and intuitive.
