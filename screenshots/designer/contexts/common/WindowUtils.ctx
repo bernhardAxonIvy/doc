@@ -115,6 +115,7 @@ proc openOutlineView
 proc openQuickAccess [val search]
 {
     get-eclipse-window | get-button "Access commands and other items.*" | click
+    waitWindowExists "Find Actions"
     get-window "Find Actions" | get-editbox | set-text $search | key-type Enter
 }
 
