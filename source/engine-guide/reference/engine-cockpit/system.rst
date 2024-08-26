@@ -41,6 +41,15 @@ on how to configure your engine's system database.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-system-database.png
 
+System Database Info
+""""""""""""""""""""
+
+If you need information about your system database, click the
+:guilabel:`Info` button. The **System Database Info** page opens 
+and shows Information about your database, driver, tables, triggers, and indices. 
+You can see how much disk space the database, table, and indices use. 
+The number of rows for tables and cardinality for indices gives you an idea of how much data is stored. 
+The fragmentation gives you an indication if a reorganization of your database is recommended. 
 
 .. _engine-cockpit-license:
 
