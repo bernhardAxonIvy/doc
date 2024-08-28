@@ -31,9 +31,7 @@ Port
    protocol that is used (e.g., SOAP, SOAP 1.2, HTTP).
 
 Operation
-   Selects the Operation of the Web Service. Calls to this operation
-   with real data can be tested by clicking on the Test button.
-   See :ref:`process-element-web-service-call-activity-tester`.
+   Selects the Operation of the Web Service.
 
 Properties
    Values to fine tune the configuration of the Web Service Call. Most
@@ -64,25 +62,5 @@ Body
    Maps the result returned by the Web Service Call back to any process
    data or executes code on it. The result is provided as ``wsResponse``
    variable.
-
-.. _process-element-web-service-call-activity-tester:
-
-Web Service Tester
-~~~~~~~~~~~~~~~~~~
-
-The Web Service Tester dialog can be opened by clicking on the ``Test``
-button next to the Web Service operation selector on the Request Tab.
-
-.. figure:: /_images/process-elements/web-service-call-activity-tab-test-dialog.png
-   :alt: Web Service Tester Dialog
-
-   Web Service Tester Dialog
-
-The Web Service Tester allows to send Test Data to a remote Web Service
-and simple examination of the returned SOAP XML envelope. This makes
-prototyping and testing of Web Services fast and intuitive.
-
-Entered test data can be stored in project preferences by clicking on
-the save button.
 
 .. |image0| image:: /_images/process-elements/web-service-call-activity.png
