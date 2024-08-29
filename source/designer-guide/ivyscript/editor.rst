@@ -118,39 +118,5 @@ Shortcuts
    +-----------------------------------+-----------------------------------+
    | CTRL+Y                            | Redo                              |
    +-----------------------------------+-----------------------------------+
-   | CTRL+SHIFT+A                      | `Attribute and Method             |
-   |                                   | Browser <#ivy.ivyscript.attribute |
-   |                                   | browser>`__                       |
-   +-----------------------------------+-----------------------------------+
-   | CTRL+SHIFT+T                      | `Datatype                         |
-   |                                   | Browser <#ivy.ivyscript.datatypeb |
-   |                                   | rowser>`__                        |
-   +-----------------------------------+-----------------------------------+
-   | CTRL+SHIFT+C                      | Content Object Browser            |
-   +-----------------------------------+-----------------------------------+
-   | CTRL+SHIFT+F                      | `Function                         |
-   |                                   | Browser <#ivy.ivyscript.functionb |
-   |                                   | rowser>`__                        |
-   +-----------------------------------+-----------------------------------+
 
-.. _ivyscript-editor-smart-buttons:
 
-Smart Buttons
-~~~~~~~~~~~~~
-
-.. figure:: /_images/ivyscript/smart-buttons.png
-   :alt: Smart Buttons
-
-   Smart Buttons
-
-Next to the editors you usually find buttons (which ones, depends on the
-context), that hold certain actions. The exact actions that those
-buttons realize are described in the section :ref:`smart-buttons`.
-There are e.g., actions to
-select an attribute from the current process data, to select content or
-to insert a link.
-
-.. figure:: /_images/ivyscript/action-cms.png
-   :alt: Macro Editor after insertion of a CMS object with help of the
-
-   Macro Editor after insertion of a CMS object with help of the Content Smart Button

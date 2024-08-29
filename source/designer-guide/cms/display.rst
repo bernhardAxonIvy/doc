@@ -3,10 +3,9 @@
 Display Content
 ---------------
 
-You can use content from CMS wherever you want in your business processes. In
-most Axon Ivy Script editors there is a :ref:`smart button
-<ivyscript-editor-smart-buttons>` available which generates the correct code for
-you. To access the CMS you can use the variable :public-api:`ivy.cms
+You can use content from CMS wherever you want in your business processes. 
+In most Axon Ivy Script editors there is a CMS browser available, which generates the correct code for you. 
+To access the CMS you can use the variable :public-api:`ivy.cms
 </ch/ivyteam/ivy/cm/IContentManagementSystem.html>`.
 
 
