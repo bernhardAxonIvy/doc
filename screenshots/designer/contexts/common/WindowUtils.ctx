@@ -107,11 +107,6 @@ proc "openView" [val viewName]
   	}
 }
 
-proc openOutlineView
-{
-	openView "Outline"
-}
-
 proc openQuickAccess [val search]
 {
     get-eclipse-window | get-button "Access commands and other items.*" | click
