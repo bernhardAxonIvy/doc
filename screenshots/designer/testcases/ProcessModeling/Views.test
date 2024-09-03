@@ -1,33 +1,18 @@
 --- RCPTT testcase ---
 Format-Version: 1.0
-Contexts: _PRrTwNcsEeaidO8WBzHpig,_kEpK0P7jEemEm8MTnrs71Q
+Contexts: _kEpK0P7jEemEm8MTnrs71Q
 Element-Name: Views
 Element-Type: testcase
 Element-Version: 3.0
 External-Reference: 
 Id: _Hh07QF_PEeaAcqEsdR5JMw
-Runtime-Version: 2.5.4.202209262356
-Save-Time: 1/18/23, 12:02 PM
+Runtime-Version: 2.5.5.202409011355
+Save-Time: 9/2/24, 2:33 PM
 Testcase-Type: ecl
 
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
 Content-Type: text/ecl
 Entry-Name: .content
-
-
-proc processOutline{
-	with [get-view "Axon Ivy Projects" | get-tree]{
-		get-item "QuickStartTutorial/Processes/MyProcess" | double-click
-	}
-	get-eclipse-window | maximize
-	wait 500
-	
-	OpenView Outline
-	with [find-tab-folder Outline]{
-		resizeWindow 500 200
-		get-object | captureScreenshot "process-modeling/outline-view.png"
-	}
-}
 
 proc problemsView{
 	with [get-view "Axon Ivy Projects" | get-tree]
@@ -71,9 +56,9 @@ proc referenceView{
 proc jsonInscription{
 	OpenView "JSON Inscription"
 	
-	selectElement -processName "JaxRsServiceCall" 
-		-elementName "Call twitter" 
-		-elementType "Rest Service Call Activity"
+	with [get-view "Axon Ivy Projects" | get-tree] {
+		get-item "documentationExampleProject/Processes/JaxRsServiceCall" | double-click
+	}
 	
 	get-view "JSON Inscription" | click
 	with [find-tab-folder "JSON Inscription"]{
@@ -87,7 +72,6 @@ proc jsonInscription{
 try{
 	importProject -projectName QuickStartTutorial
 	togglePresentation -flat true
-	processOutline
 	problemsView
 	
 	importProject -projectName documentationExampleProject
