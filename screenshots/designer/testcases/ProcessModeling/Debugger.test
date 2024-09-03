@@ -6,7 +6,7 @@ Element-Version: 3.0
 External-Reference: 
 Id: _axKUIGBiEeaAcqEsdR5JMw
 Runtime-Version: 2.5.5.202409011355
-Save-Time: 9/2/24, 4:23 PM
+Save-Time: 9/3/24, 8:10 AM
 Testcase-Type: ecl
 
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
@@ -46,8 +46,14 @@ startBpmProcess
 	-ivpPath "JaxRsServiceCall\/approve.ivp"
 waitProcessEditor
 
-OpenView Outline
-get-view Outline | get-tree | select "JaxRsServiceCall/create JAX-RS approval : Rest Service Call Activity" | click
+openQuickAccess -search "Axon Ivy Search"
+with [get-window Search] {
+    get-combo -after [get-label "Search string (* = any string, ? = any character):"] | set-text "JAX-RS approval"
+    get-button Search | click
+}
+get-view Search | get-tree 
+    | select "documentationExampleProject/JaxRsServiceCall : Process/create JAX-RS approval : Rest Service Call Activity" 
+    | double-click
 wait -ms 500
 
 get-view History | get-tree | select
