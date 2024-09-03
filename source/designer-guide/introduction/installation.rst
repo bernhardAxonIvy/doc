@@ -45,6 +45,6 @@ We test Axon Ivy Designer with `Eclipse Temurin <https://adoptium.net/>`_.
 :Windows: Windows 10 / 11 x64 with `WebView2
     <https://developer.microsoft.com/en-us/microsoft-edge/webview2/>`_ installed
 
-:Linux: Linux x64 with GTK 3 and X.org window system (tested on Ubuntu 22.04)
+:Linux: Linux x64 with GTK 4 and X.org window system (tested on Ubuntu 24.04)
 
 :macOS: macOS Monterey x64 (tested on macOS Monterey 12.6.3)

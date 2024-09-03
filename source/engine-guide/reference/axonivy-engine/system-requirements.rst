@@ -58,7 +58,7 @@ Operating Systems
   Windows Server 2022, 2019 and 2012 R2
 
 * **Linux**:
-  Linux x64 (tested on Ubuntu 22.04)
+  Linux x64 (tested on Ubuntu 24.04)
 
 
 System Database
