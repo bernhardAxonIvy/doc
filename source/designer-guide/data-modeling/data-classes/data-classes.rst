@@ -75,6 +75,12 @@ Data Class Name
 Data Class Editor
 -----------------
 
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+
+   new-data-class-editor
+
 The |ivy| Data Class editor lets you configure the process data objects of
 |ivy|. The process data is the data that **flows** through your processes. It
 represents the state of the respective process.
@@ -88,6 +94,10 @@ Field.
 
    Data Class Editor
 
+.. note::
+
+   If you are working with the NEO Designer, you can edit data classes using the
+   :ref:`new-data-class-editor`.
 
 Accessibility
 ^^^^^^^^^^^^^

@@ -83,6 +83,12 @@
                   <type>zip</type>
                 </artifactItem>
 
+                <artifactItem>
+                  <groupId>ch.ivyteam.dataclass</groupId>
+                  <artifactId>dataclass-editor-screenshots</artifactId>
+                  <type>zip</type>
+                </artifactItem>
+
               </artifactItems>
             </configuration>
           </execution>
