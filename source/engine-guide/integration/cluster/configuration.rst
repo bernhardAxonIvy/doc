@@ -13,23 +13,17 @@ Files
 We recommend to configure :ref:`documents-s3` as distributed blob storage so that every
 cluster node can access all the files.
 
-Otherwise you need to share the files directory for all cluster nodes
-(``Data.FilesDirectory`` from :ref:`ivy.yaml <ivy-yaml>`). Use a Docker volume that stores all the files.
+Otherwise you need to share the data directory for all cluster nodes
+(``Data.Directory`` from :ref:`ivy.yaml <ivy-yaml>`). Use a Docker volume that stores all the files.
 Mount it on all cluster nodes.
 
-Configure the files directory in your :ref:`ivy.yaml <ivy-yaml>` file:
-
-.. code:: yaml
-
-  Data.FilesDirectory: "/var/lib/axonivy-engine/files" 
-
-Create a Docker volume called ``ivy-files`` and mount it at ``/var/lib/axonivy-engine/files``
+Create a Docker volume called ``ivy-data`` and mount it at ``/ivy/data``
 in your Axon Ivy Engine Cluster node containers.
-   
+
 .. code:: bash
 
-  > docker volume create ivy-files
-  > docker run --mount source=ivy-files,target=/var/lib/axonivy-engine/files ... 
+  > docker volume create ivy-data
+  > docker run --mount source=ivy-data,target=/ivy/data ... 
   
 Ensure that you backup this Docker volume periodically.  
 

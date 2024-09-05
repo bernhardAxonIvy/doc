@@ -1,22 +1,36 @@
 services:
   ivy:
-    image: axonivy/axonivy-engine:|version|
+    image: axonivy/axonivy-engine:|version|    
     ports:
      - 8080:8080
     volumes:
+     # mount persistent file areas so that deployed applications,
+     # changed configuration and runtime data don't get lost if the
+     # container gets destroyed
+     - ivy-apps:/ivy/applications
+     - ivy-config:/ivy/configuration
+     - ivy-data:/ivy/data
+
      # ivy configuration
-     - ./ivy.yaml:/etc/axonivy-engine/ivy.yaml
+     - ./ivy.yaml:/ivy/configuration/ivy.yaml
 
-     # mount application directory to the host where this directory is persisted
-     # otherwise you will loose application deployments when container will be
-     # destroyed
-     - ./applications:/usr/lib/axonivy-engine/applications
-
-     # place the licence.lic file in the same directory as docker-compose.yaml
-     - ./licence.lic:/etc/axonivy-engine/licence.lic
+     # your licence
+     - ./licence.lic:/ivy/configuration/licence.lic
 
   postgres:
     image: postgres:16
     environment:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: 1234
+    volumes:
+     - postgres-data:/var/lib/postgresql/data
+
+volumes:
+  ivy-apps:
+    name: ivy-apps
+  ivy-config:
+    name: ivy-config
+  ivy-data:
+    name: ivy-data
+  postgres-data:
+    name: postgres-data
