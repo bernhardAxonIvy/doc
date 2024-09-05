@@ -21,6 +21,17 @@ We updated Java to version 21:
 - Use an `Adoptium / Eclipse Temurin JDK or JRE <https://adoptium.net/temurin/releases?version=17>`_ to run Axon Ivy on Linux or macOS.
 
 
+Docker Image
+------------
+
+|tag-ops-changed|
+
+The file paths of the Axon Ivy Engine Docker image has changed. The Axon Ivy Engine
+is now installed in the root directory :file:`/ivy` and no longer under :file:`/usr/lib/axonivy-engine`.
+Also all symlinks like :file:`/etc/axonivy-engine` are no longer provided. The full `changelog <https://github.com/axonivy/docker-image/blob/master/CHANGELOG.md>`_ of
+the docker image is available here.
+
+
 Debian Package
 --------------
 
