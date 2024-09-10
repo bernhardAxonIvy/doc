@@ -61,6 +61,7 @@
                 <vmArgs>
                   <vmArg>-Dscreenshots=${screenshots}</vmArg>
                   <vmArg>-noverify</vmArg>
+                  <vmArg>-DIVY_UPDATECHECKER_ENABLED=false</vmArg>
                 </vmArgs>
               </aut>
             </configuration>
