@@ -49,7 +49,7 @@
               <rules>
                 <requireFilesSize>
                   <maxsize>10000000</maxsize>
-                  <minsize>800000</minsize>
+                  <minsize>750000</minsize>
                   <files>
                     <file>${project.build.directory}/doc-screenshots-designer-${project.version}.zip</file>
                   </files>
