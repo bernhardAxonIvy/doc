@@ -39,6 +39,7 @@ The support for the following versions for database management systems as system
 has been dropped:
 
 - PostgreSQL 13 and lower
+- MariaDb 10.10 and lower
 
 
 Debian Package
