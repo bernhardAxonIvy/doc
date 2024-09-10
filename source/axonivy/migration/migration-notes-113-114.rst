@@ -32,6 +32,15 @@ Also all symlinks like :file:`/etc/axonivy-engine` are no longer provided. The f
 the docker image is available here.
 
 
+System Database
+---------------
+
+The support for the following versions for database management systems as system database
+has been dropped:
+
+- PostgreSQL 13 and lower
+
+
 Debian Package
 --------------
 
