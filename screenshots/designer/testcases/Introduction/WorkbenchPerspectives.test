@@ -36,7 +36,7 @@ wait 1000
 get-button "Process Model" | get-object | invoke getParent | invoke getParent | invoke getParent | captureScreenshot "designer/switch-perspectives.png"
 
 importProject -projectName "documentationExampleProject"
-get-view "Axon Ivy Projects" | get-tree | get-item "documentationExampleProject/Html Dialogs/screenshot.project.exampleHtmlDialog/exampleHtmlDialog Interface" | double-click
+get-view "Axon Ivy Projects" | get-tree | get-item "documentationExampleProject/Html Dialogs/screenshot.project.exampleHtmlDialog/exampleHtmlDialog Logic" | double-click
 
 get-eclipse-window | maximize
 get-eclipse-window | resizeWindow 800 800
