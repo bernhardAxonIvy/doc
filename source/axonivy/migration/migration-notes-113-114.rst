@@ -41,6 +41,7 @@ has been dropped:
 - PostgreSQL 13 and lower
 - MariaDb 10.10 and lower
 - MSSQL 2017 and lower
+- MySQL 8.3 and lower
 
 
 Debian Package
