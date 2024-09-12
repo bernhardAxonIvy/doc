@@ -44,6 +44,12 @@ has been dropped:
 - MySQL 8.3 and lower
 
 
+Windows Server
+--------------
+
+Support for Windows Server 2012 and 2016 was dropped.
+
+
 Debian Package
 --------------
 
