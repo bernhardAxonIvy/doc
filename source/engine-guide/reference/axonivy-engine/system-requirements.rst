@@ -55,7 +55,7 @@ Operating Systems
 -----------------
 
 * **Windows**:
-  Windows Server 2022, 2019 and 2012 R2
+  Windows Server 2022 and 2019
 
 * **Linux**:
   Linux x64 (tested on Ubuntu 24.04)
