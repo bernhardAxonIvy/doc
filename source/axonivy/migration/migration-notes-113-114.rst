@@ -6,6 +6,14 @@ Migrating from 11.3 to 11.4
 Upgrade to 11.4 is only supported from an |ivy-engine| 8.0 and higher.
 If you have an |ivy-engine| older than version 8.0 you need first to migrate to a newer version.
 
+License
+*******
+
+|tag-ops-changed|
+
+You need to request a new license for |ivy-engine| 12.0.
+
+
 .. _java21-migration:
 
 Java 21
