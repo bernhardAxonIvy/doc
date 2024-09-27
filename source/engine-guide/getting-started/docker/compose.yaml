@@ -18,7 +18,7 @@ services:
      - ./licence.lic:/ivy/configuration/licence.lic
 
   postgres:
-    image: postgres:16
+    image: postgres:17
     environment:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: 1234
