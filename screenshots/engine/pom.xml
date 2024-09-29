@@ -72,7 +72,7 @@
                 </unzip>
 
                 <chmod perm="+x" type="file">
-                  <fileset dir="${engine.dir}/elasticsearch/bin" />
+                  <fileset dir="${engine.dir}/opensearch/bin" />
                 </chmod>
               </target>
             </configuration>

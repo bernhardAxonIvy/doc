@@ -10,12 +10,12 @@ Concurrent Users and deployed applications.
 Hardware Requirements
 ---------------------
 
-By default, the |ivy-engine| runs a bundled Elasticsearch server. It is possible
-to integarte with an :ref:`external <elasticsearch-external>` Elasticsearch
+By default, the |ivy-engine| runs a bundled OpenSearch server. It is possible
+to integarte with an :ref:`external <opensearch-external>` OpenSearch
 instance. This also affects the minimum hardware requirements.
 
 
-.. rubric:: With bundled Elasticsearch server (default)
+.. rubric:: With bundled OpenSearch server (default)
 
 * **Memory (RAM)**:
   Minimum is 8 GB, we recommend to use 32 GB.
@@ -27,7 +27,7 @@ instance. This also affects the minimum hardware requirements.
   Minimum is 4 cores with 2 GHz, we recommend 16 cores with 2.5 GHz.
 
 
-.. rubric:: With external Elasticsearch server
+.. rubric:: With external OpenSearch server
 
 * **Memory (RAM)**:
   Minimum is 4 GB. We recommend to use at least 16 GB.
@@ -79,11 +79,11 @@ System Database
 +---------------------+-----------------------------+-----------+
 
 
-Elasticsearch
+OpenSearch
 -------------
 
-Version 7.17. Only required if you run an :ref:`own <elasticsearch-external>`
-Elasticsearch instance!
+Version 2.17. Only required if you run an :ref:`own <opensearch-external>`
+OpenSearch instance!
 
 
 Browsers

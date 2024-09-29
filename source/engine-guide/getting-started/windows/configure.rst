@@ -91,5 +91,5 @@ Ivy as a service.
 
 .. hint:: 
   You can add dependencies to this service for instance to wait for a DBMS or an
-  external ElasticSearch to start before Windows starts the Axon Ivy Engine. Please
+  external OpenSearch to start before Windows starts the Axon Ivy Engine. Please
   consult the Windows documentation for further details.

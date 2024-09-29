@@ -7,11 +7,11 @@ digraph overview {
        
   /* nodes */
   engine [label="Axon Ivy\nEngine",      pos="0.0,2.5!", height="0.8", width="1.5", color="#C7D426", fontcolor="black"];
-  elasticsearch [ label="Elasticsearch", pos="3.0,2.5!", height="0.8", width="1.5",]
+  opensearch [ label="Opensearch", pos="3.0,2.5!", height="0.8", width="1.5",]
   
   /* edges */
-  engine -> elasticsearch;
+  engine -> opensearch;
   
   /* edge labels */
-    engine_elasticsearch [label="HTTP\n \nHTTPS", pos="1.5,2.5!", shape=none, fillcolor=none, fontsize="11"];
+    engine_opensearch [label="HTTP\n \nHTTPS", pos="1.5,2.5!", shape=none, fillcolor=none, fontsize="11"];
 }

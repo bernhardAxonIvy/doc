@@ -18,19 +18,19 @@ digraph overview {
   enginen [ label="Node n",             pos="5.4,-1.2!", height="0.8", width="1.5", color="#C7D426", fontcolor="black"];
   
   systemdb [ label="System\nDatabase", pos="8,0.8!", height="0.8", width="1.5"]
-  elasticsearch [ label="Elasticsearch", pos="8,-1.0!", height="0.8", width="1.5"]
+  opensearch [ label="OpenSearch", pos="8,-1.0!", height="0.8", width="1.5"]
 
   /* edges */
   browser -> loadbalancer;
   loadbalancer -> cluster;
   
   cluster -> systemdb;
-  cluster -> elasticsearch;
+  cluster -> opensearch;
 
   /* edge labels */
   browserloadbalancer [ label="HTTPS\n \n ", pos = "1,0!", height="0.8", width="1.5", shape=none, fillcolor=none, fontcolor=black, fontsize=11];
   loadbalancercluster [ label="HTTP\n \nHTTPS", pos = "3.7,0!", height="0.8", width="1.5", shape=none, fillcolor=none, fontcolor=black, fontsize=11];
   
   clustersystemdb [ label="JDBC" pos = "6.8,0.55!", height="0.8", width="1.5", shape=none, fillcolor=none, fontcolor=black, fontsize=11];
-  clusterelasticsearch [ label="HTTP\n \nHTTPS", pos = "6.8,-0.58!", height="0.8", width="1.5", shape=none, fillcolor=none,fontcolor=black, fontsize=11];  
+  clusteropensearch [ label="HTTP\n \nHTTPS", pos = "6.8,-0.58!", height="0.8", width="1.5", shape=none, fillcolor=none,fontcolor=black, fontsize=11];  
 }

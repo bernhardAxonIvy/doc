@@ -24,10 +24,10 @@ have to be installed and integrated additionally.
 * :ref:`Cluster <cluster>`:
   For scalability, to increase performance and provide high availability, you
   can cluster the Axon Ivy Engine. 
-* :ref:`Elasticsearch <elasticsearch>`:
-  An Elasticsearch server is bundled with the Axon Ivy Engine. For systems with
-  high loads, consider to install the Elasticsearch Server on a dedicated node,
-  or even to run an Elasticsearch cluster.
+* :ref:`OpenSearch <opensearch>`:
+  An OpenSearch server is bundled with the Axon Ivy Engine. For systems with
+  high loads, consider to install the OpenSearch Server on a dedicated node,
+  or even to run an OpenSearch cluster.
 * :ref:`systemdb`:
   The Axon Ivy Engine needs a relational database management system to store its
   workflow data. The Axon Ivy engine stores its data in the **system database**.
@@ -43,4 +43,4 @@ have to be installed and integrated additionally.
     reverse-proxy/index
     single-sign-on/index
     cluster/index
-    elasticsearch/index
+    opensearch/index

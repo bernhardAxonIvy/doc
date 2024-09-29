@@ -82,5 +82,5 @@ For example:
   centralize the administration effort.
 
 * For high availability, performance and scalability, you can :ref:`cluster
-  <cluster>` the |ivy-engine| and use a separate :ref:`Elasticsearch server or
-  cluster <elasticsearch>`.
+  <cluster>` the |ivy-engine| and use a separate :ref:`OpenSearch server or
+  cluster <opensearch>`.

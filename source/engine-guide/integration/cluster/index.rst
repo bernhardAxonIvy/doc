@@ -17,7 +17,7 @@ Cluster setup has two major advantages:
   without affecting the other nodes that are still serving clients. However, if
   you require high availability of your |ivy-engine|, you also need to ensure
   that all other components the engine depends on (Load Balancer, Reverse
-  Proxy/Web Application Firewall, Database Server, File Share, Elasticsearch
+  Proxy/Web Application Firewall, Database Server, File Share, OpenSearch
   server) provide high availability.
 
 Compared to a single node setup, the cluster is a more **complex** system, has
@@ -27,7 +27,7 @@ higher **hardware costs** and **license fees**: You need an
 The diagram below shows an |ivy-engine| Cluster setup. A user accesses
 the |ivy-engine| Cluster via a :ref:`load balancer <cluster-load-balancer>`
 that routes the traffic to the :ref:`nodes <cluster-configuration>` of the cluster.
-All cluster nodes share the same system database and Elasticsearch server.
+All cluster nodes share the same system database and OpenSearch server.
 
 .. graphviz:: overview.dot
 
@@ -49,7 +49,7 @@ Please consider The following restrictions if you want to run an |ivy-engine| Cl
 
 1. Each node needs access to all other nodes via UDP/Multicast. 
 2. Each node has to use the same system database.
-3. Each node has to use the same external :ref:`Elasticsearch <elasticsearch>`
+3. Each node has to use the same external :ref:`OpenSearch <opensearch>`
    server (or cluster).
 4. Each node has to use the same service configurations.
 5. :ref:`Configuration changes <cluster-configuration-changes>` are only applied

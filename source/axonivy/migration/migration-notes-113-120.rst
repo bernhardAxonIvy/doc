@@ -1,9 +1,9 @@
 .. _migrate-113-114:
 
-Migrating from 11.3 to 11.4
+Migrating from 11.3 to 12.0
 ===========================
 
-Upgrade to 11.4 is only supported from an |ivy-engine| 8.0 and higher.
+Upgrade to 12.0 is only supported from an |ivy-engine| 8.0 and higher.
 If you have an |ivy-engine| older than version 8.0 you need first to migrate to a newer version.
 
 License
@@ -27,6 +27,16 @@ We updated Java to version 21:
 - You may have to update third-party libraries that do not yet support Java 21 to newer versions.
 - Use Java 21 to run your Maven project builds.
 - Use an `Adoptium / Eclipse Temurin JDK or JRE <https://adoptium.net/temurin/releases?version=17>`_ to run Axon Ivy on Linux or macOS.
+
+
+OpenSearch
+----------
+
+|tag-ops-changed|
+
+We switch from Elasticsearch to OpenSearch. If you have used an external Elasticsearch
+server you need to switch to OpenSearch.
+
 
 
 Docker Image

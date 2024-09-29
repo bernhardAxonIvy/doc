@@ -71,7 +71,7 @@ Search
 ~~~~~~
 
 The search capabilities of the Business Data Store are based on
-`Elasticsearch <https://www.elastic.co/products/elasticsearch>`__ and
+`OpenSearch <https://opensearch.org/>`__ and
 therefore fast and powerful.
 
 There is a fluent API to search stored business data. The API supports
@@ -85,9 +85,9 @@ filtering, ordering, and limiting of the results:
           .getAll();
 
 Also `fuzzy
-search <https://www.elastic.co/guide/en/elasticsearch/guide/current/fuzziness.html>`__
+search <https://opensearch.org/docs/latest/query-dsl/term/fuzzy/>`__
 and search engine like `query
-strings <https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-simple-query-string-query.html>`__
+strings <https://opensearch.org/docs/latest/query-dsl/full-text/simple-query-string/>`__
 are supported:
 
 ::

@@ -24,7 +24,7 @@ Types
    ``String``)! The serialization of data you stored previously will fail, and
    |ivy| cannot find Business Data with the new type via the search API as the
    search index is `strongly typed
-   <https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html>`__.
+   <https://opensearch.org/docs/latest/field-types/>`__.
 
 Project Dependencies
    When using the same Business Data value type in the projects 'a'
@@ -40,12 +40,12 @@ Project Dependencies
       project 'a' and therefore cannot load objects of classes that are defined
       in project 'a'.
 
-Elasticsearch
-   The business data is duplicated into Elasticsearch. This offers powerful
+OpenSearch
+   The business data is duplicated into OpenSearch. This offers powerful
    search capabilities. However, there are limitations to be dealt with.
 
    Do not use a ``Map`` with random or generated keys in your data
-   structure, as this forces the creation of an Elasticsearch mapping for every data item.
+   structure, as this forces the creation of an OpenSearch mapping for every data item.
 
    Prevent cyclic references and back references from lists to the
    parent object, as this can lead to huge json structures while expanding these data
