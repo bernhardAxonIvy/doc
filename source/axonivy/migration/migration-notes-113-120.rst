@@ -37,6 +37,8 @@ OpenSearch
 We switch from Elasticsearch to OpenSearch. If you have used an external Elasticsearch
 server you need to switch to OpenSearch.
 
+All configuration keys in `ivy.yaml` starting with `Elasticsearch` starts now with `SearchEngine`.
+When migrating the Axon Ivy Engine this will be automatically done.
 
 
 Docker Image
