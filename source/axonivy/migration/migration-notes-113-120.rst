@@ -52,6 +52,13 @@ Also all symlinks like :file:`/etc/axonivy-engine` are no longer provided. The f
 the docker image is available here.
 
 
+Axon Ivy Designer for Mac
+-------------------------
+
+The Axon Ivy Designer for Mac is in beta. The reason for this is the integrated
+SWT browser as part of Eclipse, which only works sparsely.
+
+
 System Database
 ---------------
 

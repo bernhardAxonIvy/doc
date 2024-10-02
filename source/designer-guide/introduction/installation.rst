@@ -47,4 +47,4 @@ We test Axon Ivy Designer with `Eclipse Temurin <https://adoptium.net/>`_.
 
 :Linux: Linux x64 with GTK 4 and X.org window system (tested on Ubuntu 24.04)
 
-:macOS: macOS Monterey x64 (tested on macOS Monterey 12.6.3)
+:macOS: BETA! macOS Monterey x64 (tested on macOS Monterey 12.6.3)
