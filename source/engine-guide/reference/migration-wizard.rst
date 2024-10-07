@@ -12,11 +12,9 @@ the wizard on your operating system.
 
 **Start**
 
-.. figure:: /_images/engine-cockpit/engine-cockpit-setup-intro.png
-
 #. :ref:`Start <control-center>` a new, untouched Axon Ivy Engine.
 #. Browse to the URI where the engine runs: e.g., http://localhost:8080 .
-#. Choose ``Migration Wizard`` -> ``Migrate Engine`` in your Browser.
+#. Choose :guilabel:`Setup Engine` > :guilabel:`Migrate Axon Ivy Engine` in your Browser.
    
 **Usage**
 
