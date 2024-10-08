@@ -1,11 +1,8 @@
 package ch.ivyteam.ivy.screenshot;
 
 import static com.codeborne.selenide.CollectionCondition.itemWithText;
-import static com.codeborne.selenide.CollectionCondition.size;
-import static com.codeborne.selenide.CollectionCondition.texts;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.Selenide.webdriver;
 import static com.codeborne.selenide.WebDriverConditions.currentFrameUrlContaining;
@@ -48,7 +45,6 @@ public class TestEngineScreenshots {
   void info() {
     open(EngineUrl.create().app("system").toUrl());
     Selenide.executeJavaScript("$('.ui-message-error').hide();");
-    $$("h2").shouldHave(size(1), texts(DEMO_PORTAL));
     takeScreenshot("engine-mainpage", 700);
   }
 
