@@ -89,7 +89,7 @@ The first one deletes all Cases, Tasks, and dependent objects like documents or
 custom fields from the system database.
 
 The second checkbox deletes business data from the system database as well as from the
-associated Elastic Search index.
+associated Search Engine index.
 
 The third checkbox deletes OAuth2 identity tokens which you might have collected
 by calling third-party REST services.

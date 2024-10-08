@@ -135,7 +135,7 @@ Search Engine
 ^^^^^^^^^^^^^
 
 You can use the **Search Engine** view to display information about your running
-Elastic Search instance. The information panel shows some configurations and
+Search Engine instance. The information panel shows some configurations and
 allows you to directly get to the
 :ref:`engine-cockpit-system-configuration` page by clicking on the
 :guilabel:`cog` button. To run queries against your Search Engine, click on the
