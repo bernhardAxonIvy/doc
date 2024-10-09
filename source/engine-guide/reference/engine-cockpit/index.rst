@@ -37,7 +37,7 @@ the :ref:`engine-cockpit-license` view you have more information and the ability
 to upload a new license.
 
 If you have configured an EMail server you can test it by clicking on the
-:guilabel:`Send` button in the :guilabel:`Email` panel. This will send a test mail.
+:guilabel:`Send` button in the :guilabel:`Email` panel. This will send a test Email.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-dashboard.png
 

@@ -3,7 +3,7 @@
 Linux
 ====================
 
-On Linux systems wthe migration is very similar to a
+On Linux systems the migration is very similar to a
 hotfix migration. However, some additional steps are required at the end.
 
 .. rubric:: Preparation

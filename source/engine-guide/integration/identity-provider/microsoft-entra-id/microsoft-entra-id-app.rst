@@ -33,18 +33,19 @@ Create Microsoft Entra ID App
   .. figure:: /_images/identity-provider/azure-3.png
     :alt: Grant Permission
 
-12. Click on :guilabel:`Certificates & secrets`
-13. Click on :guilabel:`New Client Secret`
-14. Enter a description, e.g., :code:`ivy`
-15. Click on :guilabel:`Add`
-16. Copy the :code:`value` of this secret. This is needed later to configure the |ivy-engine|.
+12. Click on :guilabel:`Grant admin consent`
+13. Click on :guilabel:`Certificates & secrets`
+14. Click on :guilabel:`New Client Secret`
+15. Enter a description, e.g., :code:`ivy`
+16. Click on :guilabel:`Add`
+17. Copy the :code:`value` of this secret. This is needed later to configure the |ivy-engine|.
 
     .. figure:: /_images/identity-provider/azure-4.png
       :alt: Secret
 
-17. Go to :guilabel:`Overview`
+18. Go to :guilabel:`Overview`
 
   .. figure:: /_images/identity-provider/azure-5.png
       :alt: Secret
 
-18. :guilabel:`Application ID` and :guilabel:`Directory (tenant) ID` is needed to configure |ivy-engine|.
+19. :guilabel:`Application ID` and :guilabel:`Directory (tenant) ID` is needed to configure |ivy-engine|.
