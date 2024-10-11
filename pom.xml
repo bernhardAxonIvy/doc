@@ -226,7 +226,7 @@
             </goals>
             <configuration>
               <jiraServerId>axonivy.jira</jiraServerId>
-              <filterBy>project in (XIVY,IVYPORTAL) AND fixVersion = ${ivy-version}</filterBy>
+              <filterBy>project in (XIVY) AND fixVersion = ${ivy-version}</filterBy>
               <whitelistJiraLabels>security,performance</whitelistJiraLabels>
               <markdownHeaderIndent>###</markdownHeaderIndent>
               <fileset>

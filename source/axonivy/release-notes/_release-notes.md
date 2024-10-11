@@ -2,7 +2,12 @@
 
 ## ${ivy-version} (upcoming)
 
+
 @upgradeRecommendation@
+
+### Bundles
+
+[![Portal ${ivy.portal.version}](https://img.shields.io/badge/Portal-version?label=${ivy.portal.version}&color=blue&logo=OpenTofu)](${portal.release.url})
 
 @changelog#improvements@
 
