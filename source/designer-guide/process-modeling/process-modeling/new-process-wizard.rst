@@ -66,8 +66,6 @@ Process Data (page2)
    Simple Process Data selection on page 2
 
 Process Data
-   *default*: Select this option to use the project's default data class
-   as data structure for the new process.
 
    *existing*: Select this option to choose an already existing data
    class as data structure for the new process. Any existing Data Class
