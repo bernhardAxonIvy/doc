@@ -52,9 +52,7 @@ Project ID
 
 Default namespace
    Define the default namespace for your project. This namespace will be
-   used as standard namespace for new Axon Ivy artifacts. It is also the
-   namespace into which the project's default data class (``Data``) will
-   be generated.
+   used as standard namespace for new Axon Ivy artifacts.
 
 Location
    Defines where to project will be created on your local disk. 

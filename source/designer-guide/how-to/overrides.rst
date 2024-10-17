@@ -353,13 +353,9 @@ performs two tasks:
 .. note::
 
    Please be aware that any Sub Process that is being overridden must
-   have "use own data class" explicitly set in it's inscription. The
-   wizard will not let you create an override of a process if this is
-   not the case, because the "use default data class" setting will
-   result in a different data class inside the target project where the
-   override will be created.
+   have "use own data class" explicitly set in it's inscription. 
 
-   If the wizard refuses to create an override for this reason then you
+   If this is not the case the wizard refuses to create an override for this reason then you
    can set an explicit data class in the values tab of the original
    process's inscription.
 

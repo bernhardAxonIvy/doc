@@ -40,8 +40,7 @@ Number of process Elements
 Data Class Settings
 ~~~~~~~~~~~~~~~~~~~
 
-Allows you to specify the default namespace and the name of the project
-Data Class.
+Allows you to specify the default namespace of the project.
 
 
 
