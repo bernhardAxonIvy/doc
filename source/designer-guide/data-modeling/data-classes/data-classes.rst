@@ -89,7 +89,7 @@ Use this editor to add new data fields to your process data class, to
 change the type of a field or document your Data Class or Data Class
 Field.
 
-.. figure:: /_images/data-class/data-class-editor.png
+.. figure:: /_images/dataclass-editor/dataclass-editor.png
    :alt: Data Class Editor
 
    Data Class Editor
