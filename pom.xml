@@ -228,7 +228,7 @@
               <jiraServerId>axonivy.jira</jiraServerId>
               <filterBy>project in (XIVY) AND fixVersion = ${ivy-version}</filterBy>
               <whitelistJiraLabels>security,performance</whitelistJiraLabels>
-              <markdownHeaderIndent>###</markdownHeaderIndent>
+              <markdownHeaderIndent>##</markdownHeaderIndent>
               <fileset>
                 <directory>${includes.target.folder}</directory>
               </fileset>

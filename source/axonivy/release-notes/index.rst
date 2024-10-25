@@ -79,9 +79,11 @@ Release Notes
       }
     </style>
 
-.. mdinclude:: ../../../target/resources/includes/_release-notes.md
+.. include:: ../../../target/resources/includes/_release-notes.md
+   :parser: myst_parser.sphinx_
 
-.. mdinclude:: ../../../target/resources/includes/_release-notes-static.md
+.. include:: ../../../target/resources/includes/_release-notes-static.md
+   :parser: myst_parser.sphinx_
 
 Changes before 9.4.0
 --------------------

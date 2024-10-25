@@ -1,8 +1,8 @@
-## 11.2.0 (2023-12-04)
+# 11.2.0 (2023-12-04)
 
 We strongly recommend to install this update release because it fixes security issues!
 
-### Improvements
+## Improvements
 
 * [XIVY-12876](https://1ivy.atlassian.net/browse/XIVY-12876) Upgrade library Guava to the latest version 32.1.3  
 * [XIVY-12875](https://1ivy.atlassian.net/browse/XIVY-12875) Upgrade library Log4j to the latest version 2.21.1  
@@ -49,7 +49,7 @@ We strongly recommend to install this update release because it fixes security i
 * [IVYPORTAL-14468](https://1ivy.atlassian.net/browse/IVYPORTAL-14468) Dashboard Export-Option on the UI 
 * [IVYPORTAL-14138](https://1ivy.atlassian.net/browse/IVYPORTAL-14138) Dashboard Multi Language Support 
 
-### New Features
+## New Features
 
 * [XIVY-2938](https://1ivy.atlassian.net/browse/XIVY-2938) Timer start event with CRON job like configuration 
 * [XIVY-4071](https://1ivy.atlassian.net/browse/XIVY-4071) List Jobs in Engine Cockpit 
@@ -250,7 +250,7 @@ We strongly recommend to install this update release because it fixes security i
 * [IVYPORTAL-16160](https://1ivy.atlassian.net/browse/IVYPORTAL-16160) Hide Notification Buttons without function 
 * [IVYPORTAL-16161](https://1ivy.atlassian.net/browse/IVYPORTAL-16161) Rework notifications UI 
 
-### Bugs
+## Bugs
 
 * [XIVY-3858](https://1ivy.atlassian.net/browse/XIVY-3858) Managed Beans not working after deleting 'processes' folder 
 * [XIVY-3885](https://1ivy.atlassian.net/browse/XIVY-3885) Mail Notification does not work with a disabled HTTP port 
@@ -364,11 +364,11 @@ We strongly recommend to install this update release because it fixes security i
 * [IVYPORTAL-16114](https://1ivy.atlassian.net/browse/IVYPORTAL-16114) Exception in compact process 
 * [IVYPORTAL-16170](https://1ivy.atlassian.net/browse/IVYPORTAL-16170) NPE when load Portal configuration page with old JSON 
 
-## 11.1.0 (2023-05-03)
+# 11.1.0 (2023-05-03)
 
 We strongly recommend to install this update release because it fixes security issues!
 
-### Improvements
+## Improvements
 
 * [XIVY-11241](https://1ivy.atlassian.net/browse/XIVY-11241) Update DocFactory to Aspose version 23.3 
 * [XIVY-11187](https://1ivy.atlassian.net/browse/XIVY-11187) Provide a validation warning for empty variables in variables.yaml as they are ignored at runtime 
@@ -428,7 +428,7 @@ We strongly recommend to install this update release because it fixes security i
 * [IVYPORTAL-14572](https://1ivy.atlassian.net/browse/IVYPORTAL-14572) Introduce new Cardframe option to Portal iFrame Dialog Templates 
 * [IVYPORTAL-14388](https://1ivy.atlassian.net/browse/IVYPORTAL-14388) Welcome Widget: Allow html code in the text, enhance positioning of image 
 
-### New Features
+## New Features
 
 * [XIVY-3142](https://1ivy.atlassian.net/browse/XIVY-3142) Show and manage active sessions in Engine Cockpit 
 * [XIVY-3415](https://1ivy.atlassian.net/browse/XIVY-3415) Optimize business data getAll() / getAllInfos() on search result to execute less system database queries <span class="badge badge-pill badge-success badge-performance">performance</span>
@@ -563,7 +563,7 @@ We strongly recommend to install this update release because it fixes security i
 * [IVYPORTAL-14886](https://1ivy.atlassian.net/browse/IVYPORTAL-14886) Portal logo in dark mode 
 * [IVYPORTAL-14968](https://1ivy.atlassian.net/browse/IVYPORTAL-14968) Update Welcome Widget Header Image for 11.1 
 
-### Bugs
+## Bugs
 
 * [XIVY-2985](https://1ivy.atlassian.net/browse/XIVY-2985) EL content assist in Html Dialog editor does not work most of the time 
 * [XIVY-3113](https://1ivy.atlassian.net/browse/XIVY-3113) Business data search API is restricted to read maximum 10000 results 
@@ -721,15 +721,15 @@ We strongly recommend to install this update release because it fixes security i
 * [IVYPORTAL-14712](https://1ivy.atlassian.net/browse/IVYPORTAL-14712) Changing language to Japanese causes NPE in Portal 10.0.1 
 * [IVYPORTAL-14851](https://1ivy.atlassian.net/browse/IVYPORTAL-14851) Login does not work https://axonivyengine/{myapp}/login 
 
-## 10.0.0 (2022-10-17)
+# 10.0.0 (2022-10-17)
 
 We suggest to install this update release if you are suffering from any of these issues.
 
-### Improvements
+## Improvements
 
 * [XIVY-9183](https://1ivy.atlassian.net/browse/XIVY-9183) Filtering users in azure AD 
 
-### New Features
+## New Features
 
 * [XIVY-6684](https://1ivy.atlassian.net/browse/XIVY-6684) Group user synchronisation properties in external security system <span class="badge badge-pill badge-success badge-security">security</span>
 * [XIVY-8449](https://1ivy.atlassian.net/browse/XIVY-8449) One single way to migrate an engine 
@@ -778,7 +778,7 @@ We suggest to install this update release if you are suffering from any of these
 * [IVYPORTAL-14347](https://1ivy.atlassian.net/browse/IVYPORTAL-14347) Replace CMS references in JSON Config files 
 * [IVYPORTAL-14392](https://1ivy.atlassian.net/browse/IVYPORTAL-14392) Chart widget title problem umlaute/special character 
 
-### Bugs
+## Bugs
 
 * [XIVY-3394](https://1ivy.atlassian.net/browse/XIVY-3394) Deadlock in Java Editor with Content Assist 
 * [XIVY-9195](https://1ivy.atlassian.net/browse/XIVY-9195) Sometimes 404 for different pages in engine cockpit 
@@ -857,11 +857,11 @@ We suggest to install this update release if you are suffering from any of these
 * [IVYPORTAL-14349](https://1ivy.atlassian.net/browse/IVYPORTAL-14349) DateUtils throw exception when using MySQL as System-DB 
 
 
-## 9.4.0 (2022-09-13)
+# 9.4.0 (2022-09-13)
 
 We strongly recommend to install this update release because it fixes security issues!
 
-### Improvements
+## Improvements
 
 * [XIVY-9127](https://1ivy.atlassian.net/browse/XIVY-9127) Upgrade CXF web service library to version 3.5 to support Java 17 
 * [XIVY-9112](https://1ivy.atlassian.net/browse/XIVY-9112) Upgrade Jackson to version 2.13.3 to support Java 17 
@@ -904,7 +904,7 @@ We strongly recommend to install this update release because it fixes security i
 * [XIVY-3081](https://1ivy.atlassian.net/browse/XIVY-3081) Provide an example of how to run Axon Ivy Engine in Kubernetes 
 * [XIVY-3063](https://1ivy.atlassian.net/browse/XIVY-3063) Scope business data to a security context 
 
-### New Features
+## New Features
 
 * [XIVY-632](https://1ivy.atlassian.net/browse/XIVY-632) Support multilanguage in task names 
 * [XIVY-1026](https://1ivy.atlassian.net/browse/XIVY-1026) CMS API without creating a list to replace template 
@@ -1161,7 +1161,7 @@ We strongly recommend to install this update release because it fixes security i
 * [IVYPORTAL-14170](https://1ivy.atlassian.net/browse/IVYPORTAL-14170) Portal Dashboard Header Widget  
 * [IVYPORTAL-14308](https://1ivy.atlassian.net/browse/IVYPORTAL-14308) NPE with Statistic widget after session timeout 
 
-### Bugs
+## Bugs
 
 * [XIVY-2436](https://1ivy.atlassian.net/browse/XIVY-2436) String value with size > 100 is cropped in CMS 
 * [XIVY-2872](https://1ivy.atlassian.net/browse/XIVY-2872) Mail steps adds wrong attachment to the email 
