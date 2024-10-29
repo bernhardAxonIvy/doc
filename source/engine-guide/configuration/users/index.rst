@@ -33,7 +33,7 @@ distinguish between the following identity providers:
 
   If a user is no longer made available via the identity provider, it is
   disabled. All assigned tasks remain in the current status but can be queried
-  via the unavailable activator filter using the :code:`TaskQuery`` or in the
+  via the unavailable activator filter using the :code:`TaskQuery` or in the
   task list of the portal.
 
 Read more about the :ref:`lifecycle of an application <application-lifecycle>`
