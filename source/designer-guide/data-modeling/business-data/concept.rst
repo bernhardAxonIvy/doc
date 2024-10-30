@@ -37,12 +37,12 @@ Business Case Data
 The handling of identifiers of Business Data values is complex because you have
 to manage the identifiers in the process data manually. Therefore, the Business
 Data Store can store data in the context of a business case. You can activate
-this by marking a data class with the ``@BusinessCaseData`` annotation. In
-the :ref:`data-class-editor`, check the
-*BusinessCaseData* checkbox in the *Annotations* section. Now, all values of the
-annotated data class are automatically associated with the current business
-case. You can use the ``get`` method to load the value associated with the
-current business case. If no value is associated, it returns a new object.
+this by marking a data class with the ``@BusinessCaseData`` annotation. In the
+:ref:`data-class-editor`, change the type of your data class to *Business Data*.
+Now, all values of the annotated data class are automatically associated with
+the current business case. You can use the ``get`` method to load the value
+associated with the current business case. If no value is associated, it returns
+a new object.
 
 Migrate data classes
 ~~~~~~~~~~~~~~~~~~~~

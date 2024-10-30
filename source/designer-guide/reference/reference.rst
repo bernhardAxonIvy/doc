@@ -14,7 +14,6 @@ Editors
 -  :ref:`variables-editor`
 -  :ref:`database-configuration-editor`
 -  :ref:`data-class-editor`
--  :ref:`persistence-entity-class-editor`
 -  Java editor
 -  :ref:`deployment-descriptor-editor`
 -  :ref:`overrides-editor`
