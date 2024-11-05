@@ -61,8 +61,8 @@ Data Type Browser
 
 The data type browser is used to choose a data type in the:
 
--  :ref:`Process Data Class editor <data-class-editor>`
--  :ref:`User Dialog Data Class editor <data-class-editor>`
+-  :ref:`Data Class editor <data-class-editor>`
+-  :ref:`Entity Class editor <persistence-entity-class-editor>`
 -  :ref:`User Dialog Interface editor <user-dialog-interface-editor>`
 -  :ref:`Code tabs of inscription masks <process-element-tab-code>`
 

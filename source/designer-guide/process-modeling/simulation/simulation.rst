@@ -166,28 +166,6 @@ You can disable a specific breakpoint in the :ref:`debugger-breakpoints-view` or
 on the breakpoint in the :ref:`process-editor`. It is also possible to disable all
 breakpoints in the :ref:`debugger-breakpoints-view`. 
 
-
-Data Class Attribute Value Change Breakpoints
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-A data class attribute value change breakpoint is a breakpoint that can
-be set on a data class attribute. The execution of the process will be
-interrupted before the value of the process data attribute will be changed.
-Data class attribute value change breakpoints can be added or removed in
-the :ref:`data-class-editor` or the :ref:`persistence-entity-class-editor`.
-The currently available variables and the current debug context are available 
-in the :ref:`debugger-variables-view`.
-The old and new value of the debugging field is displayed in the variable ``debug``.
-
-.. note::
-
-   The breakpoint only breaks if the value of an attribute is changed by
-   an IvyScript write attribute operation (e.g.
-   ``in.data.myField="Hello"``). If the attribute is changed by a setter
-   method, then the breakpoint will not break (e.g.
-   ``in.data.setMyField("Hello")``).
-
-
 .. |image1| image:: /_images/simulation-debugging/button-engine-start-with-page.png
 .. |image3| image:: /_images/simulation-debugging/button-engine-start.png
 .. |image5| image:: /_images/simulation-debugging/button-engine-stop.png
