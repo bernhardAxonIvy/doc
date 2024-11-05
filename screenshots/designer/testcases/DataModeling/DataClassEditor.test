@@ -48,6 +48,18 @@ proc newDataClassWizard{
 	}
 }
 
+proc newEntityClassWizard{
+	get-view "Axon Ivy Projects" | get-tree | select "QuickStartTutorial" | get-menu 
+		-path "New/Entity Class" | click -metaKeys ""
+	with [get-window "New Entity Class"] {
+		resizeWindow 500 450
+		get-editbox -after [get-label "Entity Class Name:"] | set-text Customer
+		get-editbox -after [get-label "Entity DB Table Name:"] | set-text ERP_CUSTOMER
+		get-object | captureScreenshot "data-class/entity-class-new-wizard.png"
+		get-button Cancel | click -metaKeys ""
+	}
+}
+
 proc caseMapSample{
 	importProject -projectName "documentationExampleProject"
 	openDataClass -path "documentationExampleProject/Data Classes/com.axonivy/CreditDossier"
@@ -57,6 +69,7 @@ proc caseMapSample{
 
 dataClassEditor
 newDataClassWizard
+newEntityClassWizard
 caseMapSample
 
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
