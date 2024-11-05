@@ -55,7 +55,7 @@ proc newEntityClassWizard{
 		resizeWindow 500 450
 		get-editbox -after [get-label "Entity Class Name:"] | set-text Customer
 		get-editbox -after [get-label "Entity DB Table Name:"] | set-text ERP_CUSTOMER
-		get-object | captureScreenshot "data-class/entity-class-new-wizard.png"
+		get-object | captureScreenshot "persistence/entity-class-new-wizard.png"
 		get-button Cancel | click -metaKeys ""
 	}
 }
