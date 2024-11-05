@@ -143,6 +143,45 @@ will be migrated to:
       user: user
       # FIXME: user.password: password
 
-------------
 
+
+SSO Migration
+-------------
+
+|tag-ops-changed| |tag-ops-wizard|   
+
+
+Now we support a separate Single Sign-On (SSO) for each security context. With
+this change, the default SSO no longer exists at the :file:`ivy.yaml` root level
+and will be moved to each security context individually.
+
+For example:
+
+.. code-block:: yaml
+      
+  SSO:
+    Enabled: true
+    UserHeader: X-Custom-UserHeader
+  SecuritySystems:
+    Name1:
+      UrlPath: abc1
+
+will be migrated to:
+
+.. code-block:: yaml
+      
+  SecuritySystems:
+    default:
+      SSO:
+        Enabled: true
+        UserHeader: X-Custom-UserHeader
+    Name1:
+      UrlPath: abc1
+      SSO:
+        Enabled: true
+        UserHeader: X-Custom-UserHeader
+
+
+
+-------------------
 .. include:: _tagLegend.rst
