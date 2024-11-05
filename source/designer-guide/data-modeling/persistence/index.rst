@@ -28,6 +28,7 @@ or save and update them in the database.
 
   entity-classes
   new-entity-class-wizard
+  entity-class-editor
   persistence-configuration-editor
   generate-database-schema
   persistence-api

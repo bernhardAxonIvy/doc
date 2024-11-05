@@ -13,6 +13,6 @@ possible to load, save, and update entity objects with the
 :ref:`persistence-api`.
 
 Entity Classes are created with the :ref:`persistence-entity-class-new-wizard`
-and can be edited afterward in the :ref:`data-class-editor`. Both are similar to
-the wizard and editor for regular Data Classes but allow for the specification
-of additional settings necessary for automated persistence.
+and can be edited afterward in the :ref:`persistence-entity-class-editor`. Both
+are similar to the wizard and editor for regular Data Classes but allow for the
+specification of additional settings necessary for automated persistence.
