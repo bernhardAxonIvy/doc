@@ -161,7 +161,7 @@ For example:
       
   SSO:
     Enabled: true
-    UserHeader: X-Custom-UserHeader
+    UserHeader: X-Forwarded-User
   SecuritySystems:
     Name1:
       UrlPath: abc1
@@ -174,12 +174,12 @@ will be migrated to:
     default:
       SSO:
         Enabled: true
-        UserHeader: X-Custom-UserHeader
+        UserHeader: X-Forwarded-User
     Name1:
       UrlPath: abc1
       SSO:
         Enabled: true
-        UserHeader: X-Custom-UserHeader
+        UserHeader: X-Forwarded-User
 
 
 
