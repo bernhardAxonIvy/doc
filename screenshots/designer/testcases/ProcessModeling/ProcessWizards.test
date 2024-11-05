@@ -48,7 +48,7 @@ with [get-window "New Process"] {
 		get-table | select "AddContactData - ch.ivyteam.documentation.project.*"
 		get-button OK | click
 	}
-	get-group Parameters | get-tree | select "addContactData/addPerson"
+	get-group Parameters | get-tree | select "addContact/addPerson"
 	wait 500
 	saveWindowContentScreenshot "process-modeling/new-process-wizard-page-2-mapping.png"
 	get-button Finish | click
