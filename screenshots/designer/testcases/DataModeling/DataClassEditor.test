@@ -27,18 +27,36 @@ proc openDataClass [val path]
 importProject -projectName "QuickStartTutorial"
 togglePresentation -flat true
 
-openDataClass -path "QuickStartTutorial/Data Classes/quickStartTutorial/Data"
-get-eclipse-window | resizeWindow 700 500
-with [get-editor Data]{
-  maximize
+proc dataClassEditor{ 
+	openDataClass -path "QuickStartTutorial/Data Classes/quickStartTutorial/Data"
+	get-eclipse-window | resizeWindow 700 500
+	with [get-editor Data]{
+		maximize
+	}
+	find-tab-folder Data | get-object | captureScreenshot "data-class/data-class-editor.png"
+	get-editor Data | close
+} 
+
+proc newDataClassWizard{
+	get-view "Axon Ivy Projects" | get-tree | select "QuickStartTutorial" | get-menu 
+		-path "New/Data Class" | click -metaKeys ""
+	with [get-window "New Data Class"] {
+		resizeWindow 500 350
+		get-editbox -after [get-label "Data Class Name:"] | set-text Person
+		get-object | captureScreenshot "data-class/data-class-new-wizard.png"
+		get-button Cancel | click -metaKeys ""
+	}
 }
-find-tab-folder Data | get-object | captureScreenshot "data-class/data-class-editor.png"
-get-editor Data | close
 
+proc caseMapSample{
+	importProject -projectName "documentationExampleProject"
+	openDataClass -path "documentationExampleProject/Data Classes/com.axonivy/CreditDossier"
+	get-eclipse-window | resizeWindow 500 600
+	find-tab-folder CreditDossier | get-object | captureScreenshot "casemap/credit-dossier-data.png"
+}
 
-// CaseMap sample
-importProject -projectName "documentationExampleProject"
-openDataClass -path "documentationExampleProject/Data Classes/com.axonivy/CreditDossier"
-get-eclipse-window | resizeWindow 500 600
-find-tab-folder CreditDossier | get-object | captureScreenshot "casemap/credit-dossier-data.png"
+dataClassEditor
+newDataClassWizard
+caseMapSample
+
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
