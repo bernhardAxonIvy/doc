@@ -63,11 +63,11 @@ Operators
    +----------+-----------------------+---------------------------------------+
    | Operator | Explanation           | Usage                                 |
    +==========+=======================+=======================================+
-   | +        | Addition              | ``12.5+17.0`` is 29.5                 |
+   | \+       | Addition              | ``12.5+17.0`` is 29.5                 |
    |          |                       |                                       |
    |          | String Concatenation  | ``"Hello "+"World"`` is "Hello World" |
    +----------+-----------------------+---------------------------------------+
-   | -        | Subtraction           | ``3020-12`` is 3008                   |
+   | \-       | Subtraction           | ``3020-12`` is 3008                   |
    +----------+-----------------------+---------------------------------------+
    | \*       | Multiplication        | ``2*4`` is 8                          |
    +----------+-----------------------+---------------------------------------+
@@ -79,9 +79,9 @@ Operators
    +----------+-----------------------+---------------------------------------+
    | ++       | Increment             | ``in.n++``                            |
    +----------+-----------------------+---------------------------------------+
-   | --       | Decrement             | ``in.n--``                            |
+   | \--      | Decrement             | ``in.n--``                            |
    +----------+-----------------------+---------------------------------------+
-   | -        | Negative Number value | ``-9``                                |
+   | \-       | Negative Number value | ``-9``                                |
    +----------+-----------------------+---------------------------------------+
 
 
@@ -107,9 +107,9 @@ Date
 The :public-api:`Date </ch/ivyteam/ivy/scripting/objects/Date.html>`
 class represents a date without time of day.
 
-- Date constant objects are entered in the ISO-8601 format as ``'yyyy-mm-dd'``,
-  where yyyy is for the year, mm for month and dd for day.
-- Accepted is also the format: ``'dd.mm.yyyy'``.
+- Date constant objects are entered in the ISO-8601 format as ``'YYYY-MM-DD'``,
+  where YYYY is for the year, MM for month and DD for day.
+- Accepted is also the format: ``'DD.MM.YYYY'``.
 - ``new Date()`` returns the current date.
 
 
@@ -118,9 +118,9 @@ DateTime
 
 The :public-api:`DateTime </ch/ivyteam/ivy/scripting/objects/DateTime.html>` class represents a date with time.
 
-- Constant ``DateTime`` objects are entered in the ISO-8601 format as ``'yyyy-mm-dd hh:nn'`` or ``'yyyy-mm-dd hh:nn:ss'``.
-  yyyy is for the year, mm for month, dd for day hh for hours, nn for minutes and ss for seconds.
-- Accepted is also the format: ``'dd.mm.yyyy hh:nn`` or ``'dd.mm.yyyy hh:nn:ss'``.
+- Constant ``DateTime`` objects are entered in the ISO-8601 format as ``'YYYY-MM-DD hh:mm'`` or ``'YYYY-MM-DD hh:mm:ss'``.
+  YYYY is for the year, MM for month, DD for day hh for hours, mm for minutes and ss for seconds.
+- Accepted is also the format: ``'DD.MM.YYYY hh:mm`` or ``'DD.MM.YYYY hh:mm:ss'``.
 - ``new DateTime()`` returns the current date and time.
 
 
