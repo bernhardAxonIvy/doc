@@ -1,0 +1,40 @@
+--- RCPTT testcase ---
+Format-Version: 1.0
+Contexts: _y5zpEF73Eea4DszzhZF9qA
+Element-Name: PersistenceEditor
+Element-Type: testcase
+Element-Version: 3.0
+External-Reference: 
+Id: _lcaDgJwmEe-8KtqfRNUgCA
+Testcase-Type: ecl
+
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Content-Type: text/ecl
+Entry-Name: .content
+
+importProject -projectName "documentationExampleProject"
+
+with [get-view "Axon Ivy Projects" | get-tree] {
+	select "documentationExampleProject/Config/persistence.xml" | double-click
+}
+
+get-eclipse-window | resizeWindow 1050 850
+with [get-editor documentationExampleProject] {
+	maximize
+	
+	with [get-editor documentationExampleProject ] {
+		get-section "Persistence Units" | get-table | select erp
+		get-tab-folder | get-object | captureScreenshot "persistence/persistence-configuration-editor-single-unit.png"
+		get-section "Persistence Units" | get-button "Generate Schema" | click -metaKeys ""
+	}
+	with [get-window "Generate database schema"] {
+		get-combo -after [get-label "Type:"] | select create
+		get-object | captureScreenshot "persistence/generate-database-schema-options.png"
+		get-button "Next >" | click -metaKeys ""
+		wait -ms 2000 // generator running
+		get-object | captureScreenshot "persistence/generate-database-schema-preview.png"
+		get-button Cancel | click -metaKeys ""
+	}
+}
+get-editor documentationExampleProject | close
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
