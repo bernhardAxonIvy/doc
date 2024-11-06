@@ -12,18 +12,19 @@ Save-Time: 8/16/24, 9:48 AM
 Content-Type: text/testcase
 Entry-Name: testcase-items
 
-_Hrnm4AbSEeqelOY6v4JKGw	//
-_nL-4cBVAEeeAwNHEHXL8Yw	//
-_LIWKQO5ZEemOcbNM5ZUdlw	//
-_63kQ4Aa0EeiM3vZlrfoIUw	//
-_Mt_1EMS6EemYGqVAR1-KuQ	//
-__m0FsAadEeiM3vZlrfoIUw	//
-_DM4PMIcmEeuhPY8_mT4TIQ	//
-_gznjsF-PEeaD4tjI89nDAg	//
-_naaRgF-PEeaD4tjI89nDAg	//
-_wxwAwFTNEeaUV_J5BuL85w	//
-_XZLCgF-PEeaD4tjI89nDAg	//
-_AX_tUPlJEei5Fs44Y9FSMQ	//
-_aankEF78Eea4DszzhZF9qA	//
+_Hrnm4AbSEeqelOY6v4JKGw	// kind: 'test' name: 'OverrideIvyTree' path: 'Editors/OverrideIvyTree.test'
+_nL-4cBVAEeeAwNHEHXL8Yw	// kind: 'test' name: 'DataClassEditor' path: 'DataModeling/DataClassEditor.test'
+_LIWKQO5ZEemOcbNM5ZUdlw	// kind: 'test' name: 'OverridesEditor' path: 'Editors/OverridesEditor.test'
+_63kQ4Aa0EeiM3vZlrfoIUw	// kind: 'test' name: 'RestClientEditor' path: 'Editors/RestClientEditor.test'
+_Mt_1EMS6EemYGqVAR1-KuQ	// kind: 'test' name: 'UserRoleEditor' path: 'Editors/UserRoleEditor.test'
+__m0FsAadEeiM3vZlrfoIUw	// kind: 'test' name: 'WebServiceClientEditor' path: 'Editors/WebServiceClientEditor.test'
+_DM4PMIcmEeuhPY8_mT4TIQ	// kind: 'test' name: 'DatabaseEditor' path: 'Editors/DatabaseEditor.test'
+_lcaDgJwmEe-8KtqfRNUgCA	// kind: 'test' name: 'PersistenceEditor' path: 'Editors/PersistenceEditor.test'
+_gznjsF-PEeaD4tjI89nDAg	// kind: 'test' name: 'Preferences' path: 'Introduction/Preferences.test'
+_naaRgF-PEeaD4tjI89nDAg	// kind: 'test' name: 'RefactoringWizards' path: 'Introduction/RefactoringWizards.test'
+_wxwAwFTNEeaUV_J5BuL85w	// kind: 'test' name: 'ToolbarElements' path: 'Introduction/ToolbarElements.test'
+_XZLCgF-PEeaD4tjI89nDAg	// kind: 'test' name: 'WorkbenchPerspectives' path: 'Introduction/WorkbenchPerspectives.test'
+_AX_tUPlJEei5Fs44Y9FSMQ	// kind: 'test' name: 'MacroTextEditor' path: 'Introduction/MacroTextEditor.test'
+_aankEF78Eea4DszzhZF9qA	// kind: 'suite' name: 'ProcessModelingSuite' path: 'ProcessModeling/ProcessModelingSuite.suite'
 
 ------=_testcase-items-62c497da-4241-31f4-811a-6b453a3ecff8--
