@@ -41,17 +41,17 @@ Shows the Variables of the current project.
 - Use the search bar to filter the Variables. If part of a Variable's name or
   value matches the search text, all of its parents and children are shown.
 
-.. |add-variable-icon| image:: /_images/variables/plus.svg
+.. |add-variable-icon| image:: /_images/ui-icons/plus.svg
    :alt: Add Variable
    :width: 16px
    :height: 16px
 
-.. |import-variables-icon| image:: /_images/variables/file-import.svg
+.. |import-variables-icon| image:: /_images/ui-icons/file-import.svg
    :alt: Import Variables
    :width: 16px
    :height: 16px
 
-.. |delete-variable-icon| image:: /_images/variables/trash.svg
+.. |delete-variable-icon| image:: /_images/ui-icons/trash.svg
    :alt: Import Variables
    :width: 16px
    :height: 16px
