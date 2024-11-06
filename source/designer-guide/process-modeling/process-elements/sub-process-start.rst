@@ -34,4 +34,4 @@ Start signature
 
 .. include:: _tab-result.rst
 
-.. |image0| image:: /_images/process-elements/sub-process-start.png
+.. |image0| image:: /_images/process-editor/elements/call-sub-start.png

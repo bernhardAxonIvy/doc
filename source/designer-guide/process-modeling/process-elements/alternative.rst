@@ -34,4 +34,4 @@ Conditions
    the first one that evaluates to *true* is chosen, i.e., the process
    will proceed by the path connected to this exit.
 
-.. |image0| image:: /_images/process-elements/alternative.png
+.. |image0| image:: /_images/process-editor/elements/gateway-alternative.png

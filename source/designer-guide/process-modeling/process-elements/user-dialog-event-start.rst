@@ -17,4 +17,4 @@ Inscription
 
 .. include:: _tab-output.rst
 
-.. |image0| image:: /_images/process-elements/user-dialog-event-start.png
+.. |image0| image:: /_images/process-editor/elements/hd-event-start.png

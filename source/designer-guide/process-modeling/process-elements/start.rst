@@ -283,6 +283,6 @@ On this tab you can configure the Case created by this Start Request.
 See :ref:`process-element-tab-case` in the Common Tabs
 section.
 
-.. |image0| image:: /_images/process-elements/request-start.png
+.. |image0| image:: /_images/process-editor/elements/start-request.png
 .. |image4| image:: /_images/process-inscription/request-start-tab-trigger.png
 .. |image6| image:: /_images/process-inscription/request-start-tab-task.png

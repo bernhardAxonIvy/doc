@@ -35,4 +35,4 @@ Inscription
    mouse over the incoming connections of the element to see which input
    connection corresponds to which variable.
 
-.. |image0| image:: /_images/process-elements/join.png
+.. |image0| image:: /_images/process-editor/elements/gateway-join.png

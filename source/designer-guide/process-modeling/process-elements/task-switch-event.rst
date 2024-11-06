@@ -19,4 +19,4 @@ element.
 See :ref:`process-element-task-switch-gateway` for a
 more detailed description.
 
-.. |image0| image:: /_images/process-elements/task-switch-event.png
+.. |image0| image:: /_images/process-editor/elements/intermediate-task.png

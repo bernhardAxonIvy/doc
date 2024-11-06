@@ -48,6 +48,6 @@ Inscription
       The variable is *not* available if the start method does not
       return any values (i.e., *void*).
 
-.. |image0| image:: /_images/process-elements/user-dialog.png
+.. |image0| image:: /_images/process-editor/elements/user-task.png
 .. |image2| image:: /_images/process-elements/button-select-user-dialog.png
 .. |image3| image:: /_images/process-elements/button-new-user-dialog.png

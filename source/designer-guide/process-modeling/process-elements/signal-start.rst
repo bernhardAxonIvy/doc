@@ -43,6 +43,6 @@ Case
    signal
       Gives access to the signal event.
 
-.. |image0| image:: /_images/process-elements/signal-start-event.png
+.. |image0| image:: /_images/process-editor/elements/start-signal.png
 .. |image2| image:: /_images/process-inscription/signal-start-event-tab-signal.png
 

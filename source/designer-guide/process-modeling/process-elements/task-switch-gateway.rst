@@ -96,4 +96,4 @@ For more information about this tab, please have a look at the :ref:`process-ele
 element.
 
 
-.. |image0| image:: /_images/process-elements/task-switch-gateway.png
+.. |image0| image:: /_images/process-editor/elements/gateway-task-switch.png

@@ -20,4 +20,4 @@ Inscription
 
 .. include:: _tab-name.rst
 
-.. |image0| image:: /_images/process-elements/user-dialog-exit-end.png
+.. |image0| image:: /_images/process-editor/elements/hd-exit-end.png

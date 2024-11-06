@@ -41,5 +41,5 @@ will catch.
       References the occurred ``BpmError``. Gives access to the occurred
       Error Code, Cause and CallStack.
 
-.. |image0| image:: /_images/process-elements/error-start-event.png
+.. |image0| image:: /_images/process-editor/elements/start-error.png
 .. |image2| image:: /_images/process-inscription/error-start-event-tab-error.png

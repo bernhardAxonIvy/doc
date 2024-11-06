@@ -50,4 +50,4 @@ Result
       the *Code component* of the invoking :ref:`process-element-user-dialog`
       once the User Dialog has finished.
 
-.. |image0| image:: /_images/process-elements/user-dialog-start.png
+.. |image0| image:: /_images/process-editor/elements/hd-init-start.png

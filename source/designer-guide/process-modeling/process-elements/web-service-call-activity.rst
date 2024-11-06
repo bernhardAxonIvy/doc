@@ -63,4 +63,4 @@ Body
    data or executes code on it. The result is provided as ``wsResponse``
    variable.
 
-.. |image0| image:: /_images/process-elements/web-service-call-activity.png
+.. |image0| image:: /_images/process-editor/elements/webservice.png
