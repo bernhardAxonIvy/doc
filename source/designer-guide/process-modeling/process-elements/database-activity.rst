@@ -137,4 +137,4 @@ On this tab you can configure the Error Code that is thrown whenever errors duri
 
 .. include:: _tab-output.rst
 
-.. |image0| image:: /_images/process-elements/db-step.png
+.. |image0| image:: /_images/process-editor/elements/database.png

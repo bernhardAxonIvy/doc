@@ -20,4 +20,4 @@ Inscription
 
 .. include:: _tab-name.rst
 
-.. |image0| image:: /_images/process-elements/embedded-subprocess.png
+.. |image0| image:: /_images/process-editor/elements/embedded-sub.png

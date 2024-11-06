@@ -39,5 +39,5 @@ thrown or the error object that should be re-thrown.
    error
       References the ``BpmError`` which will be thrown.
 
-.. |image0| image:: /_images/process-elements/error-end-event.png
+.. |image0| image:: /_images/process-editor/elements/end-error.png
 .. |image2| image:: /_images/process-inscription/error-end-event-tab-error.png

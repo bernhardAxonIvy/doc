@@ -34,5 +34,5 @@ Data Object
    The data object to apply the ruleset to. It must match the type defined
    in the rule set.
 
-.. |image0| image:: /_images/process-elements/rule-activity.png
+.. |image0| image:: /_images/process-editor/elements/rule.png
 .. |image1| image:: /_images/process-inscription/rule-tab-configuration.png

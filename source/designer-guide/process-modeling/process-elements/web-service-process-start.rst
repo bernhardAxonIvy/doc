@@ -156,4 +156,4 @@ The Java file in the ``src``-folder is under control of the Developer.
 When a WS Start element configuration changes, the change has to be
 adapted manually in the Java file.
 
-.. |image0| image:: /_images/process-elements/web-service-process-start.png
+.. |image0| image:: /_images/process-editor/elements/ws-start.png

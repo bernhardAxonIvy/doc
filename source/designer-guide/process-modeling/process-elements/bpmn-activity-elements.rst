@@ -55,11 +55,11 @@ Service
 |image7| Indicates an activity that implies calling an automated
 function.
 
-.. |image0| image:: /_images/process-elements/bpmn-task.png
-.. |image1| image:: /_images/process-elements/bpmn-user-task.png
-.. |image2| image:: /_images/process-elements/bpmn-manual-task.png
-.. |image3| image:: /_images/process-elements/bpmn-script-task.png
-.. |image4| image:: /_images/process-elements/bpmn-receive-task.png
-.. |image5| image:: /_images/process-elements/bpmn-business-rule-task.png
-.. |image6| image:: /_images/process-elements/bpmn-send-task.png
-.. |image7| image:: /_images/process-elements/bpmn-service-task.png
+.. |image0| image:: /_images/process-editor/elements/bpmn-generic.png
+.. |image1| image:: /_images/process-editor/elements/bpmn-user.png
+.. |image2| image:: /_images/process-editor/elements/bpmn-manual.png
+.. |image3| image:: /_images/process-editor/elements/bpmn-script.png
+.. |image4| image:: /_images/process-editor/elements/bpmn-receive.png
+.. |image5| image:: /_images/process-editor/elements/bpmn-rule.png
+.. |image6| image:: /_images/process-editor/elements/bpmn-send.png
+.. |image7| image:: /_images/process-editor/elements/bpmn-service.png

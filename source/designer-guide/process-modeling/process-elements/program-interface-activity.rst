@@ -121,5 +121,5 @@ Example implementation
       :linenos:
 
 
-.. |image0| image:: /_images/process-elements/program-interface-activity.png
+.. |image0| image:: /_images/process-editor/elements/program-interface.png
 .. |image2| image:: /_images/process-elements/button-new-bean-class.png

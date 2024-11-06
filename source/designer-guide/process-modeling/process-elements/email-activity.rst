@@ -96,4 +96,4 @@ searching the name as file in your :ref:`file area <ivyscript-reference-file>`.
 
    Attachment Tab
 
-.. |image0| image:: /_images/process-elements/email-step.png
+.. |image0| image:: /_images/process-editor/elements/mail.png

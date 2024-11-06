@@ -41,4 +41,4 @@ Method
    will be executed when the method process reaches an :ref:`process-element-user-dialog-process-end`.
    The table's statements will be executed before the scripting block.
 
-.. |image0| image:: /_images/process-elements/user-dialog-method-start.png
+.. |image0| image:: /_images/process-editor/elements/hd-method-start.png

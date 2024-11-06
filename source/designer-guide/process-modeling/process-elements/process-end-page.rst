@@ -36,5 +36,5 @@ Dialog Page
    |image1|
 
 
-.. |image0| image:: /_images/process-elements/process-end-page.png
+.. |image0| image:: /_images/process-editor/elements/end-page.png
 .. |image1| image:: /_images/process-inscription/process-end-page-tab-end-page.png

@@ -317,7 +317,7 @@ Client call can be configured by implementing a custom feature
 as an example:
 ``ch.ivyteam.ivy.rest.client.authentication.HttpBasicAuthenticationFeature``.
 
-.. |image0| image:: /_images/process-elements/rest-client-activity.png
+.. |image0| image:: /_images/process-editor/elements/restclient.png
 .. |image1| image:: /_images/process-inscription/rest-client-tab-request-parameters.png
 .. |image2| image:: /_images/process-inscription/rest-client-tab-request-headers.png
 .. |image3| image:: /_images/process-inscription/rest-client-tab-request-properties.png

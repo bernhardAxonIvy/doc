@@ -49,4 +49,4 @@ Disable Permission Checks (Execute this Script Step as SYSTEM)
       need to make sure that only authorized users can reach this
       Script Step in the process.
 
-.. |image0| image:: /_images/process-elements/script-step.png
+.. |image0| image:: /_images/process-editor/elements/script.png

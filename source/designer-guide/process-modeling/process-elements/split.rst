@@ -43,4 +43,4 @@ Inscription
    mouse over the outgoing connections of the element to see which
    output connection corresponds to which variable.
 
-.. |image0| image:: /_images/process-elements/split.png
+.. |image0| image:: /_images/process-editor/elements/gateway-split.png

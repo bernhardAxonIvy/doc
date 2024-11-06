@@ -16,4 +16,4 @@ Inscription
 
 .. include:: _tab-name.rst
 
-.. |image0| image:: /_images/process-elements/process-end.png
+.. |image0| image:: /_images/process-editor/elements/end-task.png

@@ -128,6 +128,6 @@ Example implementation
 
 
 
-.. |image0| image:: /_images/process-elements/wait-program-intermediate-event.png
+.. |image0| image:: /_images/process-editor/elements/intermediate-wait.png
 .. |image2| image:: /_images/process-inscription/wait-intermediate-event-tab-event.png
 .. |image3| image:: /_images/process-elements/button-new-bean-class.png

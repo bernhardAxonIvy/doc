@@ -105,5 +105,5 @@ Example implementation
       :linenos:
 
 
-.. |image0| image:: /_images/process-elements/program-start.png
+.. |image0| image:: /_images/process-editor/elements/start-program.png
 .. |image2| image:: /_images/process-elements/button-new-bean-class.png
