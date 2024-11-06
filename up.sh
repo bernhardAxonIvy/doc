@@ -8,4 +8,6 @@ which firefox > /dev/null
 if [ $? == 0 ]; then
    (sleep 20 && firefox http://localhost:8000) &
 fi
+
+export UID=$(id -u)
 docker compose up
