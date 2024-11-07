@@ -64,7 +64,7 @@ process start signature. The following default pages can be customized:
     |                                                                                                 | Number runningTaskId)                              |
     +-------------------------------------------------------------------------------------------------+----------------------------------------------------+
 
-.. figure:: /_images/standard-process/standard-process-task-list.png
+.. figure:: /_images/dev-wf-ui/workflow-ui-tasks.png
     :align: center
 
     Task List
