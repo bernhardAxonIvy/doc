@@ -112,12 +112,6 @@ missing, because they are forbidden:
    |                       |                       | with the User Dialog  |
    |                       |                       | start element.        |
    +-----------------------+-----------------------+-----------------------+
-   | |image22|             | Web Page              | The Page element is   |
-   |                       |                       | HTML-specific and     |
-   |                       |                       | thus not available in |
-   |                       |                       | the User Dialog       |
-   |                       |                       | logic.                |
-   +-----------------------+-----------------------+-----------------------+
    | |image23|             | Tasks                 | The Tasks element is  |
    |                       |                       | not available because |
    |                       |                       | role change and task  |
@@ -139,11 +133,6 @@ missing, because they are forbidden:
    +-----------------------+-----------------------+-----------------------+
    | |image26|             | Intermediate          | Intermediate Events   |
    |                       |                       | are currently not     |
-   |                       |                       | supported inside User |
-   |                       |                       | Dialogs.              |
-   +-----------------------+-----------------------+-----------------------+
-   | |image27|             | Call & Wait           | Call & Wait are       |
-   |                       |                       | currently not         |
    |                       |                       | supported inside User |
    |                       |                       | Dialogs.              |
    +-----------------------+-----------------------+-----------------------+
@@ -183,18 +172,16 @@ the outside). Access can be granted by defining and implementing methods that
 return or manipulate internal data. The data of a User Dialog is edited with the
 :ref:`data-class-editor`.
 
-.. |image0| image:: /_images/process-elements/user-dialog.png
-.. |image1| image:: /_images/process-elements/user-dialog-start.png
-.. |image2| image:: /_images/process-elements/user-dialog-method-start.png
-.. |image3| image:: /_images/process-elements/user-dialog-event-start.png
-.. |image4| image:: /_images/process-elements/user-dialog-process-end.png
-.. |image5| image:: /_images/process-elements/user-dialog-exit-end.png
-.. |image16| image:: /_images/process-elements/program-start.png
-.. |image21| image:: /_images/process-elements/request-start.png
-.. |image22| image:: /_images/process-elements/web-page.png
-.. |image23| image:: /_images/process-elements/task-switch-gateway.png
-.. |image24| image:: /_images/process-elements/task-switch-event.png
-.. |image26| image:: /_images/process-elements/wait-program-intermediate-event.png
-.. |image27| image:: /_images/process-elements/call-and-wait.png
-.. |image28| image:: /_images/process-elements/process-end.png
-.. |image29| image:: /_images/process-elements/process-end-page.png
+.. |image0| image:: /_images/process-editor/elements/dialog-call.png
+.. |image1| image:: /_images/process-editor/elements/hd-init-start.png
+.. |image2| image:: /_images/process-editor/elements/hd-method-start.png
+.. |image3| image:: /_images/process-editor/elements/hd-event-start.png
+.. |image4| image:: /_images/process-editor/elements/hd-end.png
+.. |image5| image:: /_images/process-editor/elements/hd-exit-end.png
+.. |image16| image:: /_images/process-editor/elements/start-program.png
+.. |image21| image:: /_images/process-editor/elements/start-request.png
+.. |image23| image:: /_images/process-editor/elements/gateway-task-switch.png
+.. |image24| image:: /_images/process-editor/elements/intermediate-task.png
+.. |image26| image:: /_images/process-editor/elements/intermediate-wait.png
+.. |image28| image:: /_images/process-editor/elements/end-task.png
+.. |image29| image:: /_images/process-editor/elements/end-page.png
