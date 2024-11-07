@@ -127,7 +127,7 @@ Name / Type / Comment
   Comment
     Use this field to document your attribute.
 
-.. |data-type-browser-icon| image:: /_images/data-class/data-type-browser-icon.svg
+.. |data-type-browser-icon| image:: /_images/ui-icons/list-search.svg
    :alt: Data Type Browser Button
    :width: 16px
    :height: 16px
@@ -180,7 +180,7 @@ attributes that belong to the address part into an extra address Data Class.
 Select the attributes to combine in the table, then press
 |combine-attributes-icon| to open the refactoring wizard.
 
-.. |combine-attributes-icon| image:: /_images/data-class/combine-attributes-icon.svg
+.. |combine-attributes-icon| image:: /_images/ui-icons/wrap-to-subprocess.svg
    :alt: Combine Attributes Button
    :width: 16px
    :height: 16px
