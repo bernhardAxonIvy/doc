@@ -16,8 +16,4 @@ as the functionality of the :ref:`process-editor` and the different kinds of pro
   process-properties
   process-editor
   swimlanes
-  process-outline-view
-  process-inscription-editor-view
-  process-json-inscription-view
-  problems-view
-  reference-view
+
