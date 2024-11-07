@@ -35,12 +35,26 @@ Variables Tree View
 
 Shows the Variables of the current project.
 
-- Click the plus icon to add a new child Variable to the currently selected
-  Variable. If no Variable is selected, a Variable is added at the topmost
-  level.
-- Click the trash icon to delete the currently selected Variable.
+- Press |add-variable-icon| to add a new Variable.
+- Press |import-variables-icon| to import Variables from a required project.
+- Press |delete-variable-icon| to delete the selected Variable.
 - Use the search bar to filter the Variables. If part of a Variable's name or
   value matches the search text, all of its parents and children are shown.
+
+.. |add-variable-icon| image:: /_images/ui-icons/plus.svg
+   :alt: Add Variable
+   :width: 16px
+   :height: 16px
+
+.. |import-variables-icon| image:: /_images/ui-icons/file-import.svg
+   :alt: Import Variables
+   :width: 16px
+   :height: 16px
+
+.. |delete-variable-icon| image:: /_images/ui-icons/trash.svg
+   :alt: Import Variables
+   :width: 16px
+   :height: 16px
 
 Variables Detail View
 ~~~~~~~~~~~~~~~~~~~~~

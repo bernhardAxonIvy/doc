@@ -89,6 +89,12 @@
                   <type>zip</type>
                 </artifactItem>
 
+                <artifactItem>
+                  <groupId>ch.ivyteam.ui.icons</groupId>
+                  <artifactId>ui-icons</artifactId>
+                  <type>zip</type>
+                </artifactItem>
+
               </artifactItems>
             </configuration>
           </execution>
