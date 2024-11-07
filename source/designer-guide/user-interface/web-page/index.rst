@@ -50,16 +50,14 @@ Creating and Editing Web Pages From Within the Process
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A web page can be created or accessed directly from the process. Open
-the inscription mask of any page-capable process element. Depending on
+the inscription of any page-capable process element. Depending on
 whether the page is already defined or not, you will be presented with
 either of the two scenarios described below.
 
+|end-page-inscription|
+
 No Page Has Been Specified Yet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-|image0|
-
-|image1|
 
 You can define the Web Page that should be displayed by using one of the
 following three methods:
@@ -67,35 +65,24 @@ following three methods:
 1. Enter the path to an existing page manually. Specify a path to a web content
    file (e.g., ``commonPages/infoPage.html``). Web content paths are always
    specified relative to the ``webContent`` folder of the current project.
-
-   If you enter a path to a non-existing web content resource, then pressing the
-   *Create* button will create an empty file at the specified location in the
+   If you enter a path to a non-existing web content resource, then pressing the |open-file| 
+   button will create an empty file at the specified location in the
    ``webContent`` folder and open Eclipse's default editor on it.
 
-2. Select an existing web content file by using the *file smart button*.
-
+2. Select an existing page from the :ref:`CMS <CMS>` by using the |browser| button.
    You can select any file, but a ``wrong type`` error will be displayed if the
-   selected content object is not suitable as a page. If you select a file
-   outside the project's web content folder, an error ``invalid web content
-   path`` will be shown.
-
-3. Click *Create* to generate a new page. A dialog will appear that allows you
-   to enter the name and type (normal or JSP) of the new page. The page created
-   will be associated with the current element and it will be placed
-   appropriately inside the :ref:`web page store <web-page-store>`.
+   selected content object is not suitable as a page.
 
 
 A Page is Already Specified
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|image2|
-
-Click on *Edit* to open the specified page with the system's default editor so
+Click on |open-file| to open the specified page with the system's default editor so
 that you can edit its contents. You can change the default editor for any file
 type by opening *Window/Preferences* and navigating to */General/Editors/File
 Associations*.
 
-Alternatively, you can use the *file smart button* to select an entirely
+Alternatively, you can use the |browser| button to select an entirely
 different page to be displayed.
 
 You can also edit the specified path manually if you like.
@@ -152,9 +139,11 @@ long as it is possible to render it in the user's browser.
    cannot be controlled by Ivy.
 
 
-.. |image0| image:: /_images/user-interface-html/create-new-page.png
-.. |image1| image:: /_images/user-interface-html/create-new-page-web-content.png
-.. |image2| image:: /_images/user-interface-html/edit-existing-page.png
+.. |end-page-inscription| image:: /_images/process-inscription/process-end-page-tab-end-page.png
+.. |open-file| image:: /_images/ui-icons/go-to-source.svg
+   :width: 2em
+.. |browser| image:: /_images/ui-icons/list-search.svg
+   :width: 2em
 
 
 .. note::
