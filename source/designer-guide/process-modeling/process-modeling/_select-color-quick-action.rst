@@ -1,8 +1,7 @@
-Select color:
-   Change color of an element. 
+|color-action| Changes the color of an element. 
 
-   .. tip::
+  .. tip::
 
-     To define new colors or edit existing ones, press the
-     :guilabel:`plus` or the :guilabel:`edit` buttons in the color palette. Valid
-     colors are every possible `css color <https://developer.mozilla.org/en-US/docs/Web/CSS/color>`__.
+    To define new colors or edit existing ones, press the
+    :guilabel:`plus` or the :guilabel:`edit` buttons in the color palette. Valid
+    colors are every possible `css color <https://developer.mozilla.org/en-US/docs/Web/CSS/color>`__.

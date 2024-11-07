@@ -46,51 +46,54 @@ The Marquee Tool can also be started if you hold *Shift* or you can select multi
 |redo-tool| Redo: your last changes.
 
 .. |select-tool| image:: /_images/ui-icons/selection-tool.svg
-   :alt: Select Item
    :width: 2em
 
 .. |marquee-tool| image:: /_images/ui-icons/multi-selection.svg
-   :alt: Marquee Item
    :width: 2em
 
 .. |undo-tool| image:: /_images/ui-icons/undo.svg
-   :alt: Undo Item
    :width: 2em
 
 .. |redo-tool| image:: /_images/ui-icons/redo.svg
-   :alt: Redo Item
    :width: 2em
 
 
 Center
 ^^^^^^
 
-Create Element:
-   You can create many different elements, by select the wished element and add
-   it to a position in the diagram. To keep the overview they are divided into
-   different categories: 
-   
-   - All Elements
-   - Events
-   - Gateways
-   - Activities
-   - Artifacts
-   - :ref:`Extensions <process-element-extension-item>`
+You can create many different elements, by select the wished element and add
+it to a position in the diagram. To keep the overview they are divided into
+different categories: 
+
+- All Elements
+- Events
+- Gateways
+- Activities
+- Artifacts
+- :ref:`Extensions <process-element-extension-item>`
 
 
 Right
 ^^^^^
 
-Inscribe:
-   Opens or closes the :ref:`process-inscription-view` of the process.
+|open-dataclass| Opens the :ref:`data-class-editor` of the process.
 
-Open data class:
-   Opens the :ref:`data-class-editor` of the process.
+|inscription-toggle| Opens or closes the :ref:`process-inscription-view` of the process.
 
-Options:
+|options-toggle| Open view options:
+
    - Darkmode: Toggle between dark and light theme.
    - Grid: Toggle the grid mode. (You can also set the grid mode in the :ref:`process-editor-preferences`)
    - Custom Icon: Toggle between custom and default icons.
+
+.. |open-dataclass| image:: /_images/ui-icons/database-link.svg
+   :width: 2em
+
+.. |options-toggle| image:: /_images/ui-icons/settings.svg
+   :width: 2em
+
+.. |inscription-toggle| image:: /_images/ui-icons/layout-sidebar-right-collapse.svg
+   :width: 2em
 
 
 .. _process-editor-viewport-tool-bar:
@@ -98,19 +101,22 @@ Options:
 Viewport Tool Bar
 ~~~~~~~~~~~~~~~~~
 
+|origin-view-tool| Reset process editor to the origin viewport.
 
-Origin View:
-   Reset process editor to the origin viewport.
+|fit-to-screen-tool| Fit the whole diagram (or your current selection) to the process editor screen.
 
-Fit to Screen:
-   Fit the whole diagram (or your current selection) to the process editor screen.
+|center-tool| Center the whole diagram (or your current selection) in the process editor screen.
 
-Center:
-   Center the whole diagram (or your current selection) in the process editor screen.
+Zoom level: Displays the current zoom level of the process editor.
 
-Zoom level:
-   Displays the current zoom level of the process editor.
+.. |origin-view-tool| image:: /_images/ui-icons/window-minimize.svg
+   :width: 2em
 
+.. |fit-to-screen-tool| image:: /_images/ui-icons/fit-to-screen.svg
+   :width: 2em
+
+.. |center-tool| image:: /_images/ui-icons/center.svg
+   :width: 2em
 
 .. _process-editor-area:
 
@@ -148,54 +154,40 @@ Quick Action Menu
 To open the **Quick Action Menu** simply select an element in the editor. The
 available actions can be different based on the element type:
 
-.. include:: _delete-quick-action.rst
+|delete-action| Delete the current selection.
 
 .. _process-editor-quick-actions-start-process:
 
-Start Process:
-   Only available on the :ref:`Start Element <process-element-start-request>`
+|start-action| Starts/Runs the selected process.
+Only available on the :ref:`Start Element <process-element-start-request>`
 
-   Run the selected process.
+|info-action| Information about the current selection (:ref:`problem markers 
+<problems-view>`, :ref:`name <process-element-tab-general>`, :ref:`description 
+<process-element-tab-general>`, PID, conditions, etc.).
 
-.. include:: _info-quick-action.rst
+|search-action| Search all usages of this start event. *Only available on some start events*
 
-Edit:
-   Opens the legacy inscription mask for the current selected element.
-
-Search callers of this process:
-   *Only available on some start events*
-
-   Search for all usages of this start event.
 
 .. _process-editor-quick-actions-toggle-breakpoint:
 
-Toggle Breakpoint:
-   To suspend the execution, :ref:`process-element-breakpoints` can be added to
-   process elements.
+|breakpoint-action| Toggle Breakpoint: To suspend the execution. 
+:ref:`process-element-breakpoints` can be added to process elements.
  
-Jump:
-   *Only available on elements with an reference to another process*
+|jump-in-action| Enters the embedded or referenced process and shows the encapsulated process.
+*Only available on elements with an reference to another process*
 
-   Enters the embedded or referenced process and shows the encapsulated process.
+|unwrap-action|  The elements encapsulated by the embedded subprocess are placed into the current process.
+Only available on :ref:`process-element-embedded-sub` or
+:ref:`process-element-bpmn-activity`
 
-Unwrap embedded subprocess:
-   Only available on :ref:`process-element-embedded-sub` or
-   :ref:`process-element-bpmn-activity`
+|edit-label-action| Opens an inline editor for the label of the currently selected element.
 
-   The elements encapsulated by the embedded subprocess are placed into
-   the current process.
+|goto-source-action| Jump to the referenced view or java class.
+*Only available on elements with a referenced view or java class*   
 
-.. include:: _edit-label-quick-action.rst
-
-Edit Source:
-   *Only available on elements with a referenced view or java class*
-
-   Jump to the referenced view or java class.
-
-Custom Icon:
-   Change the icon of the process element. If the icon is already a custom icon
-   the click will reset it to the default icon. Any image of the project can be
-   used as decorator icons.  
+|icon-action| Changes the icon of the process element. If the icon is already a custom icon
+the click will reset it to the default icon. Any image of the project can be
+used as decorator icons.  
 
 .. include:: _select-color-quick-action.rst
 
@@ -215,12 +207,26 @@ Add Element:
      You can also navigate through the list with the :guilabel:`Arrow` keys and 
      add an element with the :guilabel:`Enter` key.
 
-Connect:
-   *Only available if the element has no outgoing connector or supports multiple
-   outgoing connectors*
+|connect-action| The **Connection Tool** can connect the current element with another.
+*Only available if the element has no outgoing connector or supports multiple
+outgoing connectors*
 
-   The **Connection Tool** can connect the current element with another.
-
+.. |start-action| image:: /_images/ui-icons/play.svg
+   :width: 2em  
+.. |search-action| image:: /_images/ui-icons/search.svg
+   :width: 2em
+.. |breakpoint-action| image:: /_images/ui-icons/bug.svg
+   :width: 2em
+.. |jump-in-action| image:: /_images/ui-icons/sub-start.svg
+   :width: 2em
+.. |unwrap-action| image:: /_images/ui-icons/unwrap.svg
+   :width: 2em  
+.. |goto-source-action| image:: /_images/ui-icons/go-to-source.svg
+   :width: 2em  
+.. |icon-action| image:: /_images/ui-icons/custom-image.svg
+   :width: 2em  
+.. |connect-action| image:: /_images/ui-icons/connector.svg
+   :width: 2em  
 
 .. _process-editor-quick-actions-multi:
 
@@ -231,15 +237,20 @@ If you select multiple elements, e.g with the **Marquee Tool** of the
 :ref:`process-editor-tool-bar`, you get access to a **Multi-Selection Quick
 Action Menu**. The following actions are available:
 
-.. include:: _delete-quick-action.rst
+|delete-action| Delete the current selection.
 
-Wrap to embedded process:
-   Wrap the current selection into an embedded process.
+|wrap-action| Wrap the current selection into an embedded process.
 
-Auto align:
-   Aligns the selected elements *horizontally* and *vertically*.
+|auto-align-action| Aligns the selected elements *horizontally* and *vertically*.
 
 .. include:: _select-color-quick-action.rst
+
+.. |wrap-action| image:: /_images/ui-icons/wrap-to-subprocess.svg
+   :width: 2em  
+
+.. |auto-align-action| image:: /_images/ui-icons/auto-align.svg
+   :width: 2em  
+
 
 
 .. _process-editor-quick-actions-connector:
@@ -250,27 +261,33 @@ Connector Quick Action Menu
 To open the **Connector Quick Action Menu** select a connector. The following
 actions are available:
 
-.. include:: _delete-quick-action.rst
+|delete-action| Delete the current selection.
 
-.. include:: _info-quick-action.rst
+|info-action| Information about the current selection (:ref:`problem markers
+<problems-view>`, :ref:`name <process-element-tab-general>`, :ref:`description
+<process-element-tab-general>`, PID, conditions, etc.).
+   
+|straigten-action| Straighten: Change layout of the arrow path to a straight line.
 
-Straighten:
-   Change layout of the arrow path to a straight line.
+|bend-action| Bend: Change layout of the arrow path to horizontal and vertical lines with 90° angles.
 
-Bend:
-   Change layout of the arrow path to horizontal and vertical lines with 90° angles.
-
-.. include:: _edit-label-quick-action.rst
+|edit-label-action| Opens an inline editor for the label of the currently selected element.
 
 .. include:: _select-color-quick-action.rst
 
-Reconnect:
-   Trigger a reconnection of the selected connector, by selecting a new target
-   element.
+|reconnect-action| Trigger a reconnection of the selected connector, by selecting a new target element.
 
    .. tip::
 
      You can also trigger a reconnection by pressing the target handle on the selected connector
+
+.. |straigten-action| image:: /_images/ui-icons/straighten.svg
+   :width: 2em  
+.. |bend-action| image:: /_images/ui-icons/bend.svg
+   :width: 2em  
+.. |reconnect-action| image:: /_images/ui-icons/reconnect.svg
+   :width: 2em  
+
 
 
 .. _process-editor-quick-actions-lanes:
@@ -281,16 +298,26 @@ Swimlane Quick Action Menu
 To open the **Swimlane Quick Action Menu** select a pool or a lane. The following
 actions are available:
 
-.. include:: _delete-quick-action.rst
+|delete-action| Delete the current selection.
 
-.. include:: _edit-label-quick-action.rst
+|edit-label-action| Opens an inline editor for the label of the currently selected element.
 
 .. include:: _select-color-quick-action.rst
 
-Add Lane
-   *Only available on pools*
+|lane-action| Adds a lane to a pool.
 
-   Add a lane to the current pool.
+.. |lane-action| image:: /_images/ui-icons/lane-swimlanes.svg
+   :width: 2em   
+
+
+.. |delete-action| image:: /_images/ui-icons/trash.svg
+   :width: 2em   
+.. |edit-label-action| image:: /_images/ui-icons/label.svg
+   :width: 2em   
+.. |info-action| image:: /_images/ui-icons/info-circle.svg
+   :width: 2em   
+.. |color-action| image:: /_images/ui-icons/color-drop.svg
+   :width: 2em   
 
 
 Shortcut Keys
@@ -302,12 +329,14 @@ them, select the element, then press the associated key.
 
 Jump out
 ^^^^^^^^
-   *Only active if you're in an embedded subprocess*
 
-   Visible in the top left of the :ref:`process-editor-area` to jump out of an
-   *embedded subprocess* to the process that contains the *Embedded Sub*
-   element.
+|jump-out-action| Visible in the top left of the :ref:`process-editor-area` to jump out of an
+*embedded subprocess* to the process that contains the *Embedded Sub* element.
 
+*Only active if you're in an embedded subprocess*
+
+.. |jump-out-action| image:: /_images/ui-icons/jump-out.svg
+   :width: 2em   
 
 
 .. |image2| image:: /_images/process-editor/process-editor.png
