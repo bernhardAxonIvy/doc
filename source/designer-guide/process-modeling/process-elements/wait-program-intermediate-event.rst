@@ -3,7 +3,7 @@
 Wait Program Intermediate Event
 ===============================
 
-|image0| The *Wait Program Intermediate Event* element is located in the
+|element| The *Wait Program Intermediate Event* element is located in the
 *Event & Gateway* drawer of the process editor palette.
 
 
@@ -36,7 +36,7 @@ instantiate, the identifier of the event, and the timeout behavior.
 Java Class
    Fully qualified name of the Java class that implements the
    :public-api:`IProcessIntermediateEventBean </ch/ivyteam/ivy/process/intermediateevent/IProcessIntermediateEventBean.html>`
-   interface. Use the :ref:`new-bean-class-wizard` |image3| to create a new Java
+   interface. Use the :ref:`new-bean-class-wizard` |add-button| to create a new Java
    source file with an example implementation of the bean class.
 
 Event ID
@@ -82,7 +82,7 @@ Implementation
 
 To initiate a custom bean implementation for your third party system, 
 you start most conveniently by using the :ref:`New Class <new-bean-class-wizard>` 
-|image3| button on the Event Tab.
+|add-button| button on the Event Tab.
 The wizard will create a minimal sample implementation that works already. 
 You can then adjust it to your needs.
 
@@ -128,6 +128,7 @@ Example implementation
 
 
 
-.. |image0| image:: /_images/process-editor/elements/intermediate-wait.png
+.. |element| image:: /_images/process-editor/elements/intermediate-wait.png
 .. |image2| image:: /_images/process-inscription/wait-intermediate-event-tab-event.png
-.. |image3| image:: /_images/process-elements/button-new-bean-class.png
+.. |add-button| image:: /_images/ui-icons/plus.svg
+  :width: 2em

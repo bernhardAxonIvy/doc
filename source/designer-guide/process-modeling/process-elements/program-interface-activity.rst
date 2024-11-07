@@ -3,7 +3,7 @@
 PI (Programming Interface) Activity
 ===================================
 
-|image0| The *Program Interface Activity* element is located in the
+|element| The *Program Interface Activity* element is located in the
 *Activity* drawer of the process editor palette.
 
 .. _ivy.processmodels.elements.pi.element:
@@ -53,7 +53,7 @@ Java Class
    Fully qualified name of the Java class that implements the
    :public-api:`IUserProcessExtension </ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>`
    interface. 
-   Use the :ref:`new-bean-class-wizard` |image2| to create a new Java
+   Use the :ref:`new-bean-class-wizard` |add-button| to create a new Java
    source file with an example implementation of the bean class.
 
 Program
@@ -81,7 +81,7 @@ Implementation
 ---------------
 
 To initiate a custom bean implementation for your third party system, 
-you start most conveniently by using the :ref:`New Class <new-bean-class-wizard>` |image2| 
+you start most conveniently by using the :ref:`New Class <new-bean-class-wizard>` |add-button| 
 button on the Start Tab.
 The wizard will create a minimal sample implementation that works already. 
 You can then adjust it to your needs.
@@ -121,5 +121,6 @@ Example implementation
       :linenos:
 
 
-.. |image0| image:: /_images/process-editor/elements/program-interface.png
-.. |image2| image:: /_images/process-elements/button-new-bean-class.png
+.. |element| image:: /_images/process-editor/elements/program-interface.png
+.. |add-button| image:: /_images/ui-icons/plus.svg
+  :width: 2em

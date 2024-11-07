@@ -96,12 +96,9 @@ Output Tree
    the expressions.
 
 Tree Toolbar
-   Allows the filtering of the shown values by your own criteria
-   |img-output-tab-0|,
+   |search-button| Allows the filtering of the shown values by your own criteria.
 
-   sets a filter to only show rows with an assigned value (|img-output-tab-1|),
-
-   expands or collapses the list (|img-output-tab-2|)
+   |filter-button| Sets a filter to only show rows with an assigned value.
 
 Code Block
    In the code block below the tree table you can express any complex
@@ -109,10 +106,10 @@ Code Block
    prefer to use the code block to assign values by using a loop
    statement.
 
-.. |img-output-tab-0| image:: /_images/process-elements/button-filter-visibility.png
-.. |img-output-tab-1| image:: /_images/process-elements/button-filter-inscription.png
-.. |img-output-tab-2| image:: /_images/process-elements/button-filter-expand-collapse.png
-
+.. |search-button| image:: /_images/ui-icons/search.svg
+  :width: 2em
+.. |filter-button| image:: /_images/ui-icons/rule.svg
+  :width: 2em
 
 .. _process-element-tab-code:
 
