@@ -65,7 +65,7 @@ Create Element:
    - Gateways
    - Activities
    - Artifacts
-   - :ref:`Extensions <process-element-extension-activity>`
+   - :ref:`Extensions <process-element-extension-item>`
 
 
 Right

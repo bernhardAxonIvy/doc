@@ -11,5 +11,6 @@ This chapter introduces Views which are handy while working with processes and t
   process-outline-view
   process-inscription-editor-view
   process-json-inscription-view
+  extension-browser
   problems-view
   reference-view

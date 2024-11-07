@@ -1,13 +1,10 @@
-.. _process-element-extension-activity:
+.. _process-element-extension-item:
 
-Extension Activity
+Extension Item
 ==================
 
-|extension-tool| The *Extensions* element is located in the
+|extension-tool| The *Extensions* item is located in the
 :ref:`process-editor-tool-bar` of the process editor.
-
-Element Details
----------------
 
 On insert, this element will show a extension-browser, 
 which makes it possible to select an installed third-party connector. 
@@ -26,5 +23,5 @@ to install additional connectors from the Market.
 .. |ext-browser| image:: /_images/process-editor/extensions.png
 .. |extension-tool| image:: /_images/ui-icons/extension.svg
    :alt: Extension Toolbar Item
-   :width: 16px
-   :height: 16px
+   :width: 2em
+

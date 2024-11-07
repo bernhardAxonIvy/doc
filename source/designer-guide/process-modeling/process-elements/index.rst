@@ -154,11 +154,3 @@ Annotations
 
    note
 
-
-Extensions
-----------
-
-.. toctree::
-   :maxdepth: 1
-
-   extension-browser
