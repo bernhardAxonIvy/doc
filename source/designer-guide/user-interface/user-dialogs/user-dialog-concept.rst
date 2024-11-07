@@ -32,18 +32,6 @@ looking at its representation in the Axon Ivy project tree:
 .. figure:: /_images/user-interface/user-dialog-projecttree.png
 
 
-Interface
-^^^^^^^^^
-
-The interface of a User Dialog defines its behavior in an abstract way and
-independent of its implementation. In other words, it defines *what* a User
-Dialog is capable of doing. In more detail, the interface defines
-:ref:`user-dialog-interface-start-methods` and
-:ref:`user-dialog-interface-methods` of a User Dialog. The interface can be
-viewed with the :ref:`user-dialog-interface-editor`.
-
-
-
 Logic
 ^^^^^
 

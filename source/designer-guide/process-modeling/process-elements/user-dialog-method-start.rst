@@ -9,10 +9,6 @@ drawer of the Process editor palette.
 Element Details
 ---------------
 
-The User Dialog method element is used to map a *User Dialog method* (as
-declared on the User Dialog's :ref:`user-dialog-interface-editor`
-to a process that implements the functionality of that method.
-
 The element allows to set internal data of the User Dialog from the
 ``input`` parameters of the method call and to define *return* values
 either from process data or by calculation.
