@@ -3,7 +3,7 @@
 User Dialog
 ===========
 
-|image0| The *User Dialog* element is located in the *Activity* drawer
+|element| The *User Dialog* element is located in the *Activity* drawer
 of the process editor palette.
 
 Element Details
@@ -36,6 +36,5 @@ Inscription
       The variable is *not* available if the start method does not
       return any values (i.e., *void*).
 
-.. |image0| image:: /_images/process-editor/elements/dialog-call.png
-.. |image2| image:: /_images/process-elements/button-select-user-dialog.png
-.. |image3| image:: /_images/process-elements/button-new-user-dialog.png
+.. |element| image:: /_images/process-editor/elements/dialog-call.png
+

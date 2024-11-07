@@ -37,5 +37,5 @@ listen to.
    ``signal``
       Gives access to the signal event.
 
-.. |image0| image:: /_images/process-elements/signal-boundary-event.png
+.. |image0| image:: /_images/process-editor/elements/boundary-signal.png
 .. |image2| image:: /_images/process-inscription/signal-boundary-event-tab-signal.png

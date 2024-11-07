@@ -15,4 +15,4 @@ Inscription
 
 .. include:: _tab-name.rst
 
-.. |image0| image:: /_images/process-elements/note.png
+.. |image0| image:: /_images/process-editor/elements/annotation.png

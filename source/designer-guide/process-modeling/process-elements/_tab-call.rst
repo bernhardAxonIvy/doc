@@ -12,11 +12,12 @@ mapped here.
 
 Dialog
    Defines the User Dialog component to be started by its ID.
+   You can either create a new-one by using the |add-button| button.
+   Or pick an existing one from the dropdown list.
 
-   |image2| Selects an existing User Dialog
-   
-   |image3| Creates a new User Dialog and uses it
-   
+.. |add-button| image:: /_images/ui-icons/plus.svg
+  :width: 1.5em
+
 Start
    Defines the *start method* that should be called on the selected User
    Dialog.

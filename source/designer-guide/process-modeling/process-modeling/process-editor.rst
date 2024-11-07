@@ -36,21 +36,31 @@ process editor:
 Left
 ^^^^
 
-Selection Tool: 
-   The default selection tool.
+|select-tool| Select: an element in your process.
 
-Marquee Tool:
-   Grabbing tool to select multiple elements.
+|marquee-tool| Marquee: grab multiple elements from your process. 
+The Marquee Tool can also be started if you hold *Shift* or you can select multiple elements by hold *Ctrl*.
 
-   .. tip::
+|undo-tool| Undo: your last changes.
 
-      The Marquee Tool can also be started if you hold *Shift* or you can select multiple elements by hold *Ctrl*.
+|redo-tool| Redo: your last changes.
 
-Undo:
-   Undo your last changes.
+.. |select-tool| image:: /_images/ui-icons/selection-tool.svg
+   :alt: Select Item
+   :width: 2em
 
-Redo:
-   Redo your last changes.
+.. |marquee-tool| image:: /_images/ui-icons/multi-selection.svg
+   :alt: Marquee Item
+   :width: 2em
+
+.. |undo-tool| image:: /_images/ui-icons/undo.svg
+   :alt: Undo Item
+   :width: 2em
+
+.. |redo-tool| image:: /_images/ui-icons/redo.svg
+   :alt: Redo Item
+   :width: 2em
+
 
 Center
 ^^^^^^
@@ -65,7 +75,7 @@ Create Element:
    - Gateways
    - Activities
    - Artifacts
-   - :ref:`Extensions <process-element-extension-activity>`
+   - :ref:`Extensions <process-element-extension-item>`
 
 
 Right
