@@ -10,6 +10,7 @@
    engine-guide/index
    concepts/index
    portal-guide/index
+   neo-designer/index
 
 .. toctree::
    :maxdepth: 1
