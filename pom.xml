@@ -95,6 +95,11 @@
                   <type>zip</type>
                 </artifactItem>
 
+                <artifactItem>
+                  <groupId>ch.ivyteam.neo</groupId>
+                  <artifactId>neo-designer-screenshots</artifactId>
+                  <type>zip</type>
+                </artifactItem>
               </artifactItems>
             </configuration>
           </execution>
