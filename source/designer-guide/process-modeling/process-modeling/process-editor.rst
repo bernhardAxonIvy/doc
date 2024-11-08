@@ -5,7 +5,7 @@ Process Editor
 
 The Process editor is used to design and edit the different process kinds
 (mostly *business* and *User Dialog logic* processes). The Process editor
-consists of two parts:
+has different parts:
 
 -  the :ref:`process-editor-area`, where the process logic is constructed element
    for element
@@ -15,6 +15,8 @@ consists of two parts:
 
 -  the :ref:`process-editor-viewport-tool-bar`, where some tools for the
    viewport are located
+
+-  the :ref:`process-editor-quick-actions`, where you find quick actions according to the current selection
 
 
 |image2|
@@ -142,7 +144,7 @@ access to the :ref:`process-editor-quick-actions-multi`. And also on
 
 To scroll in the process editor simply drag the diagram. If you want to Zoom,
 use your mouse wheel. To undo/redo or copy/paste you can use the **Edit** menu
-of the IDE or use the default shortcuts (`Ctrl + C`, `Ctrl + P`,
+of the IDE or use the default shortcuts (`Ctrl + C`, `Ctrl + V`,
 etc.).
 
 
