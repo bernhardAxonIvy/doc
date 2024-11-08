@@ -35,15 +35,15 @@ with the Axon Ivy Designer.
 
    <h:form id="myForm">
        <p:panel header="Multi View Demo" id="panel">
-       <h3>Payment - Credit Card</h3>
-       <p:messages id="msgs"/>
-       <h:panelGrid columns="2">
-           <p:outputLabel value="Credit Card Number"/>
-           <p:inputMask required="true" value="#{data.creditCardNumber}" 
-               id="CreditCardNumber" mask="9999-9999-9999-9999"></p:inputMask>
-       </h:panelGrid>           
-       <p:commandButton value="Next" update="myForm" action="#{logic.nextView('CreditCard')}"/>
+           <h3>Payment - Credit Card</h3>
+           <p:messages id="msgs"/>
+           <h:panelGrid columns="2">
+               <p:outputLabel value="Credit Card Number"/>
+               <p:inputMask required="true" value="#{data.creditCardNumber}" 
+                   id="CreditCardNumber" mask="9999-9999-9999-9999"></p:inputMask>
+           </h:panelGrid>
+           <p:commandButton value="Next" update="myForm" action="#{logic.nextView('CreditCard')}"/>
        </p:panel>
-   </h:form>      
+   </h:form>
 
 .. |html-dialog-new-wizard| image:: /_images/html-dialog/html-dialog-new-view-wizard.png

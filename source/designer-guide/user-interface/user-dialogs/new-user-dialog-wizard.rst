@@ -4,7 +4,7 @@ New User Dialog Wizard
 ----------------------
 
 The New User Dialog wizard lets you create a new User Dialog. This can
-be an HTML Dialog or an Offline Dialog.
+be a *Form Dialog*, an *HTML Dialog* or an *Offline Dialog*.
 
 The wizard creates several resources for the new User Dialog:
 
@@ -17,10 +17,6 @@ Process
 
 Data Class
    The Data Class holds the data of the User Dialog.
-
-Interface
-   The Interface list the ways of interaction with other User Dialogs
-   or business processes.
 
 Accessibility
 ^^^^^^^^^^^^^
@@ -38,7 +34,7 @@ Page 1: Dialog Definitions
 
    The New User Dialog Wizard Page 1
 
-Project name
+Project
    Choose the project that your User Dialog belongs to.
 
 Namespace
@@ -111,4 +107,9 @@ Form (for HTML/Offline Dialogs)
    Create a User Dialog in the context of a Data Class: If the New User
    Dialog Wizard is started via the context menu on a Data Class, the
    initial Caller Class will be the selected Data Class.
+
+.. warning::
+   
+   If you create a new form, the UI flag is not respected. However, after 
+   the creation of your new form you can create these fields based on the data class.
    

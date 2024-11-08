@@ -21,14 +21,13 @@ components (widgets). JSF programmers use these in addition to the small set of
 basic components shipped with the core JSF platform. Refer to the `PrimeFaces
 Showcase <http://www.primefaces.org/showcase/>`__ to learn about PrimeFaces. 
 Find detailed PrimeFaces widget API documentation in the `PrimeFaces VDL doc
-<http://www.primefaces.org/docs/vdl/>`__.
+<http://www.primefaces.org/vdldoc/>`__.
 
 .. tip::
 
    The **HTML Dialog Editor** supports PrimeFaces during design time. You can
-   profit from code completion support, tag validation, the property view
-   offering structured properties, and a graphical representation in the preview
-   part for all PrimeFaces widgets.
+   profit from code completion support, tag validation and the property view
+   offering structured properties.
 
 The elements of the PrimeFaces library are added to your XHTML page by the
 ``<p:>`` namespace. |ivy| also includes the **primefaces-extension**\ ``<pe:``

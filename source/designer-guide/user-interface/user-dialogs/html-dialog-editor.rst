@@ -4,16 +4,16 @@ HTML Dialog Editor
 ^^^^^^^^^^^^^^^^^^
 
 The HTML Dialog editor allows to implement the view of an HTML Dialog
-(i.e., the *JSF view*). In the source view you can read and
-edit the JSF (or XHTML) source in a text-based editor. 
+(i.e., the *JSF view*). You can read and edit the JSF (or XHTML) source 
+in a text-based editor. 
 
 |html-editor-image4|
 
 Accessibility
 ~~~~~~~~~~~~~
 
-Axon Ivyroject Tree -> double click on the *View* node of an HTML
-Dialog:
+|ivy| project tree -> double click on the *View* node of an HTML
+Dialog
 
 Content Assist (Ctrl+Space)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~

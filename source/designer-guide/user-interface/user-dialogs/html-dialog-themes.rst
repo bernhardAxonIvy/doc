@@ -17,11 +17,11 @@ following steps:
 
 -  The `PrimeFaces Built-In Themes
    <https://primefaces.github.io/primefaces/11_0_0/#/core/themes?id=built-in-themes>`__
-   and `Serenity Themes <https://www.primefaces.org/layouts/serenity>`__ are
-   already included in the product. In addition, the core offers a
-   :ref:`freya-ivy <freya-themes>` and a :ref:`serenity-ivy (deprecated) <serenity-themes>` 
-   theme. To use your own theme, copy your themeXY.jar file into the folder
-   **/webapps/ivy/WEB-INF/lib** of Designer and Engine respectively.
+   and *Serenity Themes (deprecated)* are already included in the product. In addition, the
+   core offers a :ref:`freya-ivy <freya-themes>` and a :ref:`serenity-ivy
+   (deprecated) <serenity-themes>` theme. To use your own theme, copy your
+   themeXY.jar file into the folder **/webapps/ivy/WEB-INF/lib** of Designer and
+   Engine respectively.
 
 -  The parameter ``primefaces.THEME`` can be set as a head
    attribute in your **template.xhtml** file.
@@ -117,17 +117,17 @@ PrimeFaces has an additional library `PrimeFlex
 use `FlexBox
 <https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox>`__ with
 PrimeFaces widgets (e.g., by using :code:`<p:panelGrid layout="flex">`).
-Additionally, we recommend to reference :file:`primeflex-2.min.css` in your
+Additionally, we recommend to reference :file:`primeflex-3.min.css` in your
 template. 
 
-PrimeFlex is provided by the core in version 2 and is by default referenced
+PrimeFlex is provided by the core in version 3 and is by default referenced
 in new layouts (templates). You can also add it to your template as follows:
 
 ::
 
   <h:head>
     ...
-    <h:outputStylesheet name="primeflex-2.min.css" library="primeflex" />
+    <h:outputStylesheet name="primeflex-3.min.css" library="primeflex" />
     ...
   </h:head>
 

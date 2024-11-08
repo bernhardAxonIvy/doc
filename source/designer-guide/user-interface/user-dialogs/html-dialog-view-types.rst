@@ -110,9 +110,8 @@ A component is inserted with the ``<ic:``-tag. E.g.
 
 .. tip::
 
-   In the **HTML Dialog Editor**\ you have pretty nice tool support for
-   inserting components. You can drag and drop an available component
-   from the palette. You can select one from the auto completion popup
+   In the **HTML Dialog Editor** you have tool support for
+   inserting components. You can select one from the auto completion popup
    list and you can define required attributes in the properties view.
 
 Start Method
@@ -131,10 +130,11 @@ interface of the component by simply adding them as attributes of the tag, too.
    You cannot override start methods. So do not use multiple start
    methods with the same name but different parameter lists.
 
-See the following code fragment that inserts an HTML Dialog component.
-We use start method ``start(data.person.BillingAddress:address)``. The current value of the data class property ``billingAddress``
-is used as a parameter for the start method and the component
-attribute ``caption`` will be set to the value "Billing Address"
+See the following code fragment that inserts an HTML Dialog component. We use a
+start method ``start(data.person.BillingAddress:address)``. The current value of
+the data class property ``billingAddress`` is used as a parameter for the start
+method and the component attribute ``caption`` will be set to the value "Billing
+Address"
 
 ::
 
