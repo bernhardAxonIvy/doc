@@ -1,4 +1,4 @@
-.. _introduction:
+.. _neo-introduction:
 
 Introduction
 ------------
