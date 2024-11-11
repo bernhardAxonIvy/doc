@@ -24,7 +24,7 @@ and edit a process model.
 .. rubric:: Define the Data
 A data class is used to define and structure the data within a process application. 
 It is used to manage data consistently across processes and forms.
-Use the Axon Ivy Data Class Editor that is part of NEO to define the list of data 
+Use the |ivy| :ref:`data-class-editor` that is part of NEO to define the list of data 
 attributes used in the process.     
 
 .. image:: /_images/neo/editor-data-class.png
