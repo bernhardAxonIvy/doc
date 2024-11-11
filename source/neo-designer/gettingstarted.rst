@@ -8,7 +8,7 @@ To start working with NEO Designer you first create a workspace.
 A workspace is the development area where an application is built and tested. 
 It's the space where your business processes are designed, previewed and 
 simulated before they're deployed as a functioning application.
-In a newly created workspace you will find a first main project as your starting 
+In a newly created workspace, you will find a first main project as your starting 
 point to begin your work.
 
 .. image:: /_images/neo/overview-home.png
