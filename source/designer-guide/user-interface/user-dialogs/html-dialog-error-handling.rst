@@ -48,11 +48,11 @@ executed. In this example, a Primefaces dialog will be shown.
 
 ::
 
-   <p:p:dialog id="ajaxExceptionDialog" header="Error" widgetVar="ajaxExceptionDialog" height="400px">              
-       <p:h:outputText value="Error Id: #{errorPage.exceptionId}"/>
-       <p:br/>
+   <p:dialog id="ajaxExceptionDialog" header="Error" widgetVar="ajaxExceptionDialog" height="400px">              
+       <h:outputText value="Error Id: #{errorPage.exceptionId}"/>
+       <br/>
        ...
-   <p:/p:dialog> 
+   </p:dialog> 
 
 The ``errorPage`` bean is available within the Ajax exception handling.
 Properties like ``exceptionId`` or ``message`` can be used to provide

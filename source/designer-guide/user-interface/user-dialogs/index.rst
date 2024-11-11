@@ -13,9 +13,9 @@ In Axon Ivy, we use :ref:`html-dialogs` - or HD for short
 .. toctree::
   :maxdepth: 1
 
-  form-editor
   user-dialog-concept
   new-user-dialog-wizard
+  form-editor
   html-dialogs
   html-dialog-editor
   html-dialog-themes
