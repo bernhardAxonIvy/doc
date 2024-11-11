@@ -82,7 +82,7 @@ System Database
 OpenSearch
 -------------
 
-Version 2.17. Only required if you run an :ref:`own <opensearch-external>`
+Version 2.18. Only required if you run an :ref:`own <opensearch-external>`
 OpenSearch instance!
 
 
