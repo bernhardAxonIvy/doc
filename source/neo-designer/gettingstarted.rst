@@ -43,6 +43,7 @@ with a sinlge click.
 .. image:: /_images/neo/view-browser.png
 
 .. rubric:: Add Configurations 
+
 Configurations are the settings and parameters that define how an application behaves 
 and interacts with other systems.
 Use the :ref:`variables-editor` to create, delete, and edit the key and values of Variables. 
@@ -50,6 +51,7 @@ Use the :ref:`variables-editor` to create, delete, and edit the key and values o
 .. image:: /_images/neo/editor-variable.png
 
 .. rubric:: Import more Projects
+
 Projects can be imported into the workspace either from the :ref:`market` or from a file.
 In the |ivy| market you can find and download reusable components, templates and 
 solutions to accelerate development.
