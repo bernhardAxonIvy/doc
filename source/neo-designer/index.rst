@@ -10,6 +10,6 @@ app to build and simulate executable |ivy| process applications.
    :maxdepth: 1
 
    introduction
+   gettingstarted
    localsetup
    serversetup
-   gettingstarted
