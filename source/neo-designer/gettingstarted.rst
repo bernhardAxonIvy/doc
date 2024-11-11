@@ -41,6 +41,7 @@ The |ivy| :ref:`form-editor` is a graphical modeling tool to design dynamic form
 .. image:: /_images/neo/editor-form.png
 
 .. rubric:: Simulate the application
+
 Included in NEO Designer is a simulator feature to execute and test a process 
 with a sinlge click. 
 
