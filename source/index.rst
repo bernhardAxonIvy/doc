@@ -6,11 +6,11 @@
    :caption: Process Automation Platform
 
    axonivy/index
+   neo-designer/index
    designer-guide/index
    engine-guide/index
    concepts/index
    portal-guide/index
-   neo-designer/index
 
 .. toctree::
    :maxdepth: 1
