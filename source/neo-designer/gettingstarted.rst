@@ -50,7 +50,7 @@ Use the :ref:`variables-editor` to create, delete, and edit the key and values o
 .. image:: /_images/neo/editor-variable.png
 
 .. rubric:: Import more Projects
-Projects can be imported into the workspace either from the market or from a file.
+Projects can be imported into the workspace either from the :ref:`market` or from a file.
 In the Axon Ivy market you can find and download reusable components, templates and 
 solutions to accelerate development.
 In collaboration with a pro designer packed project files will be shared.
