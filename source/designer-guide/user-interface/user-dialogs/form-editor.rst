@@ -127,11 +127,11 @@ Right
 Editor Area
 ~~~~~~~~~~~
 
-In the editor area you can layout and design your form's by drag and drop. To
-add new components open the palette from the :ref:`form-editor-tool-bar` and
+In the editor area you can layout and design your forms by drag and drop. To
+add new components, open the palette from the :ref:`form-editor-tool-bar` and
 drag and drop it to this area. 
 
-Per default components are structured from top to bottom with full width. To
+Per default, components are structured from top to bottom with full width. To
 change this you can use a :code:`Layout` component. With this you can arrange components
 side by side in a grid.
 
@@ -184,14 +184,14 @@ view on the right. In this section you can change the config of each component.
 
 |form-editor-properties|
 
-There are also settings which are only available, based on a parent component.
-E.g. if you have a :code:`Layout` component with the type *Grid* and column
-*Free* you will get on each child a new section where you can define how much
-space it should take on different screen sizes.
+There are also settings which are only available, if a certain parent component
+is present. E.g. if you have a :code:`Layout` component with the type *Grid* and
+column *Free* you will get on each child a new section where you can define how
+much space it should take on different screen sizes.
 
 .. tip:: 
 
-   You can also open the properties view of a component by *double click*.
+   You can also open the properties view of a component with a *double click*.
 
 
 .. _form-editor-outline:
@@ -222,7 +222,7 @@ button to control the workflow.
 
 .. note::
    
-   Only supported data class attribute types are shown on in the wizard.
+   Only data class attributes which can be rendered as component are shown in the wizard.
 
 .. |form-editor| image:: /_images/form-editor/editor.png
 .. |form-editor-properties| image:: /_images/form-editor/view-properties.png
