@@ -32,7 +32,7 @@ attributes used in the process.
 .. rubric:: Create Forms
 A form is a user interface element that facilitates data entry and interaction with 
 the application, acting as a bridge between users and the system.
-The Axon Ivy Form editor is a graphical modelling tool to design dynamic forms.
+The |ivy| :ref:`form-editor` is a graphical modeling tool to design dynamic forms.
 
 .. image:: /_images/neo/editor-form.png
 
