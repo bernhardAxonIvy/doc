@@ -45,7 +45,7 @@ with a sinlge click.
 .. rubric:: Add Configurations 
 Configurations are the settings and parameters that define how an application behaves 
 and interacts with other systems.
-Use the Variables Editor to create, delete, and editthe key and values of Variables. 
+Use the :ref:`variables-editor` to create, delete, and edit the key and values of Variables. 
 
 .. image:: /_images/neo/editor-variable.png
 
