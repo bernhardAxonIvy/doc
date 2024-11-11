@@ -16,7 +16,7 @@ The default security system must be configured to access an External
 Identity Provider. 
 See the :ref:`Configuration chapter <configuration-security-system>` in the Engine Guide.
 It is also highly recommended to control the access to the Axon Ivy Engine 
-with a reverse proxy.   
+with a :ref:`reverse-proxy`.   
 
 Users will start NEO Designer in a web browser using the url <ivy-engine>/neo
 They have to login with user name and password.
