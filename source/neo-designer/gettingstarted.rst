@@ -4,6 +4,7 @@ Getting Started
 ---------------
 
 .. rubric:: Create a Workspace
+
 To start working with NEO Designer you first create a workspace.
 A workspace is the development area where an application is built and tested. 
 It's the space where your business processes are designed, previewed and 
@@ -14,6 +15,7 @@ point to begin your work.
 .. image:: /_images/neo/overview-home.png
 
 .. rubric:: Draw a Process model
+
 A process describes a sequence of automated steps that optimize workflows and 
 enables efficient task management within an application.
 Start the Axon Ivy Process Editor that is included in NEO Designer to design 
@@ -22,6 +24,7 @@ and edit a process model.
 .. image:: /_images/neo/editor-process.png
 
 .. rubric:: Define the Data
+
 A data class is used to define and structure the data within a process application. 
 It is used to manage data consistently across processes and forms.
 Use the |ivy| :ref:`data-class-editor` that is part of NEO to define the list of data 
@@ -30,6 +33,7 @@ attributes used in the process.
 .. image:: /_images/neo/editor-data-class.png
 
 .. rubric:: Create Forms
+
 A form is a user interface element that facilitates data entry and interaction with 
 the application, acting as a bridge between users and the system.
 The |ivy| :ref:`form-editor` is a graphical modeling tool to design dynamic forms.
