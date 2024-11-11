@@ -10,7 +10,7 @@ and start the engine.
 It will run in DEMO-MODE. No further configuration is needed. 
 
 The engine will open a default web browser showing the engine main page.
-Click the butten to start NEO Designer.
+Click the button to start NEO Designer.
 
 In order to work with the NEO Designer you have to login with a predefined
 default user **neo** and password **neo**
