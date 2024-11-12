@@ -10,10 +10,11 @@ working with the newest version. Go through the migration notes from version to 
 .. toctree::
    :maxdepth: 1
 
-   migration-notes-100-111
-   migration-notes-111-112
-   migration-notes-112-113
+   migration-notes-100-120
    migration-notes-113-120
+   migration-notes-112-113
+   migration-notes-111-112
+   migration-notes-100-111
 
 .. _previous-migi-notes:
 
