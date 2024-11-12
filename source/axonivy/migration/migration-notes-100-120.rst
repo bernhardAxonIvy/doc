@@ -29,7 +29,7 @@ We updated Java to version 21:
   to newer versions.
 - Use Java 21 to run your Maven project builds.
 - Use an `Adoptium / Eclipse Temurin JDK or JRE
-  <https://adoptium.net/temurin/releases?version=17>`_ to run Axon Ivy on Linux
+  <https://adoptium.net/temurin/releases?version=21>`_ to run Axon Ivy on Linux
   or macOS.
 
 
@@ -51,7 +51,7 @@ Primefaces 13
 
 |tag-project-changed| |tag-project-auto-convert| 
 
-We have update the `Primefaces JSF <https://www.primefaces.org/>`_ library from
+We have updated the `Primefaces JSF <https://www.primefaces.org/>`_ library from
 version 11 to version 13. For details have a look at the `Primefaces Migration
 Notes
 <https://primefaces.github.io/primefaces/13_0_0/#/../migrationguide/migrationguide>`_
@@ -108,7 +108,7 @@ Docker Image
 
 The file paths of the Axon Ivy Engine Docker image has changed. The Axon Ivy
 Engine is now installed in the root directory :file:`/ivy` and no longer under
-:file:`/usr/lib/axonivy-engine`. Also all symlinks like
+:file:`/usr/lib/axonivy-engine`. Also, all symlinks like
 :file:`/etc/axonivy-engine` are no longer provided. The full `changelog
 <https://github.com/axonivy/docker-image/blob/master/CHANGELOG.md>`_ of the
 docker image is available here.
@@ -193,16 +193,17 @@ We now have removed the legacy support for :code:`IWA_Application.FilePath` and
 automatically move the application to the correct place during migration.
 
 
-MsSQL Server Database
----------------------
+Microsoft SQL Server Database
+-----------------------------
 
 |tag-ops-changed|
 
-The JDBC driver for MsSQL server database has been upgraded and now connects to
-the database with SSL by default. To change the behavior back to non SSL as in
-previous versions set the connection property ``encrypt`` to ``false``. Because
-this is the new default behavior of the driver, both System Database and
-External Database configurations are affected by this change.
+The JDBC driver for Microsoft SQL Server or Microsoft SQL Server database has
+been upgraded and now connects to the database with SSL by default. To change
+the behavior back to non SSL as in previous versions set the connection property
+``encrypt`` to ``false``. Because this is the driver's new default behavior,
+both System Database and External Database configurations will be affected by
+this change.
 
 
 Data.WorkDirectory no longer configurable in ivy.yaml
@@ -211,9 +212,9 @@ Data.WorkDirectory no longer configurable in ivy.yaml
 |tag-ops-changed| 
 
 The :code:`Data.WorkDirectory` is the temporary directory which Axon Ivy will
-use to create files. :code:`Data.WorkDirectory` can no longer be configured in
-:file:`ivy.yaml`. You need to configure it in :file:`jvm.options` as
-:code:`ivy.Data.WorkDirectory`. Or as operation system environment variable
+use to create temporary files. :code:`Data.WorkDirectory` can no longer be
+configured in :file:`ivy.yaml`. You need to configure it in :file:`jvm.options`
+as :code:`ivy.Data.WorkDirectory`. Or as operation system environment variable
 :code:`IVY_DATA_WORKDIRECTORY`.
 
 
@@ -274,7 +275,7 @@ WebPage activity
 
 The WebPage activity process element is no longer supported. It will be
 automatically removed from existing processes where it has been present. In most
-cases it can be replaced with normal :ref:`html-dialogs`.
+cases, it can be replaced with normal :ref:`html-dialogs`.
 
 
 Programed elements
@@ -282,7 +283,7 @@ Programed elements
 
 |tag-project-deprecated|
 
-Editable Program Start, Intermediate Wait and Program Activity bean implementors
+Editable Program Start, Intermediate Wait, and Program Activity bean implementors
 have to adjust code in order to keep the Editor inscription functional.
 
 .. container:: admonition note toggle
@@ -293,8 +294,8 @@ have to adjust code in order to keep the Editor inscription functional.
 
   .. container:: detail 
 
-    Namely we have deprecated the methods to read and write configuration within the
-    Editor implementation. It is no longer the Editor implementors responsibility,
+    Namely, we have deprecated the methods to read and write configuration within the
+    Editor implementation. It is no longer the Editor implementor's responsibility,
     to maintain the element configuration values. Therefore implementors can remove
     overwritten methods to read and write configurations, but must instead link
     their UI widgets, to the configuration field by passing its name as input. You
@@ -313,7 +314,7 @@ have to adjust code in order to keep the Editor inscription functional.
 
     Until your editable beans are migrated, the old configurations are still
     functional at runtime. Note though, that Inscription Editors won't work
-    correctly, until you migrated your API calls to the latest
+    correctly until you migrate your API calls to the latest
     :public-api:`ExtensionUiBuilder </ch/ivyteam/ivy/process/extension/ui/ExtensionUiBuilder.html>`.
 
     **AutoProcessStarterEventBean**
@@ -412,7 +413,7 @@ Preference pages
 |tag-project-changed|
 
 The Email and SSL preference pages to set engine settings during development
-have been removed from the Designer. In older version they were accessible under
+have been removed from the Designer. In the older version they were accessible under
 the menu: `Ẁindow` > `Preferences` > `Axon Ivy`.
 
 As a replacement, the Engine-Cockpit is now shipped with the Designer. The
@@ -484,7 +485,7 @@ System Database
 
 |tag-ops-removed|
 
-We do support all newest version of all database management systems for the
+We do support all the newest version of all database management systems for the
 system database and dropped the support for the following versions:
 
 - PostgreSQL 13 and lower
@@ -540,7 +541,7 @@ application zip, but an entire configuration folder called :code:`config`. In
 this case the :code:`app.yaml` should be placed in the :code:`config` sub folder
 as part of the application zip. With Axon Ivy 10.0 we still support the old
 location of the app.yaml (with a warning message in the log), but with Axon Ivy
-11.3 this is no longer possible. The :code:`app.yaml` must now be placed in the
+12.0 this is no longer possible. The :code:`app.yaml` must now be placed in the
 :code:`config` sub-folder of the application zip.
 
 

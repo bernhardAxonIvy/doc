@@ -26,7 +26,7 @@ We updated Java to version 21:
 - Convert your Axon Ivy projects to the latest version to use the new Java 21 features. 
 - You may have to update third-party libraries that do not yet support Java 21 to newer versions.
 - Use Java 21 to run your Maven project builds.
-- Use an `Adoptium / Eclipse Temurin JDK or JRE <https://adoptium.net/temurin/releases?version=17>`_ to run Axon Ivy on Linux or macOS.
+- Use an `Adoptium / Eclipse Temurin JDK or JRE <https://adoptium.net/temurin/releases?version=21>`_ to run Axon Ivy on Linux or macOS.
 
 
 OpenSearch
