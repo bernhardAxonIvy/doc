@@ -6,7 +6,7 @@ BPMN Activity Elements
 The *BPMN Activity* drawer contains elements, that can be used to design
 a process at a high level, where details of the technical implementation
 are hidden inside the element itself. Thus BPMN Activities behave
-similar to a *Embedded Sub*, but their purpose is different.
+similar to a :ref:`process-element-embedded-sub`, but their purpose is different.
 
 Available BPMN Activity Elements
 --------------------------------
