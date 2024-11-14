@@ -3,7 +3,7 @@
 Server setup
 ------------
 
-The setup of an Axon Ivy Engine for the low-code development with the 
+The setup of an |ivy-engine| for the low-code development with the 
 NEO Designer is straight forward. Download the Axon Ivy Engine suitable for
 your system. Install the engine following the :ref:`Engine Guide <engine-guide>`.
 Start the engine. It will run in DEMO-MODE. 
