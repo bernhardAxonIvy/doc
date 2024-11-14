@@ -12,4 +12,4 @@ scalable applications, tailored to meet specific business needs effectively.
 
 NEO Designer is a web-based app that is available on the Axon Ivy engine.
 
-.. figure:: /_images/engine-getting-started/engine-mainpage.png
+.. figure:: /_images/neo/overview-workspaces.png
