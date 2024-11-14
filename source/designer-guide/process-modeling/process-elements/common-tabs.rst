@@ -126,31 +126,24 @@ with the built-in :ref:`ivyscript`.
    Code Tab
 
 Code Editor
-   You can write IvyScript code snippets in the part with yellow
-   background. The editor supports code completion and error
-   highlighting. If the background color changes to red, the code
-   contains an error.
+   You can write IvyScript code snippets into many parts of the inscription. 
+   The editor supports code completion and error highlighting. 
+   Red underlined code indicates an error.
 
    .. tip::
 
       For more information about IvyScript, see :ref:`ivyscript`.
 
-Attribute Browser
-   Here you have access to the local process data in the scope of the
-   element such as the ``in``- and ``out``-variables and other
-   parameters. See :ref:`attribute-method-browser` for more information.
+Code Toolbar
+   |maximize-action| Open the current code editor in a :ref:`large-code-browser`.
 
-Function Browser
-   Here you have access to some of the most important mathematical
-   functions and to the whole environment of the process such as the
-   request and response properties, the application the process belongs
-   to and many more. Click :ref:`function-browser` for  more information.
+   |search-action| Open the :ref:`process-inscription-browsers` to select contents from your project environment. 
 
-Data Class Browser
-   Here you have access to all data classes in the scope of the process
-   element. This includes the built-in Ivy data types such as
-   ``String``, ``Number``, ``DateTime`` or even ``List``.
-   See :ref:`data-type-browser` for more information.
+.. |search-action| image:: /_images/ui-icons/list-search.svg
+   :width: 2em   
+.. |maximize-action| image:: /_images/ui-icons/arrows-maximize.svg
+   :width: 2em   
+
 
 
 .. _process-element-tab-start:

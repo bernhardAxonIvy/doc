@@ -121,6 +121,23 @@ Query Definition
       "id=123 AND name=ivy"). Therefore you can disable the quoting with
       this check box.
 
+
+.. _table-column-browser:
+
+Table Column Browser
+~~~~~~~~~~~~~~~~~~~~~
+
+Assists you in selecting a column of your associated database table in inscription blocks.
+
+|search-action| Opens the column browser from a column related inscription part.
+
+.. figure:: /_images/process-inscription/browser-dbColumn.png
+   :alt: Column Browser
+
+.. |search-action| image:: /_images/ui-icons/list-search.svg
+   :width: 2em   
+
+
 .. include:: _tab-data-cache.rst
 
 Error Tab

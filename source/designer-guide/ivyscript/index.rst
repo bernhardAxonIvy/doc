@@ -11,6 +11,5 @@ process data and to define data mappings. Have a look at our :public-api:`Public
 
    language
    editor
-   browsers
    reference
    java-integration
