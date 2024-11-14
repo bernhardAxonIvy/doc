@@ -1,4 +1,4 @@
-.. _gettingstarted:
+.. _neo-getting-started:
 
 Getting Started
 ---------------
