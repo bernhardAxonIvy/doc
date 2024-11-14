@@ -1,4 +1,4 @@
-.. _localsetup:
+.. _neo-localsetup:
 
 Local setup
 -----------
