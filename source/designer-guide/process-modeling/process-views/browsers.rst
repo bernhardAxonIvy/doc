@@ -8,6 +8,7 @@ Various process element inscriptions involve dynamic parts.
 With convenient inline browser, you can select contents from your project to be used within the inscription configuration.
 
 
+
 Accessibility
 ~~~~~~~~~~~~~
 
@@ -75,7 +76,7 @@ By default DataClasses from your project or its dependencies can be selected.
 - `Use Type as List`: will pick a List of the selected type.
 
 
-.. _data-type-browser:
+.. _cms-browser:
 
 CMS Browser
 -----------------
@@ -90,4 +91,31 @@ The CMS browser selects translatable contents from the :ref:`cms`.
 **Options**
 
 - `Enable required projects`: lookup CMS contents from dependent projects too.
+
+
+
+.. _role-browser:
+
+Role Browser
+-----------------
+
+Selects a role of your project.
+
+.. figure:: /_images/process-inscription/browser-role.png
+   :alt: Role Browser
+
+
+
+.. _large-code-browser:
+
+Fullscreen Code Browser
+--------------------------
+
+Renders the scripts in a :ref:`process-element-tab-code` at full size. 
+
+.. figure:: /_images/process-inscription/browser-codeFullscreen.png
+   :alt: Fullscreen
+
+
+
 
