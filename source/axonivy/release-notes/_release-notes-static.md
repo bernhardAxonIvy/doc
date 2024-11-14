@@ -1,8 +1,8 @@
-## 11.3.0 (2024-05-23)
+# 11.3.0 (2024-05-23)
 
 We strongly recommend to install this update release because it fixes security issues!
 
-### Improvements
+## Improvements
 
 * [XIVY-14062](https://1ivy.atlassian.net/browse/XIVY-14062) Update to Primefaces 13.0.10 and Primefaces Extensions 13.0.10 
 * [XIVY-13923](https://1ivy.atlassian.net/browse/XIVY-13923) Support X-Forwarded-Host and X-Forwarded-Port 
@@ -47,7 +47,7 @@ We strongly recommend to install this update release because it fixes security i
 * [IVYPORTAL-15448](https://1ivy.atlassian.net/browse/IVYPORTAL-15448) Statistics - Standard Chart Set 
 * [IVYPORTAL-14996](https://1ivy.atlassian.net/browse/IVYPORTAL-14996) Permissions documentation improved 
 
-### New Features
+## New Features
 
 * [XIVY-3498](https://1ivy.atlassian.net/browse/XIVY-3498) Provide details page links in the new task notification 
 * [XIVY-9680](https://1ivy.atlassian.net/browse/XIVY-9680) Remove system database only conversion and autoConvert of system database in ivy.yaml in favor of migration wizard 
@@ -220,7 +220,7 @@ We strongly recommend to install this update release because it fixes security i
 * [IVYPORTAL-16751](https://1ivy.atlassian.net/browse/IVYPORTAL-16751) Standard Process for notifications 
 * [IVYPORTAL-16820](https://1ivy.atlassian.net/browse/IVYPORTAL-16820) Show Scrollbar in setting multiple languages dialog for LE 
 
-### Bugs
+## Bugs
 
 * [XIVY-6821](https://1ivy.atlassian.net/browse/XIVY-6821) Error 409 if the same user starts a task in a different session 
 * [XIVY-8066](https://1ivy.atlassian.net/browse/XIVY-8066) Designer breaks if you install additional plugins 
