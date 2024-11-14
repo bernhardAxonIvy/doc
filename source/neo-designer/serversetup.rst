@@ -1,4 +1,4 @@
-.. _serversetup:
+.. _neo-serversetup:
 
 Server setup
 ------------
