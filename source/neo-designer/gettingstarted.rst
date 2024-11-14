@@ -18,7 +18,7 @@ point to begin your work.
 
 A process describes a sequence of automated steps that optimize workflows and 
 enables efficient task management within an application.
-Start the Axon Ivy Process Editor that is included in NEO Designer to design 
+Start the |ivy| Process Editor that is included in NEO Designer to design 
 and edit a process model. 
 
 .. image:: /_images/neo/editor-process.png
