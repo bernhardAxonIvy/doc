@@ -316,16 +316,6 @@ Content Object Overrides
    (multi-select a few lines and hit *Delete*) or use the Content Editor
    to add new overriding Content Objects.
 
-Configuration Overrides
-   This section shows all Configurations that are redefined in the
-   selected project, i.e.,all Configurations for which there is an entry
-   with the same name in a required project. At execution time the
-   redefined Configuration will be used.
-
-   You can delete overriding Configuration entries directly from the
-   list (multi-select a few lines and hit *Delete*) or use the
-   Configuration Editor to add new overriding Configuration entries.
-
 .. |override-tree-node| image:: /_images/designer-configuration/overrides-treenode.png
 
 
