@@ -114,6 +114,22 @@ Engine is now installed in the root directory :file:`/ivy` and no longer under
 docker image is available here.
 
 
+
+Application CMS
+---------------
+
+|tag-ops-changed|
+
+The location of the application CMS in the Axon Ivy Engine has been changed to
+make it security system aware. In Axon Ivy Engine 10.0 it was placed at the
+following place if the :code:`Data.Directory` in :code:`ivy.yaml` points to
+:code:`data`. This directory needs to be manually moved to the correct place.
+
+Before: :code:`[engineDir]/data/[applicationName]/cms`
+
+After: :code:`[engineDir]/data/[securitySystemName]/apps/[applicationName]/cms`
+
+
 Mobile Workflow REST API
 ------------------------
 
