@@ -61,12 +61,6 @@
 
                 <artifactItem>
                   <groupId>ch.ivyteam.process</groupId>
-                  <artifactId>inscription-view-screenshots</artifactId>
-                  <type>zip</type>
-                </artifactItem>
-
-                <artifactItem>
-                  <groupId>ch.ivyteam.process</groupId>
                   <artifactId>process-editor-screenshots</artifactId>
                   <type>zip</type>
                 </artifactItem>
