@@ -1,3 +1,283 @@
+
+
+# 12.0.0 (2024-11-28)
+
+
+We recommend to install this update release because it fixes stability issues!
+
+## Bundles
+
+[![Portal 12.0.0](https://img.shields.io/badge/Portal-version?label=12.0.0&color=blue&logo=OpenTofu)](https://github.com/axonivy-market/portal/releases/tag/12.0.0)
+
+## Improvements
+
+* [XIVY-15417](https://1ivy.atlassian.net/browse/XIVY-15417) Update OpenSearch to 2.18.0 
+* [XIVY-15372](https://1ivy.atlassian.net/browse/XIVY-15372) Update the "Data Class Modeling" chapter in the documentation 
+* [XIVY-15334](https://1ivy.atlassian.net/browse/XIVY-15334) Facelift the process element icons in the Process editor 
+* [XIVY-15256](https://1ivy.atlassian.net/browse/XIVY-15256) Update GLSP to nightly v2.3.0 
+* [XIVY-14997](https://1ivy.atlassian.net/browse/XIVY-14997) Raise bundled JDK for Axon Ivy Engine Windows and Axon Ivy Designer Windows/MAC to 21.0.4.7 
+* [XIVY-14982](https://1ivy.atlassian.net/browse/XIVY-14982) Introduce new license for Axon Ivy 12 LTS 
+* [XIVY-14968](https://1ivy.atlassian.net/browse/XIVY-14968) Update to Eclipse 2024-09 
+* [XIVY-14967](https://1ivy.atlassian.net/browse/XIVY-14967) Drop support for Windows Server 2012 and 2016 
+* [XIVY-14952](https://1ivy.atlassian.net/browse/XIVY-14952) Update to Primefaces 13.0.14 
+* [XIVY-14947](https://1ivy.atlassian.net/browse/XIVY-14947) Give the default ivy Freya theme a facelift 
+* [XIVY-14847](https://1ivy.atlassian.net/browse/XIVY-14847) Adjust the default branding colors a bit so the usages have a better contrast ratio (at least AA) 
+* [XIVY-14844](https://1ivy.atlassian.net/browse/XIVY-14844) Update the whole user interface documentation 
+* [XIVY-14570](https://1ivy.atlassian.net/browse/XIVY-14570) Minimum require Maven 3.9 version for the project-build-plugin 
+* [XIVY-14508](https://1ivy.atlassian.net/browse/XIVY-14508) Support database Views in the database process element 
+* [XIVY-14505](https://1ivy.atlassian.net/browse/XIVY-14505) Upgrade OpenTelemetry to 1.42 
+* [XIVY-14393](https://1ivy.atlassian.net/browse/XIVY-14393) Count same user in different security context as one named user for license check 
+* [XIVY-14222](https://1ivy.atlassian.net/browse/XIVY-14222) Generate distinct Release Notes for Ivy-Core associated artifacts like Portal, etc. 
+* [XIVY-14115](https://1ivy.atlassian.net/browse/XIVY-14115) Upgrade Hibernate from 5.4 to 5.6 
+* [XIVY-14114](https://1ivy.atlassian.net/browse/XIVY-14114) Upgrade Apache CXF from 3.5 to 3.6 
+* [XIVY-14065](https://1ivy.atlassian.net/browse/XIVY-14065) Update database products supported for the system database 
+* [XIVY-14055](https://1ivy.atlassian.net/browse/XIVY-14055) Allow to use the Migration wizard for hotfix/service updates (important for traditional installation on Windows and Linux) 
+* [XIVY-14044](https://1ivy.atlassian.net/browse/XIVY-14044) Revise the migration documentation  
+* [XIVY-13094](https://1ivy.atlassian.net/browse/XIVY-13094) Java 21 
+* [XIVY-12683](https://1ivy.atlassian.net/browse/XIVY-12683) Get rid of the global default data class in ivy projects 
+* [XIVY-8973](https://1ivy.atlassian.net/browse/XIVY-8973) Update to Eclipse 2024-03 
+* [XIVY-2250](https://1ivy.atlassian.net/browse/XIVY-2250) Support Primefaces Dialog Framework  
+
+## New Features
+
+* [XIVY-2942](https://1ivy.atlassian.net/browse/XIVY-2942) Convert data class to entity data class and vice versa 
+* [XIVY-3231](https://1ivy.atlassian.net/browse/XIVY-3231) Export roles and permissions for all users for security audit <span class="badge badge-pill badge-success badge-security">security</span>
+* [XIVY-4611](https://1ivy.atlassian.net/browse/XIVY-4611) Add slow/history views for REST Client, and WebServices to the Engine Cockpit  
+* [XIVY-5446](https://1ivy.atlassian.net/browse/XIVY-5446) Migration Support 
+* [XIVY-5504](https://1ivy.atlassian.net/browse/XIVY-5504) Unnecessary persistent cases in Web Service Process Start 
+* [XIVY-5533](https://1ivy.atlassian.net/browse/XIVY-5533) SSO configuration per security system instead of Engine <span class="badge badge-pill badge-success badge-security">security</span>
+* [XIVY-5560](https://1ivy.atlassian.net/browse/XIVY-5560) Migration wizard asks for a new license if the old license does not fit (optional) 
+* [XIVY-5561](https://1ivy.atlassian.net/browse/XIVY-5561) Migration wizard moves relative /app, /data, and /files directories 
+* [XIVY-5931](https://1ivy.atlassian.net/browse/XIVY-5931) Migration wizard copy custom ErrorPages to the new Engine 
+* [XIVY-5992](https://1ivy.atlassian.net/browse/XIVY-5992) Form Editor 
+* [XIVY-6810](https://1ivy.atlassian.net/browse/XIVY-6810) Make features and properties of REST and WebServices editable in the Engine Cockpit 
+* [XIVY-8564](https://1ivy.atlassian.net/browse/XIVY-8564) Do not validate a project if the project version is not up to date 
+* [XIVY-9533](https://1ivy.atlassian.net/browse/XIVY-9533) Understandable user synchronization behavior 
+* [XIVY-9601](https://1ivy.atlassian.net/browse/XIVY-9601) Update process element icons in documentation 
+* [XIVY-9730](https://1ivy.atlassian.net/browse/XIVY-9730) Move jvm-module.options to bin folder and make jvm.options in configuration/jvm.options optional 
+* [XIVY-9849](https://1ivy.atlassian.net/browse/XIVY-9849) Improve Migration Wizard 
+* [XIVY-9863](https://1ivy.atlassian.net/browse/XIVY-9863) Update documentation images with automatic process editor screenshots 
+* [XIVY-10039](https://1ivy.atlassian.net/browse/XIVY-10039) Process Editor V2 
+* [XIVY-10302](https://1ivy.atlassian.net/browse/XIVY-10302) Show task and case notes on the details page of the Dev Workflow UI 
+* [XIVY-10310](https://1ivy.atlassian.net/browse/XIVY-10310) Detect Designer http.port when running @IvyWebTest 
+* [XIVY-10625](https://1ivy.atlassian.net/browse/XIVY-10625) Warn on applications page of the Engine Cockpit if a PM has no released PMV 
+* [XIVY-11609](https://1ivy.atlassian.net/browse/XIVY-11609) Specify which widgets the new UI editor should support and how to map data, logic, and CMS 
+* [XIVY-12038](https://1ivy.atlassian.net/browse/XIVY-12038) Reconnect the process editor to the backend if the connection was lost 
+* [XIVY-12231](https://1ivy.atlassian.net/browse/XIVY-12231) Add schema for the DocumentStorage part of the ivy.yaml  
+* [XIVY-12286](https://1ivy.atlassian.net/browse/XIVY-12286) New data class editor 
+* [XIVY-12288](https://1ivy.atlassian.net/browse/XIVY-12288) New web technology-based data class editor 
+* [XIVY-12289](https://1ivy.atlassian.net/browse/XIVY-12289) Add and delete attributes in new data class editor 
+* [XIVY-12291](https://1ivy.atlassian.net/browse/XIVY-12291) Edit attributes in new data class editor 
+* [XIVY-12443](https://1ivy.atlassian.net/browse/XIVY-12443) Support Ivy and Java file for documents stored in S3 
+* [XIVY-12682](https://1ivy.atlassian.net/browse/XIVY-12682) Warning if a variable name contains underlines 
+* [XIVY-12909](https://1ivy.atlassian.net/browse/XIVY-12909) Use OpenAPI to create Web IDE REST clients 
+* [XIVY-13095](https://1ivy.atlassian.net/browse/XIVY-13095) Update bundled JRE to Java 21 
+* [XIVY-13129](https://1ivy.atlassian.net/browse/XIVY-13129) Add CMS browser for text attributes in the Form editor 
+* [XIVY-13130](https://1ivy.atlassian.net/browse/XIVY-13130) Add data browser for value attributes in the Form editor 
+* [XIVY-13131](https://1ivy.atlassian.net/browse/XIVY-13131) Add logic browser for action attributes in the Form editor 
+* [XIVY-13137](https://1ivy.atlassian.net/browse/XIVY-13137) Support for Ivy Components in the new Form editor 
+* [XIVY-13140](https://1ivy.atlassian.net/browse/XIVY-13140) Integrate the Market into NEO 
+* [XIVY-13261](https://1ivy.atlassian.net/browse/XIVY-13261) Adapt UI mock for the Form editor (toolbar, etc) 
+* [XIVY-13376](https://1ivy.atlassian.net/browse/XIVY-13376) Improve the Permission UI view in the Engine Cockpit 
+* [XIVY-13384](https://1ivy.atlassian.net/browse/XIVY-13384) View missing certificates found by SSL-Tester and provide an action to add them to the Truststore in the Engine Cockpit 
+* [XIVY-13385](https://1ivy.atlassian.net/browse/XIVY-13385) Three-state widget for permissions tree in the Engine Cockpit 
+* [XIVY-13537](https://1ivy.atlassian.net/browse/XIVY-13537) Consider the old active environment when migrating configurations of an old Engine to the new app.yaml files 
+* [XIVY-13608](https://1ivy.atlassian.net/browse/XIVY-13608) Adapt CustomLogAppender example to Log4j2 
+* [XIVY-13624](https://1ivy.atlassian.net/browse/XIVY-13624) Add a Data class attribute component palette to the Form editor 
+* [XIVY-13626](https://1ivy.atlassian.net/browse/XIVY-13626) Add a property to set a custom required message to components in the Form editor 
+* [XIVY-13631](https://1ivy.atlassian.net/browse/XIVY-13631) NEO Designer 
+* [XIVY-13636](https://1ivy.atlassian.net/browse/XIVY-13636) Use new schema based processes in the bpm.exec test suite 
+* [XIVY-13637](https://1ivy.atlassian.net/browse/XIVY-13637) Add visual diagram information to the new schema-based process implementation 
+* [XIVY-13638](https://1ivy.atlassian.net/browse/XIVY-13638) Re-implement heavy process modification operations like wrap, unwrap and CO using the new schema-based process implementation 
+* [XIVY-13640](https://1ivy.atlassian.net/browse/XIVY-13640) Remove old SWT-based inscription masks 
+* [XIVY-13642](https://1ivy.atlassian.net/browse/XIVY-13642) Add Combobox component to Forms 
+* [XIVY-13643](https://1ivy.atlassian.net/browse/XIVY-13643) Add Checkbox component to Forms 
+* [XIVY-13644](https://1ivy.atlassian.net/browse/XIVY-13644) Add Radio component to Forms 
+* [XIVY-13645](https://1ivy.atlassian.net/browse/XIVY-13645) Add DatePicker component to Forms 
+* [XIVY-13646](https://1ivy.atlassian.net/browse/XIVY-13646) Add Table component to Forms 
+* [XIVY-13647](https://1ivy.atlassian.net/browse/XIVY-13647) Add Fieldset component to Forms 
+* [XIVY-13649](https://1ivy.atlassian.net/browse/XIVY-13649) Add more unit and integration tests for the Form editor 
+* [XIVY-13665](https://1ivy.atlassian.net/browse/XIVY-13665) Use Java 21 to build, execute, and develop Axon Ivy and Ivy projects 
+* [XIVY-13756](https://1ivy.atlassian.net/browse/XIVY-13756) Remove UserDialog descriptor 
+* [XIVY-13802](https://1ivy.atlassian.net/browse/XIVY-13802) Show validation messages in Variables editor 
+* [XIVY-13897](https://1ivy.atlassian.net/browse/XIVY-13897) Analyze startup performance of a productive Axon Ivy Engine with multiple projects <span class="badge badge-pill badge-success badge-performance">performance</span>
+* [XIVY-14000](https://1ivy.atlassian.net/browse/XIVY-14000) Add Playwright tests for Variable editor 
+* [XIVY-14003](https://1ivy.atlassian.net/browse/XIVY-14003) Adjust Variable editor to latest UI design 
+* [XIVY-14010](https://1ivy.atlassian.net/browse/XIVY-14010) Provide process mining viewer  
+* [XIVY-14023](https://1ivy.atlassian.net/browse/XIVY-14023) Add a method to CaseQuery to filter cases the current user or any of his roles is involved 
+* [XIVY-14031](https://1ivy.atlassian.net/browse/XIVY-14031) Add a check to see if there are applications still with a path IWA_Application.FileDirectory 
+* [XIVY-14032](https://1ivy.atlassian.net/browse/XIVY-14032) Do not convert projects on Engine start instead provide a button in Engine Cockpit 
+* [XIVY-14066](https://1ivy.atlassian.net/browse/XIVY-14066) Remove Restart button from Migration wizard 
+* [XIVY-14099](https://1ivy.atlassian.net/browse/XIVY-14099) Prototype NEO overview page with a list of processes and open/create a process 
+* [XIVY-14100](https://1ivy.atlassian.net/browse/XIVY-14100) Prototype how a user can log into NEO (inclusive user management, workspace management) 
+* [XIVY-14102](https://1ivy.atlassian.net/browse/XIVY-14102) Integrate Form editor into NEO 
+* [XIVY-14104](https://1ivy.atlassian.net/browse/XIVY-14104) Integrate Variable editor into NEO 
+* [XIVY-14139](https://1ivy.atlassian.net/browse/XIVY-14139) Provide GEO-locations of tasks over the Workflow REST API 
+* [XIVY-14152](https://1ivy.atlassian.net/browse/XIVY-14152) Add TLS connection testing for Databases (JDBC) in Engine Cockpit 
+* [XIVY-14216](https://1ivy.atlassian.net/browse/XIVY-14216) Include reference to the Portal release-notes in the ivy-core release-notes 
+* [XIVY-14262](https://1ivy.atlassian.net/browse/XIVY-14262) Password encryption for Variable editor 
+* [XIVY-14263](https://1ivy.atlassian.net/browse/XIVY-14263) Show available Variables of dependent projects in Variable editor 
+* [XIVY-14264](https://1ivy.atlassian.net/browse/XIVY-14264) Convert Variables with dots in their keys to corresponding mappings during project conversion 
+* [XIVY-14269](https://1ivy.atlassian.net/browse/XIVY-14269) Setup test infrastructure for NEO and implement first tests 
+* [XIVY-14270](https://1ivy.atlassian.net/browse/XIVY-14270) Add process execution/simulation in NEO 
+* [XIVY-14273](https://1ivy.atlassian.net/browse/XIVY-14273) Remove the old HTML Dialog editor (WYSIWYG part) 
+* [XIVY-14276](https://1ivy.atlassian.net/browse/XIVY-14276) Add REST endpoints to watch and build Data classes 
+* [XIVY-14278](https://1ivy.atlassian.net/browse/XIVY-14278) Improve docker experience for Axon Ivy Engine 
+* [XIVY-14292](https://1ivy.atlassian.net/browse/XIVY-14292) Engine Health Check 
+* [XIVY-14293](https://1ivy.atlassian.net/browse/XIVY-14293) Add initial Engine Health Check infrastructure 
+* [XIVY-14357](https://1ivy.atlassian.net/browse/XIVY-14357) Improve UX for adding Variables in Variable editor 
+* [XIVY-14370](https://1ivy.atlassian.net/browse/XIVY-14370) Show name and description of start event process element in Engine Cockpit Start Events view 
+* [XIVY-14371](https://1ivy.atlassian.net/browse/XIVY-14371) Prototype the support of multiple case owners 
+* [XIVY-14373](https://1ivy.atlassian.net/browse/XIVY-14373) Log the whole request and response of a REST or SOAP call (client and server-side) 
+* [XIVY-14388](https://1ivy.atlassian.net/browse/XIVY-14388) Check if the old Axon Ivy Engine is running before starting migration 
+* [XIVY-14423](https://1ivy.atlassian.net/browse/XIVY-14423) Show information about the system database and its tables, triggers, and indexes in the Engine Cockpit 
+* [XIVY-14428](https://1ivy.atlassian.net/browse/XIVY-14428) Improve process start chooser in inscription mask 
+* [XIVY-14486](https://1ivy.atlassian.net/browse/XIVY-14486) Show Info instead of Warning if '-' is present in a variable key 
+* [XIVY-14543](https://1ivy.atlassian.net/browse/XIVY-14543) Prevent the browser from showing an authentication dialog if a REST request responds with error code 401 
+* [XIVY-14547](https://1ivy.atlassian.net/browse/XIVY-14547) Integrate process animation feature into VS Code extension 
+* [XIVY-14561](https://1ivy.atlassian.net/browse/XIVY-14561) Make system databases accessible from the container host in docker-samples 
+* [XIVY-14572](https://1ivy.atlassian.net/browse/XIVY-14572) Update to Eclipse 2024-06 
+* [XIVY-14579](https://1ivy.atlassian.net/browse/XIVY-14579) Support isIn(List<Integer) and isNotIn(List<Integer>) for Integer columns in Task and Case Queries on LTS-10 
+* [XIVY-14580](https://1ivy.atlassian.net/browse/XIVY-14580) Optimize system database LEFT JOIN queries with WHERE filter 
+* [XIVY-14582](https://1ivy.atlassian.net/browse/XIVY-14582) Create more/better indexes on task- and case-related tables for better query performance <span class="badge badge-pill badge-success badge-performance">performance</span>
+* [XIVY-14586](https://1ivy.atlassian.net/browse/XIVY-14586) Deploy workspace from NEO to an Engine 
+* [XIVY-14587](https://1ivy.atlassian.net/browse/XIVY-14587) Export & Import NEO workspace to and from ZIP 
+* [XIVY-14589](https://1ivy.atlassian.net/browse/XIVY-14589) Setup public demo environment for NEO 
+* [XIVY-14593](https://1ivy.atlassian.net/browse/XIVY-14593) Adjust the look and feel of dev-wf-ui to NEO design 
+* [XIVY-14594](https://1ivy.atlassian.net/browse/XIVY-14594) Improve Overview pages in NEO 
+* [XIVY-14614](https://1ivy.atlassian.net/browse/XIVY-14614) Integrate new Data Class editor into NEO 
+* [XIVY-14644](https://1ivy.atlassian.net/browse/XIVY-14644) Prototype to replace ElasticSearch with OpenSearch 
+* [XIVY-14649](https://1ivy.atlassian.net/browse/XIVY-14649) Use Virtual Thread for the Action Dispatcher in the GLSP Process Editor and Viewer 
+* [XIVY-14650](https://1ivy.atlassian.net/browse/XIVY-14650) Allow to change the Marketplace URL so that Marketplace developers can change it for development 
+* [XIVY-14657](https://1ivy.atlassian.net/browse/XIVY-14657) Add statistics to the dev-workflow-ui 
+* [XIVY-14658](https://1ivy.atlassian.net/browse/XIVY-14658) Improve Task and Case lists in dev-workflow-ui 
+* [XIVY-14659](https://1ivy.atlassian.net/browse/XIVY-14659) Show case and task notes in dev-workflow-ui 
+* [XIVY-14684](https://1ivy.atlassian.net/browse/XIVY-14684) Improve Starts page on dev-workflow-ui 
+* [XIVY-14718](https://1ivy.atlassian.net/browse/XIVY-14718) Add quick action bar to components in the Form editor 
+* [XIVY-14719](https://1ivy.atlassian.net/browse/XIVY-14719) Convert custom Data Classes storage format to JSON 
+* [XIVY-14720](https://1ivy.atlassian.net/browse/XIVY-14720) Adjust UI design of dev-workflow-ui 
+* [XIVY-14725](https://1ivy.atlassian.net/browse/XIVY-14725) Add Select component to Forms 
+* [XIVY-14726](https://1ivy.atlassian.net/browse/XIVY-14726) Use workspace API in VS Code 
+* [XIVY-14728](https://1ivy.atlassian.net/browse/XIVY-14728) Badges to simplify how data/logic/CMS bindings are displayed in the new Form editor 
+* [XIVY-14750](https://1ivy.atlassian.net/browse/XIVY-14750) Add System Memory, Java Heap Memory and System Cpu Load Health Check 
+* [XIVY-14751](https://1ivy.atlassian.net/browse/XIVY-14751) Support undo/redo in the Form editor 
+* [XIVY-14753](https://1ivy.atlassian.net/browse/XIVY-14753) Allow to delete elements per drag and drop in the new Form editor 
+* [XIVY-14777](https://1ivy.atlassian.net/browse/XIVY-14777) Validate persistent flag of Data class attributes 
+* [XIVY-14787](https://1ivy.atlassian.net/browse/XIVY-14787) Record and display started processes in dev-workflow-ui which are started from inside the process-editor  
+* [XIVY-14791](https://1ivy.atlassian.net/browse/XIVY-14791) Remove Debian package 
+* [XIVY-14805](https://1ivy.atlassian.net/browse/XIVY-14805) Outline component for Form and Process editor 
+* [XIVY-14809](https://1ivy.atlassian.net/browse/XIVY-14809) Add icon attribute to Text component in the Form editor 
+* [XIVY-14810](https://1ivy.atlassian.net/browse/XIVY-14810) Add general properties readonly, required and visible to any component in the Form editor 
+* [XIVY-14812](https://1ivy.atlassian.net/browse/XIVY-14812) Create a new JSON schema version for Forms and provide a converter for the 11.3 version 
+* [XIVY-14814](https://1ivy.atlassian.net/browse/XIVY-14814) Add TextArea component to Forms 
+* [XIVY-14820](https://1ivy.atlassian.net/browse/XIVY-14820) Activate NEO in Engine demo mode only and provide an entry point 
+* [XIVY-14823](https://1ivy.atlassian.net/browse/XIVY-14823) Add a "Add Role" button to the role browser in inscription views 
+* [XIVY-14827](https://1ivy.atlassian.net/browse/XIVY-14827) Support embedded processes in the new Process editor outline 
+* [XIVY-14832](https://1ivy.atlassian.net/browse/XIVY-14832) Remove SOAP WebService tester from inscription view 
+* [XIVY-14846](https://1ivy.atlassian.net/browse/XIVY-14846) Add health checks for database and REST client connection pools 
+* [XIVY-14893](https://1ivy.atlassian.net/browse/XIVY-14893) Add "Create from data" action in the Form editor toolbar 
+* [XIVY-14920](https://1ivy.atlassian.net/browse/XIVY-14920) Update bundled Elasticsearch to 7.17.23 
+* [XIVY-14984](https://1ivy.atlassian.net/browse/XIVY-14984) Add a Panel layout component to Forms 
+* [XIVY-14987](https://1ivy.atlassian.net/browse/XIVY-14987) Support multiple case owners 
+* [XIVY-14993](https://1ivy.atlassian.net/browse/XIVY-14993) Add action to convert a Form into an old JSF xhtml-based HTML Dialog 
+* [XIVY-14994](https://1ivy.atlassian.net/browse/XIVY-14994) Support jump to belonging Data class and Process from the current Form editor 
+* [XIVY-14998](https://1ivy.atlassian.net/browse/XIVY-14998) Show validation messages in Data class editor 
+* [XIVY-15006](https://1ivy.atlassian.net/browse/XIVY-15006) Mark Mac Designer version LTS 12 as Beta 
+* [XIVY-15024](https://1ivy.atlassian.net/browse/XIVY-15024) Deprecate old workflow APIs 
+* [XIVY-15028](https://1ivy.atlassian.net/browse/XIVY-15028) Add "Number of digits" property to number input component in Forms 
+* [XIVY-15045](https://1ivy.atlassian.net/browse/XIVY-15045) Add a Type browser in the Data class editor 
+* [XIVY-15059](https://1ivy.atlassian.net/browse/XIVY-15059) Add new Ivy 12 splash screen 
+* [XIVY-15067](https://1ivy.atlassian.net/browse/XIVY-15067) Add log if WebView2-based browser can not be created 
+* [XIVY-15076](https://1ivy.atlassian.net/browse/XIVY-15076) Make Panel and Fieldset component collapsible in Forms 
+* [XIVY-15077](https://1ivy.atlassian.net/browse/XIVY-15077) Removed the default project Data class. Each process gets a new Data class by default  
+* [XIVY-15081](https://1ivy.atlassian.net/browse/XIVY-15081) Switch from Elasticsearch to OpenSearch 
+* [XIVY-15097](https://1ivy.atlassian.net/browse/XIVY-15097) Make region of AWS S3 document storage configurable 
+* [XIVY-15104](https://1ivy.atlassian.net/browse/XIVY-15104) Show context path of HTTP session in session monitor of Engine Cockpit 
+* [XIVY-15123](https://1ivy.atlassian.net/browse/XIVY-15123) Add an "Add to CMS" quick action in the Form editor 
+* [XIVY-15125](https://1ivy.atlassian.net/browse/XIVY-15125) When creating Forms or CallSubs from a Process the created Data class should have one attribute with the type of the Process Data class 
+* [XIVY-15128](https://1ivy.atlassian.net/browse/XIVY-15128) Improve Engine index page 
+* [XIVY-15136](https://1ivy.atlassian.net/browse/XIVY-15136) Improve performance of GLSP Client and Server <span class="badge badge-pill badge-success badge-performance">performance</span>
+* [XIVY-15137](https://1ivy.atlassian.net/browse/XIVY-15137) Integrate the new Data class editor into the PRO Designer 
+* [XIVY-15138](https://1ivy.atlassian.net/browse/XIVY-15138) Improve the usability of the new Data class editor 
+* [XIVY-15176](https://1ivy.atlassian.net/browse/XIVY-15176) Revise naming, labels, and texts in Neo with PM 
+* [XIVY-15183](https://1ivy.atlassian.net/browse/XIVY-15183) Better human-readable IDs for the Form editor components 
+* [XIVY-15184](https://1ivy.atlassian.net/browse/XIVY-15184) Support Process editor Extensions palette in Neo 
+* [XIVY-15193](https://1ivy.atlassian.net/browse/XIVY-15193) Improve the project detail overview page in NEO 
+* [XIVY-15198](https://1ivy.atlassian.net/browse/XIVY-15198) Refine workflow notes API 
+* [XIVY-15200](https://1ivy.atlassian.net/browse/XIVY-15200) Write a "How to start with NEO" chapter in the documention 
+* [XIVY-15201](https://1ivy.atlassian.net/browse/XIVY-15201) Update process modelling documentation 
+* [XIVY-15243](https://1ivy.atlassian.net/browse/XIVY-15243) Improve log file naming 
+* [XIVY-15281](https://1ivy.atlassian.net/browse/XIVY-15281) New and improved IvyAsyncExecutor API 
+* [XIVY-15282](https://1ivy.atlassian.net/browse/XIVY-15282) Add help buttons to Variable, Data class and Form editors that link to corresponding documentation 
+* [XIVY-15286](https://1ivy.atlassian.net/browse/XIVY-15286) Report endless looping requests as health message in Engine Cockpit 
+* [XIVY-15295](https://1ivy.atlassian.net/browse/XIVY-15295) Release 12 
+* [XIVY-15318](https://1ivy.atlassian.net/browse/XIVY-15318) Create News page for release 12 
+* [XIVY-15319](https://1ivy.atlassian.net/browse/XIVY-15319) Write Migration Notes for migrating from version 10 to 12 
+* [XIVY-15424](https://1ivy.atlassian.net/browse/XIVY-15424) Create NEO designer workspaces per user and only visible to the creator 
+* [XIVY-15483](https://1ivy.atlassian.net/browse/XIVY-15483) Variable Editor 
+* [XIVY-15516](https://1ivy.atlassian.net/browse/XIVY-15516) Add emotional welcome page to NEO designer 
+* [XIVY-15524](https://1ivy.atlassian.net/browse/XIVY-15524) Show installation directory of the Engine in the Cockpit 
+* [XIVY-15531](https://1ivy.atlassian.net/browse/XIVY-15531) Add a favicon and improve browser tab titles of the NEO designer 
+* [XIVY-15540](https://1ivy.atlassian.net/browse/XIVY-15540) Improve Function-Browser in Inscription View 
+
+## Bugs
+
+* [XIVY-10025](https://1ivy.atlassian.net/browse/XIVY-10025) Inherited REST-Client icons are duplicated into the JSON process model 
+* [XIVY-13757](https://1ivy.atlassian.net/browse/XIVY-13757) Microsoft SMTP service throws concurrent connections limit exceeded 
+* [XIVY-13977](https://1ivy.atlassian.net/browse/XIVY-13977) Engine Cockpit user gravatar images broken if no-internet-connection or gravatar blocked 
+* [XIVY-13984](https://1ivy.atlassian.net/browse/XIVY-13984) Fix a wrong URL in the documentation of the Designer's openapi.json 
+* [XIVY-14020](https://1ivy.atlassian.net/browse/XIVY-14020) Rules do not work if executed by @IvyTest in the Designer 
+* [XIVY-14033](https://1ivy.atlassian.net/browse/XIVY-14033) Copy configuration files in Migration wizard only copy a subset of configuration 
+* [XIVY-14075](https://1ivy.atlassian.net/browse/XIVY-14075) File uploaded with p:fileUpload cannot be mapped to nested process data 
+* [XIVY-14112](https://1ivy.atlassian.net/browse/XIVY-14112) Deadlock after open many projects 
+* [XIVY-14132](https://1ivy.atlassian.net/browse/XIVY-14132) CaseMap deployment validation does not check for missing stages or missing processes 
+* [XIVY-14148](https://1ivy.atlassian.net/browse/XIVY-14148) Cannot provide an argument with whitespaces to the EngineConfigCli 
+* [XIVY-14149](https://1ivy.atlassian.net/browse/XIVY-14149) CMS copy of deep trees is not working reliably 
+* [XIVY-14150](https://1ivy.atlassian.net/browse/XIVY-14150) CMS copy & paste of large, shallow structure results in NPE 
+* [XIVY-14187](https://1ivy.atlassian.net/browse/XIVY-14187) Consider Ivy-Context for "Generate Schema" operation in the Persistence Configuration editor 
+* [XIVY-14192](https://1ivy.atlassian.net/browse/XIVY-14192) Process Viewer allows editing of the model resulting in errors 
+* [XIVY-14204](https://1ivy.atlassian.net/browse/XIVY-14204) NPE in Database Inscription View when changing the Query Kind 
+* [XIVY-14214](https://1ivy.atlassian.net/browse/XIVY-14214) Eclipse Marketplace does not work 
+* [XIVY-14247](https://1ivy.atlassian.net/browse/XIVY-14247) Don't sync a user when logging in with Azure Entra ID and UserSynch.OnLogin is disabled <span class="badge badge-pill badge-success badge-security">security</span>
+* [XIVY-14251](https://1ivy.atlassian.net/browse/XIVY-14251) When showing web notifications the user gets synchronized with the identity provider <span class="badge badge-pill badge-success badge-security">security</span>
+* [XIVY-14257](https://1ivy.atlassian.net/browse/XIVY-14257) Renaming a CMS folder takes forever 
+* [XIVY-14274](https://1ivy.atlassian.net/browse/XIVY-14274) Process SVG export broken 
+* [XIVY-14365](https://1ivy.atlassian.net/browse/XIVY-14365) RuntimeException in workflow statistic API if you have a case with a category of the format "Procurement/Request" 
+* [XIVY-14382](https://1ivy.atlassian.net/browse/XIVY-14382) Autocomplete overwrites search input of tables in Engine Cockpit 
+* [XIVY-14397](https://1ivy.atlassian.net/browse/XIVY-14397) File#makePersistent fails if the directory structure does not exist 
+* [XIVY-14414](https://1ivy.atlassian.net/browse/XIVY-14414) NPE when directly navigating to /demo-portal/starts after starting Axon Ivy Engine 
+* [XIVY-14415](https://1ivy.atlassian.net/browse/XIVY-14415) Slow Designer and deployment due to frequent application configuration reloads <span class="badge badge-pill badge-success badge-performance">performance</span>
+* [XIVY-14430](https://1ivy.atlassian.net/browse/XIVY-14430) Colorized connectors are not showing the execution state in the Process editor 
+* [XIVY-14437](https://1ivy.atlassian.net/browse/XIVY-14437) Siblings are not created correctly during variables.yaml conversion  
+* [XIVY-14510](https://1ivy.atlassian.net/browse/XIVY-14510) Cannot change language and formatting language settings of externally managed users in Engine Cockpit 
+* [XIVY-14525](https://1ivy.atlassian.net/browse/XIVY-14525) Eclipse workspace occasionally blocked after installing Market product 
+* [XIVY-14652](https://1ivy.atlassian.net/browse/XIVY-14652) Fix deadlock in the process model version's project state check 
+* [XIVY-14655](https://1ivy.atlassian.net/browse/XIVY-14655) Microsoft IIS script is broken because Enable Proxy does not work 
+* [XIVY-14667](https://1ivy.atlassian.net/browse/XIVY-14667) Primefaces Datepicker throws a runtime exception on invalid-date inputs 
+* [XIVY-14729](https://1ivy.atlassian.net/browse/XIVY-14729) Reconnect lost connection from web editors to backend after OS hibernation 
+* [XIVY-14786](https://1ivy.atlassian.net/browse/XIVY-14786) Data classes are duplicated during data class to JSON conversion on Windows 
+* [XIVY-14795](https://1ivy.atlassian.net/browse/XIVY-14795) Variables without a value in `variables.yaml` are changed to `"null"` when saving with the Variable editor 
+* [XIVY-14798](https://1ivy.atlassian.net/browse/XIVY-14798) False positive validation problem after removing the expiry error handler of a UserTask 
+* [XIVY-14830](https://1ivy.atlassian.net/browse/XIVY-14830) Reconnect Process editor after Windows hibernate 
+* [XIVY-14845](https://1ivy.atlassian.net/browse/XIVY-14845) Fix dev-workflow-ui tasks and cases search and ordering  
+* [XIVY-14856](https://1ivy.atlassian.net/browse/XIVY-14856) persistence.xml conversion fails if it includes special characters (umlauts, etc.) on Windows 
+* [XIVY-14953](https://1ivy.atlassian.net/browse/XIVY-14953) Improve UX of Monitor/OS view in the Cockpit 
+* [XIVY-14992](https://1ivy.atlassian.net/browse/XIVY-14992) Jump into does not work with Process Viewer if the target is in a dependent project 
+* [XIVY-15025](https://1ivy.atlassian.net/browse/XIVY-15025) Making a change in an input field moves the cursor to the end of the input field in Variable and Data class editors 
+* [XIVY-15030](https://1ivy.atlassian.net/browse/XIVY-15030) Can not start process start which is not shown on the start list out of the process editor 
+* [XIVY-15135](https://1ivy.atlassian.net/browse/XIVY-15135) Thread safe loading of Process standard module 
+* [XIVY-15151](https://1ivy.atlassian.net/browse/XIVY-15151) Show problems of elements in embedded sub-process on parent activity 
+* [XIVY-15153](https://1ivy.atlassian.net/browse/XIVY-15153) Copy/Paste shortcuts do not work in Monaco editor in PRO Designer on Windows 
+* [XIVY-15166](https://1ivy.atlassian.net/browse/XIVY-15166) Rename Elastic Search to Search Engine in the documentation 
+* [XIVY-15167](https://1ivy.atlassian.net/browse/XIVY-15167) Forms are not built after changes in the Data class or logic Process in Neo 
+* [XIVY-15197](https://1ivy.atlassian.net/browse/XIVY-15197) No longer list all Records in JavaDoc Public API 
+* [XIVY-15265](https://1ivy.atlassian.net/browse/XIVY-15265) ivy.var does not work after importing an existing Axon Ivy Project 
+* [XIVY-15284](https://1ivy.atlassian.net/browse/XIVY-15284) False positive "Unkown variable ivyWorkflowView" Form editor validation problem 
+* [XIVY-15292](https://1ivy.atlassian.net/browse/XIVY-15292) Data class is not built after modification in NEO 
+* [XIVY-15332](https://1ivy.atlassian.net/browse/XIVY-15332) Fix small issues for the LTS 12 release 
+* [XIVY-15411](https://1ivy.atlassian.net/browse/XIVY-15411) Force delete action of the process model in the Engine Cockpit does not work 
+* [XIVY-15532](https://1ivy.atlassian.net/browse/XIVY-15532) The value of a file variable is not read from the file under certain circumstances 
+* [XIVY-15555](https://1ivy.atlassian.net/browse/XIVY-15555) OpenAPI reference generator broken if endpoint uses javax.validation constraints 
 # 11.3.0 (2024-05-23)
 
 We strongly recommend to install this update release because it fixes security issues!
