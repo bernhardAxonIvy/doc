@@ -12,6 +12,7 @@ to automatically create, maintain, and deactivate your workflow users.
 .. toctree::
     :maxdepth: 1
 
+    keycloak/index
     microsoft-entra-id/index
     microsoft-ad/index
     novell-edirectory/index

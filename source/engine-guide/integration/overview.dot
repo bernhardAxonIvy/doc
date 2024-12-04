@@ -17,10 +17,11 @@ digraph overview {
  
   engine          [label="Axon Ivy\nEngine",                   pos="5.4,2.5!", height="1.0", width="1.5", color="#C7D426", fontcolor="black"];
   
-  userManagement  [label="User Management\n(optional)",        pos="5.4,0.8!", height="1.2", width="3.8" style="dashed" fontcolor="black" labelloc="t"];
-  eDirectory      [label="eDirectory",                         pos="4.2,0.6!", height="0.5", width="1.1", fontsize=11];
-  activeDirectory [label="Active\nDirectory",                  pos="5.4,0.6!", height="0.5", width="1.1", fontsize=11];
-  entraID         [label="Microsoft\nEntra ID\n",              pos="6.6,0.6!", height="0.5", width="1.1", fontsize=11];
+  userManagement  [label="User Management\n(optional)",        pos="5.4,0.4!", height="1.8", width="3.8" style="dashed" fontcolor="black" labelloc="t"];
+  eDirectory      [label="eDirectory",                         pos="4.8,-0.1!", height="0.5", width="1.1", fontsize=11];
+  activeDirectory [label="Active\nDirectory",                  pos="4.8,0.5!", height="0.5", width="1.1", fontsize=11];
+  entraID         [label="Microsoft\nEntra ID\n",              pos="6.0,0.5!", height="0.5", width="1.1", fontsize=11];
+  keycloak        [label="Keycloak",                           pos="6.0,-0.1!", height="0.5", width="1.1", fontsize=11];
 
   systemdb        [label="System\nDatabase",                   pos="8.1,2.5!", height="3.6", width="1.4", style="dashed" fontcolor="black" labelloc="t"]
   postgres        [label="PostgreSQL",                         pos="8.1,3.5!", height="0.5", width="1.0", fontsize=11]
