@@ -21,6 +21,7 @@ distinguish between the following identity providers:
 
   We support the following identity providers by default:
 
+  - :ref:`keycloak`
   - :ref:`microsoft-entra-id`
   - :ref:`microsoft-ad`
   - :ref:`novell-edirectory`
