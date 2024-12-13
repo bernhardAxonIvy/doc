@@ -1,5 +1,52 @@
 
 
+# 12.0.1 (2024-12-13)
+
+
+We recommend to install this update release because it fixes stability issues!
+
+## Bundles
+
+[![Portal 12.0.1](https://img.shields.io/badge/Portal-version?label=12.0.1&color=blue&logo=OpenTofu)](https://github.com/axonivy-market/portal/releases/tag/12.0.1)
+
+
+
+## New Features
+
+* [XIVY-13132](https://1ivy.atlassian.net/browse/XIVY-13132) Add attribute validation (data, logic, cms) to the Form editor 
+* [XIVY-14730](https://1ivy.atlassian.net/browse/XIVY-14730) Disable editing meta data of overwriting variable in Variables Editor 
+* [XIVY-14821](https://1ivy.atlassian.net/browse/XIVY-14821) Add a simple config text file editor to the NEO Designer 
+* [XIVY-15021](https://1ivy.atlassian.net/browse/XIVY-15021) Analyse keyboard support for editors and NEO Designer 
+* [XIVY-15134](https://1ivy.atlassian.net/browse/XIVY-15134) Provide options for Entity association in the Data Class editor 
+* [XIVY-15433](https://1ivy.atlassian.net/browse/XIVY-15433) Merge inscription view and process editor client GIT repos 
+* [XIVY-15526](https://1ivy.atlassian.net/browse/XIVY-15526) Improve badges in the Form view of the Form editor 
+* [XIVY-15533](https://1ivy.atlassian.net/browse/XIVY-15533) Provide a Condition builder for alternative gateway condition expressions 
+* [XIVY-15584](https://1ivy.atlassian.net/browse/XIVY-15584) Add Keycloak as an identity provider <span class="badge badge-pill badge-success badge-security">security</span>
+
+## Bugs
+
+* [XIVY-10755](https://1ivy.atlassian.net/browse/XIVY-10755) Simulation in designer with auto HTML Dialogs is broken 
+* [XIVY-13010](https://1ivy.atlassian.net/browse/XIVY-13010) Dragging process elements out of the window leads to a visual bug 
+* [XIVY-13563](https://1ivy.atlassian.net/browse/XIVY-13563) Quick Action Menu Popup opens outside of the Process editor window border and cannot be used 
+* [XIVY-13716](https://1ivy.atlassian.net/browse/XIVY-13716) Attributes and methods of super interfaces not shown in JSF code completion 
+* [XIVY-13778](https://1ivy.atlassian.net/browse/XIVY-13778) IvyScript field lookup fails if child and parent classes have fields with the same name 
+* [XIVY-14131](https://1ivy.atlassian.net/browse/XIVY-14131) Thread safe WebService process start procedure 
+* [XIVY-14585](https://1ivy.atlassian.net/browse/XIVY-14585) Memory leak in persistency association caches for empty associations 
+* [XIVY-14935](https://1ivy.atlassian.net/browse/XIVY-14935) Moving process elements to negative area reset not all moved elements in the Process editor 
+* [XIVY-15007](https://1ivy.atlassian.net/browse/XIVY-15007) Can not login with NTLM preemptive authentication since CXF update from version 3.5 to 3.6 <span class="badge badge-pill badge-success badge-security">security</span>
+* [XIVY-15349](https://1ivy.atlassian.net/browse/XIVY-15349) Fix Ivy project build with iar dependency in NEO designer 
+* [XIVY-15542](https://1ivy.atlassian.net/browse/XIVY-15542) Process mining viewer loses values when navigating into embedded sub process 
+* [XIVY-15577](https://1ivy.atlassian.net/browse/XIVY-15577) After migration to LTS 12 workflow documents can not be downloaded 
+* [XIVY-15578](https://1ivy.atlassian.net/browse/XIVY-15578) Never show external name in overview page if it's ivy security system 
+* [XIVY-15580](https://1ivy.atlassian.net/browse/XIVY-15580) NPE in dataclass editor after converting project from 11.3 to 12.0 
+* [XIVY-15609](https://1ivy.atlassian.net/browse/XIVY-15609) Can not upload documents to S3 if there are special characters like Japanese in the filename 
+* [XIVY-15621](https://1ivy.atlassian.net/browse/XIVY-15621) Converting of Axon Ivy Project to LTS 12 corrupts classpath - some src entries like src_dataClasses are missing 
+* [XIVY-15623](https://1ivy.atlassian.net/browse/XIVY-15623) NEO Designer shows the Engine start page without styling 
+* [XIVY-15634](https://1ivy.atlassian.net/browse/XIVY-15634) IvyFileServlet should support new document data storage 
+* [XIVY-15643](https://1ivy.atlassian.net/browse/XIVY-15643) Error while deploying demo app because JSF ViewState secret generation fails 
+* [XIVY-15645](https://1ivy.atlassian.net/browse/XIVY-15645) NullPointerException while rendering HTML Dialog because the renderKit is null 
+
+
 # 12.0.0 (2024-11-28)
 
 
