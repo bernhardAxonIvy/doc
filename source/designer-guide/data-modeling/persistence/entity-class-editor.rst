@@ -61,8 +61,9 @@ Database Field
       - ``java.sql.Timestamp``
 
 Association
-  Defines the association to another Entity Class. The association must be
-  defined on both sides.
+  Defines the association to another Entity Class. For a bidirectional
+  relationship, an inverse association with a mapped-by specification must be
+  configured on the referenced Entity Class.
 
   Cardinality
     - **One-to-One**: Defines a one-to-one (1:1) association to another Entity
@@ -75,9 +76,13 @@ Association
       
     - **One-to-Many**: Defines a one-to-many (1:n) association to another Entity
       Class. Only allowed if the attribute type in the other Entity Class is a
-      ``List`` or ``Set`` of this Entity Class. This association type requires a
-      mapped-by specification since it is the inverse of a Many-to-One
-      association.
+      ``List`` or ``Set`` of this Entity Class. This association type always
+      requires a mapped-by specification since it is the inverse of a
+      Many-to-One association.
+
+      .. warning::
+        A one-to-many association comes with a significant performance impact.
+        Only use it if it is absolutely necessary.
   
   Cascade
     Defines the cascadable operations that are propagated to the associated
@@ -123,3 +128,9 @@ Association
     
     -  Remove orphans is disabled: The product stays in the list of referenced
        products if the Entity is reloaded or refreshed.
+
+.. note::
+  Internally, the Java Persistence API is used to implement Entity Classes and
+  their relations. For further details, please refer to the official `Java
+  Persistence API documentation
+  <https://www.oracle.com/java/technologies/persistence-jsp.html>`_.
