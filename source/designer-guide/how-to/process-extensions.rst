@@ -52,10 +52,10 @@ The journey starts, now wrap your logic as follows:
    3. Copy your custom logic into the Sub Process 
    and connect it with the provided start and end event.
 
-This allows you already to re-use this encapsulated Sub Process 
+This allows you already to reuse this encapsulated Sub Process 
 logic in many Processes.
 You can do it by using the :ref:`process-element-call-sub` Activity and selecting 
-your just-built Sub Process as the target. Connect it and pass parameters to 
+your just-built Sub Process as the target. Connect it, pass parameters to 
 and fro and you are done. 
 
 Custom Element feeling
@@ -74,8 +74,8 @@ Sub Process way more popular and easier to identify.
 
 To make this Sub Process even more popular for third parties,
 we can make it appear in the process editor's palette.
-Go to the Sub Process start event and double-click it to open its inscription.
-In the `General` tab, add the tag `Connector` and save the Process.
+Go to the Sub Process start event and open its :ref:`inscription<process-inscription-view>`.
+In the :ref:`process-element-tab-general`, add the :ref:`tag<process-element-tab-general-tags>` `Connector` and save the Process.
 Being tagged, the element now appears 
 in the :ref:`Extensions<process-element-extension-item>` section, 
 accessible for all Projects that depend upon yours.
@@ -85,7 +85,7 @@ Community
 
 Proud of your work, you may `contribute <https://github.com/axonivy-market/market/wiki>`_ this Sub Process 
 to the |ivy| `Market <https://market.axonivy.com/>`_. 
-So the |ivy| community can re-use and profit from your work.
+So the |ivy| community can reuse and profit from your work.
 You may choose to do so, to simplify your own maintenance efforts,
 as the Market offers you a rich ecosystem that manages versions,
 distributions, and automated test infrastructure for free.
@@ -94,8 +94,9 @@ Limits
 ^^^^^^^^^^
 
 The only limitation you may face by re-using logic in Sub Processes
-is the absence of a similar construct for custom Start Event logic 
-or your custom Intermediate Event. 
+is the absence of a similar construct for custom Start Events
+or custom Intermediate Events.
+
 You can invent such custom logic nevertheless, 
 by using :ref:`extensible-process-elements`,
 which are explained in the next chapter.
@@ -121,17 +122,13 @@ These generic elements are:
 :ref:`process-element-program-start`
    Triggers the start of a new process upon an (external) event.
 
+:ref:`process-element-wait-program-intermediate-event`
+   Interrupts process execution until an (external) event occurs.
+
 :ref:`process-element-pi`
    Executes generic Java code (may interact with a remote system).
    Using this in new solutions is discouraged, see the warning below.
 
-:ref:`process-element-wait-program-intermediate-event`
-   Interrupts process execution until an (external) event occurs.
-
-.. tip::
-
-   Sample implementations of custom process elements can be found on
-   GitHub in our open source `repository <https://github.com/axonivy>`__, e.g., https://github.com/axonivy/bpm-beans
 
 .. warning::
 
