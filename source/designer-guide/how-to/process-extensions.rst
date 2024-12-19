@@ -1,8 +1,12 @@
-Extensions
-==========
+Process Extensions
+===================
 
-This chapters shows how easily a process or the |ivy-engine| itself
-can be customized with your own logic.
+|ivy| processes come with a rich set of standard elements to fulfill
+frequently required needs. 
+
+The available elements however, can be extended to address your custom needs.
+Here we will elaborate on the extensions possibilities, 
+empowering you to build your own elements.
 
 
 .. _extensible-process-elements:
