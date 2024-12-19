@@ -9,7 +9,7 @@ a remote system invoke an operation in |ivy| (being called; |ivy| is the server)
 are several ways to implement these integrations.
 
 Before integrating a 3rd party system, you should have a look at the
-:ref:`|ivy| Market <market>` which may already provide a connector for it.
+:ref:`|ivy| Market <market>` which may already provides a connector for it.
 
 .. toctree::
    :maxdepth: 2
@@ -17,4 +17,4 @@ Before integrating a 3rd party system, you should have a look at the
    restapi
    webservice
    database
-   process-extension
+   process-extensions

@@ -9,6 +9,5 @@ How to
    data-storage
    overrides
    rule-engine
-   process-extensions
    continuous-integration
    miscellaneous
