@@ -43,13 +43,13 @@ additional maintenance efforts.
 
 The journey starts, now wrap your logic as follows:
 
-   1. Create a new Process using the :ref:`process-new-wizard`. 
+#. Create a new Process using the :ref:`process-new-wizard`. 
    Select the type `Callable Sub Process` and finish the creation wizard.
 
-   2. Name the automatically defined start event, 
+#. Name the automatically defined start event, 
    and define your required input parameters and the results you want to provide.
 
-   3. Copy your custom logic into the Sub Process 
+#. Copy your custom logic into the Sub Process 
    and connect it with the provided start and end event.
 
 This allows you already to reuse this encapsulated Sub Process 
@@ -162,34 +162,28 @@ execute > |image0|
 
 .. _provide-your-own-process-elements: 
 
-Provide your own process elements
----------------------------------
+Dropin Elements
+---------------------
 
 Instead of using the generic extendible process element with your Java
 class, you can go one step further and implement your own process
 elements, available in the process editor palette.
 
-To implement your own process elements in an `Eclipse bundle <extensions-bundles>`
-you need to implement two extension points, one for the execution (Engine) and one
-for the user interface (Designer):
+.. warning::
+
+   Dropin Elements are hard to develop, build and :ref:`distribute<dropin-installation>`.
+   Therefore, their usage is strongly discouraged. 
+   For most customers it's 
+   perferrable to work with :ref:`connector-process-elements`
+   or the :ref:`extensible-process-elements`. 
+
+However, to implement your own process elements 
+you need a hosting `Eclipse bundle <extensions-bundles>`
+in it there's just a interface that must be implemented.
 
 :public-api:`IBpmnProcessElement </ch/ivyteam/ivy/bpm/exec/IBpmnProcessElement.html>`
   You need to specify a name, an executor class. Optionally, you can also specify what kind
   of process element you are providing (default is `Activity`), and a validator class.
-
-:public-api:`IBpmnProcessElementUi </ch/ivyteam/ivy/designer/process/ui/info/IBpmnProcessElementUi.html>`
-  This extension point allows you to define a visual representation of your custom process
-  element in the |ivy-designer|. By adding custom tabs to the Inscription mask you can also
-  make your process element configurable. The configuration can be stored in a `String`.
-  The name must be specified and match the name defined in your IBpmnProcessElement
-  implementation. It is recommended to add an icon.
-
-You need to implement both process element extension points in order to have a working process element.
-
-.. tip::
-
-   Sample implementations of custom process elements can be found on
-   GitHub in our open source `repository <https://github.com/axonivy>`__, e.g., https://github.com/axonivy/bpm-beans
 
 
 .. _extensions-bundles:
@@ -200,77 +194,32 @@ You need to implement both process element extension points in order to have a w
 In order to provide an |ivy| extension for the Designer or Engine you
 need to provide it as an Eclipse plugin.
 
-Development
-~~~~~~~~~~~
+References
+^^^^^^^^^^^^^
+
+The extension development is an advanced programming task. 
+Here we supply you with reference implementations, 
+rather than explaining details of the tools we rely upon.
+
+We have several active projects that you may use as template
+for your own development.
+
+* `extension-demos <https://github.com/axonivy/extension-demos/>`_, show extensions to the logger infrastracture, database drivers, and tomcat webserver.
+
+* In the Market there are products that enrich the Designer development tooling, such as the `openai-assistant <https://github.com/axonivy-market/openai-connector/>`_ and the  `excel-dialog <https://github.com/axonivy-market/excel-importer/>`_.
+
+Eclipse
+^^^^^^^^^^^^^
 
 You can create your own Eclipse plugin in the |ivy-designer| by
 following these steps:
 
 #. Start |ivy-designer|
 
-#. Switch to the :guilabel:`Plug-in Development Perspective`. Menu: :guilabel:`Window` >
-   :guilabel:`Open Perspective` > :guilabel:`Other...` > :guilabel:`Plug-in Development`
+#. Create a new Plug-in Project using the New wizard. 
+   Menu: :guilabel:`File` > :guilabel:`New` > :guilabel:`Project ...` > :guilabel:`Plug-in Development` > :guilabel:`Plug-in Project`.
 
-#. Create a new Plug-in Project. Menu: :guilabel:`File` > :guilabel:`New` > :guilabel:`Project ...`.
-   In the appearing dialog:
-
-   -  Choose :guilabel:`Plug-in Project`.
-   -  Press :guilabel:`Next`.
-   -  Enter a project name.
-   -  Press :guilabel:`Next`.
-   -  Enter the :guilabel:`Plug-in Properties`.
-
-      .. table:: Plug-in Properties
-
-         +-----------------------+-----------------------+--------------------------------------+
-         | Property              | Description           | Example                              |
-         +=======================+=======================+======================================+
-         | Plug-In ID            | Identifier of the     | ch.ivyteam.ivy.example               |
-         |                       | plugin. Must be       |                                      |
-         |                       | unique. This          |                                      |
-         |                       | identifier must be    |                                      |
-         |                       | specified in the      |                                      |
-         |                       | ``*.extensions`` file |                                      |
-         |                       | in the bundle         |                                      |
-         |                       | attributes.           |                                      |
-         +-----------------------+-----------------------+--------------------------------------+
-         | Plug-In Version       | The version of the    | 1.0.0                                |
-         |                       | plugin.               |                                      |
-         +-----------------------+-----------------------+--------------------------------------+
-         | Plug-In Name          | The name of the       | Example                              |
-         |                       | plugin. The name is   |                                      |
-         |                       | used for              |                                      |
-         |                       | documentation only.   |                                      |
-         +-----------------------+-----------------------+--------------------------------------+
-         | Plug-In Provider      | The provider of the   | Muster AG                            |
-         |                       | plugin. The provider  |                                      |
-         |                       | is used for           |                                      |
-         |                       | documentation only.   |                                      |
-         +-----------------------+-----------------------+--------------------------------------+
-
-   -  Press :guilabel:`Finish`.
-
-#. In the appearing editor click on the **Extensions** tab. In the
-   section **All Extensions** press the **Add** button. Un-tick the box
-   **Show only extension points from the required plug-ins**. From the
-   list of extension points choose the one you want to provide an
-   extension for. Press the **Finish** button. You may need to confirm
-   adding a new plug-in dependency. Save the changes.
-
-#. Select the added extension point from the list in the section **All
-   Extensions**. Select the added sub entry. In the section **Extension
-   Element Details** click on the link **class\***.
-
-   |image1|
-
-#. A **New Java Class** dialog appears. Specify the name of your
-   extension class in the **Name** text field and the package name in
-   the **Package** text field.
-
-   |image2|
-
-#. Write your extension class by implementing the extension point
-   interface (see :ref:`extension-point-reference`)
+#. Develop your extension.
 
 #. Switch back to the **META-INF/MANIFEST.MF** file editor. Choose the
    **Overview** tab and click on the link **Export Wizard**. As
@@ -279,8 +228,11 @@ following these steps:
    button. Your plugin is created in the ``dropins/plugins``
    directory.
 
+
+.. _dropin-installation:
+
 Installation
-~~~~~~~~~~~~
+^^^^^^^^^^^^^
 
 Follow these steps to install your extensions in an |ivy-designer| or
 Engine:
@@ -298,43 +250,5 @@ Engine:
    If your extension is not active as expected, consult the ``dropins/README.html``.
 
 
-.. _extension-point-reference:
-
-Extension Point Reference
--------------------------
-
-|ivy| supports the following extension points:
-
-
-:public-api:`IServerExtension </ch/ivyteam/ivy/server/IServerExtension.html>`
-  A Server extension can be used to start and stop your code when the |ivy-engine|
-  is started or stopped. Server extensions can be accessed from Process
-  Start Event and Process Intermediate Event Beans and also from every process
-  element using the ivy.extensions environment variable.
-
-
-:public-api:`IIvyProjectClassPathExtension </ch/ivyteam/ivy/java/IIvyProjectClassPathExtension.html>`
-  Adds libraries or classes from bundles to the |ivy| project class path. This extension point allows to
-  add libraries or classes to the compile and the runtime class path. This is useful if you want to
-  provide your own classes in a eclipse bundle and want to access these classes from IvyScript or
-  use them as Program Interface (PI), Start Event, Intermediate Event and Call&Wait bean.
-
-
-:public-api:`IBpmnProcessElement </ch/ivyteam/ivy/bpm/exec/IBpmnProcessElement.html>`
-  Extension point to define the execution part of your custom process element. The code
-  provided in the executor class will be run on the |ivy-engine| during process execution.
-  The user interface part to configure your element can be implemented with extension
-  point IBpmnProcessElementUi. An optional validator class can be specified that will be
-  run during execution as well as project validation in the |ivy-designer|.
-
-
-:public-api:`IBpmnProcessElementUi </ch/ivyteam/ivy/designer/process/ui/info/IBpmnProcessElementUi.html>`
-  Extension point to define the user interface part of your custom process element. You only
-  need to provide a name matching the name specified in the IBpmnProcessElement implementation.
-  Optionally, you can specify an icon, a short name, a description, additional editor tabs, add
-  new palette groups, and add the element to a specific group at a specific position.
-
-
 .. |image0| image:: /_images/extensions/new-bean-class-smart-button.png
-.. |image1| image:: /_images/extensions/add-extension-point.png
-.. |image2| image:: /_images/extensions/create-extension-class-wizard.png
+
