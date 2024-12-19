@@ -106,13 +106,13 @@ which are explained in the next chapter.
 Extendible Process Elements
 ----------------------------
 
-|ivy| comes with four generic process elements that can be used to
+|ivy| comes with generic process elements that can be used to
 address particular execution behavior requirements none of the standard
 process elements can fulfill.
 
 All generic process elements contain a tab in which a Java class can be
-selected. The Java class implements the actual execution behavior. Some
-standard implementations are shipped with the |ivy| core, and with
+selected. The Java class implements the actual execution behavior. 
+Some standard implementations are shipped with the |ivy| core, and with
 these elements developers are able to specify their own implementation
 as part of the project.
 
@@ -123,6 +123,7 @@ These generic elements are:
 
 :ref:`process-element-pi`
    Executes generic Java code (may interact with a remote system).
+   Using this in new solutions is discouraged, see the warning below.
 
 :ref:`process-element-wait-program-intermediate-event`
    Interrupts process execution until an (external) event occurs.
@@ -131,6 +132,13 @@ These generic elements are:
 
    Sample implementations of custom process elements can be found on
    GitHub in our open source `repository <https://github.com/axonivy>`__, e.g., https://github.com/axonivy/bpm-beans
+
+.. warning::
+
+   Extendible Process Elements were the first solution for custom Process elements.
+   Today however, they are rarely used, since the :ref:`connector-process-elements`
+   offer a similar mechanism which requires less technical skills 
+   and offers a better integration into the Process editor tooling.
 
 
 .. _new-bean-class-wizard:
