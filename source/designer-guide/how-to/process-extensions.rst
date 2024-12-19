@@ -1,18 +1,110 @@
 Process Extensions
 ===================
 
-|ivy| processes come with a rich set of standard elements to fulfill
+|ivy| processes have a rich set of standard elements to fulfill
 frequently required needs. 
 
-The available elements however, can be extended to address your custom needs.
+However, the available elements can be extended 
+to address your custom requirements.
 Here we will elaborate on the extensions possibilities, 
 empowering you to build your own elements.
+
+
+.. _connector-process-elements:
+
+Connector Elements
+--------------------------------
+
+Connector elements are the simplest and most effective way to build 
+your custom element, encapsulating your logic.
+The best thing about it? Creating such an Element doesn't require 
+special new skills apart from being familiar 
+with |ivy| Processes and their elements.
+
+Callable Sub Processes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+So this is for you if you have implemented something, that you 
+call repetivitly from multiple processes. 
+Normally, all you change when you reuse this logic 
+is just the process data you work with.
+To name a few: 
+
+- a custom logic in Java wrapped in a Script Activity, 
+- a RestClient which you use frequently, 
+- or a set of process elements that you use as a pattern.
+
+Instead of copying and pasting such logic into multiple processes, 
+you can refactor them into a :ref:`Sub Process<process-kind-callable>`. 
+Sub Processes wrap your logic behind a defined interface, 
+declaring your input and output parameters.
+This gives you the freedom to reuse its logic without 
+additional maintenance efforts.
+
+The journey starts, now wrap your logic as follows:
+
+   1. Create a new Process using the :ref:`process-new-wizard`. 
+   Select the type `Callable Sub Process` and finish the creation wizard.
+
+   2. Name the automatically defined start event, 
+   and define your required input parameters and the results you want to provide.
+
+   3. Copy your custom logic into the Sub Process 
+   and connect it with the provided start and end event.
+
+This allows you already to re-use this encapsulated Sub Process 
+logic in many Processes.
+You can do it by using the :ref:`process-element-call-sub` Activity and selecting 
+your just-built Sub Process as the target. Connect it and pass parameters to 
+and fro and you are done. 
+
+Custom Element feeling
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Now let's go one step further and make 
+the :ref:`process-element-call-sub` activity
+look more like a distinct element that can easily be recognized.
+
+Go to the :ref:`process-element-sub-process-start` event 
+and add your custom icon onto it using the 
+elements :ref:`process-editor-quick-actions`. 
+This icon will be shown not only on this start 
+but on all calling elements too. This makes your 
+Sub Process way more popular and easier to identify.
+
+To make this Sub Process even more popular for third parties,
+we can make it appear in the process editor's palette.
+Go to the Sub Process start event and double-click it to open its inscription.
+In the `General` tab, add the tag `Connector` and save the Process.
+Being tagged, the element now appears 
+in the :ref:`Extensions<process-element-extension-item>` section, 
+accessible for all Projects that depend upon yours.
+
+Community
+^^^^^^^^^^^^^^
+
+Proud of your work, you may `contribute <https://github.com/axonivy-market/market/wiki>`_ this Sub Process 
+to the |ivy| `Market <https://market.axonivy.com/>`_. 
+So the |ivy| community can re-use and profit from your work.
+You may choose to do so, to simplify your own maintenance efforts,
+as the Market offers you a rich ecosystem that manages versions,
+distributions, and automated test infrastructure for free.
+
+Limits
+^^^^^^^^^^
+
+The only limitation you may face by re-using logic in Sub Processes
+is the absence of a similar construct for custom Start Event logic 
+or your custom Intermediate Event. 
+You can invent such custom logic nevertheless, 
+by using :ref:`extensible-process-elements`,
+which are explained in the next chapter.
 
 
 .. _extensible-process-elements:
 
 Extendible Process Elements
----------------------------
+----------------------------
 
 |ivy| comes with four generic process elements that can be used to
 address particular execution behavior requirements none of the standard
@@ -44,7 +136,7 @@ These generic elements are:
 .. _new-bean-class-wizard:
 
 New Bean Class Wizard
-~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 With the *New Bean Class Wizard* you can create a Java class that
 implements the interface of one of the extendible process elements.
