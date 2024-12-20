@@ -34,6 +34,6 @@ set in the :ref:`ivy-yaml`.
 * ``Session.RenewIdOnLogin`` should always be set to ``true``, so that
   the session id is renewed after log in.
   
-By default, all cookies (including the session cookie ``JSESSIONID``) have set 
+By default, all cookies (including the session cookies ``JSESSIONID`` and ``IVYSESSIONID``) have set 
 the ``same-site`` cookie header to value ``lax``. You can disable or harden XSS
 cookie restrictions in :ref:`context-xml`.

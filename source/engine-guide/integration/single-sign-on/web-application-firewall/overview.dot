@@ -23,5 +23,5 @@ digraph overview {
 
   /* edge labels */
   browser_waf [label="WAF_SESSION=X\n \n ",                   pos="1.75,3.0!", shape=none, fillcolor=none, fontcolor="black", fontsize="11"];
-  waf_engine [label="JSessionID=Y\n \nX-Forwarded-User=john", pos="5.20,3.0!", shape=none, fillcolor=none, fontcolor="black", fontsize="11"];
+  waf_engine [label="JSESSIONID=Y\nIVYSESSIONID=Z\nX-Forwarded-User=john\n\n", pos="5.20,3.0!", shape=none, fillcolor=none, fontcolor="black", fontsize="11"];
 }
