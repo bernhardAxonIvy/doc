@@ -1,3 +1,5 @@
+.. _process-extensions:
+
 Process Extensions
 ===================
 
