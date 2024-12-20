@@ -64,12 +64,6 @@ Many example REST services are available in the :ref:`ConnectivityDemos
 <importing-demo-projects>`.
 
 
-.. tip:: Pretty printing
-
-If you add the query param `pretty` to the URL to any REST Service provided by the |ivy-engine|
-which produce JSON, then you get a pretty formatted JSON e.g., http://localhost:8081/designer/api/engine/info?pretty
-
-
 .. _integration-rest-api-spec:
 
 API Publishing
@@ -188,3 +182,10 @@ Workflow API
 |ivy| provides a basic :ref:`Workflow API REST Service
 <workflow-api>`. You can use it to enable remote systems to request
 information about tasks of a user etc.
+
+
+Pretty printing
+-----------------
+
+If you add the query param `pretty` to the URL to any REST Service provided by the |ivy-engine|
+which produce JSON, then you get a pretty formatted JSON e.g., http://localhost:8081/designer/api/engine/info?pretty
