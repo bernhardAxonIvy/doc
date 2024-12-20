@@ -32,10 +32,11 @@ distinguish between the following identity providers:
   with the external ID is found in the system database during synchronisation,
   there is a fallback to the external name and then to the actual user name.
 
-  If a user is no longer made available via the identity provider, it is
+  If a user is no longer available via the identity provider, it is
   disabled. All assigned tasks remain in the current status but can be queried
-  via the unavailable activator filter using the :code:`TaskQuery` or in the
-  task list of the portal.
+  via the unavailable activator filter using the :public-api:`TaskQuery </ch/ivyteam/ivy/workflow/query/TaskQuery.IFilterableColumns.html#activatorAvailable()>` 
+  API or the Portal task list. These tasks can then be reassigned to available users by 
+  a workflow administrator.
 
 Read more about the :ref:`lifecycle of an application <application-lifecycle>`
 if you are interested how applications and security system works together. 

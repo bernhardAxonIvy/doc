@@ -113,8 +113,19 @@ Identity Provider which we use to detect name changes.
 
 It is also possible to enable, disable or delete the user. 
 
-After disabling the user, he will not be able to log in, all of his active sessions
-will be closed, and he won't be counted as named user anymore. 
+After disabling a user
+
+- he will not be able to log in
+- all of his active sessions will be closed
+- he won't be counted as a named user for the license
+- all tasks assigned to him will be kept assigned to him. 
+  These tasks can be queried via the unavailable activator filter 
+  using the :public-api:`TaskQuery </ch/ivyteam/ivy/workflow/query/TaskQuery.IFilterableColumns.html#activatorAvailable()>` 
+  or the Portal task list. They can then be reassigned 
+  to available users by a workflow administrator.
+- the history of tasks will not be changed
+- his role assignments will not be changed
+- he is not displayed in the Users page. Use the special filter on the Users page to see all disabled users.
 
 Deleting a user will also remove him from the users table in the database.
 
