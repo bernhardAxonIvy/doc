@@ -43,6 +43,8 @@ declaring your input and output parameters.
 This gives you the freedom to reuse its logic without 
 additional maintenance efforts.
 
+|connector-process|
+
 The journey starts, now wrap your logic as follows:
 
 #. Create a new Process using the :ref:`process-new-wizard`. 
@@ -82,6 +84,8 @@ Being tagged, the element now appears
 in the :ref:`Extensions<process-element-extension-item>` section, 
 accessible for all Projects that depend upon yours.
 
+|use-connector|
+
 Community
 ^^^^^^^^^^^^^^
 
@@ -102,6 +106,9 @@ or custom Intermediate Events.
 You can invent such custom logic nevertheless, 
 by using :ref:`extensible-process-elements`,
 which are explained in the next chapter.
+
+.. |use-connector| image:: /_images/process-editor/connector-user.png
+.. |connector-process| image:: /_images/process-editor/connector-process.png
 
 
 .. _extensible-process-elements:
@@ -253,4 +260,3 @@ Engine:
 
 
 .. |image0| image:: /_images/extensions/new-bean-class-smart-button.png
-
