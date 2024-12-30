@@ -31,6 +31,3 @@ To ease the migration we provide :ref:`migration-tools`.
    major/index
    migration-notes
    deprecation
-
-
-

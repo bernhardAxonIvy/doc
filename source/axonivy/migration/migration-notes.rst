@@ -10,11 +10,7 @@ working with the newest version. Go through the migration notes from version to 
 .. toctree::
    :maxdepth: 1
 
-   migration-notes-100-120
-   migration-notes-113-120
-   migration-notes-112-113
-   migration-notes-111-112
-   migration-notes-100-111
+   migration-notes-120-131
 
 .. _previous-migi-notes:
 
@@ -22,10 +18,11 @@ working with the newest version. Go through the migration notes from version to 
 
 :ref:`migration-tools` still support migrating directly from this version:
 
-* :dev-url:`Migrating from 8.0 to 10.0 </doc/10.0/migration-notes>`
+* :dev-url:`Migrating from 10.0 to 12.0 </doc/12.0/migration-notes>`
 
 Migrating from these versions is no longer supported by the :ref:`migration-tools`: 
 
+* :dev-url:`Migrating from 8.0 to 10.0 </doc/10.0/migration-notes>`
 * :dev-url:`Migrating from 7.0 to 8.0 </doc/8.0.0/migration-notes>`
 * :dev-url:`Migrating from 6.0 to 7.0 </doc/7.0.0/migration-notes>`
 * :dev-url:`Migrating from 5.1 to 6.0 </doc/6.0.0/migration-notes>`
