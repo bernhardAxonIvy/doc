@@ -17,6 +17,8 @@ You need to request a new license for |ivy-engine| 13.1.
 Removal of Server Control Center for Windows
 ********************************************
 
+|tag-ops-changed|
+
 The Server Control Center for Windows has been removed. Prefer using Docker for
 Windows to run the Axon Ivy Engine. If you still want to run the Axon Ivy Engine
 on Windows without Docker, you can use :ref:`AxonIvyEngineService.exe
