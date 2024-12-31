@@ -12,7 +12,7 @@ the wizard on your operating system.
 
 **Start**
 
-#. :ref:`Start <control-center>` a new, untouched Axon Ivy Engine.
+#. Start a new, untouched Axon Ivy Engine.
 #. Browse to the URI where the engine runs: e.g., http://localhost:8080 .
 #. Choose :guilabel:`Setup Engine` > :guilabel:`Migrate Axon Ivy Engine` in your Browser.
    

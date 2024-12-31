@@ -89,10 +89,6 @@ dynamic link libraries and executable files:
 +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | AxonIvyEngineService.exe      | Executable of the Windows service. See :ref:`engine-service`.                                                                                                                |
 +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ControlCenter.exe             | Program that allows to configure, start and stop the Axon Ivy Engine. It also permits to configure the Windows services. See :ref:`control-center`.                          |
-+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ControlCenterC.exe            | Same as ControlCenter.exe but additionally logs any output to a console window.                                                                                              |
-+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | JavaWindowsServiceHandler.dll | Library that contains native methods to register, unregister, configure, start and stop windows services                                                                     |
 +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | JVMLauncher.dll               | Library containing code to launch the Java virtual machine.                                                                                                                  |
@@ -111,8 +107,6 @@ files:
 | AxonIvyEngine         | Starts the Axon Ivy Engine. See :ref:`axonivy-engine`.                                                                    |
 +-----------------------+---------------------------------------------------------------------------------------------------------------------------+
 | AxonIvyEngine.service | Template systemd script of the Linux service. It will be copied to /etc/systemd/system/ by running InstallService.sh.     |
-+-----------------------+---------------------------------------------------------------------------------------------------------------------------+
-| ControlCenter         | Program that allows to configure, start and stop the Axon Ivy Engine. See :ref:`control-center`.                          |
 +-----------------------+---------------------------------------------------------------------------------------------------------------------------+
 | InstallService.sh     | Script to install the Axon Ivy Engine as a daemon. See :ref:`engine-service`.                                             |
 +-----------------------+---------------------------------------------------------------------------------------------------------------------------+

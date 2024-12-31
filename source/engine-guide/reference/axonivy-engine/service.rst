@@ -49,11 +49,6 @@ Parameters:
   - ``username`` is optional and defines under which user the windows service should run.
   - ``password`` is mandatory if ``username`` is set and defines the password for the given user.
 
-.. Note::
-    You can also use the :ref:`control-center` to register, unregister, start
-    and stop the Axon Ivy Engine Windows Service.
-
-
 Linux Service
 -------------
 

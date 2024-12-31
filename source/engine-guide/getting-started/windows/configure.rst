@@ -74,17 +74,17 @@ production-ready Axon Ivy Engine.
 Register the Axon Ivy Engine as a Windows Service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In Windows, you can register your Axon Ivy Engine as a service to execute it in the background.
-You can do this either graphically by using the Control Center, or in a scriptable way using the command line.
+In Windows, you can register your Axon Ivy Engine as a service to execute it in
+the background. You can do this in a scriptable way using the command line.
 Windows provides the service configuration utility sc.exe for this purpose.
 
 .. code:: bat
 
     AxonIvyEngineService -register [windowsServiceName] [username] [password]
 
-replace [windowsServiceName] with the name you want to use for the service, e.g.
-ivy_prod. The user specified by [username] and [password] is used to run the
-service. 
+replace :code:`[windowsServiceName]` with the name you want to use for the
+service, e.g. ivy_prod. The user specified by :code:`[username]` and
+:code:`[password]` is used to run the service. 
 
 Refer to :ref:`Engine Service <engine-service>` for more details on running Axon
 Ivy as a service.
