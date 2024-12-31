@@ -9,5 +9,4 @@ Reference
    setup-wizard
    migration-wizard
    engine-cockpit/index
-   control-center
    systemdb-schema/index
