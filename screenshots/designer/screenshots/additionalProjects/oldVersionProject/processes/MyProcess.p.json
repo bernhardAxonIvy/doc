@@ -1,0 +1,42 @@
+{
+  "format" : "10.0.0",
+  "id" : "15673C9B9128F3F6",
+  "config" : {
+    "data" : "sampleProject.Data"
+  },
+  "elements" : [ {
+      "id" : "f0",
+      "type" : "RequestStart",
+      "name" : "start.ivp",
+      "config" : {
+        "callSignature" : "start",
+        "case" : {
+          "attachToBusinessCase" : false
+        },
+        "outLink" : "start.ivp"
+      },
+      "visual" : {
+        "at" : { "x" : 80, "y" : 80 },
+        "labelOffset" : { "x" : 44, "y" : 20 }
+      },
+      "connect" : { "id" : "f3", "to" : "f2" }
+    }, {
+      "id" : "f1",
+      "type" : "TaskEnd",
+      "visual" : {
+        "at" : { "x" : 560, "y" : 80 }
+      }
+    }, {
+      "id" : "f2",
+      "type" : "DialogCall",
+      "name" : "Open Richdialog",
+      "config" : {
+        "dialogId" : "sampleProject.MyHtmlDialog",
+        "startMethod" : "start()"
+      },
+      "visual" : {
+        "at" : { "x" : 328, "y" : 80 }
+      },
+      "connect" : { "id" : "f4", "to" : "f1" }
+    } ]
+}
