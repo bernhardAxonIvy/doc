@@ -86,4 +86,3 @@ Managed Classes
 Properties
    Specify properties for the persistence unit. This is optional. This
    freedom comes with responsibility - know what you are doing.
-   

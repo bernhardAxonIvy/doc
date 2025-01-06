@@ -13,5 +13,3 @@
  * **Windows** The preferable package for Windows. It comes with a bundled Java
     Runtime; otherwise, it is identical to the Linux package. So, if you want to
     supply your own JRE, use the Linux package.
-
-  

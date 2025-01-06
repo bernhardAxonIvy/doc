@@ -32,4 +32,3 @@ or save and update them in the database.
   persistence-configuration-editor
   generate-database-schema
   persistence-api
-  

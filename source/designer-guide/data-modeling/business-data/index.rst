@@ -26,4 +26,3 @@ defining field based filters.
   usage
   limitations
   customization
-  

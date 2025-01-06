@@ -112,4 +112,3 @@ Form (for HTML/Offline Dialogs)
    
    If you create a new form, the UI flag is not respected. However, after 
    the creation of your new form you can create these fields based on the data class.
-   
