@@ -24,6 +24,13 @@ Windows to run the Axon Ivy Engine. If you still want to run the Axon Ivy Engine
 on Windows without Docker, you can use :ref:`AxonIvyEngineService.exe
 <engine-service>` to register the Axon Ivy Engine as a Windows Service.
 
+
+Support for Case Scope Override removed
+****************************************
+
+Case scope overriding has been depreacted in LTS 8.0 and was now removed.
+Use :ref:`strict_overriding` if you rely on case scope overriding.
+
 ------------
 
 .. include:: _tagLegend.rst
