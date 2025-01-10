@@ -10,9 +10,9 @@ business needs. You can have a look at the latest features here:
 :dev-url:`/news` 
 
 This chapter focuses on migrations from one major version to another (e.g., from
-``8.0`` to ``10.0``) or from one minor version to another (e.g., from ``11.1``
+``10.0`` to ``12.0``) or from one minor version to another (e.g., from ``11.1``
 to ``11.2``). If you are only interested in applying hotfix upgrades (e.g., from
-``10.0.16`` to ``10.0.20``), please consult the simpler
+``12.0.0`` to ``12.0.2``), please consult the simpler
 :ref:`migration-upgrade-engine-hotfix` chapter.
 
 Switching from a Long-Term-Supported (LTS) release train (e.g., `10.0``) to a LE

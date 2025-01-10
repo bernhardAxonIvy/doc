@@ -34,7 +34,7 @@ application **portal** of the Axon Ivy Engine.
 .. code:: bash
 
     #  file based deployment to c:/axonivy/engine
-    mvn com.axonivy.ivy.ci:project-build-plugin:7.4.0-SNAPSHOT:deploy-to-engine \
+    mvn com.axonivy.ivy.ci:project-build-plugin:12.0.0:deploy-to-engine \
       -Divy.deploy.file=myProject.iar \
       -Divy.deploy.engine.dir=c:/axonviy/engine \
       -Divy.deploy.engine.app=portal
@@ -44,7 +44,7 @@ application **portal** of the Axon Ivy Engine.
 
     # http based deployment to http://localhost:8080/
     # default credentials admin/admin used for demo engine
-    mvn com.axonivy.ivy.ci:project-build-plugin:7.4.0-SNAPSHOT:deploy-to-engine \
+    mvn com.axonivy.ivy.ci:project-build-plugin:12.0.0:deploy-to-engine \
       -Divy.deploy.file=myProject.iar \
       -Divy.deploy.method=HTTP \
       -Divy.deploy.engine.url=http://localhost:8080/ \
