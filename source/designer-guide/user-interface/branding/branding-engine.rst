@@ -68,6 +68,5 @@ If your app has no Branding resources :ref:`deployed <branding-app-deploy>` or
 :ref:`configured <branding-configuration>`, the default Axon Ivy Branding
 resources are used to generate your interfaces. 
 
-.. versionadded:: 10.0.5
-  If you use multiple applications in a security context, they all share the 
-  same branding. So it is enough to provide one with branding resources.
+If you use multiple applications in a security context, they all share the 
+same branding. So it is enough to provide one with branding resources.
