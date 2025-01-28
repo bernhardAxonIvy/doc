@@ -43,14 +43,20 @@ The script is divided into several parts:
 
 * **IIS Setup** will install all required features including IIS itself, as well
   as the URL Rewrite and Application Request Routing (ARR) modules. Furthermore,
-  it will enable the reverse proxy capabilities and set
-  :guilabel:`preserveHostHeader` to :code:`true`. The most important
+  it will enable the reverse proxy capabilities.
+
+  .. figure:: /_images/iis/iis-arr.png
+
+  .. figure:: /_images/iis/iis-enable-proxy.png
+
+  And set :guilabel:`preserveHostHeader` to :code:`true`. The most important
   configuration entries in IIS are the :guilabel:`Authentication` and
   :guilabel:`URL Rewrite` modules. The script will sense if IIS including all
   required features is already installed and will skip the IIS installation in
   that case. 
 
   .. figure:: /_images/iis/iis-overview.png
+  
 
 * **URL Rewrite Rules** configures the rules for URL rewriting. It will add a
   new rule :code:`ivy-route-all` to the :guilabel:`Default Website`. This will
