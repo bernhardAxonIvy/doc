@@ -28,6 +28,13 @@ The first time when you execute this script, you may be asked for a
 :guilabel:`Execution Policy Change` so that this script can be executed. You
 need to answer this question with :guilabel:`[A] Yes to All`.
 
+.. hint::
+
+  If you have not been asked about the :guilabel:`Execution Policy Change` but the 
+  script is still not running, you maybe need to unblock it via the Options menu 
+  (Properties -> General -> Security -> Unblock) or by running the following command 
+  in the PowerShell :code:`Unblock-File iis-proxy-setup.ps1`
+
 This script will guide you to set up IIS as a reverse proxy for the |ivy-engine|.
 
 If your IIS server cannot access external links, you need to download the
