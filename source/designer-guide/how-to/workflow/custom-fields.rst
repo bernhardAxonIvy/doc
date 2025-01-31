@@ -76,4 +76,9 @@ To access additional attributes, use this API:
 
   String icon = ivy.task.customFields().stringField("branchOffice").meta().attribute("Icon");
 
+To access localized values, use this API:
 
+.. code:: java
+
+  ICustomStringField branchOffice = ivy.task.customFields().stringField("branchOffice");
+  String branchOfficeValueLabel = branchOffice.meta().values().label(branchOffice.getOrNull()); 

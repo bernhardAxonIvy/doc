@@ -44,10 +44,10 @@ You can add as many other attributes as you like. E.g., :guilabel:`Icon`.
 
 .. _custom-fields-locale:
 
-Localize Label, Description and Category
-----------------------------------------
+Localize Label, Description, Category and Values
+------------------------------------------------
 
-For processes that support multiple languages, the Label, Description and Category can be provided in multiple languages by using the :ref:`CMS<cms>`.
+For processes that support multiple languages, the Label, Description, Category and Values can be provided in multiple languages by using the :ref:`CMS<cms>`.
 
 You need to add the following to the :ref:`CMS<cms>`:
 
@@ -56,3 +56,16 @@ You need to add the following to the :ref:`CMS<cms>`:
 - content objects with paths ``/CustomFields/{kind}/{name}/Label``, 
   ``/CustomFields/{kind}/{name}/Description`` or ``/CustomFields/Categories/{category}``, 
   e.g., ``/CustomFields/Tasks/branchOffice/Label``, ``/CustomFields/Categories/hrm``
+
+You can localize values of ``STRING`` and ``NUMBER`` custom fields. 
+This allows you to store a technical code either as ``NUMBER`` or ``STRING`` in a custom field and provide labels for them in the CMS. 
+Use the following path to localize your custom field values: ``/CustomFields/{kind}/{name}/Values/{value}``. 
+
+Examples:
+
+- With a ``STRING`` custom field 
+  ``CustomFieldsTasks/branchOffice/Values/Zug``, ``CustomFieldsTasks/branchOffice/Values/Munich``, and ``CustomFieldsTasks/branchOffice/Values/Vienna``. 
+  Now you can localize the value ``CustomFieldsTasks/branchOffice/Values/Vienna`` by setting it for English to ``Vienna`` and for German to ``Wien``. 
+- With a ``NUMBER`` custom field 
+  ``CustomFieldsTasks/productType/Values/1``, ``CustomFieldsTasks/productType/Values/2``, and ``CustomFieldsTasks/productType/Values/3``. 
+  Now you can give the product types meaningful names like ``Food``, ``Electronic``, and ``Health``. In different languages if you like.
