@@ -52,7 +52,7 @@ For processes that support multiple languages, the Label, Description, Category 
 You need to add the following to the :ref:`CMS<cms>`:
 
 - folder ``/CustomFields/`` in the CMS root folder. This folder is *required*.
-- the object kind of the entry - ``CASES``, ``TASKS``, or ``STARTS`` are supported. This folder is *required*.
+- the object kind of the entry - ``Cases``, ``Tasks``, or ``Starts`` are supported. This folder is *required*.
 - content objects with paths ``/CustomFields/{kind}/{name}/Label``, 
   ``/CustomFields/{kind}/{name}/Description`` or ``/CustomFields/Categories/{category}``, 
   e.g., ``/CustomFields/Tasks/branchOffice/Label``, ``/CustomFields/Categories/hrm``
@@ -64,8 +64,8 @@ Use the following path to localize your custom field values: ``/CustomFields/{ki
 Examples:
 
 - With a ``STRING`` custom field 
-  ``CustomFieldsTasks/branchOffice/Values/Zug``, ``CustomFieldsTasks/branchOffice/Values/Munich``, and ``CustomFieldsTasks/branchOffice/Values/Vienna``. 
+  ``CustomFields/Tasks/branchOffice/Values/Zug``, ``CustomFields/Tasks/branchOffice/Values/Munich``, and ``CustomFields/Tasks/branchOffice/Values/Vienna``. 
   Now you can localize the value ``CustomFieldsTasks/branchOffice/Values/Vienna`` by setting it for English to ``Vienna`` and for German to ``Wien``. 
 - With a ``NUMBER`` custom field 
-  ``CustomFieldsTasks/productType/Values/1``, ``CustomFieldsTasks/productType/Values/2``, and ``CustomFieldsTasks/productType/Values/3``. 
+  ``CustomFields/Tasks/productType/Values/1``, ``CustomFields/Tasks/productType/Values/2``, and ``CustomFields/Tasks/productType/Values/3``. 
   Now you can give the product types meaningful names like ``Food``, ``Electronic``, and ``Health``. In different languages if you like.
