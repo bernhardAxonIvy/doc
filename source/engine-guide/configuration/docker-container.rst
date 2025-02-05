@@ -27,7 +27,7 @@ And let's run the container with this configuration
 
 .. code:: bash
 
-  docker run -v $(pwd)/ivy.yaml:/etc/axonivy-engine/ivy.yaml ... 
+  docker run -v $(pwd)/ivy.yaml:/ivy/configuration/ivy.yaml ... 
   
 .. tip::
   On Windows use :code:`%cd%/ivy.yaml` instead of :code:`$(pwd)/ivy.yaml`  
@@ -48,13 +48,13 @@ You can provide the license either by:
 
   .. code:: dockerfile
   
-     ADD licence.lic /etc/axonivy-engine/licence.lic
+     ADD licence.lic /ivy/configuration/licence.lic
 
 * Mapping it into the :file:`configuration` folder:
    
   .. code:: bash
 
-     docker run -v $(pwd)/licence.lic:/etc/axonivy-engine/licence.lic ... 
+     docker run -v $(pwd)/licence.lic:/ivy/configuration/licence.lic ... 
 
 * Provide it as environment variable ``IVY_LICENCE``:
 
