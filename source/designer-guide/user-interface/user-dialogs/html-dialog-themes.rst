@@ -17,9 +17,8 @@ following steps:
 
 -  The `PrimeFaces Built-In Themes
    <https://primefaces.github.io/primefaces/11_0_0/#/core/themes?id=built-in-themes>`__
-   and *Serenity Themes (deprecated)* are already included in the product. In addition, the
-   core offers a :ref:`freya-ivy <freya-themes>` and a :ref:`serenity-ivy
-   (deprecated) <serenity-themes>` theme. To use your own theme, copy your
+   are already included in the product. In addition, the
+   core offers a :ref:`freya-ivy <freya-themes>` theme. To use your own theme, copy your
    themeXY.jar file into the folder **/webapps/ivy/WEB-INF/lib** of Designer and
    Engine respectively.
 
@@ -77,36 +76,6 @@ You can do so by setting the cookie :code:`primefaces-theme-mode` to **light** o
     <h:body class="body-hd #{ivyFreyaTheme.mode}">
 
 
-.. _serenity-themes:
-
-Serenity Themes (Deprecated)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-If you choose a **serenity** theme, you can choose all the default serenity themes
-or the **serenity-ivy** theme. If you do so, you have to import an additional
-layout.css file:
-
-::
-
-  e.g., serenity-lime theme
-
-  <h:head>
-    <f:attribute name="primefaces.THEME" value="serenity-lime" />
-    <h:outputStylesheet name="css/layout-lime.css" library="serenity-layout" />
-    <h:outputScript name="js/layout.js" library="serenity-layout" />
-    ...
-  </h:head>
-
-  or the serenity-ivy theme
-
-  <h:head>
-    <f:attribute name="primefaces.THEME" value="serenity-ivy" />
-    <h:outputStylesheet name="css/layout-ivy.css" library="serenity-layout" />
-    <h:outputScript name="js/layout.js" library="serenity-layout" />
-    ...
-  </h:head>
-
-
 .. _primeflex:
 
 PrimeFlex
@@ -135,6 +104,5 @@ in new layouts (templates). You can also add it to your template as follows:
 Color Customizing
 ^^^^^^^^^^^^^^^^^
 
-If you want to change the colors of the :ref:`freya-ivy <freya-themes>` or
-:ref:`serenity-ivy (deprecated) <serenity-themes>` themes, please have a look at the :ref:`branding`
-chapter.
+If you want to change the colors of the :ref:`freya-ivy <freya-themes>`
+theme, please have a look at the :ref:`branding` chapter.
