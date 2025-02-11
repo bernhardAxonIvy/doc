@@ -14,8 +14,25 @@ See this code fragment from an input form:
    <p:calendar id="Birthday" value="#{data.birthday}" navigator="true" 
            required="true" pattern="dd.MM.yyyy">
        <f:convertDateTime pattern="dd.MM.yyyy" />
-   </p:calendar>            
-       
+   </p:calendar>
+
+
+IvyListItem Converter
+^^^^^^^^^^^^^^^^^^^^^
+
+If you use Primeface list components (e.g. SelectOneMenu, SelectOneListbox, Picklist..)
+there is a default-list converter from us ``ivy.ListItem``, which helps you to convert 
+your List of Objects. The Converter will work with the most common Datatypes as well.
+
+Example:
+
+::
+
+  <p:selectOneMenu value="#{data.converter.person}" converter="ivy.ListItem">
+    <f:selectItems value="#{data.converter.listOfPerson}" 
+      var="person" itemLabel="#{person.name}" itemValue="#{person}" />
+  </p:selectOneMenu>
+
 
 Custom Faces Converters
 ^^^^^^^^^^^^^^^^^^^^^^^
