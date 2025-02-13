@@ -31,6 +31,16 @@ Support for Case Scope Override removed
 Case scope overriding has been depreacted in LTS 8.0 and was now removed.
 Use :ref:`strict_overriding` if you rely on case scope overriding.
 
+
+Removal of Serenity PrimeFaces themes
+*************************************
+
+|tag-project-removed|
+
+We removed the Serenity themes including the :code:`serenity-ivy` theme. 
+Please use the :ref:`freya-ivy <freya-themes>` theme instead.
+
+
 ------------
 
 .. include:: _tagLegend.rst
