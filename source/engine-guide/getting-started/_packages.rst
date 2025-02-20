@@ -10,7 +10,7 @@
     operating system environment variable ``IVY_JAVA_HOME``. If not set, Axon
     Ivy Engine falls back to the JRE pointed to by ``JAVA_HOME``.
 
- * **Windows** The preferable package for Windows. It comes with a bundled Java
+  * **Windows** The preferable package for Windows. It comes with a bundled Java
     Runtime; otherwise, it is identical to the Linux package. So, if you want to
     supply your own JRE, use the Linux package.
 

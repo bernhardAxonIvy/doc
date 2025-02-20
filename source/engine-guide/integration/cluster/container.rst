@@ -39,17 +39,17 @@ configuration files in a container image looks as follows:
   FROM axonivy/axonivy-engine:|version|
   
   # Add your adapted ivy.yaml configuration file 
-  ADD --chown=ivy:ivy config/ivy.yaml /etc/axonivy-engine/ivy.yaml
+  ADD --chown=ivy:ivy config/ivy.yaml /ivy/configuration/ivy.yaml
   
   # Add your license file 
-  ADD --chown=ivy:ivy config/myCompany.lic /etc/axonivy-engine/myCompany.lic
+  ADD --chown=ivy:ivy config/myCompany.lic /ivy/configuration/myCompany.lic
   
   # Add your projects bundled in an application zip file 
-  ADD --chown=ivy:ivy application/target/application.zip /var/lib/axonivy-engine/deploy/application.zip
+  ADD --chown=ivy:ivy application/target/application.zip /ivy/deploy/application.zip
   
   # Create a files directory to be mounted as a docker volume 
   # to be shared between cluster nodes
-  RUN mkdir -p /var/lib/axonivy-engine/files && chown -R ivy /var/lib/axonivy-engine/files
+  RUN mkdir -p /ivy/files && chown -R ivy /ivy/files
 
 Examples
 --------
