@@ -6,7 +6,7 @@ Configure the Engine (Linux)
 Manual Setup
 ^^^^^^^^^^^^
 
-Shutdown the Axon Ivy Engine first by typing **shutdown** and **Y**::
+Shutdown the Axon Ivy Engine first by typing **shutdown**::
 
     ...
     Go to http://ivy1:8080/ to see the info page of Axon Ivy Engine.
@@ -17,7 +17,6 @@ Shutdown the Axon Ivy Engine first by typing **shutdown** and **Y**::
     shutdown
     
     ...
-    Should 'Axon Ivy Engine' be stopped? ([Y]es / [N]o): Y
     Stopping Axon Ivy Engine ...
     [  0%] Stopping Server
     ...
@@ -27,7 +26,7 @@ Let's install the license. Copy the license file :file:`*.lic` into folder
 
 .. code:: bash
 
-    cp ~/licence.lic /opt/ivy/engine/latest/configuration
+    cp ~/licence.lic /opt/ivy/engine/configuration
 
 To configure the system database, use the :code:`config-db` command of the
 **EngineConfigCli** tool. Replace **yourdatabaseserver** with the hostname of
@@ -54,7 +53,7 @@ Now, let's create the system database with the :code:`create-db` command.
   **process data**.
 
 Next, define an Axon Ivy Engine administrator by modifying :ref:`ivy-yaml` 
-in directory :file:`/etc/axonivy-engine-|major-version|` as detailed below:
+in directory :file:`/opt/ivy/engine/configuration/` as detailed below:
 
 .. literalinclude:: sample-ivy.yaml
   :language: yaml

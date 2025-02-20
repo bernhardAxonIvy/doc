@@ -12,7 +12,7 @@ application to that directory.
 
 .. code:: bash
 
-    cd /var/lib/axonivy-engine-|major-version|/deploy
+    cd /opt/ivy/engine/deploy
     sudo -u ivy wget https://developer.axonivy.com/permalink/lib/|major-version|/demos.zip
 
 .. Note::
