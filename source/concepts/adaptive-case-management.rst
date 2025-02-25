@@ -331,13 +331,21 @@ Listen for signals that have a ``created`` postfix. E.g
 
 |image5|
 
+.. warning::
+   Do not send a signal in a task that is aborted by that signal. Instead, use an additional System task to send the signal. 
+   Otherwise, the task that sends the signal will be destroyed leading to an error in the execution of that task.
+
+
+|image6|
+
+
 Signal Start Event
 ^^^^^^^^^^^^^^^^^^
 
 With a :ref:`process-element-signal-start` a new process is started if a
 matching signal code is received.
 
-|image6|
+|image7|
 
 .. _signal-receive-patterns:
 
@@ -397,4 +405,5 @@ the Public API for Signals (``ivy.wf.signals()``).
 .. |image3| image:: /_images/adaptive-case-management/attach-to-signaled-case-inscription.png
 .. |image4| image:: /_images/adaptive-case-management/credit-amount-change-listener.png
 .. |image5| image:: /_images/adaptive-case-management/signal-boundary.png
-.. |image6| image:: /_images/adaptive-case-management/signal-start.png
+.. |image6| image:: /_images/adaptive-case-management/quit-task-over-signalboundery.png
+.. |image7| image:: /_images/adaptive-case-management/signal-start.png
