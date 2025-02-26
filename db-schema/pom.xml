@@ -40,7 +40,7 @@
               <goal>generate-html</goal>
             </goals>
             <configuration>
-              <inputDirectory>../../workspace/ch.ivyteam.ivy.persistence/meta</inputDirectory>
+              <metaFile>../../workspace/ch.ivyteam.ivy.persistence/meta/SystemDatabase.meta</metaFile>
               <outputDirectory>${schema.folder}</outputDirectory>
             </configuration>
           </execution>
