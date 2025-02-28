@@ -9,3 +9,4 @@
    try-axon-ivy
    migration/index
    release-notes/index
+   system-requirements/index

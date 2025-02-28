@@ -8,5 +8,4 @@ Axon Ivy Engine
    service
    files
    modes
-   system-requirements
    license

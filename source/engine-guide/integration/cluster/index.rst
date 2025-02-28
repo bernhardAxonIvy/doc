@@ -43,9 +43,11 @@ See our example configurations on GitHub for :link-url:`nginx
 to set up an |ivy-engine| Cluster with docker-compose.
   
 
+.. _cluster-restrictions:
+
 **Restrictions**
 
-Please consider The following restrictions if you want to run an |ivy-engine| Cluster:
+Please consider the following restrictions if you want to run an |ivy-engine| Cluster:
 
 1. Each node needs access to all other nodes via UDP/Multicast. 
 2. Each node has to use the same system database.
@@ -56,6 +58,7 @@ Please consider The following restrictions if you want to run an |ivy-engine| Cl
    to the local cluster node where you made the change. 
 6. :ref:`Deployment <cluster-deployment>` during runtime is not supported and
    does not work.
+7. Some :ref:`operating systems <engine-system-requirements-os>` are not supported.
      
 You can solve most of the restrictions by using a containerized environment with
 your own :ref:`container image <cluster-container>`.

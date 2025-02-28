@@ -1,17 +1,17 @@
 .. _engine-system-requirements:
 
-System Requirements
-===================
+|ivy-engine|
+===============
 
 The following system requirements highly depend on the number of Named Users,
-Concurrent Users and deployed applications.
+Concurrent Users, and deployed applications.
 
 
 Hardware Requirements
 ---------------------
 
 By default, the |ivy-engine| runs a bundled OpenSearch server. It is possible
-to integarte with an :ref:`external <opensearch-external>` OpenSearch
+to integrate with an :ref:`external <opensearch-external>` OpenSearch
 instance. This also affects the minimum hardware requirements.
 
 
@@ -27,10 +27,10 @@ instance. This also affects the minimum hardware requirements.
   Minimum is 4 cores with 2 GHz, we recommend 16 cores with 2.5 GHz.
 
 
-.. rubric:: With external OpenSearch server
+.. rubric:: With an external OpenSearch server
 
 * **Memory (RAM)**:
-  Minimum is 4 GB. We recommend to use at least 16 GB.
+  Minimum is 4 GB. We recommend using at least 16 GB.
 
 * **Disk Space**:
   Minimum is 2 GB. We recommend 50 GB on a Solid State Disk (SSD).
@@ -50,16 +50,27 @@ included in our Windows installation and the Docker container.
 On Linux, we do not include Java SE 21. You may want to use Java SE 21 provided
 by your operating system or install `Eclipse Temurin <https://adoptium.net/>`_.
 
+.. _engine-system-requirements-os:
 
 Operating Systems
 -----------------
+
+The Enterprise Edition has some :ref:`advantages <cluster>` 
+but also some :ref:`restrictions <cluster-restrictions>` compared to the Standard Edition.
+
++-------------------+--------+-------+-------------------+
+|Engine Type        |Windows |Linux  |Container (Linux)  |
++===================+========+=======+===================+
+|Standard Edition   |Yes     |Yes    |Yes                |
++-------------------+--------+-------+-------------------+
+|Enterprise Edition |No      |No     |Yes                |
++-------------------+--------+-------+-------------------+
 
 * **Windows**:
   Windows Server 2022 and 2019
 
 * **Linux**:
   Linux x64 (tested on Ubuntu 24.04)
-
 
 System Database
 ---------------
@@ -82,20 +93,11 @@ System Database
 OpenSearch
 -------------
 
-Version 2.19. Only required if you run an :ref:`own <opensearch-external>`
+Version 2.19. Only required if you run your :ref:`own <opensearch-external>`
 OpenSearch instance!
 
 
 Browsers
 --------
-All popular web browsers are supported:
 
-- Firefox
-- Chrome
-- Opera
-- Safari
-- Edge
-
-For security reasons, we recommend using the latest available web browser
-versions. Most other web browsers that support the latest JavaScript, HTML 5 and
-CSS 3 specifications will work, too.
+See :ref:`browser-system-requirements`.
