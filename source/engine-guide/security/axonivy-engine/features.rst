@@ -41,9 +41,8 @@ cookie restrictions in :ref:`context-xml`.
 TLS
 ^^^
 
-TLS versions 1.2 and 1.3 are enabled by default. You can disable TLS version 1.2 by setting the ``
-Java system property 'jdk.tls.client.protocols' to value `"TLSv3"` in the :ref:`configuration/jvm.options <jvm-options>` file.
+TLS versions 1.2 and 1.3 are enabled by default. You can disable TLS version 1.2 by setting the 
+Java system property ``jdk.tls.client.protocols`` to value ``"TLSv1.3"`` in the :ref:`configuration/jvm.options <jvm-options>` file.
 
-See also property `jdk.tls.disabledAlgorithms` that can be set in the JVM's `conf/security/java.security` file 
+See also property ``jdk.tls.disabledAlgorithms`` that can be set in the JVM's ``conf/security/java.security`` file 
 for more options. 
-
