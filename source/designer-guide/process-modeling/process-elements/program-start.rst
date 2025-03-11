@@ -31,10 +31,11 @@ On this tab you define the Java class to be executed.
 
 Java Class
    Fully qualified name of the Java class that implements the
-   :public-api:`IProcessStartEventBean </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>`
-   interface. 
-   Use the :ref:`new-bean-class-wizard` |add-button| to create a new Java
-   source file with an example implementation of the bean class.
+   :public-api:`IProcessStartEventBean
+   </ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>` interface.
+   Use the :ref:`new-bean-class-wizard` |add-button| to create a new Java source
+   file with an example implementation of the bean class or select an
+   :ref:`existing one <process-element-program-start-existing-beans>`.
 
 Permission
    Defines the role that is required to be able to start a process. The
@@ -54,6 +55,18 @@ to configure its execution.
    :alt: Configuration Tab
 
    A custom editor example
+
+
+.. _process-element-program-start-existing-beans:
+
+Existing Beans
+--------------
+
+TimerBean
+  A bean that starts processes periodically with a defined delay or at certain
+  times defined by a daily time or standard CRON expression. The configuration can either
+  be configured directly or indirectly via a variable. If the variable changes
+  the bean is reconfigured automatically.
 
 
 Implementation
