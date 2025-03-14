@@ -4,7 +4,7 @@ Deployment
 ==========
 
 Deployments during runtime are not supported by the Axon Ivy Engine Cluster and do
-not not work. Use the :ref:`deployment directory <deployment-deploying>` instead
+not work. Use the :ref:`deployment directory <deployment-deploying>` instead
 to deploy your projects during Axon Ivy Engine Cluster node startup.
 
 .. note::

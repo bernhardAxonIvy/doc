@@ -47,9 +47,9 @@ configuration files in a container image looks as follows:
   # Add your projects bundled in an application zip file 
   ADD --chown=ivy:ivy application/target/application.zip /ivy/deploy/application.zip
   
-  # Create a files directory to be mounted as a docker volume 
+  # Create a data directory to be mounted as a docker volume 
   # to be shared between cluster nodes
-  RUN mkdir -p /ivy/files && chown -R ivy /ivy/files
+  RUN mkdir -p /ivy/data && chown -R ivy /ivy/data
 
 Examples
 --------
