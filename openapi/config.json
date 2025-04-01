@@ -1,4 +1,0 @@
-{"urls": [ 
-    {"url": "/doc/${releaseVersion}/openapi/system.json", "name": "system"},
-    {"url": "/doc/${releaseVersion}/openapi/default.json", "name": "default"}
-]}
