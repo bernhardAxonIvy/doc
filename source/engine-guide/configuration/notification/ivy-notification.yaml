@@ -5,6 +5,9 @@ SecuritySystems:
       Cleanup:
         # notifications older than this will be deleted on a daily basis
         DaysUntilDeletion: 90
+      #Decision whether a mail notification should be sent to an absent user.
+      #possible values are 'always', 'never' and 'noActiveSubsitute'
+      NotifyAbsentUser: always
       Channels:
         # each channel has it's own identifier
         web:

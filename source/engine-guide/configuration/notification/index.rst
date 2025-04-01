@@ -21,6 +21,13 @@ Each channel can be configured individually.
   :language: yaml
   :linenos:
 
+.. rubric:: Notification on absent users
+
+There is a global option to disable notifications if a user is absent; if no property is set, they will act like :code:`NotifyAbsentUser:always`.
+
+- Send a notification regardless of the user's absence: :code:`always`
+- Does not send a notification if the user is absent: :code:`never`
+- Send a notification only the absent user does not have an active substitute: :code:`noActiveSubstitute`
 
 .. rubric:: Events
 
