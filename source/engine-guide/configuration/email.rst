@@ -17,3 +17,6 @@ email server in :ref:`ivy-yaml`:
   :linenos:
 
 Users can customize their notification settings in the Portal.
+
+If you need to send emails with OAuth2 on office365.com, you can follow this
+guide here: https://community.axonivy.com/d/968-send-emails-via-smtp-using-oauth2-authentication-on-office365com
