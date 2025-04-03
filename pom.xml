@@ -133,6 +133,25 @@
               </artifactItems>
             </configuration>
           </execution>
+
+          <execution>
+            <id>unpack-release-notes</id>
+            <goals>
+              <goal>unpack</goal>
+            </goals>
+            <phase>generate-resources</phase>
+            <configuration>
+              <outputDirectory>${includes.target.folder}</outputDirectory>
+              <artifactItems>
+                <artifactItem>
+                  <groupId>ch.ivyteam.doc</groupId>
+                  <artifactId>doc-release-notes</artifactId>
+                  <version>${project.version}</version>
+                  <type>zip</type>
+                </artifactItem>
+              </artifactItems>
+            </configuration>
+          </execution>
         </executions>
 
         <configuration>
@@ -169,22 +188,6 @@
         <artifactId>maven-resources-plugin</artifactId>
         <executions>
           <execution>
-            <id>replace-other-tokens</id>
-            <phase>generate-resources</phase>
-            <goals>
-              <goal>copy-resources</goal>
-            </goals>
-            <configuration>
-              <outputDirectory>${includes.target.folder}</outputDirectory>
-              <resources>
-                <resource>
-                  <directory>source/axonivy/release-notes</directory>
-                  <filtering>true</filtering>
-                </resource>
-              </resources>
-            </configuration>
-          </execution>
-          <execution>
             <id>copy-configuration-files</id>
             <phase>generate-resources</phase>
             <goals>
@@ -218,29 +221,6 @@
         </executions>
       </plugin>
 
-      <plugin>
-        <groupId>ch.ivyteam.maven</groupId>
-        <artifactId>jira-plugin</artifactId>
-        <version>10.0.5</version>
-        <executions>
-          <execution>
-            <id>replace-changelog-tokens</id>
-            <phase>generate-resources</phase>
-            <goals>
-              <goal>generate-changelog</goal>
-            </goals>
-            <configuration>
-              <jiraServerId>axonivy.jira</jiraServerId>
-              <filterBy>project in (XIVY) AND fixVersion = ${ivy-version}</filterBy>
-              <whitelistJiraLabels>security,performance</whitelistJiraLabels>
-              <markdownHeaderIndent>##</markdownHeaderIndent>
-              <fileset>
-                <directory>${includes.target.folder}</directory>
-              </fileset>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-clean-plugin</artifactId>
