@@ -11,7 +11,7 @@ SQL Server Authentication
 
 With SQL Server Authentication you are connecting to the database with a database user.
 
-.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/ivy-systemdb-mssql.yaml
+.. literalinclude:: ../../../../target/resources/includes/configuration/templates/ivy-systemdb-mssql.yaml
   :language: yaml
   :linenos:
 
@@ -34,13 +34,13 @@ There are two ways to do that:
 
 **Using specific Windows user:**
 
-.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/ivy-systemdb-mssql-windows-user.yaml
+.. literalinclude:: ../../../../target/resources/includes/configuration/templates/ivy-systemdb-mssql-windows-user.yaml
   :language: yaml
   :linenos:
 
 **Using user credentials of the process owner:**
 
-.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/ivy-systemdb-mssql-windows-service-user.yaml
+.. literalinclude:: ../../../../target/resources/includes/configuration/templates/ivy-systemdb-mssql-windows-service-user.yaml
   :language: yaml
   :linenos:
 

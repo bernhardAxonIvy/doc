@@ -8,6 +8,6 @@ whether test users should be deployed, in which process model version the Axon
 Ivy project should be installed. All options and their detailed description are
 defined in the following :file:`deploy.options.yaml`.
 
-.. literalinclude:: ../../../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/deploy/sample.deploy.options.yaml
+.. literalinclude:: ../../../../../target/resources/includes/deploy/sample.deploy.options.yaml
   :language: yaml
   :linenos:

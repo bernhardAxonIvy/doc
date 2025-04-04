@@ -3,7 +3,7 @@
 MariaDB
 -------
 
-.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/ivy-systemdb-mariadb.yaml
+.. literalinclude:: ../../../../target/resources/includes/configuration/templates/ivy-systemdb-mariadb.yaml
   :language: yaml
   :linenos:
 

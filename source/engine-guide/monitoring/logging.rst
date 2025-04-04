@@ -50,7 +50,7 @@ The name of the runtime logger has a well defined format:
 
 **Example:**
 
-.. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/log4j2-runtimelog.xml
+.. literalinclude:: ../../../target/resources/includes/configuration/templates/log4j2-runtimelog.xml
   :language: xml
   :linenos:
 

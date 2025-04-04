@@ -18,7 +18,7 @@ Logging
 If you experience poor performance, you can log the individual requests
 to the Axon Ivy Engine log by setting the level of the request performance logger in :file:`[engineDir]/configuration/log4j2.xml`:
 
-.. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/log4j2-performance-request.xml
+.. literalinclude:: ../../../target/resources/includes/configuration/templates/log4j2-performance-request.xml
   :language: xml
   :linenos:
 

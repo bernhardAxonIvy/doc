@@ -3,7 +3,7 @@
 MySQL
 -----
 
-.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/ivy-systemdb-mysql.yaml
+.. literalinclude:: ../../../../target/resources/includes/configuration/templates/ivy-systemdb-mysql.yaml
   :language: yaml
   :linenos:
 

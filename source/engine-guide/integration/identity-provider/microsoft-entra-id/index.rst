@@ -17,13 +17,13 @@ configuration page to connect to Microsoft Entra ID.
 
 **Template**
 
-.. literalinclude:: ../../../../../../workspace/ch.ivyteam.ivy.security.identity.microsoft.entra.id/src/ch/ivyteam/ivy/security/identity/microsoft/entra/id/config/ivy-identity-provider-microsoft-entra-id.yaml
+.. literalinclude:: ../../../../../target/resources/includes/idp/entra/ivy-identity-provider-microsoft-entra-id.yaml
   :language: yaml
   :linenos:
 
 **Reference**
 
-.. literalinclude:: ../../../../../../workspace/ch.ivyteam.ivy.security.identity.microsoft.entra.id/src/ch/ivyteam/ivy/security/identity/microsoft/entra/id/config/microsoft-entra-id-reference.yaml
+.. literalinclude:: ../../../../../target/resources/includes/idp/entra/microsoft-entra-id-reference.yaml
   :language: yaml
   :linenos:
 

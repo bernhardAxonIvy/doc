@@ -9,12 +9,12 @@ like encryption, retention management, or versioning to only mention some of the
 
 **Template**
 
-.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.blob.storage.s3/src/ch/ivyteam/ivy/blob/storage/s3/s3-blob-storage-template.yaml
+.. literalinclude:: ../../../../target/resources/includes/storage/s3/s3-blob-storage-template.yaml
   :language: yaml
   :linenos:
 
 **Reference**
 
-.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.blob.storage.s3/src/ch/ivyteam/ivy/blob/storage/s3/s3-blob-storage-reference.yaml
+.. literalinclude:: ../../../../target/resources/includes/storage/s3/s3-blob-storage-reference.yaml
   :language: yaml
   :linenos:

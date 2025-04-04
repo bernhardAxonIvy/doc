@@ -13,13 +13,13 @@ the user's email address is used. If you enable this channel, you also need to:
 
 **Template**
 
-.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.notification.microsoft.teams/src/ch/ivyteam/ivy/notification/microsoft/teams/impl/microsoft-teams-channel-template.yaml
+.. literalinclude:: ../../../../target/resources/includes/notification/teams/microsoft-teams-channel-template.yaml
   :language: yaml
   :linenos:
 
 **Reference**
 
-.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.notification.microsoft.teams/src/ch/ivyteam/ivy/notification/microsoft/teams/impl/microsoft-teams-channel-reference.yaml
+.. literalinclude:: ../../../../target/resources/includes/notification/teams/microsoft-teams-channel-reference.yaml
   :language: yaml
   :linenos:
 

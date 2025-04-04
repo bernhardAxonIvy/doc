@@ -3,7 +3,7 @@
 PostgreSQL
 ----------
 
-.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/ivy-systemdb-postgres.yaml
+.. literalinclude:: ../../../../target/resources/includes/configuration/templates/ivy-systemdb-postgres.yaml
   :language: yaml
   :linenos:
 

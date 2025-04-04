@@ -31,7 +31,7 @@ we provide an auto configuration script.
 
 Next you need to enable SSO in :ref:`ivy-yaml`:
 
-.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/ivy-sso.yaml
+.. literalinclude:: ../../../../target/resources/includes/configuration/templates/ivy-sso.yaml
   :language: yaml
   :linenos:
 

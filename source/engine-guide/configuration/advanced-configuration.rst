@@ -59,7 +59,7 @@ automatically generated.
 Here is an example of a business calendar definition;
 see :ref:`app-yaml` for more detailed information.
 
-.. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/app-businesscalendar.yaml
+.. literalinclude:: ../../../target/resources/includes/configuration/templates/app-businesscalendar.yaml
   :language: yaml
   :linenos:
 

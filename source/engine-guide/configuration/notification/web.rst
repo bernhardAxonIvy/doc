@@ -6,6 +6,6 @@ are shown in Axon Ivy Portal.
 
 **Template**
 
-.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.notification.web/src/ch/ivyteam/ivy/notification/web/impl/web-channel-template.yaml
+.. literalinclude:: ../../../../target/resources/includes/notification/web/web-channel-template.yaml
   :language: yaml
   :linenos:

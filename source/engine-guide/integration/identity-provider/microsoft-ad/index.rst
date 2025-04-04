@@ -12,13 +12,13 @@ offers a detailed configuration page to connect Microsoft Active Directory.
 
 **Template**
 
-.. literalinclude:: ../../../../../../workspace/ch.ivyteam.ivy.security.identity.jndi/src/ch/ivyteam/ivy/security/identity/jndi/ads/ivy-identity-provider-microsoft-ad.yaml
+.. literalinclude:: ../../../../../target/resources/includes/idp/msad/ivy-identity-provider-microsoft-ad.yaml
   :language: yaml
   :linenos:
 
 
 **Reference**
 
-.. literalinclude:: ../../../../../../workspace/ch.ivyteam.ivy.security.identity.jndi/src/ch/ivyteam/ivy/security/identity/jndi/ads/microsoft-ad-reference.yaml
+.. literalinclude:: ../../../../../target/resources/includes/idp/msad/microsoft-ad-reference.yaml
   :language: yaml
   :linenos:

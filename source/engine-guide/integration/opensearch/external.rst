@@ -14,6 +14,6 @@ requirements <engine-system-requirements>`.
 To integrate the |ivy-engine| with an external OpenSearch instance you need
 configure the :ref:`ivy-yaml`.
 
-.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/ivy-external-opensearch.yaml
+.. literalinclude:: ../../../../target/resources/includes/configuration/templates/ivy-external-opensearch.yaml
   :language: yaml
   :linenos:

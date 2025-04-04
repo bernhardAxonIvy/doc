@@ -7,7 +7,7 @@ Administrators can configure, monitor and manage the Axon Ivy Engine.
 At least one administrator must be configured in :ref:`ivy-yaml`.
 
 
-.. literalinclude:: ../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/ivy-administrator.yaml
+.. literalinclude:: ../../../target/resources/includes/configuration/templates/ivy-administrator.yaml
   :language: yaml
   :linenos:
 

@@ -10,5 +10,5 @@ request sent to the Axon Ivy Engine.
 
 This is our Single Sign-on valve. Use it as template and adapt it your needs:
 
-.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.webserver/src/ch/ivyteam/ivy/webserver/security/SingleSignOnValve.java
+.. literalinclude:: ../../../../target/resources/includes/sso/SingleSignOnValve.java
    :language: java

@@ -18,8 +18,6 @@
     <includes.target.folder>${project.build.directory}/resources/includes</includes.target.folder>
     <engine.guide.url>https://developer.axonivy.com/doc/${doc.version}/engine-guide</engine.guide.url>
     <designer.guide.url>https://developer.axonivy.com/doc/${doc.version}/designer-guide</designer.guide.url>
-    <configuration.root>../workspace/ch.ivyteam.ivy.configuration/</configuration.root>
-    <configuration.defaults>ch/ivyteam/ivy/configuration/internal/defaults</configuration.defaults>
   </properties>
 
   <build>
@@ -152,75 +150,34 @@
               </artifactItems>
             </configuration>
           </execution>
-        </executions>
 
+          <execution>
+            <id>unpack-configuration-files</id>
+            <goals>
+              <goal>unpack</goal>
+            </goals>
+            <phase>generate-resources</phase>
+            <configuration>
+              <outputDirectory>${includes.target.folder}</outputDirectory>
+              <artifactItems>
+                <artifactItem>
+                  <groupId>ch.ivyteam.doc</groupId>
+                  <artifactId>doc-config-files</artifactId>
+                  <version>${project.version}</version>
+                  <type>zip</type>
+                </artifactItem>
+              </artifactItems>
+            </configuration>
+          </execution>
+        </executions>
         <configuration>
           <overWriteSnapshots>true</overWriteSnapshots>
         </configuration>
       </plugin>
-
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>buildnumber-maven-plugin</artifactId>
       </plugin>
-
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>properties-maven-plugin</artifactId>
-        <version>1.2.1</version>
-        <executions>
-          <execution>
-            <id>read.yaml.version.properties</id>
-            <phase>initialize</phase>
-            <goals>
-              <goal>read-project-properties</goal>
-            </goals>
-            <configuration>
-              <files>
-                <file>../workspace/ch.ivyteam.ivy.configuration/src/ch/ivyteam/ivy/configuration/yaml/historic/latestYaml.properties</file>
-              </files>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-resources-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>copy-configuration-files</id>
-            <phase>generate-resources</phase>
-            <goals>
-              <goal>copy-resources</goal>
-            </goals>
-            <configuration>
-              <outputDirectory>${includes.target.folder}</outputDirectory>
-              <delimiters>
-                <delimiter>@</delimiter>
-              </delimiters>
-              <useDefaultDelimiters>false</useDefaultDelimiters>
-              <resources>
-                <resource>
-                  <directory>${configuration.root}/resources/${configuration.defaults}</directory>
-                  <filtering>true</filtering>
-                  <includes>
-                    <include>*.xml</include>
-                    <include>*.css</include>
-                  </includes>
-                </resource>
-                <resource>
-                  <directory>${configuration.root}/resources-generated/${configuration.defaults}</directory>
-                  <filtering>true</filtering>
-                  <includes>
-                    <include>*.yaml</include>
-                  </includes>
-                </resource>
-              </resources>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-clean-plugin</artifactId>

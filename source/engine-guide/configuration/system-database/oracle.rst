@@ -3,7 +3,7 @@
 Oracle
 ------
 
-.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.server.file.feature/root/configuration/templates/ivy-systemdb-oracle.yaml
+.. literalinclude:: ../../../../target/resources/includes/configuration/templates/ivy-systemdb-oracle.yaml
   :language: yaml
   :linenos:
 
@@ -42,7 +42,7 @@ If database will be created by the Axon Ivy Engine the collate is set to ``Latin
        for you with the Setup Wizard. You can use the following script to
        create a new user with sufficient permissions:
 
-       .. literalinclude:: ../../../../../workspace/ch.ivyteam.db/src/ch/ivyteam/db/jdbc/sql/oracle-create-user.sql
+       .. literalinclude:: ../../../../target/resources/includes/db/oracle/oracle-create-user.sql
          :language: sql
 
     #. You may want to create a new tablespace (e.g., AxonIvy) where the Axon Ivy Engine

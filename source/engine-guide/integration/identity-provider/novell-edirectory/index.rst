@@ -12,12 +12,12 @@ offers a detailed configuration page to connect Novell eDirectory.
 
 **Template**
 
-.. literalinclude:: ../../../../../../workspace/ch.ivyteam.ivy.security.identity.jndi/src/ch/ivyteam/ivy/security/identity/jndi/nds/ivy-identity-provider-novell-edirectory.yaml
+.. literalinclude:: ../../../../../target/resources/includes/idp/novel/ivy-identity-provider-novell-edirectory.yaml
   :language: yaml
   :linenos:
 
 **Reference**
 
-.. literalinclude:: ../../../../../../workspace/ch.ivyteam.ivy.security.identity.jndi/src/ch/ivyteam/ivy/security/identity/jndi/nds/novell-edirectory-reference.yaml
+.. literalinclude:: ../../../../../target/resources/includes/idp/novel/novell-edirectory-reference.yaml
   :language: yaml
   :linenos:

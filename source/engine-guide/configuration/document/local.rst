@@ -7,13 +7,13 @@ The local document storage stores the files in the local file system. The root p
 
 **Template**
 
-.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.blob.storage/src/ch/ivyteam/ivy/blob/storage/local/local-blob-storage-template.yaml
+.. literalinclude:: ../../../../target/resources/includes/storage/local/local-blob-storage-template.yaml
   :language: yaml
   :linenos:
 
 **Reference**
 
-.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.blob.storage/src/ch/ivyteam/ivy/blob/storage/local/local-blob-storage-reference.yaml
+.. literalinclude:: ../../../../target/resources/includes/storage/local/local-blob-storage-reference.yaml
   :language: yaml
   :linenos:
 

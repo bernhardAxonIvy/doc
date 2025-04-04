@@ -21,14 +21,14 @@ connect Keycloak.
 
 **Template**
 
-.. literalinclude:: ../../../../../../workspace/ch.ivyteam.ivy.security.identity.keycloak/src/ch/ivyteam/ivy/security/identity/keycloak/config/ivy-identity-provider-keycloak.yaml
+.. literalinclude:: ../../../../../target/resources/includes/idp/keycloak/ivy-identity-provider-keycloak.yaml
   :language: yaml
   :linenos:
 
 
 **Reference**
 
-.. literalinclude:: ../../../../../../workspace/ch.ivyteam.ivy.security.identity.keycloak/src/ch/ivyteam/ivy/security/identity/keycloak/config/keycloak-reference.yaml
+.. literalinclude:: ../../../../../target/resources/includes/idp/keycloak/keycloak-reference.yaml
   :language: yaml
   :linenos:
 

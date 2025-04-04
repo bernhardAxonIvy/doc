@@ -22,6 +22,6 @@ you can make the following settings for all of your Identity Providers:
 
 .. _ivy-identity-provider-yaml:
 
-.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.security/src/ch/ivyteam/ivy/security/synch/config/user-synch-reference.yaml
+.. literalinclude:: ../../../../target/resources/includes/idp/synch/user-synch-reference.yaml
   :language: yaml
   :linenos:

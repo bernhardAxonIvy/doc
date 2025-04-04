@@ -10,6 +10,6 @@ This channel provides notifications via mail. If you enable this channel, you al
 
 **Template**
 
-.. literalinclude:: ../../../../../workspace/ch.ivyteam.ivy.notification.mail/src/ch/ivyteam/ivy/notification/mail/impl/mail-channel-template.yaml
+.. literalinclude:: ../../../../target/resources/includes/notification/mail/mail-channel-template.yaml
   :language: yaml
   :linenos:
