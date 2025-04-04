@@ -13,19 +13,17 @@ pipeline {
     stage('build') {
       steps {
         script {
-          def release = load 'jenkins/release.groovy'
-
           def version = 'dev'
           def branchVersion = 'master'
           if (env.BRANCH_NAME.startsWith('release/')) {
-            version = release.evaluateMavenProperty('ivy-release-version') // minor version, e.g. 9.1
+            version = evaluateMavenProperty('ivy-release-version') // minor version, e.g. 9.1
             branchVersion = version
           }
 
           def integrateDependencies = {
             maven cmd: "-f pom.xml clean package -Ddoc.version=${version}"
           }
-          release.runMaven(integrateDependencies)
+          runMaven(integrateDependencies)
 
           sh "./substitute.sh ${version}"
 
@@ -51,8 +49,7 @@ pipeline {
       }
       steps {
         script {
-          def release = load 'jenkins/release.groovy'
-          def releaseVersion = '13.1' //release.evaluateMavenProperty('version') // e.g 9.1
+          def releaseVersion = '13.1' //evaluateMavenProperty('version') // e.g 9.1
 
           def deployer = {
             def host = 'axonivya@217.26.51.247'
@@ -68,9 +65,38 @@ pipeline {
 
             sh "ssh $host ln -fns $destFolder $homeDir/data/doc/$releaseVersion"
           }
-          release.runSSH(deployer)
+          runSSH(deployer)
         }
       }
+    }
+  }
+}
+
+def evaluateMavenProperty(def propertyName) {
+  def cmd = { mavenPropertyEvaluate(propertyName) }
+  runMaven(cmd)
+}
+
+def mavenPropertyEvaluate(def propertyName) {
+  def cmd = "mvn -f pom.xml help:evaluate -Dexpression=$propertyName -q -DforceStdout"
+  def value = sh (script: cmd, returnStdout: true)
+  echo "value of maven property $propertyName is $value"
+  if (value == "null object or invalid expression") {
+    throw new Exception("could not evaluate maven property $propertyName");
+  }
+  return value
+}
+
+def runMaven(command) {
+  docker.image('maven:3.9.9-eclipse-temurin-21').inside {
+    command.call()
+  }
+}
+
+def runSSH(command) {
+  docker.image('axonivy/build-container:ssh-client-1').inside {
+    sshagent(['zugprojenkins-ssh']) {
+      command.call()
     }
   }
 }
