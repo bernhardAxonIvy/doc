@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../source/axonivy/index.rst:2
 msgid "Axon Ivy"
-msgstr ""
+msgstr "Axon Ivy warmly welcomes Japan"
 
 #: ../../source/axonivy/migration/deprecation.rst:4
 msgid "Deprecation and Removal"
