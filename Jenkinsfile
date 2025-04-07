@@ -16,7 +16,7 @@ pipeline {
           def version = 'dev'
           def branchVersion = 'master'
           if (env.BRANCH_NAME.startsWith('release/')) {
-            version = evaluateMavenProperty('ivy-release-version') // minor version, e.g. 9.1
+            version = evalReleaseVersion()
             branchVersion = version
           }
 
@@ -49,8 +49,7 @@ pipeline {
       }
       steps {
         script {
-          def releaseVersion = '13.1' //evaluateMavenProperty('version') // e.g 9.1
-
+          def releaseVersion = evalReleaseVersion()
           def deployer = {
             def host = 'axonivya@217.26.51.247'
             def homeDir = '/home/axonivya'
@@ -72,13 +71,22 @@ pipeline {
   }
 }
 
+def evalReleaseVersion() {
+  def version = evaluateMavenProperty('project.version')
+  def matcher = (version =~ /(\d+.\d+).\d+(\-SNAPSHOT)?/)
+  if (matcher.matches()) {
+    return matcher.group(1)  // minor version, e.g. 9.1
+  } 
+  throw new Exception("Failed to evaluate release version from: $version")
+}
+
 def evaluateMavenProperty(def propertyName) {
   def cmd = { mavenPropertyEvaluate(propertyName) }
   runMaven(cmd)
 }
 
 def mavenPropertyEvaluate(def propertyName) {
-  def cmd = "mvn -f pom.xml help:evaluate -Dexpression=$propertyName -q -DforceStdout"
+  def cmd = "mvn help:evaluate -Dexpression=$propertyName -q -DforceStdout"
   def value = sh (script: cmd, returnStdout: true)
   echo "value of maven property $propertyName is $value"
   if (value == "null object or invalid expression") {
