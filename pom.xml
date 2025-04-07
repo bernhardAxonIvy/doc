@@ -8,6 +8,7 @@
   <name>Axon Ivy Platform</name>
 
   <properties>
+    <ivy-version>13.1.0-SNAPSHOT</ivy-version>
     <images.folder>source/_images</images.folder>
     <includes.target.folder>${project.build.directory}/resources/includes</includes.target.folder>
     <engine.guide.url>https://developer.axonivy.com/doc/${doc.version}/engine-guide</engine.guide.url>
@@ -53,63 +54,63 @@
                 <artifactItem>
                   <groupId>ch.ivyteam.doc</groupId>
                   <artifactId>doc-images</artifactId>
-                  <version>${project.version}</version>
+                  <version>${ivy-version}</version>
                   <type>zip</type>
                 </artifactItem>
 
                 <artifactItem>
                   <groupId>ch.ivyteam.doc</groupId>
                   <artifactId>doc-screenshots-designer</artifactId>
-                  <version>${project.version}</version>
+                  <version>${ivy-version}</version>
                   <type>zip</type>
                 </artifactItem>
 
                 <artifactItem>
                   <groupId>ch.ivyteam.doc</groupId>
                   <artifactId>doc-screenshots-engine</artifactId>
-                  <version>${project.version}</version>
+                  <version>${ivy-version}</version>
                   <type>zip</type>
                 </artifactItem>
 
                 <artifactItem>
                   <groupId>ch.ivyteam.process</groupId>
                   <artifactId>process-editor-screenshots</artifactId>
-                  <version>${project.version}</version>
+                  <version>${ivy-version}</version>
                   <type>zip</type>
                 </artifactItem>
 
                 <artifactItem>
                   <groupId>ch.ivyteam.dialog</groupId>
                   <artifactId>form-editor-screenshots</artifactId>
-                  <version>${project.version}</version>
+                  <version>${ivy-version}</version>
                   <type>zip</type>
                 </artifactItem>
 
                 <artifactItem>
                   <groupId>ch.ivyteam.variable</groupId>
                   <artifactId>variable-editor-screenshots</artifactId>
-                  <version>${project.version}</version>
+                  <version>${ivy-version}</version>
                   <type>zip</type>
                 </artifactItem>
 
                 <artifactItem>
                   <groupId>ch.ivyteam.dataclass</groupId>
                   <artifactId>dataclass-editor-screenshots</artifactId>
-                  <version>${project.version}</version>
+                  <version>${ivy-version}</version>
                   <type>zip</type>
                 </artifactItem>
 
                 <artifactItem>
                   <groupId>ch.ivyteam.ui.icons</groupId>
                   <artifactId>ui-icons</artifactId>
-                  <version>${project.version}</version>
+                  <version>${ivy-version}</version>
                   <type>zip</type>
                 </artifactItem>
 
                 <artifactItem>
                   <groupId>ch.ivyteam.neo</groupId>
                   <artifactId>neo-designer-screenshots</artifactId>
-                  <version>${project.version}</version>
+                  <version>${ivy-version}</version>
                   <type>zip</type>
                 </artifactItem>
               </artifactItems>
@@ -128,7 +129,7 @@
                 <artifactItem>
                   <groupId>ch.ivyteam.enginecockpit</groupId>
                   <artifactId>engine-cockpit-selenium-test</artifactId>
-                  <version>${project.version}</version>
+                  <version>${ivy-version}</version>
                   <type>zip</type>
                 </artifactItem>
               </artifactItems>
@@ -147,7 +148,7 @@
                 <artifactItem>
                   <groupId>ch.ivyteam.workflow</groupId>
                   <artifactId>dev-workflow-ui-screenshots</artifactId>
-                  <version>${project.version}</version>
+                  <version>${ivy-version}</version>
                   <type>zip</type>
                 </artifactItem>
               </artifactItems>
@@ -166,7 +167,7 @@
                 <artifactItem>
                   <groupId>ch.ivyteam.doc</groupId>
                   <artifactId>doc-release-notes</artifactId>
-                  <version>${project.version}</version>
+                  <version>${ivy-version}</version>
                   <type>zip</type>
                 </artifactItem>
               </artifactItems>
@@ -185,7 +186,7 @@
                 <artifactItem>
                   <groupId>ch.ivyteam.doc</groupId>
                   <artifactId>doc-config-files</artifactId>
-                  <version>${project.version}</version>
+                  <version>${ivy-version}</version>
                   <type>zip</type>
                 </artifactItem>
               </artifactItems>
