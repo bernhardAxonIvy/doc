@@ -22,8 +22,16 @@ jobs:
       run: |
         docker run -v .:/doc -u $(id -u) axonivy/build-container:read-the-docs-2 make\
           generatePO BASEDIR=/doc LOCALEDIR=/doc/locale LANGUAGE=ja
-    - name: Create Pull Request
+    - name: Locale Diff
+      id: locale-diff
       run: |
+        echo "LOCALE_DIFF<<EOF" >> $GITHUB_ENV
+        git --no-pager diff --name-only locale >> $GITHUB_ENV
+        echo "EOF" >> $GITHUB_ENV
+    - name: Create Pull Request
+      if: ${{ env.LOCALE_DIFF != '' }}
+      run: |
+        echo "committing changes:\n ${{ env.LOCALE_DIFF }}"
         git config user.email "${{ github.actor }}@users.noreply.github.com"
         git config user.name "${{ github.actor }}"
         git checkout -b languages
@@ -35,3 +43,4 @@ jobs:
           --label "i18n"
       env:
         GH_TOKEN: ${{ github.token }}
+
