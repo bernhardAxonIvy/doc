@@ -17,7 +17,8 @@ jobs:
       run: | 
         version=dev
         ./substitute.sh ${version}
-        docker run -v .:/doc -u $(id -u) axonivy/build-container:read-the-docs-2 make gettext BASEDIR=/doc
+        docker run -v .:/doc -u $(id -u) axonivy/build-container:read-the-docs-2 make \
+          gettext BASEDIR=/doc GETTEXT_COMPACT=user-guide
     - name: Update PO Languages
       run: |
         docker run -v .:/doc -u $(id -u) axonivy/build-container:read-the-docs-2 make\
@@ -26,7 +27,7 @@ jobs:
       id: locale-diff
       run: |
         echo "LOCALE_DIFF<<EOF" >> $GITHUB_ENV
-        git --no-pager diff --name-only locale >> $GITHUB_ENV
+        git --no-pager status -s locale/* >> $GITHUB_ENV
         echo "EOF" >> $GITHUB_ENV
     - name: Create Pull Request
       if: ${{ env.LOCALE_DIFF != '' }}
