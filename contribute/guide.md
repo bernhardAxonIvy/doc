@@ -27,6 +27,9 @@ Use Eclipse or Visual Studio Code.
       could be interesting but under active development.
 
 * **Visual Studio Code**
+
+  recommended plugins are outlined in [extensions.json](../.vscode/extensions.json).
+
     * Plugin *lextudio.restructuredtext* for syntax highlighting and code completion.
     * Plugin *rewrap* to wrap lines to 80 characters with ALT+Q
     * Plugin *Graphviz Interactive Preview* (by tintinweb) for interactive preview of our dot images.
