@@ -8,8 +8,6 @@ interaction of humans with their digital systems. The platform is typically
 responsible for the most precious business cases where companies produce value.
 Here is how we do it:
 
-Try to get warm with Weblate
-
 **Visualize**
     Our platform allows you to **document business processes fast and
     intuitive**. A shared view of users, roles, departments and technical
