@@ -9,4 +9,5 @@ Reference
    setup-wizard
    migration-wizard
    engine-cockpit/index
+   openapi
    systemdb-schema/index
