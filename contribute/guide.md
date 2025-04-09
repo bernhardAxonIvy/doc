@@ -1,4 +1,4 @@
-# Doc Contribution Guide
+# Doc Contribution Guide ✍️
 
 **Note:** All Axon Ivy documentation must be written in English with *American spelling*!
 
