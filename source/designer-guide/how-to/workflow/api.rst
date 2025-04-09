@@ -63,7 +63,7 @@ environment variable <ivyscript-reference-environmentvariable>`.
 REST API
 ~~~~~~~~
 
-There is an :api-browser-url:`REST workflow API <workflow>` available that
+There is an :api-browser-url:`REST workflow API <default#/workflow>` available that
 allows third-party services to interact with workflow Tasks, Cases, and the like.
 
 The workflow API is enabled by default. Disable it by setting
