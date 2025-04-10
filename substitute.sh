@@ -3,13 +3,12 @@
 version="$1"            # e.g. 10.0
 major="${version%%.*}"  # e.g. 10
 
-placeholderstarts="\|(ivy|version|major)" # start of placeholder strings
+placeholderstarts="\|(version)" # start of placeholder strings
 
 replace_placeholders() {
     name=$1
     echo "substituting $name"
-    sed -i -E "s/\|version\|/$version/g; \
-            s/\|major-version\|/$major/g;" \
+    sed -i -E "s/\|version\|/$version/g;" \
             $name
     cat $name | grep -E $placeholderstarts
 }
