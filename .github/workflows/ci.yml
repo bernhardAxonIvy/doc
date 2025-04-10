@@ -20,9 +20,8 @@ jobs:
         cache: maven
     - name: Build
       run: |
-        version=dev
+        # version=dev
         # mvn -B -f pom.xml clean package -Ddoc.version=$version
-        ./substitute.sh ${version}
         docker run -v .:/doc -u $(id -u) axonivy/build-container:read-the-docs-2 make html BASEDIR=/doc
         rm build/html/portal-guide/index.html
     - name: Archive build artifact

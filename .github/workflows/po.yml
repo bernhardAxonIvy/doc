@@ -15,8 +15,6 @@ jobs:
     - uses: actions/checkout@v4
     - name: POT Templates
       run: | 
-        version=dev
-        ./substitute.sh ${version}
         docker run -v .:/doc -u $(id -u) axonivy/build-container:read-the-docs-2 make \
           gettext BASEDIR=/doc GETTEXT_COMPACT=user-guide
     - name: Update PO Languages
