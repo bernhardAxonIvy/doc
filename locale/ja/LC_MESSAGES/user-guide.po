@@ -8,17 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-08 11:30+0000\n"
+"POT-Creation-Date: 2025-04-10 09:18+0000\n"
 "PO-Revision-Date: 2025-04-08 12:14+0000\n"
 "Last-Translator: Reguel <reguel.wermelinger@axonivy.com>\n"
-"Language-Team: Japanese <https://hosted.weblate.org/projects/doc-libre/"
-"userguide/ja/>\n"
 "Language: ja\n"
+"Language-Team: Japanese <https://hosted.weblate.org/projects/doc-"
+"libre/userguide/ja/>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.11-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../source/axonivy/index.rst:2 ../../source/index.rst:2
@@ -1158,14 +1157,10 @@ msgid ""
 msgstr ""
 
 #: ../../source/axonivy/what-axon-ivy.rst:11
-msgid "Try to get warm with Weblate"
-msgstr ""
-
-#: ../../source/axonivy/what-axon-ivy.rst:13
 msgid "**Visualize**"
 msgstr ""
 
-#: ../../source/axonivy/what-axon-ivy.rst:14
+#: ../../source/axonivy/what-axon-ivy.rst:12
 msgid ""
 "Our platform allows you to **document business processes fast and "
 "intuitive**. A shared view of users, roles, departments and technical "
@@ -1174,11 +1169,11 @@ msgid ""
 " improvements arise from anyone involved in the process."
 msgstr ""
 
-#: ../../source/axonivy/what-axon-ivy.rst:20
+#: ../../source/axonivy/what-axon-ivy.rst:18
 msgid "**Automate**"
 msgstr ""
 
-#: ../../source/axonivy/what-axon-ivy.rst:21
+#: ../../source/axonivy/what-axon-ivy.rst:19
 msgid ""
 "Documented processes are good. But what you really want is to **drive "
 "your highly valuable processes automatically**. Employees are often "
@@ -1195,11 +1190,11 @@ msgid ""
 "smartphones or workstations."
 msgstr ""
 
-#: ../../source/axonivy/what-axon-ivy.rst:34
+#: ../../source/axonivy/what-axon-ivy.rst:32
 msgid "**Improve**"
 msgstr ""
 
-#: ../../source/axonivy/what-axon-ivy.rst:35
+#: ../../source/axonivy/what-axon-ivy.rst:33
 msgid ""
 "The digitalization of your company can **evolve over time**. We favor "
 "small predictable improvements over big-bang solutions. The Axon Ivy "
@@ -1213,7 +1208,7 @@ msgid ""
 "business transformations become reasonable and predictable."
 msgstr ""
 
-#: ../../source/axonivy/what-axon-ivy.rst:46
+#: ../../source/axonivy/what-axon-ivy.rst:44
 msgid ""
 "The Axon Ivy Platform consists of the :ref:`Axon Ivy Designer <designer-"
 "guide>` which enables the drawing, simulation and implementation of "
@@ -10770,9 +10765,9 @@ msgstr ""
 
 #: ../../source/designer-guide/how-to/workflow/api.rst:66
 msgid ""
-"There is an :api-browser-url:`REST workflow API <workflow>` available "
-"that allows third-party services to interact with workflow Tasks, Cases, "
-"and the like."
+"There is an :api-browser-url:`REST workflow API <default#/workflow>` "
+"available that allows third-party services to interact with workflow "
+"Tasks, Cases, and the like."
 msgstr ""
 
 #: ../../source/designer-guide/how-to/workflow/api.rst:69
@@ -28504,9 +28499,10 @@ msgstr ""
 #: ../../source/engine-guide/getting-started/windows/deploy.rst:4
 msgid ""
 "Let's deploy an Axon Ivy project to the Axon Ivy Engine. Download the "
-":dev-url:`demo application </permalink/lib/dev/demos.zip>` and drop it in"
-" :file:`[engineDir]/deploy` folder. Refresh the main page of the Axon Ivy"
-" Engine. There will be a new section for this deployed app."
+":dev-url:`demo application </maven/com.axonivy.demo/ivy-demos-"
+"app/13.1/zip>` and drop it in :file:`[engineDir]/deploy` folder. Refresh "
+"the main page of the Axon Ivy Engine. There will be a new section for "
+"this deployed app."
 msgstr ""
 
 #: ../../source/engine-guide/getting-started/windows/deploy.rst:9
@@ -33334,6 +33330,24 @@ msgstr ""
 msgid "Restart the Axon Ivy Engine."
 msgstr ""
 
+#: ../../source/engine-guide/reference/openapi.rst:4
+msgid "OpenAPI"
+msgstr ""
+
+#: ../../source/engine-guide/reference/openapi.rst:6
+msgid ""
+"Axon Ivy Engines serve REST endpoints, allowing third-parties to interact"
+" with the engine."
+msgstr ""
+
+#: ../../source/engine-guide/reference/openapi.rst:9
+msgid ""
+"The endpoints can be examined in the :api-browser-url:`OpenAPI "
+"Browser<default>`. Note that there are :api-browser-url:`security-system "
+"<default>` endpoints and :api-browser-url:`system <system>` wide "
+"endpoints for deployment, which can be selected on the top-right corner."
+msgstr ""
+
 #: ../../source/engine-guide/reference/setup-wizard.rst:4
 msgid "Setup Wizard"
 msgstr ""
@@ -34132,3 +34146,26 @@ msgstr ""
 #: ../../source/public-api/index.rst:4
 msgid "This is just an placeholder and will be replaced with javadoc."
 msgstr ""
+
+#~ msgid "Try to get warm with Weblate"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "There is an :api-browser-url:`REST "
+#~ "workflow API <workflow>` available that "
+#~ "allows third-party services to interact"
+#~ " with workflow Tasks, Cases, and the"
+#~ " like."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Let's deploy an Axon Ivy project "
+#~ "to the Axon Ivy Engine. Download "
+#~ "the :dev-url:`demo application "
+#~ "</permalink/lib/dev/demos.zip>` and drop it in"
+#~ " :file:`[engineDir]/deploy` folder. Refresh the"
+#~ " main page of the Axon Ivy "
+#~ "Engine. There will be a new "
+#~ "section for this deployed app."
+#~ msgstr ""
+
