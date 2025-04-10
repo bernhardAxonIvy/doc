@@ -25,8 +25,6 @@ pipeline {
           }
           runMaven(integrateDependencies)
 
-          sh "./substitute.sh ${version}"
-
           docker.image('axonivy/build-container:read-the-docs-2').inside {
             sh "make -C /doc-build html BASEDIR='${env.WORKSPACE}' VERSION=${version} BRANCH_VERSION=${branchVersion}"
           }

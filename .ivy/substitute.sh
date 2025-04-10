@@ -1,16 +1,19 @@
 #!/bin/bash
 
-version="$1"            # e.g. 10.0
-major="${version%%.*}"  # e.g. 10
+newVersion="$1" # e.g. 14.0
+oldVersion="$2" # e.g. 13.1
 
-placeholderstarts="\|(version)" # start of placeholder strings
+echo "migrating doc from ${oldVersion} to ${newVersion}"
+
+placeholderstarts="([:|/]${oldVersion})" # start of placeholder strings
 
 replace_placeholders() {
     name=$1
     echo "substituting $name"
-    sed -i -E "s/\|version\|/$version/g;" \
+    sed -i "s|:${oldVersion}|:${newVersion}|g; \
+            s|\/${oldVersion}\/|\/${newVersion}\/|g;" \
             $name
-    cat $name | grep -E $placeholderstarts
+    cat $name | grep ${newVersion}
 }
 
 find_and_replace_placeholders() {
@@ -21,8 +24,9 @@ find_and_replace_placeholders() {
     done
 }
 
-# switch to directory of script
-pushd $(dirname "${BASH_SOURCE[0]}") 2>&1 1> /dev/null
+# switch to repo root
+versionDir=$(dirname "${BASH_SOURCE[0]}")
+pushd "${versionDir}/.." 2>&1 1> /dev/null
 
 echo "$0 started in $(pwd)"
 cd source/
