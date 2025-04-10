@@ -8,10 +8,7 @@ placeholderstarts="\|(ivy|version|major)" # start of placeholder strings
 replace_placeholders() {
     name=$1
     echo "substituting $name"
-    sed -i -E "s/\|ivy-designer\|/Axon Ivy Designer/g; \
-            s/\|ivy-engine\|/Axon Ivy Engine/g; \
-            s/\|ivy\|/Axon Ivy/g; \
-            s/\|version\|/$version/g; \
+    sed -i -E "s/\|version\|/$version/g; \
             s/\|major-version\|/$major/g;" \
             $name
     cat $name | grep -E $placeholderstarts
