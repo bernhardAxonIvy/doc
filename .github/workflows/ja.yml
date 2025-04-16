@@ -15,9 +15,10 @@ jobs:
     - name: Build
       run: |
         docker run -v .:/doc -u $(id -u) axonivy/build-container:read-the-docs-2 make html BASEDIR=/doc\
-          LOCALEDIR=/doc/locale SPHINXOPTS="-D language='ja'"
+          LOCALEDIR=/doc/locale GETTEXT_COMPACT=user-guide SPHINXOPTS="-D language='ja'"
     - name: Archive build artifact
       uses: actions/upload-artifact@v4
       with:
+        name: axonivy-doc_jp
         path: |
           build/html/**/*

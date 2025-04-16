@@ -27,5 +27,6 @@ jobs:
     - name: Archive build artifact
       uses: actions/upload-artifact@v4
       with:
+        name: axonivy-doc_en
         path: |
           build/html/**/*
