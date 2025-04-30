@@ -13,7 +13,7 @@ Create Client in Keycloak
 
   3. Click on :guilabel:`Next`
   4. Turn on :guilabel:`Client authentication`
-  5. Ènable :guilabel:`Service accounts roles`
+  5. Enable :guilabel:`Service accounts roles`
 
   .. figure:: /_images/keycloak/keycloak-step-2.png
 

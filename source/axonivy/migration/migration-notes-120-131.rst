@@ -41,6 +41,28 @@ We removed the Serenity themes including the :code:`serenity-ivy` theme.
 Please use the :ref:`freya-ivy <freya-themes>` theme instead.
 
 
+Removal of session role
+***********************
+
+|tag-project-removed| 
+
+It was possible to assign a role directly to a session. This feature was
+intended primarily for unauthenticated sessions. In authenticated sessions
+(i.e., when a user is logged in), roles can and should be assigned directly to
+the user. The original idea behind this feature was to support edge cases where
+developers implemented their own authentication mechanisms—bypassing the
+platform’s built-in user management—and needed to assign a role to the session
+manually. This was made possible via the :code:`ISession#assignRole` method.
+Roles are now only supported for authenticated sessions backed by a user which
+has roles assigned, which means you need now to assign roles to an user.
+
+
+|tag-project-removed|
+
+We removed the Serenity themes including the :code:`serenity-ivy` theme. 
+Please use the :ref:`freya-ivy <freya-themes>` theme instead.
+
+
 Changed Runtime logger name
 ****************************************
 
