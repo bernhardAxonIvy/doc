@@ -99,6 +99,8 @@ To keep the overview they are divided into different categories:
 Right
 ^^^^^
 
+|open-preview| Open the :ref:`html-dialog-preview` of the form.
+
 |open-dataclass| Opens the :ref:`data-class-editor` of the form.
 
 |open-process| Opens the :ref:`process-editor` of the form.
@@ -108,6 +110,9 @@ Right
 |options-toggle| Open view options:
 
    - Theme: Toggle between dark and light theme.
+
+.. |open-preview| image:: /_images/ui-icons/play.svg
+   :width: 2em
 
 .. |open-dataclass| image:: /_images/ui-icons/database-link.svg
    :width: 2em
@@ -150,6 +155,8 @@ available actions can be different based on the component type:
 
 |duplicate| Duplicate the current selection.
 
+|extract-component| Extract a layout to a new :ref:`form-editor-component`.
+
 |create-column| Create new column. Only available on the :code:`Table` component.
 
 |create-data| Create components from the :ref:`form data class <form-editor-create-from-data>`.
@@ -161,6 +168,9 @@ available actions can be different based on the component type:
    :width: 2em
 
 .. |duplicate| image:: /_images/ui-icons/duplicate.svg
+   :width: 2em
+
+.. |extract-component| image:: /_images/ui-icons/wrap-to-subprocess.svg
    :width: 2em
 
 .. |create-column| image:: /_images/ui-icons/pool-swimlanes.svg
@@ -192,6 +202,16 @@ much space it should take on different screen sizes.
 .. tip:: 
 
    You can also open the properties view of a component with a *double click*.
+
+
+.. _form-editor-component:
+
+Form Component
+^^^^^^^^^^^^^^
+
+A form can be rendered as Html Dialog or it can be a :code:`Component` that can be
+used within other Form's. You can change the **Form Type** on the Form
+:ref:`form-editor-properties` view (no selection).
 
 
 .. _form-editor-outline:
