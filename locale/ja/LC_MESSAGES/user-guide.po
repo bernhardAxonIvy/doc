@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-04 21:27+0000\n"
+"POT-Creation-Date: 2025-05-05 21:28+0000\n"
 "PO-Revision-Date: 2025-04-08 12:14+0000\n"
 "Last-Translator: Reguel <reguel.wermelinger@axonivy.com>\n"
 "Language: ja\n"
@@ -1592,6 +1592,7 @@ msgstr ""
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:23
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-editor.rst:13
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preferences.rst:19
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:27
 #: ../../source/designer-guide/user-interface/user-dialogs/new-user-dialog-wizard.rst:22
 msgid "Accessibility"
 msgstr ""
@@ -7614,7 +7615,7 @@ msgstr ""
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:41
 #: ../../source/designer-guide/data-modeling/persistence/persistence-configuration-editor.rst:86
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-call-activity.rst:36
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:180
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:190
 msgid "Properties"
 msgstr ""
 
@@ -18944,7 +18945,7 @@ msgid "|open-dataclass| Opens the :ref:`data-class-editor` of the process."
 msgstr ""
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:91
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:112
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:117
 msgid "open-dataclass"
 msgstr ""
 
@@ -18955,17 +18956,17 @@ msgid ""
 msgstr ""
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:97
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:121
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:126
 msgid "inscription-toggle"
 msgstr ""
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:85
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:108
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:110
 msgid "|options-toggle| Open view options:"
 msgstr ""
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:94
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:118
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:123
 msgid "options-toggle"
 msgstr ""
 
@@ -19020,7 +19021,7 @@ msgid "Zoom level: Displays the current zoom level of the process editor."
 msgstr ""
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:126
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:128
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:133
 msgid "Editor Area"
 msgstr ""
 
@@ -19061,7 +19062,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:154
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:144
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:149
 msgid "Quick Action Menu"
 msgstr ""
 
@@ -24007,7 +24008,7 @@ msgstr ""
 msgid "|form-editor|"
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:227
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:247
 msgid "form-editor"
 msgstr ""
 
@@ -24112,114 +24113,132 @@ msgid "data"
 msgstr ""
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:102
-msgid "|open-dataclass| Opens the :ref:`data-class-editor` of the form."
+msgid "|open-preview| Open the :ref:`html-dialog-preview` of the form."
+msgstr ""
+
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:114
+msgid "open-preview"
 msgstr ""
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:104
-msgid "|open-process| Opens the :ref:`process-editor` of the form."
-msgstr ""
-
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:115
-msgid "open-process"
+msgid "|open-dataclass| Opens the :ref:`data-class-editor` of the form."
 msgstr ""
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:106
+msgid "|open-process| Opens the :ref:`process-editor` of the form."
+msgstr ""
+
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:120
+msgid "open-process"
+msgstr ""
+
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:108
 msgid ""
 "|inscription-toggle| Opens or closes the :ref:`form-editor-properties` of"
 " the selected component."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:110
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:112
 msgid "Theme: Toggle between dark and light theme."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:130
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:135
 msgid ""
 "In the editor area you can layout and design your forms by drag and drop."
 " To add new components, open the palette from the :ref:`form-editor-tool-"
 "bar` and drag and drop it to this area."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:134
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:139
 msgid ""
 "Per default, components are structured from top to bottom with full "
 "width. To change this you can use a :code:`Layout` component. With this "
 "you can arrange components side by side in a grid."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:138
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:143
 msgid ""
 "On each component you have a :ref:`form-editor-quick-actions`, which "
 "provides useful actions."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:146
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:151
 msgid ""
 "To open the **Quick Action Menu** simply select a component in the "
 "editor. The available actions can be different based on the component "
 "type:"
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:149
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:154
 msgid "|delete| Delete the current selection."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:160
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:167
 msgid "delete"
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:151
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:156
 msgid "|duplicate| Duplicate the current selection."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:163
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:170
 msgid "duplicate"
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:153
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:158
+msgid ""
+"|extract-component| Extract a layout to a new :ref:`form-editor-"
+"component`."
+msgstr ""
+
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:173
+msgid "extract-component"
+msgstr ""
+
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:160
 msgid ""
 "|create-column| Create new column. Only available on the :code:`Table` "
 "component."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:166
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:176
 msgid "create-column"
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:155
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:162
 msgid ""
 "|create-data| Create components from the :ref:`form data class <form-"
 "editor-create-from-data>`."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:170
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:180
 msgid "create-data"
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:157
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:164
 msgid "|create-component| Create components inline via palette."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:173
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:183
 msgid "create-component"
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:182
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:192
 msgid ""
 "Having a component selected, you can define its features within the "
 "`Properties` view on the right. In this section you can change the config"
 " of each component."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:185
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:195
 msgid "|form-editor-properties|"
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:228
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:248
 msgid "form-editor-properties"
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:187
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:197
 msgid ""
 "There are also settings which are only available, if a certain parent "
 "component is present. E.g. if you have a :code:`Layout` component with "
@@ -24228,36 +24247,47 @@ msgid ""
 "screen sizes."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:194
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:204
 msgid ""
 "You can also open the properties view of a component with a *double "
 "click*."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:200
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:210
+msgid "Form Component"
+msgstr ""
+
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:212
+msgid ""
+"A form can be rendered as Html Dialog or it can be a :code:`Component` "
+"that can be used within other Form's. You can change the **Form Type** on"
+" the Form :ref:`form-editor-properties` view (no selection)."
+msgstr ""
+
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:220
 msgid "Outline"
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:202
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:222
 msgid ""
 "The form editor provides an outline, to give you a better overview of "
 "your current form with all the components. You can open it inside the "
 ":ref:`form-editor-properties` panel via the outline switch at the top."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:205
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:225
 msgid "|form-editor-outline|"
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:229
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:249
 msgid "form-editor-outline"
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:212
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:232
 msgid "Create from data"
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:214
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:234
 msgid ""
 "You can create components from the form data by click on the *Data* in "
 "the :ref:`form-editor-tool-bar`, via the :ref:`form-editor-quick-actions`"
@@ -24268,15 +24298,15 @@ msgid ""
 "workflow."
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:221
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:241
 msgid "|form-editor-data-class-dialog|"
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:230
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:250
 msgid "form-editor-data-class-dialog"
 msgstr ""
 
-#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:225
+#: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:245
 msgid ""
 "Only data class attributes which can be rendered as component are shown "
 "in the wizard."
@@ -24844,6 +24874,99 @@ msgstr ""
 msgid ""
 "Each template can be inserted into an HTML Dialog view via the auto "
 "complete function (CTRL+Space)."
+msgstr ""
+
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:4
+msgid "HTML Dialog Preview"
+msgstr ""
+
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:6
+msgid ""
+"The Html Dialog Preview gives you the ability to see the rendered output "
+"of a Html Dialog. If you preview a Html Dialog that you already opened "
+"with the process simulation, then it will restore the process data for "
+"the preview."
+msgstr ""
+
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:10
+msgid ""
+"The preview is opened in the :ref:`dev-workflow-ui` frame with some "
+"tooling (:ref:`html-dialog-autorefresh` and :ref:`html-dialog-"
+"navigation`). It can execute logic processes."
+msgstr ""
+
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:14
+msgid "|html-dialog-preview|"
+msgstr ""
+
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:70
+msgid "html-dialog-preview"
+msgstr ""
+
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:18
+msgid "The preview has some restrictions:"
+msgstr ""
+
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:20
+msgid ""
+"Previews of a :ref:`form-editor-component`, :ref:`html-dialog-component` "
+"and :ref:`static-jsf-pages` are not supported."
+msgstr ""
+
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:22
+msgid ""
+"It uses only a minimalistic implementation of an Task, with the "
+"consequences that not every API is available"
+msgstr ""
+
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:29
+msgid ""
+"If you have a :ref:`form-editor` or a :ref:`html-dialog-editor` open and "
+"focused, a new button appears in the Toolbar :code:`Open Dialog Preview`."
+" Or use the :code:`Play` button in the :ref:`Form Editor Toolbar <form-"
+"editor-tool-bar>`."
+msgstr ""
+
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:38
+msgid "Auto-Refresh"
+msgstr ""
+
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:40
+msgid ""
+"If you have a dialog open (via Preview or :ref:`simulation`) in the :ref"
+":`dev-workflow-ui` and you make changes to the User Dialog View file, it "
+"will trigger an auto-refresh of the view. State which is only represented"
+" in the UI and is not hold in the data, will then be lost. This auto-"
+"refresh can be disabled by clicking on the :code:`Disable auto refresh` "
+"button in the :ref:`dev-workflow-ui`."
+msgstr ""
+
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:49
+msgid ""
+"Some changes can not be refreshed. In this cases an Error will shown, and"
+" the preview needs to be restarted."
+msgstr ""
+
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:56
+msgid "Element Navigation"
+msgstr ""
+
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:58
+msgid ""
+"On an open dialog in the :ref:`dev-workflow-ui` there is a **Selection "
+"Tool** which gives you the possibility to select an element in the "
+"dialog, and it will open the corresponding Html Dialog View and reveals "
+"the code of the rendered element or selects it in the :ref:`form-editor`."
+msgstr ""
+
+#: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:63
+msgid ""
+"If the view is an :ref:`html-dialog-editor` we try to find the selected "
+"element via the :code:`id` attribute. Because of this, it only works if "
+"the given element has an :code:`id` defined. The selection also only "
+"opens the direct corresponding Html Dialog View and do not navigate into "
+"additional views (:ref:`html-dialog-multiple-views`) or Components (:ref"
+":`form-editor-component` or :ref:`html-dialog-component`)."
 msgstr ""
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-themes.rst:2
