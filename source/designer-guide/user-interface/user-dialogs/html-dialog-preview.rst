@@ -9,7 +9,8 @@ the process simulation, then it will restore the process data for the preview.
 
 The preview is opened in the :ref:`dev-workflow-ui` frame with some tooling
 (:ref:`html-dialog-autorefresh` and :ref:`html-dialog-navigation`). It can
-execute logic processes.
+execute dialog logic, so that the dynamic behavour of the dialog like validation
+or autocompletion logic can be tested.
 
 |html-dialog-preview|
 
@@ -19,8 +20,9 @@ execute logic processes.
 
   - Previews of a :ref:`form-editor-component`, :ref:`html-dialog-component` and
     :ref:`static-jsf-pages` are not supported.
-  - It uses only a minimalistic implementation of an Task, with the consequences that
-    not every API is available
+  - It uses a minimalistic implementation of a Task context, with the consequences that
+    not every API is available.
+  - Note that dialog logic is executed in the preview. This may manipulate your test data in the backend.
 
 
 Accessibility
