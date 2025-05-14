@@ -18,3 +18,19 @@ password in cleartext with :code:`"${hash:` and :code:`}"` like
 can not be decrypted anymore.
 The Axon Ivy Engine will automatically hash and replace the password in file,
 when the configuration will be loaded
+
+
+.. _engine-adminstrators-sso:
+
+SSO
+---
+
+To configure Single Sign-on for administrators, you need to enable SSO on the :code:`system` 
+security system in :ref:`ivy-yaml`. Read more about :ref:`single-sign-on`.
+
+.. code-block:: yaml
+
+    SecuritySystems:
+      system:
+        SSO:
+          Enabled: true
