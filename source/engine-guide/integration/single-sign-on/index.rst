@@ -17,7 +17,6 @@ responsible to authenticate the user and add a user identifier to the request.
 The Axon Ivy Engine will automatically log in the user when the user is known in
 the :ref:`security system <configuration-security-system>` of the Axon Ivy Engine.
 
-
 |
 
 .. graphviz:: overview.dot
@@ -41,6 +40,10 @@ Next you need to enable SSO in :ref:`ivy-yaml`:
   directly. All traffic hsd to be routed via the reverse proxy. Otherwise, an 
   attacker could simply send a valid user name in the header of his faked HTTP 
   request and immediately has access bypassing the authentication!
+
+.. note::
+  If you want to enable SSO for administrators, read more about it in
+  :ref:`SSO for administrators <engine-adminstrators-sso>`.
 
 You can integrate Axon Ivy Engine with every :ref:`Web Application Firewall
 <web-application-firewall>` of your choice. And if nothing fits your needs then
