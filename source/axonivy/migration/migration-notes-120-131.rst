@@ -4,7 +4,8 @@ Migrating from 12.0 to 13.1
 ===========================
 
 Upgrade to 13.1 is only supported from an Axon Ivy Engine 10.0 and higher.
-If you have an Axon Ivy Engine older than version 10.0 you need first to migrate to a newer version.
+If you have an Axon Ivy Engine older than version 10.0 you need to first 
+migrate to a version between 10.0 and 12.0.
 
 License
 *******
@@ -28,7 +29,7 @@ on Windows without Docker, you can use :ref:`AxonIvyEngineService.exe
 Support for Case Scope Override removed
 ****************************************
 
-Case scope overriding has been depreacted in LTS 8.0 and was now removed.
+Case scope overriding has been deprecated in LTS 8.0 and has now been removed.
 Use :ref:`strict_overriding` if you rely on case scope overriding.
 
 
@@ -37,7 +38,7 @@ Removal of Serenity PrimeFaces themes
 
 |tag-project-removed|
 
-We removed the Serenity themes including the :code:`serenity-ivy` theme. 
+We removed the Serenity themes, including the :code:`serenity-ivy` theme. 
 Please use the :ref:`freya-ivy <freya-themes>` theme instead.
 
 
@@ -53,14 +54,8 @@ the user. The original idea behind this feature was to support edge cases where
 developers implemented their own authentication mechanisms—bypassing the
 platform’s built-in user management—and needed to assign a role to the session
 manually. This was made possible via the :code:`ISession#assignRole` method.
-Roles are now only supported for authenticated sessions backed by a user which
-has roles assigned, which means you need now to assign roles to an user.
-
-
-|tag-project-removed|
-
-We removed the Serenity themes including the :code:`serenity-ivy` theme. 
-Please use the :ref:`freya-ivy <freya-themes>` theme instead.
+Roles are now only supported for authenticated sessions backed by a user who
+has roles assigned, which means you now need to assign roles to a user.
 
 
 Changed Runtime logger name
@@ -84,7 +79,7 @@ We changed the Runtime logger name from :code:`runtime.[app name].[pm name].[cat
     This is to make the logger name more unique and to be able to filter by security context name.
     The new logger name is: :code:`runtime.[security context name].[category].[app name].[pm name]`.
 
-    In case you have a custom :code:`log4j2.xml` configuration, you need to adapt the  occurences of the runtime logger name in your configuration.
+    In case you have a custom :code:`log4j2.xml` configuration, you need to adapt the occurrences of the runtime logger name in your configuration.
 
     From something like this:
 
