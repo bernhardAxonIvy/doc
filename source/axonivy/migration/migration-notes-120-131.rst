@@ -26,6 +26,33 @@ on Windows without Docker, you can use :ref:`AxonIvyEngineService.exe
 <engine-service>` to register the Axon Ivy Engine as a Windows Service.
 
 
+
+Multiple responsibles for a task and multiple roles for process starts
+**********************************************************************
+
+|tag-project-changed| 
+
+It's now possible to assign multiple responsibles to a task. There is no need to
+create dynamic roles anymore. You simply can assign a task to different roles if
+needed. You will notice that you can configure on the task tab multiple
+responsibles e.g. :ref:`Task Tab <process-element-tab-task>`. The same is also
+true for the expiry task configuration.
+
+All API's have been deprecated which handles only one responsible. They where
+previously named :code:`activator`, therefore we have streamlined the naming to
+:code:`responsible` from deep in the core to the user interface, everywhere. Use
+the new API`s:
+
+- :code:`ch.ivyteam.ivy.workflow.ITask.responsibles()`
+- :code:`ch.ivyteam.ivy.workflow.ITask.expiry()`
+
+The same applies for process starts. It's now possible to define multiple roles
+on a process start. You will notice that you can configure on the request start
+of a start multiple roles e.g. :ref:`Start Event
+<process-element-start-request-tab-request>`.
+
+
+
 Support for Case Scope Override removed
 ****************************************
 
