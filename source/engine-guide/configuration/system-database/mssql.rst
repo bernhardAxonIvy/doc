@@ -64,3 +64,10 @@ connection URL.
 
 If the database is created by the Axon Ivy Engine the collation is set to
 ``Latin1_General_CI_AI`` for SQL Server older than 2019 and ``Latin1_General_100_CI_AI_SC_UTF8`` for SQL Server 2019 and newer.
+
+Non-TLS/SSL Connection
+**********************
+
+By default, the Microsof SQL Server driver connects using TLS/SSL. 
+If your SQL Server is not configured for TLS/SSL, you must add the following property to your connection configuration:
+``encrypt=false``.
