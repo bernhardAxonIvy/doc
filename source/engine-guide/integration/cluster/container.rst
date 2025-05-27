@@ -36,7 +36,7 @@ configuration files in a container image looks as follows:
 .. code:: dockerfile
 
   # The base docker image 
-  FROM axonivy/axonivy-engine:13.1
+  FROM axonivy/axonivy-engine:13.2
   
   # Add your adapted ivy.yaml configuration file 
   ADD --chown=ivy:ivy config/ivy.yaml /ivy/configuration/ivy.yaml
