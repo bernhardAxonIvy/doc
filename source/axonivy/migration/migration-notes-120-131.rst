@@ -15,16 +15,16 @@ License
 You need to request a new license for Axon Ivy Engine 13.1.
 
 
-Removal of Server Control Center for Windows
-********************************************
+Axon Ivy Public API Maven dependency
+************************************
 
-|tag-ops-changed|
+|tag-project-auto-convert|
 
-The Server Control Center for Windows has been removed. Prefer using Docker for
-Windows to run the Axon Ivy Engine. If you still want to run the Axon Ivy Engine
-on Windows without Docker, you can use :ref:`AxonIvyEngineService.exe
-<engine-service>` to register the Axon Ivy Engine as a Windows Service.
-
+We now include the Axon Ivy Public API as Maven dependency in the project's :code:`pom.xml` file.
+To do this, we update the POM by adding :code:`ivy-project-parent` as parent and inserting the :code:`ivy-api` dependency.
+This setup allows you to develop the Java part of an Axon Ivy project outside the Eclipse-based PRO Designer - for example with Visual Studio Code.
+The conversion only takes place if no parent is defined in the :code:`pom.xml` of the project.
+Currently, this Maven dependency is not required if you continue developing with the Eclipse-based PRO Designer.
 
 
 Multiple responsibles for a task and multiple roles for process starts
@@ -52,9 +52,10 @@ of a start multiple roles e.g. :ref:`Start Event
 <process-element-start-request-tab-request>`.
 
 
-
 Support for Case Scope Override removed
 ****************************************
+
+|tag-project-removed|
 
 Case scope overriding has been deprecated in LTS 8.0 and has now been removed.
 Use :ref:`strict_overriding` if you rely on case scope overriding.
@@ -83,6 +84,17 @@ platform’s built-in user management—and needed to assign a role to the sessi
 manually. This was made possible via the :code:`ISession#assignRole` method.
 Roles are now only supported for authenticated sessions backed by a user who
 has roles assigned, which means you now need to assign roles to a user.
+
+
+Removal of Server Control Center for Windows
+********************************************
+
+|tag-ops-changed|
+
+The Server Control Center for Windows has been removed. Prefer using Docker for
+Windows to run the Axon Ivy Engine. If you still want to run the Axon Ivy Engine
+on Windows without Docker, you can use :ref:`AxonIvyEngineService.exe
+<engine-service>` to register the Axon Ivy Engine as a Windows Service.
 
 
 Changed Runtime logger name
@@ -123,18 +135,6 @@ We changed the Runtime logger name from :code:`runtime.[app name].[pm name].[cat
       <Logger name="runtimelog.securitycontext.rest_client.myapp.hrm" level="DEBUG">
         <AppenderRef ref="RuntimeLog"/>
       </Logger>
-
-
-Axon Ivy Public API Maven dependency
-************************************
-
-|tag-project-auto-convert|
-
-We now include the Axon Ivy Public API as Maven dependency in the project's :code:`pom.xml` file.
-To do this, we update the POM by adding :code:`ivy-project-parent` as parent and inserting the :code:`ivy-api` dependency.
-This setup allows you to develop the Java part of an Axon Ivy project outside the Eclipse-based PRO Designer - for example with Visual Studio Code.
-The conversion only takes place if no parent is defined in the :code:`pom.xml` of the project.
-Currently, this Maven dependency is not required if you continue developing with the Eclipse-based PRO Designer.
 
 ------------
 
