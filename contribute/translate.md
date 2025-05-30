@@ -24,7 +24,7 @@ the locale files holding the translations are updated with the new text blocks b
 3. 📬️ New strings appear in Weblate, scanned by a web-hook
 4. 🌐️🙂️ Translators define the translated texts in the target language they are responsible for.
 5. 📥️ Weblate pushes changes back as Pull Request into this repo, see [i18n](https://github.com/axonivy/doc/pulls?q=is%3Apr+label%3Ai18n) PRs.
-6. ✅️🙂️ A repository leader with Merge writes integrates these changes back into the leading /doc.
+6. ✅️🙂️ A repository leader with Merge permissions integrates these changes back into the leading /doc.
 7. 🛳️ The official documentation artifacts are deployed. (yet we have not defined how translated docs are made available)
 
 ## Weblate
