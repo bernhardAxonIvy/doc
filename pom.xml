@@ -192,6 +192,27 @@
               </artifactItems>
             </configuration>
           </execution>
+
+          <execution>
+            <id>unpack-engine-cli-docs</id>
+            <goals>
+              <goal>unpack</goal>
+            </goals>
+            <phase>generate-resources</phase>
+            <configuration>
+              <outputDirectory>${includes.target.folder}/engine.cli</outputDirectory>
+              <artifactItems>
+                <artifactItem>
+                  <groupId>ch.ivyteam.ivy</groupId>
+                  <artifactId>ch.ivyteam.ivy.engine.cli</artifactId>
+                  <version>${ivy-version}</version>
+                  <classifier>doc</classifier>
+                  <type>zip</type>
+                </artifactItem>
+              </artifactItems>
+            </configuration>
+          </execution>
+
         </executions>
         <configuration>
           <overWriteSnapshots>true</overWriteSnapshots>
