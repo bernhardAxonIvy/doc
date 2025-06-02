@@ -1,6 +1,6 @@
-.. _engine-config-cli:
+.. _engine-cli:
 
-EngineConfigCli
+EngineCli
 ===============
 
 The console program is used to configure the Axon Ivy Engine, i.e., to configure,
