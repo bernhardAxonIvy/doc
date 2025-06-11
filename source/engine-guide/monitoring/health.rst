@@ -14,7 +14,7 @@ Engine Cockpit view that provides more information about the problem or where yo
 Endpoint
 --------
 
-The health endpoint is vailable at
+The health endpoint is available at
 :code:`http://<engine-host>:<engine-port>/system/health`. It returns the HTTP
 status code :code:`200` if the Axon Ivy Engine is running, and :code:`503`
 otherwise. This endpoint can be used to monitor the availability of the Axon Ivy
