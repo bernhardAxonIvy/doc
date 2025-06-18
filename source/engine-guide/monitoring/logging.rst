@@ -26,14 +26,24 @@ that the engine has no more resources for other tasks.
 Customization
 -------------
 
-The logging configuration can be fully customized to your needs.
-For example, you can change the log level of a logger so that the log events are logged in a log file.
-Therefore you need to know that
-Axon Ivy uses `Log4j 2 <https://logging.apache.org/log4j/2.x/>`_ for logging and
-comes with a built-in :ref:`default configuration <log4j2-xml>` which can be 
-customized by providing a configuration in :file:`[engineDir]/configuration/log4j2.xml`.
-The custom configuration will be `merged <http://logging.apache.org/log4j/2.x/manual/configuration.html#CompositeConfiguration>`_
-with the default configuration automatically on the fly.
+The logging configuration can be fully customized to your needs. For example,
+you can change the log level of a logger so that the log events are logged in a
+log file. Therefore you need to know that Axon Ivy uses `Log4j2
+<https://logging.apache.org/log4j/2.x/>`_ for logging and comes with a built-in
+:ref:`default configuration <log4j2-xml>` which can be customized by providing a
+configuration in :file:`[engineDir]/configuration/log4j2.xml`. The custom
+configuration will be `merged
+<http://logging.apache.org/log4j/2.x/manual/configuration.html#CompositeConfiguration>`_
+with the default configuration automatically on the fly. Changing the log level
+of a specific logger can be done easily:
+
+.. code-block:: xml
+
+  <Configuration>
+    <Loggers>
+      <Logger name="your.logger.name" level="debug"/>
+    </Loggers>
+  </Configuration>
 
 
 Runtime Log
@@ -66,3 +76,28 @@ A single event can be found as a log entry in the format
 **[datetime][level][logger name][thread name]{context infos}** followed by the message itself like:
 
 .. literalinclude:: includes/log-message.log
+
+
+JSON Log output
+----------------
+
+You can configure the Axon Ivy Engine to log in JSON format. This is useful for
+log analysis tools that can parse JSON logs. Read more about it here: `Log4j2
+JSON Template Layout
+<https://logging.apache.org/log4j/2.x/manual/json-template-layout.html>`_
+
+.. code-block:: xml
+
+  <Configuration>
+    <Appenders>
+      <Console name="ConsoleLog" target="SYSTEM_OUT">
+        <JsonTemplateLayout eventTemplateUri="classpath:EcsLayout.json" />
+        <ThresholdFilter level="warn" />
+      </Console>
+
+      <RollingRandomAccessFile name="IvyLog" fileName="logs/ivy.json" filePattern="logs/ivy-%d{yyyy-MM-dd}.json.gz" ignoreExceptions="false">
+        <JsonTemplateLayout eventTemplateUri="classpath:EcsLayout.json" />
+        <TimeBasedTriggeringPolicy />
+      </RollingRandomAccessFile>
+    </Appenders>
+  </Configuration>
