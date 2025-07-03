@@ -7,6 +7,18 @@ Upgrade to 13.2 is only supported from an Axon Ivy Engine 10.0 and higher.
 If you have an Axon Ivy Engine older than version 10.0 you need to first 
 migrate to a version between 10.0 and 12.0.
 
+Persistence API (Hibernate)
+***************************
+
+|tag-project-changed| 
+
+We migrated the Persistence API from Java Persistence API (JPA) version 2.2 to 
+`Jakarta Persistence API <https://jakarta.ee/specifications/persistence/3.2/>`_ version 3.2. 
+The implementation of the API was migrated from `Hibernate <https://hibernate.org/orm/documentation/7.0/>`_ 5.6 to 7.0. 
+
+The package of the new version has changed from :code:`javax.persistence` to :code:`jakarta.persistence`.
+The code of Ivy projects needs to adapt to this change. 
+Use :guilabel:`find and replace in files` in the Designer to migrate your project.
 
 HttpHeaderSecurityFilter and RemoteIpFilter in web.xml
 ******************************************************
