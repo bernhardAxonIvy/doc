@@ -34,47 +34,28 @@ All cluster nodes share the same system database and OpenSearch server.
 **Runtime**
 
 We strongly recommend operating an Axon Ivy Engine Cluster in a containerized
-environment like Docker, Kubernetes, or OpenShift. Build and run your
-:ref:`container image <cluster-container>` containing all your projects and
-configurations.
-
-See our example configurations on GitHub for :link-url:`nginx
-<docker-scaling-nginx>` and :link-url:`HAProxy <docker-scaling-haproxy>` on how
-to set up an Axon Ivy Engine Cluster with docker-compose.
-  
+environment like Kubernetes or OpenShift.
 
 .. _cluster-restrictions:
 
 **Restrictions**
 
-Please consider the following restrictions if you want to run an Axon Ivy Engine Cluster:
+Please consider the following restrictions if you want to run an Axon Ivy Engine
+Cluster:
 
-1. Each node needs access to all other nodes via UDP/Multicast. 
-2. Each node has to use the same system database.
-3. Each node has to use the same external :ref:`OpenSearch <opensearch>`
-   server (or cluster).
-4. Each node has to use the same service configurations.
-5. :ref:`Configuration changes <cluster-configuration-changes>` are only applied
-   to the local cluster node where you made the change. 
-6. :ref:`Deployment <cluster-deployment>` during runtime is not supported and
-   does not work.
-7. Some :ref:`operating systems <engine-system-requirements-os>` are not supported.
-     
-You can solve most of the restrictions by using a containerized environment with
-your own :ref:`container image <cluster-container>`.
-
-Usually, UDP/Multicast works in a single subnet only. Modern routers can
-overcome this restriction if you configure them accordingly. If your environment
-does not support this setup, you can change the cluster communication to TCP/IP.
-TCP/IP will induce significantly higher cluster communications overhead.
-Contact Axon Ivy for instructions regarding this setup.
+1. Each node has to be the exact same version of the Axon Ivy Engine.
+2. Each node needs to have the same configuration, applications, data,
+   :ref:`system database <systemdb>`, and :ref:`OpenSearch <opensearch>`.
+3. Nodes need to communicate with each other.
 
 .. toctree::
     :maxdepth: 1
     :hidden:
 
-    configuration
-    deployment
-    license
-    load-balancer
-    container
+    license/index
+    communication/index
+    configuration/index
+    data/index
+    load-balancer/index
+    deployment/index
+    container/index
