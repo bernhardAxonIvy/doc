@@ -1,0 +1,12 @@
+<Configuration>
+    <Appenders>
+        <Console name="ConsoleLog" target="SYSTEM_OUT">
+            <PatternLayout pattern="${pattern}" />
+            <ThresholdFilter level="debug" />
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="org.jgroups" level="debug" />
+        <Logger name="ch.ivyteam.ivy.cluster" level="debug" />
+    </Loggers>
+</Configuration>
