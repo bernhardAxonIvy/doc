@@ -36,6 +36,9 @@ pipeline {
           withChecks('Doc Sphinx Issues') {
             recordIssues tools: [sphinxBuild()], qualityGates: [[threshold: 1, type: 'TOTAL']]
           }
+          withChecks('Maven Issues') {
+            recordIssues tools: [mavenConsole()], qualityGates: [[threshold: 1, type: 'TOTAL']]
+          }
 
           currentBuild.description = "<a href='${BUILD_URL}artifact/build/html/index.html'>Documentation</a>"
         }
