@@ -10,35 +10,42 @@ function properly. To facilitate this, the Axon Ivy Engine uses the reliable
 communication settings by providing your own
 :file:`[ivyEngine]/configuration/jgroups.xml` file.
 
-
 Discovery
 ---------
 
 First, a discovery mechanism is used to locate other nodes within the cluster.
 By default, the Axon Ivy Engine uses UDP multicast over port :code:`45588` to
-discover other nodes.
+discover other nodes. The `discovery protocol
+<http://jgroups.org/manual5/index.html#Discovery>`_ can be changed if UDP
+multicast is not suitable for your environment. For example:
 
-If UDP multicast is not feasible in your environment, you can change the
-discovery mechanism by following the JGroups documentation on `Discovery
-<http://jgroups.org/manual5/index.html#Discovery>`_. For example, you can use:
-
-- `TCP/IP <http://jgroups.org/manual5/#TCPPING_Prot>`_-based discovery with TCPPING
-- `DNS <http://jgroups.org/manual5/#_dns_ping>`_-based discovery, which is often suitable for cloud environments (DNS_PING)
-
-.. literalinclude:: jgroups-dns.xml
-  :language: xml
-  :linenos:
-  :caption: jgroups.xml example of a DNS-based discovery mechanism
+- `TCP/IP <http://jgroups.org/manual5/#TCPPING_Prot>`_-based discovery with
+  TCPPING
+- `DNS <http://jgroups.org/manual5/#_dns_ping>`_-based discovery, which is often
+  suitable for cloud environments (DNS_PING)
 
 Messaging
 ---------
 
 After discovery, cluster nodes communicate with each other by sending
-messages—by default using UDP multicast on port :code:`45588`. You can change
-the transport mechanism to `TCP <http://jgroups.org/manual5/#TCP>`_ or any
-other transport supported by JGroups. Keep in mind that alternatives to UDP
-typically introduce higher latency.
+messages—by default using UDP multicast on port :code:`45588`. This is typically
+the most efficient way to send messages in a local network. However, if your
+environment does not support UDP multicast, you can change the `protocol
+<http://jgroups.org/manual5/#_transport_protocols>`_.
 
+TCP/IP
+------
+
+If UDP multicast is not suitable for your environment, you can switch to TCP/IP.
+This is often necessary in cloud environments where multicast is not supported.
+To configure TCP/IP, you can modify the :file:`jgroups.xml` file to use the `TCP
+transport <http://jgroups.org/manual5/#TCP>`_ instead of multicast. Here is an
+example configuration using DNS-based discovery with TCP/IP as protocol:
+
+.. literalinclude:: jgroups-tcp-ip.xml
+  :language: xml
+  :linenos:
+  :caption: jgroups.xml example of a TCP/IP based communication and DNS-based discovery mechanism
 
 Troubleshooting
 ---------------
