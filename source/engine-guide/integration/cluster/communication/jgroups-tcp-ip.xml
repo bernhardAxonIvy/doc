@@ -2,14 +2,17 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="urn:org:jgroups http://www.jgroups.org/schema/jgroups.xsd"
 >
-    <UDP
-        mcast_port="${jgroups.udp.mcast_port:45588}"
-        thread_pool.min_threads="0"
-        thread_pool.max_threads="200"
-        thread_pool.keep_alive_time="30s" />
+    <!-- Instead of using UDP, we will use TCP/IP as the communication protocol -->
+    <!-- In terms of performance, UDP is generally more efficient due to its lower overhead compared to TCP -->
+    <!-- Read more about it here http://jgroups.org/manual5/#_tcp-->
+    <TCP bind_addr="${jgroups.bind_addr:site_local}"
+         bind_port="${jgroups.bind_port:7800}"
+         thread_pool.min_threads="0"
+         thread_pool.max_threads="200"
+         thread_pool.keep_alive_time="30000"/>
     <RED />
 
-    <!-- DNS_PING uses DNS A entries to perform discovery-->
+    <!-- DNS_PING uses DNS A entries to perform discovery -->
     <!-- It is also possible to use DNS SRV entries, read more about it here http://jgroups.org/manual5/#_dns_ping -->
     <!-- Change dns_query according to your environment -->
     <dns.DNS_PING
