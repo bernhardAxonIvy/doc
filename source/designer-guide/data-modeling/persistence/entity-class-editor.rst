@@ -19,6 +19,10 @@ Database Table
     name of your Entity Class is used. This value is used when the database
     table of your Entity Class gets generated.
 
+Data Repository
+  Generate
+    Select to create :ref:`data-repository-api` for the Entity Class.
+
 Attributes
 """"""""""
 

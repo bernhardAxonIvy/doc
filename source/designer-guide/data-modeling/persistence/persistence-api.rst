@@ -3,6 +3,15 @@
 Persistence API
 ---------------
 
+.. note::
+
+  The :ref:`persistence-api` is recommended for more complex use cases that cannot be 
+  adequately addressed by the :ref:`data-repository-api`. 
+  The :ref:`data-repository-api` is designed to be user-friendly and convenient, 
+  handling a wide range of common scenarios. However, when your requirements 
+  exceed its capabilities, the :ref:`persistence-api` offers the additional 
+  flexibility and control you might need.
+
 The Axon Ivy Persistence API is used to load entity objects directly
 from the database or save/update them on the database. The Persistence
 API can be accessed by IvyScript anywhere scripting is supported. The
