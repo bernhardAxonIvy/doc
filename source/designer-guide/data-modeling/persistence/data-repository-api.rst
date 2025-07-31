@@ -48,7 +48,7 @@ Enhance the Data Repository
 
 A data repository provides the standard CRUD operations by default. To enhance the data repository
 with your own custom find methods copy the generated data repository interface located in 
-the ``src_generated`` folder and move it into the ``src`` folder of your project. 
+the ``src_dataClasses`` folder and move it into the ``src`` folder of your project. 
 You can then add more methods to the interface as shown below:
 
 .. code-block:: java
