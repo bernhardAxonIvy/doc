@@ -214,7 +214,7 @@ msgid ""
 "upgrade."
 msgstr ""
 ":ref:`migration-"
-"wizard`を起動します。移行ウィザードは、ホットフィックスのアップグレード中に、関連するすべてのファイルを古いエンジンから新しいエンジンにコピーします。"
+"wizard` を起動します。移行ウィザードは、ホットフィックスのアップグレード中に、関連するすべてのファイルを古いエンジンから新しいエンジンにコピーします。"
 
 #: ../../source/axonivy/migration/hotfix/windows.rst:6
 msgid ""
@@ -245,7 +245,7 @@ msgid ""
 msgstr ""
 "Axon Ivy Engine を最新のパッチレベル（例：``8.0.6`` から "
 "``8.0.13``）で維持するアップデート手順を知りたい場合は、 :ref:`migration-upgrade-engine-"
-"hotfix`」の章を参照してください。"
+"hotfix` 」の章を参照してください。"
 
 #: ../../source/axonivy/migration/index.rst:15
 msgid "**Major / Minor Upgrade**"
@@ -350,7 +350,7 @@ msgstr ""
 "``12.0``）、マイナーバージョンから別のマイナーバージョン（例：``11.1`` から "
 "``11.2``）への移行に焦点を当てます。ホットフィックスのアップグレード（例：``12.0.0`` から "
 "``12.0.2``）にのみ興味がある場合は、よりシンプルな :ref:`migration-upgrade-engine-"
-"hotfix`」の章を参照してください。"
+"hotfix` 」の章を参照してください。"
 
 #: ../../source/axonivy/migration/major/index.rst:18
 msgid ""
@@ -470,7 +470,7 @@ msgid ""
 "manual adaptations may be necessary."
 msgstr ""
 "Axon Ivy Designer ガイドの :ref:`project-"
-"convert`」のセクションの説明に従ってプロジェクトを移行します。通常、これは各プロジェクトに対してプロジェクト変換アクションを呼び出すことで達成されます。手作業による調整が必要な場合もあります。"
+"convert` 」のセクションの説明に従ってプロジェクトを移行します。通常、これは各プロジェクトに対してプロジェクト変換アクションを呼び出すことで達成されます。手作業による調整が必要な場合もあります。"
 
 #: ../../source/axonivy/migration/major/post-migration.rst:35
 msgid "Test the migrated project in the Axon Ivy Designer."
@@ -1555,7 +1555,7 @@ msgid ""
 msgstr ""
 "Axon Ivy を統合する簡単な方法は :ref:`外部データベース<database-"
 "configuration>` 使用することです。Axon Ivy のプロセスから :ref:`process-element-db-"
-"activity`を使用してデータベースの内容を読み書きしたり、 :ref:`JPA<persistence>` を使用して Java "
+"activity` を使用してデータベースの内容を読み書きしたり、 :ref:`JPA<persistence>` を使用して Java "
 "で統合することができます。"
 
 #: ../../source/concepts/3rd-party-integration/index.rst:4
@@ -1666,7 +1666,7 @@ msgid ""
 " `Callable Sub Process` and finish the creation wizard."
 msgstr ""
 ":ref:`process-new-"
-"wizard`を使用して、新しいプロセスを作成します。［`呼び出し可能なサブプロセス`］タイプを選択し、作成ウィザードを終了します。"
+"wizard`を使用して、新しいプロセスを作成します。［`呼び出し可能なサブプロセス` ］タイプを選択し、作成ウィザードを終了します。"
 
 #: ../../source/concepts/3rd-party-integration/process-extensions.rst:53
 msgid ""
@@ -1688,7 +1688,7 @@ msgid ""
 "Connect it, pass parameters to and fro and you are done."
 msgstr ""
 "これにより、カプセル化されたサブプロセスのロジックを多くのプロセスで再利用することが可能になります :ref:`process-element-"
-"call-sub`アクティビティを使用し、作成したサブプロセスをターゲットとして選択してください。接続し、パラメーターをやり取りすれば完了です。"
+"call-sub` アクティビティを使用し、作成したサブプロセスをターゲットとして選択してください。接続し、パラメーターをやり取りすれば完了です。"
 
 #: ../../source/concepts/3rd-party-integration/process-extensions.rst:66
 msgid "Custom Element feeling"
@@ -1711,7 +1711,7 @@ msgid ""
 msgstr ""
 ":ref:`process-element-sub-process-start` イベントに移動し :ref:`process-editor-"
 "quick-"
-"actions`要素を使用してカスタムアイコンを追加します。このアイコンは、この開始時だけでなく、すべての呼び出し元の要素にも表示されます。これにより、作成したサブプロセスが識別しやすくなり、より多く利用されるようになります。"
+"actions` 要素を使用してカスタムアイコンを追加します。このアイコンは、この開始時だけでなく、すべての呼び出し元の要素にも表示されます。これにより、作成したサブプロセスが識別しやすくなり、より多く利用されるようになります。"
 
 #: ../../source/concepts/3rd-party-integration/process-extensions.rst:79
 msgid ""
@@ -1770,10 +1770,10 @@ msgstr "サブプロセスでロジックを再利用する際に直面する可
 #: ../../source/concepts/3rd-party-integration/process-extensions.rst:106
 msgid ""
 "You can invent such custom logic nevertheless, by using :ref:`extensible-"
-"process-elements`, which are explained in the next chapter."
+"process-elements` , which are explained in the next chapter."
 msgstr ""
 "ただし、次のセクションで説明す :ref:`extensible-process-"
-"elements`を使用することで、そのようなカスタムロジックを作成することはできます。"
+"elements` を使用することで、そのようなカスタムロジックを作成することはできます。"
 
 #: ../../source/concepts/3rd-party-integration/process-extensions.rst:117
 msgid "Extendible Process Elements"
@@ -1960,7 +1960,7 @@ msgid ""
 msgstr ""
 "ドロップイン要素の開発、作成 :ref:`distribute<dropin-"
 "installation>` 難しいことから、使用はあまり推奨しません。ほとんどのお客様にとっては :ref:`connector-"
-"process-elements`や :ref:`extensible-process-elements` を使用する方が良いでしょう。"
+"process-elements` や :ref:`extensible-process-elements` を使用する方が良いでしょう。"
 
 #: ../../source/concepts/3rd-party-integration/process-extensions.rst:189
 msgid ""
@@ -2156,8 +2156,8 @@ msgid ""
 "rest-client-activity` to call the REST service."
 msgstr ""
 "リモート REST サービスを呼び出すには :ref:`rest-clients-"
-"configuration`で定義する必要があります。定義後 :ref:`process-element-rest-client-"
-"activity`を使用して、REST サービスを呼び出すことができます。"
+"configuration` で定義する必要があります。定義後 :ref:`process-element-rest-client-"
+"activity` を使用して、REST サービスを呼び出すことができます。"
 
 #: ../../source/concepts/3rd-party-integration/restapi.rst:26
 msgid ""
@@ -2448,7 +2448,7 @@ msgid ""
 "your process."
 msgstr ""
 "リモート Web サービスを呼び出すには :ref:`webservice-clients-"
-"configuration`に登録する必要があります。新しいウェブサービスのエントリを追加し、WSDL の URI "
+"configuration` に登録する必要があります。新しいウェブサービスのエントリを追加し、WSDL の URI "
 "を入力し、プロセスで使用可能なクライアントを作成してください。"
 
 #: ../../source/concepts/3rd-party-integration/webservice.rst:17
@@ -2716,7 +2716,7 @@ msgid ""
 "start-request-trigger-tab>` inscription for details."
 msgstr ""
 "複数のプロセスケースを結合できるエンティティ :ref:`business-"
-"case`です。同じビジネスケースに属するすべてのケースとタスクが、関連するケースとしてユーザーのワークフロー画面に表示されます。そのため、トリガー可能なプロセスとシグナル可能なプロセスは、呼び出し側のプロセスケースと同じビジネスケースに属しているかどうかを定義する必要があります。この定義は、これらの開始に関する簡単な設定で行うことができます。詳細については、:ref"
+"case` です。同じビジネスケースに属するすべてのケースとタスクが、関連するケースとしてユーザーのワークフロー画面に表示されます。そのため、トリガー可能なプロセスとシグナル可能なプロセスは、呼び出し側のプロセスケースと同じビジネスケースに属しているかどうかを定義する必要があります。この定義は、これらの開始に関する簡単な設定で行うことができます。詳細については、:ref"
 ":`process-element-signal-start` :ref:`トリガーの開始<process-element-start-"
 "request-trigger-tab>` インスクリプションを参照してください。"
 
@@ -3053,9 +3053,9 @@ msgid ""
 "defines the filter for awaited signal codes:"
 msgstr ""
 "ユーザータスク要素に接続され :ref:`process-element-signal-boundary-"
-"event`は、一致するシグナルが受信され、タスクが中断状態の場合、タスクを破棄します（「ワークフロー」の章の :ref:`signal-"
+"event` は、一致するシグナルが受信され、タスクが中断状態の場合、タスクを破棄します（「ワークフロー」の章の :ref:`signal-"
 "boundary-"
-"event`」も参照）。シグナル境界イベントのインスクリプションされたパターンは、受信待ちのシグナルコードのフィルターを定義します。"
+"event` 」も参照）。シグナル境界イベントのインスクリプションされたパターンは、受信待ちのシグナルコードのフィルターを定義します。"
 
 #: ../../source/concepts/adaptive-case-management.rst:318
 msgid "Listen for a canceled order signal with a specific id defined as macro:"
@@ -3256,7 +3256,7 @@ msgid ""
 "Boundary Event and inspect the signal variable in the 'Variables' view."
 msgstr ""
 "シグナルイベントのシグナルデータをデバッグするには、シグナル開始イベントまたはシグナル境界イベント :ref:`simulate-process-"
-"models-breakpoints`を設定し、変数ビューでシグナル変数を精査します。"
+"models-breakpoints` を設定し、変数ビューでシグナル変数を精査します。"
 
 #: ../../source/concepts/application-lifecycle/index.rst:4
 msgid "Application Lifecycle"
@@ -3575,7 +3575,7 @@ msgid ""
 "error-start`."
 msgstr ""
 "エラーは、アクティビティやサブプロセスに接続され :ref:`process-element-error-boundary-"
-"event`、または :ref:`process-element-error-start` によってキャッチできます。"
+"event` 、または :ref:`process-element-error-start` によってキャッチできます。"
 
 #: ../../source/concepts/error-handling.rst:21
 msgid ""
@@ -3653,7 +3653,7 @@ msgid ""
 "caught on the same process level."
 msgstr ""
 ":ref:`process-element-error-"
-"end`でエラーがスローされた場合（承認が拒否された場合など）、プロセスのハッピーパスが残ります。エラー終了イベントはエラーを上位のプロセスレベルにスローします。同じプロセスレベルではキャッチされません。"
+"end` でエラーがスローされた場合（承認が拒否された場合など）、プロセスのハッピーパスが残ります。エラー終了イベントはエラーを上位のプロセスレベルにスローします。同じプロセスレベルではキャッチされません。"
 
 #: ../../source/concepts/error-handling.rst:69
 msgid ""
@@ -3819,7 +3819,7 @@ msgid ""
 "Error Code matches the received error code."
 msgstr ""
 "設定されたエラーコードが受信したエラーコードと一致する場合 :ref:`process-element-error-boundary-"
-"event`は、接続する側のアクティビティまたはサブプロセスからスローされたエラーをキャッチします。"
+"event` は、接続する側のアクティビティまたはサブプロセスからスローされたエラーをキャッチします。"
 
 #: ../../source/concepts/error-handling.rst:183
 msgid "Error Start Event"
@@ -3832,7 +3832,7 @@ msgid ""
 " Code matches the thrown error."
 msgstr ""
 "設定されたエラーコードが受信したエラーコードと一致する場合 :ref:`process-element-error-"
-"start`は、同じプロセス内またはサブプロセス内でスローされた未処理のエラーをキャッチします。"
+"start` は、同じプロセス内またはサブプロセス内でスローされた未処理のエラーをキャッチします。"
 
 #: ../../source/concepts/error-handling.rst:192
 msgid "Loop Prevention"
@@ -4649,7 +4649,7 @@ msgid ""
 "the executed elements."
 msgstr ""
 "プロセスをアサートするための API は複数あり、その一つ :ref:`process-testing-"
-"history`です。``History`` "
+"history`です。``History` ` "
 "を使用して、実行したプロセス要素にアクセスできます。この例では、実行された要素の名前をアサートしています。"
 
 #: ../../source/concepts/testing/process-testing.rst:87
@@ -6143,7 +6143,7 @@ msgid ""
 "You are able to write at runtime to the cms. In this case it is necessary"
 " that you write in the CMS of the application. Because the cms of the "
 "application has the highest importance (see :ref:`cms-content-"
-"resolution`) and the cms of the application is always writeable at "
+"resolution` ) and the cms of the application is always writeable at "
 "runtime."
 msgstr ""
 "実行時に CMS に書き込むことができます。この場合、アプリケーションの CMS に書き込む必要があります。なぜなら、アプリケーションの CMS "
@@ -6457,7 +6457,7 @@ msgid ""
 "this external database."
 msgstr ""
 "このようなニーズが予想される場合は、プロパティとその他の設定値の両方 :ref:`dynamic-"
-"config`式を使用して、これらのオペレーションの設定調整を簡素化できます。例えば、``databaseName=${ivy.var.cloudDb}``"
+"config`式を使用して、これらのオペレーションの設定調整を簡素化できます。例えば、``databaseName=${ivy.var.cloudDb}`` "
 " というプロパティは実行時に評価され、 ``cloudDb`` という名前の変数の値を持ちます。そのため、データベース名は ``cloudDb``"
 " 変数を使用して設定可能です。オペレーションはこの変数を正しく設定する必要がありますが、この外部データベースの設定を行う必要はありません。"
 
@@ -6754,7 +6754,7 @@ msgid ""
 "to start the wizard."
 msgstr ""
 "OpenAPI クライアントジェネレーターウィザードは :ref:`process-element-rest-client-"
-"activity`を含む特定の呼び出しの検証エディターとインスクリプションエディターの簡易機能を提供します。*REST "
+"activity` を含む特定の呼び出しの検証エディターとインスクリプションエディターの簡易機能を提供します。*REST "
 "クラスの作成*ボタンをクリックすると、ウィザードが開始されます。"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:102
@@ -6952,7 +6952,7 @@ msgid ""
 msgstr ""
 "REST クライアント呼び出しの SSL クライアント認証を設定するには、*SSL.keyAlias* "
 "プロパティを指定します。このエイリアスの値は :ref:`engine-cockpit-"
-"ssl`で設定されたクライアントキーストアで利用可能なキーエイリアスに対応する必要があります。"
+"ssl` で設定されたクライアントキーストアで利用可能なキーエイリアスに対応する必要があります。"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:202
 msgid "**JSON Properties**"
@@ -7126,7 +7126,7 @@ msgid ""
 "this external database."
 msgstr ""
 "このようなニーズが予想される場合は、プロパティとその他の設定値の両方 :ref:`dynamic-"
-"config`式を使用することで、これらのオペレーションの設定調整を簡素化できます。例えば、``appId=${ivy.var.cloudAppId}``"
+"config`式を使用することで、これらのオペレーションの設定調整を簡素化できます。例えば、``appId=${ivy.var.cloudAppId}`` "
 " というプロパティは実行時に評価され、 ``cloudAppId`` という名前の変数の値を持ちます。そのため、データベース名は "
 "``cloudAppId`` "
 "変数を使用して設定可能です。オペレーションはこの変数を正しく設定する必要がありますが、この外部データベースの設定を行う必要はありません。"
@@ -7761,7 +7761,7 @@ msgid ""
 msgstr ""
 "認証プロパティ（``ユーザー名``、``パスワード``など）は、リモートサービスを呼び出す :ref:`process-element-web-"
 "service-call-"
-"activity`でオーバーライドできます。これらのアクティビティでは、認証プロパティにスクリプト化された値や動的な値を含めることができます。"
+"activity` でオーバーライドできます。これらのアクティビティでは、認証プロパティにスクリプト化された値や動的な値を含めることができます。"
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:118
 msgid ""
@@ -7805,7 +7805,7 @@ msgid ""
 msgstr ""
 "Web サービスの SSL クライアント認証を設定するには、*SSL.keyAlias* "
 "プロパティを指定する必要があります。このエイリアスの値は :ref:`engine-cockpit-"
-"ssl`で設定されたクライアントキーストアで利用可能なキーエイリアスに対応する必要があります。"
+"ssl` で設定されたクライアントキーストアで利用可能なキーエイリアスに対応する必要があります。"
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:164
 msgid "Endpoint URIs Section ~~~~~~~~~~~~~-~~~~~~~"
@@ -7880,7 +7880,7 @@ msgid ""
 msgstr ""
 "ランタイム環境に応じて、呼び出すエンドポイント URI "
 "を変更しなければならないことがあります。例えば、ステージング用と本番用でエンドポイントが異なる場合を想定し :ref:`dynamic-"
-"config`式をサポートしています。http://${ivy.var.erpHost}/soap/service`` "
+"config`式をサポートしています。http://${ivy.var.erpHost}/soap/service` ` "
 "として定義されたエンドポイント URI は、``erpHost`` という名前の変数から呼び出すホストを消費します。"
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:206
@@ -8028,7 +8028,7 @@ msgid ""
 "serialization, declare it as :ref:`business-data-own-module`."
 msgstr ""
 "Jackson は、ビジネスデータのシリアライズに使用されるだけでなく :ref:`integration-"
-"rest`の提供にも使用されます。Jackson のシリアライズをカスタマイズすると、REST "
+"rest` の提供にも使用されます。Jackson のシリアライズをカスタマイズすると、REST "
 "サービスの入力パラメーターまたは戻りパラメーターとして使用される Java "
 "オブジェクトのシリアライズにも影響が及ぶ可能性が非常に高くなります。シリアライズの動作をビジネスデータのシリアライズにのみ適用する必要がある場合は、:ref"
 ":`business-data-own-module`として宣言してください。"
@@ -8463,7 +8463,7 @@ msgid ""
 "its attributes to a relational database."
 msgstr ""
 ":ref:`persistence-entity-"
-"classes`はグローバルデータクラスに似ていますが、クラスのデータとその属性をリレーショナルデータベースに格納する場所と方法に関する追加情報を保持しています。"
+"classes` はグローバルデータクラスに似ていますが、クラスのデータとその属性をリレーショナルデータベースに格納する場所と方法に関する追加情報を保持しています。"
 
 #: ../../source/designer-guide/data-modeling/data-classes/data-classes.rst:40
 #: ../../source/designer-guide/data-modeling/data-classes/data-classes.rst:45
@@ -8555,7 +8555,7 @@ msgid ""
 "editor`."
 msgstr ""
 "エンティティクラスを開くと、追加のプロパティをこのエディターで設定できます。追加のプロパティ :ref:`persistence-entity-"
-"class-editor`に記載されています。"
+"class-editor` に記載されています。"
 
 #: ../../source/designer-guide/data-modeling/data-classes/data-classes.rst:81
 msgid ""
@@ -8912,7 +8912,7 @@ msgid ""
 " Entity Classes."
 msgstr ""
 ":ref:`data-class-"
-"editor`で言及されているすべての機能は、このエディターにも適用されます。これは単にエンティティクラスに特化した機能を拡張したものです。"
+"editor` で言及されているすべての機能は、このエディターにも適用されます。これは単にエンティティクラスに特化した機能を拡張したものです。"
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:16
 msgid "Database Table"
@@ -9222,7 +9222,7 @@ msgid ""
 ":`data-repository-api`."
 msgstr ""
 "エンティティクラスはグローバ :ref:`data-"
-"classes`に似ていますが、クラスのデータとその属性をリレーショナルデータベースに格納する場所と方法に関する追加情報を保持しています。エンティティクラスはデータベース表に直接マッピングされ、エンティティクラスの属性はデータベース表のフィールドに直接マッピングされます。そのため :ref:`データベーススキーマの生成"
+"classes` に似ていますが、クラスのデータとその属性をリレーショナルデータベースに格納する場所と方法に関する追加情報を保持しています。エンティティクラスはデータベース表に直接マッピングされ、エンティティクラスの属性はデータベース表のフィールドに直接マッピングされます。そのため :ref:`データベーススキーマの生成"
 "<persistence-generate-database-schema>` エンティティクラスから直接行うことができます。:ref"
 ":`persistence-api` を使用して、エンティティオブジェクトを読み込み、保存、更新できます。"
 
@@ -9356,7 +9356,7 @@ msgid ""
 "and its attributes to database table columns."
 msgstr ""
 "ビジネスプロセスやユーザーダイアログプロセスで自動永続化を使用するには、最初 :ref:`persistence-entity-"
-"classes`を定義する必要があります。エンティティクラスはデータクラス（ビジネスオブジェクト）に似ていますが、クラスをデータベース表、その属性をデータベース表の列にマッピングするための追加情報を保持しています。"
+"classes` を定義する必要があります。エンティティクラスはデータクラス（ビジネスオブジェクト）に似ていますが、クラスをデータベース表、その属性をデータベース表の列にマッピングするための追加情報を保持しています。"
 
 #: ../../source/designer-guide/data-modeling/persistence/index.rst:19
 msgid ""
@@ -9452,7 +9452,7 @@ msgstr ""
 "Axon Ivy の永続性 API "
 "は、エンティティオブジェクトをデータベースから直接読み込んだり、データベース上で保存／更新するのに使用されます。スクリプトがサポートされているどこでも、IvyScript"
 " から永続性 API にアクセスできます。永続性 API はエンティティオブジェクト、つま :ref:`persistence-entity-"
-"classes`型のオブジェクトのみを扱うことができます。永続性 API は ``ivy.persistence.``*<persistence "
+"classes` 型のオブジェクトのみを扱うことができます。永続性 API は ``ivy.persistence.``*<persistence "
 "unit>* "
 "の下にあります。そこには、エンティティオブジェクトの検索、永続化、更新、問い合わせのためのすべてのメソッドがあります。詳細については、``IIvyEntityManager``"
 " を参照してください。*<persistence unit>* を永続性ユニットの名前に置き換えてください。永続性ユニットは:ref"
@@ -10076,7 +10076,7 @@ msgid ""
 "schema` for details."
 msgstr ""
 "選択した永続性ユニットに属するエンティティクラスからデータベーススキーマを生成します。詳細については、 :ref:`persistence-"
-"generate-database-schema`」を参照してください。"
+"generate-database-schema` 」を参照してください。"
 
 #: ../../source/designer-guide/data-modeling/persistence/persistence-configuration-editor.rst:61
 msgid "*Axon Ivy Project Tree > double click on the Persistence label.*"
@@ -10252,7 +10252,7 @@ msgid ""
 "like the ``<scope>`  could get lost trough the simple editor usage."
 msgstr ""
 "``<type>iar</type>`  との依存関係は :ref:`project-deployment-"
-"descriptor`で操作されます。そのため、``<scope>`  "
+"descriptor`で操作されます。そのため、`` <scope>`  "
 "のような追加の設定は、単純なエディターの使用によって失われる可能性があります。"
 
 #: ../../source/designer-guide/how-to/continuous-integration.rst:72
@@ -10436,7 +10436,7 @@ msgid ""
 "service-call-activity`."
 msgstr ""
 "Web サービスを使用して外部システムのデータを格納し、アクセスします。詳細については、 :ref:`process-element-web-"
-"service-call-activity`」の章を参照してください。"
+"service-call-activity` 」の章を参照してください。"
 
 #: ../../source/designer-guide/how-to/data-storage.rst:58
 msgid ""
@@ -10616,8 +10616,8 @@ msgstr ""
 "Axon Ivy "
 "には、データをエンジンのメモリ内の*データキャッシュ*に一時的に保存する機能が搭載されています。しばらくの間変更されないデータを読み取りたい場合、アクセスする必要があるたびにデータを再読み取りする必要はありません。このようなデータをデータベースから長時間クエリを実行したり、低速のウェブサービスを呼び出して読み込む場合、このデータをキャッシュすることでパフォーマンスを大幅に向上できます。:ref"
 ":`process-element-db-activity`と :ref:`process-element-web-service-call-"
-"activity`はデータキャッシュをネイティブにサポートしており（詳細については、 :ref:`process-element-tab-"
-"data-cache`」を参照）、その他のデータについては IvyScript でデータキャッシュ API にアクセスできます。"
+"activity` はデータキャッシュをネイティブにサポートしており（詳細については、 :ref:`process-element-tab-"
+"data-cache` 」を参照）、その他のデータについては IvyScript でデータキャッシュ API にアクセスできます。"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:37
 msgid "Caches"
@@ -10634,7 +10634,7 @@ msgid ""
 msgstr ""
 "キャッシュされたデータは常にデータキャッシュエントリに保存されます。 :ref:`process-element-db-activity` や "
 ":ref:`process-element-web-service-call-activity`  :ref:`process-element-"
-"tab-data-cache`を使用した場合、データベースクエリや Web "
+"tab-data-cache` を使用した場合、データベースクエリや Web "
 "サービス呼び出しなどによって、データキャッシュエントリへの保存が行われます。また、パブリック API "
 "を使用して、任意のオブジェクトをデータキャッシュエントリに保存することもできます。エントリはテキスト形式のエントリ識別子で識別されます。"
 
@@ -11029,7 +11029,7 @@ msgid ""
 " day. To use the Axon Ivy search, just click on the |image1| symbol in "
 "the toolbar to open the search dialog. In the dialog that opens navigate "
 "to the Axon Ivy tab. At present, searching for :ref:`cms`, :ref:`data-"
-"classes`, :ref:`persistence-entity-classes`, :ref:`Process Models "
+"classes` , :ref:`persistence-entity-classes`, :ref:`Process Models "
 "<process-modeling>` and :ref:`Process Elements <process-elements>` is "
 "supported by Axon Ivy."
 msgstr ""
@@ -11037,7 +11037,7 @@ msgstr ""
 "要素を見つけるのが難しいことがあります。そのような場合には、強力な検索メカニズムが役立ちます。Axon Ivy の検索を行うには、ツールバーの "
 "|image1| のアイコンをクリックして検索ダイアログを開きます。開いたダイアログで Axon Ivy "
 "タブに移動します。現在、 :ref:`cms` 、 :ref:`data-classes`  :ref:`persistence-entity-"
-"classes`、 :ref:`プロセスモデル<process-modeling>`  :ref:`プロセス要素<process-"
+"classes` 、 :ref:`プロセスモデル<process-modeling>`  :ref:`プロセス要素<process-"
 "elements>` 検索が Axon Ivy でサポートされています。"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:317
@@ -11089,7 +11089,7 @@ msgid ""
 " which projects are currently selected."
 msgstr ""
 "ワークスペース全体で検索を行うか、あるいはエンクロージングプロジェクト :ref:`ivy-project-"
-"view`で選択されているプロジェクト）だけで検索を行うかを決めることができます。*エンクロージングプロジェクト*を選択した場合は、依存プロジェクトや必須プロジェクトの検索を含めるかどうかを選択できます（プロジェクトの依存関係を定義して使用する方法の詳細については、「:ref"
+"view` で選択されているプロジェクト）だけで検索を行うかを決めることができます。*エンクロージングプロジェクト*を選択した場合は、依存プロジェクトや必須プロジェクトの検索を含めるかどうかを選択できます（プロジェクトの依存関係を定義して使用する方法の詳細については、「:ref"
 ":`project-deployment-"
 "descriptor`」の章を参照）。ツールチップのテキストは、現在どのプロジェクトが選択されているかを示します。"
 
@@ -11272,7 +11272,7 @@ msgid ""
 ":`process-element-user-task` whereon an Offline Dialog is configured."
 msgstr ""
 "オフラインダイアログが設定され :ref:`process-element-user-"
-"task`をプロセスエンジンが実行すると、オフラインタスクが生成されます。"
+"task` をプロセスエンジンが実行すると、オフラインタスクが生成されます。"
 
 #: ../../source/designer-guide/how-to/offline-tasks.rst:22
 msgid ""
@@ -11480,7 +11480,7 @@ msgid ""
 "synchronization error when switching from offline to online."
 msgstr ""
 "入力されたデータは、フォーム送信の**前**に検証される必要があります :ref:`html-dialog-client-side-"
-"validation`）。サーバーサイドの検証のみ実行された場合、ユーザーは、オフラインからオンラインに切り替わる際に同期エラーとして、遅いフィードバックを得ることになります。"
+"validation` ）。サーバーサイドの検証のみ実行された場合、ユーザーは、オフラインからオンラインに切り替わる際に同期エラーとして、遅いフィードバックを得ることになります。"
 
 #: ../../source/designer-guide/how-to/offline-tasks.rst:156
 msgid ""
@@ -11644,7 +11644,7 @@ msgstr ""
 "*Acme Webshop* プロジェクトをオーバーライドする側のプロジェクトとして使用する方法は 2 つあります。1 "
 "つは、一般的な*ウェブショップ*アプリケーションで :ref:`strict_overriding` "
 "を定義する方法です。ただし、まず始めに、オーバーライドする側のプロジェクトがベースプロジェクトに依存しており、 :ref:`overrides-"
-"editor`」で説明されているように、オーバーライドする側のプロジェクトで各オーバーライドが定義されていることを確認してください。"
+"editor` 」で説明されているように、オーバーライドする側のプロジェクトで各オーバーライドが定義されていることを確認してください。"
 
 #: ../../source/designer-guide/how-to/overrides.rst:73
 msgid "Strict Overriding"
@@ -11825,7 +11825,7 @@ msgstr ""
 "HD だけでなく、HD "
 "のコンポーネントにもオーバーライドを定義できます。このセクションにマッピングエントリを追加して、（サブ）プロセスで定義された HD "
 "や、親プロジェクトで定義された HD のコンポーネントをオーバーライドできます。HD の詳細については :ref:`user-"
-"dialogs`」の章を参照してください。"
+"dialogs` 」の章を参照してください。"
 
 #: ../../source/designer-guide/how-to/overrides.rst:195
 msgid ""
@@ -12365,7 +12365,7 @@ msgid ""
 msgstr ""
 "特定のユースケースの REST ワークフロー API が見つからない場合は、プロジェクト内で REST API "
 "サービスクラスを作成して、簡単に追加の API を提供できます。 :ref:`integration-rest-"
-"provider`」を参照ください。"
+"provider` 」を参照ください。"
 
 #: ../../source/designer-guide/how-to/workflow/business-calendar.rst:5
 #: ../../source/engine-guide/configuration/advanced-configuration.rst:46
@@ -12504,7 +12504,7 @@ msgid ""
 " how to configure business calendars on your Engine instance."
 msgstr ""
 "エンジンインスタンスでビジネスカレンダーを設定する方法については、エンジンガイドの :ref:`configuration-business-"
-"calendar`」のセクションを参照してください。"
+"calendar` 」のセクションを参照してください。"
 
 #: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:3
 msgid "Cases and Tasks"
@@ -12766,7 +12766,7 @@ msgstr ""
 msgid ""
 "Use custom fields to add additional business relevant information "
 "dynamically as key/value pairs on :ref:`Starts<process-element-tab-start-"
-"custom-fields>`, :ref:`Cases<process-element-tab-case-custom-fields>` and"
+"custom-fields>` , :ref:`Cases<process-element-tab-case-custom-fields>` and"
 " :ref:`Tasks <process-element-tab-task-custom-fields>`."
 msgstr ""
 "カスタムフィールドを使用して、ビジネスに関連する追加情報 :ref:`開始<process-element-tab-start-custom-"
@@ -14047,7 +14047,7 @@ msgid ""
 "process-models>` or :ref:`design HTML Dialogs <html-dialogs>`."
 msgstr ""
 "プロセスの作成： :ref:`プロセスのシミュレーションとデバッグ<simulate-process-models>` または :ref:`HTML "
-"ダイアログの設計<html-dialogs>`"
+"ダイアログの設計<html-dialogs>` "
 
 #: ../../source/designer-guide/introduction/perspectives.rst:41
 msgid "Other Perspectives"
@@ -14273,7 +14273,7 @@ msgid ""
 msgstr ""
 "他の要素のシミュレーションに集中したい場合は、プロセス開始または中間イベント Bean のシミュレーションをオフにします（イベント Bean "
 "のシミュレーションでは、対応するプロセスのプロセスエディターがポップアップし :ref:`simulate-process-models-"
-"debugger-runtimelog-view`がオーバーフローする可能性があります）。変更を適用するには、エンジンを再起動する必要があります。"
+"debugger-runtimelog-view` がオーバーフローする可能性があります）。変更を適用するには、エンジンを再起動する必要があります。"
 
 #: ../../source/designer-guide/introduction/preferences.rst:123
 msgid ""
@@ -14631,7 +14631,7 @@ msgid ""
 "views` and :ref:`designer-reference-editors`."
 msgstr ""
 "利用可能な :ref:`designer-reference-views`  :ref:`designer-reference-"
-"editors`については、リファレンスを参照してください。"
+"editors` については、リファレンスを参照してください。"
 
 #: ../../source/designer-guide/ivyscript/editor.rst:4
 #: ../../source/designer-guide/ivyscript/editor.rst:14
@@ -14998,7 +14998,7 @@ msgstr ""
 ":ref:`ivyscript-reference-data-types` は、使いやすいように定義されています。特に、IvyScript "
 "では、Ivy データオブジェクトが自動的に初期値に初期化されるため、プログラマーが NULL "
 "ポインタ例外を処理する必要はありません。詳細については、 :ref:`ivyscript-"
-"nullhandling`」のセクションを参照してください。"
+"nullhandling` 」のセクションを参照してください。"
 
 #: ../../source/designer-guide/ivyscript/language.rst:14
 msgid ""
@@ -16021,7 +16021,7 @@ msgid ""
 msgstr ""
 "``persistence`` - このアプリケーションの既存の永続性ユニットへの参照（ :ref:`永続性<persistence>` の API "
 "の詳細については、「 :ref:`Persistence-configuration-editor` 」および :ref:`persistence-"
-"api`」を参照）。"
+"api` 」を参照）。"
 
 #: ../../source/designer-guide/ivyscript/reference.rst:368
 msgid ""
@@ -16208,7 +16208,7 @@ msgid ""
 " features see :ref:`casemap-scripting`."
 msgstr ""
 "サイドステップを現在開始できるかどうかを決定します。スクリプトの機能については、 :ref:`casemap-"
-"scripting`」を参照してください。"
+"scripting` 」を参照してください。"
 
 #: ../../source/designer-guide/process-modeling/casemap.rst:127
 #: ../../source/designer-guide/process-modeling/casemap.rst:130
@@ -16372,8 +16372,8 @@ msgid ""
 "``SYSTEM``."
 msgstr ""
 "デフォルトでは、作成されたタスクを処理できる担当ロールは :ref:`process-element-start-"
-"request`のリクエストタブで設定されたロールです :ref:`process-element-start-"
-"request`がトリガー可能の場合は、トリガータブの情報も考慮され、タスクはこのタブで設定された担当ロールまたはユーザーに割り当てられます。プロセスを自動的に実行するには、:ref"
+"request` のリクエストタブで設定されたロールです :ref:`process-element-start-"
+"request` がトリガー可能の場合は、トリガータブの情報も考慮され、タスクはこのタブで設定された担当ロールまたはユーザーに割り当てられます。プロセスを自動的に実行するには、:ref"
 ":`process-element-start-request`をトリガー可能に設定し、担当ロールを``システム``に設定します。"
 
 #: ../../source/designer-guide/process-modeling/casemap.rst:243
@@ -16787,7 +16787,7 @@ msgstr ""
 msgid ""
 "``CONNECTOR``: Setting this tag allows a Sub Process Start element to be "
 "displayed in the Extensions Dialog. See :ref:`process-element-extension-"
-"item`"
+"item` "
 msgstr ""
 "``CONNECTOR``：このタグを設定して、拡張機能ダイアログにサブプロセス開始要素を表示できます。「ref:`process-"
 "element-extension-item`」を参照してください。"
@@ -16928,7 +16928,7 @@ msgid ""
 "contents from your project environment."
 msgstr ""
 "|search-action| プロジェクト環境からコンテンツを選択するため :ref:`process-inscription-"
-"browsers`を開きます。"
+"browsers` を開きます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:142
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:137
@@ -16957,7 +16957,7 @@ msgid ""
 msgstr ""
 "開始タブでは、プロセスを開始するための名前と入力パラメーターを定義します。シグネチャは、パラメーターの型とその順番を含む名前の定義です。:ref"
 ":`process-element-call-sub` :ref:`process-element-trigger-"
-"step`のような要素は、このシグネチャを参照します。"
+"step` のような要素は、このシグネチャを参照します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:164
 #: ../../source/designer-guide/reference/glossary.rst:133
@@ -17069,7 +17069,7 @@ msgid ""
 "exit-end` is reached."
 msgstr ""
 "このタブを使用して、プロセス終了時に呼び出し元に返される値を定義します。 :ref:`process-element-user-dialog-"
-"exit-end`に達するなど、終了要素に達すると、このタブ内のすべてのロジックが実行されます。"
+"exit-end` に達するなど、終了要素に達すると、このタブ内のすべてのロジックが実行されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:235
 msgid "Output Parameters"
@@ -17337,8 +17337,8 @@ msgid ""
 "task`."
 msgstr ""
 "このタブでは、タスクスイッチによって作成されるタスクのパラメーターを定義します。タスクタブ :ref:`process-element-task-"
-"switch-event`、 :ref:`process-element-task-switch-gateway`  :ref:`process-"
-"element-user-task`で使用されます。"
+"switch-event` 、 :ref:`process-element-task-switch-gateway`  :ref:`process-"
+"element-user-task` で使用されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:384
 msgid ""
@@ -17462,7 +17462,7 @@ msgid ""
 ":code:`2D`."
 msgstr ""
 "IvyScript 式は、タスクの有効期限が切れるまで :ref:`ivyscript-datatype-"
-"duration`を定義します。その場合、次のパラメーターで定義されたエスカレーション手順が実行されます。また、:code:`2D` "
+"duration`を定義します。その場合、次のパラメーターで定義されたエスカレーション手順が実行されます。また、:code:` 2D` "
 "のような単純な:public-api:`Duration "
 "</ch/ivyteam/ivy/scripting/objects/Duration.html>` 文を使用することもできます。"
 
@@ -17481,7 +17481,7 @@ msgid ""
 " full workflow API."
 msgstr ""
 "期限切れのタスクを補償す :ref:`process-element-error-"
-"start`を実行します。任意のカスタム動作を実装し、ワークフロー API 全体にアクセスできます。"
+"start` を実行します。任意のカスタム動作を実装し、ワークフロー API 全体にアクセスできます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:459
 msgid "**Responsible**"
@@ -17607,7 +17607,7 @@ msgid ""
 "configuration`."
 msgstr ""
 "この要素を使用して、データベースサーバ上で SQL コマンドを実行できます :ref:`database-"
-"configuration`で定義されているすべてのデータベースにアクセスできます。"
+"configuration` で定義されているすべてのデータベースにアクセスできます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:21
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:27
@@ -17838,7 +17838,7 @@ msgid ""
 "detailed description."
 msgstr ""
 "このタブでは、データキャッシュへのアクセスや無効化の設定を行うことができます。詳細な説明については、 :ref:`process-element-"
-"tab-data-cache`」を参照してください。"
+"tab-data-cache` 」を参照してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:144
 #: ../../source/designer-guide/process-modeling/process-elements/error-boundary-event.rst:26
@@ -17858,7 +17858,7 @@ msgid ""
 msgstr ""
 "このタブでは、データベースコマンドの実行中にエラーが発生したときにスローされるエラーコードを設定できます。エラーは、エラーをキャッチする:ref"
 ":`process-element-error-start`また :ref:`process-element-error-boundary-"
-"event`により処理できます。"
+"event` により処理できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:149
 msgid ""
@@ -17977,7 +17977,7 @@ msgid ""
 " or by an :ref:`process-element-error-boundary-event`."
 msgstr ""
 "この要素の実行中にエラーが発生するたびにスローされます。エラーは、エラーをキャッチす :ref:`process-element-error-"
-"start`または :ref:`process-element-error-boundary-event` により処理できます。"
+"start` または :ref:`process-element-error-boundary-event` により処理できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/email-activity.rst:66
 msgid "Tab Content"
@@ -18422,7 +18422,7 @@ msgid ""
 "activity`."
 msgstr ""
 "ワークフロー内で Java コードを呼び出すだけであれば :ref:`process-element-script-"
-"activity`から行う方が良いでしょう。"
+"activity` から行う方が良いでしょう。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:23
 msgid ""
@@ -18521,7 +18521,7 @@ msgid ""
 "error can be handled by a catching :ref:`process-element-error-start`."
 msgstr ""
 "Java PI クラスの return 呼び出しのタイムアウトを定義します。タイムアウトエラーは、エラーをキャッチす :ref:`process-"
-"element-error-start`により処理できます。"
+"element-error-start` により処理できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:68
 #: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:48
@@ -18916,7 +18916,7 @@ msgid ""
 "feature on the :ref:`rest-clients-configuration`."
 msgstr ""
 "他にもさまざまな HTTP ヘッダーを設定できます。例えば :ref:`rest-clients-"
-"configuration`で認可機能を使用して設定を行う場合は、``Authorization`` の方が簡単です。"
+"configuration`で認可機能を使用して設定を行う場合は、``Authorization` ` の方が簡単です。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:73
 msgid ""
@@ -18926,7 +18926,7 @@ msgid ""
 "property with dynamic values."
 msgstr ""
 "**プロパティ**：REST クライアントのオプションの機能やネイティブプロパティを設定するのに使用します :ref:`rest-clients-"
-"configuration`のプロパティでグローバルに設定可能です。ここでは、プロパティを動的な値で上書きできます。"
+"configuration` のプロパティでグローバルに設定可能です。ここでは、プロパティを動的な値で上書きできます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:80
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:123
@@ -19014,10 +19014,10 @@ msgstr ""
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:128
 msgid ""
 "See the chapter below  :ref:`process-element-rest-client-activity-json-"
-"to-java`) for a quick comparison of response body mapping solutions."
+"to-java` ) for a quick comparison of response body mapping solutions."
 msgstr ""
 "応答本体のマッピング方法の簡単な比較については、次のセクション :ref:`process-element-rest-client-"
-"activity-json-to-java`）を参照してください。"
+"activity-json-to-java` ）を参照してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:132
 msgid ""
@@ -19238,7 +19238,7 @@ msgid ""
 "configuration`. It provides fluent API to call the remote REST service."
 msgstr ""
 "REST クライアントにアクセスするエントリポイントは、``Ivy.rest()`` です :ref:`rest-clients-"
-"configuration`で定義されているように、返されるオブジェクトは、事前設定済みの "
+"configuration` で定義されているように、返されるオブジェクトは、事前設定済みの "
 "`javax.ws.rs.client.WebTarget "
 "<http://docs.oracle.com/javaee/7/api/javax/ws/rs/client/WebTarget.html>`__"
 " のインスタンスです。これは、リモート REST サービスを呼び出す Fluent API を提供します。"
@@ -19267,7 +19267,7 @@ msgid ""
 "``ch.ivyteam.ivy.rest.client.authentication.HttpBasicAuthenticationFeature``."
 msgstr ""
 "設定を複数回適用する代わりに :ref:`rest-clients-"
-"configuration`で設定をグローバルに設定できます。カスタム機能（``javax.ws.rs.core.Feature``）を実装して、REST"
+"configuration`で設定をグローバルに設定できます。カスタム機能（``javax.ws.rs.core.Feature`` ）を実装して、REST"
 " クライアント呼び出しのほぼすべての設定を行うことができます。Axon Ivy の認可機能の一例として、 "
 "``ch.ivyteam.ivy.rest.client.authentication.HttpBasicAuthenticationFeature``"
 " があります。"
@@ -19554,7 +19554,7 @@ msgid ""
 "offers a simple way to create several workflows inside a other workflow."
 msgstr ""
 "新しいワークフローを開始するもう 1 つの方法は :ref:`process-element-trigger-"
-"step`です。トリガーステップは、呼び出し時に、定義された設定（とパラメーター）を使用して、リクエスト開始に対して新しいケースと新しいタスクを作成します。この方法では、簡単に複数のワークフローを他のワークフロー内で作成できます。"
+"step` です。トリガーステップは、呼び出し時に、定義された設定（とパラメーター）を使用して、リクエスト開始に対して新しいケースと新しいタスクを作成します。この方法では、簡単に複数のワークフローを他のワークフロー内で作成できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:37
 msgid ""
@@ -19573,7 +19573,7 @@ msgid ""
 "start` for a more detailed description."
 msgstr ""
 "このタブでは、プロセスを開始する名前とパラメーター（いわゆるシグネチャ）を定義できます。詳細については、 :ref:`process-"
-"element-tab-start`」を参照してください。"
+"element-tab-start` 」を参照してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:55
 msgid ""
@@ -19823,7 +19823,7 @@ msgid ""
 "configuration."
 msgstr ""
 "すでに関連す :ref:`process-element-trigger-"
-"step`が無効化された開始にリンクされている場合、実行時の実行は禁止されません。エラーはログファイルに記録され、プロセスは定義された設定で開始します。"
+"step` が無効化された開始にリンクされている場合、実行時の実行は禁止されません。エラーはログファイルに記録され、プロセスは定義された設定で開始します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:197
 msgid "Responsible Role / User"
@@ -19842,7 +19842,7 @@ msgid ""
 "set by the :ref:`process-element-trigger-step`."
 msgstr ""
 "例えば :ref:`process-element-trigger-"
-"step`で設定されたパラメーターセットからなど、ロールやユーザーをプロセス実行中に動的に設定する必要がある場合は、*Role from "
+"step` で設定されたパラメーターセットからなど、ロールやユーザーをプロセス実行中に動的に設定する必要がある場合は、*Role from "
 "Attr.* または *User from Attr.* を使用します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:207
@@ -19858,7 +19858,7 @@ msgid ""
 "step`."
 msgstr ""
 "CREATOR ロールは、現在のケースを開始したユーザー :ref:`process-element-trigger-"
-"step`で作成されたタスクに対して責任を負うことを意味します。"
+"step` で作成されたタスクに対して責任を負うことを意味します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:213
 msgid "Delay (blocking period)"
@@ -19883,14 +19883,14 @@ msgstr "トリガーするケースと同じ :ref:`business-case` にトリガ�
 msgid ""
 "This tab defines information relevant to the task. Only tasks created "
 "with the :ref:`process-element-trigger-step` (see :ref:`process-element-"
-"start-request-trigger-tab`) will appear in the task list as suspended "
+"start-request-trigger-tab` ) will appear in the task list as suspended "
 "tasks. Tasks started with a HTTP request (see :ref:`process-element-"
-"start-request-tab-request`) normally do not appear in the task list."
+"start-request-tab-request` ) normally do not appear in the task list."
 msgstr ""
 "このタブでは、タスクに関連する情報を定義します。 :ref:`process-element-trigger-step` （「:ref"
 ":`process-element-start-request-trigger-"
 "tab`」を参照）で作成したタスクのみ、中断タスクとしてタスクリストに表示されます。通常、HTTP リクエスト（ :ref:`process-"
-"element-start-request-tab-request`」を参照）で開始されたタスクはタスクリストに表示されません。"
+"element-start-request-tab-request` 」を参照）で開始されたタスクはタスクリストに表示されません。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:232
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:117
@@ -19946,7 +19946,7 @@ msgid ""
 "defined by the following parameters is executed."
 msgstr ""
 "IvyScript 式は、タスクの有効期限が切れるまで :ref:`ivyscript-datatype-"
-"duration`を定義します。その場合、次のパラメーターで定義されたエスカレーション手順が実行されます。"
+"duration` を定義します。その場合、次のパラメーターで定義されたエスカレーション手順が実行されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:255
 msgid ""
@@ -19969,15 +19969,15 @@ msgstr "有効期限後の優先度：期限切れ後のタスクの新しい優
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:266
 msgid ""
 "A task created with a HTTP request (see :ref:`process-element-start-"
-"request-tab-request`) is executed immediately. Defining expiry timeout "
+"request-tab-request` ) is executed immediately. Defining expiry timeout "
 "makes only sense in combination when starting with a :ref:`process-"
 "element-trigger-step` (see :ref:`process-element-start-request-trigger-"
-"tab`)"
+"tab` )"
 msgstr ""
 "HTTP リクエスト（ :ref:`process-element-start-request-tab-"
-"request`」を参照）で作成されたタスクは直ちに実行されます :ref:`process-element-trigger-"
-"step`（ :ref:`process-element-start-request-trigger-"
-"tab`」を参照）で開始する場合のみ、有効期限のタイムアウトを定義してください。"
+"request` 」を参照）で作成されたタスクは直ちに実行されます :ref:`process-element-trigger-"
+"step` （ :ref:`process-element-start-request-trigger-"
+"tab` 」を参照）で開始する場合のみ、有効期限のタイムアウトを定義してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_tab-task-call-wait.rst:12
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:270
@@ -20007,7 +20007,7 @@ msgid ""
 " :ref:`process-element-tab-case` in the Common Tabs section."
 msgstr ""
 "このタブでは、この開始リクエストで作成されるケースを設定できます。「共通のタブ」の章の :ref:`process-element-tab-"
-"case`」を参照してください。"
+"case` 」を参照してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/sub-process-start.rst:4
 msgid "Sub Process Start"
@@ -20034,7 +20034,7 @@ msgid ""
 "description."
 msgstr ""
 "このタブを使用して、サブプロセスの名前と入力パラメーターを定義します。詳細については、 :ref:`process-element-tab-"
-"start`」を参照してください。"
+"start` 」を参照してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/sub-process-start.rst:29
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:27
@@ -20073,7 +20073,7 @@ msgid ""
 "simplified element is to have a more BPMN conform element."
 msgstr ""
 "タスクスイッチイベント要素の機能 :ref:`process-element-task-switch-"
-"gateway`要素と同じです。違いは、タスクスイッチイベント要素には、並列するタスクスイッチゲートウェイのように複数の入出力ではなく、1 "
+"gateway` 要素と同じです。違いは、タスクスイッチイベント要素には、並列するタスクスイッチゲートウェイのように複数の入出力ではなく、1 "
 "つの入力と 1 つの出力のみ設定できることです。この簡素化された要素を使用することで、より BPMN に準拠した要素を設定できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/task-switch-event.rst:19
@@ -20176,7 +20176,7 @@ msgid ""
 "Switch Gateway can have multiple configurable tasks."
 msgstr ""
 "このタブでは、このゲートウェイのタスクを設定できます。詳細については、 :ref:`process-element-tab-"
-"task`」を参照してください。参照先のタスクタブとの違いは、タスクスイッチゲートウェイには複数のタスクを設定できる点のみです。"
+"task` 」を参照してください。参照先のタスクタブとの違いは、タスクスイッチゲートウェイには複数のタスクを設定できる点のみです。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/task-switch-gateway.rst:74
 #: ../../source/designer-guide/process-modeling/process-elements/task-switch-gateway.rst:77
@@ -20204,7 +20204,7 @@ msgid ""
 "page or the task list."
 msgstr ""
 "［*タスクリストをスキップ*］が有効で（ :ref:`process-element-tab-"
-"task`」を参照）、タスクが作成されない場合は、ページやタスクリストが表示されずに、ケースが続行されます。"
+"task` 」を参照）、タスクが作成されない場合は、ページやタスクリストが表示されずに、ケースが続行されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/task-switch-gateway.rst:95
 msgid ""
@@ -20232,7 +20232,7 @@ msgid ""
 "returned to the Trigger element."
 msgstr ""
 "トリガー要素を使用して、新しいワークフローを開始できます。トリガー要素は、トリガーによる開始メカニズムが有効 :ref:`process-"
-"element-start-request`要素をトリガーします。"
+"element-start-request` 要素をトリガーします。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/trigger-step.rst:20
 msgid ""
@@ -20255,7 +20255,7 @@ msgid ""
 "the triggered :ref:`process-element-start-request`."
 msgstr ""
 "``result`` 変数には、トリガーされ :ref:`process-element-start-"
-"request`によって返される作成済みのタスクが含まれます。"
+"request` によって返される作成済みのタスクが含まれます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog.rst:6
 msgid ""
@@ -20408,7 +20408,7 @@ msgid ""
 " continues."
 msgstr ""
 "最初に呼び出された開始メソッドの*結果タブ*のコードが実行され、ユーザーダイアログを呼び出し :ref:`process-element-"
-"user-dialog`に計算された結果が受け渡されます。その後、呼び出し元のプロセスが続行されます。"
+"user-dialog` に計算された結果が受け渡されます。その後、呼び出し元のプロセスが続行されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-method-start.rst:4
 msgid "User Dialog Method Start"
@@ -20443,7 +20443,7 @@ msgid ""
 "for a more detailed description."
 msgstr ""
 "このタブを使用して、メソッドのプロセスの終了時に呼び出し元に返される値を定義します。詳細については、 :ref:`process-element-"
-"tab-result`」を参照してください。"
+"tab-result` 」を参照してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-method-start.rst:35
 msgid "Method"
@@ -20457,7 +20457,7 @@ msgid ""
 "the scripting block."
 msgstr ""
 "メソッドのプロセス :ref:`process-element-user-dialog-process-"
-"end`に達すると、表の割り当てと表の下にあるスクリプトコードの両方が実行されます。スクリプトブロックの前に表の文が実行されます。"
+"end` に達すると、表の割り当てと表の下にあるスクリプトコードの両方が実行されます。スクリプトブロックの前に表の文が実行されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-process-end.rst:4
 msgid "User Dialog Process End"
@@ -20515,7 +20515,7 @@ msgid ""
 ":`process-element-tab-result` for a more detailed description."
 msgstr ""
 "このタブを使用して、ユーザーダイアログの戻り値を定義します。詳細については、 :ref:`process-element-tab-"
-"result`」を参照してください。"
+"result` 」を参照してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-start.rst:37
 msgid "Result"
@@ -20545,7 +20545,7 @@ msgid ""
 "the User Dialog has finished."
 msgstr ""
 "ユーザーダイアログの終了後、呼び出し元 :ref:`process-element-user-"
-"dialog`の*コードコンポーネント*の呼び出し元が、定義された結果オブジェクトを使用できるようになります。"
+"dialog` の*コードコンポーネント*の呼び出し元が、定義された結果オブジェクトを使用できるようになります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-task.rst:6
 msgid ""
@@ -20562,7 +20562,7 @@ msgid ""
 "can run in a Web Browser as well as on a mobile client."
 msgstr ""
 "*ユーザータスク*要素は、新しいタスクでユーザーダイアログを呼び出します。ユーザータスクは :ref:`process-element-task-"
-"switch-event`と :ref:`process-element-user-dialog` の動作を組み合わせたものです。通常の HTML "
+"switch-event` と :ref:`process-element-user-dialog` の動作を組み合わせたものです。通常の HTML "
 "ダイアログやオフラインダイアログを呼び出すことができます。どちらも JSF "
 "テクノロジーをベースにしており、ウェブブラウザやモバイルクライアントで実行できます。"
 
@@ -20884,7 +20884,7 @@ msgid ""
 "detailed description."
 msgstr ""
 "このタブを使用して、Web サービスオペレーションの名前と入力パラメーターを定義します。詳細については、 :ref:`process-"
-"element-tab-start`」を参照してください。"
+"element-tab-start` 」を参照してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:28
 msgid ""
@@ -21033,7 +21033,7 @@ msgid ""
 msgstr ""
 "このタブで定義されるタスクのポストコンストラクトコードブロックです。作成されたタスクは ``task`` "
 "という名前の変数として提供されます。詳細およびユースケースについては、 :ref:`process-element-tab-"
-"task`」を参照してください。"
+"task` 」を参照してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:135
 msgid ""
@@ -21041,7 +21041,7 @@ msgid ""
 "Process Start. See :ref:`process-element-tab-case`."
 msgstr ""
 "このタブでは、この Web サービスプロセスの開始で作成されるケースを設定できます。 :ref:`process-element-tab-"
-"case`」を参照してください。"
+"case` 」を参照してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:142
 msgid ""
@@ -21084,7 +21084,7 @@ msgid ""
 " processes."
 msgstr ""
 "この章では、Axon Ivy プロセスとその使用方法を紹介します。プロセスの作成と論理構成 :ref:`process-"
-"editor`の機能、各種プロセスと合わせて説明します。"
+"editor` の機能、各種プロセスと合わせて説明します。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/new-process-group-wizard.rst:4
 #: ../../source/designer-guide/process-modeling/process-modeling/new-process-group-wizard.rst:15
@@ -21183,7 +21183,7 @@ msgid ""
 "your business logic."
 msgstr ""
 ":ref:`process-kind-"
-"business`：このオプションは、通常の標準的なビジネスプロセスを作成するデフォルトのオプションです。このオプションを使用して、ビジネスロジックを実装します。"
+"business` ：このオプションは、通常の標準的なビジネスプロセスを作成するデフォルトのオプションです。このオプションを使用して、ビジネスロジックを実装します。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/new-process-wizard.rst:43
 msgid ""
@@ -21470,7 +21470,7 @@ msgid ""
 ":`process-editor-preferences`)"
 msgstr ""
 "グリッド：グリッドモードを切り替えます。 :ref:`process-editor-"
-"preferences`でグリッドモードを設定することもできます。）"
+"preferences` でグリッドモードを設定することもできます。）"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:89
 msgid "Custom Icon: Toggle between custom and default icons."
@@ -21548,8 +21548,8 @@ msgid ""
 " will get a Quick Action Menu."
 msgstr ""
 "要素ごと :ref:`process-editor-quick-"
-"actions`があり、要素を編集するのに便利なアクションが表示されます。複数の要素を選択する場合は :ref:`process-editor-"
-"quick-actions-multi`にアクセスできます。クイックアクションメニューは :ref:`コネクター<process-editor-"
+"actions` があり、要素を編集するのに便利なアクションが表示されます。複数の要素を選択する場合は :ref:`process-editor-"
+"quick-actions-multi` にアクセスできます。クイックアクションメニューは :ref:`コネクター<process-editor-"
 "quick-actions-connector>` :ref:`スイムレーン<process-editor-quick-actions-"
 "lanes>` も表示されます。"
 
@@ -21624,7 +21624,7 @@ msgid ""
 ":`process-element-breakpoints` can be added to process elements."
 msgstr ""
 "|breakpoint-action| ブレークポイントの切り替え：実行を中断するには :ref:`process-element-"
-"breakpoints`をプロセス要素に追加します。"
+"breakpoints` をプロセス要素に追加します。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:220
 msgid "breakpoint-action"
@@ -21650,7 +21650,7 @@ msgid ""
 "element-embedded-sub` or :ref:`process-element-bpmn-activity`"
 msgstr ""
 "|unwrap-action| 埋め込みサブプロセスにカプセル化された要素が現在のプロセスに配置されます :ref:`process-"
-"element-embedded-sub`または :ref:`process-element-bpmn-activity` でのみ使用できます。"
+"element-embedded-sub` または :ref:`process-element-bpmn-activity` でのみ使用できます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:224
 msgid "unwrap-action"
@@ -21764,7 +21764,7 @@ msgid ""
 "Quick Action Menu**. The following actions are available:"
 msgstr ""
 ":ref:`process-editor-tool-"
-"bar`の**マーキーツール**などで複数の要素を選択すると、**複数選択クイックアクションメニュー**にアクセスできます。以下のアクションを実行できます。"
+"bar` の**マーキーツール**などで複数の要素を選択すると、**複数選択クイックアクションメニュー**にアクセスできます。以下のアクションを実行できます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:244
 msgid "|wrap-action| Wrap the current selection into an embedded process."
@@ -21869,7 +21869,7 @@ msgid ""
 "contains the *Embedded Sub* element."
 msgstr ""
 "|jump-out-action| :ref:`process-editor-"
-"area`の左上に表示され、*埋め込みサブプロセス*から*埋め込みサブプロセス*要素を含むプロセスにジャンプアウトします。"
+"area` の左上に表示され、*埋め込みサブプロセス*から*埋め込みサブプロセス*要素を含むプロセスにジャンプアウトします。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:340
 msgid "jump-out-action"
@@ -21968,7 +21968,7 @@ msgid ""
 "implementation."
 msgstr ""
 "依存関係にあるサブプロセスを作成するには :ref:`process-new-"
-"wizard`で［*呼び出し可能なサブプロセス*］オプションを選択します。作成されたプロセスには、プロセス実装を含む特別な開始要素と終了要素が含まれます。"
+"wizard` で［*呼び出し可能なサブプロセス*］オプションを選択します。作成されたプロセスには、プロセス実装を含む特別な開始要素と終了要素が含まれます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:70
 #: ../../source/designer-guide/process-modeling/process-modeling/process-properties.rst:58
@@ -22076,7 +22076,7 @@ msgid ""
 msgstr ""
 "プロセス内部で使用されるプロセス要素と同様、プロセス自体にも*インスクリプション*があり、プロセスのプロパティを指定、編集できます。プロセスのインスクリプションマスクを開いて表示するには、"
 " :ref:`ivy-project-"
-"view`でプロセスを選択して右クリックし、ポップアップメニューから［*インスクリプション*］を選択するだけです。"
+"view` でプロセスを選択して右クリックし、ポップアップメニューから［*インスクリプション*］を選択するだけです。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-properties.rst:13
 msgid "Name and Description"
@@ -22384,7 +22384,7 @@ msgstr "このブラウザを使用して、 IvyScript 式を作成し、イン�
 msgid ""
 "A description of the accessible objects can be found in the section "
 ":ref:`ivy environment variables <ivyscript-reference-"
-"environmentvariable>`"
+"environmentvariable>` "
 msgstr ""
 "アクセス可能なオブジェクトの説明については、 :ref:`ivy 環境変数<ivyscript-reference-"
 "environmentvariable>` のセクションを参照してください。"
@@ -22487,8 +22487,8 @@ msgid ""
 " easy starting point to install additional connectors from the Market."
 msgstr ""
 "OpenAPI REST サービスクライアント :ref:`process-element-tab-"
-"general`でコネクターとしてタグ付けされ :ref:`process-element-sub-process-"
-"start`インスタンスのいずれかの挿入可能なコネクターを一覧表示します。さらに、ここから簡単に Market "
+"general` でコネクターとしてタグ付けされ :ref:`process-element-sub-process-"
+"start` インスタンスのいずれかの挿入可能なコネクターを一覧表示します。さらに、ここから簡単に Market "
 "の追加コネクターをインストールできます。"
 
 #: ../../source/designer-guide/process-modeling/process-views/extension-browser.rst:21
@@ -22656,7 +22656,7 @@ msgid ""
 "features on the Process Editor :ref:`process-editor-quick-actions`."
 msgstr ""
 "プロセス要素の参照を使用する場合、プロセスエディター :ref:`process-editor-quick-"
-"actions`にも便利な機能があります。"
+"actions` にも便利な機能があります。"
 
 #: ../../source/designer-guide/process-modeling/process-views/reference-view.rst:24
 msgid "Window > Show View > Reference View"
@@ -22973,7 +22973,7 @@ msgid ""
 "the :ref:`project-deployment-descriptor`."
 msgstr ""
 "再使用されたアーティファクトの検索順序は幅優先です。直接参照されるプロジェクトの検索順序 :ref:`project-deployment-"
-"descriptor`で定義できます。"
+"descriptor` で定義できます。"
 
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:53
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:56
@@ -23310,7 +23310,7 @@ msgid ""
 msgstr ""
 "新しい依存関係を追加するには、デプロイメント記述子ファイルを右クリックし、**［エディターで開く］、［Maven POM "
 "Editor］**の順に選択して Maven POM Editor でデプロイメント記述子を開くか :ref:`deployment-"
-"descriptor-editor`のツールバーで［**Maven POM Editor で開く**］ アクションをクリックします。"
+"descriptor-editor` のツールバーで［**Maven POM Editor で開く**］ アクションをクリックします。"
 
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:260
 msgid ""
@@ -23347,7 +23347,7 @@ msgid ""
 "In some use cases, this automatic import is not desirable (E.g., project "
 "migration, etc.). For these cases, you can turn off the automatic import "
 "in the preferences. On the toolbar of the :ref:`deployment-descriptor-"
-"editor`, you can see if the **Auto Import** is on or off. There is also "
+"editor` , you can see if the **Auto Import** is on or off. There is also "
 "an action to trigger the execution of the automatic import. This action "
 "works even if **Auto Import** is turned off. A log with the executed "
 "tasks is shown to better understands what the automatic import is doing."
@@ -23569,7 +23569,7 @@ msgid ""
 "features like :ref:`Signals <signal-reference>` and :ref:`business-data`"
 msgstr ""
 "一般的なワークフローのユースケースの処理方法、 :ref:`シグナル<signal-reference>`  :ref:`business-"
-"data`などの機能の利用方法のデモです。"
+"data` などの機能の利用方法のデモです。"
 
 #: ../../source/designer-guide/process-modeling/projects/index.rst:2
 msgid "Projects"
@@ -23624,7 +23624,7 @@ msgid ""
 "about the project provider and a description of the project itself."
 msgstr ""
 "プロジェクトの展開情報を指定するデータは、プロジェクト :ref:`project-deployment-"
-"descriptor`に格納されます。デプロイメント記述子（以前の「ライブラリ」）は、展開されたプロジェクトが機能するように、すべての必要なプロジェクトとそれらのエンジン上でのバージョンを指定します。また、記述子は、一意のデプロイメント"
+"descriptor` に格納されます。デプロイメント記述子（以前の「ライブラリ」）は、展開されたプロジェクトが機能するように、すべての必要なプロジェクトとそれらのエンジン上でのバージョンを指定します。また、記述子は、一意のデプロイメント"
 " ID "
 "とプロジェクトの開発バージョン（プロセスモデルバージョンと同じでは*ありません*）、プロジェクトプロバイダーに関する情報、プロジェクトの説明を定義します。"
 
@@ -23896,7 +23896,7 @@ msgid ""
 msgstr ""
 "コピー操作はインテリジェントで、貼り付け先として選択されたノードが適切でない場合、クリップボードのコンテンツから正しい場所を推測しようとします。貼り付け時に競合（例：同じ名前を持つ"
 " 2 つのリソースが存在）が発生した場合 :ref:`refactoring-wizards-"
-"copy`が表示され、新しい名前が提案され、操作を実行する前に、貼り付けるリソースの名前や名前空間を変更できます。"
+"copy` が表示され、新しい名前が提案され、操作を実行する前に、貼り付けるリソースの名前や名前空間を変更できます。"
 
 #: ../../source/designer-guide/process-modeling/projects/ivyProjectView.rst:102
 msgid ""
@@ -24114,7 +24114,7 @@ msgid ""
 "data`."
 msgstr ""
 "なお、必要な場合は、データを後から変更できます。データクラスの作成の詳細については、 :ref:`process-new-wizard-"
-"data`」を参照してください。"
+"data` 」を参照してください。"
 
 #: ../../source/designer-guide/process-modeling/projects/preferences.rst:6
 msgid "Project Preferences"
@@ -24129,7 +24129,7 @@ msgid ""
 "project specific values."
 msgstr ""
 ":ref:`ivy-project-"
-"view`のポップアップメニューの［*プロパティ*］を選択するか、メニューで*［プロジェクト］、［プロジェクト］*の順に選択して、プロジェクトのプロパティと環境設定を表示できます。ほぼすべてのグローバルな:ref"
+"view` のポップアップメニューの［*プロパティ*］を選択するか、メニューで*［プロジェクト］、［プロジェクト］*の順に選択して、プロジェクトのプロパティと環境設定を表示できます。ほぼすべてのグローバルな:ref"
 ":`workspace-preferences`を再定義し、プロジェクト固有の値でオーバーライドできます。"
 
 #: ../../source/designer-guide/process-modeling/projects/preferences.rst:14
@@ -25627,7 +25627,7 @@ msgid ""
 msgstr ""
 ":ref:`クイックアクションメニュー<process-editor-quick-actions-toggle-"
 "breakpoint>` 使用して :ref:`process-"
-"editor`またはユーザーダイアログロジックエディターのウィンドウでプロセス要素のブレークポイントを追加できます。ブレークポイントを設定するプロセスステップを選択し、バグをクリックします。"
+"editor` またはユーザーダイアログロジックエディターのウィンドウでプロセス要素のブレークポイントを追加できます。ブレークポイントを設定するプロセスステップを選択し、バグをクリックします。"
 
 #: ../../source/designer-guide/process-modeling/simulation/simulation.rst:155
 msgid "**Edit a breakpoint**"
@@ -25657,8 +25657,8 @@ msgid ""
 "breakpoints-view`."
 msgstr ""
 ":ref:`debugger-breakpoints-view` で、また :ref:`process-"
-"editor`でブレークポイントをクリックして、特定のブレークポイントを無効にすることができます :ref:`debugger-"
-"breakpoints-view`ですべてのブレークポイントを無効にすることも可能です。"
+"editor` でブレークポイントをクリックして、特定のブレークポイントを無効にすることができます :ref:`debugger-"
+"breakpoints-view` ですべてのブレークポイントを無効にすることも可能です。"
 
 #: ../../source/designer-guide/reference/glossary.rst:2
 msgid "Glossary"
@@ -26307,7 +26307,7 @@ msgid ""
 "for a given log entry."
 msgstr ""
 ":ref:`simulate-process-models-debugger-runtimelog-"
-"view`のイベントの詳細ビューには、特定のログエントリのエラーレポートを作成して保存するボタンが表示されます。"
+"view` のイベントの詳細ビューには、特定のログエントリのエラーレポートを作成して保存するボタンが表示されます。"
 
 #: ../../source/designer-guide/troubleshooting/index.rst:38
 msgid ""
@@ -26350,7 +26350,7 @@ msgid ""
 "the latest :ref:`default templates <html-dialog-layouts>`."
 msgstr ""
 "エンジンのブランディングを :ref:`html-dialogs` で機能させるには、HTML ダイアログ :ref:`branding-user-"
-"interface`をサポートしているか、最新 :ref:`デフォルトのテンプレート<html-dialog-"
+"interface` をサポートしているか、最新 :ref:`デフォルトのテンプレート<html-dialog-"
 "layouts>` ベースに作成されている必要があります。"
 
 #: ../../source/designer-guide/user-interface/branding/branding-engine.rst:12
@@ -26811,7 +26811,7 @@ msgstr ""
 "通常の :ref:`user-dialogs` の他に、 JSF（XHTML）ページを使用できます。静的な JSF "
 "ページを使用する場合、`webContent` ディレクトリ内に新しい :file:`view` "
 "サブフォルダーを作成できます。コンセプトは、 :ref:`html-"
-"dialogs`」で説明したのとほぼ同じです。これらのページはアプリケーションとプロセスモデルで動作しますが、ケースやタスクはありません。"
+"dialogs` 」で説明したのとほぼ同じです。これらのページはアプリケーションとプロセスモデルで動作しますが、ケースやタスクはありません。"
 
 #: ../../source/designer-guide/user-interface/static-jsf-pages.rst:12
 msgid ""
@@ -26823,7 +26823,7 @@ msgid ""
 msgstr ""
 "これらのページは通常の :ref:`user-dialogs` の構造の外側にあるため、Axon Ivy "
 "のデータクラスやロジッククラスにアクセスすることはできません。ロジックやデータが必要な場合は、**マネージド Bean** :ref:`html-"
-"dialog-managed-beans`）を実装しなければなりません。"
+"dialog-managed-beans` ）を実装しなければなりません。"
 
 #: ../../source/designer-guide/user-interface/static-jsf-pages.rst:19
 msgid ""
@@ -26982,7 +26982,7 @@ msgid ""
 "divided into different categories:"
 msgstr ""
 "必要な要素 :ref:`form-editor-"
-"area`にドラッグアンドドロップして、さまざまなコンポーネントを作成できます。見やすいように、要素はカテゴリーに分けて表示されます。"
+"area` にドラッグアンドドロップして、さまざまなコンポーネントを作成できます。見やすいように、要素はカテゴリーに分けて表示されます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:68
 msgid ""
@@ -27029,7 +27029,7 @@ msgstr "composite"
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:78
 msgid ""
 "|data| Data: Create components :ref:`from data class <form-editor-create-"
-"from-data>`"
+"from-data>` "
 msgstr "|data| データ： :ref:`データクラスから<form-editor-create-from-data>` コンポーネントを作成します。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:95
@@ -27073,7 +27073,7 @@ msgid ""
 "bar` and drag and drop it to this area."
 msgstr ""
 "エディター領域では、ドラッグアンドドロップでフォームを配置、設計できます。新しいコンポーネントを追加するには :ref:`form-editor-"
-"tool-bar`からパレットを開き、この領域にドラッグアンドドロップします。"
+"tool-bar` からパレットを開き、この領域にドラッグアンドドロップします。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:139
 msgid ""
@@ -27203,7 +27203,7 @@ msgid ""
 ":ref:`form-editor-properties` panel via the outline switch at the top."
 msgstr ""
 "フォームエディターにはアウトラインが表示され、現在のフォームとすべてのコンポーネントを確認できます :ref:`form-editor-"
-"properties`パネルの上にあるアウトラインのスイッチから、アウトラインを開くことができます。"
+"properties` パネルの上にあるアウトラインのスイッチから、アウトラインを開くことができます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:225
 msgid "|form-editor-outline|"
@@ -27228,7 +27228,7 @@ msgid ""
 "workflow."
 msgstr ""
 ":ref:`form-editor-tool-bar` の［*データ*］ :ref:`form-editor-quick-"
-"actions`、またはフォームが空の場合は［*データから作成*］ボタンをクリックして、フォームデータからコンポーネントを作成できます。以下のウィザードにフォームのデータクラスが表示され、属性を選択し、選択した属性のコンポーネントを直接作成できます。また、ワークフローを制御する:code:`続行`ボタンと:code:`キャンセル`ボタンも作成できます。"
+"actions`、またはフォームが空の場合は［*データから作成*］ボタンをクリックして、フォームデータからコンポーネントを作成できます。以下のウィザードにフォームのデータクラスが表示され、属性を選択し、選択した属性のコンポーネントを直接作成できます。また、ワークフローを制御する:code:`続行`ボタンと:code:`キャンセル` ボタンも作成できます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:241
 msgid "|form-editor-data-class-dialog|"
@@ -27576,7 +27576,7 @@ msgid ""
 msgstr ""
 "エラーページとその設定はプロジェクト内には存在しないことに留意してください。移行ウィザードはエラーページを古いエンジンから新しいページにコピーしますが、コピーされるのは"
 " :ref:`web-"
-"xml`で定義されたページだけです。さらに、これが正しく機能するには、エラーページが自己完結している必要があります。つまり、エラーページに他の "
+"xml` で定義されたページだけです。さらに、これが正しく機能するには、エラーページが自己完結している必要があります。つまり、エラーページに他の "
 ":code:`*.xhtml` や、CSS、JavaScript、画像などのリソースが含まれていてはなりません。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:33
@@ -27875,7 +27875,7 @@ msgid ""
 msgstr ""
 "*ビュータイプページ*と*ビュータイプコンポーネント*は、あらかじめ定義された HTML ダイアログのビュータイプです。さらに、名前が「View "
 "Type」で始まるテンプレートはそれぞれ HTML ダイアログビュータイプとし :ref:`user-dialog-new-"
-"wizard`に表示されます。"
+"wizard` に表示されます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preferences.rst:31
 msgid ""
@@ -27934,7 +27934,7 @@ msgstr ""
 msgid ""
 "The preview is opened in the :ref:`dev-workflow-ui` frame with some "
 "tooling ( :ref:`html-dialog-autorefresh` and :ref:`html-dialog-"
-"navigation`). It can execute dialog logic, so that the dynamic behavour "
+"navigation` ). It can execute dialog logic, so that the dynamic behavour "
 "of the dialog like validation or autocompletion logic can be tested."
 msgstr ""
 
@@ -28192,7 +28192,7 @@ msgstr "クライアントサイドの検証"
 msgid ""
 "In some cases, it makes sense to perform the validation of the entered "
 "values before they are sent to the server (e.g., in an :ref:`offline-"
-"dialogs`). For this reason, Primefaces provides a `client side validation"
+"dialogs` ). For this reason, Primefaces provides a `client side validation"
 " <http://www.primefaces.org/showcase/ui/csv/basic.xhtml>`__ framework. "
 "Client-side validation is an addition to the JSF validators. It can give "
 "instant feedback - even while typing - to the user. Since the standard "
@@ -28200,7 +28200,7 @@ msgid ""
 "after the form has passed client-side validation and is submitted."
 msgstr ""
 "場合によって、サーバーに送信する前に、入力された値の検証を実行するのが合理的です :ref:`offline-"
-"dialogs`など）。そのため、PrimeFaces "
+"dialogs` など）。そのため、PrimeFaces "
 "には`クライアントサイドの検証<http://www.primefaces.org/showcase/ui/csv/basic.xhtml>`__フレームワークが用意されています。クライアントサイドの検証は、JSF"
 " バリデーターの拡張機能として、入力中でもユーザーに即時のフィードバックを提供できます。標準的な JSF "
 "バリデーターはアクティブなままであるため、フォームがクライアントサイドの検証を通過し、送信された後、サーバーでもデータが検証されます。"
@@ -28254,7 +28254,7 @@ msgid ""
 "dialog`."
 msgstr ""
 "HTML ダイアログページは、ウェブブラウザに表示されるページ全体です。そのため :ref:`process-element-user-"
-"dialog`でページを開くことができます。"
+"dialog` でページを開くことができます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-view-types.rst:23
 msgid "HTML Dialog Layouts"
@@ -28349,7 +28349,7 @@ msgid ""
 "called directly."
 msgstr ""
 ":file:`webContent/view` フォルダーには格納しないでください。この場所は、直接呼び出すことができ :ref:`static-"
-"jsf-pages`用です。"
+"jsf-pages` 用です。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-view-types.rst:72
 msgid "HTML Dialog Component"
@@ -28614,7 +28614,7 @@ msgid ""
 "Dialogs are based on Java Server Faces (JSF) technology."
 msgstr ""
 "ユーザーダイアログは、プロセス内のユーザーとやり取りする 2 つの方法のうちの 1 つです。もう 1 つの方法は、単純 :ref:`user-"
-"interface-web-page`です。ユーザーダイアログは、Java Server Faces（JSF）テクノロジーをベースにしています。"
+"interface-web-page` です。ユーザーダイアログは、Java Server Faces（JSF）テクノロジーをベースにしています。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/index.rst:10
 msgid ""
@@ -29122,7 +29122,7 @@ msgid ""
 "plain code (JSF) via the :ref:`html-dialog-editor`."
 msgstr ""
 "ユーザーダイアログのビューは、エンドユーザーに表示される*ユーザーインターフェース*を定義します :ref:`form-"
-"editor`を使用して、または :ref:`html-dialog-editor` を使用してプレーンコード（JSF）でビューを記述できます。"
+"editor` を使用して、または :ref:`html-dialog-editor` を使用してプレーンコード（JSF）でビューを記述できます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/user-dialog-concept.rst:161
 msgid ""
@@ -29160,7 +29160,7 @@ msgid ""
 msgstr ""
 "プロセスのさまざまな要素（ :ref:`process-element-end-page`  :ref:`process-element-task-"
 "switch-event` :ref:`process-element-task-switch-"
-"gateway`要素）の終了ページを使用して、そのようなコンテンツをビジネスプロセスに埋め込むことができます。プロセスが要素に達すると、定義されたコンテンツがユーザーに表示されます。"
+"gateway` 要素）の終了ページを使用して、そのようなコンテンツをビジネスプロセスに埋め込むことができます。プロセスが要素に達すると、定義されたコンテンツがユーザーに表示されます。"
 
 #: ../../source/designer-guide/user-interface/web-page/index.rst:16
 msgid ""
@@ -30943,7 +30943,7 @@ msgid ""
 ":`deployment-maven-plugin`, which supports both deployment types."
 msgstr ""
 "環境で Maven が使用可能な場合は、両方のデプロイメントタイプをサポートする :ref:`deployment-maven-"
-"plugin`を使用してください。"
+"plugin` を使用してください。"
 
 #: ../../source/engine-guide/deployment/deploy/maven-plugin/index.rst:10
 msgid ""
@@ -31067,7 +31067,7 @@ msgid ""
 msgstr ""
 "Axon Ivy Engine には、新しいアプリケーションやプロジェクトを展開するのに使用できる:api-browser-url:`REST "
 "デプロイメント API <system>` が搭載されています。REST API は :ref:`integration-rest-api-"
-"browser`で精査できます。"
+"browser` で精査できます。"
 
 #: ../../source/engine-guide/deployment/deploy/rest-api/index.rst:10
 msgid ""
@@ -33225,7 +33225,7 @@ msgstr "外部の OpenSearch"
 #: ../../source/engine-guide/integration/opensearch/external.rst:6
 msgid ""
 "For systems with high load or when running Axon Ivy in a :ref:`cluster "
-"<cluster>`, you may need to run an external OpenSearch instance. To do "
+"<cluster>` , you may need to run an external OpenSearch instance. To do "
 "so, download and install OpenSearch according to the docs of `OpenSearch "
 "<https://opensearch.org>`__."
 msgstr ""
@@ -34521,7 +34521,7 @@ msgid ""
 "cockpit`."
 msgstr ""
 ":ref:`engine-cockpit`  :ref:`engine-cockpit-monitor-"
-"performance`ビューでパフォーマンス統計の結果をアクティブにして分析できます。"
+"performance` ビューでパフォーマンス統計の結果をアクティブにして分析できます。"
 
 #: ../../source/engine-guide/monitoring/process-element-performance.rst:20
 msgid "CSV Statistics File"
@@ -34637,7 +34637,7 @@ msgid ""
 "cockpit-monitor-slow-requests` view of the :ref:`engine-cockpit`."
 msgstr ""
 ":ref:`engine-cockpit`  :ref:`engine-cockpit-monitor-slow-"
-"requests`ビューでリクエストのトレースをアクティブにして分析できます。"
+"requests` ビューでリクエストのトレースをアクティブにして分析できます。"
 
 #: ../../source/engine-guide/monitoring/tracing.rst:18
 msgid ""
@@ -35491,7 +35491,7 @@ msgid ""
 msgstr ""
 "Axon Ivy Engine はさまざまなモードで動作します。Axon Ivy Engine を正しく設定すると、:ref"
 ":`production-mode`で動作します。これが標準モードです。 :ref:`demo-mode`  :ref:`maintenance-"
-"mode`は特殊なモードで、Axon Ivy Engine を設定していない場合や設定に問題がある場合のみ、それらのモードで動作します。"
+"mode` は特殊なモードで、Axon Ivy Engine を設定していない場合や設定に問題がある場合のみ、それらのモードで動作します。"
 
 #: ../../source/engine-guide/reference/axonivy-engine/modes.rst:13
 msgid "Production Mode"
@@ -35751,8 +35751,8 @@ msgid ""
 msgstr ""
 "プロジェクトを展開する場合は、 :guilabel:`展開`ボタンをクリックし、:file:`.iar` または :file:`.zip` "
 "ファイルを選択します。ここで追加の展開オプションを設定できます。詳細については、 :ref:`deployment-"
-"options`」の章を参照してください。この機能を使用するためには :ref:`security-engine-optional-"
-"features`で :ref:`deployment-rest-api` 機能を有効にする必要があります。"
+"options` 」の章を参照してください。この機能を使用するためには :ref:`security-engine-optional-"
+"features` で :ref:`deployment-rest-api` 機能を有効にする必要があります。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/applications.rst:40
 msgid ""
@@ -35910,7 +35910,7 @@ msgid ""
 "information and the ability to upload a new license."
 msgstr ""
 ":guilabel:`ライセンス`パネルには、ライセンスの概要が表示されます :ref:`engine-cockpit-"
-"license`ビューで詳細を確認し、新しいライセンスをアップロードできます。"
+"license` ビューで詳細を確認し、新しいライセンスをアップロードできます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/index.rst:39
 msgid ""
@@ -36378,8 +36378,8 @@ msgid ""
 "settings in the :ref:`engine-cockpit-system-configuration`."
 msgstr ""
 "統計が定期的に :ref:`process-element-performance-"
-"file`に書き込まれるように設定したい場合は、ヘルプボタンの左側にある設定アイコンを使用して :ref:`engine-cockpit-"
-"system-configuration`で対応する設定に直接移動できます。"
+"file` に書き込まれるように設定したい場合は、ヘルプボタンの左側にある設定アイコンを使用して :ref:`engine-cockpit-"
+"system-configuration` で対応する設定に直接移動できます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:265
 msgid "Slow Requests"
@@ -36523,8 +36523,8 @@ msgid ""
 "click :guilabel:`Add` to add a new one."
 msgstr ""
 "セキュリティシステムを定義または変更するには、設定ファイルで直接編集するか（ :ref:`configuration-security-"
-"system`」を参照）、エンジンコックピットでセキュリティシステムの名前をクリックし :ref:`engine-cockpit-"
-"security-system-detail`ビューを開き、:guilabel:`追加`をクリックして、新しいセキュリティシステムを追加します。"
+"system` 」を参照）、エンジンコックピットでセキュリティシステムの名前をクリックし :ref:`engine-cockpit-"
+"security-system-detail`ビューを開き、:guilabel:`追加` をクリックして、新しいセキュリティシステムを追加します。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/security.rst:32
 msgid "Security System Detail"
@@ -36756,7 +36756,7 @@ msgid ""
 msgstr ""
 "追加のユーザープロパティを手動で設定したり（:guilabel:`追加`、:guilabel:`編集`、:guilabel:`削除`ボタンを使用）、ID"
 " プロバイダーからマッピングできます（ :ref:`engine-cockpit-security-"
-"system`」を参照）。電話番号、部署など、ID プロバイダーからマッピングされた属性は :ref:`追加の LDAP 属性<engine-"
+"system` 」を参照）。電話番号、部署など、ID プロバイダーからマッピングされた属性は :ref:`追加の LDAP 属性<engine-"
 "cockpit-security-system-detail>` 表示されます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/security.rst:150
@@ -36973,7 +36973,7 @@ msgstr ""
 "**Web サービス**ページには、アプリケーションごとに定義されたすべての Web "
 "サービスが表示されます。ビューの一番上にあるタブをクリックして、アプリケーションを切り替えることができます。Web "
 "サービスの詳細を見るには、エントリをクリックして :ref:`engine-cockpit-webservice-"
-"detail`ページを表示します。"
+"detail` ページを表示します。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/services.rst:74
 msgid ""
@@ -37023,7 +37023,7 @@ msgstr ""
 "**REST クライアント**ビューには、各アプリケーションのすべての REST "
 "クライアントの概要が表示されます。ビューの一番上にあるタブをクリックして、アプリケーションを切り替えることができます。REST "
 "クライアントの詳細を見るには、エントリをクリックして :ref:`engine-cockpit-rest-client-"
-"detail`ページを表示します。"
+"detail` ページを表示します。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/services.rst:110
 msgid ""
@@ -37195,7 +37195,7 @@ msgid ""
 "application-detail`."
 msgstr ""
 "アプリケーションの設定はこのビューには表示されません。アプリケーションの設定 :ref:`engine-cockpit-application-"
-"detail`ページで確認できます。"
+"detail` ページで確認できます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/system.rst:99
 msgid ""
@@ -37505,7 +37505,7 @@ msgid ""
 "nodes and a detail view dialog if you click on one of these node."
 msgstr ""
 ":ref:`license-"
-"edition`のライセンスでエンジンが動作している場合、 :ref:`クラスタ` を定義できます。エンジンコックピットのナビゲーションメニューに［**クラスタ**］が表示されます。実行中のノードの概要ページと、いずれかのノードをクリックした場合は詳細ビューのダイアログが表示されます。"
+"edition` のライセンスでエンジンが動作している場合、 :ref:`クラスタ` を定義できます。エンジンコックピットのナビゲーションメニューに［**クラスタ**］が表示されます。実行中のノードの概要ページと、いずれかのノードをクリックした場合は詳細ビューのダイアログが表示されます。"
 
 #: ../../source/engine-guide/reference/engine-config-cli.rst:4
 msgid "EngineConfigCli"
@@ -37716,7 +37716,7 @@ msgid ""
 "valid license and therefore cannot use your configuration."
 msgstr ""
 "有効なライセンスがなくてもエンジンを設定することは可能ですが、有効なライセンスがない場合、エンジンは常 :ref:`demo-"
-"mode`で起動するため、設定を使用できません。"
+"mode` で起動するため、設定を使用できません。"
 
 #: ../../source/engine-guide/reference/setup-wizard.rst:64
 msgid "System Administrators"
@@ -38500,7 +38500,7 @@ msgid ""
 "Variables."
 msgstr ""
 "設定とパラメーターで、アプリケーションの動作と他のシステムとのインタラクションを定義します :ref:`variables-"
-"editor`を使用して、変数のキーと値を作成、削除、編集します。"
+"editor` を使用して、変数のキーと値を作成、削除、編集します。"
 
 #: ../../source/neo-designer/gettingstarted.rst:59
 msgid "Import more Projects"
