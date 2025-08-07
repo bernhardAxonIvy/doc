@@ -737,7 +737,7 @@ msgid ""
 msgstr ""
 "Server Control Center for Windows は削除されました。Docker for Windows を使用して Axon "
 "Ivy Engine を実行することを推奨します。Docker を使用せずに Windows 上で Axon Ivy Engine "
-"を実行したい場合は、:ref:`AxonIvyEngineService.exe<engine-service>` を使用して、Axon Ivy "
+"を実行したい場合は、 :ref:`AxonIvyEngineService.exe<engine-service>` を使用して、Axon Ivy "
 "Engine を Windows サービスとして登録できます。"
 
 #: ../../source/axonivy/migration/migration-notes-120-131.rst:101
@@ -1323,7 +1323,7 @@ msgstr "OpenSearch"
 msgid ""
 "Version 2.19. Only required if you run your :ref:`own <opensearch-"
 "external>` OpenSearch instance!"
-msgstr "バージョン 2.19。:ref:`自分の<opensearch-external>` OpenSearch インスタンスを実行する場合のみ必要です。"
+msgstr "バージョン 2.19。 :ref:`自分の<opensearch-external>` OpenSearch インスタンスを実行する場合のみ必要です。"
 
 #: ../../source/axonivy/system-requirements/engine.rst:101
 msgid "Browsers"
@@ -1343,7 +1343,7 @@ msgid ""
 "requirements>` that communicates with a :ref:`Axon Ivy Engine <engine-"
 "system-requirements>`."
 msgstr ""
-"NEO Designer のユーザーは、:ref:`Axon Ivy Engine<engine-system-requirements>` "
+"NEO Designer のユーザーは、 :ref:`Axon Ivy Engine<engine-system-requirements>` "
 "と通信する :ref:`ウェブブラウザ<browser-system-requirements>` を使用して作業しています。"
 
 #: ../../source/axonivy/try-axon-ivy.rst:2
@@ -1555,7 +1555,7 @@ msgid ""
 msgstr ""
 "Axon Ivy を統合する簡単な方法は、:ref:`外部データベース<database-"
 "configuration>`を使用することです。Axon Ivy のプロセスから、:ref:`process-element-db-"
-"activity`を使用してデータベースの内容を読み書きしたり、:ref:`JPA<persistence>` を使用して Java "
+"activity`を使用してデータベースの内容を読み書きしたり、 :ref:`JPA<persistence>` を使用して Java "
 "で統合することができます。"
 
 #: ../../source/concepts/3rd-party-integration/index.rst:4
@@ -1580,7 +1580,7 @@ msgid ""
 ":ref:`Axon Ivy Market <market>` which may already provides a connector "
 "for it."
 msgstr ""
-"サードパーティーのシステムを統合する前に、:ref:`Axon Ivy Market<market>` "
+"サードパーティーのシステムを統合する前に、 :ref:`Axon Ivy Market<market>` "
 "をチェックしてください。コネクターが提供されている可能性があります。"
 
 #: ../../source/concepts/3rd-party-integration/process-extensions.rst:4
@@ -1645,7 +1645,7 @@ msgid ""
 "input and output parameters. This gives you the freedom to reuse its "
 "logic without additional maintenance efforts."
 msgstr ""
-"このようなロジックをコピーして複数のプロセスに貼り付ける代わりに、:ref:`サブプロセス<process-kind-callable>` "
+"このようなロジックをコピーして複数のプロセスに貼り付ける代わりに、 :ref:`サブプロセス<process-kind-callable>` "
 "にリファクタリングできます。サブプロセスは定義されたインターフェースにロジックをラップし、入出力パラメーターを宣言します。これにより、メンテナンスの手間を増やすことなく、ロジックを再利用できます。"
 
 #: ../../source/concepts/3rd-party-integration/process-extensions.rst:46
@@ -3246,7 +3246,7 @@ msgid ""
 "Signals can be traced by using the :ref:`designer-workflow-ui`. It makes "
 "use of the Public API for Signals (``ivy.wf.signals()``)."
 msgstr ""
-"シグナルは、:ref:`designer-workflow-ui` を使用してトレースできます。これには、シグナルのパブリック "
+"シグナルは、 :ref:`designer-workflow-ui` を使用してトレースできます。これには、シグナルのパブリック "
 "API（``ivy.wf.signals()``）を使用します。"
 
 #: ../../source/concepts/adaptive-case-management.rst:398
@@ -4148,7 +4148,7 @@ msgid ""
 ":ref:`ivy.yaml <ivy-yaml>`. There are also dedicated views in the "
 ":ref:`engine cockpit <engine-cockpit-notification-channels>`."
 msgstr ""
-"これらの各チャネルは、 :ref:`ivy.yaml<ivy-yaml>` で:ref:` 設定<engine-notification>` "
+"これらの各チャネルは、 :ref:`ivy.yaml<ivy-yaml>` で :ref:` 設定<engine-notification>` "
 "できます。また、:ref:`エンジンコックピット<engine-cockpit-notification-"
 "channels>`には専用のビューがあります。"
 
@@ -5008,7 +5008,7 @@ msgid ""
 "properly setting up the ``Ivy`` environment we would have to mock all "
 "those resources."
 msgstr ""
-"ここでは、``OrderUtil`` という名前のクラスをテストします。このクラスは、:ref:`変数<variables>` など、さまざまな "
+"ここでは、``OrderUtil`` という名前のクラスをテストします。このクラスは、 :ref:`変数<variables>` など、さまざまな "
 "``Ivy`` リソースにアクセスする必要があります。 ``Ivy`` "
 "環境を適切に設定しなければ、これらのリソースをすべてモック化することになります。"
 
@@ -5032,7 +5032,7 @@ msgid ""
 "is to tell the test that you want an instance of the :code:`AppFixure` "
 "class. Let's have a look at it:"
 msgstr ""
-"テストケースによっては、:ref:`変数<variables>` "
+"テストケースによっては、 :ref:`変数<variables>` "
 "に別の値を使用したり、アプリの設定を変更したりする必要があります。このような場合は、``AppFixture`` "
 "を使用して値を変更します。テストの実行後、値は自動的に元の値にリセットされます。必要なのは、:code:`AppFixure` "
 "クラスのインスタンスが欲しいことをテストに伝えるだけです。それでは見てみましょう。"
@@ -5042,7 +5042,7 @@ msgid ""
 "Or you can change an app configuration, e.g change the URL of a "
 ":ref:`RestClient <rest-clients-configuration>`:"
 msgstr ""
-"また、:ref:`RestClient<rest-clients-configuration>` の URL "
+"また、 :ref:`RestClient<rest-clients-configuration>` の URL "
 "を変更するなど、アプリの設定を変更することもできます。"
 
 #: ../../source/concepts/testing/unit-testing.rst:83
@@ -5215,7 +5215,7 @@ msgid ""
 "Or you can change an app configuration, e.g the URL of a :ref:`RestClient"
 " <rest-clients-configuration>`:"
 msgstr ""
-"また、:ref:`RestClient<rest-clients-configuration>` の URL "
+"また、 :ref:`RestClient<rest-clients-configuration>` の URL "
 "など、アプリの設定を変更することもできます。"
 
 #: ../../source/concepts/testing/web-testing.rst:156
@@ -5228,7 +5228,7 @@ msgid ""
 ":`continuous-integration`). This is especially important if you want fast"
 " feedback on breaking changes done by a team member."
 msgstr ""
-"ウェブテストを完全に自動化する方法を見てみましょう（:ref:`continuous-integration` "
+"ウェブテストを完全に自動化する方法を見てみましょう（ :ref:`continuous-integration` "
 "）。テストの自動化は、チームメンバーが行った互換性を破る変更についての迅速なフィードバックが必要な場合は特に重要です。"
 
 #: ../../source/concepts/testing/web-testing.rst:166
@@ -6630,7 +6630,7 @@ msgid ""
 "Before you create a new REST client, take a look at the :ref:`Axon Ivy "
 "Market <market>`. There, you may find a suitable connector already."
 msgstr ""
-"新しい REST クライアントを作成する前に、:ref:`Axon Ivy Market<market>` "
+"新しい REST クライアントを作成する前に、 :ref:`Axon Ivy Market<market>` "
 "をチェックしてみてください。適切なコネクタが見つかるかもしれません。"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:17
@@ -7598,7 +7598,7 @@ msgid ""
 "validation notifications when a Variable is removed by a developer."
 msgstr ""
 "コードの変数にアクセスするには、 :public-api:`var "
-"</ch/ivyteam/ivy/environment/Ivy.html#var>` メソッドを使用します。:ref:`ivyscript` "
+"</ch/ivyteam/ivy/environment/Ivy.html#var>` メソッドを使用します。 :ref:`ivyscript` "
 "では、変数名を使用して、定義した変数にアクセスできます。さらに、この方法には、変数が開発者によって削除されたときに、検証通知を受け取ることができるという利点があります。"
 
 #: ../../source/designer-guide/configuration/variables.rst:126
@@ -11036,7 +11036,7 @@ msgstr ""
 "多くの大きなプロジェクトがあるワークスペースでは、特定の Axon Ivy "
 "要素を見つけるのが難しいことがあります。そのような場合には、強力な検索メカニズムが役立ちます。Axon Ivy の検索を行うには、ツールバーの "
 "|image1| のアイコンをクリックして検索ダイアログを開きます。開いたダイアログで Axon Ivy "
-"タブに移動します。現在、 :ref:`cms`、:ref:`data-classes`、:ref:` persistence-entity-"
+"タブに移動します。現在、 :ref:`cms`、 :ref:`data-classes`、:ref:` persistence-entity-"
 "classes`、 :ref:`プロセスモデル<process-modeling>`、:ref:` プロセス要素<process-"
 "elements>`の検索が Axon Ivy でサポートされています。"
 
@@ -12549,7 +12549,7 @@ msgstr ""
 "element-tab-"
 "task>`の名前と説明を定義できます。パフォーマンスとシステムデータベース容量の理由から、名前と説明は設定されたワークフロー言語にのみ保存され、現在の"
 " CMS で利用可能なすべての言語には保存されません。利用可能なワークフロー言語の設定は、:ref:`エンジンコックピット<engine-"
-"cockpit>` の:ref:`セキュリティシステム<engine-cockpit-security-system-detail>` "
+"cockpit>` の :ref:`セキュリティシステム<engine-cockpit-security-system-detail>` "
 "またはデザイナーの :ref:`言語設定<language-settings>` で行います。"
 
 #: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:33
@@ -12800,7 +12800,7 @@ msgid ""
 "can also use custom fields to search for task and cases."
 msgstr ""
 ":ref:`開発者ワークフロー UI <dev-workflow-ui>`と:ref:`ポータルアプリケーション<portal-"
-"guide>`のタスクとケースの詳細ページに、カスタムフィールドが表示されます。:ref:`ポータルアプリケーション<portal-guide>`"
+"guide>`のタスクとケースの詳細ページに、カスタムフィールドが表示されます。 :ref:`ポータルアプリケーション<portal-guide>`"
 " では、カスタムフィールドを :ref:`タスク<dev-workflow-ui-task-details>`リストや:ref:` ケース<dev-"
 "workflow-ui-case-"
 "details>`リストの追加列として追加し、ダッシュボードでタスクリストやケースリストをフィルタリングできます。また、カスタムフィールドを使用して、タスクやケースを検索できます。"
@@ -14039,7 +14039,7 @@ msgstr "Axon Ivy では以下のパースペクティブが提供されます。
 msgid ""
 "Process Model: :ref:`Create and edit business process diagrams <process-"
 "modeling>`."
-msgstr "プロセスモデル：:ref:`ビジネスプロセス図の作成と編集<process-modeling>`"
+msgstr "プロセスモデル： :ref:`ビジネスプロセス図の作成と編集<process-modeling>`"
 
 #: ../../source/designer-guide/introduction/perspectives.rst:35
 msgid ""
@@ -15006,7 +15006,7 @@ msgid ""
 "java-integration>` in an easy way. Thus Java objects can be used without "
 "mapping and auto-casting simplifies the usage."
 msgstr ""
-"また、IvyScript では、:ref:`Java オブジェクト<ivyscript-java-integration>` "
+"また、IvyScript では、 :ref:`Java オブジェクト<ivyscript-java-integration>` "
 "を簡単に直接操作できます。Java オブジェクトをマッピングせずに使用でき、自動キャストによって取り扱いも簡単です。"
 
 #: ../../source/designer-guide/ivyscript/language.rst:20
@@ -18490,7 +18490,7 @@ msgid ""
 "new Java source file with an example implementation of the bean class."
 msgstr ""
 "</ch/ivyteam/ivy/process/extension/IUserProcessExtension.html>` "
-"インターフェースを実装する Java クラスの完全修飾名。:ref:`new-bean-class-wizard` |add-button| "
+"インターフェースを実装する Java クラスの完全修飾名。 :ref:`new-bean-class-wizard` |add-button| "
 "を使用して、Bean クラスの実装例を含む新しい Java ソースファイルを作成します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_tab-call.rst:18
@@ -18708,7 +18708,7 @@ msgid ""
 msgstr ""
 ":public-api:`IProcessStartEventBean "
 "</ch/ivyteam/ivy/process/eventstart/IProcessStartEventBean.html>` "
-"インターフェースを実装する Java クラスの完全修飾名。:ref:`new-bean-class-wizard` |add-button| "
+"インターフェースを実装する Java クラスの完全修飾名。 :ref:`new-bean-class-wizard` |add-button| "
 "を使用して、Bean クラスの実装例を含む新しい Java ソースファイルを作成します。:ref:`既存の Bean<process-"
 "element-program-start-existing-beans>` を選択することもできます。"
 
@@ -20626,7 +20626,7 @@ msgid ""
 msgstr ""
 ":public-api:`IProcessIntermediateEventBean "
 "</ch/ivyteam/ivy/process/intermediateevent/IProcessIntermediateEventBean.html>`"
-" インターフェースを実装する Java クラスの完全修飾名。:ref:`new-bean-class-wizard` |add-button| "
+" インターフェースを実装する Java クラスの完全修飾名。 :ref:`new-bean-class-wizard` |add-button| "
 "を使用して、Bean クラスの実装例を含む新しい Java ソースファイルを作成します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:42
@@ -21309,25 +21309,25 @@ msgstr "プロセスエディターを使用して、さまざまな種類のプ
 msgid ""
 "the :ref:`process-editor-area`, where the process logic is constructed "
 "element for element"
-msgstr "要素のプロセスロジックが構築される:ref:`process-editor-area`"
+msgstr "要素のプロセスロジックが構築される :ref:`process-editor-area`"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:13
 msgid ""
 "the :ref:`process-editor-tool-bar`, where some tools are located and also"
 " all elements, which can be added to the process"
-msgstr "ツールとプロセスに追加できるすべての要素が配置される:ref:`process-editor-tool-bar`"
+msgstr "ツールとプロセスに追加できるすべての要素が配置される :ref:`process-editor-tool-bar`"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:16
 msgid ""
 "the :ref:`process-editor-viewport-tool-bar`, where some tools for the "
 "viewport are located"
-msgstr "ビューポートのツールが配置される:ref:`process-editor-viewport-tool-bar`"
+msgstr "ビューポートのツールが配置される :ref:`process-editor-viewport-tool-bar`"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:19
 msgid ""
 "the :ref:`process-editor-quick-actions`, where you find quick actions "
 "according to the current selection"
-msgstr "現在の選択に合わせてクイックアクションが表示される:ref:`process-editor-quick-actions`"
+msgstr "現在の選択に合わせてクイックアクションが表示される :ref:`process-editor-quick-actions`"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:27
 msgid ""
@@ -22426,7 +22426,7 @@ msgstr "CMS ブラウザ"
 
 #: ../../source/designer-guide/process-modeling/process-views/browsers.rst:84
 msgid "The CMS browser selects translatable contents from the :ref:`cms`."
-msgstr "CMS ブラウザは、:ref:`cms` から翻訳可能なコンテンツを選択します。"
+msgstr "CMS ブラウザは、 :ref:`cms` から翻訳可能なコンテンツを選択します。"
 
 #: ../../source/designer-guide/process-modeling/process-views/browsers.rst:93
 msgid ""
@@ -23493,7 +23493,7 @@ msgid ""
 msgstr ""
 "Axon Ivy Designer では、Axon Ivy Market "
 "で提供されているるデモプロジェクトをインポートできます（インターネット接続が必要です）。これらのデモプロジェクトは Axon Ivy "
-"Archive（\\*.iar）形式で、:ref:`Axon Ivy Market <market>` またはようこそページの *Axon Ivy"
+"Archive（\\*.iar）形式で、 :ref:`Axon Ivy Market <market>` またはようこそページの *Axon Ivy"
 " プロジェクト*のリンクからインポートできます。"
 
 #: ../../source/designer-guide/process-modeling/projects/importing.rst:66
@@ -25686,7 +25686,7 @@ msgid ""
 "are stored in an Application."
 msgstr ""
 "また、アプリケーションでは、 :Ref:`ユーザー<glossar-user>`と:ref:` ロール<glossar-"
-"role>`が定義され、 :ref:`タスク<glossar-task>`と:ref:`ケース<glossar-case>` が格納されます。"
+"role>`が定義され、 :ref:`タスク<glossar-task>`と :ref:`ケース<glossar-case>` が格納されます。"
 
 #: ../../source/designer-guide/reference/glossary.rst:15
 msgid "See also section :ref:`Application <application>`."
@@ -26523,7 +26523,7 @@ msgstr ""
 msgid ""
 "CSS variables are only supported in the :ref:`freya-ivy <freya-themes>` "
 "theme."
-msgstr "CSS 変数は、:ref:`freya-ivy <freya-themes>` テーマでのみサポートされます。"
+msgstr "CSS 変数は、 :ref:`freya-ivy <freya-themes>` テーマでのみサポートされます。"
 
 #: ../../source/designer-guide/user-interface/branding/branding-user-interface.rst:58
 msgid ""
@@ -26658,7 +26658,7 @@ msgstr "カスタマイズされた標準的なプロセスを含む Axon Ivy �
 msgid ""
 "Optional: If you have multiple projects which provide the default pages "
 "you may need to fix the provider in :ref:`app-yaml`."
-msgstr "任意：デフォルトのページを表示するプロジェクトが複数ある場合は、:ref:`app-yaml` でプロバイダーを固定します。"
+msgstr "任意：デフォルトのページを表示するプロジェクトが複数ある場合は、 :ref:`app-yaml` でプロバイダーを固定します。"
 
 #: ../../source/designer-guide/user-interface/default-pages/index.rst:35
 msgid "Pages"
@@ -26755,7 +26755,7 @@ msgstr "エラーを最前面に表示する**エラーページ**"
 
 #: ../../source/designer-guide/user-interface/default-pages/index.rst:61
 msgid "no signature: globally defined in :ref:`web-xml`"
-msgstr "シグネチャなし：:ref:`web-xml` でグローバルに定義"
+msgstr "シグネチャなし： :ref:`web-xml` でグローバルに定義"
 
 #: ../../source/designer-guide/user-interface/default-pages/index.rst:63
 msgid "**Frame Page** as the entry page to embed a given URL in a frame."
@@ -26902,25 +26902,25 @@ msgstr "フォームエディターでは、最小限の技術知識で、ユー
 msgid ""
 "the :ref:`form-editor-area`, where the process logic is constructed "
 "element for element"
-msgstr "要素のプロセスロジックが構築される:ref:`form-editor-area`"
+msgstr "要素のプロセスロジックが構築される :ref:`form-editor-area`"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:12
 msgid ""
 "the :ref:`form-editor-properties`, where the current selected component "
 "can be modified"
-msgstr "現在選択されているコンポーネントを変更できる:ref:`form-editor-properties`"
+msgstr "現在選択されているコンポーネントを変更できる :ref:`form-editor-properties`"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:14
 msgid ""
 "the :ref:`form-editor-tool-bar`, where some tools are located and also "
 "all elements, which can be added to the process"
-msgstr "ツールとプロセスに追加できるすべての要素が配置される:ref:`form-editor-tool-bar`"
+msgstr "ツールとプロセスに追加できるすべての要素が配置される :ref:`form-editor-tool-bar`"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:17
 msgid ""
 "the :ref:`form-editor-quick-actions`, where you find quick actions "
 "according to the current selection"
-msgstr "現在の選択に合わせてクイックアクションが表示される:ref:`form-editor-quick-actions`"
+msgstr "現在の選択に合わせてクイックアクションが表示される :ref:`form-editor-quick-actions`"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:19
 msgid "|form-editor|"
@@ -27719,7 +27719,7 @@ msgid ""
 "get the message content from the :ref:`cms`. For example:"
 msgstr ""
 "`javax.validation.constraints` "
-"パッケージで定義されたすべてのアノテーションがサポートされます。検証メッセージでは、Axon Ivy マクロを使用して、:ref:`cms` "
+"パッケージで定義されたすべてのアノテーションがサポートされます。検証メッセージでは、Axon Ivy マクロを使用して、 :ref:`cms` "
 "からメッセージコンテンツを取得できます。例えば、"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-managed-beans.rst:47
@@ -29496,7 +29496,7 @@ msgstr ""
 msgid ""
 "Here is an example of a business calendar definition; see :ref:`app-yaml`"
 " for more detailed information."
-msgstr "以下はビジネスカレンダーの定義の例です。詳細については、:ref:`app-yaml` を参照してください。"
+msgstr "以下はビジネスカレンダーの定義の例です。詳細については、 :ref:`app-yaml` を参照してください。"
 
 #: ../../source/engine-guide/configuration/advanced-configuration.rst:68
 msgid "HTML Theme"
@@ -29510,11 +29510,11 @@ msgstr "HTML ダイアログの外観を HTML テーマで定義します。以�
 
 #: ../../source/engine-guide/configuration/advanced-configuration.rst:73
 msgid "Globally for all HTML Dialogs via :ref:`web-xml`."
-msgstr "グローバルにすべての HTML ダイアログに適用する場合：:ref:`web-xml`"
+msgstr "グローバルにすべての HTML ダイアログに適用する場合： :ref:`web-xml`"
 
 #: ../../source/engine-guide/configuration/advanced-configuration.rst:74
 msgid "For a single application in the :ref:`app-yaml`."
-msgstr "1 つのアプリケーションに適用する場合：:ref:`app-yaml`"
+msgstr "1 つのアプリケーションに適用する場合： :ref:`app-yaml`"
 
 #: ../../source/engine-guide/configuration/advanced-configuration.rst:80
 msgid ""
@@ -29744,7 +29744,7 @@ msgstr "以下の例では、環境変数を使用して、システムデータ
 msgid ""
 "Instead of using environment variables, you can simply provide an :ref"
 ":`ivy-yaml` file."
-msgstr "環境変数を使用する代わりに、:ref:`ivy-yaml` ファイルを提供することもできます。"
+msgstr "環境変数を使用する代わりに、 :ref:`ivy-yaml` ファイルを提供することもできます。"
 
 #: ../../source/engine-guide/configuration/docker-container.rst:26
 msgid "And let's run the container with this configuration"
@@ -29871,7 +29871,7 @@ msgid ""
 "Working with local files only works with :ref:`cluster` if you share the "
 "same root directory for all cluster nodes. In the case of a cluster, you "
 "should go with :ref:`documents-s3`."
-msgstr "すべてのクラスタノードで同じルートディレクトリを共有している場合のみ、 :ref:`cluster`でローカルファイルを扱うことができます。クラスタでは、:ref:`documents-s3` を使用することをお勧めします。"
+msgstr "すべてのクラスタノードで同じルートディレクトリを共有している場合のみ、 :ref:`cluster`でローカルファイルを扱うことができます。クラスタでは、 :ref:`documents-s3` を使用することをお勧めします。"
 
 #: ../../source/engine-guide/configuration/document/s3.rst:4
 msgid "S3 Document Storage"
@@ -29912,7 +29912,7 @@ msgstr "管理者に対するライセンス違反のメール。"
 msgid ""
 "For the Axon Ivy Engine to be able to send emails, you have to configure "
 "an email server in :ref:`ivy-yaml`:"
-msgstr "Axon Ivy Engine がメールを送信できるようにするには、:ref:`ivy-yaml` でメールサーバーを設定する必要があります。"
+msgstr "Axon Ivy Engine がメールを送信できるようにするには、 :ref:`ivy-yaml` でメールサーバーを設定する必要があります。"
 
 #: ../../source/engine-guide/configuration/email.rst:19
 msgid "Users can customize their notification settings in the Portal."
@@ -30004,7 +30004,7 @@ msgid ""
 "runtime behavior of the Axon Ivy Engine."
 msgstr ""
 "Axon Ivy Engine はファイルで構成されています。それらのファイルはエンジンの :file:`/configuration` "
-"ディレクトリにあります。:ref:`ivy-yaml` ファイルには、Axon Ivy Engine "
+"ディレクトリにあります。 :ref:`ivy-yaml` ファイルには、Axon Ivy Engine "
 "の環境と実行時の動作を定義する最も重要なエントリが保存されます。"
 
 #: ../../source/engine-guide/configuration/index.rst:17
@@ -30143,7 +30143,7 @@ msgid ""
 "email address is used. If you enable this channel, you also need to:"
 msgstr ""
 "このチャネルは、Microsoft Teams 経由で通知を行います。このチャネルが Microsoft Entra ID "
-"を使用するセキュリティシステムでアクティブな場合、:ref:`Microsoft Entra ID <microsoft-entra-id>` "
+"を使用するセキュリティシステムでアクティブな場合、 :ref:`Microsoft Entra ID <microsoft-entra-id>` "
 "を介してリンクされたユーザーの External ID を使用して、メッセージが送信されます。External ID "
 "が設定されていない場合や（ローカルユーザーなど）Microsoft Entra ID "
 "が設定されていない場合、ユーザーのメールアドレスが使用されます。このチャネルを有効にする場合は、以下も行う必要があります。"
@@ -30782,7 +30782,7 @@ msgid ""
 "only a use case for :ref:`multi-tenancy`."
 msgstr ""
 "アプリケーションとセキュリティシステムの連携の詳細については、「:ref:`アプリケーションのライフサイクル<application-"
-"lifecycle>`」を参照してください。複数のセキュリティシステムの同じエンジンへの展開は、:ref:`multi-tenancy` "
+"lifecycle>`」を参照してください。複数のセキュリティシステムの同じエンジンへの展開は、 :ref:`multi-tenancy` "
 "のユースケースにすぎません。"
 
 #: ../../source/engine-guide/deployment/deploy/deployment-directory/index.rst:4
@@ -31253,11 +31253,11 @@ msgstr "アプリケーションの ZIP ファイル"
 #: ../../source/engine-guide/deployment/prepare/index.rst:19
 msgid ""
 "It is also possible to pack multiple Axon Ivy projects in one single zip-"
-"archive (:ref:`application <application>` zip). All project dependencies "
+"archive ( :ref:`application <application>` zip). All project dependencies "
 "must be resolved, either already installed in the application of the "
 "running Axon Ivy Engine or part of the application zip itself."
 msgstr ""
-"また、複数の Axon Ivy プロジェクトを 1 つの ZIP アーカイブ（:ref:`アプリケーション<application>` "
+"また、複数の Axon Ivy プロジェクトを 1 つの ZIP アーカイブ（ :ref:`アプリケーション<application>` "
 "ZIP）に圧縮することもできます。実行中の Axon Ivy Engine のアプリケーションにインストール済みにするか、アプリケーションの "
 "ZIP ファイル自体の一部として、すべてのプロジェクトの依存関係を解決する必要があります。"
 
@@ -31814,7 +31814,7 @@ msgstr ""
 msgid ""
 "Have a look at the :ref:`ivy.yaml <ivy-yaml>` to see how you can adjust "
 "parts of the web server and its connectors to your needs."
-msgstr "ウェブサーバーとその接続をニーズに合わせて調整する方法については、:ref:`ivy.yaml <ivy-yaml>` を参照してください。"
+msgstr "ウェブサーバーとその接続をニーズに合わせて調整する方法については、 :ref:`ivy.yaml <ivy-yaml>` を参照してください。"
 
 #: ../../source/engine-guide/getting-started/linux/configure.rst:70
 msgid "Now, start the Axon Ivy Engine again as a background process."
@@ -32901,7 +32901,7 @@ msgid ""
 ":guilabel:`ClientSecret` which is needed as part of the Keycloak "
 "configuration in :ref:`ivy.yaml <keycloak>`."
 msgstr ""
-":guilabel:`Credentials` タブに移動し、:ref:`ivy.yaml <keycloak>` での Keycloak "
+":guilabel:`Credentials` タブに移動し、 :ref:`ivy.yaml <keycloak>` での Keycloak "
 "の設定に必要な :guilabel:`ClientSecret` を見つけます。"
 
 #: ../../source/engine-guide/integration/identity-provider/keycloak/setup.rst:34
@@ -33229,7 +33229,7 @@ msgid ""
 "so, download and install OpenSearch according to the docs of `OpenSearch "
 "<https://opensearch.org>`__."
 msgstr ""
-"負荷が大きいシステムや、Axon Ivy を:ref:`クラスタ<cluster>` で実行している場合は、外部の OpenSearch "
+"負荷が大きいシステムや、Axon Ivy を :ref:`クラスタ<cluster>` で実行している場合は、外部の OpenSearch "
 "インスタンスを実行する必要があります。`OpenSearch "
 "<https://opensearch.org>`__のドキュメントに従って、OpenSearch をダウンロードしてインストールしてください。"
 
@@ -33246,7 +33246,7 @@ msgid ""
 "To integrate the Axon Ivy Engine with an external OpenSearch instance you"
 " need configure the :ref:`ivy-yaml`."
 msgstr ""
-"Axon Ivy Engine を外部の OpenSearch インスタンスと統合するには、:ref:`ivy-yaml` "
+"Axon Ivy Engine を外部の OpenSearch インスタンスと統合するには、 :ref:`ivy-yaml` "
 "を設定する必要があります。"
 
 #: ../../source/engine-guide/integration/opensearch/index.rst:6
@@ -33259,7 +33259,7 @@ msgid ""
 msgstr ""
 "Axon Ivy Engine は、OpenSearch を使用して、全文検索と統計を提供します。OpenSearch は |ivy-"
 "engine| に :ref:`バンドル<opensearch-bundled>` されています。 負荷が大きいシステムや、|ivy| "
-"の :ref:`クラスタ`を使用している場合は、:ref:` 外部の<opensearch-external>` OpenSearch "
+"の :ref:`クラスタ`を使用している場合は、 :ref:` 外部の<opensearch-external>` OpenSearch "
 "インスタンスを実行する必要があります。"
 
 #: ../../source/engine-guide/integration/reverse-proxy/apache-httpd/index.rst:4
@@ -33908,7 +33908,7 @@ msgstr "現行のブラウザでは、パスワードフィールドを含むロ
 msgid ""
 "Enable the secure flag in the :ref:`web-xml` on session cookies when "
 "using HTTPS."
-msgstr "HTTPS を使用する場合は、:ref:`web-xml` でセッション Cookie のセキュアフラグを有効にしてください。"
+msgstr "HTTPS を使用する場合は、 :ref:`web-xml` でセッション Cookie のセキュアフラグを有効にしてください。"
 
 #: ../../source/engine-guide/integration/reverse-proxy/secure-setup/protocol.rst:33
 msgid ""
@@ -33916,7 +33916,7 @@ msgid ""
 " filter in the :ref:`web-xml` or in the configuration of the reverse "
 "proxy server)."
 msgstr ""
-"（:ref:`web-xml` の httpHeaderSecurity "
+"（ :ref:`web-xml` の httpHeaderSecurity "
 "フィルターを使用するか、リバースプロキシサーバーの設定で）HSTS（HTTP Strict Transport "
 "Security）を有効にしてください。"
 
@@ -33931,7 +33931,7 @@ msgid ""
 "register this valve in :ref:`context-xml`. A valve is something which "
 "will be executed for every request sent to the Axon Ivy Engine."
 msgstr ""
-"組み込みソリューションがニーズに適合しない場合は、Tomcat Valve を実装し、:ref:`context-xml` "
+"組み込みソリューションがニーズに適合しない場合は、Tomcat Valve を実装し、 :ref:`context-xml` "
 "でこの値を登録して、独自のシングルサインオンソリューションを実装できます。Axon Ivy Engine "
 "に送信される各リクエストに対して値が実行されます。"
 
@@ -33984,7 +33984,7 @@ msgstr ""
 
 #: ../../source/engine-guide/integration/single-sign-on/index.rst:31
 msgid "Next you need to enable SSO in :ref:`ivy-yaml`:"
-msgstr "次に、:ref:`ivy-yaml` で SSO を有効にする必要があります。"
+msgstr "次に、 :ref:`ivy-yaml` で SSO を有効にする必要があります。"
 
 #: ../../source/engine-guide/integration/single-sign-on/index.rst:39
 msgid ""
@@ -34065,7 +34065,7 @@ msgstr "**エンジンコックピット**では、エンジンを監視でき�
 msgid ""
 "Have a look at the :ref:`engine-cockpit-monitor` in the :ref:`engine-"
 "cockpit` for more information."
-msgstr "詳細については、「 :ref:`engine-cockpit`」の「:ref:`engine-cockpit-monitor` 」を参照してください。"
+msgstr "詳細については、「 :ref:`engine-cockpit`」の「 :ref:`engine-cockpit-monitor` 」を参照してください。"
 
 #: ../../source/engine-guide/monitoring/health.rst:4
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:160
@@ -34210,7 +34210,7 @@ msgid ""
 "monitor-mbeans` browser. Therefore, you do not need to install an "
 "external monitoring tool for a glance at your engine's vital signs."
 msgstr ""
-"また、 :ref:`engine-cockpit`には、:ref:` engine-cockpit-monitor-mbeans` "
+"また、 :ref:`engine-cockpit`には、 :ref:` engine-cockpit-monitor-mbeans` "
 "ブラウザが組み込まれています。そのため、エンジンの状態を見るための外部の監視ツールをインストールする必要はありません。"
 
 #: ../../source/engine-guide/monitoring/jmx.rst:57
@@ -34555,7 +34555,7 @@ msgid ""
 " need to be enabled in the :code:`ProcessEngine` section of the :ref"
 ":`ivy-yaml` file."
 msgstr ""
-"プロセス要素のパフォーマンスの統計はデフォルトでは収集されません。:ref:`ivy-yaml` ファイルの "
+"プロセス要素のパフォーマンスの統計はデフォルトでは収集されません。 :ref:`ivy-yaml` ファイルの "
 ":code:`ProcessEngine` セクションで有効にする必要があります。"
 
 #: ../../source/engine-guide/monitoring/process-element-performance.rst:35
@@ -35568,7 +35568,7 @@ msgid ""
 ":code:`-maintenance`."
 msgstr ""
 "メンテナンスモードが無効な場合にライセンスやシステムデータベースの問題が発生した場合、Axon Ivy Engine "
-"は起動に失敗し、エラーを報告します。:ref:`コマンドラインオプション<axonivy-engine>` "
+"は起動に失敗し、エラーを報告します。 :ref:`コマンドラインオプション<axonivy-engine>` "
 ":code:`-maintenance` を使用して、明示的に Axon Ivy Engine をメンテナンスモード起動できます。"
 
 #: ../../source/engine-guide/reference/axonivy-engine/service.rst:4
@@ -35824,7 +35824,7 @@ msgstr ""
 msgid ""
 "There is also an edit support for your :ref:`custom-css` and an overview "
 "of all colors with the possibility to easily change a specific color."
-msgstr "また、:ref:`custom-css` を編集し、すべての色の概要を見ながら、特定の色を簡単に変更できます。"
+msgstr "また、 :ref:`custom-css` を編集し、すべての色の概要を見ながら、特定の色を簡単に変更できます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/configuration.rst:52
 msgid ""
@@ -36025,7 +36025,7 @@ msgstr ""
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:27
 msgid "**MBeans**: :ref:`jmx` MBeans viewer"
-msgstr "**MBean**：:ref:`jmx` MBean ビューアー"
+msgstr "**MBean**： :ref:`jmx` MBean ビューアー"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:34
 msgid "Class Histogram"
@@ -36960,7 +36960,7 @@ msgstr ""
 msgid ""
 "Not every property can be modified here yet. But you can override them in"
 " the :ref:`app-yaml` file."
-msgstr "ただし、すべてのプロパティをここで変更できるわけではありません。:ref:`app-yaml` ファイルでオーバーライドできます。"
+msgstr "ただし、すべてのプロパティをここで変更できるわけではありません。 :ref:`app-yaml` ファイルでオーバーライドできます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/services.rst:68
 msgid ""
@@ -37010,7 +37010,7 @@ msgstr ""
 msgid ""
 "If you wish to change a value that is not editable in this editor you can"
 " do so by modifying the :ref:`app-yaml` file."
-msgstr "このエディターで編集できない値を変更したい場合は、:ref:`app-yaml` ファイルで変更できます。"
+msgstr "このエディターで編集できない値を変更したい場合は、 :ref:`app-yaml` ファイルで変更できます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/services.rst:104
 msgid ""
@@ -37957,7 +37957,7 @@ msgid ""
 ":`context-xml`."
 msgstr ""
 "デフォルトでは、すべての Cookie（``JSESSIONID`` および ``IVYSESSIONID`` セッション Cookie "
-"を含む）の ``same-site`` Cookie ヘッダーの値は ``lax`` に設定されています。:ref:`context-xml` で"
+"を含む）の ``same-site`` Cookie ヘッダーの値は ``lax`` に設定されています。 :ref:`context-xml` で"
 " XSS Cookie の制限を無効にしたり、強化したりすることができます。"
 
 #: ../../source/engine-guide/security/axonivy-engine/features.rst:42
@@ -38654,7 +38654,7 @@ msgstr ""
 #~ msgstr ""
 #~ "少なくとも 1 "
 #~ "つの永続性ユニット設定を定義する必要があります。永続性ユニットは、エンティティクラスのすべてまたはサブセットを管理し、それらのエンティティが格納されるデータベースを定義します。1"
-#~ " つまたは複数の永続性ユニットを設定後、:ref:`persistence-api` "
+#~ " つまたは複数の永続性ユニットを設定後、 :ref:`persistence-api` "
 #~ "を使用してプロセスステップで永続性ユニットを使用し、データベースから直接エンティティオブジェクトを読み込み／更新したり、データベースに保存して更新できます。"
 
 #~ msgid ""
@@ -38678,7 +38678,7 @@ msgstr ""
 #~ " every cluster node can access all"
 #~ " the files."
 #~ msgstr ""
-#~ "各クラスタノードがすべてのファイルにアクセスできるように、:ref:`documents-s3` を分散型 Blob"
+#~ "各クラスタノードがすべてのファイルにアクセスできるように、 :ref:`documents-s3` を分散型 Blob"
 #~ " ストレージとして設定することをお勧めします。"
 
 #~ msgid ""
@@ -39256,7 +39256,7 @@ msgstr ""
 #~ " an identity provider. We distinguish "
 #~ "between the following identity providers:"
 #~ msgstr ""
-#~ "ワークフローユーザーは、:ref:`ivy-yaml` "
+#~ "ワークフローユーザーは、 :ref:`ivy-yaml` "
 #~ "で定義できる、いわゆるセキュリティシステムで管理されます。Axon Ivy Engine "
 #~ "ごとに:code:`デフォルト`のセキュリティシステムがあらかじめ設定されており、セキュリティシステムごとに ID "
 #~ "プロバイダーを定義できます。Axon Ivy Engine では以下の ID "
