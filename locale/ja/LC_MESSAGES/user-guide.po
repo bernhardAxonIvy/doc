@@ -42281,13 +42281,15 @@ msgstr ""
 
 #: ../../source/portal-guide/index.rst:4
 msgid "Portal Guide"
-msgstr ""
+msgstr "ポータルガイド"
 
 #: ../../source/portal-guide/index.rst:6
 msgid ""
 "This page is just a placeholder. There is server side redirect to the "
 "correct portal guide."
 msgstr ""
+"これは単なるプレースホルダーです。サーバー側で正しいポータルガイドにリダイレ"
+"クトされます。"
 
 #: ../../source/public-api/index.rst:4
 msgid "This is just an placeholder and will be replaced with javadoc."
