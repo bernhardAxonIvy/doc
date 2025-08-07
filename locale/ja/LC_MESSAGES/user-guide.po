@@ -39923,7 +39923,7 @@ msgstr ""
 
 #: ../../source/neo-designer/gettingstarted.rst:7
 msgid "Create a Workspace"
-msgstr ""
+msgstr "ワークスペースの作成"
 
 #: ../../source/neo-designer/gettingstarted.rst:8
 msgid ""
@@ -39934,10 +39934,15 @@ msgid ""
 "workspace, you will find a first main project as your starting point to "
 "begin your work."
 msgstr ""
+"NEO Designer の使用を開始するには、最初にワークスペースを作成します。ワークス"
+"ペースは、アプリケーションを作成、テストする開発領域です。このスペースで、ビ"
+"ジネスプロセスを設計し、正常に機能するアプリケーションとして展開する前にプレ"
+"ビュー、シミュレーションを行います。新しく作成したワークスペースには、作業の"
+"開始点として最初のメインプロジェクトが表示されます。"
 
 #: ../../source/neo-designer/gettingstarted.rst:18
 msgid "Draw a Process model"
-msgstr ""
+msgstr "プロセスモデルの作成"
 
 #: ../../source/neo-designer/gettingstarted.rst:19
 msgid ""
@@ -39949,7 +39954,7 @@ msgstr ""
 
 #: ../../source/neo-designer/gettingstarted.rst:27
 msgid "Define the Data"
-msgstr ""
+msgstr "データの定義"
 
 #: ../../source/neo-designer/gettingstarted.rst:28
 msgid ""
@@ -39958,10 +39963,14 @@ msgid ""
 "forms. Use the Axon Ivy :ref:`data-class-editor` that is part of NEO to "
 "define the list of data attributes used in the process."
 msgstr ""
+"データクラスを使用して、プロセスアプリケーション内のデータを定義し、構造化し"
+"ます。プロセスやフォーム全体で一貫してデータを管理するのに使用します。NEO に"
+"含まれる Axon Ivy :ref:`data-class-editor`を使用して、プロセスで使用される"
+"データの属性を定義します。"
 
 #: ../../source/neo-designer/gettingstarted.rst:36
 msgid "Create Forms"
-msgstr ""
+msgstr "フォームの作成"
 
 #: ../../source/neo-designer/gettingstarted.rst:37
 msgid ""
@@ -39970,20 +39979,26 @@ msgid ""
 "system. The Axon Ivy :ref:`form-editor` is a graphical modeling tool to "
 "design dynamic forms."
 msgstr ""
+"フォームは、データの入力やアプリケーションとのインタラクションを容易にする"
+"ユーザーインターフェースの要素で、ユーザーとシステムの橋渡しをします。|ivy| :"
+"ref:`form-editor`は、動的フォームを設計するためのグラフィカルなモデリングツー"
+"ルです。"
 
 #: ../../source/neo-designer/gettingstarted.rst:44
 msgid "Simulate the application"
-msgstr ""
+msgstr "アプリケーションのシミュレーション"
 
 #: ../../source/neo-designer/gettingstarted.rst:45
 msgid ""
 "Included in NEO Designer is a simulator feature to execute and test a "
 "process with a sinlge click."
 msgstr ""
+"NEO Designer に含まれるシミュレーター機能を使用して、プロセスをワンクリックで"
+"実行、テストできます。"
 
 #: ../../source/neo-designer/gettingstarted.rst:51
 msgid "Add Configurations"
-msgstr ""
+msgstr "設定の追加"
 
 #: ../../source/neo-designer/gettingstarted.rst:52
 msgid ""
@@ -39992,10 +40007,13 @@ msgid ""
 "`variables-editor` to create, delete, and edit the key and values of "
 "Variables."
 msgstr ""
+"設定とパラメーターで、アプリケーションの動作と他のシステムとのインタラクショ"
+"ンを定義します。:ref:`variables-editor`を使用して、変数のキーと値を作成、削"
+"除、編集します。"
 
 #: ../../source/neo-designer/gettingstarted.rst:59
 msgid "Import more Projects"
-msgstr ""
+msgstr "プロジェクトのインポート"
 
 #: ../../source/neo-designer/gettingstarted.rst:60
 msgid ""
@@ -40004,22 +40022,30 @@ msgid ""
 "components, templates and solutions to accelerate development. In "
 "collaboration with a pro designer packed project files will be shared."
 msgstr ""
+"プロジェクトを :ref:`market` またはファイルからワークスペースにインポートでき"
+"ます。Axon Ivy Market では、開発をスピードアップする、再利用可能なコンポーネ"
+"ント、テンプレート、ソリューションを見つけ、ダウンロードできます。プロの設計"
+"者と連携して、パックされたプロジェクトファイルを共有できます。"
 
 #: ../../source/neo-designer/gettingstarted.rst:65
 msgid ""
 "To use the components from imported projects they must be added as a "
 "dependency to the main project."
 msgstr ""
+"インポートしたプロジェクトのコンポーネントを使用するには、メインプロジェクト"
+"に依存するコンポーネントとして追加する必要があります。"
 
 #: ../../source/neo-designer/index.rst:4
 msgid "NEO Designer"
-msgstr ""
+msgstr "NEO Designer"
 
 #: ../../source/neo-designer/index.rst:6
 msgid ""
 "NEO Designer is the low-code entry into Axon Ivy. A web-based and easy to "
 "use app to build and simulate executable Axon Ivy process applications."
 msgstr ""
+"NEO Designer は、Axon Ivy のローコードアプリケーションです。ウェブベースで使"
+"いやすく、実行可能な Axon Ivy プロセスを作成、シミュレートできます。"
 
 #: ../../source/neo-designer/introduction.rst:6
 msgid ""
@@ -40031,15 +40057,23 @@ msgid ""
 "Designer supports the rapid deployment of scalable applications, tailored to "
 "meet specific business needs effectively."
 msgstr ""
+"NEO Designer は、ビジュアルツールとあらかじめ作成されたコンポーネントを使用し"
+"て、アプリケーションの開発をスピードアップし、ビジネスユーザーと開発者のシー"
+"ムレスな連携を実現するローコードプラットフォームです。ビジネスタスクの自動化"
+"を簡素化し、開発プロセスを効率化し、複雑さを軽減します。効率の向上を目的に設"
+"計された NEO Designer は、スケーラブルなアプリケーションの迅速な展開をサポー"
+"トし、効率的にビジネスニーズを満たします。"
 
 #: ../../source/neo-designer/introduction.rst:13
 msgid ""
 "NEO Designer is a web-based app that is available on the Axon Ivy Engine."
 msgstr ""
+"NEO Designer は Axon Ivy Engine で使用可能なウェブベースのアプリケーションで"
+"す。"
 
 #: ../../source/neo-designer/localsetup.rst:4
 msgid "Local setup"
-msgstr ""
+msgstr "ローカルセットアップ"
 
 #: ../../source/neo-designer/localsetup.rst:6
 msgid ""
@@ -40048,22 +40082,30 @@ msgid ""
 "following the :ref:`Engine Guide <engine-guide>` and start the engine. It "
 "will run in DEMO-MODE. No further configuration is needed."
 msgstr ""
+"NEO Designer をローカルにインストールして実行できます。システムに適した Axon "
+"Ivy Engine をダウンロードしてください。:ref:`エンジンガイド<engine-guide>`に"
+"従ってエンジンをインストールし、起動すると、デモモードで動作します。追加設定"
+"は必要ありません。"
 
 #: ../../source/neo-designer/localsetup.rst:12
 msgid ""
 "The engine will open a default web browser showing the engine main page. "
 "Click the button to start NEO Designer."
 msgstr ""
+"エンジンにより、デフォルトのウェブブラウザが開き、エンジンのメインページが表"
+"示されます。ボタンをクリックして、NEO Designer を起動します。"
 
 #: ../../source/neo-designer/localsetup.rst:17
 msgid ""
 "In order to work with the NEO Designer you have to login with a predefined "
 "default user **neo** and password **neo**"
 msgstr ""
+"NEO Designer を使用するには、あらかじめ定義されたデフォルトのユーザー名 "
+"**neo** とパスワード **neo** でログインする必要があります。"
 
 #: ../../source/neo-designer/serversetup.rst:4
 msgid "Server setup"
-msgstr ""
+msgstr "サーバーセットアップ"
 
 #: ../../source/neo-designer/serversetup.rst:6
 msgid ""
@@ -40073,6 +40115,11 @@ msgid ""
 "Start the engine. It will run in DEMO-MODE. There is no need to configure a "
 "production setup like a system database or a search engine."
 msgstr ""
+"NEO Designer を使用したローコード開発用に Axon Ivy Engine をセットアップする"
+"のは簡単です。システムに適した Axon Ivy Engine をダウンロードしてください。:"
+"ref:`エンジンガイド<engine-guide>`に従ってエンジンをインストールし、起動する"
+"と、デモモードで動作します。システムデータベースや検索エンジンのように、本番"
+"環境のセットアップは必要ありません。"
 
 #: ../../source/neo-designer/serversetup.rst:13
 msgid ""
@@ -40083,12 +40130,20 @@ msgid ""
 "system>` in the Engine Guide. It is also highly recommended to control the "
 "access to the Axon Ivy Engine with a :ref:`reverse-proxy`."
 msgstr ""
+"NEO Designer を使用するには、ユーザーは自身を認証する必要があります。NEO ユー"
+"ザーはエンジンの**デフォルト**のセキュリティシステムで管理されます。外部の "
+"ID プロバイダーにアクセスするには、デフォルトのセキュリティシステムを設定する"
+"必要があります。 エンジンガイドの「:ref:`設定<configuration-security-"
+"system>`」の章を参照してください。 :ref:`reverse-proxy`で Axon Ivy Engine へ"
+"のアクセスを制御することを強く推奨します。"
 
 #: ../../source/neo-designer/serversetup.rst:21
 msgid ""
 "Users will start NEO Designer in a web browser using the url <ivy-engine>/"
 "neo They have to login with user name and password."
 msgstr ""
+"ユーザーは、<ivy-engine>/neo という URL を使用して、ウェブブラウザで NEO "
+"Designer 起動します。ユーザー名とパスワードでログインする必要があります。"
 
 #: ../../source/portal-guide/index.rst:4
 msgid "Portal Guide"
@@ -40248,3 +40303,14 @@ msgid ""
 msgstr ""
 "サードパーティーのサービスがワークフロータスクやケースなどとやり取りできる、:"
 "api-browser-url:`REST ワークフロー API<workflow>`が用意されています。"
+
+#: ../../source/neo-designer/gettingstarted.rst:19
+msgid ""
+"A process describes a sequence of automated steps that optimize workflows "
+"and enables efficient task management within an application. Start the |"
+"ivy| :ref:`process-editor` that is included in NEO Designer to design and "
+"edit a process model."
+msgstr ""
+"プロセスは、ワークフローを最適化し、アプリケーション内での効率的なタスク管理"
+"を可能にする、一連の自動化されたステップです。NEO Designer に含まれる |ivy| :"
+"ref:`process-editor`を起動して、プロセスモデルを設計、編集します。"
