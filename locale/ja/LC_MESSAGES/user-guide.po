@@ -11479,7 +11479,7 @@ msgid ""
 " performed, the user will get a late feedback, expressed as "
 "synchronization error when switching from offline to online."
 msgstr ""
-"入力されたデータは、フォーム送信の**前**に検証される必要があります :ref:`html-dialog-client-side-"
+"入力されたデータは、フォーム送信の**前** 検証される必要があります :ref:`html-dialog-client-side-"
 "validation` ）。サーバーサイドの検証のみ実行された場合、ユーザーは、オフラインからオンラインに切り替わる際に同期エラーとして、遅いフィードバックを得ることになります。"
 
 #: ../../source/designer-guide/how-to/offline-tasks.rst:156
@@ -12667,9 +12667,9 @@ msgstr ""
 "ワークフローを分かりやすく表示するため、複数の**ケース**を 1 つの**ビジネスケース**に接続できます :ref:`トリガー"
 "<process-element-start-request-trigger-tab>` た :ref:`シグナル<process-"
 "element-signal-start-tab-"
-"signal>` れたプロセス開始要素は、開始された**ケース**を呼び出し元の**ケース**の**ビジネスケース**に接続すべきかどうかをインスクリプションで定義します。さらに、API"
+"signal>` れたプロセス開始要素は、開始された**ケース**を呼び出し元の**ケース**の** ジネスケース**に接続すべきかどうかをインスクリプションで定義します。さらに、API"
 " "
-"を使用して、任意の**ケース**を**ビジネスケース**に接続できます。ケースマップが開始されると、自動的に**ビジネスケースが**作成されます。「:ref"
+"を使用して、任意の**ケース**を** ジネスケース**に接続できます。ケースマップが開始されると、自動的に**ビジネスケースが**作成されます。「:ref"
 ":`casemap-execution`」を参照してください。"
 
 #: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:104
@@ -18946,7 +18946,7 @@ msgid ""
 "the editor part. The content can contain dynamic parts like process data "
 "fields. Use the action buttons left to the editor in order to insert a "
 "dynamic variable or function call."
-msgstr "**行**：最初にコンテンツのタイプを定義し、エディターでテキストコンテンツを定義します。コンテンツには、プロセスデータフィールドなどの動的な部分を含めることができます。動的な変数や機能呼び出しを挿入するには、エディターの左にあるアクションボタンを使用します。"
+msgstr "**行** 最初にコンテンツのタイプを定義し、エディターでテキストコンテンツを定義します。コンテンツには、プロセスデータフィールドなどの動的な部分を含めることができます。動的な変数や機能呼び出しを挿入するには、エディターの左にあるアクションボタンを使用します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:91
 msgid ""
@@ -26454,7 +26454,7 @@ msgid ""
 " depending on the current application."
 msgstr ""
 "もちろん、独自の画像や CSS ファイルも定義できます。定義後、**IVY "
-"のブランディング**リソースローダーを使用して、それらを読み込むことができます。例えば、現在のアプリケーションによって、カスタムエラーダイアログの画像を変更できます。"
+"のブランディング** リソースローダーを使用して、それらを読み込むことができます。例えば、現在のアプリケーションによって、カスタムエラーダイアログの画像を変更できます。"
 
 #: ../../source/designer-guide/user-interface/branding/branding-user-interface.rst:34
 #: ../../source/index.rst:15
@@ -26466,7 +26466,7 @@ msgid ""
 "The following resources are currently used by the Axon Ivy Engine, the "
 ":ref:`html-dialogs` and the :ref:`Portal <portal-guide>` :"
 msgstr ""
-"現在、Axon Ivy Engine、 :ref:`html-dialogs`  :ref:`ポータル<portal-"
+"現在、Axon Ivy Engine、 :ref:`html-dialogs` :ref:`ポータル<portal-"
 "guide>` は、以下のリソースが使用されます。"
 
 #: ../../source/designer-guide/user-interface/branding/branding-user-interface.rst:39
@@ -26600,7 +26600,7 @@ msgstr ""
 
 #: ../../source/designer-guide/user-interface/branding/index.rst:10
 msgid "Appear in the **colors** defined by the Corporate Design"
-msgstr "コーポレートデザインで定められた**色**で表示される。"
+msgstr "コーポレートデザインで定められた**色** 表示される。"
 
 #: ../../source/designer-guide/user-interface/branding/index.rst:12
 msgid "Has the **correct logo**."
@@ -32102,7 +32102,7 @@ msgid ""
 "**Processes** by clicking on the third icon at the menu bar left. Then "
 "try to start the **Leave Request** process (Image of a Rocket)."
 msgstr ""
-"あらかじめ定義されたデモユーザー（**demo**、**guest**、**admin**）のいずれかを使用して、ログインします。デモユーザーのパスワードはユーザー名と同じです（例えば、**demo**ユーザーのパスワードは**demo**になります）。**demo**"
+"あらかじめ定義されたデモユーザー（**demo**、** uest**、** dmin**）のいずれかを使用して、ログインします。デモユーザーのパスワードはユーザー名と同じです（例えば、**demo**ユーザーのパスワードは**demo**になります）。**demo**"
 " としてログインし、左のメニューバーの 3 "
 "番目のアイコンをクリックして、**プロセス**に移動します。**休暇申請**プロセスを開始します（ロケットの画像）。"
 
@@ -32640,7 +32640,7 @@ msgid ""
 ":ref:`enterprise-license`."
 msgstr ""
 "1 "
-"つのノードのセットアップと比較して、クラスタはより**複雑な**システムで、**ハードウェアコスト**と**ライセンス料**が高くなり、:ref"
+"つのノードのセットアップと比較して、クラスタはより**複雑な**システムで、**ハードウェアコスト**と** イセンス料**が高くなり、:ref"
 ":`enterprise-license`が必要になります。"
 
 #: ../../source/engine-guide/integration/cluster/index.rst:27
@@ -35778,7 +35778,7 @@ msgid ""
 "application. The variables can be configured in the project or set in the"
 " :ref:`app-yaml` file."
 msgstr ""
-"**変数**ビューには、各アプリケーションで定義されているすべての変数が表示されます。変数はプロジェクトまたは :ref:`app-yaml` "
+"**変数** ビューには、各アプリケーションで定義されているすべての変数が表示されます。変数はプロジェクトまたは :ref:`app-yaml` "
 "ファイルで設定できます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/configuration.rst:14
@@ -35788,8 +35788,8 @@ msgid ""
 " You can reset a variable to its default value by clicking the "
 ":guilabel:`Reset` button."
 msgstr ""
-":guilabel:`鉛筆`ボタンをクリックして、既存の変数を編集できます。変更は :ref:`app-yaml` "
-"ファイルに直接書き込まれます。:guilabel:`リセット`ボタンをクリックして、変数を初期値にリセットできます。"
+":guilabel:`鉛筆` ボタンをクリックして、既存の変数を編集できます。変更は :ref:`app-yaml` "
+"ファイルに直接書き込まれます。:guilabel:`リセット` ボタンをクリックして、変数を初期値にリセットできます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/configuration.rst:24
 msgid ""
@@ -35797,7 +35797,7 @@ msgid ""
 "for each application. Business calendars are displayed in hierarchical "
 "order and can be created in the :ref:`app.yaml<app-yaml>`."
 msgstr ""
-"**ビジネスカレンダー**には、設定されているすべてのビジネスカレンダーがアプリケーションごとに表示されます。ビジネスカレンダーは階層順に表示され :ref:`app.yaml"
+"**ビジネスカレンダー** には、設定されているすべてのビジネスカレンダーがアプリケーションごとに表示されます。ビジネスカレンダーは階層順に表示され :ref:`app.yaml"
 "<app-yaml>` で作成できます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/configuration.rst:30
@@ -35807,7 +35807,7 @@ msgid ""
 " **Free Days**. Free days can contain fixed dates, dates repeating every "
 "year and days relative to Easter."
 msgstr ""
-"カレンダーをクリックすると、そのカレンダーの詳細ビューにリダイレクトされます。設定は、**週の設定**と**空き日**にグループ化されます。 "
+"カレンダーをクリックすると、そのカレンダーの詳細ビューにリダイレクトされます。設定は、**週の設定**と** き日**にグループ化されます。 "
 "空き日には、固定日、毎年繰り返される日付、イースターを基準にした日数を含めることができます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/configuration.rst:43
@@ -35817,8 +35817,8 @@ msgid ""
 " to :guilabel:`upload new` images or :guilabel:`reset` them to the "
 ":ref:`default <branding-system-default>`."
 msgstr ""
-"**ブランディング**ビューには、さまざまなアプリケーションの :ref:`ブランディングのリソース<branding>` の概要が表示され、:guilabel:`新しい画像をアップロード`したり :ref:`初期値"
-"<branding-system-default>` :guilabel:`リセット`したりすることができます。"
+"**ブランディング** ビューには、さまざまなアプリケーションの :ref:`ブランディングのリソース<branding>` の概要が表示され、:guilabel:`新しい画像をアップロード` したり :ref:`初期値"
+"<branding-system-default>` :guilabel:`リセット` したりすることができます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/configuration.rst:49
 msgid ""
@@ -38323,7 +38323,7 @@ msgstr ""
 msgid ""
 "Run the Axon Ivy Engine with a **dedicated system user** and **database "
 "users with limited access rights**."
-msgstr "**専用のシステムユーザー**と**アクセス権限が制限されたデータベースユーザー**で Axon Ivy Engine を実行してください。"
+msgstr "**専用のシステムユーザー**と** クセス権限が制限されたデータベースユーザー**で Axon Ivy Engine を実行してください。"
 
 #: ../../source/engine-guide/security/index.rst:17
 msgid ""
