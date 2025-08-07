@@ -41990,7 +41990,7 @@ msgstr ""
 
 #: ../../source/market/index.rst:4
 msgid "Market"
-msgstr ""
+msgstr "マーケット"
 
 #: ../../source/market/index.rst:6
 msgid ""
@@ -41999,10 +41999,14 @@ msgid ""
 "interfaces, components for generating documents, connectors for connecting "
 "third-party systems and much more. Have a look!"
 msgstr ""
+"`Axon Ivy Market <https://market.axonivy.com>`_では、Axon Ivy プラットフォー"
+"ム向けの高性能なアドオンを提供しています。完全なワークフローユーザーインター"
+"フェース、ドキュメント作成コンポーネント、サードパーティーシステムの接続用コ"
+"ネクターなど、さまざまなアドオンをぜひチェックしてください。"
 
 #: ../../source/market/index.rst:13
 msgid "Install From the Market"
-msgstr ""
+msgstr "マーケットからのインストール"
 
 #: ../../source/market/index.rst:15
 msgid ""
@@ -42010,6 +42014,9 @@ msgid ""
 "Designer. Therefore you need to open the Market in Axon Ivy Designer (:"
 "menuselection:`Axon Ivy --> Axon Ivy Market`)."
 msgstr ""
+"Axon Ivy Market の拡張機能のほとんどは、Axon Ivy Designer でインストールでき"
+"ます。Axon Ivy Designer で Market を開いてください（:menuselection:`Axon Ivy "
+"--> Axon Ivy Market`）。"
 
 #: ../../source/market/index.rst:21
 msgid ""
@@ -42017,10 +42024,14 @@ msgid ""
 "Select your desired extension and click on the :guilabel:`Install` button in "
 "the header. Follow the installation wizard to empower your project."
 msgstr ""
+"ビューで `Axon Ivy Market <https://market.axonivy.com>`_が開いたら、必要な拡"
+"張機能を選択し、ヘッダーの:guilabel:`インストール`ボタンをクリックします。イ"
+"ンストールウィザードの指示に従ってインストールし、プロジェクトを強化できま"
+"す。"
 
 #: ../../source/market/index.rst:30
 msgid "Install From Another Source"
-msgstr ""
+msgstr "他のソースからのインストール"
 
 #: ../../source/market/index.rst:32
 msgid ""
@@ -42028,16 +42039,21 @@ msgid ""
 "can use the shortcut :guilabel:`CTRL` + :guilabel:`ALT` + :guilabel:`I` and "
 "provide the definition file as url."
 msgstr ""
+"サードパーティーのソースから拡張機能をインストールできます。:guilabel:`CTRL` "
+"+ :guilabel:`ALT` + :guilabel:`I` のショートカットを使用し、定義ファイルを "
+"URL として提供できます。"
 
 #: ../../source/market/index.rst:38
 msgid "Craft Your Own Installable Product"
-msgstr ""
+msgstr "独自のインストール可能なプロダクトの作成"
 
 #: ../../source/market/index.rst:40
 msgid ""
 "You are able to craft your own installable product. Read more about this "
 "here: :link-url:`Contributing to the Axon Ivy Market <market-contribute>`"
 msgstr ""
+"独自のインストール可能なプロダクトを作成できます。詳細については、:link-url:"
+"`Contributing to the Axon Ivy Market <market-contribute>`を参照してください。"
 
 #: ../../source/neo-designer/gettingstarted.rst:7
 msgid "Create a Workspace"
