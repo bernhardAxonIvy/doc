@@ -311,7 +311,7 @@ msgid ""
 "http://localhost:8080) and click on ``Setup Wizard`` > ``Migration "
 "Wizard``."
 msgstr ""
-":ref:`migration-wizard`を使用して、Axon Ivy Engine "
+":ref:`migration-wizard` を使用して、Axon Ivy Engine "
 "を移行します。移行ウィザードは、設定、エラーページ、ドロップインなどを新しい場所にコピーします。また、システムデータのスキーマもアップデートします。ウィザードの使用を開始するには、新しい"
 " Axon Ivy Engine を起動します。Axon Ivy Engine の "
 "URI（例：http://localhost:8080）にアクセスし、［``セットアップウィザード``］、［``移行ウィザード``］の順にクリックしてください。"
@@ -322,7 +322,7 @@ msgstr "Axon Ivy Engine を再起動します。"
 
 #: ../../source/axonivy/migration/major/_wizardMigration.rst:13
 msgid "Apply the :ref:`migration-upgrade-engine-post`."
-msgstr ":ref:`migration-upgrade-engine-post`を適用します。"
+msgstr ":ref:`migration-upgrade-engine-post` を適用します。"
 
 #: ../../source/axonivy/migration/major/index.rst:5
 msgid "Major / Minor Upgrade"
@@ -520,7 +520,7 @@ msgstr "以前の移行に関する注記"
 
 #: ../../source/axonivy/migration/migration-notes.rst:20
 msgid ":ref:`migration-tools` still support migrating directly from this version:"
-msgstr ":ref:`migration-tools`は、このバージョンからの直接移行をサポートしています。"
+msgstr ":ref:`migration-tools` は、このバージョンからの直接移行をサポートしています。"
 
 #: ../../source/axonivy/migration/migration-notes.rst:22
 msgid ":dev-url:`Migrating from 10.0 to 12.0 </doc/12.0/migration-notes>`"
@@ -919,7 +919,7 @@ msgid ""
 "it is still possible to define this things via the :ref:`web-xml` you "
 "should no longer do that, otherwise the header maybe appear twice. So you"
 " should remove the following configurations and make the adjustments in "
-"the :ref:`ivy-yaml`:"
+"the :ref:`ivy-yaml` :"
 msgstr ""
 
 #: ../../source/axonivy/migration/migration-notes-131-132.rst:34
@@ -946,13 +946,13 @@ msgstr "スムーズに移行できるように、以下の 2 つのツールを
 msgid ""
 "The :ref:`migration-wizard` helps you migrate an Axon Ivy Engine to the "
 "latest version."
-msgstr ":ref:`migration-wizard`では、Axon Ivy Engine を最新バージョンに移行できます。"
+msgstr ":ref:`migration-wizard` では、Axon Ivy Engine を最新バージョンに移行できます。"
 
 #: ../../source/axonivy/migration/migration-tools.rst:9
 msgid ""
 "The :ref:`project-convert-wizard` helps you migrate Axon Ivy projects to "
 "the latest version."
-msgstr ":ref:`project-convert-wizard`では、Axon Ivy プロジェクトを最新バージョンに移行できます。"
+msgstr ":ref:`project-convert-wizard` では、Axon Ivy プロジェクトを最新バージョンに移行できます。"
 
 #: ../../source/axonivy/release-notes/index.rst:4
 msgid "Release Notes"
@@ -1113,7 +1113,7 @@ msgstr "ウェブブラウザ"
 #: ../../source/axonivy/system-requirements/designer.rst:47
 #: ../../source/axonivy/system-requirements/engine.rst:103
 msgid "See :ref:`browser-system-requirements`."
-msgstr ":ref:`browser-system-requirements`を参照してください。"
+msgstr ":ref:`browser-system-requirements` を参照してください。"
 
 #: ../../source/axonivy/system-requirements/engine.rst:4
 #: ../../source/engine-guide/reference/axonivy-engine/index.rst:2
@@ -1204,7 +1204,7 @@ msgid ""
 "Edition."
 msgstr ""
 "Enterprise Edition には Standard Edition "
-"と比較していくつかの :ref:`利点<cluster>`がありますが、:ref:` 制限<cluster-"
+"と比較していくつかの :ref:`利点<cluster>` がありますが、:ref:` 制限<cluster-"
 "restrictions>`もいくつかあります。"
 
 #: ../../source/axonivy/system-requirements/engine.rst:62
@@ -1709,7 +1709,7 @@ msgid ""
 "calling elements too. This makes your Sub Process way more popular and "
 "easier to identify."
 msgstr ""
-":ref:`process-element-sub-process-start`イベントに移動し、:ref:`process-editor-"
+":ref:`process-element-sub-process-start` イベントに移動し、:ref:`process-editor-"
 "quick-"
 "actions`要素を使用してカスタムアイコンを追加します。このアイコンは、この開始時だけでなく、すべての呼び出し元の要素にも表示されます。これにより、作成したサブプロセスが識別しやすくなり、より多く利用されるようになります。"
 
@@ -2346,7 +2346,7 @@ msgid ""
 "url:`Secure Service <demos-connect-secure-service-java>` within the "
 ":ref:`ConnectivityDemos <importing-demo-projects>`."
 msgstr ""
-":ref:`ConnectivityDemos<importing-demo-projects>`にある :link-url:`Secure "
+":ref:`ConnectivityDemos<importing-demo-projects>` にある :link-url:`Secure "
 "Service<demos-connect-secure-service-"
 "java>`デモプロジェクトで、セキュリティアノテーションを確認できます。"
 
@@ -2783,7 +2783,7 @@ msgid ""
 " at the Signal Boundary Event. Typically, after the Signal Boundary a "
 "clean up process follows."
 msgstr ""
-":ref:`process-element-user-task`は、シグナルをリスニングすることで、中止に対応できます。:ref"
+":ref:`process-element-user-task` は、シグナルをリスニングすることで、中止に対応できます。:ref"
 ":`process-element-signal-boundary-event`を追加することで、UserTask "
 "アクティビティは中止シグナルをサブスクライブできます。車のクレジット額が変更されたというシグナルが他のプロセスから発信されると、リスニングしている"
 " UserTask は中止され、プロセスはシグナル境界イベントで続行されます。通常、シグナル境界の後にクリーンアッププロセスが続きます。"
@@ -4088,7 +4088,7 @@ msgstr "このソリューションのデメリットは、プログラミング
 msgid ""
 "This cannot happen with the :ref:`multi-engine <multi-tenancy-engines>` "
 "solution."
-msgstr ":ref:`マルチエンジン<multi-tenancy-engines>`ソリューションならば、そのような事態は起こりません。"
+msgstr ":ref:`マルチエンジン<multi-tenancy-engines>` ソリューションならば、そのような事態は起こりません。"
 
 #: ../../source/concepts/notification/index.rst:4
 #: ../../source/engine-guide/configuration/notification/index.rst:4
@@ -4456,8 +4456,8 @@ msgid ""
 msgstr ""
 "以下のガイドは:link-url:`デモプロジェクト<build-examples-test-"
 "project>`をベースにしており、テスト対象のプロジェクトに ``crm`` という名前を使用し、:ref:`プロセス<process-"
-"testing>` と :ref:`単体テスト<unit-testing>`の 2 つのテストプロジェクト ``crmTests` ` "
-"と、 :ref:`ウェブテスト<web-testing>`用の ``crmIntegrationTests` ` を使用しています。"
+"testing>` と :ref:`単体テスト<unit-testing>` の 2 つのテストプロジェクト ``crmTests` ` "
+"と、 :ref:`ウェブテスト<web-testing>` 用の ``crmIntegrationTests` ` を使用しています。"
 
 #: ../../source/concepts/testing/index.rst:30
 msgid ""
@@ -4663,7 +4663,7 @@ msgid ""
 " fetch information about active ``Cases``/``Tasks``, executed ``Tasks`` "
 "or the ``Session``."
 msgstr ""
-":ref:`process-testing-workflow`API "
+":ref:`process-testing-workflow` API "
 "では、``ケース``や``タスク``、実行中のプロセスの``セッション``にアクセスできます。この API "
 "を使用して、アクティブな``ケース``／``タスク``、実行された``タスク``、または``セッション``に関する情報を取得できます。"
 
@@ -5040,7 +5040,7 @@ msgstr ""
 #: ../../source/concepts/testing/unit-testing.rst:76
 msgid ""
 "Or you can change an app configuration, e.g change the URL of a "
-":ref:`RestClient <rest-clients-configuration>`:"
+":ref:`RestClient <rest-clients-configuration>` :"
 msgstr ""
 "また、 :ref:`RestClient<rest-clients-configuration>` の URL "
 "を変更するなど、アプリの設定を変更することもできます。"
@@ -5199,7 +5199,7 @@ msgid ""
 "Let's have a look at it:"
 msgstr ""
 "テストケースによっては、別のユーザーでウェブテストを実行する必要があったり、変数やアプリの設定に別の値が必要になります。このような場合は、`WebAppFixture`"
-" ユーティリティを使用します。 :ref:`unit-testing`の :ref:` AppFixture<unit-testing-app-"
+" ユーティリティを使用します。 :ref:`unit-testing` の :ref:` AppFixture<unit-testing-app-"
 "fixture>` と異なり、変更された値はテスト実行後に自動的にリセット**されません**。それでは見てみましょう。"
 
 #: ../../source/concepts/testing/web-testing.rst:135
@@ -6002,7 +6002,7 @@ msgstr ":ref:`ivy-yaml` のセキュリティシステム設定 :code:`Language.
 msgid ""
 "*If you have enabled the* :ref:`simulation <language-settings>` *then the"
 " locale will be applied to all sessions.*"
-msgstr ":ref:`シミュレーション<language-settings>`を*有効にした場合*、*ロケールはすべてのセッションに適用されます*。"
+msgstr ":ref:`シミュレーション<language-settings>` を*有効にした場合*、*ロケールはすべてのセッションに適用されます*。"
 
 #: ../../source/designer-guide/cms/resolution.rst:22
 msgid ""
@@ -6258,7 +6258,7 @@ msgid ""
 msgstr ":ref:`CMS<cms>` を使用して、複数の言語をサポートするプロセスのラベル、説明、カテゴリー、値を複数の言語で提供できます。"
 
 #: ../../source/designer-guide/configuration/custom-fields.rst:52
-msgid "You need to add the following to the :ref:`CMS<cms>`:"
+msgid "You need to add the following to the :ref:`CMS<cms>` :"
 msgstr ":ref:`CMS<cms>` に以下を追加する必要があります。"
 
 #: ../../source/designer-guide/configuration/custom-fields.rst:54
@@ -6476,7 +6476,7 @@ msgid ""
 "`myVariable`  will be injected at runtime into the URI."
 msgstr ""
 "設定に動的な式を使用して、異なる実行環境でのインストール後の設定を簡素化できます。そのためには、プロパティや URI "
-"に :ref:`variables`への動的参照を追加します。例えば、:code:` ${ivy.var.myVariable}/resource` "
+"に :ref:`variables` への動的参照を追加します。例えば、:code:` ${ivy.var.myVariable}/resource` "
 "として定義されたエンドポイント URI に対して、`myVariable` という名前の変数の値が実行時に URI に注入されます。"
 
 #: ../../source/designer-guide/configuration/dynamic-configs.rst:12
@@ -7336,7 +7336,7 @@ msgid ""
 "the left side, the specific properties are displayed on the right hand "
 "side. You can assign a user to several roles. He is implicitly assigned "
 "to the ancestor roles of the roles you explicitly assigned him to (see "
-":ref:`role-editor`). You can add additional properties to each user in "
+":ref:`role-editor` ). You can add additional properties to each user in "
 "terms of string key-value pairs and re-use them within process steps in "
 ":ref:`ivyscript`."
 msgstr ""
@@ -7516,7 +7516,7 @@ msgid ""
 "via a :ref:`problems-view` > *QuickFix*."
 msgstr ""
 "Axon Ivy Designer でパスワード変数を追加すると、変数が暗号化されていないという検証警告が表示されます。この問題は "
-":ref:`問題ビュー`の*クイック修正*で修正できます。"
+":ref:`問題ビュー` の*クイック修正*で修正できます。"
 
 #: ../../source/designer-guide/configuration/variables.rst:84
 msgid "**Daytime:** The value of this Variable is interpreted as a time of day."
@@ -8173,7 +8173,7 @@ msgstr "永続性"
 msgid ""
 ":ref:`business-case-data` can only be applied if the case is persistent "
 "(i.e., it has at least one task)."
-msgstr ":ref:`business-case-data`は、ケースが永続的である（つまり、少なくとも 1 つのタスクがある）場合にのみ適用できます。"
+msgstr ":ref:`business-case-data` は、ケースが永続的である（つまり、少なくとも 1 つのタスクがある）場合にのみ適用できます。"
 
 #: ../../source/designer-guide/data-modeling/business-data/limitations.rst:12
 msgid "Types"
@@ -8300,7 +8300,7 @@ msgstr ""
 msgid ""
 ":ref:`business-case-data` can only be applied if the case is persistent "
 "(i.e., has at least one task)"
-msgstr ":ref:`business-case-data`は、ケースが永続的である（つまり、少なくとも 1 つのタスクがある）場合にのみ適用できます。"
+msgstr ":ref:`business-case-data` は、ケースが永続的である（つまり、少なくとも 1 つのタスクがある）場合にのみ適用できます。"
 
 #: ../../source/designer-guide/data-modeling/business-data/usage.rst:41
 msgid "Store (without BusinessCaseData context)"
@@ -9343,7 +9343,7 @@ msgid ""
 "<https://jakarta.ee/specifications/data/>`__. It offers support for "
 "storing and retrieving business objects to and from a database."
 msgstr ""
-"この章では、Axon Ivyの :ref:`persistence-configuration-editor`と:ref"
+"この章では、Axon Ivyの :ref:`persistence-configuration-editor` と:ref"
 ":`persistence-api` を紹介します。永続性フレームワークは `Java Persistence API "
 "<http://en.wikipedia.org/wiki/Java_Persistence_API>`__（JPA）をベースにしており、ビジネスオブジェクトのデータベースへの格納とデータベースからの読み込みをサポートします。"
 
@@ -10633,7 +10633,7 @@ msgid ""
 " the Public API. Entries are identified by a textual entry identifier."
 msgstr ""
 "キャッシュされたデータは常にデータキャッシュエントリに保存されます。 :ref:`process-element-db-activity` や "
-":ref:`process-element-web-service-call-activity`で:ref:`process-element-"
+":ref:`process-element-web-service-call-activity` で:ref:`process-element-"
 "tab-data-cache`を使用した場合、データベースクエリや Web "
 "サービス呼び出しなどによって、データキャッシュエントリへの保存が行われます。また、パブリック API "
 "を使用して、任意のオブジェクトをデータキャッシュエントリに保存することもできます。エントリはテキスト形式のエントリ識別子で識別されます。"
@@ -11036,8 +11036,8 @@ msgstr ""
 "多くの大きなプロジェクトがあるワークスペースでは、特定の Axon Ivy "
 "要素を見つけるのが難しいことがあります。そのような場合には、強力な検索メカニズムが役立ちます。Axon Ivy の検索を行うには、ツールバーの "
 "|image1| のアイコンをクリックして検索ダイアログを開きます。開いたダイアログで Axon Ivy "
-"タブに移動します。現在、 :ref:`cms`、 :ref:`data-classes`、:ref:` persistence-entity-"
-"classes`、 :ref:`プロセスモデル<process-modeling>`、:ref:` プロセス要素<process-"
+"タブに移動します。現在、 :ref:`cms` 、 :ref:`data-classes` 、:ref:` persistence-entity-"
+"classes`、 :ref:`プロセスモデル<process-modeling>` 、:ref:` プロセス要素<process-"
 "elements>`の検索が Axon Ivy でサポートされています。"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:317
@@ -11935,7 +11935,7 @@ msgid ""
 "from the available HTML Dialogs or Sub Processes. Please note that only "
 "components from required projects can be overridden, there is no point in"
 " defining an override for a component in the same project (see "
-":ref:`overrides`)."
+":ref:`overrides` )."
 msgstr ""
 "実行時にオーバーライドされる元のコンポーネントの識別子を指定します。テキストフィールドの横にあるボタンを使用して、利用可能な HTML "
 "ダイアログまたはサブプロセスから選択します。オーバーライドできるのは必要なプロジェクトのコンポーネントだけであることに注意してください。同じプロジェクトのコンポーネントのオーバーライドを定義するポイントはありません（「 :ref:`overrides` 」を参照）。"
@@ -12355,7 +12355,7 @@ msgstr "ワークフロー API はデフォルトで有効になっています�
 
 #: ../../source/designer-guide/how-to/workflow/api.rst:76
 msgid "You can browse this API by using the :ref:`integration-rest-api-browser`."
-msgstr ":ref:`integration-rest-api-browser`を使用して、この API を参照できます。"
+msgstr ":ref:`integration-rest-api-browser` を使用して、この API を参照できます。"
 
 #: ../../source/designer-guide/how-to/workflow/api.rst:78
 msgid ""
@@ -12545,7 +12545,7 @@ msgid ""
 "<engine-cockpit>` or, for the Designer, in the :ref:`Language Settings "
 "<language-settings>`."
 msgstr ""
-"CMS の多言語テキストを使用して、 :ref:`ケース<process-element-tab-case>`や:ref:` タスク<process-"
+"CMS の多言語テキストを使用して、 :ref:`ケース<process-element-tab-case>` や:ref:` タスク<process-"
 "element-tab-"
 "task>`の名前と説明を定義できます。パフォーマンスとシステムデータベース容量の理由から、名前と説明は設定されたワークフロー言語にのみ保存され、現在の"
 " CMS で利用可能なすべての言語には保存されません。利用可能なワークフロー言語の設定は、:ref:`エンジンコックピット<engine-"
@@ -12770,7 +12770,7 @@ msgid ""
 " :ref:`Tasks <process-element-tab-task-custom-fields>`."
 msgstr ""
 "カスタムフィールドを使用して、ビジネスに関連する追加情報を:ref:`開始<process-element-tab-start-custom-"
-"fields>`、 :ref:`ケース<process-element-tab-case-custom-fields>`、:ref:` タスク"
+"fields>`、 :ref:`ケース<process-element-tab-case-custom-fields>` 、:ref:` タスク"
 "<process-element-tab-task-custom-fields>`のキーと値のペアとして動的に追加します。"
 
 #: ../../source/designer-guide/how-to/workflow/custom-fields.rst:11
@@ -12799,9 +12799,9 @@ msgid ""
 " lists, as well as for filtering task- and case lists in dashboards. You "
 "can also use custom fields to search for task and cases."
 msgstr ""
-":ref:`開発者ワークフロー UI <dev-workflow-ui>`と:ref:`ポータルアプリケーション<portal-"
+":ref:`開発者ワークフロー UI <dev-workflow-ui>` と:ref:`ポータルアプリケーション<portal-"
 "guide>`のタスクとケースの詳細ページに、カスタムフィールドが表示されます。 :ref:`ポータルアプリケーション<portal-guide>`"
-" では、カスタムフィールドを :ref:`タスク<dev-workflow-ui-task-details>`リストや:ref:` ケース<dev-"
+" では、カスタムフィールドを :ref:`タスク<dev-workflow-ui-task-details>` リストや:ref:` ケース<dev-"
 "workflow-ui-case-"
 "details>`リストの追加列として追加し、ダッシュボードでタスクリストやケースリストをフィルタリングできます。また、カスタムフィールドを使用して、タスクやケースを検索できます。"
 
@@ -13364,7 +13364,7 @@ msgid ""
 "session expires while working on this initial task, Axon Ivy will delete "
 "it, along with the associated Case and Business Case."
 msgstr ""
-":ref:`casemap`によって作成されるタスクの初期状態は「中断」です。Axon Ivy "
+":ref:`casemap` によって作成されるタスクの初期状態は「中断」です。Axon Ivy "
 "は直ちにそのタスクをデータベースに保存して永続化します。この初期タスクの作業中にユーザーセッションが期限切れになると、Axon Ivy "
 "は関連付けられたケースとビジネスケースとともにタスクを削除します。"
 
@@ -13625,7 +13625,7 @@ msgstr "この Axon Ivy Designer のドキュメントでは、以下につい�
 msgid ""
 "Install Axon Ivy Designer following the steps in the :ref:`installation "
 "instructions <designer-install>`."
-msgstr ":ref:`インストール手順<designer-install>`に従って、Axon Ivy Designer をインストールします。"
+msgstr ":ref:`インストール手順<designer-install>` に従って、Axon Ivy Designer をインストールします。"
 
 #: ../../source/designer-guide/introduction/index.rst:8
 msgid ""
@@ -14046,7 +14046,7 @@ msgid ""
 "Process Development: :ref:`Simulate and debug processes <simulate-"
 "process-models>` or :ref:`design HTML Dialogs <html-dialogs>`."
 msgstr ""
-"プロセスの作成： :ref:`プロセスのシミュレーションとデバッグ<simulate-process-models>`または :ref:` HTML "
+"プロセスの作成： :ref:`プロセスのシミュレーションとデバッグ<simulate-process-models>` または :ref:` HTML "
 "ダイアログの設計<html-dialogs>`"
 
 #: ../../source/designer-guide/introduction/perspectives.rst:41
@@ -14630,7 +14630,7 @@ msgid ""
 "Have a look at our reference for all available :ref:`designer-reference-"
 "views` and :ref:`designer-reference-editors`."
 msgstr ""
-"利用可能な :ref:`designer-reference-views`と:ref:` designer-reference-"
+"利用可能な :ref:`designer-reference-views` と:ref:` designer-reference-"
 "editors`については、リファレンスを参照してください。"
 
 #: ../../source/designer-guide/ivyscript/editor.rst:4
@@ -14995,7 +14995,7 @@ msgid ""
 " because Ivy data objects are automatically initialized to a default "
 "value. Read the section :ref:`ivyscript-nullhandling` for more details."
 msgstr ""
-":ref:`ivyscript-reference-data-types`は、使いやすいように定義されています。特に、IvyScript "
+":ref:`ivyscript-reference-data-types` は、使いやすいように定義されています。特に、IvyScript "
 "では、Ivy データオブジェクトが自動的に初期値に初期化されるため、プログラマーが NULL "
 "ポインタ例外を処理する必要はありません。詳細については、「:ref:`ivyscript-"
 "nullhandling`」のセクションを参照してください。"
@@ -16006,7 +16006,7 @@ msgstr ""
 msgid ""
 "``datacache`` - the reference to the :public-api:`IDataCacheContext "
 "</ch/ivyteam/ivy/data/cache/IDataCacheContext.html>` instances for the "
-"application and session (see :ref:`data-cache`)"
+"application and session (see :ref:`data-cache` )"
 msgstr ""
 "``datacache`` - アプリケーションとセッションの :public-api:`IDataCacheContext "
 "</ch/ivyteam/ivy/data/cache/IDataCacheContext.html>`インスタンスへの参照です（「:ref"
@@ -16017,10 +16017,10 @@ msgid ""
 "``persistence`` - references to the existing persistence units in this "
 "application (see :ref:`persistence-configuration-editor` and :ref"
 ":`persistence-api` for more information about the API of the "
-":ref:`Persistence <persistence>`)"
+":ref:`Persistence <persistence>` )"
 msgstr ""
 "``persistence`` - このアプリケーションの既存の永続性ユニットへの参照（ :ref:`永続性<persistence>` の API "
-"の詳細については、「 :ref:`Persistence-configuration-editor`」および「:ref:` persistence-"
+"の詳細については、「 :ref:`Persistence-configuration-editor` 」および「:ref:` persistence-"
 "api`」を参照）。"
 
 #: ../../source/designer-guide/ivyscript/reference.rst:368
@@ -16502,7 +16502,7 @@ msgstr "一般タブ"
 msgid ""
 "The :ref:`process-element-tab-general` is included in the view of all "
 "process elements and contains the name and a description of the element."
-msgstr ":ref:`process-element-tab-general`は、すべてのプロセス要素のビューに表示され、要素の名前と説明を表示します。"
+msgstr ":ref:`process-element-tab-general` は、すべてのプロセス要素のビューに表示され、要素の名前と説明を表示します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/alternative.rst:23
 msgid "Tab Condition"
@@ -16665,7 +16665,7 @@ msgstr "出力データタブ"
 msgid ""
 "On :ref:`process-element-tab-output` you can configure the output of the "
 "element (i.e., the data that leaves the element)."
-msgstr ":ref:`process-element-tab-output`では、要素の出力（要素から出力されるデータ）を設定できます。"
+msgstr ":ref:`process-element-tab-output` では、要素の出力（要素から出力されるデータ）を設定できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/call-sub.rst:42
 msgid ""
@@ -17252,7 +17252,7 @@ msgid ""
 "the :public-api:`Public API </>`, which allows you to use them for "
 "example to filter the task list."
 msgstr ""
-":ref:`プロセス<glossar-process>`が開始されるたびに、:ref:`ケース<glossar-"
+":ref:`プロセス<glossar-process>` が開始されるたびに、:ref:`ケース<glossar-"
 "case>`が作成されます。このタブでは、ケースの追加情報を定義できます。このタブで定義された情報は、Axon Ivy "
 "でのケースの取り扱いには影響しません。これらの情報は :public-api:`パブリック API </>` "
 "からアクセスでき、例えばタスクリストのフィルタリングに使用できます。"
@@ -17337,7 +17337,7 @@ msgid ""
 "task`."
 msgstr ""
 "このタブでは、タスクスイッチによって作成されるタスクのパラメーターを定義します。タスクタブは:ref:`process-element-task-"
-"switch-event`、 :ref:`process-element-task-switch-gateway`、:ref:` process-"
+"switch-event`、 :ref:`process-element-task-switch-gateway` 、:ref:` process-"
 "element-user-task`で使用されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:384
@@ -18454,7 +18454,7 @@ msgid ""
 "program-start` or a :ref:`process-element-wait-program-intermediate-"
 "event` bean."
 msgstr ""
-"それでも、スタイルの方が作業しやすい、 :ref:`process-element-program-start`や:ref:` process-"
+"それでも、スタイルの方が作業しやすい、 :ref:`process-element-program-start` や:ref:` process-"
 "element-wait-program-intermediate-event` Bean "
 "の実装で知識を習得してきたなど、要素の設定にプログラマブルインフラストラクチャを使用したい場合は、引き続き使用できます。"
 
@@ -19614,7 +19614,7 @@ msgid ""
 " name, description and category if not otherwise configured on the :ref"
 ":`process-element-tab-case`."
 msgstr ""
-":ref:`process-element-tab-case`で設定されていない場合、このタブの名前、説明、カテゴリーが:ref:`ケース"
+":ref:`process-element-tab-case` で設定されていない場合、このタブの名前、説明、カテゴリーが:ref:`ケース"
 "<glossar-case>`の名前、説明、カテゴリーとして使用されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:81
@@ -19833,7 +19833,7 @@ msgstr "担当ロール／ユーザー"
 msgid ""
 "Defines the role or user required to carry out the task created with the "
 ":ref:`process-element-trigger-step`."
-msgstr ":ref:`process-element-trigger-step`で作成されたタスクを実行するのに必要なロールまたはユーザーを定義します。"
+msgstr ":ref:`process-element-trigger-step` で作成されたタスクを実行するのに必要なロールまたはユーザーを定義します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:201
 msgid ""
@@ -20185,7 +20185,7 @@ msgstr "タスクタブ"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_tab-case.rst:4
 msgid "On the :ref:`process-element-tab-case` you can configure the Case."
-msgstr ":ref:`process-element-tab-case`では、ケースを設定できます。"
+msgstr ":ref:`process-element-tab-case` では、ケースを設定できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/task-switch-gateway.rst:86
 msgid ""
@@ -20579,7 +20579,7 @@ msgstr ""
 
 #: ../../source/designer-guide/process-modeling/process-elements/_tab-task.rst:4
 msgid "On the :ref:`process-element-tab-task` you can configure the Task."
-msgstr ":ref:`process-element-tab-task`では、タスクを設定できます。"
+msgstr ":ref:`process-element-tab-task` では、タスクを設定できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:4
 msgid "Wait Program Intermediate Event"
@@ -21178,7 +21178,7 @@ msgstr "新しいプロセスの名前を入力します。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/new-process-wizard.rst:39
 msgid ""
-":ref:`process-kind-business`: This option is the default option an "
+":ref:`process-kind-business` : This option is the default option an "
 "creates a normal standard business process. Use this option to implement "
 "your business logic."
 msgstr ""
@@ -21187,7 +21187,7 @@ msgstr ""
 
 #: ../../source/designer-guide/process-modeling/process-modeling/new-process-wizard.rst:43
 msgid ""
-":ref:`Callable Sub Process <process-kind-callable>`: This option creates "
+":ref:`Callable Sub Process <process-kind-callable>` : This option creates "
 "a callable sub process including a process-call-start element and a "
 "process-call-end element. You need to implement your process between "
 "those two elements. It is allowed to have multiple Process Starts and "
@@ -21199,13 +21199,13 @@ msgstr ""
 
 #: ../../source/designer-guide/process-modeling/process-modeling/new-process-wizard.rst:50
 msgid ""
-":ref:`process-kind-webservice`: This option creates a web service process"
+":ref:`process-kind-webservice` : This option creates a web service process"
 " which can be called from other systems. WS Start and WS End elements "
 "will be created automatically and you can implement your process between "
 "these elements. Please note that no user interaction may occur in a web "
 "service process."
 msgstr ""
-":ref:`process-kind-webservice`：このオプションは、他のシステムから呼び出すことができる Web "
+":ref:`process-kind-webservice` ：このオプションは、他のシステムから呼び出すことができる Web "
 "サービスプロセスを作成します。Web サービスの開始要素と Web "
 "サービスの終了要素が自動的に作成され、これらの要素の間にプロセスを実装できます。Web "
 "サービスプロセスではユーザーインタラクションは発生しない可能性があることに注意してください。"
@@ -21534,7 +21534,7 @@ msgid ""
 "existing connector select the connector and move the target handle to "
 "another element."
 msgstr ""
-":ref:`process-editor-tool-bar`にある**コネクターツール**を使用するか、最初の要素をクリックし、 :ref"
+":ref:`process-editor-tool-bar` にある**コネクターツール**を使用するか、最初の要素をクリックし、 :ref"
 ":`process-editor-quick-actions`で**コネクターツール**を選択して、2 "
 "つの要素の間にコネクターを描画します。また、コネクターにさらに多くの折れ線ウェイポイントを追加したり、コネクターを選択し、ハンドルをドラッグして、ウェイポイントを移動できます。既存のコネクターを再接続するには、コネクターを選択し、ハンドルを他の要素に移動します。"
 
@@ -21605,7 +21605,7 @@ msgid ""
 "markers <problems-view>`, :ref:`name <process-element-tab-general>`, "
 ":ref:`description <process-element-tab-general>`, PID, conditions, etc.)."
 msgstr ""
-"|info-action| 現在の選択に関する情報（ :ref:`問題マーカー<problems-view>`、:ref:` 名前<process-"
+"|info-action| 現在の選択に関する情報（ :ref:`問題マーカー<problems-view>` 、:ref:` 名前<process-"
 "element-tab-general>`、 :ref:`説明 <process-element-tab-general>` 、PID、条件など）。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:319
@@ -21650,7 +21650,7 @@ msgid ""
 "element-embedded-sub` or :ref:`process-element-bpmn-activity`"
 msgstr ""
 "|unwrap-action| 埋め込みサブプロセスにカプセル化された要素が現在のプロセスに配置されます。:ref:`process-"
-"element-embedded-sub`または :ref:`process-element-bpmn-activity`でのみ使用できます。"
+"element-embedded-sub`または :ref:`process-element-bpmn-activity` でのみ使用できます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:224
 msgid "unwrap-action"
@@ -21725,7 +21725,7 @@ msgstr "要素をプロセスワークフローに直接挿入します。以下
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:200
 msgid ""
 "Events: All possible event elements (also for :ref:`process-element-"
-"error-boundary-event` and :ref:`process-element-signal-boundary-event`)"
+"error-boundary-event` and :ref:`process-element-signal-boundary-event` )"
 msgstr ""
 "イベント：すべてのイベント要素（ :ref:`process-element-error-boundary-event` 、:ref"
 ":`process-element-signal-boundary-event`を含む）"
@@ -22449,7 +22449,7 @@ msgstr "フルスクリーンコードブラウザ"
 
 #: ../../source/designer-guide/process-modeling/process-views/browsers.rst:114
 msgid "Renders the scripts in a :ref:`process-element-tab-code` at full size."
-msgstr ":ref:`process-element-tab-code`をフルサイズで表示して、スクリプトを作成します。"
+msgstr ":ref:`process-element-tab-code` をフルサイズで表示して、スクリプトを作成します。"
 
 #: ../../source/designer-guide/process-modeling/process-views/browsers.rst:116
 msgid "Fullscreen"
@@ -22889,7 +22889,7 @@ msgid ""
 "Project* wizard provides a project converter, are marked with |tag-"
 "project-auto-convert|."
 msgstr ""
-":ref:`migration-notes`では、*プロジェクトの変換*ウィザードでプロジェクトコンバーターを使用可能な移行作業に |tag-"
+":ref:`migration-notes` では、*プロジェクトの変換*ウィザードでプロジェクトコンバーターを使用可能な移行作業に |tag-"
 "project-auto-convert| のマークが付けられています。"
 
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:6
@@ -23521,7 +23521,7 @@ msgstr "ConnectivityDemos"
 msgid ""
 "Demonstrates the consuming and providing of :ref:`integration-rest` with "
 "ivy."
-msgstr "Ivy を使用した :ref:`integration-rest`の消費および提供のデモです。"
+msgstr "Ivy を使用した :ref:`integration-rest` の消費および提供のデモです。"
 
 #: ../../source/designer-guide/process-modeling/projects/importing.rst:75
 msgid "ErrorHandlingDemos"
@@ -23529,7 +23529,7 @@ msgstr "ErrorHandlingDemos"
 
 #: ../../source/designer-guide/process-modeling/projects/importing.rst:75
 msgid "Samples that demonstrate the :ref:`error-handling`."
-msgstr ":ref:`error-handling`を示すサンプル。"
+msgstr ":ref:`error-handling` を示すサンプル。"
 
 #: ../../source/designer-guide/process-modeling/projects/importing.rst:77
 msgid "HTMLDialogDemos"
@@ -23539,7 +23539,7 @@ msgstr "HTMLDialogDemos"
 msgid ""
 "Demonstrates several JSF components that can be used in :ref:`html-"
 "dialogs`."
-msgstr ":ref:`html-dialogs`で使用できるいくつかの JSF コンポーネントのデモです。"
+msgstr ":ref:`html-dialogs` で使用できるいくつかの JSF コンポーネントのデモです。"
 
 #: ../../source/designer-guide/process-modeling/projects/importing.rst:79
 msgid "QuickStartTutorial"
@@ -23549,7 +23549,7 @@ msgstr "QuickStartTutorial"
 msgid ""
 "The same project that is built in the :ref:`QuickStart Tutorial <axonivy-"
 "workbench>`."
-msgstr ":ref:`クイックスタートチュートリアル<axonivy-workbench>`で作成するのと同じプロジェクト。"
+msgstr ":ref:`クイックスタートチュートリアル<axonivy-workbench>` で作成するのと同じプロジェクト。"
 
 #: ../../source/designer-guide/process-modeling/projects/importing.rst:81
 msgid "RuleEngineDemos"
@@ -23557,7 +23557,7 @@ msgstr "RuleEngineDemos"
 
 #: ../../source/designer-guide/process-modeling/projects/importing.rst:81
 msgid "Shows how to use the :ref:`rule-engine`."
-msgstr ":ref:`rule-engine`の使用方法を示します。"
+msgstr ":ref:`rule-engine` の使用方法を示します。"
 
 #: ../../source/designer-guide/process-modeling/projects/importing.rst:83
 msgid "WorkflowDemos"
@@ -23568,7 +23568,7 @@ msgid ""
 "Demonstrates how to handle typical Workflow use cases, makes use of "
 "features like :ref:`Signals <signal-reference>` and :ref:`business-data`"
 msgstr ""
-"一般的なワークフローのユースケースの処理方法、 :ref:`シグナル<signal-reference>`、:ref:` business-"
+"一般的なワークフローのユースケースの処理方法、 :ref:`シグナル<signal-reference>` 、:ref:` business-"
 "data`などの機能の利用方法のデモです。"
 
 #: ../../source/designer-guide/process-modeling/projects/index.rst:2
@@ -23701,7 +23701,7 @@ msgid ""
 "Axon Ivy Archives can be :ref:`exported <designer-export-project>` and "
 ":ref:`imported <designer-import-project>`."
 msgstr ""
-"Axon Ivy Archive を :ref:`エクスポート<designer-export-project>`／:ref:` インポート"
+"Axon Ivy Archive を :ref:`エクスポート<designer-export-project>` ／:ref:` インポート"
 "<designer-import-project>`できます。"
 
 #: ../../source/designer-guide/process-modeling/projects/ivyArchive.rst:22
@@ -24681,7 +24681,7 @@ msgstr "変数をコピー"
 #: ../../source/designer-guide/process-modeling/simulation/debugger.rst:209
 msgid ""
 "Copies all selected variables into the clipboard (e.g., for use in the "
-":ref:`debugger-expressions-view`)."
+":ref:`debugger-expressions-view` )."
 msgstr "（例えば :ref:`debugger-expressions-view` で使用するために）選択したすべての変数をクリップボードにコピーします。"
 
 #: ../../source/designer-guide/process-modeling/simulation/debugger.rst:212
@@ -24708,7 +24708,7 @@ msgstr "ウォッチ式を作成"
 
 #: ../../source/designer-guide/process-modeling/simulation/debugger.rst:219
 msgid "Creates a new expression in the :ref:`debugger-expressions-view`."
-msgstr ":ref:`debugger-expressions-view`で新しい式を作成します。"
+msgstr ":ref:`debugger-expressions-view` で新しい式を作成します。"
 
 #: ../../source/designer-guide/process-modeling/simulation/debugger.rst:223
 msgid ""
@@ -24724,7 +24724,7 @@ msgstr "式ビュー"
 #: ../../source/designer-guide/process-modeling/simulation/debugger.rst:233
 msgid ""
 "In this view you can define expressions, evaluate them and examine their "
-"values (similar to the :ref:`debugger-variables-view`). In the expression"
+"values (similar to the :ref:`debugger-variables-view` ). In the expression"
 " you can use all valid IvyScript operators and language elements and at a"
 " certain point of time, only variables which are in the scope of the "
 "currently executed process step can be evaluated."
@@ -25389,7 +25389,7 @@ msgid ""
 "<workspace-preferences-process-engine>`. This Process Start Overview web "
 "page shows all processes that can be started by clicking on the link."
 msgstr ""
-":ref:`開始要素<process-editor-quick-actions-start-process>`、または:ref:`対応する環境設定"
+":ref:`開始要素<process-editor-quick-actions-start-process>` 、または:ref:`対応する環境設定"
 "<workspace-preferences-process-engine>`での設定によって、:ref:`プロセス開発パースペクティブ"
 "<perspectives-axonivy>`のブラウザビューや別個のブラウザウィンドウに表示されたデザイナーワークフロー UI "
 "の概要ページで直接、シミュレーションを開始できます。このプロセス開始の概要ウェブページには、リンクをクリックして開始できるすべてのプロセスが表示されます。"
@@ -25509,7 +25509,7 @@ msgstr "このダイアログでは、コンテンツ、フォーマット、ワ
 msgid ""
 ":ref:`Workflow languages <workflow-languages>` controls for which "
 "languages case and task name and description are stored."
-msgstr ":ref:`ワークフロー言語<workflow-languages>`は、ケースとタスクの名前と説明を格納する言語を制御します。"
+msgstr ":ref:`ワークフロー言語<workflow-languages>` は、ケースとタスクの名前と説明を格納する言語を制御します。"
 
 #: ../../source/designer-guide/process-modeling/simulation/simulation.rst:90
 msgid "Press |image20d| in the toolbar."
@@ -25641,7 +25641,7 @@ msgid ""
 "the expression, you have access to all variables in the context of the "
 "process step, including ``in``."
 msgstr ""
-":ref:`debugger-breakpoints-view`でブレークポイントに*条件*を追加できます。その場合、式が `true` "
+":ref:`debugger-breakpoints-view` でブレークポイントに*条件*を追加できます。その場合、式が `true` "
 "であると評価された場合のみ、ブレークポイントがアクティブになり、実行が中断されます。式では、``in`` "
 "を含む、プロセスステップのコンテキストのすべての変数を使用できます。"
 
@@ -25656,7 +25656,7 @@ msgid ""
 "is also possible to disable all breakpoints in the :ref:`debugger-"
 "breakpoints-view`."
 msgstr ""
-":ref:`debugger-breakpoints-view`で、または:ref:`process-"
+":ref:`debugger-breakpoints-view` で、または:ref:`process-"
 "editor`でブレークポイントをクリックして、特定のブレークポイントを無効にすることができます。:ref:`debugger-"
 "breakpoints-view`ですべてのブレークポイントを無効にすることも可能です。"
 
@@ -25685,8 +25685,8 @@ msgid ""
 "defined and :ref:`Tasks <glossar-task>` and :ref:`Cases <glossar-case>` "
 "are stored in an Application."
 msgstr ""
-"また、アプリケーションでは、 :Ref:`ユーザー<glossar-user>`と:ref:` ロール<glossar-"
-"role>`が定義され、 :ref:`タスク<glossar-task>`と :ref:`ケース<glossar-case>` が格納されます。"
+"また、アプリケーションでは、 :Ref:`ユーザー<glossar-user>` と:ref:` ロール<glossar-"
+"role>`が定義され、 :ref:`タスク<glossar-task>` と :ref:`ケース<glossar-case>` が格納されます。"
 
 #: ../../source/designer-guide/reference/glossary.rst:15
 msgid "See also section :ref:`Application <application>`."
@@ -25701,7 +25701,7 @@ msgid ""
 "information of a Case. For example by using the :ref:`Alternative Element"
 " <process-element-alternative>`."
 msgstr ""
-"ケースは、 :ref:`プロセス<glossar-process>`の 1 つの具体的なインスタンスです。必ずしも、:ref:` プロセス"
+"ケースは、 :ref:`プロセス<glossar-process>` の 1 つの具体的なインスタンスです。必ずしも、:ref:` プロセス"
 "<glossar-process>`のすべての:ref:`ステップ<glossar-"
 "step>`にわたって実行される必要はありません。:ref:`プロセス<glossar-"
 "process>`は、ケースの情報に従って、さまざまなケースのさまざまな処理を定義できます。例えば、:ref:`代替要素<process-"
@@ -25716,7 +25716,7 @@ msgid ""
 "passed from one :ref:`Step <glossar-step>` to the next in the form of the"
 " :ref:`Process Data <glossar-process-data>`"
 msgstr ""
-"ケースは、 :ref:`プロセス<glossar-process>`を実行するのに使用される情報を保持します。例えば、:ref:` プロセス"
+"ケースは、 :ref:`プロセス<glossar-process>` を実行するのに使用される情報を保持します。例えば、:ref:` プロセス"
 "<glossar-process>`の現在位置など、ケースについての情報です。他方で、ケース中に収集される情報があり、:ref:`プロセスデータ"
 "<glossar-process-data>`の形で一つの :ref:`ステップ<glossar-step>` から次のステップに受け渡されます。"
 
@@ -25729,7 +25729,7 @@ msgid ""
 "A Connector connects two :ref:`Steps <glossar-step>` of a :ref:`Process "
 "<glossar-process>`. This defines the sequence of these two steps."
 msgstr ""
-"コネクターは、 :ref:`プロセス<glossar-process>`の 2 つの:ref:` ステップ<glossar-"
+"コネクターは、 :ref:`プロセス<glossar-process>` の 2 つの:ref:` ステップ<glossar-"
 "step>`を接続し、これら 2 つのステップのシーケンスを定義します。"
 
 #: ../../source/designer-guide/reference/glossary.rst:42
@@ -25756,7 +25756,7 @@ msgid ""
 "A :ref:`HTML Dialog <html-dialogs>` is an implementation of a :ref:`User "
 "Dialog <user-dialogs>`. The HTML Dialog is implemented with (HTML/JSF)."
 msgstr ""
-":ref:`HTML ダイアログ<html-dialogs>`は、 :ref:`ユーザーダイアログ<user-dialogs>` の実装です。HTML"
+":ref:`HTML ダイアログ<html-dialogs>` は、 :ref:`ユーザーダイアログ<user-dialogs>` の実装です。HTML"
 " ダイアログは HTML/JSF で実装されます。"
 
 #: ../../source/designer-guide/reference/glossary.rst:54
@@ -25767,7 +25767,7 @@ msgid ""
 "Dialogs <html-dialogs>` the layouts are defined in the webContent folder."
 msgstr ""
 "レイアウトには、HTML ページの主構造（ヘッダー、コンテンツ、フッターセクションなど）が格納されます。:ref:`ウェブページ<user-"
-"interface-web-page>`のレイアウトは :ref:`CMS <cms>`で定義されます。:ref:`HTML ダイアログ"
+"interface-web-page>`のレイアウトは :ref:`CMS <cms>` で定義されます。:ref:`HTML ダイアログ"
 "<html-dialogs>`のレイアウトは webContent フォルダーで定義されます。"
 
 #: ../../source/designer-guide/reference/glossary.rst:63
@@ -25778,7 +25778,7 @@ msgid ""
 "started, a :ref:`Case <glossar-case>` and a :ref:`Task <glossar-task>` is"
 " created."
 msgstr ""
-"プロセスは、 :ref:`ケース<glossar-case>`のグループの処理方法についての要約で、互いに接続された:ref:` プロセス要素"
+"プロセスは、 :ref:`ケース<glossar-case>` のグループの処理方法についての要約で、互いに接続された:ref:` プロセス要素"
 "<glossar-process-elements>`で構成されます。プロセスが開始されるたびに、:ref:`ケース<glossar-"
 "case>`と :ref:`タスク<glossar-task>` が作成されます。"
 
@@ -25802,7 +25802,7 @@ msgid ""
 "<glossar-step>` of a :ref:`Process <glossar-process>`."
 msgstr ""
 "プロセス要素は、プロセスを構築するレンガです。:ref:`コネクター<glossar-"
-"connector>`で順番に並べられたプロセス要素は、 :ref:`プロセス<glossar-process>`の:ref:` ステップ"
+"connector>`で順番に並べられたプロセス要素は、 :ref:`プロセス<glossar-process>` の:ref:` ステップ"
 "<glossar-step>`になります。"
 
 #: ../../source/designer-guide/reference/glossary.rst:88
@@ -25822,8 +25822,8 @@ msgid ""
 ":ref:`Case <glossar-case>` runs through the :ref:`Process <glossar-"
 "process>`."
 msgstr ""
-"ゲートウェイは :ref:`プロセス<glossar-process>`を構築します。例えば、:ref:` 代替<process-element-"
-"alternative>`は、 :ref:`プロセス<glossar-process>`における:ref:` ケース<glossar-"
+"ゲートウェイは :ref:`プロセス<glossar-process>` を構築します。例えば、:ref:` 代替<process-element-"
+"alternative>`は、 :ref:`プロセス<glossar-process>` における:ref:` ケース<glossar-"
 "case>`の経路を決定します。"
 
 #: ../../source/designer-guide/reference/glossary.rst:99
@@ -25878,7 +25878,7 @@ msgstr "ロール"
 msgid ""
 "A :ref:`User <glossar-user>` has one or multiple Roles which define what "
 "the user is allowed to do."
-msgstr ":ref:`ユーザー<glossar-user>`は、ユーザーが実行できる動作を定義するロールを 1 つ以上持ちます。"
+msgstr ":ref:`ユーザー<glossar-user>` は、ユーザーが実行できる動作を定義するロールを 1 つ以上持ちます。"
 
 #: ../../source/designer-guide/reference/glossary.rst:134
 msgid ""
@@ -25911,8 +25911,8 @@ msgid ""
 "<glossar-process>`. The :ref:`Connectors <glossar-connector>` define the "
 "order of the Steps in a :ref:`Process <glossar-process>`."
 msgstr ""
-":ref:`プロセス<glossar-process>`に配置される:ref:`プロセス要素<glossar-process-"
-"elements>`は、その :ref:`プロセス<glossar-process>`のステップになります。:ref:` コネクター<glossar-"
+":ref:`プロセス<glossar-process>` に配置される:ref:`プロセス要素<glossar-process-"
+"elements>`は、その :ref:`プロセス<glossar-process>` のステップになります。:ref:` コネクター<glossar-"
 "connector>`は :ref:`プロセス<glossar-process>` のステップの順序を定義します。"
 
 #: ../../source/designer-guide/reference/glossary.rst:157
@@ -25937,7 +25937,7 @@ msgid ""
 "can be created. This allows to interrupt the work on a :ref:`Case "
 "<glossar-case>` and to hand it over to another user if necessary."
 msgstr ""
-"タスクなしで、 :ref:`ケース<glossar-case>`で作業を行うことはできません。新しい:ref:` ケース<glossar-"
+"タスクなしで、 :ref:`ケース<glossar-case>` で作業を行うことはできません。新しい:ref:` ケース<glossar-"
 "case>`が開始されるたびに、タスクが作成されます。:ref:`ケース<glossar-"
 "case>`／タスクでの作業中に、新しいタスクを作成できます。これにより、必要に応じて:ref:`ケース<glossar-"
 "case>`での作業を中断し、他のユーザーに引き渡すことができます。"
@@ -25951,7 +25951,7 @@ msgid ""
 "switch-event>` Element or at the :ref:`Process End <process-element-"
 "process-end>`."
 msgstr ""
-"タスクは 1 つ以上の :ref:`ステップ<glossar-step>`で構成されます。例えば、:ref:` リクエスト開始<process-"
+"タスクは 1 つ以上の :ref:`ステップ<glossar-step>` で構成されます。例えば、:ref:` リクエスト開始<process-"
 "element-start-request>`や:ref:`タスクスイッチ<process-element-task-switch-"
 "event>`要素で開始し、次の:ref:`タスクスイッチ<process-element-task-switch-"
 "event>`要素や :ref:`プロセス終了<process-element-process-end>` で終了します。"
@@ -25974,7 +25974,7 @@ msgstr "識別されないユーザーは、匿名のユーザーです。"
 msgid ""
 "A :ref:`user-dialogs` is a concept of an User Interface. User Dialogs can"
 " be implemented as HTML Dialog (HTML/JSF)."
-msgstr ":ref:`user-dialogs`は、ユーザーインターフェースのコンセプトです。HTML ダイアログは HTML/JSF で実装されます。"
+msgstr ":ref:`user-dialogs` は、ユーザーインターフェースのコンセプトです。HTML ダイアログは HTML/JSF で実装されます。"
 
 #: ../../source/designer-guide/reference/glossary.rst:191
 #: ../../source/designer-guide/user-interface/user-dialogs/new-user-dialog-wizard.rst:58
@@ -26349,7 +26349,7 @@ msgid ""
 "they are supporting the :ref:`branding-user-interface` or are based on "
 "the latest :ref:`default templates <html-dialog-layouts>`."
 msgstr ""
-"エンジンのブランディングを :ref:`html-dialogs`で機能させるには、HTML ダイアログが:ref:`branding-user-"
+"エンジンのブランディングを :ref:`html-dialogs` で機能させるには、HTML ダイアログが:ref:`branding-user-"
 "interface`をサポートしているか、最新の:ref:`デフォルトのテンプレート<html-dialog-"
 "layouts>`をベースに作成されている必要があります。"
 
@@ -26390,7 +26390,7 @@ msgid ""
 "Branding resources within an :ref:`app.zip <deployment-prepare>` in "
 ":file:`config/branding`."
 msgstr ""
-"一般的なアプリケーションの :ref:`deployment`で詳しく説明したように、:ref:` app.zip <deployment-"
+"一般的なアプリケーションの :ref:`deployment` で詳しく説明したように、:ref:` app.zip <deployment-"
 "prepare>` の :file:`config/branding` にブランディングのリソースを展開できます。"
 
 #: ../../source/designer-guide/user-interface/branding/branding-engine.rst:65
@@ -26403,7 +26403,7 @@ msgid ""
 "deploy>` or :ref:`configured <branding-configuration>`, the default Axon "
 "Ivy Branding resources are used to generate your interfaces."
 msgstr ""
-"アプリケーションにブランディングのリソースが :ref:`展開<branding-app-deploy>`／:ref:` 設定<branding-"
+"アプリケーションにブランディングのリソースが :ref:`展開<branding-app-deploy>` ／:ref:` 設定<branding-"
 "configuration>`されていない場合は、デフォルトの Axon Ivy "
 "のブランディングのリソースを使用して、インターフェースが生成されます。"
 
@@ -26427,7 +26427,7 @@ msgid ""
 "existing templates have been migrated to the :ref:`branding concept "
 "<branding-apply-to-templates>`."
 msgstr ""
-"ブランディングを :ref:`html-dialogs`で機能させるには、最新の:ref:`デフォルトのテンプレート<html-dialog-"
+"ブランディングを :ref:`html-dialogs` で機能させるには、最新の:ref:`デフォルトのテンプレート<html-dialog-"
 "layouts>`を使用するか、既存のテンプレートが:ref:`ブランディングのコンセプト<branding-apply-to-"
 "templates>`に移行されている必要があります。"
 
@@ -26442,7 +26442,7 @@ msgid ""
 ":ref:`default templates <html-dialog-layouts>`. If you want to use it in "
 "your dialogs or own templates, too, you can do so as follows:"
 msgstr ""
-":ref:`html-dialogs`では、ブランディングのリソースはすべて、**ivy-branding** ライブラリの CSS "
+":ref:`html-dialogs` では、ブランディングのリソースはすべて、**ivy-branding** ライブラリの CSS "
 "変数として読み込まれます。デフォルトでは、すべての:ref:`デフォルトのテンプレート<html-dialog-"
 "layouts>`で使用されます。独自のダイアログやテンプレートでも使用したい場合は、以下を実行してください。"
 
@@ -26464,9 +26464,9 @@ msgstr "リソース"
 #: ../../source/designer-guide/user-interface/branding/branding-user-interface.rst:36
 msgid ""
 "The following resources are currently used by the Axon Ivy Engine, the "
-":ref:`html-dialogs` and the :ref:`Portal <portal-guide>`:"
+":ref:`html-dialogs` and the :ref:`Portal <portal-guide>` :"
 msgstr ""
-"現在、Axon Ivy Engine、 :ref:`html-dialogs`、:ref:` ポータル<portal-"
+"現在、Axon Ivy Engine、 :ref:`html-dialogs` 、:ref:` ポータル<portal-"
 "guide>`では、以下のリソースが使用されます。"
 
 #: ../../source/designer-guide/user-interface/branding/branding-user-interface.rst:39
@@ -26794,7 +26794,7 @@ msgstr ""
 msgid ""
 "You can also use plain HTML or JSP :ref:`user-interface-web-page` to "
 "display an end page."
-msgstr "また、プレーン HTML や JSP :ref:`user-interface-web-page`を使用して、終了ページを表示することもできます。"
+msgstr "また、プレーン HTML や JSP :ref:`user-interface-web-page` を使用して、終了ページを表示することもできます。"
 
 #: ../../source/designer-guide/user-interface/static-jsf-pages.rst:4
 msgid "Static JSF Pages"
@@ -26818,7 +26818,7 @@ msgid ""
 "Because these pages are outside of a normal :ref:`user-dialogs` "
 "structure, it is not possible to access any Axon Ivy data or logic "
 "classes. If you want logic and data you need to implement "
-"**ManagedBeans** (see :ref:`html-dialog-managed-beans`) which will "
+"**ManagedBeans** (see :ref:`html-dialog-managed-beans` ) which will "
 "provide this for you."
 msgstr ""
 "これらのページは通常の :ref:`user-dialogs` の構造の外側にあるため、Axon Ivy "
@@ -26831,7 +26831,7 @@ msgid ""
 "JSF pages. Even if you use a static JSF page as the workflow end page, it"
 " is not possible to access the case and task context."
 msgstr ""
-"静的な JSF ページの内部で :ref:`html-dialog-component`を使用することはできません。静的な JSF "
+"静的な JSF ページの内部で :ref:`html-dialog-component` を使用することはできません。静的な JSF "
 "ページをワークフローの終了ページとして使用する場合、ケースコンテキストやタスクコンテキストにはアクセスできません。"
 
 #: ../../source/designer-guide/user-interface/static-jsf-pages.rst:25
@@ -27046,7 +27046,7 @@ msgstr ""
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:104
 msgid "|open-dataclass| Opens the :ref:`data-class-editor` of the form."
-msgstr "|open-dataclass| フォームの :ref:`data-class-editor`を開きます。"
+msgstr "|open-dataclass| フォームの :ref:`data-class-editor` を開きます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:106
 msgid "|open-process| Opens the :ref:`process-editor` of the form."
@@ -27137,7 +27137,7 @@ msgstr "create-column"
 msgid ""
 "|create-data| Create components from the :ref:`form data class <form-"
 "editor-create-from-data>`."
-msgstr "|create-data| :ref:`データクラスから<form-editor-create-from-data>`コンポーネントを作成します。"
+msgstr "|create-data| :ref:`データクラスから<form-editor-create-from-data>` コンポーネントを作成します。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:180
 msgid "create-data"
@@ -27227,7 +27227,7 @@ msgid ""
 "create a :code:`Proceed` and :code:`Cancel` button to control the "
 "workflow."
 msgstr ""
-":ref:`form-editor-tool-bar`の［*データ*］、:ref:`form-editor-quick-"
+":ref:`form-editor-tool-bar` の［*データ*］、:ref:`form-editor-quick-"
 "actions`、またはフォームが空の場合は［*データから作成*］ボタンをクリックして、フォームデータからコンポーネントを作成できます。以下のウィザードにフォームのデータクラスが表示され、属性を選択し、選択した属性のコンポーネントを直接作成できます。また、ワークフローを制御する:code:`続行`ボタンと:code:`キャンセル`ボタンも作成できます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:241
@@ -27982,7 +27982,7 @@ msgstr ""
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preview.rst:42
 msgid ""
-"If you have a dialog open (via Preview or :ref:`simulation`) in the :ref"
+"If you have a dialog open (via Preview or :ref:`simulation` ) in the :ref"
 ":`dev-workflow-ui` and you make changes to the User Dialog View file, it "
 "will trigger an auto-refresh of the view. State which is only represented"
 " in the UI and is not hold in the data, will then be lost. This auto-"
@@ -28015,7 +28015,7 @@ msgid ""
 "the given element has an :code:`id` defined. The selection also only "
 "opens the direct corresponding Html Dialog View and do not navigate into "
 "additional views ( :ref:`html-dialog-multiple-views` ) or Components (:ref"
-":`form-editor-component` or :ref:`html-dialog-component`)."
+":`form-editor-component` or :ref:`html-dialog-component` )."
 msgstr ""
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-themes.rst:2
@@ -28241,7 +28241,7 @@ msgstr ""
 msgid ""
 "The templates for page and component are configured in the :ref:`html-"
 "dialog-preferences`."
-msgstr "ページとコンポーネントのテンプレートは :ref:`html-dialog-preferences`で設定されます。"
+msgstr "ページとコンポーネントのテンプレートは :ref:`html-dialog-preferences` で設定されます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-view-types.rst:14
 msgid "HTML Dialog Page"
@@ -28865,7 +28865,7 @@ msgstr ""
 msgid ""
 "The logic of a User Dialog is edited and defined using the :ref:`process-"
 "editor`."
-msgstr ":ref:`process-editor`を使用して、ユーザーダイアログのロジックを編集、定義します。"
+msgstr ":ref:`process-editor` を使用して、ユーザーダイアログのロジックを編集、定義します。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/user-dialog-concept.rst:47
 msgid ""
@@ -29122,7 +29122,7 @@ msgid ""
 "plain code (JSF) via the :ref:`html-dialog-editor`."
 msgstr ""
 "ユーザーダイアログのビューは、エンドユーザーに表示される*ユーザーインターフェース*を定義します。:ref:`form-"
-"editor`を使用して、または :ref:`html-dialog-editor`を使用してプレーンコード（JSF）でビューを記述できます。"
+"editor`を使用して、または :ref:`html-dialog-editor` を使用してプレーンコード（JSF）でビューを記述できます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/user-dialog-concept.rst:161
 msgid ""
@@ -29158,7 +29158,7 @@ msgid ""
 "switch-gateway` element). When the process reaches such an element, then "
 "the defined content is presented to the user."
 msgstr ""
-"プロセスのさまざまな要素（ :ref:`process-element-end-page`、:ref:` process-element-task-"
+"プロセスのさまざまな要素（ :ref:`process-element-end-page` 、:ref:` process-element-task-"
 "switch-event`、:ref:`process-element-task-switch-"
 "gateway`要素）の終了ページを使用して、そのようなコンテンツをビジネスプロセスに埋め込むことができます。プロセスが要素に達すると、定義されたコンテンツがユーザーに表示されます。"
 
@@ -29871,7 +29871,7 @@ msgid ""
 "Working with local files only works with :ref:`cluster` if you share the "
 "same root directory for all cluster nodes. In the case of a cluster, you "
 "should go with :ref:`documents-s3`."
-msgstr "すべてのクラスタノードで同じルートディレクトリを共有している場合のみ、 :ref:`cluster`でローカルファイルを扱うことができます。クラスタでは、 :ref:`documents-s3` を使用することをお勧めします。"
+msgstr "すべてのクラスタノードで同じルートディレクトリを共有している場合のみ、 :ref:`cluster` でローカルファイルを扱うことができます。クラスタでは、 :ref:`documents-s3` を使用することをお勧めします。"
 
 #: ../../source/engine-guide/configuration/document/s3.rst:4
 msgid "S3 Document Storage"
@@ -29902,7 +29902,7 @@ msgstr "インプロセスメール。プロセス内でメールステップに
 msgid ""
 "Notifications via the :ref:`mail notification channel <notification-"
 "mail>`."
-msgstr ":ref:`メール通知チャネル<notification-mail>`経由での通知。"
+msgstr ":ref:`メール通知チャネル<notification-mail>` 経由での通知。"
 
 #: ../../source/engine-guide/configuration/email.rst:10
 msgid "License violations mails to the administrators."
@@ -29911,7 +29911,7 @@ msgstr "管理者に対するライセンス違反のメール。"
 #: ../../source/engine-guide/configuration/email.rst:12
 msgid ""
 "For the Axon Ivy Engine to be able to send emails, you have to configure "
-"an email server in :ref:`ivy-yaml`:"
+"an email server in :ref:`ivy-yaml` :"
 msgstr "Axon Ivy Engine がメールを送信できるようにするには、 :ref:`ivy-yaml` でメールサーバーを設定する必要があります。"
 
 #: ../../source/engine-guide/configuration/email.rst:19
@@ -30123,7 +30123,7 @@ msgstr "このチャネルはメールで通知を行います。このチャネ
 
 #: ../../source/engine-guide/configuration/notification/mail.rst:8
 msgid ":ref:`Configure the mail server <config-email>`."
-msgstr ":ref:`メールサーバーを設定します<config-email>`。"
+msgstr ":ref:`メールサーバーを設定します<config-email>` 。"
 
 #: ../../source/engine-guide/configuration/notification/mail.rst:9
 msgid "Users who shall be notified need a mail address."
@@ -30170,7 +30170,7 @@ msgstr ""
 msgid ""
 ":ref:`Users who shall be notified need to be synced with Microsoft Entra "
 "ID <microsoft-entra-id>`."
-msgstr ":ref:`通知を受けるユーザーを Microsoft Entra ID と同期する必要があります<microsoft-entra-id>`。"
+msgstr ":ref:`通知を受けるユーザーを Microsoft Entra ID と同期する必要があります<microsoft-entra-id>` 。"
 
 #: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:28
 msgid "Technical User"
@@ -30424,7 +30424,7 @@ msgid ""
 " system database. To run the Axon Ivy Engine with a system database, a "
 ":ref:`license <license>` is required."
 msgstr ""
-":ref:`setup-wizard`または :ref:`engine-config-cli` "
+":ref:`setup-wizard` または :ref:`engine-config-cli` "
 "を使用して、システムデータベースを作成します。システムデータベースを使用して Axon Ivy Engine "
 "を実行するには、 :ref:`ライセンス<license>` が必要です。"
 
@@ -31199,7 +31199,7 @@ msgid ""
 ":file:`<app.zip>/config/variables/myVariableName.json` as shown below."
 msgstr ""
 ":file:`app.yaml` "
-"ファイルはプロジェクトで宣言された :ref:`variables`をオーバーライドできます。また、以下に示すように、これらの変数がファイルタイプの値である場合は（例：:code:` [file:"
+"ファイルはプロジェクトで宣言された :ref:`variables` をオーバーライドできます。また、以下に示すように、これらの変数がファイルタイプの値である場合は（例：:code:` [file:"
 " json]`）、:file:`<app.zip>/config/variables/myVariableName.json` の "
 ":file:`app.zip` に追加して、これらのファイルの値をオーバーライドできます。"
 
@@ -31588,7 +31588,7 @@ msgid ""
 "<engine-system-requirements>`."
 msgstr ""
 "デモ以外のモード（開発、統合、テスト／受け入れ、本番環境）で Axon Ivy Engine を実行するには、Axon Ivy Engine "
-"の :ref:`ライセンス<license>`を注文し、:ref:` システム要件<engine-system-"
+"の :ref:`ライセンス<license>` を注文し、:ref:` システム要件<engine-system-"
 "requirements>`を満たすシステムに Axon Ivy Engine をインストールする必要があります。"
 
 #: ../../source/engine-guide/getting-started/index.rst:75
@@ -31619,7 +31619,7 @@ msgid ""
 "server or cluster <opensearch>`."
 msgstr ""
 "高い可用性、パフォーマンス、スケーラビリティを確保するため、Axon Ivy Engine を :ref:`クラスタ化<cluster>` し、別個の"
-" :ref:`OpenSearch サーバーまたはクラスタ<opensearch>`を使用できます。"
+" :ref:`OpenSearch サーバーまたはクラスタ<opensearch>` を使用できます。"
 
 #: ../../source/engine-guide/getting-started/linux/configure.rst:2
 msgid "Configure the Engine (Linux)"
@@ -33138,49 +33138,49 @@ msgstr ""
 
 #: ../../source/engine-guide/integration/index.rst:18
 msgid ""
-":ref:`reverse-proxy`: To increase security, users should always access "
+":ref:`reverse-proxy` : To increase security, users should always access "
 "the Axon Ivy Engine via a reverse proxy like NGINX, Apache HTTP Server or"
 " Microsoft IIS."
 msgstr ""
-":ref:`reverse-proxy`：セキュリティを強化するため、ユーザーは常に NGINX、Apache HTTP "
+":ref:`reverse-proxy` ：セキュリティを強化するため、ユーザーは常に NGINX、Apache HTTP "
 "Server、Microsoft IIS などのリバースプロキシから Axon Ivy Engine にアクセスする必要があります。"
 
 #: ../../source/engine-guide/integration/index.rst:21
 msgid ""
-":ref:`User Management <configuration-security-system>`: Users can be "
+":ref:`User Management <configuration-security-system>` : Users can be "
 "imported from an external user management system like Microsoft Active "
 "Directory or Novell eDirectory."
 msgstr ""
-":ref:`ユーザー管理<configuration-security-system>`：Microsoft Active "
+":ref:`ユーザー管理<configuration-security-system>` ：Microsoft Active "
 "Directory、Novell eDirectory などの外部ユーザー管理システムからユーザーをインポートできます。"
 
 #: ../../source/engine-guide/integration/index.rst:24
 msgid ""
-":ref:`Cluster <cluster>`: For scalability, to increase performance and "
+":ref:`Cluster <cluster>` : For scalability, to increase performance and "
 "provide high availability, you can cluster the Axon Ivy Engine."
 msgstr ""
-":ref:`クラスタ<cluster>`：スケーラビリティを確保し、パフォーマンスを向上し、高可用性を実現するため、Axon Ivy Engine"
+":ref:`クラスタ<cluster>` ：スケーラビリティを確保し、パフォーマンスを向上し、高可用性を実現するため、Axon Ivy Engine"
 " をクラスタ化できます。"
 
 #: ../../source/engine-guide/integration/index.rst:27
 msgid ""
-":ref:`OpenSearch <opensearch>`: An OpenSearch server is bundled with the "
+":ref:`OpenSearch <opensearch>` : An OpenSearch server is bundled with the "
 "Axon Ivy Engine. For systems with high loads, consider to install the "
 "OpenSearch Server on a dedicated node, or even to run an OpenSearch "
 "cluster."
 msgstr ""
-":ref:`OpenSearch <opensearch>`：Axon Ivy Engine には OpenSearch "
+":ref:`OpenSearch <opensearch>` ：Axon Ivy Engine には OpenSearch "
 "サーバーがバンドルされています。負荷が大きいシステムでは、OpenSearch サーバーを専用のノードにインストールするか、OpenSearch "
 "クラスタを実行することを検討してください。"
 
 #: ../../source/engine-guide/integration/index.rst:31
 msgid ""
-":ref:`systemdb`: The Axon Ivy Engine needs a relational database "
+":ref:`systemdb` : The Axon Ivy Engine needs a relational database "
 "management system to store its workflow data. The Axon Ivy engine stores "
 "its data in the **system database**. It is a SQL database hosted on one "
 "of the supported Database Management Systems."
 msgstr ""
-":ref:`systemdb`：Axon Ivy Engine "
+":ref:`systemdb` ：Axon Ivy Engine "
 "には、ワークフローデータを格納するためのリレーショナルデータベース管理システムが必要です。Axon Ivy Engine "
 "は**システムデータベース**にデータを格納します。システムデータベースは、サポートされているデータベース管理システムにホストされた SQL "
 "データベースです。"
@@ -33238,7 +33238,7 @@ msgid ""
 "We only support one version of OpenSearch which is defined in "
 ":ref:`system requirements <engine-system-requirements>`."
 msgstr ""
-":ref:`システム要件<engine-system-requirements>`で定義されているバージョンの OpenSearch "
+":ref:`システム要件<engine-system-requirements>` で定義されているバージョンの OpenSearch "
 "のみサポートします。"
 
 #: ../../source/engine-guide/integration/opensearch/external.rst:14
@@ -33259,7 +33259,7 @@ msgid ""
 msgstr ""
 "Axon Ivy Engine は、OpenSearch を使用して、全文検索と統計を提供します。OpenSearch は |ivy-"
 "engine| に :ref:`バンドル<opensearch-bundled>` されています。 負荷が大きいシステムや、|ivy| "
-"の :ref:`クラスタ`を使用している場合は、 :ref:` 外部の<opensearch-external>` OpenSearch "
+"の :ref:`クラスタ` を使用している場合は、 :ref:` 外部の<opensearch-external>` OpenSearch "
 "インスタンスを実行する必要があります。"
 
 #: ../../source/engine-guide/integration/reverse-proxy/apache-httpd/index.rst:4
@@ -33752,7 +33752,7 @@ msgid ""
 "recommend to only route specific applications by manually modifing the "
 "rules in :guilabel:`URL Rewrite`."
 msgstr ""
-":ref:`NGINX <reverse-proxy-nginx>`と :ref:`Apache HTTP Server <reverse-"
+":ref:`NGINX <reverse-proxy-nginx>` と :ref:`Apache HTTP Server <reverse-"
 "proxy-apache>`の設定の例はこれらすべての推奨事項に従っています。:ref:`Microsoft IIS <reverse-"
 "proxy-iis>`の設定スクリプトでは、すべてのトラフィックが Axon Ivy Engine に転送されます。:guilabel:`URL "
 "書き換え`ルールでルールを手動で変更して、特定のアプリケーションのみ転送することを推奨します。"
@@ -33983,7 +33983,7 @@ msgstr ""
 "Engine では、 :ref:`Microsoft IIS <reverse-proxy-iis>` の自動設定スクリプトが提供されています。"
 
 #: ../../source/engine-guide/integration/single-sign-on/index.rst:31
-msgid "Next you need to enable SSO in :ref:`ivy-yaml`:"
+msgid "Next you need to enable SSO in :ref:`ivy-yaml` :"
 msgstr "次に、 :ref:`ivy-yaml` で SSO を有効にする必要があります。"
 
 #: ../../source/engine-guide/integration/single-sign-on/index.rst:39
@@ -34065,7 +34065,7 @@ msgstr "**エンジンコックピット**では、エンジンを監視でき�
 msgid ""
 "Have a look at the :ref:`engine-cockpit-monitor` in the :ref:`engine-"
 "cockpit` for more information."
-msgstr "詳細については、「 :ref:`engine-cockpit`」の「 :ref:`engine-cockpit-monitor` 」を参照してください。"
+msgstr "詳細については、「 :ref:`engine-cockpit` 」の「 :ref:`engine-cockpit-monitor` 」を参照してください。"
 
 #: ../../source/engine-guide/monitoring/health.rst:4
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:160
@@ -34109,7 +34109,7 @@ msgstr "ヘルスメッセージは :ref:`engine-cockpit` の以下の場所に�
 
 #: ../../source/engine-guide/monitoring/health.rst:28
 msgid "The :guilabel:`Health` panel in the :ref:`engine-cockpit-dashboard`"
-msgstr ":ref:`engine-cockpit-dashboard`の:guilabel:`ヘルス`パネル"
+msgstr ":ref:`engine-cockpit-dashboard` の:guilabel:`ヘルス`パネル"
 
 #: ../../source/engine-guide/monitoring/health.rst:29
 msgid "The :ref:`engine-cockpit-top-menu`"
@@ -34117,7 +34117,7 @@ msgstr ":ref:`engine-cockpit-top-menu`"
 
 #: ../../source/engine-guide/monitoring/health.rst:30
 msgid "The :ref:`engine-cockpit-monitor-health` view"
-msgstr ":ref:`engine-cockpit-monitor-health`ビュー"
+msgstr ":ref:`engine-cockpit-monitor-health` ビュー"
 
 #: ../../source/engine-guide/monitoring/index.rst:4
 msgid "Monitoring"
@@ -34210,7 +34210,7 @@ msgid ""
 "monitor-mbeans` browser. Therefore, you do not need to install an "
 "external monitoring tool for a glance at your engine's vital signs."
 msgstr ""
-"また、 :ref:`engine-cockpit`には、 :ref:` engine-cockpit-monitor-mbeans` "
+"また、 :ref:`engine-cockpit` には、 :ref:` engine-cockpit-monitor-mbeans` "
 "ブラウザが組み込まれています。そのため、エンジンの状態を見るための外部の監視ツールをインストールする必要はありません。"
 
 #: ../../source/engine-guide/monitoring/jmx.rst:57
@@ -34427,7 +34427,7 @@ msgstr ""
 " Ivy はロギングに `Log4j 2 "
 "<https://logging.apache.org/log4j/2.x/>`_を使用しており、:file:`[エンジンのディレクトリ]/configuration/log4j2.xml`"
 " "
-"に設定を提供して、 :ref:`初期設定<log4j2-xml>`をカスタマイズできます。カスタム設定はその場で自動的に初期設定と`マージ<http://logging.apache.org/log4j/2.x/manual/configuration.html#CompositeConfiguration>` _されます。"
+"に設定を提供して、 :ref:`初期設定<log4j2-xml>` をカスタマイズできます。カスタム設定はその場で自動的に初期設定と`マージ<http://logging.apache.org/log4j/2.x/manual/configuration.html#CompositeConfiguration>` _されます。"
 
 #: ../../source/engine-guide/monitoring/logging.rst:50
 msgid "Runtime Log"
@@ -34520,7 +34520,7 @@ msgid ""
 " the :ref:`engine-cockpit-monitor-performance` view of the :ref:`engine-"
 "cockpit`."
 msgstr ""
-":ref:`engine-cockpit`の:ref:`engine-cockpit-monitor-"
+":ref:`engine-cockpit` の:ref:`engine-cockpit-monitor-"
 "performance`ビューでパフォーマンス統計の結果をアクティブにして分析できます。"
 
 #: ../../source/engine-guide/monitoring/process-element-performance.rst:20
@@ -34636,7 +34636,7 @@ msgid ""
 "You can activate and analyze the request tracing in the :ref:`engine-"
 "cockpit-monitor-slow-requests` view of the :ref:`engine-cockpit`."
 msgstr ""
-":ref:`engine-cockpit`の:ref:`engine-cockpit-monitor-slow-"
+":ref:`engine-cockpit` の:ref:`engine-cockpit-monitor-slow-"
 "requests`ビューでリクエストのトレースをアクティブにして分析できます。"
 
 #: ../../source/engine-guide/monitoring/tracing.rst:18
@@ -35490,7 +35490,7 @@ msgid ""
 " configured it or there are problems with your configuration."
 msgstr ""
 "Axon Ivy Engine はさまざまなモードで動作します。Axon Ivy Engine を正しく設定すると、:ref"
-":`production-mode`で動作します。これが標準モードです。 :ref:`demo-mode`と:ref:` maintenance-"
+":`production-mode`で動作します。これが標準モードです。 :ref:`demo-mode` と:ref:` maintenance-"
 "mode`は特殊なモードで、Axon Ivy Engine を設定していない場合や設定に問題がある場合のみ、それらのモードで動作します。"
 
 #: ../../source/engine-guide/reference/axonivy-engine/modes.rst:13
@@ -35817,7 +35817,7 @@ msgid ""
 " to :guilabel:`upload new` images or :guilabel:`reset` them to the "
 ":ref:`default <branding-system-default>`."
 msgstr ""
-"**ブランディング**ビューには、さまざまなアプリケーションの :ref:`ブランディングのリソース<branding>`の概要が表示され、:guilabel:`新しい画像をアップロード`したり、:ref:` 初期値"
+"**ブランディング**ビューには、さまざまなアプリケーションの :ref:`ブランディングのリソース<branding>` の概要が表示され、:guilabel:`新しい画像をアップロード`したり、:ref:` 初期値"
 "<branding-system-default>`に:guilabel:`リセット`したりすることができます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/configuration.rst:49
@@ -36517,7 +36517,7 @@ msgstr "外部のセキュリティシステムのみ同期できます。"
 #: ../../source/engine-guide/reference/engine-cockpit/security.rst:20
 msgid ""
 "To define or change a security system, you can either edit it directly in"
-" your configuration files (see :ref:`configuration-security-system`) or "
+" your configuration files (see :ref:`configuration-security-system` ) or "
 "you can do it in the engine cockpit: click on the name of the security "
 "system to open the :ref:`engine-cockpit-security-system-detail` view, "
 "click :guilabel:`Add` to add a new one."
@@ -37655,7 +37655,7 @@ msgid ""
 "active unless you restart the engine. However, configurations are "
 "constantly written from the wizard to the :ref:`ivy-yaml` file."
 msgstr ""
-":ref:`setup-wizard`で行う変更は、エンジンを再起動しない限り有効にはなりません。ただし、設定は常にウィザードから :ref"
+":ref:`setup-wizard` で行う変更は、エンジンを再起動しない限り有効にはなりません。ただし、設定は常にウィザードから :ref"
 ":`ivy-yaml` ファイルに書き込まれます。"
 
 #: ../../source/engine-guide/reference/setup-wizard.rst:16
@@ -38071,7 +38071,7 @@ msgid ""
 "See :ref:`HD CSRF Protection <html-dialogs-csrf>` on how JSF is "
 "protecting these dialogs."
 msgstr ""
-"標準的な :ref:`html-dialogs`（JSF）テクノロジースタックを使用している。JSF "
+"標準的な :ref:`html-dialogs` （JSF）テクノロジースタックを使用している。JSF "
 "がこれらのダイアログを保護する仕組みについては、「 :ref:`CSRF 対策<html-dialogs-csrf>` 」を参照してください。"
 
 #: ../../source/engine-guide/security/csrf-attack-prevention.rst:14
@@ -38330,14 +38330,14 @@ msgid ""
 "Run the **latest Axon Ivy Engine** major version with all updates marked "
 "as :ref:`security-relevant <engine-security-issues>`."
 msgstr ""
-":ref:`security-relevant <engine-security-issues>`とマークされたすべてのアップデートが適用された "
+":ref:`security-relevant <engine-security-issues>` とマークされたすべてのアップデートが適用された "
 "**Axon Ivy Engine の最新**メジャーバージョンを実行してください。"
 
 #: ../../source/engine-guide/security/index.rst:19
 msgid ""
 "Only serve users via :ref:`HTTPS <reverse-proxy-secure-https>` "
 "(configured on the reverse proxy)."
-msgstr "必ず :ref:`HTTPS <reverse-proxy-secure-https>`（リバースプロキシで設定）でユーザーとやり取りしてください。"
+msgstr "必ず :ref:`HTTPS <reverse-proxy-secure-https>` （リバースプロキシで設定）でユーザーとやり取りしてください。"
 
 #: ../../source/engine-guide/security/index.rst:20
 msgid "**Document** and **automate** the server setup."
@@ -38462,7 +38462,7 @@ msgid ""
 "define the list of data attributes used in the process."
 msgstr ""
 "データクラスを使用して、プロセスアプリケーション内のデータを定義し、構造化します。プロセスやフォーム全体で一貫してデータを管理するのに使用します。NEO"
-" に含まれる Axon Ivy :ref:`data-class-editor`を使用して、プロセスで使用されるデータの属性を定義します。"
+" に含まれる Axon Ivy :ref:`data-class-editor` を使用して、プロセスで使用されるデータの属性を定義します。"
 
 #: ../../source/neo-designer/gettingstarted.rst:36
 msgid "Create Forms"
@@ -38476,7 +38476,7 @@ msgid ""
 "to design dynamic forms."
 msgstr ""
 "フォームは、データの入力やアプリケーションとのインタラクションを容易にするユーザーインターフェースの要素で、ユーザーとシステムの橋渡しをします。|ivy|"
-" :ref:`form-editor`は、動的フォームを設計するためのグラフィカルなモデリングツールです。"
+" :ref:`form-editor` は、動的フォームを設計するためのグラフィカルなモデリングツールです。"
 
 #: ../../source/neo-designer/gettingstarted.rst:44
 msgid "Simulate the application"
@@ -38612,7 +38612,7 @@ msgstr ""
 "NEO Designer を使用するには、ユーザーは自身を認証する必要があります。NEO "
 "ユーザーはエンジンの**デフォルト**のセキュリティシステムで管理されます。外部の ID "
 "プロバイダーにアクセスするには、デフォルトのセキュリティシステムを設定する必要があります。 エンジンガイドの「:ref:`設定"
-"<configuration-security-system>`」の章を参照してください。 :ref:`reverse-proxy`で Axon "
+"<configuration-security-system>`」の章を参照してください。 :ref:`reverse-proxy` で Axon "
 "Ivy Engine へのアクセスを制御することを強く推奨します。"
 
 #: ../../source/neo-designer/serversetup.rst:21
@@ -38710,13 +38710,13 @@ msgstr ""
 #~ "In previous version of the Axon "
 #~ "Ivy Engine Cluster, the applications "
 #~ "directory (``Data.AppDirectory`` in your "
-#~ ":ref:`ivy.yaml <ivy-yaml>`) had to be"
+#~ ":ref:`ivy.yaml <ivy-yaml>` ) had to be"
 #~ " shared between the cluster nodes, "
 #~ "too. This is no longer required "
 #~ "and should be avoided."
 #~ msgstr ""
 #~ "以前のバージョンの Axon Ivy Engine "
-#~ "のクラスタでは、アプリケーションディレクトリ（ :ref:`ivy.yaml <ivy-yaml>`の"
+#~ "のクラスタでは、アプリケーションディレクトリ（ :ref:`ivy.yaml <ivy-yaml>` の"
 #~ " "
 #~ "``Data.AppDirectory``）をクラスタノード間で共有する必要がありました。現行バージョンでは不要であり、避けるべきです。"
 
@@ -38903,7 +38903,7 @@ msgstr ""
 #~ "directory ``deploy`` of a :ref:`container "
 #~ "image <cluster-container>`."
 #~ msgstr ""
-#~ "プロジェクトを :ref:`コンテナイメージ<cluster-container>`の ``deploy` ` "
+#~ "プロジェクトを :ref:`コンテナイメージ<cluster-container>` の ``deploy` ` "
 #~ "デプロイメントディレクトリに直接追加することをお勧めします。"
 
 #~ msgid ""
@@ -38942,7 +38942,7 @@ msgstr ""
 #~ "Each node has to use the same "
 #~ "external :ref:`OpenSearch <opensearch>` server "
 #~ "(or cluster)."
-#~ msgstr "各ノードは、同じ外部の :ref:`OpenSearch <opensearch>`サーバー（またはクラスタ）を使用する必要があります。"
+#~ msgstr "各ノードは、同じ外部の :ref:`OpenSearch <opensearch>` サーバー（またはクラスタ）を使用する必要があります。"
 
 #~ msgid "Each node has to use the same service configurations."
 #~ msgstr "各ノードは、同じサービス設定を使用する必要があります。"
