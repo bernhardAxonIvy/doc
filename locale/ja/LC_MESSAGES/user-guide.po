@@ -30022,7 +30022,7 @@ msgid ""
 msgstr ""
 "一般的には、独自の設定を作成するには、:file:`[エンジンのディレクトリ]/configuration/reference` "
 "にある**リファレンス**ファイルから値をコピーするか :ref:`configuration-file-"
-"reference`をニーズに合わせて調整します。または、 "
+"reference` をニーズに合わせて調整します。または、 "
 ":file:`[エンジンのディレクトリ]/configuration/templates` "
 "で提供される**テンプレート**全体をコピーして修正することもできます。"
 
@@ -30033,7 +30033,7 @@ msgid ""
 " adjusted with a UI in our :ref:`engine-cockpit`."
 msgstr ""
 "ファイルのエディターとして、VS-Code またはエンジンコックピット :ref:`engine-cockpit-config-"
-"editor`をお勧めします。なお、ほとんどの設定は :ref:`engine-cockpit` の UI でも調整できます。"
+"editor` をお勧めします。なお、ほとんどの設定は :ref:`engine-cockpit` の UI でも調整できます。"
 
 #: ../../source/engine-guide/configuration/index.rst:29
 msgid "Configure your engine"
