@@ -1,0 +1,9 @@
+# sample ivy.yaml that configures the DeepL Translation Service
+SecuritySystems:
+  default:
+    TranslationService:
+      DefaultInstance: "DeepL"
+      Instances:
+        DeepL:
+          ApiKey: "my-deep-l-api-key"
+          Endpoint: https://api-free.deepl.com/v2

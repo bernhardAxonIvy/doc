@@ -35,6 +35,7 @@ Note that, most settings can also be adjusted with a UI in our :ref:`engine-cock
    users/index
    email
    notification/index
+   translation-service/index
    document/index
    advanced-configuration
    docker-container
