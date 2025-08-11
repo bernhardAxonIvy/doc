@@ -6876,7 +6876,7 @@ msgstr "Java クラスのデバッグ"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:12
 msgid "You can debug java classes in the Axon Ivy Designer, by uncomment the line :code:`-agentlib:jdwp=transport=dt_socket,server=y,address=8001,suspend=n` in the :file:`AxonIvyDesigner.ini` file. After a restart you're able to start a *Debug session* by add a new :code:`Remote Java Application debug configuration`. For more information, check out `How can I debug my Java class in an Axon Ivy Designer? <https://community.axonivy.com/d/429-how-can-i-debug-my-java-class-in-an-axon-ivy-designer>`_"
-msgstr "Axon Ivy Designer では、:file:`AxonIvyDesigner.ini` ファイルの :code:`-agentlib:jdwp=transport=dt_socket,server=y,address=8001,suspend=n` という行のコメントを解除して、Java クラスをデバッグできます。再起動後、新しい :code:`リモート Java アプリケーションのデバッグ設定`を追加して、*デバッグセッション* を開始できます。詳細については、`How can I debug my Java class in an Axon Ivy Designer?（Axon Ivy Designer で Java クラスをデバッグする方法）<https://community.axonivy.com/d/429-how-can-i-debug-my-java-class-in-an-axon-ivy-designer>`_をご覧ください。"
+msgstr "Axon Ivy Designer では、:file:`AxonIvyDesigner.ini` ファイルの :code:`-agentlib:jdwp=transport=dt_socket,server=y,address=8001,suspend=n` という行のコメントを解除して、Java クラスをデバッグできます。再起動後、新しい :code:`リモート Java アプリケーションのデバッグ設定` を追加して、*デバッグセッション* を開始できます。詳細については、`How can I debug my Java class in an Axon Ivy Designer?（Axon Ivy Designer で Java クラスをデバッグする方法）<https://community.axonivy.com/d/429-how-can-i-debug-my-java-class-in-an-axon-ivy-designer>`_ をご覧ください。"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:24
 msgid "Data Caching"
@@ -17204,7 +17204,7 @@ msgstr "Axon Ivy コミュニティ"
 
 #: ../../source/engine-guide/troubleshooting/_intro.rst:5
 msgid "The `Axon Ivy Community <https://community.axonivy.com/>`_ (or the old `Axon Ivy Q&A <https://answers.axonivy.com/>`_) contains a considerable amount of knowledge and tips related to Axon Ivy Designer and Engine."
-msgstr "`Axon Ivy コミュニティ<https://community.axonivy.com/>`_ （旧 `Axon Ivy Q&A <https://answers.axonivy.com/>`_ ）には、Axon Ivy Designer と Engine に関する知識やヒントが豊富にあります。"
+msgstr "`Axon Ivy コミュニティ <https://community.axonivy.com/>`_ （旧 `Axon Ivy Q&A <https://answers.axonivy.com/>`_ ）には、Axon Ivy Designer と Engine に関する知識やヒントが豊富にあります。"
 
 #: ../../source/engine-guide/troubleshooting/_intro.rst:10
 msgid "Stack Overflow"
@@ -19780,7 +19780,7 @@ msgstr "技術ユーザーのメールアドレス（`TechnicalUser.Mail`）と�
 
 #: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:59
 msgid "Visit the `Microsoft Entra admin center <https://entra.microsoft.com/>`_ and follow `these instructions <https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app>`_ to register an application with the Microsoft identity platform. On step 5, choose **Accounts in this organizational directory only**."
-msgstr "`Microsoft Entra 管理センター<https://entra.microsoft.com/>`_ にアクセスし、`説明<https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app>`_に従って、アプリケーションを Microsoft ID プラットフォームに登録します。ステップ 5 で、［**この組織ディレクトリのみに含まれるアカウント** ］を選択します。"
+msgstr "`Microsoft Entra 管理センター <https://entra.microsoft.com/>`_ にアクセスし、`説明 <https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app>`_ に従って、アプリケーションを Microsoft ID プラットフォームに登録します。ステップ 5 で、［ **この組織ディレクトリのみに含まれるアカウント** ］を選択します。"
 
 #: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:65
 msgid "Register an application"
@@ -19788,7 +19788,7 @@ msgstr "アプリケーションの登録"
 
 #: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:68
 msgid "Navigate to **Applications** > ** Enterprise Applications** and click on the newly registered application. Navigate to **Properties** in the section **Manage**. Set ** Assignment required?** to ** Yes**."
-msgstr "［**アプリケーション** ］、［**エンタープライズアプリケーション** ］の順に移動し、新しく登録したアプリケーションをクリックします。［**管理** ］セクションの［**プロパティ** ］に移動します。［**割り当てが必要ですか?** ］を［**はい** ］に設定します。"
+msgstr "［ **アプリケーション** ］、［ **エンタープライズアプリケーション** ］の順に移動し、新しく登録したアプリケーションをクリックします。［ **管理** ］セクションの［**プロパティ** ］に移動します。［ **割り当てが必要ですか?** ］を［ **はい** ］に設定します。"
 
 #: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:72
 msgid "Application - Properties"
@@ -23375,7 +23375,7 @@ msgstr "Java Flight Recorder"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:59
 msgid "You can use the **Flight Recorder** view to start, stop, download, and delete `Java Flight Recorder <https://docs.oracle.com/en/java/java-components/jdk-mission-control/>`_ recordings. When starting a recording, you can choose between predefined configurations that are provided by the Java Virtual Machine or you can add your own configuration by uploading a :file:`\\*.jfc` file. You can create a :file:`\\*.jfc` file with Flight Recorder Template Manager that is part of the `JDK Mission Control tool <https://docs.oracle.com/en/java/java-components/jdk-mission-control/>`_. You can download a recording to a :file:`\\*.jfr` file once it is stopped. Then, use the `JDK Mission Control <https://docs.oracle.com/en/java/java-components/jdk-mission-control/>`_ tool to analyze the :file:`\\*.jfr` file."
-msgstr "**Flight Recorder** ビューを使用して、`Java Flight Recorder <https://docs.oracle.com/en/java/java-components/jdk-mission-control/>`_ の記録を開始、停止、ダウンロード、削除できます。記録を開始する際、Java Virtual Machine の定義済みの設定を使用するか、:file:`\\*.jfc` ファイルをアップロードして独自の設定を追加できます。`JDK Mission Control ツール<https://docs.oracle.com/en/java/java-components/jdk-mission-control/>`_ に含まれる Flight Recorder Template Manager を使用して、:file:`\\*.jfc` ファイルを作成できます。記録の停止後、:file:`\\*.jfr` ファイルにダウンロードできます。その後、`JDK Mission Control <https://docs.oracle.com/en/java/java-components/jdk-mission-control/>`_ ツールを使用して、:file:`\\*.jfr` ファイルを分析します。"
+msgstr "**Flight Recorder** ビューを使用して、`Java Flight Recorder <https://docs.oracle.com/en/java/java-components/jdk-mission-control/>`_ の記録を開始、停止、ダウンロード、削除できます。記録を開始する際、Java Virtual Machine の定義済みの設定を使用するか、:file:`\\*.jfc` ファイルをアップロードして独自の設定を追加できます。`JDK Mission Control ツール <https://docs.oracle.com/en/java/java-components/jdk-mission-control/>`_ に含まれる Flight Recorder Template Manager を使用して、:file:`\\*.jfc` ファイルを作成できます。記録の停止後、:file:`\\*.jfr` ファイルにダウンロードできます。その後、`JDK Mission Control <https://docs.oracle.com/en/java/java-components/jdk-mission-control/>`_ ツールを使用して、:file:`\\*.jfr` ファイルを分析します。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:69
 msgid "MBeans"
