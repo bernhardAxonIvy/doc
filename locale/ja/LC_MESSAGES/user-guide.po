@@ -2302,7 +2302,7 @@ msgstr "システムエラー"
 
 #: ../../source/concepts/error-handling.rst:44
 msgid "System errors are thrown by process elements like a *Database Step* or a *Web Service Call Step*. Their error codes are set by default and are prefixed with ``ivy`` (e.g., ``ivy:error:database``)."
-msgstr "システムエラーは、*データベースステップ*や *Web サービス呼び出しステップ*のようなプロセス要素によってスローされます。エラーコードはデフォルトで設定されており、プレフィックスに ``ivy`` が付きます（例：``ivy:error:database``）。"
+msgstr "システムエラーは、*データベースステップ* や *Web サービス呼び出しステップ*のようなプロセス要素によってスローされます。エラーコードはデフォルトで設定されており、プレフィックスに ``ivy`` が付きます（例：``ivy:error:database``）。"
 
 #: ../../source/concepts/error-handling.rst:50
 msgid "Throwing Errors"
@@ -3264,7 +3264,7 @@ msgstr "条件のチェック"
 
 #: ../../source/concepts/testing/web-testing.rst:104
 msgid "On your selected element you can check certain conditions (e.g is the element *visible* or contains a specific *value*):"
-msgstr "選択した要素について、特定の条件（その要素が*表示*に設定されているか、特定の*値*を含んでいるかなど）をチェックできます。"
+msgstr "選択した要素について、特定の条件（その要素が *表示* に設定されているか、特定の *値* を含んでいるかなど）をチェックできます。"
 
 #: ../../source/concepts/testing/web-testing.rst:113
 msgid "You can check multiple conditions on an item or check a condition before performing an action on the item by chaining the method calls:"
@@ -3663,7 +3663,7 @@ msgstr "ドラッグアンドドロップ"
 
 #: ../../source/designer-guide/cms/editors.rst:134
 msgid "Content objects (e.g., *strings* and *images*) from the CMS view can be dragged and dropped into the :ref:`HTML Dialog editor <html-dialog-editor-dragndrop>` to be used for label texts or for images."
-msgstr "コンテンツオブジェクト（*文字列*、*画像*など）を CMS ビューから :ref:`HTML ダイアログエディター<html-dialog-editor-dragndrop>` ドラッグアンドドロップして、ラベルテキストや画像に使用できます。"
+msgstr "コンテンツオブジェクト（*文字列*、*画像* など）を CMS ビューから :ref:`HTML ダイアログエディター<html-dialog-editor-dragndrop>` ドラッグアンドドロップして、ラベルテキストや画像に使用できます。"
 
 #: ../../source/designer-guide/cms/editors.rst:153
 msgid "Content Object Editor"
@@ -3715,7 +3715,7 @@ msgstr "このコンテンツオブジェクトとすべての値、すべての
 
 #: ../../source/designer-guide/cms/editors.rst:181
 msgid "Each of the values of a content object is shown with its corresponding value editor inside a collapsible section that is labelled with the *language* of the value. You find some actions on the right side:"
-msgstr "コンテンツオブジェクトの値はそれぞれ、値の*言語*でラベル付けされた折りたたみ可能なセクション内に、対応する値エディターと一緒に表示されます。右側には、いくつかのアクションが表示されます。"
+msgstr "コンテンツオブジェクトの値はそれぞれ、値の *言語* でラベル付けされた折りたたみ可能なセクション内に、対応する値エディターと一緒に表示されます。右側には、いくつかのアクションが表示されます。"
 
 #: ../../source/designer-guide/cms/editors.rst:185
 msgid "|imgImport| Import value content"
@@ -3862,7 +3862,7 @@ msgstr ":ref:`ivy-yaml` のセキュリティシステム設定 :code:`Language.
 
 #: ../../source/designer-guide/cms/resolution.rst:20
 msgid "*If you have enabled the* :ref:`simulation <language-settings>` *then the locale will be applied to all sessions.*"
-msgstr ":ref:`シミュレーション<language-settings>` を*有効にした場合*、*ロケールはすべてのセッションに適用されます*。"
+msgstr ":ref:`シミュレーション<language-settings>` を *有効にした場合*、*ロケールはすべてのセッションに適用されます*。"
 
 #: ../../source/designer-guide/cms/resolution.rst:22
 msgid "Once the locale has been evaluated, the content object value is loaded as follows:"
@@ -4028,11 +4028,11 @@ msgstr ":ref:`CMS<cms>` に以下を追加する必要があります。"
 
 #: ../../source/designer-guide/configuration/custom-fields.rst:54
 msgid "folder ``/CustomFields/`` in the CMS root folder. This folder is *required*."
-msgstr "CMS のルートフォルダーの ``/CustomFields/`` フォルダー。このフォルダは*必須*です。"
+msgstr "CMS のルートフォルダーの ``/CustomFields/`` フォルダー。このフォルダは *必須* です。"
 
 #: ../../source/designer-guide/configuration/custom-fields.rst:55
 msgid "the object kind of the entry - ``Cases``, ``Tasks``, or ``Starts`` are supported. This folder is *required*."
-msgstr "エントリのオブジェクトの種類 - ``Cases``、``Tasks``、``Starts`` がサポートされています。このフォルダーは*必須*です。"
+msgstr "エントリのオブジェクトの種類 - ``Cases``、``Tasks``、``Starts`` がサポートされています。このフォルダーは *必須* です。"
 
 #: ../../source/designer-guide/configuration/custom-fields.rst:56
 #, python-brace-format
@@ -4224,7 +4224,7 @@ msgstr "フォーマット"
 
 #: ../../source/designer-guide/configuration/formats.rst:6
 msgid "Format configurations define how Axon Ivy renders values of a specific type when outputting them to users. You can define formats for all *base types* of *IvyScript*, i.e., ``Boolean``, ``Date``, ``DateTime``, ``Time``, ``Number``, and ``String``. Output any non-null values of those types as *formatted strings* by calling the ``format(\"<format name>\")`` within any script."
-msgstr "フォーマット設定は、Axon Ivy が特定の型の値をユーザーに出力する際のレンダリング方法を定義します。*IvyScript* のすべての*基本データ型*である ``Boolean``、``Date``、``DateTime``、``Time``、``Number``、``String`` のフォーマットを定義できます。スクリプト内で ``format(\"<format name>\")`` を呼び出して、これらの型の NULL 以外の値を*書式付き文字列*として出力します。"
+msgstr "フォーマット設定は、Axon Ivy が特定の型の値をユーザーに出力する際のレンダリング方法を定義します。*IvyScript* のすべての *基本データ型* である ``Boolean``、``Date``、``DateTime``、``Time``、``Number``、``String`` のフォーマットを定義できます。スクリプト内で ``format(\"<format name>\")`` を呼び出して、これらの型の NULL 以外の値を *書式付き文字列* として出力します。"
 
 #: ../../source/designer-guide/configuration/formats.rst:19
 msgid "For several types, there are already default formats available, which can be passed to ``format(X)``:"
@@ -4815,7 +4815,7 @@ msgstr "**Password：** この変数の値を暗号化するよう Axon Ivy Engi
 
 #: ../../source/designer-guide/configuration/variables.rst:80
 msgid "If you add a password Variable in the Axon Ivy Designer, you get a validation warning that the Variable is not encrypted. You can fix this via a :ref:`problems-view` > *QuickFix*."
-msgstr "Axon Ivy Designer でパスワード変数を追加すると、変数が暗号化されていないという検証警告が表示されます。この問題は :ref:`問題ビュー` の*クイック修正*で修正できます。"
+msgstr "Axon Ivy Designer でパスワード変数を追加すると、変数が暗号化されていないという検証警告が表示されます。この問題は :ref:`問題ビュー` の *クイック修正* で修正できます。"
 
 #: ../../source/designer-guide/configuration/variables.rst:84
 msgid "**Daytime:** The value of this Variable is interpreted as a time of day."
@@ -4936,7 +4936,7 @@ msgstr ":guilabel:`WSDL URL`、:guilabel:`WSDL`（サービスの機能やデー
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:84
 msgid "Configures the authentication scheme and data used to authenticate with the remote web service. The following attributes are available in the *Authentication* section:"
-msgstr "リモート Web サービスとの認証に使用する認証スキームとデータを設定します。*認証*セクションでは、以下の属性を編集できます。"
+msgstr "リモート Web サービスとの認証に使用する認証スキームとデータを設定します。*認証* セクションでは、以下の属性を編集できます。"
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:88
 msgid ":guilabel:`Type` The authentication type to be used. The available authentication types depend on the selected library."
@@ -4985,7 +4985,7 @@ msgstr "エンドポイント URI セクション"
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:173
 msgid "The following attributes are available in the *Ports* section:"
-msgstr "*ポート*セクションでは、以下の属性を編集できます。"
+msgstr "*ポート* セクションでは、以下の属性を編集できます。"
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:175
 msgid ":guilabel:`Ports` The list of ports is available after web service client classes generation. (see: Generate WS classes). The content of this list originates from the specified WSDL and is populated with information from the client framework."
@@ -5054,7 +5054,7 @@ msgstr "ビジネスケースデータ"
 
 #: ../../source/designer-guide/data-modeling/business-data/concept.rst:37
 msgid "The handling of identifiers of Business Data values is complex because you have to manage the identifiers in the process data manually. Therefore, the Business Data Store can store data in the context of a business case. You can activate this by marking a data class with the ``@BusinessCaseData`` annotation. In the :ref:`data-class-editor`, change the type of your data class to *Business Data*. Now, all values of the annotated data class are automatically associated with the current business case. You can use the ``get`` method to load the value associated with the current business case. If no value is associated, it returns a new object."
-msgstr "プロセスデータの識別子を手動で管理しなければならないことから、ビジネスデータの値の識別子の扱いは複雑です。そのため、ビジネスデータストアでは、ビジネスケースのコンテキストでデータを格納できます。データクラスに ``@BusinessCaseData`` というアノテーションを付けて、これを有効します。次に、 :ref:`data-class-editor` で、データクラスのタイプを*ビジネスデータ*に変更します。これで、アノテーションが付けられたデータクラスのすべての値が自動的に現在のビジネスケースに関連付けられ、``get`` メソッドを使用して、現在のビジネスケースに関連付けられた値を読み込むことができます。値が関連付けられていない場合は、新しいオブジェクトを返します。"
+msgstr "プロセスデータの識別子を手動で管理しなければならないことから、ビジネスデータの値の識別子の扱いは複雑です。そのため、ビジネスデータストアでは、ビジネスケースのコンテキストでデータを格納できます。データクラスに ``@BusinessCaseData`` というアノテーションを付けて、これを有効します。次に、 :ref:`data-class-editor` で、データクラスのタイプを *ビジネスデータ* に変更します。これで、アノテーションが付けられたデータクラスのすべての値が自動的に現在のビジネスケースに関連付けられ、``get`` メソッドを使用して、現在のビジネスケースに関連付けられた値を読み込むことができます。値が関連付けられていない場合は、新しいオブジェクトを返します。"
 
 #: ../../source/designer-guide/data-modeling/business-data/concept.rst:48
 msgid "Migrate data classes"
@@ -6369,7 +6369,7 @@ msgstr "文字列"
 
 #: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:446
 msgid "Lower cases or upper cases a *string* value"
-msgstr "*文字列*値を小文字または大文字に変換"
+msgstr "*文字列* 値を小文字または大文字に変換"
 
 #: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:450
 msgid "CONCAT(string1, string2)"
@@ -6377,7 +6377,7 @@ msgstr "CONCAT(文字列1, 文字列2)"
 
 #: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:450
 msgid "Concatenates *string* values to one string"
-msgstr "*文字列*値を 1 つの文字列に連結"
+msgstr "*文字列* 値を 1 つの文字列に連結"
 
 #: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:453
 msgid "SUBSTRING(string, offset, length)"
@@ -6385,7 +6385,7 @@ msgstr "SUBSTRING(文字列, オフセット, 文字数)"
 
 #: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:453
 msgid "Substring string values (*offset* starts at 1)"
-msgstr "文字列値のサブ文字列（*オフセット*は 1 から開始）"
+msgstr "文字列値のサブ文字列（*オフセット* は 1 から開始）"
 
 #: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:457
 msgid "TRIM( [[BOTH|LEADING|TRAILI NG] char [from]] string)"
@@ -6393,7 +6393,7 @@ msgstr "TRIM( [[BOTH|LEADING|TRAILI NG] 文字 [from]] 文字列)"
 
 #: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:457
 msgid "Trims spaces on BOTH sides of *string* if no *char* or other specification is given"
-msgstr "*文字*などの指定がない場合に*文字列*の両側にあるスペースを削除"
+msgstr "*文字* などの指定がない場合に *文字列* の両側にあるスペースを削除"
 
 #: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:463
 msgid "LENGTH(string)"
@@ -6407,7 +6407,7 @@ msgstr "数値"
 
 #: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:463
 msgid "Gets the length of a *string* value"
-msgstr "*文字列*値の文字数を取得"
+msgstr "*文字列* 値の文字数を取得"
 
 #: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:466
 msgid "LOCATE(search, string, offset)"
@@ -6415,7 +6415,7 @@ msgstr "LOCATE(検索, 文字列, オフセット)"
 
 #: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:466
 msgid "Searches for position of *search* in *string* starting at *offset*"
-msgstr "*オフセット*で始まる*文字列*内の*検索*の位置を検索"
+msgstr "*オフセット* で始まる *文字列* 内の *検索* の位置を検索"
 
 #: ../../source/designer-guide/data-modeling/persistence/persistence-api.rst:471
 msgid "ABS(number), SQRT(number), MOD(dividend, divisor)"
@@ -6876,7 +6876,7 @@ msgstr "Java クラスのデバッグ"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:12
 msgid "You can debug java classes in the Axon Ivy Designer, by uncomment the line :code:`-agentlib:jdwp=transport=dt_socket,server=y,address=8001,suspend=n` in the :file:`AxonIvyDesigner.ini` file. After a restart you're able to start a *Debug session* by add a new :code:`Remote Java Application debug configuration`. For more information, check out `How can I debug my Java class in an Axon Ivy Designer? <https://community.axonivy.com/d/429-how-can-i-debug-my-java-class-in-an-axon-ivy-designer>`_"
-msgstr "Axon Ivy Designer では、:file:`AxonIvyDesigner.ini` ファイルの :code:`-agentlib:jdwp=transport=dt_socket,server=y,address=8001,suspend=n` という行のコメントを解除して、Java クラスをデバッグできます。再起動後、新しい :code:`リモート Java アプリケーションのデバッグ設定`を追加して、*デバッグセッション*を開始できます。詳細については、`How can I debug my Java class in an Axon Ivy Designer?（Axon Ivy Designer で Java クラスをデバッグする方法）<https://community.axonivy.com/d/429-how-can-i-debug-my-java-class-in-an-axon-ivy-designer>`_をご覧ください。"
+msgstr "Axon Ivy Designer では、:file:`AxonIvyDesigner.ini` ファイルの :code:`-agentlib:jdwp=transport=dt_socket,server=y,address=8001,suspend=n` という行のコメントを解除して、Java クラスをデバッグできます。再起動後、新しい :code:`リモート Java アプリケーションのデバッグ設定`を追加して、*デバッグセッション* を開始できます。詳細については、`How can I debug my Java class in an Axon Ivy Designer?（Axon Ivy Designer で Java クラスをデバッグする方法）<https://community.axonivy.com/d/429-how-can-i-debug-my-java-class-in-an-axon-ivy-designer>`_をご覧ください。"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:24
 msgid "Data Caching"
@@ -6884,7 +6884,7 @@ msgstr "データキャッシュ"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:26
 msgid "Axon Ivy offers a feature to store data temporarily into a *data cache* in the engine's memory. If you want to read data that stays unchanged for some time, you do not need to re-read the data every time you need to access it. If this data is read by long-running queries from a database or by calling a slow web service, you can gain a lot of performance by caching this data. The :ref:`process-element-db-activity` and the :ref:`process-element-web-service-call-activity` natively support Data Caching (see the :ref:`process-element-tab-data-cache` for more information), for other data, you can access the Data Cache API by IvyScript."
-msgstr "Axon Ivy には、データをエンジンのメモリ内の*データキャッシュ*に一時的に保存する機能が搭載されています。しばらくの間変更されないデータを読み取りたい場合、アクセスする必要があるたびにデータを再読み取りする必要はありません。このようなデータをデータベースから長時間クエリを実行したり、低速のウェブサービスを呼び出して読み込む場合、このデータをキャッシュすることでパフォーマンスを大幅に向上できます :ref:`process-element-db-activity` と :ref:`process-element-web-service-call-activity` はデータキャッシュをネイティブにサポートしており（詳細については、 :ref:`process-element-tab-data-cache` 」を参照）、その他のデータについては IvyScript でデータキャッシュ API にアクセスできます。"
+msgstr "Axon Ivy には、データをエンジンのメモリ内の *データキャッシュ* に一時的に保存する機能が搭載されています。しばらくの間変更されないデータを読み取りたい場合、アクセスする必要があるたびにデータを再読み取りする必要はありません。このようなデータをデータベースから長時間クエリを実行したり、低速のウェブサービスを呼び出して読み込む場合、このデータをキャッシュすることでパフォーマンスを大幅に向上できます :ref:`process-element-db-activity` と :ref:`process-element-web-service-call-activity` はデータキャッシュをネイティブにサポートしており（詳細については、 :ref:`process-element-tab-data-cache` 」を参照）、その他のデータについては IvyScript でデータキャッシュ API にアクセスできます。"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:37
 msgid "Caches"
@@ -6904,7 +6904,7 @@ msgstr "エントリと同様、グループもテキストグループ識別子
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:56
 msgid "A *Data Cache* is a container for multiple groups. The identifier of a group has to be unique in its data cache. If two groups in the same Data Cache have the same identifiers, then they are identical."
-msgstr "*データキャッシュ*は、複数のグループを入れるコンテナです。グループの識別子は、そのデータキャッシュ内で一意でなければなりません。同じデータキャッシュ内の 2 つのグループが同じ識別子を持つ場合、それらは同一です。"
+msgstr "*データキャッシュ* は、複数のグループを入れるコンテナです。グループの識別子は、そのデータキャッシュ内で一意でなければなりません。同じデータキャッシュ内の 2 つのグループが同じ識別子を持つ場合、それらは同一です。"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:62
 msgid "Data Caches always have a scope. A scope defines the boundaries of a specific Data Cache and as well the life cycle of the Data Cache depends on its scope:"
@@ -6979,7 +6979,7 @@ msgstr "アクセスとライフサイクル"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:91
 msgid "Cache entries and groups are created the first time they are accessed - the first time the process step with the data cache entry is executed - and they are destroyed when the scope of cache entries or groups reach the end of their life cycle. For the scope *Session* this is the logout of the user of the session or the session timeout, for the scope *Application* this is when the application is terminated or inactivated."
-msgstr "キャッシュエントリとグループは、最初にアクセスされたとき、つまりデータキャッシュエントリを含むプロセスステップが最初に実行されたときに作成され、キャッシュエントリまたはグループのスコープがライフサイクルの終わりに達すると破棄されます。ライフサイクルの終わりとは、*セッション*スコープの場合、セッションのユーザーのログアウトまたはセッションのタイムアウトです。*アプリケーション*スコープの場合は、アプリケーションが終了または非アクティブになったときです。"
+msgstr "キャッシュエントリとグループは、最初にアクセスされたとき、つまりデータキャッシュエントリを含むプロセスステップが最初に実行されたときに作成され、キャッシュエントリまたはグループのスコープがライフサイクルの終わりに達すると破棄されます。ライフサイクルの終わりとは、*セッション* スコープの場合、セッションのユーザーのログアウトまたはセッションのタイムアウトです。*アプリケーション* スコープの場合は、アプリケーションが終了または非アクティブになったときです。"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:98
 msgid "Cache entries and groups are resolved by their identifiers. You can put different cache entries into one group by using the same group identifier for all entries. You can use the same data cache entry for multiple steps by using the same group and the same entry identifier for all entries. This is very useful for data that almost never changes, you can load the data into the cache once at the beginning of the scope's lifetime and read it from the cache from every step in all processes thereafter."
@@ -7008,11 +7008,11 @@ msgstr "Axon Ivy Engine Enterprise Edition は、異なるマシン上で実行�
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:136
 msgid "In an Axon Ivy Engine Enterprise Edition the *Application* data cache will be created on each node independently. However, if a data cache is invalidated on one cluster node either by timeout or explicitly, then it will be automatically invalidated on all other cluster nodes as well."
-msgstr "Axon Ivy Engine Enterprise Edition では、*アプリケーション*データキャッシュは各ノードで独立して作成されます。ただし、データキャッシュが 1 つのクラスタノードでタイムアウトまたは明示的に無効化されると、他のすべてのクラスタノードでも自動的に無効化されます。"
+msgstr "Axon Ivy Engine Enterprise Edition では、*アプリケーション* データキャッシュは各ノードで独立して作成されます。ただし、データキャッシュが 1 つのクラスタノードでタイムアウトまたは明示的に無効化されると、他のすべてのクラスタノードでも自動的に無効化されます。"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:142
 msgid "On the other hand, *Session* data caches will only be created on one node because sessions are always bound to a specific node in the cluster."
-msgstr "一方、セッションは常にクラスタ内の特定のノードにバインドされるため、*セッション*データキャッシュは 1 つのノードでのみ作成されます。"
+msgstr "一方、セッションは常にクラスタ内の特定のノードにバインドされるため、*セッション* データキャッシュは 1 つのノードでのみ作成されます。"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:148
 msgid "System Events"
@@ -7096,7 +7096,7 @@ msgstr "**実装に関する重要な注意事項：**"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:282
 msgid "Since ``THIRD_PARTY`` events are distributed as messages in a Cluster, all custom event parameter objects *must be serializable*."
-msgstr "``THIRD_PARTY`` のイベントはクラスタ内でメッセージとして配信されるため、すべてのカスタムイベントパラメーターオブジェクトは*シリアライズ可能でなければなりません*。"
+msgstr "``THIRD_PARTY`` のイベントはクラスタ内でメッセージとして配信されるため、すべてのカスタムイベントパラメーターオブジェクトは *シリアライズ可能でなければなりません*。"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:285
 msgid "Please be aware that running multiple instances of a system event sender may lead to race conditions. If you use system events for message exchange between Axon Ivy processes and/or User Dialogs and third party systems integrated via the Server Extension mechanism, you have to ensure that a certain event is only sent once. One way to solve this is that the third party system (e.g., an ESB) is attached to only one node in the cluster. Otherwise a received message from the external system may be injected into the Axon Ivy Engine Enterprise Edition system n times (once for each node) instead of being sent only once."
@@ -7128,11 +7128,11 @@ msgstr "検索対象／検索場所"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:331
 msgid "Select for what kind of entities you are looking for. Depending on the chosen type, you can specify in which properties of the entity the *search string* (see above) is searched in. If you select more than one property, then be aware that the *search string* must occur only in one of the chosen properties."
-msgstr "検索するエンティティの種類を選択します。選択したタイプに応じて、エンティティのどのプロパティで*検索文字列*（上記参照）を検索するかを指定できます。複数のプロパティを選択した場合、*検索文字列*は選択したプロパティの 1 つだけに現れる必要があることに注意してください。"
+msgstr "検索するエンティティの種類を選択します。選択したタイプに応じて、エンティティのどのプロパティで *検索文字列*（上記参照）を検索するかを指定できます。複数のプロパティを選択した場合、*検索文字列* は選択したプロパティの 1 つだけに現れる必要があることに注意してください。"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:338
 msgid "You can decide whether you want to search in the full workspace or only in the enclosing projects (the projects that are selected in the :ref:`ivy-project-view`. If you choose *enclosing projects* you may select whether you want to include searching in dependent or required projects (see :ref:`project-deployment-descriptor` chapter for more details about how you can define and use project dependencies). The tool tip text tells which projects are currently selected."
-msgstr "ワークスペース全体で検索を行うか、あるいはエンクロージングプロジェクト :ref:`ivy-project-view` で選択されているプロジェクト）だけで検索を行うかを決めることができます。*エンクロージングプロジェクト*を選択した場合は、依存プロジェクトや必須プロジェクトの検索を含めるかどうかを選択できます（プロジェクトの依存関係を定義して使用する方法の詳細については、 :ref:`project-deployment-descriptor`」の章を参照）。ツールチップのテキストは、現在どのプロジェクトが選択されているかを示します。"
+msgstr "ワークスペース全体で検索を行うか、あるいはエンクロージングプロジェクト :ref:`ivy-project-view` で選択されているプロジェクト）だけで検索を行うかを決めることができます。*エンクロージングプロジェクト* を選択した場合は、依存プロジェクトや必須プロジェクトの検索を含めるかどうかを選択できます（プロジェクトの依存関係を定義して使用する方法の詳細については、 :ref:`project-deployment-descriptor`」の章を参照）。ツールチップのテキストは、現在どのプロジェクトが選択されているかを示します。"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:346
 msgid "Recreate indices"
@@ -7160,7 +7160,7 @@ msgstr "結果ビューのメニューからレイアウトを選択して、検
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:375
 msgid "For standard searches, only *Project* and *Namespace* grouping is available."
-msgstr "標準的な検索では、*プロジェクト*と*名前空間*のグループ化のみ可能です。"
+msgstr "標準的な検索では、*プロジェクト* と *名前空間* のグループ化のみ可能です。"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:382
 msgid "Update Notification"
@@ -7240,7 +7240,7 @@ msgstr "オフラインダイアログが設定され :ref:`process-element-user
 
 #: ../../source/designer-guide/how-to/offline-tasks.rst:22
 msgid "The User Task element provides a different task handling than normal task switches do. On a User Task, when the form data (the actual dialog page) is requested, the corresponding task remains in state *suspended*. The task state will be changed to *resumed* when the form data is submitted. Compared to this, a normal Task must be resumed first and after that, an Html Dialog element that follows in process flow, will return the form data."
-msgstr "ユーザータスク要素は通常のタスクスイッチとは異なるタスク処理を提供します。ユーザータスクでは、フォームデータ（実際のダイアログページ）がリクエストされたとき、対応するタスクは*中断*状態のままです。フォームデータが送信されると、タスクの状態は*再開*に変更されます。これと比較すると、通常のタスクは最初に再開される必要があり、その後、プロセスフローに続く HTML ダイアログ要素がフォームデータを返します。"
+msgstr "ユーザータスク要素は通常のタスクスイッチとは異なるタスク処理を提供します。ユーザータスクでは、フォームデータ（実際のダイアログページ）がリクエストされたとき、対応するタスクは *中断* 状態のままです。フォームデータが送信されると、タスクの状態は *再開* に変更されます。これと比較すると、通常のタスクは最初に再開される必要があり、その後、プロセスフローに続く HTML ダイアログ要素がフォームデータを返します。"
 
 #: ../../source/designer-guide/how-to/offline-tasks.rst:30
 msgid "Comparison of the execution sequence"
@@ -7449,11 +7449,11 @@ msgstr "オーバーライド 2"
 
 #: ../../source/designer-guide/how-to/overrides.rst:58
 msgid "Knowing this, we can now specifically override and redefine components from the original generic *web shop* application by redefining them inside the *Acme web shop* project."
-msgstr "これを踏まえて、*Acme Webshop* プロジェクト内でコンポーネントを再定義することで、元の一般的な*ウェブショップ*アプリケーションの特定のコンポーネントをオーバーライドして再定義できます。"
+msgstr "これを踏まえて、*Acme Webshop* プロジェクト内でコンポーネントを再定義することで、元の一般的な *ウェブショップ* アプリケーションの特定のコンポーネントをオーバーライドして再定義できます。"
 
 #: ../../source/designer-guide/how-to/overrides.rst:62
 msgid "There are two ways to use the *Acme web shop* project as an overriding project. You can either define a :ref:`strict_overriding` in the generic *Web shop* application. To start with however, make sure your overriding project is dependent on the base project and that each override is defined in your overriding project as described in :ref:`overrides-editor`."
-msgstr "*Acme Webshop* プロジェクトをオーバーライドする側のプロジェクトとして使用する方法は 2 つあります。1 つは、一般的な*ウェブショップ*アプリケーションで :ref:`strict_overriding` を定義する方法です。ただし、まず始めに、オーバーライドする側のプロジェクトがベースプロジェクトに依存しており、 :ref:`overrides-editor` 」で説明されているように、オーバーライドする側のプロジェクトで各オーバーライドが定義されていることを確認してください。"
+msgstr "*Acme Webshop* プロジェクトをオーバーライドする側のプロジェクトとして使用する方法は 2 つあります。1 つは、一般的な *ウェブショップ* アプリケーションで :ref:`strict_overriding` を定義する方法です。ただし、まず始めに、オーバーライドする側のプロジェクトがベースプロジェクトに依存しており、 :ref:`overrides-editor` 」で説明されているように、オーバーライドする側のプロジェクトで各オーバーライドが定義されていることを確認してください。"
 
 #: ../../source/designer-guide/how-to/overrides.rst:73
 msgid "Strict Overriding"
@@ -7497,7 +7497,7 @@ msgstr "オーバーライドエディター"
 
 #: ../../source/designer-guide/how-to/overrides.rst:132
 msgid "The Axon Ivy *Overrides Editor* shows the registered and active overrides for a specific project. The overrides are listed in 4 different sections: Sub Processes, HTML Dialogs, Content Objects and Configurations."
-msgstr "Axon Ivy の*オーバーライドエディター*には、特定のプロジェクトで登録されているアクティブなオーバーライドが表示されます。オーバーライドは、サブプロセス、HTML ダイアログ、コンテンツオブジェクト、設定の 4 つのセクションに表示されます。"
+msgstr "Axon Ivy の *オーバーライドエディター* には、特定のプロジェクトで登録されているアクティブなオーバーライドが表示されます。オーバーライドは、サブプロセス、HTML ダイアログ、コンテンツオブジェクト、設定の 4 つのセクションに表示されます。"
 
 #: ../../source/designer-guide/how-to/overrides.rst:137
 msgid "At the top of the editor, you can define the :ref:`strict_overriding` project. With this, you may simulate the overriding experience of the application within the Designer."
@@ -7505,7 +7505,7 @@ msgstr "エディターの一番上では、 :ref:`strict_overriding` プロジ�
 
 #: ../../source/designer-guide/how-to/overrides.rst:140
 msgid "Html Dialog and Sub Process overrides require - for technical reasons - the registration of a mapping (this is done automatically by the New Override Wizard) which maps the original component's identifier to the replacement identifier. This mapping is displayed in the Override Editor and can be deleted by selecting an entry and subsequently clicking on the *delete* icon in the section's tool bar. When clicking on the *wizard* icon in the tool bar, a new override mapping of that category can easily be added by entering all necessary information into the opening wizard."
-msgstr "HTML ダイアログとサブプロセスのオーバーライドでは、技術的な理由により、元のコンポーネントの識別子を置換後の識別子にマッピングするマッピングの登録が必要です（これはオーバーライドの作成ウィザードによって自動的に行われます）。このマッピングはオーバーライドエディターに表示され、エントリを選択し、セクションのツールバーの*削除*アイコンをクリックすることで削除できます。ツールバーの*ウィザード*アイコンをクリックすると開くウィザードに必要な情報をすべて入力して、そのカテゴリーの新しいオーバーライドマッピングを簡単に追加できます。"
+msgstr "HTML ダイアログとサブプロセスのオーバーライドでは、技術的な理由により、元のコンポーネントの識別子を置換後の識別子にマッピングするマッピングの登録が必要です（これはオーバーライドの作成ウィザードによって自動的に行われます）。このマッピングはオーバーライドエディターに表示され、エントリを選択し、セクションのツールバーの *削除* アイコンをクリックすることで削除できます。ツールバーの *ウィザード* アイコンをクリックすると開くウィザードに必要な情報をすべて入力して、そのカテゴリーの新しいオーバーライドマッピングを簡単に追加できます。"
 
 #: ../../source/designer-guide/how-to/overrides.rst:149
 msgid "Overrides of Content Objects and Configurations, on the other hand, do not require a renaming and an extra mapping between the original and the overriding component. They are simply created by adding a new Content Object or Configuration entry with the name of a component that already exists in a required project. At runtime, the new component will be found first and thus shadow the original value. For this type of override no special actions are available from the editor; you should use the respective editors (Content Editor and Configuration Editor) to create or delete overrides. The editor shows the overrides of that type for reasons of a centralized overview and for convenience, rather than to provide an interface to edit them."
@@ -7534,7 +7534,7 @@ msgstr "サブプロセスのオーバーライド"
 
 #: ../../source/designer-guide/how-to/overrides.rst:178
 msgid "This section shows all Sub Process overrides that are registered for the selected project. You can delete an existing override by pressing the *delete* icon in the section's tool bar. This will only delete the mapping (and thus the execution of the override) but not the replacement Sub Process itself. You can add new Sub Process overrides by clicking on the *wizard* icon in the tool bar (this can also be used to \"restore\" a previously deleted mapping)."
-msgstr "このセクションには、選択されたプロジェクトに登録されているすべてのサブプロセスのオーバーライドが表示されます。セクションのツールバーにある*削除*アイコンをクリックして、既存のオーバーライドを削除できます。削除されるのはマッピング（およびオーバーライドの実行）のみで、置換サブプロセス自体は削除されません。ツールバーの*ウィザード*アイコンをクリックして、新しいサブプロセスのオーバーライドを追加できます（これを使用して、先に削除したマッピングを「復元」することもできます）。"
+msgstr "このセクションには、選択されたプロジェクトに登録されているすべてのサブプロセスのオーバーライドが表示されます。セクションのツールバーにある *削除* アイコンをクリックして、既存のオーバーライドを削除できます。削除されるのはマッピング（およびオーバーライドの実行）のみで、置換サブプロセス自体は削除されません。ツールバーの *ウィザード* アイコンをクリックして、新しいサブプロセスのオーバーライドを追加できます（これを使用して、先に削除したマッピングを「復元」することもできます）。"
 
 #: ../../source/designer-guide/how-to/overrides.rst:186
 msgid "Html Dialog Overrides"
@@ -7550,7 +7550,7 @@ msgstr "HD だけでなく、HD のコンポーネントにもオーバーライ
 
 #: ../../source/designer-guide/how-to/overrides.rst:195
 msgid "You can delete an existing override by pressing the *delete* icon in the section's tool bar. This will only delete the mapping (and thus the execution of the override) but not the replacement HD itself. You can add new HD overrides by clicking on the *wizard* icon in the tool bar (this can also be used to \"restore\" a previously deleted mapping or if you want to override a HD with an already existing dialog)."
-msgstr "セクションのツールバーにある*削除*アイコンをクリックして、既存のオーバーライドを削除できます。削除されるのはマッピング（およびオーバーライドの実行）のみで、置換 HD 自体は削除されません。ツールバーの*ウィザード*アイコンをクリックして、新しい HD のオーバーライドを追加できます（これを使用して、先に削除したマッピングを「復元」したり、すでに存在するダイアログで HD をオーバーライドすることもできます）。"
+msgstr "セクションのツールバーにある *削除* アイコンをクリックして、既存のオーバーライドを削除できます。削除されるのはマッピング（およびオーバーライドの実行）のみで、置換 HD 自体は削除されません。ツールバーの *ウィザード* アイコンをクリックして、新しい HD のオーバーライドを追加できます（これを使用して、先に削除したマッピングを「復元」したり、すでに存在するダイアログで HD をオーバーライドすることもできます）。"
 
 #: ../../source/designer-guide/how-to/overrides.rst:202
 msgid "Content Object Overrides"
@@ -7562,7 +7562,7 @@ msgstr "このセクションには、選択されたプロジェクトで再定
 
 #: ../../source/designer-guide/how-to/overrides.rst:208
 msgid "You can delete overriding Content Objects directly from the list (multi-select a few lines and hit *Delete*) or use the Content Editor to add new overriding Content Objects."
-msgstr "オーバーライドコンテンツオブジェクトをリストから直接削除できます（行を複数選択して、*削除*をクリックします）。また、コンテンツエディターを使用して、新しいオーバーライドコンテンツオブジェクトを追加できます。"
+msgstr "オーバーライドコンテンツオブジェクトをリストから直接削除できます（行を複数選択して、*削除* をクリックします）。また、コンテンツエディターを使用して、新しいオーバーライドコンテンツオブジェクトを追加できます。"
 
 #: ../../source/designer-guide/how-to/overrides.rst:220
 #: ../../source/designer-guide/how-to/overrides.rst:245
@@ -7572,7 +7572,7 @@ msgstr "オーバーライドの作成ウィザード"
 
 #: ../../source/designer-guide/how-to/overrides.rst:222
 msgid "The *New Override Wizard* lets you create a new override. The wizard performs two tasks:"
-msgstr "*オーバーライドの作成ウィザード*では、新しいオーバーライドを作成できます。ウィザードは以下の 2 つのタスクを実行します。"
+msgstr "*オーバーライドの作成ウィザード* では、新しいオーバーライドを作成できます。ウィザードは以下の 2 つのタスクを実行します。"
 
 #: ../../source/designer-guide/how-to/overrides.rst:225
 msgid "It will create an independent copy (snapshot) of the original component with a new name in the current project."
@@ -7795,7 +7795,7 @@ msgstr "前にルールエンジンに渡したデータに適用されたアク
 
 #: ../../source/designer-guide/how-to/rule-engine.rst:184
 msgid "To use the rule engine `Drools <https://www.drools.org>`__ directly, you must add the *Rule Engine Libraries* to the project's classpath. To do this, right-click on the project and select *Properties*. Navigate to *Axon Ivy* > *Java* and check *Rule Engine Libraries*."
-msgstr "`Drools <https://www.drools.org>`__ルールエンジンを直接使用するには、*ルールエンジンのライブラリ*をプロジェクトのクラスパスに追加する必要があります。プロジェクトを右クリックして［*プロパティ*］を選択します。［*Axon Ivy*］、［*Java*］の順に移動し、［*ルールエンジンのライブラリ*］チェックボックスをオンにします。"
+msgstr "`Drools <https://www.drools.org>`__ルールエンジンを直接使用するには、*ルールエンジンのライブラリ* をプロジェクトのクラスパスに追加する必要があります。プロジェクトを右クリックして［*プロパティ*］を選択します。［*Axon Ivy*］、［*Java*］の順に移動し、［*ルールエンジンのライブラリ*］チェックボックスをオンにします。"
 
 #: ../../source/designer-guide/how-to/rule-engine.rst:190
 msgid "Demo project"
@@ -8569,7 +8569,7 @@ msgstr "リファクタリングウィザード"
 
 #: ../../source/designer-guide/introduction/common-ui-components.rst:12
 msgid "Refactoring wizards appear when you *rename*, *move*, *delete* or *copy/paste* Axon Ivy artifacts."
-msgstr "Axon Ivy アーティファクトの*名前変更*、*移動*、*削除*、*コピー／貼り付け* を行うと、リファクタリングウィザードが表示されます。"
+msgstr "Axon Ivy アーティファクトの *名前変更*、*移動*、*削除*、*コピー／貼り付け* を行うと、リファクタリングウィザードが表示されます。"
 
 #: ../../source/designer-guide/introduction/common-ui-components.rst:15
 msgid "The wizards allow you to specify the new name/namespace/location of the artifacts that should be refactored and will give you an overview of the result of the operation before it is actually executed, so that you can estimate the consequences."
@@ -8581,11 +8581,11 @@ msgstr "すべてのリファクタリングウィザードは同じ構造です
 
 #: ../../source/designer-guide/introduction/common-ui-components.rst:22
 msgid "On the *first page* you enter the **parameters** of the operation (e.g., new name and/or namespace, target project, etc.) if any are required. Also you may chose whether any existing references to the refactored artifact should be updated automatically (e.g., if you rename a sub process then all callers to that sub process will be updated, so that they point to the renamed instance). This is the default behavior."
-msgstr "*最初のページ*では、オペレーションの**パラメーター** （新しい名前や名前空間、ターゲットプロジェクトなど）を必要に応じて入力します。また、リファクタリングされたアーティファクトへの既存の参照を自動的に更新するかどうかを選択できます（例えば、サブプロセスの名前を変更した場合、そのサブプロセスへのすべての呼び出し元が更新され、名前変更されたインスタンスを指すようになります）。これはデフォルトの動作です。"
+msgstr "*最初のページ* では、オペレーションの**パラメーター** （新しい名前や名前空間、ターゲットプロジェクトなど）を必要に応じて入力します。また、リファクタリングされたアーティファクトへの既存の参照を自動的に更新するかどうかを選択できます（例えば、サブプロセスの名前を変更した場合、そのサブプロセスへのすべての呼び出し元が更新され、名前変更されたインスタンスを指すようになります）。これはデフォルトの動作です。"
 
 #: ../../source/designer-guide/introduction/common-ui-components.rst:30
 msgid "On the *second page* you will be presented with a **list of references that will be broken** after the operation is executed. This page is not displayed, if no broken references are detected. This page is only displayed for *delete* or *move* refactorings, i.e. if the artifact will no longer exist in the scope of any callers that referred to it before the operation."
-msgstr "*2 ページ目*には、オペレーションの実行後に**破壊される参照のリスト** が表示されます。破壊された参照が検出されなかった場合、このページは表示されません。このページは、*削除*または*移動*リファクタリング、つまり、オペレーションの前に参照した呼び出し元のスコープにアーティファクトが存在しなくなる場合にのみ表示されます。"
+msgstr "*2 ページ目*には、オペレーションの実行後に**破壊される参照のリスト** が表示されます。破壊された参照が検出されなかった場合、このページは表示されません。このページは、*削除* または *移動* リファクタリング、つまり、オペレーションの前に参照した呼び出し元のスコープにアーティファクトが存在しなくなる場合にのみ表示されます。"
 
 #: ../../source/designer-guide/introduction/common-ui-components.rst:37
 #: ../../source/designer-guide/introduction/common-ui-components.rst:41
@@ -8671,7 +8671,7 @@ msgstr "コピーウィザード"
 
 #: ../../source/designer-guide/introduction/common-ui-components.rst:154
 msgid "The copy wizard appears when you execute the *Paste* operation (either through the menu action *Paste* or with *Ctrl-V*) after having copied something to the clipboard (e.g., through the menu action *Copy* or with *Ctrl-C*)."
-msgstr "何かをクリップボードにコピーした後に（例：［*コピー*］メニューまたは *Ctrl + C* ）、*貼り付け*操作を実行すると（ ［*貼り付け*］メニューまたは * Ctrl + V*）、コピーウィザードが表示されます。"
+msgstr "何かをクリップボードにコピーした後に（例：［*コピー*］メニューまたは *Ctrl + C* ）、*貼り付け* 操作を実行すると（ ［*貼り付け*］メニューまたは * Ctrl + V*）、コピーウィザードが表示されます。"
 
 #: ../../source/designer-guide/introduction/common-ui-components.rst:159
 msgid "The copy wizard lets you change the project, name and namespace of the copy that will be created. All of the parameters are already filled in, the system tries to make educated guesses, if the selected target location is not valid or does not supply sufficient information (e.g., if a resource with the same name already exists at the paste location, then the name of the copy will be automatically have a \"CopyOf\" prefix)."
@@ -8766,7 +8766,7 @@ msgstr "1 - 新規 ..."
 
 #: ../../source/designer-guide/introduction/menus.rst:26
 msgid "This menu item opens a sub menu with all available *new wizards* to create new resources for editing. Some of the shown wizards are contributed by the Eclipse system and are not Axon Ivy specific."
-msgstr "このメニュー項目は、新しい編集用のリソースを作成するために利用可能なすべての*新規ウィザード*を含むサブメニューを開きます。表示されるウィザードのいくつかは Eclipse システムから提供されたもので、Axon Ivy 固有のものではありません。"
+msgstr "このメニュー項目は、新しい編集用のリソースを作成するために利用可能なすべての *新規ウィザード* を含むサブメニューを開きます。表示されるウィザードのいくつかは Eclipse システムから提供されたもので、Axon Ivy 固有のものではありません。"
 
 #: ../../source/designer-guide/introduction/menus.rst:30
 #: ../../source/designer-guide/introduction/toolbar.rst:32
@@ -8868,7 +8868,7 @@ msgstr "Axon Ivy メニュー"
 
 #: ../../source/designer-guide/introduction/menus.rst:116
 msgid "This menu item opens a sub menu with all available *new wizards* to create new Axon Ivy specific resources (such as User Dialogs or Data classes or Axon Ivy projects)."
-msgstr "このメニュー項目は、Axon Ivy 固有の新しいリソース（ユーザーダイアログやデータクラス、Axon Ivy プロジェクトなど）を作成するために利用可能なすべての*新規ウィザード*を含むサブメニューを開きます。"
+msgstr "このメニュー項目は、Axon Ivy 固有の新しいリソース（ユーザーダイアログやデータクラス、Axon Ivy プロジェクトなど）を作成するために利用可能なすべての *新規ウィザード* を含むサブメニューを開きます。"
 
 #: ../../source/designer-guide/introduction/menus.rst:120
 msgid "2 - Engine Menu"
@@ -9249,7 +9249,7 @@ msgstr "新規ウィザードセレクター"
 
 #: ../../source/designer-guide/introduction/toolbar.rst:28
 msgid "This button opens a drop down list with all available *new wizards* to create new resources for editing. Some of the shown wizards are contributed by the Eclipse system and are not Axon Ivy specific."
-msgstr "このボタンは、新しい編集用のリソースを作成するために利用可能なすべての*新規ウィザード*を含むドロップダウンリストを開きます。表示されるウィザードのいくつかは Eclipse システムから提供されたもので、Axon Ivy 固有のもではありません。"
+msgstr "このボタンは、新しい編集用のリソースを作成するために利用可能なすべての *新規ウィザード* を含むドロップダウンリストを開きます。表示されるウィザードのいくつかは Eclipse システムから提供されたもので、Axon Ivy 固有のもではありません。"
 
 #: ../../source/designer-guide/introduction/toolbar.rst:37
 msgid "Save"
@@ -9517,7 +9517,7 @@ msgstr "Axon Ivy でデータベースや Web サービスを使用して作業�
 
 #: ../../source/designer-guide/ivyscript/java-integration.rst:37
 msgid "To facilitate working with values of those different types, IvyScript will *always* convert them to the corresponding, *immutable* IvyScript base types whenever such values are encountered, according to the following table:"
-msgstr "これらの異なる型の値を扱いやすくするために、IvyScript は*常に*、そのような値が現れるたびに、以下の表に従って、対応する IvyScript の*不変の*基本型に変換します。"
+msgstr "これらの異なる型の値を扱いやすくするために、IvyScript は *常に*、そのような値が現れるたびに、以下の表に従って、対応する IvyScript の *不変の* 基本型に変換します。"
 
 #: ../../source/designer-guide/ivyscript/java-integration.rst:42
 msgid "Automatic conversion of foreign Date / Time values"
@@ -10255,7 +10255,7 @@ msgstr "**IvyScript からのアクセス：**"
 
 #: ../../source/designer-guide/ivyscript/reference.rst:275
 msgid "The variable ``ivy`` is available wherever you can use *IvyScript*, e.g., on *Step* elements or in *output tables* of other elements."
-msgstr "``ivy`` 変数は、*Step* 要素や他の要素の*出力表*など、*IvyScript* を使用できる場所で使用できます。"
+msgstr "``ivy`` 変数は、*Step* 要素や他の要素の *出力表* など、*IvyScript* を使用できる場所で使用できます。"
 
 #: ../../source/designer-guide/ivyscript/reference.rst:278
 msgid "**Access from Java:**"
@@ -10399,7 +10399,7 @@ msgstr "ケースマップウィザード"
 
 #: ../../source/designer-guide/process-modeling/casemap.rst:18
 msgid "The *New Case Maps Wizard* lets you create a new Case Map."
-msgstr "*ケースマップの作成ウィザード*では、新しいケースマップを作成できます。"
+msgstr "*ケースマップの作成ウィザード* では、新しいケースマップを作成できます。"
 
 #: ../../source/designer-guide/process-modeling/casemap.rst:23
 msgid "File > New > Case Map"
@@ -10411,7 +10411,7 @@ msgstr "新しいケースマップを作成するプロジェクトを選択し
 
 #: ../../source/designer-guide/process-modeling/casemap.rst:34
 msgid "Select a process group where the new Case Map will be inserted. Select the ``<default>`  process group to create a Case Map directly below the project's processes folder. You can click on the group folder button to open the *New Process Group Wizard*, if you want to create a new group \"on the fly\". The process groups are listed relative to the project's *processes* folder."
-msgstr "新しいケースマップを挿入するプロセスグループを選択します。``<default>`  プロセスグループを選択すると、プロジェクトのプロセスフォルダーの直下にケースマップが作成されます。新しいグループを「オンザフライ」で作成したい場合は、グループフォルダーボタンをクリックして、*プロセスグループの作成ウィザード*を開くことができます。プロセスグループは、プロジェクトの*プロセス*フォルダーに関連してリストされます。"
+msgstr "新しいケースマップを挿入するプロセスグループを選択します。``<default>`  プロセスグループを選択すると、プロジェクトのプロセスフォルダーの直下にケースマップが作成されます。新しいグループを「オンザフライ」で作成したい場合は、グループフォルダーボタンをクリックして、*プロセスグループの作成ウィザード* を開くことができます。プロセスグループは、プロジェクトの *プロセス* フォルダーに関連してリストされます。"
 
 #: ../../source/designer-guide/process-modeling/casemap.rst:42
 msgid "Enter the name of the Case Map that you want to create."
@@ -10632,7 +10632,7 @@ msgstr "代替"
 
 #: ../../source/designer-guide/process-modeling/process-elements/alternative.rst:6
 msgid "|image0| The *Alternative Gateway* element is located in the *Event & Gateway* drawer of the process editor palette."
-msgstr "|image0| *代替ゲートウェイ*要素は、プロセスエディターパレットの*イベントとゲートウェイ*ドロワーにあります。"
+msgstr "|image0| *代替ゲートウェイ* 要素は、プロセスエディターパレットの *イベントとゲートウェイ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/alternative.rst:9
 #: ../../source/designer-guide/process-modeling/process-elements/call-sub.rst:11
@@ -10818,7 +10818,7 @@ msgstr "サブプロセスの呼び出し"
 
 #: ../../source/designer-guide/process-modeling/process-elements/call-sub.rst:6
 msgid "|image0| The *Call Sub* element is located in the *Activity* drawer of the process editor palette."
-msgstr "|image0| *サブプロセスの呼び出し*要素は、プロセスエディターパレットの*アクティビティ*ドロワーにあります。"
+msgstr "|image0| *サブプロセスの呼び出し* 要素は、プロセスエディターパレットの *アクティビティ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/call-sub.rst:13
 msgid "The Call Sub element allows to embed a process (independent subprocess) into an other. This is like jumping from the main process into the called sub process, execute the sub process and afterwards jump back. Process data attributes from the main process are mapped to parameters for the called sub process and the called sub process will return result parameters back to the main process."
@@ -11301,7 +11301,7 @@ msgstr "プロセス実行中にロールまたはユーザを動的に設定す
 #: ../../source/designer-guide/process-modeling/process-elements/_responsible.rst:4
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:205
 msgid "Use *Role* if you know the responsible role when editing the element."
-msgstr "要素を編集する際の担当ロールがわかっている場合は、*ロール*を使用してください。"
+msgstr "要素を編集する際の担当ロールがわかっている場合は、*ロール* を使用してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_responsible.rst:6
 msgid "The role SYSTEM means that no human intervention is required. The system executes the new task automatically."
@@ -11336,7 +11336,7 @@ msgstr "**タスクリストをスキップ**"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:416
 msgid "Normally a user interaction ends at a Task Switch element. It will be redirected to the task list or an end page is shown. If *Skip tasklist* is activated for a task the user interaction may not end at the Task Switch element. It is automatically redirected to this new task marked with *Skip tasklist*. But only if it is allowed to work on the task and the Task Switch is not waiting for any other tasks to finish."
-msgstr "通常、ユーザーインタラクションはタスクスイッチ要素で終了します。タスクリストにリダイレクトされるか、終了ページが表示されます。タスクの［*タスクリストをスキップ*］が有効な場合、ユーザーインタラクションはタスクスイッチ要素で終了しないことがあります。*スキップタスクリスト*でマークされた新しいタスクに自動的にリダイレクトされます。ただし、そのタスクでの作業が許可されていて、タスクスイッチが他のタスクの終了を待っていない場合に限ります。"
+msgstr "通常、ユーザーインタラクションはタスクスイッチ要素で終了します。タスクリストにリダイレクトされるか、終了ページが表示されます。タスクの［*タスクリストをスキップ*］が有効な場合、ユーザーインタラクションはタスクスイッチ要素で終了しないことがあります。*スキップタスクリスト* でマークされた新しいタスクに自動的にリダイレクトされます。ただし、そのタスクでの作業が許可されていて、タスクスイッチが他のタスクの終了を待っていない場合に限ります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:424
 msgid "Onle one task of a Task Switch element can activate *Skip tasklist*."
@@ -11447,7 +11447,7 @@ msgstr "データベースアクティビティ"
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:6
 msgid "|image0| The *Database Activity* element is located in the *Activity* drawer of the process editor palette."
-msgstr "|image0| *データベースアクティビティ*要素は、プロセスエディターパレットの*アクティビティ*ドロワーにあります。"
+msgstr "|image0| *データベースアクティビティ* 要素は、プロセスエディターパレットの *アクティビティ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:12
 msgid "With this element you can execute SQL commands on the database server. You can access all the databases that are defined in the :ref:`database-configuration`."
@@ -11473,7 +11473,7 @@ msgstr "実行したいクエリの種類を選択します。Axon Ivy は、``S
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:37
 msgid "If you require some non-standard SQL or if you want to issue a complex SQL statement that is not covered by the *Query Definition* mask then you may also select ``Any`` and write pure SQL instead. Expanding of process attributes will also work in the *Any Query* mode."
-msgstr "非標準の SQL が必要な場合や、*クエリ定義*マスクでカバーできない複雑な SQL 文を発行したい場合は、代わりに ``Any`` を選択して純粋な SQL を書くこともできます。プロセス属性の展開は *Any クエリ*モードでも動作します。"
+msgstr "非標準の SQL が必要な場合や、*クエリ定義* マスクでカバーできない複雑な SQL 文を発行したい場合は、代わりに ``Any`` を選択して純粋な SQL を書くこともできます。プロセス属性の展開は *Any クエリ*モードでも動作します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:45
 msgid "The use of the **Any Query** option can lead to `SQL injection <https://en.wikipedia.org/wiki/SQL_injection>`__ vulnerabilities if not used carefully."
@@ -11494,7 +11494,7 @@ msgstr "コマンドを実行するデータベースを選択します。デー
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:71
 msgid "Please note that the **DB2** database is currently not fully supported by the DB Step. The only query kind that is suitable for DB2 connections is ``Any Query``. For all other query kinds the *Query Definition* mask is currently not working correctly (e.g., query fields can not be edited / defined)."
-msgstr "現在、**DB2** データベースは DB ステップで完全にはサポートされていないことに注意してください。DB2 接続に適したクエリの種類は ``Any クエリ``だけです。現在、それ以外の種類のクエリでは、*クエリ定義*マスクは正しく動作しません（クエリフィールドを編集／定義できないなど）。"
+msgstr "現在、**DB2** データベースは DB ステップで完全にはサポートされていないことに注意してください。DB2 接続に適したクエリの種類は ``Any クエリ``だけです。現在、それ以外の種類のクエリでは、*クエリ定義* マスクは正しく動作しません（クエリフィールドを編集／定義できないなど）。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:77
 msgid "There is also an ``IvySystemDatabase`` datasource which points to the current System Database. Normally you would prefer your own database to split valuable customer data from the system data."
@@ -11612,7 +11612,7 @@ msgstr "メールアクティビティ"
 
 #: ../../source/designer-guide/process-modeling/process-elements/email-activity.rst:6
 msgid "|image0| The *E-Mail Activity* element is located in the *Activity* drawer of the process editor palette."
-msgstr "|image0| *メールアクティビティ*要素は、プロセスエディターパレットの*アクティビティ*ドロワーにあります。"
+msgstr "|image0| *メールアクティビティ* 要素は、プロセスエディターパレットの *アクティビティ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/email-activity.rst:12
 msgid "This element allows to send e-mails out of processes (e.g., for information or alert purposes). The configuration must be set in the :ref:`ivy.yaml <config-email>`."
@@ -11738,7 +11738,7 @@ msgstr "埋め込みサブプロセス"
 
 #: ../../source/designer-guide/process-modeling/process-elements/embedded-subprocess.rst:6
 msgid "|image0| The *Subprocess* element is located in the *Activity* drawer of the process editor palette."
-msgstr "|image0| *サブプロセス*要素は、プロセスエディターパレットの*アクティビティ*ドロワーにあります。"
+msgstr "|image0| *サブプロセス* 要素は、プロセスエディターパレットの *アクティビティ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/embedded-subprocess.rst:12
 msgid "An embedded subprocess folds a part of a process into a box. This makes hierarchical structuring of the process model possible. Subprocesses are obtained top down or bottom up. Either by selecting and wrap parts of a process or by inserting an (initially empty) embedded sub element from the palette."
@@ -11746,7 +11746,7 @@ msgstr "埋め込みサブプロセスは、プロセスの一部をボックス
 
 #: ../../source/designer-guide/process-modeling/process-elements/error-boundary-event.rst:6
 msgid "|image0| The *Error Boundary Event* can be attached to any activity by using its context menu."
-msgstr "|image0| コンテキストメニューを使用して、*エラー境界イベント*を任意のアクティビティに接続できます。"
+msgstr "|image0| コンテキストメニューを使用して、*エラー境界イベント* を任意のアクティビティに接続できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/error-boundary-event.rst:12
 msgid "The execution of an activity can be aborted with an error. The execution is then redirected to this Error Boundary Event element and continued from there. Within the follow up flow the process can handle the error by executing compensation steps or user activities."
@@ -11766,7 +11766,7 @@ msgstr "エラー終了"
 
 #: ../../source/designer-guide/process-modeling/process-elements/error-end.rst:6
 msgid "|image0| The *Error End Event* element is located in the *Event & Gateway* drawer of the process editor palette."
-msgstr "|image0| *エラー終了イベント*要素は、プロセスエディターパレットの*イベントとゲートウェイ*ドロワーにあります。"
+msgstr "|image0| *エラー終了イベント* 要素は、プロセスエディターパレットの *イベントとゲートウェイ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/error-end.rst:12
 msgid "The Error End Event can be used to leave the happy path of a process by throwing an error (e.g., if an approval is denied). It can also be used to re-throw previously caught errors."
@@ -11787,7 +11787,7 @@ msgstr ":ref:`コードタブ<process-element-tab-code>` は、この要素の�
 
 #: ../../source/designer-guide/process-modeling/process-elements/error-end.rst:36
 msgid "Additionally to the regular variables of the *Code Tab* you have the following variable available:"
-msgstr "*コードタブ*の通常の変数に加えて、以下の変数を使用できます。"
+msgstr "*コードタブ* の通常の変数に加えて、以下の変数を使用できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/error-end.rst:39
 #: ../../source/designer-guide/process-modeling/process-elements/error-start.rst:40
@@ -11804,7 +11804,7 @@ msgstr "エラー開始"
 
 #: ../../source/designer-guide/process-modeling/process-elements/error-start.rst:6
 msgid "|image0| The *Error Start Event* element is located in the *Event & Gateway* drawer of the process editor palette."
-msgstr "|image0| *エラー開始イベント*要素は、プロセスエディターパレットの*イベントとゲートウェイ*ドロワーにあります。"
+msgstr "|image0| *エラー開始イベント* 要素は、プロセスエディターパレットの *イベントとゲートウェイ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/error-start.rst:11
 msgid "The execution of a process element can be aborted with an error. The execution can continue at an Error Start Event which handles the occurred error. Within the follow up flow the process can handle the error by executing compensation steps or user activities."
@@ -11819,7 +11819,7 @@ msgstr "このタブでは、エラー開始イベントがキャッチするエ
 #: ../../source/designer-guide/process-modeling/process-elements/signal-start.rst:40
 #: ../../source/designer-guide/process-modeling/process-elements/user-task.rst:41
 msgid "Additionally to the regular variables of the *Output Tab* you have the following variable available:"
-msgstr "*出力タブ*の通常の変数に加えて、以下の変数を使用できます。"
+msgstr "*出力タブ* の通常の変数に加えて、以下の変数を使用できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/error-start.rst:41
 msgid "References the occurred ``BpmError``. Gives access to the occurred Error Code, Cause and CallStack."
@@ -11899,7 +11899,7 @@ msgstr "結合"
 
 #: ../../source/designer-guide/process-modeling/process-elements/join.rst:4
 msgid "|image0| The *Join Gateway* element is located in the *Event & Gateway* drawer of the process editor palette."
-msgstr "|image0| *結合ゲートウェイ*要素は、プロセスエディターパレットの*イベントとゲートウェイ*ドロワーにあります。"
+msgstr "|image0| *結合ゲートウェイ* 要素は、プロセスエディターパレットの *イベントとゲートウェイ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/join.rst:9
 msgid "This element synchronizes and joins a parallel execution of process paths together. The output of each incoming path is copied into the element and can be used to define its output."
@@ -11923,7 +11923,7 @@ msgstr "注記"
 
 #: ../../source/designer-guide/process-modeling/process-elements/note.rst:6
 msgid "|image0| The *Note* element is located in the *Activity* drawer of the process editor palette."
-msgstr "|image0| *注記*要素は、プロセスエディターパレットの*アクティビティ*ドロワーにあります。"
+msgstr "|image0| *注記* 要素は、プロセスエディターパレットの *アクティビティ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/note.rst:11
 msgid "The note element"
@@ -11937,7 +11937,7 @@ msgstr "プロセス終了"
 
 #: ../../source/designer-guide/process-modeling/process-elements/process-end.rst:6
 msgid "|image0| The *Process End* element is located in the *Event & Gateway* drawer of the process editor palette."
-msgstr "|image0| *プロセス終了*要素は、プロセスエディターパレットの*イベントとゲートウェイ*ドロワーにあります。"
+msgstr "|image0| *プロセス終了* 要素は、プロセスエディターパレットの *イベントとゲートウェイ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/process-end.rst:12
 msgid "This elements terminates the current process."
@@ -11949,7 +11949,7 @@ msgstr "プロセス終了ページ"
 
 #: ../../source/designer-guide/process-modeling/process-elements/process-end-page.rst:6
 msgid "|image0| The *Process End Page* element is located in the *Event & Gateway* drawer of the process editor palette."
-msgstr "|image0| *プロセス終了ページ*要素は、プロセスエディターパレットの*イベントとゲートウェイ*ドロワーにあります。"
+msgstr "|image0| *プロセス終了ページ* 要素は、プロセスエディターパレットの *イベントとゲートウェイ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/process-end-page.rst:12
 msgid "This elements terminates the current process and displays a dialog page."
@@ -11987,7 +11987,7 @@ msgstr "PI（プログラムインターフェース）アクティビティ"
 
 #: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:6
 msgid "|element| The *Program Interface Activity* element is located in the *Activity* drawer of the process editor palette."
-msgstr "|element| *プログラムインターフェースアクティビティ*要素は、プロセスエディターパレットの*アクティビティ*ドロワーにあります。"
+msgstr "|element| *プログラムインターフェースアクティビティ* 要素は、プロセスエディターパレットの *アクティビティ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/program-interface-activity.rst:124
 #: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:121
@@ -12159,7 +12159,7 @@ msgstr "プログラム開始"
 
 #: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:6
 msgid "|element| The *Program Start* element is located in the *Event & Gateway* drawer of the process editor palette."
-msgstr "|element| *エラー開始イベント*要素は、プロセスエディターパレットの*イベントとゲートウェイ*ドロワーにあります。"
+msgstr "|element| *エラー開始イベント* 要素は、プロセスエディターパレットの *イベントとゲートウェイ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/program-start.rst:12
 msgid "The Program Start element allows you to start a process by a custom trigger. Therefore, it is perfect to integrate legacy-systems or any java-implementation you can think of being useful in starting workflow-cases."
@@ -12216,7 +12216,7 @@ msgstr "REST クライアントアクティビティ"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:6
 msgid "|image0| The *REST Client Call Activity* element is located in the *Activity* drawer of the process editor palette."
-msgstr "|image0| *REST クライアントの呼び出し*要素は、プロセスエディターパレットの*アクティビティ*ドロワーにあります。"
+msgstr "|image0| *REST クライアントの呼び出し*要素は、プロセスエディターパレットの *アクティビティ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:12
 msgid "Use the REST Client Activity to invoke REST services."
@@ -12426,7 +12426,7 @@ msgstr "インスクリプションマスクは、ほとんどの REST サービ
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:224
 msgid "In the scripting field, the variable ``client`` holds the REST client chosen in the *Target* section. The whole setup from the Target section will be applied to this client variable."
-msgstr "スクリプトフィールドの``クライアント``の変数は、*ターゲット*セクションで選択された REST クライアントを保持します。ターゲットセクションのセットアップ全体がこのクライアント変数に適用されます。"
+msgstr "スクリプトフィールドの``クライアント``の変数は、*ターゲット* セクションで選択された REST クライアントを保持します。ターゲットセクションのセットアップ全体がこのクライアント変数に適用されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:228
 msgid "|image15|"
@@ -12488,7 +12488,7 @@ msgstr "ルールアクティビティ"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rule-activity.rst:6
 msgid "|image0| The *Rule Activity* element is located in the *Activity* drawer of the process editor palette."
-msgstr "|image0| *ルールアクティビティ*要素は、プロセスエディターパレットの*アクティビティ*ドロワーにあります。"
+msgstr "|image0| *ルールアクティビティ* 要素は、プロセスエディターパレットの *アクティビティ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rule-activity.rst:12
 msgid "This element allows to apply a rule set defined in DRL or XLS documents. By specifying a rule namespace and a data object class, this activity will apply all rules defined in the namespace to the data object."
@@ -12520,7 +12520,7 @@ msgstr "スクリプトステップ"
 
 #: ../../source/designer-guide/process-modeling/process-elements/script-step.rst:6
 msgid "|image0| The *Script Step* element is located in the *Activity* drawer of the process editor palette."
-msgstr "|image0| *スクリプトステップ*要素は、プロセスエディターパレットの*アクティビティ*ドロワーにあります。"
+msgstr "|image0| *スクリプトステップ* 要素は、プロセスエディターパレットの *アクティビティ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/script-step.rst:12
 msgid "With this element you can perform any transformation of the process data or start some other processing in order to make preparations for later steps."
@@ -12532,7 +12532,7 @@ msgstr "特定の機能やテクノロジー（Web サービスの呼び出し�
 
 #: ../../source/designer-guide/process-modeling/process-elements/script-step.rst:34
 msgid "The entered code will be executed *after* the execution of the *output tab*. Although this may seem a bit counter-intuitive at first, you should simply regard the code tab as an alternative way of defining output data. The general recommendation is to use the output table to define simple assignments and the code tab if more extensive scripting is needed to calculate data."
-msgstr "*出力タブ*の実行後、入力されたコードが実行されます。最初は難しそうに見えるかもしれませんが、コードタブは出力データを定義する方法の 1 つであるといえます。一般的には、簡単な割り当ての定義には出力表を使用し、データの計算により包括的なスクリプトが必要な場合にコードタブを使用することを推奨します。"
+msgstr "*出力タブ* の実行後、入力されたコードが実行されます。最初は難しそうに見えるかもしれませんが、コードタブは出力データを定義する方法の 1 つであるといえます。一般的には、簡単な割り当ての定義には出力表を使用し、データの計算により包括的なスクリプトが必要な場合にコードタブを使用することを推奨します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/script-step.rst:41
 msgid "Disable Permission Checks (Execute this Script Step as SYSTEM)"
@@ -12548,7 +12548,7 @@ msgstr "この機能は慎重に使用してください。プロセス開発者
 
 #: ../../source/designer-guide/process-modeling/process-elements/signal-boundary-event.rst:6
 msgid "|image0| The *Signal Boundary Event* can be attached to a User Task by using its context menu."
-msgstr "|image0| コンテキストメニューを使用して、*信号境界イベント*をユーザータスクに接続できます。"
+msgstr "|image0| コンテキストメニューを使用して、*信号境界イベント* をユーザータスクに接続できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/signal-boundary-event.rst:12
 msgid "A Signal Boundary Event destroys an open task of a user if a signal code is received that matches the inscribed pattern."
@@ -12583,7 +12583,7 @@ msgstr "シグナル開始"
 
 #: ../../source/designer-guide/process-modeling/process-elements/signal-start.rst:6
 msgid "|image0| The *Signal Start Event* element is located in the *Event & Gateway* drawer of the process editor palette."
-msgstr "|image0| *シグナル開始イベント*要素は、プロセスエディターパレットの*イベントとゲートウェイ*ドロワーにあります。"
+msgstr "|image0| *シグナル開始イベント* 要素は、プロセスエディターパレットの *イベントとゲートウェイ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/signal-start.rst:12
 msgid "The Signal Start Event listens to a signal. It starts a new process when a signal with a matching signal code has been received."
@@ -12613,7 +12613,7 @@ msgstr "分割"
 
 #: ../../source/designer-guide/process-modeling/process-elements/split.rst:6
 msgid "|image0| The *Split Gateway* element is located in the *Event & Gateway* drawer of the process editor palette."
-msgstr "|image0| *分割ゲートウェイ*要素は、プロセスエディターパレットの*イベントとゲートウェイ*ドロワーにあります。"
+msgstr "|image0| *分割ゲートウェイ* 要素は、プロセスエディターパレットの *イベントとゲートウェイ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/split.rst:12
 msgid "This allows you to model parallel process paths. The element may split one process path into a number of paths that are executed concurrently. The input process data is copied to all the parallel executions but can be manipulated in each path individually."
@@ -12633,7 +12633,7 @@ msgstr "出力接続ごとに、X 番目の出力のデータを保持する別�
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:6
 msgid "|image0| The **Start** (Request Start) element is located in the *Event & Gateway* drawer of the Process editor palette."
-msgstr "|image0| *開始*（リクエスト開始）要素は、プロセスエディターパレットの*イベントとゲートウェイ*ドロワーにあります。"
+msgstr "|image0| *開始*（リクエスト開始）要素は、プロセスエディターパレットの *イベントとゲートウェイ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:11
 msgid "The Request Start element is the start point of a workflow. A workflow contains one case and at least one task. Each start of a Request Start creates a new case and task."
@@ -12814,7 +12814,7 @@ msgstr "このタブには、 :ref:`process-element-trigger-step` でワーク�
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:185
 msgid "If *Yes, this start can be started with a trigger element* is checked, the trigger mechanism for this start element is enabled. Otherwise it is not possible to choose the *Request Start* element in a :ref:`process-element-trigger-step`."
-msgstr "［*この開始をトリガー要素で開始できるようにする*］チェックボックスをオンにした場合、この開始要素のトリガーメカニズムが有効になります。オフの場合は :ref:`process-element-trigger-step` で*リクエスト開始*要素を選択できません。"
+msgstr "［*この開始をトリガー要素で開始できるようにする*］チェックボックスをオンにした場合、この開始要素のトリガーメカニズムが有効になります。オフの場合は :ref:`process-element-trigger-step` で *リクエスト開始* 要素を選択できません。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:192
 msgid "When an already related :ref:`process-element-trigger-step` links to a disabled start, this will not prohibit the execution at runtime. An error is logged to the log file and the process starts with its defined configuration."
@@ -12934,11 +12934,11 @@ msgstr "サブプロセス開始"
 
 #: ../../source/designer-guide/process-modeling/process-elements/sub-process-start.rst:6
 msgid "|image0| The *Sub Start* element is located in the *Subprocess* drawer of the process editor palette and only available in callable sub processes."
-msgstr "|image0| *サブプロセス開始*要素は、プロセスエディターパレットの*サブプロセス*ドロワーにあり、呼び出し可能なサブプロセスでのみ使用できます。"
+msgstr "|image0| *サブプロセス開始* 要素は、プロセスエディターパレットの *サブプロセス* ドロワーにあり、呼び出し可能なサブプロセスでのみ使用できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/sub-process-start.rst:13
 msgid "Each Sub Start element can be called by a *Call Sub* element. It has input and output parameters."
-msgstr "各サブプロセス開始要素は、*サブプロセスの呼び出し*要素でのみ呼び出すことができ、入出力パラメーターが含まれます。"
+msgstr "各サブプロセス開始要素は、*サブプロセスの呼び出し* 要素でのみ呼び出すことができ、入出力パラメーターが含まれます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/sub-process-start.rst:25
 msgid "This tab is used to define the name and input parameters of the sub process. See :ref:`process-element-tab-start` for a more detailed description."
@@ -12963,7 +12963,7 @@ msgstr "タスクスイッチイベント"
 
 #: ../../source/designer-guide/process-modeling/process-elements/task-switch-event.rst:6
 msgid "|image0| The *Task Switch Event* element is located in the *Event & Gateway* drawer of the process editor palette."
-msgstr "|image0| *タスクスイッチイベント*要素は、プロセスエディターパレットの*イベントとゲートウェイ*ドロワーにあります。"
+msgstr "|image0| *タスクスイッチイベント* 要素は、プロセスエディターパレットの *イベントとゲートウェイ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/task-switch-event.rst:12
 msgid "The Task Switch Event element has the same function as the :ref:`process-element-task-switch-gateway` element. The difference is, that a Task Switch Event element can only have one input and one output, instead of multiple ones like the parallel Task Switch Gateway. The usage of this simplified element is to have a more BPMN conform element."
@@ -12979,7 +12979,7 @@ msgstr "タスクスイッチゲートウェイ"
 
 #: ../../source/designer-guide/process-modeling/process-elements/task-switch-gateway.rst:6
 msgid "|image0| The *Task Switch Gateway* element is located in the *Event & Gateway* drawer of the process editor palette."
-msgstr "|image0| *タスクスイッチゲートウェイ*要素は、プロセスエディターパレットの*イベントとゲートウェイ*ドロワーにあります。"
+msgstr "|image0| *タスクスイッチゲートウェイ* 要素は、プロセスエディターパレットの *イベントとゲートウェイ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/task-switch-gateway.rst:11
 msgid "With the task switch element a process is segmented into tasks. It interrupts the execution of a process and allows another user to proceed. The actual process state is stored in the system database. A role or user is assigned that is able to pick up and start the task."
@@ -13056,7 +13056,7 @@ msgstr "トリガーステップ"
 
 #: ../../source/designer-guide/process-modeling/process-elements/trigger-step.rst:6
 msgid "|image0| The *Trigger Step* element is located in the *Activity* drawer of the process editor palette."
-msgstr "|image0| *トリガーステップ*要素は、プロセスエディターパレットの*アクティビティ*ドロワーにあります。"
+msgstr "|image0| *トリガーステップ* 要素は、プロセスエディターパレットの *アクティビティ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/trigger-step.rst:12
 msgid "With the Trigger element its possible to start a new workflow. The trigger element triggers a :ref:`process-element-start-request` element, which has an enabled triggered start mechanism. On call, the trigger element creates a case and a task with the defined configuration on the :ref:`process-element-start-request`. element. The new created task is returned to the Trigger element."
@@ -13076,11 +13076,11 @@ msgstr "``result`` 変数には、トリガーされ :ref:`process-element-start
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog.rst:6
 msgid "|element| The *User Dialog* element is located in the *Activity* drawer of the process editor palette."
-msgstr "|image0| *ユーザーダイアログ*要素は、プロセスエディターパレットの*アクティビティ*ドロワーにあります。"
+msgstr "|image0| *ユーザーダイアログ* 要素は、プロセスエディターパレットの *アクティビティ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog.rst:12
 msgid "The User Dialog element is used to call a User Dialog from a process. You can both start User Dialogs from a *business process* as well as from another *User Dialog*. Input and return parameters for/from the started User Dialog can be mapped using the *call* and *output* tabs of this element."
-msgstr "ユーザーダイアログ要素を使用して、プロセスからユーザーダイアログを呼び出します。ユーザーダイアログは、*ビジネスプロセス*からも、別の*ユーザーダイアログ*からも開始できます。開始されたユーザーダイアログの入力パラメーターと戻りパラメーターは、この要素の*呼び出し*タブと*出力*タブを使用してマッピングできます。"
+msgstr "ユーザーダイアログ要素を使用して、プロセスからユーザーダイアログを呼び出します。ユーザーダイアログは、*ビジネスプロセス* からも、別の *ユーザーダイアログ* からも開始できます。開始されたユーザーダイアログの入力パラメーターと戻りパラメーターは、この要素の *呼び出し* タブと *出力* タブを使用してマッピングできます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_tab-call.rst:2
 msgid "Dialog Tab"
@@ -13088,7 +13088,7 @@ msgstr "ダイアログタブ"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_tab-call.rst:4
 msgid "The *Dialog tab* defines the User Dialog to call and how it should be started. The input parameters for the selected start method can be mapped here."
-msgstr "*ダイアログタブ*では、呼び出すユーザーダイアログとその開始方法を定義します。選択した開始メソッドの入力パラメーターをここでマッピングできます。"
+msgstr "*ダイアログタブ* では、呼び出すユーザーダイアログとその開始方法を定義します。選択した開始メソッドの入力パラメーターをここでマッピングできます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_tab-call.rst:8
 #: ../../source/designer-guide/process-modeling/process-elements/_tab-call.rst:11
@@ -13105,7 +13105,7 @@ msgstr "ID で開始されるユーザーダイアログコンポーネントを
 
 #: ../../source/designer-guide/process-modeling/process-elements/_tab-call.rst:22
 msgid "Defines the *start method* that should be called on the selected User Dialog."
-msgstr "選択したユーザーダイアログで呼び出す*開始メソッド*を定義します。"
+msgstr "選択したユーザーダイアログで呼び出す *開始メソッド* を定義します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_tab-call.rst:25
 msgid "Start Parameters Mapping"
@@ -13117,7 +13117,7 @@ msgstr "呼び出されるユーザーダイアログの入力パラメーター
 
 #: ../../source/designer-guide/process-modeling/process-elements/_tab-call.rst:28
 msgid "If the selected *start method* requires any parameters, those may be mapped here to an ``param`` object, which offers a field for each declared start method parameter. You can define each parameter individually from the calling process's data."
-msgstr "選択した*開始メソッド*にパラメーターが必要な場合、ここで ``param`` オブジェクトにマッピングできます。ここには、宣言された開始メソッドのパラメーターごとにフィールドが表示されます。呼び出し元のプロセスのデータから個々にパラメーターを定義できます。"
+msgstr "選択した *開始メソッド* にパラメーターが必要な場合、ここで ``param`` オブジェクトにマッピングできます。ここには、宣言された開始メソッドのパラメーターごとにフィールドが表示されます。呼び出し元のプロセスのデータから個々にパラメーターを定義できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_tab-call.rst:35
 msgid "Alternatively you can define the call parameters in the scripting field below the attribute table, e.g., if you need to perform some calculation in order to define a call parameter. You can also mix the two forms, in which case the table's definitions will be executed before the scripting block."
@@ -13125,11 +13125,11 @@ msgstr "例えば、呼び出しパラメーターを定義するために計算
 
 #: ../../source/designer-guide/process-modeling/process-elements/_tab-call.rst:43
 msgid "The result values of the started User Dialog (if any) are mapped back onto the calling process's data on the *Output* tab. They are available as fields on a ``result`` variable."
-msgstr "開始されたユーザーダイアログの結果の値がある場合、*出力*タブの呼び出し元のプロセスのデータにマッピングし直されます。結果の値は ``result`` 変数のフィールドとして使用できます。"
+msgstr "開始されたユーザーダイアログの結果の値がある場合、*出力* タブの呼び出し元のプロセスのデータにマッピングし直されます。結果の値は ``result`` 変数のフィールドとして使用できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog.rst:29
 msgid "Additionally to the regular variables of the *Output Tab* you have the following variables available:"
-msgstr "*出力タブ*の通常の変数に加えて、以下の変数を使用できます。"
+msgstr "*出力タブ* の通常の変数に加えて、以下の変数を使用できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog.rst:32
 #: ../../source/designer-guide/process-modeling/process-elements/user-task.rst:44
@@ -13139,7 +13139,7 @@ msgstr "result"
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog.rst:33
 #: ../../source/designer-guide/process-modeling/process-elements/user-task.rst:45
 msgid "If the selected *start method* defines return parameters they will be available as fields of the ``result`` variable."
-msgstr "選択された*開始メソッド*で戻りパラメーターが定義されている場合、それらは ``result`` 変数のフィールドとして使用できます。"
+msgstr "選択された *開始メソッド* で戻りパラメーターが定義されている場合、それらは ``result`` 変数のフィールドとして使用できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog.rst:36
 #: ../../source/designer-guide/process-modeling/process-elements/user-task.rst:48
@@ -13152,7 +13152,7 @@ msgstr "ユーザーダイアログイベントの開始"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-event-start.rst:4
 msgid "|image0| The *User Dialog Event Start* element is located in the *User Dialog* drawer of the process editor palette."
-msgstr "|image0| *ユーザーダイアログイベントの開始*要素は、プロセスエディターパレットの*ユーザーダイアログ*ドロワーにあります。"
+msgstr "|image0| *ユーザーダイアログイベントの開始* 要素は、プロセスエディターパレットの *ユーザーダイアログ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-event-start.rst:10
 msgid "The User Dialog Event Start element represents a process start in the User Dialog logic."
@@ -13164,15 +13164,15 @@ msgstr "ユーザーダイアログ終了"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-exit-end.rst:6
 msgid "|image0| The *User Dialog Exit End* element is located in the *User Dialog* drawer of the process editor palette."
-msgstr "|image0| *ユーザーダイアログ終了*要素は、プロセスエディターパレットの*ユーザーダイアログ*ドロワーにあります。"
+msgstr "|image0| *ユーザーダイアログ終了* 要素は、プロセスエディターパレットの *ユーザーダイアログ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-exit-end.rst:12
 msgid "This element is used to *terminate* the execution of a User Dialog."
-msgstr "この要素を使用して、ユーザーダイアログの実行を*終了*します。"
+msgstr "この要素を使用して、ユーザーダイアログの実行を *終了* します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-exit-end.rst:14
 msgid "The *result tab* code of the originally invoked start method is executed and the calculated results are passed back to the :ref:`process-element-user-dialog` which called the User Dialog. Afterwards the calling process continues."
-msgstr "最初に呼び出された開始メソッドの*結果タブ*のコードが実行され、ユーザーダイアログを呼び出し :ref:`process-element-user-dialog` に計算された結果が受け渡されます。その後、呼び出し元のプロセスが続行されます。"
+msgstr "最初に呼び出された開始メソッドの *結果タブ* のコードが実行され、ユーザーダイアログを呼び出し :ref:`process-element-user-dialog` に計算された結果が受け渡されます。その後、呼び出し元のプロセスが続行されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-method-start.rst:4
 msgid "User Dialog Method Start"
@@ -13180,15 +13180,15 @@ msgstr "ユーザーダイアログメソッドの開始"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-method-start.rst:6
 msgid "|image0| The *User Dialog Method Start* element is located in the *User Dialog* drawer of the Process editor palette."
-msgstr "|image0| *ユーザーダイアログメソッドの開始*要素は、プロセスエディターパレットの*ユーザーダイアログ*ドロワーにあります。"
+msgstr "|image0| *ユーザーダイアログメソッドの開始* 要素は、プロセスエディターパレットの *ユーザーダイアログ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-method-start.rst:12
 msgid "The element allows to set internal data of the User Dialog from the ``input`` parameters of the method call and to define *return* values either from process data or by calculation."
-msgstr "この要素を使用して、メソッド呼び出しの``入力``パラメーターからユーザーダイアログの内部データを設定し、プロセスデータまたは計算による*戻り*値を定義できます。"
+msgstr "この要素を使用して、メソッド呼び出しの``入力``パラメーターからユーザーダイアログの内部データを設定し、プロセスデータまたは計算による *戻り* 値を定義できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-method-start.rst:24
 msgid "This tab is used to define the name and input parameters of the *User Dialog Method* that is implemented by this element's process. See :ref:`process-element-tab-start` for a more detailed description."
-msgstr "このタブを使用して、この要素のプロセスで実装される*ユーザーダイアログメソッド*の名前と入力パラメーターを定義します。詳細については、 :ref:`process-element-tab-start` 」を参照してください。"
+msgstr "このタブを使用して、この要素のプロセスで実装される *ユーザーダイアログメソッド* の名前と入力パラメーターを定義します。詳細については、 :ref:`process-element-tab-start` 」を参照してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-method-start.rst:31
 msgid "This tab is used to define the values that will be returned to the caller when the method process finishes. See :ref:`process-element-tab-result` for a more detailed description."
@@ -13208,7 +13208,7 @@ msgstr "ユーザーダイアログプロセス終了"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-process-end.rst:6
 msgid "|image0| The *User Dialog Process End* element is located in the *User Dialog* drawer of the process editor palette."
-msgstr "|image0| *ユーザーダイアログプロセス終了*要素は、プロセスエディターパレットの*ユーザーダイアログ*ドロワーにあります。"
+msgstr "|image0| *ユーザーダイアログプロセス終了* 要素は、プロセスエディターパレットの *ユーザーダイアログ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-process-end.rst:12
 msgid "This element is used to terminate any User Dialog processes inside the User Dialog's logic."
@@ -13220,19 +13220,19 @@ msgstr "ユーザーダイアログ開始"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-start.rst:4
 msgid "|image0| The *User Dialog Start* element is located in the *User Dialog* drawer of the process editor palette."
-msgstr "|image0| *ユーザーダイアログ開始*要素は、プロセスエディターパレットの*ユーザーダイアログ*ドロワーにあります。"
+msgstr "|image0| *ユーザーダイアログ開始* 要素は、プロセスエディターパレットの *ユーザーダイアログ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-start.rst:10
 msgid "The User Dialog Start element is used to map a *Start Method* (as declared in the `Interface Editor <#ivy.editors.userdialoginterface>`__) to the process that is started by this element and that implements the Start Method."
-msgstr "ユーザーダイアログ開始要素を使用して、この要素で開始され、開始メソッドを実装するプロセスに（`インターフェースエディター<#ivy.editors.userdialoginterface>`__で宣言された）*開始メソッド*をマッピングします。"
+msgstr "ユーザーダイアログ開始要素を使用して、この要素で開始され、開始メソッドを実装するプロセスに（`インターフェースエディター<#ivy.editors.userdialoginterface>`__で宣言された）*開始メソッド* をマッピングします。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-start.rst:15
 msgid "The element allows to initialize internal data of the User Dialog from the *input* parameters of the call and to define *return* values from process data (to be returned when the User Dialog finishes)."
-msgstr "この要素を使用して、呼び出しの*入力*パラメーターからユーザーダイアログの内部データを初期化し、プロセスデータから（ユーザーダイアログの終了時に返される）*戻り*値を定義できます。"
+msgstr "この要素を使用して、呼び出しの *入力* パラメーターからユーザーダイアログの内部データを初期化し、プロセスデータから（ユーザーダイアログの終了時に返される）*戻り* 値を定義できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-start.rst:27
 msgid "This tab is used to define the name and input parameters of the *Start Method* that is implemented by this element's process. See :ref:`process-element-tab-start` for a more detailed description."
-msgstr "このタブを使用して、この要素のプロセスで実装される*開始メソッド*の名前と入力パラメーターを定義します。詳細については、 :ref:`process-element-tab-start` 」を参照してください。"
+msgstr "このタブを使用して、この要素のプロセスで実装される *開始メソッド* の名前と入力パラメーターを定義します。詳細については、 :ref:`process-element-tab-start` 」を参照してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-start.rst:34
 msgid "This tab is used to define the return values of the User Dialog. See :ref:`process-element-tab-result` for a more detailed description."
@@ -13244,7 +13244,7 @@ msgstr "結果"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-start.rst:38
 msgid "Return values can be defined according to the declared return types that the mapped *Start Method* specifies. The table on this tab shows a ``result`` variable which has fields for each declared return type (none, if the return type is ``void``)."
-msgstr "マッピングされた*開始メソッド*が指定する、宣言された戻り値の型に従って、戻り値を定義できます。このタブの表には ``result`` 変数と、宣言された戻り値の型ごとのフィールドが表示されます（戻り値の型が ``void`` の場合、フィールドは表示されません）。"
+msgstr "マッピングされた *開始メソッド* が指定する、宣言された戻り値の型に従って、戻り値を定義できます。このタブの表には ``result`` 変数と、宣言された戻り値の型ごとのフィールドが表示されます（戻り値の型が ``void`` の場合、フィールドは表示されません）。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-start.rst:43
 msgid "You can define the returned result values either in the table or by using the IvyScript field below it. The assignments of the table will be executed before the script."
@@ -13252,15 +13252,15 @@ msgstr "返される結果の値は、表で、または表の下にある IvySc
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-start.rst:49
 msgid "The defined result object will become available to the caller on the *Code component* of the invoking :ref:`process-element-user-dialog` once the User Dialog has finished."
-msgstr "ユーザーダイアログの終了後、呼び出し元 :ref:`process-element-user-dialog` の*コードコンポーネント*の呼び出し元が、定義された結果オブジェクトを使用できるようになります。"
+msgstr "ユーザーダイアログの終了後、呼び出し元 :ref:`process-element-user-dialog` の *コードコンポーネント* の呼び出し元が、定義された結果オブジェクトを使用できるようになります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-task.rst:6
 msgid "|element| The *User Task* element is located in the *Activity* drawer of the process editor palette."
-msgstr "|image0| *ユーザータスク*要素は、プロセスエディターパレットの*アクティビティ*ドロワーにあります。"
+msgstr "|image0| *ユーザータスク* 要素は、プロセスエディターパレットの *アクティビティ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-task.rst:12
 msgid "The *User Task* element calls a User Dialog in a new Task. Thus, it combines the behavior of a :ref:`process-element-task-switch-event` and a :ref:`process-element-user-dialog`. You can either call a normal HTML Dialog or an Offline Dialog - they both are based on JSF technology and can run in a Web Browser as well as on a mobile client."
-msgstr "*ユーザータスク*要素は、新しいタスクでユーザーダイアログを呼び出します。ユーザータスクは :ref:`process-element-task-switch-event` と :ref:`process-element-user-dialog` の動作を組み合わせたものです。通常の HTML ダイアログやオフラインダイアログを呼び出すことができます。どちらも JSF テクノロジーをベースにしており、ウェブブラウザやモバイルクライアントで実行できます。"
+msgstr "*ユーザータスク* 要素は、新しいタスクでユーザーダイアログを呼び出します。ユーザータスクは :ref:`process-element-task-switch-event` と :ref:`process-element-user-dialog` の動作を組み合わせたものです。通常の HTML ダイアログやオフラインダイアログを呼び出すことができます。どちらも JSF テクノロジーをベースにしており、ウェブブラウザやモバイルクライアントで実行できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-task.rst:27
 msgid "The behavior of the task will be noticeable different either if you select an HTML Dialog or an Offline Dialog. By selecting an Offline Dialog, an :ref:`offline-tasks` - designed for processing without continuous connection to the workflow server - will be generated."
@@ -13276,7 +13276,7 @@ msgstr "プログラムの中間イベント待ち"
 
 #: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:6
 msgid "|element| The *Wait Program Intermediate Event* element is located in the *Event & Gateway* drawer of the process editor palette."
-msgstr "|element| *プログラムの中間イベント待ち*要素は、プロセスエディターパレットの*イベントとゲートウェイ*ドロワーにあります。"
+msgstr "|element| *プログラムの中間イベント待ち* 要素は、プロセスエディターパレットの *イベントとゲートウェイ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/wait-program-intermediate-event.rst:13
 msgid "This element is one of Axon Ivy facilities to integrate custom-made software, legacy systems, proprietary applications or any other external system through an Axon Ivy Java interface. At an Intermediate Event element the process execution is interrupted and waits for an external event to occur. Technically spoken the current task will be ended and a new system task is created that waits for the intermediate event. If the intermediate event is fired the new task and therefore the process after the intermediate event will be executed."
@@ -13352,7 +13352,7 @@ msgstr "Web サービス呼び出しアクティビティ"
 
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-call-activity.rst:6
 msgid "|image0| The *Web Service Call Activity* element is located in the *Activity* drawer of the process editor palette."
-msgstr "|image0| *Web サービス呼び出しアクティビティ*要素は、プロセスエディターパレットの*アクティビティ*ドロワーにあります。"
+msgstr "|image0| *Web サービス呼び出しアクティビティ*要素は、プロセスエディターパレットの *アクティビティ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-call-activity.rst:12
 msgid "Using the Web Service Call Activity you can invoke Web Services."
@@ -13576,7 +13576,7 @@ msgstr "プロセスの作成ウィザード"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/new-process-wizard.rst:6
 msgid "The *New Process Wizard* lets you create a new Business, Callable Sub or Web Service Process."
-msgstr "*プロセスの作成ウィザード*では、新しいビジネス、呼び出し可能なサブプロセス、Web サービスプロセスを作成できます。"
+msgstr "*プロセスの作成ウィザード* では、新しいビジネス、呼び出し可能なサブプロセス、Web サービスプロセスを作成できます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/new-process-wizard.rst:12
 msgid "File > New > Process"
@@ -13599,7 +13599,7 @@ msgstr "新しいプロセスを作成するプロジェクトを選択します
 
 #: ../../source/designer-guide/process-modeling/process-modeling/new-process-wizard.rst:27
 msgid "Select a group where the new process will be inserted (this is roughly equivalent to a namespace). Select the ``<default>`  process group to create a process directly below the project's processes folder (i.e., equal to \"no group\"). You can click on the group folder button to open the *New Process Group Wizard*, if you want to create a new group \"on the fly\". The process groups are listed relative to the project's *process* folder."
-msgstr "新しいプロセスを挿入するグループ（名前空間にほぼ相当）を選択します。``<default>`  プロセスグループを選択し、プロジェクトのプロセスフォルダーの直下にプロセスを作成します（グループなし）。新しいグループを「オンザフライ」で作成したい場合は、グループフォルダーボタンをクリックして、*プロセスグループの作成ウィザード*を開くことができます。プロセスグループは、プロジェクトの*プロセス*フォルダーに関連してリストされます。"
+msgstr "新しいプロセスを挿入するグループ（名前空間にほぼ相当）を選択します。``<default>`  プロセスグループを選択し、プロジェクトのプロセスフォルダーの直下にプロセスを作成します（グループなし）。新しいグループを「オンザフライ」で作成したい場合は、グループフォルダーボタンをクリックして、*プロセスグループの作成ウィザード* を開くことができます。プロセスグループは、プロジェクトの *プロセス* フォルダーに関連してリストされます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/new-process-wizard.rst:36
 msgid "Enter the name of the new process."
@@ -13663,7 +13663,7 @@ msgstr "作成するプロセス内で使用されるデータクラスを定義
 
 #: ../../source/designer-guide/process-modeling/process-modeling/new-process-wizard.rst:102
 msgid "The *Caller Data* references the Data Class from the Caller Process. The fields of this Data Class can be automatically mapped to the Callable Sub Process Data."
-msgstr "*呼び出し元のデータ*は、呼び出し元のプロセスからデータクラスを参照します。このデータクラスのフィールドを呼び出し可能なサブプロセスのデータに自動的にマッピングできます。"
+msgstr "*呼び出し元のデータ* は、呼び出し元のプロセスからデータクラスを参照します。このデータクラスのフィールドを呼び出し可能なサブプロセスのデータに自動的にマッピングできます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/new-process-wizard.rst:106
 msgid "In the mapping table below the Caller Data the In and Out arguments for the new Process can be defined. If any mappings are chosen, the Wizard will automatically configure the Call Sub Start Event, its internal input mapping (param > in) and its output mapping (out > result). The calling process element of the high level process will also be inscribed with input- & output mappings, if the new Process Wizard was opened from the Call Sub inscription step."
@@ -13675,7 +13675,7 @@ msgstr "プロセスエディター"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:6
 msgid "The Process editor is used to design and edit the different process kinds (mostly *business* and *User Dialog logic* processes). The Process editor has different parts:"
-msgstr "プロセスエディターを使用して、さまざまな種類のプロセス（ほとんどが*ビジネス*プロセスと*ユーザーダイアログロジック*プロセス）を設計、編集します。プロセスエディターには以下のパーツが含まれています。"
+msgstr "プロセスエディターを使用して、さまざまな種類のプロセス（ほとんどが *ビジネス* プロセスと *ユーザーダイアログロジック* プロセス）を設計、編集します。プロセスエディターには以下のパーツが含まれています。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:10
 msgid "the :ref:`process-editor-area`, where the process logic is constructed element for element"
@@ -13695,7 +13695,7 @@ msgstr "現在の選択に合わせてクイックアクションが表示され
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:27
 msgid "Axon Ivy Project Tree > double click on a *process* node inside the project tree (|image3|)"
-msgstr "Axon Ivy プロジェクトツリーで*プロセス*ノード（|image3|）をダブルクリックします。"
+msgstr "Axon Ivy プロジェクトツリーで *プロセス* ノード（|image3|）をダブルクリックします。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:33
 msgid "Tool Bar"
@@ -14020,7 +14020,7 @@ msgstr "wrap-action"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:246
 msgid "|auto-align-action| Aligns the selected elements *horizontally* and *vertically*."
-msgstr "|auto-align-action| 選択した要素を*水平方向*および*垂直方向*に配置します。"
+msgstr "|auto-align-action| 選択した要素を *水平方向* および *垂直方向* に配置します。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:253
 msgid "auto-align-action"
@@ -14084,7 +14084,7 @@ msgstr "ショートカットキー"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:328
 msgid "Some of the *tools* and *quick actions* are available with shortcut keys. To use them, select the element, then press the associated key."
-msgstr "*ツール*や*クイックアクション*の中には、ショートカットキーを使用できるものがあります。ショートカットキーを使用するには、要素を選択し、関連付けられたキーを押します。"
+msgstr "*ツール* や *クイックアクション* の中には、ショートカットキーを使用できるものがあります。ショートカットキーを使用するには、要素を選択し、関連付けられたキーを押します。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:333
 msgid "Jump out"
@@ -14092,7 +14092,7 @@ msgstr "ジャンプアウト"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:335
 msgid "|jump-out-action| Visible in the top left of the :ref:`process-editor-area` to jump out of an *embedded subprocess* to the process that contains the *Embedded Sub* element."
-msgstr "|jump-out-action| :ref:`process-editor-area` の左上に表示され、*埋め込みサブプロセス*から*埋め込みサブプロセス*要素を含むプロセスにジャンプアウトします。"
+msgstr "|jump-out-action| :ref:`process-editor-area` の左上に表示され、*埋め込みサブプロセス* から *埋め込みサブプロセス* 要素を含むプロセスにジャンプアウトします。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:340
 msgid "jump-out-action"
@@ -14116,7 +14116,7 @@ msgstr "ビジネスプロセス"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:12
 msgid "Business processes are the *regular* kind of processes that are used to implement business cases. Business processes contain starts that can be selected by any user from his/her workflow list or from the list of star table processes."
-msgstr "ビジネスプロセスは*通常*のプロセスで、ビジネスケースの実装に使用されます。ビジネスプロセスには、ユーザーがワークフローリストや開始表のプロセスのリストから選択できる開始が含まれます。"
+msgstr "ビジネスプロセスは *通常* のプロセスで、ビジネスケースの実装に使用されます。ビジネスプロセスには、ユーザーがワークフローリストや開始表のプロセスのリストから選択できる開始が含まれます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:22
 msgid "An embedded subprocess is essentially a syntactical collapse of elements into a single element to hide details from process design. They are available in all other process kinds. The hierarchy of embedded subprocesses is potentially indefinite, i.e., you can create further embedded subs inside an already existing subprocess."
@@ -14124,7 +14124,7 @@ msgstr "基本的には、埋め込みサブプロセスは、複数の要素を
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:28
 msgid "Since *embedded subprocesses* are simply a structural means for process diagram simplification, no mapping of data is required when entering or leaving this kind of subprocess (i.e., inside an embedded subprocess the same data is available as inside the caller process)."
-msgstr "*埋め込みサブプロセス*は、プロセス図を簡素化するための構造的な手段であり、埋め込みサブプロセスに出入りする際にデータのマッピングを行う必要はありません（埋め込みサブプロセス内では、呼び出し元のプロセスと同じデータを使用できます）。"
+msgstr "*埋め込みサブプロセス* は、プロセス図を簡素化するための構造的な手段であり、埋め込みサブプロセスに出入りする際にデータのマッピングを行う必要はありません（埋め込みサブプロセス内では、呼び出し元のプロセスと同じデータを使用できます）。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:35
 msgid "Wrapping process elements into an embedded subprocess does not influence the functionality of most process elements. But the wrapping influences the way process elements are addressed by Axon Ivy. This may cause incompatibilities with older versions of the process and will hinder you to deploy such a process over an already deployed older version of the process. The process elements that may cause such incompatibilities are:"
@@ -14144,11 +14144,11 @@ msgstr "依存関係にあるサブプロセス（呼び出し可能）"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:52
 msgid "An independent subprocess (callable) is a process, that can be called from any other process with the *call subprocess element*. Independent subprocesses can be used to factor out frequently used functionality which can then be reused by any other process."
-msgstr "依存関係にあるサブプロセス（呼び出し可能）は、*サブプロセスの呼び出し要素*で他のプロセスから呼び出すことができるプロセスです。依存関係にあるサブプロセスを使用して、頻繁に使用される機能をくくり出し、他のプロセスで再利用できます。"
+msgstr "依存関係にあるサブプロセス（呼び出し可能）は、*サブプロセスの呼び出し要素* で他のプロセスから呼び出すことができるプロセスです。依存関係にあるサブプロセスを使用して、頻繁に使用される機能をくくり出し、他のプロセスで再利用できます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:57
 msgid "Because *callables* are *independent* implementations of processes (or parts of process logic) they have an own Data Class which might not match the caller's data. Therefore parameters need to be mapped in both directions when entering and leaving an independent subprocess."
-msgstr "*呼び出し可能*なサブプロセスは、プロセス（またはプロセスロジックの一部）の*依存関係*の実装であることから、呼び出し可能なサブプロセスには、呼び出し元のデータと一致しない独自のデータクラスが設定されている場合があります。そのため、依存関係にあるサブプロセスに出入りする際は、双方向でパラメーターをマップする必要があります。"
+msgstr "*呼び出し可能* なサブプロセスは、プロセス（またはプロセスロジックの一部）の *依存関係* の実装であることから、呼び出し可能なサブプロセスには、呼び出し元のデータと一致しない独自のデータクラスが設定されている場合があります。そのため、依存関係にあるサブプロセスに出入りする際は、双方向でパラメーターをマップする必要があります。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:62
 msgid "To create an independent subprocess, select the *callable process* option from the :ref:`process-new-wizard`. The created process will contain special start and end elements that must encompass the process implementation."
@@ -14161,7 +14161,7 @@ msgstr "Web サービスプロセス"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:72
 msgid "Web Service processes are a special case of *independent subprocesses*. A Web Service process can be started (i.e., called) from any other application (or from another process) by using the *Web Service call element* or any other SOAP web service compatible client.."
-msgstr "Web サービスプロセスは、特殊な*依存関係にあるサブプロセス*です。*Web サービス呼び出し要素*または Web サービスと互換性のある他の SOAP クライアントを使用して、他のアプリケーションから（または他のプロセスから）Web サービスプロセスを開始する（呼び出す）ことができます。"
+msgstr "Web サービスプロセスは、特殊な *依存関係にあるサブプロセス* です。*Web サービス呼び出し要素*または Web サービスと互換性のある他の SOAP クライアントを使用して、他のアプリケーションから（または他のプロセスから）Web サービスプロセスを開始する（呼び出す）ことができます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:77
 msgid "A web service process will provide a web service with one or more operations, which are defined by the *Web Service Process Start* elements within the process. Each of these start elements have their own input and output parameters that will be mapped to and from the process data."
@@ -14181,15 +14181,15 @@ msgstr "ユーザーダイアログロジック"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:96
 msgid "User Dialog logic processes are the implementation of the behavior of User Dialogs, the :ref:`controller <user-dialogs>` in the MVC pattern. A whole new set of elements is available for this kind of processes (from the *User Dialog drawer* on the process editor palette), while other elements (such as *task switch* or *HTML page*) are not available for conceptual reasons."
-msgstr "ユーザーダイアログロジックプロセスは、ユーザーダイアログの動作、すなわち MVC パターン :ref:`コントローラー<user-dialogs>` 実装です。ユーザーダイアログロジックプロセスでは、まったく新しい要素を（プロセスエディターパレット*ユーザーダイアログドロワー*から）使用できます。ただし、それ以外の要素（*タスクスイッチ*、*HTML ページ*など）は、コンセプト上の理由から使用できません。"
+msgstr "ユーザーダイアログロジックプロセスは、ユーザーダイアログの動作、すなわち MVC パターン :ref:`コントローラー<user-dialogs>` 実装です。ユーザーダイアログロジックプロセスでは、まったく新しい要素を（プロセスエディターパレット *ユーザーダイアログドロワー* から）使用できます。ただし、それ以外の要素（*タスクスイッチ*、*HTML ページ*など）は、コンセプト上の理由から使用できません。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:103
 msgid "A User Dialog logic process is invoked with an *User Dialog* element inside a *business process*. Its execution starts with an *init start* element and ends with a *dialog exit* element. The two elements do not need to have a direct connection (in fact they never have). Once a User Dialog process is running, it is driven by *user interface events* which will trigger individual sub processes."
-msgstr "ユーザーダイアログロジックプロセスは、*ビジネスプロセス*内の*ユーザーダイアログ*要素で呼び出されます。プロセスの実行は *init start* 要素で開始され、*dialog exit* 要素で終了します。2 つの要素を直接接続する必要はありません（実際、直接接続されることはありません）。動作したユーザーダイアログプロセスは、個々のサブプロセスをトリガーする*ユーザーインターフェースイベント*によって駆動されます。"
+msgstr "ユーザーダイアログロジックプロセスは、*ビジネスプロセス* 内の *ユーザーダイアログ* 要素で呼び出されます。プロセスの実行は *init start* 要素で開始され、*dialog exit* 要素で終了します。2 つの要素を直接接続する必要はありません（実際、直接接続されることはありません）。動作したユーザーダイアログプロセスは、個々のサブプロセスをトリガーする *ユーザーインターフェースイベント* によって駆動されます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:112
 msgid "Calling a *process based User Dialog* (and thus executing its logic) can (or rather should) be seen as equivalent to calling of a *callable process* with the sole difference that the User Dialog offers a user interface that allows a user to interact with the process logic directly."
-msgstr "*プロセスベースのユーザーダイアログ*の呼び出し（ロジックの実行を含む）は、*呼び出し可能プロセス*と同等であるといえます（むしろ、そうあるべきです）。唯一の違いは、ユーザーダイアログは、ユーザーがプロセスロジックと直接やり取りできるインターフェースを提供することです。"
+msgstr "*プロセスベースのユーザーダイアログ* の呼び出し（ロジックの実行を含む）は、*呼び出し可能プロセス* と同等であるといえます（むしろ、そうあるべきです）。唯一の違いは、ユーザーダイアログは、ユーザーがプロセスロジックと直接やり取りできるインターフェースを提供することです。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:118
 msgid "However, from an abstract point of view, a User Dialog is nothing else than a function call. It is invoked with a list of (optional) arguments and returns a list of result values. This is exactly the same behavior as a callable process offers."
@@ -14201,7 +14201,7 @@ msgstr "プロセスのプロパティ"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-properties.rst:6
 msgid "Like the process elements that are used inside a process, the process itself has an *inscription* that allows to specify and edit a processes properties. To open and show a the inscription mask of a process you simply select the process in the :ref:`ivy-project-view`, right-click and select *inscription* from the pop-up menu."
-msgstr "プロセス内部で使用されるプロセス要素と同様、プロセス自体にも*インスクリプション*があり、プロセスのプロパティを指定、編集できます。プロセスのインスクリプションマスクを開いて表示するには、 :ref:`ivy-project-view` でプロセスを選択して右クリックし、ポップアップメニューから［*インスクリプション*］を選択するだけです。"
+msgstr "プロセス内部で使用されるプロセス要素と同様、プロセス自体にも *インスクリプション* があり、プロセスのプロパティを指定、編集できます。プロセスのインスクリプションマスクを開いて表示するには、 :ref:`ivy-project-view` でプロセスを選択して右クリックし、ポップアップメニューから［*インスクリプション*］を選択するだけです。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-properties.rst:13
 msgid "Name and Description"
@@ -14213,7 +14213,7 @@ msgstr "共通の :ref:`process-element-tab-general` では、各プロセスの
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-properties.rst:21
 msgid "The *Process Data tab* allows to specify the data class that will be used to define the process's data structure."
-msgstr "*プロセスデータタブ*では、プロセスのデータ構造を定義するのに使用するデータクラスを指定できます。"
+msgstr "*プロセスデータタブ* では、プロセスのデータ構造を定義するのに使用するデータクラスを指定できます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-properties.rst:24
 msgid "|process-data-tab|"
@@ -14242,7 +14242,7 @@ msgstr "権限"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-properties.rst:44
 msgid "The *Permissions tab* allows to specify if the process can be viewed by the end user on the engine or not."
-msgstr "*権限タブ*では、プロセスをエンジンでエンドユーザーに表示するかどうかを指定できます。"
+msgstr "*権限タブ* では、プロセスをエンジンでエンドユーザーに表示するかどうかを指定できます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-properties.rst:47
 msgid "|process-permissions-tab|"
@@ -14319,7 +14319,7 @@ msgstr "スイムレーン"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/swimlanes.rst:6
 msgid "Processes can be visually structured by using *pools* and *lanes*. Pools and lanes are swimlanes with a label that is placed *behind* the process logic. Swimlanes have a *horizontal* orientation and can have a colored border."
-msgstr "*プール*と*レーン*を使用して、プロセスを視覚的に構造化できます。プールとレーンは、プロセスロジックの*後に*配置されるラベル付きのスイムレーンです。スイムレーンは*水平*方向で、色付きの境界線を設定できます。"
+msgstr "*プール* と *レーン* を使用して、プロセスを視覚的に構造化できます。プールとレーンは、プロセスロジックの *後に* 配置されるラベル付きのスイムレーンです。スイムレーンは *水平* 方向で、色付きの境界線を設定できます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/swimlanes.rst:10
 msgid "Swimlanes are available for all process kinds and are typically used to visualize organizations, roles, responsibility assignments or systems for process elements or sections of process logic."
@@ -14363,7 +14363,7 @@ msgstr "選択したプール内に新しい埋め込みレーンを作成しま
 
 #: ../../source/designer-guide/process-modeling/process-modeling/swimlanes.rst:34
 msgid "Please note, that pools and lanes do not have any *syntactical* meaning whatsoever; their purpose is purely semantical. A pool or lane is *not* a container that elements are placed in or associated with. They are simply a structured \"coloring\" of the process' background; they do not grow or shrink when you change the processes logic and need to be adjusted manually."
-msgstr "プールとレーンはいかなる*構造的な*意味を持たないことに注意してください。これらの目的は純粋に意味的なものです。プールやレーンは、要素が配置される、または関連付けられるコンテナでは*ありません*。プールとレーンは、プロセスの背景の構造化された「色付け」であり、プロセスロジックを変更しても拡大／縮小されないため、手動で調整する必要があります。"
+msgstr "プールとレーンはいかなる *構造的な* 意味を持たないことに注意してください。これらの目的は純粋に意味的なものです。プールやレーンは、要素が配置される、または関連付けられるコンテナでは *ありません*。プールとレーンは、プロセスの背景の構造化された「色付け」であり、プロセスロジックを変更しても拡大／縮小されないため、手動で調整する必要があります。"
 
 #: ../../source/designer-guide/process-modeling/process-views/browsers.rst:5
 msgid "Inscription Browsers"
@@ -14480,7 +14480,7 @@ msgstr "拡張機能"
 
 #: ../../source/designer-guide/process-modeling/process-views/extension-browser.rst:6
 msgid "|extension-tool| The *Extensions* item is located in the :ref:`process-editor-tool-bar` of the process editor."
-msgstr "|extension-tool| *拡張機能*は、プロセスエディターの :ref:`process-editor-tool-bar` にあります。"
+msgstr "|extension-tool| *拡張機能* は、プロセスエディターの :ref:`process-editor-tool-bar` にあります。"
 
 #: ../../source/designer-guide/process-modeling/process-views/extension-browser.rst:24
 msgid "Extension Toolbar Item"
@@ -14699,7 +14699,7 @@ msgstr "プロジェクトのバージョンの変換"
 
 #: ../../source/designer-guide/process-modeling/projects/converting.rst:11
 msgid "If the project format version changes with a new Axon Ivy release, then old projects will show an error marker, describing them as *out of date* or having an invalid version. This can happen, when the technical format for Axon Ivy projects changes with a new Axon Ivy release (e.g., the way how some artifacts are stored may be changed, new artifacts may be introduced, etc.). :"
-msgstr "Axon Ivy の新規リリースでプロジェクトのフォーマットのバージョンが変更された場合、古いオブジェクトには、*古い*バージョンである、または無効なバージョンが含まれることを示すエラーマーカーが表示されます。これは、Axon Ivy プロジェクトの技術フォーマットが Axon Ivy の新規リリースで変更された場合に発生することがあります（アーティファクトを格納する方法の変更、新しいアーティファクトの導入など）。"
+msgstr "Axon Ivy の新規リリースでプロジェクトのフォーマットのバージョンが変更された場合、古いオブジェクトには、*古い* バージョンである、または無効なバージョンが含まれることを示すエラーマーカーが表示されます。これは、Axon Ivy プロジェクトの技術フォーマットが Axon Ivy の新規リリースで変更された場合に発生することがあります（アーティファクトを格納する方法の変更、新しいアーティファクトの導入など）。"
 
 #: ../../source/designer-guide/process-modeling/projects/converting.rst:18
 #: ../../source/designer-guide/process-modeling/projects/converting.rst:21
@@ -14730,7 +14730,7 @@ msgstr "プロジェクトの変換ウィザード"
 
 #: ../../source/designer-guide/process-modeling/projects/converting.rst:47
 msgid "To run the project conversion, either run the quick fix on the error marker or select the project's node in the Axon Ivy project view and right click to bring up the context menu. Select *Convert Project* to open the *Convert Project* wizard."
-msgstr "プロジェクトの変換を実行するには、エラーマーカーでクイックフィックスを実行するか、Axon Ivy のプロジェクトビューでプロジェクトのノードを選択し、右クリックしてコンテキストメニューを表示します。［*プロジェクトを変換*］を選択して、*プロジェクトの変換*ウィザードを開きます。"
+msgstr "プロジェクトの変換を実行するには、エラーマーカーでクイックフィックスを実行するか、Axon Ivy のプロジェクトビューでプロジェクトのノードを選択し、右クリックしてコンテキストメニューを表示します。［*プロジェクトを変換*］を選択して、*プロジェクトの変換* ウィザードを開きます。"
 
 #: ../../source/designer-guide/process-modeling/projects/converting.rst:52
 #: ../../source/designer-guide/process-modeling/projects/converting.rst:55
@@ -14766,7 +14766,7 @@ msgstr "プロジェクトの変換ウィザード - ［変換］ページ"
 
 #: ../../source/designer-guide/process-modeling/projects/converting.rst:83
 msgid "Once the converter has finished, use the *Copy Log* or *Open Logs* buttons to copy the log or open the log files (that are stored in the logs folder of your projects) in editors. Press *Next >* to execute the next available converter or if no more converters are available *Finish* to close the wizard. You can also press *Cancel* if you want to commit the changes of the last converter. Simply start the *Convert Project* wizard again to resume with the next converter."
-msgstr "コンバーターの終了後、［*ログをコピー*］または［*ログを開く*］ボタンを使用して、ログをコピーするか、（プロジェクトの logs フォルダーに格納されている）ログファイルを開きます。［*次へ >*］をクリックして次に使用可能なコンバーターを実行するか、他に使用可能なコンバーターがない場合は、［*終了*］をクリックしてウィザードを閉じます。また、最後に実行したコンバーターの変更をコミットしたい場合は、［*キャンセル*］をクリックします。*プロジェクトの変換*ウィザードを再度起動して、次のコンバーターから再開できます。"
+msgstr "コンバーターの終了後、［*ログをコピー*］または［*ログを開く*］ボタンを使用して、ログをコピーするか、（プロジェクトの logs フォルダーに格納されている）ログファイルを開きます。［*次へ >*］をクリックして次に使用可能なコンバーターを実行するか、他に使用可能なコンバーターがない場合は、［*終了*］をクリックしてウィザードを閉じます。また、最後に実行したコンバーターの変更をコミットしたい場合は、［*キャンセル*］をクリックします。*プロジェクトの変換* ウィザードを再度起動して、次のコンバーターから再開できます。"
 
 #: ../../source/designer-guide/process-modeling/projects/converting.rst:89
 #: ../../source/designer-guide/process-modeling/projects/converting.rst:92
@@ -14795,7 +14795,7 @@ msgstr ":ref:`Portal Converter <portal-guide>`"
 
 #: ../../source/designer-guide/process-modeling/projects/converting.rst:111
 msgid "In the :ref:`migration-notes` migration tasks, for witch the *Convert Project* wizard provides a project converter, are marked with |tag-project-auto-convert|."
-msgstr ":ref:`migration-notes` では、*プロジェクトの変換*ウィザードでプロジェクトコンバーターを使用可能な移行作業に |tag-project-auto-convert| のマークが付けられています。"
+msgstr ":ref:`migration-notes` では、*プロジェクトの変換* ウィザードでプロジェクトコンバーターを使用可能な移行作業に |tag-project-auto-convert| のマークが付けられています。"
 
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:6
 msgid "Project Deployment Descriptor"
@@ -14803,15 +14803,15 @@ msgstr "プロジェクトデプロイメント記述子"
 
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:8
 msgid "Each Axon Ivy project has a *deployment descriptor*. The deployment descriptor defines various properties of a project that are important with respect to deployment on the engine. Specifically the descriptor defines:"
-msgstr "Axon Ivy の各プロジェクトには*デプロイメント記述子*があります。デプロイメント記述子は、エンジンへの展開に関して重要なプロジェクトのプロパティを定義します。具体的には、記述子は以下を定義します。"
+msgstr "Axon Ivy の各プロジェクトには *デプロイメント記述子* があります。デプロイメント記述子は、エンジンへの展開に関して重要なプロジェクトのプロパティを定義します。具体的には、記述子は以下を定義します。"
 
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:13
 msgid "A *unique project ID* (i.e., a fully qualified symbolic name) for the project, by which it can be identified and referenced. Also a current *development version* of the project is defined (please note that this version may, but does not necessarily have to be, identical with the project model version on the engine into which the project will eventually be deployed)."
-msgstr "プロジェクトの識別や参照に使用される、プロジェクトの*一意のプロジェクト ID*（完全修飾識別名）。また、現在の*開発バージョン*も定義されます（必ずしもそうではありませんが、このバージョンは、プロジェクトが最終的に展開されるエンジンのプロジェクトモデルバージョンと同じであることに注意してください）。"
+msgstr "プロジェクトの識別や参照に使用される、プロジェクトの*一意のプロジェクト ID*（完全修飾識別名）。また、現在の *開発バージョン* も定義されます（必ずしもそうではありませんが、このバージョンは、プロジェクトが最終的に展開されるエンジンのプロジェクトモデルバージョンと同じであることに注意してください）。"
 
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:20
 msgid "The *dependencies of a project to other projects* and the exact version range of those projects that must be available in order for the project to work. Once a project is referenced in this way, its artifacts may be used inside the referencing project. This applies especially to the following artifacts: User Dialogs, Data Classes, Web Service Configurations, CMS Entries, Configurations, Java classes or Java libraries (JAR files)."
-msgstr "*プロジェクトの他のプロジェクトへの依存関係*と、プロジェクトでの作業に必要な、それらのプロジェクトのバージョンの正確な範囲。この方法でプロジェクトを参照しない場合は、参照元のプロジェクトのアーティファクトを使用できます。対象となるアーティファクトには、ユーザーダイアログ、データクラス、Web サービス設定、CMS エントリ、設定、Java クラス、Java ライブラリ（JAR ファイル）があります。"
+msgstr "*プロジェクトの他のプロジェクトへの依存関係* と、プロジェクトでの作業に必要な、それらのプロジェクトのバージョンの正確な範囲。この方法でプロジェクトを参照しない場合は、参照元のプロジェクトのアーティファクトを使用できます。対象となるアーティファクトには、ユーザーダイアログ、データクラス、Web サービス設定、CMS エントリ、設定、Java クラス、Java ライブラリ（JAR ファイル）があります。"
 
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:28
 msgid "Information about the implementor of the project and its purpose."
@@ -14849,7 +14849,7 @@ msgstr "プロジェクトが特定のバージョンまたは特定のバージ
 
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:61
 msgid "When deploying projects on the engine, the availability of the required projects (and their versions) is checked. If the required project versions cannot be resolved, then a project cannot be deployed. Therefore projects must be deployed *bottom up*, i.e., one must start by deploying first the required projects that are lowest in the dependency hierarchy."
-msgstr "プロジェクトをエンジンに展開する際は、必要なプロジェクト（とそのバージョン）が使用可能な確認します。必要なプロジェクトのバージョンを解決できない場合、そのプロジェクトは展開できません。そのため、プロジェクトは*下から上に*展開しなければなりません。つまり、依存関係の階層の一番下にある必要なプロジェクトを最初に展開する必要があります。"
+msgstr "プロジェクトをエンジンに展開する際は、必要なプロジェクト（とそのバージョン）が使用可能な確認します。必要なプロジェクトのバージョンを解決できない場合、そのプロジェクトは展開できません。そのため、プロジェクトは *下から上に* 展開しなければなりません。つまり、依存関係の階層の一番下にある必要なプロジェクトを最初に展開する必要があります。"
 
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:71
 msgid "Deployment Descriptor Editor"
@@ -14877,7 +14877,7 @@ msgstr "デプロイメント記述子は Maven の pom.xml として格納さ�
 
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:94
 msgid "Axon Ivy Project Tree -> double click on the *Deployment* node inside the project tree (|imagef0|)"
-msgstr "Axon Ivy プロジェクトツリーで*展開*ノードをダブルクリックします（|imagef0|）。"
+msgstr "Axon Ivy プロジェクトツリーで *展開* ノードをダブルクリックします（|imagef0|）。"
 
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:240
 msgid "imagef0"
@@ -14969,7 +14969,7 @@ msgstr "参照先のプロジェクトに必要なバージョンの範囲を指
 
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:153
 msgid "Note that the order in the table defines the order how referenced artifacts are searched (Use the **Up Button** and ** Down Button** to change the order). The general search order in the dependency graph is *breadth first*, but the order that you define here is the search order that will be used on a specific node when searching the graph."
-msgstr "表での順序によって、参照先のアーティファクトの検索順序が決まることに注意してください（順序を変更するには、**上ボタン** または**下ボタン** を使用します）。依存関係グラフの一般的な検索順序は*幅優先*ですが、グラフを検索する際、ここで定義した順序が特定のノードで使用されます。"
+msgstr "表での順序によって、参照先のアーティファクトの検索順序が決まることに注意してください（順序を変更するには、**上ボタン** または**下ボタン** を使用します）。依存関係グラフの一般的な検索順序は *幅優先* ですが、グラフを検索する際、ここで定義した順序が特定のノードで使用されます。"
 
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:159
 msgid "Clicking the *Add* button brings up a dialog with a selection box, in which any of the projects that are currently present in the workspace may be selected as required project. Closed projects or projects that are already (directly) required, cannot be selected."
@@ -15105,7 +15105,7 @@ msgstr "プロジェクトのエクスポート"
 
 #: ../../source/designer-guide/process-modeling/projects/exporting.rst:7
 msgid "Axon Ivy projects can be exported from the workspace to various output formats using the *Export Wizard*."
-msgstr "*エクスポートウィザード*を使用して、Axon Ivy プロジェクトをワークスペースからさまざまな出力フォーマットにエクスポートできます。"
+msgstr "*エクスポートウィザード* を使用して、Axon Ivy プロジェクトをワークスペースからさまざまな出力フォーマットにエクスポートできます。"
 
 #: ../../source/designer-guide/process-modeling/projects/exporting.rst:13
 msgid "You can access the Export Wizard over the menu:"
@@ -15150,7 +15150,7 @@ msgstr "プロジェクトのインポート"
 
 #: ../../source/designer-guide/process-modeling/projects/importing.rst:7
 msgid "You can import existing Axon Ivy projects into your workspace using the *Import Wizard*. Projects can be exported from the workspace using the *Export Wizard* (See section :ref:`designer-export-project`. This allows you to exchange or share your projects with other people."
-msgstr "*インポートウィザード*を使用して、既存の Axon Ivy プロジェクトをワークスペースにインポートできます。*エクスポートウィザード*を使用して、プロジェクトをワークスペースからエクスポートできます（ :ref:`designer-export-project` 」の章を参照）。これにより、プロジェクトを他の人たちと交換したり共有できます。"
+msgstr "*インポートウィザード* を使用して、既存の Axon Ivy プロジェクトをワークスペースにインポートできます。*エクスポートウィザード* を使用して、プロジェクトをワークスペースからエクスポートできます（ :ref:`designer-export-project` 」の章を参照）。これにより、プロジェクトを他の人たちと交換したり共有できます。"
 
 #: ../../source/designer-guide/process-modeling/projects/importing.rst:15
 msgid "You can access the Import Wizard over the menu:"
@@ -15271,19 +15271,19 @@ msgstr "プロジェクトは再利用できます。つまり、プロジェク
 
 #: ../../source/designer-guide/process-modeling/projects/index.rst:17
 msgid "Once you have finished your development you will usually want to install the implemented application or workflow on an Axon Ivy Engine. Projects form the single unit of deployment for this purpose, i.e., you deploy each project into a container on the engine which is called *process model version*. A project may be deployed in multiple versions on the engine; each process model version therefore contains a snapshot of a project at a specific point of time in development. See chapter :ref:`deployment` for more information on this topic."
-msgstr "開発が終了したら、実装したアプリケーションやワークフローを Axon Ivy Engine にインストールします。この場合、プロジェクトは 1 つの展開単位を形成します。つまり、*プロセスモデルバージョン*と呼ばれるエンジンのコンテナに各プロジェクトを展開します。プロジェクトを複数のバージョンでエンジンに展開でき、各プロセスモデルバージョンには、開発時点のプロジェクトのスナップショットが格納されます。詳細については、「 :ref:`deployment` 」の章を参照してください。"
+msgstr "開発が終了したら、実装したアプリケーションやワークフローを Axon Ivy Engine にインストールします。この場合、プロジェクトは 1 つの展開単位を形成します。つまり、*プロセスモデルバージョン* と呼ばれるエンジンのコンテナに各プロジェクトを展開します。プロジェクトを複数のバージョンでエンジンに展開でき、各プロセスモデルバージョンには、開発時点のプロジェクトのスナップショットが格納されます。詳細については、「 :ref:`deployment` 」の章を参照してください。"
 
 #: ../../source/designer-guide/process-modeling/projects/index.rst:26
 msgid "The data that specifies a project's deployment information is contained in the project's :ref:`project-deployment-descriptor`. The deployment descriptor (formerly known as library) specifies all of the required projects and the specific versions in which they must be present on the engine in order for the deployed project to work. The descriptor also defines an unique deployment ID and the development version of a project (*not* equal to the process model version), as well as some information about the project provider and a description of the project itself."
-msgstr "プロジェクトの展開情報を指定するデータは、プロジェクト :ref:`project-deployment-descriptor` に格納されます。デプロイメント記述子（以前の「ライブラリ」）は、展開されたプロジェクトが機能するように、すべての必要なプロジェクトとそれらのエンジン上でのバージョンを指定します。また、記述子は、一意のデプロイメント ID とプロジェクトの開発バージョン（プロセスモデルバージョンと同じでは*ありません*）、プロジェクトプロバイダーに関する情報、プロジェクトの説明を定義します。"
+msgstr "プロジェクトの展開情報を指定するデータは、プロジェクト :ref:`project-deployment-descriptor` に格納されます。デプロイメント記述子（以前の「ライブラリ」）は、展開されたプロジェクトが機能するように、すべての必要なプロジェクトとそれらのエンジン上でのバージョンを指定します。また、記述子は、一意のデプロイメント ID とプロジェクトの開発バージョン（プロセスモデルバージョンと同じでは *ありません*）、プロジェクトプロバイダーに関する情報、プロジェクトの説明を定義します。"
 
 #: ../../source/designer-guide/process-modeling/projects/index.rst:35
 msgid "On the engine, a project in a specific development state/version corresponds to a process model version, as explained above. On the engine, all the deployed versions of a project are children of a *process model* container (which corresponds to the project as an entity without a specific version). The process models themselves are part of an *application* (see chapter :ref:`deployment` for a more thorough explanation)."
-msgstr "先に説明したように、エンジンでは、特定の開発状態／バージョンのプロジェクトがプロセスモデルバージョンに対応します。エンジンでは、展開されるプロジェクトのすべてのバージョンが、（特定のバージョンを持たないエンティティとしてプロジェクトに対応する）*プロセスモデル*コンテナの子になります。プロセスモデル自体は*アプリケーション*の一部です（詳細については、「 :ref:`deployment` 」の章を参照）。"
+msgstr "先に説明したように、エンジンでは、特定の開発状態／バージョンのプロジェクトがプロセスモデルバージョンに対応します。エンジンでは、展開されるプロジェクトのすべてのバージョンが、（特定のバージョンを持たないエンティティとしてプロジェクトに対応する）*プロセスモデル* コンテナの子になります。プロセスモデル自体は *アプリケーション* の一部です（詳細については、「 :ref:`deployment` 」の章を参照）。"
 
 #: ../../source/designer-guide/process-modeling/projects/index.rst:43
 msgid "In the Designer, projects may only exist in one version at a given point of time. Projects are created and organized inside an Eclipse *workspace*. Roughly, on the Designer, the *workspace* corresponds to the *application* on the engine. Since projects can only exist in one version on the Designer, there is no *process model* equivalent necessary in the Designer."
-msgstr "デザイナーでは、プロジェクトはある時点の 1 つのバージョンとしてのみ存在できます。プロジェクトは、Eclipse の*ワークスペース*内で作成、編成されます。大まかに言うと、デザイナーの*ワークステーション*はエンジンの*アプリケーション*に対応します。デザイナーではプロジェクトは 1 つのバージョンでしか存在できないため、デザイナーでは*プロセスモデル*に相当するものは必要ありません。"
+msgstr "デザイナーでは、プロジェクトはある時点の 1 つのバージョンとしてのみ存在できます。プロジェクトは、Eclipse の *ワークスペース* 内で作成、編成されます。大まかに言うと、デザイナーの *ワークステーション* はエンジンの *アプリケーション* に対応します。デザイナーではプロジェクトは 1 つのバージョンでしか存在できないため、デザイナーでは *プロセスモデル* に相当するものは必要ありません。"
 
 #: ../../source/designer-guide/process-modeling/projects/index.rst:50
 msgid "When working on a project, which depends on other projects, then the required projects need to be present as well in the Designer, which means that they must be present in the current workspace. Otherwise dependencies cannot be resolved and reused artifacts are not available, which will prevent the application from running."
@@ -15396,7 +15396,7 @@ msgstr "*名前変更* - アーティファクトへの参照を維持したま�
 
 #: ../../source/designer-guide/process-modeling/projects/ivyProjectView.rst:73
 msgid "Please rename your resources only in Axon Ivy and not in *Java* or *Resource* perspectives. Trying to do renaming of Axon Ivy artifacts in other perspectives may result in an unusable project."
-msgstr "リソースの名前の変更は、*Java* や *リソース*パースペクティブではなく、Axon Ivy でのみ行ってください。 Axon Ivy のアーティファクトの名前を他のパースペクティブで変更した場合、プロジェクトを使用できなくなることがあります。"
+msgstr "リソースの名前の変更は、*Java* や *リソース* パースペクティブではなく、Axon Ivy でのみ行ってください。 Axon Ivy のアーティファクトの名前を他のパースペクティブで変更した場合、プロジェクトを使用できなくなることがあります。"
 
 #: ../../source/designer-guide/process-modeling/projects/ivyProjectView.rst:77
 msgid "*Move* - Moves the selected resources to another project. The `move wizard <#ivy.wizards.refactoring.move>`__ will be shown, allowing you to select the project to which the resource(s) should be moved."
@@ -16794,7 +16794,7 @@ msgstr "**ブレークポイントの編集**"
 
 #: ../../source/designer-guide/process-modeling/simulation/simulation.rst:157
 msgid "You can add a *condition* to a breakpoint in the :ref:`debugger-breakpoints-view`. If you do so, the breakpoint is only active if the expression evaluates to `true` and will then suspend the execution. In the expression, you have access to all variables in the context of the process step, including ``in``."
-msgstr ":ref:`debugger-breakpoints-view` でブレークポイントに*条件*を追加できます。その場合、式が `true` であると評価された場合のみ、ブレークポイントがアクティブになり、実行が中断されます。式では、``in`` を含む、プロセスステップのコンテキストのすべての変数を使用できます。"
+msgstr ":ref:`debugger-breakpoints-view` でブレークポイントに *条件* を追加できます。その場合、式が `true` であると評価された場合のみ、ブレークポイントがアクティブになり、実行が中断されます。式では、``in`` を含む、プロセスステップのコンテキストのすべての変数を使用できます。"
 
 #: ../../source/designer-guide/process-modeling/simulation/simulation.rst:163
 msgid "**Disable a breakpoint**"
@@ -17672,7 +17672,7 @@ msgstr "form-editor"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:25
 msgid "Axon Ivy project tree -> double click on the *Form* node of an HTML Dialog. If there is none, create a new HTML Dialog and select the type :code:`Dialog Form` on the first wizard page."
-msgstr "Axon Ivy のプロジェクトツリーで HTML ダイアログの*フォーム*ノードをダブルクリックします。ない場合は、新しい HTML ダイアログを作成し、ウィザードの最初のページで :code:`Dialog Form` タイプを選択します。"
+msgstr "Axon Ivy のプロジェクトツリーで HTML ダイアログの *フォーム* ノードをダブルクリックします。ない場合は、新しい HTML ダイアログを作成し、ウィザードの最初のページで :code:`Dialog Form` タイプを選択します。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:34
 msgid "The **Tool Bar** collects all tools that can be helpful for working with the form editor:"
@@ -17688,7 +17688,7 @@ msgstr "device-mode"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:41
 msgid "|edit-mode| Edit / Preview Mode: Toggle between *edit mode*"
-msgstr "|edit-mode| 編集／プレビューモード：*編集モード*を切り替えます。"
+msgstr "|edit-mode| 編集／プレビューモード：*編集モード* を切り替えます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:53
 msgid "edit-mode"
@@ -17860,11 +17860,11 @@ msgstr "form-editor-properties"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:197
 msgid "There are also settings which are only available, if a certain parent component is present. E.g. if you have a :code:`Layout` component with the type *Grid* and column *Free* you will get on each child a new section where you can define how much space it should take on different screen sizes."
-msgstr "また、特定の親コンポーネントが存在する場合のみ使用できる設定もあります。例えば、タイプが*グリッド*で、列が*フリー*の :code:`レイアウト` コンポーネントの場合、子ごとに新しいセクションが表示され、さまざまな画面サイズでコンポーネントの大きさを定義できます。"
+msgstr "また、特定の親コンポーネントが存在する場合のみ使用できる設定もあります。例えば、タイプが *グリッド* で、列が *フリー* の :code:`レイアウト` コンポーネントの場合、子ごとに新しいセクションが表示され、さまざまな画面サイズでコンポーネントの大きさを定義できます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:204
 msgid "You can also open the properties view of a component with a *double click*."
-msgstr "*ダブルクリック*でコンポーネントのプロパティビューを開くこともできます。"
+msgstr "*ダブルクリック* でコンポーネントのプロパティビューを開くこともできます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:210
 msgid "Form Component"
@@ -17984,7 +17984,7 @@ msgstr "html-editor-image4"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-editor.rst:15
 msgid "Axon Ivy project tree -> double click on the *View* node of an HTML Dialog"
-msgstr "Axon Ivy プロジェクトツリーで HTML ダイアログの*ビュー*ノードをダブルクリックします。"
+msgstr "Axon Ivy プロジェクトツリーで HTML ダイアログの *ビュー* ノードをダブルクリックします。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-editor.rst:19
 msgid "Content Assist (Ctrl+Space)"
@@ -18272,11 +18272,11 @@ msgstr "HTML ダイアログのビュータイプテンプレート"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preferences.rst:26
 msgid "*View Type Page* and *View Type Component* are the predefined view types for HTML Dialogs. Furthermore every template with a name that starts with 'View Type' is considered as an HTML Dialog View Type and therefore listed in the :ref:`user-dialog-new-wizard`."
-msgstr "*ビュータイプページ*と*ビュータイプコンポーネント*は、あらかじめ定義された HTML ダイアログのビュータイプです。さらに、名前が「View Type」で始まるテンプレートはそれぞれ HTML ダイアログビュータイプとし :ref:`user-dialog-new-wizard` に表示されます。"
+msgstr "*ビュータイプページ* と *ビュータイプコンポーネント* は、あらかじめ定義された HTML ダイアログのビュータイプです。さらに、名前が「View Type」で始まるテンプレートはそれぞれ HTML ダイアログビュータイプとし :ref:`user-dialog-new-wizard` に表示されます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preferences.rst:31
 msgid "Offline Dialogs have only one predefined view type called *Offline View Type Page*. Custom templates for Offline Dialogs have to start with 'Offline View Type'"
-msgstr "オフラインダイアログでは、*オフラインビュータイプページ*のみ、ビュータイプとしてあらかじめ定義されています。オフラインダイアログのカスタムテンプレートは 'Offline View Type' で始まる必要があります。"
+msgstr "オフラインダイアログでは、*オフラインビュータイプページ* のみ、ビュータイプとしてあらかじめ定義されています。オフラインダイアログのカスタムテンプレートは 'Offline View Type' で始まる必要があります。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-preferences.rst:37
 #, python-brace-format
@@ -18694,7 +18694,7 @@ msgstr "ユーザーダイアログの作成ウィザード"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/new-user-dialog-wizard.rst:6
 msgid "The New User Dialog wizard lets you create a new User Dialog. This can be a *Form Dialog*, an *HTML Dialog* or an *Offline Dialog*."
-msgstr "ユーザーダイアログの作成ウィザードでは、新しいユーザーダイアログを作成できます。*フォームダイアログ*、*HTML ダイアログ*、*オフラインダイアログ*があります。"
+msgstr "ユーザーダイアログの作成ウィザードでは、新しいユーザーダイアログを作成できます。*フォームダイアログ*、*HTML ダイアログ*、*オフラインダイアログ* があります。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/new-user-dialog-wizard.rst:9
 msgid "The wizard creates several resources for the new User Dialog:"
@@ -18736,7 +18736,7 @@ msgstr "ユーザーダイアログが属するプロジェクトを選択しま
 
 #: ../../source/designer-guide/user-interface/user-dialogs/new-user-dialog-wizard.rst:41
 msgid "Enter a namespace for your User Dialog. Use namespaces to group your User Dialogs. The grouping hierarchy is separated by the dot character. This is a similar concept to *packages* in the Java programming language."
-msgstr "ユーザーダイアログの名前空間を入力します。名前空間を使用して、ユーザーダイアログをグループ化します。グループの階層は、ドット文字で分けられます。これは、Java プログラミング言語の*パッケージ*と同様のコンセプトです。"
+msgstr "ユーザーダイアログの名前空間を入力します。名前空間を使用して、ユーザーダイアログをグループ化します。グループの階層は、ドット文字で分けられます。これは、Java プログラミング言語の *パッケージ* と同様のコンセプトです。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/new-user-dialog-wizard.rst:47
 msgid "Enter the name of the User Dialog that you want to create."
@@ -18752,15 +18752,15 @@ msgstr "作成するユーザーダイアログのタイプを入力します。
 
 #: ../../source/designer-guide/user-interface/user-dialogs/new-user-dialog-wizard.rst:54
 msgid "Since *HTML Dialog* as well as *Offline Dialog* are based on JSF technology, it's possible to switch between those two dialog types after creation."
-msgstr "*HTML ダイアログ*と*オフラインダイアログ*は JSF テクノロジーをベースにしているため、作成後に 2 つのダイアログのタイプを切り替えることができます。"
+msgstr "*HTML ダイアログ *と* オフラインダイアログ*は JSF テクノロジーをベースにしているため、作成後に 2 つのダイアログのタイプを切り替えることができます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/new-user-dialog-wizard.rst:59
 msgid "A view type defines how the User Dialog will be constructed. This depends on the dialog type. You can choose if a User Dialog should be created with a *css grid*, so it acts responsively to the display width or not. If you want to create a reusable HTML component, select type *Component*."
-msgstr "ビューのタイプは、ユーザーダイアログの作成方法を定義します。これはダイアログのタイプに依存します。ユーザーダイアログがディスプレイの幅に対応するように *CSS グリッド*で作成するかどうかを選択できます。再利用可能な HTML コンポーネントを作成する場合は、*コンポーネント*タイプを選択します。"
+msgstr "ビューのタイプは、ユーザーダイアログの作成方法を定義します。これはダイアログのタイプに依存します。ユーザーダイアログがディスプレイの幅に対応するように *CSS グリッド*で作成するかどうかを選択できます。再利用可能な HTML コンポーネントを作成する場合は、*コンポーネント* タイプを選択します。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/new-user-dialog-wizard.rst:65
 msgid "The layout can only be changed if you choose *HTML Dialog* but not *Component* as the view type. All your templates which are located in your webContent/layouts folder are listed here."
-msgstr "*HTML ダイアログ*が選択され、ビューのタイプとして*コンポーネント*が選択されていない場合のみ、レイアウトを変更できます。webContent/layouts フォルダーにあるすべてのテンプレートがここに表示されます。"
+msgstr "*HTML ダイアログ*が選択され、ビューのタイプとして *コンポーネント* が選択されていない場合のみ、レイアウトを変更できます。webContent/layouts フォルダーにあるすべてのテンプレートがここに表示されます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/new-user-dialog-wizard.rst:70
 msgid "Page 2: Dialog Data"
@@ -18845,7 +18845,7 @@ msgstr "ロジック"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/user-dialog-concept.rst:41
 msgid "The logic of a User Dialog defines *how* a User Dialog performs its work. For each *UI Event* triggered by the user (e.g., by clicking on a button). All the starts events are defined here, to build the interface for this dialog."
-msgstr "ユーザーダイアログのロジックは、ユーザーが（ボタンをクリックするなどして）トリガーする各 *UI イベント*に対して、ユーザーダイアログが*どのように*その作業を実行するかを定義します。ダイアログのインターフェースを構築するすべての開始イベントがここで定義されます。"
+msgstr "ユーザーダイアログのロジックは、ユーザーが（ボタンをクリックするなどして）トリガーする各 *UI イベント*に対して、ユーザーダイアログが *どのように* その作業を実行するかを定義します。ダイアログのインターフェースを構築するすべての開始イベントがここで定義されます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/user-dialog-concept.rst:45
 msgid "The logic of a User Dialog is edited and defined using the :ref:`process-editor`."
@@ -18967,7 +18967,7 @@ msgstr "一方、禁止されている要素は提供しません。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/user-dialog-concept.rst:91
 msgid "Process elements that are *forbidden* in User Dialog Logic"
-msgstr "ユーザーダイアログのロジックで*禁止*されているプロセス要素"
+msgstr "ユーザーダイアログのロジックで *禁止* されているプロセス要素"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/user-dialog-concept.rst:95
 msgid "Short Explanation"
@@ -19051,7 +19051,7 @@ msgstr "task-end"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/user-dialog-concept.rst:126
 msgid "The regular Process End element is replaced with the *User Dialog End* element."
-msgstr "通常のプロセス終了要素は、*ユーザーダイアログの終了*要素に置き換えられています。"
+msgstr "通常のプロセス終了要素は、*ユーザーダイアログの終了* 要素に置き換えられています。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/user-dialog-concept.rst:132
 msgid "|end-page|"
@@ -19075,11 +19075,11 @@ msgstr "ユーザーダイアログ内から呼び出し可能なプロセスを
 
 #: ../../source/designer-guide/user-interface/user-dialogs/user-dialog-concept.rst:154
 msgid "The view of a User Dialog defines the *User Interface* which is presented to the end user. A view can be written via the :ref:`form-editor` or in plain code (JSF) via the :ref:`html-dialog-editor`."
-msgstr "ユーザーダイアログのビューは、エンドユーザーに表示される*ユーザーインターフェース*を定義します :ref:`form-editor` を使用して、または :ref:`html-dialog-editor` を使用してプレーンコード（JSF）でビューを記述できます。"
+msgstr "ユーザーダイアログのビューは、エンドユーザーに表示される *ユーザーインターフェース* を定義します :ref:`form-editor` を使用して、または :ref:`html-dialog-editor` を使用してプレーンコード（JSF）でビューを記述できます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/user-dialog-concept.rst:161
 msgid "The data of a User Dialog define its internal state (if you are familiar with the *MVC* pattern, you should consider the data as the *Model* of a User Dialog). The data of a User Dialog has private scope (i.e., is not visible from the outside). Access can be granted by defining and implementing methods that return or manipulate internal data. The data of a User Dialog is edited with the :ref:`data-class-editor`."
-msgstr "ユーザーダイアログのデータは、その内部状態を定義します（*MVC* パターンで言えば、データはユーザーダイアログの*モデル*と見なすことができます）。ユーザーダイアログのデータにはプライベートスコープがあります（つまり、外部からは見えません）。内部データを返すか、処理するメソッドを定義、実装して、アクセスを許可できます :ref:`data-class-editor` を使用して、ユーザーダイアログのデータを編集します。"
+msgstr "ユーザーダイアログのデータは、その内部状態を定義します（*MVC* パターンで言えば、データはユーザーダイアログの *モデル* と見なすことができます）。ユーザーダイアログのデータにはプライベートスコープがあります（つまり、外部からは見えません）。内部データを返すか、処理するメソッドを定義、実装して、アクセスを許可できます :ref:`data-class-editor` を使用して、ユーザーダイアログのデータを編集します。"
 
 #: ../../source/designer-guide/user-interface/web-page/index.rst:4
 msgid "Web Page"
@@ -19111,7 +19111,7 @@ msgstr "プロセスの継続がリソースのすべてのユースケースで
 
 #: ../../source/designer-guide/user-interface/web-page/index.rst:34
 msgid "Please bear in mind that web pages can only be used if a single HTTP request is available from the client. This means that you *cannot* use web pages if at least one of the following conditions apply:"
-msgstr "クライアントからの HTTP リクエストが 1 つの場合のみ、ウェブページを使用できることに留意してください。つまり、以下の条件が 1 つ以上当てはまる場合、ウェブページを使用することは*できません*。"
+msgstr "クライアントからの HTTP リクエストが 1 つの場合のみ、ウェブページを使用できることに留意してください。つまり、以下の条件が 1 つ以上当てはまる場合、ウェブページを使用することは *できません*。"
 
 #: ../../source/designer-guide/user-interface/web-page/index.rst:38
 msgid "The current request was not triggered by HTTP (e.g., started by an Event Bean)."
@@ -19123,7 +19123,7 @@ msgstr "現在のタスクがシステムによって実行されている。"
 
 #: ../../source/designer-guide/user-interface/web-page/index.rst:43
 msgid "The process is running in a parallel execution section, e.g., after a *Split* element."
-msgstr "*分割*要素の後など、並列実行セクションでプロセスが実行中である。"
+msgstr "*分割* 要素の後など、並列実行セクションでプロセスが実行中である。"
 
 #: ../../source/designer-guide/user-interface/web-page/index.rst:50
 msgid "Creating and Editing Web Pages From Within the Process"
@@ -23083,7 +23083,7 @@ msgstr "Windows サービス"
 
 #: ../../source/engine-guide/reference/axonivy-engine/service.rst:12
 msgid "The binary :file:`bin/AxonIvyEngineService.exe` is the Axon Ivy Engine implementation as Windows Service. It can also be used as command line tool to register, unregister, start and stop Axon Ivy Engine as Windows Service. The command line tool must be *run as administrator*."
-msgstr ":file:`bin/AxonIvyEngineService.exe` バイナリファイルは、Windows サービスとしての Axon Ivy Engine の実装です。Axon Ivy Engine を Windows サービスとして登録、登録解除、起動、停止するコマンドラインツールとしても使用できます。コマンドラインツールは*管理者として実行*する必要があります。"
+msgstr ":file:`bin/AxonIvyEngineService.exe` バイナリファイルは、Windows サービスとしての Axon Ivy Engine の実装です。Axon Ivy Engine を Windows サービスとして登録、登録解除、起動、停止するコマンドラインツールとしても使用できます。コマンドラインツールは *管理者として実行* する必要があります。"
 
 #: ../../source/engine-guide/reference/axonivy-engine/service.rst:18
 msgid "Register Axon Ivy Engine as Windows Service"
@@ -23689,7 +23689,7 @@ msgstr "ユーザーを追加するには、:guilabel:`新規`ボタンをクリ
 
 #: ../../source/engine-guide/reference/engine-cockpit/security.rst:90
 msgid "You can add local users to internal and external security systems. This means that even for external security systems bound to an Identity Provider, you can add and manage local users. Since these users are not managed by the associated Identity Provider, we call them *unmanaged users*."
-msgstr "ローカルユーザーを内部および外部のセキュリティシステムに追加できます。つまり、ID プロバイダーにバインドされた外部のセキュリティシステムであっても、ローカルユーザーを追加して管理できます。これらのユーザーは関連付けられた ID プロバイダーでは管理されないため、*管理されていないユーザー*と呼ばれます。"
+msgstr "ローカルユーザーを内部および外部のセキュリティシステムに追加できます。つまり、ID プロバイダーにバインドされた外部のセキュリティシステムであっても、ローカルユーザーを追加して管理できます。これらのユーザーは関連付けられた ID プロバイダーでは管理されないため、*管理されていないユーザー* と呼ばれます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/security.rst:95
 msgid "A click on a user will display its :ref:`engine-cockpit-user-detail` view."
@@ -23821,7 +23821,7 @@ msgstr "**ロールの詳細** ビューでは、ロールの情報を表示し�
 
 #: ../../source/engine-guide/reference/engine-cockpit/security.rst:195
 msgid "The :guilabel:`Role information` panel allows you to edit display name and description of the role, or link the role to an external security name (a group or a user). Doing so makes the role a *managed role*."
-msgstr ":guilabel:`ロールの情報` パネルでは、ロールの表示名と説明を編集し、ロールを外部のセキュリティ名（グループまたはユーザー）にリンクできます。これにより、そのロールは*管理ロール*になります。"
+msgstr ":guilabel:`ロールの情報` パネルでは、ロールの表示名と説明を編集し、ロールを外部のセキュリティ名（グループまたはユーザー）にリンクできます。これにより、そのロールは *管理ロール* になります。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/security.rst:199
 msgid "The :guilabel:`Users` panel allows you to add users to or remove them from the role."
