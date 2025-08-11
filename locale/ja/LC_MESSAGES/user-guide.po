@@ -2141,7 +2141,7 @@ msgid ""
 msgstr ""
 "RESTful Web サービスの Java API 仕様は `JAX-RS "
 "<https://docs.oracle.com/javaee/7/api/javax/ws/rs/package-"
-"summary.html#package.description>`__と呼ばれ、REST "
+"summary.html#package.description>`__ と呼ばれ、REST "
 "アーキテクチャスタイルの原則に従って設計、実装されたウェブアプリケーションを開発、公開、アクセスするためのポータブルな API を提供します。"
 
 #: ../../source/concepts/3rd-party-integration/restapi.rst:15
@@ -2202,7 +2202,7 @@ msgid ""
 msgstr ""
 "詳細は、`JAX-RS API Specification "
 "<https://docs.oracle.com/javaee/7/api/javax/ws/rs/package-"
-"summary.html#package.description>`__で確認できます。"
+"summary.html#package.description>`__ で確認できます。"
 
 #: ../../source/concepts/3rd-party-integration/restapi.rst:63
 msgid ""
@@ -2487,8 +2487,8 @@ msgid ""
 " the web service just like any other process flow."
 msgstr ""
 "新しい Web サービスインターフェースを定義するには、プロジェクトに :ref:`Webservice<process-kind-"
-"webservice>` タイプの新しいプロセスを追加します。ref:`process-element-web-service-process-"
-"start`イベントを設定して、サポートするパラメーターを定義します。これで、他のプロセスフローと同じように、Web "
+"webservice>` タイプの新しいプロセスを追加します。 :ref:`process-element-web-service-process-"
+"start` イベントを設定して、サポートするパラメーターを定義します。これで、他のプロセスフローと同じように、Web "
 "サービスのビジネスロジックを実装できます。"
 
 #: ../../source/concepts/3rd-party-integration/webservice.rst:35
