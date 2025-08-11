@@ -1157,7 +1157,7 @@ msgstr ":ref:`process-element-sub-process-start` イベントに移動し :ref:`
 
 #: ../../source/concepts/3rd-party-integration/process-extensions.rst:79
 msgid "To make this Sub Process even more popular for third parties, we can make it appear in the process editor's palette. Go to the Sub Process start event and open its :ref:`inscription<process-inscription-view>`. In the :ref:`process-element-tab-general`, add the :ref:`tag<process-element-tab-general-tags>` `Connector` and save the Process. Being tagged, the element now appears in the :ref:`Extensions<process-element-extension-item>` section, accessible for all Projects that depend upon yours."
-msgstr "このサブプロセスをサードパーティーにさらに広めるため、プロセスエディターのパレットに表示させることができます。 サブプロセスの開始イベントに移動し、 :ref:`インスクリプション <process-inscription-view>` を開きます。  :ref:`process-element-tab-general` で `Connector` :ref:`タグ<process-element-tab-general-tags> を追加し、プロセスを保存します。 タグが付けられた要素は :ref:`拡張機能<process-element-extension-item>` セクションに表示され、あなたのプロジェクトに依存するすべてのプロジェクトでアクセスできるようになります。"
+msgstr "このサブプロセスをサードパーティーにさらに広めるため、プロセスエディターのパレットに表示させることができます。 サブプロセスの開始イベントに移動し、 :ref:`インスクリプション <process-inscription-view>` を開きます。  :ref:`process-element-tab-general` で `Connector` :ref:`タグ<process-element-tab-general-tags>` を追加し、プロセスを保存します。 タグが付けられた要素は :ref:`拡張機能<process-element-extension-item>` セクションに表示され、あなたのプロジェクトに依存するすべてのプロジェクトでアクセスできるようになります。"
 
 #: ../../source/concepts/3rd-party-integration/process-extensions.rst:87
 msgid "|use-connector|"
@@ -2302,7 +2302,7 @@ msgstr "システムエラー"
 
 #: ../../source/concepts/error-handling.rst:44
 msgid "System errors are thrown by process elements like a *Database Step* or a *Web Service Call Step*. Their error codes are set by default and are prefixed with ``ivy`` (e.g., ``ivy:error:database``)."
-msgstr "システムエラーは、*データベースステップ* や *Web サービス呼び出しステップ*のようなプロセス要素によってスローされます。エラーコードはデフォルトで設定されており、プレフィックスに ``ivy`` が付きます（例：``ivy:error:database``）。"
+msgstr "システムエラーは、 *データベースステップ* や *Web サービス呼び出しステップ* のようなプロセス要素によってスローされます。エラーコードはデフォルトで設定されており、プレフィックスに ``ivy`` が付きます（例： ``ivy:error:database``）。"
 
 #: ../../source/concepts/error-handling.rst:50
 msgid "Throwing Errors"
@@ -5121,7 +5121,7 @@ msgstr "独自のモジュール"
 
 #: ../../source/designer-guide/data-modeling/business-data/customization.rst:69
 msgid "If simple annotations do not solve a serialization task problem, it's possible to write a custom serializer and deserializer for Jackson. You have to implement a class that extends ``com.fasterxml.jackson.databind.module.SimpleModule`` and add your custom code to it. Register the class via SPI: create a file ``META-INF/services/com.fasterxml.jackson.databind.Module`` and store the qualified name of your module implementation in this file."
-msgstr "単純なアノテーションではシリアライズタスクの問題を解決できない場合、Jackson 用のカスタムシリアライザとデシリアライザを作成できます。``com.fasterxml.jackson.databind.module.SimpleModule``を拡張するクラスを実装し、カスタムコードをそのクラスに追加する必要があります。SPI を介してクラスを登録します。``META-INF/services/com.fasterxml.jackson.databind.Module``ファイルを作成し、このファイルにモジュール実装の修飾名を格納してください。"
+msgstr "単純なアノテーションではシリアライズタスクの問題を解決できない場合、Jackson 用のカスタムシリアライザとデシリアライザを作成できます。 ``com.fasterxml.jackson.databind.module.SimpleModule`` を拡張するクラスを実装し、カスタムコードをそのクラスに追加する必要があります。SPI を介してクラスを登録します。 ``META-INF/services/com.fasterxml.jackson.databind.Module`` ファイルを作成し、このファイルにモジュール実装の修飾名を格納してください。"
 
 #: ../../source/designer-guide/data-modeling/business-data/customization.rst:76
 msgid "However, if you need to serialize instances of a popular library, there could already be a Jackson module available that handles its serialization. See https://github.com/FasterXML/jackson#third-party-datatype-modules"
@@ -5358,7 +5358,7 @@ msgstr "データクラスの作成ウィザード"
 
 #: ../../source/designer-guide/data-modeling/data-classes/data-classes.rst:42
 msgid "The New Data Class wizard lets you create a new global Data Class. Start the wizard by selecting *File > New > Data Class*."
-msgstr "データクラスの作成ウィザードでは、新しいグローバルデータクラスを作成できます。*［ファイル］、［新規］、［データクラス] *の順に選択して、ウィザードを開始します。"
+msgstr "データクラスの作成ウィザードでは、新しいグローバルデータクラスを作成できます。 *［ファイル］、［新規］、［データクラス]* の順に選択して、ウィザードを開始します。"
 
 #: ../../source/designer-guide/data-modeling/data-classes/data-classes.rst:51
 #: ../../source/designer-guide/data-modeling/data-classes/data-classes.rst:86
@@ -7120,7 +7120,7 @@ msgstr "検索文字列"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:322
 msgid "Enter here the string you are searching for. You may use two wild-cards: The *\\* (star)* for any sequence of characters (may be empty too). and the *? (question mark)* for a single character (e.g. a*b matches each entity that starts with \"a\" and ends with \"b\" and has 0, 1 or more characters in between whereas a?b matches all strings with a length of three that start with an \"a\", end with \"b\" and has one character in the middle)"
-msgstr "検索する文字列をここに入力します。任意の文字列（空でも可）には *\\*（アスタリスク）*、1 つの文字には *?（クエスチョンマーク）*の 2 つのワイルドカードを使用できます（例えば、a*b は「a」で始まり、「b」で終わり、間に 0 文字、1 文字、またはそれ以上の文字を含む各エンティティにマッチし、a?b は「a」で始まり、「b」で終わり、間に 1 文字を含むすべての文字列にマッチします）。"
+msgstr "検索する文字列をここに入力します。任意の文字列（空でも可）には *\\* （アスタリスク）* 、1 つの文字には *?（クエスチョンマーク）*の 2 つのワイルドカードを使用できます（例えば、a*b は「a」で始まり、「b」で終わり、間に 0 文字、1 文字、またはそれ以上の文字を含む各エンティティにマッチし、a?b は「a」で始まり、「b」で終わり、間に 1 文字を含むすべての文字列にマッチします）。"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:330
 msgid "Search For / Search In"
@@ -8791,7 +8791,7 @@ msgstr "3 - インポート..."
 
 #: ../../source/designer-guide/introduction/menus.rst:44
 msgid "Use this menu to import :guilabel:`General` > :guilabel:`Existing Projects into Workspace` or to import :guilabel:`Other` > :guilabel:`Checkout Projects from SVN`."
-msgstr "このメニューで:guilabel:`一般` を選択して、:guilabel:`既存のプロジェクトをワークスペースにインポート` するか、または:guilabel:`その他` を選択して、:guilabel:`SVN からプロジェクトをチェックアウト`します。"
+msgstr "このメニューで :guilabel:`一般` を選択して、 :guilabel:`既存のプロジェクトをワークスペースにインポート` するか、または :guilabel:`その他` を選択して、 :guilabel:`SVN からプロジェクトをチェックアウト` します。"
 
 #: ../../source/designer-guide/introduction/menus.rst:47
 msgid "Existing projects (that can be located anywhere on your machine, also in a different workspace) can be chosen to be imported by reference only or by copying the whole project."
@@ -8876,11 +8876,11 @@ msgstr "2 - エンジンメニュー"
 
 #: ../../source/designer-guide/introduction/menus.rst:121
 msgid "Offers the operations :guilabel:`Start Engine (Page)`, :guilabel:`Start Engine`, :guilabel:`Stop Engine`, :guilabel:`Engine Speed` and :guilabel:`Enable/Disable Animation`."
-msgstr ":guilabel:`エンジン（ページ）の開始`、:guilabel:`エンジンの起動`、:guilabel:`エンジンの停止`、:guilabel:`エンジンの速度`、:guilabel:`アニメーションの有効化／無効化`などの操作を行うことができます。"
+msgstr ":guilabel:`エンジン（ページ）の開始` 、 :guilabel:`エンジンの起動` 、 :guilabel:`エンジンの停止` 、 :guilabel:`エンジンの速度` 、 :guilabel:`アニメーションの有効化／無効化` などの操作を行うことができます。"
 
 #: ../../source/designer-guide/introduction/menus.rst:128
 msgid "See also :ref:`toolbar` section."
-msgstr "「 :ref:`ツールバー` 」のセクションも参照してください。"
+msgstr "「 :ref:`ツールバー<toolbar>` 」のセクションも参照してください。"
 
 #: ../../source/designer-guide/introduction/menus.rst:130
 msgid "3 - Preferences"
@@ -11173,7 +11173,7 @@ msgstr "**キャッシュ** ：データキャッシュメカニズムを使用�
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:280
 msgid "**Invalidate Cache**: Explicitly invalidates the data cache entry specified in the *Group/Entry* part. Use this when your element performs a write operation that changes data which is cached. The step is executed normally, but in addition the specified data cache entry is invalidated."
-msgstr "**キャッシュを無効にする** ：*グループ／エントリ*部分で指定されたデータキャッシュエントリを明示的に無効にします。キャッシュされているデータを変更する書き込み操作を要素が実行する場合に使用します。ステップは通常どおりに実行されますが、指定されたデータキャッシュエントリが無効になります。"
+msgstr "**キャッシュを無効にする** ： *グループ／エントリ* 部分で指定されたデータキャッシュエントリを明示的に無効にします。キャッシュされているデータを変更する書き込み操作を要素が実行する場合に使用します。ステップは通常どおりに実行されますが、指定されたデータキャッシュエントリが無効になります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:287
 msgid "Cache entries are always bound to their scope."
@@ -11280,7 +11280,7 @@ msgstr "このタブでは、タスクスイッチによって作成されるタ
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:384
 msgid "**Name, description:** of the task that appear in the task list of the addressed role or user."
-msgstr "*名前、説明：**対応するロールまたはユーザーのタスクリストに表示されるタスクの名前と説明。"
+msgstr "**名前、説明：** 対応するロールまたはユーザーのタスクリストに表示されるタスクの名前と説明。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:389
 msgid "Look at the :ref:`multilingual concept <workflow-languages>` for multilingual task names and descriptions."
@@ -11296,7 +11296,7 @@ msgstr "**担当：** タスクを割り当てるロールまたはユーザー"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_responsible.rst:1
 msgid "Use *Role from Attr.* or *User from Attr.* (as String), if the role or user must be set dynamically during process execution."
-msgstr "プロセス実行中にロールまたはユーザを動的に設定する必要がある場合は、*Role from Attr.*または *User from Attr.* を（文字列として）使用します。"
+msgstr "プロセス実行中にロールまたはユーザを動的に設定する必要がある場合は、 *Role from Attr.* または *User from Attr.* を（文字列として）使用します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_responsible.rst:4
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:205
@@ -11469,7 +11469,7 @@ msgstr "クエリの種類"
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:33
 msgid "Choose the kind of query you like to perform. Axon Ivy offers dedicated UI support for the most common query types such as ``Select`` (Read), ``Insert`` (Write), ``Update`` (Update) and ``Delete`` (Delete)."
-msgstr "実行したいクエリの種類を選択します。Axon Ivy は、``Select``（読み込み）、``Insert`` （書き込み）、``Update``（更新）、``Delete``（削除）など、最も一般的なクエリタイプを専用の UI でサポートしています。"
+msgstr "実行したいクエリの種類を選択します。Axon Ivy は、 ``Select`` （読み込み）、 ``Insert`` （書き込み）、 ``Update`` （更新）、 ``Delete`` （削除）など、最も一般的なクエリタイプを専用の UI でサポートしています。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:37
 msgid "If you require some non-standard SQL or if you want to issue a complex SQL statement that is not covered by the *Query Definition* mask then you may also select ``Any`` and write pure SQL instead. Expanding of process attributes will also work in the *Any Query* mode."
@@ -16358,7 +16358,7 @@ msgstr "プロセスパフォーマンスビューには、プロセスパフォ
 
 #: ../../source/designer-guide/process-modeling/simulation/debugger.rst:478
 msgid "On the Axon Ivy Engine there is the possibility to dump out performance statistics to a comma separated value file (*.csv). Check the Engine Guide for more information: *Monitoring > Process Element Performance Statistic and Analysis*"
-msgstr "Axon Ivy Engine では、パフォーマンスの統計を CSV ファイル（*.csv）にダンプできます。詳細については、エンジンガイドの*「モニタリング」の章のプロセス要素のパフォーマンスの統計と分析*を参照してください。"
+msgstr "Axon Ivy Engine では、パフォーマンスの統計を CSV ファイル（*.csv）にダンプできます。詳細については、エンジンガイドの *「モニタリング」の章のプロセス要素のパフォーマンスの統計と分析* を参照してください。"
 
 #: ../../source/designer-guide/process-modeling/simulation/debugger.rst:486
 msgid "*Window > Show View > Other... > Axon Ivy > Process Performance*"
@@ -17992,7 +17992,7 @@ msgstr "コンテンツアシスト（Ctrl + スペース）"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-editor.rst:21
 msgid "In addition to the auto completion support you get further assistance for writing expressions if you press ``Ctrl+Space`` on an expression to get a pop-up with context aware list of proposed code fragments to select from."
-msgstr "オートコンプリートのサポートに加えて、式の上で ``Ctrl + スペース``キーを押してポップアップを表示し、コンテキストに応じたコードのリストから選択して、式を作成できます。"
+msgstr "オートコンプリートのサポートに加えて、式の上で ``Ctrl + スペース`` キーを押してポップアップを表示し、コンテキストに応じたコードのリストから選択して、式を作成できます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-editor.rst:26
 msgid "|html-editor-image5|"
@@ -18228,7 +18228,7 @@ msgstr "ビューの追加方法"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-multiple-views.rst:14
 msgid "In the :guilabel:`New` menu in the Axon Ivy project tree you find the wizard :guilabel:`New HTML Dialog View` to add a view to an HTML Dialog. Just enter the name of the view and the XHTML file for the view is created and added to the HTML Dialog. In the Axon Ivy project tree, all view files of an HTML Dialog are displayed below the main node of that HTML Dialog."
-msgstr "Axon Ivy プロジェクトツリーの :guilabel:`New` メニューにある :guilabel:`HTML ダイアログビューの作成`ウィザードで、HTML ダイアログにビューを追加できます。ビューの名前を入力すると、ビューの XHTML ファイルが作成され、 HTML ダイアログに追加されます。Axon Ivy プロジェクトツリーでは、HTML ダイアログのすべてのビューファイルがその HTML ダイアログの主ノードの下に表示されます。"
+msgstr "Axon Ivy プロジェクトツリーの :guilabel:`New` メニューにある :guilabel:`HTML ダイアログビューの作成` ウィザードで、HTML ダイアログにビューを追加できます。ビューの名前を入力すると、ビューの XHTML ファイルが作成され、 HTML ダイアログに追加されます。Axon Ivy プロジェクトツリーでは、HTML ダイアログのすべてのビューファイルがその HTML ダイアログの主ノードの下に表示されます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-multiple-views.rst:20
 msgid "|html-dialog-new-wizard|"
@@ -19191,7 +19191,7 @@ msgstr "JSP ページ内では :ref:`Ivy 環境変数<ivyscript-reference-enviro
 
 #: ../../source/designer-guide/user-interface/web-page/index.rst:103
 msgid "You can also use the *in* object (i.e., process data) of the process where the associated process element is located. You can access the process data by using the ``ivy.html.get()`` method, e.g.,"
-msgstr "また、関連付けられたプロセス要素が配置されるプロセスの *in* オブジェクト（プロセスデータ）を使用することもできます。例えば、``ivy.html.get()``メソッドを使用して、プロセスデータにアクセスできます。"
+msgstr "また、関連付けられたプロセス要素が配置されるプロセスの *in* オブジェクト（プロセスデータ）を使用することもできます。例えば、 ``ivy.html.get()`` メソッドを使用して、プロセスデータにアクセスできます。"
 
 #: ../../source/designer-guide/user-interface/web-page/index.rst:112
 msgid "Furthermore, you can insert references to content from the :file:`webContent` directory into your JSP content objects, e.g.,"
@@ -20511,7 +20511,7 @@ msgstr "有効なライセンスファイルを :file:`licence.lic` という名
 
 #: ../../source/engine-guide/getting-started/docker/run.rst:22
 msgid "Open a terminal and execute :code:`docker-compose up` in the folder where you saved :file:`compose.yaml`. After startup, the engine is available at http://localhost:8080."
-msgstr "ターミナルを開き、:file:`compose.yaml` を保存したフォルダーで :code:`docker-compose up`を実行します。起動後、http://localhost:8080 でエンジンを使用できます。"
+msgstr "ターミナルを開き、 :file:`compose.yaml` を保存したフォルダーで :code:`docker-compose up` を実行します。起動後、http://localhost:8080 でエンジンを使用できます。"
 
 #: ../../source/engine-guide/getting-started/index.rst:6
 msgid "In this chapter, we help you to get up to speed with the Axon Ivy Engine with minimal effort. For productive use, the resulting configuration has to be updated later on; see :ref:`Non-Demo Setup <non-demo-setup>` below."
@@ -21562,7 +21562,7 @@ msgstr "Axon Ivy Engine を外部の OpenSearch インスタンスと統合す�
 
 #: ../../source/engine-guide/integration/opensearch/index.rst:6
 msgid "Axon Ivy Engine is using OpenSearch for providing full-text searches and statistics. OpenSearch itself is :ref:`bundled <opensearch-bundled>` with Axon Ivy Engine. For systems with high load or using Axon Ivy :ref:`cluster`, you may need to run an :ref:`external <opensearch-external>` OpenSearch instance."
-msgstr "Axon Ivy Engine は、OpenSearch を使用して、全文検索と統計を提供します。OpenSearch は Axon Ivy Engine に :ref:`バンドル<opensearch-bundled>` されています。 負荷が大きいシステムや、Axon Ivy の :ref:`クラスタ` を使用している場合は、 :ref:`外部の<opensearch-external>` OpenSearch インスタンスを実行する必要があります。"
+msgstr "Axon Ivy Engine は、OpenSearch を使用して、全文検索と統計を提供します。OpenSearch は Axon Ivy Engine に :ref:`バンドル<opensearch-bundled>` されています。 負荷が大きいシステムや、Axon Ivy の :ref:`クラスタ<cluster>` を使用している場合は、 :ref:`外部の<opensearch-external>` OpenSearch インスタンスを実行する必要があります。"
 
 #: ../../source/engine-guide/integration/reverse-proxy/apache-httpd/index.rst:4
 msgid "Apache HTTP Server"
@@ -21691,7 +21691,7 @@ msgstr "Microsoft IIS を Axon Ivy Engine の前にあるリバースプロキ�
 
 #: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:27
 msgid "The first time when you execute this script, you may be asked for a :guilabel:`Execution Policy Change` so that this script can be executed. You need to answer this question with :guilabel:`[A] Yes to All`."
-msgstr "このスクリプトを初めて実行する場合、このスクリプトを実行できるように、:guilabel:`実行ポリシーを変更する` かどうかの確認を求められることがあります。答えとして :guilabel:`[A] すべてはい`を選択してください。"
+msgstr "このスクリプトを初めて実行する場合、このスクリプトを実行できるように、 :guilabel:`実行ポリシーを変更する` かどうかの確認を求められることがあります。答えとして :guilabel:`[A] すべてはい` を選択してください。"
 
 #: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:33
 msgid "If you have not been asked about the :guilabel:`Execution Policy Change` but the script is still not running, you maybe need to unblock it via the Options menu (Properties -> General -> Security -> Unblock) or by running the following command in the PowerShell :code:`Unblock-File iis-proxy-setup.ps1`"
@@ -21703,7 +21703,7 @@ msgstr "このスクリプトに従って、IIS を Axon Ivy Engine のリバー
 
 #: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:40
 msgid "If your IIS server cannot access external links, you need to download the modules externally and upload them to your IIS server. Please check the download links for the modules in our script by searching for :guilabel:`downloadModule`. Once you have downloaded them, upload them onto the IIS server in a directory of your choice. Using the directory where you store our script is the most simple solution. Then, start the script and select `No` to the question titled :guilabel:`IIS Module Source`, and enter the path where you stored the modules in question :guilabel:`IIS Modules Source Path`."
-msgstr "IIS サーバーが外部リンクにアクセスできない場合は、外部でモジュールをダウンロードし、IIS サーバーにアップロードする必要があります。スクリプトで :guilabel:`downloadModule` を検索して、モジュールのダウンロードリンクを確認してください。ダウンロードしたら、IIS サーバーの任意のディレクトリにアップロードします。スクリプトを格納しているディレクトリを使用するのが、最も簡単な方法です。次に、スクリプトを起動し、:guilabel:`IIS モジュールのソース`という質問に対して［いいえ］を選択し、:guilabel:`IIS モジュールのソースのパス`にモジュールを格納したパスを入力します。"
+msgstr "IIS サーバーが外部リンクにアクセスできない場合は、外部でモジュールをダウンロードし、IIS サーバーにアップロードする必要があります。スクリプトで :guilabel:`downloadModule` を検索して、モジュールのダウンロードリンクを確認してください。ダウンロードしたら、IIS サーバーの任意のディレクトリにアップロードします。スクリプトを格納しているディレクトリを使用するのが、最も簡単な方法です。次に、スクリプトを起動し、 :guilabel:`IIS モジュールのソース` という質問に対して［いいえ］を選択し、 :guilabel:`IIS モジュールのソースのパス` にモジュールを格納したパスを入力します。"
 
 #: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:49
 msgid "The script is divided into several parts:"
@@ -21715,7 +21715,7 @@ msgstr "**IIS のセットアップ** では、IIS を含む必要なすべて�
 
 #: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:59
 msgid "And set :guilabel:`preserveHostHeader` to :code:`true`. The most important configuration entries in IIS are the :guilabel:`Authentication` and :guilabel:`URL Rewrite` modules. The script will sense if IIS including all required features is already installed and will skip the IIS installation in that case."
-msgstr ":guilabel:`preserveHostHeader` を :code:`true` に設定します。IIS で最も重要な設定項目は、:guilabel:`認証` モジュールと :guilabel:`URL 書き換え`モジュールです。スクリプトは必要なすべての機能を含む IIS がすでにインストールされているかどうか検知し、インストール済みであれば IIS のインストールをスキップします。"
+msgstr ":guilabel:`preserveHostHeader` を :code:`true` に設定します。IIS で最も重要な設定項目は、 :guilabel:`認証` モジュールと :guilabel:`URL 書き換え` モジュールです。スクリプトは必要なすべての機能を含む IIS がすでにインストールされているかどうか検知し、インストール済みであれば IIS のインストールをスキップします。"
 
 #: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:68
 msgid "**URL Rewrite Rules** configures the rules for URL rewriting. It will add a new rule :code:`ivy-route-all` to the :guilabel:`Default Website`. This will route all traffic to the Axon Ivy Engine which runs on the same host at :code:`http://localhost:8080`. You may adjust this rule according to your needs when your Axon Ivy Engine runs on a different host, and/or on a different port. We recommend to :ref:`limit the access <reverse-proxy-secure-path>` to specific applications by only routing the applications that are available to your users. You can do that by changing the standard pattern :code:`.*` of the rule to :code:`YOUR-APP.*` e.g., :code:`demo-portal.*`. e.g., :code:`system.*`. If you have multiple apps being served by this IIS site, use a rule like :code:`(demo-portal|myApp1|myOtherApp)\\/.*`. We suggest that you define a separate, internal-only website for access to the engine cockpit."
@@ -24715,7 +24715,7 @@ msgstr "マーケット"
 
 #: ../../source/market/index.rst:6
 msgid "The `Axon Ivy Market <https://market.axonivy.com>`_ provides powerful add-ons for the Axon Ivy platform. These include complete workflow user interfaces, components for generating documents, connectors for connecting third-party systems and much more. Have a look!"
-msgstr "`Axon Ivy Market <https://market.axonivy.com>`_では、Axon Ivy プラットフォーム向けの高性能なアドオンを提供しています。完全なワークフローユーザーインターフェース、ドキュメント作成コンポーネント、サードパーティーシステムの接続用コネクターなど、さまざまなアドオンをぜひチェックしてください。"
+msgstr "`Axon Ivy Market <https://market.axonivy.com>`_ では、Axon Ivy プラットフォーム向けの高性能なアドオンを提供しています。完全なワークフローユーザーインターフェース、ドキュメント作成コンポーネント、サードパーティーシステムの接続用コネクターなど、さまざまなアドオンをぜひチェックしてください。"
 
 #: ../../source/market/index.rst:13
 msgid "Install From the Market"
