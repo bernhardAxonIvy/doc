@@ -2974,7 +2974,7 @@ msgstr "18 行目："
 
 #: ../../source/concepts/testing/process-testing.rst:113
 msgid "Of course, you cannot just execute a task without declaring an appropriate ``Session``. To declare said ``Session`` you can call the :ref:`process-testing-as` method and append the desired ``Session``, ``User`` or ``Role`` that should execute the next task."
-msgstr "もちろん、適切な``セッション``を宣言せずにタスクを実行することはできません。``セッション``を宣言するには:ref:`process-testing-as` メソッドを呼び出して、次のタスクを実行する``セッション``、``ユーザー``または``ロール``を追加します。"
+msgstr "もちろん、適切な``セッション``を宣言せずにタスクを実行することはできません。``セッション``を宣言するには :ref:`process-testing-as` メソッドを呼び出して、次のタスクを実行する``セッション``、``ユーザー``または``ロール``を追加します。"
 
 #: ../../source/concepts/testing/process-testing.rst:118
 msgid "If you execute this test then you will face the following error:"
@@ -17371,7 +17371,7 @@ msgstr ":file:`custom.css`：色のカスタマイズなどの変数を含む :r
 
 #: ../../source/designer-guide/user-interface/branding/branding-user-interface.rst:47
 msgid "Use :file:`custom.css` to override `css-variables <https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties>`_. If you're interested in more customization, there are more variables provided by the :ref:`Portal <portal-guide>`."
-msgstr ":file:`custom.css` を使用して、`CSS 変数<https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties>`_ をオーバーライドします。もっとカスタマイズしたい場合は :ref:`ポータル<portal-guide>` 他にもさまざまな変数が提供されています。"
+msgstr ":file:`custom.css` を使用して、`CSS 変数 <https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties>`_ をオーバーライドします。もっとカスタマイズしたい場合は :ref:`ポータル<portal-guide>` 他にもさまざまな変数が提供されています。"
 
 #: ../../source/designer-guide/user-interface/branding/branding-user-interface.rst:54
 msgid "CSS variables are only supported in the :ref:`freya-ivy <freya-themes>` theme."
