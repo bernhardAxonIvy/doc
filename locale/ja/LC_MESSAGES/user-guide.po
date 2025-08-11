@@ -6876,7 +6876,7 @@ msgstr "Java クラスのデバッグ"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:12
 msgid "You can debug java classes in the Axon Ivy Designer, by uncomment the line :code:`-agentlib:jdwp=transport=dt_socket,server=y,address=8001,suspend=n` in the :file:`AxonIvyDesigner.ini` file. After a restart you're able to start a *Debug session* by add a new :code:`Remote Java Application debug configuration`. For more information, check out `How can I debug my Java class in an Axon Ivy Designer? <https://community.axonivy.com/d/429-how-can-i-debug-my-java-class-in-an-axon-ivy-designer>`_"
-msgstr "Axon Ivy Designer では、:file:`AxonIvyDesigner.ini` ファイルの :code:`-agentlib:jdwp=transport=dt_socket,server=y,address=8001,suspend=n` という行のコメントを解除して、Java クラスをデバッグできます。再起動後、新しい :code:`リモート Java アプリケーションのデバッグ設定` を追加して、*デバッグセッション* を開始できます。詳細については、`How can I debug my Java class in an Axon Ivy Designer?（Axon Ivy Designer で Java クラスをデバッグする方法）<https://community.axonivy.com/d/429-how-can-i-debug-my-java-class-in-an-axon-ivy-designer>`_ をご覧ください。"
+msgstr "Axon Ivy Designer では、:file:`AxonIvyDesigner.ini` ファイルの :code:`-agentlib:jdwp=transport=dt_socket,server=y,address=8001,suspend=n` という行のコメントを解除して、Java クラスをデバッグできます。再起動後、新しい :code:`リモート Java アプリケーションのデバッグ設定` を追加して、*デバッグセッション* を開始できます。詳細については、`Axon Ivy Designer で Java クラスをデバッグする方法 <https://community.axonivy.com/d/429-how-can-i-debug-my-java-class-in-an-axon-ivy-designer>`_ をご覧ください。"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:24
 msgid "Data Caching"
