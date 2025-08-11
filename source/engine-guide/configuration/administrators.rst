@@ -20,6 +20,24 @@ The Axon Ivy Engine will automatically hash and replace the password in file,
 when the configuration will be loaded
 
 
+Identity Provider
+-----------------
+
+You can configure an external identity provider for administrators. This can be
+done the same way as for :ref:`workflow users <configuration-security-system>`.
+You only need to define :code:`system` for :code:`SecuritySytems` in
+:ref:`ivy-yaml`.
+
+.. code-block:: yaml
+
+    # Example configuration for an external identity provider
+    SecuritySystems:
+      system:
+        IdentityProvider:
+          Name: keycloak
+
+
+
 .. _engine-adminstrators-sso:
 
 SSO
