@@ -49,7 +49,7 @@ msgstr "非推奨のパブリック API"
 
 #: ../../source/axonivy/migration/deprecation.rst:21
 msgid "Deprecated Public API are documented in our :public-api:`deprecated Public API page</deprecated-list.html>`."
-msgstr "非推奨のパブリック API は:public-api:`「非推奨のパブリック API」ページ</deprecated-list.html>` 記載されています。"
+msgstr "非推奨のパブリック API は :public-api:`「非推奨のパブリック API」ページ</deprecated-list.html>` 記載されています。"
 
 #: ../../source/axonivy/migration/hotfix/docker.rst:4
 #: ../../source/axonivy/migration/hotfix/index.rst:33
@@ -2728,7 +2728,7 @@ msgstr "テンプレートでは、ivy のマクロと以下の変数を使用�
 
 #: ../../source/concepts/notification/index.rst:142
 msgid ":code:`receiver`: The :public-api:`receiver</ch/ivyteam/ivy/security/ISecurityMember.html>` of the notification."
-msgstr ":code:`receiver` ：通知の:public-api:`レシーバー</ch/ivyteam/ivy/security/ISecurityMember.html>`"
+msgstr ":code:`receiver` ：通知の :public-api:`レシーバー</ch/ivyteam/ivy/security/ISecurityMember.html>`"
 
 #: ../../source/concepts/notification/index.rst:143
 msgid ":code:`payload`: The object that was provided as a payload of the notification."
@@ -2736,7 +2736,7 @@ msgstr ":code:`payload` ：通知のペイロードとして提供されたオ�
 
 #: ../../source/concepts/notification/index.rst:144
 msgid ":code:`ivy.session`: :public-api:`IWorkflowSession</ch/ivyteam/ivy/workflow/IWorkflowSession.html>` with the receiver as session user."
-msgstr ":code:`ivy.session` ：セッションユーザーであるレシーバーとの:public-api:`IWorkflowSession</ch/ivyteam/ivy/workflow/IWorkflowSession.html>`"
+msgstr ":code:`ivy.session` ：セッションユーザーであるレシーバーとの :public-api:`IWorkflowSession</ch/ivyteam/ivy/workflow/IWorkflowSession.html>`"
 
 #: ../../source/concepts/notification/index.rst:145
 msgid ":code:`ivy.cm`: :public-api:`ContentManagement</ch/ivyteam/ivy/cm/exec/ContentManagement.html>`"
@@ -3049,7 +3049,7 @@ msgstr "Start"
 
 #: ../../source/concepts/testing/process-testing.rst:191
 msgid "To :public-api:`start</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html#start()>` an execution, you need to tell the ``BpmClient`` which ``BpmProcess`` or ``BpmElement`` you want to run. To proceed with the execution, either tell the ``BpmClient`` to continue with the previous :public-api:`execution</ch/ivyteam/ivy/bpm/engine/client/ExecutionResult.html>` or choose the next desired ``task``. Using a ``task`` is especially useful if there are multiple active ``tasks`` available."
-msgstr "実行を:public-api:`開始</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html#start()>` るには、実行したい ``BpmProcess`` または ``BpmElement`` を ``BpmClient`` に指示する必要があります。実行を進めるには、前の:public-api:`実行</ch/ivyteam/ivy/bpm/engine/client/ExecutionResult.html>` を継続するよう ``BpmClient`` に指示するか、次の``タスク``を選択します。アクティブな``タスク``が複数ある場合は特に、``タスク``を使用すると便利です。"
+msgstr "実行を :public-api:`開始</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html#start()>` るには、実行したい ``BpmProcess`` または ``BpmElement`` を ``BpmClient`` に指示する必要があります。実行を進めるには、前の :public-api:`実行</ch/ivyteam/ivy/bpm/engine/client/ExecutionResult.html>` を継続するよう ``BpmClient`` に指示するか、次の``タスク``を選択します。アクティブな``タスク``が複数ある場合は特に、``タスク``を使用すると便利です。"
 
 #: ../../source/concepts/testing/process-testing.rst:202
 msgid "To test callable subprocesses use the ``subProcess`` method instead of the ``process`` method."
@@ -3069,7 +3069,7 @@ msgstr "Mock"
 
 #: ../../source/concepts/testing/process-testing.rst:225
 msgid "There are two ways of :public-api:`mocking</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html#mock()>` an element. Either you mock the entire element or the UI or call part. If you mock the entire element nothing configured on the element is tested at all. On the other hand if you mock the UI or call part of an element its mapping code is executed and tested."
-msgstr "要素を:public-api:`モック化</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html#mock()>` る方法は 2 つあります。要素全体をモック化するか、UI または呼び出し部分をモック化します。要素全体をモック化した場合、要素に設定されたものはすべてテストされません。一方、要素の UI または呼び出し部分をモック化した場合は、そのマッピングコードが実行され、テストされます。"
+msgstr "要素を :public-api:`モック化</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html#mock()>` る方法は 2 つあります。要素全体をモック化するか、UI または呼び出し部分をモック化します。要素全体をモック化した場合、要素に設定されたものはすべてテストされません。一方、要素の UI または呼び出し部分をモック化した場合は、そのマッピングコードが実行され、テストされます。"
 
 #: ../../source/concepts/testing/process-testing.rst:232
 msgid "If your process runs through an HTML Dialog you always need to mock it."
@@ -7779,7 +7779,7 @@ msgstr "ルールエンジンの使用方法を見る前に、もう一度、ソ
 
 #: ../../source/designer-guide/how-to/rule-engine.rst:147
 msgid "To run the rule engine you have to use the :public-api:`Public API of the rule engine </ch/ivyteam/ivy/rule/engine/api/package-summary.html>` to build and execute rules on data objects. In a script step you can use ``ivy.rules`` and in a Java class use :public-api:`Rules </ch/ivyteam/ivy/rule/engine/api/Rules.html>`. First you will need to create a :public-api:`RuleExecutor </ch/ivyteam/ivy/rule/engine/api/IRuleExecutor.html>` with all rules."
-msgstr "ルールエンジンを実行するには、:public-api:`ルールエンジンのパブリック API </ch/ivyteam/ivy/rule/engine/api/package-summary.html>` 使用して、データオブジェクトに対してルールを作成し、実行する必要があります。スクリプトステップでは ``ivy.rules`` を使用し、Java クラスでは:public-api:`ルール</ch/ivyteam/ivy/rule/engine/api/Rules.html>` 使用します。最初に、すべてのルールを含む :public-api:`RuleExecutor </ch/ivyteam/ivy/rule/engine/api/IRuleExecutor.html>` を作成する必要があります。"
+msgstr "ルールエンジンを実行するには、:public-api:`ルールエンジンのパブリック API </ch/ivyteam/ivy/rule/engine/api/package-summary.html>` 使用して、データオブジェクトに対してルールを作成し、実行する必要があります。スクリプトステップでは ``ivy.rules`` を使用し、Java クラスでは :public-api:`ルール</ch/ivyteam/ivy/rule/engine/api/Rules.html>` 使用します。最初に、すべてのルールを含む :public-api:`RuleExecutor </ch/ivyteam/ivy/rule/engine/api/IRuleExecutor.html>` を作成する必要があります。"
 
 #: ../../source/designer-guide/how-to/rule-engine.rst:165
 msgid "Use the namespace to group rule files that belong together and use the corresponding API to load all rule files of the same namespace together. You can also load the rule files from your dependent projects. And you can override rules and rules files by having a rule or rule file with the same name in the overriding project."
@@ -11362,7 +11362,7 @@ msgstr "**タイムアウト**"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:442
 msgid "An IvyScript expression defines the :ref:`ivyscript-datatype-duration` until the task will expire. If that happens the escalation procedure defined by the following parameters is executed. You can also use a simple :public-api:`Duration </ch/ivyteam/ivy/scripting/objects/Duration.html>` syntax like :code:`2D`."
-msgstr "IvyScript 式は、タスクの有効期限が切れるまで :ref:`ivyscript-datatype-duration` を定義します。その場合、次のパラメーターで定義されたエスカレーション手順が実行されます。また、 :code:` 2D` のような単純な:public-api:`Duration </ch/ivyteam/ivy/scripting/objects/Duration.html>` 文を使用することもできます。"
+msgstr "IvyScript 式は、タスクの有効期限が切れるまで :ref:`ivyscript-datatype-duration` を定義します。その場合、次のパラメーターで定義されたエスカレーション手順が実行されます。また、 :code:` 2D` のような単純な :public-api:`Duration </ch/ivyteam/ivy/scripting/objects/Duration.html>` 文を使用することもできます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:451
 msgid "If a Delay is defined, the expiry timeout begins after the Delay."
