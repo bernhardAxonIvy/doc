@@ -3595,7 +3595,7 @@ msgstr "imgCopy"
 
 #: ../../source/designer-guide/cms/editors.rst:99
 msgid "Copies the currently selected content object including all of its children to the clipboard. The copied content objects can be inserted somewhere else in the content tree with :guilabel:`Paste`."
-msgstr "すべての子オブジェクトを含め、現在選択されているコンテンツオブジェクトをクリップボードにコピーします。:guilabel:`貼り付け`を使用して、コピーされたコンテンツオブジェクトをコンテンツツリーの他の場所に挿入できます。"
+msgstr "すべての子オブジェクトを含め、現在選択されているコンテンツオブジェクトをクリップボードにコピーします。:guilabel:`貼り付け` を使用して、コピーされたコンテンツオブジェクトをコンテンツツリーの他の場所に挿入できます。"
 
 #: ../../source/designer-guide/cms/editors.rst:103
 msgid "|imgPaste| Paste"
@@ -3607,7 +3607,7 @@ msgstr "imgPaste"
 
 #: ../../source/designer-guide/cms/editors.rst:104
 msgid "Inserts any content object(s) that was copied before to the clipboard with :guilabel:`Copy`. The copied content objects are inserted as children of the selected content object."
-msgstr ":guilabel:`コピー`でクリップボードにコピーされたコンテンツオブジェクトを挿入します。コピーされたコンテンツオブジェクトは、選択されたコンテンツオブジェクトの子オブジェクトとして挿入されます。"
+msgstr ":guilabel:`コピー` でクリップボードにコピーされたコンテンツオブジェクトを挿入します。コピーされたコンテンツオブジェクトは、選択されたコンテンツオブジェクトの子オブジェクトとして挿入されます。"
 
 #: ../../source/designer-guide/cms/editors.rst:108
 msgid "|imgDelete| Delete"
@@ -3703,7 +3703,7 @@ msgstr "|imgCopy| コンテンツオブジェクトをコピー"
 
 #: ../../source/designer-guide/cms/editors.rst:171
 msgid "Copies this content object with all its children to the clipboard. The copied objects can be inserted somewhere else in the content tree with :guilabel:`Paste`."
-msgstr "このコンテンツオブジェクトとそのすべての子オブジェクトをクリップボードにコピーします。:guilabel:`貼り付け`を使用して、コピーされたオブジェクトをコンテンツツリーの他の場所に挿入できます。"
+msgstr "このコンテンツオブジェクトとそのすべての子オブジェクトをクリップボードにコピーします。:guilabel:`貼り付け` を使用して、コピーされたオブジェクトをコンテンツツリーの他の場所に挿入できます。"
 
 #: ../../source/designer-guide/cms/editors.rst:175
 msgid "|imgDelete| Delete content object"
@@ -3743,7 +3743,7 @@ msgstr "|imgCopy| コンテンツオブジェクトの値をコピー"
 
 #: ../../source/designer-guide/cms/editors.rst:192
 msgid "Copies this content object value to the clipboard. The copied objects can be inserted somewhere else in the content tree with :guilabel:`Paste`."
-msgstr "このコンテンツオブジェクトの値をクリップボードにコピーします。:guilabel:`貼り付け`を使用して、コピーされたオブジェクトをコンテンツツリーの他の場所に挿入できます。"
+msgstr "このコンテンツオブジェクトの値をクリップボードにコピーします。:guilabel:`貼り付け` を使用して、コピーされたオブジェクトをコンテンツツリーの他の場所に挿入できます。"
 
 #: ../../source/designer-guide/cms/editors.rst:195
 msgid "|imgDelete| Delete content object value"
@@ -4102,11 +4102,11 @@ msgstr ":guilabel:`データベース` 使用するデータベースのタイ�
 
 #: ../../source/designer-guide/configuration/databases.rst:45
 msgid "The field :guilabel:`Max Connections` lets you specify the maximum number of concurrent connections to this database."
-msgstr ":guilabel:`最大接続数`フィールドでは、このデータベースへの最大同時接続数を指定できます。"
+msgstr ":guilabel:`最大接続数` フィールドでは、このデータベースへの最大同時接続数を指定できます。"
 
 #: ../../source/designer-guide/configuration/databases.rst:48
 msgid "Choose an :guilabel:`Icon` that represents the database. The icon will also be used as decorator icon on Database process elements that reference this database."
-msgstr "データベースを表す:guilabel:`アイコン`を選択します。このアイコンは、このデータベースを参照するデータベースプロセス要素のデコレーターアイコンとしても使用されます。"
+msgstr "データベースを表す:guilabel:`アイコン` を選択します。このアイコンは、このデータベースを参照するデータベースプロセス要素のデコレーターアイコンとしても使用されます。"
 
 #: ../../source/designer-guide/configuration/databases.rst:52
 msgid ":guilabel:`Connection Properties` Specify the properties for the database connection."
@@ -4932,7 +4932,7 @@ msgstr ":guilabel:`WS クラスの生成` 必須フィールドである :guilab
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:70
 msgid "If you change the :guilabel:`WSDL URL`, the :guilabel:`WSDL` (i.e., the functionality or data structure of the Service) or the :guilabel:`Library` setting, you **must** re-generate the service classes."
-msgstr ":guilabel:`WSDL URL`、:guilabel:`WSDL`（サービスの機能やデータ構造）、:guilabel:`ライブラリ`の設定を変更した場合は、サービスクラスを再度生成する必要があります。"
+msgstr ":guilabel:`WSDL URL`、:guilabel:`WSDL`（サービスの機能やデータ構造）、:guilabel:`ライブラリ` の設定を変更した場合は、サービスクラスを再度生成する必要があります。"
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:84
 msgid "Configures the authentication scheme and data used to authenticate with the remote web service. The following attributes are available in the *Authentication* section:"
@@ -5917,7 +5917,7 @@ msgstr "データベーススキーマの生成"
 
 #: ../../source/designer-guide/data-modeling/persistence/generate-database-schema.rst:6
 msgid "Click on :guilabel:`Generate Schema` in the persistence unit."
-msgstr "永続性ユニットの :guilabel:`スキーマの生成`をクリックします。"
+msgstr "永続性ユニットの :guilabel:`スキーマの生成` をクリックします。"
 
 #: ../../source/designer-guide/data-modeling/persistence/generate-database-schema.rst:9
 msgid "Generation options"
@@ -6662,7 +6662,7 @@ msgstr "`Jenkins Wiki <https://wiki.jenkins.io/display/JENKINS/Installing+Jenkin
 
 #: ../../source/designer-guide/how-to/continuous-integration.rst:101
 msgid "Install a Maven runtime in Jenkins via :guilabel:`Manage` > :guilabel:`Configure` > :guilabel:`Maven` > :guilabel:`Maven installation` > :guilabel:`Choose auto installation`"
-msgstr ":guilabel:`管理`、:guilabel:`設定`、:guilabel:`Maven`、:guilabel:`Maven のインストール`、:guilabel:`自動インストールを選択`の順に選択して、Maven ランタイムを Jenkins にインストールします。"
+msgstr ":guilabel:`管理`、:guilabel:`設定`、:guilabel:`Maven`、:guilabel:`Maven のインストール`、:guilabel:`自動インストールを選択` の順に選択して、Maven ランタイムを Jenkins にインストールします。"
 
 #: ../../source/designer-guide/how-to/continuous-integration.rst:105
 msgid "Create a new Jenkins Job. Select :guilabel:`Maven-Project` as job style."
@@ -6678,7 +6678,7 @@ msgstr ":guilabel:`Build` セクションで ``clean verify`` というゴール
 
 #: ../../source/designer-guide/how-to/continuous-integration.rst:112
 msgid ":guilabel:`Save` the Job and :guilabel:`Run` it"
-msgstr "ジョブを:guilabel:`保存`して:guilabel:`実行`します。"
+msgstr "ジョブを:guilabel:`保存` して:guilabel:`実行` します。"
 
 #: ../../source/designer-guide/how-to/data-storage.rst:2
 msgid "Data Storage"
@@ -8629,7 +8629,7 @@ msgstr "プロセスの名前空間はスラッシュ「/」で区切られ（�
 
 #: ../../source/designer-guide/introduction/common-ui-components.rst:98
 msgid "Click on :guilabel:`Finish` to actually rename the selected resource(s) or on :guilabel:`Cancel` to abort the operation."
-msgstr ":guilabel:`終了`をクリックすると、選択したリソースの名前が実際に変更されます。:guilabel:`キャンセル`をクリックすると、操作が中止されます。"
+msgstr ":guilabel:`終了` をクリックすると、選択したリソースの名前が実際に変更されます。:guilabel:`キャンセル` をクリックすると、操作が中止されます。"
 
 #: ../../source/designer-guide/introduction/common-ui-components.rst:105
 #: ../../source/designer-guide/introduction/common-ui-components.rst:107
@@ -8643,7 +8643,7 @@ msgstr "表示されたリストから、移動操作の移動先のプロジェ
 
 #: ../../source/designer-guide/introduction/common-ui-components.rst:116
 msgid "Click on :guilabel:`Finish` to actually move the selected resource(s) to the selected project or on :guilabel:`Cancel` to abort the operation."
-msgstr ":guilabel:`終了`をクリックすると、選択したリソースの名前が実際に移動されます。:guilabel:`キャンセル`をクリックすると、操作が中止されます。"
+msgstr ":guilabel:`終了` をクリックすると、選択したリソースの名前が実際に移動されます。:guilabel:`キャンセル` をクリックすると、操作が中止されます。"
 
 #: ../../source/designer-guide/introduction/common-ui-components.rst:123
 #: ../../source/designer-guide/introduction/common-ui-components.rst:125
@@ -8661,7 +8661,7 @@ msgstr "削除対象として Axon Ivy のアーティファクト（Axon Ivy �
 
 #: ../../source/designer-guide/introduction/common-ui-components.rst:138
 msgid "Click on :guilabel:`Finish` to actually delete the selected resource(s) or on :guilabel:`Cancel` to abort the operation."
-msgstr ":guilabel:`終了`をクリックすると、選択したリソースの名前が実際に削除されます。:guilabel:`キャンセル`をクリックすると、操作が中止されます。"
+msgstr ":guilabel:`終了` をクリックすると、選択したリソースの名前が実際に削除されます。:guilabel:`キャンセル` をクリックすると、操作が中止されます。"
 
 #: ../../source/designer-guide/introduction/common-ui-components.rst:146
 #: ../../source/designer-guide/introduction/common-ui-components.rst:148
@@ -8679,7 +8679,7 @@ msgstr "コピーウィザードでは、作成されるコピーのプロジェ
 
 #: ../../source/designer-guide/introduction/common-ui-components.rst:166
 msgid "Click on :guilabel:`Finish` to actually paste the copied resource(s) to the defined location or on :guilabel:`Cancel` to abort the operation."
-msgstr "guilabel:`終了`をクリックすると、コピーされたリソースが実際に定義された場所に貼り付けられます。:guilabel:`キャンセル`をクリックすると、操作が中止されます。"
+msgstr "guilabel:`終了`をクリックすると、コピーされたリソースが実際に定義された場所に貼り付けられます。:guilabel:`キャンセル` をクリックすると、操作が中止されます。"
 
 #: ../../source/designer-guide/introduction/index.rst:2
 #: ../../source/neo-designer/introduction.rst:4
@@ -8791,7 +8791,7 @@ msgstr "3 - インポート..."
 
 #: ../../source/designer-guide/introduction/menus.rst:44
 msgid "Use this menu to import :guilabel:`General` > :guilabel:`Existing Projects into Workspace` or to import :guilabel:`Other` > :guilabel:`Checkout Projects from SVN`."
-msgstr "このメニューで:guilabel:`一般`を選択して、:guilabel:`既存のプロジェクトをワークスペースにインポート`するか、または:guilabel:`その他`を選択して、:guilabel:`SVN からプロジェクトをチェックアウト`します。"
+msgstr "このメニューで:guilabel:`一般` を選択して、:guilabel:`既存のプロジェクトをワークスペースにインポート` するか、または:guilabel:`その他` を選択して、:guilabel:`SVN からプロジェクトをチェックアウト`します。"
 
 #: ../../source/designer-guide/introduction/menus.rst:47
 msgid "Existing projects (that can be located anywhere on your machine, also in a different workspace) can be chosen to be imported by reference only or by copying the whole project."
@@ -8803,7 +8803,7 @@ msgstr "4 - エクスポート..."
 
 #: ../../source/designer-guide/introduction/menus.rst:52
 msgid "This menu can be used to export projects or parts of projects from the current workspace. Use :guilabel:`General` > :guilabel:`Archive File or General` > :guilabel:`File System`."
-msgstr "このメニューを使用して、プロジェクトまたはプロジェクトの一部を現在のワークスペースからエクスポートできます。guilabel:`一般`、:guilabel:`アーカイブファイルまたは一般`、:guilabel:`ファイルシステム`の順に選択してください。"
+msgstr "このメニューを使用して、プロジェクトまたはプロジェクトの一部を現在のワークスペースからエクスポートできます。guilabel:`一般`、:guilabel:`アーカイブファイルまたは一般`、:guilabel:`ファイルシステム` の順に選択してください。"
 
 #: ../../source/designer-guide/introduction/menus.rst:58
 #: ../../source/designer-guide/introduction/menus.rst:60
@@ -8825,7 +8825,7 @@ msgstr "2 - ファイル..."
 
 #: ../../source/designer-guide/introduction/menus.rst:72
 msgid "Same as :guilabel:`Search...` but opens directly on the :guilabel:`File` tab of the Search dialog, where search queries for any text within any resource of the current project or even in the whole workspace can be started."
-msgstr ":guilabel:`検索...`と同じですが、検索ダイアログの:guilabel:`ファイル`タブを直接開き、現在のプロジェクトの任意のリソース内、あるいはワークスペース全体で任意のテキストの検索クエリを開始できます。"
+msgstr ":guilabel:`検索...`と同じですが、検索ダイアログの:guilabel:`ファイル` タブを直接開き、現在のプロジェクトの任意のリソース内、あるいはワークスペース全体で任意のテキストの検索クエリを開始できます。"
 
 #: ../../source/designer-guide/introduction/menus.rst:77
 msgid "3 - Axon Ivy Search"
@@ -9310,7 +9310,7 @@ msgstr "詳細については、「 :ref:`language-settings` 」を参照して�
 
 #: ../../source/designer-guide/introduction/toolbar.rst:90
 msgid "Opens the Search dialog. Allows you to search for any text within any resource of the current project or even in the whole workspace (use the :guilabel:`File` > :guilabel:`Search` tab of the dialog)."
-msgstr "検索ダイアログを開きます。現在のプロジェクトの任意のリソース内、あるいはワークスペース全体で任意のテキストを検索できます（:guilabel:`ファイル`を選択し、ダイアログの:guilabel:`検索`タブを開いてください）。"
+msgstr "検索ダイアログを開きます。現在のプロジェクトの任意のリソース内、あるいはワークスペース全体で任意のテキストを検索できます（:guilabel:`ファイル` を選択し、ダイアログの:guilabel:`検索` タブを開いてください）。"
 
 #: ../../source/designer-guide/introduction/toolbar.rst:95
 msgid "Goto Previous Modification"
@@ -9354,7 +9354,7 @@ msgstr "ワークスペースの場所を選択すると、ワークベンチウ
 
 #: ../../source/designer-guide/introduction/workbench.rst:19
 msgid "You can get the Welcome Screen back at any time by selecting :guilabel:`Help` > :guilabel:`Welcome`."
-msgstr ":guilabel:`ヘルプ`、:guilabel:`ようこそ`の順に選択して、いつでもようこそ画面に戻ることができます。"
+msgstr ":guilabel:`ヘルプ`、:guilabel:`ようこそ` の順に選択して、いつでもようこそ画面に戻ることができます。"
 
 #: ../../source/designer-guide/introduction/workbench.rst:22
 #: ../../source/designer-guide/introduction/workbench.rst:26
@@ -13976,7 +13976,7 @@ msgstr "color-action"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/_select-color-quick-action.rst:5
 msgid "To define new colors or edit existing ones, press the :guilabel:`plus` or the :guilabel:`edit` buttons in the color palette. Valid colors are every possible `css color <https://developer.mozilla.org/en-US/docs/Web/CSS/color>`__."
-msgstr "新しい色を定義したり、既存の色を編集するには、カラーパレットの:guilabel:`+`ボタンまたは:guilabel:`編集`ボタンをクリックします。`CSS で指定可能な色 <https://developer.mozilla.org/en-US/docs/Web/CSS/color>`__はすべて有効です。"
+msgstr "新しい色を定義したり、既存の色を編集するには、カラーパレットの:guilabel:`+`ボタンまたは:guilabel:`編集` ボタンをクリックします。`CSS で指定可能な色 <https://developer.mozilla.org/en-US/docs/Web/CSS/color>`__はすべて有効です。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:196
 msgid "Add Element:"
@@ -13992,7 +13992,7 @@ msgstr "イベント：すべてのイベント要素（ :ref:`process-element-e
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:208
 msgid "Press the key :guilabel:`A` to get a list of all elements. You can also navigate through the list with the :guilabel:`Arrow` keys and add an element with the :guilabel:`Enter` key."
-msgstr ":guilabel:`A` キーを押して、すべての要素のリストを取得できます。また、:guilabel:`矢印`キーを押してリスト内を移動し、:guilabel:`Enter` キーで要素を追加できます。"
+msgstr ":guilabel:`A` キーを押して、すべての要素のリストを取得できます。また、:guilabel:`矢印` キーを押してリスト内を移動し、:guilabel:`Enter` キーで要素を追加できます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:212
 msgid "|connect-action| The **Connection Tool** can connect the current element with another. *Only available if the element has no outgoing connector or supports multiple outgoing connectors*"
@@ -16698,7 +16698,7 @@ msgstr "メニューの |image9| またはツールバーの対応するボタ�
 
 #: ../../source/designer-guide/process-modeling/simulation/simulation.rst:78
 msgid "This dialog allows to edit the content, formatting and workflow languages. The :guilabel:`Simulation Languages` settings are used at design time for displaying the User Dialogs. If option ::guilabel:`Enable language simulation` is checked, the settings are also used at runtime."
-msgstr "このダイアログでは、コンテンツ、フォーマット、ワークフローの言語を編集できます。:guilabel:`シミュレーション言語`の設定は、設計時にユーザーダイアログの表示に使用されます。オプションの:guilabel:`言語設定の有効化`をオンにした場合は、実行時にも設定が使用されます。"
+msgstr "このダイアログでは、コンテンツ、フォーマット、ワークフローの言語を編集できます。:guilabel:`シミュレーション言語` の設定は、設計時にユーザーダイアログの表示に使用されます。オプションの:guilabel:`言語設定の有効化` をオンにした場合は、実行時にも設定が使用されます。"
 
 #: ../../source/designer-guide/process-modeling/simulation/simulation.rst:83
 msgid ":ref:`Workflow languages <workflow-languages>` controls for which languages case and task name and description are stored."
@@ -17248,7 +17248,7 @@ msgstr "エラーにより、サポートに連絡する必要がある場合は
 
 #: ../../source/designer-guide/troubleshooting/index.rst:30
 msgid "On the HTML error page use the :guilabel:`Open Error Report` button at the end of the error page to open the Error Report. Use :guilabel:`CTRL-A` and :guilabel:`CTRL-C` to copy the Error Report to the clipboard."
-msgstr "HTML エラーページでは、エラーページの終わりにある:guilabel:`エラーレポートを開く`ボタンを使用して、エラーレポートを開きます。:guilabel:`CTRL + A` と :guilabel:`CTRL + C` を使用して、エラーレポートをクリップボードにコピーします。"
+msgstr "HTML エラーページでは、エラーページの終わりにある:guilabel:`エラーレポートを開く` ボタンを使用して、エラーレポートを開きます。:guilabel:`CTRL + A` と :guilabel:`CTRL + C` を使用して、エラーレポートをクリップボードにコピーします。"
 
 #: ../../source/designer-guide/troubleshooting/index.rst:34
 msgid "The Event Details View of the :ref:`simulate-process-models-debugger-runtimelog-view` provides a button to generate and save an error report for a given log entry."
@@ -17256,7 +17256,7 @@ msgstr ":ref:`simulate-process-models-debugger-runtimelog-view` のイベント�
 
 #: ../../source/designer-guide/troubleshooting/index.rst:38
 msgid "Moreover, you can also use the menu :guilabel:`Axon Ivy` > :guilabel:`Debug` > :guilabel:`Save Debug Report` to generate and save such a report without an error."
-msgstr "また、メニューで :guilabel:`Axon Ivy`、:guilabel:`デバッグ`、:guilabel:`デバッグレポートを保存`の順に選択して、エラーを含まないレポートを作成して保存できます。"
+msgstr "また、メニューで :guilabel:`Axon Ivy`、:guilabel:`デバッグ`、:guilabel:`デバッグレポートを保存` の順に選択して、エラーを含まないレポートを作成して保存できます。"
 
 #: ../../source/designer-guide/troubleshooting/index.rst:46
 msgid "Memory Problems"
@@ -20190,7 +20190,7 @@ msgstr "アプリケーションの詳細ビューに移動します。"
 
 #: ../../source/engine-guide/deployment/deploy/engine-cockpit/index.rst:16
 msgid "Click on :guilabel:`Deployment`"
-msgstr ":guilabel:`展開`をクリックします。"
+msgstr ":guilabel:`展開` をクリックします。"
 
 #: ../../source/engine-guide/deployment/deploy/index.rst:4
 msgid "Deploying"
@@ -20866,7 +20866,7 @@ msgstr "デモモードでの動作中、Axon Ivy Engine のすべての機能�
 
 #: ../../source/engine-guide/getting-started/_use-the-engine.rst:15
 msgid "For a quick spin, use the engine in demo mode to test the pre-installed Portal application by clicking on the :guilabel:`Home` link."
-msgstr "試しに、デモモードのエンジンを使用し、:guilabel:`ホーム`リンクをクリックして、プリインストールされたポータルアプリケーションをテストします。"
+msgstr "試しに、デモモードのエンジンを使用し、:guilabel:`ホーム` リンクをクリックして、プリインストールされたポータルアプリケーションをテストします。"
 
 #: ../../source/engine-guide/getting-started/_use-the-engine.rst:18
 msgid "To log in, use one of the predefined demo users: **demo**, ** guest**, or **admin**. The passwords of the demo users are equal to the user names (E.g. **demo** for the ** demo** user). Login as ** demo** and navigate to **Processes** by clicking on the third icon at the menu bar left. Then try to start the **Leave Request** process (Image of a Rocket)."
@@ -20994,7 +20994,7 @@ msgstr ":file:`AxonIvyEngine\\*.zip` ファイルを右クリップし、コン�
 
 #: ../../source/engine-guide/getting-started/windows/install.rst:16
 msgid "On the appearing dialog, press button :guilabel:`Extract`. After the extraction completes, navigate into the new folder :file:`AxonIvyEngine`. The content of the installation folder looks like this:"
-msgstr "表示されたダイアログで、:guilabel:`展開`ボタンをクリックします。展開が完了したら、新しい :file:`AxonIvyEngine` フォルダーに移動します。インストールフォルダーの中身は以下のようになります。"
+msgstr "表示されたダイアログで、:guilabel:`展開` ボタンをクリックします。展開が完了したら、新しい :file:`AxonIvyEngine` フォルダーに移動します。インストールフォルダーの中身は以下のようになります。"
 
 #: ../../source/engine-guide/getting-started/windows/install.rst:23
 msgid "The most important folders in the Axon Ivy Engine installation folder are:"
@@ -21407,7 +21407,7 @@ msgstr "左側にある :guilabel:`アプリの登録` をクリックします�
 
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/microsoft-entra-id-app.rst:9
 msgid "Click on :guilabel:`New registration`"
-msgstr ":guilabel:`新規登録`をクリックします。"
+msgstr ":guilabel:`新規登録` をクリックします。"
 
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/microsoft-entra-id-app.rst:11
 msgid "New registration"
@@ -21428,7 +21428,7 @@ msgstr "この URI のパターンは `https://{host}/oauth2/callback` です。
 
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/microsoft-entra-id-app.rst:20
 msgid "Click on :guilabel:`Register`"
-msgstr ":guilabel:`登録`をクリックします。"
+msgstr ":guilabel:`登録` をクリックします。"
 
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/microsoft-entra-id-app.rst:22
 msgid "Click on :guilabel:`API permissions`"
@@ -21436,7 +21436,7 @@ msgstr ":guilabel:`API のアクセス許可`をクリックします。"
 
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/microsoft-entra-id-app.rst:23
 msgid "Click on :guilabel:`Add a permission`"
-msgstr ":guilabel:`アクセス許可の追加`をクリックします。"
+msgstr ":guilabel:`アクセス許可の追加` をクリックします。"
 
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/microsoft-entra-id-app.rst:24
 msgid "Choose :guilabel:`Microsoft Graph`"
@@ -21448,7 +21448,7 @@ msgstr "ステップ 9 ～ 11 を実行するには、管理者権限が必要�
 
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/microsoft-entra-id-app.rst:26
 msgid "Choose :guilabel:`Application permission`"
-msgstr ":guilabel:`アプリケーションの許可`を選択します。"
+msgstr ":guilabel:`アプリケーションの許可` を選択します。"
 
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/microsoft-entra-id-app.rst:27
 msgid "Type :guilabel:`Directory.Read.All`"
@@ -21457,7 +21457,7 @@ msgstr ":guilabel:`Directory.Read.All` と入力します。"
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/microsoft-entra-id-app.rst:28
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/microsoft-entra-id-app.rst:40
 msgid "Click on :guilabel:`Add`"
-msgstr ":guilabel:`追加`をクリックします。"
+msgstr ":guilabel:`追加` をクリックします。"
 
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/microsoft-entra-id-app.rst:33
 msgid "Grant Permission"
@@ -21465,15 +21465,15 @@ msgstr "アクセス許可の付与"
 
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/microsoft-entra-id-app.rst:36
 msgid "Click on :guilabel:`Grant admin consent`"
-msgstr ":guilabel:`管理者の同意を与えます`をクリックします。"
+msgstr ":guilabel:`管理者の同意を与えます` をクリックします。"
 
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/microsoft-entra-id-app.rst:37
 msgid "Click on :guilabel:`Certificates & secrets`"
-msgstr ":guilabel:`証明書とシークレット`をクリックします。"
+msgstr ":guilabel:`証明書とシークレット` をクリックします。"
 
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/microsoft-entra-id-app.rst:38
 msgid "Click on :guilabel:`New Client Secret`"
-msgstr ":guilabel:`新しいクライアントシークレット`をクリックします。"
+msgstr ":guilabel:`新しいクライアントシークレット` をクリックします。"
 
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/microsoft-entra-id-app.rst:39
 msgid "Enter a description, e.g., :code:`ivy`"
@@ -21490,7 +21490,7 @@ msgstr "シークレット"
 
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/microsoft-entra-id-app.rst:46
 msgid "Go to :guilabel:`Overview`"
-msgstr ":guilabel:`概要`に移動します。"
+msgstr ":guilabel:`概要` に移動します。"
 
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/microsoft-entra-id-app.rst:51
 msgid ":guilabel:`Application ID` and :guilabel:`Directory (tenant) ID` is needed to configure Axon Ivy Engine."
@@ -21687,15 +21687,15 @@ msgstr "スクリプトにより、必要な追加の IIS モジュールがダ�
 
 #: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:22
 msgid "To use Microsoft IIS as a reverse proxy in front of your Axon Ivy Engine, download and execute the powershell script :download:`iis-proxy-setup.ps1`. Right click on the file and click :guilabel:`Run with PowerShell`. You need to run this script :guilabel:`as Administrator`."
-msgstr "Microsoft IIS を Axon Ivy Engine の前にあるリバースプロキシとして設定するには、PowerShell スクリプト :download:`iis-proxy-setup.ps1` をダウンロードして実行します。ファイルを右クリックし、:guilabel:`PowerShell で実行`をクリックします。このスクリプトを:guilabel:`管理者として`実行する必要があります。"
+msgstr "Microsoft IIS を Axon Ivy Engine の前にあるリバースプロキシとして設定するには、PowerShell スクリプト :download:`iis-proxy-setup.ps1` をダウンロードして実行します。ファイルを右クリックし、:guilabel:`PowerShell で実行`をクリックします。このスクリプトを:guilabel:`管理者として` 実行する必要があります。"
 
 #: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:27
 msgid "The first time when you execute this script, you may be asked for a :guilabel:`Execution Policy Change` so that this script can be executed. You need to answer this question with :guilabel:`[A] Yes to All`."
-msgstr "このスクリプトを初めて実行する場合、このスクリプトを実行できるように、:guilabel:`実行ポリシーを変更する`かどうかの確認を求められることがあります。答えとして :guilabel:`[A] すべてはい`を選択してください。"
+msgstr "このスクリプトを初めて実行する場合、このスクリプトを実行できるように、:guilabel:`実行ポリシーを変更する` かどうかの確認を求められることがあります。答えとして :guilabel:`[A] すべてはい`を選択してください。"
 
 #: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:33
 msgid "If you have not been asked about the :guilabel:`Execution Policy Change` but the script is still not running, you maybe need to unblock it via the Options menu (Properties -> General -> Security -> Unblock) or by running the following command in the PowerShell :code:`Unblock-File iis-proxy-setup.ps1`"
-msgstr ":guilabel:`実行ポリシーを変更`するかどうかの確認が求められなかったにもかかわらず、スクリプトが実行されない場合は、［オプション］メニュー（［プロパティ］、［全般］、［セキュリティ］、［ブロックの解除］の順に選択）から、または PowerShell で :code:`Unblock-File iis-proxy-setup.ps1` コマンドを実行して、ブロックを解除する必要があります。"
+msgstr ":guilabel:`実行ポリシーを変更` するかどうかの確認が求められなかったにもかかわらず、スクリプトが実行されない場合は、［オプション］メニュー（［プロパティ］、［全般］、［セキュリティ］、［ブロックの解除］の順に選択）から、または PowerShell で :code:`Unblock-File iis-proxy-setup.ps1` コマンドを実行して、ブロックを解除する必要があります。"
 
 #: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:38
 msgid "This script will guide you to set up IIS as a reverse proxy for the Axon Ivy Engine."
@@ -21715,7 +21715,7 @@ msgstr "**IIS のセットアップ** では、IIS を含む必要なすべて�
 
 #: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:59
 msgid "And set :guilabel:`preserveHostHeader` to :code:`true`. The most important configuration entries in IIS are the :guilabel:`Authentication` and :guilabel:`URL Rewrite` modules. The script will sense if IIS including all required features is already installed and will skip the IIS installation in that case."
-msgstr ":guilabel:`preserveHostHeader` を :code:`true` に設定します。IIS で最も重要な設定項目は、:guilabel:`認証`モジュールと :guilabel:`URL 書き換え`モジュールです。スクリプトは必要なすべての機能を含む IIS がすでにインストールされているかどうか検知し、インストール済みであれば IIS のインストールをスキップします。"
+msgstr ":guilabel:`preserveHostHeader` を :code:`true` に設定します。IIS で最も重要な設定項目は、:guilabel:`認証` モジュールと :guilabel:`URL 書き換え`モジュールです。スクリプトは必要なすべての機能を含む IIS がすでにインストールされているかどうか検知し、インストール済みであれば IIS のインストールをスキップします。"
 
 #: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:68
 msgid "**URL Rewrite Rules** configures the rules for URL rewriting. It will add a new rule :code:`ivy-route-all` to the :guilabel:`Default Website`. This will route all traffic to the Axon Ivy Engine which runs on the same host at :code:`http://localhost:8080`. You may adjust this rule according to your needs when your Axon Ivy Engine runs on a different host, and/or on a different port. We recommend to :ref:`limit the access <reverse-proxy-secure-path>` to specific applications by only routing the applications that are available to your users. You can do that by changing the standard pattern :code:`.*` of the rule to :code:`YOUR-APP.*` e.g., :code:`demo-portal.*`. e.g., :code:`system.*`. If you have multiple apps being served by this IIS site, use a rule like :code:`(demo-portal|myApp1|myOtherApp)\\/.*`. We suggest that you define a separate, internal-only website for access to the engine cockpit."
@@ -21739,11 +21739,11 @@ msgstr ""
 
 #: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:123
 msgid "**Serve with HTTPS** is not covered by this script. You need to set this up manually. You need to install an SSL certificate. You can do this on the server level in section :guilabel:`Server Certificate`. Import your SSL certificate there. Alternatively, you can generate a self-signed certificate to try out HTTPS."
-msgstr "**HTTPS での提供** はこのスクリプトでは処理されません。手動でセットアップする必要があります。SSL 証明書をインストールする必要がありますが、:guilabel:`サーバー証明書`セクションでサーバーレベルでこれを行うことができます。SSL 証明書をインポートしてください。または、自己署名証明書を作成して、HTTPS を試すこともできます。"
+msgstr "**HTTPS での提供** はこのスクリプトでは処理されません。手動でセットアップする必要があります。SSL 証明書をインストールする必要がありますが、:guilabel:`サーバー証明書` セクションでサーバーレベルでこれを行うことができます。SSL 証明書をインポートしてください。または、自己署名証明書を作成して、HTTPS を試すこともできます。"
 
 #: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:131
 msgid "Then, go to :guilabel:`Default Website`, open :guilabel:`Handler Mappings` and add :code:`https` as a new binding. Choose the SSL certificate you supplied earlier. We strongly recommend to remove the :code:`http` binding. This prevents your Axon Ivy Engine being accessible via HTTP through IIS."
-msgstr ":guilabel:`Default Web Site` に移動し、:guilabel:`ハンドラーマッピング`を開き、新しいバインディングとして :code:`https` を追加します。先ほど提供した SSL 証明書を選択します。 :code:`http` バインディングを削除することを強くお勧めします。これにより、IIS から HTTP で Axon Ivy Engine にアクセスできなくなります。"
+msgstr ":guilabel:`Default Web Site` に移動し、:guilabel:`ハンドラーマッピング` を開き、新しいバインディングとして :code:`https` を追加します。先ほど提供した SSL 証明書を選択します。 :code:`http` バインディングを削除することを強くお勧めします。これにより、IIS から HTTP で Axon Ivy Engine にアクセスできなくなります。"
 
 #: ../../source/engine-guide/integration/reverse-proxy/nginx/index.rst:4
 msgid "NGINX"
@@ -21994,7 +21994,7 @@ msgstr "ヘルスメッセージは :ref:`engine-cockpit` の以下の場所に�
 
 #: ../../source/engine-guide/monitoring/health.rst:28
 msgid "The :guilabel:`Health` panel in the :ref:`engine-cockpit-dashboard`"
-msgstr ":ref:`engine-cockpit-dashboard` の:guilabel:`ヘルス`パネル"
+msgstr ":ref:`engine-cockpit-dashboard` の:guilabel:`ヘルス` パネル"
 
 #: ../../source/engine-guide/monitoring/health.rst:29
 msgid "The :ref:`engine-cockpit-top-menu`"
@@ -23359,7 +23359,7 @@ msgstr "クラスヒストグラム"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:36
 msgid "The **Class Histogram** view displays all classes that have currently object instances allocated on the heap. The view shows a filterable list of all classes, the number of allocated instances, and the allocated memory those instances consume, in bytes. If you refresh the view, the deltas to the minimum and maximum number of instances are displayed. This allows you to find memory leaks. If the number of instances of a class has always an increasing Δ Min and the Δ Max is always zero, then you have a memory leak. If you need further details to analyze a memory leak you can press the :guilabel:`Dump Heap Memory` button to create and download a dump of the heap memory. We recommend that you use `Eclipse Memory Analyzer <https://www.eclipse.org/mat>`_ to further analyze the produced heap dump file."
-msgstr "**クラスヒストグラム** ビューには、現在ヒープに割り当てられているオブジェクトインスタンスを持つすべてのクラスが表示されます。ビューには、すべてのクラスのフィルタリング可能なリスト、割り当てられたインスタンスの数、それらのインスタンスが消費する割り当てメモリ（バイト）が表示されます。ビューを更新すると、インスタンスの最小数と最大数との差が表示されます。これにより、メモリリークを見つけることができます。クラスのインスタンスの数の Δ Min が常に増加し、Δ Max が常にゼロの場合は、メモリリークが発生しています。メモリリークを分析するため、さらに詳細な情報が必要な場合は、:guilabel:`ヒープメモリをダンプ`ボタンをクリックして、ヒープメモリのダンプを作成、ダウンロードできます。`Eclipse Memory Analyzer <https://www.eclipse.org/mat>`_を使用して、作成したヒープダンプファイルをさらに分析することを推奨します。"
+msgstr "**クラスヒストグラム** ビューには、現在ヒープに割り当てられているオブジェクトインスタンスを持つすべてのクラスが表示されます。ビューには、すべてのクラスのフィルタリング可能なリスト、割り当てられたインスタンスの数、それらのインスタンスが消費する割り当てメモリ（バイト）が表示されます。ビューを更新すると、インスタンスの最小数と最大数との差が表示されます。これにより、メモリリークを見つけることができます。クラスのインスタンスの数の Δ Min が常に増加し、Δ Max が常にゼロの場合は、メモリリークが発生しています。メモリリークを分析するため、さらに詳細な情報が必要な場合は、:guilabel:`ヒープメモリをダンプ` ボタンをクリックして、ヒープメモリのダンプを作成、ダウンロードできます。`Eclipse Memory Analyzer <https://www.eclipse.org/mat>`_を使用して、作成したヒープダンプファイルをさらに分析することを推奨します。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:46
 msgid "Threads"
@@ -23443,7 +23443,7 @@ msgstr "ジョブ"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:133
 msgid "The **Jobs** view displays a table with all jobs that are periodically executed by Axon Ivy. The :guilabel:`Configuration` column shows how often or when ( :ref:`configuration-cron` ) a job is executed. The :guilabel:`Next execution` column shows when the job is executed the next time. Finally, columns show the number of times the job was already executed and how often it has failed. You can click on a job to get more information about it like the last time it was successfully executed, the last time it failed, the reason it failed, and the execution duration. Press the :guilabel:`Schedule` button at the end of each row to execute the job immediately."
-msgstr "**ジョブ** ビューには、Axon Ivy が定期的に実行するすべてのジョブの表が表示されます。:guilabel:`設定`列には、ジョブの実行頻度や日時 :ref:`configuration-cron`）が表示されます。:guilabel:`次の実行`列には、次回のジョブの実行日時が表示されます。他の列には、ジョブが実行された回数や失敗の頻度が表示されます。ジョブをクリックして、最後に正常に実行された日時、最後に失敗した日時、失敗の理由、実行時間などの詳細を確認できます。各行の最後に表示される:guilabel:`スケジュール`ボタンをクリックして、すぐにジョブを実行できます。"
+msgstr "**ジョブ** ビューには、Axon Ivy が定期的に実行するすべてのジョブの表が表示されます。:guilabel:`設定` 列には、ジョブの実行頻度や日時 :ref:`configuration-cron`）が表示されます。:guilabel:`次の実行` 列には、次回のジョブの実行日時が表示されます。他の列には、ジョブが実行された回数や失敗の頻度が表示されます。ジョブをクリックして、最後に正常に実行された日時、最後に失敗した日時、失敗の理由、実行時間などの詳細を確認できます。各行の最後に表示される:guilabel:`スケジュール` ボタンをクリックして、すぐにジョブを実行できます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:144
 msgid "Cache"
@@ -23463,19 +23463,19 @@ msgstr "**ヘルス** ビューには、現在の :ref:`ヘルスメッセージ
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:164
 msgid "The :guilabel:`Severity` column tells you how urgent the message is. `CRITICAL` messages should be addressed immediately. The :guilabel:`Message` and :guilabel:`Description` columns describe the problem and gives you hints about what needs to be done. Some health messages provide a link to another Engine Cockpit or setup page where you can either analyze or fix the problem."
-msgstr ":guilabel:`重大度`列には、メッセージの緊急度が表示されます。重大度が `CRITICAL` のメッセージは直ちに対応する必要があります。:guilabel:`メッセージ`列と:guilabel:`説明`列には問題の内容と必要な措置に関するヒントが表示されます。ヘルスメッセージの中には、問題を分析または解決できるエンジンコックピットやセットアップページへのリンクが含まれているものもあります。"
+msgstr ":guilabel:`重大度` 列には、メッセージの緊急度が表示されます。重大度が `CRITICAL` のメッセージは直ちに対応する必要があります。:guilabel:`メッセージ` 列と:guilabel:`説明` 列には問題の内容と必要な措置に関するヒントが表示されます。ヘルスメッセージの中には、問題を分析または解決できるエンジンコックピットやセットアップページへのリンクが含まれているものもあります。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:169
 msgid "Use the :guilabel:`Run Health Check` button to execute all health checks."
-msgstr ":guilabel:`ヘルスチェックを実行`ボタンを使用して、すべてのヘルスチェックを実行します。"
+msgstr ":guilabel:`ヘルスチェックを実行` ボタンを使用して、すべてのヘルスチェックを実行します。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:173
 msgid "To see all health checks that are available click on the :guilabel:`Health Checks` button."
-msgstr "使用可能なすべてのヘルスチェックを表示するには、:guilabel:`ヘルスチェック`ボタンをクリックします。"
+msgstr "使用可能なすべてのヘルスチェックを表示するには、:guilabel:`ヘルスチェック` ボタンをクリックします。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:176
 msgid "On the **Health Checks** view a list of all health checks is displayed. You see when a check will be executed next. Use the :guilabel:`Disable` and :guilabel:`Enable` buttons to disable or enable a check. With the :guilabel:`Run check now` button you can immediately execute a check."
-msgstr "**ヘルスチェック** ビューには、すべてのヘルスチェックのリストが表示されます。次にチェックが実行される日時が表示されます。:guilabel:`無効`ボタンと:guilabel:`有効`ボタンを使用して、チェックを無効または有効にします。:guilabel:`今すぐチェックを実行`ボタンを使用して、すぐにチェックを実行できます。"
+msgstr "**ヘルスチェック** ビューには、すべてのヘルスチェックのリストが表示されます。次にチェックが実行される日時が表示されます。:guilabel:`無効` ボタンと:guilabel:`有効` ボタンを使用して、チェックを無効または有効にします。:guilabel:`今すぐチェックを実行` ボタンを使用して、すぐにチェックを実行できます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:188
 msgid "**Documents**: Workflow and case documents"
@@ -23661,7 +23661,7 @@ msgstr "セキュリティレポートの生成"
 
 #: ../../source/engine-guide/reference/engine-cockpit/security.rst:57
 msgid "If you want a complete overview of your security system (e.g., for a security audit), you can download an Excel sheet with all the necessary information. To download the Excel, click on the :guilabel:`Download Security Report` button in the Security Systems tab. A dialog box will appear, click the :guilabel:`Generate` button, and the Excel file will be prepared. The Excel file contains detailed information on users, roles, user roles, role members, user permissions, and role permissions. It may take a few minutes to generate. When the Excel file is ready you can click :guilabel:`Download`."
-msgstr "セキュリティシステムの全体的な概要を確認したい場合は（セキュリティ監査など）、必要な情報がすべて記載された Excel シートをダウンロードできます。Excel をダウンロードするには、［セキュリティシステム］タブの:guilabel:`セキュリティレポートをダウンロード`ボタンをクリックします。ダイアログボックスが表示されたら、:guilabel:`生成`ボタンをクリックすると、Excel ファイルが作成されます。Excel ファイルには、ユーザー、ロール、ユーザーロール、ロールのメンバー、ユーザーの権限、ロールの権限に関する詳細が保存されます。作成には数分かかることがあります。Excel ファイルが作成されたら、:guilabel:`ダウンロード`をクリックできます。"
+msgstr "セキュリティシステムの全体的な概要を確認したい場合は（セキュリティ監査など）、必要な情報がすべて記載された Excel シートをダウンロードできます。Excel をダウンロードするには、［セキュリティシステム］タブの:guilabel:`セキュリティレポートをダウンロード` ボタンをクリックします。ダイアログボックスが表示されたら、:guilabel:`生成` ボタンをクリックすると、Excel ファイルが作成されます。Excel ファイルには、ユーザー、ロール、ユーザーロール、ロールのメンバー、ユーザーの権限、ロールの権限に関する詳細が保存されます。作成には数分かかることがあります。Excel ファイルが作成されたら、:guilabel:`ダウンロード` をクリックできます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/security.rst:68
 msgid "Depending on the chosen Identity Provider, additional settings are available with the :guilabel:`Edit` button."
@@ -23685,7 +23685,7 @@ msgstr "ユーザー表には、ユーザーに関する基本情報、不在か
 
 #: ../../source/engine-guide/reference/engine-cockpit/security.rst:86
 msgid "To add a user, click on the :guilabel:`New` button and fill in the dialog. A user name is required and needs to be unique within the security system."
-msgstr "ユーザーを追加するには、:guilabel:`新規`ボタンをクリックし、ダイアログに入力します。ユーザー名は必須で、セキュリティシステムで一意である必要があります。"
+msgstr "ユーザーを追加するには、:guilabel:`新規` ボタンをクリックし、ダイアログに入力します。ユーザー名は必須で、セキュリティシステムで一意である必要があります。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/security.rst:90
 msgid "You can add local users to internal and external security systems. This means that even for external security systems bound to an Identity Provider, you can add and manage local users. Since these users are not managed by the associated Identity Provider, we call them *unmanaged users*."
@@ -23705,7 +23705,7 @@ msgstr "**ユーザーの詳細** ビューには、ユーザーの設定が表�
 
 #: ../../source/engine-guide/reference/engine-cockpit/security.rst:109
 msgid "The :guilabel:`Information` panel displays the attributes of the user. For internal security systems, you can change all of them. For external security systems, you can change all but the unique ID provided by the Identity Provider which we use to detect name changes."
-msgstr ":guilabel:`情報`パネルには、ユーザーの属性が表示されます。内部のセキュリティシステムでは、ユーザーのすべての属性を変更できます。外部のセキュリティシステムでは、名前の変更の検出に使用する、ID プロバイダーから提供される一意の ID 以外のすべての属性を変更できます。"
+msgstr ":guilabel:`情報` パネルには、ユーザーの属性が表示されます。内部のセキュリティシステムでは、ユーザーのすべての属性を変更できます。外部のセキュリティシステムでは、名前の変更の検出に使用する、ID プロバイダーから提供される一意の ID 以外のすべての属性を変更できます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/security.rst:114
 msgid "It is also possible to enable, disable or delete the user."
@@ -23773,15 +23773,15 @@ msgstr ":guilabel:`通知チャネル` パネルには、ゆーざーが現在�
 
 #: ../../source/engine-guide/reference/engine-cockpit/security.rst:154
 msgid "The :guilabel:`Substitutes` panel displays all the substitutes the user has defined. This includes information about whether the substitute is used permanently or only during absences, if it is a substitute for personal tasks or tasks of a specific role and the corresponding role if applicable."
-msgstr ":guilabel:`代行者`パネルには、ユーザーが定義したすべての代行者が表示されます。これには、代行者が恒久的に使用されるか、不在中のみ使用されるか、故人のタスクの代行者か、特定のロールの代行者か、該当する場合は対応するロールについての情報が含まれます。"
+msgstr ":guilabel:`代行者` パネルには、ユーザーが定義したすべての代行者が表示されます。これには、代行者が恒久的に使用されるか、不在中のみ使用されるか、故人のタスクの代行者か、特定のロールの代行者か、該当する場合は対応するロールについての情報が含まれます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/security.rst:159
 msgid "The :guilabel:`Absences` panel displays all the registered absences of the user including a flag, whether they are currently absent or not."
-msgstr ":guilabel:`不在`パネルには、フラグ、ユーザーが現在不在かどうかなど、ユーザーの登録された不在がすべて表示されます。"
+msgstr ":guilabel:`不在` パネルには、フラグ、ユーザーが現在不在かどうかなど、ユーザーの登録された不在がすべて表示されます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/security.rst:162
 msgid "In the :guilabel:`Permissions` panel, you can see what permissions a user has and change them. A tick is shown if the user has a permission or permissions within a group."
-msgstr ":guilabel:`権限`パネルでは、ユーザーが持つ権限を確認、変更できます。ユーザーがグループ内で権限を持つ場合は、チェックマークが表示されます。"
+msgstr ":guilabel:`権限` パネルでは、ユーザーが持つ権限を確認、変更できます。ユーザーがグループ内で権限を持つ場合は、チェックマークが表示されます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/security.rst:165
 msgid "If the tick is black, the user has this permission or all the permissions underneath this permission group."
@@ -23901,11 +23901,11 @@ msgstr "Web サービスの詳細"
 
 #: ../../source/engine-guide/reference/engine-cockpit/services.rst:86
 msgid "This view displays all configuration values of a web service. You can change the credentials or the endpoint settings. You can also reset them to their original values by clicking on the :guilabel:`Reset` button."
-msgstr "このビューには、Web サービスのすべての設定値が表示されます。資格情報やエンドポイントの設定を変更できます。また、:guilabel:`リセット`ボタンをクリックして、元の値にリセットできます。"
+msgstr "このビューには、Web サービスのすべての設定値が表示されます。資格情報やエンドポイントの設定を変更できます。また、:guilabel:`リセット` ボタンをクリックして、元の値にリセットできます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/services.rst:90
 msgid "To test if an endpoint is accessible press on the :guilabel:`Arrow` button next to it. Please be aware that only *Http Basic* authentication is supported and the request is an empty *POST* message."
-msgstr "エンドポイントがアクセス可能かどうかテストするには、隣にある:guilabel:`矢印`ボタンをクリックします。サポートされているのは *HTTP Basic* 認証のみで、リクエストは空の *POST* メッセージであることに注意してください。"
+msgstr "エンドポイントがアクセス可能かどうかテストするには、隣にある:guilabel:`矢印` ボタンをクリックします。サポートされているのは *HTTP Basic* 認証のみで、リクエストは空の *POST* メッセージであることに注意してください。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/services.rst:95
 #: ../../source/engine-guide/reference/engine-cockpit/services.rst:128
@@ -23978,7 +23978,7 @@ msgstr "システムデータベースの情報"
 
 #: ../../source/engine-guide/reference/engine-cockpit/system.rst:47
 msgid "If you need information about your system database, click the :guilabel:`Info` button. The **System Database Info** page opens and shows Information about your database, driver, tables, triggers, and indices. You can see how much disk space the database, table, and indices use. The number of rows for tables and cardinality for indices gives you an idea of how much data is stored. The fragmentation gives you an indication if a reorganization of your database is recommended."
-msgstr "システムデータベースに関する情報が必要な場合は、:guilabel:`情報`ボタンをクリックします。**システムデータベースの情報** ページが開き、データベース、ドライバ、表、トリガー、インデックスに関する情報が表示されます。データベース、表、インデックスが使用するディスク容量を確認できます。表の行数とインデックスのカーディナリティから、格納されているデータの量を把握できます。断片化の有無を確認することで、データベースの再編成が必要かどうかが分かります。"
+msgstr "システムデータベースに関する情報が必要な場合は、:guilabel:`情報` ボタンをクリックします。**システムデータベースの情報** ページが開き、データベース、ドライバ、表、トリガー、インデックスに関する情報が表示されます。データベース、表、インデックスが使用するディスク容量を確認できます。表の行数とインデックスのカーディナリティから、格納されているデータの量を把握できます。断片化の有無を確認することで、データベースの再編成が必要かどうかが分かります。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/system.rst:59
 msgid "In the **License** view you can upload or renew a license. If you have a valid license you see a table with all information about it. On the right side you have a life overview of your active sessions with the ability to kill sessions."
@@ -24002,7 +24002,7 @@ msgstr "システム設定"
 
 #: ../../source/engine-guide/reference/engine-cockpit/system.rst:88
 msgid "The **System Configuration** page displays an overview of all your engine configuration settings. Configurations in grey represent default values. If you want to edit an existing configuration, click on the :guilabel:`Pencil` button. Clicking :guilabel:`More` allows you to reset a configuration setting or view the complete configuration file."
-msgstr "**システム設定** ページには、すべてのエンジンの設定の概要が表示されます。灰色の設定は初期値を表しています。既存の設定を編集したい場合は、:guilabel:`鉛筆`ボタンをクリックします。:guilabel:`詳細`をクリックして、設定をリセットしたり、設定ファイルを表示できます。"
+msgstr "**システム設定** ページには、すべてのエンジンの設定の概要が表示されます。灰色の設定は初期値を表しています。既存の設定を編集したい場合は、:guilabel:`鉛筆` ボタンをクリックします。:guilabel:`詳細` をクリックして、設定をリセットしたり、設定ファイルを表示できます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/system.rst:95
 msgid "Application configurations are not shown in this view. You can see application configuration settings on page :ref:`engine-cockpit-application-detail`."
@@ -24282,7 +24282,7 @@ msgstr "古い Axon Ivy Engine のインストールディレクトリを移行�
 
 #: ../../source/engine-guide/reference/migration-wizard.rst:25
 msgid "Click :guilabel:`Load location`."
-msgstr ":guilabel:`場所を読み込む`をクリックします。"
+msgstr ":guilabel:`場所を読み込む` をクリックします。"
 
 #: ../../source/engine-guide/reference/migration-wizard.rst:26
 msgid "The Migration Wizard will make up front checks if the engine can be migrated."
@@ -24294,7 +24294,7 @@ msgstr "新しいメジャーバージョンにアップグレードする場合
 
 #: ../../source/engine-guide/reference/migration-wizard.rst:29
 msgid "You can inspect all the tasks which will be done and click on :guilabel:`Start`."
-msgstr "実行するすべてのタスクを精査し、:guilabel:`開始`をクリックします。"
+msgstr "実行するすべてのタスクを精査し、:guilabel:`開始` をクリックします。"
 
 #: ../../source/engine-guide/reference/migration-wizard.rst:30
 msgid "Wait until the Migration Wizard has completed."
@@ -24346,11 +24346,11 @@ msgstr "このツールを使用するには、管理者ユーザーアカウン
 
 #: ../../source/engine-guide/reference/setup-wizard.rst:47
 msgid "In the :guilabel:`License` step you have to upload a valid license:"
-msgstr ":guilabel:`ライセンス`ステップでは、有効なライセンスをアップロードする必要があります。"
+msgstr ":guilabel:`ライセンス` ステップでは、有効なライセンスをアップロードする必要があります。"
 
 #: ../../source/engine-guide/reference/setup-wizard.rst:51
 msgid "Use the :guilabel:`Choose license` button to open the file browser and select the license file which should be used or simply drop your license file inside the marked field."
-msgstr ":guilabel:`ライセンスを選択`ボタンを使用して、ファイルブラウザを開き、使用するライセンスファイルを選択するか、ライセンスファイルをマークされたフィールドにドロップします。"
+msgstr ":guilabel:`ライセンスを選択` ボタンを使用して、ファイルブラウザを開き、使用するライセンスファイルを選択するか、ライセンスファイルをマークされたフィールドにドロップします。"
 
 #: ../../source/engine-guide/reference/setup-wizard.rst:56
 msgid "It is possible to configure the engine without a valid license, but the engine will always start in the :ref:`demo-mode` if you do not have a valid license and therefore cannot use your configuration."
@@ -24362,7 +24362,7 @@ msgstr "システム管理者"
 
 #: ../../source/engine-guide/reference/setup-wizard.rst:66
 msgid "On the :guilabel:`Administrators` step you can configure users that have the right to administer the Axon Ivy Engine:"
-msgstr ":guilabel:`管理者`ステップでは、Axon Ivy Engine を管理する権限を持つユーザーを設定できます。"
+msgstr ":guilabel:`管理者` ステップでは、Axon Ivy Engine を管理する権限を持つユーザーを設定できます。"
 
 #: ../../source/engine-guide/reference/setup-wizard.rst:71
 msgid "Defining an email address for the administrators is mandatory. Notifications of critical events, such as license violations, are sent to administrator email addresses."
@@ -24374,7 +24374,7 @@ msgstr "ウェブサーバーのポート"
 
 #: ../../source/engine-guide/reference/setup-wizard.rst:80
 msgid "In the :guilabel:`Web Server` step you enable and configure the web protocols of the Axon Ivy Engine. Furthermore, you can customize the IP port bindings:"
-msgstr ":guilabel:`ウェブサーバー`ステップでは、Axon Ivy Engine のウェブプロトコルを有効にして設定します。さらに、IP ポートバインディングをカスタマイズできます。"
+msgstr ":guilabel:`ウェブサーバー` ステップでは、Axon Ivy Engine のウェブプロトコルを有効にして設定します。さらに、IP ポートバインディングをカスタマイズできます。"
 
 #: ../../source/engine-guide/reference/setup-wizard.rst:85
 msgid "The following protocols are supported:"
@@ -24398,7 +24398,7 @@ msgstr "SSL（Secure Sockets Layer）上での HTTP プロトコル"
 
 #: ../../source/engine-guide/reference/setup-wizard.rst:100
 msgid "In the :guilabel:`System Database` step the Axon Ivy Engine, you can configure, create and convert system databases:"
-msgstr "Axon Ivy Engine の :guilabel:`システムデータベース`ステップでは、システムデータベースを設定、作成、変換できます。"
+msgstr "Axon Ivy Engine の :guilabel:`システムデータベース` ステップでは、システムデータベースを設定、作成、変換できます。"
 
 #: ../../source/engine-guide/reference/setup-wizard.rst:105
 msgid "First choose the database system and the JDBC driver you want to use. At the moment the Axon Ivy Engine supports the following database systems:"
@@ -24448,7 +24448,7 @@ msgstr "3 番目のステップでは、追加の接続プロパティを設定�
 
 #: ../../source/engine-guide/reference/setup-wizard.rst:128
 msgid "At the top of the page the state of the connection is visible. Use the button :guilabel:`Check Connection` to try to connect to the system database once you have finished your configuration."
-msgstr "ページの上部には、接続の状態が表示されます。設定が終了したら、:guilabel:`接続を確認`ボタンを使用してシステムデータベースへの接続を試みます。"
+msgstr "ページの上部には、接続の状態が表示されます。設定が終了したら、:guilabel:`接続を確認` ボタンを使用してシステムデータベースへの接続を試みます。"
 
 #: ../../source/engine-guide/reference/setup-wizard.rst:136
 msgid "Create New System Database"
@@ -24727,7 +24727,7 @@ msgstr "Axon Ivy Market の拡張機能のほとんどは、Axon Ivy Designer �
 
 #: ../../source/market/index.rst:21
 msgid "It will open the `Axon Ivy Market <https://market.axonivy.com>`_ in a view. Select your desired extension and click on the :guilabel:`Install` button in the header. Follow the installation wizard to empower your project."
-msgstr "ビューで `Axon Ivy Market <https://market.axonivy.com>`_が開いたら、必要な拡張機能を選択し、ヘッダーの:guilabel:`インストール`ボタンをクリックします。インストールウィザードの指示に従ってインストールし、プロジェクトを強化できます。"
+msgstr "ビューで `Axon Ivy Market <https://market.axonivy.com>`_が開いたら、必要な拡張機能を選択し、ヘッダーの:guilabel:`インストール` ボタンをクリックします。インストールウィザードの指示に従ってインストールし、プロジェクトを強化できます。"
 
 #: ../../source/market/index.rst:30
 msgid "Install From Another Source"
