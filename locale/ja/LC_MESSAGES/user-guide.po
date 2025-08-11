@@ -2884,7 +2884,7 @@ msgstr "31 行目："
 
 #: ../../source/concepts/testing/process-testing.rst:30
 msgid "As you want to test a specific process in this test class, the generated test class defines the :public-api:`BpmProcess</ch/ivyteam/ivy/bpm/engine/client/element/BpmProcess.html>` under test in a constant called ``testee``. The passed in ``String`` argument defines the process to run the test against. Replace ``MyProcess`` with a process that actually exists in your project under test."
-msgstr "このテストクラスの特定のプロセスをテストしたいため、作成されたテストクラスは ``testee``という名前の定数に :public-api:`BpmProcess</ch/ivyteam/ivy/bpm/engine/client/element/BpmProcess.html>` を定義します。渡された ``String`` 引数はテストを実行するプロセスを定義します。``MyProcess`` をテスト対象のプロジェクトに実際に存在するプロセスに置き換えてください。"
+msgstr "このテストクラスの特定のプロセスをテストしたいため、作成されたテストクラスは ``testee`` という名前の定数に :public-api:`BpmProcess</ch/ivyteam/ivy/bpm/engine/client/element/BpmProcess.html>` を定義します。渡された ``String`` 引数はテストを実行するプロセスを定義します。``MyProcess`` をテスト対象のプロジェクトに実際に存在するプロセスに置き換えてください。"
 
 #: ../../source/concepts/testing/process-testing.rst:37
 msgid "Line 35:"
@@ -2928,7 +2928,7 @@ msgstr "ここでは、開始要素をテストして実行したいことを ``
 
 #: ../../source/concepts/testing/process-testing.rst:77
 msgid "Note that the ``BpmClient`` does not run through the whole process at once but runs task by task. It also ignores ``skipTaskList`` flags and stops the execution at ``system tasks``."
-msgstr "``BpmClient`` はプロセス全体を一度に実行するのではなく、タスクごとに実行することに注意してください。また、``skipTaskList`` フラグを無視し、``システムタスク``で実行を停止します。"
+msgstr "``BpmClient`` はプロセス全体を一度に実行するのではなく、タスクごとに実行することに注意してください。また、``skipTaskList`` フラグを無視し、``システムタスク`` で実行を停止します。"
 
 #: ../../source/concepts/testing/process-testing.rst:81
 msgid "Line 16-17:"
@@ -2944,7 +2944,7 @@ msgstr "19 行目："
 
 #: ../../source/concepts/testing/process-testing.rst:88
 msgid "The :ref:`process-testing-workflow` API gives you access to the ``Case``, ``Tasks`` as well as the ``Session`` of your executed process. Use it to fetch information about active ``Cases``/``Tasks``, executed ``Tasks`` or the ``Session``."
-msgstr ":ref:`process-testing-workflow` API では、``ケース``や``タスク``、実行中のプロセスの``セッション``にアクセスできます。この API を使用して、アクティブな``ケース``／``タスク``、実行された``タスク``、または``セッション``に関する情報を取得できます。"
+msgstr ":ref:`process-testing-workflow` API では、``ケース`` や ``タスク``、実行中のプロセスの ``セッション`` にアクセスできます。この API を使用して、アクティブな ``ケース``／``タスク``、実行された ``タスク``、または ``セッション`` に関する情報を取得できます。"
 
 #: ../../source/concepts/testing/process-testing.rst:94
 msgid "Continue the Process Execution"
@@ -2974,7 +2974,7 @@ msgstr "18 行目："
 
 #: ../../source/concepts/testing/process-testing.rst:113
 msgid "Of course, you cannot just execute a task without declaring an appropriate ``Session``. To declare said ``Session`` you can call the :ref:`process-testing-as` method and append the desired ``Session``, ``User`` or ``Role`` that should execute the next task."
-msgstr "もちろん、適切な``セッション``を宣言せずにタスクを実行することはできません。``セッション``を宣言するには :ref:`process-testing-as` メソッドを呼び出して、次のタスクを実行する``セッション``、``ユーザー``または``ロール``を追加します。"
+msgstr "もちろん、適切な ``セッション`` を宣言せずにタスクを実行することはできません。``セッション`` を宣言するには :ref:`process-testing-as` メソッドを呼び出して、次のタスクを実行する ``セッション``、``ユーザー`` または ``ロール`` を追加します。"
 
 #: ../../source/concepts/testing/process-testing.rst:118
 msgid "If you execute this test then you will face the following error:"
@@ -3049,7 +3049,7 @@ msgstr "Start"
 
 #: ../../source/concepts/testing/process-testing.rst:191
 msgid "To :public-api:`start</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html#start()>` an execution, you need to tell the ``BpmClient`` which ``BpmProcess`` or ``BpmElement`` you want to run. To proceed with the execution, either tell the ``BpmClient`` to continue with the previous :public-api:`execution</ch/ivyteam/ivy/bpm/engine/client/ExecutionResult.html>` or choose the next desired ``task``. Using a ``task`` is especially useful if there are multiple active ``tasks`` available."
-msgstr "実行を :public-api:`開始</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html#start()>` るには、実行したい ``BpmProcess`` または ``BpmElement`` を ``BpmClient`` に指示する必要があります。実行を進めるには、前の :public-api:`実行</ch/ivyteam/ivy/bpm/engine/client/ExecutionResult.html>` を継続するよう ``BpmClient`` に指示するか、次の``タスク``を選択します。アクティブな``タスク``が複数ある場合は特に、``タスク``を使用すると便利です。"
+msgstr "実行を :public-api:`開始</ch/ivyteam/ivy/bpm/engine/client/BpmClient.html#start()>` るには、実行したい ``BpmProcess`` または ``BpmElement`` を ``BpmClient`` に指示する必要があります。実行を進めるには、前の :public-api:`実行</ch/ivyteam/ivy/bpm/engine/client/ExecutionResult.html>` を継続するよう ``BpmClient`` に指示するか、次の ``タスク`` を選択します。アクティブな ``タスク`` が複数ある場合は特に、``タスク`` を使用すると便利です。"
 
 #: ../../source/concepts/testing/process-testing.rst:202
 msgid "To test callable subprocesses use the ``subProcess`` method instead of the ``process`` method."
@@ -3061,7 +3061,7 @@ msgstr "As"
 
 #: ../../source/concepts/testing/process-testing.rst:212
 msgid "Most processes require a specific ``user`` or ``role`` to be executed. You can define them by calling :public-api:`as</ch/ivyteam/ivy/bpm/engine/client/RequestBuilder.html#as()>`."
-msgstr "ほとんどのプロセスは、実行するのに特定の``ユーザー``または``ロール``が必要です。:public-api:`as</ch/ivyteam/ivy/bpm/engine/client/RequestBuilder.html#as()>` を呼び出して、これらを定義できます。"
+msgstr "ほとんどのプロセスは、実行するのに特定の ``ユーザー`` または ``ロール`` が必要です。:public-api:`as</ch/ivyteam/ivy/bpm/engine/client/RequestBuilder.html#as()>` を呼び出して、これらを定義できます。"
 
 #: ../../source/concepts/testing/process-testing.rst:223
 msgid "Mock"
@@ -3093,7 +3093,7 @@ msgstr "Workflow"
 
 #: ../../source/concepts/testing/process-testing.rst:256
 msgid "Use the :public-api:`Workflow</ch/ivyteam/ivy/bpm/engine/client/Workflow.html>` to access and assert the active ``case`` or ``task``. You can filter them by activator."
-msgstr ":public-api:`Workflow</ch/ivyteam/ivy/bpm/engine/client/Workflow.html>` を使用して、アクティブな``ケース``または``タスク``にアクセスし、アサートします。アクティベーターでフィルタリングすることができます。"
+msgstr ":public-api:`Workflow</ch/ivyteam/ivy/bpm/engine/client/Workflow.html>` を使用して、アクティブな ``ケース`` または ``タスク`` にアクセスし、アサートします。アクティベーターでフィルタリングすることができます。"
 
 #: ../../source/concepts/testing/process-testing.rst:267
 #: ../../source/designer-guide/user-interface/user-dialogs/user-dialog-concept.rst:159
@@ -3103,7 +3103,7 @@ msgstr "Data"
 
 #: ../../source/concepts/testing/process-testing.rst:269
 msgid "With the :public-api:`Data</ch/ivyteam/ivy/bpm/engine/client/ProcessData.html>` API you can assert the process data at different points in your process. You can get the ``data`` from the last executed element or from any element during execution. If an element is executed multiple times you can access the ``data`` of each execution in an ordered list."
-msgstr ":public-api:`Data</ch/ivyteam/ivy/bpm/engine/client/ProcessData.html>` APIを使用して、プロセスのさまざまなポイントでプロセスデータをアサートできます。最後に実行された要素や実行中の任意の要素から``データ``を取得できます。要素が複数回実行された場合は、実行順にそれぞれの``データ``にアクセスできます。"
+msgstr ":public-api:`Data</ch/ivyteam/ivy/bpm/engine/client/ProcessData.html>` APIを使用して、プロセスのさまざまなポイントでプロセスデータをアサートできます。最後に実行された要素や実行中の任意の要素から ``データ`` を取得できます。要素が複数回実行された場合は、実行順にそれぞれの ``データ`` にアクセスできます。"
 
 #: ../../source/concepts/testing/unit-testing.rst:4
 msgid "Unit Tests"
@@ -3208,11 +3208,11 @@ msgstr "先ほど作成したテストクラスを :link-url:`実際のテスト
 
 #: ../../source/concepts/testing/web-testing.rst:37
 msgid "This process opens a dialog with two input fields (``firstname`` and ``lastname``) and a ``submit`` button. After submitting, a second dialog with your input values is displayed."
-msgstr "このプロセスでは、2 つの入力フィールド（``firstname``と``lastname``）と ``submit`` ボタンを表示するダイアログが開きます。送信後、入力値を含む 2 番目のダイアログが表示されます。"
+msgstr "このプロセスでは、2 つの入力フィールド（``firstname`` と ``lastname``）と ``submit`` ボタンを表示するダイアログが開きます。送信後、入力値を含む 2 番目のダイアログが表示されます。"
 
 #: ../../source/concepts/testing/web-testing.rst:48
 msgid "The :ref:`@IvyWebTest <web-tester>` annotation can be configured (e.g to select a ``browser`` or to start the test ``headless``)."
-msgstr ":ref:`@IvyWebTest <web-tester>` アノテーションを設定できます（``ブラウザ``の選択、``ヘッドレス``テストの開始など）。"
+msgstr ":ref:`@IvyWebTest <web-tester>` アノテーションを設定できます（``ブラウザ`` の選択、``ヘッドレス`` テストの開始など）。"
 
 #: ../../source/concepts/testing/web-testing.rst:53
 msgid "Select, Do and Check"
@@ -4042,7 +4042,7 @@ msgstr "``/CustomFields/{kind}/{name}/Label``、``/CustomFields/{kind}/{name}/De
 #: ../../source/designer-guide/configuration/custom-fields.rst:60
 #, python-brace-format
 msgid "You can localize values of ``STRING`` and ``NUMBER`` custom fields. This allows you to store a technical code either as ``NUMBER`` or ``STRING`` in a custom field and provide labels for them in the CMS. Use the following path to localize your custom field values: ``/CustomFields/{kind}/{name}/Values/{value}``."
-msgstr "``文字列``カスタムフィールドと``数値``カスタムフィールドの値をローカライズできます。これにより、技術コードを``数値``または``文字列``としてカスタムフィールドに保存し、CMS でラベルを提供できます。カスタムフィールドの値をローカライズするには、次のパスを使用します：``/CustomFields/{kind}/{name}/Values/{value}``"
+msgstr "``文字列`` カスタムフィールドと ``数値`` カスタムフィールドの値をローカライズできます。これにより、技術コードを ``数値`` または ``文字列`` としてカスタムフィールドに保存し、CMS でラベルを提供できます。カスタムフィールドの値をローカライズするには、次のパスを使用します：``/CustomFields/{kind}/{name}/Values/{value}``"
 
 #: ../../source/designer-guide/configuration/custom-fields.rst:64
 #: ../../source/designer-guide/configuration/formats.rst:12
@@ -4051,11 +4051,11 @@ msgstr "例："
 
 #: ../../source/designer-guide/configuration/custom-fields.rst:66
 msgid "With a ``STRING`` custom field ``CustomFields/Tasks/branchOffice/Values/Zug``, ``CustomFields/Tasks/branchOffice/Values/Munich``, and ``CustomFields/Tasks/branchOffice/Values/Vienna``. Now you can localize the value ``CustomFieldsTasks/branchOffice/Values/Vienna`` by setting it for English to ``Vienna`` and for German to ``Wien``."
-msgstr "``文字列``カスタムフィールドである ``CustomFields/Tasks/branchOffice/Values/Zug``、``CustomFields/Tasks/branchOffice/Values/Munich``、``CustomFields/Tasks/branchOffice/Values/Vienna`` を使用し、``CustomFieldsTasks/branchOffice/Values/Vienna`` の値を英語では ``Vienna``、ドイツ語では ``Wien`` に設定して、値をローカライズできます。"
+msgstr "``文字列`` カスタムフィールドである ``CustomFields/Tasks/branchOffice/Values/Zug``、``CustomFields/Tasks/branchOffice/Values/Munich``、``CustomFields/Tasks/branchOffice/Values/Vienna`` を使用し、``CustomFieldsTasks/branchOffice/Values/Vienna`` の値を英語では ``Vienna``、ドイツ語では ``Wien`` に設定して、値をローカライズできます。"
 
 #: ../../source/designer-guide/configuration/custom-fields.rst:69
 msgid "With a ``NUMBER`` custom field ``CustomFields/Tasks/productType/Values/1``, ``CustomFields/Tasks/productType/Values/2``, and ``CustomFields/Tasks/productType/Values/3``. Now you can give the product types meaningful names like ``Food``, ``Electronic``, and ``Health``. In different languages if you like."
-msgstr "``数値``カスタムフィールドである ``CustomFields/Tasks/productType/Values/1``、``CustomFields/Tasks/productType/Values/2``、``CustomFields/Tasks/productType/Values/3`` を使用して、製品のタイプに``食品``、``電気``、``健康``のような意味のある名前を付けることができます。異なる言語で名前を付けることも可能です。"
+msgstr "``数値`` カスタムフィールドである ``CustomFields/Tasks/productType/Values/1``、``CustomFields/Tasks/productType/Values/2``、``CustomFields/Tasks/productType/Values/3`` を使用して、製品のタイプに ``食品``、``電気``、``健康`` のような意味のある名前を付けることができます。異なる言語で名前を付けることも可能です。"
 
 #: ../../source/designer-guide/configuration/databases.rst:4
 #: ../../source/engine-guide/reference/engine-cockpit/services.rst:31
@@ -4952,7 +4952,7 @@ msgstr ":guilabel:`パスワード` クライアントを認証するのに使�
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:102
 msgid "Authentication properties like (``username`` and ``password``) can be overridden in the :ref:`process-element-web-service-call-activity` that performs the call to the remote service. In these activities, authentication properties can contain scripted or dynamic values."
-msgstr "認証プロパティ（``ユーザー名``、``パスワード``など）は、リモートサービスを呼び出す :ref:`process-element-web-service-call-activity` でオーバーライドできます。これらのアクティビティでは、認証プロパティにスクリプト化された値や動的な値を含めることができます。"
+msgstr "認証プロパティ（``ユーザー名``、``パスワード`` など）は、リモートサービスを呼び出す :ref:`process-element-web-service-call-activity` でオーバーライドできます。これらのアクティビティでは、認証プロパティにスクリプト化された値や動的な値を含めることができます。"
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:118
 msgid "Features add optional functionality to a web service client call execution."
@@ -5042,7 +5042,7 @@ msgstr "ビジネスデータの値は、リポジトリから指定された識
 
 #: ../../source/designer-guide/data-modeling/business-data/concept.rst:24
 msgid "A unique id is generated if a Business Data value is stored for the first time. If there is a field of type ``String`` with the name ``id`` in the Business Data class, the generated id will be stored into this field, too."
-msgstr "ビジネスデータの値が初めて格納される場合、一意の ID が生成されます。ビジネスデータクラスに ``id`` という名前の``文字列``型のフィールドがある場合、生成された ID はこのフィールドにも格納されます。"
+msgstr "ビジネスデータの値が初めて格納される場合、一意の ID が生成されます。ビジネスデータクラスに ``id`` という名前の ``文字列`` 型のフィールドがある場合、生成された ID はこのフィールドにも格納されます。"
 
 #: ../../source/designer-guide/data-modeling/business-data/concept.rst:28
 msgid "It is also possible to use your own id if you set the id to the Business Data value before saving it for the first time."
@@ -5105,7 +5105,7 @@ msgstr "getter/setter のないフィールド"
 
 #: ../../source/designer-guide/data-modeling/business-data/customization.rst:33
 msgid "The ObjectMapper will only store fields as JSON which are accessible ``public``, either by getter methods or its field visibility. The recreation of such a field will fail if no setter is accessible ``public``. Via annotations, either the serialization of this field can be avoided or the recreation can be enabled."
-msgstr "ObjectMapperは、getter メソッドやフィールドの可視性によって``パブリック``アクセス可能なフィールドのみを JSON として保存します。``パブリック``アクセス可能な setter がない場合、そのようなフィールドの再作成は失敗します。アノテーションにより、このフィールドのシリアライズを回避したり、再作成を有効にしたりすることができます。"
+msgstr "ObjectMapperは、getter メソッドやフィールドの可視性によって ``パブリック`` アクセス可能なフィールドのみを JSON として保存します。``パブリック`` アクセス可能な setter がない場合、そのようなフィールドの再作成は失敗します。アノテーションにより、このフィールドのシリアライズを回避したり、再作成を有効にしたりすることができます。"
 
 #: ../../source/designer-guide/data-modeling/business-data/customization.rst:38
 msgid "**Avoid the serialization of a field:**"
@@ -5129,7 +5129,7 @@ msgstr "なお、一般的なライブラリのインスタンスをシリアラ
 
 #: ../../source/designer-guide/data-modeling/business-data/customization.rst:81
 msgid "If a module is already available ``public``, add its JAR to the classpath of your project."
-msgstr "モジュールがすでに``パブリック``で利用可能な場合は、その JAR をプロジェクトのクラスパスに追加します。"
+msgstr "モジュールがすでに ``パブリック`` で利用可能な場合は、その JAR をプロジェクトのクラスパスに追加します。"
 
 #: ../../source/designer-guide/data-modeling/business-data/index.rst:4
 msgid "Business Data"
@@ -5174,7 +5174,7 @@ msgstr "型"
 
 #: ../../source/designer-guide/data-modeling/business-data/limitations.rst:13
 msgid "The Axon Ivy scripting types ``XML``, and ``Tree`` are not serializable."
-msgstr "Axon Ivy のスクリプト型である ``XML`` と``ツリー``はシリアライズできません。"
+msgstr "Axon Ivy のスクリプト型である ``XML`` と ``ツリー`` はシリアライズできません。"
 
 #: ../../source/designer-guide/data-modeling/business-data/limitations.rst:15
 msgid "You can store Collection types like an ``ArrayList`` in a field, but not as the root object. Always use a simple DataClass or plain old Java objects as the root object to store and load in the repository."
@@ -5186,7 +5186,7 @@ msgstr "``IUser``、``ITask`` のようなパブリック API オブジェクト
 
 #: ../../source/designer-guide/data-modeling/business-data/limitations.rst:23
 msgid "Do not change the type of a stored field (e.g., from ``Number`` to ``String``)! The serialization of data you stored previously will fail, and Axon Ivy cannot find Business Data with the new type via the search API as the search index is `strongly typed <https://opensearch.org/docs/latest/field-types/>`_ _."
-msgstr "格納されたフィールドの型を変更しないでください（``数値``から``文字列``など）。検索インデックスは`強く型付け<https://opensearch.org/docs/latest/field-types/>`__ されているため、以前に保存したデータのシリアライズに失敗し、Axon Ivy は検索 API から新しい型を持つビジネスデータを見つけられません。"
+msgstr "格納されたフィールドの型を変更しないでください（``数値`` から ``文字列`` など）。検索インデックスは`強く型付け<https://opensearch.org/docs/latest/field-types/>`__ されているため、以前に保存したデータのシリアライズに失敗し、Axon Ivy は検索 API から新しい型を持つビジネスデータを見つけられません。"
 
 #: ../../source/designer-guide/data-modeling/business-data/limitations.rst:29
 #: ../../source/designer-guide/how-to/data-storage.rst:75
@@ -5207,7 +5207,7 @@ msgstr "ビジネスデータは OpenSearch に複製されます。OpenSearch �
 
 #: ../../source/designer-guide/data-modeling/business-data/limitations.rst:47
 msgid "Do not use a ``Map`` with random or generated keys in your data structure, as this forces the creation of an OpenSearch mapping for every data item."
-msgstr "データ構造にランダムなキーや生成されたキーを含む``マップ``を使用しないでください。データ項目ごとに OpenSearch マッピングを作成しなければならなくなります。"
+msgstr "データ構造にランダムなキーや生成されたキーを含む ``マップ`` を使用しないでください。データ項目ごとに OpenSearch マッピングを作成しなければならなくなります。"
 
 #: ../../source/designer-guide/data-modeling/business-data/limitations.rst:50
 msgid "Prevent cyclic references and back references from lists to the parent object, as this can lead to huge json structures while expanding these data structures."
@@ -8068,7 +8068,7 @@ msgstr "開始、ケース、タスクをカテゴリーに割り当てること
 
 #: ../../source/designer-guide/how-to/workflow/categories.rst:15
 msgid "The ``Category`` API allows getting localized information from the CMS. For example, the ``name`` of the category ``Finance/Invoices`` is stored in the CMS at ``/Categories/Finance/Invoices/name``."
-msgstr "``カテゴリー`` API は、CMS からローカライズされた情報を取得できます。例えば、 ``Finance/Invoices`` というカテゴリーの``名前``は、CMS の ``/Categories/Finance/Invoices/name`` に保存されています。"
+msgstr "``カテゴリー`` API は、CMS からローカライズされた情報を取得できます。例えば、 ``Finance/Invoices`` というカテゴリーの ``名前`` は、CMS の ``/Categories/Finance/Invoices/name`` に保存されています。"
 
 #: ../../source/designer-guide/how-to/workflow/categories.rst:19
 msgid "To display a tooltip or an icon for a category on start lists, configure the ``tooltip`` and ``cssIcon`` in the CMS (i.e.,``/Categories/Finance/Invoice/cssIcon``)."
@@ -9505,7 +9505,7 @@ msgstr "Java メソッドとフィールドの呼び出し"
 
 #: ../../source/designer-guide/ivyscript/java-integration.rst:9
 msgid "You can easily write own Java classes and use them directly in IvyScript. You can call static methods and fields from Java classes (e.g., ``java.lang.Math``). You have to address the class with the qualified name or use import statements. If a Java method has no return parameter (void) then the called object of the method is returned (e.g. a call to ``user.setName(...)`` returns object ``user``)."
-msgstr "簡単に独自の Java クラスを作成し、IvyScript で直接使用できます。Java クラス（例：``java.lang.Math``）から静的メソッドやフィールドを呼び出すことができます。修飾名でクラスを指定するか、import 文を使用する必要があります。Java メソッドに戻りパラメーターがない場合（void）、呼び出されたメソッドのオブジェクトが返されます（例えば ``user.setName(...)`` を呼び出すと、``ユーザー``オブジェクトが返されます）。"
+msgstr "簡単に独自の Java クラスを作成し、IvyScript で直接使用できます。Java クラス（例：``java.lang.Math``）から静的メソッドやフィールドを呼び出すことができます。修飾名でクラスを指定するか、import 文を使用する必要があります。Java メソッドに戻りパラメーターがない場合（void）、呼び出されたメソッドのオブジェクトが返されます（例えば ``user.setName(...)`` を呼び出すと、``ユーザー`` オブジェクトが返されます）。"
 
 #: ../../source/designer-guide/ivyscript/java-integration.rst:27
 msgid "Working with Different Date, Time and DateTime Implementations"
@@ -9576,7 +9576,7 @@ msgstr "Java ``Date``"
 
 #: ../../source/designer-guide/ivyscript/java-integration.rst:56
 msgid "The automatic conversion into IvyScript types takes place transparently. The developer should therefore only think in terms of the IvyScript ``Date`` / ``Time`` types. No explicit conversion has to be made, neither when reading nor when writing those types."
-msgstr "IvyScript の型への自動変換は透過的に行われます。そのため、開発者が考える必要があるのは、IvyScript の ``Date`` 型または``Time`` 型についてのみです。これらの型を読み込むときも書き込むときも、明示的に変換する必要はありません。"
+msgstr "IvyScript の型への自動変換は透過的に行われます。そのため、開発者が考える必要があるのは、IvyScript の ``Date`` 型または ``Time`` 型についてのみです。これらの型を読み込むときも書き込むときも、明示的に変換する必要はありません。"
 
 #: ../../source/designer-guide/ivyscript/java-integration.rst:63
 msgid "As a general rule, *do not create any variables or objects of foreign (i.e., Java) Date / Time types inside IvyScript* . Although a statement such as"
@@ -9700,7 +9700,7 @@ msgstr "Null 処理／オブジェクトの自動生成"
 
 #: ../../source/designer-guide/ivyscript/language.rst:105
 msgid "IvyScript supports auto-initialization of the Axon Ivy basic types, i.e., you don't have to create/initialize fields or variables explicitly with ``new`` after declaration. ``Strings`` are initialized to an empty ``String``, ``Numbers`` to zero, ``Lists`` to an empty ``List``."
-msgstr "IvyScript は、Axon Ivy の基本型の自動初期化をサポートしています。つまり、宣言後にフィールドや変数を ``new`` で明示的に作成／初期化する必要はありません。 ``文字列`` は空の``文字列``、 ``数値``は 0、``リスト``は空の``リスト``に初期化されます。"
+msgstr "IvyScript は、Axon Ivy の基本型の自動初期化をサポートしています。つまり、宣言後にフィールドや変数を ``new`` で明示的に作成／初期化する必要はありません。 ``文字列`` は空の ``文字列``、 ``数値`` は 0、``リスト`` は空の ``リスト`` に初期化されます。"
 
 #: ../../source/designer-guide/ivyscript/language.rst:110
 msgid "Ivy composite types (Ivy Data Classes) are automatically created. Due to that automatic object creation, a null check expression like ``if(in.customer == null)`` is always false."
@@ -10231,7 +10231,7 @@ msgstr "File"
 
 #: ../../source/designer-guide/ivyscript/reference.rst:237
 msgid "A :public-api:`File </ch/ivyteam/ivy/scripting/objects/File.html>` object can be used to read/write temporary or persistent data. IvyScript ``Files`` are created in a confined area that belongs to the running application. Temporary files are created in a session-specific file area and are automatically deleted if a session ends. Temporary Files can be made persistent."
-msgstr ":public-api:`File </ch/ivyteam/ivy/scripting/objects/File.html>` ブジェクトを使用して、一時的なデータや永続的なデータを読み書きできます。IvyScript の``ファイル``は、実行中のアプリケーションに属する限られた領域に作成されます。一時ファイルはセッション固有のファイル領域に作成され、セッションが終了すると自動的に削除されます。一時ファイルを永続化することもできます。"
+msgstr ":public-api:`File </ch/ivyteam/ivy/scripting/objects/File.html>` ブジェクトを使用して、一時的なデータや永続的なデータを読み書きできます。IvyScript の ``ファイル`` は、実行中のアプリケーションに属する限られた領域に作成されます。一時ファイルはセッション固有のファイル領域に作成され、セッションが終了すると自動的に削除されます。一時ファイルを永続化することもできます。"
 
 #: ../../source/designer-guide/ivyscript/reference.rst:244
 msgid "IvyScript Files are always addressed relatively, i.e., absolute addressing will lead to errors. You can create folders and files, i.e., a hierarchical structure, but you can not navigate outside the confined area (which is also the reason why absolute File paths are disallowed)."
@@ -10263,7 +10263,7 @@ msgstr "**Java からのアクセス：**"
 
 #: ../../source/designer-guide/ivyscript/reference.rst:280
 msgid "You can also access ``ivy`` from a Java context, e.g., from helper classes. To do so, simply import the :public-api:`ch.ivyteam.ivy.environment.Ivy </ch/ivyteam/ivy/environment/Ivy.html>` class and use it's static API."
-msgstr "また、ヘルパークラスなどの Java コンテキストから``ivy``にアクセスすることもできます。:public-api:`ch.ivyteam.ivy.environment.Ivy </ch/ivyteam/ivy/environment/Ivy.html>` ラスをインポートし、その静的 API を使用してください。"
+msgstr "また、ヘルパークラスなどの Java コンテキストから ``ivy`` にアクセスすることもできます。:public-api:`ch.ivyteam.ivy.environment.Ivy </ch/ivyteam/ivy/environment/Ivy.html>` ラスをインポートし、その静的 API を使用してください。"
 
 #: ../../source/designer-guide/ivyscript/reference.rst:284
 msgid "Please note that it is necessary that the Java code which makes use of the ``ivy`` context variable must run within an Axon Ivy request. Otherwise, context information will not be available, most likely resulting in an ``EnvironmentNotAvailableException``."
@@ -10359,7 +10359,7 @@ msgstr "``security`` - :public-api:`ISecurityContext </ch/ivyteam/ivy/security/I
 
 #: ../../source/designer-guide/ivyscript/reference.rst:357
 msgid "``extensions`` - a :public-api:`IExtensions </ch/ivyteam/ivy/extension/IExtensions.html>` instance allowing access to Axon Ivy ``extensions``"
-msgstr "``extensions`` - :public-api:`IExtensions </ch/ivyteam/ivy/extension/IExtensions.html>` ンスタンスで、Axon Ivy の``拡張機能``にアクセスできます。"
+msgstr "``extensions`` - :public-api:`IExtensions </ch/ivyteam/ivy/extension/IExtensions.html>` ンスタンスで、Axon Ivy の ``拡張機能`` にアクセスできます。"
 
 #: ../../source/designer-guide/ivyscript/reference.rst:360
 msgid "``datacache`` - the reference to the :public-api:`IDataCacheContext </ch/ivyteam/ivy/data/cache/IDataCacheContext.html>` instances for the application and session (see :ref:`data-cache` )"
@@ -10611,7 +10611,7 @@ msgstr "担当ロール"
 
 #: ../../source/designer-guide/process-modeling/casemap.rst:234
 msgid "By default the responsible role that can work on the created task is the one configured on the Request tab of the :ref:`process-element-start-request`. If the :ref:`process-element-start-request` is triggerable then also the information on the Trigger tab is considered and the task is assigned to the responsible role or user configured on this tab. To automatically execute a process, configure the :ref:`process-element-start-request` to be triggerable and set the responsible role to ``SYSTEM``."
-msgstr "デフォルトでは、作成されたタスクを処理できる担当ロールは :ref:`process-element-start-request` のリクエストタブで設定されたロールです :ref:`process-element-start-request` がトリガー可能の場合は、トリガータブの情報も考慮され、タスクはこのタブで設定された担当ロールまたはユーザーに割り当てられます。プロセスを自動的に実行するには :ref:`process-element-start-request` をトリガー可能に設定し、担当ロールを``システム``に設定します。"
+msgstr "デフォルトでは、作成されたタスクを処理できる担当ロールは :ref:`process-element-start-request` のリクエストタブで設定されたロールです :ref:`process-element-start-request` がトリガー可能の場合は、トリガータブの情報も考慮され、タスクはこのタブで設定された担当ロールまたはユーザーに割り当てられます。プロセスを自動的に実行するには :ref:`process-element-start-request` をトリガー可能に設定し、担当ロールを ``システム`` に設定します。"
 
 #: ../../source/designer-guide/process-modeling/casemap.rst:243
 msgid "Stage switching"
@@ -10733,7 +10733,7 @@ msgstr "条件タブ"
 
 #: ../../source/designer-guide/process-modeling/process-elements/alternative.rst:31
 msgid "Each row in this table is assigned to an exit of this element. In the column ``Condition`` boolean expressions must be entered. The conditions are evaluated from the top to the bottom and the exit of the first one that evaluates to *true* is chosen, i.e., the process will proceed by the path connected to this exit."
-msgstr "この表の各行は、この要素の出口に割り当てられています。列の``条件``にはブール式を入力する必要があります。条件は上から下に評価され、最初に *true* と評価された出口が選ばれます。つまり、プロセスはこの出口に接続されたパスを進みます。"
+msgstr "この表の各行は、この要素の出口に割り当てられています。列の ``条件`` にはブール式を入力する必要があります。条件は上から下に評価され、最初に *true* と評価された出口が選ばれます。つまり、プロセスはこの出口に接続されたパスを進みます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/bpmn-activity-elements.rst:4
 msgid "BPMN Activity Elements"
@@ -11724,7 +11724,7 @@ msgstr "添付ファイルタブ"
 
 #: ../../source/designer-guide/process-modeling/process-elements/email-activity.rst:87
 msgid "In this tab you can attach files to your e-mail. Attachments can be provided as single ``File`` process data reference or with a ``List<File>`  reference to supply multiple files at once. Alternatively files can be selected from the CMS. Finally, files can be added by stating a ``String`` path. It will by resolved by searching the name as file in your :ref:`file area <ivyscript-reference-file>`."
-msgstr "このタブでは、メールにファイルを添付できます。1 つの ``File`` プロセスデータの参照として、または複数のファイルを一度に提供する ``List<File>`  参照を使用して、添付ファイルを提供できます。CMS からファイルを選択することもできます。さらに、``文字列``パスを指定して、ファイルを追加できます :ref:`ファイル領域<ivyscript-reference-file>` 名前をファイルとして検索して、解決します。"
+msgstr "このタブでは、メールにファイルを添付できます。1 つの ``File`` プロセスデータの参照として、または複数のファイルを一度に提供する ``List<File>`  参照を使用して、添付ファイルを提供できます。CMS からファイルを選択することもできます。さらに、``文字列`` パスを指定して、ファイルを追加できます :ref:`ファイル領域<ivyscript-reference-file>` 名前をファイルとして検索して、解決します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/email-activity.rst:94
 #: ../../source/designer-guide/process-modeling/process-elements/email-activity.rst:97
@@ -12426,7 +12426,7 @@ msgstr "インスクリプションマスクは、ほとんどの REST サービ
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:224
 msgid "In the scripting field, the variable ``client`` holds the REST client chosen in the *Target* section. The whole setup from the Target section will be applied to this client variable."
-msgstr "スクリプトフィールドの``クライアント``の変数は、*ターゲット* セクションで選択された REST クライアントを保持します。ターゲットセクションのセットアップ全体がこのクライアント変数に適用されます。"
+msgstr "スクリプトフィールドの ``クライアント`` の変数は、*ターゲット* セクションで選択された REST クライアントを保持します。ターゲットセクションのセットアップ全体がこのクライアント変数に適用されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:228
 msgid "|image15|"
@@ -12443,7 +12443,7 @@ msgstr "**JAX-RS の例** ："
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:252
 msgid "REST Response objects must be closed to avoid blocked connection pools. You must do it by calling close() or readEntity() on a Response, that was created by calling any method on the ``Invocation.Builder`` class (e.g. ``client.request().put(...)``) that returns a ``Response`` object."
-msgstr "接続プールのブロックを防ぐため、REST 応答オブジェクトを閉じる必要があります。``応答``オブジェクトを返す ``Invocation.Builder`` クラス（``client.request().put(...)``など）で任意のメソッドを呼び出して作成された応答で、close() または readEntity() を呼び出してください。"
+msgstr "接続プールのブロックを防ぐため、REST 応答オブジェクトを閉じる必要があります。``応答`` オブジェクトを返す ``Invocation.Builder`` クラス（``client.request().put(...)``など）で任意のメソッドを呼び出して作成された応答で、close() または readEntity() を呼び出してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:257
 #, python-brace-format
@@ -12802,7 +12802,7 @@ msgstr "セッションタイムアウトが発生した場合、タスクで ``
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:165
 msgid "Usually only processes including at least one :ref:`process-element-task-switch-gateway` have this option selected. Because per default a new task is in state ``CREATED`` until the task become persisted. If the option is selected, the task gets directly into the state ``RESUMED``. With this behavior it's possible to distinguish tasks which have a :ref:`process-element-task-switch-gateway` in their process and others without one. This helps to separate tasks in the task overview from workflow starts (with different steps) and simple process starts (which e.g., only outputs some information)."
-msgstr "通常、1 つ以上の :ref:`process-element-task-switch-gateway` を含むプロセスのみ、このオプションが選択されます。デフォルトでは、新しいタスクは永続化されるまで``作成済み``の状態ですが、このオプションを選択した場合、タスクは直接、``再開済み``の状態になります。この動作により、プロセス :ref:`process-element-task-switch-gateway` が含まれるタスクを他のタスクと区別できます。タスクの概要でタスクを（異なるステップを含む）ワークフローの開始や単純なプロセス開始（情報のみ出力するプロセス開始など）から切り離すのにも役立ちます。"
+msgstr "通常、1 つ以上の :ref:`process-element-task-switch-gateway` を含むプロセスのみ、このオプションが選択されます。デフォルトでは、新しいタスクは永続化されるまで ``作成済み`` の状態ですが、このオプションを選択した場合、タスクは直接、``再開済み`` の状態になります。この動作により、プロセス :ref:`process-element-task-switch-gateway` が含まれるタスクを他のタスクと区別できます。タスクの概要でタスクを（異なるステップを含む）ワークフローの開始や単純なプロセス開始（情報のみ出力するプロセス開始など）から切り離すのにも役立ちます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/start.rst:178
 msgid "Trigger Tab"
@@ -13184,7 +13184,7 @@ msgstr "|image0| *ユーザーダイアログメソッドの開始* 要素は、
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-method-start.rst:12
 msgid "The element allows to set internal data of the User Dialog from the ``input`` parameters of the method call and to define *return* values either from process data or by calculation."
-msgstr "この要素を使用して、メソッド呼び出しの``入力``パラメーターからユーザーダイアログの内部データを設定し、プロセスデータまたは計算による *戻り* 値を定義できます。"
+msgstr "この要素を使用して、メソッド呼び出しの ``入力`` パラメーターからユーザーダイアログの内部データを設定し、プロセスデータまたは計算による *戻り* 値を定義できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-method-start.rst:24
 msgid "This tab is used to define the name and input parameters of the *User Dialog Method* that is implemented by this element's process. See :ref:`process-element-tab-start` for a more detailed description."
@@ -13520,7 +13520,7 @@ msgstr "Web サービスのエンドポイントは、Web サービスを定義�
 
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:147
 msgid "The Java file is located in the folder ``[project]/src_wsproc/[fully-qualified-name].java`` and gets interpreted by the CXF library (http://cxf.apache.org/). The file has to be moved to the ``src``-folder of the project and has to be in line with the configuration of the WS Start Elements of the process. The ``fully-qualified-name`` is defined in the inscription mask of the process."
-msgstr "Java ファイルは ``[プロジェクト]/src_wsproc/[完全修飾名].java`` フォルダーに配置され、CXF ライブラリ（http://cxf.apache.org/）によって解釈されます。ファイルをプロジェクトの ``src`` フォルダーに移動し、プロセスの Web サービスの開始要素の設定と一致させる必要があります。``完全修飾名``は、プロセスのインスクリプションマスクで定義されます。"
+msgstr "Java ファイルは ``[プロジェクト]/src_wsproc/[完全修飾名].java`` フォルダーに配置され、CXF ライブラリ（http://cxf.apache.org/）によって解釈されます。ファイルをプロジェクトの ``src`` フォルダーに移動し、プロセスの Web サービスの開始要素の設定と一致させる必要があります。``完全修飾名`` は、プロセスのインスクリプションマスクで定義されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:155
 msgid "The Java file in the ``src``-folder is under control of the Developer. When a WS Start element configuration changes, the change has to be adapted manually in the Java file."
@@ -18244,7 +18244,7 @@ msgstr "実行中のビューの切り替え方法"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-multiple-views.rst:25
 msgid "If you have created an HTML Dialog with several views you have to implement the navigation between the views for the user on your own. The basic solution is a ``commandButton`` with an ``update`` attribute to load the next view."
-msgstr "ビューが複数ある HTML ダイアログを作成した場合、自分でユーザーのビューの間にナビゲーションを実装する必要があります。基本的な解決策として、``commandButton`` と``update`` 属性を使用し、次のビューをロードします。"
+msgstr "ビューが複数ある HTML ダイアログを作成した場合、自分でユーザーのビューの間にナビゲーションを実装する必要があります。基本的な解決策として、``commandButton`` と ``update`` 属性を使用し、次のビューをロードします。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-multiple-views.rst:30
 msgid "You find an example of a multi-view HTML Dialog in the :ref:`HTMLDialogDemos project <importing-demo-projects>` that is provided with the Axon Ivy Designer."
@@ -18590,7 +18590,7 @@ msgstr "開始メソッドをオーバーライドすることはできません
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-view-types.rst:133
 msgid "See the following code fragment that inserts an HTML Dialog component. We use a start method ``start(data.person.BillingAddress:address)``. The current value of the data class property ``billingAddress`` is used as a parameter for the start method and the component attribute ``caption`` will be set to the value \"Billing Address\""
-msgstr "HTML ダイアログコンポーネントを挿入する以下のコードを見てください。コードでは、``start(data.person.BillingAddress:address)`` という開始メソッドが使用されています。 ``billingAddress``データクラスプロパティの現在の値を開始メソッドのパラメーターとして使用し、コンポーネントの ``caption`` 属性を \"Billing Address\" という値に設定します。"
+msgstr "HTML ダイアログコンポーネントを挿入する以下のコードを見てください。コードでは、``start(data.person.BillingAddress:address)`` という開始メソッドが使用されています。 ``billingAddress`` データクラスプロパティの現在の値を開始メソッドのパラメーターとして使用し、コンポーネントの ``caption`` 属性を \"Billing Address\" という値に設定します。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-workflow.rst:4
 msgid "By default, HTML Dialogs are created with a proceed button that resumes the workflow. In addition, a cancel link is created."
