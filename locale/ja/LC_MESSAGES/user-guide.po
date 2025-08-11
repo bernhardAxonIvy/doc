@@ -4138,17 +4138,17 @@ msgstr "通知は、通知チャネルで配信されます。Axon Ivy Engine �
 msgid ""
 "**Web Channel**: Notifications will be shown in the header section of the"
 " Axon Ivy Portal."
-msgstr "**ウェブチャネル** ：Axon Ivy Portal のヘッダー部分に通知が表示されます。"
+msgstr " **ウェブチャネル** ：Axon Ivy Portal のヘッダー部分に通知が表示されます。"
 
 #: ../../source/concepts/notification/index.rst:24
 msgid "**Mail Channel**: Notifications will be sent as mail."
-msgstr "**メールチャネル** ：通知はメールとして送信されます。"
+msgstr " **メールチャネル** ：通知はメールとして送信されます。"
 
 #: ../../source/concepts/notification/index.rst:25
 msgid ""
 "**Microsoft Teams Channel**: Notifications will be delivered as Microsoft"
 " Teams messages."
-msgstr "**Microsoft Teams チャネル** ：通知は Microsoft Teams のメッセージとして配信されます。"
+msgstr " **Microsoft Teams チャネル** ：通知は Microsoft Teams のメッセージとして配信されます。"
 
 #: ../../source/concepts/notification/index.rst:27
 msgid ""
