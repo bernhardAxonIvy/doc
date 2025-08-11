@@ -114,11 +114,11 @@ msgid ""
 "It's important to keep your productive Axon Ivy Engine stable and up to "
 "date. Otherwise, you risk to be vulnerable to known **security leaks** "
 "and users may face inconveniences due to known and addressed **bug "
-"fixes**. In addition, **performance issues** may be solved and make using"
+"fixes**. In addition, ** performance issues** may be solved and make using"
 " the Axon Ivy Engine more fun on a daily basis."
 msgstr ""
 "生産性を高める Axon Ivy Engine "
-"の安定を保ち、最新の状態に維持することは重要です。そうしなければ、既知の**セキュリティリーク**のリスクが高まり、既知の対処済みの**バグ修正**により、ユーザーに不便をかける可能性があります。さらに、**パフォーマンスの問題**が解決されることで、日常業務で"
+"の安定を保ち、最新の状態に維持することは重要です。そうしなければ、既知の**セキュリティリーク** のリスクが高まり、既知の対処済みの**バグ修正** により、ユーザーに不便をかける可能性があります。さらに、**パフォーマンスの問題** が解決されることで、日常業務で"
 " Axon Ivy Engine をより快適に使用できるようになります。"
 
 #: ../../source/axonivy/migration/hotfix/index.rst:13
@@ -1142,19 +1142,19 @@ msgstr "バンドルされている OpenSearch サーバーを使用（初期値
 
 #: ../../source/axonivy/system-requirements/engine.rst:20
 msgid "**Memory (RAM)**: Minimum is 8 GB, we recommend to use 32 GB."
-msgstr "**メモリ（RAM）**：最低 8 GB、32 GB を推奨。"
+msgstr "**メモリ（RAM）** ：最低 8 GB、32 GB を推奨。"
 
 #: ../../source/axonivy/system-requirements/engine.rst:23
 msgid ""
 "**Disk Space**: Minimum is 20 GB, we recommend 100 GB on a Solid State "
 "Disk (SSD)."
-msgstr "**ディスクの空き容量**：最低 20 GB、SSD では 100 GB を推奨。"
+msgstr "**ディスクの空き容量** ：最低 20 GB、SSD では 100 GB を推奨。"
 
 #: ../../source/axonivy/system-requirements/engine.rst:26
 msgid ""
 "**Processors**: Minimum is 4 cores with 2 GHz, we recommend 16 cores with"
 " 2.5 GHz."
-msgstr "**プロセッサ**：最低 2 GHz の 4 コア、2.5 GHz の 16 コアを推奨。"
+msgstr "**プロセッサ** ：最低 2 GHz の 4 コア、2.5 GHz の 16 コアを推奨。"
 
 #: ../../source/axonivy/system-requirements/engine.rst:31
 msgid "With an external OpenSearch server"
@@ -1162,19 +1162,19 @@ msgstr "外部の OpenSearch サーバーを使用"
 
 #: ../../source/axonivy/system-requirements/engine.rst:32
 msgid "**Memory (RAM)**: Minimum is 4 GB. We recommend using at least 16 GB."
-msgstr "**メモリ（RAM）**：最低 4 GB、16 GB 以上を推奨。"
+msgstr "**メモリ（RAM）** ：最低 4 GB、16 GB 以上を推奨。"
 
 #: ../../source/axonivy/system-requirements/engine.rst:35
 msgid ""
 "**Disk Space**: Minimum is 2 GB. We recommend 50 GB on a Solid State Disk"
 " (SSD)."
-msgstr "**ディスクの空き容量**：最低 2 GB、SSD では 50 GB を推奨。"
+msgstr "**ディスクの空き容量** ：最低 2 GB、SSD では 50 GB を推奨。"
 
 #: ../../source/axonivy/system-requirements/engine.rst:38
 msgid ""
 "**Processors**: Minimum is 4 cores with 2 GHz. We recommend 16 cores with"
 " 2.5 GHz."
-msgstr "**プロセッサ**：最低 2 GHz の 4 コア、2.5 GHz の 16 コアを推奨。"
+msgstr "**プロセッサ** ：最低 2 GHz の 4 コア、2.5 GHz の 16 コアを推奨。"
 
 #: ../../source/axonivy/system-requirements/engine.rst:45
 msgid ""
@@ -1234,11 +1234,11 @@ msgstr "×"
 
 #: ../../source/axonivy/system-requirements/engine.rst:69
 msgid "**Windows**: Windows Server 2022 and 2019"
-msgstr "**Windows**：Windows Server 2022 および 2019"
+msgstr "**Windows** ：Windows Server 2022 および 2019"
 
 #: ../../source/axonivy/system-requirements/engine.rst:72
 msgid "**Linux**: Linux x64 (tested on Ubuntu 24.04)"
-msgstr "**Linux**：Linux（64 ビット版）（Ubuntu 24.04 でテスト済み）"
+msgstr "**Linux** ：Linux（64 ビット版）（Ubuntu 24.04 でテスト済み）"
 
 #: ../../source/axonivy/system-requirements/engine.rst:76
 #: ../../source/engine-guide/configuration/system-database/index.rst:4
@@ -1366,7 +1366,7 @@ msgid ""
 " and an in-memory database. As long as you don't restart the engine, you "
 "can do everything you can do with a licensed, production-ready engine."
 msgstr ""
-"**デモモード**：デモライセンスとインメモリデータベースを使用して、追加設定なしで Axon Ivy Engine "
+"**デモモード** ：デモライセンスとインメモリデータベースを使用して、追加設定なしで Axon Ivy Engine "
 "を実行できます。エンジンを再起動しない限り、ライセンス供与された本番環境用エンジンでできることはすべて行えます。"
 
 #: ../../source/axonivy/try-axon-ivy.rst:15
@@ -1385,7 +1385,7 @@ msgid ""
 "https://www.axonivy.com/try-it-now. It comes complete with a two-week "
 "fully functional license and full web access to the engine."
 msgstr ""
-"**クラウドトライアル**：永続データベースを使用して Axon Ivy Engine "
+"**クラウドトライアル** ：永続データベースを使用して Axon Ivy Engine "
 "を試してみたい方は、https://www.axonivy.com/try-it-now からクラウドのトライアルエンジンを入手できます。2 "
 "週間のフル機能のライセンスと、エンジンへの完全なウェブアクセスが付属しています。"
 
@@ -1472,7 +1472,7 @@ msgid ""
 "can advance your business constantly and effectively. The cost of "
 "business transformations become reasonable and predictable."
 msgstr ""
-"企業のデジタル化は、**時間ともに進化**します。私たちは、大がかりなソリューションよりも、予測可能な小さな改善を優先します。Axon Ivy "
+"企業のデジタル化は、**時間ともに進化** します。私たちは、大がかりなソリューションよりも、予測可能な小さな改善を優先します。Axon Ivy "
 "プラットフォームでは、既存の環境から素早く簡単に始めることができます。実行中のプロセスに貢献すべきユーザーにタスク通知を送信することから始めることも可能です。最終的には、プラットフォームがすべてのビジネスインタラクションの単一のインターフェイスになります。ビジネスプロセスの実行中に生成されるデータに基づいて"
 " KPI "
 "を評価できるようになり、これらの洞察から、常に効果的にビジネスを前進させることができます。ビジネストランスフォーメーションのコストは適正で、予測可能なものになります。"
@@ -1505,7 +1505,7 @@ msgid ""
 "and make new business opportunities possible. You are still the captain "
 "of your ship. Start with simple automations and transform essential parts"
 " of your business when you gain trust and confidence."
-msgstr "**ビジネス**：ビジネストランスフォーメーションを推進し、新しいビジネス機会を実現できます。導入後も、指揮を執るのはお客様であることに変わりありません。簡単な自動化から始め、信頼と自信を得てから、ビジネスの重要な部分を変革していきましょう。"
+msgstr "**ビジネス** ：ビジネストランスフォーメーションを推進し、新しいビジネス機会を実現できます。導入後も、指揮を執るのはお客様であることに変わりありません。簡単な自動化から始め、信頼と自信を得てから、ビジネスの重要な部分を変革していきましょう。"
 
 #: ../../source/axonivy/why-axon-ivy.rst:15
 msgid ""
@@ -1516,7 +1516,7 @@ msgid ""
 "application with generated front ends that are meaningful. No software "
 "engineer is required to create an already powerful application from "
 "scratch."
-msgstr "**ビジネスアナリスト**：プロセスを迅速かつ直感的にドキュメント化することが、かつてないほど簡単になりました。プロセスのシミュレーションにより、プロセスがどのように実行されるべきかについての見解が共有されていることを確認できます。プロセスのデータのシンプルな構造をセットアップし、役に立つフロントエンドを生成して、シンプルな実行可能アプリケーションを実現できます。高性能なアプリケーションをゼロから作成するソフトウェアエンジニアは必要ありません。"
+msgstr "**ビジネスアナリスト** ：プロセスを迅速かつ直感的にドキュメント化することが、かつてないほど簡単になりました。プロセスのシミュレーションにより、プロセスがどのように実行されるべきかについての見解が共有されていることを確認できます。プロセスのデータのシンプルな構造をセットアップし、役に立つフロントエンドを生成して、シンプルな実行可能アプリケーションを実現できます。高性能なアプリケーションをゼロから作成するソフトウェアエンジニアは必要ありません。"
 
 #: ../../source/axonivy/why-axon-ivy.rst:23
 msgid ""
@@ -1527,7 +1527,7 @@ msgid ""
 "always have the ability to break out of our predefined tooling and use "
 "advanced features of Tomcat, JPA, JSF, JAX-RS or whatever you require."
 msgstr ""
-"**開発者**：十分にテストされた Java フレームワークの豊富なスタック上でアプリケーションを開発しましょう。Axon Ivy "
+"**開発者** ：十分にテストされた Java フレームワークの豊富なスタック上でアプリケーションを開発しましょう。Axon Ivy "
 "は、完璧な組み合わせのライブラリと IDE "
 "を提供して、技術評価の労力を最小限にします。これにより、プロジェクトに素早く着手し、価値を提供できます。定義済みのツールだけでなく、Tomcat、JPA、JSF"
 "、JAX-RS などの高度な機能を使用することも可能です。"
@@ -1540,7 +1540,7 @@ msgid ""
 "PostgreSQL) Effective monitoring and logging interfaces are provided to "
 "give you a safety that the application is healthy and accessible."
 msgstr ""
-"**オペレーション**：一般的なプラットフォーム（Linux、Windows）向けのパッケージが用意され、大きな変更なしに、既存のシステムを統合できます。Axon"
+"**オペレーション** ：一般的なプラットフォーム（Linux、Windows）向けのパッケージが用意され、大きな変更なしに、既存のシステムを統合できます。Axon"
 " Ivy は、多くのデータベースシステム（Oracle、Microsoft SQL "
 "Server、MariaDB、MySQL、PostgreSQL）に対応しています。 "
 "効果的なモニタリングとロギングインターフェイスにより、アプリケーションが正常でアクセス可能なことを目で見て安心できます。"
@@ -2073,15 +2073,15 @@ msgstr "拡張機能を開発します。"
 #: ../../source/concepts/3rd-party-integration/process-extensions.rst:233
 msgid ""
 "Switch back to the **META-INF/MANIFEST.MF** file editor. Choose the "
-"**Overview** tab and click on the link **Export Wizard**. As "
+"**Overview** tab and click on the link ** Export Wizard**. As "
 "**Destination Directory** choose the ``dropins`` directory of your Axon "
 "Ivy Designer or Engine installation. Press the **Finish** button. Your "
 "plugin is created in the ``dropins/plugins`` directory."
 msgstr ""
 "**META-INF/MANIFEST.MF** "
-"ファイルエディターに戻ります。［**概要**］タブを選択し、［**ウィザードをエクスポート**］リンクをクリックします。**エクスポート先のディレクトリ**として、Axon"
+"ファイルエディターに戻ります。［**概要** ］タブを選択し、［**ウィザードをエクスポート** ］リンクをクリックします。**エクスポート先のディレクトリ** として、Axon"
 " Ivy Designer の ``dropins`` "
-"ディレクトリまたはエンジンのインストールディレクトリを選択します。［**終了**］ボタンを押します。プラグインが "
+"ディレクトリまたはエンジンのインストールディレクトリを選択します。［**終了** ］ボタンを押します。プラグインが "
 "``dropins/plugins`` ディレクトリに作成されます。"
 
 #: ../../source/concepts/3rd-party-integration/process-extensions.rst:244
@@ -2914,7 +2914,7 @@ msgid ""
 " The idea is to reuse these icons in Workflow UIs and processes to give "
 "the end user a hint in which stage the current Business Case is."
 msgstr ""
-"ケースマップは、複数のステージ（上記の例では、本人確認、信用格付け、承認）に分けられます。各ステージは、ビジネスプロセスのライフサイクルにおける特定のフェーズを定義します。ステージはプロセス（例：「個人データの収集」）で構成されます。デフォルトのフロー（いわゆる**ハッピーパス**）は、左から右、上から下の順になります。ステージの最後のプロセスが終了すると、フローは現在のステージの右側のステージに続きます。通常、ステージには名前とアイコンがあります。これらのアイコンをワークフロー"
+"ケースマップは、複数のステージ（上記の例では、本人確認、信用格付け、承認）に分けられます。各ステージは、ビジネスプロセスのライフサイクルにおける特定のフェーズを定義します。ステージはプロセス（例：「個人データの収集」）で構成されます。デフォルトのフロー（いわゆる**ハッピーパス** ）は、左から右、上から下の順になります。ステージの最後のプロセスが終了すると、フローは現在のステージの右側のステージに続きます。通常、ステージには名前とアイコンがあります。これらのアイコンをワークフロー"
 " UI やプロセスで再利用することで、エンドユーザーは現在のビジネスケースがどのステージにあるかを把握できます。"
 
 #: ../../source/concepts/adaptive-case-management.rst:211
@@ -3392,7 +3392,7 @@ msgid ""
 "**PREPARED**: The process model version has been created and the project "
 "may already have been deployed. However, the process model version is not"
 " yet used."
-msgstr "**作成済み**：プロセスモデルバージョンが作成され、プロジェクトがすでに展開されている可能性があります。ただし、プロセスモデルバージョンはまだ使用されていません。"
+msgstr "**作成済み** ：プロセスモデルバージョンが作成され、プロジェクトがすでに展開されている可能性があります。ただし、プロセスモデルバージョンはまだ使用されていません。"
 
 #: ../../source/concepts/application-lifecycle/index.rst:120
 msgid ""
@@ -3404,7 +3404,7 @@ msgid ""
 "version get's released, then the current released process model version "
 "gets :code:`DEPRECATED` or :code:`ARCHIVED`."
 msgstr ""
-"**リリース済み**：プロセスモデルバージョンは、現在リリースされているバージョンです。つまり、すべての新しいプロセスがこのバージョンで開始されます。プログラム開始、Web"
+"**リリース済み** ：プロセスモデルバージョンは、現在リリースされているバージョンです。つまり、すべての新しいプロセスがこのバージョンで開始されます。プログラム開始、Web"
 " サービスプロセス、REST エンドポイントは、この状態のプロセスモデルバージョンに対してのみ有効です。プロセスモデルの 1 "
 "つのバージョンだけが:code:`リリース済み`状態になることができます。プロセスモデルバージョンがリリースされると、現在リリースされているプロセスモデルバージョンは:code:`非推奨`または:code:`アーカイブ済み`になります。"
 
@@ -3416,7 +3416,7 @@ msgid ""
 "state. All cases that were started in this process model version will "
 "continue to run in this version. As soon as all cases of this version "
 "have been ended, the state will change to :code:`ARCHIVED` automatically."
-msgstr "**非推奨**：プロセスモデルバージョンは以前は:code:`リリース済み`状態でしたが、別のバージョンがリリースされたため、:code:`リリース済み`状態ではなく、:code:`非推奨`状態になりました。このプロセスモデルバージョンで開始されたすべてのケースは、引き続きこのバージョンで実行されます。このバージョンのすべてのケースが終了するとすぐに、状態が:code:`アーカイブ済み`に自動的に変わります。"
+msgstr "**非推奨** ：プロセスモデルバージョンは以前は:code:`リリース済み`状態でしたが、別のバージョンがリリースされたため、:code:`リリース済み`状態ではなく、:code:`非推奨`状態になりました。このプロセスモデルバージョンで開始されたすべてのケースは、引き続きこのバージョンで実行されます。このバージョンのすべてのケースが終了するとすぐに、状態が:code:`アーカイブ済み`に自動的に変わります。"
 
 #: ../../source/concepts/application-lifecycle/index.rst:133
 msgid ""
@@ -3427,13 +3427,13 @@ msgid ""
 ":code:`ARCHIVED`. Actually the engine administrator can change a process "
 "model version from state :code:`ARCHIVED` back to state :code:`RELEASED` "
 "if necessary."
-msgstr "**アーカイブ済み**：プロセスモデルバージョンは以前は:code:`リリース済み`状態でしたが、別のバージョンがリリースされ、このプロセスモデルでの実行中のケースが終了しました。その結果、このバージョンは:code:`リリース済み`状態ではなくなり、:code:`アーカイブ済み`状態になりました。エンジン管理者は、必要に応じて、プロセスモデルバージョンを:code:`アーカイブ済み`状態から:code:`リリース済み`状態に戻すことができます。"
+msgstr "**アーカイブ済み** ：プロセスモデルバージョンは以前は:code:`リリース済み`状態でしたが、別のバージョンがリリースされ、このプロセスモデルでの実行中のケースが終了しました。その結果、このバージョンは:code:`リリース済み`状態ではなくなり、:code:`アーカイブ済み`状態になりました。エンジン管理者は、必要に応じて、プロセスモデルバージョンを:code:`アーカイブ済み`状態から:code:`リリース済み`状態に戻すことができます。"
 
 #: ../../source/concepts/application-lifecycle/index.rst:139
 msgid ""
 "**DELETED**: The process model version has been deleted. All project data"
 " belonging to this version has been deleted."
-msgstr "**削除済み**：プロセスモデルバージョンが削除されました。このバージョンに属するすべてのプロジェクトデータが削除されました。"
+msgstr "**削除済み** ：プロセスモデルバージョンが削除されました。このバージョンに属するすべてのプロジェクトデータが削除されました。"
 
 #: ../../source/concepts/application-lifecycle/index.rst:143
 msgid "Release State Transitions"
@@ -4011,7 +4011,7 @@ msgid ""
 "are isolated on the infrastructure level. It is impossible for a customer"
 " to see data from another customer due to programming errors or "
 "misconfigurations."
-msgstr "**セキュリティ**：顧客ごとにインストールを分けることで、テナントをインフラストラクチャレベルで隔離します。プログラミングエラーや設定ミスによって、顧客が別の顧客のデータを見ることはありません。"
+msgstr "**セキュリティ** ：顧客ごとにインストールを分けることで、テナントをインフラストラクチャレベルで隔離します。プログラミングエラーや設定ミスによって、顧客が別の顧客のデータを見ることはありません。"
 
 #: ../../source/concepts/multi-tenancy/multiple-engines.rst:14
 msgid ""
@@ -4024,7 +4024,7 @@ msgid ""
 "available between the cluster nodes limits its growth potential. Adding "
 "more nodes at that point makes the cluster slower."
 msgstr ""
-"**スケーリング**：テナントごとに分けられた Axon Ivy Engine はメンテナンスが簡単で、適切にスケーリングできます。一方、Axon"
+"**スケーリング** ：テナントごとに分けられた Axon Ivy Engine はメンテナンスが簡単で、適切にスケーリングできます。一方、Axon"
 " Ivy Cluster "
 "のインストールを実行し、すべての顧客をそのクラスタ上で実行させる場合は、追加の負荷を処理するため、さらに多くのノードをクラスタに追加できます。ただし、クラスタソリューションは無限に拡大することはできません。ノードを追加するとノード間の通信が増えるため、クラスタノード間で利用可能なネットワーク帯域幅によって成長が制限されます。その後もさらにノードを追加すると、クラスタの速度が低下します。"
 
@@ -4036,7 +4036,7 @@ msgid ""
 " something goes wrong, only that group is affected. With a separate Axon "
 "Ivy Engine per tenant, Canary Deployments are easy to implement."
 msgstr ""
-"**カナリアデプロイメント**：新機能の導入には常にリスクが伴います。新しい機能を一気にすべての顧客に展開するのではなく、新しいバージョンを一部の顧客にだけ提供します。問題が発生した場合、影響を受けるのはそのグループだけです。Axon"
+"**カナリアデプロイメント** ：新機能の導入には常にリスクが伴います。新しい機能を一気にすべての顧客に展開するのではなく、新しいバージョンを一部の顧客にだけ提供します。問題が発生した場合、影響を受けるのはそのグループだけです。Axon"
 " Ivy Engine をテナントごとに分けることで、カナリアデプロイメントを簡単に実装できます。"
 
 #: ../../source/concepts/multi-tenancy/multiple-engines.rst:29
@@ -4044,7 +4044,7 @@ msgid ""
 "**Stability**: If a customer's Axon Ivy Engine crashes, only that "
 "customer is affected. All other customers are not affected by that crash."
 msgstr ""
-"**安定性**：顧客の Axon Ivy Engine "
+"**安定性** ：顧客の Axon Ivy Engine "
 "がクラッシュしても、影響を受けるのはその顧客だけです。他のすべての顧客はそのクラッシュの影響を受けません。"
 
 #: ../../source/concepts/multi-tenancy/multiple-engines.rst:32
@@ -4138,17 +4138,17 @@ msgstr "通知は、通知チャネルで配信されます。Axon Ivy Engine �
 msgid ""
 "**Web Channel**: Notifications will be shown in the header section of the"
 " Axon Ivy Portal."
-msgstr "**ウェブチャネル**：Axon Ivy Portal のヘッダー部分に通知が表示されます。"
+msgstr "**ウェブチャネル** ：Axon Ivy Portal のヘッダー部分に通知が表示されます。"
 
 #: ../../source/concepts/notification/index.rst:24
 msgid "**Mail Channel**: Notifications will be sent as mail."
-msgstr "**メールチャネル**：通知はメールとして送信されます。"
+msgstr "**メールチャネル** ：通知はメールとして送信されます。"
 
 #: ../../source/concepts/notification/index.rst:25
 msgid ""
 "**Microsoft Teams Channel**: Notifications will be delivered as Microsoft"
 " Teams messages."
-msgstr "**Microsoft Teams チャネル**：通知は Microsoft Teams のメッセージとして配信されます。"
+msgstr "**Microsoft Teams チャネル** ：通知は Microsoft Teams のメッセージとして配信されます。"
 
 #: ../../source/concepts/notification/index.rst:27
 msgid ""
@@ -4429,21 +4429,21 @@ msgstr "テストコードの作成は、時には退屈で、時間がかかり
 
 #: ../../source/concepts/testing/index.rst:9
 msgid "Tests can make the **functionality of a software reliable**"
-msgstr "テストにより、**ソフトウェアの機能を信頼できる**ものにすることができます。"
+msgstr "テストにより、**ソフトウェアの機能を信頼できる** ものにすることができます。"
 
 #: ../../source/concepts/testing/index.rst:11
 msgid "Through tests **quality** can be maintained"
-msgstr "テストを通じて**品質**を維持できます。"
+msgstr "テストを通じて**品質** を維持できます。"
 
 #: ../../source/concepts/testing/index.rst:13
 msgid "**Repetitive tasks** can be reduced to a minimum. Let the computer do it!"
-msgstr "**繰り返しの作業**を最小限に減らせます。コンピューターに任せましょう！"
+msgstr "**繰り返しの作業** を最小限に減らせます。コンピューターに任せましょう！"
 
 #: ../../source/concepts/testing/index.rst:15
 msgid ""
 "Ensure that your software **does what it supposed to do** (e.g., after a "
 "code change or even a platform update)."
-msgstr "ソフトウェアが（コード変更後やプラットフォームのアップデートの後などに）**すべきこと**を確実に実行させることができます。"
+msgstr "ソフトウェアが（コード変更後やプラットフォームのアップデートの後などに）**すべきこと** を確実に実行させることができます。"
 
 #: ../../source/concepts/testing/index.rst:18
 msgid ""
@@ -5079,7 +5079,7 @@ msgstr "複数のユーザーダイアログを含むワークフローアプリ
 msgid ""
 "**Web Integration Tests** will always follow the same steps and can be "
 "automated."
-msgstr "**ウェブ統合テスト**では常に同じ手順を実行しますが、これを自動化できます。"
+msgstr "**ウェブ統合テスト** では常に同じ手順を実行しますが、これを自動化できます。"
 
 #: ../../source/concepts/testing/web-testing.rst:15
 msgid "Setup a Test Project"
@@ -5143,13 +5143,13 @@ msgstr "選択された要素の**条件をチェックする**"
 msgid ""
 "To work with a **single element** you need to first select the correct "
 "one. Usually you use the ``By.id`` selector to do this:"
-msgstr "**単一の要素**を扱うには、最初に正しい要素を選択する必要があります。通常は ``By.id`` セレクタを使用します。"
+msgstr "**単一の要素** を扱うには、最初に正しい要素を選択する必要があります。通常は ``By.id`` セレクタを使用します。"
 
 #: ../../source/concepts/testing/web-testing.rst:75
 msgid ""
 "To evaluate the real id of an element you can use your browser's "
 "**Developer Tools**."
-msgstr "要素の実際の ID を評価するには、ブラウザの**開発者ツール**を使用します。"
+msgstr "要素の実際の ID を評価するには、ブラウザの**開発者ツール** を使用します。"
 
 #: ../../source/concepts/testing/web-testing.rst:78
 msgid ""
@@ -5208,7 +5208,7 @@ msgid ""
 msgstr ""
 "テストケースによっては、別のユーザーでウェブテストを実行する必要があったり、変数やアプリの設定に別の値が必要になります。このような場合は、`WebAppFixture`"
 " ユーティリティを使用します。 :ref:`unit-testing` の :ref:`AppFixture<unit-testing-app-"
-"fixture>` と異なり、変更された値はテスト実行後に自動的にリセット**されません**。それでは見てみましょう。"
+"fixture>` と異なり、変更された値はテスト実行後に自動的にリセット**されません** 。それでは見てみましょう。"
 
 #: ../../source/concepts/testing/web-testing.rst:135
 msgid "You can change the current user or log out to an anonymous session:"
@@ -5279,7 +5279,7 @@ msgid ""
 msgstr ""
 "以下のコードを:link-url:`pom.xml<build-examples-web-test-pom>` "
 "ファイルに追加します（``crm`` と ``crmIntegrationTests`` "
-"**モジュール**が正しく設定されていることを確認します）。"
+"**モジュール** が正しく設定されていることを確認します）。"
 
 #: ../../source/concepts/testing/web-testing.rst:187
 msgid ""
@@ -5293,9 +5293,9 @@ msgstr "Axon Ivy Designer でモジュールのビルドを実行します。"
 
 #: ../../source/concepts/testing/web-testing.rst:199
 msgid ""
-"In your Axon Ivy Designer open the **Import** Wizard, then **Existing "
+"In your Axon Ivy Designer open the **Import** Wizard, then ** Existing "
 "Maven Projects**"
-msgstr "Axon Ivy Designer で**インポート**ウィザードを開き、次に**既存の Maven プロジェクト**を開きます。"
+msgstr "Axon Ivy Designer で**インポート** ウィザードを開き、次に**既存の Maven プロジェクト** を開きます。"
 
 #: ../../source/concepts/testing/web-testing.rst:202
 msgid ""
@@ -5303,15 +5303,15 @@ msgid ""
 "``crmIntegrationTests`` should be visible here) and click **Finish**"
 msgstr ""
 "サブプロジェクト（``crm`` と ``crmIntegrationTests`` がここに表示されているはずです）を含む :file"
-":`compile-test/pom.xml` を選択し、［**終了**］をクリックします。"
+":`compile-test/pom.xml` を選択し、［**終了** ］をクリックします。"
 
 #: ../../source/concepts/testing/web-testing.rst:205
 msgid "Right-click on ``compile-test`` -> Run As -> Maven build"
 msgstr "``compile-test`` を右クリックし、［実行］、［Maven ビルド］の順に選択します。"
 
 #: ../../source/concepts/testing/web-testing.rst:207
-msgid "Set **Goals** to ``clean verify`` and click **Run**"
-msgstr "**ゴール**を ``clean verify`` に設定し、［**実行**］をクリックします。"
+msgid "Set **Goals** to ``clean verify`` and click ** Run**"
+msgstr "**ゴール** を ``clean verify`` に設定し、［**実行** ］をクリックします。"
 
 #: ../../source/concepts/testing/web-testing.rst:209
 msgid "This triggers a run that starts and ends with something similar to:"
@@ -5341,7 +5341,7 @@ msgid ""
 "</tutorial>`."
 msgstr ""
 "CI/CD パイプラインの構築方法についてもっと知りたい場合は、:dev-url:`チュートリアルのセクション</tutorial>` ある "
-"**CI/CD の動画**をご覧ください。"
+"**CI/CD の動画** をご覧ください。"
 
 #: ../../source/concepts/testing/web-testing.rst:229
 msgid "Selenium"
@@ -5396,18 +5396,18 @@ msgstr ""
 msgid ""
 "**browser**: The browser which should run the test e.g: chrome, firefox, "
 "ie, phantomjs, htmlunit, safari, opera"
-msgstr "**browser**：テストを実行するブラウザ（例：chrome、firefox、ie、phantomjs、htmlunit、safari、opera）"
+msgstr "**browser** ：テストを実行するブラウザ（例：chrome、firefox、ie、phantomjs、htmlunit、safari、opera）"
 
 #: ../../source/concepts/testing/web-testing.rst:267
 msgid "**headless**: Controls if the browser should start with a UI or not."
-msgstr "**headless**：ブラウザを UI で開始するかどうかを制御します。"
+msgstr "**headless** ：ブラウザを UI で開始するかどうかを制御します。"
 
 #: ../../source/concepts/testing/web-testing.rst:269
 msgid ""
 "**reportFolder**: when a test fails the test framework automatically "
 "takes screenshots. This folder defines where these screenshots are saved "
 "to."
-msgstr "**reportFolder**：テストが失敗すると、テストフレームワークは自動的にスクリーンショットを撮ります。このフォルダーは、それらのスクリーンショットの保存先を定義します。"
+msgstr "**reportFolder** ：テストが失敗すると、テストフレームワークは自動的にスクリーンショットを撮ります。このフォルダーは、それらのスクリーンショットの保存先を定義します。"
 
 #: ../../source/designer-guide/cms/display.rst:4
 msgid "Display Content"
@@ -6052,24 +6052,24 @@ msgid ""
 "objects**. Each content object has a type. We distinguish the three types"
 " folders, texts and files."
 msgstr ""
-"コンテンツ管理システムは階層構造であり、**コンテンツオブジェクト**で構成されます。コンテンツオブジェクトにはそれぞれタイプがあります。私たちは、フォルダー、テキスト、ファイルの"
+"コンテンツ管理システムは階層構造であり、**コンテンツオブジェクト** で構成されます。コンテンツオブジェクトにはそれぞれタイプがあります。私たちは、フォルダー、テキスト、ファイルの"
 " 3 つのタイプを区別します。"
 
 #: ../../source/designer-guide/cms/structure.rst:8
 msgid "**Folders** are used to represent the hierarchical structure."
-msgstr "**フォルダー**は、階層構造を表すのに使用されます。"
+msgstr "**フォルダー** は、階層構造を表すのに使用されます。"
 
 #: ../../source/designer-guide/cms/structure.rst:9
 msgid ""
 "**Texts** are needed to store multilingual texts in the "
 ":file:`cms_*.yaml`."
-msgstr "**テキスト**は、多言語テキストを :file:`cms_*.yaml` に格納するのに必要です。"
+msgstr "**テキスト** は、多言語テキストを :file:`cms_*.yaml` に格納するのに必要です。"
 
 #: ../../source/designer-guide/cms/structure.rst:10
 msgid ""
 "**Files** represents images and documents stored directly in the CMS "
 "folder."
-msgstr "**ファイル**は、CMS フォルダーに直接保存されている画像やドキュメントを表します。"
+msgstr "**ファイル** は、CMS フォルダーに直接保存されている画像やドキュメントを表します。"
 
 #: ../../source/designer-guide/cms/structure.rst:12
 msgid ""
@@ -6077,7 +6077,7 @@ msgid ""
 ":code:`/test/label`), which in turn represents the hierarchical "
 "structure. Content objects (except folders) have **content object "
 "values**, where each value is bound to a locale."
-msgstr "コンテンツオブジェクトはパス（例：:code:`/test/label`）で一意にアドレス指定でき、パスが階層構造を表します。コンテンツオブジェクト（フォルダーを除く）は**コンテンツオブジェクト値**を持ち、各値はロケールにバインドされています。"
+msgstr "コンテンツオブジェクトはパス（例：:code:`/test/label`）で一意にアドレス指定でき、パスが階層構造を表します。コンテンツオブジェクト（フォルダーを除く）は**コンテンツオブジェクト値** を持ち、各値はロケールにバインドされています。"
 
 #: ../../source/designer-guide/cms/structure.rst:17
 msgid ""
@@ -7151,7 +7151,7 @@ msgid ""
 "instead of doing so for each user individually. Axon Ivy incorporates a "
 "sophisticated role and user model to support:"
 msgstr ""
-"**ロール**は、コンピューター業界で広く使われている用語で、共通のプロパティを共有するシステム内のユーザーのグループを意味します。これにより、管理者は各ユーザーに対して個別に設定を行う代わりに、ユーザーのグループ（ロール）に対して設定を定義できます。Axon"
+"**ロール** は、コンピューター業界で広く使われている用語で、共通のプロパティを共有するシステム内のユーザーのグループを意味します。これにより、管理者は各ユーザーに対して個別に設定を行う代わりに、ユーザーのグループ（ロール）に対して設定を定義できます。Axon"
 " Ivy は、高度なロールとユーザーモデルにより、以下をサポートします。"
 
 #: ../../source/designer-guide/configuration/roles-users.rst:10
@@ -7187,12 +7187,12 @@ msgid ""
 " A** always implicitly contains its ancestor role(s). The role "
 "**Everybody** is the root for all other roles; all other roles are more "
 "specialized than Everybody. In the figure below, a member user of role "
-"**Team A** also has the roles **Development** and **Everybody**."
+"**Team A** also has the roles ** Development** and ** Everybody**."
 msgstr ""
 "ロールの階層は、特化の原則に基づいて構築されています。子ロールはそれぞれ、その先祖ロールを特殊化します。つまり、**Team A** "
 "というロールは常に暗黙的にその先祖ロールを含みます。*Everybody** "
 "というロール*は他のすべてのロールのルートであり、他のすべてのロールは Everybody よりも特殊化されています。以下の図では、**Team "
-"A** ロールのメンバーユーザーは、**Development** ロールと **Everybody** ロールも持っています。"
+"A** ロールのメンバーユーザーは、** Development** ロールと ** Everybody** ロールも持っています。"
 
 #: ../../source/designer-guide/configuration/roles-users.rst:29
 msgid "A typical Axon Ivy Role tree might look like this:"
@@ -7204,36 +7204,36 @@ msgstr "メンバーロール"
 
 #: ../../source/designer-guide/configuration/roles-users.rst:52
 msgid ""
-"You can add a **Member Role** as a child of an existing **Role** that "
+"You can add a **Member Role** as a child of an existing ** Role** that "
 "links to another existing **Role**. While resolving the role tree, to "
 "collect the specializations of each role, the **Member Role** is handled "
 "like a normal child **Role**. This simplifies the configuration and "
 "administration of roles."
-msgstr "**メンバーロール**は、別の既存の**ロール**にリンクしている既存の**ロール**の子として追加できます。ロールツリーの解決中は、各ロールの特殊化されたロールを収集するため、**メンバーロール**は通常の子***ロール**のように扱われます。これにより、ロールの構成と管理を簡素化します。"
+msgstr "**メンバーロール** は、別の既存の**ロール** にリンクしている既存の**ロール** の子として追加できます。ロールツリーの解決中は、各ロールの特殊化されたロールを収集するため、**メンバーロール** は通常の子***ロール** のように扱われます。これにより、ロールの構成と管理を簡素化します。"
 
 #: ../../source/designer-guide/configuration/roles-users.rst:59
 msgid ""
 "The concept of **Member Roles** allows you to create a sub-tree of roles "
-"with **Organizational Roles** and another sub-tree with **Permission "
-"Roles**. The sub-tree of **Organizational Roles** represents typically "
+"with **Organizational Roles** and another sub-tree with ** Permission "
+"Roles**. The sub-tree of ** Organizational Roles** represents typically "
 "the structure of the company. The sub-tree of **Permission Roles** "
 "represents the usage or execution permission of a specific part or "
 "feature of an application. With a **Member Role**, it is possible to "
 "assign permissions to an **Organizational Role** by adding it as a member"
 " role of one or more **Permission Roles**."
 msgstr ""
-"**メンバーロール**のコンセプトにより、ロールのサブツリーを**組織ロール**で作成し、別のサブツリーを**権限ロール**で作成できます。一般的に、**組織ロール**のサブツリーは会社の構造を表します。**権限ロール**のサブツリーは、アプリケーションの特定の部分または機能の使用または実行権限を表します。**メンバーロール**を使用し、1"
-" つ以上の**権限ロール**のメンバーロールとして追加することで、**組織ロール**に権限を割り当てることができます。"
+"**メンバーロール** のコンセプトにより、ロールのサブツリーを**組織ロール** で作成し、別のサブツリーを**権限ロール** で作成できます。一般的に、**組織ロール** のサブツリーは会社の構造を表します。**権限ロール** のサブツリーは、アプリケーションの特定の部分または機能の使用または実行権限を表します。**メンバーロール** を使用し、1"
+" つ以上の**権限ロール** のメンバーロールとして追加することで、**組織ロール** に権限を割り当てることができます。"
 
 #: ../../source/designer-guide/configuration/roles-users.rst:67
 msgid ""
 "The above configuration illustrates that users of group **First Level** "
-"and **Team B** have the permission for **Process M** and users of both "
+"and **Team B** have the permission for ** Process M** and users of both "
 "support sub-groups and the **Support Group** itself have the permission "
 "for **Process N**."
 msgstr ""
-"上記の構成では、**First Level** グループと **Team B** グループのユーザーが **Process M** "
-"の権限を持っており、**Support Group** のサブグループと **Support Group** 自体の両方のユーザーが "
+"上記の構成では、**First Level** グループと ** Team B** グループのユーザーが ** Process M** "
+"の権限を持っており、**Support Group** のサブグループと ** Support Group** 自体の両方のユーザーが "
 "**Process N** の権限を持っています。"
 
 #: ../../source/designer-guide/configuration/roles-users.rst:76
@@ -7515,7 +7515,7 @@ msgstr ":guilabel:`メタデータ` 該当する場合、変数に対して追�
 msgid ""
 "**Password:** This tells the Axon Ivy Engine to encrypt the value of this"
 " Variable."
-msgstr "**Password：**この変数の値を暗号化するよう Axon Ivy Engine に指示します。"
+msgstr "**Password：** この変数の値を暗号化するよう Axon Ivy Engine に指示します。"
 
 #: ../../source/designer-guide/configuration/variables.rst:80
 msgid ""
@@ -7534,7 +7534,7 @@ msgstr "**Daytime：** この変数の値は時刻として解釈されます。
 msgid ""
 "**Enum:** You can use this option to define a list of possible values "
 "that this Variable is allowed to take on."
-msgstr "**Enum：**このオプションを使用して、この変数が取り得る値のリストを定義できます。"
+msgstr "**Enum：** このオプションを使用して、この変数が取り得る値のリストを定義できます。"
 
 #: ../../source/designer-guide/configuration/variables.rst:87
 msgid ""
@@ -7548,7 +7548,7 @@ msgid ""
 ":file:`<project>/config/variables.myFile.json` can contain the value for "
 "the Variable called :code:`myFile`."
 msgstr ""
-"**File：**このオプションは、この変数の値が外部ファイルから読み込まれるように設定します。対象となるファイルは :file:`.json` "
+"**File：** このオプションは、この変数の値が外部ファイルから読み込まれるように設定します。対象となるファイルは :file:`.json` "
 "または :file:`.txt` ファイルです。変数の名前が :code:`myFile` で、:code:`JSON` "
 "ファイルである場合、そのファイルは :file:`<project>/config/variables/myFile.json` "
 "に配置される必要があります。また、:code:`variables` "
@@ -7617,7 +7617,7 @@ msgid ""
 " :public-api:`Variable object </ch/ivyteam/ivy/vars/Variable.html>`. This"
 " object contains additional metadata for that Variable."
 msgstr ""
-"**メタデータ**変数にアクセスしたい場合は、 :code:`var` キーワードを使用することもできます。これにより、:public-"
+"**メタデータ** 変数にアクセスしたい場合は、 :code:`var` キーワードを使用することもできます。これにより、:public-"
 "api:`インターフェース</ch/ivyteam/ivy/vars/Variables.html>` 提供されます。このインターフェースから "
 ":public-api:`変数オブジェクト "
 "</ch/ivyteam/ivy/vars/Variable.html>` 取得できます。このオブジェクトには、その変数の追加のメタデータが含まれています。"
@@ -7702,7 +7702,7 @@ msgid ""
 msgstr ""
 ":guilabel:`WSDL URL` サービスの詳細とクラスは、ここで指定された WSDL "
 "を使用して生成されます。https://myserver.ch/hello.wsdl、file:/c:/temp/myWis.wsdl "
-"のような**プロトコルのプレフィックスを使用**してください。"
+"のような**プロトコルのプレフィックスを使用** してください。"
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:58
 msgid ""
@@ -8996,44 +8996,44 @@ msgstr "文字数の変更は、データベーススキーマを再作成した
 msgid ""
 "**ID**: Defines the primary key field of an entity. Every Entity Class "
 "must have exactly one primary key."
-msgstr "**ID**：エンティティの主キーフィールドを定義します。各エンティティクラスは 1 つの主キーを持つ必要があります。"
+msgstr "**ID** ：エンティティの主キーフィールドを定義します。各エンティティクラスは 1 つの主キーを持つ必要があります。"
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:48
 msgid ""
 "**Generated**: Defines if the primary key should be generated "
 "automatically."
-msgstr "**Generated**：主キーを自動的に生成するかどうかを定義します。"
+msgstr "**Generated** ：主キーを自動的に生成するかどうかを定義します。"
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:50
 msgid ""
 "**Not nullable**: Defines whether the field value can be ``NULL`` in the "
 "database."
-msgstr "**Not nullable**：データベースのフィールドの値を ``NULL`` にできるかどうかを定義します。"
+msgstr "**Not nullable** ：データベースのフィールドの値を ``NULL`` にできるかどうかを定義します。"
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:52
 msgid ""
 "**Unique**: Defines whether the field value must be unique across the "
 "database table column."
-msgstr "**Unique**：データベース表の列のフィールド値が一意でなければならないかどうかを定義します。"
+msgstr "**Unique** ：データベース表の列のフィールド値が一意でなければならないかどうかを定義します。"
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:54
 msgid ""
 "**Not updateable**: Defines whether the column is omitted in ``SQL "
 "UPDATE`` statements generated by the persistence provider."
-msgstr "**Not updateable**：永続性プロバイダーが生成する ``SQL UPDATE`` 文で列を省略するかどうかを定義します。"
+msgstr "**Not updateable** ：永続性プロバイダーが生成する ``SQL UPDATE`` 文で列を省略するかどうかを定義します。"
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:56
 msgid ""
 "**Not insertable**: Defines whether the column is omitted in ``SQL "
 "INSERT`` statements generated by the persistence provider."
-msgstr "**Not insertable**：永続性プロバイダーが生成する ``SQL INSERT`` 文で列を省略するかどうかを定義します。"
+msgstr "**Not insertable** ：永続性プロバイダーが生成する ``SQL INSERT`` 文で列を省略するかどうかを定義します。"
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:58
 msgid ""
 "**Version**: Defines the version field of an entity. This is used as the "
 "optimistic lock value and ensures integrity when performing the merge "
 "operation. The following Attribute types can be used as version:"
-msgstr "**Version**：エンティティのバージョンフィールドを定義します。これは楽観ロック値として使用され、マージ操作の実行時の整合性を保証します。以下の属性タイプをバージョンとして使用できます。"
+msgstr "**Version** ：エンティティのバージョンフィールドを定義します。これは楽観ロック値として使用され、マージ操作の実行時の整合性を保証します。以下の属性タイプをバージョンとして使用できます。"
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:62
 msgid "``Short``"
@@ -9074,7 +9074,7 @@ msgid ""
 "Class. Only allowed if the Attribute type is an Entity Class. The inverse"
 " association is another One-to-One association."
 msgstr ""
-"**One-to-One**：別のエンティティクラスへの 1 対 "
+"**One-to-One** ：別のエンティティクラスへの 1 対 "
 "1（1:1）のアソシエーションを定義します。属性タイプがエンティティクラスの場合にのみ許可されます。逆アソシエーションも 1 対 1 "
 "のアソシエーションです。"
 
@@ -9084,7 +9084,7 @@ msgid ""
 "Entity Class. Only allowed if the Attribute type is an Entity Class. The "
 "inverse association is a One-to-Many association."
 msgstr ""
-"**Many-to-One**：別のエンティティクラスに対する多対 "
+"**Many-to-One** ：別のエンティティクラスに対する多対 "
 "1（n:1）のアソシエーションを定義します。属性タイプがエンティティクラスの場合にのみ許可されます。逆アソシエーションは 1 "
 "対多のアソシエーションです。"
 
@@ -9095,7 +9095,7 @@ msgid ""
 " of an Entity Class. This association type always requires a mapped-by "
 "specification since it is the inverse of a Many-to-One association."
 msgstr ""
-"**One-to-Many**：別のエンティティクラスへの 1 対多（1:n）のアソシエーションを定義します。属性タイプがエンティティクラスの "
+"**One-to-Many** ：別のエンティティクラスへの 1 対多（1:n）のアソシエーションを定義します。属性タイプがエンティティクラスの "
 "``List`` または ``Set`` である場合にのみ許可されます。このアソシエーションタイプは多対 1 のアソシエーションの逆であるため"
 "、常にmapped-by 指定が必要です。"
 
@@ -9120,21 +9120,21 @@ msgstr "関連付けられたエンティティに伝搬されるカスケード
 msgid ""
 "**Persist**: See :ref:`Persist an Entity Object <persistence-api-"
 "persist>`."
-msgstr "**Persist**：「 :ref:`エンティティオブジェクトの永続化<persistence-api-persist>` 」を参照してください。"
+msgstr "**Persist** ：「 :ref:`エンティティオブジェクトの永続化<persistence-api-persist>` 」を参照してください。"
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:98
 msgid "**Merge**: See :ref:`Merge an Entity Object <persistence-api-merge>`."
-msgstr "**Merge**：「 :ref:`エンティティオブジェクトのマージ<persistence-api-merge>` 」を参照してください。"
+msgstr "**Merge** ：「 :ref:`エンティティオブジェクトのマージ<persistence-api-merge>` 」を参照してください。"
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:100
 msgid "**Remove**: See :ref:`Remove an Entity Object <persistence-api-remove>`."
-msgstr "**Remove**：「 :ref:`エンティティオブジェクトの削除<persistence-api-remove>` 」を参照してください。"
+msgstr "**Remove** ：「 :ref:`エンティティオブジェクトの削除<persistence-api-remove>` 」を参照してください。"
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:102
 msgid ""
 "**Refresh**: See :ref:`Refresh an Entity Object <persistence-api-"
 "refresh>`."
-msgstr "**Refresh**：「 :ref:`エンティティオブジェクトの更新<persistence-api-refresh>` 」を参照してください。"
+msgstr "**Refresh** ：「 :ref:`エンティティオブジェクトの更新<persistence-api-refresh>` 」を参照してください。"
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:105
 msgid "Mapped by"
@@ -9182,7 +9182,7 @@ msgstr ""
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:124
 msgid "**Example**:"
-msgstr "**例**："
+msgstr "**例** ："
 
 #: ../../source/designer-guide/data-modeling/persistence/entity-class-editor.rst:126
 msgid ""
@@ -11716,7 +11716,7 @@ msgid ""
 " :ref:`app-yaml` for the Designer under *designerDir/configuration/app-"
 "designer.yaml*."
 msgstr ""
-"厳密にオーバーライドを設定したプロジェクトで作業する場合、オーバーライドするプロジェクトを**デザイナー**でも定義する必要があります。この定義は :ref"
+"厳密にオーバーライドを設定したプロジェクトで作業する場合、オーバーライドするプロジェクトを**デザイナー** でも定義する必要があります。この定義は :ref"
 ":`overrides-editor` を使用して、簡単に行うことができます。また、*designerDir/configuration/app-"
 "designer.yaml* の下にあるデザイナーの :ref:`app-yaml` でも定義できます。"
 
@@ -12523,21 +12523,21 @@ msgstr "ケースとタスク"
 #: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:5
 msgid ""
 "The Axon Ivy workflow manages the execution of **process instances**. A "
-"**process instance** is represented by one **Case** and one or more "
-"**Tasks**. The **Case** exists from the first process step until the last"
+"**process instance** is represented by one ** Case** and one or more "
+"**Tasks**. The ** Case** exists from the first process step until the last"
 " process step and holds information about its **process instance**. The "
 "**Case** is finished when the process is terminated - either completed or"
-" aborted. A **Case** is composed of one or more connected **Tasks**. Each"
+" aborted. A **Case** is composed of one or more connected ** Tasks**. Each"
 " **Task** defines a unit of work, which has to be done as one working "
 "step. Therefore, a **Task** is to be executed by a user or role - the "
-"**Task** is assigned to a user or a role. A **Task** is started by a "
+"**Task** is assigned to a user or a role. A ** Task** is started by a "
 "process-start or a task-switch element and ends at the next task-switch "
 "element or process-end element."
 msgstr ""
-"Axon Ivy ワークフローは、**プロセスインスタンス**の実行を管理します。**プロセスインスタンス** は、1 つの**ケース**と 1 "
-"つ以上の**タスク**で表されます。**ケース**は最初のプロセスステップから最後のプロセスステップまで存在し、その**プロセスインスタンス**に関する情報を保持します。プロセスが終了（完了または中止）すると、**ケース**が終了します。**ケース**"
-" は 1 つ以上の接続された**タスク**で構成されます。各**タスク**は 1 "
-"つの作業ステップとして実行される作業単位を定義します。そのため、**タスク**はユーザーまたはロールによって実行され、ユーザーまたはロールに割り当てられます。**タスク**はプロセス開始要素またはタスクスイッチ要素によって開始され、次のタスクスイッチ要素またはプロセス終了要素で終了します。"
+"Axon Ivy ワークフローは、**プロセスインスタンス** の実行を管理します。**プロセスインスタンス** は、1 つの** ケース**と 1 "
+"つ以上の**タスク** で表されます。**ケース** は最初のプロセスステップから最後のプロセスステップまで存在し、その**プロセスインスタンス** に関する情報を保持します。プロセスが終了（完了または中止）すると、**ケース** が終了します。**ケース**"
+" は 1 つ以上の接続された**タスク** で構成されます。各**タスク** は 1 "
+"つの作業ステップとして実行される作業単位を定義します。そのため、**タスク** はユーザーまたはロールによって実行され、ユーザーまたはロールに割り当てられます。**タスク** はプロセス開始要素またはタスクスイッチ要素によって開始され、次のタスクスイッチ要素またはプロセス終了要素で終了します。"
 
 #: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:21
 msgid "Multilingual Name and Description of Cases and Tasks"
@@ -12661,7 +12661,7 @@ msgstr ""
 "最近のプロセスは疎結合で、高度 :ref:`アダプティブ<adaptive-case-"
 "management>` す。ビジネスプロセスは、標準的なプロセスフローだけでなく、非同期プロセスをトリガーしたり :ref:`シグナル"
 "<signal-reference>` "
-"を送信して他のさまざまなプロセスを開始したりすることができます。実行中のすべてのプロセスで新しい**ケース**が作成されるため、ワークフローユーザーが**タスク**の履歴とコンテキストを追跡するのは大変です。"
+"を送信して他のさまざまなプロセスを開始したりすることができます。実行中のすべてのプロセスで新しい**ケース** が作成されるため、ワークフローユーザーが**タスク** の履歴とコンテキストを追跡するのは大変です。"
 
 #: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:91
 msgid ""
@@ -12669,26 +12669,26 @@ msgid ""
 "single **Business Case**. :ref:`Triggered <process-element-start-request-"
 "trigger-tab>` or :ref:`signaled <process-element-signal-start-tab-"
 "signal>` process-starts define in their inscription whether the started "
-"**Case** should be attached to the **Business Case** of the calling "
-"**Case**. Moreover, any **Case** can be attached to a **Business Case** "
+"**Case** should be attached to the ** Business Case** of the calling "
+"**Case**. Moreover, any ** Case** can be attached to a ** Business Case** "
 "using the API. If a case map is started, a **Business Case** is "
 "automatically created. See :ref:`casemap-execution`."
 msgstr ""
-"ワークフローを分かりやすく表示するため、複数の**ケース**を 1 つの**ビジネスケース**に接続できます :ref:`トリガー"
+"ワークフローを分かりやすく表示するため、複数の**ケース** を 1 つの**ビジネスケース** に接続できます :ref:`トリガー"
 "<process-element-start-request-trigger-tab>` た :ref:`シグナル<process-"
 "element-signal-start-tab-"
-"signal>` れたプロセス開始要素は、開始された**ケース**を呼び出し元の**ケース**の** ジネスケース**に接続すべきかどうかをインスクリプションで定義します。さらに、API"
+"signal>` れたプロセス開始要素は、開始された**ケース** を呼び出し元の**ケース** の** ジネスケース** に接続すべきかどうかをインスクリプションで定義します。さらに、API"
 " "
-"を使用して、任意の**ケース**を** ジネスケース**に接続できます。ケースマップが開始されると、自動的に**ビジネスケースが**作成されます。 :ref"
+"を使用して、任意の**ケース** を** ジネスケース** に接続できます。ケースマップが開始されると、自動的に**ビジネスケースが** 作成されます。 :ref"
 ":`casemap-execution` 」を参照してください。"
 
 #: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:104
 msgid ""
-"The first **Case** of a process always acts as the **Business Case** (see"
-" image 'First Case'). All **Cases** attached later to the **Business "
-"Case** are subcases of the **Business Case** (see image 'Multiple "
+"The first **Case** of a process always acts as the ** Business Case** (see"
+" image 'First Case'). All **Cases** attached later to the ** Business "
+"Case** are subcases of the ** Business Case** (see image 'Multiple "
 "Cases')."
-msgstr "プロセスの最初の**ケース**は常に**ビジネスケース**となります（「最初のケース」の図を参照）。**ビジネスケース**に後から接続されたすべての**ケース**は、**ビジネスケース**のサブケースとなります（「複数のケース」の図を参照）。"
+msgstr "プロセスの最初の**ケース** は常に**ビジネスケース** となります（「最初のケース」の図を参照）。**ビジネスケース** に後から接続されたすべての**ケース** は、**ビジネスケース** のサブケースとなります（「複数のケース」の図を参照）。"
 
 #: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:107
 #: ../../source/designer-guide/how-to/workflow/cases-and-tasks.rst:110
@@ -13452,7 +13452,7 @@ msgid ""
 "artifact should be updated automatically (e.g., if you rename a sub "
 "process then all callers to that sub process will be updated, so that "
 "they point to the renamed instance). This is the default behavior."
-msgstr "*最初のページ*では、オペレーションの**パラメーター**（新しい名前や名前空間、ターゲットプロジェクトなど）を必要に応じて入力します。また、リファクタリングされたアーティファクトへの既存の参照を自動的に更新するかどうかを選択できます（例えば、サブプロセスの名前を変更した場合、そのサブプロセスへのすべての呼び出し元が更新され、名前変更されたインスタンスを指すようになります）。これはデフォルトの動作です。"
+msgstr "*最初のページ*では、オペレーションの**パラメーター** （新しい名前や名前空間、ターゲットプロジェクトなど）を必要に応じて入力します。また、リファクタリングされたアーティファクトへの既存の参照を自動的に更新するかどうかを選択できます（例えば、サブプロセスの名前を変更した場合、そのサブプロセスへのすべての呼び出し元が更新され、名前変更されたインスタンスを指すようになります）。これはデフォルトの動作です。"
 
 #: ../../source/designer-guide/introduction/common-ui-components.rst:30
 msgid ""
@@ -13464,7 +13464,7 @@ msgid ""
 "the operation."
 msgstr ""
 "*2 "
-"ページ目*には、オペレーションの実行後に**破壊される参照のリスト**が表示されます。破壊された参照が検出されなかった場合、このページは表示されません。このページは、*削除*または*移動*リファクタリング、つまり、オペレーションの前に参照した呼び出し元のスコープにアーティファクトが存在しなくなる場合にのみ表示されます。"
+"ページ目*には、オペレーションの実行後に**破壊される参照のリスト** が表示されます。破壊された参照が検出されなかった場合、このページは表示されません。このページは、*削除*または*移動*リファクタリング、つまり、オペレーションの前に参照した呼び出し元のスコープにアーティファクトが存在しなくなる場合にのみ表示されます。"
 
 #: ../../source/designer-guide/introduction/common-ui-components.rst:37
 #: ../../source/designer-guide/introduction/common-ui-components.rst:41
@@ -13480,7 +13480,7 @@ msgid ""
 " not be executed when you press *Finish*."
 msgstr ""
 "*3 "
-"ページ目*には、選択したリファクタリングの結果として実行される**オペレーションの詳細リスト**が表示されます。古いリソースと作成される新しいリソースのプレビューが表示される場合もあります。個別にオペレーションの選択を解除することもできますが、その場合は［*終了*］をクリックしても実行されません。"
+"ページ目*には、選択したリファクタリングの結果として実行される**オペレーションの詳細リスト** が表示されます。古いリソースと作成される新しいリソースのプレビューが表示される場合もあります。個別にオペレーションの選択を解除することもできますが、その場合は［*終了*］をクリックしても実行されません。"
 
 #: ../../source/designer-guide/introduction/common-ui-components.rst:51
 msgid ""
@@ -13679,7 +13679,7 @@ msgstr "Axon Ivy Designer を正常にインストールするには、以下の
 
 #: ../../source/designer-guide/introduction/installation.rst:8
 msgid ":dev-url:`Download </download>` the **latest** Axon Ivy Designer version."
-msgstr "Axon Ivy Designer の**最新**バージョンを:dev-url:`ダウンロード</download>` ます。"
+msgstr "Axon Ivy Designer の**最新** バージョンを:dev-url:`ダウンロード</download>` ます。"
 
 #: ../../source/designer-guide/introduction/installation.rst:9
 msgid ""
@@ -14243,7 +14243,7 @@ msgid ""
 "of the process data are stored in the history. If you configure 0 the "
 "process data snapshots for all requests are stored."
 msgstr ""
-"**履歴に保存するリクエストの数**（0 はすべて保存） - "
+"**履歴に保存するリクエストの数** （0 はすべて保存） - "
 "ここでは、プロセスデータのスナップショットを履歴に保存する、プロセス要素ごとのリクエストの数を設定できます。0 "
 "に設定すると、すべてのリクエストのプロセスデータのスナップショットが保存されます。"
 
@@ -14257,7 +14257,7 @@ msgid ""
 "youngest executions of a process element per request are stored in the "
 "history."
 msgstr ""
-"**履歴に保存する実行の数**（0 はすべて保存） - "
+"**履歴に保存する実行の数** （0 はすべて保存） - "
 "ここでは、プロセスデータのスナップショットを履歴に保存する、リクエストおよびプロセス要素ごとの実行の数を設定できます。0 "
 "に設定すると、すべての実行のプロセスデータのスナップショットが保存されます。値を 10 に設定すると、リクエストごとにプロセス要素の最も古い 5 "
 "つの実行と最も若い 5 つの実行のプロセスデータのスナップショットが履歴に保存されます。"
@@ -14569,7 +14569,7 @@ msgid ""
 " the root directory where your work will be stored."
 msgstr ""
 "Axon Ivy Designer "
-"の起動後、最初に表示されるのは、**ワークスペース**の場所を選択するダイアログです。ワークスペースは、作業が保存されるルートディレクトリです。"
+"の起動後、最初に表示されるのは、**ワークスペース** の場所を選択するダイアログです。ワークスペースは、作業が保存されるルートディレクトリです。"
 
 #: ../../source/designer-guide/introduction/workbench.rst:13
 msgid ""
@@ -14609,7 +14609,7 @@ msgid ""
 "A **view** is typically used to display properties for an active editor "
 "or to navigate through a hierarchy of information. Modifications made in "
 "a view are saved immediately."
-msgstr "一般的には、**ビュー**はアクティブなエディタのプロパティを表示したり、情報の階層を移動するのに使用されます。ビューで行われた変更は直ちに保存されます。"
+msgstr "一般的には、**ビュー** はアクティブなエディタのプロパティを表示したり、情報の階層を移動するのに使用されます。ビューで行われた変更は直ちに保存されます。"
 
 #: ../../source/designer-guide/introduction/workbench.rst:40
 msgid ""
@@ -14617,7 +14617,7 @@ msgid ""
 " model diagram or a dialog panel. Modifications made in an editor follow "
 "the open-save-close life cycle model. Multiple instances of an editor can"
 " be open within a workbench window."
-msgstr "**エディター**は、プロセスモデル図やダイアログパネルなど、特定のタイプのリソースを編集するのに使用されます。エディターで行われた変更は、開く-保存-閉じるのライフサイクルモデルに従います。エディターの複数のインスタンスをワークベンチウィンドウ内で開くことができます。"
+msgstr "**エディター** は、プロセスモデル図やダイアログパネルなど、特定のタイプのリソースを編集するのに使用されます。エディターで行われた変更は、開く-保存-閉じるのライフサイクルモデルに従います。エディターの複数のインスタンスをワークベンチウィンドウ内で開くことができます。"
 
 #: ../../source/designer-guide/introduction/workbench.rst:45
 msgid ""
@@ -15557,7 +15557,7 @@ msgid ""
 "**time periods**."
 msgstr ""
 ":public-api:`Duration "
-"</ch/ivyteam/ivy/scripting/objects/Duration.html>` ラスは**期間**を表します。"
+"</ch/ivyteam/ivy/scripting/objects/Duration.html>` ラスは**期間** を表します。"
 
 #: ../../source/designer-guide/ivyscript/reference.rst:144
 msgid ""
@@ -17151,7 +17151,7 @@ msgid ""
 "**Do not cache**: Does not use the data caching mechanism at all, the "
 "element is executed normally. This is the default setting for all "
 "elements."
-msgstr "**キャッシュしない**：データキャッシュメカニズムを使用しません。要素は通常どおりに実行されます。これはすべての要素の初期設定です。"
+msgstr "**キャッシュしない** ：データキャッシュメカニズムを使用しません。要素は通常どおりに実行されます。これはすべての要素の初期設定です。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:273
 msgid ""
@@ -17160,7 +17160,7 @@ msgid ""
 "*Group/Entry* part. If found, the cached value is returned and the "
 "execution of the element ends. If not found, the element is executed "
 "normally, but in the end the result is stored in the data cache."
-msgstr "**キャッシュ**：データキャッシュメカニズムを使用して、要素を実行します。最初に、下の*グループ／エントリ*部分に記載されたエントリをデータキャッシュ全体で検索します。見つかった場合は、キャッシュされた値が返され、要素の実行が終了します。見つからなかった場合、要素は通常どおりに実行され、最後に結果がデータキャッシュに保存されます。"
+msgstr "**キャッシュ** ：データキャッシュメカニズムを使用して、要素を実行します。最初に、下の*グループ／エントリ*部分に記載されたエントリをデータキャッシュ全体で検索します。見つかった場合は、キャッシュされた値が返され、要素の実行が終了します。見つからなかった場合、要素は通常どおりに実行され、最後に結果がデータキャッシュに保存されます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:280
 msgid ""
@@ -17168,7 +17168,7 @@ msgid ""
 "specified in the *Group/Entry* part. Use this when your element performs "
 "a write operation that changes data which is cached. The step is executed"
 " normally, but in addition the specified data cache entry is invalidated."
-msgstr "**キャッシュを無効にする**：*グループ／エントリ*部分で指定されたデータキャッシュエントリを明示的に無効にします。キャッシュされているデータを変更する書き込み操作を要素が実行する場合に使用します。ステップは通常どおりに実行されますが、指定されたデータキャッシュエントリが無効になります。"
+msgstr "**キャッシュを無効にする** ：*グループ／エントリ*部分で指定されたデータキャッシュエントリを明示的に無効にします。キャッシュされているデータを変更する書き込み操作を要素が実行する場合に使用します。ステップは通常どおりに実行されますが、指定されたデータキャッシュエントリが無効になります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:287
 msgid "Cache entries are always bound to their scope."
@@ -17179,11 +17179,11 @@ msgid ""
 "**Session**: the cache entry is linked to the currently logged in user "
 "(i.e., is specific for each user and is invalidated when the user logs "
 "out)."
-msgstr "**セッション**：キャッシュエントリは現在ログインしているユーザーにリンクされます（つまり、ユーザーごとに固有で、ユーザーがログアウトすると無効になります）。"
+msgstr "**セッション** ：キャッシュエントリは現在ログインしているユーザーにリンクされます（つまり、ユーザーごとに固有で、ユーザーがログアウトすると無効になります）。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:293
 msgid "**Application**: the cache entry is linked to the Application"
-msgstr "**アプリケーション**：キャッシュエントリはアプリケーションにリンクされます。"
+msgstr "**アプリケーション** ：キャッシュエントリはアプリケーションにリンクされます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:297
 msgid ""
@@ -17204,7 +17204,7 @@ msgstr "グループ"
 msgid ""
 "**Name**: Cache entries need a group name. Several entries can share the "
 "same group in order to invalidate multiple entries at the same time."
-msgstr "**名前**：キャッシュエントリにはグループ名が必要です。複数のエントリを同時に無効にするために、複数のエントリで同じグループを共有できます。"
+msgstr "**名前** ：キャッシュエントリにはグループ名が必要です。複数のエントリを同時に無効にするために、複数のエントリで同じグループを共有できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:308
 msgid ""
@@ -17215,7 +17215,7 @@ msgid ""
 "hour). Invalidating a group always means to remove all its entries from "
 "the cache."
 msgstr ""
-"**ライフタイム**：要求時（「キャッシュモード」の「キャッシュを無効にする」を参照）、特定の時刻（時刻フォーマット "
+"**ライフタイム** ：要求時（「キャッシュモード」の「キャッシュを無効にする」を参照）、特定の時刻（時刻フォーマット "
 ":code:`\"HH:mms:ss\"` が設定された文字列、例：:code:`\"23:50:00\"` "
 "）、または設定可能な期間（秒単位、例えば :code:`3600` "
 "は1時間）後に、グループを無効にすることができます。グループが無効化されると、常にキャッシュからすべてのエントリが削除されます。"
@@ -17230,7 +17230,7 @@ msgid ""
 "multiple entries with the same name in different groups. Use always the "
 "same entry names (as well for the group) if you want to use the same data"
 " cache entry in multiple process steps."
-msgstr "**名前**：グループ内では一意でなければなりませんが、異なるグループであれば同じ名前のエントリを複数設定できます。複数のプロセスステップで同じデータキャッシュエントリを使用する場合は、必ず同じエントリ名（とグループ）を使用してください。"
+msgstr "**名前** ：グループ内では一意でなければなりませんが、異なるグループであれば同じ名前のエントリを複数設定できます。複数のプロセスステップで同じデータキャッシュエントリを使用する場合は、必ず同じエントリ名（とグループ）を使用してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:321
 msgid ""
@@ -17240,7 +17240,7 @@ msgid ""
 ":code:`\"23:50:00\"`) or after a configurable period of time (In seconds,"
 " e.g., :code:`3600` for one hour)."
 msgstr ""
-"**ライフタイム**：要求時（「キャッシュモード」の「キャッシュを無効にする」を参照）、特定の時刻（時刻フォーマット "
+"**ライフタイム** ：要求時（「キャッシュモード」の「キャッシュを無効にする」を参照）、特定の時刻（時刻フォーマット "
 ":code:`\"HH:mms:ss\"` が設定された文字列、例：:code:`\"23:50:00\"` "
 "）、または設定可能な期間（秒単位、例えば :code:`3600` は1時間）後に、単一のキャッシュエントリを無効にすることができます。"
 
@@ -17367,12 +17367,12 @@ msgid ""
 "**Category:** It is recommended practice to define and reference the text"
 " from the CMS. See :ref:`here <workflow-categories>`."
 msgstr ""
-"**カテゴリー：**テキストを定義し、CMS から参照することを推奨します :ref:`こちら<workflow-"
+"**カテゴリー：** テキストを定義し、CMS から参照することを推奨します :ref:`こちら<workflow-"
 "categories>` 参照してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:394
 msgid "**Responsible:** The role or user to assign the task"
-msgstr "**担当：**タスクを割り当てるロールまたはユーザー"
+msgstr "**担当：** タスクを割り当てるロールまたはユーザー"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_responsible.rst:1
 msgid ""
@@ -17663,7 +17663,7 @@ msgid ""
 "<https://en.wikipedia.org/wiki/SQL_injection>`__ vulnerabilities if not "
 "used carefully."
 msgstr ""
-"**Any クエリ**オプションを不用意に使用した場合、`SQL "
+"**Any クエリ** オプションを不用意に使用した場合、`SQL "
 "インジェクション<https://en.wikipedia.org/wiki/SQL_injection>` 脆弱性につながる可能性があります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:49
@@ -18855,7 +18855,7 @@ msgstr "ターゲット"
 msgid ""
 "**REST-Client**: The first combo lets you pick a pre-configured :ref"
 ":`rest-clients-configuration`."
-msgstr "**REST クライアント**：最初のコンボでは、事前設定済みの :ref:`rest-clients-configuration` を選択できます。"
+msgstr "**REST クライアント** ：最初のコンボでは、事前設定済みの :ref:`rest-clients-configuration` を選択できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:33
 msgid ""
@@ -18863,7 +18863,7 @@ msgid ""
 " You can choose one of the well known methods like GET, POST, PUT or "
 "DELETE."
 msgstr ""
-"**HTTP メソッド**：2 番目のコンボでは、使用する HTTP メソッドを選択できます。GET、POST、PUT、DELETE "
+"**HTTP メソッド** ：2 番目のコンボでは、使用する HTTP メソッドを選択できます。GET、POST、PUT、DELETE "
 "など、よく知っているメソッドの中から 1 つ選択できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:37
@@ -18873,7 +18873,7 @@ msgid ""
 ":`rest-clients-configuration`. Use the attribute browser on the right "
 "side to insert dynamic parts to the URI."
 msgstr ""
-"**パス**：テキスト入力を使用して、リソースのパスを定義できます。入力されたパスは :ref:`rest-clients-"
+"**パス** ：テキスト入力を使用して、リソースのパスを定義できます。入力されたパスは :ref:`rest-clients-"
 "configuration` で定義されるベース URI に追加されます。右側の属性ブラウザを使用して、URI に動的な部分を挿入できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:44
@@ -18883,7 +18883,7 @@ msgid ""
 "automatically fill essential inscription editor parts to make the service"
 " call valid."
 msgstr ""
-"**API ブラウザ**：有効なリモートサービスリソースとそのドキュメントを表示する API "
+"**API ブラウザ** ：有効なリモートサービスリソースとそのドキュメントを表示する API "
 "メソッドブラウザを開きます。選択後、選択されたメソッドはインスクリプションエディターの主要部分を自動的に入力し、サービスの呼び出しを有効にします。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:49
@@ -18900,7 +18900,7 @@ msgid ""
 "added to the URI. Or switch the type to 'template' in order to resolve a "
 "dynamic path template with a concrete value."
 msgstr ""
-"**パラメーター**：この表を使用して、URI "
+"**パラメーター** ：この表を使用して、URI "
 "に追加する必要があるクエリパラメーターを定義します。または、具体的な値を含む動的パステンプレートを解決するため、タイプを「テンプレート」に切り替えます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:56
@@ -18916,7 +18916,7 @@ msgid ""
 " serialization formats. By setting the ``Accept`` header, the preferred "
 "format can be propagated to the target service."
 msgstr ""
-"**ヘッダー**：リクエストと一緒に送信され、ターゲットサービスで解釈できます。例えば、多くの REST API "
+"**ヘッダー** ：リクエストと一緒に送信され、ターゲットサービスで解釈できます。例えば、多くの REST API "
 "は、複数のシリアライズ形式でデータを提供できます。``Accept`` ヘッダーを設定して、優先される形式をターゲットサービスに伝搬できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:67
@@ -18935,7 +18935,7 @@ msgid ""
 ":`rest-clients-configuration` properties. Here you can overwrite a "
 "property with dynamic values."
 msgstr ""
-"**プロパティ**：REST クライアントのオプションの機能やネイティブプロパティを設定するのに使用します :ref:`rest-clients-"
+"**プロパティ** ：REST クライアントのオプションの機能やネイティブプロパティを設定するのに使用します :ref:`rest-clients-"
 "configuration` のプロパティでグローバルに設定可能です。ここでは、プロパティを動的な値で上書きできます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:80
@@ -18964,7 +18964,7 @@ msgid ""
 "urlencoded`` or as ``multipart/form-data``. The form values are "
 "scriptable."
 msgstr ""
-"**フォーム**：``application/x-www-form-urlencoded`` タイプのコンテンツまたは ``multipart"
+"**フォーム** ：``application/x-www-form-urlencoded`` タイプのコンテンツまたは ``multipart"
 "/form-data`` としてフォームの値を送信します。フォームの値はスクリプト可能です。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:97
@@ -18973,7 +18973,7 @@ msgid ""
 "service. Most Java objects should be serializable as JSON "
 "(application/json) without additional configuration."
 msgstr ""
-"**エンティティ**：複雑なオブジェクトをシリアライズされたテキストとしてリモート REST サービスに送信します。ほとんどの Java "
+"**エンティティ** ：複雑なオブジェクトをシリアライズされたテキストとしてリモート REST サービスに送信します。ほとんどの Java "
 "オブジェクトは、追加設定なしで、JSON（application/json）としてシリアライズ可能です。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:101
@@ -18991,7 +18991,7 @@ msgid ""
 "problem exists. Pick '*>> Ignore Error*' to continue the process "
 "execution even though the REST service call failed with an exception."
 msgstr ""
-"**エラー時**：接続やタイムアウトの問題が発生したなど、REST クライアントが例外で失敗した場合にスローするエラーコードを選択します。REST"
+"**エラー時** ：接続やタイムアウトの問題が発生したなど、REST クライアントが例外で失敗した場合にスローするエラーコードを選択します。REST"
 " サービスの呼び出しが例外で失敗しても、「*>> エラーを無視*'」 を選択して、プロセスの実行を継続できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:111
@@ -19000,7 +19000,7 @@ msgid ""
 "if the HTTP response status code is not in the 200 family. Pick '*>> "
 "Ignore Error*' if other status codes are valid and expected."
 msgstr ""
-"**ステータスコードの失敗時**：HTTP 応答ステータスコードが 200 "
+"**ステータスコードの失敗時** ：HTTP 応答ステータスコードが 200 "
 "番台でない場合、自動的にエラーコードで失敗します。他のステータスコードが有効で、予想される場合は、「*>> エラーを無視*」を選択してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:116
@@ -19018,7 +19018,7 @@ msgid ""
 "read. Pick a Java type that can be mapped to response entity. The entity "
 "object is available in the 'result' variable."
 msgstr ""
-"**結果のタイプ**：最初のコンボでは、応答エンティティの読み取り方法を定義します。応答エンティティにマッピングできる Java "
+"**結果のタイプ** ：最初のコンボでは、応答エンティティの読み取り方法を定義します。応答エンティティにマッピングできる Java "
 "のタイプを選択します。エンティティオブジェクトは 'result' 変数で使用できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:128
@@ -19045,7 +19045,7 @@ msgid ""
 "available which lets you access the HTTP-status-code and other details of"
 " the HTTP response."
 msgstr ""
-"**コード**：コードエディターを使用して、応答またはそのエンティティを処理します。ほとんどの場合、'result' "
+"**コード** ：コードエディターを使用して、応答またはそのエンティティを処理します。ほとんどの場合、'result' "
 "変数をプロセスデータに割り当てるだけです。ただし、このエディターでは、JAX-RS の 'response' "
 "変数も利用可能で、この変数を使用して、HTTP ステータスコードなど、HTTP 応答の詳細を確認できます。"
 
@@ -19072,7 +19072,7 @@ msgid ""
 " of your process data. This option should be used if you want to reflect "
 "a small JSON structure."
 msgstr ""
-"**データクラスにマッピング**：ビジネスプロセスで必要な属性を含むデータクラスを作成します。このデータクラスを使用して、結果のボディを読み取ります。JSON"
+"**データクラスにマッピング** ：ビジネスプロセスで必要な属性を含むデータクラスを作成します。このデータクラスを使用して、結果のボディを読み取ります。JSON"
 " オブジェクトの属性と名前（大文字と小文字を区別）が一致するすべての属性がマッピングされます。``result`` "
 "オブジェクトをプロセスデータの属性に割り当てます。小さな JSON 構造を反映したい場合は、このオプションを使用してください。"
 
@@ -19101,7 +19101,7 @@ msgid ""
 "and add them to a special source folder (E.g., ``src_generated``). Now "
 "you can read the response body to an object of this generated class."
 msgstr ""
-"**生成されたクラスにマッピング**：http://www.jsonschema2pojo.org/ などの Java "
+"**生成されたクラスにマッピング** ：http://www.jsonschema2pojo.org/ などの Java "
 "オブジェクトソースジェネレーターにサービスから受け取った JSON を貼り付けます。JSON 構造用に Java "
 "ソースを生成します。ソースをダウンロードし、専用のソースフォルダー（``src_generated`` "
 "など）に追加します。これで、この生成されたクラスのオブジェクトに対する応答ボディを読み取ることができます。"
@@ -19145,7 +19145,7 @@ msgid ""
 " option should be used if you don't want to reflect the whole object "
 "structure and only need parts from the object tree."
 msgstr ""
-"**JSON ノードにマッピング**：結果のボディを ``JsonNode`` "
+"**JSON ノードにマッピング** ：結果のボディを ``JsonNode`` "
 "オブジェクトとして読み取ります。オブジェクトツリーを移動し、フィールドの値を手動で読み取ります。オブジェクト構造全体を反映せず、オブジェクトツリーの一部のみ必要な場合に、このオプションを使用してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:211
@@ -19192,7 +19192,7 @@ msgstr "image15"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:230
 msgid "**JAX-RS Example**:"
-msgstr "**JAX-RS の例**："
+msgstr "**JAX-RS の例** ："
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:252
 msgid ""
@@ -20929,7 +20929,7 @@ msgid ""
 "**Do not use** the interface type ``Number`` as type for an input "
 "parameter. Instead use concrete types like ``Integer`` or ``Double``."
 msgstr ""
-"入力パラメーターの型として ``Number`` インタフェース型を**使用しないでください**。``Integer`` や ``Double``"
+"入力パラメーターの型として ``Number`` インタフェース型を**使用しないでください** 。``Integer`` や ``Double``"
 " のような具象型を使用してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:47
@@ -20940,7 +20940,7 @@ msgid ""
 "``java.util.List<Project>` ) as type for such attributes instead."
 msgstr ""
 "入力パラメーターとして ``List`` 属性を含む複合型（例：``List<Project>`  型の ``projects`` 属性を持つ "
-"``Employee``）を**使用しないでください**。代わりに "
+"``Employee``）を**使用しないでください** 。代わりに "
 "``java.util.List``（例：``java.util.List<Project>` ）をそのような属性の型として使用してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:52
@@ -21244,7 +21244,7 @@ msgid ""
 " recommended to select a data class from the project where the process "
 "will be created** in order to avoid dependencies on the implementation of"
 " another project."
-msgstr "*既存*：既存のデータクラスを新しいプロセスのデータ構造として選択する場合は、このオプションを選択します。右側にあるクラスセレクターボタンで任意の既存のデータクラスを選択できます。他のプロジェクトの実装への依存関係を回避するため、**プロセスを作成するプロジェクトからデータクラスを選択することを強く推奨します**。"
+msgstr "*既存*：既存のデータクラスを新しいプロセスのデータ構造として選択する場合は、このオプションを選択します。右側にあるクラスセレクターボタンで任意の既存のデータクラスを選択できます。他のプロジェクトの実装への依存関係を回避するため、**プロセスを作成するプロジェクトからデータクラスを選択することを強く推奨します** 。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/new-process-wizard.rst:77
 msgid ""
@@ -21354,7 +21354,7 @@ msgstr "ツールバー"
 msgid ""
 "The **Tool Bar** collects all tools that can be helpful for working with "
 "the process editor:"
-msgstr "**ツールバー**には、プロセスエディターでの作業に有用なすべてのツールがまとめられています。"
+msgstr "**ツールバー** には、プロセスエディターでの作業に有用なすべてのツールがまとめられています。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:39
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:37
@@ -21545,8 +21545,8 @@ msgid ""
 "existing connector select the connector and move the target handle to "
 "another element."
 msgstr ""
-":ref:`process-editor-tool-bar` にある**コネクターツール**を使用するか、最初の要素をクリックし、 :ref"
-":`process-editor-quick-actions` で**コネクターツール**を選択して、2 "
+":ref:`process-editor-tool-bar` にある**コネクターツール** を使用するか、最初の要素をクリックし、 :ref"
+":`process-editor-quick-actions` で**コネクターツール** を選択して、2 "
 "つの要素の間にコネクターを描画します。また、コネクターにさらに多くの折れ線ウェイポイントを追加したり、コネクターを選択し、ハンドルをドラッグして、ウェイポイントを移動できます。既存のコネクターを再接続するには、コネクターを選択し、ハンドルを他の要素に移動します。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:139
@@ -21572,7 +21572,7 @@ msgid ""
 "+ V`, etc.)."
 msgstr ""
 "プロセスエディター内でスクロールするには、図をドラッグします。ズームするには、マウスホイールを使用します。IDE "
-"の**編集**メニューを使用するか、デフォルトのショートカット（「Ctrl + C」、「Ctrl + "
+"の**編集** メニューを使用するか、デフォルトのショートカット（「Ctrl + C」、「Ctrl + "
 "V」など）を使用して、直前の変更を元に戻したりやり直したり、コピーや貼り付けを行うことができます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:154
@@ -21584,7 +21584,7 @@ msgstr "クイックアクションメニュー"
 msgid ""
 "To open the **Quick Action Menu** simply select an element in the editor."
 " The available actions can be different based on the element type:"
-msgstr "**クイックアクションメニュー**を開くには、エディターで要素を選択します。使用可能なアクションは、要素のタイプによって異なります。"
+msgstr "**クイックアクションメニュー** を開くには、エディターで要素を選択します。使用可能なアクションは、要素のタイプによって異なります。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:159
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:242
@@ -21758,7 +21758,7 @@ msgid ""
 " supports multiple outgoing connectors*"
 msgstr ""
 "|connect-action| "
-"**接続ツール**で現在の要素を他の要素と接続できます。*要素に出力コネクターがないか、複数の出力コネクターをサポートしている場合のみ、使用できます*。"
+"**接続ツール** で現在の要素を他の要素と接続できます。*要素に出力コネクターがないか、複数の出力コネクターをサポートしている場合のみ、使用できます*。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:230
 msgid "connect-action"
@@ -21775,7 +21775,7 @@ msgid ""
 "Quick Action Menu**. The following actions are available:"
 msgstr ""
 ":ref:`process-editor-tool-"
-"bar` の**マーキーツール**などで複数の要素を選択すると、**複数選択クイックアクションメニュー**にアクセスできます。以下のアクションを実行できます。"
+"bar` の**マーキーツール** などで複数の要素を選択すると、**複数選択クイックアクションメニュー** にアクセスできます。以下のアクションを実行できます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:244
 msgid "|wrap-action| Wrap the current selection into an embedded process."
@@ -21803,7 +21803,7 @@ msgstr "コネクタークイックアクションメニュー"
 msgid ""
 "To open the **Connector Quick Action Menu** select a connector. The "
 "following actions are available:"
-msgstr "**コネクタークイックアクションメニュー**を開くには、コネクターを選択します。以下のアクションを実行できます。"
+msgstr "**コネクタークイックアクションメニュー** を開くには、コネクターを選択します。以下のアクションを実行できます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:272
 msgid ""
@@ -21849,7 +21849,7 @@ msgstr "スイムレーンクイックアクションメニュー"
 msgid ""
 "To open the **Swimlane Quick Action Menu** select a pool or a lane. The "
 "following actions are available:"
-msgstr "**スイムレーンクイックアクションメニュー**を開くには、プールまたはレーンを選択します。以下のアクションを実行できます。"
+msgstr "**スイムレーンクイックアクションメニュー** を開くには、プールまたはレーンを選択します。以下のアクションを実行できます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:309
 msgid "|lane-action| Adds a lane to a pool."
@@ -22130,7 +22130,7 @@ msgid ""
 "that **it is strongly recommended that you only set data classes that are"
 " defined in the same project as the process** in order to avoid "
 "dependencies on the specific implementation of another project."
-msgstr "データクラスフィールドの隣にある［(C)］ボタンを使用して、編集したプロセスに表示される既存のデータクラスを選択します。他のプロジェクト固有の実装への依存関係を回避するため、**プロセスと同じプロジェクトで定義されるデータクラスのみ設定することを強く推奨します**。"
+msgstr "データクラスフィールドの隣にある［(C)］ボタンを使用して、編集したプロセスに表示される既存のデータクラスを選択します。他のプロジェクト固有の実装への依存関係を回避するため、**プロセスと同じプロジェクトで定義されるデータクラスのみ設定することを強く推奨します** 。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-properties.rst:37
 msgid ""
@@ -22290,7 +22290,7 @@ msgstr "プールまたはレーンを選択する場合、下のハンドルを
 msgid ""
 "You will also get access to the **Lane Quick Action Menu** if you select "
 "a pool/lane, where you can do the following actions:"
-msgstr "また、プール／レーンを選択すると、**レーンクイックアクションメニュー**が表示され、以下のアクションを実行できます。"
+msgstr "また、プール／レーンを選択すると、**レーンクイックアクションメニュー** が表示され、以下のアクションを実行できます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/swimlanes.rst:21
 msgid "Delete:"
@@ -22351,13 +22351,13 @@ msgstr "|search-action| インスクリプションの入力の検索ボタン�
 msgid ""
 "**Apply**: adds the selected attribute to your process element "
 "inscription."
-msgstr "**適用**：選択した属性をプロセス要素のインスクリプションに追加します。"
+msgstr "**適用** ：選択した属性をプロセス要素のインスクリプションに追加します。"
 
 #: ../../source/designer-guide/process-modeling/process-views/browsers.rst:19
 msgid ""
 "**Cancel**: closes the browser and re-opens the process element "
 "inscription."
-msgstr "**キャンセル**：ブラウザを閉じ、プロセス要素のインスクリプションを再び開きます。"
+msgstr "**キャンセル** ：ブラウザを閉じ、プロセス要素のインスクリプションを再び開きます。"
 
 #: ../../source/designer-guide/process-modeling/process-views/browsers.rst:28
 #: ../../source/designer-guide/process-modeling/process-views/browsers.rst:32
@@ -23164,11 +23164,11 @@ msgstr "参照先のプロジェクトに必要なバージョンの範囲を指
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:153
 msgid ""
 "Note that the order in the table defines the order how referenced "
-"artifacts are searched (Use the **Up Button** and **Down Button** to "
+"artifacts are searched (Use the **Up Button** and ** Down Button** to "
 "change the order). The general search order in the dependency graph is "
 "*breadth first*, but the order that you define here is the search order "
 "that will be used on a specific node when searching the graph."
-msgstr "表での順序によって、参照先のアーティファクトの検索順序が決まることに注意してください（順序を変更するには、**上ボタン**または**下ボタン**を使用します）。依存関係グラフの一般的な検索順序は*幅優先*ですが、グラフを検索する際、ここで定義した順序が特定のノードで使用されます。"
+msgstr "表での順序によって、参照先のアーティファクトの検索順序が決まることに注意してください（順序を変更するには、**上ボタン** または**下ボタン** を使用します）。依存関係グラフの一般的な検索順序は*幅優先*ですが、グラフを検索する際、ここで定義した順序が特定のノードで使用されます。"
 
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:159
 msgid ""
@@ -23209,7 +23209,7 @@ msgid ""
 "Optionally specify the maximum version that the required project needs to"
 " have. Choose whether you want to include or exclude this maximal version"
 " by checking the **Inclusive** box"
-msgstr "任意で、必要なプロジェクトの最大バージョンを指定します。［**含める**］チェックボックスで、この最大バージョンを含めるか除外するかを選択します。"
+msgstr "任意で、必要なプロジェクトの最大バージョンを指定します。［**含める** ］チェックボックスで、この最大バージョンを含めるか除外するかを選択します。"
 
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:178
 msgid "Minimum Version"
@@ -23220,7 +23220,7 @@ msgid ""
 "Optionally specify the minimum version that the required project needs to"
 " have. Choose whether you want to include or exclude this minimal version"
 " by checking the **Inclusive** box"
-msgstr "任意で、必要なプロジェクトの最小バージョンを指定します。［**含める**］チェックボックスで、この最小バージョンを含めるか除外するかを選択します。"
+msgstr "任意で、必要なプロジェクトの最小バージョンを指定します。［**含める** ］チェックボックスで、この最小バージョンを含めるか除外するかを選択します。"
 
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:185
 msgid ""
@@ -23315,7 +23315,7 @@ msgstr ""
 msgid ""
 "To add a new dependency, open the Deployment Descriptor with the Maven "
 "POM Editor by right clicking on the Deployment Descriptor file and "
-"choosing **Open With -> Maven POM Editor** or click on the **Open with "
+"choosing **Open With -> Maven POM Editor** or click on the ** Open with "
 "Maven POM Editor** action in the toolbar of the :ref:`deployment-"
 "descriptor-editor`."
 msgstr ""
@@ -23330,7 +23330,7 @@ msgid ""
 "the classpath and are also included in the packaged Axon Ivy project."
 msgstr ""
 "［*依存関係*］ "
-"タブに移動し、［**追加...**］をクリックして新しい依存関係を追加します。依存関係に含まれるすべてのライブラリがクラスパスに追加され、パッケージ化された"
+"タブに移動し、［**追加...** ］をクリックして新しい依存関係を追加します。依存関係に含まれるすべてのライブラリがクラスパスに追加され、パッケージ化された"
 " Axon Ivy プロジェクトにも入れられます。"
 
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:265
@@ -23365,7 +23365,7 @@ msgid ""
 msgstr ""
 "この自動インポートが望ましくない場合もあります（プロジェクトの移行など）。そのような場合、環境設定で自動インポートをオフにすることができます :ref"
 ":`deployment-descriptor-"
-"editor`のツールバーで、**自動インポート**のオン／オフを確認できます。また、自動インポートの実行をトリガーするアクションもあります。このアクションは、**自動インポート**がオフの場合でも、機能します。実行されたタスクのログが表示され、自動インポートで何が行われているかをより良く理解できます。"
+"editor`のツールバーで、**自動インポート** のオン／オフを確認できます。また、自動インポートの実行をトリガーするアクションもあります。このアクションは、**自動インポート** がオフの場合でも、機能します。実行されたタスクのログが表示され、自動インポートで何が行われているかをより良く理解できます。"
 
 #: ../../source/designer-guide/process-modeling/projects/exporting.rst:5
 msgid "Exporting a Project"
@@ -23605,9 +23605,9 @@ msgid ""
 "which is implemented by another project. Projects that implement reused "
 "functionality and/or artifacts are called **required projects** with "
 "respect to the project that makes use of that functionality. The latter "
-"is in turn called the **dependent project*** with respect to its required"
+"is in turn called the **dependent project** * with respect to its required"
 " projects."
-msgstr "プロジェクトは再利用できます。つまり、プロジェクトは、他のプロジェクトで実装される機能に依存できます。再利用される機能やアーティファクトを実装するプロジェクトは、その機能を利用するプロジェクトから見て**必要なプロジェクト**と呼ばれます。逆に、機能を利用するプロジェクトは、必要なプロジェクトから見て**依存プロジェクト**と呼ばれます。"
+msgstr "プロジェクトは再利用できます。つまり、プロジェクトは、他のプロジェクトで実装される機能に依存できます。再利用される機能やアーティファクトを実装するプロジェクトは、その機能を利用するプロジェクトから見て**必要なプロジェクト** と呼ばれます。逆に、機能を利用するプロジェクトは、必要なプロジェクトから見て**依存プロジェクト** と呼ばれます。"
 
 #: ../../source/designer-guide/process-modeling/projects/index.rst:17
 msgid ""
@@ -24257,11 +24257,11 @@ msgstr "プロジェクトとリソースの検証"
 msgid ""
 "To manually validate a project or a resource you can right click on it "
 "and select **Validate**."
-msgstr "プロジェクトやリソースを手動で検証するには、プロジェクトまたはリソースを右クリックし、［**検証**］を選択します。"
+msgstr "プロジェクトやリソースを手動で検証するには、プロジェクトまたはリソースを右クリックし、［**検証** ］を選択します。"
 
 #: ../../source/designer-guide/process-modeling/projects/validate.rst:17
 msgid "After the validation the errors are shown in the **Problems view**."
-msgstr "検証後、エラーが**問題ビュー**に表示されます。"
+msgstr "検証後、エラーが**問題ビュー** に表示されます。"
 
 #: ../../source/designer-guide/process-modeling/projects/validate.rst:22
 msgid "Validation preference"
@@ -24271,7 +24271,7 @@ msgstr "検証の環境設定"
 msgid ""
 "Go to **Window -> Preferences -> Validation** to get an overview of the "
 "validations that are run."
-msgstr "**［ウィンドウ］、［環境設定］、［検証］**の順に選択して、実行された検証の概要を表示できます。"
+msgstr "**［ウィンドウ］、［環境設定］、［検証］** の順に選択して、実行された検証の概要を表示できます。"
 
 #: ../../source/designer-guide/process-modeling/projects/validate.rst:29
 msgid ""
@@ -26615,11 +26615,11 @@ msgstr "コーポレートデザインで定められた**色** 表示される�
 
 #: ../../source/designer-guide/user-interface/branding/index.rst:12
 msgid "Has the **correct logo**."
-msgstr "**正しいロゴ**が組み込まれている。"
+msgstr "**正しいロゴ** が組み込まれている。"
 
 #: ../../source/designer-guide/user-interface/branding/index.rst:14
 msgid "**Doesn't need readjustments** after a software update"
-msgstr "ソフトウェアの更新後に**再調整する必要がない**。"
+msgstr "ソフトウェアの更新後に**再調整する必要がない** 。"
 
 #: ../../source/designer-guide/user-interface/branding/index.rst:17
 msgid ""
@@ -26954,7 +26954,7 @@ msgstr ""
 msgid ""
 "The **Tool Bar** collects all tools that can be helpful for working with "
 "the form editor:"
-msgstr "**ツールバー**には、フォームエディターでの作業に有用なすべてのツールがまとめられています。"
+msgstr "**ツールバー** には、フォームエディターでの作業に有用なすべてのツールがまとめられています。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:39
 msgid ""
@@ -27106,7 +27106,7 @@ msgid ""
 "To open the **Quick Action Menu** simply select a component in the "
 "editor. The available actions can be different based on the component "
 "type:"
-msgstr "**クイックアクションメニュー**を開くには、エディターでコンポーネントを選択します。使用可能なアクションは、コンポーネントのタイプによって異なります。"
+msgstr "**クイックアクションメニュー** を開くには、エディターでコンポーネントを選択します。使用可能なアクションは、コンポーネントのタイプによって異なります。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:154
 msgid "|delete| Delete the current selection."
@@ -27282,11 +27282,11 @@ msgid ""
 "representation and vice versa. If you want to display a ``Number`` or "
 "``Date``/``DateTime`` process data attribute well-formatted in an input "
 "widget then use the basic converters provided by the JSF core framework: "
-"**convertNumber** and **convertDateTime**."
+"**convertNumber** and ** convertDateTime**."
 msgstr ""
 "コンバーターを使用して、数値や日時の値を文字列に変換したり、文字列を数値や日時の値に変換します。きちんとフォーマットされたプロセスデータの "
 "``Number`` または ``Date``/``DateTime`` 属性を入力ウィジェットに表示したい場合は、JSF "
-"のコアフレームワークで提供される基本コンバーターである **convertNumber** と **convertDateTime** "
+"のコアフレームワークで提供される基本コンバーターである **convertNumber** と ** convertDateTime** "
 "を使用します。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-converters.rst:10
@@ -27417,10 +27417,10 @@ msgstr "クイックフィックス（Ctrl + 1）"
 msgid ""
 "There are Quick Fixes available to create missing events, methods and "
 "data attributes on the current HTML Dialog. Simply press ``Ctrl+1`` on a "
-"**logic** or **data** expression respectively."
+"**logic** or ** data** expression respectively."
 msgstr ""
 "クイックフィックスを使用して、現在の HTML "
-"ダイアログに欠落しているイベント、メソッド、データ属性を作成できます。**論理**式または**データ**式で ``Ctrl + "
+"ダイアログに欠落しているイベント、メソッド、データ属性を作成できます。**論理** 式または**データ** 式で ``Ctrl + "
 "1``キーを押してください。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-editor.rst:35
@@ -27537,7 +27537,7 @@ msgid ""
 "window."
 msgstr ""
 "HTML ダイアログエディターと Eclipse プロパティビューを一緒に使用して、ダイアログの UI "
-"要素の属性を定義できます。**プロセス開発パースペクティブ**に切り替えると、プロパティビューがワークベンチウィンドウの左下に表示されます。"
+"要素の属性を定義できます。**プロセス開発パースペクティブ** に切り替えると、プロパティビューがワークベンチウィンドウの左下に表示されます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:4
 msgid ""
@@ -28102,12 +28102,12 @@ msgstr "テーマを:code:`ライト`モードまたは:code:`ダークモード
 msgid ""
 "You also have the option to load the mode dynamically and switch it at "
 "runtime. You can do so by setting the cookie :code:`primefaces-theme-"
-"mode` to **light** or **dark**, or call a specific function on the "
+"mode` to **light** or ** dark**, or call a specific function on the "
 ":public-api:`IvyFreyaTheme "
 "</ch/ivyteam/ivy/jsf/primefaces/theme/IvyFreyaTheme.html>` "
 msgstr ""
 "また、モードを動的に読みとみ、実行時に切り替えることができます。:code:`primefaces-theme-mode` cookie を "
-"**light** または **dark** に設定するか、:public-api:`IvyFreyaTheme "
+"**light** または ** dark** に設定するか、:public-api:`IvyFreyaTheme "
 "</ch/ivyteam/ivy/jsf/primefaces/theme/IvyFreyaTheme.html>` 関数を呼び出してください。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-themes.rst:70
@@ -28407,7 +28407,7 @@ msgid ""
 "components. You can select one from the auto completion popup list and "
 "you can define required attributes in the properties view."
 msgstr ""
-"**HTML ダイアログエディター**には、コンポーネントを挿入するためのツールが用意されています。オートコンプリートポップアップリストの中から "
+"**HTML ダイアログエディター** には、コンポーネントを挿入するためのツールが用意されています。オートコンプリートポップアップリストの中から "
 "1 つ選び、プロパティビューで必要な属性を定義できます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-view-types.rst:118
@@ -28522,7 +28522,7 @@ msgid ""
 "can profit from code completion support, tag validation and the property "
 "view offering structured properties."
 msgstr ""
-"**HTML ダイアログエディター**では、PrimeFaces "
+"**HTML ダイアログエディター** では、PrimeFaces "
 "を使用して設計を行うことができます。エディターでは、コード補完、タグの検証、構造化されたプロパティを表示するプロパティビューを活用できます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialogs.rst:32
@@ -28532,7 +28532,7 @@ msgid ""
 "extension**\\ ``<pe:`` widget library."
 msgstr ""
 "``<p:>`  名前空間を使用して、PrimeFaces ライブラリの要素を XHTML ページに追加します。Axon Ivy "
-"には、**PrimeFaces の拡張**ウィジェットライブラリである ``<pe:`` も含まれています。"
+"には、**PrimeFaces の拡張** ウィジェットライブラリである ``<pe:`` も含まれています。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialogs.rst:38
 msgid ""
@@ -28559,7 +28559,7 @@ msgstr ""
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialogs.rst:50
 msgid "a **XHTML dialog** (the view)"
-msgstr "**XHTML ダイアログ**（ビュー）"
+msgstr "**XHTML ダイアログ** （ビュー）"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialogs.rst:51
 msgid ""
@@ -28567,7 +28567,7 @@ msgid ""
 "properties of the view. To define such a binding, Axon Ivy provides the "
 "special object **data**."
 msgstr ""
-"データフィールドをビューのウィジェットプロパティにバインドできる**データクラス**（モデル）。そのようなバインディングを定義できるように、Axon"
+"データフィールドをビューのウィジェットプロパティにバインドできる**データクラス** （モデル）。そのようなバインディングを定義できるように、Axon"
 " Ivy は、専用オブジェクトである **data** を提供します。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialogs.rst:54
@@ -30031,10 +30031,10 @@ msgid ""
 "provided under :file:`[enginDir]/configuration/templates`."
 msgstr ""
 "一般的には、独自の設定を作成するには、:file:`[エンジンのディレクトリ]/configuration/reference` "
-"にある**リファレンス**ファイルから値をコピーするか :ref:`configuration-file-"
+"にある**リファレンス** ファイルから値をコピーするか :ref:`configuration-file-"
 "reference` をニーズに合わせて調整します。または、 "
 ":file:`[エンジンのディレクトリ]/configuration/templates` "
-"で提供される**テンプレート**全体をコピーして修正することもできます。"
+"で提供される**テンプレート** 全体をコピーして修正することもできます。"
 
 #: ../../source/engine-guide/configuration/index.rst:24
 msgid ""
@@ -30104,13 +30104,13 @@ msgstr ""
 
 #: ../../source/engine-guide/configuration/notification/index.rst:40
 msgid "**new-task**: If a user has a new task assignment (also on delegation)"
-msgstr "**新しいタスク**：ユーザーに新しいタスクが割り当てられた場合（委任を含む）"
+msgstr "**新しいタスク** ：ユーザーに新しいタスクが割り当てられた場合（委任を含む）"
 
 #: ../../source/engine-guide/configuration/notification/index.rst:41
 msgid ""
 "**business**: If new business relevant event happens or new business "
 "information is available"
-msgstr "**ビジネス**：ビジネスに関連するイベントが発生した場合、または新しいビジネス情報が利用可能になった場合"
+msgstr "**ビジネス** ：ビジネスに関連するイベントが発生した場合、または新しいビジネス情報が利用可能になった場合"
 
 #: ../../source/engine-guide/configuration/notification/index.rst:45
 msgid ""
@@ -30189,21 +30189,21 @@ msgstr "技術ユーザー"
 #: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:29
 msgid ""
 "Visit the `Microsoft 365 admin center <https://admin.microsoft.com/>`_ "
-"and create a new user by navigating to **Users** > **Active users** and "
+"and create a new user by navigating to **Users** > ** Active users** and "
 "clicking on **Add a user**. Give the user a display name that represents "
 "your Ivy Portal (e.g. \"Ivy\"). Other users will receive notifications in"
 " the form of chat messages by this user. Remove the checkmarks for "
-"**Automatically create a password** and **Require this user to change "
+"**Automatically create a password** and ** Require this user to change "
 "their password when they first sign in**. Provide the user with a secure "
 "password and keep note of it. Also, provide the user with a product "
 "license to be able to use Microsoft Teams."
 msgstr ""
 "`Microsoft 365 "
-"管理センター<https://admin.microsoft.com/>`_ にアクセスし、［**ユーザー**］、［**アクティブなユーザー**］の順に移動し、［**ユーザーの追加**］をクリックして、新しいユーザーを作成します。Ivy"
+"管理センター<https://admin.microsoft.com/>`_ にアクセスし、［**ユーザー** ］、［**アクティブなユーザー** ］の順に移動し、［**ユーザーの追加** ］をクリックして、新しいユーザーを作成します。Ivy"
 " Portal "
-"を表す表示名（「Ivy」など）をユーザーに付けます。他のユーザーは、そのユーザーからチャットメッセージの形で通知を受け取ります。［**パスワードを自動生成する**］"
+"を表す表示名（「Ivy」など）をユーザーに付けます。他のユーザーは、そのユーザーからチャットメッセージの形で通知を受け取ります。［**パスワードを自動生成する** ］"
 " "
-"と［**初回サインイン時にユーザーにパスワードの変更を要求する**］のチェックマークを外します。ユーザーに安全なパスワードを提供し、記録します。また、ユーザーが"
+"と［**初回サインイン時にユーザーにパスワードの変更を要求する** ］のチェックマークを外します。ユーザーに安全なパスワードを提供し、記録します。また、ユーザーが"
 " Microsoft Teams を使用できるように、製品ライセンスを提供します。"
 
 #: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:38
@@ -30220,7 +30220,7 @@ msgid ""
 "on the user and then **Manage multifactor authentication**. Make sure no "
 "other policies require the user to change their password regularly or "
 "prevent them from logging in for any other reasons."
-msgstr "ユーザーの作成後、ユーザー、［**多要素認証の管理**］の順にクリックして、多要素認証をオフにします。ユーザーに定期的なパスワードの変更を求めるポリシーや、その他の理由によりユーザーのログインを妨げるポリシーがないことを確認します。"
+msgstr "ユーザーの作成後、ユーザー、［**多要素認証の管理** ］の順にクリックして、多要素認証をオフにします。ユーザーに定期的なパスワードの変更を求めるポリシーや、その他の理由によりユーザーのログインを妨げるポリシーがないことを確認します。"
 
 #: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:49
 msgid "Manage multifactor authentication"
@@ -30246,7 +30246,7 @@ msgstr ""
 "`Microsoft Entra "
 "管理センター<https://entra.microsoft.com/>`_ にアクセスし、`説明<https://learn.microsoft.com"
 "/en-us/entra/identity-platform/quickstart-register-app>`_に従って、アプリケーションを "
-"Microsoft ID プラットフォームに登録します。ステップ 5 で、［**この組織ディレクトリのみに含まれるアカウント**］を選択します。"
+"Microsoft ID プラットフォームに登録します。ステップ 5 で、［**この組織ディレクトリのみに含まれるアカウント** ］を選択します。"
 
 #: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:65
 msgid "Register an application"
@@ -30254,10 +30254,10 @@ msgstr "アプリケーションの登録"
 
 #: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:68
 msgid ""
-"Navigate to **Applications** > **Enterprise Applications** and click on "
+"Navigate to **Applications** > ** Enterprise Applications** and click on "
 "the newly registered application. Navigate to **Properties** in the "
-"section **Manage**. Set **Assignment required?** to **Yes**."
-msgstr "［**アプリケーション**］、［**エンタープライズアプリケーション**］の順に移動し、新しく登録したアプリケーションをクリックします。［**管理**］セクションの［**プロパティ**］に移動します。［**割り当てが必要ですか?**］を［**はい**］に設定します。"
+"section **Manage**. Set ** Assignment required?** to ** Yes**."
+msgstr "［**アプリケーション** ］、［**エンタープライズアプリケーション** ］の順に移動し、新しく登録したアプリケーションをクリックします。［**管理** ］セクションの［**プロパティ** ］に移動します。［**割り当てが必要ですか?** ］を［**はい** ］に設定します。"
 
 #: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:72
 msgid "Application - Properties"
@@ -30265,12 +30265,12 @@ msgstr "アプリケーション - プロパティ"
 
 #: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:75
 msgid ""
-"Navigate to **Users and Groups** in the section **Manage**. Click on "
-"**Add user/group** > **Users and groups** and search for, select, and "
+"Navigate to **Users and Groups** in the section ** Manage**. Click on "
+"**Add user/group** > ** Users and groups** and search for, select, and "
 "assign the technical user you created before. (See :ref:`Technical User"
 "<microsoft-teams-notifications-technical-user>` "
 msgstr ""
-"［**管理**］セクションの［**ユーザーとグループ**］に移動します。［**ユーザー/グループの追加**］、［**ユーザーとグループ**］の順にクリックし、先に作成した技術ユーザーを検索、選択して割り当てます。（「`技術ユーザー"
+"［**管理** ］セクションの［**ユーザーとグループ** ］に移動します。［**ユーザー/グループの追加** ］、［**ユーザーとグループ** ］の順にクリックし、先に作成した技術ユーザーを検索、選択して割り当てます。（「`技術ユーザー"
 "<microsoft-teams-notifications-technical-user>` を参照してください。）"
 
 #: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:80
@@ -30279,11 +30279,11 @@ msgstr "アプリケーション - ユーザーとグループ"
 
 #: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:83
 msgid ""
-"Navigate to **Applications** > **App registrations** and click on the "
+"Navigate to **Applications** > ** App registrations** and click on the "
 "newly registered application. If you can not see it, make sure to change "
-"the selected tab to **All applications**. Navigate to **Authentication** "
-"in the section **Manage**. Set **Allow public client flows** to **Yes**."
-msgstr "［**アプリケーション**］、［**アプリの登録**］の順に移動し、新しく登録したアプリケーションをクリックします。見つからない場合は、選択されたタブを［**すべてのアプリケーション**］に変更します。［**管理**］セクションの［**認証**］に移動します。［**パブリッククライアントフローを許可する**］を［**はい**］に設定します。"
+"the selected tab to **All applications**. Navigate to ** Authentication** "
+"in the section **Manage**. Set ** Allow public client flows** to ** Yes**."
+msgstr "［**アプリケーション** ］、［**アプリの登録** ］の順に移動し、新しく登録したアプリケーションをクリックします。見つからない場合は、選択されたタブを［**すべてのアプリケーション** ］に変更します。［**管理** ］セクションの［**認証** ］に移動します。［**パブリッククライアントフローを許可する** ］を［**はい** ］に設定します。"
 
 #: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:88
 msgid "Application - Authentication"
@@ -30291,12 +30291,12 @@ msgstr "アプリケーション - 認証"
 
 #: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:91
 msgid ""
-"Navigate to **API permissions** in the section **Manage**. Click on **Add"
-" a permission** > **Microsoft Graph** > **Delegated permissions** and "
+"Navigate to **API permissions** in the section ** Manage**. Click on ** Add"
+" a permission** > ** Microsoft Graph** > ** Delegated permissions** and "
 "search for, select, and add the following permissions:"
 msgstr ""
-"［**管理**］セクションの［**API のアクセス許可**］に移動します。［**アクセス許可の追加**］、［**Microsoft "
-"Graph**］、［**委任されたアクセス許可**］の順にクリックし、以下の許可を検索、選択して追加します。"
+"［**管理** ］セクションの［**API のアクセス許可** ］に移動します。［**アクセス許可の追加** ］、［**Microsoft "
+"Graph**］、［** 委任されたアクセス許可**］の順にクリックし、以下の許可を検索、選択して追加します。"
 
 #: ../../source/engine-guide/configuration/notification/microsoft-teams.rst:95
 msgid "Chat.Create"
@@ -30550,7 +30550,7 @@ msgid ""
 "Configuration Manager**."
 msgstr ""
 "接続ごとにラウンドトリップでポートを決定することから、Microsoft は ``instanceName`` を使用せず、接続 URL "
-"でポートを指定することを推奨しています。そのため、**SQL Server 構成マネージャー**で静的 TCP ポート（1433 "
+"でポートを指定することを推奨しています。そのため、**SQL Server 構成マネージャー** で静的 TCP ポート（1433 "
 "など）を設定する必要があります。"
 
 #: ../../source/engine-guide/configuration/system-database/mssql.rst:55
@@ -30733,7 +30733,7 @@ msgid ""
 "users from the identity provider, users can also be added and managed "
 "manually like in the :code:`Ivy Security System`."
 msgstr ""
-"**外部 ID プロバイダー**：Active Directory などの外部 ID プロバイダーからユーザーを同期するのに使用します。ID "
+"**外部 ID プロバイダー** ：Active Directory などの外部 ID プロバイダーからユーザーを同期するのに使用します。ID "
 "プロバイダーからのユーザーに加えて、:code:`Ivy Security System` でユーザーを手動で追加して管理することもできます。"
 
 #: ../../source/engine-guide/configuration/users/index.rst:22
@@ -30905,7 +30905,7 @@ msgid ""
 "CI/CD pipeline."
 msgstr ""
 "Axon Ivy Engine では、さまざまな方法で Axon Ivy プロジェクトを展開できます。CI/CD "
-"パイプラインで**展開を自動化する**ことを強くお勧めします。"
+"パイプラインで**展開を自動化する** ことを強くお勧めします。"
 
 #: ../../source/engine-guide/deployment/deploy/index.rst:9
 msgid ""
@@ -30921,7 +30921,7 @@ msgid ""
 "<deployment-rest-api>` via HTTP/HTTPS. The preferred approach for "
 "implementing a CI/CD pipeline."
 msgstr ""
-"**REST API**：組み込まれた :ref:`REST API<deployment-rest-api>` を使用し、HTTP/HTTPS "
+"**REST API** ：組み込まれた :ref:`REST API<deployment-rest-api>` を使用し、HTTP/HTTPS "
 "からプロジェクトを展開できます。推奨される CI/CD パイプラインの実装方法です。"
 
 #: ../../source/engine-guide/deployment/deploy/index.rst:16
@@ -30931,7 +30931,7 @@ msgid ""
 "variant. Very useful to quickly deploy projects manually or as "
 "alternative approach for building a CI/CD pipeline."
 msgstr ""
-"**デプロイメントディレクトリ**：プロジェクト :ref:`デプロイメントディレクトリ<deployment-"
+"**デプロイメントディレクトリ** ：プロジェクト :ref:`デプロイメントディレクトリ<deployment-"
 "directory>` らインストールする、ファイルベースの方法の 1 つです。 プロジェクトを手動で素早く展開でき、CI/CD "
 "パイプラインを構築する代替方法としても有用です。"
 
@@ -30940,7 +30940,7 @@ msgid ""
 "**Maven-Plugin**: As part of the Axon Ivy Maven Plugin projects can be "
 "deployed within a :ref:`Maven build <deployment-maven-plugin>`."
 msgstr ""
-"**Maven プラグイン**：Axon Ivy Maven プラグインの一部として :ref:`Maven ビルド<deployment-"
+"**Maven プラグイン** ：Axon Ivy Maven プラグインの一部として :ref:`Maven ビルド<deployment-"
 "maven-plugin>` にプロジェクトを展開できます。"
 
 #: ../../source/engine-guide/deployment/deploy/maven-plugin/index.rst:4
@@ -30997,7 +30997,7 @@ msgid ""
 msgstr ""
 ":code:`deploy-to-engine` ゴールをコマンドラインで実行できます。以下の 2 "
 "つの例では、:file:`myProject.iar` プロジェクトを Axon Ivy Engine "
-"の**ポータル**アプリケーションに展開します。"
+"の**ポータル** アプリケーションに展開します。"
 
 #: ../../source/engine-guide/deployment/deploy/maven-plugin/index.rst:57
 msgid "Goal Execution with POM"
@@ -31019,7 +31019,7 @@ msgid ""
 ":file:`c:/axonivy/engine`."
 msgstr ""
 "以下の :file:`pom.xml` のスニペットは、:file:`c:/axonivy/engine` にある Axon Ivy Engine"
-" の**ポータル**アプリケーションに現在のプロジェクトを展開します。"
+" の**ポータル** アプリケーションに現在のプロジェクトを展開します。"
 
 #: ../../source/engine-guide/deployment/deploy/maven-plugin/index.rst:70
 msgid ""
@@ -31036,7 +31036,7 @@ msgid ""
 "defined :file:`serverId` must match with :code:`deployServerId`."
 msgstr ""
 "次の例では、http://localhost:8080 でアクセス可能な Axon Ivy Engine "
-"の**ポータル**アプリケーションに現在のプロジェクトを展開します。Maven の :file:`settings.xml` "
+"の**ポータル** アプリケーションに現在のプロジェクトを展開します。Maven の :file:`settings.xml` "
 "ファイルで管理者ユーザーの資格情報を設定する必要があります。カスタム定義された :file:`serverId` は "
 ":code:`deployServerId` と一致していなければなりません。"
 
@@ -31428,10 +31428,10 @@ msgstr "Docker イメージの準備"
 
 #: ../../source/engine-guide/getting-started/docker/prepare.rst:4
 msgid ""
-"Download and install **docker** and **docker-compose** from "
+"Download and install **docker** and ** docker-compose** from "
 "https://www.docker.com/."
 msgstr ""
-"https://www.docker.com/ から **Docker** と **Docker Compose** "
+"https://www.docker.com/ から **Docker** と ** Docker Compose** "
 "をダウンロードしてインストールします。"
 
 #: ../../source/engine-guide/getting-started/docker/prepare.rst:6
@@ -31746,7 +31746,7 @@ msgstr ""
 #: ../../source/engine-guide/getting-started/linux/configure.rst:31
 msgid ""
 "To configure the system database, use the :code:`config-db` command of "
-"the **EngineConfigCli** tool. Replace **yourdatabaseserver** with the "
+"the **EngineConfigCli** tool. Replace ** yourdatabaseserver** with the "
 "hostname of the server running your DBMS system. Replace **dbuser** and "
 "**password** with the credentials of a database user with the permissions"
 " to create a new database and its structures (i.e., DDL permissions) on "
@@ -31754,7 +31754,7 @@ msgid ""
 msgstr ""
 "システムデータベースを設定するには、**EngineConfigCli** ツールの :code:`config-db` "
 "コマンドを使用します。**yourdatabaseserver** を DBMS "
-"システムを実行しているサーバーのホスト名に置き換えます。**dbuser** と **password** "
+"システムを実行しているサーバーのホスト名に置き換えます。**dbuser** と ** password** "
 "をデータベースサーバーで新しいデータベースとその構造を作成する権限（DDL 権限）を持つデータベースユーザーの資格情報に置き換えます。"
 
 #: ../../source/engine-guide/getting-started/linux/configure.rst:43
@@ -31769,7 +31769,7 @@ msgid ""
 "**process data**."
 msgstr ""
 "Axon Ivy Engine "
-"は、システムデータベースを使用して、ユーザー、ユーザー属性、ロールなどの**マスターデータ**や、アプリケーション、プロセスモデル、プロセスモデルバージョン、ケース、タスク、**プロセスデータ**などの**ランタイムデータ**を格納します。"
+"は、システムデータベースを使用して、ユーザー、ユーザー属性、ロールなどの**マスターデータ** や、アプリケーション、プロセスモデル、プロセスモデルバージョン、ケース、タスク、**プロセスデータ** などの**ランタイムデータ** を格納します。"
 
 #: ../../source/engine-guide/getting-started/linux/configure.rst:55
 msgid ""
@@ -32106,45 +32106,45 @@ msgstr "試しに、デモモードのエンジンを使用し、:guilabel:`ホ�
 
 #: ../../source/engine-guide/getting-started/_use-the-engine.rst:18
 msgid ""
-"To log in, use one of the predefined demo users: **demo**, **guest**, or "
+"To log in, use one of the predefined demo users: **demo**, ** guest**, or "
 "**admin**. The passwords of the demo users are equal to the user names "
-"(E.g. **demo** for the **demo** user). Login as **demo** and navigate to "
+"(E.g. **demo** for the ** demo** user). Login as ** demo** and navigate to "
 "**Processes** by clicking on the third icon at the menu bar left. Then "
 "try to start the **Leave Request** process (Image of a Rocket)."
 msgstr ""
-"あらかじめ定義されたデモユーザー（**demo**、** uest**、** dmin**）のいずれかを使用して、ログインします。デモユーザーのパスワードはユーザー名と同じです（例えば、**demo**ユーザーのパスワードは**demo**になります）。**demo**"
+"あらかじめ定義されたデモユーザー（**demo** 、** uest** 、** dmin** ）のいずれかを使用して、ログインします。デモユーザーのパスワードはユーザー名と同じです（例えば、**demo** ユーザーのパスワードは**demo** になります）。**demo**"
 " としてログインし、左のメニューバーの 3 "
-"番目のアイコンをクリックして、**プロセス**に移動します。**休暇申請**プロセスを開始します（ロケットの画像）。"
+"番目のアイコンをクリックして、**プロセス** に移動します。**休暇申請** プロセスを開始します（ロケットの画像）。"
 
 #: ../../source/engine-guide/getting-started/_use-the-engine.rst:25
 msgid ""
 "Fill in the leave request form. Choose the **Portal Guest User** as "
 "**Aprover**."
-msgstr "休暇申請フォームに入力します。**承認者**として**ポータルゲストユーザー**を選択します。"
+msgstr "休暇申請フォームに入力します。**承認者** として**ポータルゲストユーザー** を選択します。"
 
 #: ../../source/engine-guide/getting-started/_use-the-engine.rst:29
 msgid ""
 "Press **Submit leave request** button. Your leave request is being "
 "submitted and you will be redirected back to the **Portal Dashboard**."
-msgstr "［**休暇申請を送信**］ボタンをクリックします。休暇申請が送信され、**ポータルダッシュボード**にリダイレクトされます。"
+msgstr "［**休暇申請を送信** ］ボタンをクリックします。休暇申請が送信され、**ポータルダッシュボード** にリダイレクトされます。"
 
 #: ../../source/engine-guide/getting-started/_use-the-engine.rst:32
 msgid ""
-"Then, log out as **demo** and log in as **guest**. On the task list, you "
+"Then, log out as **demo** and log in as ** guest**. On the task list, you "
 "now see the **open task** from the workflow process that you just "
 "started. Try to work on the task by clicking on it:"
 msgstr ""
-"**demo** としてログアウトし、**guest** "
-"としてログインします。タスクリストに、開始したばかりのワークフロープロセスからの**未完了のタスク**が表示されます。タスクをクリックして処理します。"
+"**demo** としてログアウトし、** guest** "
+"としてログインします。タスクリストに、開始したばかりのワークフロープロセスからの**未完了のタスク** が表示されます。タスクをクリックして処理します。"
 
 #: ../../source/engine-guide/getting-started/_use-the-engine.rst:38
 msgid ""
-"As **guest** user you can now **Approve** or **Reject** the leave request"
+"As **guest** user you can now ** Approve** or ** Reject** the leave request"
 " from the **demo** user. By doing so you finish the process and there is "
 "no task left in your **Your Tasks** widget on the Dashboard."
 msgstr ""
-"**guest** ユーザーは、**demo** "
-"ユーザーからの休暇申請を**承認**または**却下**できます。これにより、プロセスを終了すると、ダッシュボードの**タスク**ウィジェットのタスクがなくなります。"
+"**guest** ユーザーは、** demo** "
+"ユーザーからの休暇申請を**承認** または**却下** できます。これにより、プロセスを終了すると、ダッシュボードの**タスク** ウィジェットのタスクがなくなります。"
 
 #: ../../source/engine-guide/getting-started/_use-the-engine.rst:41
 msgid ""
@@ -32171,7 +32171,7 @@ msgstr ""
 "Axon Ivy "
 "では、タスクはユーザーまたはロールに割り当てられる作業（プロセス）です。タスクがユーザーに割り当てられているか、タスクが割り当てられたロールをユーザーが持っている場合、ユーザーはタスクを処理できます。ユーザーがタスクに着手すると、そのタスクを処理できる他のユーザーのタスクリストからタスクが消えます。プロセスでは、並列タスクを定義できます。そのため、2"
 " 人以上のユーザーが同じプロセスインスタンスの異なるタスクを並行して処理する可能性があります。Axon Ivy "
-"では、プロセスインスタンスは**ケース**と呼ばれます。"
+"では、プロセスインスタンスは**ケース** と呼ばれます。"
 
 #: ../../source/engine-guide/getting-started/windows/configure.rst:2
 msgid "Configure the Engine (Windows)"
@@ -32180,7 +32180,7 @@ msgstr "エンジンの設定（Windows）"
 #: ../../source/engine-guide/getting-started/windows/configure.rst:10
 msgid ""
 "Shutdown the Axon Ivy Engine first by stopping it. Use "
-"**ControlCenter.exe** or **ControlCenterC.exe**."
+"**ControlCenter.exe** or ** ControlCenterC.exe**."
 msgstr ""
 "最初に Axon Ivy Engine を停止してシャットダウンします。**ControlCenter.exe** または "
 "**ControlCenterC.exe** を使用します。"
@@ -32215,7 +32215,7 @@ msgstr ""
 #: ../../source/engine-guide/getting-started/windows/configure.rst:35
 msgid ""
 "To configure the system database, use the:code:`config-db` command of the"
-" **EngineConfigCli** tool. Replace **yourdatabaseserver** with the "
+" **EngineConfigCli** tool. Replace ** yourdatabaseserver** with the "
 "hostname of the server running your DBMS system. Replace **dbuser** and "
 "**password** with the credentials of a technical database user with the "
 "permissions to create a new database and its structures (i.e., DDL "
@@ -32223,7 +32223,7 @@ msgid ""
 msgstr ""
 "システムデータベースを設定するには、**EngineConfigCli** ツールの :code:`config-db` "
 "コマンドを使用します。**yourdatabaseserver** を DBMS "
-"システムを実行しているサーバーのホスト名に置き換えます。**dbuser** と **password** "
+"システムを実行しているサーバーのホスト名に置き換えます。**dbuser** と ** password** "
 "をデータベースサーバーで新しいデータベースとその構造を作成する権限（DDL 権限）を持つデータベースユーザーの資格情報に置き換えます。"
 
 #: ../../source/engine-guide/getting-started/windows/configure.rst:41
@@ -32624,7 +32624,7 @@ msgid ""
 "number of your clients increases, you can add another Engine node to your"
 " Axon Ivy Engine Cluster."
 msgstr ""
-"**パフォーマンスとスケーラビリティ**：Axon Ivy Engine Enterprise Edition は Axon Ivy Engine"
+"**パフォーマンスとスケーラビリティ** ：Axon Ivy Engine Enterprise Edition は Axon Ivy Engine"
 " Standard Edition よりも多くのクライアントに対応できます。クライアントの数が増えた場合は、エンジンのノードを Axon Ivy "
 "Engine のクラスタに追加できます。"
 
@@ -32638,7 +32638,7 @@ msgid ""
 "Application Firewall, Database Server, File Share, OpenSearch server) "
 "provide high availability."
 msgstr ""
-"**高可用性**：Axon Ivy Engine Enterprise Edition インストレーションでは、1 "
+"**高可用性** ：Axon Ivy Engine Enterprise Edition インストレーションでは、1 "
 "つのノードがクラッシュしても、クライアントが稼働する他のノードへの影響はありません。しかしながら、Axon Ivy Engine "
 "の高い可用性が必要な場合は、エンジンが依存する他のすべてのコンポーネント（ロードバランサー、リバースプロキシ／ウェブアプリケーションファイアウォール、データベースサーバー、ファイルサーバー、OpenSearch"
 " サーバー）でも高い可用性を確保する必要があります。"
@@ -32646,11 +32646,11 @@ msgstr ""
 #: ../../source/engine-guide/integration/cluster/index.rst:23
 msgid ""
 "Compared to a single node setup, the cluster is a more **complex** "
-"system, has higher **hardware costs** and **license fees**: You need an "
+"system, has higher **hardware costs** and ** license fees**: You need an "
 ":ref:`enterprise-license`."
 msgstr ""
 "1 "
-"つのノードのセットアップと比較して、クラスタはより**複雑な**システムで、**ハードウェアコスト**と** イセンス料**が高くなり :ref"
+"つのノードのセットアップと比較して、クラスタはより**複雑な** システムで、**ハードウェアコスト** と** イセンス料** が高くなり :ref"
 ":`enterprise-license` が必要になります。"
 
 #: ../../source/engine-guide/integration/cluster/index.rst:27
@@ -32756,7 +32756,7 @@ msgid ""
 "be configured as follows:"
 msgstr ""
 "Axon Ivy Engine "
-"のクラスタは**スティッキーセッション**に対応しています。ロードバランサーは、すべてのリクエストをセッションから同じクラスタノードに転送する必要があります。クラスタノードが廃止された場合は、リクエストを別のクラスタノードに送信します。その結果、ユーザーは新しいセッションを取得することになり、置換されたセッションでの作業は失われます。"
+"のクラスタは**スティッキーセッション** に対応しています。ロードバランサーは、すべてのリクエストをセッションから同じクラスタノードに転送する必要があります。クラスタノードが廃止された場合は、リクエストを別のクラスタノードに送信します。その結果、ユーザーは新しいセッションを取得することになり、置換されたセッションでの作業は失われます。"
 
 #: ../../source/engine-guide/integration/cluster/load-balancer/index.rst:12
 msgid ""
@@ -33192,7 +33192,7 @@ msgid ""
 msgstr ""
 ":ref:`systemdb` ：Axon Ivy Engine "
 "には、ワークフローデータを格納するためのリレーショナルデータベース管理システムが必要です。Axon Ivy Engine "
-"は**システムデータベース**にデータを格納します。システムデータベースは、サポートされているデータベース管理システムにホストされた SQL "
+"は**システムデータベース** にデータを格納します。システムデータベースは、サポートされているデータベース管理システムにホストされた SQL "
 "データベースです。"
 
 #: ../../source/engine-guide/integration/opensearch/bundled.rst:4
@@ -33551,7 +33551,7 @@ msgid ""
 " well as the URL Rewrite and Application Request Routing (ARR) modules. "
 "Furthermore, it will enable the reverse proxy capabilities."
 msgstr ""
-"**IIS のセットアップ**では、IIS を含む必要なすべての機能と URL 書き換えモジュール、Application Request "
+"**IIS のセットアップ** では、IIS を含む必要なすべての機能と URL 書き換えモジュール、Application Request "
 "Routing（ARR）モジュールがインストールされます。さらに、リバースプロキシの機能が有効になります。"
 
 #: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:59
@@ -33612,7 +33612,7 @@ msgid ""
 " :code:`X-Forwarded-Proto` from IIS to the Axon Ivy Engine. The Axon Ivy "
 "Engine needs this information to generate correct URLs."
 msgstr ""
-"**IIS で SSL を終了**することで、IIS は Axon Ivy Engine を HTTPS で稼働させますが、IIS と Axon "
+"**IIS で SSL を終了** することで、IIS は Axon Ivy Engine を HTTPS で稼働させますが、IIS と Axon "
 "Ivy Engine の間の接続は HTTP のみであることから :ref:`この方法で IIS をセットアップする<reverse-proxy-"
 "terminate-ssl>` とを強くお勧めします。:code:`HTTP_X-Forwarded-Proto` という名前の新しい "
 ":guilabel:`IIS サーバー変数`が作成され、:code:`ivy-route-all` 書き換えルールで :code:`https` "
@@ -33631,7 +33631,7 @@ msgid ""
 "protected REST Services provided by the Axon Ivy Engine. If you don't "
 "need this you can manually disable it."
 msgstr ""
-"**SSO のセットアップ**では、 :ref:`シングルサインオン<single-sign-on>` を設定します。Windows "
+"**SSO のセットアップ** では、 :ref:`シングルサインオン<single-sign-on>` を設定します。Windows "
 "認証を有効にし、HTTP リクエストヘッダー :code:`X-Forwarded-User` "
 "と現在のユーザーをリクエストに追加します。リクエストは Axon Ivy Engine に転送されます。また、:code:`ivy.yaml` で"
 " Axon Ivy Engine  :ref:`シングルサインオンをアクティブにする<single-sign-"
@@ -33652,7 +33652,7 @@ msgid ""
 "SSL certificate there. Alternatively, you can generate a self-signed "
 "certificate to try out HTTPS."
 msgstr ""
-"**HTTPS での提供**はこのスクリプトでは処理されません。手動でセットアップする必要があります。SSL "
+"**HTTPS での提供** はこのスクリプトでは処理されません。手動でセットアップする必要があります。SSL "
 "証明書をインストールする必要がありますが、:guilabel:`サーバー証明書`セクションでサーバーレベルでこれを行うことができます。SSL "
 "証明書をインポートしてください。または、自己署名証明書を作成して、HTTPS を試すこともできます。"
 
@@ -33803,7 +33803,7 @@ msgid ""
 "to configure this properly depends on the setup."
 msgstr ""
 "リバースプロキシと Axon Ivy Engine の間の通信は :ref:`シングルサインオン<single-sign-"
-"on>` アクティブ化されている場合は特に、管理者**専用**とする（管理者に制限する）ことが非常に重要です。つまり、外部から "
+"on>` アクティブ化されている場合は特に、管理者**専用** とする（管理者に制限する）ことが非常に重要です。つまり、外部から "
 "8080、8443、8009 などのポートを使用して、Axon Ivy Engine "
 "と直接通信できないようにします。この設定方法はセットアップによって異なります。"
 
@@ -33887,13 +33887,13 @@ msgstr ""
 msgid ""
 "The **setup is less complicated**, because you don't have to configure "
 "SSL on the Axon Ivy Engine."
-msgstr "Axon Ivy Engine で SSL を設定する必要がないため、**セットアップは複雑ではありません**。"
+msgstr "Axon Ivy Engine で SSL を設定する必要がないため、**セットアップは複雑ではありません** 。"
 
 #: ../../source/engine-guide/integration/reverse-proxy/secure-setup/protocol.rst:21
 msgid ""
 "**Performance** will be increased, because the Axon Ivy Engine does not "
 "need to encrypt and decrypt data."
-msgstr "Axon Ivy Engine がデータを暗号化、復号化する必要がないため、**パフォーマンス**が向上します。"
+msgstr "Axon Ivy Engine がデータを暗号化、復号化する必要がないため、**パフォーマンス** が向上します。"
 
 #: ../../source/engine-guide/integration/reverse-proxy/secure-setup/protocol.rst:24
 msgid ""
@@ -34069,7 +34069,7 @@ msgstr ""
 
 #: ../../source/engine-guide/monitoring/engine-cockpit.rst:4
 msgid "The **Engine Cockpit** allows you to monitor your engine."
-msgstr "**エンジンコックピット**では、エンジンを監視できます。"
+msgstr "**エンジンコックピット** では、エンジンを監視できます。"
 
 #: ../../source/engine-guide/monitoring/engine-cockpit.rst:8
 msgid ""
@@ -34293,65 +34293,65 @@ msgstr "提供される情報の一例を以下のリストに示します。"
 msgid ""
 "**External Database** (connections, transactions, errors, execution "
 "times, etc.)"
-msgstr "**外部データベース**（接続、トランザクション、エラー、実行時間など）"
+msgstr "**外部データベース** （接続、トランザクション、エラー、実行時間など）"
 
 #: ../../source/engine-guide/monitoring/jmx.rst:101
 msgid "**Web Service** (calls, errors, execution time, etc.)"
-msgstr "**Web サービス**（呼び出し、エラー、実行時間など）"
+msgstr "**Web サービス** （呼び出し、エラー、実行時間など）"
 
 #: ../../source/engine-guide/monitoring/jmx.rst:107
 msgid "**REST Web Service** (calls, errors, execution time, slow calls, etc.)"
-msgstr "**REST Web サービス**（呼び出し、エラー、実行時間、遅い呼び出しなど）"
+msgstr "**REST Web サービス** （呼び出し、エラー、実行時間、遅い呼び出しなど）"
 
 #: ../../source/engine-guide/monitoring/jmx.rst:113
 msgid ""
 "**System Database** (connections, transactions, errors, execution time, "
 "etc.)"
-msgstr "**システムデータベース**（接続、トランザクション、エラー、実行時間など）"
+msgstr "**システムデータベース** （接続、トランザクション、エラー、実行時間など）"
 
 #: ../../source/engine-guide/monitoring/jmx.rst:119
 msgid "**HTTP Requests** (count, errors, execution time, etc.)"
-msgstr "**HTTP リクエスト**（リクエスト数、エラー、実行時間など）"
+msgstr "**HTTP リクエスト** （リクエスト数、エラー、実行時間など）"
 
 #: ../../source/engine-guide/monitoring/jmx.rst:125
 msgid ""
 "**Number of Sessions** (HTTP sessions, Axon Ivy sessions, license "
 "relevant sessions, etc.)"
-msgstr "**セッション数**（HTTP セッション、Axon Ivy セッション、ライセンス関連セッションなど）"
+msgstr "**セッション数** （HTTP セッション、Axon Ivy セッション、ライセンス関連セッションなど）"
 
 #: ../../source/engine-guide/monitoring/jmx.rst:132
 msgid "**Background jobs** (name, next execution time, etc.)"
-msgstr "**バックグラウンドジョブ**（名前、次の実行時間など）"
+msgstr "**バックグラウンドジョブ** （名前、次の実行時間など）"
 
 #: ../../source/engine-guide/monitoring/jmx.rst:140
 msgid ""
 "**Process Start Event Beans** (polls, executions, errors, execution time,"
 " etc.)"
-msgstr "**プロセス開始イベント Bean**（ポーリング、実行、エラー、実行時間など）"
+msgstr "**プロセス開始イベント Bean** （ポーリング、実行、エラー、実行時間など）"
 
 #: ../../source/engine-guide/monitoring/jmx.rst:146
 msgid ""
 "**Process Intermediate Event Beans** (polls, firings, errors, execution "
 "time, etc.)"
-msgstr "**プロセス中間イベント Bean**（ポーリング、発火、エラー、実行時間など）"
+msgstr "**プロセス中間イベント Bean** （ポーリング、発火、エラー、実行時間など）"
 
 #: ../../source/engine-guide/monitoring/jmx.rst:152
 msgid ""
 "**Application, Process Model and Process Model Version, Library "
 "information** (activity state, release state, name, description, etc.)"
-msgstr "**アプリケーション、プロセスモデル、プロセスモデルバージョン、ライブラリの情報**（アクティビティの状態、リリースの状態、名前、説明など）"
+msgstr "**アプリケーション、プロセスモデル、プロセスモデルバージョン、ライブラリの情報** （アクティビティの状態、リリースの状態、名前、説明など）"
 
 #: ../../source/engine-guide/monitoring/jmx.rst:160
 msgid ""
 "**Cluster, Cluster Nodes, and Cluster Communication information** "
 "(received and sent message, errors, execution time, etc.)"
-msgstr "**クラスタ、クラスタノード、クラスタの通信に関する情報**（受信／送信されたメッセージ、エラー、実行時間など）"
+msgstr "**クラスタ、クラスタノード、クラスタの通信に関する情報** （受信／送信されたメッセージ、エラー、実行時間など）"
 
 #: ../../source/engine-guide/monitoring/jmx.rst:167
 msgid ""
 "**Thread Pool information** (core, maximum and current pool size, active "
 "threads, queue size)"
-msgstr "**スレッドプール情報**（コア、最大／現在のプールサイズ、アクティブなスレッド、キューのサイズ）"
+msgstr "**スレッドプール情報** （コア、最大／現在のプールサイズ、アクティブなスレッド、キューのサイズ）"
 
 #: ../../source/engine-guide/monitoring/jmx.rst:175
 msgid "**System Database Cache**"
@@ -34698,7 +34698,7 @@ msgid ""
 "HTTP headers:"
 msgstr ""
 "HTTP ヘッダーでトレース ID を伝搬する外部のトレースツールを使用できます。その場合、Axon Ivy は指定されたトレース ID を "
-"**requestId** として再利用します。これにより、**requestId** "
+"**requestId** として再利用します。これにより、** requestId** "
 "を使用して、異なるシステムからのログエントリを集約できます。Axon Ivy Engine は以下の HTTP ヘッダーをサポートします。"
 
 #: ../../source/engine-guide/monitoring/tracing.rst:49
@@ -35317,13 +35317,13 @@ msgstr "エディション"
 
 #: ../../source/engine-guide/reference/axonivy-engine/license.rst:28
 msgid ""
-"Choose between **Standard Edition** and **Enterprise Edition**. If you "
+"Choose between **Standard Edition** and ** Enterprise Edition**. If you "
 "expect high loads or need increased reliability, you should look into the"
 " Enterprise Edition. It allows running the Axon Ivy Engine in a "
 ":ref:`cluster <cluster>`. The maximum number of nodes in the cluster is "
 "part of the license."
 msgstr ""
-"**Standard Edition** と **Enterprise Edition** "
+"**Standard Edition** と ** Enterprise Edition** "
 "から選択します。高負荷が予想される場合や、信頼性の向上が必要な場合は、Enterprise Edition を検討してください。Axon Ivy "
 "Engine を :ref:`クラスタ<cluster>` で実行できます。クラスタの最大ノード数はライセンスの一部です。"
 
@@ -35340,7 +35340,7 @@ msgid ""
 " user do not count as named users. All of this also applies to users on a"
 " cluster."
 msgstr ""
-"Axon Ivy Engine 内の登録ユーザーは**名前付きユーザー（NU）**と呼ばれます。これらのユーザーは Axon Ivy Engine"
+"Axon Ivy Engine 内の登録ユーザーは**名前付きユーザー（NU）** と呼ばれます。これらのユーザーは Axon Ivy Engine"
 " のアカウントを持ち、Axon Ivy Engine にログインできます。Axon Ivy Engine "
 "の各ユーザーは名前付きユーザーと見なされます。非アクティブ化されたユーザー、管理者、システムユーザーは、名前付きユーザーとしてカウントされません。クラスタのユーザーも同様です。"
 
@@ -35360,7 +35360,7 @@ msgid ""
 "as **concurrent users (CU)**. The Axon Ivy Engine counts the number of "
 "concurrent users as follows:"
 msgstr ""
-"Axon Ivy Engine で同時に作業するユーザーが**同時ユーザー（CU）**です。Axon Ivy Engine "
+"Axon Ivy Engine で同時に作業するユーザーが**同時ユーザー（CU）** です。Axon Ivy Engine "
 "は以下のように同時ユーザーの数をカウントします。"
 
 #: ../../source/engine-guide/reference/axonivy-engine/license.rst:53
@@ -35527,12 +35527,12 @@ msgid ""
 "configuration and without a productive license.  You can play with the "
 "Axon Ivy Engine. Try out the :dev-url:`Portal </market/portal>` and "
 ":ref:`Cockpit <engine-cockpit>`, deploy projects, etc. The username of "
-"the administrator in demo mode is **admin** and password **admin**."
+"the administrator in demo mode is **admin** and password ** admin**."
 msgstr ""
 "Axon Ivy Engine にはデモンストレーション用のデモモードが用意されています。デモモードでは、設定や本番用のライセンスなしで、Axon"
 " Ivy Engine をインストールして起動できます。Axon Ivy Engine を操作して、:dev-"
 "url:`ポータル</market/portal>` :ref:`コックピット<engine-"
-"cockpit>` 試したり、プロジェクトを展開したりすることができます。デモモードでの管理者のユーザー名は **admin**、パスワードは "
+"cockpit>` 試したり、プロジェクトを展開したりすることができます。デモモードでの管理者のユーザー名は **admin** 、パスワードは "
 "**admin** です。"
 
 #: ../../source/engine-guide/reference/axonivy-engine/modes.rst:31
@@ -35733,7 +35733,7 @@ msgid ""
 ":ref:`engine-cockpit-application-detail` for more information about the "
 "deployment dialog."
 msgstr ""
-"アプリケーションの新しいバージョンを展開するには、:guilabel:`展開` ボタンをクリックします。これにより、**展開ダイアログ**が開きます。展開ダイアログの詳細については、 :ref"
+"アプリケーションの新しいバージョンを展開するには、:guilabel:`展開` ボタンをクリックします。これにより、**展開ダイアログ** が開きます。展開ダイアログの詳細については、 :ref"
 ":`engine-cockpit-application-detail` 」を参照してください。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/applications.rst:26
@@ -35817,7 +35817,7 @@ msgid ""
 " **Free Days**. Free days can contain fixed dates, dates repeating every "
 "year and days relative to Easter."
 msgstr ""
-"カレンダーをクリックすると、そのカレンダーの詳細ビューにリダイレクトされます。設定は、**週の設定**と** き日**にグループ化されます。 "
+"カレンダーをクリックすると、そのカレンダーの詳細ビューにリダイレクトされます。設定は、**週の設定** と** き日** にグループ化されます。 "
 "空き日には、固定日、毎年繰り返される日付、イースターを基準にした日数を含めることができます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/configuration.rst:43
@@ -35867,7 +35867,7 @@ msgstr ""
 
 #: ../../source/engine-guide/reference/engine-cockpit/index.rst:6
 msgid "The **Engine Cockpit** is the application to administer your engine."
-msgstr "**エンジンコックピット**はエンジンを管理するアプリケーションです。"
+msgstr "**エンジンコックピット** はエンジンを管理するアプリケーションです。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/index.rst:10
 msgid "Opening the Cockpit"
@@ -35986,7 +35986,7 @@ msgstr "監視"
 msgid ""
 "The **Engine Cockpit** allows you to :ref:`monitor <monitoring>` your "
 "Axon Ivy Engine."
-msgstr "**エンジンコックピット**では、Axon Ivy Engine を :ref:`監視<monitoring>` できます。"
+msgstr "**エンジンコックピット** では、Axon Ivy Engine を :ref:`監視<monitoring>` できます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:9
 msgid "OS"
@@ -36010,32 +36010,32 @@ msgstr "**Java** ページでは、Axon Ivy Engine の Java（Java Virtual Machi
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:22
 msgid "**JVM**: CPU load, number of threads, loaded and unloaded classes"
-msgstr "**JVM**：CPU 負荷、スレッド数、ロード／アンロードされたクラス"
+msgstr "**JVM** ：CPU 負荷、スレッド数、ロード／アンロードされたクラス"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:23
 msgid "**Memory**: Heap and non-heap memory, garbage collection times"
-msgstr "**メモリ**：ヒープメモリ、非ヒープメモリ、ガベージコレクション時間"
+msgstr "**メモリ** ：ヒープメモリ、非ヒープメモリ、ガベージコレクション時間"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:24
 msgid "**Class Histogram**: Classes and their instances allocated on the heap"
-msgstr "**クラスヒストグラム**：ヒープに割り当てられられたクラスとそのインスタンス"
+msgstr "**クラスヒストグラム** ：ヒープに割り当てられられたクラスとそのインスタンス"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:25
 msgid "**Threads**: Threads and their CPU and user times"
-msgstr "**スレッド**：スレッドとその CPU 時間、ユーザー時間"
+msgstr "**スレッド** ：スレッドとその CPU 時間、ユーザー時間"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:26
 msgid ""
 "**Flight Recorder**: Start, stop and download `Java flight Recordings "
 "<https://docs.oracle.com/en/java/java-components/jdk-mission-control/>`_"
 msgstr ""
-"**Flight Recorder**：`Java Flight Recordder "
+"**Flight Recorder** ：`Java Flight Recordder "
 "<https://docs.oracle.com/en/java/java-components/jdk-mission-"
 "control/>`_ を始動、停止、ダウンロードします。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:27
 msgid "**MBeans**: :ref:`jmx` MBeans viewer"
-msgstr "**MBean**： :ref:`jmx` MBean ビューアー"
+msgstr "**MBean** ： :ref:`jmx` MBean ビューアー"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:34
 msgid "Class Histogram"
@@ -36056,7 +36056,7 @@ msgid ""
 "Memory Analyzer <https://www.eclipse.org/mat>`_ to further analyze the "
 "produced heap dump file."
 msgstr ""
-"**クラスヒストグラム**ビューには、現在ヒープに割り当てられているオブジェクトインスタンスを持つすべてのクラスが表示されます。ビューには、すべてのクラスのフィルタリング可能なリスト、割り当てられたインスタンスの数、それらのインスタンスが消費する割り当てメモリ（バイト）が表示されます。ビューを更新すると、インスタンスの最小数と最大数との差が表示されます。これにより、メモリリークを見つけることができます。クラスのインスタンスの数の"
+"**クラスヒストグラム** ビューには、現在ヒープに割り当てられているオブジェクトインスタンスを持つすべてのクラスが表示されます。ビューには、すべてのクラスのフィルタリング可能なリスト、割り当てられたインスタンスの数、それらのインスタンスが消費する割り当てメモリ（バイト）が表示されます。ビューを更新すると、インスタンスの最小数と最大数との差が表示されます。これにより、メモリリークを見つけることができます。クラスのインスタンスの数の"
 " Δ Min が常に増加し、Δ Max "
 "が常にゼロの場合は、メモリリークが発生しています。メモリリークを分析するため、さらに詳細な情報が必要な場合は、:guilabel:`ヒープメモリをダンプ`ボタンをクリックして、ヒープメモリのダンプを作成、ダウンロードできます。`Eclipse"
 " Memory Analyzer "
@@ -36077,9 +36077,9 @@ msgid ""
 "**Save Thread Dump** icon on the top right to create a thread dump and "
 "download it to a file."
 msgstr ""
-"**スレッド**ビューには、すべてのスレッドの概要が表示されます。スレッドごとに消費された CPU "
+"**スレッド** ビューには、すべてのスレッドの概要が表示されます。スレッドごとに消費された CPU "
 "時間とユーザー時間、状態、プロパティが表示されます。2 "
-"つのスレッドがデッドロック状態にある場合、スレッドの**状態**が赤色になり、警告アイコンとデッドロックに関する詳細が表示されます。スレッドをクリックして、現在のスタックトレースなど、スレッドに関する詳細を確認できます。右上にある**スレッドダンプを保存**アイコンをクリックして、スレッドダンプを作成し、ファイルにダウンロードします。"
+"つのスレッドがデッドロック状態にある場合、スレッドの**状態** が赤色になり、警告アイコンとデッドロックに関する詳細が表示されます。スレッドをクリックして、現在のスタックトレースなど、スレッドに関する詳細を確認できます。右上にある**スレッドダンプを保存** アイコンをクリックして、スレッドダンプを作成し、ファイルにダウンロードします。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:57
 msgid "Java Flight Recorder"
@@ -36134,27 +36134,27 @@ msgstr "エンジン"
 msgid ""
 "The **Engine** pages allow you to monitor some critical indicators of "
 "your Axon Ivy Engine:"
-msgstr "**エンジン**のページでは、Axon Ivy Engine の重要な指標を監視できます。"
+msgstr "**エンジン** のページでは、Axon Ivy Engine の重要な指標を監視できます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:84
 msgid "**Notifications**: Overview of all user notifications"
-msgstr "**通知**：すべてのユーザー通知の概要"
+msgstr "**通知** ：すべてのユーザー通知の概要"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:85
 msgid "**Sessions**: Overview of open user sessions"
-msgstr "**セッション**：オープンなユーザーセッションの概要"
+msgstr "**セッション** ：オープンなユーザーセッションの概要"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:86
 msgid "**Jobs**: Jobs that are periodically executed and their metrics"
-msgstr "**ジョブ**：定期的に実行されるジョブとそのメトリクス"
+msgstr "**ジョブ** ：定期的に実行されるジョブとそのメトリクス"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:87
 msgid "**Cache**: System database caches and their metrics"
-msgstr "**キャッシュ**：システムデータベースキャッシュとそのメトリクス"
+msgstr "**キャッシュ** ：システムデータベースキャッシュとそのメトリクス"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:88
 msgid "**Health**: Health messages and checks"
-msgstr "**ヘルス**：ヘルスメッセージとヘルスチェック"
+msgstr "**ヘルス** ：ヘルスメッセージとヘルスチェック"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:94
 msgid "Notifications"
@@ -36168,7 +36168,7 @@ msgid ""
 "channels. By :ref:`clicking <engine-cockpit-notification-detail>` on a "
 "notification you can see more details."
 msgstr ""
-"**通知**ビューには、すべてのユーザー通知の概要が表示されます。Axon Ivy Engine "
+"**通知** ビューには、すべてのユーザー通知の概要が表示されます。Axon Ivy Engine "
 "は、通知のサブスクリプションの設定に基づいて、さまざまな通知を設定された通知チャネルに送信します。通知 :ref:`クリック<engine-"
 "cockpit-notification-detail>` て、詳細を表示できます。"
 
@@ -36193,7 +36193,7 @@ msgid ""
 "The **Sessions** view gives you an overview of all open user sessions. "
 "Sessions can be destroyed and you can also see the reason for open "
 "sessions, especially in the case of a session leak."
-msgstr "**セッション**ビューには、すべてのオープンなユーザーセッションの概要が表示されます。セッションリークが発生した場合は特に、セッションを破棄し、オープンなセッションの理由を確認できます。"
+msgstr "**セッション** ビューには、すべてのオープンなユーザーセッションの概要が表示されます。セッションリークが発生した場合は特に、セッションを破棄し、オープンなセッションの理由を確認できます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:131
 msgid "Jobs"
@@ -36222,7 +36222,7 @@ msgid ""
 "The **Cache** view displays a table with all system database caches and "
 "their metrics. The caches reduce the number of system database read "
 "accesses."
-msgstr "**キャッシュ**ビューには、すべてのシステムデータベースキャッシュとそのメトリクスの表が表示されます。キャッシュにより、システムデータベースの読み取りアクセスの回数を減らします。"
+msgstr "**キャッシュ** ビューには、すべてのシステムデータベースキャッシュとそのメトリクスの表が表示されます。キャッシュにより、システムデータベースの読み取りアクセスの回数を減らします。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:149
 msgid ""
@@ -36240,7 +36240,7 @@ msgstr ""
 msgid ""
 "The **Health** view displays a table with the current :ref:`health "
 "messages <health>`."
-msgstr "**ヘルス**ビューには、現在の :ref:`ヘルスメッセージ<health>` の表が表示されます。"
+msgstr "**ヘルス** ビューには、現在の :ref:`ヘルスメッセージ<health>` の表が表示されます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:164
 msgid ""
@@ -36270,19 +36270,19 @@ msgid ""
 "You see when a check will be executed next. Use the :guilabel:`Disable` "
 "and :guilabel:`Enable` buttons to disable or enable a check. With the "
 ":guilabel:`Run check now` button you can immediately execute a check."
-msgstr "**ヘルスチェック**ビューには、すべてのヘルスチェックのリストが表示されます。次にチェックが実行される日時が表示されます。:guilabel:`無効`ボタンと:guilabel:`有効`ボタンを使用して、チェックを無効または有効にします。:guilabel:`今すぐチェックを実行`ボタンを使用して、すぐにチェックを実行できます。"
+msgstr "**ヘルスチェック** ビューには、すべてのヘルスチェックのリストが表示されます。次にチェックが実行される日時が表示されます。:guilabel:`無効`ボタンと:guilabel:`有効`ボタンを使用して、チェックを無効または有効にします。:guilabel:`今すぐチェックを実行`ボタンを使用して、すぐにチェックを実行できます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:188
 msgid "**Documents**: Workflow and case documents"
-msgstr "**ドキュメント**：ワークフローとケースのドキュメント"
+msgstr "**ドキュメント** ：ワークフローとケースのドキュメント"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:189
 msgid "**Start Events**: Process start events and their metrics"
-msgstr "**開始イベント**：プロセス開始イベントとそのメトリクス"
+msgstr "**開始イベント** ：プロセス開始イベントとそのメトリクス"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:190
 msgid "**Intermediate Events**: Process intermediate events and their metrics"
-msgstr "**中間イベント**：プロセス中間イベントとそのメトリクス"
+msgstr "**中間イベント** ：プロセス中間イベントとそのメトリクス"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:193
 msgid "Documents"
@@ -36292,7 +36292,7 @@ msgstr "ドキュメント"
 msgid ""
 "The **Documents** view gives you an overview of documents attached to a "
 "case or workflow documents."
-msgstr "**ドキュメント**ビューには、ケースまたはワークフローのドキュメントに添付されているドキュメントの概要が表示されます。"
+msgstr "**ドキュメント** ビューには、ケースまたはワークフローのドキュメントに添付されているドキュメントの概要が表示されます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:206
 msgid ""
@@ -36304,7 +36304,7 @@ msgid ""
 "start and stop or schedule the execution of the poll method of a start "
 "event."
 msgstr ""
-"**開始イベント**ビューには、すべてのプロセス開始イベントの表が表示されます。表には、開始イベントの名前、説明、リクエストパスが表示されます。また、次回の"
+"**開始イベント** ビューには、すべてのプロセス開始イベントの表が表示されます。表には、開始イベントの名前、説明、リクエストパスが表示されます。また、次回の"
 " poll "
 "メソッドの呼び出し日時、開始イベントがプロセスを開始した頻度（:guilabel:`実行`）、失敗した回数（:guilabel:`エラー`）も表示されます。開始イベントの"
 " poll メソッドの実行を開始、停止したり、スケジュールできます。"
@@ -36326,7 +36326,7 @@ msgid ""
 "(:guilabel:`Errors`). You can start and stop or schedule the execution of"
 " the poll method of a intermediate event."
 msgstr ""
-"**中間イベント**ビューには、すべてのプロセス中間イベントの表が表示されます。表には、中間イベントの名前、説明、リクエストパスが表示されます。また、次回の"
+"**中間イベント** ビューには、すべてのプロセス中間イベントの表が表示されます。表には、中間イベントの名前、説明、リクエストパスが表示されます。また、次回の"
 " poll "
 "メソッドの呼び出し日時、開始イベントがプロセスを開始した頻度（:guilabel:`実行`）、失敗した回数（:guilabel:`エラー`）も表示されます。中間イベントの"
 " poll メソッドの実行を開始、停止したり、スケジュールできます。"
@@ -36346,19 +36346,19 @@ msgstr "パフォーマンス"
 msgid ""
 "The **Performance** pages allow you to monitor performance indicators of "
 "your Axon Ivy Engine:"
-msgstr "**パフォーマンス**のページでは、Axon Ivy Engine のパフォーマンス指標を監視できます。"
+msgstr "**パフォーマンス** のページでは、Axon Ivy Engine のパフォーマンス指標を監視できます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:243
 msgid "**Process Execution**: Execution times of process elements"
-msgstr "**プロセスの実行**：プロセス要素の実行時間"
+msgstr "**プロセスの実行** ：プロセス要素の実行時間"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:244
 msgid "**Slow Requests**: Analyze slow requests and their causes"
-msgstr "**遅いリクエスト**：遅いリクエストとその原因を分析"
+msgstr "**遅いリクエスト** ：遅いリクエストとその原因を分析"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:245
 msgid "**Traffic Graph**: Overview of the inbound and outbound traffic"
-msgstr "**トラフィックグラフ**：インバウンドトラフィックとアウトバウンドトラフィックの概要"
+msgstr "**トラフィックグラフ** ：インバウンドトラフィックとアウトバウンドトラフィックの概要"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:248
 msgid "Process Execution"
@@ -36368,7 +36368,7 @@ msgstr "プロセスの実行"
 msgid ""
 "The **Process Execution** view allows you to activate and analyze the "
 ":ref:`process-element-performance` statistic."
-msgstr "**プロセスの実行**ビューでは、`process-element-performance`の統計をアクティブにして分析できます。"
+msgstr "**プロセスの実行** ビューでは、`process-element-performance`の統計をアクティブにして分析できます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:252
 msgid ""
@@ -36401,7 +36401,7 @@ msgid ""
 ":ref:`tracing`. If activated every request is traced. The fifty slowest "
 "requests will be displayed in this view."
 msgstr ""
-"**遅いリクエスト**ビューでは、 :ref:`tracing` をアクティブにして分析できます。アクティブにした場合、すべてのリクエストがトレースされます。このビューには"
+"**遅いリクエスト** ビューでは、 :ref:`tracing` をアクティブにして分析できます。アクティブにした場合、すべてのリクエストがトレースされます。このビューには"
 " 50 件の遅いリクエストが表示されます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:270
@@ -36433,7 +36433,7 @@ msgid ""
 ":`engine-cockpit-monitor-slow-requests` you have to activate "
 ":ref:`tracing` to get useful data."
 msgstr ""
-"**トラフィックグラフ**ビューには、Axon Ivy Engine "
+"**トラフィックグラフ** ビューには、Axon Ivy Engine "
 "のインバンド通信チャネルとアウトバウンド通信チャネルの概要が表示されます。通信チャネルのリクエスト数が増えると、表示幅が広くなります。色は応答時間を反映しています。緑色は速い応答時間を意味し、赤色は他の通信チャネルに比べて遅い応答時間を意味します。通信リンクのソースまたはターゲットの色は、エラーが発生しているかどうかを示します。通信リンクのソースまたはターゲットの上にマウスカーソルを置くと、詳細を確認できます。 :ref"
 ":`engine-cockpit-monitor-slow-"
 "requests` と同様、有用なデータを得るには、 :ref:`tracing` をアクティブにする必要があります。"
@@ -36450,7 +36450,7 @@ msgid ""
 " hide the log file details. If you want to look at the logs of an "
 "different day, you can change the date at the top right."
 msgstr ""
-"**ログ**ビューには、現在のエンジンのログファイル（:file:`console.log`、:file:`config.log`、:file:`deprecation.log`、:file:`ivy.log`、:file:`usersynch.log`）が表示されます。:guilabel:`+`"
+"**ログ** ビューには、現在のエンジンのログファイル（:file:`console.log`、:file:`config.log`、:file:`deprecation.log`、:file:`ivy.log`、:file:`usersynch.log`）が表示されます。:guilabel:`+`"
 " をクリックするとログファイルの詳細が表示され、:guilabel:`-` "
 "をクリックすると非表示になります。別の日のログを表示したい場合は、右上で日付を変更できます。"
 
@@ -36463,35 +36463,35 @@ msgstr "サービス"
 msgid ""
 "The **Services** pages allows you to monitor some critical indicators of "
 "external services your Axon Ivy Engine communicates with:"
-msgstr "**サービス**のページでは、Axon Ivy Engine が通信する外部サービスの重要な指標を監視できます。"
+msgstr "**サービス** のページでは、Axon Ivy Engine が通信する外部サービスの重要な指標を監視できます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:309
 msgid "**Email**: Number of mails sent, execution time to send mails."
-msgstr "**メール**：送信メール数、メール送信の実行時間"
+msgstr "**メール** ：送信メール数、メール送信の実行時間"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:310
 msgid ""
 "**System Database**: Number of open and used connections, number of "
 "transactions and errors, transaction processing time."
-msgstr "**システムデータベース**：オープンな接続数と使用接続数、トランザクション数とエラー数、トランザクション処理時間"
+msgstr "**システムデータベース** ：オープンな接続数と使用接続数、トランザクション数とエラー数、トランザクション処理時間"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:311
 msgid ""
 "**Databases**: Number of open and used connections, number of queries and"
 " errors, query execution time of the selected database."
-msgstr "**データベース**：選択されたデータベースのオープンな接続数と使用接続数、クエリ数とエラー数、クエリの実行時間"
+msgstr "**データベース** ：選択されたデータベースのオープンな接続数と使用接続数、クエリ数とエラー数、クエリの実行時間"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:312
 msgid ""
 "**Web Services**: Number of calls and errors, execution time of the "
 "selected web service."
-msgstr "**Web サービス**：選択された Web サービスの呼び出し数とエラー数、実行時間"
+msgstr "**Web サービス** ：選択された Web サービスの呼び出し数とエラー数、実行時間"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:313
 msgid ""
 "**REST Clients**: Number of open and used connections, Number of calls "
 "and errors, execution time of the selected REST client."
-msgstr "**REST クライアント**：選択された REST クライアントのオープンな接続数と使用接続数、呼び出し数とエラー数、実行時間"
+msgstr "**REST クライアント** ：選択された REST クライアントのオープンな接続数と使用接続数、呼び出し数とエラー数、実行時間"
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:315
 msgid ""
@@ -36662,7 +36662,7 @@ msgid ""
 " the user manually in the Axon Ivy Engine, independent of the class of "
 "the security system, you can also change the settings."
 msgstr ""
-"**ユーザーの詳細**ビューには、ユーザーの設定が表示されます。Axon Ivy Engine "
+"**ユーザーの詳細** ビューには、ユーザーの設定が表示されます。Axon Ivy Engine "
 "でユーザーを手動で追加した場合、セキュリティシステムのクラスにかかわらず、設定も変更できます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/security.rst:109
@@ -36836,7 +36836,7 @@ msgid ""
 "view. If a role has child roles, the tree shows a ``>`  icon, which can "
 "be expanded by clicking on it."
 msgstr ""
-"**ロール**ページには、セキュリティシステムごとにすべてのロールがツリー表示されます。ビューの一番上にあるタブをクリックして、セキュリティシステムを切り替えることができます。ロールに子ロールが存在する場合は、ツリーに"
+"**ロール** ページには、セキュリティシステムごとにすべてのロールがツリー表示されます。ビューの一番上にあるタブをクリックして、セキュリティシステムを切り替えることができます。ロールに子ロールが存在する場合は、ツリーに"
 " ``>`  アイコンが表示され、アイコンをクリックすると展開されます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/security.rst:183
@@ -36851,7 +36851,7 @@ msgstr "ロールの詳細"
 msgid ""
 "The **Role Detail** view lets you see role information and change role "
 "settings."
-msgstr "**ロールの詳細**ビューでは、ロールの情報を表示し、ロールの設定を変更できます。"
+msgstr "**ロールの詳細** ビューでは、ロールの情報を表示し、ロールの設定を変更できます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/security.rst:195
 msgid ""
@@ -37117,7 +37117,7 @@ msgstr "管理者の変更は、エンジンの再起動後に有効になりま
 msgid ""
 "In the **System Database** page you to manage the system database "
 "configuration. Any changes are stored in the :ref:`ivy-yaml` file."
-msgstr "**システムデータベース**ページでは、システムデータベースの設定を管理できます。 変更は :ref:`ivy-yaml` ファイルに保存されます。"
+msgstr "**システムデータベース** ページでは、システムデータベースの設定を管理できます。 変更は :ref:`ivy-yaml` ファイルに保存されます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/system.rst:31
 msgid ""
@@ -37152,7 +37152,7 @@ msgid ""
 " use. The number of rows for tables and cardinality for indices gives you"
 " an idea of how much data is stored. The fragmentation gives you an "
 "indication if a reorganization of your database is recommended."
-msgstr "システムデータベースに関する情報が必要な場合は、:guilabel:`情報`ボタンをクリックします。**システムデータベースの情報**ページが開き、データベース、ドライバ、表、トリガー、インデックスに関する情報が表示されます。データベース、表、インデックスが使用するディスク容量を確認できます。表の行数とインデックスのカーディナリティから、格納されているデータの量を把握できます。断片化の有無を確認することで、データベースの再編成が必要かどうかが分かります。"
+msgstr "システムデータベースに関する情報が必要な場合は、:guilabel:`情報`ボタンをクリックします。**システムデータベースの情報** ページが開き、データベース、ドライバ、表、トリガー、インデックスに関する情報が表示されます。データベース、表、インデックスが使用するディスク容量を確認できます。表の行数とインデックスのカーディナリティから、格納されているデータの量を把握できます。断片化の有無を確認することで、データベースの再編成が必要かどうかが分かります。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/system.rst:59
 msgid ""
@@ -37161,7 +37161,7 @@ msgid ""
 " side you have a life overview of your active sessions with the ability "
 "to kill sessions."
 msgstr ""
-"**ライセンス**ビューでは、ライセンスをアップロードし、更新できます。 "
+"**ライセンス** ビューでは、ライセンスをアップロードし、更新できます。 "
 "有効なライセンスがある場合、そのライセンスに関するすべての情報が表に表示されます。右側には、アクティブなセッションの概要が表示され、セッションを強制終了できます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/system.rst:69
@@ -37175,18 +37175,18 @@ msgid ""
 " you all the headers of the current request and how the engine generates "
 "some URLs."
 msgstr ""
-"**ウェブサーバー**ビューでは、Tomcat "
+"**ウェブサーバー** ビューでは、Tomcat "
 "コネクタやリバースプロキシサーバーの設定を素早く変更できます。また、データパネルには、現在のリクエストのすべてのヘッダーとエンジンの URL "
 "の作成方法が表示されます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/system.rst:75
 msgid ""
 "You may also get some messages here. These appear if the URL of your "
-"browser and the **external base URL** or the configured **base URL** do "
+"browser and the **external base URL** or the configured ** base URL** do "
 "not match. If this is the case please refer to how to properly set up a "
 ":ref:`reverse proxy <reverse-proxy>`."
 msgstr ""
-"また、いくつかのメッセージもここに表示されます。ブラウザの URL と**外部のベース URL** または設定された**ベース URL** "
+"また、いくつかのメッセージもここに表示されます。ブラウザの URL と**外部のベース URL** または設定された** ベース URL** "
 "が一致しない場合にメッセージが表示されます。メッセージが表示された場合は :ref:`リバースプロキシ<reverse-"
 "proxy>` 正しいセットアップ方法を参照してください。"
 
@@ -37201,7 +37201,7 @@ msgid ""
 " If you want to edit an existing configuration, click on the "
 ":guilabel:`Pencil` button. Clicking :guilabel:`More` allows you to reset "
 "a configuration setting or view the complete configuration file."
-msgstr "**システム設定**ページには、すべてのエンジンの設定の概要が表示されます。灰色の設定は初期値を表しています。既存の設定を編集したい場合は、:guilabel:`鉛筆`ボタンをクリックします。:guilabel:`詳細`をクリックして、設定をリセットしたり、設定ファイルを表示できます。"
+msgstr "**システム設定** ページには、すべてのエンジンの設定の概要が表示されます。灰色の設定は初期値を表しています。既存の設定を編集したい場合は、:guilabel:`鉛筆`ボタンをクリックします。:guilabel:`詳細`をクリックして、設定をリセットしたり、設定ファイルを表示できます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/system.rst:95
 msgid ""
@@ -37486,25 +37486,25 @@ msgid ""
 "**Validation**: keys used within the YAML files are validated against the"
 " official schema. So invalid values are being blamed with a warning "
 "marker."
-msgstr "**検証**：YAML ファイル内で使用されるキーを公式なスキーマと比較して検証します。無効な値には警告マーカーが付けられます。"
+msgstr "**検証** ：YAML ファイル内で使用されるキーを公式なスキーマと比較して検証します。無効な値には警告マーカーが付けられます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/system.rst:242
 msgid ""
 "**Completion**: by pressing `CTRL+Space` the context completor helps you "
 "to identify and select valid configuration values or keys."
-msgstr "**完了**：`CTRL + Space` を押して、コンテキストコンプリーターで有効な設定値やキーを特定し、選択できます。"
+msgstr "**完了** ：`CTRL + Space` を押して、コンテキストコンプリーターで有効な設定値やキーを特定し、選択できます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/system.rst:243
 msgid ""
 "**Help**: by hovering over keys you get context-specific documentation "
 "right where you are editing."
-msgstr "**ヘルプ**：キーの上にマウスカーソルを置いて、コンテキスト固有のドキュメントをその場で開くことができます。"
+msgstr "**ヘルプ** ：キーの上にマウスカーソルを置いて、コンテキスト固有のドキュメントをその場で開くことができます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/system.rst:244
 msgid ""
 "**Formatting:** YAML content has strict formatting rules, and the editor "
 "takes care that whitespace indents are correct and in effect."
-msgstr "**フォーマット：**YAML のコンテンツには厳格なフォーマットルールがあり、エディターは、空白インデントが正しく、有効になるように処理します。"
+msgstr "**フォーマット：** YAML のコンテンツには厳格なフォーマットルールがあり、エディターは、空白インデントが正しく、有効になるように処理します。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/system.rst:246
 msgid ""
@@ -37520,7 +37520,7 @@ msgid ""
 "nodes and a detail view dialog if you click on one of these node."
 msgstr ""
 ":ref:`license-"
-"edition` のライセンスでエンジンが動作している場合、 :ref:`クラスタ` を定義できます。エンジンコックピットのナビゲーションメニューに［**クラスタ**］が表示されます。実行中のノードの概要ページと、いずれかのノードをクリックした場合は詳細ビューのダイアログが表示されます。"
+"edition` のライセンスでエンジンが動作している場合、 :ref:`クラスタ` を定義できます。エンジンコックピットのナビゲーションメニューに［**クラスタ** ］が表示されます。実行中のノードの概要ページと、いずれかのノードをクリックした場合は詳細ビューのダイアログが表示されます。"
 
 #: ../../source/engine-guide/reference/engine-config-cli.rst:4
 msgid "EngineConfigCli"
@@ -37708,10 +37708,10 @@ msgstr ""
 msgid ""
 "For the usage of this tool, you will need an administrator user account. "
 "If you run in :ref:`demo-mode` the name of the default administrator user"
-" is **admin** and the password is **admin** too."
+" is **admin** and the password is ** admin** too."
 msgstr ""
 "このツールを使用するには、管理者ユーザーアカウントが必要です。 :ref:`demo-mode` で実行する場合、デフォルトの管理者ユーザーの名前は "
-"**admin** で、パスワードも **admin** です。"
+"**admin** で、パスワードも ** admin** です。"
 
 #: ../../source/engine-guide/reference/setup-wizard.rst:47
 msgid "In the :guilabel:`License` step you have to upload a valid license:"
@@ -37820,12 +37820,12 @@ msgstr ":ref:`Postgre SQL <systemdb-postgres>`"
 #: ../../source/engine-guide/reference/setup-wizard.rst:114
 msgid ""
 "In the second part you need to define you connection settings. These "
-"depend on the chosen **database system** and **JDBC driver**. Click on "
+"depend on the chosen **database system** and ** JDBC driver**. Click on "
 "the database system links above to find information about how to "
 "configure the connection settings. The applied db user needs the "
 "following privileges:"
 msgstr ""
-"2 番目に、接続設定を定義する必要があります。これらは選択した**データベースシステム**と **JDBC "
+"2 番目に、接続設定を定義する必要があります。これらは選択した**データベースシステム** と **JDBC "
 "ドライバ**によって異なります。上にあるデータベースシステムのリンクをクリックすると、接続設定の方法に関する情報が表示されます。適用されるデータベースユーザーには以下の権限が必要です。"
 
 #: ../../source/engine-guide/reference/setup-wizard.rst:119
@@ -37881,9 +37881,9 @@ msgid ""
 "**creation dialog**. See :ref:`systemdb` to find what additional "
 "information is necessary for the chosen database system."
 msgstr ""
-"システムデータベースが存在しない場合、:guilabel:`データベースを作成` ボタンを使用して、新しい**システムデータベース**を作成します。"
+"システムデータベースが存在しない場合、:guilabel:`データベースを作成` ボタンを使用して、新しい**システムデータベース** を作成します。"
 "新しいデータベースの作成中は、設定された接続設定が使用されます。"
-"追加の情報が必要になる場合があります。追加情報は、**作成ダイアログ**で定義する必要があります。"
+"追加の情報が必要になる場合があります。追加情報は、**作成ダイアログ** で定義する必要があります。"
 "選択したデータベースシステムで必要な追加情報については、「 :ref:`systemdb` 」を参照してください。"
 
 #: ../../source/engine-guide/reference/setup-wizard.rst:146
@@ -38045,9 +38045,9 @@ msgstr "**!** 重大：重大なセキュリティの問題が解決されてい
 
 #: ../../source/engine-guide/security/axonivy-engine/security-issues.rst:14
 msgid ""
-"**\\*** Recommended: We recommend to install this hotfix because it fixes"
+"**\\** * Recommended: We recommend to install this hotfix because it fixes"
 " a stability issue."
-msgstr "**\\*** 推奨：安定性の問題が解決されているため、このホットフィックスをインストールすることを推奨します。"
+msgstr "**\\** * 推奨：安定性の問題が解決されているため、このホットフィックスをインストールすることを推奨します。"
 
 #: ../../source/engine-guide/security/axonivy-engine/security-issues.rst:17
 msgid ""
@@ -38200,7 +38200,7 @@ msgid ""
 "Transport-Security (MDN) <https://developer.mozilla.org/en-"
 "US/docs/Web/HTTP/Headers/Strict-Transport-Security>`_."
 msgstr ""
-"**Strict-Transport-Security**：HTTPS "
+"**Strict-Transport-Security** ：HTTPS "
 "からのみエンジンにアクセスする場合は、このヘッダーを設定します。詳細については、`Strict-Transport-Security "
 "<https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-"
 "Transport-Security>`_ を参照してください。 :ref:`web-xml` にあらかじめ設定されている ` HTTP "
@@ -38341,9 +38341,9 @@ msgstr ""
 
 #: ../../source/engine-guide/security/index.rst:16
 msgid ""
-"Run the Axon Ivy Engine with a **dedicated system user** and **database "
+"Run the Axon Ivy Engine with a **dedicated system user** and ** database "
 "users with limited access rights**."
-msgstr "**専用のシステムユーザー**と** クセス権限が制限されたデータベースユーザー**で Axon Ivy Engine を実行してください。"
+msgstr "**専用のシステムユーザー** と** クセス権限が制限されたデータベースユーザー** で Axon Ivy Engine を実行してください。"
 
 #: ../../source/engine-guide/security/index.rst:17
 msgid ""
@@ -38351,7 +38351,7 @@ msgid ""
 "as :ref:`security-relevant <engine-security-issues>`."
 msgstr ""
 ":ref:`security-relevant <engine-security-issues>` とマークされたすべてのアップデートが適用された "
-"**Axon Ivy Engine の最新**メジャーバージョンを実行してください。"
+"**Axon Ivy Engine の最新** メジャーバージョンを実行してください。"
 
 #: ../../source/engine-guide/security/index.rst:19
 msgid ""
@@ -38360,14 +38360,14 @@ msgid ""
 msgstr "必ず :ref:`HTTPS <reverse-proxy-secure-https>` （リバースプロキシで設定）でユーザーとやり取りしてください。"
 
 #: ../../source/engine-guide/security/index.rst:20
-msgid "**Document** and **automate** the server setup."
-msgstr "サーバーセットアップを**ドキュメント化**し、**自動化**してください。"
+msgid "**Document** and ** automate** the server setup."
+msgstr "サーバーセットアップを**ドキュメント化** し、**自動化** してください。"
 
 #: ../../source/engine-guide/security/index.rst:21
 msgid ""
 "Ensure that the operations provider performs **daily backups** (database,"
 " relevant engine folders) which can also be restored..."
-msgstr "オペレーションプロバイダーが復元可能な**日常バックアップ**（データベース、関連するエンジンのフォルダー）を実行するようにしてください。"
+msgstr "オペレーションプロバイダーが復元可能な**日常バックアップ** （データベース、関連するエンジンのフォルダー）を実行するようにしてください。"
 
 #: ../../source/engine-guide/security/index.rst:31
 msgid ""
@@ -38598,9 +38598,9 @@ msgstr ""
 #: ../../source/neo-designer/localsetup.rst:17
 msgid ""
 "In order to work with the NEO Designer you have to login with a "
-"predefined default user **neo** and password **neo**"
+"predefined default user **neo** and password ** neo**"
 msgstr ""
-"NEO Designer を使用するには、あらかじめ定義されたデフォルトのユーザー名 **neo** とパスワード **neo** "
+"NEO Designer を使用するには、あらかじめ定義されたデフォルトのユーザー名 **neo** とパスワード ** neo** "
 "でログインする必要があります。"
 
 #: ../../source/neo-designer/serversetup.rst:4
@@ -38630,7 +38630,7 @@ msgid ""
 ":`reverse-proxy`."
 msgstr ""
 "NEO Designer を使用するには、ユーザーは自身を認証する必要があります。NEO "
-"ユーザーはエンジンの**デフォルト**のセキュリティシステムで管理されます。外部の ID "
+"ユーザーはエンジンの**デフォルト** のセキュリティシステムで管理されます。外部の ID "
 "プロバイダーにアクセスするには、デフォルトのセキュリティシステムを設定する必要があります。 エンジンガイドの :ref:`設定"
 "<configuration-security-system>` の章を参照してください。 :ref:`reverse-proxy` で Axon "
 "Ivy Engine へのアクセスを制御することを強く推奨します。"
@@ -38914,7 +38914,7 @@ msgstr ""
 #~ " node."
 #~ msgstr ""
 #~ "マスタークラスタノードの起動中のみ、Axon Ivy "
-#~ "プロジェクトの情報がシステムデータベースに展開されます。スレーブクラスタノードの起動時に、システムデータベースを更新**せずに**、プロジェクトファイルが正しい場所にコピーされます。例えば、Axon"
+#~ "プロジェクトの情報がシステムデータベースに展開されます。スレーブクラスタノードの起動時に、システムデータベースを更新**せずに** 、プロジェクトファイルが正しい場所にコピーされます。例えば、Axon"
 #~ " Ivy プロジェクトに追加された新しいロールは、マスタークラスタノードの起動時のみ、システムデータベースに作成されます。"
 
 #~ msgid ""
@@ -39146,7 +39146,7 @@ msgstr ""
 #~ "は、古いエンジンバージョン向けに作成されたワークフローアプリケーションを実行できます。それでも、古い Primefaces"
 #~ " のバージョン、Java ライブラリ、Axon Ivy Engine の内部 "
 #~ "Java "
-#~ "クラスなど、サポートされなくなったインフラストラクチャにプロジェクトが依存している可能性があるため、**テスト環境で新しいバージョンへの移行をシミュレートする**ことを推奨します。とはいえ、パブリック"
+#~ "クラスなど、サポートされなくなったインフラストラクチャにプロジェクトが依存している可能性があるため、**テスト環境で新しいバージョンへの移行をシミュレートする** ことを推奨します。とはいえ、パブリック"
 #~ " API "
 #~ "に限定し、ベストプラクティスを厳守することで、これらのバージョンの非互換性のリスクを最小限に抑えることができます。"
 
@@ -39197,7 +39197,7 @@ msgstr ""
 #~ "and configured on the engine."
 #~ msgstr ""
 #~ "テストユーザーは Axon Ivy Designer "
-#~ "でのプロセスの**シミュレーション**にのみ使用されます。展開時にエンジンにアップロードされることは**ありません**。Axon "
+#~ "でのプロセスの**シミュレーション** にのみ使用されます。展開時にエンジンにアップロードされることは**ありません** 。Axon "
 #~ "Ivy Engine に展開されたプロセスのユーザーは、エンジン上で作成、設定する必要があります。"
 
 #~ msgid ""
@@ -39293,7 +39293,7 @@ msgstr ""
 #~ " need if you want to go with"
 #~ " this."
 #~ msgstr ""
-#~ "**内部 ID プロバイダー**：Axon Ivy Engine "
+#~ "**内部 ID プロバイダー** ：Axon Ivy Engine "
 #~ "で直接、ワークフローユーザーを管理するのに使用します。デフォルトで設定され、さらなる設定が不要な内部 ID "
 #~ "プロバイダーは、:code:`Ivy Security System` "
 #~ "だけです。これを使用する場合、設定は必要ありません。"
@@ -39393,7 +39393,7 @@ msgstr ""
 #~ "separate, internal-only website for "
 #~ "access to the engine cockpit."
 #~ msgstr ""
-#~ "**URL 書き換えルール**では、URL の書き換えルールを設定します。:code:`ivy-"
+#~ "**URL 書き換えルール** では、URL の書き換えルールを設定します。:code:`ivy-"
 #~ "route-all` という新しいルールを:guilabel:`Default Web Site`"
 #~ " に追加し、すべてのトラフィックを :code:`http://localhost:8080` "
 #~ "にある同じホストで動作する Axon Ivy Engine に転送します。Axon "
@@ -39437,7 +39437,7 @@ msgstr ""
 #~ " the end of each row to execute"
 #~ " the job immediately."
 #~ msgstr ""
-#~ "**ジョブ**ビューには、Axon Ivy "
+#~ "**ジョブ** ビューには、Axon Ivy "
 #~ "が定期的に実行するすべてのジョブの表が表示されます。:guilabel:`設定`列には、ジョブの実行頻度や日時 :ref"
 #~ ":`configuration-"
 #~ "cron`）が表示されます。:guilabel:`次の実行`列には、次回のジョブの実行日時が表示されます。他の列には、ジョブが実行された回数や失敗の頻度が表示されます。ジョブをクリックして、最後に正常に実行された日時、最後に失敗した日時、失敗の理由、実行時間などの詳細を確認できます。各行の最後に表示される:guilabel:`スケジュール`ボタンをクリックして、すぐにジョブを実行できます。"
