@@ -235,7 +235,7 @@ msgstr "Axon Ivy Engine のバージョンの移行プロセスは、対応す�
 
 #: ../../source/axonivy/migration/index.rst:9
 msgid "**Hotfix Upgrade**"
-msgstr "**ホットフィックスのアップグレード**"
+msgstr "**ホットフィックスのアップグレード** "
 
 #: ../../source/axonivy/migration/index.rst:11
 msgid ""
@@ -249,7 +249,7 @@ msgstr ""
 
 #: ../../source/axonivy/migration/index.rst:15
 msgid "**Major / Minor Upgrade**"
-msgstr "**メジャー／マイナーアップグレード**"
+msgstr "**メジャー／マイナーアップグレード** "
 
 #: ../../source/axonivy/migration/index.rst:17
 msgid ""
@@ -262,7 +262,7 @@ msgstr ""
 
 #: ../../source/axonivy/migration/index.rst:21
 msgid "**Migration Tools**"
-msgstr "**移行ツール**"
+msgstr "**移行ツール** "
 
 #: ../../source/axonivy/migration/index.rst:23
 msgid "To ease the migration we provide :ref:`migration-tools`."
@@ -370,7 +370,7 @@ msgstr ""
 
 #: ../../source/axonivy/migration/major/index.rst:26
 msgid "**Backwards-compatibility**"
-msgstr "**下位互換性**"
+msgstr "**下位互換性** "
 
 #: ../../source/axonivy/migration/major/index.rst:28
 msgid ""
@@ -755,7 +755,7 @@ msgstr ""
 
 #: ../../source/axonivy/migration/migration-notes-120-131.rst:113
 msgid "**Detail**"
-msgstr "**詳細**"
+msgstr "**詳細** "
 
 #: ../../source/axonivy/migration/migration-notes-120-131.rst:117
 msgid ""
@@ -784,7 +784,7 @@ msgstr "修正後："
 
 #: ../../source/axonivy/migration/_tagLegend.rst:1
 msgid "**Tag Legend:**"
-msgstr "**タグの凡例：**"
+msgstr "**タグの凡例：** "
 
 #: ../../source/axonivy/migration/_tagLegend.rst:3
 msgid "|tag-ops-wizard|"
@@ -1095,7 +1095,7 @@ msgstr "ベータ版 - macOS Monterey（64 ビット版）（macOS Monterey 12.6
 
 #: ../../source/axonivy/system-requirements/designer.rst:39
 msgid "**macOS**"
-msgstr "**macOS**"
+msgstr "**macOS** "
 
 #: ../../source/axonivy/system-requirements/designer.rst:41
 msgid ""
@@ -1142,19 +1142,19 @@ msgstr "バンドルされている OpenSearch サーバーを使用（初期値
 
 #: ../../source/axonivy/system-requirements/engine.rst:20
 msgid "**Memory (RAM)**: Minimum is 8 GB, we recommend to use 32 GB."
-msgstr "**メモリ（RAM）** ：最低 8 GB、32 GB を推奨。"
+msgstr "**メモリ（RAM）** ：最低 8 GB、32 GB を推奨。 "
 
 #: ../../source/axonivy/system-requirements/engine.rst:23
 msgid ""
 "**Disk Space**: Minimum is 20 GB, we recommend 100 GB on a Solid State "
 "Disk (SSD)."
-msgstr "**ディスクの空き容量** ：最低 20 GB、SSD では 100 GB を推奨。"
+msgstr "**ディスクの空き容量** ：最低 20 GB、SSD では 100 GB を推奨。 "
 
 #: ../../source/axonivy/system-requirements/engine.rst:26
 msgid ""
 "**Processors**: Minimum is 4 cores with 2 GHz, we recommend 16 cores with"
 " 2.5 GHz."
-msgstr "**プロセッサ** ：最低 2 GHz の 4 コア、2.5 GHz の 16 コアを推奨。"
+msgstr "**プロセッサ** ：最低 2 GHz の 4 コア、2.5 GHz の 16 コアを推奨。 "
 
 #: ../../source/axonivy/system-requirements/engine.rst:31
 msgid "With an external OpenSearch server"
@@ -1162,19 +1162,19 @@ msgstr "外部の OpenSearch サーバーを使用"
 
 #: ../../source/axonivy/system-requirements/engine.rst:32
 msgid "**Memory (RAM)**: Minimum is 4 GB. We recommend using at least 16 GB."
-msgstr "**メモリ（RAM）** ：最低 4 GB、16 GB 以上を推奨。"
+msgstr "**メモリ（RAM）** ：最低 4 GB、16 GB 以上を推奨。 "
 
 #: ../../source/axonivy/system-requirements/engine.rst:35
 msgid ""
 "**Disk Space**: Minimum is 2 GB. We recommend 50 GB on a Solid State Disk"
 " (SSD)."
-msgstr "**ディスクの空き容量** ：最低 2 GB、SSD では 50 GB を推奨。"
+msgstr "**ディスクの空き容量** ：最低 2 GB、SSD では 50 GB を推奨。 "
 
 #: ../../source/axonivy/system-requirements/engine.rst:38
 msgid ""
 "**Processors**: Minimum is 4 cores with 2 GHz. We recommend 16 cores with"
 " 2.5 GHz."
-msgstr "**プロセッサ** ：最低 2 GHz の 4 コア、2.5 GHz の 16 コアを推奨。"
+msgstr "**プロセッサ** ：最低 2 GHz の 4 コア、2.5 GHz の 16 コアを推奨。 "
 
 #: ../../source/axonivy/system-requirements/engine.rst:45
 msgid ""
@@ -1234,11 +1234,11 @@ msgstr "×"
 
 #: ../../source/axonivy/system-requirements/engine.rst:69
 msgid "**Windows**: Windows Server 2022 and 2019"
-msgstr "**Windows** ：Windows Server 2022 および 2019"
+msgstr "**Windows** ：Windows Server 2022 および 2019 "
 
 #: ../../source/axonivy/system-requirements/engine.rst:72
 msgid "**Linux**: Linux x64 (tested on Ubuntu 24.04)"
-msgstr "**Linux** ：Linux（64 ビット版）（Ubuntu 24.04 でテスト済み）"
+msgstr "**Linux** ：Linux（64 ビット版）（Ubuntu 24.04 でテスト済み） "
 
 #: ../../source/axonivy/system-requirements/engine.rst:76
 #: ../../source/engine-guide/configuration/system-database/index.rst:4
@@ -1412,7 +1412,7 @@ msgstr ""
 
 #: ../../source/axonivy/what-axon-ivy.rst:11
 msgid "**Visualize**"
-msgstr "**視覚化**"
+msgstr "**視覚化** "
 
 #: ../../source/axonivy/what-axon-ivy.rst:12
 msgid ""
@@ -1429,7 +1429,7 @@ msgstr ""
 
 #: ../../source/axonivy/what-axon-ivy.rst:18
 msgid "**Automate**"
-msgstr "**自動化**"
+msgstr "**自動化** "
 
 #: ../../source/axonivy/what-axon-ivy.rst:19
 msgid ""
@@ -1457,7 +1457,7 @@ msgstr ""
 
 #: ../../source/axonivy/what-axon-ivy.rst:32
 msgid "**Improve**"
-msgstr "**改善**"
+msgstr "**改善** "
 
 #: ../../source/axonivy/what-axon-ivy.rst:33
 msgid ""
@@ -1505,7 +1505,7 @@ msgid ""
 "and make new business opportunities possible. You are still the captain "
 "of your ship. Start with simple automations and transform essential parts"
 " of your business when you gain trust and confidence."
-msgstr "**ビジネス** ：ビジネストランスフォーメーションを推進し、新しいビジネス機会を実現できます。導入後も、指揮を執るのはお客様であることに変わりありません。簡単な自動化から始め、信頼と自信を得てから、ビジネスの重要な部分を変革していきましょう。"
+msgstr "**ビジネス** ：ビジネストランスフォーメーションを推進し、新しいビジネス機会を実現できます。導入後も、指揮を執るのはお客様であることに変わりありません。簡単な自動化から始め、信頼と自信を得てから、ビジネスの重要な部分を変革していきましょう。 "
 
 #: ../../source/axonivy/why-axon-ivy.rst:15
 msgid ""
@@ -1516,7 +1516,7 @@ msgid ""
 "application with generated front ends that are meaningful. No software "
 "engineer is required to create an already powerful application from "
 "scratch."
-msgstr "**ビジネスアナリスト** ：プロセスを迅速かつ直感的にドキュメント化することが、かつてないほど簡単になりました。プロセスのシミュレーションにより、プロセスがどのように実行されるべきかについての見解が共有されていることを確認できます。プロセスのデータのシンプルな構造をセットアップし、役に立つフロントエンドを生成して、シンプルな実行可能アプリケーションを実現できます。高性能なアプリケーションをゼロから作成するソフトウェアエンジニアは必要ありません。"
+msgstr "**ビジネスアナリスト** ：プロセスを迅速かつ直感的にドキュメント化することが、かつてないほど簡単になりました。プロセスのシミュレーションにより、プロセスがどのように実行されるべきかについての見解が共有されていることを確認できます。プロセスのデータのシンプルな構造をセットアップし、役に立つフロントエンドを生成して、シンプルな実行可能アプリケーションを実現できます。高性能なアプリケーションをゼロから作成するソフトウェアエンジニアは必要ありません。 "
 
 #: ../../source/axonivy/why-axon-ivy.rst:23
 msgid ""
@@ -7630,7 +7630,7 @@ msgstr "Web サービスクライアント"
 msgid ""
 "The web service clients tree contains the definition of all web services "
 "consumable by an Axon Ivy process."
-msgstr ""
+msgstr "Web サービスクライアントツリーには、Axon Ivy プロセスが消費できるすべての Web サービスの定義が含まれています。"
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:9
 #: ../../source/designer-guide/configuration/webservice-clients.rst:12
@@ -17543,7 +17543,7 @@ msgid ""
 "A notification is generated when a task is created or assigned. If "
 "*Suppress Notification* is enabled, no notifications will be generated "
 "for this task."
-msgstr "タスクが作成または割り当てられると、通知が生成されます。*通知の抑制*が有効な場合、このタスクの通知は生成されません。"
+msgstr "タスクが作成または割り当てられると、通知が生成されます。*通知の抑制* が有効な場合、このタスクの通知は生成されません。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/common-tabs.rst:501
 #: ../../source/engine-guide/configuration/document/local.rst:8
@@ -29740,7 +29740,7 @@ msgid ""
 " :ref:`ivy-yaml` file."
 msgstr ""
 "コンテナテクノロジーにより、再現性のある、ドキュメント化された、完全な分離されたインフラストラクチャを実現できます。"
-Axon Ivy は、`Docker <https://www.docker.com/>`_ 、`Kubernetes <https://kubernetes.io/>`_ 、"
+"Axon Ivy は、`Docker <https://www.docker.com/>`_ 、`Kubernetes <https://kubernetes.io/>`_ 、"
 "`OpenShift <https://openshift.io/>`_ などのコンテナ環境をフルサポートします。システムの環境変数を使用したり "
 ":ref:`ivy-yaml` ファイルなどの設定ファイルを提供して、Axon Ivy Engine の設定を簡単にカスタマイズできます。"
 
@@ -36212,6 +36212,11 @@ msgid ""
 "Press the :guilabel:`Schedule` button at the end of each row to execute "
 "the job immediately."
 msgstr ""
+"**ジョブ** ビューには、Axon Ivy "
+"が定期的に実行するすべてのジョブの表が表示されます。:guilabel:`設定`列には、ジョブの実行頻度や日時 :ref"
+":`configuration-"
+"cron`）が表示されます。:guilabel:`次の実行`列には、次回のジョブの実行日時が表示されます。他の列には、ジョブが実行された回数や失敗の頻度が表示されます。ジョブをクリックして、最後に正常に実行された日時、最後に失敗した日時、失敗の理由、実行時間などの詳細を確認できます。各行の最後に表示される:guilabel:`スケジュール`ボタンをクリックして、すぐにジョブを実行できます。"
+
 
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:144
 msgid "Cache"
@@ -38469,6 +38474,9 @@ msgid ""
 "Axon Ivy :ref:`process-editor` that is included in NEO Designer to design"
 " and edit a process model."
 msgstr ""
+"プロセスは、ワークフローを最適化し、アプリケーション内での効率的なタスク管理を可能にする、一連の自動化されたステップです。NEO "
+"Designer に含まれる Axon Ivy :ref:`process-"
+"editor`を起動して、プロセスモデルを設計、編集します。"
 
 #: ../../source/neo-designer/gettingstarted.rst:27
 msgid "Define the Data"
@@ -39198,13 +39206,7 @@ msgstr ""
 #~ msgstr ""
 #~ "テストユーザーは Axon Ivy Designer "
 #~ "でのプロセスの**シミュレーション** にのみ使用されます。展開時にエンジンにアップロードされることは**ありません** 。Axon "
-#~ "Ivy Engine に展開されたプロセスのユーザーは、エンジン上で作成、設定する必要があります。"
-
-#~ msgid ""
-#~ "The web service clients tree contains"
-#~ " the definition of all web services"
-#~ " consumable by an Axon Ivy process."
-#~ msgstr "Web サービスクライアントツリーには、Axon Ivy プロセスが消費できるすべての Web サービスの定義が含まれています。"
+#~ "Ivy Engine に展開されたプロセスのユーザーは、エンジン上で作成、設定する必要があります。" 
 
 #~ msgid ""
 #~ "You may use as well other search"
@@ -39252,19 +39254,6 @@ msgstr ""
 #~ msgstr ""
 #~ "サードパーティーのサービスがワークフロータスクやケースなどとやり取りできる、:api-browser-"
 #~ "url:`REST ワークフロー API<workflow>` 用意されています。"
-
-#~ msgid ""
-#~ "A process describes a sequence of "
-#~ "automated steps that optimize workflows "
-#~ "and enables efficient task management "
-#~ "within an application. Start the Axon Ivy"
-#~ " :ref:`process-editor` that is included "
-#~ "in NEO Designer to design and edit"
-#~ " a process model."
-#~ msgstr ""
-#~ "プロセスは、ワークフローを最適化し、アプリケーション内での効率的なタスク管理を可能にする、一連の自動化されたステップです。NEO "
-#~ "Designer に含まれる Axon Ivy :ref:`process-"
-#~ "editor`を起動して、プロセスモデルを設計、編集します。"
 
 #~ msgid ""
 #~ "Workflow Users are managed in so-"
@@ -39415,30 +39404,3 @@ msgstr ""
 #~ "SSO を有効にした場合、ユーザーが :ref:`IIS <single-sign-"
 #~ "on>` 由でのみ Axon Ivy Engine "
 #~ "にアクセスできることを確認する必要があります。"
-
-#~ msgid ""
-#~ "The **Jobs** view displays a table "
-#~ "with all jobs that are periodically "
-#~ "executed by Axon Ivy. The "
-#~ ":guilabel:`Configuration` column shows how "
-#~ "often or when ( :ref:`configuration-cron` ) "
-#~ "a job is executed. The :guilabel:`Next"
-#~ " execution` column shows when the job"
-#~ " is executed the next time. Finally,"
-#~ " columns show the number of times "
-#~ "the job was already executed and "
-#~ "how often it has failed. You can"
-#~ " click on a job to get more "
-#~ "information about it like the last "
-#~ "time it was successfully executed, the"
-#~ " last time it failed, the reason "
-#~ "it failed, and the execution duration."
-#~ " Press the :guilabel:`Schedule` button at"
-#~ " the end of each row to execute"
-#~ " the job immediately."
-#~ msgstr ""
-#~ "**ジョブ** ビューには、Axon Ivy "
-#~ "が定期的に実行するすべてのジョブの表が表示されます。:guilabel:`設定`列には、ジョブの実行頻度や日時 :ref"
-#~ ":`configuration-"
-#~ "cron`）が表示されます。:guilabel:`次の実行`列には、次回のジョブの実行日時が表示されます。他の列には、ジョブが実行された回数や失敗の頻度が表示されます。ジョブをクリックして、最後に正常に実行された日時、最後に失敗した日時、失敗の理由、実行時間などの詳細を確認できます。各行の最後に表示される:guilabel:`スケジュール`ボタンをクリックして、すぐにジョブを実行できます。"
-
