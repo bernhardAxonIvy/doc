@@ -1554,7 +1554,7 @@ msgstr "CSRF 攻撃に対する保護"
 
 #: ../../source/concepts/3rd-party-integration/restapi.rst:163
 msgid "To call a modifying REST service via ``PUT``, ``POST`` or ``DELETE``, the caller needs to provide a HTTP header called ``X-Requested-By`` with any value, e.g. ``ivy``. The `CSRF filter <https://github.com/jersey/jersey/blob/master/core-server/src/main/java/org/glassfish/jersey/server/filter/CsrfProtectionFilter.java>`__ protects REST services against cross-site request forgery (CSRF). If the client omits the header on a modifying REST request, the response will indicate a failure with the HTTP status code 400 (Bad Request)."
-msgstr "``PUT``、``POST``、``DELETE`` を使用して修飾 REST サービスを呼び出すには、``X-Requested-By`` という名前の HTTP ヘッダーに ``ivy`` などの任意の値を指定する必要があります。CSRFフィルター<https://github.com/jersey/jersey/blob/master/core-server/src/main/java/org/glassfish/jersey/server/filter/CsrfProtectionFilter.java>`__は、クロスサイトリクエストフォージェリ（CSRF）から REST サービスを保護します。クライアントが修飾 REST リクエストのヘッダーを省略した場合、レスポンスは HTTP ステータスコード 400（Bad Request）でエラーを示します。"
+msgstr "``PUT``、``POST``、``DELETE`` を使用して修飾 REST サービスを呼び出すには、``X-Requested-By`` という名前の HTTP ヘッダーに ``ivy`` などの任意の値を指定する必要があります。CSRFフィルター<https://github.com/jersey/jersey/blob/master/core-server/src/main/java/org/glassfish/jersey/server/filter/CsrfProtectionFilter.java>`__ は、クロスサイトリクエストフォージェリ（CSRF）から REST サービスを保護します。クライアントが修飾 REST リクエストのヘッダーを省略した場合、レスポンスは HTTP ステータスコード 400（Bad Request）でエラーを示します。"
 
 #: ../../source/concepts/3rd-party-integration/restapi.rst:171
 msgid "User provided REST services via ``GET``, ``HEAD`` or ``OPTIONS`` have to be implemented such that no data is modified."
@@ -4012,7 +4012,7 @@ msgstr ":guilabel:`Icon` など、他にも多くの属性を好きなだけ追�
 
 #: ../../source/designer-guide/configuration/custom-fields.rst:42
 msgid "The number of `indentation spaces <https://yaml.org/spec/1.2.2/#61-indentation-spaces>`__ needs to be the same in the whole yaml file."
-msgstr "`インデントスペース<https://yaml.org/spec/1.2.2/#61-indentation-spaces>`__の数は、yaml ファイル全体で同じである必要があります。"
+msgstr "`インデントスペース<https://yaml.org/spec/1.2.2/#61-indentation-spaces>`__ の数は、yaml ファイル全体で同じである必要があります。"
 
 #: ../../source/designer-guide/configuration/custom-fields.rst:48
 msgid "Localize Label, Description, Category and Values"
@@ -4386,7 +4386,7 @@ msgstr "REST サービスの機能を記述するための一般的なフォー�
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:123
 msgid "If you need to integrate an `OData service <https://www.odata.org/>`_ _, you can convert your OData service description with our `OData converter <http://odata-converter.axonivy.com>`__. The service description is usually available under the given service URL ending with :code:`$metadata` e.g. :code:`https://myService/cars/$metadata`"
-msgstr "`OData サービス<https://www.odata.org/>`__ を統合する必要がある場合は、OData コンバーター<http://odata-converter.axonivy.com>`__を使用して OData のサービス記述を変換できます。通常、サービス記述は、 :code:`$metadata` で終わる指定されたサービス URL （例： :code:`https://myService/cars/$metadata` ）で参照できます。"
+msgstr "`OData サービス<https://www.odata.org/>`__ を統合する必要がある場合は、OData コンバーター<http://odata-converter.axonivy.com>`__ を使用して OData のサービス記述を変換できます。通常、サービス記述は、 :code:`$metadata` で終わる指定されたサービス URL （例： :code:`https://myService/cars/$metadata` ）で参照できます。"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:129
 msgid "If you have other types of service descriptions, you may have a look at `lucybot <https://lucybot-inc.github.io/api-spec-converter/>`_ _. It is able to convert many other specification types to OpenAPI."
@@ -4474,7 +4474,7 @@ msgstr "**クライアントのプロパティ**"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:194
 msgid "Well known properties of REST clients are documented here: `org.glassfish.jersey.client.ClientProperties <https://eclipse-ee4j.github.io/jersey.github.io/apidocs/latest/jersey/org/glassfish/jersey/client/ClientProperties.html>`__."
-msgstr "REST クライアントの主要なプロパティは、`org.glassfish.jersey.client.ClientProperties <https://eclipse-ee4j.github.io/jersey.github.io/apidocs/latest/jersey/org/glassfish/jersey/client/ClientProperties.html>`__に記載されています。"
+msgstr "REST クライアントの主要なプロパティは、`org.glassfish.jersey.client.ClientProperties <https://eclipse-ee4j.github.io/jersey.github.io/apidocs/latest/jersey/org/glassfish/jersey/client/ClientProperties.html>`__ に記載されています。"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:197
 msgid "To configure SSL client authentication for a REST client call, specify the property *SSL.keyAlias*. The value of this alias needs to correspond with a key alias available in the client keystore configured under :ref:`engine-cockpit-ssl`."
@@ -4498,11 +4498,11 @@ msgstr "設定可能なすべての項目のリストについては、Jackson �
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:215
 msgid "`Jackson Deserialization features <https://github.com/FasterXML/jackson-databind/wiki/Deserialization-Features>`__ can be set using ``Deserialization.`` as a prefix. E.g., ``Deserialization.FAIL_ON_UNKNOWN_PROPERTIES``"
-msgstr "`Jackson のデシリアライズ機能<https://github.com/FasterXML/jackson-databind/wiki/Deserialization-Features>`__は、``Deserialization.`` をプレフィックスとして使用して設定できます。例：``Deserialization.FAIL_ON_UNKNOWN_PROPERTIES``"
+msgstr "`Jackson のデシリアライズ機能<https://github.com/FasterXML/jackson-databind/wiki/Deserialization-Features>`__ は、``Deserialization.`` をプレフィックスとして使用して設定できます。例：``Deserialization.FAIL_ON_UNKNOWN_PROPERTIES``"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:218
 msgid "`Jackson Serialization features <https://github.com/FasterXML/jackson-databind/wiki/Serialization-features>`__ can be set using ``Serialization.`` as a prefix. E.g., ``Serialization.WRITE_ENUMS_USING_INDEX``"
-msgstr "`Jackson のシリアライズ機能<https://github.com/FasterXML/jackson-databind/wiki/Serialization-features>`__は、 ``Serialization.`` をプレフィックスとして使用して設定できます。例：``Serialization.WRITE_ENUMS_USING_INDEX``"
+msgstr "`Jackson のシリアライズ機能<https://github.com/FasterXML/jackson-databind/wiki/Serialization-features>`__ は、 ``Serialization.`` をプレフィックスとして使用して設定できます。例：``Serialization.WRITE_ENUMS_USING_INDEX``"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:221
 msgid "**Path Properties**"
@@ -4968,7 +4968,7 @@ msgstr ":guilabel:`削除` 選択された機能クラスをリストから削�
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:141
 msgid "Properties configure the web service client and its features. Some well known properties are documented here: `javax.xml.ws.BindingProvider <https://docs.oracle.com/javase/9/docs/api/javax/xml/ws/BindingProvider.html>`__"
-msgstr "Web サービスクライアントとその機能を設定します。主要なプロパティは、：javax.xml.ws.BindingProvider <https://docs.oracle.com/javase/9/docs/api/javax/xml/ws/BindingProvider.html>`__に記載されています。"
+msgstr "Web サービスクライアントとその機能を設定します。主要なプロパティは、：javax.xml.ws.BindingProvider <https://docs.oracle.com/javase/9/docs/api/javax/xml/ws/BindingProvider.html>`__ に記載されています。"
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:158
 msgid "In order to configure SSL client authentication for a web service, you need to specify the property *SSL.keyAlias*. The value of this alias needs to correspond with a key alias available in the client keystore configured in :ref:`engine-cockpit-ssl`."
@@ -6561,7 +6561,7 @@ msgstr "Maven ビルドプラグイン"
 
 #: ../../source/designer-guide/how-to/continuous-integration.rst:13
 msgid "The `project-build-plugin <https://axonivy.github.io/project-build-plugin>`__ is a Maven plugin that can build Axon Ivy Projects on a developer machine or on a continuous integration server. The plugin provides the following main features:"
-msgstr "`project-build-plugin <https://axonivy.github.io/project-build-plugin>`__は Maven プラグインで、Axon Ivy プロジェクトを開発者マシンまたは継続的インテグレーションサーバー上で ビルドできます。このプラグインの主な機能は以下のとおりです。"
+msgstr "`project-build-plugin <https://axonivy.github.io/project-build-plugin>`__ は Maven プラグインで、Axon Ivy プロジェクトを開発者マシンまたは継続的インテグレーションサーバー上で ビルドできます。このプラグインの主な機能は以下のとおりです。"
 
 #: ../../source/designer-guide/how-to/continuous-integration.rst:18
 msgid "**Compilation** of Axon Ivy Projects"
@@ -6642,7 +6642,7 @@ msgstr "技術ドキュメント"
 
 #: ../../source/designer-guide/how-to/continuous-integration.rst:85
 msgid "The detailed plugin goal and parameter documentation is on `Github.io <https://axonivy.github.io/project-build-plugin>`__"
-msgstr "プラグインのゴールとパラメーターの詳細なドキュメントは `Github.io <https://axonivy.github.io/project-build-plugin>`__にあります。"
+msgstr "プラグインのゴールとパラメーターの詳細なドキュメントは `Github.io <https://axonivy.github.io/project-build-plugin>`__ にあります。"
 
 #: ../../source/designer-guide/how-to/continuous-integration.rst:88
 msgid "The source code of the Axon Ivy project build plugin is available on :link-url:`Github.com <build-plugin>`."
@@ -7212,7 +7212,7 @@ msgstr "Axon Ivy でデータベースフロントエンドが必要ですか。
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:426
 msgid "Axon Ivy is based on the widely used `Eclipse <http://www.eclipse.org>`__ platform which offers a sophisticated plugin mechanism to integrate third-party modules. In these days, Eclipse which originally has been developed as an IDE for Java programmers evolved to a large and vibrant ecosystem and is used for a triad of different tools and systems in almost every work sector. Therefore a huge community exists that offers plugins (open source and commercial) and even web sites (`Eclipse Marketplace <http://marketplace.eclipse.org//>`_ _) for browsing and searching these plugins arose in the past years."
-msgstr "Axon Ivy は、サードパーティーモジュールを統合する洗練されたプラグイン機構を備えた、広く使用されている `Eclipse <http://www.eclipse.org>`__プラットフォームをベースにしています。Eclipseは元々、Java プログラマーのための IDE として開発されましたが、大規模で活気のあるエコシステムへと発展し、今日では、ほとんどすべての業種のさまざまなツールやシステムに使用されています。そのため、プラグイン（オープンソースおよび商用）を提供する巨大なコミュニティが存在し、最近では、これらのプラグインを閲覧、検索するためのウェブサイト（`Eclipse Marketplace <http://marketplace.eclipse.org//>`__ ）も誕生しています。"
+msgstr "Axon Ivy は、サードパーティーモジュールを統合する洗練されたプラグイン機構を備えた、広く使用されている `Eclipse <http://www.eclipse.org>`__ プラットフォームをベースにしています。Eclipseは元々、Java プログラマーのための IDE として開発されましたが、大規模で活気のあるエコシステムへと発展し、今日では、ほとんどすべての業種のさまざまなツールやシステムに使用されています。そのため、プラグイン（オープンソースおよび商用）を提供する巨大なコミュニティが存在し、最近では、これらのプラグインを閲覧、検索するためのウェブサイト（`Eclipse Marketplace <http://marketplace.eclipse.org//>`__ ）も誕生しています。"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:437
 msgid "And the conclusion, you can use all these plugins and integrate them into your Axon Ivy installation to interact seamlessly between your favorite plugin set and the built-in Axon Ivy features."
@@ -7660,7 +7660,7 @@ msgstr "基本的に、ルールエンジンは指定されたルールセット
 
 #: ../../source/designer-guide/how-to/rule-engine.rst:29
 msgid "You can imagine that with this approach you end up pretty soon into the `Spaghetti-code <https://en.wikipedia.org/wiki/Spaghetti_code>`__ anti-pattern. You have to take care of all the dependencies and relations between all the facts on your own leading to a forever-growing if-then statement that is almost impossible to maintain."
-msgstr "このアプローチでは、すぐに`スパゲッティコード<https://en.wikipedia.org/wiki/Spaghetti_code>`__アンチパターンになってしまうことは想像がつくでしょう。すべてのファクト間の依存関係やリレーションを自分で処理しなければならないため、if-then 文が永遠に増え続け、管理がほぼ不可能になります。"
+msgstr "このアプローチでは、すぐに`スパゲッティコード<https://en.wikipedia.org/wiki/Spaghetti_code>`__ アンチパターンになってしまうことは想像がつくでしょう。すべてのファクト間の依存関係やリレーションを自分で処理しなければならないため、if-then 文が永遠に増え続け、管理がほぼ不可能になります。"
 
 #: ../../source/designer-guide/how-to/rule-engine.rst:35
 msgid "In a rule engine, you create simple standalone rules and you let the rule engine decide what to fire when. The subtlety is that rules can be written in any order, the engine picks the ones for which the condition is true, and then evaluates the corresponding actions. So instead of the massive if statement, you write the following rules:"
@@ -7676,7 +7676,7 @@ msgstr "要するに、ルールエンジンを使えば、プロダクション
 
 #: ../../source/designer-guide/how-to/rule-engine.rst:76
 msgid "In Axon Ivy, we integrate the open source rule engine `Drools <https://www.drools.org>`__ to give you the flexibility to use a rule engine if you want. We wrapped some of the most basic features of Drools into our own UI and API. If you need more than that, then simply use the normal full blown Drools API."
-msgstr "Axon Ivy には、オープンソースのルールエンジンである `Drools <https://www.drools.org>`__が統合されており、必要に応じてルールエンジンを柔軟に使用できます。また、Drools の最も基本的な機能のいくつかを独自の UI と API にラップしました。他の機能が必要な場合は、標準の Drools API を使用してください。"
+msgstr "Axon Ivy には、オープンソースのルールエンジンである `Drools <https://www.drools.org>`__ が統合されており、必要に応じてルールエンジンを柔軟に使用できます。また、Drools の最も基本的な機能のいくつかを独自の UI と API にラップしました。他の機能が必要な場合は、標準の Drools API を使用してください。"
 
 #: ../../source/designer-guide/how-to/rule-engine.rst:85
 msgid "Decision tables and DRL files"
@@ -7795,7 +7795,7 @@ msgstr "前にルールエンジンに渡したデータに適用されたアク
 
 #: ../../source/designer-guide/how-to/rule-engine.rst:184
 msgid "To use the rule engine `Drools <https://www.drools.org>`__ directly, you must add the *Rule Engine Libraries* to the project's classpath. To do this, right-click on the project and select *Properties*. Navigate to *Axon Ivy* > *Java* and check *Rule Engine Libraries*."
-msgstr "`Drools <https://www.drools.org>`__ルールエンジンを直接使用するには、*ルールエンジンのライブラリ* をプロジェクトのクラスパスに追加する必要があります。プロジェクトを右クリックして［*プロパティ*］を選択します。［*Axon Ivy*］、［*Java*］の順に移動し、［*ルールエンジンのライブラリ*］チェックボックスをオンにします。"
+msgstr "`Drools <https://www.drools.org>`__ ルールエンジンを直接使用するには、*ルールエンジンのライブラリ* をプロジェクトのクラスパスに追加する必要があります。プロジェクトを右クリックして［*プロパティ*］を選択します。［*Axon Ivy*］、［*Java*］の順に移動し、［*ルールエンジンのライブラリ*］チェックボックスをオンにします。"
 
 #: ../../source/designer-guide/how-to/rule-engine.rst:190
 msgid "Demo project"
@@ -11754,7 +11754,7 @@ msgstr "アクティビティの実行が中止され、エラーが発生した
 
 #: ../../source/designer-guide/process-modeling/process-elements/error-boundary-event.rst:17
 msgid "See the `Error Handling <#ivy.concepts.error.catch.boundary>`__ concept for sample use cases."
-msgstr "サンプルユースケースの`エラー処理<#ivy.concepts.error.catch.boundary>`__のコンセプトを参照してください。"
+msgstr "サンプルユースケースの`エラー処理<#ivy.concepts.error.catch.boundary>`__ のコンセプトを参照してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/error-boundary-event.rst:28
 msgid "On this tab you can configure the Error Code that the Boundary Event will catch."
@@ -13224,7 +13224,7 @@ msgstr "|image0| *ユーザーダイアログ開始* 要素は、プロセスエ
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-start.rst:10
 msgid "The User Dialog Start element is used to map a *Start Method* (as declared in the `Interface Editor <#ivy.editors.userdialoginterface>`__) to the process that is started by this element and that implements the Start Method."
-msgstr "ユーザーダイアログ開始要素を使用して、この要素で開始され、開始メソッドを実装するプロセスに（`インターフェースエディター<#ivy.editors.userdialoginterface>`__で宣言された）*開始メソッド* をマッピングします。"
+msgstr "ユーザーダイアログ開始要素を使用して、この要素で開始され、開始メソッドを実装するプロセスに（`インターフェースエディター<#ivy.editors.userdialoginterface>`__ で宣言された）*開始メソッド* をマッピングします。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-start.rst:15
 msgid "The element allows to initialize internal data of the User Dialog from the *input* parameters of the call and to define *return* values from process data (to be returned when the User Dialog finishes)."
@@ -13976,7 +13976,7 @@ msgstr "color-action"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/_select-color-quick-action.rst:5
 msgid "To define new colors or edit existing ones, press the :guilabel:`plus` or the :guilabel:`edit` buttons in the color palette. Valid colors are every possible `css color <https://developer.mozilla.org/en-US/docs/Web/CSS/color>`__."
-msgstr "新しい色を定義したり、既存の色を編集するには、カラーパレットの:guilabel:`+`ボタンまたは:guilabel:`編集` ボタンをクリックします。`CSS で指定可能な色 <https://developer.mozilla.org/en-US/docs/Web/CSS/color>`__はすべて有効です。"
+msgstr "新しい色を定義したり、既存の色を編集するには、カラーパレットの:guilabel:`+`ボタンまたは:guilabel:`編集` ボタンをクリックします。`CSS で指定可能な色 <https://developer.mozilla.org/en-US/docs/Web/CSS/color>`__ はすべて有効です。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-editor.rst:196
 msgid "Add Element:"
@@ -18369,7 +18369,7 @@ msgstr "テーマを使用して、配色、コンポーネントの装飾など
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-themes.rst:8
 msgid "You can also create your own theme. To learn more about PrimeFaces themes, the web site `PrimeFaces Themes <https://www.primefaces.org/showcase/theming.xhtml>`_ is the right starting point."
-msgstr "また、独自のテーマも作成できます。PrimeFaces のテーマの詳細については、`PrimeFaces のテーマ<https://www.primefaces.org/showcase/theming.xhtml>`__を最初にチェックすることを推奨します。"
+msgstr "また、独自のテーマも作成できます。PrimeFaces のテーマの詳細については、`PrimeFaces のテーマ<https://www.primefaces.org/showcase/theming.xhtml>`__ を最初にチェックすることを推奨します。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-themes.rst:13
 msgid "The theme called **freya-ivy-light** is configured as the default. New dialogs will be created with this theme if you choose a current layout (template) from the core. However, you can easily configure another default theme with the following steps:"
@@ -18410,7 +18410,7 @@ msgstr "PrimeFlex"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-themes.rst:84
 msgid "PrimeFaces has an additional library `PrimeFlex <https://www.primefaces.org/showcase/primeflex/setup.xhtml>`__, which allows to use `FlexBox <https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox>`__ with PrimeFaces widgets (e.g., by using :code:`<p:panelGrid layout=\"flex\">` . Additionally, we recommend to reference :file:`primeflex-3.min.css` in your template."
-msgstr "PrimeFaces には、`PrimeFlex <https://www.primefaces.org/showcase/primeflex/setup.xhtml>`__という名前の追加ライブラリがあり、（例えば、 :code:`<p:panelGrid layout=\"flex\">` を使用して）`FlexBox <https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox>`__を PrimeFaces のウィジェットと一緒に使用できます。さらに、テンプレートで :file:`primeflex-3.min.css` を参照することを推奨します。"
+msgstr "PrimeFaces には、`PrimeFlex <https://www.primefaces.org/showcase/primeflex/setup.xhtml>`__ という名前の追加ライブラリがあり、（例えば、 :code:`<p:panelGrid layout=\"flex\">` を使用して）`FlexBox <https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox>`__ を PrimeFaces のウィジェットと一緒に使用できます。さらに、テンプレートで :file:`primeflex-3.min.css` を参照することを推奨します。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-themes.rst:92
 msgid "PrimeFlex is provided by the core in version 3 and is by default referenced in new layouts (templates). You can also add it to your template as follows:"
@@ -18462,7 +18462,7 @@ msgstr "クライアントサイドの検証"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-validators.rst:28
 msgid "In some cases, it makes sense to perform the validation of the entered values before they are sent to the server (e.g., in an :ref:`offline-dialogs` ). For this reason, Primefaces provides a `client side validation <http://www.primefaces.org/showcase/ui/csv/basic.xhtml>`__ framework. Client-side validation is an addition to the JSF validators. It can give instant feedback - even while typing - to the user. Since the standard JSF validators remain active, the data is also validated on the server after the form has passed client-side validation and is submitted."
-msgstr "場合によって、サーバーに送信する前に、入力された値の検証を実行するのが合理的です :ref:`offline-dialogs` など）。そのため、PrimeFaces には`クライアントサイドの検証<http://www.primefaces.org/showcase/ui/csv/basic.xhtml>`__フレームワークが用意されています。クライアントサイドの検証は、JSF バリデーターの拡張機能として、入力中でもユーザーに即時のフィードバックを提供できます。標準的な JSF バリデーターはアクティブなままであるため、フォームがクライアントサイドの検証を通過し、送信された後、サーバーでもデータが検証されます。"
+msgstr "場合によって、サーバーに送信する前に、入力された値の検証を実行するのが合理的です :ref:`offline-dialogs` など）。そのため、PrimeFaces には`クライアントサイドの検証<http://www.primefaces.org/showcase/ui/csv/basic.xhtml>`__ フレームワークが用意されています。クライアントサイドの検証は、JSF バリデーターの拡張機能として、入力中でもユーザーに即時のフィードバックを提供できます。標準的な JSF バリデーターはアクティブなままであるため、フォームがクライアントサイドの検証を通過し、送信された後、サーバーでもデータが検証されます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-validators.rst:37
 msgid "Example code fragment from an input form:"
@@ -21550,7 +21550,7 @@ msgstr "外部の OpenSearch"
 
 #: ../../source/engine-guide/integration/opensearch/external.rst:6
 msgid "For systems with high load or when running Axon Ivy in a :ref:`cluster <cluster>` , you may need to run an external OpenSearch instance. To do so, download and install OpenSearch according to the docs of `OpenSearch <https://opensearch.org>`__."
-msgstr "負荷が大きいシステムや、Axon Ivy を :ref:`クラスタ<cluster>` で実行している場合は、外部の OpenSearch インスタンスを実行する必要があります。`OpenSearch <https://opensearch.org>`__のドキュメントに従って、OpenSearch をダウンロードしてインストールしてください。"
+msgstr "負荷が大きいシステムや、Axon Ivy を :ref:`クラスタ<cluster>` で実行している場合は、外部の OpenSearch インスタンスを実行する必要があります。`OpenSearch <https://opensearch.org>`__ のドキュメントに従って、OpenSearch をダウンロードしてインストールしてください。"
 
 #: ../../source/engine-guide/integration/opensearch/external.rst:11
 msgid "We only support one version of OpenSearch which is defined in :ref:`system requirements <engine-system-requirements>`."
