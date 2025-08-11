@@ -765,7 +765,7 @@ msgid ""
 "new logger name is: :code:`runtime.[security context "
 "name].[category].[app name].[pm name]`."
 msgstr ""
-"セキュリティコンテキスト名をランタイムロガー名に追加し、カテゴリーをセキュリティコンテキスト名の後ろに移動しました。これは、ロガー名の一意性を高め、セキュリティコンテキスト名でフィルタリングできるようにするためです。新しいロガー名は、:code:`runtime.[セキュリティコンテキスト名].[カテゴリー].[アプリ名].[PM"
+"セキュリティコンテキスト名をランタイムロガー名に追加し、カテゴリーをセキュリティコンテキスト名の後ろに移動しました。これは、ロガー名の一意性を高め、セキュリティコンテキスト名でフィルタリングできるようにするためです。新しいロガー名は、 :code:`runtime.[セキュリティコンテキスト名].[カテゴリー].[アプリ名].[PM"
 " 名]` となります。"
 
 #: ../../source/axonivy/migration/migration-notes-120-131.rst:121
@@ -3301,7 +3301,7 @@ msgstr ""
 
 #: ../../source/concepts/application-lifecycle/index.rst:20
 msgid ""
-"By default, every Axon Ivy Engine comes with the :code:`default`` "
+"By default, every Axon Ivy Engine comes with the :code:`default` ` "
 "security system. This is sufficient in the vast majority of cases. An "
 "additional security system is only required if you want to set up a test "
 "environment on the same engine or operate :ref:`multi-tenancy <multi-"
@@ -3379,7 +3379,7 @@ msgid ""
 " process model version. A complete list of release state can be found in "
 "the following list:"
 msgstr ""
-"プロセスモデルバージョンには、リリース状態が設定されます。プロセスモデルバージョンのリリース状態によって、そのバージョンがシステムでどのように使用されるかが決まります。最も重要なリリース状態は、:code:`リリース済み`です。プロセスモデル内でこの状態になることができるバージョンは"
+"プロセスモデルバージョンには、リリース状態が設定されます。プロセスモデルバージョンのリリース状態によって、そのバージョンがシステムでどのように使用されるかが決まります。最も重要なリリース状態は、 :code:`リリース済み` です。プロセスモデル内でこの状態になることができるバージョンは"
 " 1 "
 "つだけです。プロセスモデル内で開始されるすべてのプロセスは、リリース済みのプロセスモデルバージョンで開始されます。すべてのリリース状態は以下のとおりです。"
 
@@ -3406,7 +3406,7 @@ msgid ""
 msgstr ""
 "**リリース済み** ：プロセスモデルバージョンは、現在リリースされているバージョンです。つまり、すべての新しいプロセスがこのバージョンで開始されます。プログラム開始、Web"
 " サービスプロセス、REST エンドポイントは、この状態のプロセスモデルバージョンに対してのみ有効です。プロセスモデルの 1 "
-"つのバージョンだけが:code:`リリース済み`状態になることができます。プロセスモデルバージョンがリリースされると、現在リリースされているプロセスモデルバージョンは:code:`非推奨`または:code:`アーカイブ済み`になります。"
+"つのバージョンだけが :code:`リリース済み` 状態になることができます。プロセスモデルバージョンがリリースされると、現在リリースされているプロセスモデルバージョンは :code:`非推奨` または :code:`アーカイブ済み` になります。"
 
 #: ../../source/concepts/application-lifecycle/index.rst:127
 msgid ""
@@ -3416,7 +3416,7 @@ msgid ""
 "state. All cases that were started in this process model version will "
 "continue to run in this version. As soon as all cases of this version "
 "have been ended, the state will change to :code:`ARCHIVED` automatically."
-msgstr "**非推奨** ：プロセスモデルバージョンは以前は:code:`リリース済み`状態でしたが、別のバージョンがリリースされたため、:code:`リリース済み`状態ではなく、:code:`非推奨`状態になりました。このプロセスモデルバージョンで開始されたすべてのケースは、引き続きこのバージョンで実行されます。このバージョンのすべてのケースが終了するとすぐに、状態が:code:`アーカイブ済み`に自動的に変わります。"
+msgstr "**非推奨** ：プロセスモデルバージョンは以前は :code:`リリース済み` 状態でしたが、別のバージョンがリリースされたため、 :code:`リリース済み` 状態ではなく、 :code:`非推奨` 状態になりました。このプロセスモデルバージョンで開始されたすべてのケースは、引き続きこのバージョンで実行されます。このバージョンのすべてのケースが終了するとすぐに、状態が :code:`アーカイブ済み` に自動的に変わります。"
 
 #: ../../source/concepts/application-lifecycle/index.rst:133
 msgid ""
@@ -3427,7 +3427,7 @@ msgid ""
 ":code:`ARCHIVED`. Actually the engine administrator can change a process "
 "model version from state :code:`ARCHIVED` back to state :code:`RELEASED` "
 "if necessary."
-msgstr "**アーカイブ済み** ：プロセスモデルバージョンは以前は:code:`リリース済み`状態でしたが、別のバージョンがリリースされ、このプロセスモデルでの実行中のケースが終了しました。その結果、このバージョンは:code:`リリース済み`状態ではなくなり、:code:`アーカイブ済み`状態になりました。エンジン管理者は、必要に応じて、プロセスモデルバージョンを:code:`アーカイブ済み`状態から:code:`リリース済み`状態に戻すことができます。"
+msgstr "**アーカイブ済み** ：プロセスモデルバージョンは以前は :code:`リリース済み` 状態でしたが、別のバージョンがリリースされ、このプロセスモデルでの実行中のケースが終了しました。その結果、このバージョンは :code:`リリース済み` 状態ではなくなり、 :code:`アーカイブ済み` 状態になりました。エンジン管理者は、必要に応じて、プロセスモデルバージョンを :code:`アーカイブ済み` 状態から :code:`リリース済み` 状態に戻すことができます。"
 
 #: ../../source/concepts/application-lifecycle/index.rst:139
 msgid ""
@@ -4205,19 +4205,19 @@ msgid ""
 "For example, the mail channel always needs a :code:`Subject` and a "
 ":code:`Content` template. It is the same for all channels either "
 ":code:`Subject` or :code:`Content` or both are used:"
-msgstr "例えば、メールチャネルでは常に:code:`件名`と:code:`コンテンツ`テンプレートが必要です。すべてのチャネルで、:code:`件名`と:code:`コンテンツ`のいずれか、または両方が使用されます。"
+msgstr "例えば、メールチャネルでは常に :code:`件名` と :code:`コンテンツ` テンプレートが必要です。すべてのチャネルで、 :code:`件名` と :code:`コンテンツ` のいずれか、または両方が使用されます。"
 
 #: ../../source/concepts/notification/index.rst:76
 msgid "Web Channel: :code:`Subject`"
-msgstr "ウェブチャネル：:code:`件名`"
+msgstr "ウェブチャネル： :code:`件名`"
 
 #: ../../source/concepts/notification/index.rst:77
 msgid "Mail Channel: :code:`Subject`, :code:`Content`"
-msgstr "メールチャネル：:code:`件名`、:code:`コンテンツ`"
+msgstr "メールチャネル： :code:`件名` 、 :code:`コンテンツ`"
 
 #: ../../source/concepts/notification/index.rst:78
 msgid "Microsoft Teams Channel: :code:`Content`"
-msgstr "Microsoft Teams チャネル：:code:`コンテンツ`"
+msgstr "Microsoft Teams チャネル： :code:`コンテンツ`"
 
 #: ../../source/concepts/notification/index.rst:81
 msgid "Resolution"
@@ -4283,7 +4283,7 @@ msgid ""
 " CMS with a :code:`Default` template for the `mail` channel."
 msgstr ""
 "システムの CMS は :file:`[エンジンのディレクトリ]/system/cms` にあります。以下は "
-"`メール`チャネルの:code:`デフォルトの`テンプレートを持つ CMS の例です。"
+"`メール`チャネルの :code:`デフォルトの` テンプレートを持つ CMS の例です。"
 
 #: ../../source/concepts/notification/index.rst:138
 msgid "Dynamic Macros"
@@ -4299,14 +4299,14 @@ msgid ""
 "api:`receiver</ch/ivyteam/ivy/security/ISecurityMember.html>` of the "
 "notification."
 msgstr ""
-":code:`receiver`：通知の:public-"
+":code:`receiver` ：通知の:public-"
 "api:`レシーバー</ch/ivyteam/ivy/security/ISecurityMember.html>`"
 
 #: ../../source/concepts/notification/index.rst:143
 msgid ""
 ":code:`payload`: The object that was provided as a payload of the "
 "notification."
-msgstr ":code:`payload`：通知のペイロードとして提供されたオブジェクト"
+msgstr ":code:`payload` ：通知のペイロードとして提供されたオブジェクト"
 
 #: ../../source/concepts/notification/index.rst:144
 msgid ""
@@ -4314,7 +4314,7 @@ msgid ""
 "api:`IWorkflowSession</ch/ivyteam/ivy/workflow/IWorkflowSession.html>` "
 "with the receiver as session user."
 msgstr ""
-":code:`ivy.session`：セッションユーザーであるレシーバーとの:public-"
+":code:`ivy.session` ：セッションユーザーであるレシーバーとの:public-"
 "api:`IWorkflowSession</ch/ivyteam/ivy/workflow/IWorkflowSession.html>`"
 
 #: ../../source/concepts/notification/index.rst:145
@@ -4322,7 +4322,7 @@ msgid ""
 ":code:`ivy.cm`: :public-"
 "api:`ContentManagement</ch/ivyteam/ivy/cm/exec/ContentManagement.html>`"
 msgstr ""
-":code:`ivy.cm`：:public-"
+":code:`ivy.cm` ：:public-"
 "api:`ContentManagement</ch/ivyteam/ivy/cm/exec/ContentManagement.html>`"
 
 #: ../../source/concepts/notification/index.rst:146
@@ -4330,18 +4330,18 @@ msgid ""
 ":code:`ivy.application`: :public-"
 "api:`IApplication</ch/ivyteam/ivy/application/IApplication.html>`"
 msgstr ""
-":code:`ivy.application`：:public-"
+":code:`ivy.application` ：:public-"
 "api:`IApplication</ch/ivyteam/ivy/application/IApplication.html>`"
 
 #: ../../source/concepts/notification/index.rst:147
 msgid ":code:`ivy.html`: only one method :code:`ivy.html.escape(..)` is available"
-msgstr ":code:`ivy.html`：:code:`ivy.html.escape(..)` メソッドのみ利用可能"
+msgstr ":code:`ivy.html` ： :code:`ivy.html.escape(..)` メソッドのみ利用可能"
 
 #: ../../source/concepts/notification/index.rst:148
 msgid ""
 ":code:`ivy.branding`: only one method :code:`ivy.branding.ref(..)` is "
 "available"
-msgstr ":code:`ivy.branding`：:code:`ivy.branding.ref(..)` メソッドのみ利用可能"
+msgstr ":code:`ivy.branding` ： :code:`ivy.branding.ref(..)` メソッドのみ利用可能"
 
 #: ../../source/concepts/notification/index.rst:152
 msgid ""
@@ -4351,7 +4351,7 @@ msgid ""
 "for this."
 msgstr ""
 "信頼できない入力は手動でエスケープする必要があります。例えば、タスク名はユーザー入力で構成できます。XSS "
-"攻撃やフィッシング攻撃ができないように、ユーザー入力を適切にエスケープしなければなりません。それには、:code:`ivy.html.escape()`"
+"攻撃やフィッシング攻撃ができないように、ユーザー入力を適切にエスケープしなければなりません。それには、 :code:`ivy.html.escape()`"
 " を使用します。"
 
 #: ../../source/concepts/notification/index.rst:156
@@ -4360,7 +4360,7 @@ msgid ""
 "place them in the system CMS and use them in the template via "
 ":code:`ivy.cm.ref(..)`."
 msgstr ""
-"画像やドキュメントなどのリソースの添付も使用できます。それらをシステムの CMS に配置し、:code:`ivy.cm.ref(...)` "
+"画像やドキュメントなどのリソースの添付も使用できます。それらをシステムの CMS に配置し、 :code:`ivy.cm.ref(...)` "
 "によりテンプレートで使用してください。"
 
 #: ../../source/concepts/notification/index.rst:160
@@ -4396,7 +4396,7 @@ msgstr ""
 msgid ""
 ":code:`message`: :code:`String` with the provided message in the current "
 "language if provided by the CMS."
-msgstr "code:`message`：CMS によって提供される場合、現在の言語で提供されるメッセージを含む:code:`文字列`"
+msgstr "code:`message`：CMS によって提供される場合、現在の言語で提供されるメッセージを含む :code:`文字列`"
 
 #: ../../source/concepts/notification/index.rst:171
 msgid ""
@@ -5042,7 +5042,7 @@ msgid ""
 msgstr ""
 "テストケースによっては、 :ref:`変数<variables>` "
 "に別の値を使用したり、アプリの設定を変更したりする必要があります。このような場合は、``AppFixture`` "
-"を使用して値を変更します。テストの実行後、値は自動的に元の値にリセットされます。必要なのは、:code:`AppFixure` "
+"を使用して値を変更します。テストの実行後、値は自動的に元の値にリセットされます。必要なのは、 :code:`AppFixure` "
 "クラスのインスタンスが欲しいことをテストに伝えるだけです。それでは見てみましょう。"
 
 #: ../../source/concepts/testing/unit-testing.rst:76
@@ -5458,7 +5458,7 @@ msgstr "リンク"
 msgid ""
 "You usually want to embed content like images or documents as a link. For"
 " this you can use :code:`ivy.cm.ref`."
-msgstr "画像やドキュメントのようなコンテンツをリンクとして埋め込みたい場合は、:code:`ivy.cm.ref` を使用します。"
+msgstr "画像やドキュメントのようなコンテンツをリンクとして埋め込みたい場合は、 :code:`ivy.cm.ref` を使用します。"
 
 #: ../../source/designer-guide/cms/display.rst:38
 msgid "**Example** :code:`ivy.cm.ref(\"/documents/instruction\")`"
@@ -6077,7 +6077,7 @@ msgid ""
 ":code:`/test/label`), which in turn represents the hierarchical "
 "structure. Content objects (except folders) have **content object "
 "values**, where each value is bound to a locale."
-msgstr "コンテンツオブジェクトはパス（例：:code:`/test/label`）で一意にアドレス指定でき、パスが階層構造を表します。コンテンツオブジェクト（フォルダーを除く）は**コンテンツオブジェクト値** を持ち、各値はロケールにバインドされています。"
+msgstr "コンテンツオブジェクトはパス（例： :code:`/test/label` ）で一意にアドレス指定でき、パスが階層構造を表します。コンテンツオブジェクト（フォルダーを除く）は**コンテンツオブジェクト値** を持ち、各値はロケールにバインドされています。"
 
 #: ../../source/designer-guide/cms/structure.rst:17
 msgid ""
@@ -6092,12 +6092,12 @@ msgstr ""
 #: ../../source/designer-guide/cms/structure.rst:26
 msgid ""
 "In this content management system you can see eight content objects. "
-"Where :code:`/`, :code:`/documents`, :code:`/images` and :code:`/labels``"
+"Where :code:`/`, :code:`/documents`, :code:`/images` and :code:`/labels` `"
 " are folders and serve only for hierarchical presentation. The content "
 "objects with real values are:"
 msgstr ""
 "以下のコンテンツ管理システムには、8 "
-"つのコンテンツオブジェクトがあります。:code:`/`、:code:`/documents`、:code:`/images`、:code:`/labels``"
+"つのコンテンツオブジェクトがあります。 :code:`/` 、 :code:`/documents` 、 :code:`/images` 、 :code:`/labels` `"
 " はフォルダーで、階層を表すためにのみ使用されます。実際の値を持つコンテンツオブジェクトは以下のとおりです。"
 
 #: ../../source/designer-guide/cms/structure.rst:30
@@ -6484,7 +6484,7 @@ msgid ""
 "`myVariable`  will be injected at runtime into the URI."
 msgstr ""
 "設定に動的な式を使用して、異なる実行環境でのインストール後の設定を簡素化できます。そのためには、プロパティや URI "
-"に :ref:`variables` への動的参照を追加します。例えば、:code:` ${ivy.var.myVariable}/resource` "
+"に :ref:`variables` への動的参照を追加します。例えば、 :code:` ${ivy.var.myVariable}/resource` "
 "として定義されたエンドポイント URI に対して、`myVariable` という名前の変数の値が実行時に URI に注入されます。"
 
 #: ../../source/designer-guide/configuration/dynamic-configs.rst:12
@@ -6822,8 +6822,8 @@ msgid ""
 msgstr ""
 "`OData サービス<https://www.odata.org/>`__ を統合する必要がある場合は、OData コンバーター<http"
 "://odata-converter.axonivy.com>`__を使用して OData "
-"のサービス記述を変換できます。通常、サービス記述は、:code:`$metadata` で終わる指定されたサービス URL "
-"（例：:code:`https://myService/cars/$metadata`）で参照できます。"
+"のサービス記述を変換できます。通常、サービス記述は、 :code:`$metadata` で終わる指定されたサービス URL "
+"（例： :code:`https://myService/cars/$metadata` ）で参照できます。"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:129
 msgid ""
@@ -7549,9 +7549,9 @@ msgid ""
 "the Variable called :code:`myFile`."
 msgstr ""
 "**File：** このオプションは、この変数の値が外部ファイルから読み込まれるように設定します。対象となるファイルは :file:`.json` "
-"または :file:`.txt` ファイルです。変数の名前が :code:`myFile` で、:code:`JSON` "
+"または :file:`.txt` ファイルです。変数の名前が :code:`myFile` で、 :code:`JSON` "
 "ファイルである場合、そのファイルは :file:`<project>/config/variables/myFile.json` "
-"に配置される必要があります。また、:code:`variables` "
+"に配置される必要があります。また、 :code:`variables` "
 "というプレフィックスを、親ディレクトリではなく、ファイル名の一部とすることができます。つまり、 "
 ":file:`<project>/config/variables.myFile.json` というファイルに :code:`myFile` "
 "という変数の値を格納できます。"
@@ -7564,7 +7564,7 @@ msgid ""
 "increased security."
 msgstr ""
 "変数の名前に :code:`password` または :code:`secret` "
-"が含まれ（例：:code:`hidePasswordMenu`）、メタデータオプションが選択されていない場合、Axon Ivy Engine "
+"が含まれ（例： :code:`hidePasswordMenu` ）、メタデータオプションが選択されていない場合、Axon Ivy Engine "
 "は自動的にこの変数をパスワードとして扱い、セキュリティを強化します。"
 
 #: ../../source/designer-guide/configuration/variables.rst:104
@@ -17216,7 +17216,7 @@ msgid ""
 "the cache."
 msgstr ""
 "**ライフタイム** ：要求時（「キャッシュモード」の「キャッシュを無効にする」を参照）、特定の時刻（時刻フォーマット "
-":code:`\"HH:mms:ss\"` が設定された文字列、例：:code:`\"23:50:00\"` "
+":code:`\"HH:mms:ss\"` が設定された文字列、例： :code:`\"23:50:00\"` "
 "）、または設定可能な期間（秒単位、例えば :code:`3600` "
 "は1時間）後に、グループを無効にすることができます。グループが無効化されると、常にキャッシュからすべてのエントリが削除されます。"
 
@@ -17241,7 +17241,7 @@ msgid ""
 " e.g., :code:`3600` for one hour)."
 msgstr ""
 "**ライフタイム** ：要求時（「キャッシュモード」の「キャッシュを無効にする」を参照）、特定の時刻（時刻フォーマット "
-":code:`\"HH:mms:ss\"` が設定された文字列、例：:code:`\"23:50:00\"` "
+":code:`\"HH:mms:ss\"` が設定された文字列、例： :code:`\"23:50:00\"` "
 "）、または設定可能な期間（秒単位、例えば :code:`3600` は1時間）後に、単一のキャッシュエントリを無効にすることができます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_tab-case.rst:2
@@ -17472,7 +17472,7 @@ msgid ""
 ":code:`2D`."
 msgstr ""
 "IvyScript 式は、タスクの有効期限が切れるまで :ref:`ivyscript-datatype-"
-"duration` を定義します。その場合、次のパラメーターで定義されたエスカレーション手順が実行されます。また、:code:` 2D` "
+"duration` を定義します。その場合、次のパラメーターで定義されたエスカレーション手順が実行されます。また、 :code:` 2D` "
 "のような単純な:public-api:`Duration "
 "</ch/ivyteam/ivy/scripting/objects/Duration.html>` 文を使用することもできます。"
 
@@ -17569,7 +17569,7 @@ msgid ""
 msgstr ""
 "CMS の :file:`/Notification/new-"
 "task/Templates/[テンプレート]/[チャネル]/Subject|Content` "
-"にあるテンプレート（例えば、:code:`mail` チャネルの :code:`Subject` テンプレート :code:`my-custom-"
+"にあるテンプレート（例えば、 :code:`mail` チャネルの :code:`Subject` テンプレート :code:`my-custom-"
 "template` の場合は、:file:`/Notification/new-task/Templates/my-custom-"
 "template/mail/Subject`）。 :ref:`テンプレート<notification-"
 "templating>` も参照してください。"
@@ -27092,7 +27092,7 @@ msgid ""
 "width. To change this you can use a :code:`Layout` component. With this "
 "you can arrange components side by side in a grid."
 msgstr ""
-"デフォルトでは、コンポーネントは全幅で上から下に構造化されます。これを変更するには、:code:`Layout` "
+"デフォルトでは、コンポーネントは全幅で上から下に構造化されます。これを変更するには、 :code:`Layout` "
 "コンポーネントを使用します。コンポーネントをグリッド内で左右に並べて配置できます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:143
@@ -27138,7 +27138,7 @@ msgstr ""
 msgid ""
 "|create-column| Create new column. Only available on the :code:`Table` "
 "component."
-msgstr "|create-column| 新しい列を作成します。:code:`表`コンポーネントでのみ使用できます。"
+msgstr "|create-column| 新しい列を作成します。 :code:`表` コンポーネントでのみ使用できます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:176
 msgid "create-column"
@@ -27184,7 +27184,7 @@ msgid ""
 "the type *Grid* and column *Free* you will get on each child a new "
 "section where you can define how much space it should take on different "
 "screen sizes."
-msgstr "また、特定の親コンポーネントが存在する場合のみ使用できる設定もあります。例えば、タイプが*グリッド*で、列が*フリー*の:code:`レイアウト`コンポーネントの場合、子ごとに新しいセクションが表示され、さまざまな画面サイズでコンポーネントの大きさを定義できます。"
+msgstr "また、特定の親コンポーネントが存在する場合のみ使用できる設定もあります。例えば、タイプが*グリッド*で、列が*フリー*の :code:`レイアウト` コンポーネントの場合、子ごとに新しいセクションが表示され、さまざまな画面サイズでコンポーネントの大きさを定義できます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:204
 msgid ""
@@ -27239,7 +27239,7 @@ msgid ""
 "workflow."
 msgstr ""
 ":ref:`form-editor-tool-bar` の［*データ*］ :ref:`form-editor-quick-"
-"actions` 、またはフォームが空の場合は［*データから作成*］ボタンをクリックして、フォームデータからコンポーネントを作成できます。以下のウィザードにフォームのデータクラスが表示され、属性を選択し、選択した属性のコンポーネントを直接作成できます。また、ワークフローを制御する:code:`続行`ボタンと:code:`キャンセル` ボタンも作成できます。"
+"actions` 、またはフォームが空の場合は［*データから作成*］ボタンをクリックして、フォームデータからコンポーネントを作成できます。以下のウィザードにフォームのデータクラスが表示され、属性を選択し、選択した属性のコンポーネントを直接作成できます。また、ワークフローを制御する :code:`続行` ボタンと :code:`キャンセル` ボタンも作成できます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/form-editor.rst:241
 msgid "|form-editor-data-class-dialog|"
@@ -28096,7 +28096,7 @@ msgstr "**Freya** のテーマを選択する場合は、追加のレイアウ�
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-themes.rst:44
 msgid "You can fix the theme to a specific mode :code:`light` or :code:`dark`:"
-msgstr "テーマを:code:`ライト`モードまたは:code:`ダークモード`で固定できます。"
+msgstr "テーマを :code:`ライト` モードまたは :code:`ダークモード` で固定できます。"
 
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-themes.rst:55
 msgid ""
@@ -28106,7 +28106,7 @@ msgid ""
 ":public-api:`IvyFreyaTheme "
 "</ch/ivyteam/ivy/jsf/primefaces/theme/IvyFreyaTheme.html>` "
 msgstr ""
-"また、モードを動的に読みとみ、実行時に切り替えることができます。:code:`primefaces-theme-mode` cookie を "
+"また、モードを動的に読みとみ、実行時に切り替えることができます。 :code:`primefaces-theme-mode` cookie を "
 "**light** または ** dark** に設定するか、:public-api:`IvyFreyaTheme "
 "</ch/ivyteam/ivy/jsf/primefaces/theme/IvyFreyaTheme.html>` 関数を呼び出してください。"
 
@@ -28118,7 +28118,7 @@ msgid ""
 ":code:`#{ivyFreyaTheme.mode}` class on the :code:`<h:body>` tag, or "
 "simply start from a new generated frame template:"
 msgstr ""
-"既存のテンプレートを **freya-ivy** テーマに変更する場合、:code:`<h:body>` タグに :code:`body-hd` "
+"既存のテンプレートを **freya-ivy** テーマに変更する場合、 :code:`<h:body>` タグに :code:`body-hd` "
 "とテーマモードとして :code:`#{ivyFreyaTheme.mode}` "
 "クラスを設定する必要があります。または、新しいフレームのテンプレートを作成してください。"
 
@@ -28136,7 +28136,7 @@ msgid ""
 "recommend to reference :file:`primeflex-3.min.css` in your template."
 msgstr ""
 "PrimeFaces には、`PrimeFlex "
-"<https://www.primefaces.org/showcase/primeflex/setup.xhtml>`__という名前の追加ライブラリがあり、（例えば、:code:`<p:panelGrid"
+"<https://www.primefaces.org/showcase/primeflex/setup.xhtml>`__という名前の追加ライブラリがあり、（例えば、 :code:`<p:panelGrid"
 " layout=\"flex\">` を使用して）`FlexBox <https://developer.mozilla.org/en-"
 "US/docs/Learn/CSS/CSS_layout/Flexbox>`__を PrimeFaces "
 "のウィジェットと一緒に使用できます。さらに、テンプレートで :file:`primeflex-3.min.css` を参照することを推奨します。"
@@ -29626,7 +29626,7 @@ msgstr "、- L"
 
 #: ../../source/engine-guide/configuration/advanced-configuration.rst:126
 msgid "Asterisk ( :code:`*` )"
-msgstr "アスタリスク（:code:`*`）"
+msgstr "アスタリスク（ :code:`*` ）"
 
 #: ../../source/engine-guide/configuration/advanced-configuration.rst:128
 msgid ""
@@ -29634,12 +29634,12 @@ msgid ""
 " :code:`* * * * *` will run every minute. Using :code:`* * * * 1` will "
 "run every minute only on Monday."
 msgstr ""
-"アスタリスク（別名ワイルドカード）は、「すべて」を表します。例えば、:code:`* * * * *`を使用すると、1 "
-"分ごとに実行されます。:code:`* * * * 1` を使用すると、月曜のみ、1 分ごとに実行されます。"
+"アスタリスク（別名ワイルドカード）は、「すべて」を表します。例えば、 :code:`* * * * *` を使用すると、1 "
+"分ごとに実行されます。 :code:`* * * * 1` を使用すると、月曜のみ、1 分ごとに実行されます。"
 
 #: ../../source/engine-guide/configuration/advanced-configuration.rst:132
 msgid "Comma ( :code:`,` )"
-msgstr "カンマ（ :code:`,`）"
+msgstr "カンマ（ :code:`,` ）"
 
 #: ../../source/engine-guide/configuration/advanced-configuration.rst:134
 msgid ""
@@ -29652,31 +29652,31 @@ msgstr ""
 
 #: ../../source/engine-guide/configuration/advanced-configuration.rst:137
 msgid "Dash ( :code:`-` )"
-msgstr "ダッシュ（:code:`-`）"
+msgstr "ダッシュ（ :code:`-` ）"
 
 #: ../../source/engine-guide/configuration/advanced-configuration.rst:139
 msgid ""
 "Dash defines ranges. For example, :code:`TUE-FRI` indicates every day "
 "from Tuesday to Friday, inclusive."
-msgstr "ダッシュは範囲を定義します。例えば、:code:`TUE-FRI` は、火曜日から金曜日までのすべての曜日を表します。"
+msgstr "ダッシュは範囲を定義します。例えば、 :code:`TUE-FRI` は、火曜日から金曜日までのすべての曜日を表します。"
 
 #: ../../source/engine-guide/configuration/advanced-configuration.rst:142
 msgid "Last ( :code:`L` )"
-msgstr "最終（:code:`L`）"
+msgstr "最終（ :code:`L` ）"
 
 #: ../../source/engine-guide/configuration/advanced-configuration.rst:144
 msgid ""
 ":code:`L` stands for \"last\". When used in the day-of-week field, it "
-"allows specifying constructs such as \"the last Friday\" (:code:`5L`) of "
+"allows specifying constructs such as \"the last Friday\" ( :code:`5L`) of "
 "a given month. In the day-of-month field, it specifies the last day of "
 "the month."
 msgstr ""
 ":code:`L` "
-"は「最終」を表します。曜日フィールドで使用する場合、「最終金曜日」（:code:`5L`）などのコンストラクトを指定できます。月フィールドでは、月の最終日を指定します。"
+"は「最終」を表します。曜日フィールドで使用する場合、「最終金曜日」（ :code:`5L` ）などのコンストラクトを指定できます。月フィールドでは、月の最終日を指定します。"
 
 #: ../../source/engine-guide/configuration/advanced-configuration.rst:148
-msgid "Weekday (:code:`W` )"
-msgstr "平日（:code:`W`）"
+msgid "Weekday ( :code:`W` )"
+msgstr "平日（ :code:`W` ）"
 
 #: ../../source/engine-guide/configuration/advanced-configuration.rst:150
 msgid ""
@@ -29694,11 +29694,11 @@ msgid ""
 "or list of days."
 msgstr ""
 ":code:`W` "
-"は日付フィールドで使用できます。この文字を使用して、所定の日に最も近い平日（月曜日～金曜日）を指定します。例えば、:code:`15W` "
+"は日付フィールドで使用できます。この文字を使用して、所定の日に最も近い平日（月曜日～金曜日）を指定します。例えば、 :code:`15W` "
 "を日付フィールドの値として指定した場合、その意味は「15 日に最も近い平日」です。15 日が土曜日であれば 14 日の金曜日、15 "
-"日が日曜日であれば 16 日の月曜日になります。ただし、:code:`1W` "
+"日が日曜日であれば 16 日の月曜日になります。ただし、 :code:`1W` "
 "を日付フィールドの値として指定した場合、月の日の境界を「超える」ことはないため、1 日が土曜日であれば 3 "
-"日の月曜日になります。:code:`W` は、日付が範囲やリストではなく、単日の場合のみ指定できます。"
+"日の月曜日になります。 :code:`W` は、日付が範囲やリストではなく、単日の場合のみ指定できます。"
 
 #: ../../source/engine-guide/configuration/advanced-configuration.rst:158
 msgid "Overriding Configuration"
@@ -29713,8 +29713,8 @@ msgid ""
 " characters. You need also to prefix the environment variable with "
 ":code:`IVY_`."
 msgstr ""
-"YAML ファイルの設定項目をオペレーティングシステムの環境変数でオーバーライドできます。YAML の設定キーは、:code:`:` "
-"で区切られた階層的なオブジェクトツリーです。環境変数は大文字で記述し、:code:`_` で区切らなければなりません。また、環境変数の前には "
+"YAML ファイルの設定項目をオペレーティングシステムの環境変数でオーバーライドできます。YAML の設定キーは、 :code:`:` "
+"で区切られた階層的なオブジェクトツリーです。環境変数は大文字で記述し、 :code:`_` で区切らなければなりません。また、環境変数の前には "
 ":code:`IVY_` を付ける必要があります。"
 
 #: ../../source/engine-guide/configuration/advanced-configuration.rst:166
@@ -29763,7 +29763,7 @@ msgstr "この設定でコンテナを実行します。"
 #: ../../source/engine-guide/configuration/docker-container.rst:33
 #, python-format
 msgid "On Windows use :code:`%cd%/ivy.yaml` instead of :code:`$(pwd)/ivy.yaml`"
-msgstr "Windows では、:code:`$(pwd)/ivy.yaml` の代わりに :code:`%cd%/ivy.yaml` を使用します。"
+msgstr "Windows では、 :code:`$(pwd)/ivy.yaml` の代わりに :code:`%cd%/ivy.yaml` を使用します。"
 
 #: ../../source/engine-guide/configuration/docker-container.rst:35
 msgid ""
@@ -30078,17 +30078,17 @@ msgstr ""
 
 #: ../../source/engine-guide/configuration/notification/index.rst:28
 msgid "Send a notification regardless of the user's absence: :code:`always`"
-msgstr "ユーザーが不在であっても通知を送信する場合：:code:`always`"
+msgstr "ユーザーが不在であっても通知を送信する場合： :code:`always`"
 
 #: ../../source/engine-guide/configuration/notification/index.rst:29
 msgid "Does not send a notification if the user is absent: :code:`never`"
-msgstr "ユーザーが不在な場合には通知を送信しない場合：:code:`never`"
+msgstr "ユーザーが不在な場合には通知を送信しない場合： :code:`never`"
 
 #: ../../source/engine-guide/configuration/notification/index.rst:30
 msgid ""
 "Send a notification only the absent user does not have an active "
 "substitute: :code:`noActiveSubstitute`"
-msgstr "不在ユーザーにアクティブな代行者がいない場合のみ通知を送信する場合：:code:`noActiveSubstitute`"
+msgstr "不在ユーザーにアクティブな代行者がいない場合のみ通知を送信する場合： :code:`noActiveSubstitute`"
 
 #: ../../source/engine-guide/configuration/notification/index.rst:34
 msgid ""
@@ -30422,7 +30422,7 @@ msgstr "本番エンジンを実行するには、データを格納する外部
 msgid ""
 "To define the database of the Axon Ivy Engine, the :code:`SystemDb` "
 "entries have to be set."
-msgstr "Axon Ivy Engine のデータベースを定義するには、:code:`SystemDb` エントリを設定する必要があります。"
+msgstr "Axon Ivy Engine のデータベースを定義するには、 :code:`SystemDb` エントリを設定する必要があります。"
 
 #: ../../source/engine-guide/configuration/system-database/index.rst:20
 msgid "The following database management systems are supported, choose one:"
@@ -30734,7 +30734,7 @@ msgid ""
 "manually like in the :code:`Ivy Security System`."
 msgstr ""
 "**外部 ID プロバイダー** ：Active Directory などの外部 ID プロバイダーからユーザーを同期するのに使用します。ID "
-"プロバイダーからのユーザーに加えて、:code:`Ivy Security System` でユーザーを手動で追加して管理することもできます。"
+"プロバイダーからのユーザーに加えて、 :code:`Ivy Security System` でユーザーを手動で追加して管理することもできます。"
 
 #: ../../source/engine-guide/configuration/users/index.rst:22
 msgid "We support the following identity providers by default:"
@@ -31088,7 +31088,7 @@ msgid ""
 " be checked by verifying the http status code, which must be :code:`200`."
 msgstr ""
 "REST デプロイメント API を使用すると、高度にカスタマイズされたデプロイメントチェーンが可能になります。REST API "
-"はプラットフォームに依存しないため、推奨される CI/CD パイプラインの構築方法です。:code:`curl` など、任意のツールを使用して、 "
+"はプラットフォームに依存しないため、推奨される CI/CD パイプラインの構築方法です。 :code:`curl` など、任意のツールを使用して、 "
 "この REST API を呼び出すことができます。HTTP ステータスコード :code:`200` "
 "を確認して、展開が成功しているかどうかチェックできます。"
 
@@ -31102,31 +31102,31 @@ msgstr "説明："
 
 #: ../../source/engine-guide/deployment/deploy/rest-api/index.rst:24
 msgid ":code:`-X POST`: You need to send a HTTP POST request."
-msgstr ":code:`-X POST`：HTTP POST リクエストを送信する必要があります。"
+msgstr ":code:`-X POST` ：HTTP POST リクエストを送信する必要があります。"
 
 #: ../../source/engine-guide/deployment/deploy/rest-api/index.rst:25
 msgid ""
 ":code:`http://localhost/system/api/apps/myApp`: URL targeting your "
 "application."
-msgstr ":code:`http://localhost/system/api/apps/myApp`：アプリケーションの URL。"
+msgstr ":code:`http://localhost/system/api/apps/myApp` ：アプリケーションの URL。"
 
 #: ../../source/engine-guide/deployment/deploy/rest-api/index.rst:27
 msgid ":code:`-u admin:admin`: Username and password of an administrator user."
-msgstr ":code:`-u admin:admin`：管理者ユーザーのユーザー名とパスワード。"
+msgstr ":code:`-u admin:admin` ：管理者ユーザーのユーザー名とパスワード。"
 
 #: ../../source/engine-guide/deployment/deploy/rest-api/index.rst:28
 msgid ""
 ":code:`-H 'X-Requested-By: curl'`: HTTP Header to prevent CSRF attacks. "
 "Any value for :code:`curl` possible."
 msgstr ""
-":code:`-H 'X-Requested-By: curl'`：CSRF 攻撃を防ぐための HTTP ヘッダー。:code:`curl` "
+":code:`-H 'X-Requested-By: curl'` ：CSRF 攻撃を防ぐための HTTP ヘッダー。 :code:`curl` "
 "には任意の値を指定できます。"
 
 #: ../../source/engine-guide/deployment/deploy/rest-api/index.rst:30
 msgid ""
 ":code:`-F fileToDeploy=@/tmp/app.zip`: The file which needs to be "
 "deployed."
-msgstr ":code:`-F fileToDeploy=@/tmp/app.zip`：展開する必要があるファイル。"
+msgstr ":code:`-F fileToDeploy=@/tmp/app.zip` ：展開する必要があるファイル。"
 
 #: ../../source/engine-guide/deployment/deploy/rest-api/index.rst:32
 msgid ""
@@ -31209,7 +31209,7 @@ msgid ""
 ":file:`<app.zip>/config/variables/myVariableName.json` as shown below."
 msgstr ""
 ":file:`app.yaml` "
-"ファイルはプロジェクトで宣言された :ref:`variables` をオーバーライドできます。また、以下に示すように、これらの変数がファイルタイプの値である場合は（例：:code:` [file:"
+"ファイルはプロジェクトで宣言された :ref:`variables` をオーバーライドできます。また、以下に示すように、これらの変数がファイルタイプの値である場合は（例： :code:` [file:"
 " json]`）、:file:`<app.zip>/config/variables/myVariableName.json` の "
 ":file:`app.zip` に追加して、これらのファイルの値をオーバーライドできます。"
 
@@ -32214,7 +32214,7 @@ msgstr ""
 
 #: ../../source/engine-guide/getting-started/windows/configure.rst:35
 msgid ""
-"To configure the system database, use the:code:`config-db` command of the"
+"To configure the system database, use the :code:`config-db` command of the"
 " **EngineConfigCli** tool. Replace ** yourdatabaseserver** with the "
 "hostname of the server running your DBMS system. Replace **dbuser** and "
 "**password** with the credentials of a technical database user with the "
@@ -32277,7 +32277,7 @@ msgid ""
 ":code:`[password]` is used to run the service."
 msgstr ""
 ":code:`[windowsServiceName]` "
-"をサービスに使用したい名前（例：ivy_prod）に置き換えます。:code:`[username]` と :code:`[password]` "
+"をサービスに使用したい名前（例：ivy_prod）に置き換えます。 :code:`[username]` と :code:`[password]` "
 "で指定されたユーザーを使用して、サービスを実行します。"
 
 #: ../../source/engine-guide/getting-started/windows/configure.rst:89
@@ -32781,7 +32781,7 @@ msgid ""
 ":code:`IVYSESSIONID`."
 msgstr ""
 "Axon Ivy のセッション ID を使用して、セッションのスティッキネスを実現します。セッション ID "
-"は、:code:`JSESSIONID` という名前を持つ HTTP セッション Cookie として、Axon Ivy Engine "
+"は、 :code:`JSESSIONID` という名前を持つ HTTP セッション Cookie として、Axon Ivy Engine "
 "Enterprise Edition から提供されます。"
 
 #: ../../source/engine-guide/integration/cluster/load-balancer/index.rst:20
@@ -32834,15 +32834,15 @@ msgstr ""
 
 #: ../../source/engine-guide/integration/identity-provider/keycloak/index.rst:10
 msgid "the :code:`Realm` (name of the realm)"
-msgstr "the :code:`Realm`（レルムの名前）"
+msgstr "the :code:`Realm` （レルムの名前）"
 
 #: ../../source/engine-guide/integration/identity-provider/keycloak/index.rst:11
 msgid "the :code:`ClientId` (Client identifier)"
-msgstr "the :code:`ClientId`（クライアントの識別子）"
+msgstr "the :code:`ClientId` （クライアントの識別子）"
 
 #: ../../source/engine-guide/integration/identity-provider/keycloak/index.rst:12
 msgid "the :code:`ClientSecret` (Secret value)"
-msgstr "the :code:`ClientSecret`（シークレット値）"
+msgstr "the :code:`ClientSecret` （シークレット値）"
 
 #: ../../source/engine-guide/integration/identity-provider/keycloak/index.rst:14
 msgid ""
@@ -32875,7 +32875,7 @@ msgstr ":guilabel:`Client Type` として :code:`OpenID Connect` を使用しま
 
 #: ../../source/engine-guide/integration/identity-provider/keycloak/setup.rst:10
 msgid "Choose a :guilabel:`Client ID` of your choice e.g. :code:`ivy-client`"
-msgstr ":guilabel:`Client ID` でクライアント ID を選択します（例：:code:`ivy-client`）。"
+msgstr ":guilabel:`Client ID` でクライアント ID を選択します（例： :code:`ivy-client` ）。"
 
 #: ../../source/engine-guide/integration/identity-provider/keycloak/setup.rst:14
 #: ../../source/engine-guide/integration/identity-provider/keycloak/setup.rst:20
@@ -32898,7 +32898,7 @@ msgid ""
 "://ivy-engine/oauth2/callback`."
 msgstr ""
 "Keycloak のログイン画面を表示する URL を定義します。セキュリティを強化するため、:guilabel:`Valid redirect "
-"URLs` も定義します。Axon Ivy Engine につながる URL を定義する必要があります（例：:code:`https://ivy-"
+"URLs` も定義します。Axon Ivy Engine につながる URL を定義する必要があります（例： :code:`https://ivy-"
 "engine/oauth2/callback`）。"
 
 #: ../../source/engine-guide/integration/identity-provider/keycloak/setup.rst:27
@@ -32976,15 +32976,15 @@ msgstr ""
 
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/index.rst:10
 msgid "the :code:`TenantId` (Directory (tenant) ID)"
-msgstr ":code:`TenantId`（ディレクトリ（テナント）ID）"
+msgstr ":code:`TenantId` （ディレクトリ（テナント）ID）"
 
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/index.rst:11
 msgid "the :code:`ClientId` (Application ID) and"
-msgstr ":code:`ClientId`（アプリケーション ID）"
+msgstr ":code:`ClientId` （アプリケーション ID）"
 
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/index.rst:12
 msgid "the :code:`ClientSecret` (Secret Value)."
-msgstr ":code:`ClientSecret`（シークレット値）"
+msgstr ":code:`ClientSecret` （シークレット値）"
 
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/index.rst:14
 msgid ""
@@ -33021,7 +33021,7 @@ msgstr "新規登録"
 
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/microsoft-entra-id-app.rst:14
 msgid "Choose a name of your choice e.g., :code:`ivy`"
-msgstr "名前を選択します（例：:code:`ivy`）。"
+msgstr "名前を選択します（例： :code:`ivy` ）。"
 
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/microsoft-entra-id-app.rst:15
 msgid ""
@@ -33089,7 +33089,7 @@ msgstr ":guilabel:`新しいクライアントシークレット`をクリック
 
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/microsoft-entra-id-app.rst:39
 msgid "Enter a description, e.g., :code:`ivy`"
-msgstr "説明を入力します（例：:code:`ivy`）。"
+msgstr "説明を入力します（例： :code:`ivy` ）。"
 
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/microsoft-entra-id-app.rst:41
 msgid ""
@@ -33211,7 +33211,7 @@ msgid ""
 msgstr ""
 "バンドルされた OpenSearch サーバーはそのままで動作します。通常、追加設定は必要ありません。ただし、バンドルされた OpenSearch"
 " サーバーを微調整したい場合は、OpenSearch "
-"設定フォルダー（:code:`[ivyEngine]/configuration/opensearch`）に移動します。デフォルトでは、:code:`[ivyEngine]/logs/opensearch`"
+"設定フォルダー（ :code:`[ivyEngine]/configuration/opensearch` ）に移動します。デフォルトでは、 :code:`[ivyEngine]/logs/opensearch`"
 " にバンドルされた OpenSearch サーバーのログが格納されています。"
 
 #: ../../source/engine-guide/integration/opensearch/bundled.rst:12
@@ -33384,7 +33384,7 @@ msgid ""
 msgstr ""
 "リバースプロキシと Axon Ivy Engine を統合するには、Axon Ivy Engine がリクエストに基づいて正しい URL "
 "を作成できるように、クライアントが最初にリクエストしたホストを渡す必要があります。ドキュメント化されたすべての例にこの :code:`Host` "
-"ヘッダーが保存されていますが、Axon Ivy Engine を他のリバースプロキシと統合する場合は、:code:`Host` ヘッダーを "
+"ヘッダーが保存されていますが、Axon Ivy Engine を他のリバースプロキシと統合する場合は、 :code:`Host` ヘッダーを "
 "|ivy-engine| に渡す必要があります。代わりの方法として、クライアントからリクエストされた元のホストを識別する :code:`X"
 "-Forwarded-Host` を提供することもできます。"
 
@@ -33423,7 +33423,7 @@ msgid ""
 "-Forwarded-Proto` is set and only needed if you don't serve your site via"
 " non-standard ports (80 and 443)."
 msgstr ""
-"クライアントがリバースプロキシサーバーに接続するのに使用したポートを識別する :code:`X-Forwarded-Port`。:code:`X"
+"クライアントがリバースプロキシサーバーに接続するのに使用したポートを識別する :code:`X-Forwarded-Port` 。 :code:`X"
 "-Forwarded-Proto` が設定されている場合のみ使用され、標準（80 および "
 "443）以外のポートからサイトを提供していない場合のみ必要です。"
 
@@ -33432,7 +33432,7 @@ msgid ""
 "You can change the name of the :code:`X-Forwarded` headers in the :ref"
 ":`ivy-yaml` , see section :code:`ReverseProxy`."
 msgstr ""
-":ref:`ivy-yaml` で :code:`X-Forwarded` ヘッダーの名前を変更できます。:code:`ReverseProxy`"
+":ref:`ivy-yaml` で :code:`X-Forwarded` ヘッダーの名前を変更できます。 :code:`ReverseProxy`"
 " のセクションを参照してください。"
 
 #: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:4
@@ -33469,7 +33469,7 @@ msgstr "IIS が Axon Ivy Engine と同じホストにあること。"
 
 #: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:17
 msgid "The Axon Ivy Engine is accessed via the :code:`Default Web Site` of IIS."
-msgstr "IIS の:code:`デフォルトウェブサイト`から Axon Ivy Engine にアクセスすること。"
+msgstr "IIS の :code:`デフォルトウェブサイト` から Axon Ivy Engine にアクセスすること。"
 
 #: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:18
 msgid ""
@@ -33597,8 +33597,8 @@ msgstr ""
 "Axon Ivy には WebSocket 通信を必要とする機能があるため、WebSocket 機能は自動的にインストールされます。IIS の "
 "ARR は WebSocket の圧縮をネゴシエートできないため、必ず HTTP ヘッダー "
 ":code:`SEC_WEBSOCKET_EXTENSIONS` "
-"を空に設定する必要があります。:code:`HTTP_SEC_WEBSOCKET_EXTENSIONS` を :guilabel:`IIS "
-"サーバー変数`に追加し、:code:`ivy-route-all` 書き換えルールの "
+"を空に設定する必要があります。 :code:`HTTP_SEC_WEBSOCKET_EXTENSIONS` を :guilabel:`IIS "
+"サーバー変数`に追加し、 :code:`ivy-route-all` 書き換えルールの "
 ":code:`HTTP_SEC_WEBSOCKET_EXTENSIONS` を空に変更します。"
 
 #: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:92
@@ -33614,8 +33614,8 @@ msgid ""
 msgstr ""
 "**IIS で SSL を終了** することで、IIS は Axon Ivy Engine を HTTPS で稼働させますが、IIS と Axon "
 "Ivy Engine の間の接続は HTTP のみであることから :ref:`この方法で IIS をセットアップする<reverse-proxy-"
-"terminate-ssl>` とを強くお勧めします。:code:`HTTP_X-Forwarded-Proto` という名前の新しい "
-":guilabel:`IIS サーバー変数`が作成され、:code:`ivy-route-all` 書き換えルールで :code:`https` "
+"terminate-ssl>` とを強くお勧めします。 :code:`HTTP_X-Forwarded-Proto` という名前の新しい "
+":guilabel:`IIS サーバー変数`が作成され、 :code:`ivy-route-all` 書き換えルールで :code:`https` "
 "に設定されます。これにより、HTTP ヘッダー :code:`X-Forwarded-Proto` が IIS から Axon Ivy "
 "Engine に送信されます。Axon Ivy Engine が正しい URL を作成するには、この情報が必要です。"
 
@@ -33633,7 +33633,7 @@ msgid ""
 msgstr ""
 "**SSO のセットアップ** では、 :ref:`シングルサインオン<single-sign-on>` を設定します。Windows "
 "認証を有効にし、HTTP リクエストヘッダー :code:`X-Forwarded-User` "
-"と現在のユーザーをリクエストに追加します。リクエストは Axon Ivy Engine に転送されます。また、:code:`ivy.yaml` で"
+"と現在のユーザーをリクエストに追加します。リクエストは Axon Ivy Engine に転送されます。また、 :code:`ivy.yaml` で"
 " Axon Ivy Engine  :ref:`シングルサインオンをアクティブにする<single-sign-"
 "on>` 要があります。また、スクリプトにより、Axon Ivy Engine が提供する保護された REST サービスを呼び出す Axon "
 "Ivy モバイルアプリなど、REST クライアントに必要な基本認証が有効になります。必要ない場合は、手動で無効にすることができます。"
@@ -33665,7 +33665,7 @@ msgid ""
 " via HTTP through IIS."
 msgstr ""
 ":guilabel:`Default Web Site` に移動し、:guilabel:`ハンドラーマッピング`を開き、新しいバインディングとして"
-" :code:`https` を追加します。先ほど提供した SSL 証明書を選択します。:code:`http` "
+" :code:`https` を追加します。先ほど提供した SSL 証明書を選択します。 :code:`http` "
 "バインディングを削除することを強くお勧めします。これにより、IIS から HTTP で Axon Ivy Engine "
 "にアクセスできなくなります。"
 
@@ -33735,7 +33735,7 @@ msgid ""
 "proxy configuration."
 msgstr ""
 "Axon Ivy Engine 自体にベース URL "
-":code:`system`（例：:code:`https://ivyengine/system`） "
+":code:`system` （例： :code:`https://ivyengine/system` ） "
 "の管理機能があります。リバースプロキシ設定でこの URL へのアクセスを許可したり、明示的に制限したりしないでください。"
 
 #: ../../source/engine-guide/integration/reverse-proxy/secure-setup/path.rst:23
@@ -33750,7 +33750,7 @@ msgid ""
 ":code:`https://ivyengine/demo-app`."
 msgstr ""
 "ルート URL :code:`/` からアプリケーションのホーム URL "
-"へのリダイレクトは、エンドユーザーにとって非常にありがたいものです。例えば、:code:`https://ivyengine/` "
+"へのリダイレクトは、エンドユーザーにとって非常にありがたいものです。例えば、 :code:`https://ivyengine/` "
 "にアクセスしたユーザーを :code:`https://ivyengine/demo-app` にリダイレクトします。"
 
 #: ../../source/engine-guide/integration/reverse-proxy/secure-setup/path.rst:33
@@ -34483,7 +34483,7 @@ msgid ""
 msgstr ""
 "使用可能なすべてのカテゴリー [カテゴリー] が :public-api:`RuntimeLogCategory "
 "</ch/ivyteam/ivy/application/RuntimeLogCategory.html>` "
-"で定義されています。カテゴリーを小文字で書き込んでください（例：:code:`<Logger "
+"で定義されています。カテゴリーを小文字で書き込んでください（例： :code:`<Logger "
 "name=\"runtimelog.securitycontext.rest_client.myapp.hrm\">` 。"
 
 #: ../../source/engine-guide/monitoring/logging.rst:73
@@ -35846,11 +35846,11 @@ msgid ""
 "color converter <https://www.w3schools.com/colors/colors_converter.asp>`_"
 " to get a :code:`HSL Color`."
 msgstr ""
-"独自の色を定義する場合は、:code:`ivy-primary-*-color` の色設定で `HSL "
+"独自の色を定義する場合は、 :code:`ivy-primary-*-color` の色設定で `HSL "
 "カラー<https://developer.mozilla.org/en-"
 "US/docs/Web/CSS/color_value/hsl>`_を使用することを検討してください。設定を組み合わせて新しい強調色を作成するものもあるため（少なくとも"
-" :code:`ivy-primary-color` と :code:`ivy-primary-light-color`）、HSL "
-"カラーが必要です。`オンラインで公開されているカラーコンバーター<https://www.w3schools.com/colors/colors_converter.asp>`_を使用して、:code:`HSL"
+" :code:`ivy-primary-color` と :code:`ivy-primary-light-color` ）、HSL "
+"カラーが必要です。`オンラインで公開されているカラーコンバーター<https://www.w3schools.com/colors/colors_converter.asp>`_を使用して、 :code:`HSL"
 " カラー`を作成できます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/configuration.rst:62
@@ -38012,7 +38012,7 @@ msgid ""
 "ALL` to the role :code:`EVERYBODY` and always prefer role-based "
 "permissions over user-based permissions."
 msgstr ""
-"権限は、誰が何をできるかを定義します。ユーザーとロールに割り当てることができます。実際にロールやユーザーに必要な権限のみ割り当ててください。:code:`GRANT"
+"権限は、誰が何をできるかを定義します。ユーザーとロールに割り当てることができます。実際にロールやユーザーに必要な権限のみ割り当ててください。 :code:`GRANT"
 " ALL` 権限を :code:`EVERYBODY` "
 "ロールに割り当てないことを強く推奨します。ユーザーベースの権限ではなく、ロールベースの権限を常に優先してください。"
 
@@ -39278,7 +39278,7 @@ msgstr ""
 #~ msgstr ""
 #~ "ワークフローユーザーは、 :ref:`ivy-yaml` "
 #~ "で定義できる、いわゆるセキュリティシステムで管理されます。Axon Ivy Engine "
-#~ "ごとに:code:`デフォルト`のセキュリティシステムがあらかじめ設定されており、セキュリティシステムごとに ID "
+#~ "ごとに :code:`デフォルト` のセキュリティシステムがあらかじめ設定されており、セキュリティシステムごとに ID "
 #~ "プロバイダーを定義できます。Axon Ivy Engine では以下の ID "
 #~ "プロバイダーを区別しています。"
 
@@ -39295,7 +39295,7 @@ msgstr ""
 #~ msgstr ""
 #~ "**内部 ID プロバイダー** ：Axon Ivy Engine "
 #~ "で直接、ワークフローユーザーを管理するのに使用します。デフォルトで設定され、さらなる設定が不要な内部 ID "
-#~ "プロバイダーは、:code:`Ivy Security System` "
+#~ "プロバイダーは、 :code:`Ivy Security System` "
 #~ "だけです。これを使用する場合、設定は必要ありません。"
 
 #~ msgid ""
@@ -39335,7 +39335,7 @@ msgstr ""
 #~ "Copy the :code:`value` of this secret."
 #~ " This is needed later to configure"
 #~ " the |ivy-engine|."
-#~ msgstr "このシークレットの:code:`値`をコピーします。後で Axon Ivy Engine を設定するのに必要です。"
+#~ msgstr "このシークレットの :code:`値` をコピーします。後で Axon Ivy Engine を設定するのに必要です。"
 
 #~ msgid ""
 #~ "The purpose of a reverse proxy (or"
@@ -39393,7 +39393,7 @@ msgstr ""
 #~ "separate, internal-only website for "
 #~ "access to the engine cockpit."
 #~ msgstr ""
-#~ "**URL 書き換えルール** では、URL の書き換えルールを設定します。:code:`ivy-"
+#~ "**URL 書き換えルール** では、URL の書き換えルールを設定します。 :code:`ivy-"
 #~ "route-all` という新しいルールを:guilabel:`Default Web Site`"
 #~ " に追加し、すべてのトラフィックを :code:`http://localhost:8080` "
 #~ "にある同じホストで動作する Axon Ivy Engine に転送します。Axon "
@@ -39401,8 +39401,8 @@ msgstr ""
 #~ "を異なるホストやポートで実行する場合は、このルールをニーズに合わせて調整できます。ユーザーに提供するアプリケーションのみ転送して、特定のアプリケーション :ref:`アクセスを制限"
 #~ "<reverse-proxy-secure-path>` ることをお勧めします。ルールの標準的なパターンである"
 #~ " :code:`.*` を :code:`YOUR-APP.*` "
-#~ "に変更して、これを行うことができます（例：:code:`demo-portal.*`、:code:`system.*`）。この"
-#~ " IIS サイトで複数のアプリケーションを提供する場合は、:code:`(demo-"
+#~ "に変更して、これを行うことができます（例： :code:`demo-portal.*` 、 :code:`system.*` ）。この"
+#~ " IIS サイトで複数のアプリケーションを提供する場合は、 :code:`(demo-"
 #~ "portal|myApp1|myOtherApp)\\/.*` "
 #~ "のようなルールを使用します。エンジンコックピットへのアクセスには、別個の内部専用のウェブサイトを定義してください。"
 
