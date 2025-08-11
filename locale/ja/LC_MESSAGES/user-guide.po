@@ -3551,7 +3551,7 @@ msgstr ""
 msgid ""
 "Read :ref:`deployment` If you want to learn how you can craft your own "
 "applications and deploy them on an Axon Ivy Engine."
-msgstr "アプリケーションを作成方法や Axon Ivy Engine への展開方法について知りたい場合は、「 :ref:`展開` 」を参照してください。"
+msgstr "アプリケーションを作成方法や Axon Ivy Engine への展開方法について知りたい場合は、「 :ref:`展開<deployment>` 」を参照してください。"
 
 #: ../../source/concepts/error-handling.rst:4
 #: ../../source/designer-guide/user-interface/user-dialogs/html-dialog-error-handling.rst:2
