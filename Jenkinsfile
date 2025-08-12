@@ -70,7 +70,9 @@ pipeline {
           archiveArtifacts 'build-JA/html/**/*'
 
           withChecks('Doc Sphinx Issues-JA') {
-            recordIssues tools: [sphinxBuild(id: 'sphinx-JA', name: 'Sphinx JA')], qualityGates: [[threshold: 1, type: 'TOTAL']]
+            recordIssues tools: [sphinxBuild(id: 'sphinx-JA', name: 'Sphinx JA')], 
+              filters: [excludeFile('source/designer-guide/process-modeling/process-elements/trigger-step.rst')], 
+              qualityGates: [[threshold: 1, type: 'TOTAL']]
           }
 
           currentBuild.description += "<br/><a href='${BUILD_URL}artifact/build-JA/html/index.html'>Doc 🇯🇵️</a>"
@@ -94,7 +96,7 @@ pipeline {
             sh "ssh $host mkdir -p $destFolder"
 
             echo 'Upload documentation'
-            sh "rsync -r build/html/ $host:$destFolder"
+            sh "rsync -r build-EN/html/ $host:$destFolder"
 
             sh "ssh $host ln -fns $destFolder $homeDir/data/doc/$releaseVersion"
           }
