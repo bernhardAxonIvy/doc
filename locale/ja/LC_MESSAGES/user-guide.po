@@ -7120,7 +7120,7 @@ msgstr "検索文字列"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:322
 msgid "Enter here the string you are searching for. You may use two wild-cards: The *\\* (star)* for any sequence of characters (may be empty too). and the *? (question mark)* for a single character (e.g. a*b matches each entity that starts with \"a\" and ends with \"b\" and has 0, 1 or more characters in between whereas a?b matches all strings with a length of three that start with an \"a\", end with \"b\" and has one character in the middle)"
-msgstr "検索する文字列をここに入力します。任意の文字列（空でも可）には *\\* （アスタリスク）* 、1 つの文字には *?（クエスチョンマーク）*の 2 つのワイルドカードを使用できます（例えば、a*b は「a」で始まり、「b」で終わり、間に 0 文字、1 文字、またはそれ以上の文字を含む各エンティティにマッチし、a?b は「a」で始まり、「b」で終わり、間に 1 文字を含むすべての文字列にマッチします）。"
+msgstr "検索する文字列をここに入力します。 任意の文字列（空でも可）には *\\* （アスタリスク）* 、1 つの文字には *?（クエスチョンマーク）* の 2 つのワイルドカードを使用できます（例えば、 a*b  は「a」で始まり、「b」で終わり、間に 0 文字、1 文字、またはそれ以上の文字を含む各エンティティにマッチし、a?b は「a」で始まり、「b」で終わり、間に 1 文字を含むすべての文字列にマッチします）。"
 
 #: ../../source/designer-guide/how-to/miscellaneous.rst:330
 msgid "Search For / Search In"
@@ -13060,7 +13060,7 @@ msgstr "|image0| *トリガーステップ* 要素は、プロセスエディタ
 
 #: ../../source/designer-guide/process-modeling/process-elements/trigger-step.rst:12
 msgid "With the Trigger element its possible to start a new workflow. The trigger element triggers a :ref:`process-element-start-request` element, which has an enabled triggered start mechanism. On call, the trigger element creates a case and a task with the defined configuration on the :ref:`process-element-start-request`. element. The new created task is returned to the Trigger element."
-msgstr "トリガー要素を使用して、新しいワークフローを開始できます。トリガー要素は、トリガーによる開始メカニズムが有効 :ref:`process-element-start-request` 要素をトリガーします。"
+msgstr "トリガー要素を使用して、新しいワークフローを開始できます。 トリガー要素は、トリガーによる開始メカニズムが有効 :ref:`process-element-start-request` 要素をトリガーします。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/trigger-step.rst:20
 msgid "On call, after the creation of the new case and task, the workflow goes ahead through the process. When the created task starts (some time later, by user interaction or automatically by the system), the process starts at the *Triggered Start* element."
