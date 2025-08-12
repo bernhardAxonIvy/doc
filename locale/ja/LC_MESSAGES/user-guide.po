@@ -2816,7 +2816,7 @@ msgstr "テストなしで良いソフトウェアを作成することはほぼ
 
 #: ../../source/concepts/testing/index.rst:24
 msgid "The following guide is based on a :link-url:`demo project <build-examples-test-project>` and uses the name ``crm`` for the project to be tested and the two testing projects ``crmTests`` for the :ref:`process-<process-testing>` and :ref:`unit-testing<unit-testing>` as well as ``crmIntegrationTests`` for the :ref:`web-testing<web-testing>`."
-msgstr "以下のガイドは:link-url:`デモプロジェクト<build-examples-test-project>` ベースにしており、テスト対象のプロジェクトに ``crm`` という名前を使用し :ref:`プロセス<process-testing>` と :ref:`単体テスト<unit-testing>` の 2 つのテストプロジェクト ``crmTests` ` と、 :ref:`ウェブテスト<web-testing>` 用の ``crmIntegrationTests` ` を使用しています。"
+msgstr "以下のガイドは :link-url:`デモプロジェクト<build-examples-test-project>` ベースにしており、テスト対象のプロジェクトに ``crm`` という名前を使用し :ref:`プロセス<process-testing>` と :ref:`単体テスト<unit-testing>` の 2 つのテストプロジェクト ``crmTests`` と、 :ref:`ウェブテスト<web-testing>` 用の ``crmIntegrationTests`` を使用しています。"
 
 #: ../../source/concepts/testing/index.rst:30
 msgid "Since this documentation only shows how to setup a test project and perform simple tests, you should take a closer look at the demo project."
@@ -2924,7 +2924,7 @@ msgstr "11 ～ 14 行目："
 
 #: ../../source/concepts/testing/process-testing.rst:71
 msgid "Here you tell your ``BpmClient`` that you want to test and execute your start element. After calling the :ref:`execute<process-testing-start>` method the ``BpmClient`` drives your process just after the first task."
-msgstr "ここでは、開始要素をテストして実行したいことを ``BpmClient`` に伝えます。ref:`execute<process-testing-start>` ソッドを呼び出すと、``BpmClient`` は最初のタスクのすぐ後にプロセスを実行します。"
+msgstr "ここでは、開始要素をテストして実行したいことを ``BpmClient`` に伝えます。 :ref:`execute<process-testing-start>` ソッドを呼び出すと、 ``BpmClient`` は最初のタスクのすぐ後にプロセスを実行します。"
 
 #: ../../source/concepts/testing/process-testing.rst:77
 msgid "Note that the ``BpmClient`` does not run through the whole process at once but runs task by task. It also ignores ``skipTaskList`` flags and stops the execution at ``system tasks``."
@@ -2936,7 +2936,7 @@ msgstr "16 ～ 17 行目："
 
 #: ../../source/concepts/testing/process-testing.rst:82
 msgid "You have multiple APIs to assert your processes, one of it is the :ref:`process-testing-history`. The ``History`` gives you access to the executed process elements, in this example we just assert the names of the executed elements."
-msgstr "プロセスをアサートするための API は複数あり、その一つ :ref:`process-testing-history` です。``History` ` を使用して、実行したプロセス要素にアクセスできます。この例では、実行された要素の名前をアサートしています。"
+msgstr "プロセスをアサートするための API は複数あり、その一つ :ref:`process-testing-history` です。 ``History`` を使用して、実行したプロセス要素にアクセスできます。この例では、実行された要素の名前をアサートしています。"
 
 #: ../../source/concepts/testing/process-testing.rst:87
 msgid "Line 19:"
@@ -3151,7 +3151,7 @@ msgstr ":public-api:`Ivy</ch/ivyteam/ivy/environment/Ivy.html>` コンテキス�
 
 #: ../../source/concepts/testing/unit-testing.rst:41
 msgid "If you run your test with ``@IvyTest`` (without process) the bpm engine does not get started. This speeds up test execution."
-msgstr "テストを ``@IvyTest``（プロセスなし）で実行すると、bpm エンジンは起動しません。これにより、テストの実行速度が向上します。"
+msgstr "テストを ``@IvyTest`` （プロセスなし）で実行すると、bpm エンジンは起動しません。これにより、テストの実行速度が向上します。"
 
 #: ../../source/concepts/testing/unit-testing.rst:45
 msgid "Write a Unit Test"
@@ -3204,7 +3204,7 @@ msgstr "ウェブテストの作成"
 
 #: ../../source/concepts/testing/web-testing.rst:32
 msgid "Let's start by extending our test class generated before with a :link-url:`real test implementation <build-examples-web-test-base>`. First, we need to start a process. To do this you can use the ``EngineUrl`` utility from the :ref:`web-tester`."
-msgstr "先ほど作成したテストクラスを :link-url:`実際のテスト実装<build-examples-web-test-base>` で拡張してみましょう。最初に、プロセスを開始する必要があります。それには、 :ref:`web-tester` の ``EngineUrl` ` ユーティリティを使用します。"
+msgstr "先ほど作成したテストクラスを :link-url:`実際のテスト実装<build-examples-web-test-base>` で拡張してみましょう。最初に、プロセスを開始する必要があります。それには、 :ref:`web-tester` の ``EngineUrl`` ユーティリティを使用します。"
 
 #: ../../source/concepts/testing/web-testing.rst:37
 msgid "This process opens a dialog with two input fields (``firstname`` and ``lastname``) and a ``submit`` button. After submitting, a second dialog with your input values is displayed."
@@ -3380,7 +3380,7 @@ msgstr "Selenium は、オープンソースのウェブテストフレームワ
 
 #: ../../source/concepts/testing/web-testing.rst:235
 msgid "In our tests we use the `Selenide <https://selenide.org/>`_ (`GitHub <https://github.com/selenide/selenide>`_, `API <https://selenide.gitbooks.io/user-guide/content/en/selenide-api/selenide.html>`_) framework, which is based on the Selenium WebDriver. If you’re more familiar with plain Selenium tests the following comparison can give you a quick overview about the differences and benefits: `Selenide vs Selenium <https://github.com/selenide/selenide/wiki/Selenide-vs-Selenium>`_. Or you can simply write your tests with the normal Selenium API by accessing the driver object:"
-msgstr "私たちのテストでは、Selenium WebDriver をベースにした `Selenide <https://selenide.org/>`_ (`GitHub <https://github.com/selenide/selenide>`_、`API <https://selenide.gitbooks.io/user-guide/content/en/selenide-api/selenide.html>`_) フレームワークを使用しています。`Selenide vs Selenium <https://github.com/selenide/selenide/wiki/Selenide-vs-Selenium>`_では、Selenium のテストについて詳しい方向けに、Selenide と Seleniumを比較し、違いと利点について簡単にまとめています。また、ドライバオブジェクトにアクセスして、通常の Selenium API を使用してテストを作成することもできます。"
+msgstr "私たちのテストでは、Selenium WebDriver をベースにした `Selenide <https://selenide.org/>`_ (`GitHub <https://github.com/selenide/selenide>`_ 、 `API <https://selenide.gitbooks.io/user-guide/content/en/selenide-api/selenide.html>`_ ) フレームワークを使用しています。 `Selenide vs Selenium <https://github.com/selenide/selenide/wiki/Selenide-vs-Selenium>`_ では、Selenium のテストについて詳しい方向けに、Selenide と Seleniumを比較し、違いと利点について簡単にまとめています。また、ドライバオブジェクトにアクセスして、通常の Selenium API を使用してテストを作成することもできます。"
 
 #: ../../source/concepts/testing/web-testing.rst:253
 msgid "Web-Tester"
@@ -4346,7 +4346,7 @@ msgstr "OpenAPI クライアントジェネレーター"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:96
 msgid "The OpenAPI client generator wizard provides validation and inscription editor simplification features for specific calls with a :ref:`process-element-rest-client-activity`. Click the *Generate REST classes* button to start the wizard."
-msgstr "OpenAPI クライアントジェネレーターウィザードは :ref:`process-element-rest-client-activity` を含む特定の呼び出しの検証エディターとインスクリプションエディターの簡易機能を提供します。*REST クラスの作成*ボタンをクリックすると、ウィザードが開始されます。"
+msgstr "OpenAPI クライアントジェネレーターウィザードは :ref:`process-element-rest-client-activity` を含む特定の呼び出しの検証エディターとインスクリプションエディターの簡易機能を提供します。 *REST クラスの作成* ボタンをクリックすると、ウィザードが開始されます。"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:102
 msgid "**OpenAPI Clients**"
@@ -4556,7 +4556,7 @@ msgstr "**接続のプロパティ**"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:246
 msgid "You can configure the library used to create and manage connections by setting a connector provider ``jersey.client.connectorProvider``. By default, the Apache HTTP Client (``org.glassfish.jersey.apache.connector.ApacheConnectorProvider``) is used. This library uses a connection pool to reuse connections. By default, the connection pool is limited to 5 connections. You can see how many connections are currently in use by looking at the :ref:`life stats <engine-cockpit-monitor-services>` in the :ref:`engine-cockpit`. If all connections are in use most of the time, consider increasing the maximum number of connections in the pool to avoid performance issues. Configure it by setting the property ``jersey.client.pool.maxConnections``."
-msgstr "``jersey.client.connectorProvider`` コネクタプロバイダーを設定して、接続の作成と管理に使用するライブラリを設定できます。デフォルトでは、Apache HTTP クライアント（``org.glassfish.jersey.apache.connector.ApacheConnectorProvider``）が使用されます。このライブラリは接続プールを使用して接続を再利用します。デフォルトでは、接続プールの接続数は 5 に制限されています。ref:`engine-cockpit` :ref:`ライフステータス<engine-cockpit-monitor-services>` 見て、現在使用されている接続の数を確認できます。すべての接続がほとんどの時間使用されている場合は、パフォーマンスの問題を回避するためにプールの最大接続数を増やすことを検討してください。``jersey.client.pool.maxConnections`` プロパティを設定して、プールの最大接続数を設定できます。"
+msgstr "``jersey.client.connectorProvider`` コネクタプロバイダーを設定して、接続の作成と管理に使用するライブラリを設定できます。デフォルトでは、Apache HTTP クライアント（ ``org.glassfish.jersey.apache.connector.ApacheConnectorProvider`` ）が使用されます。このライブラリは接続プールを使用して接続を再利用します。デフォルトでは、接続プールの接続数は 5 に制限されています。 :ref:`engine-cockpit` :ref:`ライフステータス<engine-cockpit-monitor-services>` 見て、現在使用されている接続の数を確認できます。 すべての接続がほとんどの時間使用されている場合は、パフォーマンスの問題を回避するためにプールの最大接続数を増やすことを検討してください。``jersey.client.pool.maxConnections`` プロパティを設定して、プールの最大接続数を設定できます。"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:257
 msgid "As an alternative to the Apache HTTP Client, you can use ``java.net.URLConnection`` from the Java core library (``org.glassfish.jersey.client.HttpUrlConnectorProvider``). This connection provider does not have a maximum connection limit but has other restrictions like missing NTLM support."
@@ -4635,7 +4635,7 @@ msgstr "ロールエディター"
 
 #: ../../source/designer-guide/configuration/roles-users.rst:78
 msgid "The role editor allows to create, edit, or remove roles as well as to structure roles hierarchically. Double click on the :guilabel:`Roles` node in the :ref:`ivy-project-view`."
-msgstr "ロールエディターでは、ロールを作成、編集、削除し、ロールの階層構造を作成できます。ref:`ivy-project-view`の :guilabel:`Roles` ノードをダブルクリックしてください。"
+msgstr "ロールエディターでは、ロールを作成、編集、削除し、ロールの階層構造を作成できます。 :ref:`ivy-project-view` の :guilabel:`Roles` ノードをダブルクリックしてください。"
 
 #: ../../source/designer-guide/configuration/roles-users.rst:88
 msgid "The left side of the Role editor consists of a tree showing all the roles in a hierarchical order. A click on one of the roles will show the properties of the selected role on the right side of the editor. Manipulate the role hierarchy by dragging a role and dropping it at its new location in the hierarchy."
@@ -4815,7 +4815,7 @@ msgstr "**Password：** この変数の値を暗号化するよう Axon Ivy Engi
 
 #: ../../source/designer-guide/configuration/variables.rst:80
 msgid "If you add a password Variable in the Axon Ivy Designer, you get a validation warning that the Variable is not encrypted. You can fix this via a :ref:`problems-view` > *QuickFix*."
-msgstr "Axon Ivy Designer でパスワード変数を追加すると、変数が暗号化されていないという検証警告が表示されます。この問題は :ref:`問題ビュー` の *クイック修正* で修正できます。"
+msgstr "Axon Ivy Designer でパスワード変数を追加すると、変数が暗号化されていないという検証警告が表示されます。この問題は :ref:`問題ビュー<problems-view>` の *クイック修正* で修正できます。"
 
 #: ../../source/designer-guide/configuration/variables.rst:84
 msgid "**Daytime:** The value of this Variable is interpreted as a time of day."
@@ -4904,7 +4904,7 @@ msgstr "Web サービスクライアントセクション"
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:37
 msgid "The following attributes are available in the *Web Service* Section:"
-msgstr "*Web サービス*セクションでは、以下の属性を編集できます。"
+msgstr "*Web サービス* セクションでは、以下の属性を編集できます。"
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:39
 msgid ":guilabel:`Name` The name attribute specifies the displayname of a web service configuration. The name is not used as identifier, so it can be changed at any time."
@@ -4928,7 +4928,7 @@ msgstr ":guilabel:`ライブラリ` Web サービスのクライアントクラ�
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:61
 msgid ":guilabel:`Generate WS classes` After specifying the mandatory fields :guilabel:`WSDL URL` and :guilabel:`Library`, click :guilabel:`Generate WS classes` to read the WSDL and generate client classes. The generated files are compiled and packaged into a jar file. The generated jar file is located in the *lib_ws/client* folder of the Axon Ivy project and automatically added to the project libraries."
-msgstr ":guilabel:`WS クラスの生成` 必須フィールドである :guilabel:`WSDL URL` と :guilabel:`ライブラリ` を指定した後、:guilabel:`WS クラスの生成`をクリックすると、WSDL が読み込まれ、クライアントクラスが生成されます。生成されたファイルはコンパイルされ、jar ファイルにパッケージ化されます。生成された jar ファイルは Axon Ivy プロジェクトの *lib_ws/client* フォルダーに配置され、プロジェクトのライブラリに自動的に追加されます。"
+msgstr ":guilabel:`WS クラスの生成` 必須フィールドである :guilabel:`WSDL URL` と :guilabel:`ライブラリ` を指定した後、 :guilabel:`WS クラスの生成` をクリックすると、WSDL が読み込まれ、クライアントクラスが生成されます。生成されたファイルはコンパイルされ、jar ファイルにパッケージ化されます。生成された jar ファイルは Axon Ivy プロジェクトの *lib_ws/client* フォルダーに配置され、プロジェクトのライブラリに自動的に追加されます。"
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:70
 msgid "If you change the :guilabel:`WSDL URL`, the :guilabel:`WSDL` (i.e., the functionality or data structure of the Service) or the :guilabel:`Library` setting, you **must** re-generate the service classes."
@@ -4960,7 +4960,7 @@ msgstr "Web サービスクライアント呼び出しの実行にオプショ�
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:121
 msgid ":guilabel:`Add` Adds a new feature class to the list. All specified feature classes must implement the JAX-WS standard class `javax.xml.ws.WebServiceFeature <https://docs.oracle.com/javase/9/docs/api/javax/xml/ws/WebServiceFeature.html>`__ or ``ch.ivyteam.ivy.webservice.exec.feature.WebServiceClientFeature``."
-msgstr ":guilabel:`追加` 新しい機能クラスをリストに追加します。指定されたすべての機能クラスは JAX-WS 標準クラス `javax.xml.ws.WebServiceFeature <https://docs.oracle.com/javase/9/docs/api/javax/xml/ws/WebServiceFeature.html>`__ または ``ch.ivyteam.ivy.webservice.exec.feature.WebServiceClientFeature``を実装する必要があります。"
+msgstr ":guilabel:`追加` 新しい機能クラスをリストに追加します。指定されたすべての機能クラスは JAX-WS 標準クラス `javax.xml.ws.WebServiceFeature <https://docs.oracle.com/javase/9/docs/api/javax/xml/ws/WebServiceFeature.html>`__ または ``ch.ivyteam.ivy.webservice.exec.feature.WebServiceClientFeature`` を実装する必要があります。"
 
 #: ../../source/designer-guide/configuration/webservice-clients.rst:128
 msgid ":guilabel:`Remove` Removes the selected feature class from the list."
@@ -7847,19 +7847,19 @@ msgstr "タスクとケースを操作する API は :ref:`ivy 環境変数<ivys
 
 #: ../../source/designer-guide/how-to/workflow/api.rst:49
 msgid "``ivy.case`` (ICase): represents the currently executing process"
-msgstr "``ivy.case``（ICase）：現在実行中のプロセスを表します。"
+msgstr "``ivy.case`` （ICase）： 現在実行中のプロセスを表します。"
 
 #: ../../source/designer-guide/how-to/workflow/api.rst:51
 msgid "``ivy.task`` (ITask): represents the user's current work unit in the currently executing process."
-msgstr "``ivy.task``（ITask）：現在実行中のプロセスにおけるユーザーの現在の作業単位を表します。"
+msgstr "``ivy.task`` （ITask）： 現在実行中のプロセスにおけるユーザーの現在の作業単位を表します。"
 
 #: ../../source/designer-guide/how-to/workflow/api.rst:54
 msgid "``ivy.wf`` (IWorkflowContext): addresses all workflow tasks and cases of all users for the current security context."
-msgstr "``ivy.wf``（IWorkflowContext）：現在のセキュリティコンテキストのすべてのユーザーのすべてのワークフロータスクとケースを扱います。"
+msgstr "``ivy.wf`` （IWorkflowContext）： 現在のセキュリティコンテキストのすべてのユーザーのすべてのワークフロータスクとケースを扱います。"
 
 #: ../../source/designer-guide/how-to/workflow/api.rst:57
 msgid "``ivy.session`` (IWorkflowSession): gives access to all workflow tasks and cases of the current user."
-msgstr "``ivy.session``（IWorkflowSession）：現在のユーザーのすべてのワークフロータスクとケースへのアクセスを許可します。"
+msgstr "``ivy.session`` （IWorkflowSession）： 現在のユーザーのすべてのワークフロータスクとケースへのアクセスを許可します。"
 
 #: ../../source/designer-guide/how-to/workflow/api.rst:64
 #: ../../source/engine-guide/deployment/deploy/rest-api/index.rst:4
@@ -10741,7 +10741,7 @@ msgstr "BPMN アクティビティ要素"
 
 #: ../../source/designer-guide/process-modeling/process-elements/bpmn-activity-elements.rst:6
 msgid "The *BPMN Activity* drawer contains elements, that can be used to design a process at a high level, where details of the technical implementation are hidden inside the element itself. Thus BPMN Activities behave similar to a :ref:`process-element-embedded-sub`, but their purpose is different."
-msgstr "*BPMN アクティビティ*ドロワーには、高レベルでプロセスを設計するのに使用できる要素が含まれており、技術的実装の詳細は要素自体の中に隠されています。そのため、BPMN アクティビティの動作は :ref:`process-element-embedded-sub` に似ていますが、その目的は異なります。"
+msgstr "*BPMN アクティビティ* ドロワーには、高レベルでプロセスを設計するのに使用できる要素が含まれており、技術的実装の詳細は要素自体の中に隠されています。そのため、BPMN アクティビティの動作は :ref:`process-element-embedded-sub` に似ていますが、その目的は異なります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/bpmn-activity-elements.rst:12
 msgid "Available BPMN Activity Elements"
@@ -11473,7 +11473,7 @@ msgstr "実行したいクエリの種類を選択します。Axon Ivy は、 ``
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:37
 msgid "If you require some non-standard SQL or if you want to issue a complex SQL statement that is not covered by the *Query Definition* mask then you may also select ``Any`` and write pure SQL instead. Expanding of process attributes will also work in the *Any Query* mode."
-msgstr "非標準の SQL が必要な場合や、*クエリ定義* マスクでカバーできない複雑な SQL 文を発行したい場合は、代わりに ``Any`` を選択して純粋な SQL を書くこともできます。プロセス属性の展開は *Any クエリ*モードでも動作します。"
+msgstr "非標準の SQL が必要な場合や、 *クエリ定義* マスクでカバーできない複雑な SQL 文を発行したい場合は、代わりに ``Any`` を選択して純粋な SQL を書くこともできます。プロセス属性の展開は *Any クエリ* モードでも動作します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:45
 msgid "The use of the **Any Query** option can lead to `SQL injection <https://en.wikipedia.org/wiki/SQL_injection>`__ vulnerabilities if not used carefully."
@@ -11494,7 +11494,7 @@ msgstr "コマンドを実行するデータベースを選択します。デー
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:71
 msgid "Please note that the **DB2** database is currently not fully supported by the DB Step. The only query kind that is suitable for DB2 connections is ``Any Query``. For all other query kinds the *Query Definition* mask is currently not working correctly (e.g., query fields can not be edited / defined)."
-msgstr "現在、**DB2** データベースは DB ステップで完全にはサポートされていないことに注意してください。DB2 接続に適したクエリの種類は ``Any クエリ``だけです。現在、それ以外の種類のクエリでは、*クエリ定義* マスクは正しく動作しません（クエリフィールドを編集／定義できないなど）。"
+msgstr "現在、**DB2** データベースは DB ステップで完全にはサポートされていないことに注意してください。DB2 接続に適したクエリの種類は ``Any クエリ`` だけです。現在、それ以外の種類のクエリでは、 *クエリ定義* マスクは正しく動作しません（クエリフィールドを編集／定義できないなど）。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/database-activity.rst:77
 msgid "There is also an ``IvySystemDatabase`` datasource which points to the current System Database. Normally you would prefer your own database to split valuable customer data from the system data."
@@ -11628,7 +11628,7 @@ msgstr "ヘッダータブ"
 
 #: ../../source/designer-guide/process-modeling/process-elements/email-activity.rst:27
 msgid "In this tab the e-mail header is defined. You can use the :ref:`cms` and the process data (the ``in`` variable) to compose the header fields."
-msgstr "このタブでは、メールのヘッダーを定義します。 :ref:`cms` とプロセスデータ (``in` ` 変数) を使用して、ヘッダーフィールドを作成できます。"
+msgstr "このタブでは、メールのヘッダーを定義します。 :ref:`cms` とプロセスデータ ( ``in`` 変数) を使用して、ヘッダーフィールドを作成できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/email-activity.rst:31
 #: ../../source/designer-guide/process-modeling/process-elements/email-activity.rst:34
@@ -12275,7 +12275,7 @@ msgstr "**ヘッダー** ：リクエストと一緒に送信され、ターゲ�
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:67
 msgid "Any other HTTP-Header can also be configured. However, the ``Authorization`` header is easier to configure with an authorization feature on the :ref:`rest-clients-configuration`."
-msgstr "他にもさまざまな HTTP ヘッダーを設定できます。例えば :ref:`rest-clients-configuration` で認可機能を使用して設定を行う場合は、``Authorization` ` の方が簡単です。"
+msgstr "他にもさまざまな HTTP ヘッダーを設定できます。例えば :ref:`rest-clients-configuration` で認可機能を使用して設定を行う場合は、``Authorization`` の方が簡単です。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:73
 msgid "**Properties**: Are used to configure optional features or native properties of the REST client. They are globally configurable in the :ref:`rest-clients-configuration` properties. Here you can overwrite a property with dynamic values."
@@ -12443,7 +12443,7 @@ msgstr "**JAX-RS の例** ："
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:252
 msgid "REST Response objects must be closed to avoid blocked connection pools. You must do it by calling close() or readEntity() on a Response, that was created by calling any method on the ``Invocation.Builder`` class (e.g. ``client.request().put(...)``) that returns a ``Response`` object."
-msgstr "接続プールのブロックを防ぐため、REST 応答オブジェクトを閉じる必要があります。``応答`` オブジェクトを返す ``Invocation.Builder`` クラス（``client.request().put(...)``など）で任意のメソッドを呼び出して作成された応答で、close() または readEntity() を呼び出してください。"
+msgstr "接続プールのブロックを防ぐため、REST 応答オブジェクトを閉じる必要があります。 ``応答`` オブジェクトを返す ``Invocation.Builder`` クラス（ ``client.request().put(...)`` など）で任意のメソッドを呼び出して作成された応答で、close() または readEntity() を呼び出してください。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/rest-client-activity.rst:257
 #, python-brace-format
@@ -12955,7 +12955,7 @@ msgstr "名前テキストフィールドでは、サブプロセス開始の名
 
 #: ../../source/designer-guide/process-modeling/process-elements/_tab-result.rst:4
 msgid "The :ref:`process-element-tab-result` is used to define the return parameters of the operation."
-msgstr ":ef:`process-element-tab-result`を使用して、オペレーションの戻りパラメーターを定義します。"
+msgstr ":ref:`process-element-tab-result` を使用して、オペレーションの戻りパラメーターを定義します。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/task-switch-event.rst:4
 msgid "Task Switch Event"
@@ -13418,7 +13418,7 @@ msgstr "Web サービスプロセスの開始"
 
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:6
 msgid "|image0| The *WS Start* element is located in the *WS Process* drawer of the process editor palette and only available in web service processes."
-msgstr "|image0| *Web サービスの開始*要素は、プロセスエディターパレットの *Web サービスプロセス*ドロワーにあり、Web サービスプロセスでのみ使用できます。"
+msgstr "|image0| *Web サービスの開始* 要素は、プロセスエディターパレットの *Web サービスプロセス* ドロワーにあり、Web サービスプロセスでのみ使用できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/web-service-process-start.rst:12
 msgid "Each Web Service Start element will create a web service operation in the web service where it is located. It has input and output parameters."
@@ -14161,7 +14161,7 @@ msgstr "Web サービスプロセス"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:72
 msgid "Web Service processes are a special case of *independent subprocesses*. A Web Service process can be started (i.e., called) from any other application (or from another process) by using the *Web Service call element* or any other SOAP web service compatible client.."
-msgstr "Web サービスプロセスは、特殊な *依存関係にあるサブプロセス* です。*Web サービス呼び出し要素*または Web サービスと互換性のある他の SOAP クライアントを使用して、他のアプリケーションから（または他のプロセスから）Web サービスプロセスを開始する（呼び出す）ことができます。"
+msgstr "Web サービスプロセスは、特殊な *依存関係にあるサブプロセス* です。*Web サービス呼び出し要素* または Web サービスと互換性のある他の SOAP クライアントを使用して、他のアプリケーションから（または他のプロセスから）Web サービスプロセスを開始する（呼び出す）ことができます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:77
 msgid "A web service process will provide a web service with one or more operations, which are defined by the *Web Service Process Start* elements within the process. Each of these start elements have their own input and output parameters that will be mapped to and from the process data."
@@ -14181,7 +14181,7 @@ msgstr "ユーザーダイアログロジック"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:96
 msgid "User Dialog logic processes are the implementation of the behavior of User Dialogs, the :ref:`controller <user-dialogs>` in the MVC pattern. A whole new set of elements is available for this kind of processes (from the *User Dialog drawer* on the process editor palette), while other elements (such as *task switch* or *HTML page*) are not available for conceptual reasons."
-msgstr "ユーザーダイアログロジックプロセスは、ユーザーダイアログの動作、すなわち MVC パターン :ref:`コントローラー<user-dialogs>` 実装です。ユーザーダイアログロジックプロセスでは、まったく新しい要素を（プロセスエディターパレット *ユーザーダイアログドロワー* から）使用できます。ただし、それ以外の要素（*タスクスイッチ*、*HTML ページ*など）は、コンセプト上の理由から使用できません。"
+msgstr "ユーザーダイアログロジックプロセスは、ユーザーダイアログの動作、すなわち MVC パターン :ref:`コントローラー<user-dialogs>` 実装です。ユーザーダイアログロジックプロセスでは、まったく新しい要素を（プロセスエディターパレット *ユーザーダイアログドロワー* から）使用できます。ただし、それ以外の要素（ *タスクスイッチ* 、 *HTML ページ*など* ）は、コンセプト上の理由から使用できません。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-kinds.rst:103
 msgid "A User Dialog logic process is invoked with an *User Dialog* element inside a *business process*. Its execution starts with an *init start* element and ends with a *dialog exit* element. The two elements do not need to have a direct connection (in fact they never have). Once a User Dialog process is running, it is driven by *user interface events* which will trigger individual sub processes."
@@ -14258,7 +14258,7 @@ msgstr "デフォルトでは、ユーザーダイアログロジックプロセ
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-properties.rst:60
 msgid "The *Web Service Process* tab is only available on web service processes and allows to specify the web service configuration."
-msgstr "*Web サービスプロセス*タブは Web サービスプロセスでのみ表示され、Web サービスプロセスの設定を指定できます。"
+msgstr "*Web サービスプロセス* タブは Web サービスプロセスでのみ表示され、Web サービスプロセスの設定を指定できます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-properties.rst:63
 msgid "|ws-process-tab|"
@@ -14274,7 +14274,7 @@ msgstr "*Web サービスの完全修飾名*を使用して、Web サービス�
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-properties.rst:71
 msgid "The *Web Service authentication* options allows you to specify how clients are authenticated when invoking the web service. You can select one of the following available authentication methods:"
-msgstr "*Web サービスの認証*オプションでは、Web サービスの呼び出し時のクライアントの認証方法を指定できます。以下のいずれかの認証方法を選択できます。"
+msgstr "*Web サービスの認証* オプションでは、Web サービスの呼び出し時のクライアントの認証方法を指定できます。以下のいずれかの認証方法を選択できます。"
 
 #: ../../source/designer-guide/process-modeling/process-modeling/process-properties.rst:75
 msgid "None/Container"
@@ -15190,7 +15190,7 @@ msgstr "デモプロジェクトのインポート"
 
 #: ../../source/designer-guide/process-modeling/projects/importing.rst:61
 msgid "The Axon Ivy Designer can import several demo projects, which are provided from our Market (internet connection needed). Those demo projects are in the Axon Ivy Archive (\\*.iar) format and can be imported with the help of the :ref:`Axon Ivy Market <market>` or the *Axon Ivy Projects* link on the welcome page."
-msgstr "Axon Ivy Designer では、Axon Ivy Market で提供されているるデモプロジェクトをインポートできます（インターネット接続が必要です）。これらのデモプロジェクトは Axon Ivy Archive（\\*.iar）形式で、 :ref:`Axon Ivy Market <market>` またはようこそページの *Axon Ivy プロジェクト*のリンクからインポートできます。"
+msgstr "Axon Ivy Designer では、Axon Ivy Market で提供されているるデモプロジェクトをインポートできます（インターネット接続が必要です）。 これらのデモプロジェクトは Axon Ivy Archive（\\*.iar）形式で、 :ref:`Axon Ivy Market <market>` またはようこそページの *Axon Ivy プロジェクト* のリンクからインポートできます。"
 
 #: ../../source/designer-guide/process-modeling/projects/importing.rst:66
 msgid "The following projects are available for Axon Ivy Designer:"
@@ -15456,7 +15456,7 @@ msgstr "プロジェクトの作成ウィザード"
 
 #: ../../source/designer-guide/process-modeling/projects/newProjectWizard.rst:8
 msgid "The *New Axon Ivy Project wizard* lets you create a new Axon Ivy project."
-msgstr "*Axon Ivy プロジェクトの作成ウィザード*では、新しい Axon Ivy プロジェクトを作成できます。"
+msgstr "*Axon Ivy プロジェクトの作成ウィザード* では、新しい Axon Ivy プロジェクトを作成できます。"
 
 #: ../../source/designer-guide/process-modeling/projects/newProjectWizard.rst:11
 msgid "On the first page you must specify the settings that are required for the new project. After filling those in, you may already press *finish* to create the new project."
@@ -19941,7 +19941,7 @@ msgstr "ポータルのクエリのパフォーマンスが低い場合は、デ
 
 #: ../../source/engine-guide/configuration/system-database/mssql.rst:6
 msgid "There are two basic authentication schemes used to connect to a Microsoft SQL Server, *SQL Server Authentication* and *Windows Authentication*."
-msgstr "Microsoft SQL Server への接続に使用される基本認証スキーマには、*SQL Server 認証* と *Windows 認証*があります。"
+msgstr "Microsoft SQL Server への接続に使用される基本認証スキーマには、 *SQL Server 認証* と *Windows 認証* があります。"
 
 #: ../../source/engine-guide/configuration/system-database/mssql.rst:10
 msgid "SQL Server Authentication"
@@ -21395,7 +21395,7 @@ msgstr "Microsoft Entra ID アプリケーションの作成"
 
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/microsoft-entra-id-app.rst:6
 msgid "Goto `Azure Portal <https://portal.azure.com>`_"
-msgstr "`Azure Portal <https://portal.azure.com>`_に移動します。"
+msgstr "`Azure Portal <https://portal.azure.com>`_ に移動します。"
 
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/microsoft-entra-id-app.rst:7
 msgid "Open :guilabel:`Microsoft Entra ID` by searching it"
@@ -21432,11 +21432,11 @@ msgstr ":guilabel:`登録` をクリックします。"
 
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/microsoft-entra-id-app.rst:22
 msgid "Click on :guilabel:`API permissions`"
-msgstr ":guilabel:`API のアクセス許可`をクリックします。"
+msgstr ":guilabel:`API のアクセス許可` をクリックします。"
 
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/microsoft-entra-id-app.rst:23
 msgid "Click on :guilabel:`Add a permission`"
-msgstr ":guilabel:`アクセス許可の追加` をクリックします。"
+msgstr " :guilabel:`アクセス許可の追加` をクリックします。"
 
 #: ../../source/engine-guide/integration/identity-provider/microsoft-entra-id/microsoft-entra-id-app.rst:24
 msgid "Choose :guilabel:`Microsoft Graph`"
@@ -21799,7 +21799,7 @@ msgstr "ルート URL :code:`/` からアプリケーションのホーム URL �
 
 #: ../../source/engine-guide/integration/reverse-proxy/secure-setup/path.rst:33
 msgid "The configuration examples for :ref:`NGINX <reverse-proxy-nginx>` and for :ref:`Apache HTTP Server <reverse-proxy-apache>` follow all of these recommendations. The configuration script provided for :ref:`Microsoft IIS <reverse-proxy-iis>` routes all traffic to the Axon Ivy Engine. We recommend to only route specific applications by manually modifing the rules in :guilabel:`URL Rewrite`."
-msgstr ":ref:`NGINX <reverse-proxy-nginx>` と :ref:`Apache HTTP Server <reverse-proxy-apache>` 設定の例はこれらすべての推奨事項に従っています :ref:`Microsoft IIS <reverse-proxy-iis>` 設定スクリプトでは、すべてのトラフィックが Axon Ivy Engine に転送されます。:guilabel:`URL 書き換え`ルールでルールを手動で変更して、特定のアプリケーションのみ転送することを推奨します。"
+msgstr ":ref:`NGINX <reverse-proxy-nginx>` と :ref:`Apache HTTP Server <reverse-proxy-apache>` 設定の例はこれらすべての推奨事項に従っています :ref:`Microsoft IIS <reverse-proxy-iis>` 設定スクリプトでは、すべてのトラフィックが Axon Ivy Engine に転送されます。 :guilabel:`URL 書き換え` ルールでルールを手動で変更して、特定のアプリケーションのみ転送することを推奨します。"
 
 #: ../../source/engine-guide/integration/reverse-proxy/secure-setup/path.rst:41
 msgid "Block URLs on the Axon Ivy Engine"
@@ -23223,7 +23223,7 @@ msgstr "また、 :ref:`custom-css` を編集し、すべての色の概要を�
 
 #: ../../source/engine-guide/reference/engine-cockpit/configuration.rst:52
 msgid "If you define your own color, consider to use `HSL Colors <https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl>`_ for the :code:`ivy-primary-*-color` colors. This is neseccary, because some of them (at least :code:`ivy-primary-color` and :code:`ivy-primary-light-color`) are spliced to create new color accents. There are many `online color converter <https://www.w3schools.com/colors/colors_converter.asp>`_ to get a :code:`HSL Color`."
-msgstr "独自の色を定義する場合は、 :code:`ivy-primary-*-color` の色設定で `HSL カラー<https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl>`_を使用することを検討してください。設定を組み合わせて新しい強調色を作成するものもあるため（少なくとも :code:`ivy-primary-color` と :code:`ivy-primary-light-color` ）、HSL カラーが必要です。`オンラインで公開されているカラーコンバーター<https://www.w3schools.com/colors/colors_converter.asp>`_を使用して、 :code:`HSL カラー`を作成できます。"
+msgstr "独自の色を定義する場合は、 :code:`ivy-primary-WHAT-color` の色設定で `HSL カラー <https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl>`_ を使用することを検討してください。設定を組み合わせて新しい強調色を作成するものもあるため（少なくとも :code:`ivy-primary-color` と :code:`ivy-primary-light-color` ）、HSL カラーが必要です。 `オンラインで公開されているカラーコンバーター <https://www.w3schools.com/colors/colors_converter.asp>`_ を使用して、 :code:`HSL カラー` を作成できます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/configuration.rst:62
 msgid "Please note that the color editor will write into the :file:`custom.css` file inside your :ref:`branding-configuration` directory. Depending on the content of this file, the new color value may show a strange behavior. So maybe you should quickly check the the result in the :file:`custom.css` editor."
@@ -24218,7 +24218,7 @@ msgstr "オーサリング機能が制限されているものもありますが
 
 #: ../../source/engine-guide/reference/engine-cockpit/system.rst:253
 msgid "If your engine runs with a :ref:`license-edition` license, your are able to define a :ref:`cluster`. The engine cockpit will provide a **Cluster** navigation menu item. It shows you an overview page of your running nodes and a detail view dialog if you click on one of these node."
-msgstr ":ref:`license-edition` のライセンスでエンジンが動作している場合、 :ref:`クラスタ` を定義できます。エンジンコックピットのナビゲーションメニューに［**クラスタ** ］が表示されます。実行中のノードの概要ページと、いずれかのノードをクリックした場合は詳細ビューのダイアログが表示されます。"
+msgstr ":ref:`license-edition` のライセンスでエンジンが動作している場合、 :ref:`クラスタ<cluster>` を定義できます。エンジンコックピットのナビゲーションメニューに［ **クラスタ** ］が表示されます。 実行中のノードの概要ページと、いずれかのノードをクリックした場合は詳細ビューのダイアログが表示されます。"
 
 #: ../../source/engine-guide/reference/engine-config-cli.rst:4
 msgid "EngineConfigCli"
@@ -24270,7 +24270,7 @@ msgstr "エンジンが動作する URI を表示します（例：http://localh
 
 #: ../../source/engine-guide/reference/migration-wizard.rst:17
 msgid "Choose :guilabel:`Setup Engine` > :guilabel:`Migrate Axon Ivy Engine` in your Browser."
-msgstr "ブラウザで:guilabel:`エンジンのセットアップ`、:guilabel:`Axon Ivy Engine の移行`の順に選択します。"
+msgstr "ブラウザで :guilabel:`エンジンのセットアップ` 、 :guilabel:`Axon Ivy Engine の移行` の順に選択します。"
 
 #: ../../source/engine-guide/reference/migration-wizard.rst:19
 msgid "**Usage**"
@@ -24430,7 +24430,7 @@ msgstr "2 番目に、接続設定を定義する必要があります。これ�
 
 #: ../../source/engine-guide/reference/setup-wizard.rst:119
 msgid "``CREATE DATABASE`` (to create the system database out of the Engine Configuration)"
-msgstr "``CREATE DATABASE``（エンジン設定からシステムデータベースを作成）"
+msgstr "``CREATE DATABASE`` （エンジン設定からシステムデータベースを作成）"
 
 #: ../../source/engine-guide/reference/setup-wizard.rst:120
 #: ../../source/engine-guide/reference/setup-wizard.rst:152
