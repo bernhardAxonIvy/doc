@@ -3971,11 +3971,11 @@ msgstr "カスタムフィールド"
 
 #: ../../source/designer-guide/configuration/custom-fields.rst:6
 msgid "In the file :file:`<project>/config/custom-fields.yaml`, you can provide additional information (meta information) for :ref:`custom fields <custom-fields>`."
-msgstr ":file:`<project>/config/custom-fields.yaml` ファイルでは、 :ref:`カスタムフィールド<custom-fields>` 追加情報（メタ情報）を提供できます。"
+msgstr ":file:`<project>/config/custom-fields.yaml` ファイルでは、 :ref:`カスタムフィールド <custom-fields>` 追加情報（メタ情報）を提供できます。"
 
 #: ../../source/designer-guide/configuration/custom-fields.rst:8
 msgid "The information you provide here is used and displayed on the content assistant in the :guilabel:`Name` column of the custom fields table in the :ref:`developer workflow UI <dev-workflow-ui>`, in the :ref:`Portal application <portal-guide>`. It is available to your applications via the Public API."
-msgstr "ここで提供した情報は、コンテンツアシスタント、 :ref:`開発者ワークフロー UI<dev-workflow-ui>` のカスタムフィールド表の :guilabel:`Name` 列、 :ref:`ポータルアプリケーション<portal-guide>` で使用、表示されます。この情報は、パブリック API からアプリケーションに提供されます。"
+msgstr "ここで提供した情報は、コンテンツアシスタント、 :ref:`開発者ワークフロー UI<dev-workflow-ui>` のカスタムフィールド表の :guilabel:`Name` 列、 :ref:`ポータルアプリケーション <portal-guide>` で使用、表示されます。この情報は、パブリック API からアプリケーションに提供されます。"
 
 #: ../../source/designer-guide/configuration/custom-fields.rst:13
 #: ../../source/designer-guide/configuration/formats.rst:27
@@ -3996,7 +3996,7 @@ msgstr ":guilabel:`Description` ユーザーインターフェースに表示さ
 
 #: ../../source/designer-guide/configuration/custom-fields.rst:29
 msgid ":guilabel:`Type` The data type of the custom field. Can be either ``STRING``, ``TEXT``, ``NUMBER`` or ``TIMESTAMP``."
-msgstr ":guilabel:`Type` カスタムフィールドのデータ型。``STRING``、``TEXT``、``NUMBER``、``TIMESTAMP`` のいずれかになります。"
+msgstr ":guilabel:`Type` カスタムフィールドのデータ型。 ``STRING`` 、 ``TEXT`` 、 ``NUMBER`` 、 ``TIMESTAMP`` のいずれかになります。"
 
 #: ../../source/designer-guide/configuration/custom-fields.rst:32
 msgid ":guilabel:`Category` The category of the custom field. You can use this to categorize your custom fields."
@@ -4004,7 +4004,7 @@ msgstr ":guilabel:`Category` カスタムフィールドのカテゴリー。カ
 
 #: ../../source/designer-guide/configuration/custom-fields.rst:35
 msgid ":guilabel:`Hidden` If hidden, the custom field will not be displayed to end users. Use this to hide technical custom fields from end users. Can be either ``true`` or ``false``."
-msgstr ":guilabel:`Hidden` 非表示の場合、カスタムフィールドはエンドユーザーに表示されません。これを使用して、技術的なカスタムフィールドをエンドユーザーに表示しないようにすることができます。``true``、``false`` のいずれかになります。"
+msgstr ":guilabel:`Hidden` 非表示の場合、カスタムフィールドはエンドユーザーに表示されません。これを使用して、技術的なカスタムフィールドをエンドユーザーに表示しないようにすることができます。 ``true`` 、 ``false`` のいずれかになります。"
 
 #: ../../source/designer-guide/configuration/custom-fields.rst:39
 msgid "You can add as many other attributes as you like. E.g., :guilabel:`Icon`."
@@ -4012,7 +4012,7 @@ msgstr ":guilabel:`Icon` など、他にも多くの属性を好きなだけ追�
 
 #: ../../source/designer-guide/configuration/custom-fields.rst:42
 msgid "The number of `indentation spaces <https://yaml.org/spec/1.2.2/#61-indentation-spaces>`__ needs to be the same in the whole yaml file."
-msgstr "`インデントスペース<https://yaml.org/spec/1.2.2/#61-indentation-spaces>`__ の数は、yaml ファイル全体で同じである必要があります。"
+msgstr "`インデントスペース <https://yaml.org/spec/1.2.2/#61-indentation-spaces>`__ の数は、yaml ファイル全体で同じである必要があります。"
 
 #: ../../source/designer-guide/configuration/custom-fields.rst:48
 msgid "Localize Label, Description, Category and Values"
@@ -4032,7 +4032,7 @@ msgstr "CMS のルートフォルダーの ``/CustomFields/`` フォルダー。
 
 #: ../../source/designer-guide/configuration/custom-fields.rst:55
 msgid "the object kind of the entry - ``Cases``, ``Tasks``, or ``Starts`` are supported. This folder is *required*."
-msgstr "エントリのオブジェクトの種類 - ``Cases``、``Tasks``、``Starts`` がサポートされています。このフォルダーは *必須* です。"
+msgstr "エントリのオブジェクトの種類 - ``Cases`` 、 ``Tasks`` 、 ``Starts`` がサポートされています。このフォルダーは *必須* です。"
 
 #: ../../source/designer-guide/configuration/custom-fields.rst:56
 #, python-brace-format
@@ -4042,7 +4042,7 @@ msgstr "``/CustomFields/{kind}/{name}/Label``、``/CustomFields/{kind}/{name}/De
 #: ../../source/designer-guide/configuration/custom-fields.rst:60
 #, python-brace-format
 msgid "You can localize values of ``STRING`` and ``NUMBER`` custom fields. This allows you to store a technical code either as ``NUMBER`` or ``STRING`` in a custom field and provide labels for them in the CMS. Use the following path to localize your custom field values: ``/CustomFields/{kind}/{name}/Values/{value}``."
-msgstr "``文字列`` カスタムフィールドと ``数値`` カスタムフィールドの値をローカライズできます。これにより、技術コードを ``数値`` または ``文字列`` としてカスタムフィールドに保存し、CMS でラベルを提供できます。カスタムフィールドの値をローカライズするには、次のパスを使用します：``/CustomFields/{kind}/{name}/Values/{value}``"
+msgstr "``文字列`` カスタムフィールドと ``数値`` カスタムフィールドの値をローカライズできます。これにより、技術コードを ``数値`` または ``文字列`` としてカスタムフィールドに保存し、CMS でラベルを提供できます。カスタムフィールドの値をローカライズするには、次のパスを使用します： ``/CustomFields/{kind}/{name}/Values/{value}``"
 
 #: ../../source/designer-guide/configuration/custom-fields.rst:64
 #: ../../source/designer-guide/configuration/formats.rst:12
@@ -4498,11 +4498,11 @@ msgstr "設定可能なすべての項目のリストについては、Jackson �
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:215
 msgid "`Jackson Deserialization features <https://github.com/FasterXML/jackson-databind/wiki/Deserialization-Features>`__ can be set using ``Deserialization.`` as a prefix. E.g., ``Deserialization.FAIL_ON_UNKNOWN_PROPERTIES``"
-msgstr "`Jackson のデシリアライズ機能<https://github.com/FasterXML/jackson-databind/wiki/Deserialization-Features>`__ は、``Deserialization.`` をプレフィックスとして使用して設定できます。例：``Deserialization.FAIL_ON_UNKNOWN_PROPERTIES``"
+msgstr "`Jackson のデシリアライズ機能 <https://github.com/FasterXML/jackson-databind/wiki/Deserialization-Features>`__ は、 ``Deserialization.`` をプレフィックスとして使用して設定できます。例： ``Deserialization.FAIL_ON_UNKNOWN_PROPERTIES``"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:218
 msgid "`Jackson Serialization features <https://github.com/FasterXML/jackson-databind/wiki/Serialization-features>`__ can be set using ``Serialization.`` as a prefix. E.g., ``Serialization.WRITE_ENUMS_USING_INDEX``"
-msgstr "`Jackson のシリアライズ機能<https://github.com/FasterXML/jackson-databind/wiki/Serialization-features>`__ は、 ``Serialization.`` をプレフィックスとして使用して設定できます。例：``Serialization.WRITE_ENUMS_USING_INDEX``"
+msgstr "`Jackson のシリアライズ機能 <https://github.com/FasterXML/jackson-databind/wiki/Serialization-features>`__ は、 ``Serialization.`` をプレフィックスとして使用して設定できます。例： ``Serialization.WRITE_ENUMS_USING_INDEX``"
 
 #: ../../source/designer-guide/configuration/rest-clients.rst:221
 msgid "**Path Properties**"
@@ -13076,11 +13076,11 @@ msgstr "``result`` 変数には、トリガーされ :ref:`process-element-start
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog.rst:6
 msgid "|element| The *User Dialog* element is located in the *Activity* drawer of the process editor palette."
-msgstr "|image0| *ユーザーダイアログ* 要素は、プロセスエディターパレットの *アクティビティ* ドロワーにあります。"
+msgstr "|element| *ユーザーダイアログ* 要素は、プロセスエディターパレットの *アクティビティ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog.rst:12
 msgid "The User Dialog element is used to call a User Dialog from a process. You can both start User Dialogs from a *business process* as well as from another *User Dialog*. Input and return parameters for/from the started User Dialog can be mapped using the *call* and *output* tabs of this element."
-msgstr "ユーザーダイアログ要素を使用して、プロセスからユーザーダイアログを呼び出します。ユーザーダイアログは、*ビジネスプロセス* からも、別の *ユーザーダイアログ* からも開始できます。開始されたユーザーダイアログの入力パラメーターと戻りパラメーターは、この要素の *呼び出し* タブと *出力* タブを使用してマッピングできます。"
+msgstr "ユーザーダイアログ要素を使用して、プロセスからユーザーダイアログを呼び出します。ユーザーダイアログは、 *ビジネスプロセス* からも、別の *ユーザーダイアログ* からも開始できます。開始されたユーザーダイアログの入力パラメーターと戻りパラメーターは、この要素の *呼び出し* タブと *出力* タブを使用してマッピングできます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/_tab-call.rst:2
 msgid "Dialog Tab"
@@ -13224,11 +13224,11 @@ msgstr "|image0| *ユーザーダイアログ開始* 要素は、プロセスエ
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-start.rst:10
 msgid "The User Dialog Start element is used to map a *Start Method* (as declared in the `Interface Editor <#ivy.editors.userdialoginterface>`__) to the process that is started by this element and that implements the Start Method."
-msgstr "ユーザーダイアログ開始要素を使用して、この要素で開始され、開始メソッドを実装するプロセスに（`インターフェースエディター<#ivy.editors.userdialoginterface>`__ で宣言された）*開始メソッド* をマッピングします。"
+msgstr "ユーザーダイアログ開始要素を使用して、この要素で開始され、開始メソッドを実装するプロセスに（ `インターフェースエディター <#ivy.editors.userdialoginterface>`__ で宣言された） *開始メソッド* をマッピングします。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-start.rst:15
 msgid "The element allows to initialize internal data of the User Dialog from the *input* parameters of the call and to define *return* values from process data (to be returned when the User Dialog finishes)."
-msgstr "この要素を使用して、呼び出しの *入力* パラメーターからユーザーダイアログの内部データを初期化し、プロセスデータから（ユーザーダイアログの終了時に返される）*戻り* 値を定義できます。"
+msgstr "この要素を使用して、呼び出しの *入力* パラメーターからユーザーダイアログの内部データを初期化し、プロセスデータから（ユーザーダイアログの終了時に返される） *戻り* 値を定義できます。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-dialog-start.rst:27
 msgid "This tab is used to define the name and input parameters of the *Start Method* that is implemented by this element's process. See :ref:`process-element-tab-start` for a more detailed description."
@@ -13256,7 +13256,7 @@ msgstr "ユーザーダイアログの終了後、呼び出し元 :ref:`process-
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-task.rst:6
 msgid "|element| The *User Task* element is located in the *Activity* drawer of the process editor palette."
-msgstr "|image0| *ユーザータスク* 要素は、プロセスエディターパレットの *アクティビティ* ドロワーにあります。"
+msgstr "|element| *ユーザータスク* 要素は、プロセスエディターパレットの *アクティビティ* ドロワーにあります。"
 
 #: ../../source/designer-guide/process-modeling/process-elements/user-task.rst:12
 msgid "The *User Task* element calls a User Dialog in a new Task. Thus, it combines the behavior of a :ref:`process-element-task-switch-event` and a :ref:`process-element-user-dialog`. You can either call a normal HTML Dialog or an Offline Dialog - they both are based on JSF technology and can run in a Web Browser as well as on a mobile client."
@@ -15332,7 +15332,7 @@ msgstr "コンテンツが表示された Axon Ivy プロジェクトビュー"
 
 #: ../../source/designer-guide/process-modeling/projects/ivyProjectView.rst:17
 msgid "Some of the entries are categorized such as User Dialogs and processes, but in general double-clicking on the leafs opens the :ref:`corresponding editor <designer-reference-editors>`."
-msgstr "エンティティには、ユーザーダイアログ、プロセスなどに分類されるものもありますが、一般的には、リーフをダブルクリックすると :ref:`対応するエディター<designer-reference-editors>` 開きます。"
+msgstr "エンティティには、ユーザーダイアログ、プロセスなどに分類されるものもありますが、一般的には、リーフをダブルクリックすると :ref:`対応するエディター <designer-reference-editors>` 開きます。"
 
 #: ../../source/designer-guide/process-modeling/projects/ivyProjectView.rst:22
 msgid "Filters"
@@ -15400,7 +15400,7 @@ msgstr "リソースの名前の変更は、*Java* や *リソース* パース�
 
 #: ../../source/designer-guide/process-modeling/projects/ivyProjectView.rst:77
 msgid "*Move* - Moves the selected resources to another project. The `move wizard <#ivy.wizards.refactoring.move>`__ will be shown, allowing you to select the project to which the resource(s) should be moved."
-msgstr "*移動* - 選択したリソースを他のプロジェクトに移動します。`移動ウィザード<#ivy.wizards.refactoring.move>`__ が表示され、リソースを移動するプロジェクトを選択できます。"
+msgstr "*移動* - 選択したリソースを他のプロジェクトに移動します。 `移動ウィザード <#ivy.wizards.refactoring.move>`__ が表示され、リソースを移動するプロジェクトを選択できます。"
 
 #: ../../source/designer-guide/process-modeling/projects/ivyProjectView.rst:83
 msgid "If Axon Ivy artifacts (such as User Dialogs, Processes or Data Classes) are moved, then the wizard will show an overview of the references (e.g., calls to sub processes) that might be broken by the operation."
