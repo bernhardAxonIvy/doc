@@ -71,7 +71,6 @@ pipeline {
 
           withChecks('Doc Sphinx Issues-JA') {
             recordIssues tools: [sphinxBuild(id: 'sphinx-JA', name: 'Sphinx JA')], 
-              filters: [excludeFile('source/designer-guide/process-modeling/process-elements/trigger-step.rst')], 
               qualityGates: [[threshold: 1, type: 'TOTAL']]
           }
 
