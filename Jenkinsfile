@@ -37,8 +37,8 @@ pipeline {
       steps {
         script {
           docker.image('axonivy/build-container:read-the-docs-2').inside {
-            sh "make -C /doc-build html BASEDIR='${env.WORKSPACE}' "
-             + "VERSION=${version} BRANCH_VERSION=${branchVersion}"
+            sh "make -C /doc-build html BASEDIR='${env.WORKSPACE}' " +
+               "VERSION=${version} BRANCH_VERSION=${branchVersion}"
           }
           sh "rm build/html/portal-guide/index.html"
           sh "mv build build-EN"
@@ -57,10 +57,10 @@ pipeline {
       steps {
         script {
           docker.image('axonivy/build-container:read-the-docs-2').inside {
-            sh "make -C /doc-build html BASEDIR='${env.WORKSPACE}' "
-             + "VERSION=${version} BRANCH_VERSION=${branchVersion} "
-             + "GETTEXT_COMPACT=user-guide "
-             + "LOCALEDIR=\"${env.WORKSPACE}/locale\" SPHINXOPTS=\"-D language='ja'\""
+            sh "make -C /doc-build html BASEDIR='${env.WORKSPACE}' " + 
+               "VERSION=${version} BRANCH_VERSION=${branchVersion} " + 
+               "GETTEXT_COMPACT=user-guide " + 
+               "LOCALEDIR=\"${env.WORKSPACE}/locale\" SPHINXOPTS=\"-D language='ja'\""
           }
           sh "rm build/html/portal-guide/index.html"
           sh "mv build build-JA"
