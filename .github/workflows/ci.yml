@@ -22,8 +22,16 @@ jobs:
       run: |
         # version=dev
         # mvn -B -f pom.xml clean package -Ddoc.version=$version
-        docker run -v .:/doc -u $(id -u) axonivy/build-container:read-the-docs-2 make html BASEDIR=/doc
+        mkdir target
+        docker run -v .:/doc -u $(id -u) axonivy/build-container:read-the-docs-2\
+         make html BASEDIR=/doc 2> target/sphinx-errors.log
         rm build/html/portal-guide/index.html
+        cat target/sphinx-errors.log\
+         | sed -E 's|/doc/(.*\.rst):([0-9]+): ([A-Za-z]*): |::\L\3 file=\1,line=\2::|g'\
+         | grep -v "image.not_readable"\
+         | grep -v "/target/"\
+         | grep -v "Could not obtain image"\
+         | grep -v "Cannot scale image!"
     - name: Archive build artifact
       uses: actions/upload-artifact@v4
       with:
