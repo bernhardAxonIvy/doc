@@ -15,6 +15,8 @@ import java.util.stream.Stream;
 import com.axonivy.wf.custom.ErpPrintJob.Config;
 
 import ch.ivyteam.ivy.process.eventstart.AbstractProcessStartEventBean;
+import ch.ivyteam.ivy.process.eventstart.IProcessStartEventBeanRuntime;
+import ch.ivyteam.ivy.process.extension.ProgramConfig;
 import ch.ivyteam.ivy.process.extension.ui.ExtensionUiBuilder;
 import ch.ivyteam.ivy.process.extension.ui.IUiFieldEditor;
 import ch.ivyteam.ivy.process.extension.ui.UiEditorExtension;
@@ -28,11 +30,15 @@ public class ErpInvoice extends AbstractProcessStartEventBean {
   }
 
   @Override
-  public void poll() {
-    int seconds = Optional.ofNullable(getConfig().get(Config.INTERVAL))
+  public void initialize(IProcessStartEventBeanRuntime runtime, ProgramConfig config) {
+    super.initialize(runtime, config);
+    int seconds = Optional.ofNullable(config.get(Config.INTERVAL))
       .map(Integer::parseInt).orElse(60);
-    getEventBeanRuntime().poll().every(Duration.ofSeconds(seconds));
+    runtime.poll().every(Duration.ofSeconds(seconds));
+  }
 
+  @Override
+  public void poll() {
     String path = getConfig().get(Config.PATH);
     try (Stream<Path> csv = Files.list(Path.of(path))) {
       List<Path> updates = csv.collect(Collectors.toList());
