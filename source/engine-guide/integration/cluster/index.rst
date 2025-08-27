@@ -58,4 +58,3 @@ Cluster:
     data/index
     load-balancer/index
     deployment/index
-    container/index
