@@ -15,10 +15,12 @@ import java.util.stream.Stream;
 import org.apache.commons.lang3.StringUtils;
 
 import ch.ivyteam.ivy.persistence.PersistencyException;
+import ch.ivyteam.ivy.process.extension.ProgramConfig;
 import ch.ivyteam.ivy.process.extension.ui.ExtensionUiBuilder;
 import ch.ivyteam.ivy.process.extension.ui.IUiFieldEditor;
 import ch.ivyteam.ivy.process.extension.ui.UiEditorExtension;
 import ch.ivyteam.ivy.process.intermediateevent.AbstractProcessIntermediateEventBean;
+import ch.ivyteam.ivy.process.intermediateevent.IProcessIntermediateEventBeanRuntime;
 import ch.ivyteam.util.PropertiesUtil;
 
 public class ErpPrintJob extends AbstractProcessIntermediateEventBean {
@@ -28,11 +30,15 @@ public class ErpPrintJob extends AbstractProcessIntermediateEventBean {
   }
 
   @Override
-  public void poll() {
-    int seconds = Optional.ofNullable(getConfig().get(Config.INTERVAL))
+  public void initialize(IProcessIntermediateEventBeanRuntime runtime, ProgramConfig config) {
+    super.initialize(runtime, config);
+    int seconds = Optional.ofNullable(config.get(Config.INTERVAL))
       .map(Integer::parseInt).orElse(60);
-    getEventBeanRuntime().poll().every(Duration.ofSeconds(seconds));
+    runtime.poll().every(Duration.ofSeconds(seconds));
+  }
 
+  @Override
+  public void poll() {
     String path = getConfig().get(Config.PATH);
     try (Stream<Path> csv = Files.list(Path.of(path)).filter(f -> f.startsWith("erp-print"))) {
       List<Path> reports = csv.collect(Collectors.toList());
