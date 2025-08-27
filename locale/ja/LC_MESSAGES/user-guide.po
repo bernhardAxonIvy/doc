@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 07:33+0000\n"
+"POT-Creation-Date: 2025-08-27 12:05+0000\n"
 "PO-Revision-Date: 2025-04-08 12:14+0000\n"
 "Last-Translator: Reguel <reguel.wermelinger@axonivy.com>\n"
 "Language: ja\n"
@@ -32947,15 +32947,6 @@ msgstr ""
 "は、クラスタのすべての実行中のノードを表示するビューがあります。デフォルトでは、ノード名は自動生成されますが :ref:`ivy.yaml "
 "<ivy-yaml>` で名前を設定できます。"
 
-#: ../../source/engine-guide/integration/cluster/container/index.rst:4
-msgid "Container Image"
-msgstr "コンテナイメージ"
-
-#: ../../source/engine-guide/integration/cluster/container/index.rst:6
-#: ../../source/engine-guide/integration/cluster/deployment/index.rst:6
-msgid "TBD"
-msgstr ""
-
 #: ../../source/engine-guide/integration/cluster/data/index.rst:6
 msgid ""
 "All cluster nodes must have access to a shared data directory. This "
@@ -32971,6 +32962,63 @@ msgid ""
 "For case documents, you can also configure an S3 bucket as described in "
 ":ref:`documents-s3`. In this setup, all cluster nodes must have access to"
 " the same S3 instance."
+msgstr ""
+
+#: ../../source/engine-guide/integration/cluster/deployment/index.rst:6
+msgid ""
+"Axon Ivy Engine Enterprise Editions support all available "
+":ref:`deployment methods <deployment-deploying>`. However, the "
+"application directory must be shared. In container environments, when "
+"using the official Axon Ivy Docker image, you need to provide a "
+"persistent volume for the application directory, which is by default "
+"located at :code:`/ivy/applications`."
+msgstr ""
+
+#: ../../source/engine-guide/integration/cluster/deployment/index.rst:13
+msgid "Container Image"
+msgstr "コンテナイメージ"
+
+#: ../../source/engine-guide/integration/cluster/deployment/index.rst:15
+msgid ""
+"You can also create your own container image based on the official Axon "
+"Ivy Engine image. To do so, include your Axon Ivy Application along with "
+"all required Process Model Versions (including old versions too) for "
+"runtime in the deployment directory :code:`/ivy/deploy`. In this setup, "
+"there is no need to share the application directory across nodes."
+msgstr ""
+
+#: ../../source/engine-guide/integration/cluster/deployment/index.rst:26
+msgid "A CI/CD pipeline can look like this:"
+msgstr ""
+
+#: ../../source/engine-guide/integration/cluster/deployment/index.rst:30
+msgid ""
+"The build server is cloning the Axon Ivy Projects from a SCM system like "
+"GitHub."
+msgstr ""
+
+#: ../../source/engine-guide/integration/cluster/deployment/index.rst:32
+msgid ""
+"The build server is building the Axon Ivy Projects and creating an "
+"application zip."
+msgstr ""
+
+#: ../../source/engine-guide/integration/cluster/deployment/index.rst:34
+msgid ""
+"The build server is creating a Docker image based on the official Axon "
+"Ivy Engine Image."
+msgstr ""
+
+#: ../../source/engine-guide/integration/cluster/deployment/index.rst:36
+msgid ""
+"The build server is publishing the image to an internal or external image"
+" registry."
+msgstr ""
+
+#: ../../source/engine-guide/integration/cluster/deployment/index.rst:37
+msgid ""
+"The container orchestration platform (e.g., Kubernetes) is deploying the "
+"new image to the cluster."
 msgstr ""
 
 #: ../../source/engine-guide/integration/cluster/index.rst:4
@@ -39925,5 +39973,8 @@ msgstr ""
 #~ "dialog-multiple-views` ) or Components "
 #~ "(:ref:`form-editor-component` or :ref"
 #~ ":`html-dialog-component` )."
+#~ msgstr ""
+
+#~ msgid "TBD"
 #~ msgstr ""
 
