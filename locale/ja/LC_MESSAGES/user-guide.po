@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-27 12:05+0000\n"
+"POT-Creation-Date: 2025-09-02 14:33+0000\n"
 "PO-Revision-Date: 2025-04-08 12:14+0000\n"
 "Last-Translator: Reguel <reguel.wermelinger@axonivy.com>\n"
 "Language: ja\n"
@@ -590,6 +590,7 @@ msgstr "ライセンス"
 #: ../../source/axonivy/migration/migration-notes-120-131.rst:13
 #: ../../source/axonivy/migration/migration-notes-120-131.rst:92
 #: ../../source/axonivy/migration/migration-notes-120-131.rst:103
+#: ../../source/axonivy/migration/migration-notes-131-132.rst:41
 msgid "|tag-ops-changed|"
 msgstr "|tag-ops-changed|"
 
@@ -933,6 +934,18 @@ msgstr ""
 msgid ""
 ":code:`org.apache.catalina.filters.RemoteIpFilter` → "
 ":code:`ReverseProxy.HttpHeaders`"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-131-132.rst:39
+msgid "Schema header in ivy.yaml and app.yaml"
+msgstr ""
+
+#: ../../source/axonivy/migration/migration-notes-131-132.rst:43
+msgid ""
+"If your :ref:`ivy-yaml` and :ref:`app-yaml` has no schema header "
+"specified, the Axon Ivy Engine will now automatically assume that these "
+"files are in the latest version and will no longer auto migrate them. We "
+"suggest that you always version your file with a schema header."
 msgstr ""
 
 #: ../../source/axonivy/migration/migration-tools.rst:4
@@ -23404,6 +23417,7 @@ msgid "The unique identifier of the required project."
 msgstr "必要なプロジェクトの一意の識別子。"
 
 #: ../../source/designer-guide/process-modeling/projects/deployment.rst:149
+#: ../../source/engine-guide/configuration/index.rst:28
 msgid "Version"
 msgstr "バージョン"
 
@@ -30357,6 +30371,16 @@ msgstr ""
 "をお勧めします。なお、ほとんどの設定は :ref:`engine-cockpit` の UI でも調整できます。"
 
 #: ../../source/engine-guide/configuration/index.rst:29
+msgid ""
+"The Axon Ivy configuration files, :ref:`ivy-yaml` and :ref:`app-yaml`, "
+"use a versioned schema. The schema version is specified in the header as "
+"the first entry. Many editors can recognize this schema and validate the "
+"file accordingly. If no schema is defined, the Axon Ivy Engine assumes "
+"the latest version. Therefore it is recommended that you always define "
+"the schema header in the configuration file."
+msgstr ""
+
+#: ../../source/engine-guide/configuration/index.rst:38
 msgid "Configure your engine"
 msgstr "エンジンの設定"
 
