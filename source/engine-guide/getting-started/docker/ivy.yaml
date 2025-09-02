@@ -1,11 +1,11 @@
+# yaml-language-server: $schema=https://json-schema.axonivy.com/ivy/13.2.7/ivy.json
 # ivy configuration file which defines the postgres
 # container as system database
 SystemDb:
   Driver: org.postgresql.Driver
   Url: jdbc:postgresql://postgres:5432/AxonIvySystemDatabase
   UserName: admin
-  Password: 1234
-  Autoconvert: false
+  Password: "1234"
 Administrators:
   admin:
     Password: admin

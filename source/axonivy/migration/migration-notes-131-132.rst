@@ -35,6 +35,16 @@ configurations and make the adjustments in the :ref:`ivy-yaml`:
 - :code:`org.apache.catalina.filters.RemoteIpFilter` → :code:`ReverseProxy.HttpHeaders`
 
 
+Schema header in ivy.yaml and app.yaml
+**************************************
+
+|tag-ops-changed|
+
+If your :ref:`ivy-yaml` and :ref:`app-yaml` has no schema header specified, the
+Axon Ivy Engine will now automatically assume that these files are in the latest
+version and will no longer auto migrate them. We suggest that you always version
+your file with a schema header.
+
 
 ------------
 

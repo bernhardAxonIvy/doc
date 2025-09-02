@@ -1,8 +1,9 @@
+# yaml-language-server: $schema=https://json-schema.axonivy.com/ivy/13.2.7/ivy.json
 # sample ivy.yaml with some often used entries defined
 SystemDb:
   Url: jdbc:mariadb://myDbHost:3306/AxonIvySystemDatabase
   UserName: root
-  Password: 1234
+  Password: "1234"
 Administrators:
   admin:
     Password: "${hash:1234}"
