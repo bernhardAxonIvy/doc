@@ -52,7 +52,8 @@ pipeline {
             def host = 'axonivya@217.26.51.247'
             def homeDir = '/home/axonivya'
             def dir = "$homeDir/data/ivy-doc"
-            def destFolder = "$dir/doc-$releaseVersion-" + new Date().format('yyyy-MM-dd_HH-mm-ss-SSS') + "/en"
+            def docFolder = "$dir/doc-$releaseVersion-" + new Date().format('yyyy-MM-dd_HH-mm-ss-SSS')
+            def destFolder = "$docFolder/en"
 
             echo "Upload doc to $host:$destFolder"
             sh "ssh $host mkdir -p $destFolder"
@@ -60,7 +61,7 @@ pipeline {
             echo 'Upload documentation'
             sh "rsync -r build/html/ $host:$destFolder"
 
-            sh "ssh $host ln -fns $destFolder $homeDir/data/doc/$releaseVersion"
+            sh "ssh $host ln -fns $docFolder $homeDir/data/doc/$releaseVersion"
           }
           runSSH(deployer)
         }
