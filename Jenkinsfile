@@ -41,15 +41,16 @@ pipeline {
                "VERSION=${version} BRANCH_VERSION=${branchVersion}"
           }
           sh "rm build/html/portal-guide/index.html"
-          sh "mv build build-EN"
+          sh "mkdir -p build/doc"
+          sh "mv build/html build/doc/en"
 
-          archiveArtifacts 'build-EN/html/**/*, ' +
+          archiveArtifacts 'build/doc/en/**/*, ' +
                           'target/resources/includes/_release-notes.md'
 
           withChecks('Doc Sphinx Issues') {
             recordIssues tools: [sphinxBuild()], qualityGates: [[threshold: 1, type: 'TOTAL']]
           }
-          currentBuild.description = "<a href='${BUILD_URL}artifact/build-EN/html/index.html'>Doc 🇬🇧️</a>"
+          currentBuild.description = "<a href='${BUILD_URL}artifact/build/doc/en/index.html'>Doc 🇬🇧️</a>"
         }
       }
     }
@@ -63,16 +64,17 @@ pipeline {
                "LOCALEDIR=\"${env.WORKSPACE}/locale\" SPHINXOPTS=\"-D language='ja'\""
           }
           sh "rm build/html/portal-guide/index.html"
-          sh "mv build build-JA"
+          sh "mkdir -p build/doc"
+          sh "mv build/html build/doc/ja"
 
-          archiveArtifacts 'build-JA/html/**/*'
+          archiveArtifacts 'build/doc/ja/**/*'
 
           withChecks('Doc Sphinx Issues-JA') {
             recordIssues tools: [sphinxBuild(id: 'sphinx-JA', name: 'Sphinx JA')], 
               qualityGates: [[threshold: 1, type: 'TOTAL']]
           }
 
-          currentBuild.description += "<br/><a href='${BUILD_URL}artifact/build-JA/html/index.html'>Doc 🇯🇵️</a>"
+          currentBuild.description += "<br/><a href='${BUILD_URL}artifact/build/doc/ja/index.html'>Doc 🇯🇵️</a>"
         }
       }
     }
@@ -93,7 +95,7 @@ pipeline {
             sh "ssh $host mkdir -p $destFolder"
 
             echo 'Upload documentation'
-            sh "rsync -r build-EN/html/ $host:$destFolder"
+            sh "rsync -r build/doc/ $host:$destFolder"
 
             sh "ssh $host ln -fns $destFolder $homeDir/data/doc/$releaseVersion"
           }
