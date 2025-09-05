@@ -26,7 +26,8 @@ pipeline {
           runMaven(integrateDependencies)
 
           docker.image('axonivy/build-container:read-the-docs-2').inside {
-            sh "make -C /doc-build html BASEDIR='${env.WORKSPACE}' VERSION=${version} BRANCH_VERSION=${branchVersion}"
+            sh "make -C /doc-build html BASEDIR='${env.WORKSPACE}' VERSION=${version} BRANCH_VERSION=${branchVersion} " +
+               "VERSION_SWITCHER=true"
           }
           sh "rm build/html/portal-guide/index.html"
 
