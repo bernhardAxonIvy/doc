@@ -32,9 +32,7 @@ application and edit the application's configuration settings.
 
 If you want to deploy a project, click on the :guilabel:`Deployment` button and select
 your :file:`.iar` or :file:`.zip` file. Note that you can set additional deployment
-options here; see chapter :ref:`deployment-options` for more information. To be able to
-use this feature the :ref:`deployment-rest-api` feature needs to be enabled in the
-(:ref:`security-engine-optional-features`).
+options here; see chapter :ref:`deployment-options` for more information.
 
 .. note:: 
     For CI/CD pipeline deployments refer to the :ref:`deployment-deploying`
