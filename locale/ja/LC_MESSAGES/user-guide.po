@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-02 14:33+0000\n"
+"POT-Creation-Date: 2025-09-10 21:27+0000\n"
 "PO-Revision-Date: 2025-04-08 12:14+0000\n"
 "Last-Translator: Reguel <reguel.wermelinger@axonivy.com>\n"
 "Language: ja\n"
@@ -31052,6 +31052,14 @@ msgstr ""
 "ポータルのクエリのパフォーマンスが低い場合は、データベースの :file:`postgresql.conf` 設定ファイルで "
 "``work_mem`` の設定値を大きくしてみてください。"
 
+#: ../../source/engine-guide/configuration/system-database/postgres.rst:17
+msgid ""
+"To fully utilize all features in cloud environments such as AWS or Azure,"
+" verify that the required permissions for the `pgstattuple` extension are"
+" properly configured. Keep in mind: You also need the EXECUTE permissions"
+" for the function. Examples:"
+msgstr ""
+
 #: ../../source/engine-guide/configuration/translation-service/index.rst:4
 #, fuzzy
 msgid "Translation Service"
@@ -36209,30 +36217,29 @@ msgstr ""
 "cockpit-security-system` の変更、アプリケーションの起動／停止、アプリケーションの設定の編集を行うことができます。"
 
 #: ../../source/engine-guide/reference/engine-cockpit/applications.rst:33
+#, fuzzy
 msgid ""
 "If you want to deploy a project, click on the :guilabel:`Deployment` "
 "button and select your :file:`.iar` or :file:`.zip` file. Note that you "
 "can set additional deployment options here; see chapter :ref:`deployment-"
-"options` for more information. To be able to use this feature the :ref"
-":`deployment-rest-api` feature needs to be enabled in the (:ref"
-":`security-engine-optional-features`)."
+"options` for more information."
 msgstr ""
 "プロジェクトを展開する場合は、 :guilabel:`展開` ボタンをクリックし、:file:`.iar` または :file:`.zip` "
 "ファイルを選択します。ここで追加の展開オプションを設定できます。詳細については、 :ref:`deployment-options` "
 "」の章を参照してください。この機能を使用するためには :ref:`security-engine-optional-features` で "
 ":ref:`deployment-rest-api` 機能を有効にする必要があります。"
 
-#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:40
+#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:38
 msgid ""
 "For CI/CD pipeline deployments refer to the :ref:`deployment-deploying` "
 "chapter."
 msgstr "CI/CD パイプラインの展開については、「 :ref:`deployment-deploying` 」の章を参照してください。"
 
-#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:49
+#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:47
 msgid "Pmv Detail"
 msgstr "PMV の詳細"
 
-#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:51
+#: ../../source/engine-guide/reference/engine-cockpit/applications.rst:49
 msgid ""
 "The detail page of the **process model version** displays all information"
 " about a individual process model version. This includes basic "
