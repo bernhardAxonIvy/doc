@@ -104,33 +104,59 @@ view the complete configuration file.
 .. _engine-cockpit-ssl:
 
 SSL Settings
-^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^
 
-These settings define the key and trust stores to be used for SSL/TLS
-client connections.
-
-
-A key store is used to read client keys (certificates). This is only
-required if a server requests a client certificate in order to
-authenticate the client.
-
-A trust store is used to specify trusted server certificates or
-certificates of certification authorities. An SSL client authenticates a
-server by using the certificates in a trust store. If the server
-provides a certificate that is signed by a certification authority known
-by Java then the system trust store can be used. If the server uses a
-certificate that is self signed or signed by a unknown certification
-authority then a custom trust store can be used. The custom trust store
-must contain the server certificate or the certificate of the unknown
-certification authority.
-
+The **SSL Settings** page allows you to configure SSL/TLS settings for client
+connections. You can configure a trust store and a key store as needed.
 
 .. figure:: /_images/engine-cockpit/engine-cockpit-SSL-client.png
    :alt: SSL Client
    :align: center
-   
+
+Trust Store
+"""""""""""
+
+A trust store contains trusted certificates from servers and/or certification 
+authorities. An SSL client uses these certificates to authenticate servers
+during the SSL/TLS handshake. If the server presents a certificate signed by a 
+certification authority known to Java, the system trust store may suffice. 
+For servers using self-signed or certification authority unknown certificates, 
+a custom trust store is necessary, this custom store must include the server 
+certificate or the unknown certification authority certificate.
+
+
+Trust Store Settings
+   The following settings configure the trust store for SSL/TLS client connections.
+
+   Trust store file
+      Path to the file of the trust store.
+
+   Trust store password
+      Password for accessing the trust store file.
+
+   Trust store type
+      The format of the trust store (e.g., JKS or PKCS12). If empty the
+      system default type (PKCS12) is used.
+
+   Trust store provider
+      The security provider used to read the trust store. If empty the
+      system default provider is used.
+
+   Trust store algorithm
+      The algorithm used to read the trust store. If empty the system
+      default algorithm is used.
+
+Key Store
+"""""""""
+
+A key store contains the client's private key and certificate. These are required for mTLS, when a server
+requests the client to prove its identity. The key store must contain
+both the private key and the corresponding public certificate.
+
 
 Key Store Settings
+   The following options configure the key store for SSL/TLS client connections.
+
    Use custom key store
       If selected the key store configured below is used to read the
       client's key. A client key is only necessary if the server
@@ -139,14 +165,15 @@ Key Store Settings
       the Java system property ``javax.net.ssl.keyStore``.
 
    Key store file
-      The file containing the client keys.
+      Path to the file of the key store.
 
    Key store password
-      Password used to read the key store file.
+      Password for accessing the key store file. 
 
    Key password
-      Password needed to decrypt the key. If empty the key store
-      password is used instead.
+      Password used to decrypt the private key.  
+      Only a single key password can be defined, which means multiple keys
+      with different passwords in the same keystore are not supported.
 
    Key store type
       The type of the key store (e.g., JKS or PKCS12). If empty the
@@ -160,36 +187,20 @@ Key Store Settings
       The algorithm used to read the key store. If empty the system
       default algorithm is used.
 
-Trust Store Settings
-   Trust store file
-      The file containing the trusted server certificates and/or
-      certificates of certification authorities.
+Certificates Table
+""""""""""""""""""
+      The certificate table displays all certificates in the selected key- or truststore:
 
-   Trust store password
-      Password used to read the trust store file.
-
-   Trust store type
-      The type of the trust store (e.g., JKS or PKCS12). If empty the
-      system default type is used.
-
-   Trust store provider
-      The security provider used to read the trust store. If empty the
-      system default provider is used.
-
-   Trust store algorithm
-      The algorithm used to read the trust store. If emtpy the system
-      default algorithm is used.
-
-Key & Trust Store Certificates Table
-      In the certificate table you can view all the certificates of the store. 
-      You can see whether the certificate is valid or not. If you move the
-      mouse cursor over the icon, a message is displayed explaining why the
-      certificate is no longer valid. You will also see information about
-      the alias, subject, algorithm and expiry date. It is possible to add
-      or delete certificates as needed.
-
+      - Displays alias, subject, algorithm, and expiry date.
+      - Shows whether each certificate is valid or invalid.  
+      - Hovering over the icon of the expiry date, provides details on certificate problems (e.g., expired certificate).
+      - Displays whether the certificate is a private key or a public certificate.
+      - You can add or delete certificates as required.  
+      - In the key store, it is also possible to import complete PKCS#12 (.p12)
+        stores containing private and/or public certificates.
 
 Other SSL Settings
+""""""""""""""""""
    Enable insecure SSL and HTTPS connections
       Manipulates the JVMs default SSLSocketFactory, so that untrusted
       (self signed or outdated) certificates are silently accepted. This
