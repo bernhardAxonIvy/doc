@@ -28,6 +28,8 @@ The first time when you execute this script, you may be asked for a
 :guilabel:`Execution Policy Change` so that this script can be executed. You
 need to answer this question with :guilabel:`[A] Yes to All`.
 
+This script will guide you to set up IIS as a reverse proxy for the Axon Ivy Engine.
+
 .. hint::
 
   If you have not been asked about the :guilabel:`Execution Policy Change` but the 
@@ -35,11 +37,15 @@ need to answer this question with :guilabel:`[A] Yes to All`.
   (Properties -> General -> Security -> Unblock) or by running the following command 
   in the PowerShell :code:`Unblock-File iis-proxy-setup.ps1`
 
-This script will guide you to set up IIS as a reverse proxy for the Axon Ivy Engine.
+.. hint::
+  This script works best with a freshly installed IIS. 
+  If IIS or any of its modules are already installed, the script may fail to run or some modules might not be installed correctly. 
+  In that case, please refer to the documentation for manual installation.
 
 .. hint::
-  This script works best with a freshly installed IIS. If IIS or any of its modules are already installed, the script may fail to run or some modules might not be installed correctly. 
-  In that case, please refer to the     documentation for manual installation.
+  Windows Server 2025:
+  This script does not support IIS on Windows Server 2025. 
+  For manual installation, please consult the official documentation.
 
 If your IIS server cannot access external links, you need to download the
 modules externally and upload them to your IIS server. Please check the download
