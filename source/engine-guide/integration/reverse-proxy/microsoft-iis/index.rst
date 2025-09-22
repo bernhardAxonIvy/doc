@@ -37,6 +37,10 @@ need to answer this question with :guilabel:`[A] Yes to All`.
 
 This script will guide you to set up IIS as a reverse proxy for the Axon Ivy Engine.
 
+.. hint::
+  This script works best with a freshly installed IIS. If IIS or any of its modules are already installed, the script may fail to run or some modules might not be installed correctly. 
+  In that case, please refer to the     documentation for manual installation.
+
 If your IIS server cannot access external links, you need to download the
 modules externally and upload them to your IIS server. Please check the download
 links for the modules in our script by searching for :guilabel:`downloadModule`.
