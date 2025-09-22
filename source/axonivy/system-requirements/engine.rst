@@ -67,7 +67,7 @@ but also some :ref:`restrictions <cluster-restrictions>` compared to the Standar
 +-------------------+--------+-------+-------------------+
 
 * **Windows**:
-  Windows Server 2022 and 2019
+  Windows Server 2025, 2022 and 2019
 
 * **Linux**:
   Linux x64 (tested on Ubuntu 24.04)
