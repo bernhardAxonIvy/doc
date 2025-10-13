@@ -4,59 +4,15 @@ Microsoft IIS
 =============
 
 We provide a Windows Powershell script to set up Microsoft IIS as a reverse
-proxy. We assumed the following when preparing this script:
+proxy. 
 
-Hard requirements:
+You can find the script in our GitHub repository: `IIS-Proxy <https://github.com/axonivy-market/iis-proxy>`_
 
-- You have at least Windows Powershell (v5.1) installed and available.
-- The Server Manager PowerShell interface is available.
+Manual installation
+~~~~~~~~~~~~~~~~~~~~~~~
 
-Configurable requirements:
-
-- IIS is on the same host as the Axon Ivy Engine.
-- The Axon Ivy Engine is accessed via the :code:`Default Web Site` of IIS.
-- There are no other applications served by this IIS. Otherwise, you need to
-  adapt the IIS server level URL rewrite rules.
-- The script shall download the additional IIS modules required.
-
-To use Microsoft IIS as a reverse proxy in front of your Axon Ivy Engine, download
-and execute the powershell script :download:`iis-proxy-setup.ps1`. Right click
-on the file and click :guilabel:`Run with PowerShell`. You need to run this
-script :guilabel:`as Administrator`.
-
-The first time when you execute this script, you may be asked for a
-:guilabel:`Execution Policy Change` so that this script can be executed. You
-need to answer this question with :guilabel:`[A] Yes to All`.
-
-This script will guide you to set up IIS as a reverse proxy for the Axon Ivy Engine.
-
-.. hint::
-
-  If you have not been asked about the :guilabel:`Execution Policy Change` but the 
-  script is still not running, you maybe need to unblock it via the Options menu 
-  (Properties -> General -> Security -> Unblock) or by running the following command 
-  in the PowerShell :code:`Unblock-File iis-proxy-setup.ps1`
-
-.. hint::
-  This script works best with a freshly installed IIS. 
-  If IIS or any of its modules are already installed, the script may fail to run or some modules might not be installed correctly. 
-  In that case, please refer to the documentation for manual installation.
-
-.. hint::
-  Windows Server 2025:
-  This script does not support IIS on Windows Server 2025. 
-  For manual installation, please consult the official documentation.
-
-If your IIS server cannot access external links, you need to download the
-modules externally and upload them to your IIS server. Please check the download
-links for the modules in our script by searching for :guilabel:`downloadModule`.
-Once you have downloaded them, upload them onto the IIS server in a directory of
-your choice. Using the directory where you store our script is the most simple
-solution. Then, start the script and select `No` to the question titled
-:guilabel:`IIS Module Source`, and enter the path where you stored the modules
-in question :guilabel:`IIS Modules Source Path`. 
-
-The script is divided into several parts:
+In case the automated script doesn't work for you. 
+Here's what the script does and must be done manually:
 
 * **IIS Setup** will install all required features including IIS itself, as well
   as the URL Rewrite and Application Request Routing (ARR) modules. Furthermore,
