@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-14 21:26+0000\n"
+"POT-Creation-Date: 2025-10-14 21:27+0000\n"
 "PO-Revision-Date: 2025-04-08 12:14+0000\n"
 "Last-Translator: Reguel <reguel.wermelinger@axonivy.com>\n"
 "Language: ja\n"
@@ -1246,7 +1246,8 @@ msgid "No"
 msgstr "×"
 
 #: ../../source/axonivy/system-requirements/engine.rst:69
-msgid "**Windows**: Windows Server 2022 and 2019"
+#, fuzzy
+msgid "**Windows**: Windows Server 2025, 2022 and 2019"
 msgstr "**Windows** ：Windows Server 2022 および 2019 "
 
 #: ../../source/axonivy/system-requirements/engine.rst:72
@@ -1315,7 +1316,13 @@ msgid "Microsoft SQL Server"
 msgstr "Microsoft SQL Server"
 
 #: ../../source/axonivy/system-requirements/engine.rst:87
-msgid "2019, 2022"
+#, fuzzy
+msgid "2019, 2022, 2025"
+msgstr "2019、2022"
+
+#: ../../source/axonivy/system-requirements/engine.rst:87
+#, fuzzy
+msgid "2019, 2025"
 msgstr "2019、2022"
 
 #: ../../source/axonivy/system-requirements/engine.rst:89
@@ -33894,113 +33901,32 @@ msgid "Microsoft IIS"
 msgstr "Microsoft IIS"
 
 #: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:6
+#, fuzzy
 msgid ""
 "We provide a Windows Powershell script to set up Microsoft IIS as a "
-"reverse proxy. We assumed the following when preparing this script:"
+"reverse proxy."
 msgstr ""
 "Microsoft IIS をリバースプロキシとして設定する Windows PowerShell "
 "スクリプトを提供します。以下を前提にこのスクリプトを作成しました。"
 
 #: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:9
-msgid "Hard requirements:"
-msgstr "厳しい要件："
-
-#: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:11
-msgid "You have at least Windows Powershell (v5.1) installed and available."
-msgstr "バージョン 5.1 以降の Windows PowerShell がインストールされ、使用できること。"
+msgid ""
+"You can find the script in our GitHub repository: `IIS-Proxy "
+"<https://github.com/axonivy-market/iis-proxy>`_"
+msgstr ""
 
 #: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:12
-msgid "The Server Manager PowerShell interface is available."
-msgstr "Server Manager PowerShell インターフェースを使用できること。"
+#, fuzzy
+msgid "Manual installation"
+msgstr "インストール"
 
 #: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:14
-msgid "Configurable requirements:"
-msgstr "設定可能な要件："
-
-#: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:16
-msgid "IIS is on the same host as the Axon Ivy Engine."
-msgstr "IIS が Axon Ivy Engine と同じホストにあること。"
+msgid ""
+"In case the automated script doesn't work for you. Here's what the script"
+" does and must be done manually:"
+msgstr ""
 
 #: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:17
-msgid "The Axon Ivy Engine is accessed via the :code:`Default Web Site` of IIS."
-msgstr "IIS の :code:`デフォルトウェブサイト` から Axon Ivy Engine にアクセスすること。"
-
-#: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:18
-msgid ""
-"There are no other applications served by this IIS. Otherwise, you need "
-"to adapt the IIS server level URL rewrite rules."
-msgstr ""
-"この IIS で提供されるアプリケーションが他にないこと。そうでない場合は、IIS サーバーレベルの URL "
-"書き換えルールを適合させる必要があります。"
-
-#: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:20
-msgid "The script shall download the additional IIS modules required."
-msgstr "スクリプトにより、必要な追加の IIS モジュールがダウンロードされること。"
-
-#: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:22
-msgid ""
-"To use Microsoft IIS as a reverse proxy in front of your Axon Ivy Engine,"
-" download and execute the powershell script :download:`iis-proxy-"
-"setup.ps1`. Right click on the file and click :guilabel:`Run with "
-"PowerShell`. You need to run this script :guilabel:`as Administrator`."
-msgstr ""
-"Microsoft IIS を Axon Ivy Engine の前にあるリバースプロキシとして設定するには、PowerShell スクリプト "
-":download:`iis-proxy-setup.ps1` "
-"をダウンロードして実行します。ファイルを右クリックし、:guilabel:`PowerShell "
-"で実行`をクリックします。このスクリプトを:guilabel:`管理者として` 実行する必要があります。"
-
-#: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:27
-msgid ""
-"The first time when you execute this script, you may be asked for a "
-":guilabel:`Execution Policy Change` so that this script can be executed. "
-"You need to answer this question with :guilabel:`[A] Yes to All`."
-msgstr ""
-"このスクリプトを初めて実行する場合、このスクリプトを実行できるように、 :guilabel:`実行ポリシーを変更する` "
-"かどうかの確認を求められることがあります。答えとして :guilabel:`[A] すべてはい` を選択してください。"
-
-#: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:33
-msgid ""
-"If you have not been asked about the :guilabel:`Execution Policy Change` "
-"but the script is still not running, you maybe need to unblock it via the"
-" Options menu (Properties -> General -> Security -> Unblock) or by "
-"running the following command in the PowerShell :code:`Unblock-File iis-"
-"proxy-setup.ps1`"
-msgstr ""
-":guilabel:`実行ポリシーを変更` "
-"するかどうかの確認が求められなかったにもかかわらず、スクリプトが実行されない場合は、［オプション］メニュー（［プロパティ］、［全般］、［セキュリティ］、［ブロックの解除］の順に選択）から、または"
-" PowerShell で :code:`Unblock-File iis-proxy-setup.ps1` "
-"コマンドを実行して、ブロックを解除する必要があります。"
-
-#: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:38
-msgid ""
-"This script will guide you to set up IIS as a reverse proxy for the Axon "
-"Ivy Engine."
-msgstr "このスクリプトに従って、IIS を Axon Ivy Engine のリバースプロキシとしてセットアップします。"
-
-#: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:40
-msgid ""
-"If your IIS server cannot access external links, you need to download the"
-" modules externally and upload them to your IIS server. Please check the "
-"download links for the modules in our script by searching for "
-":guilabel:`downloadModule`. Once you have downloaded them, upload them "
-"onto the IIS server in a directory of your choice. Using the directory "
-"where you store our script is the most simple solution. Then, start the "
-"script and select `No` to the question titled :guilabel:`IIS Module "
-"Source`, and enter the path where you stored the modules in question "
-":guilabel:`IIS Modules Source Path`."
-msgstr ""
-"IIS サーバーが外部リンクにアクセスできない場合は、外部でモジュールをダウンロードし、IIS "
-"サーバーにアップロードする必要があります。スクリプトで :guilabel:`downloadModule` "
-"を検索して、モジュールのダウンロードリンクを確認してください。ダウンロードしたら、IIS "
-"サーバーの任意のディレクトリにアップロードします。スクリプトを格納しているディレクトリを使用するのが、最も簡単な方法です。次に、スクリプトを起動し、"
-" :guilabel:`IIS モジュールのソース` という質問に対して［いいえ］を選択し、 :guilabel:`IIS "
-"モジュールのソースのパス` にモジュールを格納したパスを入力します。"
-
-#: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:49
-msgid "The script is divided into several parts:"
-msgstr "スクリプトはいくつかの部分に分かれています。"
-
-#: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:51
 msgid ""
 "**IIS Setup** will install all required features including IIS itself, as"
 " well as the URL Rewrite and Application Request Routing (ARR) modules. "
@@ -34009,7 +33935,7 @@ msgstr ""
 "**IIS のセットアップ** では、IIS を含む必要なすべての機能と URL 書き換えモジュール、Application Request "
 "Routing（ARR）モジュールがインストールされます。さらに、リバースプロキシの機能が有効になります。"
 
-#: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:59
+#: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:25
 msgid ""
 "And set :guilabel:`preserveHostHeader` to :code:`true`. The most "
 "important configuration entries in IIS are the :guilabel:`Authentication`"
@@ -34021,7 +33947,7 @@ msgstr ""
 ":guilabel:`認証` モジュールと :guilabel:`URL 書き換え` モジュールです。スクリプトは必要なすべての機能を含む IIS"
 " がすでにインストールされているかどうか検知し、インストール済みであれば IIS のインストールをスキップします。"
 
-#: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:68
+#: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:34
 msgid ""
 "**URL Rewrite Rules** configures the rules for URL rewriting. It will add"
 " a new rule :code:`ivy-route-all` to the :guilabel:`Default Website`. "
@@ -34038,7 +33964,7 @@ msgid ""
 "separate, internal-only website for access to the engine cockpit."
 msgstr ""
 
-#: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:83
+#: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:49
 msgid ""
 "There are features in Axon Ivy that require WebSocket communication. "
 "Therefore, we automatically install the WebSocket feature. IIS-ARR is not"
@@ -34054,7 +33980,7 @@ msgstr ""
 ":code:`HTTP_SEC_WEBSOCKET_EXTENSIONS` を :guilabel:`IIS サーバー変数`に追加し、 :code"
 ":`ivy-route-all` 書き換えルールの :code:`HTTP_SEC_WEBSOCKET_EXTENSIONS` を空に変更します。"
 
-#: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:92
+#: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:58
 msgid ""
 "**Terminate SSL on IIS** ensures that IIS serves the Axon Ivy Engine over"
 " HTTPS but the connection between IIS and Axon Ivy Engine is HTTP only. "
@@ -34072,7 +33998,7 @@ msgstr ""
 ":code:`https` に設定されます。これにより、HTTP ヘッダー :code:`X-Forwarded-Proto` が IIS から "
 "Axon Ivy Engine に送信されます。Axon Ivy Engine が正しい URL を作成するには、この情報が必要です。"
 
-#: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:105
+#: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:71
 msgid ""
 "**Setup SSO** will configure :ref:`Single Sign-on <single-sign-on>`. This"
 " will enable Windows Authentication and will add a HTTP request header "
@@ -34091,13 +34017,13 @@ msgstr ""
 "要があります。また、スクリプトにより、Axon Ivy Engine が提供する保護された REST サービスを呼び出す Axon Ivy "
 "モバイルアプリなど、REST クライアントに必要な基本認証が有効になります。必要ない場合は、手動で無効にすることができます。"
 
-#: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:116
+#: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:82
 msgid ""
 "If you enable SSO, you need to make sure that your users can access the "
 "Axon Ivy Engine :ref:`exclusively via IIS <single-sign-on>`."
 msgstr ""
 
-#: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:123
+#: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:89
 msgid ""
 "**Serve with HTTPS** is not covered by this script. You need to set this "
 "up manually. You need to install an SSL certificate. You can do this on "
@@ -34109,7 +34035,7 @@ msgstr ""
 "証明書をインストールする必要がありますが、:guilabel:`サーバー証明書` セクションでサーバーレベルでこれを行うことができます。SSL "
 "証明書をインポートしてください。または、自己署名証明書を作成して、HTTPS を試すこともできます。"
 
-#: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:131
+#: ../../source/engine-guide/integration/reverse-proxy/microsoft-iis/index.rst:97
 msgid ""
 "Then, go to :guilabel:`Default Website`, open :guilabel:`Handler "
 "Mappings` and add :code:`https` as a new binding. Choose the SSL "
@@ -40103,4 +40029,116 @@ msgstr ""
 #~ "possible to add or delete certificates"
 #~ " as needed."
 #~ msgstr "証明書の表には、ストアのすべての証明書が表示され、証明書が有効かどうかを確認できます。アイコンの上にマウスカーソルを移動すると、証明書が有効ではなくなった理由を説明するメッセージが表示されます。また、エイリアス、サブジェクト、アルゴリズム、有効期限に関する情報も表示されます。必要に応じて、証明書を追加、削除できます。"
+
+#~ msgid "Hard requirements:"
+#~ msgstr "厳しい要件："
+
+#~ msgid "You have at least Windows Powershell (v5.1) installed and available."
+#~ msgstr "バージョン 5.1 以降の Windows PowerShell がインストールされ、使用できること。"
+
+#~ msgid "The Server Manager PowerShell interface is available."
+#~ msgstr "Server Manager PowerShell インターフェースを使用できること。"
+
+#~ msgid "Configurable requirements:"
+#~ msgstr "設定可能な要件："
+
+#~ msgid "IIS is on the same host as the Axon Ivy Engine."
+#~ msgstr "IIS が Axon Ivy Engine と同じホストにあること。"
+
+#~ msgid ""
+#~ "The Axon Ivy Engine is accessed "
+#~ "via the :code:`Default Web Site` of "
+#~ "IIS."
+#~ msgstr "IIS の :code:`デフォルトウェブサイト` から Axon Ivy Engine にアクセスすること。"
+
+#~ msgid ""
+#~ "There are no other applications served"
+#~ " by this IIS. Otherwise, you need "
+#~ "to adapt the IIS server level URL"
+#~ " rewrite rules."
+#~ msgstr ""
+#~ "この IIS で提供されるアプリケーションが他にないこと。そうでない場合は、IIS サーバーレベルの"
+#~ " URL 書き換えルールを適合させる必要があります。"
+
+#~ msgid "The script shall download the additional IIS modules required."
+#~ msgstr "スクリプトにより、必要な追加の IIS モジュールがダウンロードされること。"
+
+#~ msgid ""
+#~ "To use Microsoft IIS as a reverse"
+#~ " proxy in front of your Axon "
+#~ "Ivy Engine, download and execute the "
+#~ "powershell script :download:`iis-proxy-"
+#~ "setup.ps1`. Right click on the file "
+#~ "and click :guilabel:`Run with PowerShell`. "
+#~ "You need to run this script "
+#~ ":guilabel:`as Administrator`."
+#~ msgstr ""
+#~ "Microsoft IIS を Axon Ivy Engine "
+#~ "の前にあるリバースプロキシとして設定するには、PowerShell スクリプト :download:`iis-"
+#~ "proxy-setup.ps1` "
+#~ "をダウンロードして実行します。ファイルを右クリックし、:guilabel:`PowerShell "
+#~ "で実行`をクリックします。このスクリプトを:guilabel:`管理者として` 実行する必要があります。"
+
+#~ msgid ""
+#~ "The first time when you execute "
+#~ "this script, you may be asked for"
+#~ " a :guilabel:`Execution Policy Change` so"
+#~ " that this script can be executed."
+#~ " You need to answer this question "
+#~ "with :guilabel:`[A] Yes to All`."
+#~ msgstr ""
+#~ "このスクリプトを初めて実行する場合、このスクリプトを実行できるように、 :guilabel:`実行ポリシーを変更する` "
+#~ "かどうかの確認を求められることがあります。答えとして :guilabel:`[A] すべてはい` "
+#~ "を選択してください。"
+
+#~ msgid ""
+#~ "If you have not been asked about"
+#~ " the :guilabel:`Execution Policy Change` "
+#~ "but the script is still not "
+#~ "running, you maybe need to unblock "
+#~ "it via the Options menu (Properties "
+#~ "-> General -> Security -> Unblock) "
+#~ "or by running the following command "
+#~ "in the PowerShell :code:`Unblock-File "
+#~ "iis-proxy-setup.ps1`"
+#~ msgstr ""
+#~ ":guilabel:`実行ポリシーを変更` "
+#~ "するかどうかの確認が求められなかったにもかかわらず、スクリプトが実行されない場合は、［オプション］メニュー（［プロパティ］、［全般］、［セキュリティ］、［ブロックの解除］の順に選択）から、または"
+#~ " PowerShell で :code:`Unblock-File iis-"
+#~ "proxy-setup.ps1` コマンドを実行して、ブロックを解除する必要があります。"
+
+#~ msgid ""
+#~ "This script will guide you to set"
+#~ " up IIS as a reverse proxy for"
+#~ " the Axon Ivy Engine."
+#~ msgstr "このスクリプトに従って、IIS を Axon Ivy Engine のリバースプロキシとしてセットアップします。"
+
+#~ msgid ""
+#~ "If your IIS server cannot access "
+#~ "external links, you need to download "
+#~ "the modules externally and upload them"
+#~ " to your IIS server. Please check "
+#~ "the download links for the modules "
+#~ "in our script by searching for "
+#~ ":guilabel:`downloadModule`. Once you have "
+#~ "downloaded them, upload them onto the"
+#~ " IIS server in a directory of "
+#~ "your choice. Using the directory where"
+#~ " you store our script is the "
+#~ "most simple solution. Then, start the"
+#~ " script and select `No` to the "
+#~ "question titled :guilabel:`IIS Module Source`,"
+#~ " and enter the path where you "
+#~ "stored the modules in question "
+#~ ":guilabel:`IIS Modules Source Path`."
+#~ msgstr ""
+#~ "IIS サーバーが外部リンクにアクセスできない場合は、外部でモジュールをダウンロードし、IIS "
+#~ "サーバーにアップロードする必要があります。スクリプトで :guilabel:`downloadModule` "
+#~ "を検索して、モジュールのダウンロードリンクを確認してください。ダウンロードしたら、IIS "
+#~ "サーバーの任意のディレクトリにアップロードします。スクリプトを格納しているディレクトリを使用するのが、最も簡単な方法です。次に、スクリプトを起動し、"
+#~ " :guilabel:`IIS モジュールのソース` という質問に対して［いいえ］を選択し、 "
+#~ ":guilabel:`IIS モジュールのソースのパス` にモジュールを格納したパスを入力します。"
+
+#~ msgid "The script is divided into several parts:"
+#~ msgstr "スクリプトはいくつかの部分に分かれています。"
 
