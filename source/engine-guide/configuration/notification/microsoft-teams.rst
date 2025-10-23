@@ -5,7 +5,7 @@ This channel provides notifications via Microsoft Teams.
 
 If you enable this channel, you also need to:
 
-- Create a technical :ref:`user in the Microsoft Entra ID<microsoft-teams-notifications-technical-user>` which serves as the sender of _microsoft-teams-notifications-application.
+- Create a technical :ref:`user in the Microsoft Entra ID<microsoft-teams-notifications-technical-user>`.
 - Create an :ref:`application in the Microsoft Entra ID<microsoft-teams-notifications-application>` where the technical user can log in and send messages through.
 - Users who shall be notified need to be synced with :ref:`Microsoft Entra ID <microsoft-entra-id>` or have a valid email address configured.
 
