@@ -2,14 +2,19 @@ Microsoft Teams Notifications
 -----------------------------
 
 This channel provides notifications via Microsoft Teams. 
-If this channel is active in a security system with Microsoft Entra ID.
-the messages are sent using the user's External ID, which is linked via :ref:`Microsoft Entra ID <microsoft-entra-id>`.
-If the External ID is not set (e.g. for local users) or if the Microsoft Entra ID is not configured,
-the user's email address is used. If you enable this channel, you also need to:
 
-- :ref:`Create a technical user in the Microsoft Entra ID which serves as the sender of notifications<microsoft-teams-notifications-technical-user>`.
-- :ref:`Create an application in the Microsoft Entra ID where the technical user can log in and send messages through<microsoft-teams-notifications-application>`.
-- :ref:`Users who shall be notified need to be synced with Microsoft Entra ID <microsoft-entra-id>`.
+If you enable this channel, you also need to:
+
+- Create a technical :ref:`user in the Microsoft Entra ID<microsoft-teams-notifications-technical-user>` which serves as the sender of _microsoft-teams-notifications-application.
+- Create an :ref:`application in the Microsoft Entra ID<microsoft-teams-notifications-application>` where the technical user can log in and send messages through.
+- Users who shall be notified need to be synced with :ref:`Microsoft Entra ID <microsoft-entra-id>` or have a valid email address configured.
+
+**Receipient Identification**
+
+Messages are sent using the user's External ID, which is linked via :ref:`Microsoft Entra ID <microsoft-entra-id>`,
+given this channel is active in a security system with Microsoft Entra ID.
+In contrast, the user's email address is used, if the External ID is not set (e.g. for local users)
+or if the Microsoft Entra ID is not configured.
 
 **Template**
 
