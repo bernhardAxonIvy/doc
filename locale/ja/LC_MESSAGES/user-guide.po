@@ -5,24 +5,11 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: Axon Ivy Platform 13.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-02 21:27+0000\n"
-"PO-Revision-Date: 2025-04-08 12:14+0000\n"
-"Last-Translator: Reguel <reguel.wermelinger@axonivy.com>\n"
-"Language: ja\n"
-"Language-Team: Japanese <https://hosted.weblate.org/projects/doc-"
-"libre/userguide/ja/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.17.0\n"
+msgstr "Project-Id-Version: Axon Ivy Platform 13.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2025-11-02 21:27+0000\nPO-Revision-Date: 2025-11-04 19:07+0000\nLast-Translator: \"matthew.iannotti\" <matthew.iannotti@jp.ricoh.com>\nLanguage-Team: Japanese <https://hosted.weblate.org/projects/axonivy/doc/ja/>\nLanguage: ja\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Generator: Weblate 5.14.1-dev\nGenerated-By: Babel 2.17.0\n"
 
 #: ../../source/axonivy/index.rst:2 ../../source/index.rst:2
 msgid "Axon Ivy"
-msgstr "Axon Ivy warmly welcomes Japan"
+msgstr "Axon Ivy"
 
 #: ../../source/axonivy/migration/deprecation.rst:4
 msgid "Deprecation and Removal"
@@ -40186,4 +40173,3 @@ msgstr ""
 #~ "を使用して、メッセージが送信されます。External ID "
 #~ "が設定されていない場合や（ローカルユーザーなど）Microsoft Entra ID "
 #~ "が設定されていない場合、ユーザーのメールアドレスが使用されます。このチャネルを有効にする場合は、以下も行う必要があります。"
-
