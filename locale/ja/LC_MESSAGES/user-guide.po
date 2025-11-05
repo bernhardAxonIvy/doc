@@ -5,7 +5,20 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
-msgstr "Project-Id-Version: Axon Ivy Platform 13.1\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2025-11-02 21:27+0000\nPO-Revision-Date: 2025-11-04 19:07+0000\nLast-Translator: \"matthew.iannotti\" <matthew.iannotti@jp.ricoh.com>\nLanguage-Team: Japanese <https://hosted.weblate.org/projects/axonivy/doc/ja/>\nLanguage: ja\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Generator: Weblate 5.14.1-dev\nGenerated-By: Babel 2.17.0\n"
+msgstr ""
+"Project-Id-Version: Axon Ivy Platform 13.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-05 15:36+0000\n"
+"PO-Revision-Date: 2025-11-04 19:07+0000\n"
+"Last-Translator: \"matthew.iannotti\" <matthew.iannotti@jp.ricoh.com>\n"
+"Language: ja\n"
+"Language-Team: Japanese "
+"<https://hosted.weblate.org/projects/axonivy/doc/ja/>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../source/axonivy/index.rst:2 ../../source/index.rst:2
 msgid "Axon Ivy"
@@ -166,6 +179,7 @@ msgstr "最小限"
 #: ../../source/axonivy/migration/major/linux.rst:4
 #: ../../source/axonivy/system-requirements/designer.rst
 #: ../../source/axonivy/system-requirements/engine.rst:62
+#: ../../source/axonivy/system-requirements/engine.rst:76
 #: ../../source/engine-guide/getting-started/index.rst:47
 #: ../../source/engine-guide/getting-started/linux/index.rst:4
 #: ../../source/engine-guide/reference/axonivy-engine/launchers.rst:26
@@ -1112,7 +1126,7 @@ msgid "Web Browsers"
 msgstr "ウェブブラウザ"
 
 #: ../../source/axonivy/system-requirements/designer.rst:47
-#: ../../source/axonivy/system-requirements/engine.rst:103
+#: ../../source/axonivy/system-requirements/engine.rst:107
 msgid "See :ref:`browser-system-requirements`."
 msgstr ":ref:`browser-system-requirements` を参照してください。"
 
@@ -1234,99 +1248,120 @@ msgstr "×"
 
 #: ../../source/axonivy/system-requirements/engine.rst:69
 #, fuzzy
-msgid "**Windows**: Windows Server 2025, 2022 and 2019"
-msgstr "**Windows** ：Windows Server 2022 および 2019 "
+msgid "Supported Operating Systems"
+msgstr "オペレーティングシステム"
 
 #: ../../source/axonivy/system-requirements/engine.rst:72
-msgid "**Linux**: Linux x64 (tested on Ubuntu 24.04)"
-msgstr "**Linux** ：Linux（64 ビット版）（Ubuntu 24.04 でテスト済み） "
+#: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:9
+msgid "OS"
+msgstr "OS"
+
+#: ../../source/axonivy/system-requirements/engine.rst:72
+#: ../../source/axonivy/system-requirements/engine.rst:83
+msgid "Supported"
+msgstr "サポート対象"
+
+#: ../../source/axonivy/system-requirements/engine.rst:72
+#: ../../source/axonivy/system-requirements/engine.rst:83
+msgid "Tested"
+msgstr "テスト済み"
+
+#: ../../source/axonivy/system-requirements/engine.rst:74
+#, fuzzy
+msgid "Windows Server"
+msgstr "Windows サービス"
+
+#: ../../source/axonivy/system-requirements/engine.rst:74
+#: ../../source/axonivy/system-requirements/engine.rst:91
+#, fuzzy
+msgid "2019, 2022, 2025"
+msgstr "2019、2022"
+
+#: ../../source/axonivy/system-requirements/engine.rst:74
+msgid "2025"
+msgstr ""
 
 #: ../../source/axonivy/system-requirements/engine.rst:76
+msgid "x64"
+msgstr ""
+
+#: ../../source/axonivy/system-requirements/engine.rst:76
+msgid "Ubuntu 24.04"
+msgstr ""
+
+#: ../../source/axonivy/system-requirements/engine.rst:80
 #: ../../source/engine-guide/configuration/system-database/index.rst:4
 #: ../../source/engine-guide/reference/engine-cockpit/system.rst:26
 #: ../../source/engine-guide/reference/setup-wizard.rst:98
 msgid "System Database"
 msgstr "システムデータベース"
 
-#: ../../source/axonivy/system-requirements/engine.rst:79
+#: ../../source/axonivy/system-requirements/engine.rst:83
 msgid "Database System"
 msgstr "データベースシステム"
 
-#: ../../source/axonivy/system-requirements/engine.rst:79
-msgid "Supported"
-msgstr "サポート対象"
-
-#: ../../source/axonivy/system-requirements/engine.rst:79
-msgid "Tested"
-msgstr "テスト済み"
-
-#: ../../source/axonivy/system-requirements/engine.rst:81
+#: ../../source/axonivy/system-requirements/engine.rst:85
 #: ../../source/engine-guide/configuration/system-database/postgres.rst:4
 msgid "PostgreSQL"
 msgstr "PostgreSQL"
 
-#: ../../source/axonivy/system-requirements/engine.rst:81
+#: ../../source/axonivy/system-requirements/engine.rst:85
 msgid "14 - 17"
 msgstr "14 ～ 17"
 
-#: ../../source/axonivy/system-requirements/engine.rst:81
+#: ../../source/axonivy/system-requirements/engine.rst:85
 msgid "14, 17"
 msgstr "14、17"
 
-#: ../../source/axonivy/system-requirements/engine.rst:83
+#: ../../source/axonivy/system-requirements/engine.rst:87
 msgid "MySQL (InnoDB)"
 msgstr "MySQL（InnoDB）"
 
-#: ../../source/axonivy/system-requirements/engine.rst:83
+#: ../../source/axonivy/system-requirements/engine.rst:87
 msgid "8.4 - 9"
 msgstr "8.4 ～ 9"
 
-#: ../../source/axonivy/system-requirements/engine.rst:83
+#: ../../source/axonivy/system-requirements/engine.rst:87
 msgid "8.4, 9"
 msgstr "8.4、9"
 
-#: ../../source/axonivy/system-requirements/engine.rst:85
+#: ../../source/axonivy/system-requirements/engine.rst:89
 msgid "MariaDB (InnoDB)"
 msgstr "MariaDB（InnoDB）"
 
-#: ../../source/axonivy/system-requirements/engine.rst:85
+#: ../../source/axonivy/system-requirements/engine.rst:89
 msgid "10.11 - 11"
 msgstr "10.11 ～ 11"
 
-#: ../../source/axonivy/system-requirements/engine.rst:85
+#: ../../source/axonivy/system-requirements/engine.rst:89
 msgid "10.11, 11"
 msgstr "10.11、11"
 
-#: ../../source/axonivy/system-requirements/engine.rst:87
+#: ../../source/axonivy/system-requirements/engine.rst:91
 #: ../../source/engine-guide/configuration/system-database/mssql.rst:4
 msgid "Microsoft SQL Server"
 msgstr "Microsoft SQL Server"
 
-#: ../../source/axonivy/system-requirements/engine.rst:87
-#, fuzzy
-msgid "2019, 2022, 2025"
-msgstr "2019、2022"
-
-#: ../../source/axonivy/system-requirements/engine.rst:87
+#: ../../source/axonivy/system-requirements/engine.rst:91
 #, fuzzy
 msgid "2019, 2025"
 msgstr "2019、2022"
 
-#: ../../source/axonivy/system-requirements/engine.rst:89
+#: ../../source/axonivy/system-requirements/engine.rst:93
 msgid "Oracle Database"
 msgstr "Oracle Database"
 
-#: ../../source/axonivy/system-requirements/engine.rst:89
+#: ../../source/axonivy/system-requirements/engine.rst:93
 msgid "19, 23"
 msgstr "19、23"
 
-#: ../../source/axonivy/system-requirements/engine.rst:94
+#: ../../source/axonivy/system-requirements/engine.rst:98
 #: ../../source/designer-guide/data-modeling/business-data/limitations.rst:43
 #: ../../source/engine-guide/integration/opensearch/index.rst:4
 msgid "OpenSearch"
 msgstr "OpenSearch"
 
-#: ../../source/axonivy/system-requirements/engine.rst:96
+#: ../../source/axonivy/system-requirements/engine.rst:100
 msgid ""
 "Version 2.19. Only required if you run your :ref:`own <opensearch-"
 "external>` OpenSearch instance!"
@@ -1334,7 +1369,7 @@ msgstr ""
 "バージョン 2.19。 :ref:`自分の<opensearch-external>` OpenSearch "
 "インスタンスを実行する場合のみ必要です。"
 
-#: ../../source/axonivy/system-requirements/engine.rst:101
+#: ../../source/axonivy/system-requirements/engine.rst:105
 msgid "Browsers"
 msgstr "ブラウザ"
 
@@ -36253,10 +36288,6 @@ msgid ""
 "Axon Ivy Engine."
 msgstr "**エンジンコックピット** では、Axon Ivy Engine を :ref:`監視<monitoring>` できます。"
 
-#: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:9
-msgid "OS"
-msgstr "OS"
-
 #: ../../source/engine-guide/reference/engine-cockpit/monitor.rst:11
 msgid ""
 "The **OS** page shows an overview of the CPU load, memory load, network "
@@ -40173,3 +40204,10 @@ msgstr ""
 #~ "を使用して、メッセージが送信されます。External ID "
 #~ "が設定されていない場合や（ローカルユーザーなど）Microsoft Entra ID "
 #~ "が設定されていない場合、ユーザーのメールアドレスが使用されます。このチャネルを有効にする場合は、以下も行う必要があります。"
+
+#~ msgid "**Windows**: Windows Server 2025, 2022 and 2019"
+#~ msgstr "**Windows** ：Windows Server 2022 および 2019 "
+
+#~ msgid "**Linux**: Linux x64 (tested on Ubuntu 24.04)"
+#~ msgstr "**Linux** ：Linux（64 ビット版）（Ubuntu 24.04 でテスト済み） "
+
