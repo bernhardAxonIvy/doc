@@ -66,11 +66,15 @@ but also some :ref:`restrictions <cluster-restrictions>` compared to the Standar
 |Enterprise Edition |No      |No     |Yes                |
 +-------------------+--------+-------+-------------------+
 
-* **Windows**:
-  Windows Server 2025, 2022 and 2019
+Supported Operating Systems
 
-* **Linux**:
-  Linux x64 (tested on Ubuntu 24.04)
++---------------+-----------------+-------------+
+|OS             |Supported        |Tested       |
++===============+=================+=============+
+|Windows Server |2019, 2022, 2025 |2025         |
++---------------+-----------------+-------------+
+|Linux          |x64              |Ubuntu 24.04 |
++---------------+-----------------+-------------+
 
 System Database
 ---------------
