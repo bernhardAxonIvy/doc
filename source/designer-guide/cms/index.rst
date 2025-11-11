@@ -12,7 +12,7 @@ whole files like images and documents can be stored multilingual in the CMS.
    :maxdepth: 1
 
    structure
-   editors
+   cms-editor
    display
    resolution
    writing
