@@ -6,9 +6,9 @@ Translation Service
 Certain features require the integrated Translation Service of the Axon Ivy
 Engine to be configured.
 
-For example, translating Content Objects with the :ref:`translation-wizard` in
-the :ref:`cms-editor` or translating text fields when creating :ref:`Portal
-<portal-guide>` components.
+For example, translating Content Objects with the :ref:`Translation Wizard
+<translation-wizard>` in the :ref:`cms-editor` or translating text fields when
+creating :ref:`Portal <portal-guide>` components.
 
 The Translation Service can be configured in the :file:`ivy.yaml` per Security
 System. To enable these features, the `DefaultInstance` must be defined, and the
