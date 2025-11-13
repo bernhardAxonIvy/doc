@@ -26331,8 +26331,8 @@ msgid ":ref:`casemap-editor`"
 msgstr ":ref:`casemap-editor`"
 
 #: ../../source/designer-guide/reference/reference.rst:13
-msgid ":ref:`cms-content-object-editor`"
-msgstr ":ref:`cms-content-object-editor`"
+msgid ":ref:`cms-editor`"
+msgstr ":ref:`cms-editor`"
 
 #: ../../source/designer-guide/reference/reference.rst:14
 msgid ":ref:`variables-editor`"
@@ -26401,10 +26401,6 @@ msgstr "ビュー"
 #: ../../source/designer-guide/reference/reference.rst:36
 msgid ":ref:`debugger-breakpoints-view`"
 msgstr ":ref:`debugger-breakpoints-view`"
-
-#: ../../source/designer-guide/reference/reference.rst:37
-msgid ":ref:`cms-view`"
-msgstr ":ref:`cms-view`"
 
 #: ../../source/designer-guide/reference/reference.rst:38
 msgid "Error view"

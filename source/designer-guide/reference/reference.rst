@@ -10,7 +10,7 @@ Editors
 -------
 
 -  :ref:`casemap-editor`
--  :ref:`cms-content-object-editor`
+-  :ref:`cms-editor`
 -  :ref:`variables-editor`
 -  :ref:`database-configuration-editor`
 -  :ref:`data-class-editor`
@@ -34,7 +34,6 @@ Views
 -----
 
 -  :ref:`debugger-breakpoints-view`
--  :ref:`cms-view`
 -  Error view
 -  :ref:`debugger-expressions-view`
 -  :ref:`simulate-process-models-debugger-history-view`
