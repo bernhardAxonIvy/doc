@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Axon Ivy Platform 13.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-05 15:36+0000\n"
+"POT-Creation-Date: 2025-11-13 21:28+0000\n"
 "PO-Revision-Date: 2025-11-04 19:07+0000\n"
 "Last-Translator: \"matthew.iannotti\" <matthew.iannotti@jp.ricoh.com>\n"
 "Language: ja\n"
@@ -5501,6 +5501,101 @@ msgstr ""
 "**reportFolder** "
 "：テストが失敗すると、テストフレームワークは自動的にスクリーンショットを撮ります。このフォルダーは、それらのスクリーンショットの保存先を定義します。"
 
+#: ../../source/designer-guide/cms/cms-editor.rst:4
+#: ../../source/designer-guide/cms/cms-editor.rst:9
+#: ../../source/designer-guide/cms/cms-editor.rst:12
+#, fuzzy
+msgid "CMS Editor"
+msgstr "カスタムエディター"
+
+#: ../../source/designer-guide/cms/cms-editor.rst:6
+msgid ""
+"Use the CMS Editor to add, delete, and edit the Content Objects of your "
+"project. Select a Content Object in the table to view and edit its "
+"values."
+msgstr ""
+
+#: ../../source/designer-guide/cms/cms-editor.rst:15
+#, fuzzy
+msgid "Tools"
+msgstr "TLS"
+
+#: ../../source/designer-guide/cms/cms-editor.rst:17
+msgid "|add-icon| Add Content Object: Add a new Content Object to your project."
+msgstr ""
+
+#: ../../source/designer-guide/cms/cms-editor.rst:19
+#, fuzzy
+msgid "add-icon"
+msgstr "加算"
+
+#: ../../source/designer-guide/cms/cms-editor.rst:22
+#: ../../source/designer-guide/cms/cms-editor.rst:25
+#, fuzzy
+msgid "Add Content Object"
+msgstr "コンテンツオブジェクトエディター"
+
+#: ../../source/designer-guide/cms/cms-editor.rst:28
+msgid ""
+"|delete-icon| Delete: Delete the selected Content Objects from your "
+"project."
+msgstr ""
+
+#: ../../source/designer-guide/cms/cms-editor.rst:30
+#, fuzzy
+msgid "delete-icon"
+msgstr "delete-action"
+
+#: ../../source/designer-guide/cms/cms-editor.rst:33
+msgid ""
+"|language-icon| Language Tools: Open a drop down menu containing the "
+"available Language Tools."
+msgstr ""
+
+#: ../../source/designer-guide/cms/cms-editor.rst:36
+#, fuzzy
+msgid "language-icon"
+msgstr "言語"
+
+#: ../../source/designer-guide/cms/cms-editor.rst:40
+#, fuzzy
+msgid "Language Tools"
+msgstr "言語"
+
+#: ../../source/designer-guide/cms/cms-editor.rst:42
+msgid ""
+"|language-manager-icon| Language Manager: Add or remove languages for "
+"your project."
+msgstr ""
+
+#: ../../source/designer-guide/cms/cms-editor.rst:45
+msgid "language-manager-icon"
+msgstr ""
+
+#: ../../source/designer-guide/cms/cms-editor.rst:48
+#: ../../source/designer-guide/cms/cms-editor.rst:51
+#, fuzzy
+msgid "Language Manager"
+msgstr "言語"
+
+#: ../../source/designer-guide/cms/cms-editor.rst:55
+msgid ""
+"|language-icon| Translation Wizard: Quickly fill values of the selected "
+"Content Objects with machine translations."
+msgstr ""
+
+#: ../../source/designer-guide/cms/cms-editor.rst:58
+#: ../../source/designer-guide/cms/cms-editor.rst:61
+#, fuzzy
+msgid "Translation Wizard"
+msgstr "移行ウィザード"
+
+#: ../../source/designer-guide/cms/cms-editor.rst:65
+msgid ""
+"To use the Translation Wizard, the :ref:`translation-service` must be "
+"configured on the Axon Ivy Engine."
+msgstr ""
+
 #: ../../source/designer-guide/cms/display.rst:4
 msgid "Display Content"
 msgstr "コンテンツの表示"
@@ -5577,436 +5672,6 @@ msgid ""
 "If you want to generate a link with a specific locale then you can use "
 "then you can use the advanced API:"
 msgstr "特定のロケールでリンクを生成したい場合は、高度な API を使用できます。"
-
-#: ../../source/designer-guide/cms/editors.rst:2
-#: ../../source/designer-guide/reference/reference.rst:10
-msgid "Editors"
-msgstr "エディター"
-
-#: ../../source/designer-guide/cms/editors.rst:4
-msgid ""
-"The content management system can be viewed and edited in the Axon Ivy "
-"Designer."
-msgstr "Axon Ivy Designer では、コンテンツ管理システムを表示、編集できます。"
-
-#: ../../source/designer-guide/cms/editors.rst:9
-msgid "CMS view"
-msgstr "CMS ビュー"
-
-#: ../../source/designer-guide/cms/editors.rst:11
-msgid ""
-"The CMS view shows the CMS of all open projects in the workspace "
-"including all content objects and their values."
-msgstr "CMS ビューには、すべてのコンテンツオブジェクトとそれらの値を含め、ワークスペース内で開いているすべてのプロジェクトの CMS が表示されます。"
-
-#: ../../source/designer-guide/cms/editors.rst:14
-msgid ":guilabel:`Window` > :guilabel:`Show View` > :guilabel:`CMS`"
-msgstr ":guilabel:`ウィンドウ` > :guilabel:`ビューを表示` > :guilabel:`CMS`"
-
-#: ../../source/designer-guide/cms/editors.rst:20
-msgid "Display Content Object Values"
-msgstr "コンテンツオブジェクトの値の表示"
-
-#: ../../source/designer-guide/cms/editors.rst:22
-msgid ""
-"The view represents the CMS structure as a tree. Furthermore the table "
-"can display one column for every language that is available. In those "
-"columns the value of the corresponding content object in the "
-"corresponding language is shown. You can configure for which languages "
-"the table should display a column by clicking on |imgViewMenu|."
-msgstr ""
-"このビューでは、CMS の構造がツリーとして表示されます。さらに、表には、利用可能な言語をそれぞれ 1 "
-"つの列に表示できます。これらの列には、対応する言語の対応するコンテンツオブジェクトの値が表示されます。|imgViewMenu| "
-"をクリックして、表での列の表示言語を設定できます。"
-
-#: ../../source/designer-guide/cms/editors.rst:33
-msgid "imgViewMenu"
-msgstr "imgViewMenu"
-
-#: ../../source/designer-guide/cms/editors.rst:28
-msgid ""
-"If you want to focus on the CMS structure then you can hide all the "
-"language columns so that only the first column is displayed. Just click "
-"on |imgLanguageChooser| in the toolbar of the view to toggle between "
-"hiding and displaying the columns for the languages."
-msgstr ""
-"CMS の構造に集中したい場合は、すべての言語の列を非表示にして、最初の列のみ表示させることができます。ビューのツールバーの "
-"|imgLanguageChooser| をクリックすると、言語の列の非表示と表示が切り替わります。"
-
-#: ../../source/designer-guide/cms/editors.rst:34
-msgid "imgLanguageChooser"
-msgstr "imgLanguageChooser"
-
-#: ../../source/designer-guide/cms/editors.rst:38
-msgid "Inline Editing"
-msgstr "インライン編集"
-
-#: ../../source/designer-guide/cms/editors.rst:40
-msgid ""
-"For text based types you can edit the text directly in the view, just "
-"click in the cell of the value and type."
-msgstr "テキストベースのタイプでは、値のセルをクリックして入力するだけで、ビュー内でテキストを直接編集できます。"
-
-#: ../../source/designer-guide/cms/editors.rst:43
-msgid ""
-"For file based types you can import a file for each value directly in the"
-" cell. Just move your mouse over the cell of the value click on the "
-"|imgImport| icon. Values for which already content is available show a "
-"``...`` in their cell."
-msgstr ""
-"ファイルベースのタイプでは、値のセル上にマウスを移動し、|imgImport| "
-"アイコンをクリックするだけで、各値のファイルをセルに直接インポートできます。すでにコンテンツが利用可能な値のセルには、``...`` "
-"が表示されます。"
-
-#: ../../source/designer-guide/cms/editors.rst:47
-msgid "imgImport"
-msgstr "imgImport"
-
-#: ../../source/designer-guide/cms/editors.rst:51
-#: ../../source/designer-guide/data-modeling/business-data/usage.rst:71
-#: ../../source/designer-guide/introduction/toolbar.rst:87
-msgid "Search"
-msgstr "検索"
-
-#: ../../source/designer-guide/cms/editors.rst:53
-msgid ""
-"By using the search you can filter the contents in the view according to "
-"your search string. Enter a filter expression and the table tree will be "
-"reduced to only show the content object matching that expression."
-msgstr "検索を使用すると、検索文字列に従ってビュー内のコンテンツをフィルタリングできます。フィルター式を入力すると、表ツリーが縮小され、その式に一致するコンテンツオブジェクトのみ表示されます。"
-
-#: ../../source/designer-guide/cms/editors.rst:60
-msgid ""
-"You can use ``*`` as wildcard character to match any characters. "
-"Furthermore you can use ``?`` to match any single character."
-msgstr ""
-"ワイルドカード文字として ``*`` を使用して、任意の文字に一致させることができます。さらに、``?`` を使用すると、任意の 1 "
-"文字を一致させることができます。"
-
-#: ../../source/designer-guide/cms/editors.rst:66
-msgid "Context Menu"
-msgstr "コンテキストメニュー"
-
-#: ../../source/designer-guide/cms/editors.rst:68
-msgid "In the context menu in the CMS view there are several actions available:"
-msgstr "CMS ビューのコンテキストメニューには、いくつかのアクションが用意されています。"
-
-#: ../../source/designer-guide/cms/editors.rst:70
-msgid ":guilabel:`Add...`"
-msgstr ":guilabel:`追加...`"
-
-#: ../../source/designer-guide/cms/editors.rst:72
-msgid "Creates new content objects with the given type, name and value."
-msgstr "指定されたタイプ、名前、値で新しいコンテンツオブジェクトを作成します。"
-
-#: ../../source/designer-guide/cms/editors.rst:74
-msgid ""
-"As name you can use a simple name, an absolute or relative path CMS path."
-" All necessary will be created automatically."
-msgstr "名前には、単純な名前、絶対パスまたは相対パスの CMS パスを使用できます。必要なものはすべて自動的に作成されます。"
-
-#: ../../source/designer-guide/cms/editors.rst:77
-msgid ""
-"The value for text based types can be edited directly in the value column"
-" whereas for file based type a |imgImport| button is available."
-msgstr "テキストベースのタイプの値は値の列で直接編集でき、ファイルベースのタイプでは |imgImport| ボタンが利用可能です。"
-
-#: ../../source/designer-guide/cms/editors.rst:80
-msgid ":guilabel:`Add from file(s)...`"
-msgstr ":guilabel:` ファイルから追加...`"
-
-#: ../../source/designer-guide/cms/editors.rst:82
-msgid ""
-"Creates new content objects based on the selected files in the file "
-"chooser. The filename will be taken as name and the type will be "
-"automatically detected."
-msgstr "ファイルセレクタで選択されたファイルをベースに、新しいコンテンツオブジェクトを作成します。ファイル名は名前として扱われ、タイプは自動的に検出されます。"
-
-#: ../../source/designer-guide/cms/editors.rst:85
-msgid ":guilabel:`Add from URL...`"
-msgstr ":guilabel:`URL から追加...`"
-
-#: ../../source/designer-guide/cms/editors.rst:87
-msgid "Creates new content objects from the given URL."
-msgstr "指定された URL から新しいコンテンツオブジェクトを作成します。"
-
-#: ../../source/designer-guide/cms/editors.rst:89
-msgid "|imgRename| Rename"
-msgstr "|imgRename| 名前の変更"
-
-#: ../../source/designer-guide/cms/editors.rst:138
-msgid "imgRename"
-msgstr "imgRename"
-
-#: ../../source/designer-guide/cms/editors.rst:90
-msgid ""
-"Opens a dialog where you can enter a new name for the currently selected "
-"content object."
-msgstr "現在選択されているコンテンツオブジェクトの新しい名前を入力するダイアログを開きます。"
-
-#: ../../source/designer-guide/cms/editors.rst:95
-msgid ""
-"Renaming a content object will break all references to the object or its "
-"children."
-msgstr "コンテンツオブジェクトの名前を変更すると、そのオブジェクトや子オブジェクトへのすべての参照が壊れます。"
-
-#: ../../source/designer-guide/cms/editors.rst:98
-msgid "|imgCopy| Copy"
-msgstr "|imgCopy| コピー"
-
-#: ../../source/designer-guide/cms/editors.rst:139
-msgid "imgCopy"
-msgstr "imgCopy"
-
-#: ../../source/designer-guide/cms/editors.rst:99
-msgid ""
-"Copies the currently selected content object including all of its "
-"children to the clipboard. The copied content objects can be inserted "
-"somewhere else in the content tree with :guilabel:`Paste`."
-msgstr ""
-"すべての子オブジェクトを含め、現在選択されているコンテンツオブジェクトをクリップボードにコピーします。:guilabel:`貼り付け` "
-"を使用して、コピーされたコンテンツオブジェクトをコンテンツツリーの他の場所に挿入できます。"
-
-#: ../../source/designer-guide/cms/editors.rst:103
-msgid "|imgPaste| Paste"
-msgstr "|imgPaste| 貼り付け"
-
-#: ../../source/designer-guide/cms/editors.rst:140
-msgid "imgPaste"
-msgstr "imgPaste"
-
-#: ../../source/designer-guide/cms/editors.rst:104
-msgid ""
-"Inserts any content object(s) that was copied before to the clipboard "
-"with :guilabel:`Copy`. The copied content objects are inserted as "
-"children of the selected content object."
-msgstr ""
-":guilabel:`コピー` "
-"でクリップボードにコピーされたコンテンツオブジェクトを挿入します。コピーされたコンテンツオブジェクトは、選択されたコンテンツオブジェクトの子オブジェクトとして挿入されます。"
-
-#: ../../source/designer-guide/cms/editors.rst:108
-msgid "|imgDelete| Delete"
-msgstr "|imgDelete| 削除"
-
-#: ../../source/designer-guide/cms/editors.rst:141
-msgid "imgDelete"
-msgstr "imgDelete"
-
-#: ../../source/designer-guide/cms/editors.rst:109
-msgid ""
-"Deletes the currently selected content object including all of its "
-"children."
-msgstr "すべての子オブジェクトを含め、現在選択されているコンテンツオブジェクトを削除します。"
-
-#: ../../source/designer-guide/cms/editors.rst:114
-msgid ""
-"Deleting a content object will break all references to the object or its "
-"children."
-msgstr "コンテンツオブジェクトを削除すると、そのオブジェクトや子オブジェクトへのすべての参照が壊れます。"
-
-#: ../../source/designer-guide/cms/editors.rst:117
-msgid "|imgCopy| Copy URI"
-msgstr "|imgCopy| URI をコピー"
-
-#: ../../source/designer-guide/cms/editors.rst:118
-msgid ""
-"Copies the URI of the currently selected content object to the system "
-"clipboard. Use :guilabel:`CTRL` + :guilabel:`v` to insert the URI into "
-"any text fields or editors."
-msgstr ""
-"現在選択されているコンテンツオブジェクトの URI をシステムのクリップボードにコピーします。:guilabel:`Ctrl` + "
-":guilabel:`V` を押して、URI をテキストフィールドやエディターに挿入します。"
-
-#: ../../source/designer-guide/cms/editors.rst:122
-msgid "|imgCopyUriMacro| Copy URI as IvyScript macro"
-msgstr "|imgCopyUriMacro| URI を IvyScript マクロとしてコピー"
-
-#: ../../source/designer-guide/cms/editors.rst:142
-msgid "imgCopyUriMacro"
-msgstr "imgCopyUriMacro"
-
-#: ../../source/designer-guide/cms/editors.rst:123
-msgid ""
-"Copies the URI of the currently selected content object as an *IvyScript "
-"macro tag* to the system clipboard. Use :guilabel:`CTRL` + :guilabel:`v` "
-"to insert the macro into a :ref:`macro-editor`."
-msgstr ""
-"現在選択されているコンテンツオブジェクトの URI を*IvyScript "
-"マクロタグ*としてシステムのクリップボードにコピーします。:guilabel:`Ctrl` + :guilabel:`V` を押して、マクロを "
-":ref:`macro-editor` に挿入します。"
-
-#: ../../source/designer-guide/cms/editors.rst:127
-msgid "|imgRefresh| Refresh Content"
-msgstr "|imgRefresh| コンテンツの更新"
-
-#: ../../source/designer-guide/cms/editors.rst:143
-msgid "imgRefresh"
-msgstr "imgRefresh"
-
-#: ../../source/designer-guide/cms/editors.rst:128
-msgid "Reloads the content below the currently selected content object."
-msgstr "現在選択されているコンテンツオブジェクトの下のコンテンツを再度読み込みます。"
-
-#: ../../source/designer-guide/cms/editors.rst:132
-msgid "Drag and Drop"
-msgstr "ドラッグアンドドロップ"
-
-#: ../../source/designer-guide/cms/editors.rst:134
-msgid ""
-"Content objects (e.g., *strings* and *images*) from the CMS view can be "
-"dragged and dropped into the :ref:`HTML Dialog editor <html-dialog-"
-"editor-dragndrop>` to be used for label texts or for images."
-msgstr ""
-"コンテンツオブジェクト（*文字列*、*画像* など）を CMS ビューから :ref:`HTML ダイアログエディター<html-dialog-"
-"editor-dragndrop>` ドラッグアンドドロップして、ラベルテキストや画像に使用できます。"
-
-#: ../../source/designer-guide/cms/editors.rst:153
-msgid "Content Object Editor"
-msgstr "コンテンツオブジェクトエディター"
-
-#: ../../source/designer-guide/cms/editors.rst:155
-msgid ""
-"Double-clicking a content object opens the content object Editor to "
-"modify the content object."
-msgstr "コンテンツオブジェクトをダブルクリックすると、コンテンツオブジェクトエディターが開き、コンテンツオブジェクトを変更できます。"
-
-#: ../../source/designer-guide/cms/editors.rst:158
-msgid ""
-"The editor has a header with a title and buttons for the most important "
-"actions."
-msgstr "エディターのヘッダーには、タイトルと最も重要なアクションのボタンが表示されます。"
-
-#: ../../source/designer-guide/cms/editors.rst:163
-msgid "|imgAdd| Add new content object value"
-msgstr "|imgAdd| 新しいコンテンツオブジェクトの値を追加"
-
-#: ../../source/designer-guide/cms/editors.rst:178
-msgid "imgAdd"
-msgstr "imgAdd"
-
-#: ../../source/designer-guide/cms/editors.rst:164
-msgid ""
-"Adds a new value to this content object. A dialog is opened for the user "
-"to select the language of the new value."
-msgstr "このコンテンツオブジェクトに新しい値を追加します。ダイアログが開き、新しい値の言語を選択できます。"
-
-#: ../../source/designer-guide/cms/editors.rst:167
-msgid "|imgRename| Rename content object"
-msgstr "|imgRename| コンテンツオブジェクト名の変更"
-
-#: ../../source/designer-guide/cms/editors.rst:168
-msgid "Renames the content object."
-msgstr "コンテンツオブジェクトの名前を変更します。"
-
-#: ../../source/designer-guide/cms/editors.rst:170
-msgid "|imgCopy| Copy content object"
-msgstr "|imgCopy| コンテンツオブジェクトをコピー"
-
-#: ../../source/designer-guide/cms/editors.rst:171
-msgid ""
-"Copies this content object with all its children to the clipboard. The "
-"copied objects can be inserted somewhere else in the content tree with "
-":guilabel:`Paste`."
-msgstr ""
-"このコンテンツオブジェクトとそのすべての子オブジェクトをクリップボードにコピーします。:guilabel:`貼り付け` "
-"を使用して、コピーされたオブジェクトをコンテンツツリーの他の場所に挿入できます。"
-
-#: ../../source/designer-guide/cms/editors.rst:175
-msgid "|imgDelete| Delete content object"
-msgstr "|imgDelete| コンテンツオブジェクトの削除"
-
-#: ../../source/designer-guide/cms/editors.rst:176
-msgid "Deletes this content object with all values and all child content objects."
-msgstr "このコンテンツオブジェクトとすべての値、すべての子コンテンツオブジェクトを削除します。"
-
-#: ../../source/designer-guide/cms/editors.rst:181
-msgid ""
-"Each of the values of a content object is shown with its corresponding "
-"value editor inside a collapsible section that is labelled with the "
-"*language* of the value. You find some actions on the right side:"
-msgstr ""
-"コンテンツオブジェクトの値はそれぞれ、値の *言語* "
-"でラベル付けされた折りたたみ可能なセクション内に、対応する値エディターと一緒に表示されます。右側には、いくつかのアクションが表示されます。"
-
-#: ../../source/designer-guide/cms/editors.rst:185
-msgid "|imgImport| Import value content"
-msgstr "|imgImport| 値のコンテンツのインポート"
-
-#: ../../source/designer-guide/cms/editors.rst:186
-msgid "Import content from a file."
-msgstr "ファイルからコンテンツをインポートします。"
-
-#: ../../source/designer-guide/cms/editors.rst:188
-msgid "|imgExport| Export value content"
-msgstr "|imgExport| 値のコンテンツのエクスポート"
-
-#: ../../source/designer-guide/cms/editors.rst:144
-msgid "imgExport"
-msgstr "imgExport"
-
-#: ../../source/designer-guide/cms/editors.rst:189
-msgid "Export the content to a file."
-msgstr "コンテンツをファイルにエクスポートします。"
-
-#: ../../source/designer-guide/cms/editors.rst:191
-msgid "|imgCopy| Copy content object value"
-msgstr "|imgCopy| コンテンツオブジェクトの値をコピー"
-
-#: ../../source/designer-guide/cms/editors.rst:192
-msgid ""
-"Copies this content object value to the clipboard. The copied objects can"
-" be inserted somewhere else in the content tree with :guilabel:`Paste`."
-msgstr ""
-"このコンテンツオブジェクトの値をクリップボードにコピーします。:guilabel:`貼り付け` "
-"を使用して、コピーされたオブジェクトをコンテンツツリーの他の場所に挿入できます。"
-
-#: ../../source/designer-guide/cms/editors.rst:195
-msgid "|imgDelete| Delete content object value"
-msgstr "|imgDelete| コンテンツオブジェクトの値の削除"
-
-#: ../../source/designer-guide/cms/editors.rst:196
-msgid "Deletes this content object value."
-msgstr "このコンテンツオブジェクトの値を削除します。"
-
-#: ../../source/designer-guide/cms/editors.rst:205
-msgid "Content Object Value Editors"
-msgstr "コンテンツオブジェクトの値エディター"
-
-#: ../../source/designer-guide/cms/editors.rst:207
-msgid "There are different editors for the different content object types."
-msgstr "コンテンツオブジェクトのタイプによってさまざまなエディターがあります。"
-
-#: ../../source/designer-guide/cms/editors.rst:213
-msgid "Text Editor"
-msgstr "テキストエディター"
-
-#: ../../source/designer-guide/cms/editors.rst:215
-msgid "This editor can handle texts. You can edit them directly in the editor."
-msgstr "このエディターはテキストを扱うことができます。エディターで直接編集できます。"
-
-#: ../../source/designer-guide/cms/editors.rst:223
-msgid "Image Editor"
-msgstr "イメージエディター"
-
-#: ../../source/designer-guide/cms/editors.rst:225
-msgid ""
-"This editor can handle images of type GIF, PNG and JPG. You can import "
-"and export images."
-msgstr "このエディターは、GIF、PNG、JPG タイプの画像を扱うことができます。画像をインポート、エクスポートできます。"
-
-#: ../../source/designer-guide/cms/editors.rst:234
-msgid "Document Editor"
-msgstr "ドキュメントエディター"
-
-#: ../../source/designer-guide/cms/editors.rst:236
-msgid ""
-"This editor can handle all document file types such as TXT, XML, DOC, PDF"
-" and much more. Binary based file types (e.g PDF) you only can import and"
-" export them. Text based file types can be edited directly in the editor."
-msgstr ""
-"このエディターは、TXT、XML、DOC、PDF "
-"など、すべてのタイプのドキュメントファイルを扱うことができます。バイナリベースのファイルタイプ（PDF "
-"など）は、インポートとエクスポートのみ可能です。テキストベースのファイルタイプは、エディターで直接編集できます。"
 
 #: ../../source/designer-guide/cms/index.rst:4
 msgid "Content Management System"
@@ -8468,6 +8133,11 @@ msgstr "読み込み（BusinessCaseData コンテキストなし）"
 #: ../../source/designer-guide/data-modeling/business-data/usage.rst:62
 msgid "Load, modify, and save:"
 msgstr "読み込み、変更、保存："
+
+#: ../../source/designer-guide/data-modeling/business-data/usage.rst:71
+#: ../../source/designer-guide/introduction/toolbar.rst:87
+msgid "Search"
+msgstr "検索"
 
 #: ../../source/designer-guide/data-modeling/business-data/usage.rst:73
 #, fuzzy
@@ -14201,7 +13871,7 @@ msgid ""
 msgstr "使用する Axon Ivy Designer アプリケーションのシステム情報（バージョン、ビルド番号など）を表示します。"
 
 #: ../../source/designer-guide/introduction/perspectives.rst:4
-#: ../../source/designer-guide/reference/reference.rst:75
+#: ../../source/designer-guide/reference/reference.rst:74
 msgid "Perspectives"
 msgstr "パースペクティブ"
 
@@ -14984,7 +14654,7 @@ msgid "Redo"
 msgstr "やり直す"
 
 #: ../../source/designer-guide/ivyscript/index.rst:4
-#: ../../source/designer-guide/reference/reference.rst:86
+#: ../../source/designer-guide/reference/reference.rst:85
 msgid "IvyScript"
 msgstr "IvyScript"
 
@@ -26326,6 +25996,10 @@ msgid ""
 "parts."
 msgstr "この章には、Axon Ivy アプリケーションの各部のリンクされたリファレンスがまとめられています。"
 
+#: ../../source/designer-guide/reference/reference.rst:10
+msgid "Editors"
+msgstr "エディター"
+
 #: ../../source/designer-guide/reference/reference.rst:12
 msgid ":ref:`casemap-editor`"
 msgstr ":ref:`casemap-editor`"
@@ -26402,127 +26076,127 @@ msgstr "ビュー"
 msgid ":ref:`debugger-breakpoints-view`"
 msgstr ":ref:`debugger-breakpoints-view`"
 
-#: ../../source/designer-guide/reference/reference.rst:38
+#: ../../source/designer-guide/reference/reference.rst:37
 msgid "Error view"
 msgstr "エラービュー"
 
-#: ../../source/designer-guide/reference/reference.rst:39
+#: ../../source/designer-guide/reference/reference.rst:38
 msgid ":ref:`debugger-expressions-view`"
 msgstr ":ref:`debugger-expressions-view`"
 
-#: ../../source/designer-guide/reference/reference.rst:40
+#: ../../source/designer-guide/reference/reference.rst:39
 msgid ":ref:`simulate-process-models-debugger-history-view`"
 msgstr ":ref:`simulate-process-models-debugger-history-view`"
 
-#: ../../source/designer-guide/reference/reference.rst:41
+#: ../../source/designer-guide/reference/reference.rst:40
 msgid ":ref:`process-performance-view`"
 msgstr ":ref:`process-performance-view`"
 
-#: ../../source/designer-guide/reference/reference.rst:42
+#: ../../source/designer-guide/reference/reference.rst:41
 msgid ":ref:`problems-view`"
 msgstr ":ref:`problems-view`"
 
-#: ../../source/designer-guide/reference/reference.rst:43
+#: ../../source/designer-guide/reference/reference.rst:42
 msgid ":ref:`ivy-project-view`"
 msgstr ":ref:`ivy-project-view`"
 
-#: ../../source/designer-guide/reference/reference.rst:44
+#: ../../source/designer-guide/reference/reference.rst:43
 msgid ":ref:`reference-view`"
 msgstr ":ref:`reference-view`"
 
-#: ../../source/designer-guide/reference/reference.rst:45
+#: ../../source/designer-guide/reference/reference.rst:44
 msgid ":ref:`simulate-process-models-debugger-runtimelog-view`"
 msgstr ":ref:`simulate-process-models-debugger-runtimelog-view`"
 
-#: ../../source/designer-guide/reference/reference.rst:46
+#: ../../source/designer-guide/reference/reference.rst:45
 msgid ":ref:`debugger-variables-view`"
 msgstr ":ref:`debugger-variables-view`"
 
-#: ../../source/designer-guide/reference/reference.rst:47
+#: ../../source/designer-guide/reference/reference.rst:46
 msgid "Web Browser view"
 msgstr "ウェブブラウザビュー"
 
-#: ../../source/designer-guide/reference/reference.rst:54
+#: ../../source/designer-guide/reference/reference.rst:53
 msgid "Wizards"
 msgstr "ウィザード"
 
-#: ../../source/designer-guide/reference/reference.rst:56
+#: ../../source/designer-guide/reference/reference.rst:55
 msgid ":ref:`new-bean-class-wizard`"
 msgstr ":ref:`new-bean-class-wizard`"
 
-#: ../../source/designer-guide/reference/reference.rst:57
+#: ../../source/designer-guide/reference/reference.rst:56
 msgid ":ref:`casemap-new-wizard`"
 msgstr ":ref:`casemap-new-wizard`"
 
-#: ../../source/designer-guide/reference/reference.rst:58
+#: ../../source/designer-guide/reference/reference.rst:57
 msgid ":ref:`data-class-new-wizard`"
 msgstr ":ref:`data-class-new-wizard`"
 
-#: ../../source/designer-guide/reference/reference.rst:59
+#: ../../source/designer-guide/reference/reference.rst:58
 msgid ":ref:`persistence-entity-class-new-wizard`"
 msgstr ":ref:`persistence-entity-class-new-wizard`"
 
-#: ../../source/designer-guide/reference/reference.rst:60
+#: ../../source/designer-guide/reference/reference.rst:59
 msgid ":ref:`override-new-wizard`"
 msgstr ":ref:`override-new-wizard`"
 
-#: ../../source/designer-guide/reference/reference.rst:61
+#: ../../source/designer-guide/reference/reference.rst:60
 msgid ":ref:`process-new-wizard`"
 msgstr ":ref:`process-new-wizard`"
 
-#: ../../source/designer-guide/reference/reference.rst:62
+#: ../../source/designer-guide/reference/reference.rst:61
 msgid ":ref:`process-new-group-wizard`"
 msgstr ":ref:`process-new-group-wizard`"
 
-#: ../../source/designer-guide/reference/reference.rst:63
+#: ../../source/designer-guide/reference/reference.rst:62
 msgid ":ref:`project-new-wizard`"
 msgstr ":ref:`project-new-wizard`"
 
-#: ../../source/designer-guide/reference/reference.rst:64
+#: ../../source/designer-guide/reference/reference.rst:63
 msgid ":ref:`user-dialog-new-wizard`"
 msgstr ":ref:`user-dialog-new-wizard`"
 
-#: ../../source/designer-guide/reference/reference.rst:65
+#: ../../source/designer-guide/reference/reference.rst:64
 msgid ":ref:`New HTML Dialog Wizard <html-dialog-multiple-views>`"
 msgstr ":ref:`HTML ダイアログの作成ウィザード<html-dialog-multiple-views>`"
 
-#: ../../source/designer-guide/reference/reference.rst:66
+#: ../../source/designer-guide/reference/reference.rst:65
 msgid ":ref:`refactoring-wizards-rename`"
 msgstr ":ref:`refactoring-wizards-rename`"
 
-#: ../../source/designer-guide/reference/reference.rst:67
+#: ../../source/designer-guide/reference/reference.rst:66
 msgid ":ref:`refactoring-wizards-move`"
 msgstr ":ref:`refactoring-wizards-move`"
 
-#: ../../source/designer-guide/reference/reference.rst:68
+#: ../../source/designer-guide/reference/reference.rst:67
 msgid ":ref:`refactoring-wizards-copy`"
 msgstr ":ref:`refactoring-wizards-copy`"
 
-#: ../../source/designer-guide/reference/reference.rst:69
+#: ../../source/designer-guide/reference/reference.rst:68
 msgid ":ref:`refactoring-wizards-delete`"
 msgstr ":ref:`refactoring-wizards-delete`"
 
-#: ../../source/designer-guide/reference/reference.rst:70
+#: ../../source/designer-guide/reference/reference.rst:69
 msgid ":ref:`Export Axon Ivy Archive wizard <designer-export-project>`"
 msgstr ":ref:`Axon Ivy Archive のエクスポートウィザード<designer-export-project>`"
 
-#: ../../source/designer-guide/reference/reference.rst:71
+#: ../../source/designer-guide/reference/reference.rst:70
 msgid ":ref:`Import Axon Ivy Archive wizard <designer-import-project>`"
 msgstr ":ref:`Axon Ivy Archive のインポートウィザード<designer-import-project>`"
 
-#: ../../source/designer-guide/reference/reference.rst:77
+#: ../../source/designer-guide/reference/reference.rst:76
 msgid "See :ref:`perspectives`."
 msgstr "「 :ref:`perspectives` 」を参照してください。"
 
-#: ../../source/designer-guide/reference/reference.rst:81
+#: ../../source/designer-guide/reference/reference.rst:80
 msgid "Process Elements"
 msgstr "プロセス要素"
 
-#: ../../source/designer-guide/reference/reference.rst:83
+#: ../../source/designer-guide/reference/reference.rst:82
 msgid "See :ref:`process-elements`."
 msgstr "「 :ref:`process-elements` 」を参照してください。"
 
-#: ../../source/designer-guide/reference/reference.rst:88
+#: ../../source/designer-guide/reference/reference.rst:87
 msgid "See :ref:`ivyscript`."
 msgstr "「 :ref:`ivyscript` 」を参照してください。"
 
@@ -31110,12 +30784,12 @@ msgstr ""
 
 #: ../../source/engine-guide/configuration/translation-service/index.rst:9
 msgid ""
-"For example, translating Content Objects in the :ref:`CMS Editor <cms>` "
-"or translating text fields when creating :ref:`Portal <portal-guide>` "
-"components."
+"For example, translating Content Objects with the :ref:`Translation "
+"Wizard <translation-wizard>` in the :ref:`cms-editor` or translating text"
+" fields when creating :ref:`Portal <portal-guide>` components."
 msgstr ""
 
-#: ../../source/engine-guide/configuration/translation-service/index.rst:12
+#: ../../source/engine-guide/configuration/translation-service/index.rst:13
 msgid ""
 "The Translation Service can be configured in the :file:`ivy.yaml` per "
 "Security System. To enable these features, the `DefaultInstance` must be "
@@ -31123,7 +30797,7 @@ msgid ""
 "correctly."
 msgstr ""
 
-#: ../../source/engine-guide/configuration/translation-service/index.rst:16
+#: ../../source/engine-guide/configuration/translation-service/index.rst:17
 msgid ""
 "The following example shows how to configure `DeepL "
 "<https://www.deepl.com/>`_ as the default Translation Service."
@@ -40206,4 +39880,420 @@ msgstr ""
 
 #~ msgid "**Linux**: Linux x64 (tested on Ubuntu 24.04)"
 #~ msgstr "**Linux** ：Linux（64 ビット版）（Ubuntu 24.04 でテスト済み） "
+
+#~ msgid ""
+#~ "The content management system can be "
+#~ "viewed and edited in the Axon Ivy"
+#~ " Designer."
+#~ msgstr "Axon Ivy Designer では、コンテンツ管理システムを表示、編集できます。"
+
+#~ msgid "CMS view"
+#~ msgstr "CMS ビュー"
+
+#~ msgid ""
+#~ "The CMS view shows the CMS of "
+#~ "all open projects in the workspace "
+#~ "including all content objects and their"
+#~ " values."
+#~ msgstr ""
+#~ "CMS ビューには、すべてのコンテンツオブジェクトとそれらの値を含め、ワークスペース内で開いているすべてのプロジェクトの "
+#~ "CMS が表示されます。"
+
+#~ msgid ":guilabel:`Window` > :guilabel:`Show View` > :guilabel:`CMS`"
+#~ msgstr ":guilabel:`ウィンドウ` > :guilabel:`ビューを表示` > :guilabel:`CMS`"
+
+#~ msgid "Display Content Object Values"
+#~ msgstr "コンテンツオブジェクトの値の表示"
+
+#~ msgid ""
+#~ "The view represents the CMS structure"
+#~ " as a tree. Furthermore the table "
+#~ "can display one column for every "
+#~ "language that is available. In those "
+#~ "columns the value of the corresponding"
+#~ " content object in the corresponding "
+#~ "language is shown. You can configure "
+#~ "for which languages the table should "
+#~ "display a column by clicking on "
+#~ "|imgViewMenu|."
+#~ msgstr ""
+#~ "このビューでは、CMS の構造がツリーとして表示されます。さらに、表には、利用可能な言語をそれぞれ 1 "
+#~ "つの列に表示できます。これらの列には、対応する言語の対応するコンテンツオブジェクトの値が表示されます。|imgViewMenu| "
+#~ "をクリックして、表での列の表示言語を設定できます。"
+
+#~ msgid "imgViewMenu"
+#~ msgstr "imgViewMenu"
+
+#~ msgid ""
+#~ "If you want to focus on the "
+#~ "CMS structure then you can hide "
+#~ "all the language columns so that "
+#~ "only the first column is displayed. "
+#~ "Just click on |imgLanguageChooser| in "
+#~ "the toolbar of the view to toggle"
+#~ " between hiding and displaying the "
+#~ "columns for the languages."
+#~ msgstr ""
+#~ "CMS の構造に集中したい場合は、すべての言語の列を非表示にして、最初の列のみ表示させることができます。ビューのツールバーの"
+#~ " |imgLanguageChooser| をクリックすると、言語の列の非表示と表示が切り替わります。"
+
+#~ msgid "imgLanguageChooser"
+#~ msgstr "imgLanguageChooser"
+
+#~ msgid "Inline Editing"
+#~ msgstr "インライン編集"
+
+#~ msgid ""
+#~ "For text based types you can edit"
+#~ " the text directly in the view, "
+#~ "just click in the cell of the "
+#~ "value and type."
+#~ msgstr "テキストベースのタイプでは、値のセルをクリックして入力するだけで、ビュー内でテキストを直接編集できます。"
+
+#~ msgid ""
+#~ "For file based types you can "
+#~ "import a file for each value "
+#~ "directly in the cell. Just move "
+#~ "your mouse over the cell of the"
+#~ " value click on the |imgImport| icon."
+#~ " Values for which already content is"
+#~ " available show a ``...`` in their"
+#~ " cell."
+#~ msgstr ""
+#~ "ファイルベースのタイプでは、値のセル上にマウスを移動し、|imgImport| "
+#~ "アイコンをクリックするだけで、各値のファイルをセルに直接インポートできます。すでにコンテンツが利用可能な値のセルには、``...`` "
+#~ "が表示されます。"
+
+#~ msgid "imgImport"
+#~ msgstr "imgImport"
+
+#~ msgid ""
+#~ "By using the search you can filter"
+#~ " the contents in the view according"
+#~ " to your search string. Enter a "
+#~ "filter expression and the table tree "
+#~ "will be reduced to only show the"
+#~ " content object matching that expression."
+#~ msgstr "検索を使用すると、検索文字列に従ってビュー内のコンテンツをフィルタリングできます。フィルター式を入力すると、表ツリーが縮小され、その式に一致するコンテンツオブジェクトのみ表示されます。"
+
+#~ msgid ""
+#~ "You can use ``*`` as wildcard "
+#~ "character to match any characters. "
+#~ "Furthermore you can use ``?`` to "
+#~ "match any single character."
+#~ msgstr ""
+#~ "ワイルドカード文字として ``*`` を使用して、任意の文字に一致させることができます。さらに、``?`` "
+#~ "を使用すると、任意の 1 文字を一致させることができます。"
+
+#~ msgid "Context Menu"
+#~ msgstr "コンテキストメニュー"
+
+#~ msgid ""
+#~ "In the context menu in the CMS "
+#~ "view there are several actions "
+#~ "available:"
+#~ msgstr "CMS ビューのコンテキストメニューには、いくつかのアクションが用意されています。"
+
+#~ msgid ":guilabel:`Add...`"
+#~ msgstr ":guilabel:`追加...`"
+
+#~ msgid "Creates new content objects with the given type, name and value."
+#~ msgstr "指定されたタイプ、名前、値で新しいコンテンツオブジェクトを作成します。"
+
+#~ msgid ""
+#~ "As name you can use a simple "
+#~ "name, an absolute or relative path "
+#~ "CMS path. All necessary will be "
+#~ "created automatically."
+#~ msgstr "名前には、単純な名前、絶対パスまたは相対パスの CMS パスを使用できます。必要なものはすべて自動的に作成されます。"
+
+#~ msgid ""
+#~ "The value for text based types can"
+#~ " be edited directly in the value "
+#~ "column whereas for file based type "
+#~ "a |imgImport| button is available."
+#~ msgstr "テキストベースのタイプの値は値の列で直接編集でき、ファイルベースのタイプでは |imgImport| ボタンが利用可能です。"
+
+#~ msgid ":guilabel:`Add from file(s)...`"
+#~ msgstr ":guilabel:` ファイルから追加...`"
+
+#~ msgid ""
+#~ "Creates new content objects based on "
+#~ "the selected files in the file "
+#~ "chooser. The filename will be taken "
+#~ "as name and the type will be "
+#~ "automatically detected."
+#~ msgstr "ファイルセレクタで選択されたファイルをベースに、新しいコンテンツオブジェクトを作成します。ファイル名は名前として扱われ、タイプは自動的に検出されます。"
+
+#~ msgid ":guilabel:`Add from URL...`"
+#~ msgstr ":guilabel:`URL から追加...`"
+
+#~ msgid "Creates new content objects from the given URL."
+#~ msgstr "指定された URL から新しいコンテンツオブジェクトを作成します。"
+
+#~ msgid "|imgRename| Rename"
+#~ msgstr "|imgRename| 名前の変更"
+
+#~ msgid "imgRename"
+#~ msgstr "imgRename"
+
+#~ msgid ""
+#~ "Opens a dialog where you can enter"
+#~ " a new name for the currently "
+#~ "selected content object."
+#~ msgstr "現在選択されているコンテンツオブジェクトの新しい名前を入力するダイアログを開きます。"
+
+#~ msgid ""
+#~ "Renaming a content object will break "
+#~ "all references to the object or "
+#~ "its children."
+#~ msgstr "コンテンツオブジェクトの名前を変更すると、そのオブジェクトや子オブジェクトへのすべての参照が壊れます。"
+
+#~ msgid "|imgCopy| Copy"
+#~ msgstr "|imgCopy| コピー"
+
+#~ msgid "imgCopy"
+#~ msgstr "imgCopy"
+
+#~ msgid ""
+#~ "Copies the currently selected content "
+#~ "object including all of its children "
+#~ "to the clipboard. The copied content "
+#~ "objects can be inserted somewhere else"
+#~ " in the content tree with "
+#~ ":guilabel:`Paste`."
+#~ msgstr ""
+#~ "すべての子オブジェクトを含め、現在選択されているコンテンツオブジェクトをクリップボードにコピーします。:guilabel:`貼り付け`"
+#~ " を使用して、コピーされたコンテンツオブジェクトをコンテンツツリーの他の場所に挿入できます。"
+
+#~ msgid "|imgPaste| Paste"
+#~ msgstr "|imgPaste| 貼り付け"
+
+#~ msgid "imgPaste"
+#~ msgstr "imgPaste"
+
+#~ msgid ""
+#~ "Inserts any content object(s) that was"
+#~ " copied before to the clipboard with"
+#~ " :guilabel:`Copy`. The copied content "
+#~ "objects are inserted as children of "
+#~ "the selected content object."
+#~ msgstr ""
+#~ ":guilabel:`コピー` "
+#~ "でクリップボードにコピーされたコンテンツオブジェクトを挿入します。コピーされたコンテンツオブジェクトは、選択されたコンテンツオブジェクトの子オブジェクトとして挿入されます。"
+
+#~ msgid "|imgDelete| Delete"
+#~ msgstr "|imgDelete| 削除"
+
+#~ msgid "imgDelete"
+#~ msgstr "imgDelete"
+
+#~ msgid ""
+#~ "Deletes the currently selected content "
+#~ "object including all of its children."
+#~ msgstr "すべての子オブジェクトを含め、現在選択されているコンテンツオブジェクトを削除します。"
+
+#~ msgid ""
+#~ "Deleting a content object will break "
+#~ "all references to the object or "
+#~ "its children."
+#~ msgstr "コンテンツオブジェクトを削除すると、そのオブジェクトや子オブジェクトへのすべての参照が壊れます。"
+
+#~ msgid "|imgCopy| Copy URI"
+#~ msgstr "|imgCopy| URI をコピー"
+
+#~ msgid ""
+#~ "Copies the URI of the currently "
+#~ "selected content object to the system"
+#~ " clipboard. Use :guilabel:`CTRL` + "
+#~ ":guilabel:`v` to insert the URI into "
+#~ "any text fields or editors."
+#~ msgstr ""
+#~ "現在選択されているコンテンツオブジェクトの URI "
+#~ "をシステムのクリップボードにコピーします。:guilabel:`Ctrl` + :guilabel:`V` "
+#~ "を押して、URI をテキストフィールドやエディターに挿入します。"
+
+#~ msgid "|imgCopyUriMacro| Copy URI as IvyScript macro"
+#~ msgstr "|imgCopyUriMacro| URI を IvyScript マクロとしてコピー"
+
+#~ msgid "imgCopyUriMacro"
+#~ msgstr "imgCopyUriMacro"
+
+#~ msgid ""
+#~ "Copies the URI of the currently "
+#~ "selected content object as an *IvyScript"
+#~ " macro tag* to the system clipboard."
+#~ " Use :guilabel:`CTRL` + :guilabel:`v` to"
+#~ " insert the macro into a :ref"
+#~ ":`macro-editor`."
+#~ msgstr ""
+#~ "現在選択されているコンテンツオブジェクトの URI を*IvyScript "
+#~ "マクロタグ*としてシステムのクリップボードにコピーします。:guilabel:`Ctrl` + "
+#~ ":guilabel:`V` を押して、マクロを :ref:`macro-editor` "
+#~ "に挿入します。"
+
+#~ msgid "|imgRefresh| Refresh Content"
+#~ msgstr "|imgRefresh| コンテンツの更新"
+
+#~ msgid "imgRefresh"
+#~ msgstr "imgRefresh"
+
+#~ msgid "Reloads the content below the currently selected content object."
+#~ msgstr "現在選択されているコンテンツオブジェクトの下のコンテンツを再度読み込みます。"
+
+#~ msgid "Drag and Drop"
+#~ msgstr "ドラッグアンドドロップ"
+
+#~ msgid ""
+#~ "Content objects (e.g., *strings* and "
+#~ "*images*) from the CMS view can be"
+#~ " dragged and dropped into the "
+#~ ":ref:`HTML Dialog editor <html-dialog-"
+#~ "editor-dragndrop>` to be used for "
+#~ "label texts or for images."
+#~ msgstr ""
+#~ "コンテンツオブジェクト（*文字列*、*画像* など）を CMS ビューから "
+#~ ":ref:`HTML ダイアログエディター<html-dialog-editor-"
+#~ "dragndrop>` ドラッグアンドドロップして、ラベルテキストや画像に使用できます。"
+
+#~ msgid ""
+#~ "Double-clicking a content object opens"
+#~ " the content object Editor to modify"
+#~ " the content object."
+#~ msgstr "コンテンツオブジェクトをダブルクリックすると、コンテンツオブジェクトエディターが開き、コンテンツオブジェクトを変更できます。"
+
+#~ msgid ""
+#~ "The editor has a header with a "
+#~ "title and buttons for the most "
+#~ "important actions."
+#~ msgstr "エディターのヘッダーには、タイトルと最も重要なアクションのボタンが表示されます。"
+
+#~ msgid "|imgAdd| Add new content object value"
+#~ msgstr "|imgAdd| 新しいコンテンツオブジェクトの値を追加"
+
+#~ msgid "imgAdd"
+#~ msgstr "imgAdd"
+
+#~ msgid ""
+#~ "Adds a new value to this content"
+#~ " object. A dialog is opened for "
+#~ "the user to select the language of"
+#~ " the new value."
+#~ msgstr "このコンテンツオブジェクトに新しい値を追加します。ダイアログが開き、新しい値の言語を選択できます。"
+
+#~ msgid "|imgRename| Rename content object"
+#~ msgstr "|imgRename| コンテンツオブジェクト名の変更"
+
+#~ msgid "Renames the content object."
+#~ msgstr "コンテンツオブジェクトの名前を変更します。"
+
+#~ msgid "|imgCopy| Copy content object"
+#~ msgstr "|imgCopy| コンテンツオブジェクトをコピー"
+
+#~ msgid ""
+#~ "Copies this content object with all "
+#~ "its children to the clipboard. The "
+#~ "copied objects can be inserted somewhere"
+#~ " else in the content tree with "
+#~ ":guilabel:`Paste`."
+#~ msgstr ""
+#~ "このコンテンツオブジェクトとそのすべての子オブジェクトをクリップボードにコピーします。:guilabel:`貼り付け` "
+#~ "を使用して、コピーされたオブジェクトをコンテンツツリーの他の場所に挿入できます。"
+
+#~ msgid "|imgDelete| Delete content object"
+#~ msgstr "|imgDelete| コンテンツオブジェクトの削除"
+
+#~ msgid ""
+#~ "Deletes this content object with all "
+#~ "values and all child content objects."
+#~ msgstr "このコンテンツオブジェクトとすべての値、すべての子コンテンツオブジェクトを削除します。"
+
+#~ msgid ""
+#~ "Each of the values of a content"
+#~ " object is shown with its "
+#~ "corresponding value editor inside a "
+#~ "collapsible section that is labelled "
+#~ "with the *language* of the value. "
+#~ "You find some actions on the right"
+#~ " side:"
+#~ msgstr ""
+#~ "コンテンツオブジェクトの値はそれぞれ、値の *言語* "
+#~ "でラベル付けされた折りたたみ可能なセクション内に、対応する値エディターと一緒に表示されます。右側には、いくつかのアクションが表示されます。"
+
+#~ msgid "|imgImport| Import value content"
+#~ msgstr "|imgImport| 値のコンテンツのインポート"
+
+#~ msgid "Import content from a file."
+#~ msgstr "ファイルからコンテンツをインポートします。"
+
+#~ msgid "|imgExport| Export value content"
+#~ msgstr "|imgExport| 値のコンテンツのエクスポート"
+
+#~ msgid "imgExport"
+#~ msgstr "imgExport"
+
+#~ msgid "Export the content to a file."
+#~ msgstr "コンテンツをファイルにエクスポートします。"
+
+#~ msgid "|imgCopy| Copy content object value"
+#~ msgstr "|imgCopy| コンテンツオブジェクトの値をコピー"
+
+#~ msgid ""
+#~ "Copies this content object value to "
+#~ "the clipboard. The copied objects can"
+#~ " be inserted somewhere else in the"
+#~ " content tree with :guilabel:`Paste`."
+#~ msgstr ""
+#~ "このコンテンツオブジェクトの値をクリップボードにコピーします。:guilabel:`貼り付け` "
+#~ "を使用して、コピーされたオブジェクトをコンテンツツリーの他の場所に挿入できます。"
+
+#~ msgid "|imgDelete| Delete content object value"
+#~ msgstr "|imgDelete| コンテンツオブジェクトの値の削除"
+
+#~ msgid "Deletes this content object value."
+#~ msgstr "このコンテンツオブジェクトの値を削除します。"
+
+#~ msgid "Content Object Value Editors"
+#~ msgstr "コンテンツオブジェクトの値エディター"
+
+#~ msgid "There are different editors for the different content object types."
+#~ msgstr "コンテンツオブジェクトのタイプによってさまざまなエディターがあります。"
+
+#~ msgid "Text Editor"
+#~ msgstr "テキストエディター"
+
+#~ msgid "This editor can handle texts. You can edit them directly in the editor."
+#~ msgstr "このエディターはテキストを扱うことができます。エディターで直接編集できます。"
+
+#~ msgid "Image Editor"
+#~ msgstr "イメージエディター"
+
+#~ msgid ""
+#~ "This editor can handle images of "
+#~ "type GIF, PNG and JPG. You can "
+#~ "import and export images."
+#~ msgstr "このエディターは、GIF、PNG、JPG タイプの画像を扱うことができます。画像をインポート、エクスポートできます。"
+
+#~ msgid "Document Editor"
+#~ msgstr "ドキュメントエディター"
+
+#~ msgid ""
+#~ "This editor can handle all document "
+#~ "file types such as TXT, XML, DOC,"
+#~ " PDF and much more. Binary based "
+#~ "file types (e.g PDF) you only can"
+#~ " import and export them. Text based"
+#~ " file types can be edited directly"
+#~ " in the editor."
+#~ msgstr ""
+#~ "このエディターは、TXT、XML、DOC、PDF "
+#~ "など、すべてのタイプのドキュメントファイルを扱うことができます。バイナリベースのファイルタイプ（PDF "
+#~ "など）は、インポートとエクスポートのみ可能です。テキストベースのファイルタイプは、エディターで直接編集できます。"
+
+#~ msgid ""
+#~ "For example, translating Content Objects "
+#~ "in the :ref:`CMS Editor <cms>` or "
+#~ "translating text fields when creating "
+#~ ":ref:`Portal <portal-guide>` components."
+#~ msgstr ""
 
